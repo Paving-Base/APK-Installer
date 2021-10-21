@@ -8,7 +8,7 @@
 
   <Identity
     Name="wherewhere.AndroidAppInstaller"
-    Publisher="CN=qq251"
+    Publisher="CN=where"
     Version="0.0.1.0" />
 
   <Properties>
