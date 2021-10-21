@@ -1,0 +1,144 @@
+﻿<Page
+    x:Class="APKInstaller.Pages.SettingsPages.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:converter="using:APKInstaller.Helpers.ValueConverters"
+    xmlns:local="using:APKInstaller.Pages.SettingsPages"
+    xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
+    xmlns:contorls="using:APKInstaller.Contorls"
+    xmlns:helpers="using:APKInstaller.Helpers" xmlns:sharpadbclient="using:SharpAdbClient"
+    xmlns:sys="using:System"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <converter:TrueToFalseConverter x:Key="TrueToFalseConverter" />
+        <Style x:Key="HeaderStyle" TargetType="controls:HeaderedContentControl">
+            <Setter Property="Margin" Value="0,8"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <ScrollViewer Style="{StaticResource PageScrollViewer}">
+            <StackPanel
+                Padding="16,0"
+                Margin="{StaticResource StackPanelMargin}">
+                <controls:HeaderedContentControl
+                    Style="{StaticResource HeaderStyle}"
+                    x:Uid="/SettingsPage/DeviceSettingsHeader">
+                    <ListView
+                        x:Name="SelectDeviceBox"
+                        ItemsSource="{x:Bind DeviceList, Mode=OneWay}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate x:DataType="sharpadbclient:DeviceData">
+                                <ListViewItem
+                                    Margin="-10,0"
+                                    MinHeight="40"
+                                    HorizontalAlignment="Stretch">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="40"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <SymbolIcon
+                                            Grid.Column="0"
+                                            Symbol="CellPhone"
+                                            HorizontalAlignment="Center"/>
+                                        <StackPanel
+                                            Grid.Column="1"
+                                            HorizontalAlignment="Left">
+                                            <TextBlock
+                                                FontSize="14"
+                                                FontWeight="Normal"
+                                                Text="{x:Bind Name}"/>
+                                            <TextBlock
+                                                FontSize="12"
+                                                FontWeight="Normal"
+                                                Text="{x:Bind State}"
+                                                Foreground="{ThemeResource SystemControlForegroundBaseMediumBrush}"/>
+                                        </StackPanel>
+                                    </Grid>
+                                </ListViewItem>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </controls:HeaderedContentControl>
+                <controls:HeaderedContentControl
+                    Style="{StaticResource HeaderStyle}"
+                    x:Uid="/SettingsPage/OthersSettingsHeader">
+                    <StackPanel>
+                        <HyperlinkButton
+                            Margin="0,2"
+                            Tag="FeedBack"
+                            Click="Button_Click"
+                            x:Uid="/SettingsPage/FeedbackLink"/>
+                        <StackPanel
+                            Margin="0,2"
+                            Orientation="Horizontal">
+                            <Button
+                                Name="Reset"
+                                x:Uid="/SettingsPage/ResetSettings"
+                                Style="{StaticResource ButtonRevealStyle}">
+                                <Button.Flyout>
+                                    <Flyout>
+                                        <StackPanel>
+                                            <TextBlock
+                                            Margin="0,0,0,12"
+                                            x:Uid="/SettingsPage/ResetSettingsTitle"
+                                            Style="{ThemeResource BaseTextBlockStyle}"/>
+                                            <Button
+                                            Tag="Reset"
+                                            Click="Button_Click"
+                                            x:Uid="/SettingsPage/ResetSettingsConfirm"
+                                            Style="{StaticResource ButtonRevealStyle}"/>
+                                        </StackPanel>
+                                    </Flyout>
+                                </Button.Flyout>
+                            </Button>
+                            <Button
+                                Margin="4,0"
+                                Tag="TestPage"
+                                Click="Button_Click"
+                                x:Name="GoToTestPage"
+                                x:Uid="/SettingsPage/GoToTestPage"
+                                Style="{StaticResource ButtonRevealStyle}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </controls:HeaderedContentControl>
+                <controls:HeaderedContentControl
+                    Style="{StaticResource HeaderStyle}"
+                    x:Uid="/SettingsPage/AboutSettingsHeader">
+                    <StackPanel>
+                        <TextBlock
+                            Margin="0,2"
+                            Grid.Row="0"
+                            Grid.ColumnSpan="2"
+                            FontSize="{ThemeResource ContentControlFontSize}"
+                            Text="{x:Bind local:SettingsPage.VersionTextBlockText}"/>
+                        <controls:MarkdownTextBlock
+                            Margin="0,2"
+                            x:Uid="/MarkDown/about"
+                            Background="Transparent"
+                            HorizontalAlignment="Left"
+                            LinkClicked="MarkdownTextBlock_LinkClicked"
+                            FontSize="{x:Bind Path=GoToTestPage.FontSize, Mode=OneWay}"/>
+                    </StackPanel>
+                </controls:HeaderedContentControl>
+            </StackPanel>
+        </ScrollViewer>
+        <contorls:TitleBar
+            x:Name="TitleBar"
+            x:Uid="/SettingsPage/TitleBar"
+            BackgroundVisibility="Visible"
+            BackRequested="TitleBar_BackRequested"
+            IsBackEnable="{x:Bind Frame.CanGoBack}"/>
+    </Grid>
+</Page>

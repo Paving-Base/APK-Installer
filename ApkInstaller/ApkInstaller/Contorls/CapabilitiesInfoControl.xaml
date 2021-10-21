@@ -1,0 +1,52 @@
+﻿<UserControl
+    x:Class="APKInstaller.Contorls.CapabilitiesInfoControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:APKInstaller.Contorls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid
+        Margin="-10"
+        Padding="10"
+        x:Name="Root"
+        BorderBrush="{StaticResource SystemAccentColor}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock
+            Grid.Row="0"
+            x:Name="HeaderTextBlock"
+            TextWrapping="WrapWholeWords"
+            ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"/>
+        <RichTextBlock
+            Grid.Row="1"
+            Opacity="0.6"
+            TextWrapping="Wrap"
+            IsTextSelectionEnabled="True"
+            x:Name="RichTextBlockCapabilities"/>
+        <RichTextBlock
+            Grid.Row="1"
+            Opacity="0.6"
+            TextWrapping="Wrap"
+            Visibility="Collapsed"
+            LostFocus="Root_LostFocus"
+            IsTextSelectionEnabled="True"
+            x:Name="RichTextBlockFullCapabilities"/>
+        <Button
+            Padding="0"
+            Grid.Row="2"
+            TabIndex="4"
+            Content="More"
+            x:Name="MoreButton"
+            BorderThickness="0"
+            Visibility="Collapsed"
+            Click="MoreButton_Click"
+            Background="Transparent"
+            UseSystemFocusVisuals="True"
+            Foreground="{StaticResource SystemAccentColor}"
+            AutomationProperties.Name="Show more capabilitiesMore"/>
+    </Grid>
+</UserControl>

@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    },
+    "APK Installer": {
+      "commandName": "MsixPackage"
+    }
+  }
+}
