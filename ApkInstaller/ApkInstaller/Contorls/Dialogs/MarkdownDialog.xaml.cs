@@ -14,6 +14,7 @@ using System.Net.Http;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.System;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -39,15 +40,33 @@ namespace APKInstaller.Contorls.Dialogs
             {
                 DispatcherQueue.TryEnqueue(async () =>
                 {
+                    if (string.IsNullOrEmpty(value)) { return; }
                     IsInitialized = false;
+                    value = value.StartsWith("http") ? value : $"https://{value}";
                     using var client = new HttpClient();
                     try
                     {
                         MarkdownText.Text = await client.GetStringAsync(value);
+                        Title = string.Empty;
                     }
                     catch
                     {
-                        MarkdownText.Text = value;
+                        if (value.Contains("raw.githubusercontent.com"))
+                        {
+                            try
+                            {
+                                MarkdownText.Text = (await client.GetStringAsync(value.Replace("raw.githubusercontent.com", "raw.fastgit.org"))).Replace("raw.githubusercontent.com", "raw.fastgit.org");
+                                Title = string.Empty;
+                            }
+                            catch
+                            {
+                                MarkdownText.Text = value;
+                            }
+                        }
+                        else
+                        {
+                            MarkdownText.Text = value;
+                        }
                     }
                     IsInitialized = true;
                 });
@@ -62,5 +81,10 @@ namespace APKInstaller.Contorls.Dialogs
         }
 
         public MarkdownDialog() => InitializeComponent();
+
+        private void MarkdownText_LinkClicked(object sender, CommunityToolkit.WinUI.UI.Controls.LinkClickedEventArgs e)
+        {
+            _ = Launcher.LaunchUriAsync(new Uri(e.Link));
+        }
     }
 }

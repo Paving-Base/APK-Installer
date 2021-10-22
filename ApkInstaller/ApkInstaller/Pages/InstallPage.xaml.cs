@@ -27,7 +27,7 @@ namespace APKInstaller.Pages
     /// </summary>
     public sealed partial class InstallPage : Page, INotifyPropertyChanged
     {
-        private string path = @"C:\Users\qq251\Downloads\Programs\Coolapk-11.4.3-2110131-coolapk-app-sign.apk";
+        private string path /*= @"C:\Users\qq251\Downloads\Programs\Coolapk-11.4.3-2110131-coolapk-app-sign.apk"*/;
         private DeviceData device;
 
         private ApkInfo _apkInfo = null;
@@ -37,6 +37,17 @@ namespace APKInstaller.Pages
             set
             {
                 _apkInfo = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        private bool isOpenApp = true;
+        internal bool IsOpenApp
+        {
+            get => isOpenApp;
+            set
+            {
+                isOpenApp = value;
                 RaisePropertyChangedEvent();
             }
         }
@@ -136,9 +147,12 @@ namespace APKInstaller.Pages
                     ContentDialog dialog = new MarkdownDialog()
                     {
                         XamlRoot = XamlRoot,
-                        ContentUrl = "https://cdn.jsdelivr.net/gh/Paving-Base/APK-Installer@screenshots/Helpers/How%20To%20Connect%20WSA.md",
+                        CloseButtonText = "I Know",
+                        Title = "How to connect WSA?",
+                        DefaultButton = ContentDialogButton.Close,
+                        ContentUrl = "https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Helpers/How%20To%20Connect%20WSA/How%20To%20Connect%20WSA.md",
                     };
-                    ContentDialogResult result = await dialog.ShowAsync();
+                    _ = dialog.ShowAsync();
                 }
                 WaitProgressText.Text = "Finished";
             }
@@ -242,7 +256,19 @@ namespace APKInstaller.Pages
                 case "ActionButton":
                     InstallAPP();
                     break;
+                case "SecondaryActionButton":
+                    OpenAPP();
+                    break;
+                case "CancelOperationButton":
+                    Application.Current.Exit();
+                    break;
             }
+        }
+
+        private void OpenAPP()
+        {
+            ConsoleOutputReceiver receiver = new ConsoleOutputReceiver();
+            new AdbClient().ExecuteRemoteCommand($"am start {ApkInfo.PackageName}", device, receiver);
         }
 
         private async void InstallAPP()
@@ -252,11 +278,19 @@ namespace APKInstaller.Pages
                 IsInstalling = true;
                 CancelOperationButtonText.Text = "Cancel";
                 CancelOperationButton.Visibility = Visibility.Visible;
-                ActionButton.Visibility = SecondaryActionButton.Visibility = Visibility.Collapsed;
+                ActionButton.Visibility = SecondaryActionButton.Visibility = TextOutputScrollViewer.Visibility = InstallOutputTextBlock.Visibility = Visibility.Collapsed;
                 await Task.Run(() =>
                 {
                     new PackageManager(new AdbClient(), device).InstallPackage(path, true);
                 });
+                if (IsOpenApp)
+                {
+                    _ = Task.Run(async () =>
+                      {
+                          await Task.Delay(1000);// 据说如果安装完直接启动会崩溃。。。
+                          OpenAPP();
+                      });
+                }
                 IsInstalling = false;
                 SecondaryActionButtonText.Text = "Launch";
                 SecondaryActionButton.Visibility = Visibility.Visible;

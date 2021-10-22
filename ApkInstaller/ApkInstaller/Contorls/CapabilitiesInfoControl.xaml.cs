@@ -69,6 +69,7 @@ namespace APKInstaller.Contorls
             Root.BorderThickness = new Thickness(1, 0, 0, 0);
             RichTextBlockCapabilities.Visibility = Visibility.Collapsed;
             RichTextBlockFullCapabilities.Visibility = Visibility.Visible;
+            CapabilitiesHeight.Height = new GridLength(1, GridUnitType.Star);
             _ = RichTextBlockFullCapabilities.Focus(FocusState.Pointer);
         }
 
@@ -78,6 +79,7 @@ namespace APKInstaller.Contorls
             Root.BorderThickness = new Thickness(0, 0, 0, 0);
             RichTextBlockCapabilities.Visibility = Visibility.Visible;
             RichTextBlockFullCapabilities.Visibility = Visibility.Collapsed;
+            CapabilitiesHeight.Height = new GridLength(1, GridUnitType.Auto);
         }
     }
 }

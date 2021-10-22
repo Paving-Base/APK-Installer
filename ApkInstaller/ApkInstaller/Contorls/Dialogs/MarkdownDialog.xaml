@@ -17,7 +17,8 @@
             <controls:MarkdownTextBlock
                 Text="# Helper"
                 x:Name="MarkdownText"
-                Background="Transparent"/>
+                Background="Transparent"
+                LinkClicked="MarkdownText_LinkClicked"/>
         </ScrollViewer>
         <StackPanel
             x:Name="InitialLoadingUI"

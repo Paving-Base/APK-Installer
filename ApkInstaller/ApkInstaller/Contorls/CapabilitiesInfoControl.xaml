@@ -13,7 +13,7 @@
         BorderBrush="{StaticResource SystemAccentColor}">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto" x:Name="CapabilitiesHeight"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
         <TextBlock
@@ -21,20 +21,25 @@
             x:Name="HeaderTextBlock"
             TextWrapping="WrapWholeWords"
             ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"/>
-        <RichTextBlock
+        <ScrollViewer
             Grid.Row="1"
-            Opacity="0.6"
-            TextWrapping="Wrap"
-            IsTextSelectionEnabled="True"
-            x:Name="RichTextBlockCapabilities"/>
-        <RichTextBlock
-            Grid.Row="1"
-            Opacity="0.6"
-            TextWrapping="Wrap"
-            Visibility="Collapsed"
-            LostFocus="Root_LostFocus"
-            IsTextSelectionEnabled="True"
-            x:Name="RichTextBlockFullCapabilities"/>
+            x:Name="CapabilitiesScrollViewer"
+            VerticalScrollBarVisibility="Auto">
+            <Grid>
+                <RichTextBlock
+                    Opacity="0.6"
+                    TextWrapping="Wrap"
+                    IsTextSelectionEnabled="True"
+                    x:Name="RichTextBlockCapabilities"/>
+                <RichTextBlock
+                    Opacity="0.6"
+                    TextWrapping="Wrap"
+                    Visibility="Collapsed"
+                    LostFocus="Root_LostFocus"
+                    IsTextSelectionEnabled="True"
+                    x:Name="RichTextBlockFullCapabilities"/>
+            </Grid>
+        </ScrollViewer>
         <Button
             Padding="0"
             Grid.Row="2"
