@@ -26,7 +26,7 @@
                 x:Name="MainContentContainer">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
                 </Grid.ColumnDefinitions>
                 <Grid
                     Grid.Column="0"

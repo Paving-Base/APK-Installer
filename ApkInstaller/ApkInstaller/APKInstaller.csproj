@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows10.0.19041.0</TargetFramework>
@@ -9,23 +9,16 @@
     <RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
     <UseWinUI>true</UseWinUI>
   </PropertyGroup>
-  <ItemGroup>
-    <None Remove="256x256.png" />
-    <None Remove="Contorls\CapabilitiesInfoControl.xaml" />
-    <None Remove="Contorls\Dialogs\MarkdownDialog.xaml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="256x256.png" />
-  </ItemGroup>
 
   <ItemGroup>
-	<PackageReference Include="CommunityToolkit.WinUI" Version="7.0.3" />
-	<PackageReference Include="CommunityToolkit.WinUI.UI.Controls" Version="7.0.3" />
-	<PackageReference Include="Microsoft.ProjectReunion" Version="0.8.5" />
-	<PackageReference Include="Microsoft.ProjectReunion.Foundation" Version="0.8.5" />
-	<PackageReference Include="Microsoft.ProjectReunion.WinUI" Version="0.8.5" />
-	<PackageReference Include="PInvoke.User32" Version="0.7.104" />
-	<PackageReference Include="SharpAdbClient" Version="2.3.23" />
+    <PackageReference Include="CommunityToolkit.WinUI" Version="7.0.3" />
+    <PackageReference Include="CommunityToolkit.WinUI.UI.Controls.Layout" Version="7.0.3" />
+    <PackageReference Include="CommunityToolkit.WinUI.UI.Controls.Markdown" Version="7.0.3" />
+    <PackageReference Include="Microsoft.ProjectReunion" Version="0.8.5" />
+    <PackageReference Include="Microsoft.ProjectReunion.Foundation" Version="0.8.5" />
+    <PackageReference Include="Microsoft.ProjectReunion.WinUI" Version="0.8.5" />
+    <PackageReference Include="PInvoke.User32" Version="0.7.104" />
+    <PackageReference Include="SharpAdbClient" Version="2.3.23" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
 
@@ -34,12 +27,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Page Update="Contorls\CapabilitiesInfoControl.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Update="Contorls\Dialogs\MarkdownDialog.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <None Update="platform-tools\adb.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

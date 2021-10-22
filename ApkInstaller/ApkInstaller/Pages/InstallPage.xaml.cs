@@ -160,7 +160,7 @@ namespace APKInstaller.Pages
             {
                 ResetUI();
                 ApkInfo = new ApkInfo();
-                AppName.Text = "For proper functioning of the app, try to launch a Android app package.";
+                AppName.Text = "For proper functioning of the app, try to launch an Android app package.";
                 AppVersion.Visibility = AppPublisher.Visibility = AppCapabilities.Visibility = Visibility.Collapsed;
             }
             IsInitialized = true;

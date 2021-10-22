@@ -32,7 +32,7 @@
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
         DisplayName="APK Installer"
-        Description="APK Installer"
+        Description="Android Application Installer"
         BackgroundColor="transparent"
         Square150x150Logo="Images\Square150x150Logo.png"
         Square44x44Logo="Images\Square44x44Logo.png">
@@ -45,10 +45,10 @@
         </uap:DefaultTile >
         <uap:SplashScreen Image="Images\SplashScreen.png"  BackgroundColor="transparent"/>
         <uap:InitialRotationPreference>
+          <uap:Rotation Preference="portraitFlipped"/>
           <uap:Rotation Preference="landscape"/>
           <uap:Rotation Preference="portrait"/>
-          <uap:Rotation Preference="landscapeFlipped"/>
-          <uap:Rotation Preference="portraitFlipped"/></uap:InitialRotationPreference>
+          <uap:Rotation Preference="landscapeFlipped"/></uap:InitialRotationPreference>
       </uap:VisualElements>
       <Extensions>
         <uap:Extension Category="windows.fileTypeAssociation">
