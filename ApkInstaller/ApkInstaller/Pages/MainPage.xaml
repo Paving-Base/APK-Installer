@@ -1,0 +1,58 @@
+﻿<Page
+    x:Class="APKInstaller.Pages.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:converter="using:APKInstaller.Helpers.ValueConverters"
+    mc:Ignorable="d"
+    SizeChanged="Page_SizeChanged">
+    <Page.Resources>
+        <converter:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+    </Page.Resources>
+    <Grid>
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid
+            Height="28"
+            Grid.Row="0"
+            x:Name="CustomTitleBar"
+            HorizontalAlignment="Stretch"/>
+        <Button
+            Width="28"
+            Height="28"
+            Grid.Row="0"
+            IsTabStop="True"
+            BorderThickness="2"
+            Click="Button_Click"
+            x:Name="AboutButton"
+            Background="Transparent"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"
+            Style="{StaticResource ButtonRevealStyle}"
+            Visibility="{x:Bind CoreAppFrame.CanGoBack, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='!bool'}">
+            <StackPanel>
+                <TextBlock
+                    Text=""
+                    Margin="-10"
+                    FontSize="18"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    FontFamily="Segoe MDL2 Assets"
+                    Foreground="{StaticResource ApplicationPageBackgroundThemeBrush}"/>
+            </StackPanel>
+        </Button>
+        <Frame
+            Grid.Row="1"
+            x:Name="CoreAppFrame"
+            x:FieldModifier="Public"
+            Background="{StaticResource ApplicationPageBackgroundThemeBrush}"/>
+    </Grid>
+</Page>

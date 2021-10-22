@@ -1,0 +1,57 @@
+﻿<Page
+    x:Class="APKInstaller.Pages.SettingsPages.TestPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:contorls="using:APKInstaller.Contorls"
+    xmlns:converter="using:APKInstaller.Helpers.ValueConverters"
+    xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <converter:TrueToFalseConverter x:Key="TrueToFalseConverter"/>
+        <Style x:Key="HeaderStyle" TargetType="controls:HeaderedContentControl">
+            <Setter Property="Margin" Value="0,8"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <ScrollViewer Style="{StaticResource PageScrollViewer}">
+            <StackPanel
+                Padding="16,0"
+                Margin="{StaticResource StackPanelMargin}">
+                <controls:HeaderedContentControl
+                    Header="界面测试"
+                    Style="{StaticResource HeaderStyle}">
+                    <StackPanel>
+                        <StackPanel
+                            Margin="0,2"
+                            Orientation="Horizontal">
+                            <Button
+                                Tag="EnterPIP"
+                                Margin="0,0,2,0"
+                                Click="Button_Click"
+                                Content="Enter Compact Overlay"/>
+                            <Button
+                                Margin="2,0"
+                                Tag="OutPIP"
+                                Content="Exit"
+                                Click="Button_Click"/>
+                        </StackPanel>
+                    </StackPanel>
+                </controls:HeaderedContentControl>
+            </StackPanel>
+        </ScrollViewer>
+        <contorls:TitleBar
+            Title="Testing"
+            BackgroundVisibility="Visible"
+            BackRequested="TitleBar_BackRequested"
+            IsBackEnable="{x:Bind Frame.CanGoBack}"/>
+    </Grid>
+</Page>
