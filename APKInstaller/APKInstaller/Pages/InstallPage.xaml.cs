@@ -16,6 +16,7 @@ using System.Net;
 using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
+using Windows.ApplicationModel.DataTransfer;
 using Windows.Storage;
 using Windows.Storage.Pickers;
 
@@ -324,6 +325,28 @@ namespace APKInstaller.Pages
             StorageFile ApkFile = await ApkPicker.PickSingleFileAsync();
             path = ApkFile.Path;
             InitilizeUI();
+        }
+
+        private void FilePickButton_DragOver(object sender, DragEventArgs e)
+        {
+            e.AcceptedOperation = DataPackageOperation.Copy;
+        }
+
+        private async void FilePickButton_Drop(object sender, DragEventArgs e)
+        {
+            if (e.DataView.Contains(StandardDataFormats.StorageItems))
+            {
+                var items = await e.DataView.GetStorageItemsAsync();
+                if(items.First() is StorageFile)
+                {
+                    StorageFile ApkFile = (StorageFile)items.First();
+                    if(ApkFile.FileType.ToLower() == ".apk")
+                    {
+                        path = ApkFile.Path;
+                        InitilizeUI();
+                    }
+                }
+            }
         }
     }
 }

@@ -204,12 +204,15 @@
                         HorizontalAlignment="Right">
                         <Button
                             Width="330"
-                            Height="32"
+                            Height="155"
                             TabIndex="1"
                             Margin="12,0,0,0"
                             Click="FilePickButton_Click"
-                            Content="Pick an APK file to install"
+                            Content="Pick an APK file to install or drag it here"
                             x:Name="FilePickButton"
+                            AllowDrop ="True"
+                            DragOver="FilePickButton_DragOver"
+                            Drop="FilePickButton_Drop"
                             Style="{StaticResource AccentButtonStyle}"
                             Visibility="Collapsed"
                             ToolTipService.ToolTip="{x:Bind Content}">
