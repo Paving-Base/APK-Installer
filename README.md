@@ -37,13 +37,13 @@ An Android Application Installer for Windows
 - 应用安装脚本将会引导您完成此过程的剩余部分
 
 ### 使用应用安装程序安装应用 / Install the app using the Windows App Installer ⭐
-- 下载并解压最新的[安装包 / PKInstaller (Package)_x.x.x.0_Test.rar)`](https://github.com/Tangent-90/Coolapk-UWP/releases/latest "下载安装包")
-- [开启旁加载模式](https://www.windowscentral.com/how-enable-windows-10-sideload-apps-outside-store)
-  - 如果您想开发UWP应用，您可以开启[开发人员模式](https://docs.microsoft.com/zh-cn/windows/uwp/get-started/enable-your-device-for-development)，**对于大多数不需要做UWP开发的用户来说，开发人员模式是没有必要的**
-- 安装`Dependencies`文件夹下的适用于您的设备的所有依赖包
+- 下载并解压最新的安装包 / Download and unzip the latest installation package APKInstaller (Package)_x.x.x.0_Test.rar)`](https://github.com/Tangent-90/Coolapk-UWP/releases/latest "下载安装包")
+- [开启旁加载模式 / Turn on side loading mode](https://www.windowscentral.com/how-enable-windows-10-sideload-apps-outside-store)
+  - 如果您想开发UWP应用，您可以开启[开发人员模式 / If you want to develop UWP applications, you can turn on the developer mode . For most users who do not need to do UWP development, the developer mode is not necessary](https://docs.microsoft.com/zh-cn/windows/uwp/get-started/enable-your-device-for-development)，**对于大多数不需要做UWP开发的用户来说，开发人员模式是没有必要的**
+- 安装`Dependencies`文件夹下的适用于您的设备的所有依赖包 / All dependent packages applicable to your device under the installation folder
 ![Dependencies](Images/Guides/Snipaste_2019-10-13_15-51-33.png)
-- 安装`*.cer`证书到`本地计算机`→`受信任的根证书颁发机构`
-  - 这项操作需要用到管理员权限，如果您安装证书时没有用到该权限，则可能是因为您将证书安装到了错误的位置或者您使用的是超级管理员账户
+- 安装 `*.cer`证书到 本地计算机`→`受信任的根证书颁发机构` / Install the certificate to Local Machine > Place all certificates in the following store > Trusted Root CA
+  - 这项操作需要用到管理员权限，如果您安装证书时没有用到该权限，则可能是因为您将证书安装到了错误的位置或者您使用的是超级管理员账户 / This operation requires administrator privileges. If you did not use this privilege when installing the certificate, it may be because you installed the certificate to the wrong location or you are using a super administrator account
   ![安装证书](Images/Guides/Snipaste_2019-10-12_22-46-37.png)
   ![导入本地计算机](Images/Guides/Snipaste_2019-10-19_15-28-58.png)
   ![储存到受信任的根证书颁发机构](Images/Guides/Snipaste_2019-10-20_23-36-44.png)
