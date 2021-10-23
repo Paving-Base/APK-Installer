@@ -1,4 +1,4 @@
-<img alt="APK Installer LOGO" src="./logo.png" width="200px"/>
+<img alt="APK Installer LOGO" src="./readmelogo.png" width="200px"/>
 
 # APK-Installer
 An Android Application Installer for Windows
