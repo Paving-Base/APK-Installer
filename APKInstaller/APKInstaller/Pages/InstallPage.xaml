@@ -203,6 +203,18 @@
                         Orientation="Horizontal"
                         HorizontalAlignment="Right">
                         <Button
+                            Width="330"
+                            Height="32"
+                            TabIndex="1"
+                            Margin="12,0,0,0"
+                            Click="FilePickButton_Click"
+                            Content="Pick an APK file to install"
+                            x:Name="FilePickButton"
+                            Style="{StaticResource AccentButtonStyle}"
+                            Visibility="Collapsed"
+                            ToolTipService.ToolTip="{x:Bind Content}">
+                        </Button>
+                        <Button
                             Width="120"
                             Height="32"
                             TabIndex="1"
