@@ -1,6 +1,6 @@
 ﻿using AAPTForNet;
 using AAPTForNet.Models;
-using APKInstaller.Contorls.Dialogs;
+using APKInstaller.Controls.Dialogs;
 using APKInstaller.Helpers;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
