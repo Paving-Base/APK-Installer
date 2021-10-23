@@ -1,23 +1,13 @@
-﻿using APKInstaller.Helpers;
+﻿using AdvancedSharpAdbClient;
+using APKInstaller.Helpers;
 using CommunityToolkit.WinUI.UI.Controls;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Controls.Primitives;
-using Microsoft.UI.Xaml.Data;
-using Microsoft.UI.Xaml.Input;
-using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
-using SharpAdbClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
-using Windows.ApplicationModel.Resources;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.Storage;
 using Windows.System;
 
@@ -42,6 +32,18 @@ namespace APKInstaller.Pages.SettingsPages
             }
         }
 
+        private bool isOnlyWSA = SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
+        internal bool IsOnlyWSA
+        {
+            get => isOnlyWSA;
+            set
+            {
+                SettingsHelper.Set(SettingsHelper.IsOnlyWSA, value);
+                isOnlyWSA = SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
+                RaisePropertyChangedEvent();
+            }
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void RaisePropertyChangedEvent([System.Runtime.CompilerServices.CallerMemberName] string name = null)
@@ -49,7 +51,7 @@ namespace APKInstaller.Pages.SettingsPages
             if (name != null) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
         }
 
-        private const string IssuePath = "https://github.com/wherewhere";
+        private const string IssuePath = "https://github.com/Paving-Base/APK-Installer/issues";
 
         internal static string VersionTextBlockText
         {
@@ -70,7 +72,7 @@ namespace APKInstaller.Pages.SettingsPages
             GoToTestPage.Visibility = Visibility.Visible;
 #endif
             ADBHelper.Monitor.DeviceChanged += OnDeviceChanged;
-            DeviceList = new AdbClient().GetDevices();
+            DeviceList = new AdvancedAdbClient().GetDevices();
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
@@ -83,7 +85,7 @@ namespace APKInstaller.Pages.SettingsPages
         {
             _ = DispatcherQueue.TryEnqueue(() =>
             {
-                DeviceList = new AdbClient().GetDevices();
+                DeviceList = new AdvancedAdbClient().GetDevices();
             });
         }
 

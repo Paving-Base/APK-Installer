@@ -1,7 +1,7 @@
-﻿using Microsoft.UI.Xaml;
+﻿using APKInstaller.Helpers.Exceptions;
+using Microsoft.UI.Xaml;
 using System;
 using System.Runtime.InteropServices;
-using Windows.ApplicationModel.Resources;
 using WinRT;
 
 // To learn more about WinUI, the WinUI project structure,
@@ -21,6 +21,8 @@ namespace APKInstaller
         public App()
         {
             InitializeComponent();
+            UnhandledException += Application_UnhandledException;
+            AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
         }
 
         /// <summary>
@@ -30,6 +32,7 @@ namespace APKInstaller
         /// <param name="args">Details about the launch request and process.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs args)
         {
+            RegisterExceptionHandlingSynchronizationContext();
             m_window = new MainWindow()
             {
                 Title = "Apk Installer"
@@ -42,6 +45,33 @@ namespace APKInstaller
             // To set the Width and Height, you can use the Win32 API SetWindowPos.
             // Note, you should apply the DPI scale factor if you are thinking of dpi instead of pixels.
             SetWindowSize(m_windowHandle, 652, 414);
+        }
+
+        private void Application_UnhandledException(object sender, Microsoft.UI.Xaml.UnhandledExceptionEventArgs e)
+        {
+            e.Handled = true;
+            //SettingsHelper.LogManager.GetLogger("UnhandledException").Error($"\n{e.Exception.Message}\n{e.Exception.HResult}\n{e.Exception.StackTrace}\nHelperLink: {e.Exception.HelpLink}", e.Exception);
+        }
+
+        private void CurrentDomain_UnhandledException(object sender, System.UnhandledExceptionEventArgs e)
+        {
+            //SettingsHelper.LogManager.GetLogger("UnhandledException").Error(e.ExceptionObject.ToString());
+        }
+
+        /// <summary>
+        /// Should be called from OnActivated and OnLaunched
+        /// </summary>
+        private void RegisterExceptionHandlingSynchronizationContext()
+        {
+            ExceptionHandlingSynchronizationContext
+                .Register()
+                .UnhandledException += SynchronizationContext_UnhandledException;
+        }
+
+        private void SynchronizationContext_UnhandledException(object sender, Helpers.Exceptions.UnhandledExceptionEventArgs e)
+        {
+            e.Handled = true;
+            //SettingsHelper.LogManager.GetLogger("UnhandledException").Error($"\n{e.Exception.Message}\n{e.Exception.HResult}(0x{Convert.ToString(e.Exception.HResult, 16)})\n{e.Exception.StackTrace}\nHelperLink: {e.Exception.HelpLink}", e.Exception);
         }
 
         private Window m_window;

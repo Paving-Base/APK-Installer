@@ -11,6 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AdvancedSharpAdbClient" Version="2.5.1" />
     <PackageReference Include="CommunityToolkit.WinUI" Version="7.0.3" />
     <PackageReference Include="CommunityToolkit.WinUI.UI.Controls.Layout" Version="7.0.3" />
     <PackageReference Include="CommunityToolkit.WinUI.UI.Controls.Markdown" Version="7.0.3" />
@@ -18,7 +19,6 @@
     <PackageReference Include="Microsoft.ProjectReunion.Foundation" Version="0.8.5" />
     <PackageReference Include="Microsoft.ProjectReunion.WinUI" Version="0.8.5" />
     <PackageReference Include="PInvoke.User32" Version="0.7.104" />
-    <PackageReference Include="SharpAdbClient" Version="2.3.23" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
 

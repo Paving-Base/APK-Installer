@@ -1,6 +1,6 @@
-﻿using APKInstaller.Pages;
+﻿using AdvancedSharpAdbClient;
+using APKInstaller.Pages;
 using Microsoft.UI.Xaml.Media.Animation;
-using SharpAdbClient;
 using System;
 using System.Net;
 using Windows.UI.Core;
@@ -9,7 +9,7 @@ namespace APKInstaller.Helpers
 {
     internal static class ADBHelper
     {
-        public static DeviceMonitor Monitor = new DeviceMonitor(new AdbSocket(new IPEndPoint(IPAddress.Loopback, AdbClient.AdbServerPort)));
+        public static DeviceMonitor Monitor = new DeviceMonitor(new AdbSocket(new IPEndPoint(IPAddress.Loopback, AdvancedAdbClient.AdbServerPort)));
         static ADBHelper()
         {
             Monitor.Start();

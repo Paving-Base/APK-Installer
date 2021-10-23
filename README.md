@@ -62,7 +62,7 @@ An Android Application Installer for Windows
 ## 使用到的模块
 - [WinUI](https://github.com/microsoft/microsoft-ui-xaml "WinUI")
 - [AAPTForNet](https://github.com/canheo136/QuickLook.Plugin.ApkViewer "AAPTForNet")
-- [Sharp Adb Client](https://github.com/quamotion/madb "Sharp Adb Client")
+- [Advanced Sharp Adb Client](https://github.com/yungd1plomat/AdvancedSharpAdbClient "Advanced Sharp Adb Client")
 - [Windows Community Toolkit](https://github.com/CommunityToolkit/WindowsCommunityToolkit "Windows Community Toolkit")
 
 ## 鸣谢
