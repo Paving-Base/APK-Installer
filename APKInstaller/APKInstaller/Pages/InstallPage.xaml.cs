@@ -1,13 +1,13 @@
 ﻿using AAPTForNet;
 using AAPTForNet.Models;
 using APKInstaller.Controls.Dialogs;
+using AdvancedSharpAdbClient;
+using AdvancedSharpAdbClient.DeviceCommands;
+using AdvancedSharpAdbClient.Exceptions;
 using APKInstaller.Helpers;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
-using SharpAdbClient;
-using SharpAdbClient.DeviceCommands;
-using SharpAdbClient.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,7 +30,7 @@ namespace APKInstaller.Pages
     /// </summary>
     public sealed partial class InstallPage : Page, INotifyPropertyChanged
     {
-        private string path /*= @"C:\Users\qq251\Downloads\Programs\Coolapk-11.4.3-2110131-coolapk-app-sign.apk"*/;
+        private string path = @"C:\Users\qq251\Downloads\Programs\Coolapk-11.4.3-2110131-coolapk-app-sign.apk";
         private DeviceData device;
 
         private ApkInfo _apkInfo = null;
@@ -112,7 +112,7 @@ namespace APKInstaller.Pages
             {
                 DispatcherQueue.TryEnqueue(() =>
                 {
-                    new AdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
+                    new AdvancedAdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
                     if (CheckDevice() && device != null)
                     {
                         CheckAPK();
@@ -133,7 +133,7 @@ namespace APKInstaller.Pages
                 await Task.Run(() =>
                 {
                     new AdbServer().StartServer($@"{AppDomain.CurrentDomain.BaseDirectory}\platform-tools\adb.exe", restartServerIfNewer: false);
-                    new AdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
+                    new AdvancedAdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
                     ADBHelper.Monitor.DeviceChanged += OnDeviceChanged;
                 });
                 WaitProgressText.Text = "Loading...";
@@ -200,7 +200,7 @@ namespace APKInstaller.Pages
 
         private bool CheckDevice()
         {
-            List<DeviceData> devices = new AdbClient().GetDevices();
+            List<DeviceData> devices = new AdvancedAdbClient().GetDevices();
             if (devices.Count <= 0) { return false; }
             foreach (DeviceData device in devices)
             {
@@ -216,7 +216,7 @@ namespace APKInstaller.Pages
         private void CheckAPK()
         {
             ResetUI();
-            AdbClient client = new AdbClient();
+            AdvancedAdbClient client = new AdvancedAdbClient();
             if (device == null)
             {
                 ActionButton.IsEnabled = false;
@@ -272,11 +272,7 @@ namespace APKInstaller.Pages
             }
         }
 
-        private void OpenAPP()
-        {
-            ConsoleOutputReceiver receiver = new ConsoleOutputReceiver();
-            new AdbClient().ExecuteRemoteCommand($"am start {ApkInfo.PackageName}", device, receiver);
-        }
+        private void OpenAPP() => new AdvancedAdbClient().StartApp(device, ApkInfo.PackageName);
 
         private async void InstallAPP()
         {
@@ -288,7 +284,7 @@ namespace APKInstaller.Pages
                 ActionButton.Visibility = SecondaryActionButton.Visibility = TextOutputScrollViewer.Visibility = InstallOutputTextBlock.Visibility = Visibility.Collapsed;
                 await Task.Run(() =>
                 {
-                    new PackageManager(new AdbClient(), device).InstallPackage(path, true);
+                    new PackageManager(new AdvancedAdbClient(), device).InstallPackage(path, true);
                 });
                 if (IsOpenApp)
                 {

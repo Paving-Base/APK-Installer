@@ -7,8 +7,7 @@
     xmlns:Controls="using:APKInstaller.Controls"
     xmlns:converter="using:APKInstaller.Helpers.ValueConverters"
     xmlns:local="using:APKInstaller.Pages.SettingsPages"
-    xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
-    xmlns:sharpadbclient="using:SharpAdbClient"
+    xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls" xmlns:sharpadbclient="using:AdvancedSharpAdbClient"
     mc:Ignorable="d">
     <Page.Resources>
         <converter:TrueToFalseConverter x:Key="TrueToFalseConverter" />
@@ -69,6 +68,16 @@
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
+                </controls:HeaderedContentControl>
+                <controls:HeaderedContentControl
+                    Header="Options"
+                    Style="{StaticResource HeaderStyle}">
+                    <StackPanel>
+                        <CheckBox
+                            FontWeight="Normal"
+                            Content="Is Only for WSA?"
+                            IsChecked="{x:Bind IsOnlyWSA, Mode=TwoWay}"/>
+                    </StackPanel>
                 </controls:HeaderedContentControl>
                 <controls:HeaderedContentControl
                     Header="Others"
