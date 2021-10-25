@@ -1,9 +1,9 @@
 ﻿using AAPTForNet;
 using AAPTForNet.Models;
+using APKInstaller.Controls.Dialogs;
 using AdvancedSharpAdbClient;
 using AdvancedSharpAdbClient.DeviceCommands;
 using AdvancedSharpAdbClient.Exceptions;
-using APKInstaller.Contorls.Dialogs;
 using APKInstaller.Helpers;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
@@ -16,6 +16,9 @@ using System.Net;
 using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
+using Windows.ApplicationModel.DataTransfer;
+using Windows.Storage;
+using Windows.Storage.Pickers;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -87,7 +90,7 @@ namespace APKInstaller.Pages
         {
             base.OnNavigatedTo(e);
             IActivatedEventArgs args = AppInstance.GetActivatedEventArgs();
-            switch(args.Kind)
+            switch (args.Kind)
             {
                 case ActivationKind.File:
                     path = (args as IFileActivatedEventArgs).Files.First().Path;
@@ -118,7 +121,11 @@ namespace APKInstaller.Pages
             }
         }
 
-        private async void InitialLoadingUI_Loaded(object sender, RoutedEventArgs e)
+        private void InitialLoadingUI_Loaded(object sender, RoutedEventArgs e)
+        {
+            InitilizeUI();
+        }
+        private async void InitilizeUI()
         {
             if (!string.IsNullOrEmpty(path))
             {
@@ -160,12 +167,12 @@ namespace APKInstaller.Pages
             {
                 ResetUI();
                 ApkInfo = new ApkInfo();
-                AppName.Text = "For proper functioning of the app, try to launch an Android app package.";
+                AppName.Text = "For proper functioning of the app, try to launch an Android app package or open a package.";
                 AppVersion.Visibility = AppPublisher.Visibility = AppCapabilities.Visibility = Visibility.Collapsed;
+                FilePickButton.Visibility = Visibility.Visible;
             }
             IsInitialized = true;
         }
-
         private void ResetUI()
         {
             ActionButton.Visibility =
@@ -175,7 +182,7 @@ namespace APKInstaller.Pages
             InstallOutputTextBlock.Visibility =
             LaunchWhenReadyCheckbox.Visibility =
             MessagesToUserContainer.Visibility = Visibility.Collapsed;
-
+            FilePickButton.Visibility = Visibility.Collapsed;
             ActionButton.IsEnabled =
             SecondaryActionButton.IsEnabled =
             CancelOperationButton.IsEnabled = true;
@@ -254,7 +261,7 @@ namespace APKInstaller.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            switch((sender as FrameworkElement).Name)
+            switch ((sender as FrameworkElement).Name)
             {
                 case "ActionButton":
                     InstallAPP();
@@ -300,6 +307,44 @@ namespace APKInstaller.Pages
                 TextOutput.Text = ex.Message;
                 TextOutputScrollViewer.Visibility = InstallOutputTextBlock.Visibility = Visibility.Visible;
                 ActionButton.Visibility = SecondaryActionButton.Visibility = CancelOperationButton.Visibility = Visibility.Collapsed;
+            }
+        }
+
+        private async void FilePickButton_Click(object sender, RoutedEventArgs e)
+        {
+            FileOpenPicker ApkPicker = new FileOpenPicker();
+            ApkPicker.CommitButtonText = "Install";
+            ApkPicker.SuggestedStartLocation = PickerLocationId.Downloads;
+            ApkPicker.FileTypeFilter.Add(".apk");
+            // Get the current window's HWND by passing in the Window object
+            var hwnd = WinRT.Interop.WindowNative.GetWindowHandle(UIHelper.MainWindow);
+
+            // Associate the HWND with the file picker
+            WinRT.Interop.InitializeWithWindow.Initialize(ApkPicker, hwnd);
+            StorageFile ApkFile = await ApkPicker.PickSingleFileAsync();
+            path = ApkFile.Path;
+            InitilizeUI();
+        }
+
+        private void FilePickButton_DragOver(object sender, DragEventArgs e)
+        {
+            e.AcceptedOperation = DataPackageOperation.Copy;
+        }
+
+        private async void FilePickButton_Drop(object sender, DragEventArgs e)
+        {
+            if (e.DataView.Contains(StandardDataFormats.StorageItems))
+            {
+                var items = await e.DataView.GetStorageItemsAsync();
+                if(items.First() is StorageFile)
+                {
+                    StorageFile ApkFile = (StorageFile)items.First();
+                    if(ApkFile.FileType.ToLower() == ".apk")
+                    {
+                        path = ApkFile.Path;
+                        InitilizeUI();
+                    }
+                }
             }
         }
     }

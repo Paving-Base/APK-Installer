@@ -7,9 +7,6 @@
     xmlns:converter="using:APKInstaller.Helpers.ValueConverters"
     mc:Ignorable="d"
     SizeChanged="Page_SizeChanged">
-    <Page.Resources>
-        <converter:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
-    </Page.Resources>
     <Grid>
         <Grid.ChildrenTransitions>
             <TransitionCollection>
@@ -37,7 +34,7 @@
             VerticalAlignment="Center"
             HorizontalAlignment="Left"
             Style="{StaticResource ButtonRevealStyle}"
-            Visibility="{x:Bind CoreAppFrame.CanGoBack, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='!bool'}">
+            Visibility="{x:Bind CoreAppFrame.CanGoBack, Mode=OneWay}">
             <StackPanel>
                 <TextBlock
                     Text=""
