@@ -36,10 +36,10 @@ An Android Application Installer for Windows
 
 ### Install the app using the app installation script
 - Download and unzip the latest [installation package `(APKInstaller (Package)_x.x.x.0_Test.rar)`](https://github.com/Tangent-90/Coolapk-UWP/releases/latest "下载安装包")
-- 如果没有应用安装脚本，下载[`Install.ps1`](Install.ps1)到目标目录
+- If you do not have the app installation script, you can download [`Install.ps1`] into the target directory.
 ![Install.ps1](Images/Guides/Snipaste_2019-10-12_22-49-11.png)
-- 右击`Install.ps1`，选择“使用PowerShell运行”
-- 应用安装脚本将会引导您完成此过程的剩余部分
+- Right click on`Install.ps1`, and select 'Open with Powershell'.
+- The installation script will guide you through the rest of the process.
 
 ### Install the app using the Windows App Installer ⭐
 - Download and unzip the latest installation package `APKInstaller (Package)_x.x.x.0_Test.rar)`](https://github.com/Paving-Base/APK-Installer/releases/latest "下载安装包")
@@ -52,7 +52,7 @@ An Android Application Installer for Windows
   ![安装证书](Images/Guides/Snipaste_2019-10-12_22-46-37.png)
   ![导入本地计算机](Images/Guides/Snipaste_2019-10-19_15-28-58.png)
   ![储存到受信任的根证书颁发机构](Images/Guides/Snipaste_2019-10-20_23-36-44.png)
-- 双击`*.appxbundle`，单击安装，坐和放宽
+- Double click`*.appxbundle`, then click and install. 
 ![安装](Images/Guides/Snipaste_2019-10-13_12-42-40.png)
 
 ### Update the app
