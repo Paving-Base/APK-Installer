@@ -1,0 +1,5 @@
+files:
+  - source: /README.md
+    translation: /Readme/%file_name%.%locale%.md
+  - source: /APKInstaller/APKInstaller (Package)/String/en-US
+    translation: /APKInstaller/APKInstaller (Package)/String/%locale%/%original_file_name%
