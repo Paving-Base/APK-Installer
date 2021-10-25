@@ -201,10 +201,13 @@ namespace APKInstaller.Pages
         private bool CheckDevice()
         {
             List<DeviceData> devices = new AdvancedAdbClient().GetDevices();
+            AdvancedAdbClient client = new();
+            ConsoleOutputReceiver receiver = new ConsoleOutputReceiver();
             if (devices.Count <= 0) { return false; }
             foreach (DeviceData device in devices)
             {
-                if (device.Model.Contains("Subsystem_for_Android_TM_"))
+                client.ExecuteRemoteCommand("getprop ro.product.odm.brand", device, receiver);
+                if (receiver.ToString().Contains("Windows"))
                 {
                     this.device = device ?? this.device;
                     return true;
