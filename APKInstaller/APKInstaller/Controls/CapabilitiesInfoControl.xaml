@@ -11,6 +11,11 @@
         Padding="10"
         x:Name="Root"
         BorderBrush="{StaticResource SystemAccentColor}">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto" x:Name="CapabilitiesHeight"/>

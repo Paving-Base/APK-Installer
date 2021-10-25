@@ -7,6 +7,7 @@ using Microsoft.UI.Xaml.Navigation;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using Windows.ApplicationModel;
 using Windows.Storage;
 using Windows.System;
@@ -29,6 +30,7 @@ namespace APKInstaller.Pages.SettingsPages
             {
                 deviceList = value;
                 RaisePropertyChangedEvent();
+                ChooseDevice();
             }
         }
 
@@ -127,6 +129,28 @@ namespace APKInstaller.Pages.SettingsPages
             if (Frame.CanGoBack)
             {
                 Frame.GoBack();
+            }
+        }
+
+        private void SelectDeviceBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            object vs = (sender as ListView).SelectedItem;
+            if (vs != null && vs is DeviceData device)
+            {
+                SettingsHelper.SetFile(SettingsHelper.DefaultDevice, device);
+            }
+        }
+
+        private async void ChooseDevice()
+        {
+            DeviceData device = await SettingsHelper.GetFile<DeviceData>(SettingsHelper.DefaultDevice);
+            foreach(DeviceData data in DeviceList)
+            {
+                if(data.Name == device.Name && data.Model == device.Model && data.Product == device.Product)
+                {
+                    SelectDeviceBox.SelectedItem = data;
+                    break;
+                }
             }
         }
     }

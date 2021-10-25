@@ -1,5 +1,7 @@
-﻿using CommunityToolkit.WinUI.Helpers;
+﻿using AdvancedSharpAdbClient;
+using CommunityToolkit.WinUI.Helpers;
 using System.Text.Json;
+using System.Threading.Tasks;
 using Windows.Storage;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
@@ -10,12 +12,14 @@ namespace APKInstaller.Helpers
     {
         public const string IsOnlyWSA = "IsOnlyWSA";
         public const string IsFirstRun = "IsFirstRun";
+        public const string DefaultDevice = "DefaultDevice";
 
         public static Type Get<Type>(string key) => LocalObject.Read<Type>(key);
         public static void Set(string key, object value) => LocalObject.Save(key, value);
         public static void SetFile(string key, object value) => LocalObject.SaveFileAsync(key, value);
+        public static async Task<Type> GetFile<Type>(string key) => await LocalObject.ReadFileAsync<Type>(key);
 
-        public static void SetDefaultSettings()
+        public static async void SetDefaultSettings()
         {
             if (!LocalObject.KeyExists(IsOnlyWSA))
             {
@@ -24,6 +28,10 @@ namespace APKInstaller.Helpers
             if (!LocalObject.KeyExists(IsFirstRun))
             {
                 LocalObject.Save(IsFirstRun, true);
+            }
+            if (!LocalObject.KeyExists(DefaultDevice))
+            {
+                await LocalObject.SaveFileAsync(DefaultDevice, new DeviceData());
             }
         }
     }
@@ -48,8 +56,8 @@ namespace APKInstaller.Helpers
 
     internal class SystemTextJsonSerializer : IObjectSerializer
     {
-        public T Deserialize<T>(object value) => JsonSerializer.Deserialize<T>(value as string);
-
         public object Serialize<T>(T value) => JsonSerializer.Serialize(value);
+
+        public T Deserialize<T>(object value) => JsonSerializer.Deserialize<T>((string)value);
     }
 }

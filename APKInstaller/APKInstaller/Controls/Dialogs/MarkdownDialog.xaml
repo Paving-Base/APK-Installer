@@ -11,6 +11,11 @@
         <converter:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
     </ContentDialog.Resources>
     <Grid>
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
         <ScrollViewer
             x:Name="MarkdownScrollViewer"
             Visibility="{x:Bind IsInitialized, Mode=OneWay}">
