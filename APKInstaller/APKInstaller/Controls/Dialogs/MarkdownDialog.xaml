@@ -7,6 +7,9 @@
     xmlns:converter="using:APKInstaller.Helpers.ValueConverters"
     xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
     mc:Ignorable="d">
+    <ContentDialog.Resources>
+        <converter:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+    </ContentDialog.Resources>
     <Grid>
         <ScrollViewer
             x:Name="MarkdownScrollViewer"
@@ -21,7 +24,7 @@
             x:Name="InitialLoadingUI"
             VerticalAlignment="Center"
             HorizontalAlignment="Center"
-            Visibility="{x:Bind IsInitialized, Mode=OneWay}">
+            Visibility="{x:Bind IsInitialized, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='!bool'}">
             <ProgressRing
                 Width="50"
                 Height="50"

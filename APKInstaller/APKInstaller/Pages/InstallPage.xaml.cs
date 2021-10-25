@@ -169,7 +169,7 @@ namespace APKInstaller.Pages
                 ApkInfo = new ApkInfo();
                 AppName.Text = "For proper functioning of the app, try to launch an Android app package or open a package.";
                 AppVersion.Visibility = AppPublisher.Visibility = AppCapabilities.Visibility = Visibility.Collapsed;
-                FilePickButton.Visibility = Visibility.Visible;
+                //FilePickButton.Visibility = Visibility.Visible;
             }
             IsInitialized = true;
         }
@@ -182,7 +182,7 @@ namespace APKInstaller.Pages
             InstallOutputTextBlock.Visibility =
             LaunchWhenReadyCheckbox.Visibility =
             MessagesToUserContainer.Visibility = Visibility.Collapsed;
-            FilePickButton.Visibility = Visibility.Collapsed;
+            //FilePickButton.Visibility = Visibility.Collapsed;
             ActionButton.IsEnabled =
             SecondaryActionButton.IsEnabled =
             CancelOperationButton.IsEnabled = true;
@@ -310,42 +310,42 @@ namespace APKInstaller.Pages
             }
         }
 
-        private async void FilePickButton_Click(object sender, RoutedEventArgs e)
-        {
-            FileOpenPicker ApkPicker = new FileOpenPicker();
-            ApkPicker.CommitButtonText = "Install";
-            ApkPicker.SuggestedStartLocation = PickerLocationId.Downloads;
-            ApkPicker.FileTypeFilter.Add(".apk");
-            // Get the current window's HWND by passing in the Window object
-            var hwnd = WinRT.Interop.WindowNative.GetWindowHandle(UIHelper.MainWindow);
+        //private async void FilePickButton_Click(object sender, RoutedEventArgs e)
+        //{
+        //    FileOpenPicker ApkPicker = new FileOpenPicker();
+        //    ApkPicker.CommitButtonText = "Install";
+        //    ApkPicker.SuggestedStartLocation = PickerLocationId.Downloads;
+        //    ApkPicker.FileTypeFilter.Add(".apk");
+        //    // Get the current window's HWND by passing in the Window object
+        //    var hwnd = WinRT.Interop.WindowNative.GetWindowHandle(UIHelper.MainWindow);
 
-            // Associate the HWND with the file picker
-            WinRT.Interop.InitializeWithWindow.Initialize(ApkPicker, hwnd);
-            StorageFile ApkFile = await ApkPicker.PickSingleFileAsync();
-            path = ApkFile.Path;
-            InitilizeUI();
-        }
+        //    // Associate the HWND with the file picker
+        //    WinRT.Interop.InitializeWithWindow.Initialize(ApkPicker, hwnd);
+        //    StorageFile ApkFile = await ApkPicker.PickSingleFileAsync();
+        //    path = ApkFile.Path;
+        //    InitilizeUI();
+        //}
 
-        private void FilePickButton_DragOver(object sender, DragEventArgs e)
-        {
-            e.AcceptedOperation = DataPackageOperation.Copy;
-        }
+        //private void FilePickButton_DragOver(object sender, DragEventArgs e)
+        //{
+        //    e.AcceptedOperation = DataPackageOperation.Copy;
+        //}
 
-        private async void FilePickButton_Drop(object sender, DragEventArgs e)
-        {
-            if (e.DataView.Contains(StandardDataFormats.StorageItems))
-            {
-                var items = await e.DataView.GetStorageItemsAsync();
-                if(items.First() is StorageFile)
-                {
-                    StorageFile ApkFile = (StorageFile)items.First();
-                    if(ApkFile.FileType.ToLower() == ".apk")
-                    {
-                        path = ApkFile.Path;
-                        InitilizeUI();
-                    }
-                }
-            }
-        }
+        //private async void FilePickButton_Drop(object sender, DragEventArgs e)
+        //{
+        //    if (e.DataView.Contains(StandardDataFormats.StorageItems))
+        //    {
+        //        var items = await e.DataView.GetStorageItemsAsync();
+        //        if(items.First() is StorageFile)
+        //        {
+        //            StorageFile ApkFile = (StorageFile)items.First();
+        //            if(ApkFile.FileType.ToLower() == ".apk")
+        //            {
+        //                path = ApkFile.Path;
+        //                InitilizeUI();
+        //            }
+        //        }
+        //    }
+        //}
     }
 }
