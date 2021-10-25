@@ -30,7 +30,7 @@ namespace APKInstaller.Pages.SettingsPages
             {
                 deviceList = value;
                 RaisePropertyChangedEvent();
-                ChooseDevice();
+                if (!IsOnlyWSA) { ChooseDevice(); }
             }
         }
 
@@ -42,6 +42,8 @@ namespace APKInstaller.Pages.SettingsPages
             {
                 SettingsHelper.Set(SettingsHelper.IsOnlyWSA, value);
                 isOnlyWSA = SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
+                SelectDeviceBox.SelectionMode = value ? ListViewSelectionMode.None : ListViewSelectionMode.Single;
+                if (!value) { ChooseDevice(); }
                 RaisePropertyChangedEvent();
             }
         }
@@ -73,6 +75,7 @@ namespace APKInstaller.Pages.SettingsPages
 #if DEBUG
             GoToTestPage.Visibility = Visibility.Visible;
 #endif
+            SelectDeviceBox.SelectionMode = IsOnlyWSA ? ListViewSelectionMode.None : ListViewSelectionMode.Single;
             ADBHelper.Monitor.DeviceChanged += OnDeviceChanged;
             DeviceList = new AdvancedAdbClient().GetDevices();
         }
@@ -137,13 +140,13 @@ namespace APKInstaller.Pages.SettingsPages
             object vs = (sender as ListView).SelectedItem;
             if (vs != null && vs is DeviceData device)
             {
-                SettingsHelper.SetFile(SettingsHelper.DefaultDevice, device);
+                SettingsHelper.Set(SettingsHelper.DefaultDevice, device);
             }
         }
 
-        private async void ChooseDevice()
+        private void ChooseDevice()
         {
-            DeviceData device = await SettingsHelper.GetFile<DeviceData>(SettingsHelper.DefaultDevice);
+            DeviceData device = SettingsHelper.Get<DeviceData>(SettingsHelper.DefaultDevice);
             foreach(DeviceData data in DeviceList)
             {
                 if(data.Name == device.Name && data.Model == device.Model && data.Product == device.Product)

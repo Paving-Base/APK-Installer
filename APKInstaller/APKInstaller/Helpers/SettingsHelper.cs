@@ -19,7 +19,7 @@ namespace APKInstaller.Helpers
         public static void SetFile(string key, object value) => LocalObject.SaveFileAsync(key, value);
         public static async Task<Type> GetFile<Type>(string key) => await LocalObject.ReadFileAsync<Type>(key);
 
-        public static async void SetDefaultSettings()
+        public static void SetDefaultSettings()
         {
             if (!LocalObject.KeyExists(IsOnlyWSA))
             {
@@ -31,7 +31,7 @@ namespace APKInstaller.Helpers
             }
             if (!LocalObject.KeyExists(DefaultDevice))
             {
-                await LocalObject.SaveFileAsync(DefaultDevice, new DeviceData());
+                LocalObject.Save(DefaultDevice, new DeviceData());
             }
         }
     }

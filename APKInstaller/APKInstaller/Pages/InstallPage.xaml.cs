@@ -31,6 +31,7 @@ namespace APKInstaller.Pages
     public sealed partial class InstallPage : Page, INotifyPropertyChanged
     {
         private string path = @"C:\Users\qq251\Downloads\Programs\Coolapk-11.4.3-2110131-coolapk-app-sign.apk";
+        private bool wsaonly => SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
         private DeviceData device;
 
         private ApkInfo _apkInfo = null;
@@ -188,29 +189,41 @@ namespace APKInstaller.Pages
             CancelOperationButton.IsEnabled = true;
         }
 
-        private void ShowError(string message)
-        {
-            ResetUI();
-            ApkInfo = new ApkInfo();
-            TextOutput.Text = message;
-            AppName.Text = "Cannot open app package";
-            TextOutputScrollViewer.Visibility = InstallOutputTextBlock.Visibility = Visibility.Visible;
-            AppVersion.Visibility = AppPublisher.Visibility = AppCapabilities.Visibility = Visibility.Collapsed;
-        }
+        //private void ShowError(string message)
+        //{
+        //    ResetUI();
+        //    ApkInfo = new ApkInfo();
+        //    TextOutput.Text = message;
+        //    AppName.Text = "Cannot open app package";
+        //    TextOutputScrollViewer.Visibility = InstallOutputTextBlock.Visibility = Visibility.Visible;
+        //    AppVersion.Visibility = AppPublisher.Visibility = AppCapabilities.Visibility = Visibility.Collapsed;
+        //}
 
         private bool CheckDevice()
         {
-            List<DeviceData> devices = new AdvancedAdbClient().GetDevices();
-            AdvancedAdbClient client = new();
+            AdvancedAdbClient client = new AdvancedAdbClient();
+            List<DeviceData> devices = client.GetDevices();
             ConsoleOutputReceiver receiver = new ConsoleOutputReceiver();
             if (devices.Count <= 0) { return false; }
             foreach (DeviceData device in devices)
             {
-                client.ExecuteRemoteCommand("getprop ro.product.odm.brand", device, receiver);
-                if (receiver.ToString().Contains("Windows"))
+                if (wsaonly)
                 {
-                    this.device = device ?? this.device;
-                    return true;
+                    client.ExecuteRemoteCommand("getprop ro.product.odm.brand", device, receiver);
+                    if (receiver.ToString().Contains("Windows"))
+                    {
+                        this.device = device ?? this.device;
+                        return true;
+                    }
+                }
+                else
+                {
+                    DeviceData data = SettingsHelper.Get<DeviceData>(SettingsHelper.DefaultDevice);
+                    if (data.Name == device.Name && data.Model == device.Model && data.Product == device.Product)
+                    {
+                        this.device = data;
+                        return true;
+                    }
                 }
             }
             return false;
