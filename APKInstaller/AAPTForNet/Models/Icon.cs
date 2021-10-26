@@ -56,7 +56,7 @@ namespace AAPTForNet.Models {
         internal Icon() => throw new NotImplementedException();
 
         internal Icon(string iconName) {
-            this.IconName = iconName;
+            this.IconName = iconName ?? string.Empty;
             this.RealPath = $@"{AppDomain.CurrentDomain.BaseDirectory}\256x256.png";
         }
 

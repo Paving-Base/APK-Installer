@@ -19,6 +19,7 @@ using Windows.ApplicationModel.Activation;
 using Windows.ApplicationModel.DataTransfer;
 using Windows.Storage;
 using Windows.Storage.Pickers;
+using System.IO;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -30,7 +31,7 @@ namespace APKInstaller.Pages
     /// </summary>
     public sealed partial class InstallPage : Page, INotifyPropertyChanged
     {
-        private string path = @"C:\Users\qq251\Downloads\Programs\Coolapk-11.4.3-2110131-coolapk-app-sign.apk";
+        private string path = @"C:\Users\qq251\Downloads\Programs\MT管理器_2.10.0.apk";
         private bool wsaonly => SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
         private DeviceData device;
 
@@ -90,14 +91,21 @@ namespace APKInstaller.Pages
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            IActivatedEventArgs args = AppInstance.GetActivatedEventArgs();
-            switch (args.Kind)
+            if (e.Parameter is StorageFile ApkFile)
             {
-                case ActivationKind.File:
-                    path = (args as IFileActivatedEventArgs).Files.First().Path;
-                    break;
-                default:
-                    break;
+                path = ApkFile.Path;
+            }
+            else
+            {
+                IActivatedEventArgs args = AppInstance.GetActivatedEventArgs();
+                switch (args.Kind)
+                {
+                    case ActivationKind.File:
+                        path = (args as IFileActivatedEventArgs).Files.First().Path;
+                        break;
+                    default:
+                        break;
+                }
             }
         }
 
@@ -122,10 +130,8 @@ namespace APKInstaller.Pages
             }
         }
 
-        private void InitialLoadingUI_Loaded(object sender, RoutedEventArgs e)
-        {
-            InitilizeUI();
-        }
+        private void InitialLoadingUI_Loaded(object sender, RoutedEventArgs e) => InitilizeUI();
+
         private async void InitilizeUI()
         {
             if (!string.IsNullOrEmpty(path))
@@ -139,28 +145,35 @@ namespace APKInstaller.Pages
                 });
                 WaitProgressText.Text = "Loading...";
                 ApkInfo = await Task.Run(() => { return AAPTool.Decompile(path); });
-                WaitProgressText.Text = "Checking...";
-                if (CheckDevice() && device != null)
+                if (string.IsNullOrEmpty(ApkInfo.PackageName))
                 {
-                    CheckAPK();
+                    PackageError("The package is either corrupted or invalid.");
                 }
                 else
                 {
-                    ResetUI();
-                    ActionButton.IsEnabled = false;
-                    ActionButtonText.Text = "Install";
-                    InfoMessageTextBlock.Text = "Waiting for Device...";
-                    AppName.Text = $"Waiting for install {ApkInfo.AppName}";
-                    ActionButton.Visibility = MessagesToUserContainer.Visibility = Visibility.Visible;
-                    ContentDialog dialog = new MarkdownDialog()
+                    WaitProgressText.Text = "Checking...";
+                    if (CheckDevice() && device != null)
                     {
-                        XamlRoot = XamlRoot,
-                        CloseButtonText = "I Know",
-                        Title = "How to connect WSA?",
-                        DefaultButton = ContentDialogButton.Close,
-                        ContentUrl = "https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Helpers/How%20To%20Connect%20WSA/How%20To%20Connect%20WSA.md",
-                    };
-                    _ = dialog.ShowAsync();
+                        CheckAPK();
+                    }
+                    else
+                    {
+                        ResetUI();
+                        ActionButton.IsEnabled = false;
+                        ActionButtonText.Text = "Install";
+                        InfoMessageTextBlock.Text = "Waiting for Device...";
+                        AppName.Text = $"Waiting for install {ApkInfo.AppName}";
+                        ActionButton.Visibility = MessagesToUserContainer.Visibility = Visibility.Visible;
+                        ContentDialog dialog = new MarkdownDialog()
+                        {
+                            XamlRoot = XamlRoot,
+                            CloseButtonText = "I Know",
+                            Title = "How to connect WSA?",
+                            DefaultButton = ContentDialogButton.Close,
+                            ContentUrl = "https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Helpers/How%20To%20Connect%20WSA/How%20To%20Connect%20WSA.md",
+                        };
+                        _ = dialog.ShowAsync();
+                    }
                 }
                 WaitProgressText.Text = "Finished";
             }
@@ -170,7 +183,6 @@ namespace APKInstaller.Pages
                 ApkInfo = new ApkInfo();
                 AppName.Text = "For proper functioning of the app, try to launch an Android app package or open a package.";
                 AppVersion.Visibility = AppPublisher.Visibility = AppCapabilities.Visibility = Visibility.Collapsed;
-                //FilePickButton.Visibility = Visibility.Visible;
             }
             IsInitialized = true;
         }
@@ -183,21 +195,20 @@ namespace APKInstaller.Pages
             InstallOutputTextBlock.Visibility =
             LaunchWhenReadyCheckbox.Visibility =
             MessagesToUserContainer.Visibility = Visibility.Collapsed;
-            //FilePickButton.Visibility = Visibility.Collapsed;
             ActionButton.IsEnabled =
             SecondaryActionButton.IsEnabled =
             CancelOperationButton.IsEnabled = true;
         }
 
-        //private void ShowError(string message)
-        //{
-        //    ResetUI();
-        //    ApkInfo = new ApkInfo();
-        //    TextOutput.Text = message;
-        //    AppName.Text = "Cannot open app package";
-        //    TextOutputScrollViewer.Visibility = InstallOutputTextBlock.Visibility = Visibility.Visible;
-        //    AppVersion.Visibility = AppPublisher.Visibility = AppCapabilities.Visibility = Visibility.Collapsed;
-        //}
+        private void PackageError(string message)
+        {
+            ResetUI();
+            ApkInfo = new ApkInfo();
+            TextOutput.Text = message;
+            AppName.Text = "Cannot open app package";
+            TextOutputScrollViewer.Visibility = InstallOutputTextBlock.Visibility = Visibility.Visible;
+            AppVersion.Visibility = AppPublisher.Visibility = AppCapabilities.Visibility = Visibility.Collapsed;
+        }
 
         private bool CheckDevice()
         {
@@ -300,7 +311,7 @@ namespace APKInstaller.Pages
                 ActionButton.Visibility = SecondaryActionButton.Visibility = TextOutputScrollViewer.Visibility = InstallOutputTextBlock.Visibility = Visibility.Collapsed;
                 await Task.Run(() =>
                 {
-                    new PackageManager(new AdvancedAdbClient(), device).InstallPackage(path, true);
+                    new AdvancedAdbClient().Install(device, File.Open(path, FileMode.Open, FileAccess.Read));
                 });
                 if (IsOpenApp)
                 {
@@ -315,50 +326,13 @@ namespace APKInstaller.Pages
                 SecondaryActionButton.Visibility = Visibility.Visible;
                 CancelOperationButton.Visibility = LaunchWhenReadyCheckbox.Visibility = Visibility.Collapsed;
             }
-            catch (AdbException ex)
+            catch (Exception ex)
             {
+                IsInstalling = false;
                 TextOutput.Text = ex.Message;
                 TextOutputScrollViewer.Visibility = InstallOutputTextBlock.Visibility = Visibility.Visible;
-                ActionButton.Visibility = SecondaryActionButton.Visibility = CancelOperationButton.Visibility = Visibility.Collapsed;
+                ActionButton.Visibility = SecondaryActionButton.Visibility = CancelOperationButton.Visibility = LaunchWhenReadyCheckbox.Visibility = Visibility.Collapsed;
             }
         }
-
-        //private async void FilePickButton_Click(object sender, RoutedEventArgs e)
-        //{
-        //    FileOpenPicker ApkPicker = new FileOpenPicker();
-        //    ApkPicker.CommitButtonText = "Install";
-        //    ApkPicker.SuggestedStartLocation = PickerLocationId.Downloads;
-        //    ApkPicker.FileTypeFilter.Add(".apk");
-        //    // Get the current window's HWND by passing in the Window object
-        //    var hwnd = WinRT.Interop.WindowNative.GetWindowHandle(UIHelper.MainWindow);
-
-        //    // Associate the HWND with the file picker
-        //    WinRT.Interop.InitializeWithWindow.Initialize(ApkPicker, hwnd);
-        //    StorageFile ApkFile = await ApkPicker.PickSingleFileAsync();
-        //    path = ApkFile.Path;
-        //    InitilizeUI();
-        //}
-
-        //private void FilePickButton_DragOver(object sender, DragEventArgs e)
-        //{
-        //    e.AcceptedOperation = DataPackageOperation.Copy;
-        //}
-
-        //private async void FilePickButton_Drop(object sender, DragEventArgs e)
-        //{
-        //    if (e.DataView.Contains(StandardDataFormats.StorageItems))
-        //    {
-        //        var items = await e.DataView.GetStorageItemsAsync();
-        //        if(items.First() is StorageFile)
-        //        {
-        //            StorageFile ApkFile = (StorageFile)items.First();
-        //            if(ApkFile.FileType.ToLower() == ".apk")
-        //            {
-        //                path = ApkFile.Path;
-        //                InitilizeUI();
-        //            }
-        //        }
-        //    }
-        //}
     }
 }
