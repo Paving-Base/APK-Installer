@@ -9,6 +9,12 @@
     <RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
     <UseWinUI>true</UseWinUI>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="platform-tools\**" />
+    <EmbeddedResource Remove="platform-tools\**" />
+    <None Remove="platform-tools\**" />
+    <Page Remove="platform-tools\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AdvancedSharpAdbClient" Version="2.5.1" />
@@ -19,58 +25,12 @@
     <PackageReference Include="Microsoft.ProjectReunion.Foundation" Version="0.8.5" />
     <PackageReference Include="Microsoft.ProjectReunion.WinUI" Version="0.8.5" />
     <PackageReference Include="PInvoke.User32" Version="0.7.104" />
+    <PackageReference Include="PortableDownloader" Version="1.2.24" />
+    <PackageReference Include="SharpCompress" Version="0.30.0" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\AAPTForNet\AAPTForNet.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="platform-tools\adb.exe">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="platform-tools\AdbWinApi.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="platform-tools\AdbWinUsbApi.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="platform-tools\dmtracedump.exe">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="platform-tools\etc1tool.exe">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="platform-tools\fastboot.exe">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="platform-tools\hprof-conv.exe">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="platform-tools\libwinpthread-1.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="platform-tools\make_f2fs.exe">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="platform-tools\make_f2fs_casefold.exe">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="platform-tools\mke2fs.conf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="platform-tools\mke2fs.exe">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="platform-tools\NOTICE.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="platform-tools\source.properties">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="platform-tools\sqlite3.exe">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
 </Project>

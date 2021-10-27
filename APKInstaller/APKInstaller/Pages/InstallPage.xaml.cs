@@ -1,25 +1,26 @@
 ﻿using AAPTForNet;
 using AAPTForNet.Models;
-using APKInstaller.Controls.Dialogs;
 using AdvancedSharpAdbClient;
 using AdvancedSharpAdbClient.DeviceCommands;
-using AdvancedSharpAdbClient.Exceptions;
+using APKInstaller.Controls.Dialogs;
 using APKInstaller.Helpers;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
+using PortableDownloader;
+using SharpCompress.Archives;
+using SharpCompress.Common;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Net;
+using System.Threading;
 using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
-using Windows.ApplicationModel.DataTransfer;
 using Windows.Storage;
-using Windows.Storage.Pickers;
-using System.IO;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -117,11 +118,14 @@ namespace APKInstaller.Pages
 
         private void OnDeviceChanged(object sender, DeviceDataEventArgs e)
         {
+            if (SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA))
+            {
+                new AdvancedAdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
+            }
             if (!IsInstalling)
             {
                 DispatcherQueue.TryEnqueue(() =>
                 {
-                    new AdvancedAdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
                     if (CheckDevice() && device != null)
                     {
                         CheckAPK();
@@ -130,19 +134,44 @@ namespace APKInstaller.Pages
             }
         }
 
-        private void InitialLoadingUI_Loaded(object sender, RoutedEventArgs e) => InitilizeUI();
-
-        private async void InitilizeUI()
+        private async void InitialLoadingUI_Loaded(object sender, RoutedEventArgs e)
         {
+            await InitilizeADB();
+            await InitilizeUI();
+        }
+
+        private async Task InitilizeADB()
+        {
+            WaitProgressText.Text = "Checking ADB...";
+            await CheckADB();
             if (!string.IsNullOrEmpty(path))
             {
                 WaitProgressText.Text = "Starting ADB Server...";
+                try
+                {
+                    await Task.Run(() => new AdbServer().StartServer(Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe"), restartServerIfNewer: false));
+                }
+                catch
+                {
+                    await CheckADB(true);
+                    WaitProgressText.Text = "Starting ADB Server...";
+                    await Task.Run(() => new AdbServer().StartServer(Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe"), restartServerIfNewer: false));
+                }
                 await Task.Run(() =>
                 {
-                    new AdbServer().StartServer($@"{AppDomain.CurrentDomain.BaseDirectory}\platform-tools\adb.exe", restartServerIfNewer: false);
-                    new AdvancedAdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
+                    if (SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA))
+                    {
+                        new AdvancedAdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
+                    }
                     ADBHelper.Monitor.DeviceChanged += OnDeviceChanged;
                 });
+            }
+        }
+
+        private async Task InitilizeUI()
+        {
+            if (!string.IsNullOrEmpty(path))
+            {
                 WaitProgressText.Text = "Loading...";
                 ApkInfo = await Task.Run(() => { return AAPTool.Decompile(path); });
                 if (string.IsNullOrEmpty(ApkInfo.PackageName))
@@ -164,15 +193,18 @@ namespace APKInstaller.Pages
                         InfoMessageTextBlock.Text = "Waiting for Device...";
                         AppName.Text = $"Waiting for install {ApkInfo.AppName}";
                         ActionButton.Visibility = MessagesToUserContainer.Visibility = Visibility.Visible;
-                        ContentDialog dialog = new MarkdownDialog()
+                        if (SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA))
                         {
-                            XamlRoot = XamlRoot,
-                            CloseButtonText = "I Know",
-                            Title = "How to connect WSA?",
-                            DefaultButton = ContentDialogButton.Close,
-                            ContentUrl = "https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Helpers/How%20To%20Connect%20WSA/How%20To%20Connect%20WSA.md",
-                        };
-                        _ = dialog.ShowAsync();
+                            ContentDialog dialog = new MarkdownDialog()
+                            {
+                                XamlRoot = XamlRoot,
+                                CloseButtonText = "I Know",
+                                Title = "How to connect WSA?",
+                                DefaultButton = ContentDialogButton.Close,
+                                ContentUrl = "https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Helpers/How%20To%20Connect%20WSA/How%20To%20Connect%20WSA.md",
+                            };
+                            _ = dialog.ShowAsync();
+                        }
                     }
                 }
                 WaitProgressText.Text = "Finished";
@@ -186,6 +218,99 @@ namespace APKInstaller.Pages
             }
             IsInitialized = true;
         }
+
+        private async Task CheckADB(bool force = false)
+        {
+            if (!force && File.Exists(Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe")))
+            {
+                WaitProgressText.Text = "ADB Exist";
+            }
+            else
+            {
+                StackPanel StackPanel = new StackPanel();
+                StackPanel.Children.Add(
+                    new TextBlock()
+                    {
+                        TextWrapping = TextWrapping.Wrap,
+                        Text = "ADB, the And roid Debug Bridge, is needed for APK Installer to work. Click OK to download it. By downloading, you accept the Google Terms and Conditions for ADB."
+                    });
+                StackPanel.Children.Add(
+                    new HyperlinkButton()
+                    {
+                        Content = "Click here to read them",
+                        NavigateUri = new Uri("https://developer.android.google.cn/studio/releases/platform-tools?hl=zh-cn")
+                    });
+                ContentDialog dialog = new ContentDialog()
+                {
+                    XamlRoot = XamlRoot,
+                    Title = "ADB is missing",
+                    PrimaryButtonText = "OK",
+                    CloseButtonText = "Cancel",
+                    Content = new ScrollViewer()
+                    {
+                        Content = StackPanel
+                    },
+                    DefaultButton = ContentDialogButton.Primary
+                };
+                ContentDialogResult result = await dialog.ShowAsync();
+                if (result == ContentDialogResult.Primary)
+                {
+                    await Task.Run(async () =>
+                    {
+                        using Downloader downloader = new Downloader(new DownloaderOptions()
+                        {
+                            Uri = new Uri("https://dl.google.com/android/repository/platform-tools-latest-windows.zip?hl=zh-cn"),
+                            Stream = File.OpenWrite(Path.Combine(ApplicationData.Current.LocalFolder.Path, "platform-tools.zip"))
+                        });
+                        _ = downloader.Start();
+                        while (downloader.TotalSize <= 0 && downloader.IsStarted)
+                        {
+                            _ = DispatcherQueue.TryEnqueue(() => WaitProgressText.Text = "Wait for download...");
+                            await Task.Delay(500);
+                        }
+                        _ = DispatcherQueue.TryEnqueue(() => WaitProgressRing.IsIndeterminate = false);
+                        while (downloader.IsStarted)
+                        {
+                            _ = DispatcherQueue.TryEnqueue(() =>
+                              {
+                                  WaitProgressText.Text = $"{((double)downloader.BytesPerSecond).GetSizeString()}/s";
+                                  WaitProgressRing.Value = (double)downloader.CurrentSize * 100 / downloader.TotalSize;
+                              });
+                            await Task.Delay(500);
+                        }
+                        _ = DispatcherQueue.TryEnqueue(() =>
+                          {
+                              WaitProgressText.Text = "Unzip ADB...";
+                              WaitProgressRing.IsIndeterminate = true;
+                          });
+                        IArchive archive = ArchiveFactory.Open(Path.Combine(ApplicationData.Current.LocalFolder.Path, "platform-tools.zip"));
+                        _ = DispatcherQueue.TryEnqueue(() => WaitProgressRing.IsIndeterminate = false);
+                        foreach (IArchiveEntry entry in archive.Entries)
+                        {
+                            _ = DispatcherQueue.TryEnqueue(() =>
+                            {
+                                WaitProgressRing.Value = (double)(archive.Entries.ToList().IndexOf(entry) + 1) * 100 / archive.Entries.Count();
+                                WaitProgressText.Text = $"Unzipping {archive.Entries.ToList().IndexOf(entry) + 1}/{archive.Entries.Count()} ...";
+                            });
+                            if (!entry.IsDirectory)
+                            {
+                                entry.WriteToDirectory(ApplicationData.Current.LocalFolder.Path, new ExtractionOptions() { ExtractFullPath = true, Overwrite = true });
+                            }
+                        }
+                        _ = DispatcherQueue.TryEnqueue(() =>
+                          {
+                              WaitProgressRing.IsIndeterminate = true;
+                              WaitProgressText.Text = "Unzip complete";
+                          });
+                    });
+                }
+                else
+                {
+                    Application.Current.Exit();
+                }
+            }
+        }
+
         private void ResetUI()
         {
             ActionButton.Visibility =
