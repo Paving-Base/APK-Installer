@@ -127,15 +127,15 @@
     <value>There was an error with the program…</value>
   </data>
   <data name="ImageLoadError" xml:space="preserve">
-    <value>Picture failed to load</value>
+    <value>이미지 불러오기 실패</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>Network exception</value>
+    <value>네트워크 오류</value>
   </data>
   <data name="No" xml:space="preserve">
-    <value>No</value>
+    <value>아니오</value>
   </data>
   <data name="Yes" xml:space="preserve">
-    <value>Yes</value>
+    <value>예</value>
   </data>
 </root>
