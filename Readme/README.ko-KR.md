@@ -23,13 +23,13 @@ Windows용 안드로이드 앱 설치 프로그램
     - [使用应用安装脚本安装应用](#使用应用安装脚本安装应用)
     - [使用应用安装程序安装应用](#使用应用安装程序安装应用)
     - [更新应用](#更新应用)
-  - [屏幕截图](#屏幕截图)
-  - [使用到的模块](#使用到的模块)
+  - [스크린샷](#屏幕截图)
+  - [사용된 모듈](#使用到的模块)
   - [鸣谢](#鸣谢)
-  - [Star 数量统计](#star-数量统计)
+  - [Github Star 통계](#star-数量统计)
 
-## 如何安装应用
-### 最低需求
+## APK Installer 설치 가이드
+### 시스템 최소 요구 사항
 - Windows 10 Build 17763及以上
 - 设备需支持ARM64/x86/x64
 - 至少400MB的空余储存空间(用于储存安装包与安装应用)
@@ -53,10 +53,10 @@ Windows용 안드로이드 앱 설치 프로그램
 - 下载并解压最新的[安装包`(APKInstaller (Package)_x.x.x.0_x86_x64_arm_arm64.appxbundle)`](https://github.com/Tangent-90/Coolapk-UWP/releases/latest "下载安装包")
 - 双击`*.appxbundle`，单击更新，坐和放宽 ![更新](Images/Guides/Snipaste_2019-10-13_16-01-09.png)
 
-## 屏幕截图
+## 스크린샷
 - 安装 ![安装](Images/Screenshots/Snipaste_2021-10-22_21-00-14.png)
 
-## 使用到的模块
+## 사용된 모듈
 - [WinUI](https://github.com/microsoft/microsoft-ui-xaml "WinUI")
 - [AAPTForNet](https://github.com/canheo136/QuickLook.Plugin.ApkViewer "AAPTForNet")
 - [Advanced Sharp Adb Client](https://github.com/yungd1plomat/AdvancedSharpAdbClient "Advanced Sharp Adb Client")
@@ -66,5 +66,5 @@ Windows용 안드로이드 앱 설치 프로그램
 - 所有为 APK Installer 做出贡献的同志们
 - **铺路尚未成功，同志仍需努力！**
 
-## Star 数量统计
+## Github Star 통계
 [![Star 数量统计](https://starchart.cc/Paving-Base/APK-Installer.svg)](https://starchart.cc/Paving-Base/APK-Installer "Star 数量统计")
