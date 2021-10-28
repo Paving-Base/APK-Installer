@@ -432,7 +432,7 @@ namespace APKInstaller.Pages
             {
                 IsInstalling = true;
                 CancelOperationButtonText.Text = "Cancel";
-                CancelOperationButton.Visibility = Visibility.Visible;
+                CancelOperationButton.Visibility = LaunchWhenReadyCheckbox.Visibility = Visibility.Visible;
                 ActionButton.Visibility = SecondaryActionButton.Visibility = TextOutputScrollViewer.Visibility = InstallOutputTextBlock.Visibility = Visibility.Collapsed;
                 await Task.Run(() =>
                 {

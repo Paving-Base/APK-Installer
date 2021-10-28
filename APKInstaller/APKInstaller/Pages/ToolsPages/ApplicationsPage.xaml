@@ -19,8 +19,16 @@
             CanUserSortColumns="True"
             AutoGenerateColumns="False"
             CanUserResizeColumns="True"
+            x:Name="ApplicationDataGrid"
             CanUserReorderColumns="True"
+            RightTapped="DataGrid_RightTapped"
             ItemsSource="{x:Bind Applications, Mode=OneWay}">
+            <FlyoutBase.AttachedFlyout>
+                <MenuFlyout x:Name="MenuFlyout">
+                    <MenuFlyoutItem x:Name="Actions" Click="MenuFlyoutItem_Click"/>
+                    <MenuFlyoutItem Text="Uninstall" Tag="Uninstall" Click="MenuFlyoutItem_Click"/>
+                </MenuFlyout>
+            </FlyoutBase.AttachedFlyout>
             <controls:DataGrid.Columns>
                 <controls:DataGridTextColumn
                     Tag="Name"

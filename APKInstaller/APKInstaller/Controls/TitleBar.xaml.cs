@@ -51,9 +51,22 @@ namespace APKInstaller.Controls
             { RefreshEvent?.Invoke(sender, e); }
         }
 
+        public void SetProgressValue(double value)
+        {
+            ProgressRing.Value = value;
+            if (ProgressRing.IsIndeterminate)
+            {
+                ProgressRing.IsIndeterminate = false;
+            }
+        }
+
         public void ShowProgressRing()
         {
             ProgressRing.IsActive = true;
+            if (!ProgressRing.IsIndeterminate)
+            {
+                ProgressRing.IsIndeterminate = true;
+            }
             ProgressRing.Visibility = Visibility.Visible;
         }
 

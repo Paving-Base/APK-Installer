@@ -116,9 +116,10 @@ namespace APKInstaller.Pages.ToolsPages
             List<APKInfo> Applications = new List<APKInfo>();
             AdvancedAdbClient client = new AdvancedAdbClient();
             PackageManager manager = new PackageManager(client, devices[index]);
-            foreach (var app in apps)
+            foreach (KeyValuePair<string, string> app in apps)
             {
-                if(!string.IsNullOrEmpty(app.Key))
+                _ = DispatcherQueue.TryEnqueue(() => TitleBar.SetProgressValue((double)apps.ToList().IndexOf(app) * 100 / apps.Count));
+                if (!string.IsNullOrEmpty(app.Key))
                 {
                     ConsoleOutputReceiver receiver = new ConsoleOutputReceiver();
                     client.ExecuteRemoteCommand($"pidof {app.Key}", devices[index], receiver);
@@ -164,6 +165,32 @@ namespace APKInstaller.Pages.ToolsPages
         }
 
         private async void TitleBar_RefreshEvent(object sender, RoutedEventArgs e) => await Refresh();
+
+        private void DataGrid_RightTapped(object sender, RightTappedRoutedEventArgs e)
+        {
+            if (ApplicationDataGrid.SelectedIndex != -1)
+            {
+                string Text = (ApplicationDataGrid.SelectedItem as APKInfo).IsActive ? "Stop" : "Start";
+                Actions.Tag = Text;
+                Actions.Text = Text;
+                MenuFlyout.ShowAt(sender as UIElement, e.GetPosition(sender as UIElement));
+            }
+        }
+
+        private void MenuFlyoutItem_Click(object sender, RoutedEventArgs e)
+        {
+            switch((sender as FrameworkElement).Tag)
+            {
+                case "Stop":
+                    new AdvancedAdbClient().StopApp(devices[DeviceComboBox.SelectedIndex], (ApplicationDataGrid.SelectedItem as APKInfo).Name);
+                    break;
+                case "Start":
+                    new AdvancedAdbClient().StartApp(devices[DeviceComboBox.SelectedIndex], (ApplicationDataGrid.SelectedItem as APKInfo).Name);
+                    break;
+                case "Uninstall":
+                    break;
+            }
+        }
     }
 
     internal class ApplicationConverter : IValueConverter

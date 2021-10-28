@@ -48,7 +48,7 @@
                     </StackPanel>
                 </controls:HeaderedContentControl>
                 <controls:HeaderedContentControl
-                    Header="Andorid Test"
+                    Header="Android Test"
                     Style="{StaticResource HeaderStyle}">
                     <StackPanel>
                         <StackPanel
