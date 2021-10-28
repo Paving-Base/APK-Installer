@@ -379,7 +379,7 @@ namespace APKInstaller.Pages
                 ContentDialog dialog = new MarkdownDialog()
                 {
                     XamlRoot = XamlRoot,
-                    ContentUrl = "https://cdn.jsdelivr.net/gh/Paving-Base/APK-Installer@screenshots/Helpers/How%20To%20Connect%20WSA.md",
+                    ContentUrl = "https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Helpers/How%20To%20Connect%20WSA/How%20To%20Connect%20WSA.md",
                 };
                 _ = dialog.ShowAsync();
                 return;

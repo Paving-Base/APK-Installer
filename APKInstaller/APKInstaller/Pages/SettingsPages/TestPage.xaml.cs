@@ -1,4 +1,5 @@
-﻿using Microsoft.UI.Xaml;
+﻿using APKInstaller.Pages.ToolsPages;
+using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
 using Microsoft.UI.Xaml.Data;
@@ -35,6 +36,12 @@ namespace APKInstaller.Pages.SettingsPages
                     break;
                 case "EnterPIP":
                     _ = ApplicationView.GetForCurrentView().TryEnterViewModeAsync(ApplicationViewMode.CompactOverlay);
+                    break;
+                case "Processes":
+                    _ = Frame.Navigate(typeof(ProcessesPage));
+                    break;
+                case "Applications":
+                    _ = Frame.Navigate(typeof(ApplicationsPage));
                     break;
                 default:
                     break;

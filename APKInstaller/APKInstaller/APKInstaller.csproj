@@ -15,10 +15,15 @@
     <None Remove="platform-tools\**" />
     <Page Remove="platform-tools\**" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="Pages\ToolsPages\ApplicationsPage.xaml" />
+    <None Remove="Pages\ToolsPages\ProcessesPage.xaml" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AdvancedSharpAdbClient" Version="2.5.1" />
     <PackageReference Include="CommunityToolkit.WinUI" Version="7.0.3" />
+    <PackageReference Include="CommunityToolkit.WinUI.UI.Controls.DataGrid" Version="7.0.3" />
     <PackageReference Include="CommunityToolkit.WinUI.UI.Controls.Layout" Version="7.0.3" />
     <PackageReference Include="CommunityToolkit.WinUI.UI.Controls.Markdown" Version="7.0.3" />
     <PackageReference Include="Microsoft.ProjectReunion" Version="0.8.5" />
@@ -32,5 +37,17 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AAPTForNet\AAPTForNet.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Pages\ToolsPages\ApplicationsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Pages\ToolsPages\ProcessesPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 </Project>
