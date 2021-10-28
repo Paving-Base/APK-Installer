@@ -1,7 +1,7 @@
 <img alt="APK Installer LOGO" src="./logo.png" width="200px" />
 
 # APK Installer
-An Android Application Installer for Windows
+Windows용 안드로이드 앱 설치 프로그램
 
 <a href="https://github.com/Paving-Base/APK-Installer/blob/master/LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/Paving-Base/APK-Installer.svg?label=License&style=flat-square"></a>
 <a href="https://github.com/Paving-Base/APK-Installer/issues"><img alt="GitHub" src="https://img.shields.io/github/issues/Paving-Base/APK-Installer.svg?label=Issues&style=flat-square"></a>
@@ -10,16 +10,16 @@ An Android Application Installer for Windows
 <a href="https://github.com/Paving-Base/APK-Installer/releases/latest"><img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/Paving-Base/APK-Installer/total.svg?label=DOWNLOAD&logo=github&style=for-the-badge"></a>
 <a href="https://pan.baidu.com/s/1AgAvyemIIDA3pLEYeiWR7g"><img alt="Baidu Netdisk" src="https://img.shields.io/badge/download-%e5%af%86%e7%a0%81%ef%bc%9aAPKI-magenta.svg?label=%e4%b8%8b%e8%bd%bd&logo=baidu&style=for-the-badge"></a>
 
-## 语言
+## 언어
  - [中文](README.md)
  - [English](README.en-US.md)
 
-## 目录
+## 목차
 - [APK Installer](#apk-installer)
-  - [语言](#语言)
-  - [目录](#目录)
-  - [如何安装应用](#如何安装应用)
-    - [最低需求](#最低需求)
+  - [언어](#语言)
+  - [목차](#目录)
+  - [APK Installer 설치 가이드](#如何安装应用)
+    - [시스템 최소 요구 사항](#最低需求)
     - [使用应用安装脚本安装应用](#使用应用安装脚本安装应用)
     - [使用应用安装程序安装应用](#使用应用安装程序安装应用)
     - [更新应用](#更新应用)
