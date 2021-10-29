@@ -1,3 +1,5 @@
+<img alt="APK Installer LOGO" src="https://raw.githubusercontent.com/Paving-Base/APK-Installer/main/logo.png" width="200px"/>
+
 # APK Installer
 An Android Application Installer for Windows
 
@@ -37,7 +39,7 @@ An Android Application Installer for Windows
 ### Install the app using the app installation script
 - Download and unzip the latest [installation package `(APKInstaller (Package)_x.x.x.0_Test.rar)`](https://github.com/Tangent-90/Coolapk-UWP/releases/latest "下载安装包")
 - If you do not have the app installation script, you can download [`Install.ps1`] into the target directory.
-![Install.ps1](Images/Guides/Snipaste_2019-10-12_22-49-11.png)
+![Install.ps1](https://raw.githubusercontent.com/Paving-Base/APK-Installer/main/Images/Guides/Snipaste_2019-10-12_22-49-11.png)
 - Right click on`Install.ps1`, and select 'Open with Powershell'.
 - The installation script will guide you through the rest of the process.
 
@@ -46,23 +48,23 @@ An Android Application Installer for Windows
 - [Turn on side loading mode](https://www.windowscentral.com/how-enable-windows-10-sideload-apps-outside-store)
   - If you want to develop UWP applications, you can turn on the [developer mode](https://docs.microsoft.com/zh-cn/windows/uwp/get-started/enable-your-device-for-development). **For most users who do not need to do UWP development, the developer mode is not necessary**
 - Install all packages under `Dependencies` folder
-![Dependencies](Images/Guides/Snipaste_2019-10-13_15-51-33.png)
+![Dependencies](https://raw.githubusercontent.com/Paving-Base/APK-Installer/main/Images/Guides/Snipaste_2019-10-13_15-51-33.png)
 - Install the certificate to `Local Machine` > `Place all certificates in the following store` > `Trusted Root CA`
   - This operation requires administrator privileges. If you did not use this privilege when installing the certificate, it may be because you installed the certificate to the wrong location or you are using a super administrator account
-  ![安装证书](Images/Guides/Snipaste_2019-10-12_22-46-37.png)
-  ![导入本地计算机](Images/Guides/Snipaste_2019-10-19_15-28-58.png)
-  ![储存到受信任的根证书颁发机构](Images/Guides/Snipaste_2019-10-20_23-36-44.png)
+  ![安装证书](https://raw.githubusercontent.com/Paving-Base/APK-Installer/main/Images/Guides/Snipaste_2019-10-12_22-46-37.png)
+  ![导入本地计算机](https://raw.githubusercontent.com/Paving-Base/APK-Installer/main/Images/Guides/Snipaste_2019-10-19_15-28-58.png)
+  ![储存到受信任的根证书颁发机构](https://raw.githubusercontent.com/Paving-Base/APK-Installer/main/Images/Guides/Snipaste_2019-10-20_23-36-44.png)
 - Double click`*.appxbundle`, then click and install. 
-![安装](Images/Guides/Snipaste_2019-10-13_12-42-40.png)
+![安装](https://raw.githubusercontent.com/Paving-Base/APK-Installer/main/Images/Guides/Snipaste_2019-10-13_12-42-40.png)
 
 ### Update the app
 - Download and unzip the latest installation package [`(APKInstaller (Package)_x.x.x.0_x86_x64_arm_arm64.appxbundle)`](https://github.com/Paving-Base/APK-Installer/releases/latest "下载安装包")
 - Double click `*.appxbundle`, click Update, **sit and relax**
-![安装](Images/Guides/Snipaste_2019-10-13_16-01-09.png)
+![安装](https://raw.githubusercontent.com/Paving-Base/APK-Installer/main/Images/Guides/Snipaste_2019-10-13_16-01-09.png)
 
 ## Screenshots
 - Install popup
-![安装](Images/Screenshots/Snipaste_2021-10-22_21-00-14.png)
+![安装](https://raw.githubusercontent.com/Paving-Base/APK-Installer/main/Images/Screenshots/Snipaste_2021-10-22_21-00-14.png)
 
 ## Modules used
 - [WinUI](https://github.com/microsoft/microsoft-ui-xaml "WinUI")
