@@ -47,7 +47,7 @@
     <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
     <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
     <GenerateTestArtifacts>True</GenerateTestArtifacts>
-    <AppxBundlePlatforms>x86</AppxBundlePlatforms>
+    <AppxBundlePlatforms>x86|x64|arm64</AppxBundlePlatforms>
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">

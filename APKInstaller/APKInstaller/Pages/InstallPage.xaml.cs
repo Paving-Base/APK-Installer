@@ -32,7 +32,7 @@ namespace APKInstaller.Pages
     /// </summary>
     public sealed partial class InstallPage : Page, INotifyPropertyChanged
     {
-        private string path = @"C:\Users\qq251\Downloads\Programs\MT管理器_2.10.0.apk";
+        private string path /*= @"C:\Users\qq251\Downloads\Programs\MT管理器_2.10.0.apk"*/;
         private bool wsaonly => SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
         private DeviceData device;
 
