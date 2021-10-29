@@ -72,9 +72,9 @@ namespace APKInstaller.Pages.SettingsPages
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-#if DEBUG
+//#if DEBUG
             GoToTestPage.Visibility = Visibility.Visible;
-#endif
+//#endif
             SelectDeviceBox.SelectionMode = IsOnlyWSA ? ListViewSelectionMode.None : ListViewSelectionMode.Single;
             ADBHelper.Monitor.DeviceChanged += OnDeviceChanged;
             DeviceList = new AdvancedAdbClient().GetDevices();

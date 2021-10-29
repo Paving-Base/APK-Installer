@@ -103,7 +103,7 @@ namespace APKInstaller.Pages.ToolsPages
                     DeviceComboBox.SelectedIndex = 0;
                 }
             }
-            else
+            else if (Processes != null)
             {
                 Processes = null;
             }

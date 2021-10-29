@@ -56,6 +56,7 @@
                 <ComboBox
                     x:Name="DeviceComboBox"
                     VerticalAlignment="Center"
+                    PlaceholderText="Waiting for Device..."
                     SelectionChanged="ComboBox_SelectionChanged"
                     ItemsSource="{x:Bind DeviceList, Mode=OneWay}"/>
             </Controls:TitleBar.RightAreaContent>

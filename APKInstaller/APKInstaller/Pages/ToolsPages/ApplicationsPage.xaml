@@ -26,7 +26,7 @@
             <FlyoutBase.AttachedFlyout>
                 <MenuFlyout x:Name="MenuFlyout">
                     <MenuFlyoutItem x:Name="Actions" Click="MenuFlyoutItem_Click"/>
-                    <MenuFlyoutItem Text="Uninstall" Tag="Uninstall" Click="MenuFlyoutItem_Click"/>
+                    <!--<MenuFlyoutItem Text="Uninstall" Tag="Uninstall" Click="MenuFlyoutItem_Click"/>-->
                 </MenuFlyout>
             </FlyoutBase.AttachedFlyout>
             <controls:DataGrid.Columns>
@@ -45,8 +45,8 @@
             </controls:DataGrid.Columns>
         </controls:DataGrid>
         <Controls:TitleBar
-            Title="Processes"
             x:Name="TitleBar"
+            Title="Applications"
             BackgroundVisibility="Visible"
             RefreshButtonVisibility="Visible"
             RefreshEvent="TitleBar_RefreshEvent"
@@ -56,6 +56,7 @@
                 <ComboBox
                     x:Name="DeviceComboBox"
                     VerticalAlignment="Center"
+                    PlaceholderText="Waiting for Device..."
                     SelectionChanged="ComboBox_SelectionChanged"
                     ItemsSource="{x:Bind DeviceList, Mode=OneWay}"/>
             </Controls:TitleBar.RightAreaContent>
