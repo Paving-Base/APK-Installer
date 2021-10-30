@@ -1,4 +1,5 @@
-﻿using APKInstaller.Helpers;
+﻿using AdvancedSharpAdbClient;
+using APKInstaller.Helpers;
 using APKInstaller.Pages;
 using Microsoft.UI.Xaml;
 
@@ -19,5 +20,7 @@ namespace APKInstaller
             MainPage MainPage = new();
             Content = MainPage;
         }
+
+        private void Window_Closed(object sender, WindowEventArgs args) => new AdvancedAdbClient().KillAdb();
     }
 }

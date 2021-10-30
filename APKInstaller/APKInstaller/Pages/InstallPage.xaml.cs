@@ -16,7 +16,6 @@ using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Net;
-using System.Threading;
 using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
@@ -32,7 +31,7 @@ namespace APKInstaller.Pages
     /// </summary>
     public sealed partial class InstallPage : Page, INotifyPropertyChanged
     {
-        private string path /*= @"C:\Users\qq251\Downloads\Programs\MT管理器_2.10.0.apk"*/;
+        private string path = @"C:\Users\qq251\Downloads\Programs\MT管理器_2.10.0.apk";
         private bool wsaonly => SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
         private DeviceData device;
 
@@ -118,7 +117,7 @@ namespace APKInstaller.Pages
 
         private void OnDeviceChanged(object sender, DeviceDataEventArgs e)
         {
-            if (SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA))
+            if (wsaonly)
             {
                 new AdvancedAdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
             }
@@ -157,14 +156,11 @@ namespace APKInstaller.Pages
                     WaitProgressText.Text = "Starting ADB Server...";
                     await Task.Run(() => new AdbServer().StartServer(Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe"), restartServerIfNewer: false));
                 }
-                await Task.Run(() =>
+                if (wsaonly)
                 {
-                    if (SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA))
-                    {
-                        new AdvancedAdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
-                    }
-                    ADBHelper.Monitor.DeviceChanged += OnDeviceChanged;
-                });
+                    new AdvancedAdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
+                }
+                ADBHelper.Monitor.DeviceChanged += OnDeviceChanged;
             }
         }
 
@@ -193,7 +189,7 @@ namespace APKInstaller.Pages
                         InfoMessageTextBlock.Text = "Waiting for Device...";
                         AppName.Text = $"Waiting for install {ApkInfo.AppName}";
                         ActionButton.Visibility = MessagesToUserContainer.Visibility = Visibility.Visible;
-                        if (SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA))
+                        if (wsaonly)
                         {
                             ContentDialog dialog = new MarkdownDialog()
                             {
@@ -343,6 +339,7 @@ namespace APKInstaller.Pages
             if (devices.Count <= 0) { return false; }
             foreach (DeviceData device in devices)
             {
+                if(device == null) { continue; }
                 if (wsaonly)
                 {
                     client.ExecuteRemoteCommand("getprop ro.product.odm.brand", device, receiver);
