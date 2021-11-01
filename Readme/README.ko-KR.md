@@ -22,7 +22,7 @@ Windows용 안드로이드 앱 설치 프로그램
   - [목차](#目录)
   - [APK Installer 설치 가이드](#如何安装应用)
     - [시스템 최소 요구 사항](#最低需求)
-    - [使用应用安装脚本安装应用](#使用应用安装脚本安装应用)
+    - [설치 스크립트로 APK Installer 설치하기](#使用应用安装脚本安装应用)
     - [使用应用安装程序安装应用](#使用应用安装程序安装应用)
     - [更新应用](#更新应用)
   - [스크린샷](#屏幕截图)
@@ -32,11 +32,11 @@ Windows용 안드로이드 앱 설치 프로그램
 
 ## APK Installer 설치 가이드
 ### 시스템 최소 요구 사항
-- Windows 10 Build 17763及以上
-- 设备需支持ARM64/x86/x64
-- 至少400MB的空余储存空间(用于储存安装包与安装应用)
+- Windows 10 빌드 17763 이상
+- ARM64/x86/x64 지원 기기
+- 400MB 이상의 여유 공간 (앱 및 설치 패키지 저장에 사용)
 
-### 使用应用安装脚本安装应用
+### 설치 스크립트로 APK Installer 설치하기
 - 下载并解压最新的[安装包`(APKInstaller (Package)_x.x.x.0_Test.rar)`](https://github.com/Tangent-90/Coolapk-UWP/releases/latest "下载安装包")
 - 如果没有应用安装脚本，下载[`Install.ps1`](Install.ps1)到目标目录 ![Install.ps1](https://raw.githubusercontent.com/Paving-Base/APK-Installer/main/Images/Guides/Snipaste_2019-10-12_22-49-11.png)
 - 右击`Install.ps1`，选择“使用PowerShell运行”
