@@ -56,8 +56,8 @@ namespace AAPTForNet.Models {
         internal Icon() => throw new NotImplementedException();
 
         internal Icon(string iconName) {
-            this.IconName = iconName;
-            this.RealPath = "ms-appx:/Assets/256x256.png";
+            this.IconName = iconName ?? string.Empty;
+            this.RealPath = $@"{AppDomain.CurrentDomain.BaseDirectory}\256x256.png";
         }
 
         public override string ToString() => this.IconName;

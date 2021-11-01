@@ -2,10 +2,6 @@
 using APKInstaller.Pages.SettingsPages;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using SharpAdbClient;
-using System;
-using System.ComponentModel;
-using System.Threading.Tasks;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -33,7 +29,7 @@ namespace APKInstaller.Pages
             switch ((sender as FrameworkElement).Name)
             {
                 case "AboutButton":
-                    _ = CoreAppFrame.Navigate(typeof(TestPage));
+                    _ = CoreAppFrame.Navigate(typeof(SettingsPage));
                     break;
                 default:
                     break;

@@ -1,9 +1,9 @@
-﻿using APKInstaller.Helpers;
+﻿using AdvancedSharpAdbClient;
+using APKInstaller.Helpers;
 using CommunityToolkit.WinUI.UI.Controls;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
-using SharpAdbClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,6 +30,21 @@ namespace APKInstaller.Pages.SettingsPages
             {
                 deviceList = value;
                 RaisePropertyChangedEvent();
+                if (!IsOnlyWSA) { ChooseDevice(); }
+            }
+        }
+
+        private bool isOnlyWSA = SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
+        internal bool IsOnlyWSA
+        {
+            get => isOnlyWSA;
+            set
+            {
+                SettingsHelper.Set(SettingsHelper.IsOnlyWSA, value);
+                isOnlyWSA = SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
+                SelectDeviceBox.SelectionMode = value ? ListViewSelectionMode.None : ListViewSelectionMode.Single;
+                if (!value) { ChooseDevice(); }
+                RaisePropertyChangedEvent();
             }
         }
 
@@ -40,7 +55,7 @@ namespace APKInstaller.Pages.SettingsPages
             if (name != null) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
         }
 
-        private const string IssuePath = "https://github.com/wherewhere";
+        private const string IssuePath = "https://github.com/Paving-Base/APK-Installer/issues";
 
         internal static string VersionTextBlockText
         {
@@ -58,11 +73,12 @@ namespace APKInstaller.Pages.SettingsPages
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-#if DEBUG
+//#if DEBUG
             GoToTestPage.Visibility = Visibility.Visible;
-#endif
+//#endif
+            SelectDeviceBox.SelectionMode = IsOnlyWSA ? ListViewSelectionMode.None : ListViewSelectionMode.Single;
             ADBHelper.Monitor.DeviceChanged += OnDeviceChanged;
-            DeviceList = new AdbClient().GetDevices();
+            DeviceList = new AdvancedAdbClient().GetDevices();
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
@@ -75,7 +91,7 @@ namespace APKInstaller.Pages.SettingsPages
         {
             _ = DispatcherQueue.TryEnqueue(() =>
             {
-                DeviceList = new AdbClient().GetDevices();
+                DeviceList = new AdvancedAdbClient().GetDevices();
             });
         }
 
@@ -109,7 +125,7 @@ namespace APKInstaller.Pages.SettingsPages
 
         private void MarkdownTextBlock_LinkClicked(object sender, LinkClickedEventArgs e)
         {
-            //_ = Launcher.LaunchUriAsync(new Uri(e.Link));
+            _ = Launcher.LaunchUriAsync(new Uri(e.Link));
         }
 
         private void TitleBar_BackRequested(object sender, RoutedEventArgs e)
@@ -117,6 +133,28 @@ namespace APKInstaller.Pages.SettingsPages
             if (Frame.CanGoBack)
             {
                 Frame.GoBack();
+            }
+        }
+
+        private void SelectDeviceBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            object vs = (sender as ListView).SelectedItem;
+            if (vs != null && vs is DeviceData device)
+            {
+                SettingsHelper.Set(SettingsHelper.DefaultDevice, device);
+            }
+        }
+
+        private void ChooseDevice()
+        {
+            DeviceData device = SettingsHelper.Get<DeviceData>(SettingsHelper.DefaultDevice);
+            foreach (DeviceData data in DeviceList)
+            {
+                if (data.Name == device.Name && data.Model == device.Model && data.Product == device.Product)
+                {
+                    SelectDeviceBox.SelectedItem = data;
+                    break;
+                }
             }
         }
     }

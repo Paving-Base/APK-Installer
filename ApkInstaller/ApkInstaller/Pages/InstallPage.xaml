@@ -4,7 +4,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:contorls="using:APKInstaller.Contorls"
+    xmlns:controls="using:APKInstaller.Controls"
     xmlns:converter="using:APKInstaller.Helpers.ValueConverters"
     xmlns:sys="using:System"
     mc:Ignorable="d">
@@ -12,12 +12,16 @@
         <converter:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
     </Page.Resources>
     <Grid>
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
         <Grid
             Margin="0,16,0,0"
             x:Name="CoreAppUI"
-            Visibility="{x:Bind IsInitialized, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='bool'}">
+            Visibility="{x:Bind IsInitialized, Mode=OneWay}">
             <Grid.RowDefinitions>
-                <RowDefinition Height="auto"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
@@ -27,12 +31,21 @@
                 x:Name="MainContentContainer">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
                 </Grid.ColumnDefinitions>
-                <StackPanel
+                <Grid
                     Grid.Column="0"
-                    x:Name="TopInformation">
+                    x:Name="TopInformation"
+                    VerticalAlignment="Stretch">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
                     <TextBlock
+                        Grid.Row="0"
                         FontSize="24"
                         x:Name="AppName"
                         TextWrapping="Wrap"
@@ -40,6 +53,7 @@
                         OpticalMarginAlignment="TrimSideBearings"
                         ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"/>
                     <StackPanel
+                        Grid.Row="1"
                         Visibility="Collapsed"
                         Orientation="Horizontal"
                         x:Name="AppSignatureInfoCotainer">
@@ -56,20 +70,23 @@
                     </StackPanel>
                     <TextBlock
                         MaxLines="2"
+                        Grid.Row="2"
                         x:Name="AppPublisher"
                         TextTrimming="CharacterEllipsis"
                         ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"
                         Text="{x:Bind sys:String.Format('Package Name: {0}', ApkInfo.PackageName), Mode=OneWay}"/>
                     <TextBlock
+                        Grid.Row="3"
                         x:Name="AppVersion"
                         ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"
                         Text="{x:Bind sys:String.Format('Version: {0}', ApkInfo.VersionName), Mode=OneWay}"/>
-                    <contorls:CapabilitiesInfoControl
+                    <controls:CapabilitiesInfoControl
+                        Grid.Row="4"
                         Margin="0,24,0,0"
                         x:Name="AppCapabilities"
                         HeadText="Capabilities: "
                         CapabilitiesList="{x:Bind ApkInfo.Permissions, Mode=OneWay}"/>
-                </StackPanel>
+                </Grid>
                 <Border
                     Width="90"
                     Height="90"
@@ -112,13 +129,6 @@
             </Grid>
             <Grid
                 Grid.Row="1"
-                Margin="24,0,24,0"
-                Visibility="Collapsed"
-                x:Name="OptionalAndRelatedPackagesContainer">
-
-            </Grid>
-            <Grid
-                Grid.Row="2"
                 Margin="24,0,24,24"
                 x:Name="BottomContentContainer">
                 <Grid.RowDefinitions>
@@ -229,6 +239,7 @@
                             Height="32"
                             TabIndex="1"
                             Margin="12,0,0,0"
+                            Click="Button_Click"
                             x:Name="SecondaryActionButton"
                             Style="{StaticResource AccentButtonStyle}">
                             <StackPanel>
@@ -249,6 +260,7 @@
                             Height="32"
                             TabIndex="1"
                             Margin="12,0,0,0"
+                            Click="Button_Click"
                             x:Name="CancelOperationButton"
                             Style="{StaticResource AccentButtonStyle}">
                             <StackPanel>
@@ -260,7 +272,6 @@
                     </StackPanel>
                     <CheckBox
                         Grid.Row="1"
-                        IsChecked="True"
                         Padding="8,5,0,0"
                         Margin="0,-26,0,0"
                         FocusVisualMargin="-7,-3"
@@ -271,6 +282,7 @@
                         VerticalContentAlignment="Top"
                         x:Name="LaunchWhenReadyCheckbox"
                         HorizontalContentAlignment="Left"
+                        IsChecked="{x:Bind IsOpenApp, Mode=TwoWay}"
                         ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Content}"/>
                     <StackPanel
                         Grid.Row="2"

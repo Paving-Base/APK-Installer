@@ -18,12 +18,14 @@ namespace APKInstaller.Helpers.ValueConverters
             {
                 switch (parameter)
                 {
+                    case "bool":
+                        return !(bool)value;
                     case "ScrollMode":
                         return (ScrollMode)value == ScrollMode.Disabled ? ScrollMode.Auto : ScrollMode.Disabled;
                     case "Visibility":
                         return (Visibility)value == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
                     default:
-                        return null;
+                        return value == null ? true : false;
                 }
             }
         }

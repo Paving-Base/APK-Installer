@@ -7,7 +7,7 @@
   IgnorableNamespaces="uap rescap">
 
   <Identity
-    Name="wherewhere.AndroidAppInstaller"
+    Name="wherewhere.APKInstaller.Preview"
     Publisher="CN=where"
     Version="0.0.1.0" />
 
@@ -50,19 +50,6 @@
           <uap:Rotation Preference="landscapeFlipped"/>
           <uap:Rotation Preference="portraitFlipped"/></uap:InitialRotationPreference>
       </uap:VisualElements>
-      <Extensions>
-        <uap:Extension Category="windows.fileTypeAssociation">
-          <uap:FileTypeAssociation Name="apk">
-            <uap:SupportedFileTypes>
-              <uap:FileType>.apk</uap:FileType>
-            </uap:SupportedFileTypes>
-            <uap:Logo>Assets\256x256.png</uap:Logo>
-            <uap:DisplayName>APK Package</uap:DisplayName>
-            <uap:InfoTip>Android Application Package</uap:InfoTip>
-            <uap:EditFlags OpenIsSafe="true"/>
-          </uap:FileTypeAssociation>
-        </uap:Extension>
-      </Extensions>
     </Application>
   </Applications>
 
