@@ -133,13 +133,6 @@
                             Grid.ColumnSpan="2"
                             FontSize="{ThemeResource ContentControlFontSize}"
                             Text="{x:Bind local:SettingsPage.VersionTextBlockText}"/>
-                        <controls:MarkdownTextBlock
-                            Margin="0,2"
-                            x:Uid="/MarkDown/about"
-                            Background="Transparent"
-                            HorizontalAlignment="Left"
-                            LinkClicked="MarkdownTextBlock_LinkClicked"
-                            FontSize="{x:Bind Path=GoToTestPage.FontSize, Mode=OneWay}"/>
                     </StackPanel>
                 </controls:HeaderedContentControl>
             </StackPanel>

@@ -8,6 +8,7 @@
     <Grid
         x:Name="TitleGrid"
         VerticalAlignment="Top"
+        Tapped="TitleGrid_Tapped"
         Height="{StaticResource PageTitleHeight}">
         <Grid.ChildrenTransitions>
             <TransitionCollection>
@@ -25,14 +26,8 @@
             Grid.ColumnSpan="5"
             x:Name="TitleBackground"
             VerticalAlignment="Stretch"
-            HorizontalAlignment="Stretch">
-            <Border.Background>
-                <AcrylicBrush
-                    TintOpacity="0.6"
-                    TintLuminosityOpacity="1"
-                    TintColor="{StaticResource SolidBackgroundFillColorBase}"
-                    FallbackColor="{StaticResource SolidBackgroundFillColorBase}"/>
-            </Border.Background>
+            HorizontalAlignment="Stretch"
+            Background="{StaticResource SolidBackgroundFillColorBase}">
         </Border>
         <Button
             Grid.Column="0"

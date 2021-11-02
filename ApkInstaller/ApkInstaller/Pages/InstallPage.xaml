@@ -194,6 +194,7 @@
                         <TextBlock
                             Margin="6,6,6,6"
                             x:Name="TextOutput"
+                            IsTextSelectionEnabled="True"
                             ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"/>
                     </ScrollViewer>
                 </Grid>

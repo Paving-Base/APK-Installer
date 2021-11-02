@@ -28,7 +28,7 @@
                 Padding="16,0"
                 Margin="{StaticResource StackPanelMargin}">
                 <controls:HeaderedContentControl
-                    Header="界面测试"
+                    Header="UI Test"
                     Style="{StaticResource HeaderStyle}">
                     <StackPanel>
                         <StackPanel
@@ -43,6 +43,26 @@
                                 Margin="2,0"
                                 Tag="OutPIP"
                                 Content="Exit"
+                                Click="Button_Click"/>
+                        </StackPanel>
+                    </StackPanel>
+                </controls:HeaderedContentControl>
+                <controls:HeaderedContentControl
+                    Header="Android Test"
+                    Style="{StaticResource HeaderStyle}">
+                    <StackPanel>
+                        <StackPanel
+                            Margin="0,2"
+                            Orientation="Horizontal">
+                            <Button
+                                Margin="0,0,2,0"
+                                Tag="Applications"
+                                Click="Button_Click"
+                                Content="Applications"/>
+                            <Button
+                                Margin="2,0"
+                                Tag="Processes"
+                                Content="Processes"
                                 Click="Button_Click"/>
                         </StackPanel>
                     </StackPanel>
