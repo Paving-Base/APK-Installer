@@ -342,8 +342,8 @@ namespace APKInstaller.Pages
                 if(device == null) { continue; }
                 if (wsaonly)
                 {
-                    client.ExecuteRemoteCommand("getprop ro.product.odm.brand", device, receiver);
-                    if (receiver.ToString().Contains("Windows"))
+                    client.ExecuteRemoteCommand("getprop ro.boot.hardware", device, receiver);
+                    if (receiver.ToString().Contains("windows"))
                     {
                         this.device = device ?? this.device;
                         return true;
