@@ -1,18 +1,8 @@
-﻿using APKInstaller.Pages.ToolsPages;
+﻿using APKInstaller.Helpers;
+using APKInstaller.Pages.ToolsPages;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Controls.Primitives;
-using Microsoft.UI.Xaml.Data;
-using Microsoft.UI.Xaml.Input;
-using Microsoft.UI.Xaml.Media;
-using Microsoft.UI.Xaml.Navigation;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
+using System.ComponentModel;
 using Windows.UI.ViewManagement;
 
 // To learn more about WinUI, the WinUI project structure,
@@ -23,8 +13,25 @@ namespace APKInstaller.Pages.SettingsPages
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class TestPage : Page
+    public sealed partial class TestPage : Page, INotifyPropertyChanged
     {
+        internal bool IsExtendsTitleBar
+        {
+            get => UIHelper.MainWindow.ExtendsContentIntoTitleBar;
+            set
+            {
+                UIHelper.MainWindow.ExtendsContentIntoTitleBar = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void RaisePropertyChangedEvent([System.Runtime.CompilerServices.CallerMemberName] string name = null)
+        {
+            if (name != null) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
+        }
+
         public TestPage() => InitializeComponent();
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -42,6 +49,12 @@ namespace APKInstaller.Pages.SettingsPages
                     break;
                 case "Applications":
                     _ = Frame.Navigate(typeof(ApplicationsPage));
+                    break;
+                case "ExtendsTitle":
+                    UIHelper.MainWindow.ExtendsContentIntoTitleBar = true;
+                    break;
+                case "NotExtendsTitle":
+                    UIHelper.MainWindow.ExtendsContentIntoTitleBar = false;
                     break;
                 default:
                     break;
