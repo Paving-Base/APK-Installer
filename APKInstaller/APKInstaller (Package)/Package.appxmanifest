@@ -9,7 +9,7 @@
   <Identity
     Name="wherewhere.AndroidAppInstaller"
     Publisher="CN=where"
-    Version="0.0.2.0" />
+    Version="0.0.3.0" />
 
   <Properties>
     <DisplayName>APK Installer</DisplayName>
