@@ -27,6 +27,9 @@
     <None Remove="Pages\ToolsPages\ApplicationsPage.xaml" />
     <None Remove="Pages\ToolsPages\ProcessesPage.xaml" />
   </ItemGroup>
+  <ItemGroup>
+    <Page Remove="Controls\Setting.xaml" />
+  </ItemGroup>
 
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -62,6 +65,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Controls\Setting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
     <Page Update="Pages\ToolsPages\ProcessesPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -69,6 +78,9 @@
 
   <ItemGroup>
     <Page Update="Pages\ToolsPages\ApplicationsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Themes\Generic.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>

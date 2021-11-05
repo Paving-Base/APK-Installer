@@ -39,34 +39,13 @@
                         SelectionChanged="SelectDeviceBox_SelectionChanged">
                         <ListView.ItemTemplate>
                             <DataTemplate x:DataType="sharpadbclient:DeviceData">
-                                <ListViewItem
-                                    Margin="-10,0"
-                                    MinHeight="40"
-                                    HorizontalAlignment="Stretch">
-                                    <Grid>
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="40"/>
-                                            <ColumnDefinition Width="*"/>
-                                        </Grid.ColumnDefinitions>
-                                        <SymbolIcon
-                                            Grid.Column="0"
-                                            Symbol="CellPhone"
-                                            HorizontalAlignment="Center"/>
-                                        <StackPanel
-                                            Grid.Column="1"
-                                            HorizontalAlignment="Left">
-                                            <TextBlock
-                                                FontSize="14"
-                                                FontWeight="Normal"
-                                                Text="{x:Bind Name}"/>
-                                            <TextBlock
-                                                FontSize="12"
-                                                FontWeight="Normal"
-                                                Text="{x:Bind State}"
-                                                Foreground="{ThemeResource SystemControlForegroundBaseMediumBrush}"/>
-                                        </StackPanel>
-                                    </Grid>
-                                </ListViewItem>
+                                <contorls:Setting
+                                    Header="{x:Bind Name}"
+                                    Description="{x:Bind State}">
+                                    <contorls:Setting.Icon>
+                                        <SymbolIcon Symbol="Phone"/>
+                                    </contorls:Setting.Icon>
+                                </contorls:Setting>
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
