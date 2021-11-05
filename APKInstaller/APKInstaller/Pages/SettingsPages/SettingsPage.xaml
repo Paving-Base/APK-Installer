@@ -80,6 +80,10 @@
                             FontWeight="Normal"
                             Content="Is Only for WSA?"
                             IsChecked="{x:Bind IsOnlyWSA, Mode=TwoWay}"/>
+                        <CheckBox
+                            FontWeight="Normal"
+                            Content="Is Close ADB when Closing Installer?"
+                            IsChecked="{x:Bind IsCloseADB, Mode=TwoWay}"/>
                     </StackPanel>
                 </controls:HeaderedContentControl>
                 <controls:HeaderedContentControl

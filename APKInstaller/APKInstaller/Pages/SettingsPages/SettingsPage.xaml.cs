@@ -48,6 +48,18 @@ namespace APKInstaller.Pages.SettingsPages
             }
         }
 
+        private bool isCloseADB = SettingsHelper.Get<bool>(SettingsHelper.IsCloseADB);
+        internal bool IsCloseADB
+        {
+            get => isCloseADB;
+            set
+            {
+                SettingsHelper.Set(SettingsHelper.IsCloseADB, value);
+                isCloseADB = SettingsHelper.Get<bool>(SettingsHelper.IsCloseADB);
+                RaisePropertyChangedEvent();
+            }
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void RaisePropertyChangedEvent([System.Runtime.CompilerServices.CallerMemberName] string name = null)

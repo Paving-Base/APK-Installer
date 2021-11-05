@@ -21,6 +21,12 @@ namespace APKInstaller
             Content = MainPage;
         }
 
-        private void Window_Closed(object sender, WindowEventArgs args) => new AdvancedAdbClient().KillAdb();
+        private void Window_Closed(object sender, WindowEventArgs args)
+        {
+            if (SettingsHelper.Get<bool>(SettingsHelper.IsCloseADB))
+            {
+                new AdvancedAdbClient().KillAdb();
+            }
+        }
     }
 }

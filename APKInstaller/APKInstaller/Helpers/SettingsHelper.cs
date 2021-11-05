@@ -13,6 +13,7 @@ namespace APKInstaller.Helpers
         public const string IsOpenApp = "IsOpenApp";
         public const string IsOnlyWSA = "IsOnlyWSA";
         public const string IsFirstRun = "IsFirstRun";
+        public const string IsCloseADB = "IsCloseADB";
         public const string DefaultDevice = "DefaultDevice";
 
         public static Type Get<Type>(string key) => LocalObject.Read<Type>(key);
@@ -33,6 +34,10 @@ namespace APKInstaller.Helpers
             if (!LocalObject.KeyExists(IsFirstRun))
             {
                 LocalObject.Save(IsFirstRun, true);
+            }
+            if (!LocalObject.KeyExists(IsCloseADB))
+            {
+                LocalObject.Save(IsCloseADB, false);
             }
             if (!LocalObject.KeyExists(DefaultDevice))
             {
