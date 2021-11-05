@@ -10,6 +10,7 @@ namespace APKInstaller.Helpers
 {
     internal static partial class SettingsHelper
     {
+        public const string IsOpenApp = "IsOpenApp";
         public const string IsOnlyWSA = "IsOnlyWSA";
         public const string IsFirstRun = "IsFirstRun";
         public const string DefaultDevice = "DefaultDevice";
@@ -21,6 +22,10 @@ namespace APKInstaller.Helpers
 
         public static void SetDefaultSettings()
         {
+            if (!LocalObject.KeyExists(IsOpenApp))
+            {
+                LocalObject.Save(IsOpenApp, true);
+            }
             if (!LocalObject.KeyExists(IsOnlyWSA))
             {
                 LocalObject.Save(IsOnlyWSA, OperatingSystemVersion.Build >= 22000);

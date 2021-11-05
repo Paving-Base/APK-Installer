@@ -46,13 +46,14 @@ namespace APKInstaller.Pages
             }
         }
 
-        private bool isOpenApp = true;
+        private bool isOpenApp = SettingsHelper.Get<bool>(SettingsHelper.IsOpenApp);
         internal bool IsOpenApp
         {
             get => isOpenApp;
             set
             {
-                isOpenApp = value;
+                SettingsHelper.Set(SettingsHelper.IsOpenApp, value);
+                isOpenApp = SettingsHelper.Get<bool>(SettingsHelper.IsOpenApp);
                 RaisePropertyChangedEvent();
             }
         }
@@ -169,7 +170,16 @@ namespace APKInstaller.Pages
             if (!string.IsNullOrEmpty(path))
             {
                 WaitProgressText.Text = "Loading...";
-                ApkInfo = await Task.Run(() => { return AAPTool.Decompile(path); });
+                try
+                {
+                    ApkInfo = await Task.Run(() => { return AAPTool.Decompile(path); });
+                }
+                catch (Exception ex)
+                {
+                    PackageError(ex.Message);
+                    IsInitialized = true;
+                    return;
+                }
                 if (string.IsNullOrEmpty(ApkInfo.PackageName))
                 {
                     PackageError("The package is either corrupted or invalid.");
@@ -339,7 +349,7 @@ namespace APKInstaller.Pages
             if (devices.Count <= 0) { return false; }
             foreach (DeviceData device in devices)
             {
-                if(device == null) { continue; }
+                if (device == null || device.State == DeviceState.Offline) { continue; }
                 if (wsaonly)
                 {
                     client.ExecuteRemoteCommand("getprop ro.boot.hardware", device, receiver);

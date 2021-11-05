@@ -31,6 +31,9 @@
                     Header="UI Test"
                     Style="{StaticResource HeaderStyle}">
                     <StackPanel>
+                        <ToggleSwitch
+                            Header="Extends Content Into TitleBar"
+                            IsOn="{x:Bind IsExtendsTitleBar, Mode=TwoWay}"/>
                         <StackPanel
                             Margin="0,2"
                             Orientation="Horizontal">
