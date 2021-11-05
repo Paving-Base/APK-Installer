@@ -12,6 +12,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Page.Resources>
         <converter:TrueToFalseConverter x:Key="TrueToFalseConverter"/>
+        <converter:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
     </Page.Resources>
     <Grid>
         <Grid.ChildrenTransitions>
@@ -27,19 +28,17 @@
                     Margin="0,-32,0,0"
                     x:Uid="/SettingsPage/DeviceSettingsHeader">
                     <ListView
-                        Margin="0,2"
+                        Margin="-12,0"
                         x:Name="SelectDeviceBox"
                         ItemsSource="{x:Bind DeviceList, Mode=OneWay}"
                         SelectionChanged="SelectDeviceBox_SelectionChanged">
                         <ListView.ItemTemplate>
                             <DataTemplate x:DataType="sharpadbclient:DeviceData">
                                 <contorls:Setting
-                                    Margin="-10,0"
+                                    Margin="0,0"
+                                    Icon="&#xE8ea;"
                                     Header="{x:Bind Name}"
                                     Description="{x:Bind State}">
-                                    <contorls:Setting.Icon>
-                                        <SymbolIcon Symbol="CellPhone"/>
-                                    </contorls:Setting.Icon>
                                 </contorls:Setting>
                             </DataTemplate>
                         </ListView.ItemTemplate>
@@ -50,6 +49,7 @@
                     Margin="0,-32,0,0">
                     <StackPanel>
                         <contorls:Setting
+                            Icon="&#xE975;"
                             Header="Is Only for WSA?"
                             Description="Disable it to conncet to other device.">
                             <contorls:Setting.ActionContent>
@@ -64,42 +64,42 @@
                     Margin="0,-32,0,0"
                     x:Uid="/SettingsPage/OthersSettingsHeader">
                     <StackPanel>
-                        <HyperlinkButton
-                            Margin="0,2"
-                            Tag="FeedBack"
-                            Click="Button_Click"
-                            x:Uid="/SettingsPage/FeedbackLink"/>
-                        <StackPanel
-                            Margin="0,2"
-                            Orientation="Horizontal">
-                            <Button
-                                Name="Reset"
-                                x:Uid="/SettingsPage/ResetSettings"
-                                Style="{StaticResource ButtonRevealStyle}">
-                                <Button.Flyout>
-                                    <Flyout>
-                                        <StackPanel>
-                                            <TextBlock
-                                            Margin="0,0,0,12"
-                                            x:Uid="/SettingsPage/ResetSettingsTitle"
-                                            Style="{ThemeResource BaseTextBlockStyle}"/>
-                                            <Button
-                                            Tag="Reset"
-                                            Click="Button_Click"
-                                            x:Uid="/SettingsPage/ResetSettingsConfirm"
-                                            Style="{StaticResource ButtonRevealStyle}"/>
-                                        </StackPanel>
-                                    </Flyout>
-                                </Button.Flyout>
-                            </Button>
-                            <Button
-                                Margin="4,0"
-                                Tag="TestPage"
-                                Click="Button_Click"
-                                x:Name="GoToTestPage"
-                                x:Uid="/SettingsPage/GoToTestPage"
-                                Style="{StaticResource ButtonRevealStyle}"/>
-                        </StackPanel>
+                        <contorls:Setting
+                            Icon="&#xE777;"
+                            Header="Reset to Default">
+                            <contorls:Setting.ActionContent>
+                                <Button
+                                    Name="Reset"
+                                    x:Uid="/SettingsPage/ResetSettings">
+                                    <Button.Flyout>
+                                        <Flyout>
+                                            <StackPanel>
+                                                <TextBlock
+                                                    Margin="0,0,0,12"
+                                                    x:Uid="/SettingsPage/ResetSettingsTitle"
+                                                    Style="{ThemeResource BaseTextBlockStyle}"/>
+                                                <Button
+                                                    Tag="Reset"
+                                                    Click="Button_Click"
+                                                    x:Uid="/SettingsPage/ResetSettingsConfirm"/>
+                                            </StackPanel>
+                                        </Flyout>
+                                    </Button.Flyout>
+                                </Button>
+                            </contorls:Setting.ActionContent>
+                        </contorls:Setting>
+                        <contorls:Setting
+                            Icon="&#xEc7a;"
+                            Header="Go to TestPage">
+                            <contorls:Setting.ActionContent>
+                                <Button
+                                    Margin="4,0"
+                                    Tag="TestPage"
+                                    Click="Button_Click"
+                                    x:Name="GoToTestPage"
+                                    x:Uid="/SettingsPage/GoToTestPage"/>
+                            </contorls:Setting.ActionContent>
+                        </contorls:Setting>
                     </StackPanel>
                 </contorls:SettingsGroup>
                 <contorls:SettingsGroup
@@ -115,10 +115,19 @@
                                     <Run Text="Last Checked" />
                                     <Run Text="2021/09/10" />
                                     </TextBlock>
-                                    <HyperlinkButton
+                                    <StackPanel
                                         Margin="0,2,0,0"
-                                        Content="Release notes"
-                                        NavigateUri="https://github.com/microsoft/PowerToys/releases/" />
+                                        Orientation="Horizontal">
+                                        <HyperlinkButton
+                                            Tag="FeedBack"
+                                            Margin="0,0,2,0"
+                                            Click="Button_Click"
+                                            x:Uid="/SettingsPage/FeedbackLink"/>
+                                        <HyperlinkButton
+                                            Margin="2,0"
+                                            Content="Release notes"
+                                            NavigateUri="https://github.com/Paving-Base/APK-Installer/releases/"/>
+                                    </StackPanel>
                                 </StackPanel>
                             </contorls:Setting.Description>
                             <contorls:Setting.ActionContent>
@@ -128,18 +137,28 @@
                                     VerticalAlignment="Center">
                                     <ProgressRing
                                         Width="24"
-                                        Height="24"/>
+                                        Height="24"
+                                        Visibility="{x:Bind CheckUpdate, Mode=OneWay}"/>
                                     <TextBlock
                                         FontWeight="SemiBold"
                                         VerticalAlignment="Center"
                                         Text="Checking For Updates"
+                                        Visibility="{x:Bind CheckUpdate, Mode=OneWay}"
                                         Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
                                     <Button
+                                        Tag="Update"
+                                        Click="Button_Click"
                                         Content="Check For Updates"
-                                        HorizontalAlignment="Right" />
+                                        HorizontalAlignment="Right"
+                                        Visibility="{x:Bind CheckUpdate, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='!bool'}" />
                                 </StackPanel>
                             </contorls:Setting.ActionContent>
                         </contorls:Setting>
+                        <InfoBar
+                            IsOpen="True"
+                            IsClosable="False"
+                            x:Name="UpdateState"
+                            Visibility="Collapsed"/>
                     </StackPanel>
                 </contorls:SettingsGroup>
             </StackPanel>

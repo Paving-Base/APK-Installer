@@ -1,5 +1,6 @@
 ﻿using AdvancedSharpAdbClient;
 using CommunityToolkit.WinUI.Helpers;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace APKInstaller.Helpers
@@ -41,11 +42,18 @@ namespace APKInstaller.Helpers
 
     internal static partial class SettingsHelper
     {
-        private static readonly ApplicationDataStorageHelper LocalObject = ApplicationDataStorageHelper.GetCurrent(new CommunityToolkit.Common.Helpers.SystemSerializer());
+        private static readonly ApplicationDataStorageHelper LocalObject = ApplicationDataStorageHelper.GetCurrent(new SystemTextJsonObjectSerializer());
 
         static SettingsHelper()
         {
             SetDefaultSettings();
         }
+    }
+
+    public class SystemTextJsonObjectSerializer : CommunityToolkit.Common.Helpers.IObjectSerializer
+    {
+        string CommunityToolkit.Common.Helpers.IObjectSerializer.Serialize<T>(T value) => JsonSerializer.Serialize(value);
+
+        public T Deserialize<T>(string value) => JsonSerializer.Deserialize<T>(value);
     }
 }

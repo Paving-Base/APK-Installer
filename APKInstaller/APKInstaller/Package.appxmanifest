@@ -7,9 +7,9 @@
   IgnorableNamespaces="uap rescap">
 
   <Identity
-    Name="wherewhere.APKInstaller.Preview"
+    Name="wherewhere.AndroidAppInstaller.Preview"
     Publisher="CN=where"
-    Version="0.0.2.0" />
+    Version="0.0.3.0" />
 
   <Properties>
     <DisplayName>APK Installer</DisplayName>

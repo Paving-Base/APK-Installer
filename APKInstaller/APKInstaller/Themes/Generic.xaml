@@ -3,6 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="ms-appx:///Styles/Setting.xaml"/>
+        <ResourceDictionary Source="ms-appx:///Styles/KeyVisual.xaml"/>
         <ResourceDictionary Source="ms-appx:///Styles/SettingsGroup.xaml"/>
         <ResourceDictionary Source="ms-appx:///Styles/SettingExpander.xaml"/>
     </ResourceDictionary.MergedDictionaries>

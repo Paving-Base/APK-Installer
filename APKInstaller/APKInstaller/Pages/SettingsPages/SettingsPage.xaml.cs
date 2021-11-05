@@ -1,5 +1,6 @@
 ﻿using AdvancedSharpAdbClient;
 using APKInstaller.Helpers;
+using APKInstaller.Models;
 using CommunityToolkit.WinUI.UI.Controls;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
@@ -44,6 +45,17 @@ namespace APKInstaller.Pages.SettingsPages
                 isOnlyWSA = SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
                 SelectDeviceBox.SelectionMode = value ? ListViewSelectionMode.None : ListViewSelectionMode.Single;
                 if (!value) { ChooseDevice(); }
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        private bool checkUpdate;
+        internal bool CheckUpdate
+        {
+            get => checkUpdate;
+            set
+            {
+                checkUpdate = value;
                 RaisePropertyChangedEvent();
             }
         }
@@ -108,6 +120,35 @@ namespace APKInstaller.Pages.SettingsPages
                     }
                     _ = Frame.Navigate(typeof(SettingsPage));
                     Frame.GoBack();
+                    break;
+                case "Update":
+                    CheckUpdate = true;
+                    UpdateInfo info = null;
+                    try
+                    {
+                        info = await UpdateHelper.CheckUpdateAsync("Paving-Base", "APK-Installer");
+                    }
+                    catch(Exception ex)
+                    {
+                        UpdateState.Message = ex.Message;
+                        UpdateState.Title = "Check Failed";
+                        UpdateState.Visibility = Visibility.Visible;
+                        UpdateState.Severity = InfoBarSeverity.Error;
+                    }
+                    if(info!=null)
+                    {
+                        if (info.IsExistNewVersion)
+                        {
+
+                        }
+                        else
+                        {
+                            UpdateState.Title = "Up To Date";
+                            UpdateState.Visibility = Visibility.Visible;
+                            UpdateState.Severity = InfoBarSeverity.Success;
+                        }
+                    }
+                    CheckUpdate = false;
                     break;
                 case "TestPage":
                     _ = Frame.Navigate(typeof(TestPage));
