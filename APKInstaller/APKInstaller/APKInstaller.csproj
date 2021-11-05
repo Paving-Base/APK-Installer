@@ -26,9 +26,13 @@
   <ItemGroup>
     <None Remove="Pages\ToolsPages\ApplicationsPage.xaml" />
     <None Remove="Pages\ToolsPages\ProcessesPage.xaml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Page Remove="Controls\Setting.xaml" />
+    <None Remove="Styles\Button.xaml" />
+    <None Remove="Styles\Setting.xaml" />
+    <None Remove="Styles\SettingExpander.xaml" />
+    <None Remove="Styles\SettingsGroup.xaml" />
+    <None Remove="Styles\TextBlock.xaml" />
+    <None Remove="Themes\Color.xaml" />
+    <None Remove="Themes\SettingsUI.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -65,9 +69,39 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Controls\Setting.xaml">
+    <Page Update="Styles\TextBlock.xaml">
       <Generator>MSBuild:Compile</Generator>
-    </None>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Themes\Color.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Themes\SettingsUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Styles\Button.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Styles\SettingsGroup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Styles\SettingExpander.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 
   <ItemGroup>
@@ -81,6 +115,12 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Update="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Styles\Setting.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>

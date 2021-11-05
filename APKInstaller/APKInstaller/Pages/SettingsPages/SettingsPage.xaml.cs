@@ -57,7 +57,7 @@ namespace APKInstaller.Pages.SettingsPages
 
         private const string IssuePath = "https://github.com/Paving-Base/APK-Installer/issues";
 
-        internal static string VersionTextBlockText
+        internal string VersionTextBlockText
         {
             get
             {
@@ -148,6 +148,7 @@ namespace APKInstaller.Pages.SettingsPages
         private void ChooseDevice()
         {
             DeviceData device = SettingsHelper.Get<DeviceData>(SettingsHelper.DefaultDevice);
+            if(device == null) { return; }
             foreach (DeviceData data in DeviceList)
             {
                 if (data.Name == device.Name && data.Model == device.Model && data.Product == device.Product)

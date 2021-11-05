@@ -11,13 +11,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Page.Resources>
-        <converter:TrueToFalseConverter x:Key="TrueToFalseConverter" />
-        <Style x:Key="HeaderStyle" TargetType="controls:HeaderedContentControl">
-            <Setter Property="Margin" Value="0,8"/>
-            <Setter Property="FontSize" Value="18"/>
-            <Setter Property="FontWeight" Value="SemiBold"/>
-            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
-        </Style>
+        <converter:TrueToFalseConverter x:Key="TrueToFalseConverter"/>
     </Page.Resources>
     <Grid>
         <Grid.ChildrenTransitions>
@@ -27,10 +21,10 @@
         </Grid.ChildrenTransitions>
         <ScrollViewer Style="{StaticResource PageScrollViewer}">
             <StackPanel
-                Padding="16,0"
+                Padding="16"
                 Margin="{StaticResource StackPanelMargin}">
-                <controls:HeaderedContentControl
-                    Style="{StaticResource HeaderStyle}"
+                <contorls:SettingsGroup
+                    Margin="0,-32,0,0"
                     x:Uid="/SettingsPage/DeviceSettingsHeader">
                     <ListView
                         Margin="0,2"
@@ -40,28 +34,34 @@
                         <ListView.ItemTemplate>
                             <DataTemplate x:DataType="sharpadbclient:DeviceData">
                                 <contorls:Setting
+                                    Margin="-10,0"
                                     Header="{x:Bind Name}"
                                     Description="{x:Bind State}">
                                     <contorls:Setting.Icon>
-                                        <SymbolIcon Symbol="Phone"/>
+                                        <SymbolIcon Symbol="CellPhone"/>
                                     </contorls:Setting.Icon>
                                 </contorls:Setting>
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
-                </controls:HeaderedContentControl>
-                <controls:HeaderedContentControl
+                </contorls:SettingsGroup>
+                <contorls:SettingsGroup
                     Header="Options"
-                    Style="{StaticResource HeaderStyle}">
+                    Margin="0,-32,0,0">
                     <StackPanel>
-                        <CheckBox
-                            FontWeight="Normal"
-                            Content="Is Only for WSA?"
-                            IsChecked="{x:Bind IsOnlyWSA, Mode=TwoWay}"/>
+                        <contorls:Setting
+                            Header="Is Only for WSA?"
+                            Description="Disable it to conncet to other device.">
+                            <contorls:Setting.ActionContent>
+                                <ToggleSwitch
+                                    IsOn="{x:Bind IsOnlyWSA, Mode=TwoWay}"
+                                    Style="{StaticResource ToggleSwitchSettingStyle}"/>
+                            </contorls:Setting.ActionContent>
+                        </contorls:Setting>
                     </StackPanel>
-                </controls:HeaderedContentControl>
-                <controls:HeaderedContentControl
-                    Style="{StaticResource HeaderStyle}"
+                </contorls:SettingsGroup>
+                <contorls:SettingsGroup
+                    Margin="0,-32,0,0"
                     x:Uid="/SettingsPage/OthersSettingsHeader">
                     <StackPanel>
                         <HyperlinkButton
@@ -101,19 +101,47 @@
                                 Style="{StaticResource ButtonRevealStyle}"/>
                         </StackPanel>
                     </StackPanel>
-                </controls:HeaderedContentControl>
-                <controls:HeaderedContentControl
-                    Style="{StaticResource HeaderStyle}"
+                </contorls:SettingsGroup>
+                <contorls:SettingsGroup
+                    Margin="0,-32,0,0"
                     x:Uid="/SettingsPage/AboutSettingsHeader">
                     <StackPanel>
-                        <TextBlock
-                            Margin="0,2"
-                            Grid.Row="0"
-                            Grid.ColumnSpan="2"
-                            FontSize="{ThemeResource ContentControlFontSize}"
-                            Text="{x:Bind local:SettingsPage.VersionTextBlockText}"/>
+                        <contorls:Setting
+                            Icon="&#xE117;"
+                            Header="{x:Bind VersionTextBlockText}">
+                            <contorls:Setting.Description>
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock Style="{StaticResource SecondaryTextStyle}">
+                                    <Run Text="Last Checked" />
+                                    <Run Text="2021/09/10" />
+                                    </TextBlock>
+                                    <HyperlinkButton
+                                        Margin="0,2,0,0"
+                                        Content="Release notes"
+                                        NavigateUri="https://github.com/microsoft/PowerToys/releases/" />
+                                </StackPanel>
+                            </contorls:Setting.Description>
+                            <contorls:Setting.ActionContent>
+                                <StackPanel
+                                    Spacing="18"
+                                    Orientation="Horizontal"
+                                    VerticalAlignment="Center">
+                                    <ProgressRing
+                                        Width="24"
+                                        Height="24"/>
+                                    <TextBlock
+                                        FontWeight="SemiBold"
+                                        VerticalAlignment="Center"
+                                        Text="Checking For Updates"
+                                        Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
+                                    <Button
+                                        Content="Check For Updates"
+                                        HorizontalAlignment="Right" />
+                                </StackPanel>
+                            </contorls:Setting.ActionContent>
+                        </contorls:Setting>
                     </StackPanel>
-                </controls:HeaderedContentControl>
+                </contorls:SettingsGroup>
             </StackPanel>
         </ScrollViewer>
         <contorls:TitleBar

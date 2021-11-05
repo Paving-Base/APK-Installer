@@ -361,7 +361,7 @@ namespace APKInstaller.Pages
                 else
                 {
                     DeviceData data = SettingsHelper.Get<DeviceData>(SettingsHelper.DefaultDevice);
-                    if (data.Name == device.Name && data.Model == device.Model && data.Product == device.Product)
+                    if (data != null && data.Name == device.Name && data.Model == device.Model && data.Product == device.Product)
                     {
                         this.device = data;
                         return true;
@@ -391,7 +391,11 @@ namespace APKInstaller.Pages
                 return;
             }
             PackageManager manager = new PackageManager(client, device);
-            var info = manager.GetVersionInfo(ApkInfo.PackageName);
+            VersionInfo info = null;
+            if (ApkInfo != null)
+            {
+                info = manager.GetVersionInfo(ApkInfo.PackageName);
+            }
             if (info == null)
             {
                 ActionButtonText.Text = "Install";
