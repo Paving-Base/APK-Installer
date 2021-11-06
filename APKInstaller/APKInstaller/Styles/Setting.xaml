@@ -7,6 +7,7 @@
         <Setter Property="Background" Value="{ThemeResource CardBackgroundBrush}" />
         <Setter Property="BorderThickness" Value="{ThemeResource CardBorderThickness}" />
         <Setter Property="BorderBrush" Value="{ThemeResource CardStrokeColorDefaultBrush}" />
+        <Setter Property="RightIconVisibility" Value="Collapsed" />
         <Setter Property="IsTabStop" Value="False" />
         <Setter Property="HorizontalAlignment" Value="Stretch" />
         <Setter Property="HorizontalContentAlignment" Value="Stretch" />
@@ -44,6 +45,7 @@
                             <!-- Header and subtitle -->
                             <ColumnDefinition Width="Auto"/>
                             <!-- Action control -->
+                            <ColumnDefinition Width="Auto"/>
                         </Grid.ColumnDefinitions>
 
                         <ContentPresenter x:Name="IconPresenter"
@@ -97,6 +99,31 @@
                             Grid.Column="2"
                             VerticalAlignment="Center"
                             HorizontalAlignment="Right" />
+
+                        <Border
+                            x:Name="ExpandCollapseChevronBorder"
+                            Visibility="{TemplateBinding RightIconVisibility}"
+                            Grid.Column="3"
+                            Width="32"
+                            Height="32"
+                            Margin="20,0,8,0"
+                            CornerRadius="4"
+                            BorderBrush="Transparent"
+                            BorderThickness="2"
+                            Background="Transparent">
+                            <FontIcon
+                                Width="12"
+                                Height="12"
+                                x:Name="ExpandCollapseChevron"
+                                RenderTransformOrigin="0.5, 0.5"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Glyph="&#xE76C;"
+                                FontFamily="Segoe MDL2 Assets"
+                                FontSize="12"
+                                IsTextScaleFactorEnabled="False">
+                            </FontIcon>
+                        </Border>
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>

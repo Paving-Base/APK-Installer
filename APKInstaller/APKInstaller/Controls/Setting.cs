@@ -49,6 +49,12 @@ namespace APKInstaller.Controls
             typeof(Setting),
             null);
 
+        public static readonly DependencyProperty RightIconVisibilityProperty = DependencyProperty.Register(
+            "RightIconVisibility",
+            typeof(Visibility),
+            typeof(Setting),
+            null);
+
         [Localizable(true)]
         public string Header
         {
@@ -73,6 +79,12 @@ namespace APKInstaller.Controls
         {
             get => (object)GetValue(ActionContentProperty);
             set => SetValue(ActionContentProperty, value);
+        }
+
+        public Visibility RightIconVisibility
+        {
+            get => (Visibility)GetValue(RightIconVisibilityProperty);
+            set => SetValue(RightIconVisibilityProperty, value);
         }
 
         protected override void OnApplyTemplate()

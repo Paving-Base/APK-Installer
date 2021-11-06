@@ -10,6 +10,7 @@
         <Setter Property="BorderThickness" Value="0" />
         <Setter Property="BorderBrush" Value="Transparent" />
         <Setter Property="Padding" Value="0,14,0,14" />
+        <Setter Property="RightIconVisibility" Value="Visible" />
         <Setter Property="Margin" Value="0" />
         <Setter Property="HorizontalAlignment" Value="Stretch" />
     </Style>

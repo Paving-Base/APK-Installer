@@ -42,16 +42,37 @@
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
-                    <controls:Setting
-                        Icon="&#xE975;"
-                        Header="Is Only for WSA?"
-                        Description="Disable it to conncet to other device.">
-                        <controls:Setting.ActionContent>
-                            <ToggleSwitch
-                                IsOn="{x:Bind IsOnlyWSA, Mode=TwoWay}"
-                                Style="{StaticResource ToggleSwitchSettingStyle}"/>
-                        </controls:Setting.ActionContent>
-                    </controls:Setting>
+                    <controls:SettingExpander>
+                        <controls:SettingExpander.Header>
+                            <controls:Setting
+                                Icon="&#xE975;"
+                                Header="Is Only for WSA?"
+                                Description="Disable it to conncet to other device.">
+                                <controls:Setting.ActionContent>
+                                    <ToggleSwitch
+                                        IsOn="{x:Bind IsOnlyWSA, Mode=TwoWay}"
+                                        Style="{StaticResource ToggleSwitchSettingStyle}"/>
+                                </controls:Setting.ActionContent>
+                            </controls:Setting>
+                        </controls:SettingExpander.Header>
+                        <controls:SettingExpander.Content>
+                            <controls:Setting
+                                Header="Connect Device"
+                                Description="Connect device on network."
+                                Style="{StaticResource ExpanderContentSettingStyle}">
+                                <StackPanel
+                                    Spacing="8"
+                                    Orientation="Horizontal">
+                                    <TextBox PlaceholderText="127.0.0.1:58526"/>
+                                    <Button
+                                        Width="40"
+                                        Height="36"
+                                        Content="&#xE71B;"
+                                        FontFamily="{StaticResource SymbolThemeFontFamily}"/>
+                                </StackPanel>
+                            </controls:Setting>
+                        </controls:SettingExpander.Content>
+                    </controls:SettingExpander>
                 </controls:SettingsGroup>
                 <controls:SettingsGroup
                     Margin="0,-32,0,0"
@@ -88,13 +109,6 @@
                             <controls:Setting
                                 Icon="&#xEC7A;"
                                 x:Uid="/SettingsPage/GoToTestPage">
-                                <controls:Setting.ActionContent>
-                                    <FontIcon
-                                        FontSize="12"
-                                        Glyph="&#xE76C;"
-                                        Margin="0,12,16,12"
-                                        FontFamily="Segoe MDL2 Assets"/>
-                                </controls:Setting.ActionContent>
                             </controls:Setting>
                         </controls:SettingButton.Content>
                     </controls:SettingButton>
