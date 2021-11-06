@@ -3,16 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:contract7NotPresent="http://schemas.microsoft.com/winfx/2006/xaml/presentation?IsApiContractNotPresent(Windows.Foundation.UniversalApiContract,7)"
     xmlns:contract7Present="http://schemas.microsoft.com/winfx/2006/xaml/presentation?IsApiContractPresent(Windows.Foundation.UniversalApiContract,7)">
-    <Style x:Key="SettingButtonStyle" TargetType="Button" BasedOn="{StaticResource DefaultButtonStyle}" >
-        <Setter Property="BorderBrush" Value="{ThemeResource CardBorderBrush}" />
-        <Setter Property="CornerRadius" Value="{ThemeResource ControlCornerRadius}" />
-        <Setter Property="Padding" Value="16,0,16,0" />
-        <Setter Property="HorizontalAlignment" Value="Stretch" />
-        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
-    </Style>
-
-    <Style x:Key="HyperlinkButtonStyle" TargetType="HyperlinkButton" >
-    </Style>
+    <Style x:Key="HyperlinkButtonStyle" TargetType="HyperlinkButton"/>
 
     <Style x:Key="TextButtonStyle" TargetType="ButtonBase">
         <Setter Property="Background" Value="{ThemeResource HyperlinkButtonBackground}" />

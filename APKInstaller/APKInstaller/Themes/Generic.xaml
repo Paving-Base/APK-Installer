@@ -5,6 +5,5 @@
         <ResourceDictionary Source="ms-appx:///Styles/Setting.xaml"/>
         <ResourceDictionary Source="ms-appx:///Styles/KeyVisual.xaml"/>
         <ResourceDictionary Source="ms-appx:///Styles/SettingsGroup.xaml"/>
-        <ResourceDictionary Source="ms-appx:///Styles/SettingExpander.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

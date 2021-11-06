@@ -1,5 +1,6 @@
 ﻿using AdvancedSharpAdbClient;
 using CommunityToolkit.WinUI.Helpers;
+using System;
 using System.Text.Json;
 using System.Threading.Tasks;
 
@@ -8,6 +9,7 @@ namespace APKInstaller.Helpers
     internal static partial class SettingsHelper
     {
         public const string IsOnlyWSA = "IsOnlyWSA";
+        public const string UpdateDate = "UpdateDate";
         public const string IsFirstRun = "IsFirstRun";
         public const string DefaultDevice = "DefaultDevice";
 
@@ -21,6 +23,10 @@ namespace APKInstaller.Helpers
             if (!LocalObject.KeyExists(IsOnlyWSA))
             {
                 LocalObject.Save(IsOnlyWSA, SystemInformation.Instance.OperatingSystemVersion.Build >= 22000);
+            }
+            if (!LocalObject.KeyExists(UpdateDate))
+            {
+                LocalObject.Save(UpdateDate, new DateTime());
             }
             if (!LocalObject.KeyExists(IsFirstRun))
             {

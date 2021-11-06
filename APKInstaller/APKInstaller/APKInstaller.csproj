@@ -29,6 +29,7 @@
     <None Remove="Styles\Button.xaml" />
     <None Remove="Styles\KeyVisual.xaml" />
     <None Remove="Styles\Setting.xaml" />
+    <None Remove="Styles\SettingButton.xaml" />
     <None Remove="Styles\SettingExpander.xaml" />
     <None Remove="Styles\SettingsGroup.xaml" />
     <None Remove="Styles\TextBlock.xaml" />
@@ -67,6 +68,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AAPTForNet\AAPTForNet.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Styles\SettingButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 
   <ItemGroup>

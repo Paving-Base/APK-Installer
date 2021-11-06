@@ -23,39 +23,50 @@ namespace APKInstaller.Pages.SettingsPages
     /// </summary>
     public sealed partial class SettingsPage : Page, INotifyPropertyChanged
     {
-        private IEnumerable<DeviceData> deviceList;
+        private IEnumerable<DeviceData> _deviceList;
         internal IEnumerable<DeviceData> DeviceList
         {
-            get => deviceList;
+            get => _deviceList;
             set
             {
-                deviceList = value;
+                _deviceList = value;
                 RaisePropertyChangedEvent();
                 if (!IsOnlyWSA) { ChooseDevice(); }
             }
         }
 
-        private bool isOnlyWSA = SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
+        private bool _isOnlyWSA = SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
         internal bool IsOnlyWSA
         {
-            get => isOnlyWSA;
+            get => _isOnlyWSA;
             set
             {
                 SettingsHelper.Set(SettingsHelper.IsOnlyWSA, value);
-                isOnlyWSA = SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
+                _isOnlyWSA = SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
                 SelectDeviceBox.SelectionMode = value ? ListViewSelectionMode.None : ListViewSelectionMode.Single;
                 if (!value) { ChooseDevice(); }
                 RaisePropertyChangedEvent();
             }
         }
 
-        private bool checkUpdate;
+        private bool _checkUpdate;
         internal bool CheckUpdate
         {
-            get => checkUpdate;
+            get => _checkUpdate;
             set
             {
-                checkUpdate = value;
+                _checkUpdate = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        private DateTime _updateDate;
+        internal DateTime UpdateDate
+        {
+            get => _updateDate;
+            set
+            {
+                _updateDate = value;
                 RaisePropertyChangedEvent();
             }
         }
@@ -148,6 +159,7 @@ namespace APKInstaller.Pages.SettingsPages
                             UpdateState.Severity = InfoBarSeverity.Success;
                         }
                     }
+                    UpdateDate = DateTime.Now;
                     CheckUpdate = false;
                     break;
                 case "TestPage":
