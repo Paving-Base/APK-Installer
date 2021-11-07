@@ -7,8 +7,7 @@
     xmlns:contorls="using:APKInstaller.Controls"
     xmlns:converter="using:APKInstaller.Helpers.ValueConverters"
     xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
     <Page.Resources>
         <converter:TrueToFalseConverter x:Key="TrueToFalseConverter"/>
         <Style x:Key="HeaderStyle" TargetType="controls:HeaderedContentControl">
@@ -27,6 +26,11 @@
             <StackPanel
                 Padding="16,0"
                 Margin="{StaticResource StackPanelMargin}">
+                <StackPanel.ChildrenTransitions>
+                    <TransitionCollection>
+                        <ReorderThemeTransition/>
+                    </TransitionCollection>
+                </StackPanel.ChildrenTransitions>
                 <controls:HeaderedContentControl
                     Header="UI Test"
                     Style="{StaticResource HeaderStyle}">

@@ -7,8 +7,7 @@
     xmlns:sharpadbclient="using:AdvancedSharpAdbClient"
     xmlns:controls="using:APKInstaller.Controls"
     xmlns:converter="using:APKInstaller.Helpers.ValueConverters"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
     <Page.Resources>
         <converter:TrueToFalseConverter x:Key="TrueToFalseConverter"/>
         <converter:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
@@ -23,6 +22,11 @@
             <StackPanel
                 Padding="16"
                 Margin="{StaticResource StackPanelMargin}">
+                <StackPanel.ChildrenTransitions>
+                    <TransitionCollection>
+                        <ReorderThemeTransition/>
+                    </TransitionCollection>
+                </StackPanel.ChildrenTransitions>
                 <controls:SettingsGroup
                     Margin="0,-32,0,0"
                     x:Uid="/SettingsPage/DeviceSettingsHeader">
