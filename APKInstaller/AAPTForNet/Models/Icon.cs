@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 
-namespace AAPTForNet.Models {
-    public class Icon {
+namespace AAPTForNet.Models
+{
+    public class Icon
+    {
 
         private const int hdpiWidth = 72;
         public const string DefaultName = "ic_launcher.png";
@@ -28,19 +30,24 @@ namespace AAPTForNet.Models {
         // Not real icon, it refer to another
         internal bool isRefernce => this.IconName.StartsWith("0x");
 
-        internal bool isHighDensity {
-            get {
+        internal bool isHighDensity
+        {
+            get
+            {
                 if (!this.isImage || !File.Exists(RealPath))
                     return false;
 
-                try {
+                try
+                {
                     // Load from unsupported format will throw an exception.
                     // But icon can be packed without extension
-                    using (var image = new Bitmap(RealPath)) {
+                    using (var image = new Bitmap(RealPath))
+                    {
                         return image.Width > hdpiWidth;
                     }
                 }
-                catch {
+                catch
+                {
                     return false;
                 }
             }
@@ -55,15 +62,18 @@ namespace AAPTForNet.Models {
 
         internal Icon() => throw new NotImplementedException();
 
-        internal Icon(string iconName) {
+        internal Icon(string iconName)
+        {
             this.IconName = iconName ?? string.Empty;
             this.RealPath = $@"{AppDomain.CurrentDomain.BaseDirectory}\256x256.png";
         }
 
         public override string ToString() => this.IconName;
 
-        public override bool Equals(object obj) {
-            if(obj is Icon ic) {
+        public override bool Equals(object obj)
+        {
+            if (obj is Icon ic)
+            {
                 return this.IconName == ic.IconName;
             }
             return false;

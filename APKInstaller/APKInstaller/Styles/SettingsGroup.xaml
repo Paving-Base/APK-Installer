@@ -6,14 +6,15 @@
         <Setter Property="ItemsPanel">
             <Setter.Value>
                 <ItemsPanelTemplate>
-                    <StackPanel Orientation="Vertical"
-                                Spacing="2"/>
+                    <StackPanel
+                        Spacing="2"
+                        Orientation="Vertical"/>
                 </ItemsPanelTemplate>
             </Setter.Value>
         </Setter>
-        <Setter Property="IsTabStop" Value="False" />
-        <Setter Property="HorizontalAlignment" Value="Stretch" />
-        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+        <Setter Property="IsTabStop" Value="False"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="controls:SettingsGroup">
@@ -23,7 +24,7 @@
                                 <VisualState x:Name="Normal"/>
                                 <VisualState x:Name="Disabled">
                                     <VisualState.Setters>
-                                        <Setter Target="HeaderPresenter.Foreground" Value="{ThemeResource TextFillColorDisabledBrush}" />
+                                        <Setter Target="HeaderPresenter.Foreground" Value="{ThemeResource TextFillColorDisabledBrush}"/>
                                     </VisualState.Setters>
                                 </VisualState>
                             </VisualStateGroup>
@@ -32,12 +33,13 @@
                             <RowDefinition Height="Auto"/>
                             <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
-                        <TextBlock x:Name="HeaderPresenter"
-                                   Text="{TemplateBinding Header}"
-                                   Grid.Row="0"
-                                   Style="{ThemeResource BodyStrongTextBlockStyle}"
-                                   Margin="1,32,0,8"
-                                   AutomationProperties.HeadingLevel="Level2"/>
+                        <TextBlock
+                            Grid.Row="0"
+                            Margin="1,32,0,8"
+                            x:Name="HeaderPresenter"
+                            Text="{TemplateBinding Header}"
+                            AutomationProperties.HeadingLevel="Level2"
+                            Style="{ThemeResource BodyStrongTextBlockStyle}"/>
                         <ItemsPresenter Grid.Row="1"/>
                     </Grid>
                 </ControlTemplate>

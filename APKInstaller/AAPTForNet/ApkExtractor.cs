@@ -1,16 +1,18 @@
 ﻿using AAPTForNet.Models;
-using Detector = AAPTForNet.ResourceDetector;
-
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
+using Detector = AAPTForNet.ResourceDetector;
 
-namespace AAPTForNet {
-    internal class ApkExtractor {
+namespace AAPTForNet
+{
+    internal class ApkExtractor
+    {
 
-        public static DumpModel ExtractManifest(string path) {
+        public static DumpModel ExtractManifest(string path)
+        {
             return AAPTool.dumpManifest(path);
         }
 
@@ -18,26 +20,30 @@ namespace AAPTForNet {
         /// Find the icon with maximum config (largest), then extract to file
         /// </summary>
         /// <param name="path"></param>
-        public static Icon ExtractLargestIcon(string path) {
+        public static Icon ExtractLargestIcon(string path)
+        {
             var iconTable = ExtractIconTable(path);
 
-            if(iconTable.Values.All(i => i.isRefernce)) {
+            if (iconTable.Values.All(i => i.isRefernce))
+            {
                 var refID = iconTable.Values.FirstOrDefault().IconName;
                 iconTable = ExtractIconTable(path, refID);
             }
 
-            if (iconTable.Values.All(i => i.isMarkup)) {
+            if (iconTable.Values.All(i => i.isMarkup))
+            {
                 // Try dumping markup asset and get icon
                 var asset = iconTable.Values.FirstOrDefault().IconName;
                 iconTable = dumpMarkupIcon(path, asset);
             }
 
             var largestIcon = ExtractLargestIcon(iconTable);
-                largestIcon.RealPath = ExtractIconImage(path, largestIcon);
+            largestIcon.RealPath = ExtractIconImage(path, largestIcon);
             return largestIcon;
         }
 
-        private static Dictionary<string, Icon> dumpMarkupIcon(string path, string asset, int startIndex = -1) {
+        private static Dictionary<string, Icon> dumpMarkupIcon(string path, string asset, int startIndex = -1)
+        {
             var output = dumpMarkupIcon(path, asset, out startIndex);
 
             return output.Count == 0 && startIndex < 5
@@ -46,7 +52,8 @@ namespace AAPTForNet {
         }
 
         private static Dictionary<string, Icon> dumpMarkupIcon(
-            string path, string asset, out int lastTryIndex, int start = -1) {
+            string path, string asset, out int lastTryIndex, int start = -1)
+        {
             // Not found any icon image in package?,
             // it maybe a markup file
             // try getting some images from markup.
@@ -57,12 +64,14 @@ namespace AAPTForNet {
                 return new Dictionary<string, Icon>();
 
             var msg = string.Empty;
-                start = start >= 0 && start < tree.Messages.Count ? start : 0;
-            for (int i = start; i < tree.Messages.Count; i++) {
+            start = start >= 0 && start < tree.Messages.Count ? start : 0;
+            for (int i = start; i < tree.Messages.Count; i++)
+            {
                 lastTryIndex = i;
                 msg = tree.Messages[i];
 
-                if (Detector.IsBitmapElement(msg)) {
+                if (Detector.IsBitmapElement(msg))
+                {
                     var iconID = tree.Messages[i + 1].Split('@')[1];
                     return ExtractIconTable(path, iconID);
                 }
@@ -71,7 +80,8 @@ namespace AAPTForNet {
             return new Dictionary<string, Icon>();
         }
 
-        private static Dictionary<string, Icon> ExtractIconTable(string path) {
+        private static Dictionary<string, Icon> ExtractIconTable(string path)
+        {
             var iconID = ExtractIconID(path);
             return ExtractIconTable(path, iconID);
         }
@@ -81,12 +91,15 @@ namespace AAPTForNet {
         /// </summary>
         /// <param name="path"></param>
         /// <returns>icon id</returns>
-        private static string ExtractIconID(string path) {
+        private static string ExtractIconID(string path)
+        {
             int iconIndex = 0;
             var manifestTree = AAPTool.dumpManifestTree(
                 path,
-                (m, i) => {
-                    if (m.Contains("android:icon")) {
+                (m, i) =>
+                {
+                    if (m.Contains("android:icon"))
+                    {
                         iconIndex = i;
                         return true;
                     }
@@ -97,7 +110,8 @@ namespace AAPTForNet {
             if (iconIndex == 0) // Package without launcher icon
                 return string.Empty;
 
-            if (manifestTree.isSuccess) {
+            if (manifestTree.isSuccess)
+            {
                 string msg = manifestTree.Messages[iconIndex];
                 return msg.Split('@')[1];
             }
@@ -105,25 +119,30 @@ namespace AAPTForNet {
             return string.Empty;
         }
 
-        private static Dictionary<string, Icon> ExtractIconTable(string path, string iconID) {
+        private static Dictionary<string, Icon> ExtractIconTable(string path, string iconID)
+        {
             if (string.IsNullOrEmpty(iconID))
                 return new Dictionary<string, Icon>();
 
             var matchedEntry = false;
             var indexes = new List<int>();  // Get position of icon in resource list
-            var resTable = AAPTool.dumpResources(path, (m, i) => {
+            var resTable = AAPTool.dumpResources(path, (m, i) =>
+            {
                 // Dump resources and get icons,
                 // terminate when meet the end of mipmap entry,
                 // icons are in 'drawable' or 'mipmap' resource
                 if (Detector.IsResource(m, iconID))
                     indexes.Add(i);
 
-                if (!matchedEntry) {
+                if (!matchedEntry)
+                {
                     if (m.Contains("mipmap/"))
                         matchedEntry = true;    // Begin mipmap entry
                 }
-                else {
-                    if (Detector.IsEntryType(m)) {  // Next entry, terminate
+                else
+                {
+                    if (Detector.IsEntryType(m))
+                    {  // Next entry, terminate
                         matchedEntry = false;
                         return true;
                     }
@@ -137,7 +156,8 @@ namespace AAPTForNet {
         // Create table like below
         //  configs  |    mdpi           hdpi    ...    anydpi
         //  icon     |    icon1          icon2   ...    icon4
-        private static Dictionary<string, Icon> createIconTable(List<int> positions, List<string> messages) {
+        private static Dictionary<string, Icon> createIconTable(List<int> positions, List<string> messages)
+        {
             if (positions.Count == 0 || messages.Count <= 2)    // If dump failed
                 return new Dictionary<string, Icon>();
 
@@ -147,35 +167,42 @@ namespace AAPTForNet {
             // reverse list and get first elem with LINQ
             var configNames = Enum.GetNames(typeof(Configs)).Reverse();
             var iconTable = new Dictionary<string, Icon>();
-            Action<string, string> addIcon2Table = (cfg, iconName) => {
-                if (!iconTable.ContainsKey(cfg)) {
+            Action<string, string> addIcon2Table = (cfg, iconName) =>
+            {
+                if (!iconTable.ContainsKey(cfg))
+                {
                     iconTable.Add(cfg, new Icon(iconName));
                 }
             };
             string msg, resValue, config;
 
-            foreach (int index in positions) {
-                for (int i = index; ; i--) {
+            foreach (int index in positions)
+            {
+                for (int i = index; ; i--)
+                {
                     // Go prev to find config
                     msg = messages[i];
 
                     if (Detector.IsEntryType(msg))  // Out of entry and not found
                         break;
-                    if (Detector.IsConfig(msg)) {
+                    if (Detector.IsConfig(msg))
+                    {
                         // Match with predefined configs,
                         // go next to get icon name
                         resValue = messages[index + 1];
 
                         config = configNames.FirstOrDefault(c => msg.Contains(c));
 
-                        if (Detector.IsResourceValue(resValue)) {
+                        if (Detector.IsResourceValue(resValue))
+                        {
                             // Resource value is icon url
                             var iconName = resValue.Split(seperator)
                                 .FirstOrDefault(n => n.Contains("/"));
                             addIcon2Table(config, iconName);
                             break;
                         }
-                        if(Detector.IsReference(resValue)) {
+                        if (Detector.IsReference(resValue))
+                        {
                             var iconID = resValue.Trim().Split(' ')[1];
                             addIcon2Table(config, iconID);
                             break;
@@ -194,7 +221,8 @@ namespace AAPTForNet {
         /// <param name="path">path to apk file</param>
         /// <param name="icon"></param>
         /// <returns>Absolute path to extracted image</returns>
-        public static string ExtractIconImage(string path, Icon icon) {
+        public static string ExtractIconImage(string path, Icon icon)
+        {
             if (Icon.Default.Equals(icon))
                 return Icon.DefaultName;
 
@@ -203,11 +231,13 @@ namespace AAPTForNet {
             return tempPath;
         }
 
-        private static void TryExtractIconImage(string path, string iconName, string desFile) {
-            try {
+        private static void TryExtractIconImage(string path, string iconName, string desFile)
+        {
+            try
+            {
                 ExtractIconImage(path, iconName, desFile);
             }
-            catch(ArgumentException) {}
+            catch (ArgumentException) { }
         }
 
         /// <summary>
@@ -216,18 +246,22 @@ namespace AAPTForNet {
         /// <param name="path"></param>
         /// <param name="iconName"></param>
         /// <param name="desFile"></param>
-        private static void ExtractIconImage(string path, string iconName, string desFile) {
+        private static void ExtractIconImage(string path, string iconName, string desFile)
+        {
             if (iconName.EndsWith(".xml") || !File.Exists(path))
                 throw new ArgumentException("Invalid params");
 
-            using (var archive = ZipFile.OpenRead(path)) {
+            using (var archive = ZipFile.OpenRead(path))
+            {
                 ZipArchiveEntry entry;
 
-                for (int i = archive.Entries.Count - 1; i > 0; i--) {
+                for (int i = archive.Entries.Count - 1; i > 0; i--)
+                {
                     entry = archive.Entries[i];
 
                     if (entry.Name.Equals(iconName) ||
-                        entry.FullName.Equals(iconName)) {
+                        entry.FullName.Equals(iconName))
+                    {
 
                         entry.ExtractToFile(desFile, true);
                         break;
@@ -236,17 +270,20 @@ namespace AAPTForNet {
             }
         }
 
-        private static Icon ExtractLargestIcon(Dictionary<string, Icon> iconTable) {
+        private static Icon ExtractLargestIcon(Dictionary<string, Icon> iconTable)
+        {
             if (iconTable.Count == 0)
                 return Icon.Default;
 
             var icon = Icon.Default;
             var configNames = Enum.GetNames(typeof(Configs)).ToList();
-                configNames.Sort(new ConfigComparer());
+            configNames.Sort(new ConfigComparer());
 
-            foreach (string cfg in configNames) {
+            foreach (string cfg in configNames)
+            {
                 // Get the largest icon image, skip markup file (xml)
-                if (iconTable.TryGetValue(cfg, out icon)) {
+                if (iconTable.TryGetValue(cfg, out icon))
+                {
                     if (icon.IconName.EndsWith(".xml", StringComparison.OrdinalIgnoreCase))
                         continue;
                     break;  // Largest icon here :)
@@ -255,12 +292,14 @@ namespace AAPTForNet {
 
             return icon ?? Icon.Default;
         }
-        
+
         /// <summary>
         /// DPI config comparer, ordered by desc (largest first)
         /// </summary>
-        private class ConfigComparer : IComparer<string> {
-            public int Compare(string x, string y) {
+        private class ConfigComparer : IComparer<string>
+        {
+            public int Compare(string x, string y)
+            {
                 Enum.TryParse<Configs>(x, out Configs ex);
                 Enum.TryParse<Configs>(y, out Configs ey);
                 return ex > ey ? -1 : 1;

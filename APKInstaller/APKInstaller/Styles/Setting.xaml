@@ -3,37 +3,38 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:controls="using:APKInstaller.Controls">
     <Style TargetType="controls:Setting">
-        <Setter Property="CornerRadius" Value="{ThemeResource ControlCornerRadius}"/>
-        <Setter Property="Background" Value="{ThemeResource CardBackgroundBrush}" />
-        <Setter Property="BorderThickness" Value="{ThemeResource CardBorderThickness}" />
-        <Setter Property="BorderBrush" Value="{ThemeResource CardStrokeColorDefaultBrush}" />
-        <Setter Property="RightIconVisibility" Value="Collapsed" />
-        <Setter Property="IsTabStop" Value="False" />
-        <Setter Property="HorizontalAlignment" Value="Stretch" />
-        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
-        <Setter Property="Padding" Value="16" />
+        <Setter Property="Padding" Value="16"/>
         <Setter Property="Margin" Value="0,0,0,0"/>
+        <Setter Property="IsTabStop" Value="False"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="RightIconVisibility" Value="Collapsed"/>
+        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+        <Setter Property="Background" Value="{ThemeResource CardBackgroundBrush}"/>
+        <Setter Property="CornerRadius" Value="{ThemeResource ControlCornerRadius}"/>
+        <Setter Property="BorderThickness" Value="{ThemeResource CardBorderThickness}"/>
+        <Setter Property="BorderBrush" Value="{ThemeResource CardStrokeColorDefaultBrush}"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="controls:Setting">
-                    <Grid x:Name="RootGrid"
-                          CornerRadius="{TemplateBinding CornerRadius}"
-                          Background="{TemplateBinding Background}"
-                          BorderThickness="{TemplateBinding BorderThickness}"
-                          BorderBrush="{TemplateBinding BorderBrush}"
-                          Padding="{TemplateBinding Padding}"
-                          HorizontalAlignment="Stretch"
-                          VerticalAlignment="Center"
-                          MinHeight="48">
+                    <Grid
+                        MinHeight="48"
+                        x:Name="RootGrid"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Stretch"
+                        Padding="{TemplateBinding Padding}"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        CornerRadius="{TemplateBinding CornerRadius}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">
                                 <VisualState x:Name="Normal"/>
                                 <VisualState x:Name="Disabled">
                                     <VisualState.Setters>
-                                        <Setter Target="HeaderPresenter.Foreground" Value="{ThemeResource TextFillColorDisabledBrush}" />
-                                        <Setter Target="DescriptionPresenter.Foreground" Value="{ThemeResource TextFillColorDisabledBrush}" />
-                                        <Setter Target="IconPresenter.Foreground" Value="{ThemeResource TextFillColorDisabledBrush}" />
-                                        <Setter Target="ContentPresenter.Foreground" Value="{ThemeResource TextFillColorDisabledBrush}" />
+                                        <Setter Target="IconPresenter.Foreground" Value="{ThemeResource TextFillColorDisabledBrush}"/>
+                                        <Setter Target="HeaderPresenter.Foreground" Value="{ThemeResource TextFillColorDisabledBrush}"/>
+                                        <Setter Target="ContentPresenter.Foreground" Value="{ThemeResource TextFillColorDisabledBrush}"/>
+                                        <Setter Target="DescriptionPresenter.Foreground" Value="{ThemeResource TextFillColorDisabledBrush}"/>
                                     </VisualState.Setters>
                                 </VisualState>
                             </VisualStateGroup>
@@ -48,34 +49,35 @@
                             <ColumnDefinition Width="Auto"/>
                         </Grid.ColumnDefinitions>
 
-                        <ContentPresenter x:Name="IconPresenter"
-                          Content="{TemplateBinding Icon}"
-                          HorizontalAlignment="Center"
-                          FontSize="20"
-                          Margin="2,0,18,0"
-                          MaxWidth="26"
-                          AutomationProperties.AccessibilityView="Raw"
-                          FontFamily="{ThemeResource SymbolThemeFontFamily}"
-                          Foreground="{ThemeResource CardPrimaryForegroundBrush}"
-                          VerticalAlignment="Center"/>
+                        <ContentPresenter
+                            MaxWidth="26"
+                            FontSize="20"
+                            Margin="2,0,18,0"
+                            x:Name="IconPresenter"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center"
+                            Content="{TemplateBinding Icon}"
+                            AutomationProperties.AccessibilityView="Raw"
+                            FontFamily="{ThemeResource SymbolThemeFontFamily}"
+                            Foreground="{ThemeResource CardPrimaryForegroundBrush}"/>
 
                         <StackPanel
-                            VerticalAlignment="Center"
                             Grid.Column="1"
-                            HorizontalAlignment="Stretch"
-                            Margin="0,0,16,0">
+                            Margin="0,0,16,0"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Stretch">
 
                             <TextBlock
                                 x:Name="HeaderPresenter"
-                                Text="{TemplateBinding Header}"
                                 VerticalAlignment="Center"
+                                Text="{TemplateBinding Header}"
                                 Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
 
                             <ContentPresenter
                                 x:Name="DescriptionPresenter"
+                                TextWrapping="WrapWholeWords"
                                 Content="{TemplateBinding Description}"
                                 FontSize="{StaticResource SecondaryTextFontSize}"
-                                TextWrapping="WrapWholeWords"
                                 Foreground="{ThemeResource TextFillColorSecondaryBrush}">
                                 <ContentPresenter.Resources>
                                     <Style TargetType="TextBlock" BasedOn="{StaticResource CaptionTextBlockStyle}">
@@ -94,34 +96,34 @@
                         </StackPanel>
 
                         <ContentPresenter
-                            x:Name="ContentPresenter"
-                            Content="{TemplateBinding ActionContent}"
                             Grid.Column="2"
+                            x:Name="ContentPresenter"
                             VerticalAlignment="Center"
-                            HorizontalAlignment="Right" />
+                            HorizontalAlignment="Right"
+                            Content="{TemplateBinding ActionContent}"/>
 
                         <Border
-                            x:Name="ExpandCollapseChevronBorder"
-                            Visibility="{TemplateBinding RightIconVisibility}"
-                            Grid.Column="3"
                             Width="32"
                             Height="32"
-                            Margin="20,0,8,0"
+                            Grid.Column="3"
                             CornerRadius="4"
-                            BorderBrush="Transparent"
+                            Margin="20,0,8,0"
                             BorderThickness="2"
-                            Background="Transparent">
+                            Background="Transparent"
+                            BorderBrush="Transparent"
+                            x:Name="ExpandCollapseChevronBorder"
+                            Visibility="{TemplateBinding RightIconVisibility}">
                             <FontIcon
                                 Width="12"
                                 Height="12"
+                                FontSize="12"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Center"
                                 x:Name="ExpandCollapseChevron"
                                 RenderTransformOrigin="0.5, 0.5"
-                                HorizontalAlignment="Center"
-                                VerticalAlignment="Center"
-                                Glyph="&#xE76C;"
-                                FontFamily="Segoe MDL2 Assets"
-                                FontSize="12"
-                                IsTextScaleFactorEnabled="False">
+                                IsTextScaleFactorEnabled="False"
+                                Glyph="{TemplateBinding RightIcon}"
+                                FontFamily="{StaticResource SymbolThemeFontFamily}">
                             </FontIcon>
                         </Border>
                     </Grid>

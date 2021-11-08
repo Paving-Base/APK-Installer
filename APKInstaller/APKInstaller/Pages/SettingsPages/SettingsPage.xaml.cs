@@ -49,24 +49,25 @@ namespace APKInstaller.Pages.SettingsPages
             }
         }
 
-        private bool _checkUpdate;
-        internal bool CheckUpdate
-        {
-            get => _checkUpdate;
-            set
-            {
-                _checkUpdate = value;
-                RaisePropertyChangedEvent();
-            }
-        }
-
-        private DateTime _updateDate;
+        private DateTime _updateDate = SettingsHelper.Get<DateTime>(SettingsHelper.UpdateDate);
         internal DateTime UpdateDate
         {
             get => _updateDate;
             set
             {
-                _updateDate = value;
+                SettingsHelper.Set(SettingsHelper.UpdateDate, value);
+                _updateDate = SettingsHelper.Get<DateTime>(SettingsHelper.UpdateDate);
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        private bool _checkingUpdate;
+        internal bool CheckingUpdate
+        {
+            get => _checkingUpdate;
+            set
+            {
+                _checkingUpdate = value;
                 RaisePropertyChangedEvent();
             }
         }
@@ -96,10 +97,11 @@ namespace APKInstaller.Pages.SettingsPages
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-//#if DEBUG
+            //#if DEBUG
             GoToTestPage.Visibility = Visibility.Visible;
-//#endif
+            //#endif
             SelectDeviceBox.SelectionMode = IsOnlyWSA ? ListViewSelectionMode.None : ListViewSelectionMode.Single;
+            if (UpdateDate == DateTime.MinValue) { CheckUpdate(); }
             ADBHelper.Monitor.DeviceChanged += OnDeviceChanged;
             DeviceList = new AdvancedAdbClient().GetDevices();
         }
@@ -132,36 +134,6 @@ namespace APKInstaller.Pages.SettingsPages
                     _ = Frame.Navigate(typeof(SettingsPage));
                     Frame.GoBack();
                     break;
-                case "Update":
-                    CheckUpdate = true;
-                    UpdateInfo info = null;
-                    try
-                    {
-                        info = await UpdateHelper.CheckUpdateAsync("Paving-Base", "APK-Installer");
-                    }
-                    catch(Exception ex)
-                    {
-                        UpdateState.Message = ex.Message;
-                        UpdateState.Title = "Check Failed";
-                        UpdateState.Visibility = Visibility.Visible;
-                        UpdateState.Severity = InfoBarSeverity.Error;
-                    }
-                    if(info!=null)
-                    {
-                        if (info.IsExistNewVersion)
-                        {
-
-                        }
-                        else
-                        {
-                            UpdateState.Title = "Up To Date";
-                            UpdateState.Visibility = Visibility.Visible;
-                            UpdateState.Severity = InfoBarSeverity.Success;
-                        }
-                    }
-                    UpdateDate = DateTime.Now;
-                    CheckUpdate = false;
-                    break;
                 case "TestPage":
                     _ = Frame.Navigate(typeof(TestPage));
                     break;
@@ -171,9 +143,44 @@ namespace APKInstaller.Pages.SettingsPages
                 case "LogFolder":
                     _ = await Launcher.LaunchFolderAsync(await ApplicationData.Current.LocalFolder.CreateFolderAsync("MetroLogs", CreationCollisionOption.OpenIfExists));
                     break;
+                case "CheckUpdate":
+                    CheckUpdate();
+                    break;
                 default:
                     break;
             }
+        }
+
+        private async void CheckUpdate()
+        {
+            CheckingUpdate = true;
+            UpdateInfo info = null;
+            try
+            {
+                info = await UpdateHelper.CheckUpdateAsync("Paving-Base", "APK-Installer");
+            }
+            catch (Exception ex)
+            {
+                UpdateState.Message = ex.Message;
+                UpdateState.Title = "Check Failed";
+                UpdateState.Visibility = Visibility.Visible;
+                UpdateState.Severity = InfoBarSeverity.Error;
+            }
+            if (info != null)
+            {
+                if (info.IsExistNewVersion)
+                {
+
+                }
+                else
+                {
+                    UpdateState.Title = "Up To Date";
+                    UpdateState.Visibility = Visibility.Visible;
+                    UpdateState.Severity = InfoBarSeverity.Success;
+                }
+            }
+            UpdateDate = DateTime.Now;
+            CheckingUpdate = false;
         }
 
         private void MarkdownTextBlock_LinkClicked(object sender, LinkClickedEventArgs e)
@@ -201,7 +208,7 @@ namespace APKInstaller.Pages.SettingsPages
         private void ChooseDevice()
         {
             DeviceData device = SettingsHelper.Get<DeviceData>(SettingsHelper.DefaultDevice);
-            if(device == null) { return; }
+            if (device == null) { return; }
             foreach (DeviceData data in DeviceList)
             {
                 if (data.Name == device.Name && data.Model == device.Model && data.Product == device.Product)

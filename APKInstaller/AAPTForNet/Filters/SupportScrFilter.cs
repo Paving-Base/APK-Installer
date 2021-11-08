@@ -1,7 +1,9 @@
 ﻿using AAPTForNet.Models;
 
-namespace AAPTForNet.Filters {
-    internal class SupportScrFilter : BaseFilter {
+namespace AAPTForNet.Filters
+{
+    internal class SupportScrFilter : BaseFilter
+    {
 
         public const string SmallScreen = "small";
         public const string NormalScreen = "normal";
@@ -10,15 +12,18 @@ namespace AAPTForNet.Filters {
 
         private string msg = string.Empty;
 
-        public override bool canHandle(string msg) {
+        public override bool canHandle(string msg)
+        {
             return msg.StartsWith("supports-screens:");
         }
 
-        public override void addMessage(string msg) {
+        public override void addMessage(string msg)
+        {
             this.msg = msg;
         }
 
-        public override ApkInfo getAPK() {
+        public override ApkInfo getAPK()
+        {
             var apk = new ApkInfo();
 
             if (msg.Contains(SmallScreen))

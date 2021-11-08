@@ -130,7 +130,7 @@
     <value>Device</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
-    <value>Feedback on GitHub</value>
+    <value>Feedback</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
     <value>Go to TestPage</value>

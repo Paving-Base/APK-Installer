@@ -43,6 +43,12 @@ namespace APKInstaller.Controls
             typeof(Setting),
             new PropertyMetadata(default(string), OnIconChanged));
 
+        public static readonly DependencyProperty RightIconProperty = DependencyProperty.Register(
+            "RightIcon",
+            typeof(string),
+            typeof(Setting),
+            new PropertyMetadata(null, OnIconChanged));
+
         public static readonly DependencyProperty ActionContentProperty = DependencyProperty.Register(
             "ActionContent",
             typeof(object),
@@ -53,7 +59,7 @@ namespace APKInstaller.Controls
             "RightIconVisibility",
             typeof(Visibility),
             typeof(Setting),
-            null);
+            new PropertyMetadata(null, OnIconChanged));
 
         [Localizable(true)]
         public string Header
@@ -73,6 +79,12 @@ namespace APKInstaller.Controls
         {
             get => (object)GetValue(IconProperty);
             set => SetValue(IconProperty, value);
+        }
+
+        public string RightIcon
+        {
+            get => (string)GetValue(RightIconProperty);
+            set => SetValue(RightIconProperty, value);
         }
 
         public object ActionContent

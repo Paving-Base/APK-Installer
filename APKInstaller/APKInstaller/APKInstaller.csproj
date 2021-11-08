@@ -26,15 +26,8 @@
   <ItemGroup>
     <None Remove="Pages\ToolsPages\ApplicationsPage.xaml" />
     <None Remove="Pages\ToolsPages\ProcessesPage.xaml" />
-    <None Remove="Styles\Button.xaml" />
-    <None Remove="Styles\KeyVisual.xaml" />
-    <None Remove="Styles\Setting.xaml" />
-    <None Remove="Styles\SettingButton.xaml" />
-    <None Remove="Styles\SettingExpander.xaml" />
-    <None Remove="Styles\SettingsGroup.xaml" />
-    <None Remove="Styles\TextBlock.xaml" />
-    <None Remove="Themes\Color.xaml" />
-    <None Remove="Themes\SettingsUI.xaml" />
+    <None Remove="Styles\Common.xaml" />
+    <None Remove="Styles\IsEnabledTextBlock.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -71,49 +64,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Page Update="Styles\SettingButton.xaml">
+    <Page Update="Styles\IsEnabledTextBlock.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
 
   <ItemGroup>
-    <Page Update="Styles\KeyVisual.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Update="Styles\TextBlock.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Update="Themes\Color.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Update="Themes\SettingsUI.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Update="Styles\Button.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Update="Styles\SettingsGroup.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Update="Styles\SettingExpander.xaml">
+    <Page Update="Styles\Common.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
@@ -126,15 +83,6 @@
 
   <ItemGroup>
     <Page Update="Pages\ToolsPages\ApplicationsPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Update="Themes\Generic.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Update="Styles\Setting.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>

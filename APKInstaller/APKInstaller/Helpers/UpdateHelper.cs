@@ -1,11 +1,9 @@
 ﻿using APKInstaller.Models;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Reflection;
-using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
@@ -29,7 +27,7 @@ namespace APKInstaller.Helpers
             client.DefaultRequestHeaders.Add("User-Agent", username);
             string url = string.Format(GITHUB_API, username, repository);
             HttpResponseMessage response = await client.GetAsync(url);
-            if(!response.IsSuccessStatusCode)
+            if (!response.IsSuccessStatusCode)
             {
                 url = string.Format(KKPP_API, username, repository);
                 response = await client.GetAsync(url);

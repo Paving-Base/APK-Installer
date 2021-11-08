@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace AAPTForNet.Models {
-    public class ApkInfo {
+namespace AAPTForNet.Models
+{
+    public class ApkInfo
+    {
         public string AppName { get; set; }
         public string PackageName { get; set; }
         public string VersionName { get; set; }
@@ -25,12 +27,16 @@ namespace AAPTForNet.Models {
         /// <summary>
         /// Size of package, in bytes
         /// </summary>
-        public long PackageSize {
-            get {
-                try {
+        public long PackageSize
+        {
+            get
+            {
+                try
+                {
                     return new FileInfo(FullPath).Length;
                 }
-                catch {
+                catch
+                {
                     return 0;
                 }
             }
@@ -38,38 +44,44 @@ namespace AAPTForNet.Models {
         /// <summary>
         /// Determines whether this package is filled or not
         /// </summary>
-        public bool IsEmpty {
-            get {
+        public bool IsEmpty
+        {
+            get
+            {
                 return AppName == string.Empty && PackageName == string.Empty;
             }
         }
-        
-        public ApkInfo() {
-            AppName        = string.Empty;
-            PackageName    = string.Empty;
-            VersionName    = string.Empty;
-            VersionCode    = string.Empty;
-            FullPath       = string.Empty;
-            Icon           = Icon.Default;
-            MinSDK         = SDKInfo.Unknown;
-            TargetSDK      = SDKInfo.Unknown;
-            Permissions    = new List<string>();
-            SupportedABIs  = new List<string>();
+
+        public ApkInfo()
+        {
+            AppName = string.Empty;
+            PackageName = string.Empty;
+            VersionName = string.Empty;
+            VersionCode = string.Empty;
+            FullPath = string.Empty;
+            Icon = Icon.Default;
+            MinSDK = SDKInfo.Unknown;
+            TargetSDK = SDKInfo.Unknown;
+            Permissions = new List<string>();
+            SupportedABIs = new List<string>();
             SupportScreens = new List<string>();
         }
 
-        internal ApkInfo megre(params ApkInfo[] apks) {
+        internal ApkInfo megre(params ApkInfo[] apks)
+        {
             if (apks.Any(a => a == null))
                 throw new ArgumentNullException();
 
             return ApkInfo.Merge(this, apks);
         }
 
-        internal static ApkInfo Merge(IEnumerable<ApkInfo> apks) {
+        internal static ApkInfo Merge(IEnumerable<ApkInfo> apks)
+        {
             return ApkInfo.Merge(null, apks);
         }
 
-        internal static ApkInfo Merge(ApkInfo init, IEnumerable<ApkInfo> apks) {
+        internal static ApkInfo Merge(ApkInfo init, IEnumerable<ApkInfo> apks)
+        {
             if (init == null)
                 init = new ApkInfo();
 
@@ -78,14 +90,16 @@ namespace AAPTForNet.Models {
                 init.AppName = appApk.AppName;
 
             var pckApk = apks.FirstOrDefault(a => a.PackageName.Length > 0);
-            if (pckApk != null) {
+            if (pckApk != null)
+            {
                 init.VersionName = pckApk.VersionName;
                 init.VersionCode = pckApk.VersionCode;
                 init.PackageName = pckApk.PackageName;
             }
 
             var sdkApk = apks.FirstOrDefault(a => !SDKInfo.Unknown.Equals(a.MinSDK));
-            if (sdkApk != null) {
+            if (sdkApk != null)
+            {
                 init.MinSDK = sdkApk.MinSDK;
                 init.TargetSDK = sdkApk.TargetSDK;
             }
