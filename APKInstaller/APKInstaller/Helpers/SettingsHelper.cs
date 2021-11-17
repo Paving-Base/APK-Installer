@@ -10,6 +10,7 @@ namespace APKInstaller.Helpers
     {
         public const string IsOpenApp = "IsOpenApp";
         public const string IsOnlyWSA = "IsOnlyWSA";
+        public const string UpdateDate = "UpdateDate";
         public const string IsFirstRun = "IsFirstRun";
         public const string IsCloseADB = "IsCloseADB";
         public const string DefaultDevice = "DefaultDevice";

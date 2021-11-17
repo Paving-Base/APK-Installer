@@ -7,8 +7,7 @@
     xmlns:contorls="using:APKInstaller.Controls"
     xmlns:converter="using:APKInstaller.Helpers.ValueConverters"
     xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
-    mc:Ignorable="d"
-    NavigationCacheMode="Enabled">
+    mc:Ignorable="d">
     <Page.Resources>
         <converter:TrueToFalseConverter x:Key="TrueToFalseConverter"/>
         <Style x:Key="HeaderStyle" TargetType="controls:HeaderedContentControl">
