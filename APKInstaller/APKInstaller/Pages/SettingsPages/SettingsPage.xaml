@@ -186,10 +186,9 @@
                         </controls:Setting.ActionContent>
                     </controls:Setting>
                     <InfoBar
-                        IsOpen="True"
+                        IsOpen="False"
                         IsClosable="True"
-                        x:Name="UpdateState"
-                        Visibility="Collapsed">
+                        x:Name="UpdateState">
                         <InfoBar.ActionButton>
                             <Button
                                 x:Name="GotoUpdate"
