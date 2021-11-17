@@ -85,7 +85,7 @@
                         Grid.Row="4"
                         Margin="0,24,0,0"
                         x:Name="AppCapabilities"
-                        HeadText="Capabilities: "
+                        x:Uid="/InstallPage/AppCapabilities"
                         CapabilitiesList="{x:Bind ApkInfo.Permissions, Mode=OneWay}"/>
                 </Grid>
                 <Border
@@ -181,9 +181,9 @@
                     </Grid>
                     <TextBlock
                         Grid.Row="0"
-                        Text="Reason: "
                         Margin="0,0,0,6"
                         x:Name="InstallOutputTextBlock"
+                        x:Uid="/InstallPage/InstallOutputTextBlock"
                         ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"/>
                     <ScrollViewer
                         Grid.Row="1"

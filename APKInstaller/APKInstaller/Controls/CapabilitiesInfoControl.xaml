@@ -49,12 +49,12 @@
             Padding="0"
             Grid.Row="2"
             TabIndex="4"
-            Content="More"
             x:Name="MoreButton"
             BorderThickness="0"
             Click="MoreButton_Click"
             Background="Transparent"
             UseSystemFocusVisuals="True"
+            x:Uid="/CapabilitiesInfoControl/MoreButton"
             Foreground="{StaticResource SystemAccentColor}"
             AutomationProperties.Name="Show more capabilitiesMore"/>
     </Grid>
