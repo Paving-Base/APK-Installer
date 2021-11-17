@@ -75,12 +75,12 @@
                         x:Name="AppPublisher"
                         TextTrimming="CharacterEllipsis"
                         ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"
-                        Text="{x:Bind sys:String.Format('Package Name: {0}', ApkInfo.PackageName), Mode=OneWay}"/>
+                        Text="{x:Bind sys:String.Format(PackageNameFormat, ApkInfo.PackageName), Mode=OneWay}"/>
                     <TextBlock
                         Grid.Row="3"
                         x:Name="AppVersion"
-                        ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"
-                        Text="{x:Bind sys:String.Format('Version: {0}', ApkInfo.VersionName), Mode=OneWay}"/>
+                        Text="{x:Bind sys:String.Format(VersionFormat, ApkInfo.VersionName), Mode=OneWay}"
+                        ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"/>
                     <controls:CapabilitiesInfoControl
                         Grid.Row="4"
                         Margin="0,24,0,0"
@@ -118,7 +118,7 @@
                     TextTrimming="CharacterEllipsis"
                     x:Name="AppBigPictureMainContentText"
                     OpticalMarginAlignment="TrimSideBearings"
-                    Text="{x:Bind sys:String.Format('Install {0}?', ApkInfo.AppName), Mode=OneWay}"
+                    Text="{x:Bind sys:String.Format(InstallFormat, ApkInfo.AppName), Mode=OneWay}"
                     ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"/>
                 <Image
                     Width="150"

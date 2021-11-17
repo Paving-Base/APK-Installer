@@ -19,6 +19,7 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using Windows.ApplicationModel.Activation;
+using Windows.ApplicationModel.Resources;
 using Windows.Storage;
 
 // To learn more about WinUI, the WinUI project structure,
@@ -31,9 +32,14 @@ namespace APKInstaller.Pages
     /// </summary>
     public sealed partial class InstallPage : Page, INotifyPropertyChanged
     {
-        private string path = @"C:\Users\qq251\Downloads\Programs\MT管理器_2.10.0.apk";
-        private bool wsaonly => SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
-        private DeviceData device;
+        private DeviceData _device;
+        private string _path = @"C:\Users\qq251\Downloads\Programs\Minecraft_1.17.40.06_sign.apk";
+        private static bool _wsaonly => SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
+        private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("InstallPage");
+
+        internal string InstallFormat => _loader.GetString("InstallFormat");
+        internal string VersionFormat => _loader.GetString("VersionFormat");
+        internal string PackageNameFormat => _loader.GetString("PackageNameFormat");
 
         private ApkInfo _apkInfo = null;
         internal ApkInfo ApkInfo
@@ -94,7 +100,7 @@ namespace APKInstaller.Pages
             base.OnNavigatedTo(e);
             if (e.Parameter is StorageFile ApkFile)
             {
-                path = ApkFile.Path;
+                _path = ApkFile.Path;
             }
             else
             {
@@ -102,7 +108,7 @@ namespace APKInstaller.Pages
                 switch (args.Kind)
                 {
                     case ExtendedActivationKind.File:
-                        path = (args.Data as IFileActivatedEventArgs).Files.First().Path;
+                        _path = (args.Data as IFileActivatedEventArgs).Files.First().Path;
                         break;
                     default:
                         break;
@@ -118,7 +124,7 @@ namespace APKInstaller.Pages
 
         private void OnDeviceChanged(object sender, DeviceDataEventArgs e)
         {
-            if (wsaonly)
+            if (_wsaonly)
             {
                 new AdvancedAdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
             }
@@ -126,7 +132,7 @@ namespace APKInstaller.Pages
             {
                 DispatcherQueue.TryEnqueue(() =>
                 {
-                    if (CheckDevice() && device != null)
+                    if (CheckDevice() && _device != null)
                     {
                         CheckAPK();
                     }
@@ -142,11 +148,11 @@ namespace APKInstaller.Pages
 
         private async Task InitilizeADB()
         {
-            WaitProgressText.Text = "Checking ADB...";
+            WaitProgressText.Text = _loader.GetString("CheckingADB");
             await CheckADB();
-            if (!string.IsNullOrEmpty(path))
+            if (!string.IsNullOrEmpty(_path))
             {
-                WaitProgressText.Text = "Starting ADB Server...";
+                WaitProgressText.Text = _loader.GetString("StartingADB");
                 try
                 {
                     await Task.Run(() => new AdbServer().StartServer(Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe"), restartServerIfNewer: false));
@@ -154,10 +160,10 @@ namespace APKInstaller.Pages
                 catch
                 {
                     await CheckADB(true);
-                    WaitProgressText.Text = "Starting ADB Server...";
+                    WaitProgressText.Text = _loader.GetString("StartingADB");
                     await Task.Run(() => new AdbServer().StartServer(Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe"), restartServerIfNewer: false));
                 }
-                if (wsaonly)
+                if (_wsaonly)
                 {
                     new AdvancedAdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
                 }
@@ -167,12 +173,12 @@ namespace APKInstaller.Pages
 
         private async Task InitilizeUI()
         {
-            if (!string.IsNullOrEmpty(path))
+            if (!string.IsNullOrEmpty(_path))
             {
-                WaitProgressText.Text = "Loading...";
+                WaitProgressText.Text = _loader.GetString("Loading");
                 try
                 {
-                    ApkInfo = await Task.Run(() => { return AAPTool.Decompile(path); });
+                    ApkInfo = await Task.Run(() => { return AAPTool.Decompile(_path); });
                 }
                 catch (Exception ex)
                 {
@@ -182,12 +188,12 @@ namespace APKInstaller.Pages
                 }
                 if (string.IsNullOrEmpty(ApkInfo.PackageName))
                 {
-                    PackageError("The package is either corrupted or invalid.");
+                    PackageError(_loader.GetString("InvalidPackage"));
                 }
                 else
                 {
-                    WaitProgressText.Text = "Checking...";
-                    if (CheckDevice() && device != null)
+                    WaitProgressText.Text = _loader.GetString("Checking");
+                    if (CheckDevice() && _device != null)
                     {
                         CheckAPK();
                     }
@@ -195,17 +201,17 @@ namespace APKInstaller.Pages
                     {
                         ResetUI();
                         ActionButton.IsEnabled = false;
-                        ActionButtonText.Text = "Install";
-                        InfoMessageTextBlock.Text = "Waiting for Device...";
-                        AppName.Text = $"Waiting for install {ApkInfo.AppName}";
+                        ActionButtonText.Text = _loader.GetString("Install");
+                        InfoMessageTextBlock.Text = _loader.GetString("WaitingDevice");
                         ActionButton.Visibility = MessagesToUserContainer.Visibility = Visibility.Visible;
-                        if (wsaonly)
+                        AppName.Text = string.Format(_loader.GetString("WaitingForInstallFormat"), ApkInfo.AppName);
+                        if (_wsaonly)
                         {
                             ContentDialog dialog = new MarkdownDialog()
                             {
                                 XamlRoot = XamlRoot,
-                                CloseButtonText = "I Know",
-                                Title = "How to connect WSA?",
+                                CloseButtonText = _loader.GetString("IKnow"),
+                                Title = _loader.GetString("HowToConnect"),
                                 DefaultButton = ContentDialogButton.Close,
                                 ContentUrl = "https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Helpers/How%20To%20Connect%20WSA/How%20To%20Connect%20WSA.md",
                             };
@@ -213,13 +219,13 @@ namespace APKInstaller.Pages
                         }
                     }
                 }
-                WaitProgressText.Text = "Finished";
+                WaitProgressText.Text = _loader.GetString("Finished");
             }
             else
             {
                 ResetUI();
                 ApkInfo = new ApkInfo();
-                AppName.Text = "For proper functioning of the app, try to launch an Android app package or open a package.";
+                AppName.Text = _loader.GetString("NoPackageWranning");
                 AppVersion.Visibility = AppPublisher.Visibility = AppCapabilities.Visibility = Visibility.Collapsed;
             }
             IsInitialized = true;
@@ -229,7 +235,7 @@ namespace APKInstaller.Pages
         {
             if (!force && File.Exists(Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe")))
             {
-                WaitProgressText.Text = "ADB Exist";
+                WaitProgressText.Text = _loader.GetString("ADBExist");
             }
             else
             {
@@ -238,20 +244,20 @@ namespace APKInstaller.Pages
                     new TextBlock()
                     {
                         TextWrapping = TextWrapping.Wrap,
-                        Text = "ADB, the And roid Debug Bridge, is needed for APK Installer to work. Click OK to download it. By downloading, you accept the Google Terms and Conditions for ADB."
+                        Text = _loader.GetString("AboutADB")
                     });
                 StackPanel.Children.Add(
                     new HyperlinkButton()
                     {
-                        Content = "Click here to read them",
+                        Content = _loader.GetString("ClickToRead"),
                         NavigateUri = new Uri("https://developer.android.google.cn/studio/releases/platform-tools?hl=zh-cn")
                     });
                 ContentDialog dialog = new ContentDialog()
                 {
                     XamlRoot = XamlRoot,
-                    Title = "ADB is missing",
-                    PrimaryButtonText = "OK",
-                    CloseButtonText = "Cancel",
+                    Title = _loader.GetString("ADBMissing"),
+                    PrimaryButtonText = _loader.GetString("OK"),
+                    CloseButtonText = _loader.GetString("Cancel"),
                     Content = new ScrollViewer()
                     {
                         Content = StackPanel
@@ -271,7 +277,7 @@ namespace APKInstaller.Pages
                         _ = downloader.Start();
                         while (downloader.TotalSize <= 0 && downloader.IsStarted)
                         {
-                            _ = DispatcherQueue.TryEnqueue(() => WaitProgressText.Text = "Wait for download...");
+                            _ = DispatcherQueue.TryEnqueue(() => WaitProgressText.Text = _loader.GetString("WaitDownload"));
                             await Task.Delay(500);
                         }
                         _ = DispatcherQueue.TryEnqueue(() => WaitProgressRing.IsIndeterminate = false);
@@ -286,7 +292,7 @@ namespace APKInstaller.Pages
                         }
                         _ = DispatcherQueue.TryEnqueue(() =>
                         {
-                            WaitProgressText.Text = "Unzip ADB...";
+                            WaitProgressText.Text = _loader.GetString("UnzipADB");
                             WaitProgressRing.IsIndeterminate = true;
                         });
                         IArchive archive = ArchiveFactory.Open(Path.Combine(ApplicationData.Current.LocalFolder.Path, "platform-tools.zip"));
@@ -296,7 +302,7 @@ namespace APKInstaller.Pages
                             _ = DispatcherQueue.TryEnqueue(() =>
                             {
                                 WaitProgressRing.Value = (double)(archive.Entries.ToList().IndexOf(entry) + 1) * 100 / archive.Entries.Count();
-                                WaitProgressText.Text = $"Unzipping {archive.Entries.ToList().IndexOf(entry) + 1}/{archive.Entries.Count()} ...";
+                                WaitProgressText.Text = string.Format(_loader.GetString("UnzippingFormat"), archive.Entries.ToList().IndexOf(entry) + 1, archive.Entries.Count());
                             });
                             if (!entry.IsDirectory)
                             {
@@ -306,7 +312,7 @@ namespace APKInstaller.Pages
                         _ = DispatcherQueue.TryEnqueue(() =>
                         {
                             WaitProgressRing.IsIndeterminate = true;
-                            WaitProgressText.Text = "Unzip complete";
+                            WaitProgressText.Text = _loader.GetString("UnzipComplete");
                         });
                     });
                 }
@@ -336,7 +342,7 @@ namespace APKInstaller.Pages
             ResetUI();
             ApkInfo = new ApkInfo();
             TextOutput.Text = message;
-            AppName.Text = "Cannot open app package";
+            AppName.Text = _loader.GetString("CannotOpenPackage");
             TextOutputScrollViewer.Visibility = InstallOutputTextBlock.Visibility = Visibility.Visible;
             AppVersion.Visibility = AppPublisher.Visibility = AppCapabilities.Visibility = Visibility.Collapsed;
         }
@@ -350,12 +356,12 @@ namespace APKInstaller.Pages
             foreach (DeviceData device in devices)
             {
                 if (device == null || device.State == DeviceState.Offline) { continue; }
-                if (wsaonly)
+                if (_wsaonly)
                 {
                     client.ExecuteRemoteCommand("getprop ro.boot.hardware", device, receiver);
                     if (receiver.ToString().Contains("windows"))
                     {
-                        this.device = device ?? this.device;
+                        this._device = device ?? this._device;
                         return true;
                     }
                 }
@@ -364,7 +370,7 @@ namespace APKInstaller.Pages
                     DeviceData data = SettingsHelper.Get<DeviceData>(SettingsHelper.DefaultDevice);
                     if (data != null && data.Name == device.Name && data.Model == device.Model && data.Product == device.Product)
                     {
-                        this.device = data;
+                        this._device = data;
                         return true;
                     }
                 }
@@ -376,13 +382,13 @@ namespace APKInstaller.Pages
         {
             ResetUI();
             AdvancedAdbClient client = new AdvancedAdbClient();
-            if (device == null)
+            if (_device == null)
             {
                 ActionButton.IsEnabled = false;
-                ActionButtonText.Text = "Install";
-                InfoMessageTextBlock.Text = "Waiting for Device...";
-                AppName.Text = $"Waiting for install {ApkInfo.AppName}";
+                ActionButtonText.Text = _loader.GetString("Install");
+                InfoMessageTextBlock.Text = _loader.GetString("WaitingDevice");
                 ActionButton.Visibility = MessagesToUserContainer.Visibility = Visibility.Visible;
+                AppName.Text = string.Format(_loader.GetString("WaitingForInstallFormat"), ApkInfo.AppName);
                 ContentDialog dialog = new MarkdownDialog()
                 {
                     XamlRoot = XamlRoot,
@@ -391,7 +397,7 @@ namespace APKInstaller.Pages
                 _ = dialog.ShowAsync();
                 return;
             }
-            PackageManager manager = new PackageManager(client, device);
+            PackageManager manager = new PackageManager(client, _device);
             VersionInfo info = null;
             if (ApkInfo != null)
             {
@@ -399,22 +405,22 @@ namespace APKInstaller.Pages
             }
             if (info == null)
             {
-                ActionButtonText.Text = "Install";
-                AppName.Text = $"Install {ApkInfo.AppName}?";
+                ActionButtonText.Text = _loader.GetString("Install");
+                AppName.Text = string.Format(_loader.GetString("InstallFormat"), ApkInfo.AppName);
                 ActionButton.Visibility = LaunchWhenReadyCheckbox.Visibility = Visibility.Visible;
             }
             else if (info.VersionCode < int.Parse(ApkInfo.VersionCode))
             {
-                ActionButtonText.Text = "Update";
-                AppName.Text = $"Update {ApkInfo.AppName}?";
+                ActionButtonText.Text = _loader.GetString("Update");
+                AppName.Text = string.Format(_loader.GetString("UpdateFormat"), ApkInfo.AppName);
                 ActionButton.Visibility = LaunchWhenReadyCheckbox.Visibility = Visibility.Visible;
             }
             else
             {
-                ActionButtonText.Text = "Reinstall";
-                SecondaryActionButtonText.Text = "Launch";
-                AppName.Text = $"{ApkInfo.AppName} is already installed";
-                TextOutput.Text = $"A newer version of {ApkInfo.AppName} is already installed.";
+                ActionButtonText.Text = _loader.GetString("Reinstall");
+                SecondaryActionButtonText.Text = _loader.GetString("Launch");
+                AppName.Text = string.Format(_loader.GetString("ReinstallFormat"), ApkInfo.AppName);
+                TextOutput.Text = string.Format(_loader.GetString("ReinstallOutput"), ApkInfo.AppName);
                 ActionButton.Visibility = SecondaryActionButton.Visibility = TextOutputScrollViewer.Visibility = Visibility.Visible;
             }
         }
@@ -435,19 +441,19 @@ namespace APKInstaller.Pages
             }
         }
 
-        private void OpenAPP() => new AdvancedAdbClient().StartApp(device, ApkInfo.PackageName);
+        private void OpenAPP() => new AdvancedAdbClient().StartApp(_device, ApkInfo.PackageName);
 
         private async void InstallAPP()
         {
             try
             {
                 IsInstalling = true;
-                CancelOperationButtonText.Text = "Cancel";
+                CancelOperationButtonText.Text = _loader.GetString("Cancel");
                 CancelOperationButton.Visibility = LaunchWhenReadyCheckbox.Visibility = Visibility.Visible;
                 ActionButton.Visibility = SecondaryActionButton.Visibility = TextOutputScrollViewer.Visibility = InstallOutputTextBlock.Visibility = Visibility.Collapsed;
                 await Task.Run(() =>
                 {
-                    new AdvancedAdbClient().Install(device, File.Open(path, FileMode.Open, FileAccess.Read));
+                    new AdvancedAdbClient().Install(_device, File.Open(_path, FileMode.Open, FileAccess.Read));
                 });
                 if (IsOpenApp)
                 {
@@ -458,8 +464,8 @@ namespace APKInstaller.Pages
                     });
                 }
                 IsInstalling = false;
-                SecondaryActionButtonText.Text = "Launch";
                 SecondaryActionButton.Visibility = Visibility.Visible;
+                SecondaryActionButtonText.Text = _loader.GetString("Launch");
                 CancelOperationButton.Visibility = LaunchWhenReadyCheckbox.Visibility = Visibility.Collapsed;
             }
             catch (Exception ex)
