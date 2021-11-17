@@ -49,14 +49,14 @@ namespace APKInstaller.Pages.SettingsPages
             }
         }
 
-        private bool isCloseADB = SettingsHelper.Get<bool>(SettingsHelper.IsCloseADB);
+        private bool _isCloseADB = SettingsHelper.Get<bool>(SettingsHelper.IsCloseADB);
         internal bool IsCloseADB
         {
-            get => isCloseADB;
+            get => _isCloseADB;
             set
             {
                 SettingsHelper.Set(SettingsHelper.IsCloseADB, value);
-                isCloseADB = SettingsHelper.Get<bool>(SettingsHelper.IsCloseADB);
+                _isCloseADB = SettingsHelper.Get<bool>(SettingsHelper.IsCloseADB);
             }
         }
         
@@ -90,7 +90,7 @@ namespace APKInstaller.Pages.SettingsPages
             if (name != null) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
         }
 
-        private const string IssuePath = "https://github.com/Paving-Base/APK-Installer/issues";
+        internal string IssuePath = "https://github.com/Paving-Base/APK-Installer/issues";
 
         internal string VersionTextBlockText
         {
@@ -145,6 +145,9 @@ namespace APKInstaller.Pages.SettingsPages
                     _ = Frame.Navigate(typeof(SettingsPage));
                     Frame.GoBack();
                     break;
+                case "Connect":
+                    new AdvancedAdbClient().Connect(ConnectIP.Text);
+                    break;
                 case "TestPage":
                     _ = Frame.Navigate(typeof(TestPage));
                     break;
@@ -172,21 +175,28 @@ namespace APKInstaller.Pages.SettingsPages
             }
             catch (Exception ex)
             {
+                UpdateState.IsOpen = true;
                 UpdateState.Message = ex.Message;
                 UpdateState.Title = "Check Failed";
-                UpdateState.Visibility = Visibility.Visible;
                 UpdateState.Severity = InfoBarSeverity.Error;
+                GotoUpdate.Visibility = Visibility.Collapsed;
             }
             if (info != null)
             {
                 if (info.IsExistNewVersion)
                 {
-
+                    UpdateState.IsOpen = true;
+                    GotoUpdate.Tag = info.ReleaseUrl;
+                    UpdateState.Title = "Find Update";
+                    GotoUpdate.Visibility = Visibility.Visible;
+                    UpdateState.Severity = InfoBarSeverity.Warning;
+                    UpdateState.Message = $"{VersionTextBlockText} -> {info.TagName}";
                 }
                 else
                 {
+                    UpdateState.IsOpen = true;
                     UpdateState.Title = "Up To Date";
-                    UpdateState.Visibility = Visibility.Visible;
+                    GotoUpdate.Visibility = Visibility.Collapsed;
                     UpdateState.Severity = InfoBarSeverity.Success;
                 }
             }
@@ -229,5 +239,7 @@ namespace APKInstaller.Pages.SettingsPages
                 }
             }
         }
+
+        private void GotoUpdate_Click(object sender, RoutedEventArgs e) => _ = Launcher.LaunchUriAsync(new Uri((sender as FrameworkElement).Tag.ToString()));
     }
 }

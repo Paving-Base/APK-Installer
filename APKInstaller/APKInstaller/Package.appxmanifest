@@ -50,6 +50,19 @@
           <uap:Rotation Preference="landscapeFlipped"/>
           <uap:Rotation Preference="portraitFlipped"/></uap:InitialRotationPreference>
       </uap:VisualElements>
+      <Extensions>
+        <uap:Extension Category="windows.fileTypeAssociation">
+          <uap:FileTypeAssociation Name="apk">
+            <uap:SupportedFileTypes>
+              <uap:FileType>.apk</uap:FileType>
+            </uap:SupportedFileTypes>
+            <uap:DisplayName>APK File</uap:DisplayName>
+            <uap:Logo>Assets\256x256.png</uap:Logo>
+            <uap:InfoTip>Android Application Package</uap:InfoTip>
+            <uap:EditFlags OpenIsSafe="true"/>
+          </uap:FileTypeAssociation>
+        </uap:Extension>
+      </Extensions>
     </Application>
   </Applications>
 

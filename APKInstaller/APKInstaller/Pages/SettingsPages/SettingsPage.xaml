@@ -70,12 +70,15 @@
                                     Spacing="8"
                                     Orientation="Horizontal">
                                     <TextBox
+                                        x:Name="ConnectIP"
                                         PlaceholderText="127.0.0.1:58526"
                                         MinWidth="{StaticResource SettingActionControlMinWidth}"/>
                                     <Button
                                         Width="40"
                                         Height="36"
+                                        Tag="Connect"
                                         Content="&#xE71B;"
+                                        Click="Button_Click"
                                         FontFamily="{StaticResource SymbolThemeFontFamily}"/>
                                 </StackPanel>
                             </controls:Setting>
@@ -107,6 +110,15 @@
                                     </Flyout>
                                 </Button.Flyout>
                             </Button>
+                        </controls:Setting.ActionContent>
+                    </controls:Setting>
+                    <controls:Setting
+                        Icon="&#xE756;"
+                        Header="Is Close ADB when Closing Installer?">
+                        <controls:Setting.ActionContent>
+                            <ToggleSwitch
+                                IsOn="{x:Bind IsCloseADB, Mode=TwoWay}"
+                                Style="{StaticResource ToggleSwitchSettingStyle}"/>
                         </controls:Setting.ActionContent>
                     </controls:Setting>
                     <controls:SettingButton
@@ -175,9 +187,17 @@
                     </controls:Setting>
                     <InfoBar
                         IsOpen="True"
-                        IsClosable="False"
+                        IsClosable="True"
                         x:Name="UpdateState"
-                        Visibility="Collapsed"/>
+                        Visibility="Collapsed">
+                        <InfoBar.ActionButton>
+                            <Button
+                                x:Name="GotoUpdate"
+                                Content="Go to Update"
+                                Tag="{x:Bind IssuePath}"
+                                Click="GotoUpdate_Click"/>
+                        </InfoBar.ActionButton>
+                    </InfoBar>
                 </controls:SettingsGroup>
             </StackPanel>
         </ScrollViewer>
