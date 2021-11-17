@@ -147,6 +147,36 @@
     <Content Include="Images\Wide310x150Logo.scale-150.png" />
     <Content Include="Images\Wide310x150Logo.scale-200.png" />
     <Content Include="Images\Wide310x150Logo.scale-400.png" />
+    <Content Include="String\af-ZA\Resources.resw" />
+    <Content Include="String\ar-SA\Resources.resw" />
+    <Content Include="String\ca-ES\Resources.resw" />
+    <Content Include="String\cs-CZ\Resources.resw" />
+    <Content Include="String\da-DK\Resources.resw" />
+    <Content Include="String\de-DE\Resources.resw" />
+    <Content Include="String\el-GR\Resources.resw" />
+    <Content Include="String\en-US\Resources.resw" />
+    <Content Include="String\es-ES\Resources.resw" />
+    <Content Include="String\fi-FI\Resources.resw" />
+    <Content Include="String\fr-FR\Resources.resw" />
+    <Content Include="String\he-IL\Resources.resw" />
+    <Content Include="String\hu-HU\Resources.resw" />
+    <Content Include="String\it-IT\Resources.resw" />
+    <Content Include="String\ja-JP\Resources.resw" />
+    <Content Include="String\ko-KR\Resources.resw" />
+    <Content Include="String\nl-NL\Resources.resw" />
+    <Content Include="String\no-NO\Resources.resw" />
+    <Content Include="String\pl-PL\Resources.resw" />
+    <Content Include="String\pt-BR\Resources.resw" />
+    <Content Include="String\pt-PT\Resources.resw" />
+    <Content Include="String\ro-RO\Resources.resw" />
+    <Content Include="String\ru-RU\Resources.resw" />
+    <Content Include="String\sr-SP\Resources.resw" />
+    <Content Include="String\sv-SE\Resources.resw" />
+    <Content Include="String\tr-TR\Resources.resw" />
+    <Content Include="String\uk-UA\Resources.resw" />
+    <Content Include="String\vi-VN\Resources.resw" />
+    <Content Include="String\zh-CN\Resources.resw" />
+    <Content Include="String\zh-TW\Resources.resw" />
   </ItemGroup>
   <Import Project="$(WapProjPath)\Microsoft.DesktopBridge.targets" />
   <ItemGroup>
