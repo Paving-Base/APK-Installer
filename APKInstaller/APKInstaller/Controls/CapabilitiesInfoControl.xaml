@@ -51,6 +51,7 @@
             TabIndex="4"
             Content="More"
             x:Name="MoreButton"
+            BorderThickness="0"
             Click="MoreButton_Click"
             Background="Transparent"
             UseSystemFocusVisuals="True"

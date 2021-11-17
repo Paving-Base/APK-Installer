@@ -4,12 +4,15 @@ using AAPTForNet.Models;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace AAPTForNet {
+namespace AAPTForNet
+{
     /// <summary>
     /// Parse output messages from AAPTool
     /// </summary>
-    internal class ApkParser {
-        public static ApkInfo Parse(DumpModel model) {
+    internal class ApkParser
+    {
+        public static ApkInfo Parse(DumpModel model)
+        {
             if (!model.isSuccess)
                 return new ApkInfo();
 
@@ -22,9 +25,12 @@ namespace AAPTForNet {
                 new ApplicationFilter()
             };
 
-            foreach(string msg in model.Messages) {
-                foreach(var f in filters) {
-                    if (f.canHandle(msg)) {
+            foreach (string msg in model.Messages)
+            {
+                foreach (var f in filters)
+                {
+                    if (f.canHandle(msg))
+                    {
                         f.addMessage(msg);
                         break;
                     }

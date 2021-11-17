@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "APKInstaller": {
+      "commandName": "MsixPackage"
+    }
+  }
+}

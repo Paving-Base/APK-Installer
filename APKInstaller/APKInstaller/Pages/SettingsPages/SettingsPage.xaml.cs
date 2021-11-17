@@ -1,5 +1,6 @@
 ﻿using AdvancedSharpAdbClient;
 using APKInstaller.Helpers;
+using APKInstaller.Models;
 using CommunityToolkit.WinUI.UI.Controls;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
@@ -7,8 +8,8 @@ using Microsoft.UI.Xaml.Navigation;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
 using Windows.ApplicationModel;
+using Windows.ApplicationModel.Resources;
 using Windows.Storage;
 using Windows.System;
 
@@ -22,26 +23,26 @@ namespace APKInstaller.Pages.SettingsPages
     /// </summary>
     public sealed partial class SettingsPage : Page, INotifyPropertyChanged
     {
-        private IEnumerable<DeviceData> deviceList;
+        private IEnumerable<DeviceData> _deviceList;
         internal IEnumerable<DeviceData> DeviceList
         {
-            get => deviceList;
+            get => _deviceList;
             set
             {
-                deviceList = value;
+                _deviceList = value;
                 RaisePropertyChangedEvent();
                 if (!IsOnlyWSA) { ChooseDevice(); }
             }
         }
 
-        private bool isOnlyWSA = SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
+        private bool _isOnlyWSA = SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
         internal bool IsOnlyWSA
         {
-            get => isOnlyWSA;
+            get => _isOnlyWSA;
             set
             {
                 SettingsHelper.Set(SettingsHelper.IsOnlyWSA, value);
-                isOnlyWSA = SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
+                _isOnlyWSA = SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
                 SelectDeviceBox.SelectionMode = value ? ListViewSelectionMode.None : ListViewSelectionMode.Single;
                 if (!value) { ChooseDevice(); }
                 RaisePropertyChangedEvent();
@@ -56,6 +57,28 @@ namespace APKInstaller.Pages.SettingsPages
             {
                 SettingsHelper.Set(SettingsHelper.IsCloseADB, value);
                 isCloseADB = SettingsHelper.Get<bool>(SettingsHelper.IsCloseADB);
+            }
+        }
+        
+        private DateTime _updateDate = SettingsHelper.Get<DateTime>(SettingsHelper.UpdateDate);
+        internal DateTime UpdateDate
+        {
+            get => _updateDate;
+            set
+            {
+                SettingsHelper.Set(SettingsHelper.UpdateDate, value);
+                _updateDate = SettingsHelper.Get<DateTime>(SettingsHelper.UpdateDate);
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        private bool _checkingUpdate;
+        internal bool CheckingUpdate
+        {
+            get => _checkingUpdate;
+            set
+            {
+                _checkingUpdate = value;
                 RaisePropertyChangedEvent();
             }
         }
@@ -69,12 +92,13 @@ namespace APKInstaller.Pages.SettingsPages
 
         private const string IssuePath = "https://github.com/Paving-Base/APK-Installer/issues";
 
-        internal static string VersionTextBlockText
+        internal string VersionTextBlockText
         {
             get
             {
                 string ver = $"{Package.Current.Id.Version.Major}.{Package.Current.Id.Version.Minor}.{Package.Current.Id.Version.Build}";
-                string name = "APK Installer";
+                ResourceLoader loader = ResourceLoader.GetForViewIndependentUse();
+                string name = loader?.GetString("AppName") ?? "APK Installer";
                 return $"{name} v{ver}";
             }
         }
@@ -84,10 +108,11 @@ namespace APKInstaller.Pages.SettingsPages
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-//#if DEBUG
+            //#if DEBUG
             GoToTestPage.Visibility = Visibility.Visible;
-//#endif
+            //#endif
             SelectDeviceBox.SelectionMode = IsOnlyWSA ? ListViewSelectionMode.None : ListViewSelectionMode.Single;
+            if (UpdateDate == DateTime.MinValue) { CheckUpdate(); }
             ADBHelper.Monitor.DeviceChanged += OnDeviceChanged;
             DeviceList = new AdvancedAdbClient().GetDevices();
         }
@@ -129,9 +154,44 @@ namespace APKInstaller.Pages.SettingsPages
                 case "LogFolder":
                     _ = await Launcher.LaunchFolderAsync(await ApplicationData.Current.LocalFolder.CreateFolderAsync("MetroLogs", CreationCollisionOption.OpenIfExists));
                     break;
+                case "CheckUpdate":
+                    CheckUpdate();
+                    break;
                 default:
                     break;
             }
+        }
+
+        private async void CheckUpdate()
+        {
+            CheckingUpdate = true;
+            UpdateInfo info = null;
+            try
+            {
+                info = await UpdateHelper.CheckUpdateAsync("Paving-Base", "APK-Installer");
+            }
+            catch (Exception ex)
+            {
+                UpdateState.Message = ex.Message;
+                UpdateState.Title = "Check Failed";
+                UpdateState.Visibility = Visibility.Visible;
+                UpdateState.Severity = InfoBarSeverity.Error;
+            }
+            if (info != null)
+            {
+                if (info.IsExistNewVersion)
+                {
+
+                }
+                else
+                {
+                    UpdateState.Title = "Up To Date";
+                    UpdateState.Visibility = Visibility.Visible;
+                    UpdateState.Severity = InfoBarSeverity.Success;
+                }
+            }
+            UpdateDate = DateTime.Now;
+            CheckingUpdate = false;
         }
 
         private void MarkdownTextBlock_LinkClicked(object sender, LinkClickedEventArgs e)
@@ -159,9 +219,10 @@ namespace APKInstaller.Pages.SettingsPages
         private void ChooseDevice()
         {
             DeviceData device = SettingsHelper.Get<DeviceData>(SettingsHelper.DefaultDevice);
-            foreach(DeviceData data in DeviceList)
+            if (device == null) { return; }
+            foreach (DeviceData data in DeviceList)
             {
-                if(data.Name == device.Name && data.Model == device.Model && data.Product == device.Product)
+                if (data.Name == device.Name && data.Model == device.Model && data.Product == device.Product)
                 {
                     SelectDeviceBox.SelectedItem = data;
                     break;

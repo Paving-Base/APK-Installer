@@ -25,7 +25,8 @@
             Height="28"
             Grid.Row="0"
             x:Name="CustomTitleBar"
-            HorizontalAlignment="Stretch"/>
+            HorizontalAlignment="Left"
+            Background="{StaticResource ApplicationPageBackgroundThemeBrush}"/>
         <Button
             Width="28"
             Height="28"

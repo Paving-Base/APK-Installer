@@ -4,7 +4,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:Controls="using:APKInstaller.Controls"
+    xmlns:contorls="using:APKInstaller.Controls"
     xmlns:converter="using:APKInstaller.Helpers.ValueConverters"
     xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
     mc:Ignorable="d"
@@ -27,6 +27,11 @@
             <StackPanel
                 Padding="16,0"
                 Margin="{StaticResource StackPanelMargin}">
+                <StackPanel.ChildrenTransitions>
+                    <TransitionCollection>
+                        <ReorderThemeTransition/>
+                    </TransitionCollection>
+                </StackPanel.ChildrenTransitions>
                 <controls:HeaderedContentControl
                     Header="UI Test"
                     Style="{StaticResource HeaderStyle}">
@@ -72,7 +77,7 @@
                 </controls:HeaderedContentControl>
             </StackPanel>
         </ScrollViewer>
-        <Controls:TitleBar
+        <contorls:TitleBar
             Title="Testing"
             BackgroundVisibility="Visible"
             BackRequested="TitleBar_BackRequested"

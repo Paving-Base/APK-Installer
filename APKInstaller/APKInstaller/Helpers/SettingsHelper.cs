@@ -1,10 +1,8 @@
 ﻿using AdvancedSharpAdbClient;
 using CommunityToolkit.WinUI.Helpers;
+using System;
 using System.Text.Json;
 using System.Threading.Tasks;
-using Windows.Storage;
-using Windows.UI.ViewManagement;
-using Windows.UI.Xaml;
 
 namespace APKInstaller.Helpers
 {
@@ -18,7 +16,7 @@ namespace APKInstaller.Helpers
 
         public static Type Get<Type>(string key) => LocalObject.Read<Type>(key);
         public static void Set(string key, object value) => LocalObject.Save(key, value);
-        public static void SetFile(string key, object value) => LocalObject.SaveFileAsync(key, value);
+        public static void SetFile(string key, object value) => LocalObject.CreateFileAsync(key, value);
         public static async Task<Type> GetFile<Type>(string key) => await LocalObject.ReadFileAsync<Type>(key);
 
         public static void SetDefaultSettings()
@@ -30,6 +28,10 @@ namespace APKInstaller.Helpers
             if (!LocalObject.KeyExists(IsOnlyWSA))
             {
                 LocalObject.Save(IsOnlyWSA, OperatingSystemVersion.Build >= 22000);
+            }
+            if (!LocalObject.KeyExists(UpdateDate))
+            {
+                LocalObject.Save(UpdateDate, new DateTime());
             }
             if (!LocalObject.KeyExists(IsFirstRun))
             {
@@ -55,8 +57,8 @@ namespace APKInstaller.Helpers
 
     internal static partial class SettingsHelper
     {
-        private static readonly LocalObjectStorageHelper LocalObject = new LocalObjectStorageHelper(new SystemTextJsonSerializer());
         public static OSVersion OperatingSystemVersion => SystemInformation.Instance.OperatingSystemVersion;
+        private static readonly ApplicationDataStorageHelper LocalObject = ApplicationDataStorageHelper.GetCurrent(new SystemTextJsonObjectSerializer());
 
         static SettingsHelper()
         {
@@ -64,10 +66,10 @@ namespace APKInstaller.Helpers
         }
     }
 
-    internal class SystemTextJsonSerializer : IObjectSerializer
+    public class SystemTextJsonObjectSerializer : CommunityToolkit.Common.Helpers.IObjectSerializer
     {
-        public object Serialize<T>(T value) => JsonSerializer.Serialize(value);
+        string CommunityToolkit.Common.Helpers.IObjectSerializer.Serialize<T>(T value) => JsonSerializer.Serialize(value);
 
-        public T Deserialize<T>(object value) => JsonSerializer.Deserialize<T>((string)value);
+        public T Deserialize<T>(string value) => JsonSerializer.Deserialize<T>(value);
     }
 }

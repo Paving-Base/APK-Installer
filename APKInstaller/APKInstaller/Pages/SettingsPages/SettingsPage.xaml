@@ -5,20 +5,12 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:sharpadbclient="using:AdvancedSharpAdbClient"
-    xmlns:Controls="using:APKInstaller.Controls"
+    xmlns:controls="using:APKInstaller.Controls"
     xmlns:converter="using:APKInstaller.Helpers.ValueConverters"
-    xmlns:local="using:APKInstaller.Pages.SettingsPages"
-    xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
-    mc:Ignorable="d"
-    NavigationCacheMode="Enabled">
+    mc:Ignorable="d">
     <Page.Resources>
-        <converter:TrueToFalseConverter x:Key="TrueToFalseConverter" />
-        <Style x:Key="HeaderStyle" TargetType="controls:HeaderedContentControl">
-            <Setter Property="Margin" Value="0,8"/>
-            <Setter Property="FontSize" Value="18"/>
-            <Setter Property="FontWeight" Value="SemiBold"/>
-            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
-        </Style>
+        <converter:TrueToFalseConverter x:Key="TrueToFalseConverter"/>
+        <converter:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
     </Page.Resources>
     <Grid>
         <Grid.ChildrenTransitions>
@@ -28,128 +20,170 @@
         </Grid.ChildrenTransitions>
         <ScrollViewer Style="{StaticResource PageScrollViewer}">
             <StackPanel
-                Padding="16,0"
+                Padding="16"
                 Margin="{StaticResource StackPanelMargin}">
-                <controls:HeaderedContentControl
-                    Header="Device"
-                    Style="{StaticResource HeaderStyle}">
+                <StackPanel.ChildrenTransitions>
+                    <TransitionCollection>
+                        <ReorderThemeTransition/>
+                    </TransitionCollection>
+                </StackPanel.ChildrenTransitions>
+                <controls:SettingsGroup
+                    Margin="0,-32,0,0"
+                    x:Uid="/SettingsPage/DeviceSettingsHeader">
                     <ListView
-                        Margin="0,2"
                         x:Name="SelectDeviceBox"
                         ItemsSource="{x:Bind DeviceList, Mode=OneWay}"
                         SelectionChanged="SelectDeviceBox_SelectionChanged">
                         <ListView.ItemTemplate>
                             <DataTemplate x:DataType="sharpadbclient:DeviceData">
                                 <ListViewItem
-                                    Margin="-10,0"
-                                    MinHeight="40"
-                                    HorizontalAlignment="Stretch">
-                                    <Grid>
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="40"/>
-                                            <ColumnDefinition Width="*"/>
-                                        </Grid.ColumnDefinitions>
-                                        <SymbolIcon
-                                            Grid.Column="0"
-                                            Symbol="CellPhone"
-                                            HorizontalAlignment="Center"/>
-                                        <StackPanel
-                                            Grid.Column="1"
-                                            HorizontalAlignment="Left">
-                                            <TextBlock
-                                                FontSize="14"
-                                                FontWeight="Normal"
-                                                Text="{x:Bind Name}"/>
-                                            <TextBlock
-                                                FontSize="12"
-                                                FontWeight="Normal"
-                                                Text="{x:Bind State}"
-                                                Foreground="{ThemeResource SystemControlForegroundBaseMediumBrush}"/>
-                                        </StackPanel>
-                                    </Grid>
+                                    Style="{StaticResource ListViewItemSettingStyle}">
+                                    <controls:Setting
+                                    Margin="0,0"
+                                    Icon="&#xE8EA;"
+                                    Header="{x:Bind Name}"
+                                    Description="{x:Bind State}">
+                                    </controls:Setting>
                                 </ListViewItem>
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
-                </controls:HeaderedContentControl>
-                <controls:HeaderedContentControl
-                    Header="Options"
-                    Style="{StaticResource HeaderStyle}">
-                    <StackPanel>
-                        <CheckBox
-                            FontWeight="Normal"
-                            Content="Is Only for WSA?"
-                            IsChecked="{x:Bind IsOnlyWSA, Mode=TwoWay}"/>
-                        <CheckBox
-                            FontWeight="Normal"
-                            Content="Is Close ADB when Closing Installer?"
-                            IsChecked="{x:Bind IsCloseADB, Mode=TwoWay}"/>
-                    </StackPanel>
-                </controls:HeaderedContentControl>
-                <controls:HeaderedContentControl
-                    Header="Others"
-                    Style="{StaticResource HeaderStyle}">
-                    <StackPanel>
-                        <HyperlinkButton
-                            Margin="0,2"
-                            Tag="FeedBack"
-                            Click="Button_Click"
-                            Content="Feedback on GitHub"/>
-                        <StackPanel
-                            Margin="0,2"
-                            Orientation="Horizontal">
+                    <controls:SettingExpander IsExpanded="{x:Bind IsOnlyWSA, Converter={StaticResource TrueToFalseConverter}}">
+                        <controls:SettingExpander.Header>
+                            <controls:Setting
+                                Icon="&#xE975;"
+                                Header="Is Only for WSA?"
+                                Description="Disable it to conncet to other device.">
+                                <controls:Setting.ActionContent>
+                                    <ToggleSwitch
+                                        IsOn="{x:Bind IsOnlyWSA, Mode=TwoWay}"
+                                        Style="{StaticResource ToggleSwitchSettingStyle}"/>
+                                </controls:Setting.ActionContent>
+                            </controls:Setting>
+                        </controls:SettingExpander.Header>
+                        <controls:SettingExpander.Content>
+                            <controls:Setting
+                                Header="Connect Device"
+                                Description="Connect device on network."
+                                Style="{StaticResource ExpanderContentSettingStyle}">
+                                <StackPanel
+                                    Spacing="8"
+                                    Orientation="Horizontal">
+                                    <TextBox
+                                        PlaceholderText="127.0.0.1:58526"
+                                        MinWidth="{StaticResource SettingActionControlMinWidth}"/>
+                                    <Button
+                                        Width="40"
+                                        Height="36"
+                                        Content="&#xE71B;"
+                                        FontFamily="{StaticResource SymbolThemeFontFamily}"/>
+                                </StackPanel>
+                            </controls:Setting>
+                        </controls:SettingExpander.Content>
+                    </controls:SettingExpander>
+                </controls:SettingsGroup>
+                <controls:SettingsGroup
+                    Margin="0,-32,0,0"
+                    x:Uid="/SettingsPage/OthersSettingsHeader">
+                    <controls:Setting
+                        Icon="&#xE777;"
+                        x:Uid="/SettingsPage/ResetSettings">
+                        <controls:Setting.ActionContent>
                             <Button
                                 Name="Reset"
-                                Content="Reset application"
-                                Style="{StaticResource ButtonRevealStyle}">
+                                x:Uid="/SettingsPage/ResetSettingsButton">
                                 <Button.Flyout>
                                     <Flyout>
                                         <StackPanel>
                                             <TextBlock
                                                 Margin="0,0,0,12"
-                                                Style="{ThemeResource BaseTextBlockStyle}"
-                                                Text="Are you sure you want to reset the app?"/>
+                                                x:Uid="/SettingsPage/ResetSettingsTitle"
+                                                Style="{ThemeResource BaseTextBlockStyle}"/>
                                             <Button
                                                 Tag="Reset"
-                                                Content="Yes"
                                                 Click="Button_Click"
-                                                Style="{StaticResource ButtonRevealStyle}"/>
+                                                x:Uid="/SettingsPage/ResetSettingsConfirm"/>
                                         </StackPanel>
                                     </Flyout>
                                 </Button.Flyout>
                             </Button>
-                            <Button
-                                Margin="4,0"
-                                Tag="TestPage"
-                                Click="Button_Click"
-                                x:Name="GoToTestPage"
-                                Content="Go to TestPage"
-                                Style="{StaticResource ButtonRevealStyle}"/>
-                        </StackPanel>
-                    </StackPanel>
-                </controls:HeaderedContentControl>
-                <controls:HeaderedContentControl
-                    Header="About"
-                    Style="{StaticResource HeaderStyle}">
-                    <StackPanel>
-                        <TextBlock
-                            Margin="0,2"
-                            Grid.Row="0"
-                            Grid.ColumnSpan="2"
-                            FontSize="{ThemeResource ContentControlFontSize}"
-                            Text="{x:Bind local:SettingsPage.VersionTextBlockText}"/>
-                        <controls:MarkdownTextBlock
-                            Margin="0,2"
-                            Background="Transparent"
-                            HorizontalAlignment="Left"
-                            LinkClicked="MarkdownTextBlock_LinkClicked"
-                            FontSize="{x:Bind Path=GoToTestPage.FontSize, Mode=OneWay}"/>
-                    </StackPanel>
-                </controls:HeaderedContentControl>
+                        </controls:Setting.ActionContent>
+                    </controls:Setting>
+                    <controls:SettingButton
+                        Tag="TestPage"
+                        Click="Button_Click"
+                        x:Name="GoToTestPage">
+                        <controls:SettingButton.Content>
+                            <controls:Setting
+                                Icon="&#xEC7A;"
+                                x:Uid="/SettingsPage/GoToTestPage">
+                            </controls:Setting>
+                        </controls:SettingButton.Content>
+                    </controls:SettingButton>
+                </controls:SettingsGroup>
+                <controls:SettingsGroup
+                    Margin="0,-32,0,0"
+                    x:Uid="/SettingsPage/AboutSettingsHeader">
+                    <controls:Setting
+                        Icon="&#xE117;"
+                        Header="{x:Bind VersionTextBlockText}">
+                        <controls:Setting.Description>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock Style="{StaticResource SecondaryTextStyle}">
+                                    <Run Text="Last Checked"/>
+                                    <Run Text="{x:Bind UpdateDate, Mode=OneWay}"/>
+                                </TextBlock>
+                                <StackPanel
+                                    Margin="0,2,0,0"
+                                    Orientation="Horizontal">
+                                    <HyperlinkButton
+                                        Tag="FeedBack"
+                                        Margin="0,0,2,0"
+                                        Click="Button_Click"
+                                        x:Uid="/SettingsPage/FeedbackLink"/>
+                                    <HyperlinkButton
+                                        Margin="2,0"
+                                        Content="Release notes"
+                                        NavigateUri="https://github.com/Paving-Base/APK-Installer/releases/"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </controls:Setting.Description>
+                        <controls:Setting.ActionContent>
+                            <StackPanel
+                                Spacing="18"
+                                Orientation="Horizontal"
+                                VerticalAlignment="Center">
+                                <ProgressRing
+                                    Width="24"
+                                    Height="24"
+                                    Visibility="{x:Bind CheckingUpdate, Mode=OneWay}"/>
+                                <TextBlock
+                                    FontWeight="SemiBold"
+                                    VerticalAlignment="Center"
+                                    Text="Checking For Updates"
+                                    Visibility="{x:Bind CheckingUpdate, Mode=OneWay}"
+                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
+                                <Button
+                                    x:Name="Update"
+                                    Tag="CheckUpdate"
+                                    Click="Button_Click"
+                                    Content="Check For Updates"
+                                    HorizontalAlignment="Right"
+                                    Visibility="{x:Bind CheckingUpdate, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='!bool'}" />
+                            </StackPanel>
+                        </controls:Setting.ActionContent>
+                    </controls:Setting>
+                    <InfoBar
+                        IsOpen="True"
+                        IsClosable="False"
+                        x:Name="UpdateState"
+                        Visibility="Collapsed"/>
+                </controls:SettingsGroup>
             </StackPanel>
         </ScrollViewer>
-        <Controls:TitleBar
-            Title="Settings"
+        <controls:TitleBar
+            x:Name="TitleBar"
+            x:Uid="/SettingsPage/TitleBar"
             BackgroundVisibility="Visible"
             BackRequested="TitleBar_BackRequested"
             IsBackEnable="{x:Bind Frame.CanGoBack}"/>

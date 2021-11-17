@@ -4,20 +4,24 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace AAPTForNet {
+namespace AAPTForNet
+{
     /// <summary>
     /// Android Assert Packing Tool for NET
     /// </summary>
-    public class AAPTool : System.Diagnostics.Process {
-        private enum DumpTypes {
+    public class AAPTool : System.Diagnostics.Process
+    {
+        private enum DumpTypes
+        {
             Manifest = 0,
             Resources = 1,
             XmlTree = 2,
         }
-                
+
         private static readonly string AppPath = Path.GetDirectoryName(System.Reflection.Assembly.GetCallingAssembly().Location);
 
-        protected AAPTool() {
+        protected AAPTool()
+        {
             this.StartInfo.FileName = AppPath + @"\tool\aapt.exe";
             this.StartInfo.CreateNoWindow = true;
             this.StartInfo.UseShellExecute = false; // For read output data
@@ -26,16 +30,18 @@ namespace AAPTForNet {
             this.StartInfo.StandardOutputEncoding = System.Text.Encoding.GetEncoding("utf-8");
         }
 
-        protected new bool Start(string args) {
+        protected new bool Start(string args)
+        {
             this.StartInfo.Arguments = args;
             return base.Start();
         }
-        
+
         private static DumpModel dump(
             string path,
             string args,
-            DumpTypes type, 
-            Func<string, int, bool> callback) {
+            DumpTypes type,
+            Func<string, int, bool> callback)
+        {
 
             int index = 0;
             var terminated = false;
@@ -43,7 +49,8 @@ namespace AAPTForNet {
             var aapt = new AAPTool();
             var output = new List<string>();    // Messages from output stream
 
-            switch (type) {
+            switch (type)
+            {
                 case DumpTypes.Manifest:
                     aapt.Start($"dump badging \"{path}\"");
                     break;
@@ -57,12 +64,15 @@ namespace AAPTForNet {
                     return new DumpModel(path, false, output);
             }
 
-            while (!aapt.StandardOutput.EndOfStream && !terminated) {
+            while (!aapt.StandardOutput.EndOfStream && !terminated)
+            {
                 msg = aapt.StandardOutput.ReadLine();
-                
-                if (callback(msg, index)) {
+
+                if (callback(msg, index))
+                {
                     terminated = true;
-                    try {
+                    try
+                    {
                         aapt.Kill();
                     }
                     catch { }
@@ -72,11 +82,13 @@ namespace AAPTForNet {
                 output.Add(msg);
             }
 
-            while (!aapt.StandardError.EndOfStream) {
+            while (!aapt.StandardError.EndOfStream)
+            {
                 output.Add(aapt.StandardError.ReadLine());
             }
 
-            try {
+            try
+            {
                 aapt.WaitForExit();
                 aapt.Close();
             }
@@ -88,20 +100,24 @@ namespace AAPTForNet {
             return new DumpModel(path, isSuccess, output);
         }
 
-        internal static DumpModel dumpManifest(string path) {
+        internal static DumpModel dumpManifest(string path)
+        {
             return dump(path, string.Empty, DumpTypes.Manifest, (msg, i) => false);
         }
 
-        internal static DumpModel dumpResources(string path, Func<string, int, bool> callback) {
+        internal static DumpModel dumpResources(string path, Func<string, int, bool> callback)
+        {
             return dump(path, string.Empty, DumpTypes.Resources, callback);
         }
 
-        internal static DumpModel dumpXmlTree(string path, string asset, Func<string, int, bool> callback = null) {
+        internal static DumpModel dumpXmlTree(string path, string asset, Func<string, int, bool> callback = null)
+        {
             callback = callback ?? ((_, __) => false);
             return dump(path, asset, DumpTypes.XmlTree, callback);
         }
 
-        internal static DumpModel dumpManifestTree(string path, Func<string, int, bool> callback = null) {
+        internal static DumpModel dumpManifestTree(string path, Func<string, int, bool> callback = null)
+        {
             return dumpXmlTree(path, "AndroidManifest.xml", callback);
         }
 
@@ -110,15 +126,17 @@ namespace AAPTForNet {
         /// </summary>
         /// <param name="path">Absolute path to .apk file</param>
         /// <returns>Filled apk if dump process is not failed</returns>
-        public static ApkInfo Decompile(string path) {
+        public static ApkInfo Decompile(string path)
+        {
             var manifest = ApkExtractor.ExtractManifest(path);
             if (!manifest.isSuccess)
                 return new ApkInfo();
 
             var apk = ApkParser.Parse(manifest);
-                apk.FullPath = path;
+            apk.FullPath = path;
 
-            if (apk.Icon.isImage) {
+            if (apk.Icon.isImage)
+            {
                 // Included icon in manifest, extract it from apk
                 apk.Icon.RealPath = ApkExtractor.ExtractIconImage(path, apk.Icon);
                 if (apk.Icon.isHighDensity)

@@ -1,5 +1,7 @@
-﻿namespace AAPTForNet.Models {
-    internal enum Configs {
+﻿namespace AAPTForNet.Models
+{
+    internal enum Configs
+    {
         anydpi = 0,
         mdpi = 1,
         @default = 2,

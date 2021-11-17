@@ -1,7 +1,9 @@
 ﻿using AAPTForNet.Models;
 
-namespace AAPTForNet.Filters {
-    internal abstract class BaseFilter {
+namespace AAPTForNet.Filters
+{
+    internal abstract class BaseFilter
+    {
         protected const char seperator = '\'';
         protected const string defaultEmptyValue = "Unknown";
 

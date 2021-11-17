@@ -7,6 +7,7 @@ using APKInstaller.Helpers;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
+using Microsoft.Windows.AppLifecycle;
 using PortableDownloader;
 using SharpCompress.Archives;
 using SharpCompress.Common;
@@ -17,7 +18,6 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
-using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Storage;
 
@@ -31,7 +31,7 @@ namespace APKInstaller.Pages
     /// </summary>
     public sealed partial class InstallPage : Page, INotifyPropertyChanged
     {
-        private string path /*= @"C:\Users\qq251\Downloads\Programs\MT管理器_2.10.0.apk"*/;
+        private string path = @"C:\Users\qq251\Downloads\Programs\MT管理器_2.10.0.apk";
         private bool wsaonly => SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
         private DeviceData device;
 
@@ -98,11 +98,11 @@ namespace APKInstaller.Pages
             }
             else
             {
-                IActivatedEventArgs args = AppInstance.GetActivatedEventArgs();
+                AppActivationArguments args = AppInstance.GetCurrent().GetActivatedEventArgs();
                 switch (args.Kind)
                 {
-                    case ActivationKind.File:
-                        path = (args as IFileActivatedEventArgs).Files.First().Path;
+                    case ExtendedActivationKind.File:
+                        path = (args.Data as IFileActivatedEventArgs).Files.First().Path;
                         break;
                     default:
                         break;
@@ -278,17 +278,17 @@ namespace APKInstaller.Pages
                         while (downloader.IsStarted)
                         {
                             _ = DispatcherQueue.TryEnqueue(() =>
-                              {
-                                  WaitProgressText.Text = $"{((double)downloader.BytesPerSecond).GetSizeString()}/s";
-                                  WaitProgressRing.Value = (double)downloader.CurrentSize * 100 / downloader.TotalSize;
-                              });
+                            {
+                                WaitProgressText.Text = $"{((double)downloader.BytesPerSecond).GetSizeString()}/s";
+                                WaitProgressRing.Value = (double)downloader.CurrentSize * 100 / downloader.TotalSize;
+                            });
                             await Task.Delay(500);
                         }
                         _ = DispatcherQueue.TryEnqueue(() =>
-                          {
-                              WaitProgressText.Text = "Unzip ADB...";
-                              WaitProgressRing.IsIndeterminate = true;
-                          });
+                        {
+                            WaitProgressText.Text = "Unzip ADB...";
+                            WaitProgressRing.IsIndeterminate = true;
+                        });
                         IArchive archive = ArchiveFactory.Open(Path.Combine(ApplicationData.Current.LocalFolder.Path, "platform-tools.zip"));
                         _ = DispatcherQueue.TryEnqueue(() => WaitProgressRing.IsIndeterminate = false);
                         foreach (IArchiveEntry entry in archive.Entries)
@@ -304,10 +304,10 @@ namespace APKInstaller.Pages
                             }
                         }
                         _ = DispatcherQueue.TryEnqueue(() =>
-                          {
-                              WaitProgressRing.IsIndeterminate = true;
-                              WaitProgressText.Text = "Unzip complete";
-                          });
+                        {
+                            WaitProgressRing.IsIndeterminate = true;
+                            WaitProgressText.Text = "Unzip complete";
+                        });
                     });
                 }
                 else
@@ -362,7 +362,7 @@ namespace APKInstaller.Pages
                 else
                 {
                     DeviceData data = SettingsHelper.Get<DeviceData>(SettingsHelper.DefaultDevice);
-                    if (data.Name == device.Name && data.Model == device.Model && data.Product == device.Product)
+                    if (data != null && data.Name == device.Name && data.Model == device.Model && data.Product == device.Product)
                     {
                         this.device = data;
                         return true;
@@ -392,7 +392,11 @@ namespace APKInstaller.Pages
                 return;
             }
             PackageManager manager = new PackageManager(client, device);
-            var info = manager.GetVersionInfo(ApkInfo.PackageName);
+            VersionInfo info = null;
+            if (ApkInfo != null)
+            {
+                info = manager.GetVersionInfo(ApkInfo.PackageName);
+            }
             if (info == null)
             {
                 ActionButtonText.Text = "Install";
@@ -448,10 +452,10 @@ namespace APKInstaller.Pages
                 if (IsOpenApp)
                 {
                     _ = Task.Run(async () =>
-                      {
-                          await Task.Delay(1000);// 据说如果安装完直接启动会崩溃。。。
-                          OpenAPP();
-                      });
+                    {
+                        await Task.Delay(1000);// 据说如果安装完直接启动会崩溃。。。
+                        OpenAPP();
+                    });
                 }
                 IsInstalling = false;
                 SecondaryActionButtonText.Text = "Launch";

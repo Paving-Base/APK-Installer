@@ -2,11 +2,6 @@
 using APKInstaller.Pages.SettingsPages;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using Windows.ApplicationModel.DataTransfer;
-using Windows.Storage;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -18,6 +13,8 @@ namespace APKInstaller.Pages
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        private bool HasBeenSmail;
+
         public MainPage()
         {
             InitializeComponent();
@@ -41,24 +38,24 @@ namespace APKInstaller.Pages
 
         private void Page_SizeChanged(object sender, SizeChangedEventArgs e)
         {
-            //try
-            //{
-            //    if (XamlRoot.Size.Width <= 240)
-            //    {
-            //        if (!HasBeenSmail)
-            //        {
-            //            HasBeenSmail = true;
-            //            UIHelper.MainWindow.SetTitleBar(null);
-            //        }
-            //    }
-            //    else if (HasBeenSmail)
-            //    {
-            //        HasBeenSmail = false;
-            //        UIHelper.MainWindow.SetTitleBar(CustomTitleBar);
-            //    }
-            //    CustomTitleBar.Width = XamlRoot.Size.Width;
-            //}
-            //catch { }
+            try
+            {
+                if (XamlRoot.Size.Width <= 240)
+                {
+                    if (!HasBeenSmail)
+                    {
+                        HasBeenSmail = true;
+                        UIHelper.MainWindow.SetTitleBar(null);
+                    }
+                }
+                else if (HasBeenSmail)
+                {
+                    HasBeenSmail = false;
+                    UIHelper.MainWindow.SetTitleBar(CustomTitleBar);
+                }
+                CustomTitleBar.Width = XamlRoot.Size.Width - 120;
+            }
+            catch { }
         }
     }
 }

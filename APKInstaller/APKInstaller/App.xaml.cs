@@ -1,7 +1,8 @@
-﻿using APKInstaller.Helpers.Exceptions;
+using APKInstaller.Helpers.Exceptions;
 using Microsoft.UI.Xaml;
-using System;
 using System.Runtime.InteropServices;
+using System;
+using Windows.ApplicationModel.Resources;
 using WinRT;
 
 // To learn more about WinUI, the WinUI project structure,
@@ -33,9 +34,10 @@ namespace APKInstaller
         protected override void OnLaunched(LaunchActivatedEventArgs args)
         {
             RegisterExceptionHandlingSynchronizationContext();
+            ResourceLoader loader = ResourceLoader.GetForViewIndependentUse();
             m_window = new MainWindow()
             {
-                Title = "Apk Installer"
+                Title = loader.GetString("AppName")
             };
             //Get the Window's HWND
             IWindowNative windowNative = m_window.As<IWindowNative>();
