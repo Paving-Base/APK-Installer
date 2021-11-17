@@ -196,9 +196,6 @@
   <data name="StartingADB" xml:space="preserve">
     <value>Starting ADB Server...</value>
   </data>
-  <data name="String1" xml:space="preserve">
-    <value>Waiting for Device...</value>
-  </data>
   <data name="UnzipADB" xml:space="preserve">
     <value>Unzip ADB...</value>
   </data>
