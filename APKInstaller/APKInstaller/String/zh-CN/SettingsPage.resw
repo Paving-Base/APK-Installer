@@ -120,8 +120,26 @@
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
     <value>关于</value>
   </data>
+  <data name="CheckFailed" xml:space="preserve">
+    <value>Check Failed</value>
+  </data>
+  <data name="CheckingUpdates.Text" xml:space="preserve">
+    <value>Checking For Updates</value>
+  </data>
+  <data name="CheckUpdates.Content" xml:space="preserve">
+    <value>Check For Updates</value>
+  </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
     <value>清除缓存</value>
+  </data>
+  <data name="CloseADBSettings.Header" xml:space="preserve">
+    <value>Is Close ADB when Closing Installer?</value>
+  </data>
+  <data name="ConnectDevice.Description" xml:space="preserve">
+    <value>Connect device on network.</value>
+  </data>
+  <data name="ConnectDevice.Header" xml:space="preserve">
+    <value>Connect Device</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>内容</value>
@@ -132,11 +150,29 @@
   <data name="FeedbackLink.Content" xml:space="preserve">
     <value>反馈</value>
   </data>
+  <data name="FindUpdate" xml:space="preserve">
+    <value>Find Update</value>
+  </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
     <value>前往测试页面</value>
   </data>
+  <data name="GoToUpdate.Content" xml:space="preserve">
+    <value>Go to Update</value>
+  </data>
+  <data name="LastChecked.Text" xml:space="preserve">
+    <value>Last Checked</value>
+  </data>
+  <data name="OnlyWSASettings.Description" xml:space="preserve">
+    <value>Disable it to conncet to other device.</value>
+  </data>
+  <data name="OnlyWSASettings.Header" xml:space="preserve">
+    <value>Is Only for WSA?</value>
+  </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>其他</value>
+  </data>
+  <data name="ReleaseNotes.Content" xml:space="preserve">
+    <value>Release notes</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
     <value>重置应用</value>
@@ -158,5 +194,8 @@
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
     <value>版本</value>
+  </data>
+  <data name="UpToDate" xml:space="preserve">
+    <value>Up To Date</value>
   </data>
 </root>
