@@ -23,6 +23,8 @@ namespace APKInstaller.Pages.SettingsPages
     /// </summary>
     public sealed partial class SettingsPage : Page, INotifyPropertyChanged
     {
+        private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("SettingsPage");
+
         private IEnumerable<DeviceData> _deviceList;
         internal IEnumerable<DeviceData> DeviceList
         {
@@ -177,9 +179,9 @@ namespace APKInstaller.Pages.SettingsPages
             {
                 UpdateState.IsOpen = true;
                 UpdateState.Message = ex.Message;
-                UpdateState.Title = "Check Failed";
                 UpdateState.Severity = InfoBarSeverity.Error;
                 GotoUpdate.Visibility = Visibility.Collapsed;
+                UpdateState.Title = _loader.GetString("CheckFailed");
             }
             if (info != null)
             {
@@ -187,17 +189,17 @@ namespace APKInstaller.Pages.SettingsPages
                 {
                     UpdateState.IsOpen = true;
                     GotoUpdate.Tag = info.ReleaseUrl;
-                    UpdateState.Title = "Find Update";
                     GotoUpdate.Visibility = Visibility.Visible;
                     UpdateState.Severity = InfoBarSeverity.Warning;
+                    UpdateState.Title = _loader.GetString("FindUpdate");
                     UpdateState.Message = $"{VersionTextBlockText} -> {info.TagName}";
                 }
                 else
                 {
                     UpdateState.IsOpen = true;
-                    UpdateState.Title = "Up To Date";
                     GotoUpdate.Visibility = Visibility.Collapsed;
                     UpdateState.Severity = InfoBarSeverity.Success;
+                    UpdateState.Title = _loader.GetString("UpToDate");
                 }
             }
             UpdateDate = DateTime.Now;
