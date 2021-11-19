@@ -173,7 +173,7 @@
     <value>Loading...</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>For proper functioning of the app, try to launch an Android app package or open a package.</value>
+    <value>For proper functioning of the app, try to launch an Android app package.</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
