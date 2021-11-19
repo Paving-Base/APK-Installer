@@ -9,10 +9,10 @@
   <Identity
     Name="wherewhere.AndroidAppInstaller.Preview"
     Publisher="CN=where"
-    Version="0.0.3.0" />
+    Version="0.1.4.0" />
 
   <Properties>
-    <DisplayName>APK Installer</DisplayName>
+    <DisplayName>ms-resource:AppName</DisplayName>
     <PublisherDisplayName>wherewhere</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>

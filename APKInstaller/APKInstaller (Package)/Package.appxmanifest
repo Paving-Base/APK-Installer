@@ -9,10 +9,10 @@
   <Identity
     Name="wherewhere.AndroidAppInstaller"
     Publisher="CN=where"
-    Version="0.0.3.0" />
+    Version="0.1.4.0" />
 
   <Properties>
-    <DisplayName>APK Installer</DisplayName>
+    <DisplayName>ms-resource:AppName</DisplayName>
     <PublisherDisplayName>wherewhere</PublisherDisplayName>
     <Logo>Images\StoreLogo.png</Logo>
   </Properties>
@@ -31,8 +31,8 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="APK Installer"
-        Description="Android Application Installer"
+        DisplayName="ms-resource:AppName"
+        Description="ms-resource:AppDescription"
         BackgroundColor="transparent"
         Square150x150Logo="Images\Square150x150Logo.png"
         Square44x44Logo="Images\Square44x44Logo.png">
@@ -58,7 +58,7 @@
             </uap:SupportedFileTypes>
             <uap:DisplayName>APK File</uap:DisplayName>
             <uap:Logo>Images\256x256.png</uap:Logo>
-            <uap:InfoTip>Android Application Package</uap:InfoTip>
+            <uap:InfoTip>ms-resource:APKDescription</uap:InfoTip>
             <uap:EditFlags OpenIsSafe="true"/>
           </uap:FileTypeAssociation>
         </uap:Extension>
