@@ -179,18 +179,18 @@
     <value>好的</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>Package Name: {0}</value>
+    <value>包名称：{0}</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
-    <value>Reinstall</value>
+    <value>重新安装</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>{0} is already installed</value>
+    <value>{0} 已安装</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
-    <value>A newer version of {0} is already installed.</value>
+    <value>已安装较新版本的 {0}。</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="StartingADB" xml:space="preserve">
