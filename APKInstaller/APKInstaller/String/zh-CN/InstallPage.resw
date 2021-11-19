@@ -173,7 +173,7 @@
     <value>加载中......</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>为了使应用程序正常运行，请尝试启动 Android 应用程序包。</value>
+    <value>为了使应用程序正常运行，请尝试打开 Android 应用程序包。</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>好的</value>
