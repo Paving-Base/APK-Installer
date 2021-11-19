@@ -33,7 +33,7 @@ namespace APKInstaller.Pages
     public sealed partial class InstallPage : Page, INotifyPropertyChanged
     {
         private DeviceData _device;
-        private string _path = @"C:\Users\qq251\Downloads\Programs\Minecraft_1.17.40.06_sign.apk";
+        private string _path /*= @"C:\Users\qq251\Downloads\Programs\Minecraft_1.17.40.06_sign.apk"*/;
         private static bool _wsaonly => SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
         private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("InstallPage");
 

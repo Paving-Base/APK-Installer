@@ -209,8 +209,8 @@
                     </Grid.RowDefinitions>
                     <StackPanel
                         Grid.Row="0"
-                        x:Name="ButtonsContainer"
                         Orientation="Horizontal"
+                        x:Name="ButtonsContainer"
                         HorizontalAlignment="Right">
                         <Button
                             Width="120"
