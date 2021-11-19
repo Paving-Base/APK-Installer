@@ -124,7 +124,7 @@
     <value>APK 文件</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>一个安卓应用安装器。作者： @wherewhere 和@Tangent-90。</value>
+    <value>一个 Android 应用安装器。作者：@wherewhere 和 @Tangent-90。</value>
   </data>
   <data name="AppName" xml:space="preserve">
     <value>APK Installer</value>
