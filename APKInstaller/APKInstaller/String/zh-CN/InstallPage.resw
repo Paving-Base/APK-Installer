@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB，Android 调试桥，需要APK安装程序才能工作。单击”确定”进行下载。下载即表示您接受 Google为ADB制定的条款和条件。</value>
+    <value>APK安装程序需要 ADB 即 Android 调试桥才能工作。单击”确定”进行下载。下载即表示您接受  Google 为 ADB 制定的条款和条件。</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>找到了 ADB</value>
@@ -179,7 +179,7 @@
     <value>好的</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>包名称：{0}</value>
+    <value>包名称: {0}</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
