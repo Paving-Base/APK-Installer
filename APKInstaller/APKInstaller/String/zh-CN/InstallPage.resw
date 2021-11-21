@@ -121,7 +121,7 @@
     <value>APK安装程序需要 ADB 即 Android 调试桥才能工作。单击”确定”进行下载。下载即表示您接受  Google 为 ADB 制定的条款和条件。</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>找到了 ADB</value>
+    <value>ADB 已存在</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>找不到 ADB</value>
