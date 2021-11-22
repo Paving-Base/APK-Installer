@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Reflection;
 using System.Text.Json;
 using System.Threading.Tasks;
+using Windows.ApplicationModel;
 
 namespace APKInstaller.Helpers
 {
@@ -14,7 +15,7 @@ namespace APKInstaller.Helpers
         private const string KKPP_API = "https://v2.kkpp.cc/repos/{0}/{1}/releases/latest";
         private const string GITHUB_API = "https://api.github.com/repos/{0}/{1}/releases/latest";
 
-        public static async Task<UpdateInfo> CheckUpdateAsync(string username, string repository, Version currentVersion = null)
+        public static async Task<UpdateInfo> CheckUpdateAsync(string username, string repository, PackageVersion currentVersion = new PackageVersion())
         {
             if (string.IsNullOrEmpty(username))
                 throw new ArgumentNullException(nameof(username));
@@ -38,16 +39,16 @@ namespace APKInstaller.Helpers
 
             if (result != null)
             {
-                if (currentVersion == null)
+                if (currentVersion == new PackageVersion())
                 {
-                    currentVersion = Assembly.GetEntryAssembly().GetName().Version;
+                    currentVersion = Package.Current.Id.Version;
                 }
 
                 var newVersionInfo = GetAsVersionInfo(result.TagName);
-                int major = currentVersion.Major == -1 ? 0 : currentVersion.Major;
-                int minor = currentVersion.Minor == -1 ? 0 : currentVersion.Minor;
-                int build = currentVersion.Build == -1 ? 0 : currentVersion.Build;
-                int revision = currentVersion.Revision == -1 ? 0 : currentVersion.Revision;
+                int major = currentVersion.Major <= 0 ? 0 : currentVersion.Major;
+                int minor = currentVersion.Minor <= 0 ? 0 : currentVersion.Minor;
+                int build = currentVersion.Build <= 0 ? 0 : currentVersion.Build;
+                int revision = currentVersion.Revision <= 0 ? 0 : currentVersion.Revision;
 
                 var currentVersionInfo = new SystemVersionInfo(major, minor, build, revision);
 

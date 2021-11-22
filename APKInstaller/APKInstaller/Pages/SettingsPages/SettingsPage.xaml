@@ -192,6 +192,7 @@
                                 x:Name="GotoUpdate"
                                 Tag="{x:Bind IssuePath}"
                                 Click="GotoUpdate_Click"
+                                HorizontalAlignment="Right"
                                 x:Uid="/SettingsPage/GoToUpdate"/>
                         </InfoBar.ActionButton>
                     </InfoBar>
