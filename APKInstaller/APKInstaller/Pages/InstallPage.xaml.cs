@@ -14,6 +14,7 @@ using SharpCompress.Common;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -153,15 +154,50 @@ namespace APKInstaller.Pages
             if (!string.IsNullOrEmpty(_path))
             {
                 WaitProgressText.Text = _loader.GetString("StartingADB");
-                try
+                Process[] processes = Process.GetProcessesByName("adb");
+                if (processes != null && processes.Length > 1)
                 {
-                    await Task.Run(() => new AdbServer().StartServer(Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe"), restartServerIfNewer: false));
+                    foreach (var process in processes)
+                    {
+                        process.Kill();
+                    }
                 }
-                catch
+                if (processes != null && processes.Length == 1)
                 {
-                    await CheckADB(true);
-                    WaitProgressText.Text = _loader.GetString("StartingADB");
-                    await Task.Run(() => new AdbServer().StartServer(Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe"), restartServerIfNewer: false));
+                    try
+                    {
+                        await Task.Run(() => new AdbServer().StartServer(processes.First().MainModule.FileName, restartServerIfNewer: false));
+                    }
+                    catch
+                    {
+                        foreach (var process in processes)
+                        {
+                            process.Kill();
+                        }
+                        try
+                        {
+                            await Task.Run(() => new AdbServer().StartServer(Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe"), restartServerIfNewer: false));
+                        }
+                        catch
+                        {
+                            await CheckADB(true);
+                            WaitProgressText.Text = _loader.GetString("StartingADB");
+                            await Task.Run(() => new AdbServer().StartServer(Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe"), restartServerIfNewer: false));
+                        }
+                    }
+                }
+                else
+                {
+                    try
+                    {
+                        await Task.Run(() => new AdbServer().StartServer(Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe"), restartServerIfNewer: false));
+                    }
+                    catch
+                    {
+                        await CheckADB(true);
+                        WaitProgressText.Text = _loader.GetString("StartingADB");
+                        await Task.Run(() => new AdbServer().StartServer(Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe"), restartServerIfNewer: false));
+                    }
                 }
                 if (_wsaonly)
                 {
