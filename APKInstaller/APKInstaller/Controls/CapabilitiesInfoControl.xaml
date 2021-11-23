@@ -2,60 +2,60 @@
     x:Class="APKInstaller.Controls.CapabilitiesInfoControl"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:APKInstaller.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:APKInstaller.Controls"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Grid
+        x:Name="Root"
         Margin="-10"
         Padding="10"
-        x:Name="Root"
         BorderBrush="{StaticResource SystemAccentColor}">
         <Grid.ChildrenTransitions>
             <TransitionCollection>
-                <EntranceThemeTransition/>
+                <EntranceThemeTransition />
             </TransitionCollection>
         </Grid.ChildrenTransitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto" x:Name="CapabilitiesHeight"/>
-            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto" />
+            <RowDefinition x:Name="CapabilitiesHeight" Height="auto" />
+            <RowDefinition Height="auto" />
         </Grid.RowDefinitions>
         <TextBlock
-            Grid.Row="0"
             x:Name="HeaderTextBlock"
+            Grid.Row="0"
             TextWrapping="WrapWholeWords"
-            ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"/>
+            ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
         <ScrollViewer
-            Grid.Row="1"
             x:Name="CapabilitiesScrollViewer"
+            Grid.Row="1"
             VerticalScrollBarVisibility="Auto">
             <Grid>
                 <RichTextBlock
-                    Opacity="0.6"
-                    TextWrapping="Wrap"
+                    x:Name="RichTextBlockCapabilities"
                     IsTextSelectionEnabled="True"
-                    x:Name="RichTextBlockCapabilities"/>
+                    Opacity="0.6"
+                    TextWrapping="Wrap" />
                 <RichTextBlock
+                    x:Name="RichTextBlockFullCapabilities"
+                    IsTextSelectionEnabled="True"
+                    LostFocus="Root_LostFocus"
                     Opacity="0.6"
                     TextWrapping="Wrap"
-                    Visibility="Collapsed"
-                    LostFocus="Root_LostFocus"
-                    IsTextSelectionEnabled="True"
-                    x:Name="RichTextBlockFullCapabilities"/>
+                    Visibility="Collapsed" />
             </Grid>
         </ScrollViewer>
         <Button
-            Padding="0"
-            Grid.Row="2"
-            TabIndex="4"
             x:Name="MoreButton"
+            x:Uid="/CapabilitiesInfoControl/MoreButton"
+            Grid.Row="2"
+            Padding="0"
+            AutomationProperties.Name="Show more capabilitiesMore"
+            Background="Transparent"
             BorderThickness="0"
             Click="MoreButton_Click"
-            Background="Transparent"
-            UseSystemFocusVisuals="True"
-            x:Uid="/CapabilitiesInfoControl/MoreButton"
             Foreground="{StaticResource SystemAccentColor}"
-            AutomationProperties.Name="Show more capabilitiesMore"/>
+            TabIndex="4"
+            UseSystemFocusVisuals="True" />
     </Grid>
 </UserControl>

@@ -11,12 +11,12 @@ namespace APKInstaller.Controls
 {
     public class CheckBoxWithDescriptionControl : CheckBox
     {
-        private CheckBoxWithDescriptionControl _checkBoxSubTextControl;
+        private readonly CheckBoxWithDescriptionControl _checkBoxSubTextControl;
 
         public CheckBoxWithDescriptionControl()
         {
-            _checkBoxSubTextControl = (CheckBoxWithDescriptionControl)this;
-            this.Loaded += CheckBoxSubTextControl_Loaded;
+            _checkBoxSubTextControl = this;
+            Loaded += CheckBoxSubTextControl_Loaded;
         }
 
         protected override void OnApplyTemplate()

@@ -21,7 +21,7 @@ namespace APKInstaller.Controls
 
         public object Content
         {
-            get => (object)GetValue(ContentProperty);
+            get => GetValue(ContentProperty);
             set => SetValue(ContentProperty, value);
         }
 
@@ -45,14 +45,14 @@ namespace APKInstaller.Controls
 
         public KeyVisual()
         {
-            this.DefaultStyleKey = typeof(KeyVisual);
-            this.Style = GetStyleSize("TextKeyVisualStyle");
+            DefaultStyleKey = typeof(KeyVisual);
+            Style = GetStyleSize("TextKeyVisualStyle");
         }
 
         protected override void OnApplyTemplate()
         {
             IsEnabledChanged -= KeyVisual_IsEnabledChanged;
-            _keyVisual = (KeyVisual)this;
+            _keyVisual = this;
             _keyPresenter = (ContentPresenter)_keyVisual.GetTemplateChild(KeyPresenter);
             Update();
             SetEnabledState();

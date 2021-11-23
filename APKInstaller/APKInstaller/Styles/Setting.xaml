@@ -3,92 +3,79 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:controls="using:APKInstaller.Controls">
     <Style TargetType="controls:Setting">
-        <Setter Property="Padding" Value="16"/>
-        <Setter Property="Margin" Value="0,0,0,0"/>
-        <Setter Property="IsTabStop" Value="False"/>
-        <Setter Property="HorizontalAlignment" Value="Stretch"/>
-        <Setter Property="RightIconVisibility" Value="Collapsed"/>
-        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
-        <Setter Property="Background" Value="{ThemeResource CardBackgroundBrush}"/>
-        <Setter Property="CornerRadius" Value="{ThemeResource ControlCornerRadius}"/>
-        <Setter Property="BorderThickness" Value="{ThemeResource CardBorderThickness}"/>
-        <Setter Property="BorderBrush" Value="{ThemeResource CardStrokeColorDefaultBrush}"/>
+        <Setter Property="Padding" Value="16" />
+        <Setter Property="Margin" Value="0,0,0,0" />
+        <Setter Property="IsTabStop" Value="False" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="RightIconVisibility" Value="Collapsed" />
+        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+        <Setter Property="Background" Value="{ThemeResource CardBackgroundBrush}" />
+        <Setter Property="CornerRadius" Value="{ThemeResource ControlCornerRadius}" />
+        <Setter Property="BorderThickness" Value="{ThemeResource CardBorderThickness}" />
+        <Setter Property="BorderBrush" Value="{ThemeResource CardStrokeColorDefaultBrush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="controls:Setting">
                     <Grid
-                        MinHeight="48"
                         x:Name="RootGrid"
-                        VerticalAlignment="Center"
-                        HorizontalAlignment="Stretch"
+                        MinHeight="48"
                         Padding="{TemplateBinding Padding}"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Center"
                         Background="{TemplateBinding Background}"
                         BorderBrush="{TemplateBinding BorderBrush}"
-                        CornerRadius="{TemplateBinding CornerRadius}"
-                        BorderThickness="{TemplateBinding BorderThickness}">
-                        <VisualStateManager.VisualStateGroups>
-                            <VisualStateGroup x:Name="CommonStates">
-                                <VisualState x:Name="Normal"/>
-                                <VisualState x:Name="Disabled">
-                                    <VisualState.Setters>
-                                        <Setter Target="IconPresenter.Foreground" Value="{ThemeResource TextFillColorDisabledBrush}"/>
-                                        <Setter Target="HeaderPresenter.Foreground" Value="{ThemeResource TextFillColorDisabledBrush}"/>
-                                        <Setter Target="ContentPresenter.Foreground" Value="{ThemeResource TextFillColorDisabledBrush}"/>
-                                        <Setter Target="DescriptionPresenter.Foreground" Value="{ThemeResource TextFillColorDisabledBrush}"/>
-                                    </VisualState.Setters>
-                                </VisualState>
-                            </VisualStateGroup>
-                        </VisualStateManager.VisualStateGroups>
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="{TemplateBinding CornerRadius}">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto"/>
-                            <!-- Icon -->
-                            <ColumnDefinition Width="*"/>
-                            <!-- Header and subtitle -->
-                            <ColumnDefinition Width="Auto"/>
-                            <!-- Action control -->
-                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto" />
+                            <!--  Icon  -->
+                            <ColumnDefinition Width="*" />
+                            <!--  Header and subtitle  -->
+                            <ColumnDefinition Width="Auto" />
+                            <!--  Action control  -->
+                            <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
 
                         <ContentPresenter
-                            MaxWidth="26"
-                            FontSize="20"
-                            Margin="2,0,18,0"
                             x:Name="IconPresenter"
-                            VerticalAlignment="Center"
+                            MaxWidth="26"
+                            Margin="2,0,18,0"
                             HorizontalAlignment="Center"
-                            Content="{TemplateBinding Icon}"
+                            VerticalAlignment="Center"
                             AutomationProperties.AccessibilityView="Raw"
+                            Content="{TemplateBinding Icon}"
                             FontFamily="{ThemeResource SymbolThemeFontFamily}"
-                            Foreground="{ThemeResource CardPrimaryForegroundBrush}"/>
+                            FontSize="20"
+                            Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
 
                         <StackPanel
                             Grid.Column="1"
                             Margin="0,0,16,0"
-                            VerticalAlignment="Center"
-                            HorizontalAlignment="Stretch">
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Center">
 
                             <TextBlock
                                 x:Name="HeaderPresenter"
                                 VerticalAlignment="Center"
-                                Text="{TemplateBinding Header}"
-                                Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
+                                Foreground="{ThemeResource CardPrimaryForegroundBrush}"
+                                Text="{TemplateBinding Header}" />
 
                             <ContentPresenter
                                 x:Name="DescriptionPresenter"
-                                TextWrapping="WrapWholeWords"
                                 Content="{TemplateBinding Description}"
                                 FontSize="{StaticResource SecondaryTextFontSize}"
-                                Foreground="{ThemeResource TextFillColorSecondaryBrush}">
+                                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                TextWrapping="WrapWholeWords">
                                 <ContentPresenter.Resources>
-                                    <Style TargetType="TextBlock" BasedOn="{StaticResource CaptionTextBlockStyle}">
+                                    <Style BasedOn="{StaticResource CaptionTextBlockStyle}" TargetType="TextBlock">
                                         <Style.Setters>
-                                            <Setter Property="TextWrapping" Value="WrapWholeWords"/>
+                                            <Setter Property="TextWrapping" Value="WrapWholeWords" />
                                         </Style.Setters>
                                     </Style>
-                                    <Style TargetType="HyperlinkButton" BasedOn="{StaticResource TextButtonStyle}">
+                                    <Style BasedOn="{StaticResource TextButtonStyle}" TargetType="HyperlinkButton">
                                         <Style.Setters>
-                                            <Setter Property="FontSize" Value="12"/>
-                                            <Setter Property="Padding" Value="0,0,0,0"/>
+                                            <Setter Property="FontSize" Value="12" />
+                                            <Setter Property="Padding" Value="0,0,0,0" />
                                         </Style.Setters>
                                     </Style>
                                 </ContentPresenter.Resources>
@@ -96,36 +83,48 @@
                         </StackPanel>
 
                         <ContentPresenter
-                            Grid.Column="2"
                             x:Name="ContentPresenter"
-                            VerticalAlignment="Center"
+                            Grid.Column="2"
                             HorizontalAlignment="Right"
-                            Content="{TemplateBinding ActionContent}"/>
+                            VerticalAlignment="Center"
+                            Content="{TemplateBinding ActionContent}" />
 
                         <Border
+                            x:Name="ExpandCollapseChevronBorder"
+                            Grid.Column="3"
                             Width="32"
                             Height="32"
-                            Grid.Column="3"
-                            CornerRadius="4"
                             Margin="20,0,8,0"
-                            BorderThickness="2"
                             Background="Transparent"
                             BorderBrush="Transparent"
-                            x:Name="ExpandCollapseChevronBorder"
+                            BorderThickness="2"
+                            CornerRadius="4"
                             Visibility="{TemplateBinding RightIconVisibility}">
                             <FontIcon
+                                x:Name="ExpandCollapseChevron"
                                 Width="12"
                                 Height="12"
-                                FontSize="12"
-                                VerticalAlignment="Center"
                                 HorizontalAlignment="Center"
-                                x:Name="ExpandCollapseChevron"
-                                RenderTransformOrigin="0.5, 0.5"
-                                IsTextScaleFactorEnabled="False"
+                                VerticalAlignment="Center"
+                                FontFamily="{StaticResource SymbolThemeFontFamily}"
+                                FontSize="12"
                                 Glyph="{TemplateBinding RightIcon}"
-                                FontFamily="{StaticResource SymbolThemeFontFamily}">
-                            </FontIcon>
+                                IsTextScaleFactorEnabled="False"
+                                RenderTransformOrigin="0.5, 0.5" />
                         </Border>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal" />
+                                <VisualState x:Name="Disabled">
+                                    <VisualState.Setters>
+                                        <Setter Target="IconPresenter.Foreground" Value="{ThemeResource TextFillColorDisabledBrush}" />
+                                        <Setter Target="HeaderPresenter.Foreground" Value="{ThemeResource TextFillColorDisabledBrush}" />
+                                        <Setter Target="ContentPresenter.Foreground" Value="{ThemeResource TextFillColorDisabledBrush}" />
+                                        <Setter Target="DescriptionPresenter.Foreground" Value="{ThemeResource TextFillColorDisabledBrush}" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>

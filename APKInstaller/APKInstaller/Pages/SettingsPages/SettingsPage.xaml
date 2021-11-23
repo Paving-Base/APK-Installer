@@ -1,199 +1,166 @@
 ﻿<Page
     x:Class="APKInstaller.Pages.SettingsPages.SettingsPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:sharpadbclient="using:AdvancedSharpAdbClient"
     xmlns:controls="using:APKInstaller.Controls"
     xmlns:converter="using:APKInstaller.Helpers.ValueConverters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sharpadbclient="using:AdvancedSharpAdbClient"
     mc:Ignorable="d">
     <Page.Resources>
-        <converter:TrueToFalseConverter x:Key="TrueToFalseConverter"/>
-        <converter:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+        <converter:TrueToFalseConverter x:Key="TrueToFalseConverter" />
+        <converter:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
     </Page.Resources>
     <Grid>
         <Grid.ChildrenTransitions>
             <TransitionCollection>
-                <EntranceThemeTransition/>
+                <EntranceThemeTransition />
             </TransitionCollection>
         </Grid.ChildrenTransitions>
         <ScrollViewer Style="{StaticResource PageScrollViewer}">
-            <StackPanel
-                Padding="16"
-                Margin="{StaticResource StackPanelMargin}">
+            <StackPanel Margin="{StaticResource StackPanelMargin}" Padding="16">
                 <StackPanel.ChildrenTransitions>
                     <TransitionCollection>
-                        <ReorderThemeTransition/>
+                        <ReorderThemeTransition />
                     </TransitionCollection>
                 </StackPanel.ChildrenTransitions>
-                <controls:SettingsGroup
-                    Margin="0,-32,0,0"
-                    x:Uid="/SettingsPage/DeviceSettingsHeader">
+                <controls:SettingsGroup x:Uid="/SettingsPage/DeviceSettingsHeader" Margin="0,-32,0,0">
                     <ListView
                         x:Name="SelectDeviceBox"
                         ItemsSource="{x:Bind DeviceList, Mode=OneWay}"
                         SelectionChanged="SelectDeviceBox_SelectionChanged">
                         <ListView.ItemTemplate>
                             <DataTemplate x:DataType="sharpadbclient:DeviceData">
-                                <ListViewItem
-                                    Style="{StaticResource ListViewItemSettingStyle}">
+                                <ListViewItem Style="{StaticResource ListViewItemSettingStyle}">
                                     <controls:Setting
                                         Margin="0,0"
-                                        Icon="&#xE8EA;"
+                                        Description="{x:Bind State}"
                                         Header="{x:Bind Name}"
-                                        Description="{x:Bind State}">
-                                    </controls:Setting>
+                                        Icon="&#xE8EA;" />
                                 </ListViewItem>
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
                     <controls:SettingExpander IsExpanded="{x:Bind IsOnlyWSA, Converter={StaticResource TrueToFalseConverter}}">
                         <controls:SettingExpander.Header>
-                            <controls:Setting
-                                Icon="&#xE975;"
-                                x:Uid="/SettingsPage/OnlyWSASettings">
+                            <controls:Setting x:Uid="/SettingsPage/OnlyWSASettings" Icon="&#xE975;">
                                 <controls:Setting.ActionContent>
-                                    <ToggleSwitch
-                                        IsOn="{x:Bind IsOnlyWSA, Mode=TwoWay}"
-                                        Style="{StaticResource ToggleSwitchSettingStyle}"/>
+                                    <ToggleSwitch IsOn="{x:Bind IsOnlyWSA, Mode=TwoWay}" Style="{StaticResource ToggleSwitchSettingStyle}" />
                                 </controls:Setting.ActionContent>
                             </controls:Setting>
                         </controls:SettingExpander.Header>
                         <controls:SettingExpander.Content>
-                            <controls:Setting
-                                x:Uid="/SettingsPage/ConnectDevice"
-                                Style="{StaticResource ExpanderContentSettingStyle}">
-                                <StackPanel
-                                    Spacing="8"
-                                    Orientation="Horizontal">
+                            <controls:Setting x:Uid="/SettingsPage/ConnectDevice" Style="{StaticResource ExpanderContentSettingStyle}">
+                                <StackPanel Orientation="Horizontal" Spacing="8">
                                     <TextBox
                                         x:Name="ConnectIP"
-                                        PlaceholderText="127.0.0.1:58526"
-                                        MinWidth="{StaticResource SettingActionControlMinWidth}"/>
+                                        MinWidth="{StaticResource SettingActionControlMinWidth}"
+                                        PlaceholderText="127.0.0.1:58526" />
                                     <Button
                                         Width="40"
                                         Height="36"
-                                        Tag="Connect"
-                                        Content="&#xE71B;"
                                         Click="Button_Click"
-                                        FontFamily="{StaticResource SymbolThemeFontFamily}"/>
+                                        Content="&#xE71B;"
+                                        FontFamily="{StaticResource SymbolThemeFontFamily}"
+                                        Tag="Connect" />
                                 </StackPanel>
                             </controls:Setting>
                         </controls:SettingExpander.Content>
                     </controls:SettingExpander>
                 </controls:SettingsGroup>
-                <controls:SettingsGroup
-                    Margin="0,-32,0,0"
-                    x:Uid="/SettingsPage/OthersSettingsHeader">
-                    <controls:Setting
-                        Icon="&#xE777;"
-                        x:Uid="/SettingsPage/ResetSettings">
+                <controls:SettingsGroup x:Uid="/SettingsPage/OthersSettingsHeader" Margin="0,-32,0,0">
+                    <controls:Setting x:Uid="/SettingsPage/ResetSettings" Icon="&#xE777;">
                         <controls:Setting.ActionContent>
-                            <Button
-                                Name="Reset"
-                                x:Uid="/SettingsPage/ResetSettingsButton">
+                            <Button Name="Reset" x:Uid="/SettingsPage/ResetSettingsButton">
                                 <Button.Flyout>
                                     <Flyout>
                                         <StackPanel>
                                             <TextBlock
-                                                Margin="0,0,0,12"
                                                 x:Uid="/SettingsPage/ResetSettingsTitle"
-                                                Style="{ThemeResource BaseTextBlockStyle}"/>
+                                                Margin="0,0,0,12"
+                                                Style="{ThemeResource BaseTextBlockStyle}" />
                                             <Button
-                                                Tag="Reset"
+                                                x:Uid="/SettingsPage/ResetSettingsConfirm"
                                                 Click="Button_Click"
-                                                x:Uid="/SettingsPage/ResetSettingsConfirm"/>
+                                                Tag="Reset" />
                                         </StackPanel>
                                     </Flyout>
                                 </Button.Flyout>
                             </Button>
                         </controls:Setting.ActionContent>
                     </controls:Setting>
-                    <controls:Setting
-                        Icon="&#xE756;"
-                        x:Uid="/SettingsPage/CloseADBSettings">
+                    <controls:Setting x:Uid="/SettingsPage/CloseADBSettings" Icon="&#xE756;">
                         <controls:Setting.ActionContent>
-                            <ToggleSwitch
-                                IsOn="{x:Bind IsCloseADB, Mode=TwoWay}"
-                                Style="{StaticResource ToggleSwitchSettingStyle}"/>
+                            <ToggleSwitch IsOn="{x:Bind IsCloseADB, Mode=TwoWay}" Style="{StaticResource ToggleSwitchSettingStyle}" />
                         </controls:Setting.ActionContent>
                     </controls:Setting>
                     <controls:SettingButton
-                        Tag="TestPage"
+                        x:Name="GoToTestPage"
                         Click="Button_Click"
-                        x:Name="GoToTestPage">
+                        Tag="TestPage">
                         <controls:SettingButton.Content>
-                            <controls:Setting
-                                Icon="&#xEC7A;"
-                                x:Uid="/SettingsPage/GoToTestPage">
-                            </controls:Setting>
+                            <controls:Setting x:Uid="/SettingsPage/GoToTestPage" Icon="&#xEC7A;" />
                         </controls:SettingButton.Content>
                     </controls:SettingButton>
                 </controls:SettingsGroup>
-                <controls:SettingsGroup
-                    Margin="0,-32,0,0"
-                    x:Uid="/SettingsPage/AboutSettingsHeader">
-                    <controls:Setting
-                        Icon="&#xE117;"
-                        Header="{x:Bind VersionTextBlockText}">
+                <controls:SettingsGroup x:Uid="/SettingsPage/AboutSettingsHeader" Margin="0,-32,0,0">
+                    <controls:Setting Header="{x:Bind VersionTextBlockText}" Icon="&#xE117;">
                         <controls:Setting.Description>
                             <StackPanel Orientation="Vertical">
                                 <TextBlock Style="{StaticResource SecondaryTextStyle}">
-                                    <Run x:Uid="/SettingsPage/LastChecked"/>
-                                    <Run Text="{x:Bind UpdateDate, Mode=OneWay}"/>
+                                    <Run x:Uid="/SettingsPage/LastChecked" />
+                                    <Run Text="{x:Bind UpdateDate, Mode=OneWay}" />
                                 </TextBlock>
-                                <StackPanel
-                                    Margin="0,2,0,0"
-                                    Orientation="Horizontal">
+                                <StackPanel Margin="0,2,0,0" Orientation="Horizontal">
                                     <HyperlinkButton
-                                        Tag="FeedBack"
+                                        x:Uid="/SettingsPage/FeedbackLink"
                                         Margin="0,0,2,0"
                                         Click="Button_Click"
-                                        x:Uid="/SettingsPage/FeedbackLink"/>
+                                        Tag="FeedBack" />
                                     <HyperlinkButton
-                                        Margin="2,0"
                                         x:Uid="/SettingsPage/ReleaseNotes"
-                                        NavigateUri="https://github.com/Paving-Base/APK-Installer/releases/"/>
+                                        Margin="2,0"
+                                        NavigateUri="https://github.com/Paving-Base/APK-Installer/releases/" />
                                 </StackPanel>
                             </StackPanel>
                         </controls:Setting.Description>
                         <controls:Setting.ActionContent>
                             <StackPanel
-                                Spacing="18"
+                                VerticalAlignment="Center"
                                 Orientation="Horizontal"
-                                VerticalAlignment="Center">
+                                Spacing="18">
                                 <ProgressRing
                                     Width="24"
                                     Height="24"
-                                    Visibility="{x:Bind CheckingUpdate, Mode=OneWay}"/>
+                                    Visibility="{x:Bind CheckingUpdate, Mode=OneWay}" />
                                 <TextBlock
-                                    FontWeight="SemiBold"
-                                    VerticalAlignment="Center"
                                     x:Uid="/SettingsPage/CheckingUpdates"
-                                    Visibility="{x:Bind CheckingUpdate, Mode=OneWay}"
-                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
+                                    VerticalAlignment="Center"
+                                    FontWeight="SemiBold"
+                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                    Visibility="{x:Bind CheckingUpdate, Mode=OneWay}" />
                                 <Button
                                     x:Name="Update"
-                                    Tag="CheckUpdate"
-                                    Click="Button_Click"
-                                    HorizontalAlignment="Right"
                                     x:Uid="/SettingsPage/CheckUpdates"
+                                    HorizontalAlignment="Right"
+                                    Click="Button_Click"
+                                    Tag="CheckUpdate"
                                     Visibility="{x:Bind CheckingUpdate, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='!bool'}" />
                             </StackPanel>
                         </controls:Setting.ActionContent>
                     </controls:Setting>
                     <InfoBar
-                        IsOpen="False"
+                        x:Name="UpdateState"
                         IsClosable="True"
-                        x:Name="UpdateState">
+                        IsOpen="False">
                         <InfoBar.ActionButton>
                             <Button
                                 x:Name="GotoUpdate"
-                                Tag="{x:Bind IssuePath}"
-                                Click="GotoUpdate_Click"
+                                x:Uid="/SettingsPage/GoToUpdate"
                                 HorizontalAlignment="Right"
-                                x:Uid="/SettingsPage/GoToUpdate"/>
+                                Click="GotoUpdate_Click"
+                                Tag="{x:Bind IssuePath}" />
                         </InfoBar.ActionButton>
                     </InfoBar>
                 </controls:SettingsGroup>
@@ -202,8 +169,8 @@
         <controls:TitleBar
             x:Name="TitleBar"
             x:Uid="/SettingsPage/TitleBar"
-            BackgroundVisibility="Visible"
             BackRequested="TitleBar_BackRequested"
-            IsBackEnable="{x:Bind Frame.CanGoBack}"/>
+            BackgroundVisibility="Visible"
+            IsBackEnable="{x:Bind Frame.CanGoBack}" />
     </Grid>
 </Page>

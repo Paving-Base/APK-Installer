@@ -10,9 +10,9 @@ namespace AAPTForNet.Models
 
         internal DumpModel(string path, bool success, List<string> msg)
         {
-            this.FilePath = path;
-            this.isSuccess = success;
-            this.Messages = msg;
+            FilePath = path;
+            isSuccess = success;
+            Messages = msg;
         }
     }
 }

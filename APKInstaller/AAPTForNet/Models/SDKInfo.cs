@@ -81,9 +81,9 @@ namespace AAPTForNet.Models
 
         protected SDKInfo(string level, string ver, string code)
         {
-            this.APILever = level;
-            this.Version = ver;
-            this.CodeName = code;
+            APILever = level;
+            Version = ver;
+            CodeName = code;
         }
 
         public static SDKInfo GetInfo(int sdkVer)
@@ -100,13 +100,13 @@ namespace AAPTForNet.Models
             return GetInfo(ver);
         }
 
-        public override int GetHashCode() => 1008763889 + EqualityComparer<string>.Default.GetHashCode(this.APILever);
+        public override int GetHashCode() => 1008763889 + EqualityComparer<string>.Default.GetHashCode(APILever);
 
         public override bool Equals(object obj)
         {
             if (obj is SDKInfo another)
             {
-                return this.APILever == another.APILever;
+                return APILever == another.APILever;
             }
             return false;
         }
@@ -114,11 +114,13 @@ namespace AAPTForNet.Models
         public override string ToString()
         {
             if (APILever.Equals("0") && Version.Equals("0") && CodeName.Equals("0"))
+            {
                 return AndroidCodeNames[0];
+            }
 
-            return $"API Level {this.APILever} " +
-                $"{(this.Version == AndroidCodeNames[0] ? $"({AndroidCodeNames[0]} - " : $"(Android {this.Version} - ")}" +
-                $"{this.CodeName})";
+            return $"API Level {APILever} " +
+                $"{(Version == AndroidCodeNames[0] ? $"({AndroidCodeNames[0]} - " : $"(Android {Version} - ")}" +
+                $"{CodeName})";
         }
     }
 }

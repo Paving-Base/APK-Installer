@@ -12,8 +12,8 @@ namespace APKInstaller.Controls
         public SettingExpander()
         {
             DefaultStyleKey = typeof(Expander);
-            this.Style = (Style)Application.Current.Resources["SettingExpanderStyle"];
-            this.RegisterPropertyChangedCallback(Expander.HeaderProperty, OnHeaderChanged);
+            Style = (Style)Application.Current.Resources["SettingExpanderStyle"];
+            RegisterPropertyChangedCallback(Expander.HeaderProperty, OnHeaderChanged);
         }
 
         private static void OnHeaderChanged(DependencyObject d, DependencyProperty dp)

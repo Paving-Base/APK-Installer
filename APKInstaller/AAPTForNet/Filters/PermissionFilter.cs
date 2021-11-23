@@ -5,7 +5,7 @@ namespace AAPTForNet.Filters
 {
     internal class PermissionFilter : BaseFilter
     {
-        private List<string> permissions = new List<string>();
+        private readonly List<string> permissions = new List<string>();
 
         public override bool canHandle(string msg)
         {

@@ -1,46 +1,44 @@
 ﻿<ContentDialog
     x:Class="APKInstaller.Controls.Dialogs.MarkdownDialog"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:converter="using:APKInstaller.Helpers.ValueConverters"
     xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
+    xmlns:converter="using:APKInstaller.Helpers.ValueConverters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <ContentDialog.Resources>
-        <converter:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+        <converter:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
     </ContentDialog.Resources>
     <Grid>
         <Grid.ChildrenTransitions>
             <TransitionCollection>
-                <EntranceThemeTransition/>
+                <EntranceThemeTransition />
             </TransitionCollection>
         </Grid.ChildrenTransitions>
-        <ScrollViewer
-            x:Name="MarkdownScrollViewer"
-            Visibility="{x:Bind IsInitialized, Mode=OneWay}">
+        <ScrollViewer x:Name="MarkdownScrollViewer" Visibility="{x:Bind IsInitialized, Mode=OneWay}">
             <controls:MarkdownTextBlock
-                Text="# Helper"
                 x:Name="MarkdownText"
                 Background="Transparent"
-                LinkClicked="MarkdownText_LinkClicked"/>
+                LinkClicked="MarkdownText_LinkClicked"
+                Text="# Helper" />
         </ScrollViewer>
         <StackPanel
             x:Name="InitialLoadingUI"
-            VerticalAlignment="Center"
             HorizontalAlignment="Center"
+            VerticalAlignment="Center"
             Visibility="{x:Bind IsInitialized, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='!bool'}">
             <ProgressRing
+                x:Name="WaitProgressRing"
                 Width="50"
                 Height="50"
-                IsActive="True"
-                x:Name="WaitProgressRing"
-                HorizontalAlignment="Center"/>
+                HorizontalAlignment="Center"
+                IsActive="True" />
             <TextBlock
+                x:Name="WaitProgressText"
                 Margin="0,6,0,0"
                 Text="Loading..."
-                TextAlignment="Center"
-                x:Name="WaitProgressText"/>
+                TextAlignment="Center" />
         </StackPanel>
     </Grid>
 </ContentDialog>

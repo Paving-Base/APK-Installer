@@ -157,7 +157,7 @@ namespace APKInstaller.Pages
                 Process[] processes = Process.GetProcessesByName("adb");
                 if (processes != null && processes.Length > 1)
                 {
-                    foreach (var process in processes)
+                    foreach (Process process in processes)
                     {
                         process.Kill();
                     }
@@ -170,7 +170,7 @@ namespace APKInstaller.Pages
                     }
                     catch
                     {
-                        foreach (var process in processes)
+                        foreach (Process process in processes)
                         {
                             process.Kill();
                         }
@@ -397,7 +397,7 @@ namespace APKInstaller.Pages
                     client.ExecuteRemoteCommand("getprop ro.boot.hardware", device, receiver);
                     if (receiver.ToString().Contains("windows"))
                     {
-                        this._device = device ?? this._device;
+                        _device = device ?? _device;
                         return true;
                     }
                 }
@@ -406,7 +406,7 @@ namespace APKInstaller.Pages
                     DeviceData data = SettingsHelper.Get<DeviceData>(SettingsHelper.DefaultDevice);
                     if (data != null && data.Name == device.Name && data.Model == device.Model && data.Product == device.Product)
                     {
-                        this._device = data;
+                        _device = data;
                         return true;
                     }
                 }

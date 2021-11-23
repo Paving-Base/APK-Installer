@@ -3,7 +3,6 @@ using System;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Reflection;
 using System.Text.Json;
 using System.Threading.Tasks;
 using Windows.ApplicationModel;
@@ -18,10 +17,14 @@ namespace APKInstaller.Helpers
         public static async Task<UpdateInfo> CheckUpdateAsync(string username, string repository, PackageVersion currentVersion = new PackageVersion())
         {
             if (string.IsNullOrEmpty(username))
+            {
                 throw new ArgumentNullException(nameof(username));
+            }
 
             if (string.IsNullOrEmpty(repository))
+            {
                 throw new ArgumentNullException(nameof(repository));
+            }
 
             ServicePointManager.SecurityProtocol = (SecurityProtocolType)3072;
             HttpClient client = new HttpClient();
@@ -35,7 +38,7 @@ namespace APKInstaller.Helpers
                 response.EnsureSuccessStatusCode();
             }
             string responseBody = await response.Content.ReadAsStringAsync();
-            var result = JsonSerializer.Deserialize<UpdateInfo>(responseBody);
+            UpdateInfo result = JsonSerializer.Deserialize<UpdateInfo>(responseBody);
 
             if (result != null)
             {
@@ -44,13 +47,13 @@ namespace APKInstaller.Helpers
                     currentVersion = Package.Current.Id.Version;
                 }
 
-                var newVersionInfo = GetAsVersionInfo(result.TagName);
+                SystemVersionInfo newVersionInfo = GetAsVersionInfo(result.TagName);
                 int major = currentVersion.Major <= 0 ? 0 : currentVersion.Major;
                 int minor = currentVersion.Minor <= 0 ? 0 : currentVersion.Minor;
                 int build = currentVersion.Build <= 0 ? 0 : currentVersion.Build;
                 int revision = currentVersion.Revision <= 0 ? 0 : currentVersion.Revision;
 
-                var currentVersionInfo = new SystemVersionInfo(major, minor, build, revision);
+                SystemVersionInfo currentVersionInfo = new SystemVersionInfo(major, minor, build, revision);
 
                 return new UpdateInfo
                 {
@@ -71,21 +74,29 @@ namespace APKInstaller.Helpers
 
         private static SystemVersionInfo GetAsVersionInfo(string version)
         {
-            var nums = GetVersionNumbers(version).Split('.').Select(int.Parse).ToList();
+            System.Collections.Generic.List<int> nums = GetVersionNumbers(version).Split('.').Select(int.Parse).ToList();
 
             if (nums.Count <= 1)
+            {
                 return new SystemVersionInfo(nums[0], 0, 0, 0);
+            }
             else if (nums.Count <= 2)
+            {
                 return new SystemVersionInfo(nums[0], nums[1], 0, 0);
+            }
             else if (nums.Count <= 3)
+            {
                 return new SystemVersionInfo(nums[0], nums[1], nums[2], 0);
+            }
             else
+            {
                 return new SystemVersionInfo(nums[0], nums[1], nums[2], nums[3]);
+            }
         }
 
         private static string GetVersionNumbers(string version)
         {
-            var allowedChars = "01234567890.";
+            string allowedChars = "01234567890.";
             return new string(version.Where(c => allowedChars.Contains(c)).ToArray());
         }
     }

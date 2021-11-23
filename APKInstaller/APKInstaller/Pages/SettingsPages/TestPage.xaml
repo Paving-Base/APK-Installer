@@ -1,76 +1,64 @@
 ﻿<Page
     x:Class="APKInstaller.Pages.SettingsPages.TestPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:contorls="using:APKInstaller.Controls"
-    xmlns:converter="using:APKInstaller.Helpers.ValueConverters"
     xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
+    xmlns:converter="using:APKInstaller.Helpers.ValueConverters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Page.Resources>
-        <converter:TrueToFalseConverter x:Key="TrueToFalseConverter"/>
+        <converter:TrueToFalseConverter x:Key="TrueToFalseConverter" />
         <Style x:Key="HeaderStyle" TargetType="controls:HeaderedContentControl">
-            <Setter Property="Margin" Value="0,8"/>
-            <Setter Property="FontSize" Value="18"/>
-            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+            <Setter Property="Margin" Value="0,8" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
         </Style>
     </Page.Resources>
     <Grid>
         <Grid.ChildrenTransitions>
             <TransitionCollection>
-                <EntranceThemeTransition/>
+                <EntranceThemeTransition />
             </TransitionCollection>
         </Grid.ChildrenTransitions>
         <ScrollViewer Style="{StaticResource PageScrollViewer}">
-            <StackPanel
-                Padding="16,0"
-                Margin="{StaticResource StackPanelMargin}">
+            <StackPanel Margin="{StaticResource StackPanelMargin}" Padding="16,0">
                 <StackPanel.ChildrenTransitions>
                     <TransitionCollection>
-                        <ReorderThemeTransition/>
+                        <ReorderThemeTransition />
                     </TransitionCollection>
                 </StackPanel.ChildrenTransitions>
-                <controls:HeaderedContentControl
-                    Header="UI Test"
-                    Style="{StaticResource HeaderStyle}">
+                <controls:HeaderedContentControl Header="UI Test" Style="{StaticResource HeaderStyle}">
                     <StackPanel>
-                        <ToggleSwitch
-                            Header="Extends Content Into TitleBar"
-                            IsOn="{x:Bind IsExtendsTitleBar, Mode=TwoWay}"/>
-                        <StackPanel
-                            Margin="0,2"
-                            Orientation="Horizontal">
+                        <ToggleSwitch Header="Extends Content Into TitleBar" IsOn="{x:Bind IsExtendsTitleBar, Mode=TwoWay}" />
+                        <StackPanel Margin="0,2" Orientation="Horizontal">
                             <Button
-                                Tag="EnterPIP"
                                 Margin="0,0,2,0"
                                 Click="Button_Click"
-                                Content="Enter Compact Overlay"/>
+                                Content="Enter Compact Overlay"
+                                Tag="EnterPIP" />
                             <Button
                                 Margin="2,0"
-                                Tag="OutPIP"
+                                Click="Button_Click"
                                 Content="Exit"
-                                Click="Button_Click"/>
+                                Tag="OutPIP" />
                         </StackPanel>
                     </StackPanel>
                 </controls:HeaderedContentControl>
-                <controls:HeaderedContentControl
-                    Header="Android Test"
-                    Style="{StaticResource HeaderStyle}">
+                <controls:HeaderedContentControl Header="Android Test" Style="{StaticResource HeaderStyle}">
                     <StackPanel>
-                        <StackPanel
-                            Margin="0,2"
-                            Orientation="Horizontal">
+                        <StackPanel Margin="0,2" Orientation="Horizontal">
                             <Button
                                 Margin="0,0,2,0"
-                                Tag="Applications"
                                 Click="Button_Click"
-                                Content="Applications"/>
+                                Content="Applications"
+                                Tag="Applications" />
                             <Button
                                 Margin="2,0"
-                                Tag="Processes"
+                                Click="Button_Click"
                                 Content="Processes"
-                                Click="Button_Click"/>
+                                Tag="Processes" />
                         </StackPanel>
                     </StackPanel>
                 </controls:HeaderedContentControl>
@@ -78,8 +66,8 @@
         </ScrollViewer>
         <contorls:TitleBar
             Title="Testing"
-            BackgroundVisibility="Visible"
             BackRequested="TitleBar_BackRequested"
-            IsBackEnable="{x:Bind Frame.CanGoBack}"/>
+            BackgroundVisibility="Visible"
+            IsBackEnable="{x:Bind Frame.CanGoBack}" />
     </Grid>
 </Page>

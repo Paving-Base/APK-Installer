@@ -7,7 +7,7 @@ namespace AAPTForNet.Filters
     internal class SDKFilter : BaseFilter
     {
 
-        private List<string> msgs = new List<string>();
+        private readonly List<string> msgs = new List<string>();
         private string[] segments => String.Join(" ", msgs).Split(seperator);
 
         public override bool canHandle(string msg)
@@ -39,7 +39,9 @@ namespace AAPTForNet.Filters
             for (int i = 0; i < segments.Length; i++)
             {
                 if (segments[i].Contains("sdkVersion"))
+                {
                     return segments[++i];
+                }
             }
             return string.Empty;
         }
@@ -49,7 +51,9 @@ namespace AAPTForNet.Filters
             for (int i = 0; i < segments.Length; i++)
             {
                 if (segments[i].Contains("targetSdkVersion"))
+                {
                     return segments[++i];
+                }
             }
             return string.Empty;
         }

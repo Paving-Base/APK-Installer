@@ -12,8 +12,8 @@ namespace APKInstaller.Controls
         public SettingButton()
         {
             DefaultStyleKey = typeof(Button);
-            this.Style = (Style)Application.Current.Resources["SettingButtonStyle"];
-            this.RegisterPropertyChangedCallback(Button.ContentProperty, OnContentChanged);
+            Style = (Style)Application.Current.Resources["SettingButtonStyle"];
+            RegisterPropertyChangedCallback(Button.ContentProperty, OnContentChanged);
         }
 
         private static void OnContentChanged(DependencyObject d, DependencyProperty dp)

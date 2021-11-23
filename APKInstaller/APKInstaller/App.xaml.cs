@@ -1,7 +1,7 @@
 using APKInstaller.Helpers.Exceptions;
 using Microsoft.UI.Xaml;
-using System.Runtime.InteropServices;
 using System;
+using System.Runtime.InteropServices;
 using Windows.ApplicationModel.Resources;
 using WinRT;
 

@@ -1,320 +1,302 @@
 ﻿<Page
     x:Class="APKInstaller.Pages.InstallPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:controls="using:APKInstaller.Controls"
     xmlns:converter="using:APKInstaller.Helpers.ValueConverters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:sys="using:System"
-    mc:Ignorable="d"
-    NavigationCacheMode="Enabled">
+    NavigationCacheMode="Enabled"
+    mc:Ignorable="d">
     <Page.Resources>
-        <converter:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+        <converter:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
     </Page.Resources>
     <Grid>
         <Grid.ChildrenTransitions>
             <TransitionCollection>
-                <EntranceThemeTransition/>
+                <EntranceThemeTransition />
             </TransitionCollection>
         </Grid.ChildrenTransitions>
         <Grid
-            Margin="0,16,0,0"
             x:Name="CoreAppUI"
+            Margin="0,16,0,0"
             Visibility="{x:Bind IsInitialized, Mode=OneWay}">
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="auto" />
             </Grid.RowDefinitions>
             <Grid
+                x:Name="MainContentContainer"
                 Grid.Row="0"
-                Margin="24,0,24,24"
-                x:Name="MainContentContainer">
+                Margin="24,0,24,24">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="auto" />
                 </Grid.ColumnDefinitions>
                 <Grid
-                    Grid.Column="0"
                     x:Name="TopInformation"
+                    Grid.Column="0"
                     VerticalAlignment="Stretch">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="auto"/>
-                        <RowDefinition Height="auto"/>
-                        <RowDefinition Height="auto"/>
-                        <RowDefinition Height="auto"/>
-                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
                     <TextBlock
+                        x:Name="AppName"
                         Grid.Row="0"
                         FontSize="24"
-                        x:Name="AppName"
-                        TextWrapping="Wrap"
                         FontWeight="SemiLight"
                         OpticalMarginAlignment="TrimSideBearings"
-                        ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"/>
+                        TextWrapping="Wrap"
+                        ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
                     <StackPanel
+                        x:Name="AppSignatureInfoCotainer"
                         Grid.Row="1"
-                        Visibility="Collapsed"
                         Orientation="Horizontal"
-                        x:Name="AppSignatureInfoCotainer">
-                        <Image
-                            Stretch="Uniform"
-                            x:Name="AppSignatureInfoImage"/>
+                        Visibility="Collapsed">
+                        <Image x:Name="AppSignatureInfoImage" Stretch="Uniform" />
                         <TextBlock
-                            MaxLines="1"
-                            Margin="0,6,0,0"
-                            Text="Trusted App"
                             x:Name="AppSignatureInfoText"
+                            Margin="0,6,0,0"
+                            MaxLines="1"
+                            Text="Trusted App"
                             TextTrimming="CharacterEllipsis"
-                            ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"/>
+                            ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
                     </StackPanel>
                     <TextBlock
-                        MaxLines="2"
-                        Grid.Row="2"
                         x:Name="AppPublisher"
+                        Grid.Row="2"
+                        MaxLines="2"
+                        Text="{x:Bind sys:String.Format(PackageNameFormat, ApkInfo.PackageName), Mode=OneWay}"
                         TextTrimming="CharacterEllipsis"
-                        ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"
-                        Text="{x:Bind sys:String.Format(PackageNameFormat, ApkInfo.PackageName), Mode=OneWay}"/>
+                        ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
                     <TextBlock
-                        Grid.Row="3"
                         x:Name="AppVersion"
+                        Grid.Row="3"
                         Text="{x:Bind sys:String.Format(VersionFormat, ApkInfo.VersionName), Mode=OneWay}"
-                        ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"/>
+                        ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
                     <controls:CapabilitiesInfoControl
-                        Grid.Row="4"
-                        Margin="0,24,0,0"
                         x:Name="AppCapabilities"
                         x:Uid="/InstallPage/AppCapabilities"
-                        CapabilitiesList="{x:Bind ApkInfo.Permissions, Mode=OneWay}"/>
+                        Grid.Row="4"
+                        Margin="0,24,0,0"
+                        CapabilitiesList="{x:Bind ApkInfo.Permissions, Mode=OneWay}" />
                 </Grid>
                 <Border
+                    x:Name="AppIconContainer"
+                    Grid.Column="1"
                     Width="90"
                     Height="90"
-                    Grid.Column="1"
                     Margin="12,0,0,0"
-                    VerticalAlignment="Top"
-                    x:Name="AppIconContainer"
-                    HorizontalAlignment="Right">
-                    <Image
-                        x:Name="AppIcon"
-                        Source="{x:Bind ApkInfo.Icon.RealPath, Mode=OneWay}"/>
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top">
+                    <Image x:Name="AppIcon" Source="{x:Bind ApkInfo.Icon.RealPath, Mode=OneWay}" />
                 </Border>
             </Grid>
             <Grid
+                x:Name="AppBigPictureMainContentContainer"
                 Grid.Row="0"
-                Visibility="Collapsed"
-                x:Name="AppBigPictureMainContentContainer">
+                Visibility="Collapsed">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <TextBlock
+                    x:Name="AppBigPictureMainContentText"
                     Grid.Row="0"
-                    MaxLines="2"
+                    HorizontalAlignment="Center"
                     FontSize="24"
                     FontWeight="SemiBold"
-                    HorizontalAlignment="Center"
-                    TextTrimming="CharacterEllipsis"
-                    x:Name="AppBigPictureMainContentText"
+                    MaxLines="2"
                     OpticalMarginAlignment="TrimSideBearings"
                     Text="{x:Bind sys:String.Format(InstallFormat, ApkInfo.AppName), Mode=OneWay}"
-                    ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"/>
+                    TextTrimming="CharacterEllipsis"
+                    ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
                 <Image
+                    x:Name="AppBigPicture"
+                    Grid.Row="1"
                     Width="150"
                     Height="150"
-                    Grid.Row="1"
-                    x:Name="AppBigPicture"
                     HorizontalAlignment="Center"
-                    Source="{x:Bind ApkInfo.Icon.RealPath, Mode=OneWay}"/>
+                    Source="{x:Bind ApkInfo.Icon.RealPath, Mode=OneWay}" />
             </Grid>
             <Grid
+                x:Name="BottomContentContainer"
                 Grid.Row="1"
-                Margin="24,0,24,24"
-                x:Name="BottomContentContainer">
+                Margin="24,0,24,24">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <StackPanel
-                    Opacity="1"
+                    x:Name="InstallProgressContainer"
                     Grid.Row="0"
                     Margin="0,24,0,0"
-                    x:Name="InstallProgressContainer"
+                    Opacity="1"
                     Visibility="{x:Bind IsInstalling, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='bool'}">
-                    <TextBlock
-                        x:Name="ProgressText"
-                        ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"/>
+                    <TextBlock x:Name="ProgressText" ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
                     <ProgressBar
+                        x:Name="AppxInstallBar"
                         Height="12"
-                        IsIndeterminate="True"
-                        x:Name="AppxInstallBar"/>
+                        IsIndeterminate="True" />
                 </StackPanel>
                 <Grid
+                    x:Name="OutputInfoContainer"
                     Grid.Row="1"
-                    Margin="0,10,0,0"
-                    x:Name="OutputInfoContainer">
+                    Margin="0,10,0,0">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="auto"/>
-                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
-                    <Grid
-                        Margin="0,10,0,0"
-                        x:Name="MessagesToUserContainer">
+                    <Grid x:Name="MessagesToUserContainer" Margin="0,10,0,0">
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="auto"/>
-                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
                         <TextBlock
+                            x:Name="InfoMessageTextBlock"
                             Grid.Row="0"
                             Margin="0,0,0,6"
-                            x:Name="InfoMessageTextBlock"
-                            ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"/>
+                            ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
                         <TextBlock
+                            x:Name="WarningMessageModificationPackage"
                             Grid.Row="1"
                             Margin="0,0,0,6"
                             FontWeight="Bold"
-                            Visibility="Collapsed"
-                            x:Name="WarningMessageModificationPackage"
-                            ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"/>
+                            ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"
+                            Visibility="Collapsed" />
                     </Grid>
                     <TextBlock
-                        Grid.Row="0"
-                        Margin="0,0,0,6"
                         x:Name="InstallOutputTextBlock"
                         x:Uid="/InstallPage/InstallOutputTextBlock"
-                        ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"/>
+                        Grid.Row="0"
+                        Margin="0,0,0,6"
+                        ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
                     <ScrollViewer
+                        x:Name="TextOutputScrollViewer"
                         Grid.Row="1"
                         MaxHeight="56"
+                        BorderBrush="{StaticResource SystemAccentColor}"
                         BorderThickness="3,3,3,3"
-                        x:Name="TextOutputScrollViewer"
-                        ScrollViewer.VerticalScrollBarVisibility="Auto"
-                        BorderBrush="{StaticResource SystemAccentColor}">
+                        ScrollViewer.VerticalScrollBarVisibility="Auto">
                         <TextBlock
-                            Margin="6,6,6,6"
                             x:Name="TextOutput"
+                            Margin="6,6,6,6"
                             IsTextSelectionEnabled="True"
-                            ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"/>
+                            ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
                     </ScrollViewer>
                 </Grid>
-                <Grid
-                    Grid.Row="2"
-                    Margin="0,20,0,0">
+                <Grid Grid.Row="2" Margin="0,20,0,0">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
                     <StackPanel
-                        Grid.Row="0"
-                        Orientation="Horizontal"
                         x:Name="ButtonsContainer"
-                        HorizontalAlignment="Right">
+                        Grid.Row="0"
+                        HorizontalAlignment="Right"
+                        Orientation="Horizontal">
                         <Button
-                            Width="120"
-                            Height="32"
-                            TabIndex="1"
-                            Margin="12,0,0,0"
-                            Click="Button_Click"
                             x:Name="ActionButton"
-                            Style="{StaticResource AccentButtonStyle}">
+                            Width="120"
+                            Height="32"
+                            Margin="12,0,0,0"
+                            Click="Button_Click"
+                            Style="{StaticResource AccentButtonStyle}"
+                            TabIndex="1">
                             <StackPanel Orientation="Horizontal">
-                                <Image
-                                    Stretch="Uniform"
-                                    x:Name="ActionButtonImage"/>
-                                <TextBlock
-                                    x:Name="ActionButtonText"
-                                    ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"/>
+                                <Image x:Name="ActionButtonImage" Stretch="Uniform" />
+                                <TextBlock x:Name="ActionButtonText" ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
                             </StackPanel>
                         </Button>
                         <HyperlinkButton
+                            x:Name="HyperLinkButton"
                             Width="120"
                             Height="32"
-                            TabIndex="1"
                             Margin="12,0,0,0"
-                            Visibility="Collapsed"
-                            x:Name="HyperLinkButton"/>
+                            TabIndex="1"
+                            Visibility="Collapsed" />
                         <Button
-                            Width="120"
-                            Height="32"
-                            TabIndex="1"
-                            Margin="12,0,0,0"
-                            Click="Button_Click"
                             x:Name="SecondaryActionButton"
-                            Style="{StaticResource AccentButtonStyle}">
+                            Width="120"
+                            Height="32"
+                            Margin="12,0,0,0"
+                            Click="Button_Click"
+                            Style="{StaticResource AccentButtonStyle}"
+                            TabIndex="1">
                             <StackPanel>
-                                <TextBlock
-                                    x:Name="SecondaryActionButtonText"
-                                    ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"/>
+                                <TextBlock x:Name="SecondaryActionButtonText" ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
                             </StackPanel>
                         </Button>
                         <HyperlinkButton
+                            x:Name="SecondaryHyperLinkButton"
                             Width="120"
                             Height="32"
-                            TabIndex="1"
                             Margin="12,0,0,0"
-                            Visibility="Collapsed"
-                            x:Name="SecondaryHyperLinkButton"/>
+                            TabIndex="1"
+                            Visibility="Collapsed" />
                         <Button
+                            x:Name="CancelOperationButton"
                             Width="120"
                             Height="32"
-                            TabIndex="1"
                             Margin="12,0,0,0"
                             Click="Button_Click"
-                            x:Name="CancelOperationButton"
-                            Style="{StaticResource AccentButtonStyle}">
+                            Style="{StaticResource AccentButtonStyle}"
+                            TabIndex="1">
                             <StackPanel>
-                                <TextBlock
-                                    x:Name="CancelOperationButtonText"
-                                    ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"/>
+                                <TextBlock x:Name="CancelOperationButtonText" ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
                             </StackPanel>
                         </Button>
                     </StackPanel>
                     <CheckBox
-                        Grid.Row="1"
-                        Padding="8,5,0,0"
-                        Margin="0,-26,0,0"
-                        FocusVisualMargin="-7,-3"
-                        VerticalAlignment="Center"
-                        HorizontalAlignment="Left"
-                        Content="Launch when ready"
-                        UseSystemFocusVisuals="True"
-                        VerticalContentAlignment="Top"
                         x:Name="LaunchWhenReadyCheckbox"
+                        Grid.Row="1"
+                        Margin="0,-26,0,0"
+                        Padding="8,5,0,0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
                         HorizontalContentAlignment="Left"
+                        VerticalContentAlignment="Top"
+                        Content="Launch when ready"
+                        FocusVisualMargin="-7,-3"
                         IsChecked="{x:Bind IsOpenApp, Mode=TwoWay}"
-                        ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Content}"/>
+                        ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Content}"
+                        UseSystemFocusVisuals="True" />
                     <StackPanel
+                        x:Name="TermsAndConditionsGrid"
                         Grid.Row="2"
-                        Visibility="Collapsed"
-                        x:Name="TermsAndConditionsGrid">
+                        Visibility="Collapsed">
                         <HyperlinkButton
-                            Content="See more"
-                            HorizontalAlignment="Center"
                             x:Name="MoreDetailsHyperLink"
-                            ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Content}"/>
+                            HorizontalAlignment="Center"
+                            Content="See more"
+                            ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Content}" />
                     </StackPanel>
                 </Grid>
             </Grid>
         </Grid>
         <StackPanel
             x:Name="InitialLoadingUI"
-            VerticalAlignment="Center"
             HorizontalAlignment="Center"
+            VerticalAlignment="Center"
             Loaded="InitialLoadingUI_Loaded"
             Visibility="{x:Bind IsInitialized, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='!bool'}">
             <ProgressRing
+                x:Name="WaitProgressRing"
                 Width="50"
                 Height="50"
-                IsActive="True"
-                x:Name="WaitProgressRing"
-                HorizontalAlignment="Center"/>
+                HorizontalAlignment="Center"
+                IsActive="True" />
             <TextBlock
+                x:Name="WaitProgressText"
                 Margin="0,6,0,0"
-                TextAlignment="Center"
-                x:Name="WaitProgressText"/>
+                TextAlignment="Center" />
         </StackPanel>
     </Grid>
 </Page>

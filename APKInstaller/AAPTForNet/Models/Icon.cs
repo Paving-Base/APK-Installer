@@ -24,24 +24,26 @@ namespace AAPTForNet.Models
         /// </summary>
         public bool isImage => !DefaultName.Equals(IconName) && !isMarkup;
 
-        internal bool isMarkup => this.IconName
+        internal bool isMarkup => IconName
             .EndsWith(".xml", StringComparison.OrdinalIgnoreCase);
 
         // Not real icon, it refer to another
-        internal bool isRefernce => this.IconName.StartsWith("0x");
+        internal bool isRefernce => IconName.StartsWith("0x");
 
         internal bool isHighDensity
         {
             get
             {
-                if (!this.isImage || !File.Exists(RealPath))
+                if (!isImage || !File.Exists(RealPath))
+                {
                     return false;
+                }
 
                 try
                 {
                     // Load from unsupported format will throw an exception.
                     // But icon can be packed without extension
-                    using (var image = new Bitmap(RealPath))
+                    using (Bitmap image = new Bitmap(RealPath))
                     {
                         return image.Width > hdpiWidth;
                     }
@@ -64,21 +66,21 @@ namespace AAPTForNet.Models
 
         internal Icon(string iconName)
         {
-            this.IconName = iconName ?? string.Empty;
-            this.RealPath = $@"{AppDomain.CurrentDomain.BaseDirectory}\256x256.png";
+            IconName = iconName ?? string.Empty;
+            RealPath = $@"{AppDomain.CurrentDomain.BaseDirectory}\256x256.png";
         }
 
-        public override string ToString() => this.IconName;
+        public override string ToString() => IconName;
 
         public override bool Equals(object obj)
         {
             if (obj is Icon ic)
             {
-                return this.IconName == ic.IconName;
+                return IconName == ic.IconName;
             }
             return false;
         }
 
-        public override int GetHashCode() => -489061483 + EqualityComparer<string>.Default.GetHashCode(this.IconName);
+        public override int GetHashCode() => -489061483 + EqualityComparer<string>.Default.GetHashCode(IconName);
     }
 }

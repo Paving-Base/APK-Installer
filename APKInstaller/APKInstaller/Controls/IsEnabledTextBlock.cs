@@ -13,7 +13,7 @@ namespace APKInstaller.Controls
     {
         public IsEnabledTextBlock()
         {
-            this.DefaultStyleKey = typeof(IsEnabledTextBlock);
+            DefaultStyleKey = typeof(IsEnabledTextBlock);
         }
 
         protected override void OnApplyTemplate()

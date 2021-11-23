@@ -22,17 +22,17 @@ namespace AAPTForNet
 
         protected AAPTool()
         {
-            this.StartInfo.FileName = AppPath + @"\tool\aapt.exe";
-            this.StartInfo.CreateNoWindow = true;
-            this.StartInfo.UseShellExecute = false; // For read output data
-            this.StartInfo.RedirectStandardError = true;
-            this.StartInfo.RedirectStandardOutput = true;
-            this.StartInfo.StandardOutputEncoding = System.Text.Encoding.GetEncoding("utf-8");
+            StartInfo.FileName = AppPath + @"\tool\aapt.exe";
+            StartInfo.CreateNoWindow = true;
+            StartInfo.UseShellExecute = false; // For read output data
+            StartInfo.RedirectStandardError = true;
+            StartInfo.RedirectStandardOutput = true;
+            StartInfo.StandardOutputEncoding = System.Text.Encoding.GetEncoding("utf-8");
         }
 
         protected new bool Start(string args)
         {
-            this.StartInfo.Arguments = args;
+            StartInfo.Arguments = args;
             return base.Start();
         }
 
@@ -44,10 +44,10 @@ namespace AAPTForNet
         {
 
             int index = 0;
-            var terminated = false;
-            var msg = string.Empty;
-            var aapt = new AAPTool();
-            var output = new List<string>();    // Messages from output stream
+            bool terminated = false;
+            string msg = string.Empty;
+            AAPTool aapt = new AAPTool();
+            List<string> output = new List<string>();    // Messages from output stream
 
             switch (type)
             {
@@ -78,7 +78,10 @@ namespace AAPTForNet
                     catch { }
                 }
                 if (!terminated)
+                {
                     index++;
+                }
+
                 output.Add(msg);
             }
 
@@ -128,11 +131,13 @@ namespace AAPTForNet
         /// <returns>Filled apk if dump process is not failed</returns>
         public static ApkInfo Decompile(string path)
         {
-            var manifest = ApkExtractor.ExtractManifest(path);
+            DumpModel manifest = ApkExtractor.ExtractManifest(path);
             if (!manifest.isSuccess)
+            {
                 return new ApkInfo();
+            }
 
-            var apk = ApkParser.Parse(manifest);
+            ApkInfo apk = ApkParser.Parse(manifest);
             apk.FullPath = path;
 
             if (apk.Icon.isImage)
@@ -140,7 +145,9 @@ namespace AAPTForNet
                 // Included icon in manifest, extract it from apk
                 apk.Icon.RealPath = ApkExtractor.ExtractIconImage(path, apk.Icon);
                 if (apk.Icon.isHighDensity)
+                {
                     return apk;
+                }
             }
 
             apk.Icon = ApkExtractor.ExtractLargestIcon(path);

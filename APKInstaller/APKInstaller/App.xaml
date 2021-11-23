@@ -6,27 +6,27 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
-                <!-- Other merged dictionaries here -->
-                <ResourceDictionary Source="ms-appx:///Themes/SettingsUI.xaml"/>
+                <!--  Other merged dictionaries here  -->
+                <ResourceDictionary Source="ms-appx:///Themes/SettingsUI.xaml" />
             </ResourceDictionary.MergedDictionaries>
-            <!-- Other app resources here -->
+            <!--  Other app resources here  -->
             <x:Double x:Key="PageTitleHeight">40</x:Double>
             <Thickness x:Key="StackPanelMargin">0,40,0,0</Thickness>
             <Style
-                TargetType="Button"
                 x:Key="IconButtonStyle"
-                BasedOn="{StaticResource ButtonRevealStyle}">
-                <Setter Property="Width" Value="40"/>
-                <Setter Property="Height" Value="40"/>
-                <Setter Property="Padding" Value="0"/>
-                <Setter Property="Background" Value="Transparent"/>
+                BasedOn="{StaticResource ButtonRevealStyle}"
+                TargetType="Button">
+                <Setter Property="Width" Value="40" />
+                <Setter Property="Height" Value="40" />
+                <Setter Property="Padding" Value="0" />
+                <Setter Property="Background" Value="Transparent" />
             </Style>
             <Style x:Name="PageScrollViewer" TargetType="ScrollViewer">
-                <Setter Property="Margin" Value="0,40,0,0"/>
-                <Setter Property="Padding" Value="0,-40,0,0"/>
+                <Setter Property="Margin" Value="0,40,0,0" />
+                <Setter Property="Padding" Value="0,-40,0,0" />
             </Style>
-            <SolidColorBrush x:Key="WindowCaptionBackground" Color="{ThemeResource SolidBackgroundFillColorBase}"/>
-            <SolidColorBrush x:Key="WindowCaptionBackgroundDisabled" Color="{ThemeResource SolidBackgroundFillColorBase}"/>
+            <SolidColorBrush x:Key="WindowCaptionBackground" Color="{ThemeResource SolidBackgroundFillColorBase}" />
+            <SolidColorBrush x:Key="WindowCaptionBackgroundDisabled" Color="{ThemeResource SolidBackgroundFillColorBase}" />
         </ResourceDictionary>
     </Application.Resources>
 </Application>

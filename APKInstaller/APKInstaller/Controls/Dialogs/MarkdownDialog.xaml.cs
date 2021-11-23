@@ -31,7 +31,7 @@ namespace APKInstaller.Controls.Dialogs
                     if (string.IsNullOrEmpty(value)) { return; }
                     IsInitialized = false;
                     value = value.StartsWith("http") ? value : $"https://{value}";
-                    using var client = new HttpClient();
+                    using HttpClient client = new HttpClient();
                     try
                     {
                         MarkdownText.Text = await client.GetStringAsync(value);

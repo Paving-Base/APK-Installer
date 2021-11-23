@@ -6,41 +6,39 @@
         <Setter Property="ItemsPanel">
             <Setter.Value>
                 <ItemsPanelTemplate>
-                    <StackPanel
-                        Spacing="2"
-                        Orientation="Vertical"/>
+                    <StackPanel Orientation="Vertical" Spacing="2" />
                 </ItemsPanelTemplate>
             </Setter.Value>
         </Setter>
-        <Setter Property="IsTabStop" Value="False"/>
-        <Setter Property="HorizontalAlignment" Value="Stretch"/>
-        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+        <Setter Property="IsTabStop" Value="False" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="controls:SettingsGroup">
                     <Grid HorizontalAlignment="Stretch">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <TextBlock
+                            x:Name="HeaderPresenter"
+                            Grid.Row="0"
+                            Margin="1,32,0,8"
+                            AutomationProperties.HeadingLevel="Level2"
+                            Style="{ThemeResource BodyStrongTextBlockStyle}"
+                            Text="{TemplateBinding Header}" />
+                        <ItemsPresenter Grid.Row="1" />
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">
-                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="Normal" />
                                 <VisualState x:Name="Disabled">
                                     <VisualState.Setters>
-                                        <Setter Target="HeaderPresenter.Foreground" Value="{ThemeResource TextFillColorDisabledBrush}"/>
+                                        <Setter Target="HeaderPresenter.Foreground" Value="{ThemeResource TextFillColorDisabledBrush}" />
                                     </VisualState.Setters>
                                 </VisualState>
                             </VisualStateGroup>
                         </VisualStateManager.VisualStateGroups>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                        </Grid.RowDefinitions>
-                        <TextBlock
-                            Grid.Row="0"
-                            Margin="1,32,0,8"
-                            x:Name="HeaderPresenter"
-                            Text="{TemplateBinding Header}"
-                            AutomationProperties.HeadingLevel="Level2"
-                            Style="{ThemeResource BodyStrongTextBlockStyle}"/>
-                        <ItemsPresenter Grid.Row="1"/>
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>

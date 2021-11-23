@@ -61,7 +61,7 @@ namespace APKInstaller.Pages.SettingsPages
                 _isCloseADB = SettingsHelper.Get<bool>(SettingsHelper.IsCloseADB);
             }
         }
-        
+
         private DateTime _updateDate = SettingsHelper.Get<DateTime>(SettingsHelper.UpdateDate);
         internal DateTime UpdateDate
         {

@@ -24,16 +24,27 @@ namespace AAPTForNet.Filters
 
         public override ApkInfo getAPK()
         {
-            var apk = new ApkInfo();
+            ApkInfo apk = new ApkInfo();
 
             if (msg.Contains(SmallScreen))
+            {
                 apk.SupportScreens.Add(SmallScreen);
+            }
+
             if (msg.Contains(NormalScreen))
+            {
                 apk.SupportScreens.Add(NormalScreen);
+            }
+
             if (msg.Contains(LargeScreen))
+            {
                 apk.SupportScreens.Add(LargeScreen);
+            }
+
             if (msg.Contains(xLargeScreen))
+            {
                 apk.SupportScreens.Add(xLargeScreen);
+            }
 
             return apk;
         }

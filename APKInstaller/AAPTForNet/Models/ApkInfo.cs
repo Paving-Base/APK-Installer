@@ -70,7 +70,9 @@ namespace AAPTForNet.Models
         internal ApkInfo megre(params ApkInfo[] apks)
         {
             if (apks.Any(a => a == null))
+            {
                 throw new ArgumentNullException();
+            }
 
             return ApkInfo.Merge(this, apks);
         }
@@ -83,13 +85,17 @@ namespace AAPTForNet.Models
         internal static ApkInfo Merge(ApkInfo init, IEnumerable<ApkInfo> apks)
         {
             if (init == null)
+            {
                 init = new ApkInfo();
+            }
 
-            var appApk = apks.FirstOrDefault(a => a.AppName.Length > 0);
+            ApkInfo appApk = apks.FirstOrDefault(a => a.AppName.Length > 0);
             if (appApk != null)
+            {
                 init.AppName = appApk.AppName;
+            }
 
-            var pckApk = apks.FirstOrDefault(a => a.PackageName.Length > 0);
+            ApkInfo pckApk = apks.FirstOrDefault(a => a.PackageName.Length > 0);
             if (pckApk != null)
             {
                 init.VersionName = pckApk.VersionName;
@@ -97,32 +103,42 @@ namespace AAPTForNet.Models
                 init.PackageName = pckApk.PackageName;
             }
 
-            var sdkApk = apks.FirstOrDefault(a => !SDKInfo.Unknown.Equals(a.MinSDK));
+            ApkInfo sdkApk = apks.FirstOrDefault(a => !SDKInfo.Unknown.Equals(a.MinSDK));
             if (sdkApk != null)
             {
                 init.MinSDK = sdkApk.MinSDK;
                 init.TargetSDK = sdkApk.TargetSDK;
             }
 
-            var perApk = apks.FirstOrDefault(a => a.Permissions.Count > 0);
+            ApkInfo perApk = apks.FirstOrDefault(a => a.Permissions.Count > 0);
             if (perApk != null)
+            {
                 init.Permissions = perApk.Permissions;
+            }
 
-            var abiApk = apks.FirstOrDefault(a => a.SupportedABIs.Count > 0);
+            ApkInfo abiApk = apks.FirstOrDefault(a => a.SupportedABIs.Count > 0);
             if (abiApk != null)
+            {
                 init.SupportedABIs = abiApk.SupportedABIs;
+            }
 
-            var scrApk = apks.FirstOrDefault(a => a.SupportScreens.Count > 0);
+            ApkInfo scrApk = apks.FirstOrDefault(a => a.SupportScreens.Count > 0);
             if (scrApk != null)
+            {
                 init.SupportScreens = scrApk.SupportScreens;
+            }
 
-            var iconApk = apks.FirstOrDefault(a => !Icon.Default.Equals(a.Icon));
+            ApkInfo iconApk = apks.FirstOrDefault(a => !Icon.Default.Equals(a.Icon));
             if (iconApk != null)
+            {
                 init.Icon = iconApk.Icon;
+            }
 
-            var pathApk = apks.FirstOrDefault(a => a.FullPath.Length > 0);
+            ApkInfo pathApk = apks.FirstOrDefault(a => a.FullPath.Length > 0);
             if (pathApk != null)
+            {
                 init.FullPath = pathApk.FullPath;
+            }
 
             return init;
         }
