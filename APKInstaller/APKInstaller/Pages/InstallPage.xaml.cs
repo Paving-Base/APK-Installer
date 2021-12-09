@@ -4,6 +4,8 @@ using AdvancedSharpAdbClient;
 using AdvancedSharpAdbClient.DeviceCommands;
 using APKInstaller.Controls.Dialogs;
 using APKInstaller.Helpers;
+using CommunityToolkit.WinUI;
+using Microsoft.UI.Dispatching;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
@@ -36,6 +38,7 @@ namespace APKInstaller.Pages
         private DeviceData _device;
         private string _path = @"C:\Users\qq251\Downloads\Programs\Minecraft_1.17.40.06_sign.apk";
         private static bool _wsaonly => SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
+        private new readonly DispatcherQueue DispatcherQueue = DispatcherQueue.GetForCurrentThread();
         private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("InstallPage");
 
         internal string InstallFormat => _loader.GetString("InstallFormat");
@@ -131,7 +134,7 @@ namespace APKInstaller.Pages
             }
             if (!IsInstalling)
             {
-                DispatcherQueue.TryEnqueue(() =>
+                DispatcherQueue.EnqueueAsync(() =>
                 {
                     if (CheckDevice() && _device != null)
                     {
@@ -313,29 +316,29 @@ namespace APKInstaller.Pages
                         _ = downloader.Start();
                         while (downloader.TotalSize <= 0 && downloader.IsStarted)
                         {
-                            _ = DispatcherQueue.TryEnqueue(() => WaitProgressText.Text = _loader.GetString("WaitDownload"));
+                            await DispatcherQueue.EnqueueAsync(() => WaitProgressText.Text = _loader.GetString("WaitDownload"));
                             await Task.Delay(500);
                         }
-                        _ = DispatcherQueue.TryEnqueue(() => WaitProgressRing.IsIndeterminate = false);
+                        await DispatcherQueue.EnqueueAsync(() => WaitProgressRing.IsIndeterminate = false);
                         while (downloader.IsStarted)
                         {
-                            _ = DispatcherQueue.TryEnqueue(() =>
+                            await DispatcherQueue.EnqueueAsync(() =>
                             {
                                 WaitProgressText.Text = $"{((double)downloader.BytesPerSecond).GetSizeString()}/s";
                                 WaitProgressRing.Value = (double)downloader.CurrentSize * 100 / downloader.TotalSize;
                             });
                             await Task.Delay(500);
                         }
-                        _ = DispatcherQueue.TryEnqueue(() =>
+                        await DispatcherQueue.EnqueueAsync(() =>
                         {
                             WaitProgressText.Text = _loader.GetString("UnzipADB");
                             WaitProgressRing.IsIndeterminate = true;
                         });
                         IArchive archive = ArchiveFactory.Open(Path.Combine(ApplicationData.Current.LocalFolder.Path, "platform-tools.zip"));
-                        _ = DispatcherQueue.TryEnqueue(() => WaitProgressRing.IsIndeterminate = false);
+                        await DispatcherQueue.EnqueueAsync(() => WaitProgressRing.IsIndeterminate = false);
                         foreach (IArchiveEntry entry in archive.Entries)
                         {
-                            _ = DispatcherQueue.TryEnqueue(() =>
+                            await DispatcherQueue.EnqueueAsync(() =>
                             {
                                 WaitProgressRing.Value = (double)(archive.Entries.ToList().IndexOf(entry) + 1) * 100 / archive.Entries.Count();
                                 WaitProgressText.Text = string.Format(_loader.GetString("UnzippingFormat"), archive.Entries.ToList().IndexOf(entry) + 1, archive.Entries.Count());
@@ -345,7 +348,7 @@ namespace APKInstaller.Pages
                                 entry.WriteToDirectory(ApplicationData.Current.LocalFolder.Path, new ExtractionOptions() { ExtractFullPath = true, Overwrite = true });
                             }
                         }
-                        _ = DispatcherQueue.TryEnqueue(() =>
+                        await DispatcherQueue.EnqueueAsync(() =>
                         {
                             WaitProgressRing.IsIndeterminate = true;
                             WaitProgressText.Text = _loader.GetString("UnzipComplete");

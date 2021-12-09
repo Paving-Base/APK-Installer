@@ -1,5 +1,6 @@
 ﻿using APKInstaller.Helpers;
 using APKInstaller.Pages.SettingsPages;
+using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 
@@ -19,7 +20,17 @@ namespace APKInstaller.Pages
         {
             InitializeComponent();
             UIHelper.MainPage = this;
-            UIHelper.MainWindow.ExtendsContentIntoTitleBar = true;
+            if (AppWindowTitleBar.IsCustomizationSupported())
+            {
+                CustomTitleBar.HorizontalAlignment = HorizontalAlignment.Stretch;
+                AppWindow AppWindow = UIHelper.GetAppWindowForCurrentWindow();
+                AppWindow.TitleBar.ExtendsContentIntoTitleBar = true;
+                UIHelper.CheckTheme();
+            }
+            else
+            {
+                UIHelper.MainWindow.ExtendsContentIntoTitleBar = true;
+            }
             UIHelper.MainWindow.SetTitleBar(CustomTitleBar);
             _ = CoreAppFrame.Navigate(typeof(InstallPage));
         }
@@ -40,20 +51,23 @@ namespace APKInstaller.Pages
         {
             try
             {
-                if (XamlRoot.Size.Width <= 240)
+                if (!AppWindowTitleBar.IsCustomizationSupported())
                 {
-                    if (!HasBeenSmail)
+                    if (XamlRoot.Size.Width <= 240)
                     {
-                        HasBeenSmail = true;
-                        UIHelper.MainWindow.SetTitleBar(null);
+                        if (!HasBeenSmail)
+                        {
+                            HasBeenSmail = true;
+                            UIHelper.MainWindow.SetTitleBar(null);
+                        }
                     }
+                    else if (HasBeenSmail)
+                    {
+                        HasBeenSmail = false;
+                        UIHelper.MainWindow.SetTitleBar(CustomTitleBar);
+                    }
+                    CustomTitleBar.Width = XamlRoot.Size.Width - 120;
                 }
-                else if (HasBeenSmail)
-                {
-                    HasBeenSmail = false;
-                    UIHelper.MainWindow.SetTitleBar(CustomTitleBar);
-                }
-                CustomTitleBar.Width = XamlRoot.Size.Width - 120;
             }
             catch { }
         }

@@ -1,6 +1,7 @@
 ﻿using AdvancedSharpAdbClient;
 using APKInstaller.Helpers;
 using APKInstaller.Models;
+using CommunityToolkit.WinUI;
 using CommunityToolkit.WinUI.UI.Controls;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
@@ -12,6 +13,7 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Resources;
 using Windows.Storage;
 using Windows.System;
+using DispatcherQueue = Microsoft.UI.Dispatching.DispatcherQueue;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -23,6 +25,7 @@ namespace APKInstaller.Pages.SettingsPages
     /// </summary>
     public sealed partial class SettingsPage : Page, INotifyPropertyChanged
     {
+        private new readonly DispatcherQueue DispatcherQueue = DispatcherQueue.GetForCurrentThread();
         private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("SettingsPage");
 
         private IEnumerable<DeviceData> _deviceList;
@@ -127,7 +130,7 @@ namespace APKInstaller.Pages.SettingsPages
 
         private void OnDeviceChanged(object sender, DeviceDataEventArgs e)
         {
-            _ = DispatcherQueue.TryEnqueue(() =>
+            DispatcherQueue.EnqueueAsync(() =>
             {
                 DeviceList = new AdvancedAdbClient().GetDevices();
             });

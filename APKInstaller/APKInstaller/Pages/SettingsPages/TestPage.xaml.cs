@@ -39,10 +39,10 @@ namespace APKInstaller.Pages.SettingsPages
             switch ((sender as FrameworkElement).Tag as string)
             {
                 case "OutPIP":
-                    _ = ApplicationView.GetForCurrentView().TryEnterViewModeAsync(ApplicationViewMode.Default);
+                    UIHelper.MainWindow.GetAppWindowForCurrentWindow().SetPresenter(Microsoft.UI.Windowing.AppWindowPresenterKind.Default);
                     break;
                 case "EnterPIP":
-                    _ = ApplicationView.GetForCurrentView().TryEnterViewModeAsync(ApplicationViewMode.CompactOverlay);
+                    UIHelper.MainWindow.GetAppWindowForCurrentWindow().SetPresenter(Microsoft.UI.Windowing.AppWindowPresenterKind.CompactOverlay);
                     break;
                 case "Processes":
                     _ = Frame.Navigate(typeof(ProcessesPage));

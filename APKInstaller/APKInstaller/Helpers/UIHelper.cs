@@ -1,5 +1,8 @@
 ﻿using AdvancedSharpAdbClient;
 using APKInstaller.Pages;
+using Microsoft.UI;
+using Microsoft.UI.Windowing;
+using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Media.Animation;
 using System;
 using System.Net;
@@ -18,6 +21,35 @@ namespace APKInstaller.Helpers
 
     internal static partial class UIHelper
     {
+        public static bool IsDarkTheme(ElementTheme theme)
+        {
+            return theme == ElementTheme.Default ? Application.Current.RequestedTheme == ApplicationTheme.Dark : theme == ElementTheme.Dark;
+        }
+
+        public static void CheckTheme()
+        {
+            if (AppWindowTitleBar.IsCustomizationSupported())
+            {
+                bool IsDark = IsDarkTheme(SettingsHelper.Theme);
+
+                if (IsDark)
+                {
+                    AppWindowTitleBar view = GetAppWindowForCurrentWindow().TitleBar;
+                    view.ButtonBackgroundColor = view.InactiveBackgroundColor = view.ButtonInactiveBackgroundColor = Colors.Transparent;
+                    view.ButtonForegroundColor = Colors.White;
+                }
+                else
+                {
+                    AppWindowTitleBar view = GetAppWindowForCurrentWindow().TitleBar;
+                    view.ButtonBackgroundColor = view.InactiveBackgroundColor = view.ButtonInactiveBackgroundColor = Colors.Transparent;
+                    view.ButtonForegroundColor = Colors.Black;
+                }
+            }
+        }
+    }
+
+    internal static partial class UIHelper
+    {
         public static MainPage MainPage;
         public static MainWindow MainWindow;
 
@@ -29,6 +61,21 @@ namespace APKInstaller.Helpers
             }));
         }
 
+        public static AppWindow GetAppWindowForCurrentWindow(this Window window)
+        {
+            IntPtr hWnd = WinRT.Interop.WindowNative.GetWindowHandle(window);
+            WindowId myWndId = Win32Interop.GetWindowIdFromWindow(hWnd);
+            return AppWindow.GetFromWindowId(myWndId);
+        }
+
+        public static AppWindow GetAppWindowForCurrentWindow()
+        {
+            return MainWindow != null ? GetAppWindowForCurrentWindow(MainWindow) : null;
+        }
+    }
+
+    internal static partial class UIHelper
+    {
         public static string GetSizeString(this double size)
         {
             int index = 0;

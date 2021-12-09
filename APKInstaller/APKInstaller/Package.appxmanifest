@@ -4,15 +4,16 @@
   xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
   xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
-  IgnorableNamespaces="uap rescap">
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  IgnorableNamespaces="uap rescap mp">
 
   <Identity
-    Name="wherewhere.AndroidAppInstaller.Preview"
-    Publisher="CN=where"
+    Name="18184wherewhere.AndroidApplicationInstaller"
+    Publisher="CN=2C3A37C0-35FC-4839-B08C-751C1C1AFBF5"
     Version="0.1.4.0" />
 
   <Properties>
-    <DisplayName>ms-resource:AppName</DisplayName>
+    <DisplayName>Android Application Installer</DisplayName>
     <PublisherDisplayName>wherewhere</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -45,8 +46,8 @@
         </uap:DefaultTile >
         <uap:SplashScreen Image="Assets\SplashScreen.png"  BackgroundColor="transparent"/>
         <uap:InitialRotationPreference>
-          <uap:Rotation Preference="landscape"/>
           <uap:Rotation Preference="portrait"/>
+          <uap:Rotation Preference="landscape"/>
           <uap:Rotation Preference="landscapeFlipped"/>
           <uap:Rotation Preference="portraitFlipped"/></uap:InitialRotationPreference>
       </uap:VisualElements>
