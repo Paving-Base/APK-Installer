@@ -203,7 +203,7 @@
     <value>解压完成</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
-    <value>解压中 {0}{1} ......</value>
+    <value>解压中 {0}/{1} ......</value>
     <comment>{0} - Have done num. {1} - All num.</comment>
   </data>
   <data name="Update" xml:space="preserve">
