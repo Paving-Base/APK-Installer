@@ -36,8 +36,12 @@ namespace APKInstaller.Pages
     public sealed partial class InstallPage : Page, INotifyPropertyChanged
     {
         private DeviceData _device;
+#if !DEBUG
+        private string _path;
+#else
         private string _path = @"C:\Users\qq251\Downloads\Programs\Minecraft_1.17.40.06_sign.apk";
-        private static bool _wsaonly => SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
+#endif
+        private static bool IsOnlyWSA => SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
         private new readonly DispatcherQueue DispatcherQueue = DispatcherQueue.GetForCurrentThread();
         private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("InstallPage");
 
@@ -128,7 +132,7 @@ namespace APKInstaller.Pages
 
         private void OnDeviceChanged(object sender, DeviceDataEventArgs e)
         {
-            if (_wsaonly)
+            if (IsOnlyWSA)
             {
                 new AdvancedAdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
             }
@@ -202,7 +206,7 @@ namespace APKInstaller.Pages
                         await Task.Run(() => new AdbServer().StartServer(Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe"), restartServerIfNewer: false));
                     }
                 }
-                if (_wsaonly)
+                if (IsOnlyWSA)
                 {
                     new AdvancedAdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
                 }
@@ -244,7 +248,7 @@ namespace APKInstaller.Pages
                         InfoMessageTextBlock.Text = _loader.GetString("WaitingDevice");
                         ActionButton.Visibility = MessagesToUserContainer.Visibility = Visibility.Visible;
                         AppName.Text = string.Format(_loader.GetString("WaitingForInstallFormat"), ApkInfo.AppName);
-                        if (_wsaonly)
+                        if (IsOnlyWSA)
                         {
                             ContentDialog dialog = new MarkdownDialog()
                             {
@@ -395,7 +399,7 @@ namespace APKInstaller.Pages
             foreach (DeviceData device in devices)
             {
                 if (device == null || device.State == DeviceState.Offline) { continue; }
-                if (_wsaonly)
+                if (IsOnlyWSA)
                 {
                     client.ExecuteRemoteCommand("getprop ro.boot.hardware", device, receiver);
                     if (receiver.ToString().Contains("windows"))
