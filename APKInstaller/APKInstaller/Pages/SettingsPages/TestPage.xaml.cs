@@ -3,7 +3,6 @@ using APKInstaller.Pages.ToolsPages;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using System.ComponentModel;
-using Windows.UI.ViewManagement;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -17,10 +16,17 @@ namespace APKInstaller.Pages.SettingsPages
     {
         internal bool IsExtendsTitleBar
         {
-            get => UIHelper.MainWindow.ExtendsContentIntoTitleBar;
+            get => UIHelper.HasTitleBar ? UIHelper.MainWindow.ExtendsContentIntoTitleBar : UIHelper.GetAppWindowForCurrentWindow().TitleBar.ExtendsContentIntoTitleBar;
             set
             {
-                UIHelper.MainWindow.ExtendsContentIntoTitleBar = value;
+                if (UIHelper.HasTitleBar)
+                {
+                    UIHelper.MainWindow.ExtendsContentIntoTitleBar = value;
+                }
+                else
+                {
+                    UIHelper.GetAppWindowForCurrentWindow().TitleBar.ExtendsContentIntoTitleBar = value;
+                }
                 RaisePropertyChangedEvent();
             }
         }
@@ -32,7 +38,10 @@ namespace APKInstaller.Pages.SettingsPages
             if (name != null) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
         }
 
-        public TestPage() => InitializeComponent();
+        public TestPage()
+        {
+            InitializeComponent();
+        }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {

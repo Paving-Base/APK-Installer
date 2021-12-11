@@ -21,6 +21,13 @@ namespace APKInstaller.Helpers
 
     internal static partial class UIHelper
     {
+        public static bool HasTitleBar => !AppWindowTitleBar.IsCustomizationSupported();
+        public static double TitleBarHeight => 32;
+        public static double PageTitleHeight => HasTitleBar ? 48 : 48 + TitleBarHeight;
+        public static Thickness StackPanelMargin => new Thickness(0, PageTitleHeight, 0, 0);
+        public static Thickness ScrollViewerMargin => new Thickness(0, PageTitleHeight, 0, 0);
+        public static Thickness ScrollViewerPadding => new Thickness(0, -PageTitleHeight, 0, 0);
+
         public static bool IsDarkTheme(ElementTheme theme)
         {
             return theme == ElementTheme.Default ? Application.Current.RequestedTheme == ApplicationTheme.Dark : theme == ElementTheme.Dark;
@@ -28,7 +35,7 @@ namespace APKInstaller.Helpers
 
         public static void CheckTheme()
         {
-            if (AppWindowTitleBar.IsCustomizationSupported())
+            if (!HasTitleBar)
             {
                 bool IsDark = IsDarkTheme(SettingsHelper.Theme);
 

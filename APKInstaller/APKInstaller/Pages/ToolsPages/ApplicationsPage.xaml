@@ -6,6 +6,7 @@
     xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="using:APKInstaller.Pages.ToolsPages"
+    xmlns:helper="using:APKInstaller.Helpers"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Page.Resources>
@@ -14,8 +15,8 @@
     <Grid>
         <controls:DataGrid
             x:Name="ApplicationDataGrid"
-            Margin="0,40,0,0"
-            Padding="0,-40,0,0"
+            Margin="{x:Bind helper:UIHelper.ScrollViewerMargin}"
+            Padding="{x:Bind helper:UIHelper.ScrollViewerPadding}"
             AutoGenerateColumns="False"
             CanUserReorderColumns="True"
             CanUserResizeColumns="True"

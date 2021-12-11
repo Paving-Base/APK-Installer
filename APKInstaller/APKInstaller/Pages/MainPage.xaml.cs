@@ -20,16 +20,16 @@ namespace APKInstaller.Pages
         {
             InitializeComponent();
             UIHelper.MainPage = this;
-            if (AppWindowTitleBar.IsCustomizationSupported())
+            if (UIHelper.HasTitleBar)
+            {
+                UIHelper.MainWindow.ExtendsContentIntoTitleBar = true;
+            }
+            else
             {
                 CustomTitleBar.HorizontalAlignment = HorizontalAlignment.Stretch;
                 AppWindow AppWindow = UIHelper.GetAppWindowForCurrentWindow();
                 AppWindow.TitleBar.ExtendsContentIntoTitleBar = true;
                 UIHelper.CheckTheme();
-            }
-            else
-            {
-                UIHelper.MainWindow.ExtendsContentIntoTitleBar = true;
             }
             UIHelper.MainWindow.SetTitleBar(CustomTitleBar);
             _ = CoreAppFrame.Navigate(typeof(InstallPage));
@@ -51,7 +51,7 @@ namespace APKInstaller.Pages
         {
             try
             {
-                if (!AppWindowTitleBar.IsCustomizationSupported())
+                if (UIHelper.HasTitleBar)
                 {
                     if (XamlRoot.Size.Width <= 240)
                     {

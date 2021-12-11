@@ -3,11 +3,12 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:helper="using:APKInstaller.Helpers"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Grid
         x:Name="TitleGrid"
-        Height="{StaticResource PageTitleHeight}"
+        Height="{x:Bind helper:UIHelper.PageTitleHeight}"
         VerticalAlignment="Top"
         Tapped="TitleGrid_Tapped">
         <Grid.ChildrenTransitions>
@@ -15,55 +16,57 @@
                 <EntranceThemeTransition />
             </TransitionCollection>
         </Grid.ChildrenTransitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="40" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="auto" />
-            <ColumnDefinition Width="auto" />
-            <ColumnDefinition Width="auto" />
-        </Grid.ColumnDefinitions>
         <Border
             x:Name="TitleBackground"
             Grid.ColumnSpan="5"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Stretch"
             Background="{StaticResource SolidBackgroundFillColorBase}" />
-        <Button
-            x:Name="BackButton"
-            Grid.Column="0"
-            VerticalAlignment="Center"
-            Click="BackButton_Click"
-            Style="{StaticResource IconButtonStyle}">
-            <SymbolIcon Symbol="Back" />
-        </Button>
-        <TextBlock
-            x:Name="TitleBlock"
-            Grid.Column="1"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Center"
-            FontSize="18" />
-        <ContentPresenter
-            x:Name="UserContentPresenter"
-            Grid.Column="2"
-            Height="40"
-            VerticalAlignment="Center" />
-        <ProgressRing
-            x:Name="ProgressRing"
-            Grid.Column="3"
-            Width="24"
-            Height="24"
-            Margin="8,0"
-            VerticalAlignment="Center"
-            IsActive="False"
-            Visibility="Collapsed" />
-        <Button
-            x:Name="RefreshButton"
-            Grid.Column="4"
-            VerticalAlignment="Center"
-            Click="RefreshButton_Click"
-            Style="{StaticResource IconButtonStyle}"
-            Visibility="Collapsed">
-            <SymbolIcon Symbol="Refresh" />
-        </Button>
+        <Grid Height="48" VerticalAlignment="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+            <Button
+                x:Name="BackButton"
+                Grid.Column="0"
+                VerticalAlignment="Center"
+                Click="BackButton_Click"
+                Style="{StaticResource IconButtonStyle}">
+                <SymbolIcon Symbol="Back" />
+            </Button>
+            <TextBlock
+                x:Name="TitleBlock"
+                Grid.Column="1"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="18" />
+            <ContentPresenter
+                x:Name="UserContentPresenter"
+                Grid.Column="2"
+                Height="40"
+                VerticalAlignment="Center" />
+            <ProgressRing
+                x:Name="ProgressRing"
+                Grid.Column="3"
+                Width="24"
+                Height="24"
+                Margin="8,0"
+                VerticalAlignment="Center"
+                IsActive="False"
+                Visibility="Collapsed" />
+            <Button
+                x:Name="RefreshButton"
+                Grid.Column="4"
+                VerticalAlignment="Center"
+                Click="RefreshButton_Click"
+                Style="{StaticResource IconButtonStyle}"
+                Visibility="Collapsed">
+                <SymbolIcon Symbol="Refresh" />
+            </Button>
+        </Grid>
     </Grid>
 </UserControl>

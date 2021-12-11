@@ -3,23 +3,19 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:controls="using:APKInstaller.Controls"
-    xmlns:converter="using:APKInstaller.Helpers.ValueConverters"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:helper="using:APKInstaller.Helpers"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:sharpadbclient="using:AdvancedSharpAdbClient"
     mc:Ignorable="d">
-    <Page.Resources>
-        <converter:TrueToFalseConverter x:Key="TrueToFalseConverter" />
-        <converter:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
-    </Page.Resources>
     <Grid>
         <Grid.ChildrenTransitions>
             <TransitionCollection>
                 <EntranceThemeTransition />
             </TransitionCollection>
         </Grid.ChildrenTransitions>
-        <ScrollViewer Style="{StaticResource PageScrollViewer}">
-            <StackPanel Margin="{StaticResource StackPanelMargin}" Padding="16">
+        <ScrollViewer Margin="{x:Bind helper:UIHelper.ScrollViewerMargin}" Padding="{x:Bind helper:UIHelper.ScrollViewerPadding}">
+            <StackPanel Margin="{x:Bind helper:UIHelper.StackPanelMargin}" Padding="16">
                 <StackPanel.ChildrenTransitions>
                     <TransitionCollection>
                         <ReorderThemeTransition />
@@ -42,7 +38,7 @@
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
-                    <controls:SettingExpander IsExpanded="{x:Bind IsOnlyWSA, Converter={StaticResource TrueToFalseConverter}}">
+                    <controls:SettingExpander IsExpanded="{x:Bind IsOnlyWSA, Converter={StaticResource BoolNegationConverter}}">
                         <controls:SettingExpander.Header>
                             <controls:Setting x:Uid="/SettingsPage/OnlyWSASettings" Icon="&#xE975;">
                                 <controls:Setting.ActionContent>
@@ -146,7 +142,7 @@
                                     HorizontalAlignment="Right"
                                     Click="Button_Click"
                                     Tag="CheckUpdate"
-                                    Visibility="{x:Bind CheckingUpdate, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='!bool'}" />
+                                    Visibility="{x:Bind CheckingUpdate, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='true'}" />
                             </StackPanel>
                         </controls:Setting.ActionContent>
                     </controls:Setting>

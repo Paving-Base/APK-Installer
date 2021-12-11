@@ -5,21 +5,31 @@
     xmlns:controls="using:APKInstaller.Controls"
     xmlns:converter="using:APKInstaller.Helpers.ValueConverters"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:helper="using:APKInstaller.Helpers"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:sys="using:System"
     NavigationCacheMode="Enabled"
     mc:Ignorable="d">
-    <Page.Resources>
-        <converter:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
-    </Page.Resources>
     <Grid>
         <Grid.ChildrenTransitions>
             <TransitionCollection>
                 <EntranceThemeTransition />
             </TransitionCollection>
         </Grid.ChildrenTransitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid
+            x:Name="CustomTitleBar"
+            Grid.Row="0"
+            Height="32"
+            HorizontalAlignment="Left"
+            Visibility="{x:Bind helper:UIHelper.HasTitleBar, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='true'}"
+            Background="{StaticResource ApplicationPageBackgroundThemeBrush}" />
         <Grid
             x:Name="CoreAppUI"
+            Grid.Row="1"
             Margin="0,16,0,0"
             Visibility="{x:Bind IsInitialized, Mode=OneWay}">
             <Grid.RowDefinitions>
@@ -138,7 +148,7 @@
                     Grid.Row="0"
                     Margin="0,24,0,0"
                     Opacity="1"
-                    Visibility="{x:Bind IsInstalling, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='bool'}">
+                    Visibility="{x:Bind IsInstalling, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}}">
                     <TextBlock x:Name="ProgressText" ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
                     <ProgressBar
                         x:Name="AppxInstallBar"
@@ -283,10 +293,11 @@
         </Grid>
         <StackPanel
             x:Name="InitialLoadingUI"
+            Grid.Row="1"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             Loaded="InitialLoadingUI_Loaded"
-            Visibility="{x:Bind IsInitialized, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='!bool'}">
+            Visibility="{x:Bind IsInitialized, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='true'}">
             <ProgressRing
                 x:Name="WaitProgressRing"
                 Width="50"
