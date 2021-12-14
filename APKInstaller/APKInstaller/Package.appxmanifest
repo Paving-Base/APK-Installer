@@ -8,7 +8,7 @@
   IgnorableNamespaces="uap rescap mp">
 
   <Identity
-    Name="18184wherewhere.AndroidApplicationInstaller"
+    Name="18184wherewhere.AndroidAppInstaller"
     Publisher="CN=2C3A37C0-35FC-4839-B08C-751C1C1AFBF5"
     Version="0.1.4.0" />
 

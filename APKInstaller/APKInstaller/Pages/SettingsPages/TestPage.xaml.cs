@@ -38,10 +38,7 @@ namespace APKInstaller.Pages.SettingsPages
             if (name != null) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
         }
 
-        public TestPage()
-        {
-            InitializeComponent();
-        }
+        public TestPage() => InitializeComponent();
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
