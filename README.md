@@ -32,7 +32,7 @@ An Android Application Installer for Windows
 
 ## 如何安装应用
 ### 最低需求
-- Windows 10 Build 17763及以上
+- Windows 10 Build 18362及以上
 - 设备需支持ARM64/x86/x64
 - 至少400MB的空余储存空间(用于储存安装包与安装应用)
 

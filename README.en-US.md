@@ -32,7 +32,7 @@ An Android Application Installer for Windows
 
 ## How to install the APK Installer
 ### Minimum requirements:
-- Windows 10 Build 17763 and above
+- Windows 10 Build 18362 and above
 - The device needs to support ARM64/x86/x64
 - At least 400MB of free storage space (used to store installation packages and install applications)
 

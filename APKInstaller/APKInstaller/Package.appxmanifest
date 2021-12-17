@@ -13,14 +13,14 @@
     Version="0.1.4.0" />
 
   <Properties>
-    <DisplayName>Android Application Installer</DisplayName>
+    <DisplayName>Android App Installer</DisplayName>
     <PublisherDisplayName>wherewhere</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
   <Dependencies>
-    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.19041.0" />
-    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17763.0" MaxVersionTested="10.0.19041.0" />
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.18362.0" MaxVersionTested="10.0.22000.0" />
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.18362.0" MaxVersionTested="10.0.22000.0" />
   </Dependencies>
 
   <Resources>
@@ -68,6 +68,7 @@
   </Applications>
 
   <Capabilities>
+	<Capability Name="internetClient" />
 	<rescap:Capability Name="runFullTrust" />
   </Capabilities>
 </Package>

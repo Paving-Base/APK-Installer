@@ -5,6 +5,8 @@ using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Media.Animation;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using Windows.UI.Core;
 
@@ -111,6 +113,16 @@ namespace APKInstaller.Helpers
                     break;
             }
             return $"{size:N2}{str}";
+        }
+
+        public static double GetProgressValue<T>(this List<T> lists, T list)
+        {
+            return (double)(lists.IndexOf(list) + 1) * 100 / lists.Count;
+        }
+
+        public static double GetProgressValue<T>(this IEnumerable<T> lists, T list)
+        {
+            return (double)(lists.ToList().IndexOf(list) + 1) * 100 / lists.Count();
         }
     }
 }

@@ -20,6 +20,7 @@
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
     <AppxPackageDir>C:\Users\qq251\Downloads\Github\APK-Installer\APKInstaller\APKInstaller\AppPackages\</AppxPackageDir>
+    <SupportedOSPlatformVersion>10.0.18362.0</SupportedOSPlatformVersion>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="AppPackages\**" />
@@ -53,17 +54,17 @@
   </ItemGroup>
 
   <ItemGroup>
-	<PackageReference Include="SharpCompress" Version="0.30.0" />
+	<PackageReference Include="SharpCompress" Version="0.30.1" />
 	<PackageReference Include="PInvoke.User32" Version="0.7.104" />
 	<PackageReference Include="PortableDownloader" Version="1.3.24" />
-    <PackageReference Include="AdvancedSharpAdbClient" Version="2.5.1" />
+    <PackageReference Include="AdvancedSharpAdbClient" Version="2.5.2" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.0.0" />
-    <PackageReference Include="CommunityToolkit.Mvvm" Version="7.1.1-preview3.1" />
-    <PackageReference Include="CommunityToolkit.WinUI" Version="7.1.1-preview3.1" />
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="7.1.2" />
+    <PackageReference Include="CommunityToolkit.WinUI" Version="7.1.2" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22000.194" />
-    <PackageReference Include="CommunityToolkit.WinUI.UI.Controls.Layout" Version="7.1.1-preview3.1" />
-    <PackageReference Include="CommunityToolkit.WinUI.UI.Controls.DataGrid" Version="7.1.1-preview3.1" />
-    <PackageReference Include="CommunityToolkit.WinUI.UI.Controls.Markdown" Version="7.1.1-preview3.1" />
+    <PackageReference Include="CommunityToolkit.WinUI.UI.Controls.Layout" Version="7.1.2" />
+    <PackageReference Include="CommunityToolkit.WinUI.UI.Controls.DataGrid" Version="7.1.2" />
+    <PackageReference Include="CommunityToolkit.WinUI.UI.Controls.Markdown" Version="7.1.2" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
 
