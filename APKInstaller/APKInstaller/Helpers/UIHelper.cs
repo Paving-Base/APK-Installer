@@ -1,6 +1,7 @@
 ﻿using AdvancedSharpAdbClient;
 using APKInstaller.Pages;
 using Microsoft.UI;
+using Microsoft.UI.Dispatching;
 using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Media.Animation;
@@ -29,6 +30,19 @@ namespace APKInstaller.Helpers
         public static Thickness StackPanelMargin => new Thickness(0, PageTitleHeight, 0, 0);
         public static Thickness ScrollViewerMargin => new Thickness(0, PageTitleHeight, 0, 0);
         public static Thickness ScrollViewerPadding => new Thickness(0, -PageTitleHeight, 0, 0);
+
+        private static DispatcherQueue _dispatcherQueue;
+        public static DispatcherQueue DispatcherQueue
+        {
+            get => _dispatcherQueue;
+            set
+            {
+                if (_dispatcherQueue == null)
+                {
+                    _dispatcherQueue = value;
+                }
+            }
+        }
 
         public static bool IsDarkTheme(ElementTheme theme)
         {

@@ -2,6 +2,7 @@
 using APKInstaller.Pages.SettingsPages;
 using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
+using Microsoft.UI.Dispatching;
 using Microsoft.UI.Xaml.Controls;
 
 // To learn more about WinUI, the WinUI project structure,
@@ -20,6 +21,7 @@ namespace APKInstaller.Pages
         {
             InitializeComponent();
             UIHelper.MainPage = this;
+            UIHelper.DispatcherQueue = DispatcherQueue.GetForCurrentThread();
             if (UIHelper.HasTitleBar)
             {
                 UIHelper.MainWindow.ExtendsContentIntoTitleBar = true;

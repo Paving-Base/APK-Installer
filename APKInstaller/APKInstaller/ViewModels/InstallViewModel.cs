@@ -26,18 +26,19 @@ using AdvancedSharpAdbClient.DeviceCommands;
 
 namespace APKInstaller.ViewModels
 {
-    public class InstallViewModel : INotifyPropertyChanged
+    public class InstallViewModel : INotifyPropertyChanged, IDisposable
     {
         private InstallPage _page;
         private DeviceData _device;
-#if !DEBUG
+
         private string _path;
-#else
-        private string _path = @"C:\Users\qq251\Downloads\Programs\Minecraft_1.17.40.06_sign.apk";
-#endif
-        private new readonly DispatcherQueue DispatcherQueue;
+        private bool _disposedValue;
         private static bool IsOnlyWSA => SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
         private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("InstallPage");
+
+        public string InstallFormat => _loader.GetString("InstallFormat");
+        public string VersionFormat => _loader.GetString("VersionFormat");
+        public string PackageNameFormat => _loader.GetString("PackageNameFormat");
 
         private ApkInfo _apkInfo = null;
         public ApkInfo ApkInfo
@@ -161,13 +162,24 @@ namespace APKInstaller.ViewModels
             }
         }
 
-        private double _waitProgressValue;
+        private double _waitProgressValue = 0;
         public double WaitProgressValue
         {
             get => _waitProgressValue;
             set
             {
                 _waitProgressValue = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        private bool _waitProgressIndeterminate = true;
+        public bool WaitProgressIndeterminate
+        {
+            get => _waitProgressIndeterminate;
+            set
+            {
+                _waitProgressIndeterminate = value;
                 RaisePropertyChangedEvent();
             }
         }
@@ -322,6 +334,20 @@ namespace APKInstaller.ViewModels
             if (name != null) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
         }
 
+        public InstallViewModel(string Path, InstallPage Page)
+        {
+            _path = Path;
+            _page = Page;
+        }
+
+        public async Task Refresh()
+        {
+            // 不要更改此代码。请将清理代码放入“Dispose(bool disposing)”方法中
+            Dispose(disposing: false);
+            await InitilizeADB();
+            await InitilizeUI();
+        }
+
         public async Task CheckADB(bool force = false)
         {
             if (!force && File.Exists(Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe")))
@@ -375,20 +401,24 @@ namespace APKInstaller.ViewModels
                 Stream = File.OpenWrite(Path.Combine(ApplicationData.Current.LocalFolder.Path, "platform-tools.zip"))
             });
             _ = downloader.Start();
+            WaitProgressText = _loader.GetString("WaitDownload");
             while (downloader.TotalSize <= 0 && downloader.IsStarted)
             {
-                WaitProgressText = _loader.GetString("WaitDownload");
-                await Task.Delay(500);
+                await Task.Delay(1);
             }
+            WaitProgressIndeterminate = false;
             while (downloader.IsStarted)
             {
                 WaitProgressText = $"{((double)downloader.BytesPerSecond).GetSizeString()}/s";
                 WaitProgressValue = (double)downloader.CurrentSize * 100 / downloader.TotalSize;
-                await Task.Delay(500);
+                await Task.Delay(1);
             }
-            WaitProgressText = _loader.GetString("UnzipADB");
             WaitProgressValue = 0;
+            WaitProgressIndeterminate = true;
+            WaitProgressText = _loader.GetString("UnzipADB");
+            await Task.Delay(1);
             IArchive archive = ArchiveFactory.Open(Path.Combine(ApplicationData.Current.LocalFolder.Path, "platform-tools.zip"));
+            WaitProgressIndeterminate = false;
             foreach (IArchiveEntry entry in archive.Entries)
             {
                 WaitProgressValue = archive.Entries.GetProgressValue(entry);
@@ -397,8 +427,10 @@ namespace APKInstaller.ViewModels
                 {
                     entry.WriteToDirectory(ApplicationData.Current.LocalFolder.Path, new ExtractionOptions() { ExtractFullPath = true, Overwrite = true });
                 }
+                await Task.Delay(1);
             }
             WaitProgressValue = 0;
+            WaitProgressIndeterminate = true;
             WaitProgressText = _loader.GetString("UnzipComplete");
         }
 
@@ -601,11 +633,11 @@ namespace APKInstaller.ViewModels
             }
             if (!IsInstalling)
             {
-                DispatcherQueue.EnqueueAsync(() =>
+                UIHelper.DispatcherQueue.EnqueueAsync(() =>
                 {
                     if (CheckDevice() && _device != null)
                     {
-                        //CheckAPK();
+                        CheckAPK();
                     }
                 });
             }
@@ -676,6 +708,36 @@ namespace APKInstaller.ViewModels
                 TextOutputVisibility = InstallOutputVisibility = Visibility.Visible;
                 ActionVisibility = SecondaryActionVisibility = CancelOperationVisibility = LaunchWhenReadyVisibility = Visibility.Collapsed;
             }
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!_disposedValue)
+            {
+                if (disposing)
+                {
+                    // TODO: 释放托管状态(托管对象)
+                    ADBHelper.Monitor.DeviceChanged -= OnDeviceChanged;
+                }
+
+                // TODO: 释放未托管的资源(未托管的对象)并重写终结器
+                // TODO: 将大型字段设置为 null
+                _disposedValue = true;
+            }
+        }
+
+        // // TODO: 仅当“Dispose(bool disposing)”拥有用于释放未托管资源的代码时才替代终结器
+        // ~InstallViewModel()
+        // {
+        //     // 不要更改此代码。请将清理代码放入“Dispose(bool disposing)”方法中
+        //     Dispose(disposing: false);
+        // }
+
+        public void Dispose()
+        {
+            // 不要更改此代码。请将清理代码放入“Dispose(bool disposing)”方法中
+            Dispose(disposing: true);
+            GC.SuppressFinalize(this);
         }
     }
 }
