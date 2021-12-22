@@ -19,6 +19,10 @@ using System.Net;
 using APKInstaller.Helpers;
 using Microsoft.UI.Dispatching;
 using CommunityToolkit.WinUI;
+using AAPTForNet.Models;
+using AAPTForNet;
+using APKInstaller.Controls.Dialogs;
+using AdvancedSharpAdbClient.DeviceCommands;
 
 namespace APKInstaller.ViewModels
 {
@@ -35,13 +39,113 @@ namespace APKInstaller.ViewModels
         private static bool IsOnlyWSA => SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
         private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("InstallPage");
 
-        private bool isInstalling;
-        internal bool IsInstalling
+        private ApkInfo _apkInfo = null;
+        public ApkInfo ApkInfo
         {
-            get => isInstalling;
+            get => _apkInfo;
             set
             {
-                isInstalling = value;
+                _apkInfo = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        private bool _isOpenApp = SettingsHelper.Get<bool>(SettingsHelper.IsOpenApp);
+        public bool IsOpenApp
+        {
+            get => _isOpenApp;
+            set
+            {
+                SettingsHelper.Set(SettingsHelper.IsOpenApp, value);
+                _isOpenApp = SettingsHelper.Get<bool>(SettingsHelper.IsOpenApp);
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        private bool _isInstalling;
+        public bool IsInstalling
+        {
+            get => _isInstalling;
+            set
+            {
+                _isInstalling = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        private bool _isInitialized;
+        public bool IsInitialized
+        {
+            get => _isInitialized;
+            set
+            {
+                _isInitialized = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        private string _appName;
+        public string AppName
+        {
+            get => _appName;
+            set
+            {
+                _appName = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        private string _textOutput;
+        public string TextOutput
+        {
+            get => _textOutput;
+            set
+            {
+                _textOutput = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        private string _infoMessage;
+        public string InfoMessage
+        {
+            get => _infoMessage;
+            set
+            {
+                _infoMessage = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        private bool _actionButtonEnable;
+        public bool ActionButtonEnable
+        {
+            get => _actionButtonEnable;
+            set
+            {
+                _actionButtonEnable = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        private bool _secondaryActionButtonEnable;
+        public bool SecondaryActionButtonEnable
+        {
+            get => _secondaryActionButtonEnable;
+            set
+            {
+                _secondaryActionButtonEnable = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        private bool _cancelOperationButtonEnable;
+        public bool CancelOperationButtonEnable
+        {
+            get => _cancelOperationButtonEnable;
+            set
+            {
+                _cancelOperationButtonEnable = value;
                 RaisePropertyChangedEvent();
             }
         }
@@ -68,6 +172,149 @@ namespace APKInstaller.ViewModels
             }
         }
 
+        private string _actionButtonText;
+        public string ActionButtonText
+        {
+            get => _actionButtonText;
+            set
+            {
+                _actionButtonText = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        private string _secondaryActionButtonText;
+        public string SecondaryActionButtonText
+        {
+            get => _secondaryActionButtonText;
+            set
+            {
+                _secondaryActionButtonText = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        private string _cancelOperationButtonText;
+        public string CancelOperationButtonText
+        {
+            get => _cancelOperationButtonText;
+            set
+            {
+                _cancelOperationButtonText = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        private Visibility _textOutputVisibility;
+        public Visibility TextOutputVisibility
+        {
+            get => _textOutputVisibility;
+            set
+            {
+                _textOutputVisibility = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        private Visibility _installOutputVisibility;
+        public Visibility InstallOutputVisibility
+        {
+            get => _installOutputVisibility;
+            set
+            {
+                _installOutputVisibility = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        private Visibility _actionVisibility;
+        public Visibility ActionVisibility
+        {
+            get => _actionVisibility;
+            set
+            {
+                _actionVisibility = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        private Visibility _secondaryActionVisibility;
+        public Visibility SecondaryActionVisibility
+        {
+            get => _secondaryActionVisibility;
+            set
+            {
+                _secondaryActionVisibility = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        private Visibility _cancelOperationVisibility;
+        public Visibility CancelOperationVisibility
+        {
+            get => _cancelOperationVisibility;
+            set
+            {
+                _cancelOperationVisibility = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        private Visibility _messagesToUserVisibility;
+        public Visibility MessagesToUserVisibility
+        {
+            get => _messagesToUserVisibility;
+            set
+            {
+                _messagesToUserVisibility = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        private Visibility _launchWhenReadyVisibility;
+        public Visibility LaunchWhenReadyVisibility
+        {
+            get => _launchWhenReadyVisibility;
+            set
+            {
+                _launchWhenReadyVisibility = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        private Visibility _appVersionVisibility;
+        public Visibility AppVersionVisibility
+        {
+            get => _appVersionVisibility;
+            set
+            {
+                _appVersionVisibility = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        private Visibility _appPublisherVisibility;
+        public Visibility AppPublisherVisibility
+        {
+            get => _appPublisherVisibility;
+            set
+            {
+                _appPublisherVisibility = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        private Visibility _appCapabilitiesVisibility;
+        public Visibility AppCapabilitiesVisibility
+        {
+            get => _appCapabilitiesVisibility;
+            set
+            {
+                _appCapabilitiesVisibility = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void RaisePropertyChangedEvent([System.Runtime.CompilerServices.CallerMemberName] string name = null)
@@ -75,7 +322,7 @@ namespace APKInstaller.ViewModels
             if (name != null) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
         }
 
-        private async Task CheckADB(bool force = false)
+        public async Task CheckADB(bool force = false)
         {
             if (!force && File.Exists(Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe")))
             {
@@ -120,7 +367,7 @@ namespace APKInstaller.ViewModels
             }
         }
 
-        private async Task DownloadADB()
+        public async Task DownloadADB()
         {
             using Downloader downloader = new Downloader(new DownloaderOptions()
             {
@@ -155,7 +402,7 @@ namespace APKInstaller.ViewModels
             WaitProgressText = _loader.GetString("UnzipComplete");
         }
 
-        private async Task InitilizeADB()
+        public async Task InitilizeADB()
         {
             WaitProgressText = _loader.GetString("CheckingADB");
             await CheckADB();
@@ -215,6 +462,137 @@ namespace APKInstaller.ViewModels
             }
         }
 
+        public async Task InitilizeUI()
+        {
+            if (!string.IsNullOrEmpty(_path))
+            {
+                WaitProgressText = _loader.GetString("Loading");
+                try
+                {
+                    ApkInfo = await Task.Run(() => { return AAPTool.Decompile(_path); });
+                }
+                catch (Exception ex)
+                {
+                    PackageError(ex.Message);
+                    IsInitialized = true;
+                    return;
+                }
+                if (string.IsNullOrEmpty(ApkInfo.PackageName))
+                {
+                    PackageError(_loader.GetString("InvalidPackage"));
+                }
+                else
+                {
+                    WaitProgressText = _loader.GetString("Checking");
+                    if (CheckDevice() && _device != null)
+                    {
+                        CheckAPK();
+                    }
+                    else
+                    {
+                        ResetUI();
+                        ActionButtonEnable = false;
+                        ActionButtonText = _loader.GetString("Install");
+                        InfoMessage = _loader.GetString("WaitingDevice");
+                        ActionVisibility = MessagesToUserVisibility = Visibility.Visible;
+                        AppName = string.Format(_loader.GetString("WaitingForInstallFormat"), ApkInfo.AppName);
+                        if (IsOnlyWSA)
+                        {
+                            ContentDialog dialog = new MarkdownDialog()
+                            {
+                                XamlRoot = _page.XamlRoot,
+                                CloseButtonText = _loader.GetString("IKnow"),
+                                Title = _loader.GetString("HowToConnect"),
+                                DefaultButton = ContentDialogButton.Close,
+                                ContentUrl = "https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Helpers/How%20To%20Connect%20WSA/How%20To%20Connect%20WSA.md",
+                            };
+                            _ = dialog.ShowAsync();
+                        }
+                    }
+                }
+                WaitProgressText = _loader.GetString("Finished");
+            }
+            else
+            {
+                ResetUI();
+                ApkInfo = new ApkInfo();
+                AppName = _loader.GetString("NoPackageWranning");
+                AppVersionVisibility = AppPublisherVisibility = AppCapabilitiesVisibility = Visibility.Collapsed;
+            }
+            IsInitialized = true;
+        }
+
+        public void CheckAPK()
+        {
+            ResetUI();
+            AdvancedAdbClient client = new AdvancedAdbClient();
+            if (_device == null)
+            {
+                ActionButtonEnable = false;
+                ActionButtonText = _loader.GetString("Install");
+                InfoMessage = _loader.GetString("WaitingDevice");
+                ActionVisibility = MessagesToUserVisibility = Visibility.Visible;
+                AppName = string.Format(_loader.GetString("WaitingForInstallFormat"), ApkInfo.AppName);
+                ContentDialog dialog = new MarkdownDialog()
+                {
+                    XamlRoot = _page.XamlRoot,
+                    ContentUrl = "https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Helpers/How%20To%20Connect%20WSA/How%20To%20Connect%20WSA.md",
+                };
+                _ = dialog.ShowAsync();
+                return;
+            }
+            PackageManager manager = new PackageManager(client, _device);
+            VersionInfo info = null;
+            if (ApkInfo != null)
+            {
+                info = manager.GetVersionInfo(ApkInfo.PackageName);
+            }
+            if (info == null)
+            {
+                ActionButtonText = _loader.GetString("Install");
+                AppName = string.Format(_loader.GetString("InstallFormat"), ApkInfo.AppName);
+                ActionVisibility = LaunchWhenReadyVisibility = Visibility.Visible;
+            }
+            else if (info.VersionCode < int.Parse(ApkInfo.VersionCode))
+            {
+                ActionButtonText = _loader.GetString("Update");
+                AppName = string.Format(_loader.GetString("UpdateFormat"), ApkInfo.AppName);
+                ActionVisibility = LaunchWhenReadyVisibility = Visibility.Visible;
+            }
+            else
+            {
+                ActionButtonText = _loader.GetString("Reinstall");
+                SecondaryActionButtonText = _loader.GetString("Launch");
+                AppName = string.Format(_loader.GetString("ReinstallFormat"), ApkInfo.AppName);
+                TextOutput = string.Format(_loader.GetString("ReinstallOutput"), ApkInfo.AppName);
+                ActionVisibility = SecondaryActionVisibility = TextOutputVisibility = Visibility.Visible;
+            }
+        }
+
+        private void ResetUI()
+        {
+            ActionVisibility =
+            SecondaryActionVisibility =
+            CancelOperationVisibility =
+            TextOutputVisibility =
+            InstallOutputVisibility =
+            LaunchWhenReadyVisibility =
+            MessagesToUserVisibility = Visibility.Collapsed;
+            ActionButtonEnable =
+            SecondaryActionButtonEnable =
+            CancelOperationButtonEnable = true;
+        }
+
+        private void PackageError(string message)
+        {
+            ResetUI();
+            ApkInfo = new ApkInfo();
+            TextOutput = message;
+            AppName = _loader.GetString("CannotOpenPackage");
+            TextOutputVisibility = InstallOutputVisibility = Visibility.Visible;
+            AppVersionVisibility = AppPublisherVisibility = AppCapabilitiesVisibility = Visibility.Collapsed;
+        }
+
         private void OnDeviceChanged(object sender, DeviceDataEventArgs e)
         {
             if (IsOnlyWSA)
@@ -233,7 +611,7 @@ namespace APKInstaller.ViewModels
             }
         }
 
-        private bool CheckDevice()
+        public bool CheckDevice()
         {
             AdvancedAdbClient client = new AdvancedAdbClient();
             List<DeviceData> devices = client.GetDevices();
@@ -262,6 +640,42 @@ namespace APKInstaller.ViewModels
                 }
             }
             return false;
+        }
+
+        public void OpenAPP() => new AdvancedAdbClient().StartApp(_device, ApkInfo.PackageName);
+
+        public async void InstallAPP()
+        {
+            try
+            {
+                IsInstalling = true;
+                CancelOperationButtonText = _loader.GetString("Cancel");
+                CancelOperationVisibility = LaunchWhenReadyVisibility = Visibility.Visible;
+                ActionVisibility = SecondaryActionVisibility = TextOutputVisibility = InstallOutputVisibility = Visibility.Collapsed;
+                await Task.Run(() =>
+                {
+                    new AdvancedAdbClient().Install(_device, File.Open(_path, FileMode.Open, FileAccess.Read));
+                });
+                if (IsOpenApp)
+                {
+                    _ = Task.Run(async () =>
+                    {
+                        await Task.Delay(1000);// 据说如果安装完直接启动会崩溃。。。
+                        OpenAPP();
+                    });
+                }
+                IsInstalling = false;
+                SecondaryActionVisibility = Visibility.Visible;
+                SecondaryActionButtonText = _loader.GetString("Launch");
+                CancelOperationVisibility = LaunchWhenReadyVisibility = Visibility.Collapsed;
+            }
+            catch (Exception ex)
+            {
+                IsInstalling = false;
+                TextOutput = ex.Message;
+                TextOutputVisibility = InstallOutputVisibility = Visibility.Visible;
+                ActionVisibility = SecondaryActionVisibility = CancelOperationVisibility = LaunchWhenReadyVisibility = Visibility.Collapsed;
+            }
         }
     }
 }
