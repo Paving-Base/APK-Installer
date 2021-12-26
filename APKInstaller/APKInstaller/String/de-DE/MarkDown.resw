@@ -118,15 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="about.Text" xml:space="preserve">
-    <value>#### 欢迎使用智机博物馆！
+    <value>#### Willkommen im Zhiji-Museum! 
 
-##### 声明
+##### Erklärung
 
-1. 本程序是[智机博物馆](https://www.wpxap.com)的第三方客户端，仅用作学习交流使用，禁止用于商业用途。
-2. 本程序是开源软件，因此，在使用时请确保程序是来自[本Github仓库](https://github.com/wherewhere/WFun-UWP)，以确保您的数据安全。
-3. 若程序来源无异常，程序运行过程中您的所有数据都仅用于与智机的服务器交流或储存于本地，开发者不会窃取您的任何数据。但即便如此，也请注意使用环境的安全性。
+(Für besseren Kontext: Diese Seite wurde hauptsächlich mit dem Google Übersetzer übersetzt, Ich entschuldige mich für bitte das schlechte Deutsch oder die seltsamen Begriffe wie "Zhiji-Museum")
+1. Dieses Programm ist ein Drittanbieter-Client von [Smart Machine Museum](https://www.wpxap.com), der nur zum Lernen und zur Kommunikation verwendet wird und der nicht für kommerzielle Zwecke verwendet werden darf.
+2. Bei diesem Programm handelt es sich um Open-Source-Software. Stellen Sie daher bei der Verwendung sicher, dass das Programm aus [diesem Github-Repository] (https://github.com/wherewhere/WFun-UWP) stammt, um Ihre Datensicherheit zu gewährleisten.
+3. Wenn die Quelle des Programm-Downloads offiziell ist, werden alle Ihre Daten während des Programms nur zur Kommunikation mit dem Server des Android-Systems verwendet oder lokal gespeichert, der Entwickler hat keinerlei Zugriff auf diese Daten. Achten Sie jedoch trotzdem auf die Sicherheit und laden sie das Programm nur von der GitHub Seite herunter.
 
-##### 引用及参考
+##### Zitate und Referenzen
 
 - [Win UI](https://github.com/microsoft/microsoft-ui-xaml "Win UI")
 - [Color Thief](https://github.com/KSemenenko/ColorThief)
