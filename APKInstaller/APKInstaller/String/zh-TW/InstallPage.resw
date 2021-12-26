@@ -144,8 +144,14 @@
   <data name="ClickToRead" xml:space="preserve">
     <value>Click here to read them</value>
   </data>
+  <data name="FindingWSA" xml:space="preserve">
+    <value>Finging WSA...</value>
+  </data>
   <data name="Finished" xml:space="preserve">
     <value>完成</value>
+  </data>
+  <data name="FoundWSA" xml:space="preserve">
+    <value>WSA Found</value>
   </data>
   <data name="HowToConnect" xml:space="preserve">
     <value>How to connect WSA?</value>
@@ -168,6 +174,9 @@
   </data>
   <data name="Launch" xml:space="preserve">
     <value>啟動</value>
+  </data>
+  <data name="LaunchingWSA" xml:space="preserve">
+    <value>Launching WSA...</value>
   </data>
   <data name="Loading" xml:space="preserve">
     <value>Loading...</value>
@@ -195,6 +204,9 @@
   </data>
   <data name="StartingADB" xml:space="preserve">
     <value>Starting ADB Server...</value>
+  </data>
+  <data name="StartWSA" xml:space="preserve">
+    <value>Start WSA</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
     <value>Unzip ADB...</value>
@@ -226,5 +238,8 @@
   <data name="WaitingForInstallFormat" xml:space="preserve">
     <value>Waiting for install {0}</value>
     <comment>{0} - AppName.</comment>
+  </data>
+  <data name="WSARunning" xml:space="preserve">
+    <value>WSA is Running</value>
   </data>
 </root>
