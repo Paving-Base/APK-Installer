@@ -145,13 +145,13 @@
     <value>点击阅读</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>Finging WSA...</value>
+    <value>正在寻找WSA...</value>
   </data>
   <data name="Finished" xml:space="preserve">
     <value>完成</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>WSA Found</value>
+    <value>发现WSA</value>
   </data>
   <data name="HowToConnect" xml:space="preserve">
     <value>如何连接 Android 子系统</value>
@@ -176,7 +176,7 @@
     <value>启动</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
-    <value>Launching WSA...</value>
+    <value>正在启动WSA...</value>
   </data>
   <data name="Loading" xml:space="preserve">
     <value>加载中......</value>
@@ -206,7 +206,7 @@
     <value>启动 ADB 服务......</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>Start WSA</value>
+    <value>启动WSA</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
     <value>解压 ADB ......</value>
@@ -240,6 +240,6 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>WSA is Running</value>
+    <value>WSA正在运行</value>
   </data>
 </root>
