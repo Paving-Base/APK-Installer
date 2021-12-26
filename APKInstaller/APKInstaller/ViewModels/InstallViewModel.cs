@@ -1,37 +1,37 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.IO;
-using System.Linq;
+﻿using AAPTForNet;
+using AAPTForNet.Models;
+using AdvancedSharpAdbClient;
+using AdvancedSharpAdbClient.DeviceCommands;
+using APKInstaller.Controls.Dialogs;
+using APKInstaller.Helpers;
+using APKInstaller.Pages;
+using APKInstaller.Pages.SettingsPages;
+using CommunityToolkit.WinUI;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using System.Text;
+using PortableDownloader;
+using SharpCompress.Archives;
+using SharpCompress.Common;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Diagnostics;
+using System.IO;
+using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using Windows.ApplicationModel.Resources;
 using Windows.Storage;
-using APKInstaller.Pages;
-using PortableDownloader;
-using SharpCompress.Common;
-using SharpCompress.Archives;
-using System.Diagnostics;
-using AdvancedSharpAdbClient;
-using System.Net;
-using APKInstaller.Helpers;
-using Microsoft.UI.Dispatching;
-using CommunityToolkit.WinUI;
-using AAPTForNet.Models;
-using AAPTForNet;
-using APKInstaller.Controls.Dialogs;
-using AdvancedSharpAdbClient.DeviceCommands;
+using Windows.System;
 
 namespace APKInstaller.ViewModels
 {
     public class InstallViewModel : INotifyPropertyChanged, IDisposable
     {
-        private InstallPage _page;
+        private readonly InstallPage _page;
         private DeviceData _device;
 
-        private string _path;
+        private readonly string _path;
         private bool _disposedValue;
         private static bool IsOnlyWSA => SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
         private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("InstallPage");
@@ -530,15 +530,60 @@ namespace APKInstaller.ViewModels
                         AppName = string.Format(_loader.GetString("WaitingForInstallFormat"), ApkInfo.AppName);
                         if (IsOnlyWSA)
                         {
-                            ContentDialog dialog = new MarkdownDialog()
+                            WaitProgressText = _loader.GetString("FindingWSA");
+                            if ((await PackageHelper.FindPackagesByName("MicrosoftCorporationII.WindowsSubsystemForAndroid_8wekyb3d8bbwe")).isfound)
                             {
-                                XamlRoot = _page.XamlRoot,
-                                CloseButtonText = _loader.GetString("IKnow"),
-                                Title = _loader.GetString("HowToConnect"),
-                                DefaultButton = ContentDialogButton.Close,
-                                ContentUrl = "https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Helpers/How%20To%20Connect%20WSA/How%20To%20Connect%20WSA.md",
-                            };
-                            _ = dialog.ShowAsync();
+                                WaitProgressText = _loader.GetString("FoundWSA");
+                                ContentDialog dialog = new MarkdownDialog()
+                                {
+                                    XamlRoot = _page.XamlRoot,
+                                    Title = _loader.GetString("HowToConnect"),
+                                    DefaultButton = ContentDialogButton.Close,
+                                    CloseButtonText = _loader.GetString("IKnow"),
+                                    PrimaryButtonText = _loader.GetString("StartWSA"),
+                                    ContentUrl = "https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Helpers/How%20To%20Connect%20WSA/How%20To%20Connect%20WSA.md",
+                                };
+                                ContentDialogResult result = await dialog.ShowAsync();
+                                if (result == ContentDialogResult.Primary)
+                                {
+                                    WaitProgressText = _loader.GetString("LaunchingWSA");
+                                    _ = await Launcher.LaunchUriAsync(new Uri("wsa://"));
+                                    bool IsWSARunning = false;
+                                    while (!IsWSARunning)
+                                    {
+                                        await Task.Run(() =>
+                                        {
+                                            Process[] ps = Process.GetProcessesByName("vmmemWSA");
+                                            IsWSARunning = ps != null && ps.Length > 0;
+                                        });
+                                    }
+                                    while (!CheckDevice())
+                                    {
+                                        new AdvancedAdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
+                                        await Task.Delay(100);
+                                    }
+                                    WaitProgressText = _loader.GetString("WSARunning");
+                                    _ = InitilizeUI();
+                                    return;
+                                }
+                            }
+                            else
+                            {
+                                ContentDialog dialog = new ContentDialog()
+                                {
+                                    XamlRoot = _page.XamlRoot,
+                                    Title = _loader.GetString("GoToSetting"),
+                                    DefaultButton = ContentDialogButton.Close,
+                                    CloseButtonText = _loader.GetString("IKnow"),
+                                    PrimaryButtonText = _loader.GetString("GoToSetting"),
+                                    Content = "你可以安装 WSA 或者前往设置解除仅限 WSA 的限制",
+                                };
+                                ContentDialogResult result = await dialog.ShowAsync();
+                                if (result == ContentDialogResult.Primary)
+                                {
+                                    UIHelper.Navigate(typeof(SettingsPage), null);
+                                }
+                            }
                         }
                     }
                 }

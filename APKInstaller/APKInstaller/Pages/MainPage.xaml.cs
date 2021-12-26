@@ -1,8 +1,8 @@
 ﻿using APKInstaller.Helpers;
 using APKInstaller.Pages.SettingsPages;
+using Microsoft.UI.Dispatching;
 using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
-using Microsoft.UI.Dispatching;
 using Microsoft.UI.Xaml.Controls;
 
 // To learn more about WinUI, the WinUI project structure,

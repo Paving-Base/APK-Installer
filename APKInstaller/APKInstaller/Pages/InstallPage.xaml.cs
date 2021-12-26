@@ -1,30 +1,10 @@
-﻿using AAPTForNet;
-using AAPTForNet.Models;
-using AdvancedSharpAdbClient;
-using AdvancedSharpAdbClient.DeviceCommands;
-using APKInstaller.Controls.Dialogs;
-using APKInstaller.Helpers;
-using APKInstaller.ViewModels;
-using CommunityToolkit.WinUI;
-using Microsoft.UI.Dispatching;
+﻿using APKInstaller.ViewModels;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
 using Microsoft.Windows.AppLifecycle;
-using PortableDownloader;
-using SharpCompress.Archives;
-using SharpCompress.Common;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.IO;
 using System.Linq;
-using System.Net;
-using System.Threading.Tasks;
 using Windows.ApplicationModel.Activation;
-using Windows.ApplicationModel.Resources;
-using Windows.Storage;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.

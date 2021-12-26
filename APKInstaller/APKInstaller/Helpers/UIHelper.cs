@@ -1,5 +1,6 @@
 ﻿using AdvancedSharpAdbClient;
 using APKInstaller.Pages;
+using CommunityToolkit.WinUI;
 using Microsoft.UI;
 using Microsoft.UI.Dispatching;
 using Microsoft.UI.Windowing;
@@ -9,7 +10,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using Windows.UI.Core;
 
 namespace APKInstaller.Helpers
 {
@@ -78,10 +78,10 @@ namespace APKInstaller.Helpers
 
         public static void Navigate(Type pageType, NavigationTransitionInfo TransitionInfo, object e = null)
         {
-            _ = (MainPage?.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
+            DispatcherQueue.EnqueueAsync(() =>
             {
                 _ = (MainPage?.CoreAppFrame.Navigate(pageType, e, TransitionInfo));
-            }));
+            });
         }
 
         public static AppWindow GetAppWindowForCurrentWindow(this Window window)
