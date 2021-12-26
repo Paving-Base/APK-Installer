@@ -133,7 +133,7 @@
     <value>Cache löschen</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Is Close ADB when Closing Installer?</value>
+    <value>ADB beim Beenden vom Installer schließen?</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
     <value>Gerät im Netzwerk verbinden.</value>
