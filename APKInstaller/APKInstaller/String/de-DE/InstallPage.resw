@@ -145,13 +145,13 @@
     <value>Hier klicken zum lesen</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>Finging WSA...</value>
+    <value>WSA wird gesucht...</value>
   </data>
   <data name="Finished" xml:space="preserve">
     <value>Fertig</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>WSA Found</value>
+    <value>WSA gefunden</value>
   </data>
   <data name="HowToConnect" xml:space="preserve">
     <value>Wie verbindet man WSA?</value>
@@ -176,7 +176,7 @@
     <value>Starten</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
-    <value>Launching WSA...</value>
+    <value>WSA wird gestartet...</value>
   </data>
   <data name="Loading" xml:space="preserve">
     <value>Wird geladen...</value>
@@ -206,7 +206,7 @@
     <value>ADB Server wird gestartet...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>Start WSA</value>
+    <value>WSA starten</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
     <value>ADB wird entpackt...</value>
@@ -240,6 +240,6 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>WSA is Running</value>
+    <value>WSA wird ausgeführt</value>
   </data>
 </root>
