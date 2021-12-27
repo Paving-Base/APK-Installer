@@ -130,7 +130,7 @@
     <value>APK Installer</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
-    <value>Es trat ein Fehler mit dem Programm auf...</value>
+    <value>Es trat ein Fehler mit dem Programm auf…</value>
   </data>
   <data name="ImageLoadError" xml:space="preserve">
     <value>Bild konnte nicht geladen werden</value>
