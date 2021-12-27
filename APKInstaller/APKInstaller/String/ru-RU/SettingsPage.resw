@@ -163,7 +163,7 @@
     <value>Последняя проверка</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Выключите это, чтобы подключиться к другому устройству.</value>
+    <value>Disable it to connect to other device.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
     <value>Только для WSA?</value>
