@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using Windows.ApplicationModel.Resources;
 
 namespace APKInstaller.Helpers
 {
@@ -127,6 +128,20 @@ namespace APKInstaller.Helpers
                     break;
             }
             return $"{size:N2}{str}";
+        }
+
+        public static string GetPermissionName(this string permission)
+        {
+            ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("Permissions");
+            try
+            {
+                string name = _loader.GetString(permission) ?? string.Empty;
+                return string.IsNullOrEmpty(name) ? permission : name;
+            }
+            catch
+            {
+                return permission;
+            }
         }
 
         public static double GetProgressValue<T>(this List<T> lists, T list)

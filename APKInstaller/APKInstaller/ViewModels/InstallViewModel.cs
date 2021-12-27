@@ -28,11 +28,11 @@ namespace APKInstaller.ViewModels
 {
     public class InstallViewModel : INotifyPropertyChanged, IDisposable
     {
-        private readonly InstallPage _page;
         private DeviceData _device;
+        private readonly InstallPage _page;
 
-        private readonly string _path;
         private bool _disposedValue;
+        private readonly string _path;
         private static bool IsOnlyWSA => SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
         private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("InstallPage");
 
@@ -334,10 +334,13 @@ namespace APKInstaller.ViewModels
             if (name != null) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
         }
 
+        // TODO: 仅当“Dispose(bool disposing)”拥有用于释放未托管资源的代码时才替代终结器
         public InstallViewModel(string Path, InstallPage Page)
         {
             _path = Path;
             _page = Page;
+            // 不要更改此代码。请将清理代码放入“Dispose(bool disposing)”方法中
+            Dispose(disposing: false);
         }
 
         public async Task Refresh()
@@ -515,6 +518,7 @@ namespace APKInstaller.ViewModels
                 }
                 else
                 {
+                checkdevice:
                     WaitProgressText = _loader.GetString("Checking");
                     if (CheckDevice() && _device != null)
                     {
@@ -563,8 +567,7 @@ namespace APKInstaller.ViewModels
                                         await Task.Delay(100);
                                     }
                                     WaitProgressText = _loader.GetString("WSARunning");
-                                    _ = InitilizeUI();
-                                    return;
+                                    goto checkdevice;
                                 }
                             }
                             else
@@ -770,13 +773,6 @@ namespace APKInstaller.ViewModels
                 _disposedValue = true;
             }
         }
-
-        // // TODO: 仅当“Dispose(bool disposing)”拥有用于释放未托管资源的代码时才替代终结器
-        // ~InstallViewModel()
-        // {
-        //     // 不要更改此代码。请将清理代码放入“Dispose(bool disposing)”方法中
-        //     Dispose(disposing: false);
-        // }
 
         public void Dispose()
         {
