@@ -163,7 +163,7 @@
     <value>Last Checked</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Disable it to conncet to other device.</value>
+    <value>Disable it to connect to other device.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
     <value>Is Only for WSA?</value>

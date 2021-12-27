@@ -145,13 +145,13 @@
     <value>Click here to read them</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>Finging WSA...</value>
+    <value>Finding WSA...</value>
   </data>
   <data name="Finished" xml:space="preserve">
     <value>完成</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>WSA Found</value>
+    <value>WAS Found</value>
   </data>
   <data name="HowToConnect" xml:space="preserve">
     <value>How to connect WSA?</value>
