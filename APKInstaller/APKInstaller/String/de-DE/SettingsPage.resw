@@ -163,7 +163,7 @@
     <value>Zuletzt gesucht</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Deaktivieren um mit anderem Gerät zu verbinden.</value>
+    <value>Disable it to connect to other device.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
     <value>Nur für WSA?</value>
