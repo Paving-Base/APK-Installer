@@ -145,13 +145,13 @@
     <value>点击阅读</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>正在寻找WSA...</value>
+    <value>Finding WSA...</value>
   </data>
   <data name="Finished" xml:space="preserve">
     <value>完成</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>发现WSA</value>
+    <value>WAS Found</value>
   </data>
   <data name="HowToConnect" xml:space="preserve">
     <value>如何连接 Android 子系统</value>
