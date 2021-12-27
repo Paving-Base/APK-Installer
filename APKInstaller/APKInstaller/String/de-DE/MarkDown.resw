@@ -117,21 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="about.Text" xml:space="preserve">
-    <value>#### Willkommen im Zhiji-Museum! 
-
-##### Erklärung
-
-(Für besseren Kontext: Diese Seite wurde hauptsächlich mit dem Google Übersetzer übersetzt, Ich entschuldige mich für bitte das schlechte Deutsch oder die seltsamen Begriffe wie "Zhiji-Museum")
-1. Dieses Programm ist ein Drittanbieter-Client von [Smart Machine Museum](https://www.wpxap.com), der nur zum Lernen und zur Kommunikation verwendet wird und der nicht für kommerzielle Zwecke verwendet werden darf.
-2. Bei diesem Programm handelt es sich um Open-Source-Software. Stellen Sie daher bei der Verwendung sicher, dass das Programm aus [diesem Github-Repository] (https://github.com/wherewhere/WFun-UWP) stammt, um Ihre Datensicherheit zu gewährleisten.
-3. Wenn die Quelle des Programm-Downloads offiziell ist, werden alle Ihre Daten während des Programms nur zur Kommunikation mit dem Server des Android-Systems verwendet oder lokal gespeichert, der Entwickler hat keinerlei Zugriff auf diese Daten. Achten Sie jedoch trotzdem auf die Sicherheit und laden sie das Programm nur von der GitHub Seite herunter.
-
-##### Zitate und Referenzen
-
-- [Win UI](https://github.com/microsoft/microsoft-ui-xaml "Win UI")
-- [Color Thief](https://github.com/KSemenenko/ColorThief)
-- [Html2Markdown](https://github.com/baynezy/Html2Markdown)
-- [UWP Community Toolkit](https://github.com/Microsoft/UWPCommunityToolkit)</value>
-  </data>
 </root>
