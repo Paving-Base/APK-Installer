@@ -151,7 +151,7 @@
     <value>完成</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>WAS Found</value>
+    <value>WSA Found</value>
   </data>
   <data name="HowToConnect" xml:space="preserve">
     <value>How to connect WSA?</value>
