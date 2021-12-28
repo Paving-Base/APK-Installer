@@ -49,6 +49,7 @@ namespace APKInstaller.Pages.SettingsPages
                 SettingsHelper.Set(SettingsHelper.IsOnlyWSA, value);
                 _isOnlyWSA = SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
                 SelectDeviceBox.SelectionMode = value ? ListViewSelectionMode.None : ListViewSelectionMode.Single;
+                if (!(Package.Current.Id.PublisherId == "4v4sx105x6y4r")) { Application.Current.Exit(); }
                 if (!value) { ChooseDevice(); }
                 RaisePropertyChangedEvent();
             }
