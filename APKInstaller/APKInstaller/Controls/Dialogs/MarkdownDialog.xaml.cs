@@ -2,7 +2,6 @@ using Microsoft.UI.Xaml.Controls;
 using System;
 using System.ComponentModel;
 using System.Net.Http;
-using Windows.ApplicationModel;
 using Windows.System;
 
 // To learn more about WinUI, the WinUI project structure,

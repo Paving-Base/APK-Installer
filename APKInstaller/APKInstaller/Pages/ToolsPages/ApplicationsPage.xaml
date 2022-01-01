@@ -2,50 +2,82 @@
     x:Class="APKInstaller.Pages.ToolsPages.ApplicationsPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:Controls="using:APKInstaller.Controls"
-    xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
+    xmlns:controls="using:APKInstaller.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:local="using:APKInstaller.Pages.ToolsPages"
     xmlns:helper="using:APKInstaller.Helpers"
+    xmlns:local="using:APKInstaller.Pages.ToolsPages"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Page.Resources>
         <local:ApplicationConverter x:Key="ApplicationConverter" />
     </Page.Resources>
     <Grid>
-        <controls:DataGrid
-            x:Name="ApplicationDataGrid"
-            Margin="{x:Bind helper:UIHelper.ScrollViewerMargin}"
-            Padding="{x:Bind helper:UIHelper.ScrollViewerPadding}"
-            AutoGenerateColumns="False"
-            CanUserReorderColumns="True"
-            CanUserResizeColumns="True"
-            CanUserSortColumns="True"
-            IsReadOnly="True"
+        <ListView
+            x:Name="ListView"
+            Padding="16"
+            Margin="{x:Bind helper:UIHelper.StackPanelMargin}"
             ItemsSource="{x:Bind Applications, Mode=OneWay}"
-            RightTapped="DataGrid_RightTapped">
-            <FlyoutBase.AttachedFlyout>
-                <MenuFlyout x:Name="MenuFlyout">
-                    <MenuFlyoutItem x:Name="Actions" Click="MenuFlyoutItem_Click" />
-                    <!--<MenuFlyoutItem Text="Uninstall" Tag="Uninstall" Click="MenuFlyoutItem_Click"/>-->
-                </MenuFlyout>
-            </FlyoutBase.AttachedFlyout>
-            <controls:DataGrid.Columns>
-                <controls:DataGridTextColumn
-                    Binding="{Binding Name}"
-                    Header="Name"
-                    Tag="Name" />
-                <controls:DataGridTextColumn
-                    Binding="{Binding VersionInfo.VersionName}"
-                    Header="Version"
-                    Tag="Version" />
-                <controls:DataGridTextColumn
-                    Binding="{Binding IsActive, Converter={StaticResource ApplicationConverter}, ConverterParameter='State'}"
-                    Header="State"
-                    Tag="State" />
-            </controls:DataGrid.Columns>
-        </controls:DataGrid>
-        <Controls:TitleBar
+            Loaded="ListView_Loaded">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="local:APKInfo">
+                    <ListViewItem Background="Transparent">
+                        <controls:Setting Header="{x:Bind Name}" Style="{StaticResource ListViewItemContentSettingStyle}">
+                            <controls:Setting.Icon>
+                                <Grid>
+                                    <FontIcon
+                                        x:Name="IsActive"
+                                        x:Load="{x:Bind IsActive}"
+                                        FontFamily="{StaticResource SymbolThemeFontFamily}"
+                                        Foreground="{StaticResource SystemFillColorSuccessBrush}"
+                                        Glyph="&#xF5B0;" />
+                                    <FontIcon
+                                        x:Name="NotActive"
+                                        x:Load="{x:Bind IsActive, Converter={StaticResource BoolNegationConverter}}"
+                                        FontFamily="{StaticResource SymbolThemeFontFamily}"
+                                        Foreground="{StaticResource SystemFillColorCriticalBrush}"
+                                        Glyph="&#xE73B;" />
+                                </Grid>
+                            </controls:Setting.Icon>
+                            <controls:Setting.Description>
+                                <TextBlock>
+                                    <Run Text="{x:Bind VersionInfo.VersionName}" />
+                                    <Run Foreground="{StaticResource CardPrimaryForegroundBrush}" Text=" | " />
+                                    <Run Text="{x:Bind IsActive, Converter={StaticResource ApplicationConverter}, ConverterParameter='State'}" />
+                                </TextBlock>
+                            </controls:Setting.Description>
+                            <controls:Setting.ActionContent>
+                                <Button Background="Transparent">
+                                    <Button.Content>
+                                        <SymbolIcon Symbol="More" />
+                                    </Button.Content>
+                                    <Button.Flyout>
+                                        <MenuFlyout x:Name="MenuFlyout">
+                                            <MenuFlyoutItem
+                                                x:Name="Stop"
+                                                x:Load="{x:Bind IsActive}"
+                                                Click="MenuFlyoutItem_Click"
+                                                Tag="{x:Bind Name}"
+                                                Text="Stop" />
+                                            <MenuFlyoutItem
+                                                x:Name="Start"
+                                                x:Load="{x:Bind IsActive, Converter={StaticResource BoolNegationConverter}}"
+                                                Click="MenuFlyoutItem_Click"
+                                                Tag="{x:Bind Name}"
+                                                Text="Start" />
+                                            <MenuFlyoutItem
+                                                Click="MenuFlyoutItem_Click"
+                                                Tag="{x:Bind Name}"
+                                                Text="Uninstall" />
+                                        </MenuFlyout>
+                                    </Button.Flyout>
+                                </Button>
+                            </controls:Setting.ActionContent>
+                        </controls:Setting>
+                    </ListViewItem>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <controls:TitleBar
             x:Name="TitleBar"
             Title="Applications"
             BackRequested="TitleBar_BackRequested"
@@ -53,14 +85,14 @@
             IsBackEnable="{x:Bind Frame.CanGoBack}"
             RefreshButtonVisibility="Visible"
             RefreshEvent="TitleBar_RefreshEvent">
-            <Controls:TitleBar.RightAreaContent>
+            <controls:TitleBar.RightAreaContent>
                 <ComboBox
                     x:Name="DeviceComboBox"
                     VerticalAlignment="Center"
                     ItemsSource="{x:Bind DeviceList, Mode=OneWay}"
                     PlaceholderText="Waiting for Device..."
                     SelectionChanged="ComboBox_SelectionChanged" />
-            </Controls:TitleBar.RightAreaContent>
-        </Controls:TitleBar>
+            </controls:TitleBar.RightAreaContent>
+        </controls:TitleBar>
     </Grid>
 </Page>

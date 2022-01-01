@@ -1,6 +1,7 @@
 ﻿using AdvancedSharpAdbClient;
 using AdvancedSharpAdbClient.DeviceCommands;
 using APKInstaller.Helpers;
+using CommunityToolkit.WinUI.UI;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Data;
@@ -122,7 +123,7 @@ namespace APKInstaller.Pages.ToolsPages
                     {
                         Name = app.Key,
                         IsActive = isactive,
-                        VersionInfo = manager.GetVersionInfo(app.Key)
+                        VersionInfo = manager.GetVersionInfo(app.Key),
                     });
                 }
             }
@@ -162,27 +163,44 @@ namespace APKInstaller.Pages.ToolsPages
 
         private void DataGrid_RightTapped(object sender, RightTappedRoutedEventArgs e)
         {
-            if (ApplicationDataGrid.SelectedIndex != -1)
-            {
-                string Text = (ApplicationDataGrid.SelectedItem as APKInfo).IsActive ? "Stop" : "Start";
-                Actions.Tag = Text;
-                Actions.Text = Text;
-                MenuFlyout.ShowAt(sender as UIElement, e.GetPosition(sender as UIElement));
-            }
+            //if (ApplicationDataGrid.SelectedIndex != -1)
+            //{
+            //    string Text = (ApplicationDataGrid.SelectedItem as APKInfo).IsActive ? "Stop" : "Start";
+            //    //Actions.Tag = Text;
+            //    //Actions.Text = Text;
+            //    //MenuFlyout.ShowAt(sender as UIElement, e.GetPosition(sender as UIElement));
+            //}
         }
 
         private void MenuFlyoutItem_Click(object sender, RoutedEventArgs e)
         {
-            switch ((sender as FrameworkElement).Tag)
+            FrameworkElement Button = sender as FrameworkElement;
+            switch (Button.Name)
             {
                 case "Stop":
-                    new AdvancedAdbClient().StopApp(devices[DeviceComboBox.SelectedIndex], (ApplicationDataGrid.SelectedItem as APKInfo).Name);
+                    new AdvancedAdbClient().StopApp(devices[DeviceComboBox.SelectedIndex], Button.Tag.ToString());
                     break;
                 case "Start":
-                    new AdvancedAdbClient().StartApp(devices[DeviceComboBox.SelectedIndex], (ApplicationDataGrid.SelectedItem as APKInfo).Name);
+                    new AdvancedAdbClient().StartApp(devices[DeviceComboBox.SelectedIndex], Button.Tag.ToString());
                     break;
                 case "Uninstall":
                     break;
+            }
+        }
+
+        private void ListView_Loaded(object sender, RoutedEventArgs e)
+        {
+            ListView ListView = sender as ListView;
+            ItemsStackPanel StackPanel = ListView.FindChild<ItemsStackPanel>();
+            ScrollViewer ScrollViewer = ListView.FindChild<ScrollViewer>();
+            if (StackPanel != null)
+            {
+                StackPanel.Margin = UIHelper.StackPanelMargin;
+            }
+            if (ScrollViewer != null)
+            {
+                ScrollViewer.Margin = UIHelper.ScrollViewerMargin;
+                ScrollViewer.Padding = UIHelper.ScrollViewerPadding;
             }
         }
     }

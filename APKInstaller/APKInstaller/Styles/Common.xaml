@@ -2,10 +2,11 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:controls="using:APKInstaller.Controls">
-    <Style x:Key="ListViewItemSettingStyle" TargetType="ListViewItem">
-        <Setter Property="Margin" Value="0,0,0,2" />
-        <Setter Property="Padding" Value="0,0,0,0" />
-        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+
+    <Style x:Key="ListViewItemContentSettingStyle" TargetType="controls:Setting">
+        <Setter Property="Padding" Value="16,14" />
+        <Setter Property="Margin" Value="-14,0,-10,0" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
     </Style>
 
     <Style BasedOn="{StaticResource DefaultCheckBoxStyle}" TargetType="controls:CheckBoxWithDescriptionControl" />

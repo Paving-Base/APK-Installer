@@ -24,16 +24,17 @@
                 <controls:SettingsGroup x:Uid="/SettingsPage/DeviceSettingsHeader" Margin="0,-32,0,0">
                     <ListView
                         x:Name="SelectDeviceBox"
+                        Margin="-2,0"
                         ItemsSource="{x:Bind DeviceList, Mode=OneWay}"
                         SelectionChanged="SelectDeviceBox_SelectionChanged">
                         <ListView.ItemTemplate>
                             <DataTemplate x:DataType="sharpadbclient:DeviceData">
-                                <ListViewItem Style="{StaticResource ListViewItemSettingStyle}">
+                                <ListViewItem Background="Transparent">
                                     <controls:Setting
-                                        Margin="0,0"
                                         Description="{x:Bind State}"
                                         Header="{x:Bind Name}"
-                                        Icon="&#xE8EA;" />
+                                        Icon="&#xE8EA;"
+                                        Style="{StaticResource ListViewItemContentSettingStyle}" />
                                 </ListViewItem>
                             </DataTemplate>
                         </ListView.ItemTemplate>

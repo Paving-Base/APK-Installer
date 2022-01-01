@@ -10,8 +10,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using Windows.ApplicationModel;
 using Windows.ApplicationModel.Resources;
+using Windows.UI;
+using WindowId = Microsoft.UI.WindowId;
 
 namespace APKInstaller.Helpers
 {
@@ -57,18 +58,13 @@ namespace APKInstaller.Helpers
             {
                 bool IsDark = IsDarkTheme(SettingsHelper.Theme);
 
-                if (IsDark)
-                {
-                    AppWindowTitleBar view = GetAppWindowForCurrentWindow().TitleBar;
-                    view.ButtonBackgroundColor = view.InactiveBackgroundColor = view.ButtonInactiveBackgroundColor = Colors.Transparent;
-                    view.ButtonForegroundColor = Colors.White;
-                }
-                else
-                {
-                    AppWindowTitleBar view = GetAppWindowForCurrentWindow().TitleBar;
-                    view.ButtonBackgroundColor = view.InactiveBackgroundColor = view.ButtonInactiveBackgroundColor = Colors.Transparent;
-                    view.ButtonForegroundColor = Colors.Black;
-                }
+                Color ForegroundColor = IsDark ? Colors.White : Colors.Black;
+                Color BackgroundColor = (Color)Application.Current.Resources["SolidBackgroundFillColorBase"];
+
+                AppWindowTitleBar TitleBar = GetAppWindowForCurrentWindow().TitleBar;
+                TitleBar.ForegroundColor = TitleBar.ButtonForegroundColor = ForegroundColor;
+                TitleBar.ButtonBackgroundColor = TitleBar.ButtonInactiveBackgroundColor = Colors.Transparent;
+                TitleBar.BackgroundColor = TitleBar.ButtonBackgroundColor = TitleBar.InactiveBackgroundColor = TitleBar.ButtonInactiveBackgroundColor = BackgroundColor;
             }
         }
     }

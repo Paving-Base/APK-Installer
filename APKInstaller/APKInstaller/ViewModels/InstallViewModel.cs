@@ -405,7 +405,7 @@ namespace APKInstaller.ViewModels
                     CloseButtonText = "关闭应用",
                     Content = new ScrollViewer()
                     {
-                        Content = new TextBlock { Text = "请连接网络后再打开应用"}
+                        Content = new TextBlock { Text = "请连接网络后再打开应用" }
                     },
                     DefaultButton = ContentDialogButton.Primary
                 };
@@ -444,7 +444,7 @@ namespace APKInstaller.ViewModels
                 WaitProgressValue = (double)downloader.CurrentSize * 100 / downloader.TotalSize;
                 await Task.Delay(1);
             }
-            if(downloader.State != DownloadState.Finished)
+            if (downloader.State != DownloadState.Finished)
             {
                 ContentDialog dialog = new ContentDialog()
                 {
