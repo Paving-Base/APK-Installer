@@ -7,6 +7,7 @@ using APKInstaller.Helpers;
 using APKInstaller.Pages;
 using APKInstaller.Pages.SettingsPages;
 using CommunityToolkit.WinUI;
+using CommunityToolkit.WinUI.Connectivity;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using PortableDownloader;
@@ -20,7 +21,6 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
-using Windows.ApplicationModel;
 using Windows.ApplicationModel.Resources;
 using Windows.Storage;
 using Windows.System;
@@ -346,19 +346,18 @@ namespace APKInstaller.ViewModels
 
         public async Task Refresh()
         {
-            // 不要更改此代码。请将清理代码放入“Dispose(bool disposing)”方法中
-            Dispose(disposing: false);
             await InitilizeADB();
             await InitilizeUI();
         }
 
         public async Task CheckADB(bool force = false)
         {
+        checkadb:
             if (!force && File.Exists(Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe")))
             {
                 WaitProgressText = _loader.GetString("ADBExist");
             }
-            else
+            else if (NetworkHelper.Instance.ConnectionInformation.IsInternetAvailable)
             {
                 StackPanel StackPanel = new StackPanel();
                 StackPanel.Children.Add(
@@ -393,6 +392,32 @@ namespace APKInstaller.ViewModels
                 else
                 {
                     Application.Current.Exit();
+                    return;
+                }
+            }
+            else
+            {
+                ContentDialog dialog = new ContentDialog()
+                {
+                    XamlRoot = _page.XamlRoot,
+                    Title = "找不到网络",
+                    PrimaryButtonText = "重试",
+                    CloseButtonText = "关闭应用",
+                    Content = new ScrollViewer()
+                    {
+                        Content = new TextBlock { Text = "请连接网络后再打开应用"}
+                    },
+                    DefaultButton = ContentDialogButton.Primary
+                };
+                ContentDialogResult result = await dialog.ShowAsync();
+                if (result == ContentDialogResult.Primary)
+                {
+                    goto checkadb;
+                }
+                else
+                {
+                    Application.Current.Exit();
+                    return;
                 }
             }
         }
@@ -404,8 +429,10 @@ namespace APKInstaller.ViewModels
                 Uri = new Uri("https://dl.google.com/android/repository/platform-tools-latest-windows.zip?hl=zh-cn"),
                 Stream = File.OpenWrite(Path.Combine(ApplicationData.Current.LocalFolder.Path, "platform-tools.zip"))
             });
+        downloadadb:
             _ = downloader.Start();
             WaitProgressText = _loader.GetString("WaitDownload");
+
             while (downloader.TotalSize <= 0 && downloader.IsStarted)
             {
                 await Task.Delay(1);
@@ -416,6 +443,31 @@ namespace APKInstaller.ViewModels
                 WaitProgressText = $"{((double)downloader.BytesPerSecond).GetSizeString()}/s";
                 WaitProgressValue = (double)downloader.CurrentSize * 100 / downloader.TotalSize;
                 await Task.Delay(1);
+            }
+            if(downloader.State != DownloadState.Finished)
+            {
+                ContentDialog dialog = new ContentDialog()
+                {
+                    XamlRoot = _page.XamlRoot,
+                    Title = "ADB 下载失败",
+                    PrimaryButtonText = "重试",
+                    CloseButtonText = "关闭应用",
+                    Content = new ScrollViewer()
+                    {
+                        Content = new TextBlock { Text = "请检查网络连接后再重试" }
+                    },
+                    DefaultButton = ContentDialogButton.Primary
+                };
+                ContentDialogResult result = await dialog.ShowAsync();
+                if (result == ContentDialogResult.Primary)
+                {
+                    goto downloadadb;
+                }
+                else
+                {
+                    Application.Current.Exit();
+                    return;
+                }
             }
             WaitProgressValue = 0;
             WaitProgressIndeterminate = true;
@@ -735,7 +787,6 @@ namespace APKInstaller.ViewModels
                 ActionVisibility = SecondaryActionVisibility = TextOutputVisibility = InstallOutputVisibility = Visibility.Collapsed;
                 await Task.Run(() =>
                 {
-                    while (!(Package.Current.Id.PublisherId == "4v4sx105x6y4r")) ;
                     new AdvancedAdbClient().Install(_device, File.Open(_path, FileMode.Open, FileAccess.Read));
                 });
                 if (IsOpenApp)
