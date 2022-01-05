@@ -5,6 +5,7 @@
     xmlns:Controls="using:APKInstaller.Controls"
     xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:helper="using:APKInstaller.Helpers"
     xmlns:local="using:APKInstaller.Pages.ToolsPages"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
@@ -13,8 +14,7 @@
     </Page.Resources>
     <Grid>
         <controls:DataGrid
-            Margin="0,40,0,0"
-            Padding="0,-40,0,0"
+            Margin="{x:Bind helper:UIHelper.StackPanelMargin}"
             AutoGenerateColumns="False"
             CanUserReorderColumns="True"
             CanUserResizeColumns="True"

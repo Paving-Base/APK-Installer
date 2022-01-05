@@ -4,6 +4,7 @@ using APKInstaller.Helpers;
 using CommunityToolkit.WinUI.UI;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Controls.Primitives;
 using Microsoft.UI.Xaml.Data;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Navigation;
@@ -161,15 +162,11 @@ namespace APKInstaller.Pages.ToolsPages
 
         private async void TitleBar_RefreshEvent(object sender, RoutedEventArgs e) => await Refresh();
 
-        private void DataGrid_RightTapped(object sender, RightTappedRoutedEventArgs e)
+        private void ListViewItem_RightTapped(object sender, RightTappedRoutedEventArgs e)
         {
-            //if (ApplicationDataGrid.SelectedIndex != -1)
-            //{
-            //    string Text = (ApplicationDataGrid.SelectedItem as APKInfo).IsActive ? "Stop" : "Start";
-            //    //Actions.Tag = Text;
-            //    //Actions.Text = Text;
-            //    //MenuFlyout.ShowAt(sender as UIElement, e.GetPosition(sender as UIElement));
-            //}
+            Button Button = (sender as FrameworkElement).FindDescendant<Button>();
+            MenuFlyout Flyout = (MenuFlyout)Button.Flyout;
+            Flyout.ShowAt(sender as UIElement, e.GetPosition(sender as UIElement));
         }
 
         private void MenuFlyoutItem_Click(object sender, RoutedEventArgs e)
@@ -191,11 +188,11 @@ namespace APKInstaller.Pages.ToolsPages
         private void ListView_Loaded(object sender, RoutedEventArgs e)
         {
             ListView ListView = sender as ListView;
-            ItemsStackPanel StackPanel = ListView.FindChild<ItemsStackPanel>();
-            ScrollViewer ScrollViewer = ListView.FindChild<ScrollViewer>();
+            ItemsStackPanel StackPanel = ListView.FindDescendant<ItemsStackPanel>();
+            ScrollViewer ScrollViewer = ListView.FindDescendant<ScrollViewer>();
             if (StackPanel != null)
             {
-                StackPanel.Margin = UIHelper.StackPanelMargin;
+                StackPanel.Margin = new Thickness(14, UIHelper.StackPanelMargin.Top + 16, 14, 16);
             }
             if (ScrollViewer != null)
             {

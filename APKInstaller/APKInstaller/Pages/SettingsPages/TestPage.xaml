@@ -22,7 +22,7 @@
             </TransitionCollection>
         </Grid.ChildrenTransitions>
         <ScrollViewer Margin="{x:Bind helper:UIHelper.ScrollViewerMargin}" Padding="{x:Bind helper:UIHelper.ScrollViewerPadding}">
-            <StackPanel Margin="{x:Bind helper:UIHelper.StackPanelMargin}" Padding="16,0">
+            <StackPanel Margin="{x:Bind helper:UIHelper.StackPanelMargin}" Padding="16">
                 <StackPanel.ChildrenTransitions>
                     <TransitionCollection>
                         <ReorderThemeTransition />
@@ -58,7 +58,7 @@
                         </contorls:Setting.ActionContent>
                     </contorls:Setting>
                 </contorls:SettingsGroup>
-                <contorls:SettingsGroup Header="Android Test">
+                <contorls:SettingsGroup Margin="0,-32,0,0" Header="Android Test">
                     <contorls:SettingButton Click="Button_Click" Tag="Applications">
                         <contorls:SettingButton.Content>
                             <contorls:Setting Header="Applications" Icon="&#xE7B8;" />

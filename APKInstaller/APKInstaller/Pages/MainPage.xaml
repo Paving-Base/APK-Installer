@@ -28,8 +28,8 @@
         <Button
             x:Name="AboutButton"
             Grid.RowSpan="2"
-            Width="28"
-            Height="28"
+            Width="{x:Bind helper:UIHelper.TitleBarHeight}"
+            Height="{x:Bind helper:UIHelper.TitleBarHeight}"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Background="Transparent"

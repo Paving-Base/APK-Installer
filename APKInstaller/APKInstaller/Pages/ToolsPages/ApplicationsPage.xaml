@@ -14,13 +14,11 @@
     <Grid>
         <ListView
             x:Name="ListView"
-            Padding="16"
-            Margin="{x:Bind helper:UIHelper.StackPanelMargin}"
             ItemsSource="{x:Bind Applications, Mode=OneWay}"
             Loaded="ListView_Loaded">
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="local:APKInfo">
-                    <ListViewItem Background="Transparent">
+                    <ListViewItem Background="Transparent" RightTapped="ListViewItem_RightTapped">
                         <controls:Setting Header="{x:Bind Name}" Style="{StaticResource ListViewItemContentSettingStyle}">
                             <controls:Setting.Icon>
                                 <Grid>
