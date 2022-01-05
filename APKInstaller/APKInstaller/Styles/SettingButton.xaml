@@ -10,7 +10,7 @@
     <!--  Setting used in a Button  -->
     <Style x:Key="ButtonContentSettingStyle" TargetType="controls:Setting">
         <Setter Property="Margin" Value="0" />
-        <Setter Property="Padding" Value="0,14,0,14" />
+        <Setter Property="Padding" Value="0,14" />
         <Setter Property="BorderThickness" Value="0" />
         <Setter Property="Background" Value="Transparent" />
         <Setter Property="BorderBrush" Value="Transparent" />
@@ -24,7 +24,7 @@
         x:Key="SettingButtonStyle"
         BasedOn="{StaticResource DefaultButtonStyle}"
         TargetType="Button">
-        <Setter Property="Padding" Value="16,0,16,0" />
+        <Setter Property="Padding" Value="16,0" />
         <Setter Property="HorizontalAlignment" Value="Stretch" />
         <Setter Property="HorizontalContentAlignment" Value="Stretch" />
         <Setter Property="BorderBrush" Value="{ThemeResource CardBorderBrush}" />

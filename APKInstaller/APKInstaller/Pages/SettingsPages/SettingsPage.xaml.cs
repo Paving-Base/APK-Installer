@@ -1,6 +1,7 @@
 ﻿using AdvancedSharpAdbClient;
 using APKInstaller.Helpers;
 using APKInstaller.Models;
+using APKInstaller.ViewModels.SettingsPages;
 using CommunityToolkit.WinUI;
 using CommunityToolkit.WinUI.UI.Controls;
 using Microsoft.UI.Xaml;
@@ -23,117 +24,30 @@ namespace APKInstaller.Pages.SettingsPages
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class SettingsPage : Page, INotifyPropertyChanged
+    public sealed partial class SettingsPage : Page
     {
-        private new readonly DispatcherQueue DispatcherQueue = DispatcherQueue.GetForCurrentThread();
-        private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("SettingsPage");
-
-        private IEnumerable<DeviceData> _deviceList;
-        internal IEnumerable<DeviceData> DeviceList
-        {
-            get => _deviceList;
-            set
-            {
-                _deviceList = value;
-                RaisePropertyChangedEvent();
-                if (!IsOnlyWSA) { ChooseDevice(); }
-            }
-        }
-
-        private bool _isOnlyWSA = SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
-        internal bool IsOnlyWSA
-        {
-            get => _isOnlyWSA;
-            set
-            {
-                SettingsHelper.Set(SettingsHelper.IsOnlyWSA, value);
-                _isOnlyWSA = SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
-                SelectDeviceBox.SelectionMode = value ? ListViewSelectionMode.None : ListViewSelectionMode.Single;
-                if (!value) { ChooseDevice(); }
-                RaisePropertyChangedEvent();
-            }
-        }
-
-        private bool _isCloseADB = SettingsHelper.Get<bool>(SettingsHelper.IsCloseADB);
-        internal bool IsCloseADB
-        {
-            get => _isCloseADB;
-            set
-            {
-                SettingsHelper.Set(SettingsHelper.IsCloseADB, value);
-                _isCloseADB = SettingsHelper.Get<bool>(SettingsHelper.IsCloseADB);
-            }
-        }
-
-        private DateTime _updateDate = SettingsHelper.Get<DateTime>(SettingsHelper.UpdateDate);
-        internal DateTime UpdateDate
-        {
-            get => _updateDate;
-            set
-            {
-                SettingsHelper.Set(SettingsHelper.UpdateDate, value);
-                _updateDate = SettingsHelper.Get<DateTime>(SettingsHelper.UpdateDate);
-                RaisePropertyChangedEvent();
-            }
-        }
-
-        private bool _checkingUpdate;
-        internal bool CheckingUpdate
-        {
-            get => _checkingUpdate;
-            set
-            {
-                _checkingUpdate = value;
-                RaisePropertyChangedEvent();
-            }
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private void RaisePropertyChangedEvent([System.Runtime.CompilerServices.CallerMemberName] string name = null)
-        {
-            if (name != null) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
-        }
-
-        internal string IssuePath = "https://github.com/Paving-Base/APK-Installer/issues";
-
-        internal string VersionTextBlockText
-        {
-            get
-            {
-                string ver = $"{Package.Current.Id.Version.Major}.{Package.Current.Id.Version.Minor}.{Package.Current.Id.Version.Build}";
-                ResourceLoader loader = ResourceLoader.GetForViewIndependentUse();
-                string name = loader?.GetString("AppName") ?? "APK Installer";
-                return $"{name} v{ver}";
-            }
-        }
+        internal SettingsViewModel Provider;
 
         public SettingsPage() => InitializeComponent();
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
+            Provider = new SettingsViewModel(this);
+            DataContext = Provider;
             //#if DEBUG
             GoToTestPage.Visibility = Visibility.Visible;
             //#endif
-            SelectDeviceBox.SelectionMode = IsOnlyWSA ? ListViewSelectionMode.None : ListViewSelectionMode.Single;
-            if (UpdateDate == DateTime.MinValue) { CheckUpdate(); }
-            ADBHelper.Monitor.DeviceChanged += OnDeviceChanged;
-            DeviceList = new AdvancedAdbClient().GetDevices();
+            SelectDeviceBox.SelectionMode = Provider.IsOnlyWSA ? ListViewSelectionMode.None : ListViewSelectionMode.Single;
+            if (Provider.UpdateDate == DateTime.MinValue) { Provider.CheckUpdate(); }
+            ADBHelper.Monitor.DeviceChanged += Provider.OnDeviceChanged;
+            Provider.DeviceList = new AdvancedAdbClient().GetDevices();
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             base.OnNavigatedFrom(e);
-            ADBHelper.Monitor.DeviceChanged -= OnDeviceChanged;
-        }
-
-        private void OnDeviceChanged(object sender, DeviceDataEventArgs e)
-        {
-            DispatcherQueue.EnqueueAsync(() =>
-            {
-                DeviceList = new AdvancedAdbClient().GetDevices();
-            });
+            ADBHelper.Monitor.DeviceChanged -= Provider.OnDeviceChanged;
         }
 
         private async void Button_Click(object sender, RoutedEventArgs e)
@@ -157,61 +71,17 @@ namespace APKInstaller.Pages.SettingsPages
                     _ = Frame.Navigate(typeof(TestPage));
                     break;
                 case "FeedBack":
-                    _ = Launcher.LaunchUriAsync(new Uri(IssuePath));
+                    _ = Launcher.LaunchUriAsync(new Uri(Provider.IssuePath));
                     break;
                 case "LogFolder":
                     _ = await Launcher.LaunchFolderAsync(await ApplicationData.Current.LocalFolder.CreateFolderAsync("MetroLogs", CreationCollisionOption.OpenIfExists));
                     break;
                 case "CheckUpdate":
-                    CheckUpdate();
+                    Provider.CheckUpdate();
                     break;
                 default:
                     break;
             }
-        }
-
-        private async void CheckUpdate()
-        {
-            CheckingUpdate = true;
-            UpdateInfo info = null;
-            try
-            {
-                info = await UpdateHelper.CheckUpdateAsync("Paving-Base", "APK-Installer");
-            }
-            catch (Exception ex)
-            {
-                UpdateState.IsOpen = true;
-                UpdateState.Message = ex.Message;
-                UpdateState.Severity = InfoBarSeverity.Error;
-                GotoUpdate.Visibility = Visibility.Collapsed;
-                UpdateState.Title = _loader.GetString("CheckFailed");
-            }
-            if (info != null)
-            {
-                if (info.IsExistNewVersion)
-                {
-                    UpdateState.IsOpen = true;
-                    GotoUpdate.Tag = info.ReleaseUrl;
-                    GotoUpdate.Visibility = Visibility.Visible;
-                    UpdateState.Severity = InfoBarSeverity.Warning;
-                    UpdateState.Title = _loader.GetString("FindUpdate");
-                    UpdateState.Message = $"{VersionTextBlockText} -> {info.TagName}";
-                }
-                else
-                {
-                    UpdateState.IsOpen = true;
-                    GotoUpdate.Visibility = Visibility.Collapsed;
-                    UpdateState.Severity = InfoBarSeverity.Success;
-                    UpdateState.Title = _loader.GetString("UpToDate");
-                }
-            }
-            UpdateDate = DateTime.Now;
-            CheckingUpdate = false;
-        }
-
-        private void MarkdownTextBlock_LinkClicked(object sender, LinkClickedEventArgs e)
-        {
-            _ = Launcher.LaunchUriAsync(new Uri(e.Link));
         }
 
         private void TitleBar_BackRequested(object sender, RoutedEventArgs e)
@@ -228,20 +98,6 @@ namespace APKInstaller.Pages.SettingsPages
             if (vs != null && vs is DeviceData device)
             {
                 SettingsHelper.Set(SettingsHelper.DefaultDevice, device);
-            }
-        }
-
-        private void ChooseDevice()
-        {
-            DeviceData device = SettingsHelper.Get<DeviceData>(SettingsHelper.DefaultDevice);
-            if (device == null) { return; }
-            foreach (DeviceData data in DeviceList)
-            {
-                if (data.Name == device.Name && data.Model == device.Model && data.Product == device.Product)
-                {
-                    SelectDeviceBox.SelectedItem = data;
-                    break;
-                }
             }
         }
 
