@@ -1,9 +1,12 @@
 ﻿using AdvancedSharpAdbClient;
+using CommunityToolkit.WinUI;
 using CommunityToolkit.WinUI.Helpers;
+using Microsoft.UI;
 using Microsoft.UI.Xaml;
 using System;
 using System.Text.Json;
 using System.Threading.Tasks;
+using Windows.UI.ViewManagement;
 
 namespace APKInstaller.Helpers
 {
@@ -69,6 +72,7 @@ namespace APKInstaller.Helpers
 
     internal static partial class SettingsHelper
     {
+        public static readonly UISettings UISettings = new UISettings();
         public static OSVersion OperatingSystemVersion => SystemInformation.Instance.OperatingSystemVersion;
         private static readonly ApplicationDataStorageHelper LocalObject = ApplicationDataStorageHelper.GetCurrent(new SystemTextJsonObjectSerializer());
         public static ElementTheme Theme => Get<bool>("IsBackgroundColorFollowSystem") ? ElementTheme.Default : (Get<bool>("IsDarkMode") ? ElementTheme.Dark : ElementTheme.Light);
@@ -76,6 +80,17 @@ namespace APKInstaller.Helpers
         static SettingsHelper()
         {
             SetDefaultSettings();
+            UISettings.ColorValuesChanged += SetBackgroundTheme;
+        }
+
+        private static void SetBackgroundTheme(UISettings sender, object args)
+        {
+            if (Get<bool>(IsBackgroundColorFollowSystem))
+            {
+                bool value = sender.GetColorValue(UIColorType.Background) == Colors.Black;
+                Set(IsDarkMode, value);
+                _ = UIHelper.DispatcherQueue?.EnqueueAsync(() => UIHelper.CheckTheme());
+            }
         }
     }
 

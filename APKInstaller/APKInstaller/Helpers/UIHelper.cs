@@ -52,6 +52,8 @@ namespace APKInstaller.Helpers
             return theme == ElementTheme.Default ? Application.Current.RequestedTheme == ApplicationTheme.Dark : theme == ElementTheme.Dark;
         }
 
+        public static bool IsDarkTheme() => IsDarkTheme(SettingsHelper.Theme);
+
         public static void CheckTheme()
         {
             if (!HasTitleBar)
