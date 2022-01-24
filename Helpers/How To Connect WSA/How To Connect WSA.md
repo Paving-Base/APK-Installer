@@ -2,7 +2,7 @@
 本应用已上架应用商店，以后将通过应用商店分发更新，请及时迁移到应用商店版本，商店链接：
 https://www.microsoft.com/store/apps/9P2JFQ43FPPG
 
-#Application Migration
+# Application Migration
 This app has been launched on the App Store, and will be distributed and updated through the App Store in the future. Please migrate to the App Store version in time. Store link:
  https://www.microsoft.com/store/apps/9P2JFQ43FPPG
 
