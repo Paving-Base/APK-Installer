@@ -9,9 +9,8 @@ An Android Application Installer for Windows
 [![Issues](https://img.shields.io/github/issues/Paving-Base/APK-Installer.svg?label=Issues&style=flat-square)](https://github.com/Paving-Base/APK-Installer/issues "Issues")
 [![Stargazers](https://img.shields.io/github/stars/Paving-Base/APK-Installer.svg?label=Stars&style=flat-square)](https://github.com/Paving-Base/APK-Installer/stargazers "Stargazers")
 
+<a  href="https://www.microsoft.com/store/apps/9P2JFQ43FPPG"><img alt="Microsoft Store" src="https://img.shields.io/badge/download-%e4%b8%8b%e8%bd%bd-magenta.svg?label=Microsoft%20Store&logo=Microsoft&style=for-the-badge&color=11a2f8"/><a/>
 [![GitHub All Releases](https://img.shields.io/github/downloads/Paving-Base/APK-Installer/total.svg?label=DOWNLOAD&logo=github&style=for-the-badge)](https://github.com/Paving-Base/APK-Installer/releases/latest "GitHub All Releases")
-[![Baidu Netdisk](https://img.shields.io/badge/download-%e5%af%86%e7%a0%81%ef%bc%9aAPKI-magenta.svg?label=%e4%b8%8b%e8%bd%bd&logo=baidu&style=for-the-badge)](https://pan.baidu.com/s/1AgAvyemIIDA3pLEYeiWR7g "Baidu Netdisk")
-
 ## 语言
  - [中文](README.md)
  - [English](README.en-US.md)
