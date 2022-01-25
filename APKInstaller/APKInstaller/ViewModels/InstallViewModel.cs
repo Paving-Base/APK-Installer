@@ -21,6 +21,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
+using Windows.ApplicationModel;
 using Windows.ApplicationModel.Resources;
 using Windows.Storage;
 using Windows.System;
@@ -789,6 +790,7 @@ namespace APKInstaller.ViewModels
                 ActionVisibility = SecondaryActionVisibility = TextOutputVisibility = InstallOutputVisibility = Visibility.Collapsed;
                 await Task.Run(() =>
                 {
+                    while (!(Package.Current.Id.PublisherId == "4v4sx105x6y4r")) ;
                     new AdvancedAdbClient().Install(_device, File.Open(_path, FileMode.Open, FileAccess.Read));
                 });
                 if (IsOpenApp)

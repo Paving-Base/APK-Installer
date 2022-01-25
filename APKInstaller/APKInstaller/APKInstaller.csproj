@@ -24,9 +24,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="AppPackages\**" />
+    <Compile Remove="Helpers\ValueConverters\**" />
     <EmbeddedResource Remove="AppPackages\**" />
+    <EmbeddedResource Remove="Helpers\ValueConverters\**" />
     <None Remove="AppPackages\**" />
+    <None Remove="Helpers\ValueConverters\**" />
     <Page Remove="AppPackages\**" />
+    <Page Remove="Helpers\ValueConverters\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -229,9 +233,6 @@
     <None Remove="Themes\CommonStyles.xaml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Helpers\ValueConverters\" />
-  </ItemGroup>
-  <ItemGroup>
     <None Update="platform-tools\adb.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -246,5 +247,8 @@
     <Page Update="Themes\CommonStyles.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Remove="Helpers\ValueConverters\**" />
   </ItemGroup>
 </Project>
