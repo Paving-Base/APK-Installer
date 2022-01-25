@@ -353,7 +353,7 @@ namespace APKInstaller.ViewModels
         public async Task CheckADB(bool force = false)
         {
         checkadb:
-            if (!force && File.Exists(Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe")))
+            if (!force && File.Exists(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"platform-tools\adb.exe")))
             {
                 WaitProgressText = _loader.GetString("ADBExist");
             }
@@ -519,13 +519,13 @@ namespace APKInstaller.ViewModels
                         }
                         try
                         {
-                            await Task.Run(() => new AdbServer().StartServer(Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe"), restartServerIfNewer: false));
+                            await Task.Run(() => new AdbServer().StartServer(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"platform-tools\adb.exe"), restartServerIfNewer: false));
                         }
                         catch
                         {
                             await CheckADB(true);
                             WaitProgressText = _loader.GetString("StartingADB");
-                            await Task.Run(() => new AdbServer().StartServer(Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe"), restartServerIfNewer: false));
+                            await Task.Run(() => new AdbServer().StartServer(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"platform-tools\adb.exe"), restartServerIfNewer: false));
                         }
                     }
                 }
@@ -533,13 +533,13 @@ namespace APKInstaller.ViewModels
                 {
                     try
                     {
-                        await Task.Run(() => new AdbServer().StartServer(Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe"), restartServerIfNewer: false));
+                        await Task.Run(() => new AdbServer().StartServer(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"platform-tools\adb.exe"), restartServerIfNewer: false));
                     }
                     catch
                     {
                         await CheckADB(true);
                         WaitProgressText = _loader.GetString("StartingADB");
-                        await Task.Run(() => new AdbServer().StartServer(Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe"), restartServerIfNewer: false));
+                        await Task.Run(() => new AdbServer().StartServer(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"platform-tools\adb.exe"), restartServerIfNewer: false));
                     }
                 }
                 if (IsOnlyWSA)
@@ -650,6 +650,8 @@ namespace APKInstaller.ViewModels
                 ResetUI();
                 ApkInfo = new ApkInfo();
                 AppName = _loader.GetString("NoPackageWranning");
+                CancelOperationVisibility = Visibility.Visible;
+                CancelOperationButtonText = "Close";
                 AppVersionVisibility = AppPublisherVisibility = AppCapabilitiesVisibility = Visibility.Collapsed;
             }
             IsInitialized = true;
