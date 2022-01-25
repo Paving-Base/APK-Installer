@@ -150,6 +150,9 @@
   <data name="ClickToRead" xml:space="preserve">
     <value>Click here to read them</value>
   </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
   <data name="FindingWSA" xml:space="preserve">
     <value>Finding WSA...</value>
   </data>
@@ -225,6 +228,9 @@
   </data>
   <data name="Retry" xml:space="preserve">
     <value>Retry</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Select</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
     <value>Starting ADB Server...</value>

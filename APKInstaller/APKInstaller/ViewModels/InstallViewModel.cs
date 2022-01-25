@@ -20,21 +20,38 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Resources;
 using Windows.Storage;
+using Windows.Storage.Pickers;
 using Windows.System;
+using WinRT;
 
 namespace APKInstaller.ViewModels
 {
+    [ComImport, Guid("3E68D4BD-7135-4D10-8018-9FB6D9F33FA1"), InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+    public interface IInitializeWithWindow
+    {
+        void Initialize([In] IntPtr hwnd);
+    }
+
     public class InstallViewModel : INotifyPropertyChanged, IDisposable
     {
+        [DllImport("user32.dll", ExactSpelling = true, CharSet = CharSet.Auto, PreserveSig = true, SetLastError = false)]
+        public static extern IntPtr GetActiveWindow();
+
         private DeviceData _device;
         private readonly InstallPage _page;
 
+#if !DEBUG
+        string _path = string.Empty;
+#else
+        string _path = @"C:\Users\qq251\Downloads\Programs\Minecraft_1.17.40.06_sign.apk";
+#endif
+
         private bool _disposedValue;
-        private readonly string _path;
         private static bool IsOnlyWSA => SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
         private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("InstallPage");
 
@@ -142,6 +159,17 @@ namespace APKInstaller.ViewModels
             }
         }
 
+        private bool _fileSelectButtonEnable;
+        public bool FileSelectButtonEnable
+        {
+            get => _fileSelectButtonEnable;
+            set
+            {
+                _fileSelectButtonEnable = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
         private bool _cancelOperationButtonEnable;
         public bool CancelOperationButtonEnable
         {
@@ -208,6 +236,17 @@ namespace APKInstaller.ViewModels
             }
         }
 
+        private string _fileSelectButtonText;
+        public string FileSelectButtonText
+        {
+            get => _fileSelectButtonText;
+            set
+            {
+                _fileSelectButtonText = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
         private string _cancelOperationButtonText;
         public string CancelOperationButtonText
         {
@@ -259,6 +298,17 @@ namespace APKInstaller.ViewModels
             set
             {
                 _secondaryActionVisibility = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
+        private Visibility _fileSelectVisibility;
+        public Visibility FileSelectVisibility
+        {
+            get => _fileSelectVisibility;
+            set
+            {
+                _fileSelectVisibility = value;
                 RaisePropertyChangedEvent();
             }
         }
@@ -339,14 +389,15 @@ namespace APKInstaller.ViewModels
         // TODO: 仅当“Dispose(bool disposing)”拥有用于释放未托管资源的代码时才替代终结器
         public InstallViewModel(string Path, InstallPage Page)
         {
-            _path = Path;
             _page = Page;
+            _path = string.IsNullOrEmpty(Path) ? _path : Path;
             // 不要更改此代码。请将清理代码放入“Dispose(bool disposing)”方法中
             Dispose(disposing: false);
         }
 
         public async Task Refresh()
         {
+            IsInitialized = false;
             await InitilizeADB();
             await InitilizeUI();
         }
@@ -651,8 +702,9 @@ namespace APKInstaller.ViewModels
                 ResetUI();
                 ApkInfo = new ApkInfo();
                 AppName = _loader.GetString("NoPackageWranning");
-                CancelOperationVisibility = Visibility.Visible;
-                CancelOperationButtonText = "Close";
+                FileSelectButtonText = _loader.GetString("Select");
+                CancelOperationButtonText = _loader.GetString("Close");
+                FileSelectVisibility = CancelOperationVisibility = Visibility.Visible;
                 AppVersionVisibility = AppPublisherVisibility = AppCapabilitiesVisibility = Visibility.Collapsed;
             }
             IsInitialized = true;
@@ -709,13 +761,18 @@ namespace APKInstaller.ViewModels
         {
             ActionVisibility =
             SecondaryActionVisibility =
+            FileSelectVisibility =
             CancelOperationVisibility =
             TextOutputVisibility =
             InstallOutputVisibility =
             LaunchWhenReadyVisibility =
             MessagesToUserVisibility = Visibility.Collapsed;
+            AppVersionVisibility =
+            AppPublisherVisibility =
+            AppCapabilitiesVisibility = Visibility.Visible;
             ActionButtonEnable =
             SecondaryActionButtonEnable =
+            FileSelectButtonEnable =
             CancelOperationButtonEnable = true;
         }
 
@@ -811,6 +868,28 @@ namespace APKInstaller.ViewModels
                 TextOutput = ex.Message;
                 TextOutputVisibility = InstallOutputVisibility = Visibility.Visible;
                 ActionVisibility = SecondaryActionVisibility = CancelOperationVisibility = LaunchWhenReadyVisibility = Visibility.Collapsed;
+            }
+        }
+
+        public async void OpenAPK()
+        {
+            FileOpenPicker FileOpen = new FileOpenPicker();
+            FileOpen.FileTypeFilter.Add(".apk");
+            FileOpen.SuggestedStartLocation = PickerLocationId.ComputerFolder;
+
+            // When running on win32, FileSavePicker needs to know the top-level hwnd via IInitializeWithWindow::Initialize.
+            if (Window.Current == null)
+            {
+                IInitializeWithWindow initializeWithWindowWrapper = FileOpen.As<IInitializeWithWindow>();
+                IntPtr hwnd = GetActiveWindow();
+                initializeWithWindowWrapper.Initialize(hwnd);
+            }
+
+            StorageFile file = await FileOpen.PickSingleFileAsync();
+            if (file != null)
+            {
+                _path = file.Path;
+                await Refresh();
             }
         }
 

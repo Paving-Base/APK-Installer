@@ -274,6 +274,24 @@
                             TabIndex="1"
                             Visibility="Collapsed" />
                         <Button
+                            x:Name="FileSelectButton"
+                            Width="120"
+                            Height="32"
+                            Margin="12,0,0,0"
+                            Click="Button_Click"
+                            IsEnabled="{Binding FileSelectButtonEnable}"
+                            Style="{StaticResource AccentButtonStyle}"
+                            TabIndex="1"
+                            Visibility="{Binding FileSelectVisibility}">
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:Name="FileSelectButtonImage" Stretch="Uniform" />
+                                <TextBlock
+                                    x:Name="FileSelectButtonText"
+                                    Text="{Binding FileSelectButtonText}"
+                                    ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
+                            </StackPanel>
+                        </Button>
+                        <Button
                             x:Name="CancelOperationButton"
                             Width="120"
                             Height="32"
