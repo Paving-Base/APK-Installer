@@ -3,7 +3,7 @@
 https://www.microsoft.com/store/apps/9P2JFQ43FPPG
 
 # Application Migration
-This app has been launched on the App Store, and will be distributed and updated through the App Store in the future. Please migrate to the App Store version in time. Store link:
+This app has been launched on the Microsoft Store, and will be distributed and updated through the Microsoft Store in the future. Please migrate to the Microsoft Store version in time. Store link:
 https://www.microsoft.com/store/apps/9P2JFQ43FPPG
 
 # 如何连接 Android 子系统
