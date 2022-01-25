@@ -354,7 +354,7 @@ namespace APKInstaller.ViewModels
         public async Task CheckADB(bool force = false)
         {
         checkadb:
-            if (!force && File.Exists(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"platform-tools\adb.exe")))
+            if (!force && File.Exists(Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe")))
             {
                 WaitProgressText = _loader.GetString("ADBExist");
             }
@@ -371,7 +371,7 @@ namespace APKInstaller.ViewModels
                     new HyperlinkButton()
                     {
                         Content = _loader.GetString("ClickToRead"),
-                        NavigateUri = new Uri("https://developer.android.google.cn/studio/releases/platform-tools?hl=zh-cn")
+                        NavigateUri = new Uri("https://developer.android.google.cn/studio/releases/platform-tools")
                     });
                 ContentDialog dialog = new ContentDialog()
                 {
@@ -401,12 +401,12 @@ namespace APKInstaller.ViewModels
                 ContentDialog dialog = new ContentDialog()
                 {
                     XamlRoot = _page.XamlRoot,
-                    Title = "找不到网络",
-                    PrimaryButtonText = "重试",
-                    CloseButtonText = "关闭应用",
+                    Title = _loader.GetString("NoInternet"),
+                    PrimaryButtonText = _loader.GetString("Retry"),
+                    CloseButtonText = _loader.GetString("Cancel"),
                     Content = new ScrollViewer()
                     {
-                        Content = new TextBlock { Text = "请连接网络后再打开应用" }
+                        Content = new TextBlock { Text = _loader.GetString("NoInternetInfo") }
                     },
                     DefaultButton = ContentDialogButton.Primary
                 };
@@ -427,7 +427,7 @@ namespace APKInstaller.ViewModels
         {
             using Downloader downloader = new Downloader(new DownloaderOptions()
             {
-                Uri = new Uri("https://dl.google.com/android/repository/platform-tools-latest-windows.zip?hl=zh-cn"),
+                Uri = new Uri("https://dl.google.com/android/repository/platform-tools-latest-windows.zip"),
                 Stream = File.OpenWrite(Path.Combine(ApplicationData.Current.LocalFolder.Path, "platform-tools.zip"))
             });
         downloadadb:
@@ -450,12 +450,12 @@ namespace APKInstaller.ViewModels
                 ContentDialog dialog = new ContentDialog()
                 {
                     XamlRoot = _page.XamlRoot,
-                    Title = "ADB 下载失败",
-                    PrimaryButtonText = "重试",
-                    CloseButtonText = "关闭应用",
+                    Title = _loader.GetString("ADBDownloadFailed"),
+                    PrimaryButtonText = _loader.GetString("Retry"),
+                    CloseButtonText = _loader.GetString("Cancel"),
                     Content = new ScrollViewer()
                     {
-                        Content = new TextBlock { Text = "请检查网络连接后再重试" }
+                        Content = new TextBlock { Text = _loader.GetString("ADBDownloadFailedInfo") }
                     },
                     DefaultButton = ContentDialogButton.Primary
                 };
@@ -599,7 +599,7 @@ namespace APKInstaller.ViewModels
                                     DefaultButton = ContentDialogButton.Close,
                                     CloseButtonText = _loader.GetString("IKnow"),
                                     PrimaryButtonText = _loader.GetString("StartWSA"),
-                                    ContentUrl = "https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Helpers/How%20To%20Connect%20WSA/How%20To%20Connect%20WSA.md",
+                                    ContentUrl = "https://github.com/Paving-Base/APK-Installer/raw/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/How%20To%20Connect%20WSA.md",
                                 };
                                 ContentDialogResult result = await dialog.ShowAsync();
                                 if (result == ContentDialogResult.Primary)
@@ -629,11 +629,11 @@ namespace APKInstaller.ViewModels
                                 ContentDialog dialog = new ContentDialog()
                                 {
                                     XamlRoot = _page.XamlRoot,
-                                    Title = _loader.GetString("GoToSetting"),
+                                    Title = _loader.GetString("NoDevice"),
                                     DefaultButton = ContentDialogButton.Close,
                                     CloseButtonText = _loader.GetString("IKnow"),
                                     PrimaryButtonText = _loader.GetString("GoToSetting"),
-                                    Content = "你可以安装 WSA 或者前往设置解除仅限 WSA 的限制",
+                                    Content = _loader.GetString("NoDeviceInfo"),
                                 };
                                 ContentDialogResult result = await dialog.ShowAsync();
                                 if (result == ContentDialogResult.Primary)
@@ -790,7 +790,6 @@ namespace APKInstaller.ViewModels
                 ActionVisibility = SecondaryActionVisibility = TextOutputVisibility = InstallOutputVisibility = Visibility.Collapsed;
                 await Task.Run(() =>
                 {
-                    while (!(Package.Current.Id.PublisherId == "4v4sx105x6y4r")) ;
                     new AdvancedAdbClient().Install(_device, File.Open(_path, FileMode.Open, FileAccess.Read));
                 });
                 if (IsOpenApp)

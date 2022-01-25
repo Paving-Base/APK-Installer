@@ -120,6 +120,12 @@
   <data name="AboutADB" xml:space="preserve">
     <value>ADB, the Android Debug Bridge, is needed for APK Installer to work. Click OK to download it. By downloading, you accept the Google Terms and Conditions for ADB.</value>
   </data>
+  <data name="ADBDownloadFailed" xml:space="preserve">
+    <value>ADB Download Failed</value>
+  </data>
+  <data name="ADBDownloadFailedInfo" xml:space="preserve">
+    <value>Please check your network connection and try again.</value>
+  </data>
   <data name="ADBExist" xml:space="preserve">
     <value>ADB Exist</value>
   </data>
@@ -153,6 +159,9 @@
   <data name="FoundWSA" xml:space="preserve">
     <value>WSA Found</value>
   </data>
+  <data name="GoToSetting" xml:space="preserve">
+    <value>Go to Setting</value>
+  </data>
   <data name="HowToConnect" xml:space="preserve">
     <value>How to connect WSA?</value>
   </data>
@@ -181,6 +190,18 @@
   <data name="Loading" xml:space="preserve">
     <value>Loading...</value>
   </data>
+  <data name="NoDevice" xml:space="preserve">
+    <value>Cannot find Android Device</value>
+  </data>
+  <data name="NoDeviceInfo" xml:space="preserve">
+    <value>You can install WSA. Or go to Settings to connect Device.</value>
+  </data>
+  <data name="NoInternet" xml:space="preserve">
+    <value>Cannot connect Internet</value>
+  </data>
+  <data name="NoInternetInfo" xml:space="preserve">
+    <value>Please connect to the internet before opening the app.</value>
+  </data>
   <data name="NoPackageWranning" xml:space="preserve">
     <value>For proper functioning of the app, try to launch an Android app package.</value>
   </data>
@@ -201,6 +222,9 @@
   <data name="ReinstallOutput" xml:space="preserve">
     <value>A newer version of {0} is already installed.</value>
     <comment>{0} - AppName.</comment>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Retry</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
     <value>Starting ADB Server...</value>
