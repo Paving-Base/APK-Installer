@@ -520,13 +520,13 @@ namespace APKInstaller.ViewModels
                         }
                         try
                         {
-                            await Task.Run(() => new AdbServer().StartServer(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"platform-tools\adb.exe"), restartServerIfNewer: false));
+                            await Task.Run(() => new AdbServer().StartServer(Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe"), restartServerIfNewer: false));
                         }
                         catch
                         {
                             await CheckADB(true);
                             WaitProgressText = _loader.GetString("StartingADB");
-                            await Task.Run(() => new AdbServer().StartServer(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"platform-tools\adb.exe"), restartServerIfNewer: false));
+                            await Task.Run(() => new AdbServer().StartServer(Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe"), restartServerIfNewer: false));
                         }
                     }
                 }
@@ -534,13 +534,13 @@ namespace APKInstaller.ViewModels
                 {
                     try
                     {
-                        await Task.Run(() => new AdbServer().StartServer(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"platform-tools\adb.exe"), restartServerIfNewer: false));
+                        await Task.Run(() => new AdbServer().StartServer(Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe"), restartServerIfNewer: false));
                     }
                     catch
                     {
                         await CheckADB(true);
                         WaitProgressText = _loader.GetString("StartingADB");
-                        await Task.Run(() => new AdbServer().StartServer(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"platform-tools\adb.exe"), restartServerIfNewer: false));
+                        await Task.Run(() => new AdbServer().StartServer(Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe"), restartServerIfNewer: false));
                     }
                 }
                 if (IsOnlyWSA)
