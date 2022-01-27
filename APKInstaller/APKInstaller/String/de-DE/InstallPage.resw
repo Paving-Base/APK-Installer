@@ -121,10 +121,10 @@
     <value>ADB, die Android Debug Bridge, wird für den APK Installer benötigt. Klicken Sie auf OK, um den Download zu starten. Durch das Herunterladen akzeptieren Sie die AGB von Google für ADB.</value>
   </data>
   <data name="ADBDownloadFailed" xml:space="preserve">
-    <value>ADB Download Failed</value>
+    <value>ADB Download fehlgeschlagen</value>
   </data>
   <data name="ADBDownloadFailedInfo" xml:space="preserve">
-    <value>Please check your network connection and try again.</value>
+    <value>Bitte überprüfen Sie Ihre Netzwerkverbindung und versuchen Sie es erneut.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>ADB existiert</value>
@@ -151,7 +151,7 @@
     <value>Hier klicken zum lesen</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Close</value>
+    <value>Schließen</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
     <value>WSA wird gesucht...</value>
@@ -163,7 +163,7 @@
     <value>WSA gefunden</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>Go to Setting</value>
+    <value>Einstellungen öffnen</value>
   </data>
   <data name="HowToConnect" xml:space="preserve">
     <value>Wie verbindet man WSA?</value>
@@ -194,16 +194,16 @@
     <value>Wird geladen...</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
-    <value>Cannot find Android Device</value>
+    <value>Android Gerät nicht gefunden</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>You can install WSA. Or go to Settings to connect Device.</value>
+    <value>Sie können WSA installieren, oder zu den Einstellungen gehen, um Gerät zu verbinden.</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
-    <value>Cannot connect Internet</value>
+    <value>Keine Internetverbindung möglich</value>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
-    <value>Please connect to the internet before opening the app.</value>
+    <value>Bitte verbinden Sie sich mit dem Internet, bevor Sie die App öffnen.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
     <value>Damit die Anwendung richtig zu funktioniert, versuchen Sie ein Android-App-Paket zu starten.</value>
@@ -227,10 +227,10 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>Retry</value>
+    <value>Wiederholen</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>Select</value>
+    <value>Auswählen</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
     <value>ADB Server wird gestartet...</value>
