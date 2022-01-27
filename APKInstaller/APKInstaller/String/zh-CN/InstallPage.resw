@@ -121,10 +121,10 @@
     <value>APK安装程序需要 ADB 即 Android 调试桥才能工作。单击”确定”进行下载。下载即表示您接受  Google 为 ADB 制定的条款和条件。</value>
   </data>
   <data name="ADBDownloadFailed" xml:space="preserve">
-    <value>ADB Download Failed</value>
+    <value>ADB 下载失败</value>
   </data>
   <data name="ADBDownloadFailedInfo" xml:space="preserve">
-    <value>Please check your network connection and try again.</value>
+    <value>请检查您的网络连接并重试。</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>ADB 已存在</value>
@@ -151,7 +151,7 @@
     <value>点击阅读</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Close</value>
+    <value>关闭</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
     <value>正在寻找 WSA ......</value>
@@ -163,7 +163,7 @@
     <value>找到WSA</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>Go to Setting</value>
+    <value>前往设置页面</value>
   </data>
   <data name="HowToConnect" xml:space="preserve">
     <value>如何连接 Android 子系统</value>
@@ -194,16 +194,16 @@
     <value>加载中......</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
-    <value>Cannot find Android Device</value>
+    <value>找不到 Android 设备</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>You can install WSA. Or go to Settings to connect Device.</value>
+    <value>您可以安装 WSA。或者前往设置连接设备。</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
-    <value>Cannot connect Internet</value>
+    <value>无法连接到网络</value>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
-    <value>Please connect to the internet before opening the app.</value>
+    <value>请连接网络后再打开应用。</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
     <value>为了使应用程序正常运行，请尝试打开 Android 应用程序包。</value>
@@ -227,10 +227,10 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>Retry</value>
+    <value>重试</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>Select</value>
+    <value>选取</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
     <value>启动 ADB 服务......</value>
