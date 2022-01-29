@@ -1,3 +1,9 @@
+# 警告
+**该页面即将删除，请及时更新应用**
+
+# Warning
+**This page will be deleted soon, please update the application in time**
+
 # 应用迁移
 本应用已上架应用商店，以后将通过应用商店分发更新，请及时迁移到应用商店版本，商店链接：
 https://www.microsoft.com/store/apps/9P2JFQ43FPPG
