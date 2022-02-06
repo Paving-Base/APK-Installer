@@ -260,7 +260,7 @@
     <value>解压 ADB ……</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
-    <value>Unzip completed</value>
+    <value>解压完成</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
     <value>解压中 {0}/{1} ……</value>
@@ -278,7 +278,7 @@
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>Waiting for download...</value>
+    <value>等待下载中……</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
     <value>等待设备连接……</value>
