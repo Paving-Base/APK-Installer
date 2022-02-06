@@ -127,6 +127,6 @@
     <value>一个 Android 应用安装器。作者：@wherewhere 和 @Tangent-90。</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>APK Installer</value>
+    <value>APK 安装程序</value>
   </data>
 </root>

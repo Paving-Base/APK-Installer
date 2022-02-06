@@ -120,17 +120,26 @@
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
     <value>About</value>
   </data>
+  <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
+    <value>Auto download when package is from URL.</value>
+  </data>
+  <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
+    <value>Is Auto Download Online Packages?</value>
+  </data>
   <data name="CheckFailed" xml:space="preserve">
     <value>Check Failed</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>Checking For Updates</value>
+    <value>Checking For Updates...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
     <value>Check For Updates</value>
   </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
     <value>Clear cache</value>
+  </data>
+  <data name="CloseADBSettings.Description" xml:space="preserve">
+    <value>Close ADB may break other Installers when they still open.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
     <value>Is Close ADB when Closing Installer?</value>
@@ -146,6 +155,9 @@
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
     <value>Device</value>
+  </data>
+  <data name="EULA.Content" xml:space="preserve">
+    <value>EULA</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
     <value>Feedback</value>

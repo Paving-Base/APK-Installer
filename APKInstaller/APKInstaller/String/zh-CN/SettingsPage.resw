@@ -120,11 +120,17 @@
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
     <value>关于</value>
   </data>
+  <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
+    <value>当安装包来自 URL 链接时自动下载。</value>
+  </data>
+  <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
+    <value>是否自动下载在线安装包？</value>
+  </data>
   <data name="CheckFailed" xml:space="preserve">
     <value>检查失败</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>检查更新中…</value>
+    <value>正在检查更新……</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
     <value>检查更新</value>
@@ -132,11 +138,14 @@
   <data name="CleanCacheButton.Content" xml:space="preserve">
     <value>清除缓存</value>
   </data>
+  <data name="CloseADBSettings.Description" xml:space="preserve">
+    <value>关闭 ADB 可能会使其他正在运行的安装程序崩溃</value>
+  </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
     <value>关闭安装程序时是否关闭ADB？</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>在网络上连接设备。</value>
+    <value>通过网络连接设备。</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>连接设备</value>
@@ -146,6 +155,9 @@
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
     <value>设备</value>
+  </data>
+  <data name="EULA.Content" xml:space="preserve">
+    <value>用户协议</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
     <value>反馈</value>
@@ -157,10 +169,10 @@
     <value>前往测试页面</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
-    <value>去更新</value>
+    <value>前往更新</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>最后更新</value>
+    <value>最后检查</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>关闭它以连接到其他设备。</value>
