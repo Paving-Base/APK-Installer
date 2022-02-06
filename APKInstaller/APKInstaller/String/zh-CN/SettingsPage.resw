@@ -130,7 +130,7 @@
     <value>检查失败</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>Checking For Updates...</value>
+    <value>正在检查更新……</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
     <value>检查更新</value>
@@ -139,7 +139,7 @@
     <value>清除缓存</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Close ADB may break other Installers when they still open.</value>
+    <value>关闭 ADB 可能会使其他正在运行的安装程序崩溃</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
     <value>关闭安装程序时是否关闭ADB？</value>
