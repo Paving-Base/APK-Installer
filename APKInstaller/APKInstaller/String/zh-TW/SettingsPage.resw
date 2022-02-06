@@ -130,7 +130,7 @@
     <value>檢查失敗</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>正在檢查更新</value>
+    <value>Checking For Updates...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
     <value>檢查更新</value>
@@ -139,7 +139,7 @@
     <value>清除快取</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Close ADB may broken other Installers when they still open.</value>
+    <value>Close ADB may break other Installers when they still open.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
     <value>Is Close ADB when Closing Installer?</value>
