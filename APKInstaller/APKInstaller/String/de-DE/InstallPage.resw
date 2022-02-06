@@ -260,7 +260,7 @@
     <value>ADB wird entpackt...</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
-    <value>Entpacken ist abgeschlossen</value>
+    <value>Unzip completed</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
     <value>Entpacke {0}/{1}...</value>
@@ -278,7 +278,7 @@
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>Auf Download warten...</value>
+    <value>Waiting for download...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
     <value>Auf Gerät warten...</value>
