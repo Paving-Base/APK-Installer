@@ -194,7 +194,7 @@
     <value>Das Paket ist beschädigt oder ungültig.</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
-    <value>Invalid or Incomplete URL</value>
+    <value>The URL is either Incomplete or invalid.</value>
   </data>
   <data name="Launch" xml:space="preserve">
     <value>Starten</value>
