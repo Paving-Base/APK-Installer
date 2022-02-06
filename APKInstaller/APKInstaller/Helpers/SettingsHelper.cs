@@ -4,20 +4,24 @@ using CommunityToolkit.WinUI.Helpers;
 using Microsoft.UI;
 using Microsoft.UI.Xaml;
 using System;
+using System.IO;
 using System.Text.Json;
 using System.Threading.Tasks;
+using Windows.Storage;
 using Windows.UI.ViewManagement;
 
 namespace APKInstaller.Helpers
 {
     internal static partial class SettingsHelper
     {
+        public const string ADBPath = "ADBPath";
         public const string IsOpenApp = "IsOpenApp";
         public const string IsOnlyWSA = "IsOnlyWSA";
         public const string IsDarkMode = "IsDarkMode";
         public const string UpdateDate = "UpdateDate";
         public const string IsFirstRun = "IsFirstRun";
         public const string IsCloseADB = "IsCloseADB";
+        public const string AutoGetNetAPK = "AutoGetNetAPK";
         public const string DefaultDevice = "DefaultDevice";
         public const string IsBackgroundColorFollowSystem = "IsBackgroundColorFollowSystem";
 
@@ -28,6 +32,10 @@ namespace APKInstaller.Helpers
 
         public static void SetDefaultSettings()
         {
+            if (!LocalObject.KeyExists(ADBPath))
+            {
+                LocalObject.Save(ADBPath, Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe"));
+            }
             if (!LocalObject.KeyExists(IsOpenApp))
             {
                 LocalObject.Save(IsOpenApp, true);
@@ -51,6 +59,10 @@ namespace APKInstaller.Helpers
             if (!LocalObject.KeyExists(IsCloseADB))
             {
                 LocalObject.Save(IsCloseADB, false);
+            }
+            if (!LocalObject.KeyExists(AutoGetNetAPK))
+            {
+                LocalObject.Save(AutoGetNetAPK, false);
             }
             if (!LocalObject.KeyExists(DefaultDevice))
             {

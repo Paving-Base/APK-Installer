@@ -1,4 +1,5 @@
-﻿using APKInstaller.ViewModels;
+﻿using APKInstaller.Pages.SettingsPages;
+using APKInstaller.ViewModels;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
@@ -29,11 +30,15 @@ namespace APKInstaller.Pages
             {
                 case ExtendedActivationKind.File:
                     _path = (args.Data as IFileActivatedEventArgs).Files.First().Path;
+                    Provider = new InstallViewModel(_path, this);
+                    break;
+                case ExtendedActivationKind.Protocol:
+                    Provider = new InstallViewModel((args.Data as IProtocolActivatedEventArgs).Uri, this);
                     break;
                 default:
+                    Provider = new InstallViewModel(_path, this);
                     break;
             }
-            Provider = new InstallViewModel(_path, this);
             DataContext = Provider;
         }
 
@@ -50,8 +55,14 @@ namespace APKInstaller.Pages
                 case "ActionButton":
                     Provider.InstallAPP();
                     break;
+                case "DownloadButton":
+                    Provider.LoadNetAPK();
+                    break;
                 case "FileSelectButton":
                     Provider.OpenAPK();
+                    break;
+                case "DeviceSelectButton":
+                    Frame.Navigate(typeof(SettingsPage));
                     break;
                 case "SecondaryActionButton":
                     Provider.OpenAPP();

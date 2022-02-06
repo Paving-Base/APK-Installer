@@ -10,6 +10,7 @@
     <RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
     <PublishProfile>win10-$(Platform).pubxml</PublishProfile>
     <UseWinUI>true</UseWinUI>
+	<VersionPrefix>0.1.6</VersionPrefix>
     <EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
     <GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
     <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
@@ -20,6 +21,10 @@
     <AppxBundlePlatforms>x64</AppxBundlePlatforms>
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
+	<Description>An Android Application Installer for Windows</Description>
+	<RepositoryUrl>https://github.com/Paving-Base/APK-Installer</RepositoryUrl>
+	<Copyright>Copyright © 2017 - 2022 PavingBase. All Rights Reserved</Copyright>
+	<PackageProjectUrl>https://github.com/Paving-Base/APK-Installer</PackageProjectUrl>
     <AppxPackageDir>C:\Users\qq251\Downloads\Github\APK-Installer\APKInstaller\APKInstaller\AppPackages\</AppxPackageDir>
   </PropertyGroup>
   <ItemGroup>

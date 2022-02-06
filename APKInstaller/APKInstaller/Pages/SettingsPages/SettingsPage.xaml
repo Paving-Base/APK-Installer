@@ -8,6 +8,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:settingspages="using:APKInstaller.ViewModels.SettingsPages"
     xmlns:sharpadbclient="using:AdvancedSharpAdbClient"
+    xmlns:ui="using:CommunityToolkit.WinUI.UI"
     d:DataContext="{d:DesignInstance Type=settingspages:SettingsViewModel}"
     mc:Ignorable="d">
     <Grid>
@@ -56,6 +57,7 @@
                                     <TextBox
                                         x:Name="ConnectIP"
                                         MinWidth="{StaticResource SettingActionControlMinWidth}"
+                                        ui:TextBoxExtensions.Regex="^(\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])(\.(\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])){3}:([0-9]|[1-9]\d|[1-9]\d{2}|[1-9]\d{3}|[1-5]\d{4}|6[0-4]\d{3}|65[0-4]\d{2}|655[0-2]\d|6553[0-5])$"
                                         PlaceholderText="127.0.0.1:58526" />
                                     <Button
                                         Width="40"
@@ -63,6 +65,7 @@
                                         Click="Button_Click"
                                         Content="&#xE71B;"
                                         FontFamily="{StaticResource SymbolThemeFontFamily}"
+                                        IsEnabled="{x:Bind ConnectIP.(ui:TextBoxExtensions.IsValid), Mode=OneWay}"
                                         Tag="Connect" />
                                 </StackPanel>
                             </controls:Setting>
@@ -95,6 +98,11 @@
                             <ToggleSwitch IsOn="{Binding IsCloseADB, Mode=TwoWay}" Style="{StaticResource ToggleSwitchSettingStyle}" />
                         </controls:Setting.ActionContent>
                     </controls:Setting>
+                    <controls:Setting x:Uid="/SettingsPage/AutoGetNetAPKSettings" Icon="&#xE896;">
+                        <controls:Setting.ActionContent>
+                            <ToggleSwitch IsOn="{Binding AutoGetNetAPK, Mode=TwoWay}" Style="{StaticResource ToggleSwitchSettingStyle}" />
+                        </controls:Setting.ActionContent>
+                    </controls:Setting>
                     <controls:SettingButton
                         x:Name="GoToTestPage"
                         Click="Button_Click"
@@ -122,6 +130,10 @@
                                         x:Uid="/SettingsPage/ReleaseNotes"
                                         Margin="2,0"
                                         NavigateUri="https://github.com/Paving-Base/APK-Installer/releases/" />
+                                    <HyperlinkButton
+                                        x:Uid="/SettingsPage/EULA"
+                                        Margin="2,0"
+                                        NavigateUri="https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md" />
                                 </StackPanel>
                             </StackPanel>
                         </controls:Setting.Description>

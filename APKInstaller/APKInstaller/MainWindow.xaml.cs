@@ -3,8 +3,11 @@ using APKInstaller.Helpers;
 using APKInstaller.Pages;
 using Microsoft.UI.Xaml;
 using System;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Runtime.InteropServices;
+using Windows.Storage;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -33,6 +36,11 @@ namespace APKInstaller
             if (SettingsHelper.Get<bool>(SettingsHelper.IsCloseADB))
             {
                 new AdvancedAdbClient().KillAdb();
+            }
+            string TempPath = Path.Combine(ApplicationData.Current.TemporaryFolder.Path, @$"Caches\{Process.GetCurrentProcess().Id}");
+            if (Directory.Exists(TempPath))
+            {
+                Directory.Delete(TempPath, true);
             }
         }
 

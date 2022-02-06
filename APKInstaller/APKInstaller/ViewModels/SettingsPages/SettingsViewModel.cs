@@ -70,6 +70,17 @@ namespace APKInstaller.ViewModels.SettingsPages
             }
         }
 
+        private bool _autoGetNetAPK = SettingsHelper.Get<bool>(SettingsHelper.AutoGetNetAPK);
+        public bool AutoGetNetAPK
+        {
+            get => _autoGetNetAPK;
+            set
+            {
+                SettingsHelper.Set(SettingsHelper.AutoGetNetAPK, value);
+                _autoGetNetAPK = SettingsHelper.Get<bool>(SettingsHelper.AutoGetNetAPK);
+            }
+        }
+
         private bool _checkingUpdate;
         public bool CheckingUpdate
         {

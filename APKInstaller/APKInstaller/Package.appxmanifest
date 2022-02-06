@@ -63,6 +63,12 @@
             <uap:EditFlags OpenIsSafe="true"/>
           </uap:FileTypeAssociation>
         </uap:Extension>
+        <uap:Extension Category="windows.protocol">
+          <uap:Protocol Name="apkinstaller">
+            <uap:DisplayName>APK Installer</uap:DisplayName>
+            <uap:Logo>Assets\256x256.png</uap:Logo>
+          </uap:Protocol>
+        </uap:Extension>
       </Extensions>
     </Application>
   </Applications>

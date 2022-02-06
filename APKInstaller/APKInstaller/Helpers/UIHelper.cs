@@ -152,5 +152,19 @@ namespace APKInstaller.Helpers
         {
             return (double)(lists.ToList().IndexOf(list) + 1) * 100 / lists.Count();
         }
+
+        public static Uri ValidateAndGetUri(this string uriString)
+        {
+            Uri uri = null;
+            try
+            {
+                uri = new Uri(uriString.Contains("://") ? uriString : uriString.Contains("//") ? uriString.Replace("//", "://") : $"http://{uriString}");
+            }
+            catch (FormatException)
+            {
+                
+            }
+            return uri;
+        }
     }
 }
