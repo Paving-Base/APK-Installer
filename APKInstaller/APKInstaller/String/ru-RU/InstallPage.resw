@@ -260,7 +260,7 @@
     <value>Unzip ADB...</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
-    <value>Unzip complete</value>
+    <value>Unzip completed</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
     <value>Unzipping {0}/{1} ...</value>
@@ -278,7 +278,7 @@
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>Wait for download...</value>
+    <value>Waiting for download...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
     <value>Waiting for Device...</value>
