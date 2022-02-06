@@ -118,13 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>APK安装程序需要 ADB 即 Android 调试桥才能工作。单击”确定”进行下载。下载即表示您接受  Google 为 ADB 制定的条款和条件。</value>
-  </data>
-  <data name="ADBDownloadFailed" xml:space="preserve">
-    <value>ADB 下载失败</value>
-  </data>
-  <data name="ADBDownloadFailedInfo" xml:space="preserve">
-    <value>请检查您的网络连接并重试。</value>
+    <value>ADB, the Android Debug Bridge, is needed for APK Installer to work. Click "Download" to download it. By downloading, you accept the Google Terms and Conditions for ADB. If you have already downloaded ADB, click "Select" to select it.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>ADB 已存在</value>
@@ -153,6 +147,18 @@
   <data name="Close" xml:space="preserve">
     <value>关闭</value>
   </data>
+  <data name="Devices" xml:space="preserve">
+    <value>Devices</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="DownloadFailed" xml:space="preserve">
+    <value>Download Failed</value>
+  </data>
+  <data name="DownloadFailedInfo" xml:space="preserve">
+    <value>Please check your network connection or the URL and try again.</value>
+  </data>
   <data name="FindingWSA" xml:space="preserve">
     <value>正在寻找 WSA ......</value>
   </data>
@@ -178,11 +184,17 @@
     <value>安装 {0}?</value>
     <comment>{0} - AppName.</comment>
   </data>
+  <data name="Installing" xml:space="preserve">
+    <value>Installing...</value>
+  </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
     <value>原因: </value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
     <value>安装包已损坏或无效。</value>
+  </data>
+  <data name="InvalidURL" xml:space="preserve">
+    <value>Invalid or Incomplete URL</value>
   </data>
   <data name="Launch" xml:space="preserve">
     <value>启动</value>
@@ -199,6 +211,9 @@
   <data name="NoDeviceInfo" xml:space="preserve">
     <value>您可以安装 WSA。或者前往设置连接设备。</value>
   </data>
+  <data name="NoDeviceInfo10" xml:space="preserve">
+    <value>You can go to Settings to connect Device.</value>
+  </data>
   <data name="NoInternet" xml:space="preserve">
     <value>无法连接到网络</value>
   </data>
@@ -210,6 +225,9 @@
   </data>
   <data name="OK" xml:space="preserve">
     <value>好的</value>
+  </data>
+  <data name="OnlinePackage" xml:space="preserve">
+    <value>Online Package</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
     <value>包名称: {0}</value>
