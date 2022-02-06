@@ -120,6 +120,12 @@
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
     <value>關於</value>
   </data>
+  <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
+    <value>Auto download when package is from URL.</value>
+  </data>
+  <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
+    <value>Is Auto Download Online Packages?</value>
+  </data>
   <data name="CheckFailed" xml:space="preserve">
     <value>檢查失敗</value>
   </data>
@@ -131,6 +137,9 @@
   </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
     <value>清除快取</value>
+  </data>
+  <data name="CloseADBSettings.Description" xml:space="preserve">
+    <value>Close ADB may broken other Installers when they still open.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
     <value>Is Close ADB when Closing Installer?</value>
@@ -146,6 +155,9 @@
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
     <value>設備</value>
+  </data>
+  <data name="EULA.Content" xml:space="preserve">
+    <value>EULA</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
     <value>Feedback</value>
