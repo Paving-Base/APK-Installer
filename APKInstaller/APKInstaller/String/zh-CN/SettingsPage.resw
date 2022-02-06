@@ -121,10 +121,10 @@
     <value>关于</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>Auto download when package is from URL.</value>
+    <value>当安装包来自 URL 链接时自动下载。</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Is Auto Download Online Packages?</value>
+    <value>是否自动下载在线安装包？</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
     <value>检查失败</value>
@@ -139,13 +139,13 @@
     <value>清除缓存</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Close ADB may broken other Installers when they still open.</value>
+    <value>关闭 ADB 可能会损坏其他正在运行的安装程序。</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
     <value>关闭安装程序时是否关闭ADB？</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>在网络上连接设备。</value>
+    <value>通过网络连接设备。</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>连接设备</value>
@@ -157,7 +157,7 @@
     <value>设备</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
-    <value>EULA</value>
+    <value>用户协议</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
     <value>反馈</value>
@@ -169,10 +169,10 @@
     <value>前往测试页面</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
-    <value>去更新</value>
+    <value>前往更新</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>最后更新</value>
+    <value>最后检查</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>关闭它以连接到其他设备。</value>
