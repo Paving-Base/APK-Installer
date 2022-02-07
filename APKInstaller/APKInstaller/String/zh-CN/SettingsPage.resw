@@ -139,7 +139,7 @@
     <value>清除缓存</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>关闭 ADB 可能会使其他正在运行的安装程序崩溃</value>
+    <value>关闭 ADB 可能会使其他正在运行的安装程序崩溃。</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
     <value>关闭安装程序时是否关闭ADB？</value>
