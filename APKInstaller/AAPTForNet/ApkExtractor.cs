@@ -1,6 +1,7 @@
 ﻿using AAPTForNet.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
@@ -10,6 +11,7 @@ namespace AAPTForNet
 {
     internal class ApkExtractor
     {
+        private static readonly string tempPath = Path.Combine(Path.GetTempPath(), $@"APKInstaller\Caches\{Process.GetCurrentProcess().Id}\AAPToolTempImage.png");
 
         public static DumpModel ExtractManifest(string path)
         {
@@ -243,7 +245,15 @@ namespace AAPTForNet
                 return Icon.DefaultName;
             }
 
-            string tempPath = Path.Combine(Path.GetTempPath(), "AAPToolTempImage.png");
+            if (!Directory.Exists(tempPath.Substring(0, tempPath.LastIndexOf(@"\"))))
+            {
+                Directory.CreateDirectory(tempPath.Substring(0, tempPath.LastIndexOf(@"\")));
+            }
+            else if (Directory.Exists(tempPath))
+            {
+                Directory.Delete(tempPath, true);
+            }
+
             TryExtractIconImage(path, icon.IconName, tempPath);
             return tempPath;
         }

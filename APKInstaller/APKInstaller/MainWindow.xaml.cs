@@ -3,10 +3,7 @@ using APKInstaller.Helpers;
 using APKInstaller.Pages;
 using Microsoft.UI.Xaml;
 using System;
-using System.Diagnostics;
-using System.Drawing;
 using System.IO;
-using System.Runtime.InteropServices;
 using Windows.Storage;
 
 // To learn more about WinUI, the WinUI project structure,
@@ -37,10 +34,13 @@ namespace APKInstaller
             {
                 new AdvancedAdbClient().KillAdb();
             }
-            string TempPath = Path.Combine(ApplicationData.Current.TemporaryFolder.Path, @$"Caches\{Process.GetCurrentProcess().Id}");
-            if (Directory.Exists(TempPath))
+            string[] TempPaths = new string[] { Path.Combine(ApplicationData.Current.TemporaryFolder.Path, @$"Caches\{Environment.ProcessId}"), Path.Combine(Path.GetTempPath(), @$"APKInstaller\Caches\{Environment.ProcessId}") };
+            foreach (string TempPath in TempPaths)
             {
-                Directory.Delete(TempPath, true);
+                if (Directory.Exists(TempPath))
+                {
+                    Directory.Delete(TempPath, true);
+                }
             }
         }
 

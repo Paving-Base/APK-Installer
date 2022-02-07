@@ -162,7 +162,7 @@ namespace APKInstaller.Helpers
             }
             catch (FormatException)
             {
-                
+
             }
             return uri;
         }

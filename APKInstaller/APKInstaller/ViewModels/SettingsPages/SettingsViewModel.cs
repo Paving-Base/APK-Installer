@@ -8,9 +8,6 @@ using Microsoft.UI.Xaml.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Resources;
 
@@ -164,8 +161,6 @@ namespace APKInstaller.ViewModels.SettingsPages
         {
             if (name != null) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
         }
-
-        public string IssuePath = "https://github.com/Paving-Base/APK-Installer/issues";
 
         public static string VersionTextBlockText
         {

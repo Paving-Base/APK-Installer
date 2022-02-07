@@ -22,9 +22,7 @@ using System.Linq;
 using System.Net;
 using System.Runtime.InteropServices;
 using System.Text.RegularExpressions;
-using System.Threading;
 using System.Threading.Tasks;
-using Windows.ApplicationModel;
 using Windows.ApplicationModel.Resources;
 using Windows.Storage;
 using Windows.Storage.Pickers;
@@ -46,7 +44,7 @@ namespace APKInstaller.ViewModels
 
         private DeviceData _device;
         private readonly InstallPage _page;
-        private string TempPath = Path.Combine(ApplicationData.Current.TemporaryFolder.Path, @$"Caches\{Process.GetCurrentProcess().Id}");
+        private readonly string TempPath = Path.Combine(ApplicationData.Current.TemporaryFolder.Path, @$"Caches\{Process.GetCurrentProcess().Id}");
         private string APKTemp => Path.Combine(TempPath, @"NetAPKTemp.apk");
         private string ADBTemp => Path.Combine(TempPath, @"platform-tools.zip");
 
@@ -67,7 +65,7 @@ namespace APKInstaller.ViewModels
         public string VersionFormat => _loader.GetString("VersionFormat");
         public string PackageNameFormat => _loader.GetString("PackageNameFormat");
 
-        private bool AutoGetNetAPK = SettingsHelper.Get<bool>(SettingsHelper.AutoGetNetAPK);
+        private readonly bool AutoGetNetAPK = SettingsHelper.Get<bool>(SettingsHelper.AutoGetNetAPK);
 
         private ApkInfo _apkInfo = null;
         public ApkInfo ApkInfo

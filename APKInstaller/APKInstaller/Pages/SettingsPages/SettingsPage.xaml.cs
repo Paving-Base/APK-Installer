@@ -1,20 +1,12 @@
 ﻿using AdvancedSharpAdbClient;
 using APKInstaller.Helpers;
-using APKInstaller.Models;
 using APKInstaller.ViewModels.SettingsPages;
-using CommunityToolkit.WinUI;
-using CommunityToolkit.WinUI.UI.Controls;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using Windows.ApplicationModel;
-using Windows.ApplicationModel.Resources;
 using Windows.Storage;
 using Windows.System;
-using DispatcherQueue = Microsoft.UI.Dispatching.DispatcherQueue;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -69,9 +61,6 @@ namespace APKInstaller.Pages.SettingsPages
                     break;
                 case "TestPage":
                     _ = Frame.Navigate(typeof(TestPage));
-                    break;
-                case "FeedBack":
-                    _ = Launcher.LaunchUriAsync(new Uri(Provider.IssuePath));
                     break;
                 case "LogFolder":
                     _ = await Launcher.LaunchFolderAsync(await ApplicationData.Current.LocalFolder.CreateFolderAsync("MetroLogs", CreationCollisionOption.OpenIfExists));

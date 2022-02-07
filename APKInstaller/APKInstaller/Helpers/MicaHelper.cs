@@ -29,7 +29,7 @@ namespace APKInstaller.Helpers
         public static extern int DwmSetWindowAttribute(IntPtr hwnd, DwmWindowAttribute dwAttribute, ref int pvAttribute, int cbAttribute);
         public static int SetWindowAttribute(IntPtr hwnd, DwmWindowAttribute attribute, int parameter) => DwmSetWindowAttribute(hwnd, attribute, ref parameter, Marshal.SizeOf<int>());
 
-        private static void SetMica(Window window,ElementTheme theme, OSVersion osVersion, BackdropType micaType, int captionHeight)
+        private static void SetMica(Window window, ElementTheme theme, OSVersion osVersion, BackdropType micaType, int captionHeight)
         {
             int trueValue = 0x01;
             int falseValue = 0x00;
