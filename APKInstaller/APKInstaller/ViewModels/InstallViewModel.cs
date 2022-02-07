@@ -44,7 +44,7 @@ namespace APKInstaller.ViewModels
 
         private DeviceData _device;
         private readonly InstallPage _page;
-        private readonly string TempPath = Path.Combine(ApplicationData.Current.TemporaryFolder.Path, @$"Caches\{Process.GetCurrentProcess().Id}");
+        private readonly string TempPath = Path.Combine(ApplicationData.Current.TemporaryFolder.Path, @$"Caches\{Environment.ProcessId}");
         private string APKTemp => Path.Combine(TempPath, @"NetAPKTemp.apk");
         private string ADBTemp => Path.Combine(TempPath, @"platform-tools.zip");
 

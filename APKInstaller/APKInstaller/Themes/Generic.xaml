@@ -1,8 +1,8 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///Styles/Setting.xaml" />
-        <ResourceDictionary Source="ms-appx:///Styles/KeyVisual.xaml" />
-        <ResourceDictionary Source="ms-appx:///Styles/SettingsGroup.xaml" />
-        <ResourceDictionary Source="ms-appx:///Styles/IsEnabledTextBlock.xaml" />
+        <ResourceDictionary Source="ms-appx:///Controls/Setting/Setting.xaml" />
+        <ResourceDictionary Source="ms-appx:///Controls/KeyVisual/KeyVisual.xaml" />
+        <ResourceDictionary Source="ms-appx:///Controls/SettingsGroup/SettingsGroup.xaml" />
+        <ResourceDictionary Source="ms-appx:///Controls/IsEnabledTextBlock/IsEnabledTextBlock.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
