@@ -33,7 +33,7 @@
                         SelectionChanged="SelectDeviceBox_SelectionChanged">
                         <ListView.ItemTemplate>
                             <DataTemplate x:DataType="sharpadbclient:DeviceData">
-                                <ListViewItem Background="Transparent">
+                                <ListViewItem Margin="0,1" Background="Transparent">
                                     <controls:Setting
                                         Description="{x:Bind State}"
                                         Header="{x:Bind Name}"
@@ -128,7 +128,7 @@
                                     <HyperlinkButton
                                         x:Uid="/SettingsPage/ReleaseNotes"
                                         Margin="2,0"
-                                        NavigateUri="https://github.com/Paving-Base/APK-Installer/releases/" />
+                                        NavigateUri="https://github.com/Paving-Base/APK-Installer/releases/latest" />
                                     <HyperlinkButton
                                         x:Uid="/SettingsPage/EULA"
                                         Margin="2,0"

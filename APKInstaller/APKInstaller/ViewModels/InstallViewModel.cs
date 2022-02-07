@@ -355,7 +355,7 @@ namespace APKInstaller.ViewModels
             }
         }
 
-        private Visibility _textOutputVisibility;
+        private Visibility _textOutputVisibility = Visibility.Collapsed;
         public Visibility TextOutputVisibility
         {
             get => _textOutputVisibility;
@@ -366,7 +366,7 @@ namespace APKInstaller.ViewModels
             }
         }
 
-        private Visibility _installOutputVisibility;
+        private Visibility _installOutputVisibility = Visibility.Collapsed;
         public Visibility InstallOutputVisibility
         {
             get => _installOutputVisibility;
@@ -377,7 +377,7 @@ namespace APKInstaller.ViewModels
             }
         }
 
-        private Visibility _actionVisibility;
+        private Visibility _actionVisibility = Visibility.Collapsed;
         public Visibility ActionVisibility
         {
             get => _actionVisibility;
@@ -388,7 +388,7 @@ namespace APKInstaller.ViewModels
             }
         }
 
-        private Visibility _secondaryActionVisibility;
+        private Visibility _secondaryActionVisibility = Visibility.Collapsed;
         public Visibility SecondaryActionVisibility
         {
             get => _secondaryActionVisibility;
@@ -399,7 +399,7 @@ namespace APKInstaller.ViewModels
             }
         }
 
-        private Visibility _fileSelectVisibility;
+        private Visibility _fileSelectVisibility = Visibility.Collapsed;
         public Visibility FileSelectVisibility
         {
             get => _fileSelectVisibility;
@@ -410,7 +410,7 @@ namespace APKInstaller.ViewModels
             }
         }
 
-        private Visibility _downloadVisibility;
+        private Visibility _downloadVisibility = Visibility.Collapsed;
         public Visibility DownloadVisibility
         {
             get => _downloadVisibility;
@@ -421,7 +421,7 @@ namespace APKInstaller.ViewModels
             }
         }
 
-        private Visibility _deviceSelectVisibility;
+        private Visibility _deviceSelectVisibility = Visibility.Collapsed;
         public Visibility DeviceSelectVisibility
         {
             get => _deviceSelectVisibility;
@@ -432,7 +432,7 @@ namespace APKInstaller.ViewModels
             }
         }
 
-        private Visibility _cancelOperationVisibility;
+        private Visibility _cancelOperationVisibility = Visibility.Collapsed;
         public Visibility CancelOperationVisibility
         {
             get => _cancelOperationVisibility;
@@ -443,7 +443,7 @@ namespace APKInstaller.ViewModels
             }
         }
 
-        private Visibility _messagesToUserVisibility;
+        private Visibility _messagesToUserVisibility = Visibility.Collapsed;
         public Visibility MessagesToUserVisibility
         {
             get => _messagesToUserVisibility;
@@ -454,7 +454,7 @@ namespace APKInstaller.ViewModels
             }
         }
 
-        private Visibility _launchWhenReadyVisibility;
+        private Visibility _launchWhenReadyVisibility = Visibility.Collapsed;
         public Visibility LaunchWhenReadyVisibility
         {
             get => _launchWhenReadyVisibility;
@@ -813,7 +813,7 @@ namespace APKInstaller.ViewModels
                 {
                     ApkInfo = new ApkInfo();
                 }
-                if (string.IsNullOrEmpty(ApkInfo.PackageName) && NetAPKExist)
+                if (string.IsNullOrEmpty(ApkInfo?.PackageName) && NetAPKExist)
                 {
                     PackageError(_loader.GetString("InvalidPackage"));
                 }
@@ -821,9 +821,37 @@ namespace APKInstaller.ViewModels
                 {
                 checkdevice:
                     WaitProgressText = _loader.GetString("Checking");
-                    if (CheckDevice() && _device != null && NetAPKExist)
+                    if (CheckDevice() && _device != null)
                     {
-                        CheckAPK();
+                        if (NetAPKExist)
+                        {
+                            CheckAPK();
+                        }
+                        else
+                        {
+                            ResetUI();
+                            Regex[] UriRegex = new Regex[] { new Regex(@":\?source=(.*)"), new Regex(@"://(.*)") };
+                            string Uri = UriRegex[0].IsMatch(_url.ToString()) ? UriRegex[0].Match(_url.ToString()).Groups[1].Value : UriRegex[1].Match(_url.ToString()).Groups[1].Value;
+                            Uri Url = Uri.ValidateAndGetUri();
+                            if (Url != null)
+                            {
+                                _url = Url;
+                                AppName = _loader.GetString("OnlinePackage");
+                                DownloadButtonText = _loader.GetString("Download");
+                                CancelOperationButtonText = _loader.GetString("Close");
+                                DownloadVisibility = CancelOperationVisibility = Visibility.Visible;
+                                AppVersionVisibility = AppPublisherVisibility = AppCapabilitiesVisibility = Visibility.Collapsed;
+                                if (AutoGetNetAPK)
+                                {
+                                    IsInitialized = false;
+                                    LoadNetAPK();
+                                }
+                            }
+                            else
+                            {
+                                PackageError(_loader.GetString("InvalidURL"));
+                            }
+                        }
                     }
                     else
                     {
@@ -834,7 +862,7 @@ namespace APKInstaller.ViewModels
                             ActionButtonText = _loader.GetString("Install");
                             InfoMessage = _loader.GetString("WaitingDevice");
                             DeviceSelectButtonText = _loader.GetString("Devices");
-                            AppName = string.Format(_loader.GetString("WaitingForInstallFormat"), ApkInfo.AppName);
+                            AppName = string.Format(_loader.GetString("WaitingForInstallFormat"), ApkInfo?.AppName);
                             ActionVisibility = DeviceSelectVisibility = MessagesToUserVisibility = Visibility.Visible;
                         }
                         else
@@ -961,7 +989,7 @@ namespace APKInstaller.ViewModels
                 ActionButtonText = _loader.GetString("Install");
                 InfoMessage = _loader.GetString("WaitingDevice");
                 ActionVisibility = MessagesToUserVisibility = Visibility.Visible;
-                AppName = string.Format(_loader.GetString("WaitingForInstallFormat"), ApkInfo.AppName);
+                AppName = string.Format(_loader.GetString("WaitingForInstallFormat"), ApkInfo?.AppName);
                 ContentDialog dialog = new MarkdownDialog
                 {
                     XamlRoot = _page.XamlRoot,
@@ -972,28 +1000,28 @@ namespace APKInstaller.ViewModels
             }
             PackageManager manager = new PackageManager(client, _device);
             VersionInfo info = null;
-            if (ApkInfo != null)
+            if (ApkInfo != null && !string.IsNullOrEmpty(ApkInfo?.PackageName))
             {
-                info = manager.GetVersionInfo(ApkInfo.PackageName);
+                info = manager.GetVersionInfo(ApkInfo?.PackageName);
             }
             if (info == null)
             {
                 ActionButtonText = _loader.GetString("Install");
-                AppName = string.Format(_loader.GetString("InstallFormat"), ApkInfo.AppName);
+                AppName = string.Format(_loader.GetString("InstallFormat"), ApkInfo?.AppName);
                 ActionVisibility = LaunchWhenReadyVisibility = Visibility.Visible;
             }
-            else if (info.VersionCode < int.Parse(ApkInfo.VersionCode))
+            else if (info.VersionCode < int.Parse(ApkInfo?.VersionCode))
             {
                 ActionButtonText = _loader.GetString("Update");
-                AppName = string.Format(_loader.GetString("UpdateFormat"), ApkInfo.AppName);
+                AppName = string.Format(_loader.GetString("UpdateFormat"), ApkInfo?.AppName);
                 ActionVisibility = LaunchWhenReadyVisibility = Visibility.Visible;
             }
             else
             {
                 ActionButtonText = _loader.GetString("Reinstall");
                 SecondaryActionButtonText = _loader.GetString("Launch");
-                AppName = string.Format(_loader.GetString("ReinstallFormat"), ApkInfo.AppName);
-                TextOutput = string.Format(_loader.GetString("ReinstallOutput"), ApkInfo.AppName);
+                AppName = string.Format(_loader.GetString("ReinstallFormat"), ApkInfo?.AppName);
+                TextOutput = string.Format(_loader.GetString("ReinstallOutput"), ApkInfo?.AppName);
                 ActionVisibility = SecondaryActionVisibility = TextOutputVisibility = Visibility.Visible;
             }
         }
@@ -1024,7 +1052,7 @@ namespace APKInstaller.ViewModels
                 return;
             }
 
-            if (string.IsNullOrEmpty(ApkInfo.PackageName))
+            if (string.IsNullOrEmpty(ApkInfo?.PackageName))
             {
                 PackageError(_loader.GetString("InvalidPackage"));
             }
@@ -1041,7 +1069,7 @@ namespace APKInstaller.ViewModels
                     ActionButtonText = _loader.GetString("Install");
                     InfoMessage = _loader.GetString("WaitingDevice");
                     DeviceSelectButtonText = _loader.GetString("Devices");
-                    AppName = string.Format(_loader.GetString("WaitingForInstallFormat"), ApkInfo.AppName);
+                    AppName = string.Format(_loader.GetString("WaitingForInstallFormat"), ApkInfo?.AppName);
                     ActionVisibility = DeviceSelectVisibility = MessagesToUserVisibility = Visibility.Visible;
                 }
             }
@@ -1191,7 +1219,7 @@ namespace APKInstaller.ViewModels
             return false;
         }
 
-        public void OpenAPP() => new AdvancedAdbClient().StartApp(_device, ApkInfo.PackageName);
+        public void OpenAPP() => new AdvancedAdbClient().StartApp(_device, ApkInfo?.PackageName);
 
         public async void InstallAPP()
         {
