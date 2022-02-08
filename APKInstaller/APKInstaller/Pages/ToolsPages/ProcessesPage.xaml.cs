@@ -1,15 +1,11 @@
 ﻿using AdvancedSharpAdbClient;
 using AdvancedSharpAdbClient.DeviceCommands;
 using APKInstaller.Helpers;
+using APKInstaller.ViewModels.ToolsPages;
+using CommunityToolkit.WinUI;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Data;
 using Microsoft.UI.Xaml.Navigation;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Threading.Tasks;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -19,91 +15,28 @@ namespace APKInstaller.Pages.ToolsPages
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class ProcessesPage : Page, INotifyPropertyChanged
+    public sealed partial class ProcessesPage : Page
     {
-        private List<DeviceData> devices;
-
-        private List<string> deviceList = new List<string>();
-        internal List<string> DeviceList
-        {
-            get => deviceList;
-            set
-            {
-                deviceList = value;
-                RaisePropertyChangedEvent();
-            }
-        }
-
-        private IEnumerable<AndroidProcess> processes;
-        internal IEnumerable<AndroidProcess> Processes
-        {
-            get => processes;
-            set
-            {
-                processes = value;
-                RaisePropertyChangedEvent();
-            }
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private void RaisePropertyChangedEvent([System.Runtime.CompilerServices.CallerMemberName] string name = null)
-        {
-            if (name != null) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
-        }
+        private ProcessesViewModel Provider;
 
         public ProcessesPage() => InitializeComponent();
 
-        protected override async void OnNavigatedTo(NavigationEventArgs e)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
+            Provider = new ProcessesViewModel(this);
+            DataContext = Provider;
+            Provider.TitleBar = TitleBar;
             ADBHelper.Monitor.DeviceChanged += OnDeviceChanged;
-            await Task.Run(() => _ = DispatcherQueue.TryEnqueue(() => GetDevices()));
         }
 
-        private void GetDevices()
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
-            TitleBar.ShowProgressRing();
-            devices = new AdvancedAdbClient().GetDevices();
-            DeviceList.Clear();
-            if (devices.Count > 0)
-            {
-                foreach (DeviceData device in devices)
-                {
-                    if (!string.IsNullOrEmpty(device.Name))
-                    {
-                        DeviceList.Add(device.Name);
-                    }
-                    else if (!string.IsNullOrEmpty(device.Model))
-                    {
-                        DeviceList.Add(device.Model);
-                    }
-                    else if (!string.IsNullOrEmpty(device.Product))
-                    {
-                        DeviceList.Add(device.Product);
-                    }
-                    else if (!string.IsNullOrEmpty(device.Serial))
-                    {
-                        DeviceList.Add(device.Serial);
-                    }
-                    else
-                    {
-                        DeviceList.Add("Device");
-                    }
-                }
-                if (DeviceComboBox.SelectedIndex == -1)
-                {
-                    DeviceComboBox.SelectedIndex = 0;
-                }
-            }
-            else if (Processes != null)
-            {
-                Processes = null;
-            }
-            TitleBar.HideProgressRing();
+            base.OnNavigatedFrom(e);
+            ADBHelper.Monitor.DeviceChanged -= OnDeviceChanged;
         }
 
-        private void OnDeviceChanged(object sender, DeviceDataEventArgs e) => _ = DispatcherQueue.TryEnqueue(() => GetDevices());
+        private void OnDeviceChanged(object sender, DeviceDataEventArgs e) => _ = DispatcherQueue.EnqueueAsync(() => Provider.GetDevices());
 
         private void TitleBar_BackRequested(object sender, RoutedEventArgs e)
         {
@@ -116,47 +49,26 @@ namespace APKInstaller.Pages.ToolsPages
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             AdvancedAdbClient client = new AdvancedAdbClient();
-            Processes = DeviceExtensions.ListProcesses(client, devices[(sender as ComboBox).SelectedIndex]);
+            Provider.Processes = DeviceExtensions.ListProcesses(client, Provider.devices[(sender as ComboBox).SelectedIndex]);
         }
 
-        private void TitleBar_RefreshEvent(object sender, RoutedEventArgs e)
+        private async void TitleBar_RefreshEvent(object sender, RoutedEventArgs e)
         {
             TitleBar.ShowProgressRing();
-            GetDevices();
-            TitleBar.ShowProgressRing();
-            AdvancedAdbClient client = new AdvancedAdbClient();
-            Processes = DeviceExtensions.ListProcesses(client, devices[DeviceComboBox.SelectedIndex]);
+            await DispatcherQueue.EnqueueAsync(() =>
+            {
+                Provider.GetDevices();
+                TitleBar.ShowProgressRing();
+                AdvancedAdbClient client = new AdvancedAdbClient();
+                Provider.Processes = DeviceExtensions.ListProcesses(client, Provider.devices[DeviceComboBox.SelectedIndex]);
+            });
             TitleBar.HideProgressRing();
         }
-    }
 
-    internal class ProcesseConverter : IValueConverter
-    {
-        public object Convert(object value, Type targetType, object parameter, string language)
+        private async void ComboBox_Loaded(object sender, RoutedEventArgs e)
         {
-            switch ((string)parameter)
-            {
-                case "Size": return ((double)(int)value).GetSizeString();
-                case "Name": return ((string)value).Split('/').Last().Split(':').First().Split('@').First();
-                case "State":
-                    switch ((AndroidProcessState)value)
-                    {
-                        case AndroidProcessState.Unknown: return "Unknown";
-                        case AndroidProcessState.D: return "Sleep(D)";
-                        case AndroidProcessState.R: return "Running";
-                        case AndroidProcessState.S: return "Sleep(S)";
-                        case AndroidProcessState.T: return "Stopped";
-                        case AndroidProcessState.W: return "Paging";
-                        case AndroidProcessState.X: return "Dead";
-                        case AndroidProcessState.Z: return "Defunct";
-                        case AndroidProcessState.K: return "Wakekill";
-                        case AndroidProcessState.P: return "Parked";
-                        default: return value.ToString();
-                    }
-                default: return value.ToString();
-            }
+            Provider.DeviceComboBox = sender as ComboBox;
+            await DispatcherQueue.EnqueueAsync(() => Provider.GetDevices());
         }
-
-        public object ConvertBack(object value, Type targetType, object parameter, string language) => (Visibility)value == Visibility.Visible;
     }
 }

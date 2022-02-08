@@ -7,17 +7,19 @@
     xmlns:helper="using:APKInstaller.Helpers"
     xmlns:local="using:APKInstaller.Pages.ToolsPages"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolspages="using:APKInstaller.ViewModels.ToolsPages"
+    d:DataContext="{d:DesignInstance Type=toolspages:ApplicationsViewModel}"
     mc:Ignorable="d">
     <Page.Resources>
-        <local:ApplicationConverter x:Key="ApplicationConverter" />
+        <toolspages:ApplicationConverter x:Key="ApplicationConverter" />
     </Page.Resources>
     <Grid>
         <ListView
             x:Name="ListView"
-            ItemsSource="{x:Bind Applications, Mode=OneWay}"
+            ItemsSource="{Binding Applications, Mode=OneWay}"
             Loaded="ListView_Loaded">
             <ListView.ItemTemplate>
-                <DataTemplate x:DataType="local:APKInfo">
+                <DataTemplate x:DataType="toolspages:APKInfo">
                     <ListViewItem Background="Transparent" RightTapped="ListViewItem_RightTapped">
                         <controls:Setting Header="{x:Bind Name}" Style="{StaticResource ListViewItemContentSettingStyle}">
                             <controls:Setting.Icon>
@@ -87,7 +89,7 @@
                 <ComboBox
                     x:Name="DeviceComboBox"
                     VerticalAlignment="Center"
-                    ItemsSource="{x:Bind DeviceList, Mode=OneWay}"
+                    Loaded="ComboBox_Loaded"
                     PlaceholderText="Waiting for Device..."
                     SelectionChanged="ComboBox_SelectionChanged" />
             </controls:TitleBar.RightAreaContent>
