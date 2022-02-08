@@ -172,7 +172,7 @@
     <value>Go to Update</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Last Checked</value>
+    <value>Last Checked: </value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>Disable it to connect to other device.</value>
