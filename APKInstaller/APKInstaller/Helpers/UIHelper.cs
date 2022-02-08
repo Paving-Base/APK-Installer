@@ -78,7 +78,7 @@ namespace APKInstaller.Helpers
 
         public static void Navigate(Type pageType, NavigationTransitionInfo TransitionInfo, object e = null)
         {
-            DispatcherQueue.EnqueueAsync(() =>
+            DispatcherQueue?.EnqueueAsync(() =>
             {
                 _ = (MainPage?.CoreAppFrame.Navigate(pageType, e, TransitionInfo));
             });

@@ -177,7 +177,7 @@ namespace APKInstaller.ViewModels.SettingsPages
 
         public void OnDeviceChanged(object sender, DeviceDataEventArgs e)
         {
-            UIHelper.DispatcherQueue.EnqueueAsync(() =>
+            UIHelper.DispatcherQueue?.EnqueueAsync(() =>
             {
                 DeviceList = new AdvancedAdbClient().GetDevices();
             });

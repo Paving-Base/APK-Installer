@@ -63,7 +63,7 @@ namespace APKInstaller.Helpers
             SetMica(window, theme, osVersion, micaType, captionHeight);
             SettingsHelper.UISettings.ColorValuesChanged += (s, e) =>
             {
-                UIHelper.DispatcherQueue.EnqueueAsync(() =>
+                UIHelper.DispatcherQueue?.EnqueueAsync(() =>
                 {
                     EnableMica(window, micaType, captionHeight);
                 });
