@@ -93,13 +93,14 @@
                         Text="{x:Bind sys:String.Format(Provider.VersionFormat, Provider.ApkInfo.VersionName), Mode=OneWay}"
                         ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"
                         Visibility="{Binding AppVersionVisibility}" />
-                    <controls:CapabilitiesInfoControl
-                        x:Name="AppCapabilities"
-                        x:Uid="/InstallPage/AppCapabilities"
-                        Grid.Row="4"
-                        Margin="0,24,0,0"
-                        CapabilitiesList="{x:Bind Provider.ApkInfo.Permissions, Mode=OneWay}"
-                        Visibility="{Binding AppCapabilitiesVisibility}" />
+                    <Grid Grid.Row="4" Margin="0,24,0,0">
+                        <controls:CapabilitiesInfoControl
+                            x:Name="AppCapabilities"
+                            x:Uid="/InstallPage/AppCapabilities"
+                            ApkInfo="{Binding ApkInfo}"
+                            CapabilitiesList="{Binding ApkInfo.Permissions, Mode=OneWay}"
+                            Visibility="{Binding AppCapabilitiesVisibility}" />
+                    </Grid>
                 </Grid>
                 <Border
                     x:Name="AppIconContainer"
@@ -141,7 +142,7 @@
             </Grid>
             <Grid
                 x:Name="BottomContentContainer"
-                Grid.Row="1"
+                Grid.Row="2"
                 Margin="24,0,24,24">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
@@ -212,9 +213,9 @@
                         <TextBlock
                             x:Name="TextOutput"
                             Margin="6,6,6,6"
-                            TextWrapping="WrapWholeWords"
                             IsTextSelectionEnabled="True"
                             Text="{Binding TextOutput}"
+                            TextWrapping="WrapWholeWords"
                             ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
                     </ScrollViewer>
                 </Grid>

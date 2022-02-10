@@ -8,6 +8,7 @@ namespace AAPTForNet.Models
     public class ApkInfo
     {
         public string AppName { get; set; }
+        public string SplitName { get; set; }
         public string PackageName { get; set; }
         public string VersionName { get; set; }
         public string VersionCode { get; set; }
@@ -18,6 +19,7 @@ namespace AAPTForNet.Models
         public Icon Icon { get; set; }
         public SDKInfo MinSDK { get; set; }
         public SDKInfo TargetSDK { get; set; }
+        public List<ApkInfo> SplitApks { get; set; }
         public List<string> Permissions { get; set; }
         /// <summary>
         /// Supported application binary interfaces
@@ -52,6 +54,22 @@ namespace AAPTForNet.Models
             }
         }
 
+        public bool IsSplit
+        {
+            get
+            {
+                return SplitName != "Unknown";
+            }
+        }
+
+        public bool IsBundle
+        {
+            get
+            {
+                return SplitApks != null && SplitApks.Any();
+            }
+        }
+
         public ApkInfo()
         {
             AppName = string.Empty;
@@ -66,6 +84,10 @@ namespace AAPTForNet.Models
             SupportedABIs = new List<string>();
             SupportScreens = new List<string>();
         }
+
+        public void AddSplit(ApkInfo info) => SplitApks.Add(info);
+
+        public void AddSplit(string path) => SplitApks.Add(AAPTool.Decompile(path));
 
         internal ApkInfo megre(params ApkInfo[] apks)
         {
@@ -98,6 +120,7 @@ namespace AAPTForNet.Models
             ApkInfo pckApk = apks.FirstOrDefault(a => a.PackageName.Length > 0);
             if (pckApk != null)
             {
+                init.SplitName = pckApk.SplitName;
                 init.VersionName = pckApk.VersionName;
                 init.VersionCode = pckApk.VersionCode;
                 init.PackageName = pckApk.PackageName;
@@ -140,7 +163,26 @@ namespace AAPTForNet.Models
                 init.FullPath = pathApk.FullPath;
             }
 
+            if(init.IsSplit)
+            {
+                if (init.AppName == "Unknown" && init.SplitName != "Unknown")
+                {
+                    init.AppName = init.SplitName;
+                }
+                if (init.VersionName == "Unknown" && init.VersionCode != "Unknown")
+                {
+                    init.VersionName = init.VersionCode;
+                }
+            }
+
             return init;
         }
+    }
+
+    internal class ApkInfos
+    {
+        public string PackageName { get; set; }
+        public string VersionCode { get; set; }
+        public List<ApkInfo> Apks { get; set; }
     }
 }

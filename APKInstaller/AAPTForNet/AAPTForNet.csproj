@@ -51,6 +51,7 @@
     <Compile Include="Filters\PermissionFilter.cs" />
     <Compile Include="Filters\SDKFilter.cs" />
     <Compile Include="Filters\SupportScrFilter.cs" />
+    <Compile Include="Helpers\Utils.cs" />
     <Compile Include="Models\ApkInfo.cs" />
     <Compile Include="Models\Configs.cs" />
     <Compile Include="Models\DumpModel.cs" />
@@ -60,12 +61,12 @@
     <Compile Include="ResourceDetector.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="tool\aapt.exe">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <Content Include="tool\aapt2.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

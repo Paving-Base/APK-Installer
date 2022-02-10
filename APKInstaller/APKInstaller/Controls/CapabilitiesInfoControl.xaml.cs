@@ -1,8 +1,10 @@
-﻿using APKInstaller.Helpers;
+﻿using AAPTForNet.Models;
+using APKInstaller.Helpers;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Documents;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -13,24 +15,46 @@ namespace APKInstaller.Controls
     {
         public CapabilitiesInfoControl() => InitializeComponent();
 
+        public static readonly DependencyProperty HeadTextProperty = DependencyProperty.Register(
+           "HeadText",
+           typeof(string),
+           typeof(CapabilitiesInfoControl),
+           new PropertyMetadata(default(string)));
+
+        public static readonly DependencyProperty ApkInfoProperty = DependencyProperty.Register(
+           "ApkInfo",
+           typeof(ApkInfo),
+           typeof(CapabilitiesInfoControl),
+           new PropertyMetadata(new ApkInfo()));
+
+        public static readonly DependencyProperty CapabilitiesListProperty = DependencyProperty.Register(
+           "CapabilitiesList",
+           typeof(List<string>),
+           typeof(CapabilitiesInfoControl),
+           new PropertyMetadata(default(List<string>), OnCapabilitiesListChanged));
+
+        [Localizable(true)]
         public string HeadText
         {
-            get => HeaderTextBlock.Text;
-            set => HeaderTextBlock.Text = value ?? string.Empty;
+            get => (string)GetValue(HeadTextProperty);
+            set => SetValue(HeadTextProperty, value);
         }
 
-        private List<string> _capabilitiesList;
+        public ApkInfo ApkInfo
+        {
+            get => (ApkInfo)GetValue(ApkInfoProperty);
+            set => SetValue(ApkInfoProperty, value);
+        }
+
         public List<string> CapabilitiesList
         {
-            get => _capabilitiesList;
-            set
-            {
-                if (value != _capabilitiesList)
-                {
-                    _capabilitiesList = value;
-                    GetTextBlock();
-                }
-            }
+            get => (List<string>)GetValue(CapabilitiesListProperty);
+            set => SetValue(CapabilitiesListProperty, value);
+        }
+
+        private static void OnCapabilitiesListChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            ((CapabilitiesInfoControl)d).GetTextBlock();
         }
 
         private void GetTextBlock()
@@ -51,6 +75,7 @@ namespace APKInstaller.Controls
                     RichTextBlockCapabilities.Blocks.Add(paragraph);
                 }
             }
+            if (RichTextBlockFullCapabilities.Blocks.Count <= 3) { MoreButton.Visibility = Visibility.Collapsed; }
         }
 
         private void MoreButton_Click(object sender, RoutedEventArgs e)
@@ -58,9 +83,9 @@ namespace APKInstaller.Controls
             MoreButton.Visibility = Visibility.Collapsed;
             Root.BorderThickness = new Thickness(1, 0, 0, 0);
             RichTextBlockCapabilities.Visibility = Visibility.Collapsed;
-            RichTextBlockFullCapabilities.Visibility = Visibility.Visible;
+            RichTextBlockFullStackPanel.Visibility = Visibility.Visible;
             CapabilitiesHeight.Height = new GridLength(1, GridUnitType.Star);
-            _ = RichTextBlockFullCapabilities.Focus(FocusState.Pointer);
+            _ = RichTextBlockFullStackPanel.Focus(FocusState.Pointer);
         }
 
         private void Root_LostFocus(object sender, RoutedEventArgs e)
@@ -68,7 +93,7 @@ namespace APKInstaller.Controls
             MoreButton.Visibility = Visibility.Visible;
             Root.BorderThickness = new Thickness(0, 0, 0, 0);
             RichTextBlockCapabilities.Visibility = Visibility.Visible;
-            RichTextBlockFullCapabilities.Visibility = Visibility.Collapsed;
+            RichTextBlockFullStackPanel.Visibility = Visibility.Collapsed;
             CapabilitiesHeight.Height = new GridLength(1, GridUnitType.Auto);
         }
     }

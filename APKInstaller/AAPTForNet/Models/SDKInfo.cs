@@ -38,7 +38,9 @@ namespace AAPTForNet.Models
             "Oreo",
             "Pie",
             "Android10",
-            "Android11"  // API level 30
+            "Android11",  // API level 30
+            "Android12",
+            "Android13"
         };
 
         private static readonly string[] AndroidVersionCodes = {
@@ -72,7 +74,9 @@ namespace AAPTForNet.Models
             "8.1",
             "9",
             "10",
-            "11"    // API level 30
+            "11",    // API level 30
+            "12",
+            "13"
         };
 
         public string APILever { get; }

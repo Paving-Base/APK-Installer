@@ -24,6 +24,7 @@
         <TextBlock
             x:Name="HeaderTextBlock"
             Grid.Row="0"
+            Text="{x:Bind HeadText, Mode=OneWay}"
             TextWrapping="WrapWholeWords"
             ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
         <ScrollViewer
@@ -36,13 +37,36 @@
                     IsTextSelectionEnabled="True"
                     Opacity="0.6"
                     TextWrapping="Wrap" />
-                <RichTextBlock
-                    x:Name="RichTextBlockFullCapabilities"
-                    IsTextSelectionEnabled="True"
+                <StackPanel
+                    x:Name="RichTextBlockFullStackPanel"
                     LostFocus="Root_LostFocus"
-                    Opacity="0.6"
-                    TextWrapping="Wrap"
-                    Visibility="Collapsed" />
+                    Visibility="Collapsed">
+                    <RichTextBlock
+                        x:Name="RichTextBlockFullCapabilities"
+                        IsTextSelectionEnabled="True"
+                        Opacity="0.6"
+                        TextWrapping="Wrap" />
+                    <Grid
+                        x:Name="OptionalAndRelatedPackagesContainer"
+                        Grid.Row="1"
+                        Margin="0,24,0,0"
+                        Visibility="{x:Bind ApkInfo.IsBundle, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <TextBlock
+                                x:Name="OptionalAndRelatedPackagesText"
+                                Text="还将安装以下应用:"
+                                ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
+                            <ListView
+                                x:Name="PackageListView"
+                                Grid.Row="1"
+                                ItemsSource="{x:Bind ApkInfo.SplitApks, Mode=OneWay}" />
+                        </Grid>
+                    </Grid>
+                </StackPanel>
             </Grid>
         </ScrollViewer>
         <Button

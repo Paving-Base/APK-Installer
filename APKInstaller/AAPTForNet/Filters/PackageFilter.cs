@@ -21,6 +21,7 @@ namespace AAPTForNet.Filters
         {
             return new ApkInfo()
             {
+                SplitName = getValueOrDefault("split"),
                 PackageName = getValueOrDefault("package"),
                 VersionName = getValueOrDefault("versionName"),
                 VersionCode = getValueOrDefault("versionCode"),

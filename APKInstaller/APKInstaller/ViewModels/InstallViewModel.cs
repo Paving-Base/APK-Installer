@@ -53,7 +53,7 @@ namespace APKInstaller.ViewModels
         private string _path = string.Empty;
 #else
         private Uri _url = new Uri("apkinstaller:?source=https://dl.coolapk.com/down?pn=com.coolapk.market&id=NDU5OQ&h=46bb9d98&from=from-web");
-        private string _path = @"C:\Users\qq251\Downloads\Programs\Minecraft_1.17.40.06_sign.apk";
+        private string _path = @"C:\Users\qq251\Downloads\Programs\Skit_com,pavelrekun,skit,premium_2,4,1.apks";
 #endif
         private bool NetAPKExist => _path != APKTemp || File.Exists(_path);
 
@@ -1274,7 +1274,29 @@ namespace APKInstaller.ViewModels
                 ActionVisibility = SecondaryActionVisibility = TextOutputVisibility = InstallOutputVisibility = Visibility.Collapsed;
                 await Task.Run(() =>
                 {
-                    new AdvancedAdbClient().Install(_device, File.Open(_path, FileMode.Open, FileAccess.Read));
+                    if (ApkInfo.IsBundle)
+                    {
+                        AdvancedAdbClient client = new AdvancedAdbClient();
+                        ConsoleOutputReceiver receiver = new ConsoleOutputReceiver();
+                        string command = $"install-multiple {_path}";
+                        foreach (ApkInfo apk in ApkInfo.SplitApks)
+                        {
+                            command += $" \"{apk.FullPath}\"";
+                        }
+                        using (IAdbSocket socket = Factories.AdbSocketFactory(client.EndPoint))
+                        {
+                            socket.SendAdbRequest($"host:{command}");
+                            AdbResponse response = socket.ReadAdbResponse();
+                        }
+                        if (receiver.ToString().Contains("windows"))
+                        {
+                            
+                        }
+                    }
+                    else
+                    {
+                        new AdvancedAdbClient().Install(_device, File.Open(_path, FileMode.Open, FileAccess.Read));
+                    }
                 });
                 if (IsOpenApp)
                 {
