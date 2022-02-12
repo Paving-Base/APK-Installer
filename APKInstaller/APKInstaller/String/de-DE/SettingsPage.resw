@@ -172,7 +172,7 @@
     <value>Zum Update wechseln</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Zuletzt gesucht</value>
+    <value>Last Checked: </value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>Deaktivieren, um mit einem anderen Gerät zu verbinden.</value>
