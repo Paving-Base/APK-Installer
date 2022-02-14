@@ -1,5 +1,5 @@
-﻿using AAPTForNet;
-using AAPTForNet.Models;
+﻿using AAPT2ForNet;
+using AAPT2ForNet.Models;
 using AdvancedSharpAdbClient;
 using AdvancedSharpAdbClient.DeviceCommands;
 using APKInstaller.Controls.Dialogs;
@@ -1116,9 +1116,9 @@ namespace APKInstaller.ViewModels
         {
             if (_url != null)
             {
-                if (!Directory.Exists(APKTemp.Substring(0, APKTemp.LastIndexOf(@"\"))))
+                if (!Directory.Exists(APKTemp[..APKTemp.LastIndexOf(@"\")]))
                 {
-                    Directory.CreateDirectory(APKTemp.Substring(0, APKTemp.LastIndexOf(@"\")));
+                    _ = Directory.CreateDirectory(APKTemp[..APKTemp.LastIndexOf(@"\")]);
                 }
                 else if (Directory.Exists(APKTemp))
                 {
@@ -1274,29 +1274,7 @@ namespace APKInstaller.ViewModels
                 ActionVisibility = SecondaryActionVisibility = TextOutputVisibility = InstallOutputVisibility = Visibility.Collapsed;
                 await Task.Run(() =>
                 {
-                    if (ApkInfo.IsBundle)
-                    {
-                        AdvancedAdbClient client = new AdvancedAdbClient();
-                        ConsoleOutputReceiver receiver = new ConsoleOutputReceiver();
-                        string command = $"install-multiple {_path}";
-                        foreach (ApkInfo apk in ApkInfo.SplitApks)
-                        {
-                            command += $" \"{apk.FullPath}\"";
-                        }
-                        using (IAdbSocket socket = Factories.AdbSocketFactory(client.EndPoint))
-                        {
-                            socket.SendAdbRequest($"host:{command}");
-                            AdbResponse response = socket.ReadAdbResponse();
-                        }
-                        if (receiver.ToString().Contains("windows"))
-                        {
-                            
-                        }
-                    }
-                    else
-                    {
-                        new AdvancedAdbClient().Install(_device, File.Open(_path, FileMode.Open, FileAccess.Read));
-                    }
+                    new AdvancedAdbClient().Install(_device, File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read));
                 });
                 if (IsOpenApp)
                 {

@@ -1,4 +1,4 @@
-﻿using AAPTForNet.Models;
+﻿using AAPT2ForNet.Models;
 using APKInstaller.Helpers;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
@@ -21,12 +21,6 @@ namespace APKInstaller.Controls
            typeof(CapabilitiesInfoControl),
            new PropertyMetadata(default(string)));
 
-        public static readonly DependencyProperty ApkInfoProperty = DependencyProperty.Register(
-           "ApkInfo",
-           typeof(ApkInfo),
-           typeof(CapabilitiesInfoControl),
-           new PropertyMetadata(new ApkInfo()));
-
         public static readonly DependencyProperty CapabilitiesListProperty = DependencyProperty.Register(
            "CapabilitiesList",
            typeof(List<string>),
@@ -38,12 +32,6 @@ namespace APKInstaller.Controls
         {
             get => (string)GetValue(HeadTextProperty);
             set => SetValue(HeadTextProperty, value);
-        }
-
-        public ApkInfo ApkInfo
-        {
-            get => (ApkInfo)GetValue(ApkInfoProperty);
-            set => SetValue(ApkInfoProperty, value);
         }
 
         public List<string> CapabilitiesList
@@ -83,9 +71,9 @@ namespace APKInstaller.Controls
             MoreButton.Visibility = Visibility.Collapsed;
             Root.BorderThickness = new Thickness(1, 0, 0, 0);
             RichTextBlockCapabilities.Visibility = Visibility.Collapsed;
-            RichTextBlockFullStackPanel.Visibility = Visibility.Visible;
+            RichTextBlockFullCapabilities.Visibility = Visibility.Visible;
             CapabilitiesHeight.Height = new GridLength(1, GridUnitType.Star);
-            _ = RichTextBlockFullStackPanel.Focus(FocusState.Pointer);
+            _ = RichTextBlockFullCapabilities.Focus(FocusState.Pointer);
         }
 
         private void Root_LostFocus(object sender, RoutedEventArgs e)
@@ -93,7 +81,7 @@ namespace APKInstaller.Controls
             MoreButton.Visibility = Visibility.Visible;
             Root.BorderThickness = new Thickness(0, 0, 0, 0);
             RichTextBlockCapabilities.Visibility = Visibility.Visible;
-            RichTextBlockFullStackPanel.Visibility = Visibility.Collapsed;
+            RichTextBlockFullCapabilities.Visibility = Visibility.Collapsed;
             CapabilitiesHeight.Height = new GridLength(1, GridUnitType.Auto);
         }
     }

@@ -97,7 +97,6 @@
                         <controls:CapabilitiesInfoControl
                             x:Name="AppCapabilities"
                             x:Uid="/InstallPage/AppCapabilities"
-                            ApkInfo="{Binding ApkInfo}"
                             CapabilitiesList="{Binding ApkInfo.Permissions, Mode=OneWay}"
                             Visibility="{Binding AppCapabilitiesVisibility}" />
                     </Grid>

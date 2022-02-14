@@ -10,7 +10,7 @@
     <RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
     <PublishProfile>win10-$(Platform).pubxml</PublishProfile>
     <UseWinUI>true</UseWinUI>
-	<VersionPrefix>0.1.7</VersionPrefix>
+	<VersionPrefix>0.1.8</VersionPrefix>
     <EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
     <GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
     <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
@@ -86,7 +86,7 @@
     <ProjectCapability Include="Msix" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AAPTForNet\AAPTForNet.csproj" />
+    <ProjectReference Include="..\AAPT2ForNet\AAPT2ForNet.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Content Update="Assets\256x256.png">
