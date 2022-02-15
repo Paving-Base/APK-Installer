@@ -763,57 +763,66 @@ namespace APKInstaller.ViewModels
 
         public async Task InitilizeADB()
         {
-            WaitProgressText = _loader.GetString("CheckingADB");
-            await CheckADB();
             if (!string.IsNullOrEmpty(_path) || _url != null)
             {
-                WaitProgressText = _loader.GetString("StartingADB");
-                Process[] processes = Process.GetProcessesByName("adb");
-                if (processes != null && processes.Length > 1)
+                AdbServer ADBServer = new AdbServer();
+                if (!ADBServer.GetStatus().IsRunning)
                 {
-                    foreach (Process process in processes)
-                    {
-                        process.Kill();
-                    }
-                }
-                if (processes != null && processes.Length == 1)
-                {
-                    try
-                    {
-                        await Task.Run(() => new AdbServer().StartServer(processes.First().MainModule.FileName, restartServerIfNewer: false));
-                    }
-                    catch
+                    WaitProgressText = _loader.GetString("CheckingADB");
+                    await CheckADB();
+                    WaitProgressText = _loader.GetString("StartingADB");
+                    Process[] processes = Process.GetProcessesByName("adb");
+                    if (processes != null && processes.Length > 1)
                     {
                         foreach (Process process in processes)
                         {
                             process.Kill();
                         }
+                    }
+                    if (processes != null && processes.Length == 1)
+                    {
                         try
                         {
-                            await Task.Run(() => new AdbServer().StartServer(ADBPath, restartServerIfNewer: false));
+                            await Task.Run(() => ADBServer.StartServer(processes.First().MainModule.FileName, restartServerIfNewer: false));
+                        }
+                        catch
+                        {
+                            foreach (Process process in processes)
+                            {
+                                process.Kill();
+                            }
+                            try
+                            {
+                                await Task.Run(() => ADBServer.StartServer(ADBPath, restartServerIfNewer: false));
+                            }
+                            catch
+                            {
+                                await CheckADB(true);
+                                WaitProgressText = _loader.GetString("StartingADB");
+                                await Task.Run(() => ADBServer.StartServer(ADBPath, restartServerIfNewer: false));
+                            }
+                        }
+                    }
+                    else
+                    {
+                        try
+                        {
+                            await Task.Run(() => ADBServer.StartServer(ADBPath, restartServerIfNewer: false));
                         }
                         catch
                         {
                             await CheckADB(true);
                             WaitProgressText = _loader.GetString("StartingADB");
-                            await Task.Run(() => new AdbServer().StartServer(ADBPath, restartServerIfNewer: false));
+                            await Task.Run(() => ADBServer.StartServer(ADBPath, restartServerIfNewer: false));
                         }
                     }
                 }
-                else
+                WaitProgressText = _loader.GetString("Loading");
+                if (NetworkHelper.Instance.ConnectionInformation.IsInternetAvailable)
                 {
-                    try
-                    {
-                        await Task.Run(() => new AdbServer().StartServer(ADBPath, restartServerIfNewer: false));
-                    }
-                    catch
-                    {
-                        await CheckADB(true);
-                        WaitProgressText = _loader.GetString("StartingADB");
-                        await Task.Run(() => new AdbServer().StartServer(ADBPath, restartServerIfNewer: false));
-                    }
+                    _ = AddressHelper.ConnectHyperV();
                 }
-                if (IsOnlyWSA)
+                else if (IsOnlyWSA)
                 {
                     new AdvancedAdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
                 }
@@ -932,7 +941,7 @@ namespace APKInstaller.ViewModels
                                     DefaultButton = ContentDialogButton.Close,
                                     CloseButtonText = _loader.GetString("IKnow"),
                                     PrimaryButtonText = _loader.GetString("StartWSA"),
-                                    ContentUrl = "https://github.com/Paving-Base/APK-Installer/raw/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/How%20To%20Connect%20WSA.md",
+                                    ContentUrl = "https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/How%20To%20Connect%20WSA.md",
                                 };
                                 ProgressHelper.SetState(ProgressState.None, true);
                                 ContentDialogResult result = await dialog.ShowAsync();
@@ -950,9 +959,17 @@ namespace APKInstaller.ViewModels
                                             IsWSARunning = ps != null && ps.Length > 0;
                                         });
                                     }
+                                    WaitProgressText = _loader.GetString("WaitingADBStart");
                                     while (!CheckDevice())
                                     {
-                                        new AdvancedAdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
+                                        if (NetworkHelper.Instance.ConnectionInformation.IsInternetAvailable)
+                                        {
+                                            await AddressHelper.ConnectHyperV();
+                                        }
+                                        else if (IsOnlyWSA)
+                                        {
+                                            new AdvancedAdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
+                                        }
                                         await Task.Delay(100);
                                     }
                                     WaitProgressText = _loader.GetString("WSARunning");
@@ -1029,7 +1046,7 @@ namespace APKInstaller.ViewModels
                 ContentDialog dialog = new MarkdownDialog
                 {
                     XamlRoot = _page.XamlRoot,
-                    ContentUrl = "https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Helpers/How%20To%20Connect%20WSA/How%20To%20Connect%20WSA.md",
+                    ContentUrl = "https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/How%20To%20Connect%20WSA.md",
                 };
                 _ = dialog.ShowAsync();
                 return;
@@ -1214,11 +1231,7 @@ namespace APKInstaller.ViewModels
 
         private void OnDeviceChanged(object sender, DeviceDataEventArgs e)
         {
-            if (IsOnlyWSA)
-            {
-                new AdvancedAdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
-            }
-            if (!IsInstalling)
+            if (IsInitialized && !IsInstalling)
             {
                 _page.DispatcherQueue?.EnqueueAsync(() =>
                 {
@@ -1302,6 +1315,8 @@ namespace APKInstaller.ViewModels
         {
             FileOpenPicker FileOpen = new FileOpenPicker();
             FileOpen.FileTypeFilter.Add(".apk");
+            FileOpen.FileTypeFilter.Add(".apks");
+            FileOpen.FileTypeFilter.Add(".apkm");
             FileOpen.SuggestedStartLocation = PickerLocationId.ComputerFolder;
 
             // When running on win32, FileSavePicker needs to know the top-level hwnd via IInitializeWithWindow::Initialize.

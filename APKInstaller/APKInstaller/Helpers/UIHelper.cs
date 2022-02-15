@@ -65,8 +65,8 @@ namespace APKInstaller.Helpers
 
                 AppWindowTitleBar TitleBar = GetAppWindowForCurrentWindow().TitleBar;
                 TitleBar.ForegroundColor = TitleBar.ButtonForegroundColor = ForegroundColor;
+                TitleBar.BackgroundColor = TitleBar.InactiveBackgroundColor = BackgroundColor;
                 TitleBar.ButtonBackgroundColor = TitleBar.ButtonInactiveBackgroundColor = Colors.Transparent;
-                TitleBar.BackgroundColor = TitleBar.ButtonBackgroundColor = TitleBar.InactiveBackgroundColor = TitleBar.ButtonInactiveBackgroundColor = BackgroundColor;
             }
         }
     }

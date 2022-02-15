@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Threading;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace APKInstaller.Helpers
 {
-    internal class CommandHelper
+    public class CommandHelper
     {
         /// <summary>
         /// Executes a shell command on the remote device
@@ -14,11 +15,11 @@ namespace APKInstaller.Helpers
         /// </param>
         /// <param name="command">The command to execute</param>
         /// <param name="rcvr">The shell output receiver</param>
-        public static void ExecuteShellCommand(string command)
+        public static async Task<List<string>> ExecuteShellCommand(string command)
         {
             try
             {
-                ExecuteShellCommandAsync(command, CancellationToken.None).Wait();
+                return await ExecuteShellCommandAsync(command, CancellationToken.None);
             }
             catch (AggregateException ex)
             {
@@ -34,7 +35,7 @@ namespace APKInstaller.Helpers
         }
 
         /// <inheritdoc/>
-        public static async Task ExecuteShellCommandAsync(string command, CancellationToken cancellationToken)
+        public static async Task<List<string>> ExecuteShellCommandAsync(string command, CancellationToken cancellationToken)
         {
             ProcessStartInfo start = new ProcessStartInfo
             {
@@ -48,6 +49,8 @@ namespace APKInstaller.Helpers
             using Process process = Process.Start(start);
 
             process.EnableRaisingEvents = true;
+
+            List<string> lines = new List<string>();
 
             try
             {
@@ -63,15 +66,22 @@ namespace APKInstaller.Helpers
 
                         if (line == null)
                         {
+                            process.Kill();
+                            process.Close();
                             break;
                         }
+
+                        lines.Add(line);
                     }
                 }
             }
             catch (Exception e)
             {
-
+#if DEBUG
+                Debug.WriteLine(e.Message);
+#endif
             }
+            return lines;
         }
     }
 }

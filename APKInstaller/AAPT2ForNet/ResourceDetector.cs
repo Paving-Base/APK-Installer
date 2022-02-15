@@ -43,7 +43,7 @@ namespace AAPT2ForNet
         public static bool IsConfig(string input)
         {
             // config (default) | (hdpi|mdpi|...)[-vxx]
-            return Regex.IsMatch(input, $"^\\s*\\(({config})(-v\\d*)?\\)\\s\\(file\\)\\s.+");
+            return Regex.IsMatch(input, $"^\\s*\\(({config})(-v\\d*)?\\)\\s\\(\\w*\\)\\s.+");
         }
 
         public static bool IsEntryType(string input)

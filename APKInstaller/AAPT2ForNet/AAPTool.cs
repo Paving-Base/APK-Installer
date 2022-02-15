@@ -21,7 +21,7 @@ namespace AAPT2ForNet
         }
 
         private static readonly string AppPath = Path.GetDirectoryName(System.Reflection.Assembly.GetCallingAssembly().Location);
-        private static readonly string TempPath = Path.Combine(Path.GetTempPath(), $@"APKInstaller\Caches\{Process.GetCurrentProcess().Id}\AppPackages");
+        private static readonly string TempPath = Path.Combine(Path.GetTempPath(), $@"APKInstaller\Caches\{Environment.ProcessId}\AppPackages");
 
         protected AAPTool()
         {

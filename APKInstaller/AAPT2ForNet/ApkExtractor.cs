@@ -12,7 +12,7 @@ namespace AAPT2ForNet
     internal class ApkExtractor
     {
         private static int id = 0;
-        private static readonly string tempPath = Path.Combine(Path.GetTempPath(), $@"APKInstaller\Caches\{Process.GetCurrentProcess().Id}");
+        private static readonly string tempPath = Path.Combine(Path.GetTempPath(), $@"APKInstaller\Caches\{Environment.ProcessId}");
 
         public static DumpModel ExtractManifest(string path)
         {
@@ -214,7 +214,7 @@ namespace AAPT2ForNet
                         config = configNames.FirstOrDefault(c => msg.Contains(c));
 
                         string iconName = msg.Trim().Split(seperator)
-                                .FirstOrDefault(n => n.Contains("/"));
+                                .FirstOrDefault(n => n.Contains("/") || n.Contains("0x"));
 
                         addIcon2Table(config, iconName);
                     }

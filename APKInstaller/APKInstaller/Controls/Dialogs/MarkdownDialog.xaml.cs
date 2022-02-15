@@ -39,11 +39,11 @@ namespace APKInstaller.Controls.Dialogs
                     }
                     catch
                     {
-                        if (value.Contains("raw.githubusercontent.com"))
+                        if (value.Contains("://raw.githubusercontent.com"))
                         {
                             try
                             {
-                                MarkdownText.Text = (await client.GetStringAsync(value.Replace("raw.githubusercontent.com", "raw.fastgit.org"))).Replace("raw.githubusercontent.com", "raw.fastgit.org");
+                                MarkdownText.Text = (await client.GetStringAsync(value.Replace("://raw.githubusercontent.com", "://raw.fastgit.org"))).Replace("://raw.githubusercontent.com", "://raw.fastgit.org");
                                 Title = string.Empty;
                             }
                             catch

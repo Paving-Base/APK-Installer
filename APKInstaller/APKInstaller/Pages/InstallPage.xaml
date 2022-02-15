@@ -40,7 +40,7 @@
             <Grid
                 x:Name="MainContentContainer"
                 Grid.Row="0"
-                Margin="24,0,24,24">
+                Margin="24,0,24,0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="auto" />
@@ -157,6 +157,7 @@
                     <TextBlock
                         x:Name="ProgressText"
                         Text="{Binding ProgressText}"
+                        TextTrimming="CharacterEllipsis"
                         ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
                     <ProgressBar
                         x:Name="AppxInstallBar"
@@ -185,12 +186,14 @@
                             Grid.Row="0"
                             Margin="0,0,0,6"
                             Text="{Binding InfoMessage}"
+                            TextWrapping="WrapWholeWords"
                             ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
                         <TextBlock
                             x:Name="WarningMessageModificationPackage"
                             Grid.Row="1"
                             Margin="0,0,0,6"
                             FontWeight="Bold"
+                            TextWrapping="WrapWholeWords"
                             ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"
                             Visibility="Collapsed" />
                     </Grid>
@@ -199,6 +202,7 @@
                         x:Uid="/InstallPage/InstallOutputTextBlock"
                         Grid.Row="0"
                         Margin="0,0,0,6"
+                        TextWrapping="WrapWholeWords"
                         ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"
                         Visibility="{Binding InstallOutputVisibility}" />
                     <ScrollViewer
@@ -352,6 +356,7 @@
                     </StackPanel>
                     <CheckBox
                         x:Name="LaunchWhenReadyCheckbox"
+                        x:Uid="/InstallPage/LaunchWhenReadyCheckbox"
                         Grid.Row="1"
                         Margin="0,-26,0,0"
                         Padding="8,5,0,0"
@@ -359,7 +364,6 @@
                         VerticalAlignment="Center"
                         HorizontalContentAlignment="Left"
                         VerticalContentAlignment="Top"
-                        Content="Launch when ready"
                         FocusVisualMargin="-7,-3"
                         IsChecked="{Binding IsOpenApp, Mode=TwoWay}"
                         ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Content}"
@@ -397,7 +401,8 @@
                 x:Name="WaitProgressText"
                 Margin="0,6,0,0"
                 Text="{Binding WaitProgressText}"
-                TextAlignment="Center" />
+                TextAlignment="Center"
+                TextWrapping="Wrap" />
         </StackPanel>
     </Grid>
 </Page>
