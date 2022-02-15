@@ -121,16 +121,16 @@
     <value>關於</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>Auto download when package is from URL.</value>
+    <value>當安裝包來自 URL 連結時自動下載。</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Is Auto Download Online Packages?</value>
+    <value>是否自動下載在線安裝包？</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
     <value>檢查失敗</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>Checking For Updates...</value>
+    <value>正在檢查更新……</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
     <value>檢查更新</value>
@@ -139,13 +139,13 @@
     <value>清除快取</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Close ADB may break other Installers when they still open.</value>
+    <value>關閉 ADB 可能會使其他正在運行的安裝程序崩潰。</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Is Close ADB when Closing Installer?</value>
+    <value>關閉安裝程式時是否關閉 ADB？</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device on network.</value>
+    <value>通過網路連接設備。</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>連接設備</value>
@@ -157,28 +157,28 @@
     <value>設備</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
-    <value>EULA</value>
+    <value>用戶協定</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
-    <value>Feedback</value>
+    <value>反饋</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
-    <value>Find Update</value>
+    <value>找到新的更新</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>Go to TestPage</value>
+    <value>前往測試頁面</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
     <value>前往更新</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Last Checked: </value>
+    <value>上次檢查時間: </value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Disable it to connect to other device.</value>
+    <value>關閉它以連接到其他設備。</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>Is Only for WSA?</value>
+    <value>是否僅用於 WSA？</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>其他</value>
@@ -196,7 +196,7 @@
     <value>是</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
-    <value>Are you sure you want to reset the app?</value>
+    <value>你確定要重置應用嗎？</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>選擇設備</value>

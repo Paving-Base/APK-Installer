@@ -118,33 +118,33 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="APKDescription" xml:space="preserve">
-    <value>Android Application Package</value>
+    <value>Android 應用程式包</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>APK File</value>
+    <value>APK 文件</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>An Android App Installer. Written by @wherewhere and @Tangent-90.</value>
+    <value>一個 Android 應用安裝器。作者：@wherewhere 和 @Tangent-90。</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>APK Installer</value>
+    <value>APK 應用安裝程式</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
-    <value>There was an error with the program…</value>
+    <value>程式出現了錯誤……</value>
   </data>
   <data name="ImageLoadError" xml:space="preserve">
-    <value>Picture failed to load</value>
+    <value>無法載入圖片</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>Network exception</value>
+    <value>無法連接到網路</value>
   </data>
   <data name="No" xml:space="preserve">
-    <value>No</value>
+    <value>否</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>Split APK File</value>
+    <value>Split APK 文件</value>
   </data>
   <data name="Yes" xml:space="preserve">
-    <value>Yes</value>
+    <value>是</value>
   </data>
 </root>
