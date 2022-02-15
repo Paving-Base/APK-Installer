@@ -1,42 +1,45 @@
-﻿using AAPTForNet.Models;
+﻿using AAPT2ForNet.Models;
 
-namespace AAPTForNet.Filters
+namespace AAPT2ForNet.Filters
 {
-    internal class PackageFilter : BaseFilter
+    internal class ApplicationFilter : BaseFilter
     {
 
         private string[] segments = new string[] { };
 
         public override bool canHandle(string msg)
         {
-            return msg.StartsWith("package:");
+            return msg.StartsWith("application:");
         }
 
-        public override void addMessage(string msg)
+        public override void addMessage(string msg = "")
         {
             segments = msg.Split(seperator);
         }
 
         public override ApkInfo getAPK()
         {
+            // Try getting icon name from manifest, may be an image
+            string iconName = getValue("icon=");
+
             return new ApkInfo()
             {
-                PackageName = getValueOrDefault("package"),
-                VersionName = getValueOrDefault("versionName"),
-                VersionCode = getValueOrDefault("versionCode"),
+                AppName = getValue("label="),
+                Icon = iconName == defaultEmptyValue ?
+                    Icon.Default : new Icon(iconName)
             };
         }
 
         public override void clear() => segments = new string[] { };
 
-        private string getValueOrDefault(string key)
+        private string getValue(string key)
         {
             string output = string.Empty;
             for (int i = 0; i < segments.Length; i++)
             {
                 if (segments[i].Contains(key))
-                {    // Find key
-                    output = segments[++i];         // Get value
+                {
+                    output = segments[++i];
                     break;
                 }
             }

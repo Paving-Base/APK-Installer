@@ -1,8 +1,8 @@
-﻿using AAPTForNet.Models;
+﻿using AAPT2ForNet.Models;
 using System;
 using System.Collections.Generic;
 
-namespace AAPTForNet.Filters
+namespace AAPT2ForNet.Filters
 {
     internal class SDKFilter : BaseFilter
     {

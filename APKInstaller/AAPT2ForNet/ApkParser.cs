@@ -1,10 +1,10 @@
-﻿using AAPTForNet.Filters;
-using AAPTForNet.Models;
+﻿using AAPT2ForNet.Filters;
+using AAPT2ForNet.Models;
 
 using System.Collections.Generic;
 using System.Linq;
 
-namespace AAPTForNet
+namespace AAPT2ForNet
 {
     /// <summary>
     /// Parse output messages from AAPTool

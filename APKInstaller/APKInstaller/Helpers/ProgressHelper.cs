@@ -2,7 +2,6 @@
 using CommunityToolkit.WinUI;
 using Microsoft.UI.Xaml;
 using System;
-using System.Windows;
 
 namespace APKInstaller.Helpers
 {

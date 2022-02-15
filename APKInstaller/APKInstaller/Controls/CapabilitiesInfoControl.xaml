@@ -24,6 +24,7 @@
         <TextBlock
             x:Name="HeaderTextBlock"
             Grid.Row="0"
+            Text="{x:Bind HeadText, Mode=OneWay}"
             TextWrapping="WrapWholeWords"
             ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
         <ScrollViewer

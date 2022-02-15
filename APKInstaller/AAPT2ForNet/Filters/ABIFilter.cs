@@ -1,8 +1,8 @@
-﻿using AAPTForNet.Models;
+﻿using AAPT2ForNet.Models;
 using System;
 using System.Linq;
 
-namespace AAPTForNet.Filters
+namespace AAPT2ForNet.Filters
 {
     /// <summary>
     /// Application Binary Interface Filter

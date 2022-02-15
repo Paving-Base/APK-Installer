@@ -1,6 +1,6 @@
-﻿using AAPTForNet.Models;
+﻿using AAPT2ForNet.Models;
 
-namespace AAPTForNet.Filters
+namespace AAPT2ForNet.Filters
 {
     internal class SupportScrFilter : BaseFilter
     {

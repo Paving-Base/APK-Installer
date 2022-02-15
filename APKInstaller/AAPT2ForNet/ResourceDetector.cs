@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace AAPTForNet
+namespace AAPT2ForNet
 {
     internal class ResourceDetector
     {
@@ -43,13 +43,13 @@ namespace AAPTForNet
         public static bool IsConfig(string input)
         {
             // config (default) | (hdpi|mdpi|...)[-vxx]
-            return Regex.IsMatch(input, $"^\\s*config\\s\\(?({config})(-v\\d*)?\\)?:");
+            return Regex.IsMatch(input, $"^\\s*\\(({config})(-v\\d*)?\\)\\s\\(file\\)\\s.+");
         }
 
         public static bool IsEntryType(string input)
         {
-            // type x configCount=xx entryCount=xxx
-            return Regex.IsMatch(input, $"^\\s*type\\s\\d*\\sconfigCount=\\d*\\sentryCount=\\d*$");
+            // type x id=xx entryCount=xxx
+            return Regex.IsMatch(input, $"^\\s*type\\s\\w*\\sid=\\d*\\sentryCount=\\d*$");
         }
     }
 }

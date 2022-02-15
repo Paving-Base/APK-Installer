@@ -1,17 +1,18 @@
-﻿using AAPTForNet.Models;
+﻿using AAPT2ForNet.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
-using Detector = AAPTForNet.ResourceDetector;
+using Detector = AAPT2ForNet.ResourceDetector;
 
-namespace AAPTForNet
+namespace AAPT2ForNet
 {
     internal class ApkExtractor
     {
-        private static readonly string tempPath = Path.Combine(Path.GetTempPath(), $@"APKInstaller\Caches\{Process.GetCurrentProcess().Id}\AAPToolTempImage.png");
+        private static int id = 0;
+        private static readonly string tempPath = Path.Combine(Path.GetTempPath(), $@"APKInstaller\Caches\{Process.GetCurrentProcess().Id}");
 
         public static DumpModel ExtractManifest(string path)
         {
@@ -25,6 +26,11 @@ namespace AAPTForNet
         public static Icon ExtractLargestIcon(string path)
         {
             Dictionary<string, Icon> iconTable = ExtractIconTable(path);
+
+            if (iconTable.Count == 0)
+            {
+                return Icon.Default;
+            }
 
             if (iconTable.Values.All(i => i.isRefernce))
             {
@@ -41,6 +47,7 @@ namespace AAPTForNet
 
             Icon largestIcon = ExtractLargestIcon(iconTable);
             largestIcon.RealPath = ExtractIconImage(path, largestIcon);
+
             return largestIcon;
         }
 
@@ -175,7 +182,7 @@ namespace AAPTForNet
                 return new Dictionary<string, Icon>();
             }
 
-            const char seperator = '\"';
+            const char seperator = ' ';
             // Prevent duplicate key when add to Dictionary,
             // because comparison statement with 'hdpi' in config's values,
             // reverse list and get first elem with LINQ
@@ -188,44 +195,28 @@ namespace AAPTForNet
                     iconTable.Add(cfg, new Icon(iconName));
                 }
             };
-            string msg, resValue, config;
+            string msg, config;
 
             foreach (int index in positions)
             {
-                for (int i = index; ; i--)
+                for (int i = index; i <= messages.Count; i++)
                 {
                     // Go prev to find config
                     msg = messages[i];
 
-                    if (Detector.IsEntryType(msg))  // Out of entry and not found
+                    if (Detector.IsEntryType(msg) || (Detector.IsResource(msg) && iconTable.Any()))  // Out of entry and not found
                     {
                         break;
                     }
 
                     if (Detector.IsConfig(msg))
                     {
-                        // Match with predefined configs,
-                        // go next to get icon name
-                        resValue = messages[index + 1];
-
                         config = configNames.FirstOrDefault(c => msg.Contains(c));
 
-                        if (Detector.IsResourceValue(resValue))
-                        {
-                            // Resource value is icon url
-                            string iconName = resValue.Split(seperator)
+                        string iconName = msg.Trim().Split(seperator)
                                 .FirstOrDefault(n => n.Contains("/"));
-                            addIcon2Table(config, iconName);
-                            break;
-                        }
-                        if (Detector.IsReference(resValue))
-                        {
-                            string iconID = resValue.Trim().Split(' ')[1];
-                            addIcon2Table(config, iconID);
-                            break;
-                        }
 
-                        break;
+                        addIcon2Table(config, iconName);
                     }
                 }
             }
@@ -245,17 +236,15 @@ namespace AAPTForNet
                 return Icon.DefaultName;
             }
 
-            if (!Directory.Exists(tempPath.Substring(0, tempPath.LastIndexOf(@"\"))))
+            if (!Directory.Exists(tempPath))
             {
-                Directory.CreateDirectory(tempPath.Substring(0, tempPath.LastIndexOf(@"\")));
-            }
-            else if (Directory.Exists(tempPath))
-            {
-                Directory.Delete(tempPath, true);
+                Directory.CreateDirectory(tempPath);
             }
 
-            TryExtractIconImage(path, icon.IconName, tempPath);
-            return tempPath;
+            string IconPath = Path.Combine(tempPath, $@"AAPToolTempImage-{id++}.png");
+
+            TryExtractIconImage(path, icon.IconName, IconPath);
+            return IconPath;
         }
 
         private static void TryExtractIconImage(string path, string iconName, string desFile)

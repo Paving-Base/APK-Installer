@@ -1,5 +1,5 @@
-﻿using AAPTForNet;
-using AAPTForNet.Models;
+﻿using AAPT2ForNet;
+using AAPT2ForNet.Models;
 using AdvancedSharpAdbClient;
 using AdvancedSharpAdbClient.DeviceCommands;
 using APKInstaller.Controls.Dialogs;
@@ -53,7 +53,7 @@ namespace APKInstaller.ViewModels
         private string _path = string.Empty;
 #else
         private Uri _url = new Uri("apkinstaller:?source=https://dl.coolapk.com/down?pn=com.coolapk.market&id=NDU5OQ&h=46bb9d98&from=from-web");
-        private string _path = @"C:\Users\qq251\Downloads\Programs\Minecraft_1.17.40.06_sign.apk";
+        private string _path = @"C:\Users\qq251\Downloads\Programs\Skit_com,pavelrekun,skit,premium_2,4,1.apks";
 #endif
         private bool NetAPKExist => _path != APKTemp || File.Exists(_path);
 
@@ -1116,9 +1116,9 @@ namespace APKInstaller.ViewModels
         {
             if (_url != null)
             {
-                if (!Directory.Exists(APKTemp.Substring(0, APKTemp.LastIndexOf(@"\"))))
+                if (!Directory.Exists(APKTemp[..APKTemp.LastIndexOf(@"\")]))
                 {
-                    Directory.CreateDirectory(APKTemp.Substring(0, APKTemp.LastIndexOf(@"\")));
+                    _ = Directory.CreateDirectory(APKTemp[..APKTemp.LastIndexOf(@"\")]);
                 }
                 else if (Directory.Exists(APKTemp))
                 {
@@ -1274,7 +1274,7 @@ namespace APKInstaller.ViewModels
                 ActionVisibility = SecondaryActionVisibility = TextOutputVisibility = InstallOutputVisibility = Visibility.Collapsed;
                 await Task.Run(() =>
                 {
-                    new AdvancedAdbClient().Install(_device, File.Open(_path, FileMode.Open, FileAccess.Read));
+                    new AdvancedAdbClient().Install(_device, File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read));
                 });
                 if (IsOpenApp)
                 {

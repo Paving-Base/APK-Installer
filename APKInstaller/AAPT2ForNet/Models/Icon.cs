@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 
-namespace AAPTForNet.Models
+namespace AAPT2ForNet.Models
 {
     public class Icon
     {

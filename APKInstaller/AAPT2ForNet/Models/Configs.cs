@@ -1,4 +1,4 @@
-﻿namespace AAPTForNet.Models
+﻿namespace AAPT2ForNet.Models
 {
     internal enum Configs
     {
