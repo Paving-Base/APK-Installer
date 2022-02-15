@@ -141,6 +141,9 @@
   <data name="No" xml:space="preserve">
     <value>否</value>
   </data>
+  <data name="SplitAPKFile" xml:space="preserve">
+    <value>Split APK 文件</value>
+  </data>
   <data name="Yes" xml:space="preserve">
     <value>是</value>
   </data>
