@@ -59,21 +59,21 @@ namespace APKInstaller.ViewModels.SettingsPages
             }
         }
 
-        public static DateTime UpdateDate
-        {
-            get => SettingsHelper.Get<DateTime>(SettingsHelper.UpdateDate);
-            set
-            {
-                SettingsHelper.Set(SettingsHelper.UpdateDate, value);
-            }
-        }
-
         public static bool ShowDialogs
         {
             get => SettingsHelper.Get<bool>(SettingsHelper.ShowDialogs);
             set
             {
                 SettingsHelper.Set(SettingsHelper.ShowDialogs, value);
+            }
+        }
+
+        public static DateTime UpdateDate
+        {
+            get => SettingsHelper.Get<DateTime>(SettingsHelper.UpdateDate);
+            set
+            {
+                SettingsHelper.Set(SettingsHelper.UpdateDate, value);
             }
         }
 

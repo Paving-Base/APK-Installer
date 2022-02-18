@@ -1068,7 +1068,6 @@ namespace APKInstaller.ViewModels
                 AppVersionVisibility = AppPublisherVisibility = AppCapabilitiesVisibility = Visibility.Collapsed;
                 if (AutoGetNetAPK)
                 {
-                    IsInitialized = false;
                     LoadNetAPK();
                 }
             }
