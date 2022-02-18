@@ -148,7 +148,7 @@
     <value>在 APK 安装完成并启动后关闭安装程序。</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>当准备就绪后是否关闭安装程序？</value>
+    <value>Is Close Installer when APP is Ready ?</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
     <value>通过网络连接设备。</value>
@@ -208,7 +208,7 @@
     <value>选择设备</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
-    <value>当没有连接到设备时显示帮助？</value>
+    <value>Show helpers when no device is connected.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
     <value>是否显示帮助？</value>
