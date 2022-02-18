@@ -180,6 +180,10 @@
   <data name="Install" xml:space="preserve">
     <value>Install</value>
   </data>
+  <data name="InstalledFormat" xml:space="preserve">
+    <value>{0} is ready!</value>
+    <comment>{0} - AppName.</comment>
+  </data>
   <data name="InstallFormat" xml:space="preserve">
     <value>Install {0}?</value>
     <comment>{0} - AppName.</comment>
@@ -201,6 +205,9 @@
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
     <value>Launching WSA...</value>
+  </data>
+  <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
+    <value>Launch when ready</value>
   </data>
   <data name="Loading" xml:space="preserve">
     <value>Loading...</value>
@@ -286,6 +293,10 @@
   <data name="WaitingForInstallFormat" xml:space="preserve">
     <value>Waiting for install {0}</value>
     <comment>{0} - AppName.</comment>
+  </data>
+  <data name="WaitingWSAStart" xml:space="preserve">
+    <value>Waiting WSA Start...
+This may takes long time. Sit back and relax.</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA is Running</value>
