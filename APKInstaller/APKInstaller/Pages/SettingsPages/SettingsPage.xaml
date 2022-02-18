@@ -3,6 +3,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:controls="using:APKInstaller.Controls"
+    xmlns:cwuc="using:CommunityToolkit.WinUI.UI.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:helper="using:APKInstaller.Helpers"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -125,54 +126,71 @@
                     </controls:SettingButton>
                 </controls:SettingsGroup>
                 <controls:SettingsGroup x:Uid="/SettingsPage/AboutSettingsHeader" Margin="0,-32,0,0">
-                    <controls:Setting Header="{Binding VersionTextBlockText}" Icon="&#xE117;">
-                        <controls:Setting.Description>
-                            <StackPanel Orientation="Vertical">
-                                <TextBlock Style="{StaticResource SecondaryTextStyle}">
-                                    <Run x:Uid="/SettingsPage/LastChecked" />
-                                    <Run Text="{Binding UpdateDate, Mode=OneWay}" />
-                                </TextBlock>
-                                <StackPanel Margin="0,2,0,0" Orientation="Horizontal">
-                                    <HyperlinkButton
-                                        x:Uid="/SettingsPage/FeedbackLink"
-                                        Margin="0,0,2,0"
-                                        NavigateUri="https://github.com/Paving-Base/APK-Installer/issues" />
-                                    <HyperlinkButton
-                                        x:Uid="/SettingsPage/ReleaseNotes"
-                                        Margin="2,0"
-                                        NavigateUri="https://github.com/Paving-Base/APK-Installer/releases/latest" />
-                                    <HyperlinkButton
-                                        x:Uid="/SettingsPage/EULA"
-                                        Margin="2,0"
-                                        NavigateUri="https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md" />
-                                </StackPanel>
-                            </StackPanel>
-                        </controls:Setting.Description>
-                        <controls:Setting.ActionContent>
-                            <StackPanel
-                                VerticalAlignment="Center"
-                                Orientation="Horizontal"
-                                Spacing="18">
-                                <ProgressRing
-                                    Width="24"
-                                    Height="24"
-                                    Visibility="{Binding CheckingUpdate, Mode=OneWay}" />
-                                <TextBlock
-                                    x:Uid="/SettingsPage/CheckingUpdates"
-                                    VerticalAlignment="Center"
-                                    FontWeight="SemiBold"
-                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                    Visibility="{Binding CheckingUpdate, Mode=OneWay}" />
-                                <Button
-                                    x:Name="Update"
-                                    x:Uid="/SettingsPage/CheckUpdates"
-                                    HorizontalAlignment="Right"
-                                    Click="Button_Click"
-                                    Tag="CheckUpdate"
-                                    Visibility="{Binding CheckingUpdate, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='true'}" />
-                            </StackPanel>
-                        </controls:Setting.ActionContent>
-                    </controls:Setting>
+                    <controls:SettingExpander>
+                        <controls:SettingExpander.Header>
+                            <controls:Setting Header="{Binding VersionTextBlockText}" Icon="&#xE117;">
+                                <controls:Setting.Description>
+                                    <StackPanel Orientation="Vertical">
+                                        <TextBlock Style="{StaticResource SecondaryTextStyle}">
+                                            <Run x:Uid="/SettingsPage/LastChecked" />
+                                            <Run Text="{Binding UpdateDate, Mode=OneWay}" />
+                                        </TextBlock>
+                                        <StackPanel Margin="0,2,0,0" Orientation="Horizontal">
+                                            <HyperlinkButton
+                                                x:Uid="/SettingsPage/FeedbackLink"
+                                                Margin="0,0,2,0"
+                                                NavigateUri="https://github.com/Paving-Base/APK-Installer/issues" />
+                                            <HyperlinkButton
+                                                x:Uid="/SettingsPage/TranslateLink"
+                                                Margin="2,0"
+                                                NavigateUri="https://crowdin.com/project/APKInstaller" />
+                                            <HyperlinkButton
+                                                x:Uid="/SettingsPage/ReleaseNotes"
+                                                Margin="2,0"
+                                                NavigateUri="https://github.com/Paving-Base/APK-Installer/releases/latest" />
+                                            <HyperlinkButton
+                                                x:Uid="/SettingsPage/EULA"
+                                                Margin="2,0"
+                                                NavigateUri="https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md" />
+                                        </StackPanel>
+                                    </StackPanel>
+                                </controls:Setting.Description>
+                                <controls:Setting.ActionContent>
+                                    <StackPanel
+                                        VerticalAlignment="Center"
+                                        Orientation="Horizontal"
+                                        Spacing="18">
+                                        <ProgressRing
+                                            Width="24"
+                                            Height="24"
+                                            Visibility="{Binding CheckingUpdate, Mode=OneWay}" />
+                                        <TextBlock
+                                            x:Uid="/SettingsPage/CheckingUpdates"
+                                            VerticalAlignment="Center"
+                                            FontWeight="SemiBold"
+                                            Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                            Visibility="{Binding CheckingUpdate, Mode=OneWay}" />
+                                        <Button
+                                            x:Name="Update"
+                                            x:Uid="/SettingsPage/CheckUpdates"
+                                            HorizontalAlignment="Right"
+                                            Click="Button_Click"
+                                            Tag="CheckUpdate"
+                                            Visibility="{Binding CheckingUpdate, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='true'}" />
+                                    </StackPanel>
+                                </controls:Setting.ActionContent>
+                            </controls:Setting>
+                        </controls:SettingExpander.Header>
+                        <controls:SettingExpander.Content>
+                            <Grid Style="{StaticResource ExpanderContentGridStyle}">
+                                <cwuc:MarkdownTextBlock
+                                    x:Uid="/MarkDown/About"
+                                    HorizontalAlignment="Left"
+                                    Background="Transparent"
+                                    LinkClicked="MarkdownText_LinkClicked" />
+                            </Grid>
+                        </controls:SettingExpander.Content>
+                    </controls:SettingExpander>
                     <InfoBar
                         x:Name="UpdateState"
                         Title="{Binding UpdateStateTitle}"

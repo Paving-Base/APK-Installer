@@ -26,6 +26,7 @@ An Android Application Installer for Windows
     - [更新应用](#更新应用)
   - [屏幕截图](#屏幕截图)
   - [使用到的模块](#使用到的模块)
+  - [参与人员](#参与人员)
   - [鸣谢](#鸣谢)
   - [Star 数量统计](#star-数量统计)
 
@@ -68,6 +69,8 @@ An Android Application Installer for Windows
 ## 使用到的模块
 - [WinUI](https://github.com/microsoft/microsoft-ui-xaml "WinUI")
 - [AAPTForNet](https://github.com/canheo136/QuickLook.Plugin.ApkViewer "AAPTForNet")
+- [Sharp Compress](https://github.com/adamhathcock/sharpcompress "Sharp Compress")
+- [Portable Downloader](https://github.com/madnik7/PortableDownloader "Portable Downloader")
 - [Advanced Sharp Adb Client](https://github.com/yungd1plomat/AdvancedSharpAdbClient "Advanced Sharp Adb Client")
 - [Windows Community Toolkit](https://github.com/CommunityToolkit/WindowsCommunityToolkit "Windows Community Toolkit")
 

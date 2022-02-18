@@ -1,3 +1,4 @@
+using CommunityToolkit.WinUI.UI.Controls;
 using Microsoft.UI.Xaml.Controls;
 using System;
 using System.ComponentModel;
@@ -70,9 +71,6 @@ namespace APKInstaller.Controls.Dialogs
 
         public MarkdownDialog() => InitializeComponent();
 
-        private void MarkdownText_LinkClicked(object sender, CommunityToolkit.WinUI.UI.Controls.LinkClickedEventArgs e)
-        {
-            _ = Launcher.LaunchUriAsync(new Uri(e.Link));
-        }
+        private void MarkdownText_LinkClicked(object sender, LinkClickedEventArgs e) => _ = Launcher.LaunchUriAsync(new Uri(e.Link));
     }
 }

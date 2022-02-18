@@ -1,6 +1,7 @@
 ﻿using AdvancedSharpAdbClient;
 using APKInstaller.Helpers;
 using APKInstaller.ViewModels.SettingsPages;
+using CommunityToolkit.WinUI.UI.Controls;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
@@ -92,5 +93,7 @@ namespace APKInstaller.Pages.SettingsPages
         }
 
         private void GotoUpdate_Click(object sender, RoutedEventArgs e) => _ = Launcher.LaunchUriAsync(new Uri((sender as FrameworkElement).Tag.ToString()));
+
+        private void MarkdownText_LinkClicked(object sender, LinkClickedEventArgs e) => _ = Launcher.LaunchUriAsync(new Uri(e.Link));
     }
 }

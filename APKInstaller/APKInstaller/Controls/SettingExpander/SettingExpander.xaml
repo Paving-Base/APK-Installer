@@ -31,6 +31,15 @@
         <Setter Property="Padding" Value="{StaticResource ExpanderSettingMargin}" />
     </Style>
 
+    <Style x:Key="ExpanderContentGridStyle" TargetType="Grid">
+        <Setter Property="CornerRadius" Value="0" />
+        <Setter Property="BorderThickness" Value="0,1,0,0" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="BorderBrush" Value="{ThemeResource CardBorderBrush}" />
+        <Setter Property="Padding" Value="{StaticResource ExpanderSettingMargin}" />
+    </Style>
+
     <!--  Setting expander style  -->
     <Style x:Key="SettingExpanderStyle" TargetType="Expander">
         <Setter Property="HorizontalAlignment" Value="Stretch" />
