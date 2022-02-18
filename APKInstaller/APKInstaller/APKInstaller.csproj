@@ -10,7 +10,7 @@
     <RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
     <PublishProfile>win10-$(Platform).pubxml</PublishProfile>
     <UseWinUI>true</UseWinUI>
-	<VersionPrefix>0.1.8</VersionPrefix>
+	<VersionPrefix>0.1.9</VersionPrefix>
     <EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
     <GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
     <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
