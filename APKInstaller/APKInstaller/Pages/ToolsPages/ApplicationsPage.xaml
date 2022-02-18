@@ -54,20 +54,20 @@
                                         <MenuFlyout x:Name="MenuFlyout">
                                             <MenuFlyoutItem
                                                 x:Name="Stop"
+                                                x:Uid="/ApplicationsPage/Stop"
                                                 x:Load="{x:Bind IsActive}"
                                                 Click="MenuFlyoutItem_Click"
-                                                Tag="{x:Bind Name}"
-                                                Text="Stop" />
+                                                Tag="{x:Bind Name}" />
                                             <MenuFlyoutItem
                                                 x:Name="Start"
+                                                x:Uid="/ApplicationsPage/Start"
                                                 x:Load="{x:Bind IsActive, Converter={StaticResource BoolNegationConverter}}"
                                                 Click="MenuFlyoutItem_Click"
-                                                Tag="{x:Bind Name}"
-                                                Text="Start" />
+                                                Tag="{x:Bind Name}" />
                                             <MenuFlyoutItem
+                                                x:Uid="/ApplicationsPage/Uninstall"
                                                 Click="MenuFlyoutItem_Click"
-                                                Tag="{x:Bind Name}"
-                                                Text="Uninstall" />
+                                                Tag="{x:Bind Name}" />
                                         </MenuFlyout>
                                     </Button.Flyout>
                                 </Button>
@@ -79,7 +79,7 @@
         </ListView>
         <controls:TitleBar
             x:Name="TitleBar"
-            Title="Applications"
+            x:Uid="/ApplicationsPage/TitleBar"
             BackRequested="TitleBar_BackRequested"
             BackgroundVisibility="Visible"
             IsBackEnable="{x:Bind Frame.CanGoBack}"
@@ -88,9 +88,9 @@
             <controls:TitleBar.RightAreaContent>
                 <ComboBox
                     x:Name="DeviceComboBox"
+                    x:Uid="/ApplicationsPage/DeviceComboBox"
                     VerticalAlignment="Center"
                     Loaded="ComboBox_Loaded"
-                    PlaceholderText="Waiting for Device..."
                     SelectionChanged="ComboBox_SelectionChanged" />
             </controls:TitleBar.RightAreaContent>
         </controls:TitleBar>

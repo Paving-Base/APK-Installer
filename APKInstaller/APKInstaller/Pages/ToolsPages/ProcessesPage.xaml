@@ -25,30 +25,30 @@
             ItemsSource="{Binding Processes, Mode=OneWay}">
             <controls:DataGrid.Columns>
                 <controls:DataGridTextColumn
+                    x:Uid="/ProcessesPage/Name"
                     Binding="{Binding Name, Converter={StaticResource TextConverter}, ConverterParameter='Name'}"
-                    Header="Name"
                     Tag="Name" />
                 <controls:DataGridTextColumn
+                    x:Uid="/ProcessesPage/ProcessId"
                     Binding="{Binding ProcessId}"
-                    Header="ProcessId"
                     Tag="ProcessId" />
                 <controls:DataGridTextColumn
+                    x:Uid="/ProcessesPage/State"
                     Binding="{Binding State, Converter={StaticResource TextConverter}, ConverterParameter='State'}"
-                    Header="State"
                     Tag="State" />
                 <controls:DataGridTextColumn
+                    x:Uid="/ProcessesPage/ResidentSetSize"
                     Binding="{Binding ResidentSetSize, Converter={StaticResource TextConverter}, ConverterParameter='Size'}"
-                    Header="Resident Set Size"
                     Tag="Resident Set Size" />
                 <controls:DataGridTextColumn
+                    x:Uid="/ProcessesPage/Detail"
                     Binding="{Binding Name}"
-                    Header="Detail"
                     Tag="Detail" />
             </controls:DataGrid.Columns>
         </controls:DataGrid>
         <Controls:TitleBar
             x:Name="TitleBar"
-            Title="Processes"
+            x:Uid="/ProcessesPage/TitleBar"
             BackRequested="TitleBar_BackRequested"
             BackgroundVisibility="Visible"
             IsBackEnable="{x:Bind Frame.CanGoBack}"
@@ -57,9 +57,9 @@
             <Controls:TitleBar.RightAreaContent>
                 <ComboBox
                     x:Name="DeviceComboBox"
+                    x:Uid="/ProcessesPage/DeviceComboBox"
                     VerticalAlignment="Center"
                     Loaded="ComboBox_Loaded"
-                    PlaceholderText="Waiting for Device..."
                     SelectionChanged="ComboBox_SelectionChanged" />
             </Controls:TitleBar.RightAreaContent>
         </Controls:TitleBar>

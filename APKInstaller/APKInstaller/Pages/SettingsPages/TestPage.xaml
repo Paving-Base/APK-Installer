@@ -28,52 +28,46 @@
                         <ReorderThemeTransition />
                     </TransitionCollection>
                 </StackPanel.ChildrenTransitions>
-                <contorls:SettingsGroup Margin="0,-32,0,0" Header="UI Test">
-                    <contorls:Setting
-                        Description="Extends Content Into TitleBar"
-                        Header="Title Bar"
-                        Icon="&#xE737;">
+                <contorls:SettingsGroup x:Uid="/TestPage/UITestSettingsHeader" Margin="0,-32,0,0">
+                    <contorls:Setting x:Uid="/TestPage/TitleBarSettings" Icon="&#xE737;">
                         <contorls:Setting.ActionContent>
                             <ToggleSwitch IsOn="{x:Bind IsExtendsTitleBar, Mode=TwoWay}" Style="{StaticResource ToggleSwitchSettingStyle}" />
                         </contorls:Setting.ActionContent>
                     </contorls:Setting>
-                    <contorls:Setting
-                        Description="Enter or Exit Compact Overlay"
-                        Header="Compact Overlay"
-                        Icon="&#xE944;">
+                    <contorls:Setting x:Uid="/TestPage/CompactOverlaySettings" Icon="&#xE944;">
                         <contorls:Setting.ActionContent>
                             <StackPanel
                                 Margin="0,2"
                                 Orientation="Horizontal"
                                 Spacing="4">
                                 <Button
+                                    x:Uid="/TestPage/EnterPIP"
                                     Click="Button_Click"
-                                    Content="Enter Compact Overlay"
                                     Tag="EnterPIP" />
                                 <Button
+                                    x:Uid="/TestPage/OutPIP"
                                     Click="Button_Click"
-                                    Content="Exit"
                                     Tag="OutPIP" />
                             </StackPanel>
                         </contorls:Setting.ActionContent>
                     </contorls:Setting>
                 </contorls:SettingsGroup>
-                <contorls:SettingsGroup Margin="0,-32,0,0" Header="Android Test">
+                <contorls:SettingsGroup x:Uid="/TestPage/AndroidTestSettingsHeader" Margin="0,-32,0,0">
                     <contorls:SettingButton Click="Button_Click" Tag="Applications">
                         <contorls:SettingButton.Content>
-                            <contorls:Setting Header="Applications" Icon="&#xE7B8;" />
+                            <contorls:Setting x:Uid="/TestPage/ApplicationsSettings" Icon="&#xE7B8;" />
                         </contorls:SettingButton.Content>
                     </contorls:SettingButton>
                     <contorls:SettingButton Click="Button_Click" Tag="Processes">
                         <contorls:SettingButton.Content>
-                            <contorls:Setting Header="Processes" Icon="&#xE9D9;" />
+                            <contorls:Setting x:Uid="/TestPage/ProcessesSettings" Icon="&#xE9D9;" />
                         </contorls:SettingButton.Content>
                     </contorls:SettingButton>
                 </contorls:SettingsGroup>
             </StackPanel>
         </ScrollViewer>
         <contorls:TitleBar
-            Title="Testing"
+            x:Uid="/TestPage/TitleBar"
             BackRequested="TitleBar_BackRequested"
             BackgroundVisibility="Visible"
             IsBackEnable="{x:Bind Frame.CanGoBack}" />
