@@ -27,7 +27,6 @@ namespace APKInstaller.Pages.SettingsPages
                 {
                     UIHelper.GetAppWindowForCurrentWindow().TitleBar.ExtendsContentIntoTitleBar = value;
                 }
-                RaisePropertyChangedEvent();
             }
         }
 

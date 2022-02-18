@@ -31,7 +31,7 @@ namespace APKInstaller.Pages.SettingsPages
             GoToTestPage.Visibility = Visibility.Visible;
             //#endif
             SelectDeviceBox.SelectionMode = Provider.IsOnlyWSA ? ListViewSelectionMode.None : ListViewSelectionMode.Single;
-            if (Provider.UpdateDate == DateTime.MinValue) { Provider.CheckUpdate(); }
+            if (SettingsViewModel.UpdateDate == DateTime.MinValue) { Provider.CheckUpdate(); }
             ADBHelper.Monitor.DeviceChanged += Provider.OnDeviceChanged;
             Provider.DeviceList = new AdvancedAdbClient().GetDevices();
         }
@@ -58,6 +58,7 @@ namespace APKInstaller.Pages.SettingsPages
                     break;
                 case "Connect":
                     new AdvancedAdbClient().Connect(ConnectIP.Text);
+                    Provider.OnDeviceChanged(null, null);
                     break;
                 case "TestPage":
                     _ = Frame.Navigate(typeof(TestPage));

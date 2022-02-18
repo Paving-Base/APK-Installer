@@ -30,51 +30,59 @@ namespace APKInstaller.ViewModels.SettingsPages
             }
         }
 
-        private bool _isOnlyWSA = SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
         public bool IsOnlyWSA
         {
-            get => _isOnlyWSA;
+            get => SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
             set
             {
                 SettingsHelper.Set(SettingsHelper.IsOnlyWSA, value);
-                _isOnlyWSA = SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
                 _page.SelectDeviceBox.SelectionMode = value ? ListViewSelectionMode.None : ListViewSelectionMode.Single;
                 if (!value) { ChooseDevice(); }
-                RaisePropertyChangedEvent();
             }
         }
 
-        private bool _isCloseADB = SettingsHelper.Get<bool>(SettingsHelper.IsCloseADB);
-        public bool IsCloseADB
+        public static bool IsCloseADB
         {
-            get => _isCloseADB;
+            get => SettingsHelper.Get<bool>(SettingsHelper.IsCloseADB);
             set
             {
                 SettingsHelper.Set(SettingsHelper.IsCloseADB, value);
-                _isCloseADB = SettingsHelper.Get<bool>(SettingsHelper.IsCloseADB);
             }
         }
 
-        private DateTime _updateDate = SettingsHelper.Get<DateTime>(SettingsHelper.UpdateDate);
-        public DateTime UpdateDate
+        public static bool IsCloseAPP
         {
-            get => _updateDate;
+            get => SettingsHelper.Get<bool>(SettingsHelper.IsCloseAPP);
+            set
+            {
+                SettingsHelper.Set(SettingsHelper.IsCloseAPP, value);
+            }
+        }
+
+        public static DateTime UpdateDate
+        {
+            get => SettingsHelper.Get<DateTime>(SettingsHelper.UpdateDate);
             set
             {
                 SettingsHelper.Set(SettingsHelper.UpdateDate, value);
-                _updateDate = SettingsHelper.Get<DateTime>(SettingsHelper.UpdateDate);
-                RaisePropertyChangedEvent();
             }
         }
 
-        private bool _autoGetNetAPK = SettingsHelper.Get<bool>(SettingsHelper.AutoGetNetAPK);
-        public bool AutoGetNetAPK
+        public static bool ShowDialogs
         {
-            get => _autoGetNetAPK;
+            get => SettingsHelper.Get<bool>(SettingsHelper.ShowDialogs);
+            set
+            {
+                SettingsHelper.Set(SettingsHelper.ShowDialogs, value);
+            }
+        }
+
+        public static bool AutoGetNetAPK
+        {
+            get => SettingsHelper.Get<bool>(SettingsHelper.AutoGetNetAPK);
             set
             {
                 SettingsHelper.Set(SettingsHelper.AutoGetNetAPK, value);
-                _autoGetNetAPK = SettingsHelper.Get<bool>(SettingsHelper.AutoGetNetAPK);
             }
         }
 

@@ -72,6 +72,28 @@
                         </controls:SettingExpander.Content>
                     </controls:SettingExpander>
                 </controls:SettingsGroup>
+                <controls:SettingsGroup x:Uid="/SettingsPage/ContentSettingsHeader" Margin="0,-32,0,0">
+                    <controls:Setting x:Uid="/SettingsPage/ShowDialogsSettings" Icon="&#xE82F;">
+                        <controls:Setting.ActionContent>
+                            <ToggleSwitch IsOn="{Binding ShowDialogs, Mode=TwoWay}" Style="{StaticResource ToggleSwitchSettingStyle}" />
+                        </controls:Setting.ActionContent>
+                    </controls:Setting>
+                    <controls:Setting x:Uid="/SettingsPage/AutoGetNetAPKSettings" Icon="&#xE896;">
+                        <controls:Setting.ActionContent>
+                            <ToggleSwitch IsOn="{Binding AutoGetNetAPK, Mode=TwoWay}" Style="{StaticResource ToggleSwitchSettingStyle}" />
+                        </controls:Setting.ActionContent>
+                    </controls:Setting>
+                    <controls:Setting x:Uid="/SettingsPage/CloseAPPSettings" Icon="&#xEDAE;">
+                        <controls:Setting.ActionContent>
+                            <ToggleSwitch IsOn="{Binding IsCloseAPP, Mode=TwoWay}" Style="{StaticResource ToggleSwitchSettingStyle}" />
+                        </controls:Setting.ActionContent>
+                    </controls:Setting>
+                    <controls:Setting x:Uid="/SettingsPage/CloseADBSettings" Icon="&#xE756;">
+                        <controls:Setting.ActionContent>
+                            <ToggleSwitch IsOn="{Binding IsCloseADB, Mode=TwoWay}" Style="{StaticResource ToggleSwitchSettingStyle}" />
+                        </controls:Setting.ActionContent>
+                    </controls:Setting>
+                </controls:SettingsGroup>
                 <controls:SettingsGroup x:Uid="/SettingsPage/OthersSettingsHeader" Margin="0,-32,0,0">
                     <controls:Setting x:Uid="/SettingsPage/ResetSettings" Icon="&#xE777;">
                         <controls:Setting.ActionContent>
@@ -91,16 +113,6 @@
                                     </Flyout>
                                 </Button.Flyout>
                             </Button>
-                        </controls:Setting.ActionContent>
-                    </controls:Setting>
-                    <controls:Setting x:Uid="/SettingsPage/CloseADBSettings" Icon="&#xE756;">
-                        <controls:Setting.ActionContent>
-                            <ToggleSwitch IsOn="{Binding IsCloseADB, Mode=TwoWay}" Style="{StaticResource ToggleSwitchSettingStyle}" />
-                        </controls:Setting.ActionContent>
-                    </controls:Setting>
-                    <controls:Setting x:Uid="/SettingsPage/AutoGetNetAPKSettings" Icon="&#xE896;">
-                        <controls:Setting.ActionContent>
-                            <ToggleSwitch IsOn="{Binding AutoGetNetAPK, Mode=TwoWay}" Style="{StaticResource ToggleSwitchSettingStyle}" />
                         </controls:Setting.ActionContent>
                     </controls:Setting>
                     <controls:SettingButton

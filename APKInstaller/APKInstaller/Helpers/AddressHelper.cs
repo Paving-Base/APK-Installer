@@ -1,8 +1,5 @@
 ﻿using AdvancedSharpAdbClient;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
@@ -29,7 +26,7 @@ namespace APKInstaller.Helpers
         {
             AdvancedAdbClient AdbClient = new AdvancedAdbClient();
             List<string> addresses = await GetAddressID("00-15-5d");
-            foreach( string address in addresses)
+            foreach (string address in addresses)
             {
                 AdbClient.Connect(address);
             }

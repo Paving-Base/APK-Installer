@@ -32,7 +32,7 @@ namespace APKInstaller
 
         private void Window_Closed(object sender, WindowEventArgs args)
         {
-            string[] TempPaths = new string[] { Path.Combine(ApplicationData.Current.TemporaryFolder.Path, @$"Caches\{Environment.ProcessId}"), Path.Combine(Path.GetTempPath(), @$"APKInstaller\Caches\{Environment.ProcessId}") };
+            string[] TempPaths = new string[] { Path.Combine(ApplicationData.Current.TemporaryFolder.Path, "Caches", $"{Environment.ProcessId}"), Path.Combine(Path.GetTempPath(), @"APKInstaller\Caches", $"{Environment.ProcessId}") };
             foreach (string TempPath in TempPaths)
             {
                 if (Directory.Exists(TempPath))
@@ -54,7 +54,7 @@ namespace APKInstaller
 
                 if (SettingsHelper.Get<bool>(SettingsHelper.IsCloseADB))
                 {
-                    new AdvancedAdbClient().KillAdb();
+                    try { new AdvancedAdbClient().KillAdb(); } catch { }
                 }
             }
         }

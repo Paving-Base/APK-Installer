@@ -1,5 +1,4 @@
-﻿using AAPT2ForNet.Models;
-using APKInstaller.Helpers;
+﻿using APKInstaller.Helpers;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Documents;

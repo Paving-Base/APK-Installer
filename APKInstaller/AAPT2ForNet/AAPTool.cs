@@ -21,11 +21,11 @@ namespace AAPT2ForNet
         }
 
         private static readonly string AppPath = Path.GetDirectoryName(System.Reflection.Assembly.GetCallingAssembly().Location);
-        private static readonly string TempPath = Path.Combine(Path.GetTempPath(), $@"APKInstaller\Caches\{Environment.ProcessId}\AppPackages");
+        private static readonly string TempPath = Path.Combine(Path.GetTempPath(), @"APKInstaller\Caches", $"{Environment.ProcessId}", "AppPackages");
 
         protected AAPTool()
         {
-            StartInfo.FileName = AppPath + @"\tool\aapt2.exe";
+            StartInfo.FileName = Path.Combine(AppPath, @"tool\aapt2.exe");
             StartInfo.CreateNoWindow = true;
             StartInfo.UseShellExecute = false; // For read output data
             StartInfo.RedirectStandardError = true;

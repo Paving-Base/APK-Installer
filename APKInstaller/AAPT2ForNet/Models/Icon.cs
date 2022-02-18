@@ -67,7 +67,7 @@ namespace AAPT2ForNet.Models
         internal Icon(string iconName)
         {
             IconName = iconName ?? string.Empty;
-            RealPath = $@"{AppDomain.CurrentDomain.BaseDirectory}\Assets\256x256.png";
+            RealPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Assets\256x256.png");
         }
 
         public override string ToString() => IconName;

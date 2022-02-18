@@ -17,6 +17,7 @@ namespace APKInstaller.Pages
     /// </summary>
     public sealed partial class InstallPage : Page
     {
+        private bool IsCaches;
         internal InstallViewModel Provider;
 
         public InstallPage() => InitializeComponent();
@@ -24,20 +25,29 @@ namespace APKInstaller.Pages
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            string _path = string.Empty;
-            AppActivationArguments args = AppInstance.GetCurrent().GetActivatedEventArgs();
-            switch (args.Kind)
+            if (InstallViewModel.Caches != null)
             {
-                case ExtendedActivationKind.File:
-                    _path = (args.Data as IFileActivatedEventArgs).Files.First().Path;
-                    Provider = new InstallViewModel(_path, this);
-                    break;
-                case ExtendedActivationKind.Protocol:
-                    Provider = new InstallViewModel((args.Data as IProtocolActivatedEventArgs).Uri, this);
-                    break;
-                default:
-                    Provider = new InstallViewModel(_path, this);
-                    break;
+                IsCaches = true;
+                Provider = InstallViewModel.Caches;
+            }
+            else
+            {
+                IsCaches = false;
+                string _path = string.Empty;
+                AppActivationArguments args = AppInstance.GetCurrent().GetActivatedEventArgs();
+                switch (args.Kind)
+                {
+                    case ExtendedActivationKind.File:
+                        _path = (args.Data as IFileActivatedEventArgs).Files.First().Path;
+                        Provider = new InstallViewModel(_path, this);
+                        break;
+                    case ExtendedActivationKind.Protocol:
+                        Provider = new InstallViewModel((args.Data as IProtocolActivatedEventArgs).Uri, this);
+                        break;
+                    default:
+                        Provider = new InstallViewModel(_path, this);
+                        break;
+                }
             }
             DataContext = Provider;
         }
@@ -75,7 +85,7 @@ namespace APKInstaller.Pages
 
         private async void InitialLoadingUI_Loaded(object sender, RoutedEventArgs e)
         {
-            await Provider.Refresh();
+            await Provider.Refresh(!IsCaches);
         }
     }
 }

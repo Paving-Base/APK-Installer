@@ -1,7 +1,6 @@
 ﻿using AAPT2ForNet.Models;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
@@ -12,7 +11,7 @@ namespace AAPT2ForNet
     internal class ApkExtractor
     {
         private static int id = 0;
-        private static readonly string tempPath = Path.Combine(Path.GetTempPath(), $@"APKInstaller\Caches\{Environment.ProcessId}");
+        private static readonly string tempPath = Path.Combine(Path.GetTempPath(), @"APKInstaller\Caches", $"{Environment.ProcessId}");
 
         public static DumpModel ExtractManifest(string path)
         {
