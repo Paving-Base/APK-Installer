@@ -295,8 +295,8 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
-    <value>Waiting WSA Start...
-This may take long time. Sit back and relax.</value>
+    <value>正在等待 WSA 启动……
+这通常需要很长时间。请坐和放宽。</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA 正在运行</value>
