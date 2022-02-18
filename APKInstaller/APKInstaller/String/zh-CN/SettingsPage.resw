@@ -145,10 +145,10 @@
     <value>关闭安装程序时是否关闭 ADB？</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Close Installer after APK has installed and start.</value>
+    <value>在 APK 安装完成并启动后关闭安装程序。</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Is Close Installer when Ready ?</value>
+    <value>当准备就绪后是否关闭安装程序？</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
     <value>通过网络连接设备。</value>
@@ -208,10 +208,10 @@
     <value>选择设备</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
-    <value>Show helpers when no device is connected?</value>
+    <value>当没有连接到设备时显示帮助？</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Is Show Helpers?</value>
+    <value>是否显示帮助？</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>设置</value>
