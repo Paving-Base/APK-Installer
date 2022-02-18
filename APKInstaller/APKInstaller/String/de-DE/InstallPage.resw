@@ -296,7 +296,7 @@
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
     <value>Waiting WSA Start...
-This may takes long time. Sit back and relax.</value>
+This may take long time. Sit back and relax.</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA wird ausgeführt</value>
