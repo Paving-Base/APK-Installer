@@ -148,7 +148,7 @@
     <value>Close Installer after APK has installed and start.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Is Close Installer when Ready ?</value>
+    <value>Is Close Installer when APP is Ready ?</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
     <value>Подключите устройство к сети.</value>
@@ -208,7 +208,7 @@
     <value>Выбрать устройство</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
-    <value>Show helpers when no device is connected?</value>
+    <value>Show helpers when no device is connected.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
     <value>Is Show Helpers?</value>
