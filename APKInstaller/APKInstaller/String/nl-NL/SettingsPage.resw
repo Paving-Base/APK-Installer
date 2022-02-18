@@ -144,6 +144,12 @@
   <data name="CloseADBSettings.Header" xml:space="preserve">
     <value>Is Close ADB when Closing Installer?</value>
   </data>
+  <data name="CloseAPPSettings.Description" xml:space="preserve">
+    <value>Close Installer after APK has installed and start.</value>
+  </data>
+  <data name="CloseAPPSettings.Header" xml:space="preserve">
+    <value>Is Close Installer when Ready ?</value>
+  </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
     <value>Connect device on network.</value>
   </data>
@@ -200,6 +206,12 @@
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Select Device</value>
+  </data>
+  <data name="ShowDialogsSettings.Description" xml:space="preserve">
+    <value>Show helpers when no device is connected?</value>
+  </data>
+  <data name="ShowDialogsSettings.Header" xml:space="preserve">
+    <value>Is Show Helpers?</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Settings</value>
