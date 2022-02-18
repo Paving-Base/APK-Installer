@@ -181,7 +181,7 @@
     <value>安裝</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
-    <value>{0} is ready!</value>
+    <value>{0} 已準備就緒!</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
@@ -207,7 +207,7 @@
     <value>正在啓動 WSA ……</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>Launch when ready</value>
+    <value>當準備就緒時啟動</value>
   </data>
   <data name="Loading" xml:space="preserve">
     <value>加載中……</value>
@@ -295,8 +295,8 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
-    <value>Waiting WSA Start...
-This may take long time. Sit back and relax.</value>
+    <value>等待 WSA 啟動......
+這通常需要很長時間。 請坐和放寬。</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA 正在運行</value>
