@@ -68,12 +68,13 @@ namespace APKInstaller.ViewModels.SettingsPages
             }
         }
 
-        public static DateTime UpdateDate
+        public DateTime UpdateDate
         {
             get => SettingsHelper.Get<DateTime>(SettingsHelper.UpdateDate);
             set
             {
                 SettingsHelper.Set(SettingsHelper.UpdateDate, value);
+                RaisePropertyChangedEvent();
             }
         }
 

@@ -32,15 +32,18 @@ namespace APKInstaller.Pages.SettingsPages
             GoToTestPage.Visibility = Visibility.Visible;
             //#endif
             SelectDeviceBox.SelectionMode = Provider.IsOnlyWSA ? ListViewSelectionMode.None : ListViewSelectionMode.Single;
-            if (SettingsViewModel.UpdateDate == DateTime.MinValue) { Provider.CheckUpdate(); }
-            ADBHelper.Monitor.DeviceChanged += Provider.OnDeviceChanged;
-            Provider.DeviceList = new AdvancedAdbClient().GetDevices();
+            if (Provider.UpdateDate == DateTime.MinValue) { Provider.CheckUpdate(); }
+            if (new AdbServer().GetStatus().IsRunning)
+            {
+                ADBHelper.Monitor.DeviceChanged += Provider.OnDeviceChanged;
+                Provider.DeviceList = new AdvancedAdbClient().GetDevices();
+            }
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             base.OnNavigatedFrom(e);
-            ADBHelper.Monitor.DeviceChanged -= Provider.OnDeviceChanged;
+            if (new AdbServer().GetStatus().IsRunning) { ADBHelper.Monitor.DeviceChanged -= Provider.OnDeviceChanged; }
         }
 
         private async void Button_Click(object sender, RoutedEventArgs e)
