@@ -769,6 +769,7 @@ namespace APKInstaller.ViewModels
 
         public async Task InitilizeADB()
         {
+            WaitProgressText = _loader.GetString("Loading");
             if (!string.IsNullOrEmpty(_path) || _url != null)
             {
                 AdbServer ADBServer = new AdbServer();
@@ -1007,6 +1008,7 @@ namespace APKInstaller.ViewModels
 
         public async Task ReinitilizeUI()
         {
+            WaitProgressText = _loader.GetString("Loading");
             if ((!string.IsNullOrEmpty(_path) || _url != null) && NetAPKExist)
             {
             checkdevice:

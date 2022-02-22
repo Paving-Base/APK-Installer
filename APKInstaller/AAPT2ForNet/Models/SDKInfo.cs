@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace AAPT2ForNet.Models
 {
@@ -37,10 +38,16 @@ namespace AAPT2ForNet.Models
             "Oreo",
             "Oreo",
             "Pie",
-            "Android10",
-            "Android11",  // API level 30
-            "Android12",
-            "Android13"
+            "Q",
+            "R",        // API level 30
+            "S",
+            "T",
+            "U",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z"         // API level 38
         };
 
         private static readonly string[] AndroidVersionCodes = {
@@ -64,7 +71,7 @@ namespace AAPT2ForNet.Models
             "4.2",
             "4.3",
             "4.4",
-            "Unknown",  // API level 20
+            "4.4W", // API level 20
             "5.0",
             "5.1",
             "6.0",
@@ -74,18 +81,24 @@ namespace AAPT2ForNet.Models
             "8.1",
             "9",
             "10",
-            "11",    // API level 30
+            "11",   // API level 30
             "12",
-            "13"
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19"    // API level 38
         };
 
-        public string APILever { get; }
+        public string APILevel { get; }
         public string Version { get; }
         public string CodeName { get; }
 
         protected SDKInfo(string level, string ver, string code)
         {
-            APILever = level;
+            APILevel = level;
             Version = ver;
             CodeName = code;
         }
@@ -100,30 +113,63 @@ namespace AAPT2ForNet.Models
 
         public static SDKInfo GetInfo(string sdkVer)
         {
-            int.TryParse(sdkVer, out int ver);
-            return GetInfo(ver);
+            if (int.TryParse(sdkVer, out int ver))
+            {
+                if (ver > AndroidVersionCodes.Length - 1) { return new SDKInfo(sdkVer, sdkVer, "Hello from 2022!"); }
+                else { return GetInfo(ver); }
+            }
+            else
+            {
+                return new SDKInfo(sdkVer, sdkVer, AndroidCodeNames[0]);
+            }
         }
 
-        public override int GetHashCode() => 1008763889 + EqualityComparer<string>.Default.GetHashCode(APILever);
+        public override int GetHashCode() => 1008763889 + EqualityComparer<string>.Default.GetHashCode(APILevel);
 
         public override bool Equals(object obj)
         {
             if (obj is SDKInfo another)
             {
-                return APILever == another.APILever;
+                return APILevel == another.APILevel;
             }
             return false;
         }
 
+        public int CompareTo(object obj)
+        {
+            if (obj is SDKInfo another)
+            {
+                if (int.TryParse(APILevel, out int ver) && int.TryParse(another.APILevel, out int anotherver))
+                {
+                    return ver.CompareTo(anotherver);
+                }
+
+                return 0;
+            }
+            throw new ArgumentException();
+        }
+
+        public static bool operator ==(SDKInfo left, SDKInfo right) => left.Equals(right);
+
+        public static bool operator !=(SDKInfo left, SDKInfo right) => !(left == right);
+
+        public static bool operator <(SDKInfo left, SDKInfo right) => left.CompareTo(right) < 0;
+
+        public static bool operator <=(SDKInfo left, SDKInfo right) => left.CompareTo(right) <= 0;
+
+        public static bool operator >(SDKInfo left, SDKInfo right) => left.CompareTo(right) > 0;
+
+        public static bool operator >=(SDKInfo left, SDKInfo right) => left.CompareTo(right) >= 0;
+
         public override string ToString()
         {
-            if (APILever.Equals("0") && Version.Equals("0") && CodeName.Equals("0"))
+            if (this == Unknown)
             {
                 return AndroidCodeNames[0];
             }
 
-            return $"API Level {APILever} " +
-                $"{(Version == AndroidCodeNames[0] ? $"({AndroidCodeNames[0]} - " : $"(Android {Version} - ")}" +
+            return $"API Level {APILevel} " +
+                $"{(Version == AndroidVersionCodes[0] ? $"({Version} - " : $"(Android {Version} - ")}" +
                 $"{CodeName})";
         }
     }
