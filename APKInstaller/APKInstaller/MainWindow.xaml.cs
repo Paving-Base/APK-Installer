@@ -32,30 +32,19 @@ namespace APKInstaller
 
         private void Window_Closed(object sender, WindowEventArgs args)
         {
-            string[] TempPaths = new string[] { Path.Combine(ApplicationData.Current.TemporaryFolder.Path, "Caches", $"{Environment.ProcessId}"), Path.Combine(Path.GetTempPath(), @"APKInstaller\Caches", $"{Environment.ProcessId}") };
-            foreach (string TempPath in TempPaths)
-            {
-                if (Directory.Exists(TempPath))
-                {
-                    try { Directory.Delete(TempPath, true); } catch { }
-                }
-            }
-
             Process[] processes = Process.GetProcessesByName(Process.GetCurrentProcess().ProcessName);
             if (processes.Count() <= 1)
             {
-                foreach (string TempPath in TempPaths)
-                {
-                    if (Directory.Exists(TempPath[..TempPath.LastIndexOf(@"\")]))
-                    {
-                        try { Directory.Delete(TempPath[..TempPath.LastIndexOf(@"\")], true); } catch { }
-                    }
-                }
+                CachesHelper.CleanAllCaches(true);
 
                 if (SettingsHelper.Get<bool>(SettingsHelper.IsCloseADB))
                 {
                     try { new AdvancedAdbClient().KillAdb(); } catch { }
                 }
+            }
+            else
+            {
+                CachesHelper.CleanAllCaches(false);
             }
         }
 
