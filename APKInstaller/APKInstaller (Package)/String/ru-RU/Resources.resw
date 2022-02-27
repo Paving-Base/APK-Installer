@@ -118,15 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="APKDescription" xml:space="preserve">
-    <value>Пакет приложения Android</value>
+    <value>Пакет приложений для Android</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>APK-Файл</value>
+    <value>APK-файл</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>Установщик APK. Написали @wherewhere и @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>Установщик APK</value>
+    <value>APK Installer</value>
   </data>
 </root>
