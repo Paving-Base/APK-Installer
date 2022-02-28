@@ -4,9 +4,7 @@ using APKInstaller.Pages;
 using Microsoft.UI.Xaml;
 using System;
 using System.Diagnostics;
-using System.IO;
 using System.Linq;
-using Windows.Storage;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -32,30 +30,19 @@ namespace APKInstaller
 
         private void Window_Closed(object sender, WindowEventArgs args)
         {
-            string[] TempPaths = new string[] { Path.Combine(ApplicationData.Current.TemporaryFolder.Path, "Caches", $"{Environment.ProcessId}"), Path.Combine(Path.GetTempPath(), @"APKInstaller\Caches", $"{Environment.ProcessId}") };
-            foreach (string TempPath in TempPaths)
-            {
-                if (Directory.Exists(TempPath))
-                {
-                    try { Directory.Delete(TempPath, true); } catch { }
-                }
-            }
-
             Process[] processes = Process.GetProcessesByName(Process.GetCurrentProcess().ProcessName);
             if (processes.Count() <= 1)
             {
-                foreach (string TempPath in TempPaths)
-                {
-                    if (Directory.Exists(TempPath[..TempPath.LastIndexOf(@"\")]))
-                    {
-                        try { Directory.Delete(TempPath[..TempPath.LastIndexOf(@"\")], true); } catch { }
-                    }
-                }
+                CachesHelper.CleanAllCaches(true);
 
                 if (SettingsHelper.Get<bool>(SettingsHelper.IsCloseADB))
                 {
                     try { new AdvancedAdbClient().KillAdb(); } catch { }
                 }
+            }
+            else
+            {
+                CachesHelper.CleanAllCaches(false);
             }
         }
 

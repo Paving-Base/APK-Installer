@@ -8,7 +8,7 @@
     mc:Ignorable="d">
     <Grid
         x:Name="TitleGrid"
-        Height="{x:Bind helper:UIHelper.PageTitleHeight}"
+        Height="{x:Bind TitleHeight, Mode=OneWay}"
         VerticalAlignment="Top"
         Tapped="TitleGrid_Tapped">
         <Grid.ChildrenTransitions>
@@ -21,7 +21,8 @@
             Grid.ColumnSpan="5"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Stretch"
-            Background="{StaticResource SolidBackgroundFillColorBase}" />
+            Background="{StaticResource SolidBackgroundFillColorBase}"
+            Visibility="{x:Bind BackgroundVisibility, Mode=OneWay}" />
         <Grid Height="48" VerticalAlignment="Bottom">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="auto" />
@@ -35,7 +36,9 @@
                 Grid.Column="0"
                 VerticalAlignment="Center"
                 Click="BackButton_Click"
-                Style="{StaticResource IconButtonStyle}">
+                IsEnabled="{x:Bind IsBackEnable, Mode=OneWay}"
+                Style="{StaticResource IconButtonStyle}"
+                Visibility="{x:Bind BackButtonVisibility, Mode=OneWay}">
                 <SymbolIcon Symbol="Back" />
             </Button>
             <TextBlock
@@ -43,12 +46,14 @@
                 Grid.Column="1"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Center"
-                FontSize="18" />
+                FontSize="18"
+                Text="{x:Bind Title, Mode=OneWay}" />
             <ContentPresenter
                 x:Name="UserContentPresenter"
                 Grid.Column="2"
                 Height="40"
-                VerticalAlignment="Center" />
+                VerticalAlignment="Center"
+                Content="{x:Bind RightAreaContent, Mode=OneWay}" />
             <ProgressRing
                 x:Name="ProgressRing"
                 Grid.Column="3"
@@ -64,7 +69,7 @@
                 VerticalAlignment="Center"
                 Click="RefreshButton_Click"
                 Style="{StaticResource IconButtonStyle}"
-                Visibility="Collapsed">
+                Visibility="{x:Bind RefreshButtonVisibility, Mode=OneWay}">
                 <SymbolIcon Symbol="Refresh" />
             </Button>
         </Grid>

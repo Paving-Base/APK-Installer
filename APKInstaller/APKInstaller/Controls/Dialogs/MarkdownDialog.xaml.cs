@@ -1,4 +1,7 @@
+using APKInstaller.Models;
+using CommunityToolkit.WinUI.Connectivity;
 using CommunityToolkit.WinUI.UI.Controls;
+using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using System;
 using System.ComponentModel;
@@ -12,6 +15,21 @@ namespace APKInstaller.Controls.Dialogs
 {
     public sealed partial class MarkdownDialog : ContentDialog, INotifyPropertyChanged
     {
+
+        public static readonly DependencyProperty ContentInfoProperty = DependencyProperty.Register(
+           "ContentInfo",
+           typeof(GitInfo),
+           typeof(MarkdownDialog),
+           new PropertyMetadata(default(GitInfo), OnContentUrlChanged));
+
+        public GitInfo ContentInfo
+        {
+            get => (GitInfo)GetValue(ContentInfoProperty);
+            set => SetValue(ContentInfoProperty, value);
+        }
+
+        private static void OnContentUrlChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) => (d as MarkdownDialog).UpdateContent();
+
         private bool isInitialized;
         internal bool IsInitialized
         {
@@ -23,45 +41,6 @@ namespace APKInstaller.Controls.Dialogs
             }
         }
 
-        public string ContentUrl
-        {
-            set
-            {
-                DispatcherQueue.TryEnqueue(async () =>
-                {
-                    if (string.IsNullOrEmpty(value)) { return; }
-                    IsInitialized = false;
-                    value = value.StartsWith("http") ? value : $"https://{value}";
-                    using HttpClient client = new HttpClient();
-                    try
-                    {
-                        MarkdownText.Text = await client.GetStringAsync(value);
-                        Title = string.Empty;
-                    }
-                    catch
-                    {
-                        if (value.Contains("://raw.githubusercontent.com"))
-                        {
-                            try
-                            {
-                                MarkdownText.Text = (await client.GetStringAsync(value.Replace("://raw.githubusercontent.com", "://raw.fastgit.org"))).Replace("://raw.githubusercontent.com", "://raw.fastgit.org");
-                                Title = string.Empty;
-                            }
-                            catch
-                            {
-                                MarkdownText.Text = value;
-                            }
-                        }
-                        else
-                        {
-                            MarkdownText.Text = value;
-                        }
-                    }
-                    IsInitialized = true;
-                });
-            }
-        }
-
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void RaisePropertyChangedEvent([System.Runtime.CompilerServices.CallerMemberName] string name = null)
@@ -70,6 +49,47 @@ namespace APKInstaller.Controls.Dialogs
         }
 
         public MarkdownDialog() => InitializeComponent();
+
+        private async void UpdateContent()
+        {
+            if (ContentInfo == default(GitInfo)) { return; }
+            IsInitialized = false;
+            string value = ContentInfo.FormatURL(GitInfo.GITHUB_API);
+            if (!NetworkHelper.Instance.ConnectionInformation.IsInternetAvailable)
+            {
+                MarkdownText.Text = value;
+                return;
+            }
+            using (HttpClient client = new HttpClient())
+            {
+                try
+                {
+                    MarkdownText.Text = await client.GetStringAsync(value);
+                    Title = string.Empty;
+                }
+                catch
+                {
+                    try
+                    {
+                        MarkdownText.Text = (await client.GetStringAsync(ContentInfo.FormatURL(GitInfo.FASTGIT_API))).Replace("://raw.githubusercontent.com", "://raw.fastgit.org");
+                        Title = string.Empty;
+                    }
+                    catch
+                    {
+                        try
+                        {
+                            MarkdownText.Text = await client.GetStringAsync(ContentInfo.FormatURL(GitInfo.JSDELIVR_API));
+                            Title = string.Empty;
+                        }
+                        catch
+                        {
+                            MarkdownText.Text = value;
+                        }
+                    }
+                }
+            }
+            IsInitialized = true;
+        }
 
         private void MarkdownText_LinkClicked(object sender, LinkClickedEventArgs e) => _ = Launcher.LaunchUriAsync(new Uri(e.Link));
     }
