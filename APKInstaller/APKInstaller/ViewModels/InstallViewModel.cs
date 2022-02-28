@@ -4,6 +4,7 @@ using AdvancedSharpAdbClient;
 using AdvancedSharpAdbClient.DeviceCommands;
 using APKInstaller.Controls.Dialogs;
 using APKInstaller.Helpers;
+using APKInstaller.Models;
 using APKInstaller.Pages;
 using APKInstaller.Pages.SettingsPages;
 using CommunityToolkit.WinUI;
@@ -687,9 +688,9 @@ namespace APKInstaller.ViewModels
 
         public async Task DownloadADB()
         {
-            if (!Directory.Exists(ADBTemp.Substring(0, ADBTemp.LastIndexOf(@"\"))))
+            if (!Directory.Exists(ADBTemp[..ADBTemp.LastIndexOf(@"\")]))
             {
-                Directory.CreateDirectory(ADBTemp.Substring(0, ADBTemp.LastIndexOf(@"\")));
+                _ = Directory.CreateDirectory(ADBTemp[..ADBTemp.LastIndexOf(@"\")]);
             }
             else if (Directory.Exists(ADBTemp))
             {
@@ -963,7 +964,7 @@ namespace APKInstaller.ViewModels
                         DefaultButton = ContentDialogButton.Close,
                         CloseButtonText = _loader.GetString("IKnow"),
                         PrimaryButtonText = _loader.GetString("StartWSA"),
-                        ContentUrl = "https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/How%20To%20Connect%20WSA.md",
+                        ContentInfo = new GitInfo("Paving-Base", "APK-Installer", "screenshots", "Documents/Tutorials/How%20To%20Connect%20WSA", "How%20To%20Connect%20WSA.md")
                     };
                     ProgressHelper.SetState(ProgressState.None, true);
                     ContentDialogResult result = await dialog.ShowAsync();
@@ -1217,7 +1218,7 @@ namespace APKInstaller.ViewModels
                     ProgressText = _loader.GetString("Loading");
                     AppxInstallBarIndeterminate = true;
                     AppxInstallBarValue = 0;
-                    if (exception!=null)
+                    if (exception != null)
                     {
                         ProgressHelper.SetState(ProgressState.Error, true);
                         ContentDialog dialog = new ContentDialog

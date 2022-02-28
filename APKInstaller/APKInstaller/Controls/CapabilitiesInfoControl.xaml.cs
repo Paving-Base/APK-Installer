@@ -47,6 +47,8 @@ namespace APKInstaller.Controls
         private void GetTextBlock()
         {
             if (CapabilitiesList == null) { return; }
+            RichTextBlockCapabilities.Blocks.Clear();
+            RichTextBlockFullCapabilities.Blocks.Clear();
             foreach (string capability in CapabilitiesList)
             {
                 if (!string.IsNullOrEmpty(capability))

@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Windows.Storage;
 
 namespace APKInstaller.Helpers
@@ -12,7 +8,7 @@ namespace APKInstaller.Helpers
     {
         public static readonly string TempPath = Path.Combine(ApplicationData.Current.TemporaryFolder.Path, "Caches", $"{Environment.ProcessId}");
         public static readonly string OldTempPath = Path.Combine(Path.GetTempPath(), @"APKInstaller\Caches", $"{Environment.ProcessId}");
-    
+
         public static void CleanCaches(bool isall)
         {
             if (isall)
@@ -21,7 +17,7 @@ namespace APKInstaller.Helpers
                 {
                     try { Directory.Delete(TempPath[..TempPath.LastIndexOf(@"\")], true); } catch { }
                 }
-            }   
+            }
             else
             {
                 if (Directory.Exists(TempPath))
