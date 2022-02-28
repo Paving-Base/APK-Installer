@@ -127,7 +127,7 @@
     <value>Установщик APK. Написали @wherewhere и @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>APK Installer</value>
+    <value>Настройка установщика APK</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>В работе программы произошёл сбой…</value>
