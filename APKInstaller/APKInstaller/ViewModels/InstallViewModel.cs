@@ -811,47 +811,26 @@ namespace APKInstaller.ViewModels
                 if (!ADBServer.GetStatus().IsRunning)
                 {
                     WaitProgressText = _loader.GetString("CheckingADB");
+                    await CheckADB();
                     Process[] processes = Process.GetProcessesByName("adb");
-                    if (processes != null)
+                startadb:
+                    WaitProgressText = _loader.GetString("StartingADB");
+                    try
                     {
-                        WaitProgressText = _loader.GetString("StartingADB");
-                        try
-                        {
-                            await Task.Run(() => ADBServer.StartServer(processes.First().MainModule?.FileName, restartServerIfNewer: false));
-                        }
-                        catch
+                        await Task.Run(() => ADBServer.StartServer((processes != null && processes.Any()) ? processes.First().MainModule?.FileName : ADBPath, restartServerIfNewer: false));
+                    }
+                    catch
+                    {
+                        if (processes != null && processes.Any())
                         {
                             foreach (Process process in processes)
                             {
                                 process.Kill();
                             }
-                            await CheckADB();
-                            try
-                            {
-                                await Task.Run(() => ADBServer.StartServer(ADBPath, restartServerIfNewer: false));
-                            }
-                            catch
-                            {
-                                await CheckADB(true);
-                                WaitProgressText = _loader.GetString("StartingADB");
-                                await Task.Run(() => ADBServer.StartServer(ADBPath, restartServerIfNewer: false));
-                            }
+                            processes = null;
                         }
-                    }
-                    else
-                    {
-                        await CheckADB();
-                        WaitProgressText = _loader.GetString("StartingADB");
-                        try
-                        {
-                            await Task.Run(() => ADBServer.StartServer(ADBPath, restartServerIfNewer: false));
-                        }
-                        catch
-                        {
-                            await CheckADB(true);
-                            WaitProgressText = _loader.GetString("StartingADB");
-                            await Task.Run(() => ADBServer.StartServer(ADBPath, restartServerIfNewer: false));
-                        }
+                        await CheckADB(true);
+                        goto startadb;
                     }
                 }
                 WaitProgressText = _loader.GetString("Loading");
