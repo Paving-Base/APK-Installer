@@ -24,11 +24,14 @@ namespace APKInstaller.Pages
             UIHelper.DispatcherQueue = DispatcherQueue.GetForCurrentThread();
             if (UIHelper.HasTitleBar)
             {
+                SizeChanged += Page_SizeChanged;
                 UIHelper.MainWindow.ExtendsContentIntoTitleBar = true;
+                CustomTitleBarRoot.HorizontalAlignment = HorizontalAlignment.Left;
+                Root.RowDefinitions.Add(new RowDefinition { Height= new GridLength(1, GridUnitType.Auto) });
+                Root.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
             }
             else
             {
-                CustomTitleBar.HorizontalAlignment = HorizontalAlignment.Stretch;
                 AppWindow AppWindow = UIHelper.GetAppWindowForCurrentWindow();
                 AppWindow.TitleBar.ExtendsContentIntoTitleBar = true;
                 UIHelper.CheckTheme();
@@ -53,23 +56,20 @@ namespace APKInstaller.Pages
         {
             try
             {
-                if (UIHelper.HasTitleBar)
+                if (XamlRoot.Size.Width <= 268)
                 {
-                    if (XamlRoot.Size.Width <= 240)
+                    if (!HasBeenSmail)
                     {
-                        if (!HasBeenSmail)
-                        {
-                            HasBeenSmail = true;
-                            UIHelper.MainWindow.SetTitleBar(null);
-                        }
+                        HasBeenSmail = true;
+                        UIHelper.MainWindow.SetTitleBar(null);
                     }
-                    else if (HasBeenSmail)
-                    {
-                        HasBeenSmail = false;
-                        UIHelper.MainWindow.SetTitleBar(CustomTitleBar);
-                    }
-                    CustomTitleBar.Width = XamlRoot.Size.Width - 120;
                 }
+                else if (HasBeenSmail)
+                {
+                    HasBeenSmail = false;
+                    UIHelper.MainWindow.SetTitleBar(CustomTitleBar);
+                }
+                CustomTitleBarRoot.Width = XamlRoot.Size.Width - 120;
             }
             catch { }
         }

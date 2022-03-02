@@ -15,7 +15,6 @@ namespace APKInstaller.Controls.Dialogs
 {
     public sealed partial class MarkdownDialog : ContentDialog, INotifyPropertyChanged
     {
-
         public static readonly DependencyProperty ContentInfoProperty = DependencyProperty.Register(
            "ContentInfo",
            typeof(GitInfo),

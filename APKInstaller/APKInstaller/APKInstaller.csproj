@@ -1,29 +1,30 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+    <UseWinUI>true</UseWinUI>
+    <AppxBundle>Never</AppxBundle>
     <OutputType>WinExe</OutputType>
+	<LangVersion>preview</LangVersion>
+    <Platforms>x86;x64;arm64</Platforms>
+	<VersionPrefix>0.1.10</VersionPrefix>
+    <RootNamespace>APKInstaller</RootNamespace>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <AppxBundlePlatforms>x64</AppxBundlePlatforms>
+    <GenerateTestArtifacts>False</GenerateTestArtifacts>
+    <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+	<Copyright>Copyright © 2017 - 2022 PavingBase</Copyright>
+    <PublishProfile>win10-$(Platform).pubxml</PublishProfile>
+    <AppxSymbolPackageEnabled>True</AppxSymbolPackageEnabled>
+	<EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
+    <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
     <TargetFramework>net6.0-windows10.0.22000.0</TargetFramework>
 	<TargetPlatformMaxVersion>10.0.22000.0</TargetPlatformMaxVersion>
     <TargetPlatformMinVersion>10.0.18362.0</TargetPlatformMinVersion>
-    <RootNamespace>APKInstaller</RootNamespace>
-    <ApplicationManifest>app.manifest</ApplicationManifest>
-    <Platforms>x86;x64;arm64</Platforms>
-    <RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
-    <PublishProfile>win10-$(Platform).pubxml</PublishProfile>
-    <UseWinUI>true</UseWinUI>
-	<VersionPrefix>0.1.9</VersionPrefix>
-    <EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
-    <GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
-    <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
-    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
-    <AppxSymbolPackageEnabled>True</AppxSymbolPackageEnabled>
-    <GenerateTestArtifacts>False</GenerateTestArtifacts>
-    <AppxBundle>Never</AppxBundle>
-    <AppxBundlePlatforms>x64</AppxBundlePlatforms>
-    <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
-    <ApplicationIcon>favicon.ico</ApplicationIcon>
 	<Description>An Android Application Installer for Windows</Description>
+    <RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
 	<RepositoryUrl>https://github.com/Paving-Base/APK-Installer</RepositoryUrl>
-	<Copyright>Copyright © 2017 - 2022 PavingBase. All Rights Reserved</Copyright>
 	<PackageProjectUrl>https://github.com/Paving-Base/APK-Installer</PackageProjectUrl>
     <AppxPackageDir>C:\Users\qq251\Downloads\Github\APK-Installer\APKInstaller\APKInstaller\AppPackages\</AppxPackageDir>
   </PropertyGroup>
