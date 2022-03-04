@@ -7,7 +7,7 @@
     <InfoBar Title="More Translations" IsClosable="False" IsOpen="True" Message="{StaticResource Announcement}" Severity="Informational"/>
     <InfoBar Title="More Translations" IsClosable="True" IsOpen="True" Message="{StaticResource Translations}" Severity="Informational">
         <InfoBar.ActionButton>
-            <HyperlinkButton HorizontalAlignment="Right" Content="Click Me To" NavigateUri="https://crowdin.com/project/APKInstaller"/>
+            <HyperlinkButton HorizontalAlignment="Right" Content="Haz clic en Mi" NavigateUri="https://crowdin.com/project/APKInstaller"/>
         </InfoBar.ActionButton>
     </InfoBar>
 </controls:SettingsGroup>
