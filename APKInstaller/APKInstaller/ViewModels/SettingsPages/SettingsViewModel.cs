@@ -68,6 +68,19 @@ namespace APKInstaller.ViewModels.SettingsPages
             }
         }
 
+        public bool ShowMessages
+        {
+            get => SettingsHelper.Get<bool>(SettingsHelper.ShowMessages);
+            set
+            {
+                if (ShowMessages != value)
+                {
+                    SettingsHelper.Set(SettingsHelper.ShowMessages, value);
+                    RaisePropertyChangedEvent();
+                }
+            }
+        }
+
         public DateTime UpdateDate
         {
             get => SettingsHelper.Get<DateTime>(SettingsHelper.UpdateDate);
