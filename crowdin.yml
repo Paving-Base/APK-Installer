@@ -22,7 +22,7 @@ files:
       "translation": "/Documents/Tutorials/How To Connect WSA/How To Connect WSA.%locale%.md",
     },
     {
-      "type": "xml",
+      "type": "android",
       "dest": "/Documents/Announcements/%file_name%.xml",
       "source": "/Documents/Announcements/Announcements.xaml",
       "translation": "/Documents/Announcements/Announcements.%locale%.xaml",
