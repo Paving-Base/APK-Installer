@@ -1,32 +1,5 @@
-#
-# Your Crowdin credentials
-#
-"project_id": "481981"
-"api_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ3UUVxdmhVM3ZMT2EyWGljbVV5VCIsImp0aSI6ImRlNzlhYzQzOGQxZTY1M2M1NTQwNDU4ZTNmZDU3NDdmMDQ0NGViNjQyY2NhN2Y3NDNlOGE0ZjlmZWU2MTE5MzM0NTI5NzdkMGUwYTViOGU3IiwiaWF0IjoxNjQ2NDQxNDUyLCJuYmYiOjE2NDY0NDE0NTIsImV4cCI6MTY0OTAyOTg1Miwic3ViIjoiMTQ1NjkwNzYiLCJkb21haW4iOm51bGwsInNjb3BlcyI6WyJwcm9qZWN0Il0sImFzc29jaWF0aW9ucyI6WyIqIl0sInNlc3Npb24iOjB9.XyPDHDRbtRpIOTn_vE-0dqrKv8xmhndz4Pzc8d3DtEzd6ToBzLBOLW1565ch7KXvZ6zqVdB8PqwtVZAKuxLRAcRCdC2f66EUW-KfghshzXKYEyr0jvQcSYWg7AP_0LLc8TLgBc7q-TP0ZHF-BhdCHl0R_RKix4YgmscUlogfScVlEfGJ6TrL6myPGDoSsCphWx6Vj-OSPXU16Y6pYzLcoujrShenfIWD4e2O5rY1Y1_wXCKzuq8eIW7rJxjLW-3oVLOUJ7LAEBVgAEOU9TDodZPhLO1wPUxVkSkbWnrNTXhYP-SXjDbGCEZ96DQNlXUrhbX291PulEOJln2zBTQee9TY8anhRqnTnDR6ak61qvnLBi3Wyx9zAEUAZJPY_EqgaXyzf5Hi1JPExC6LkoiCIISBqbpeW7enFzxzz2K2xwvKckD3DVh_tv9CgHhmbcmjckfF1KxDX-LNWi6S-ed5Rowzhcz2GdaT6EXOLV7nYbZkYOZ1-tTwaMJckWmMqI0A47oFRKm0qDEWJyO0lBEGcYCC-KOonzGkQMOsuN4mUCk2NgJMcBwVqMuYmy6i-fKPJmEP2Q8y9gVjpQhHQfvUgSS-5FONgd0NZPVNNwwMWOle_xsxGoPFfviMLH5N1SziM2iAryf0RzSBkE39aruwTlD6GVt2UgCd5GUYiIMsyGg"
-"base_path": "."
-"base_url": "https://api.crowdin.com"
-
-#
-# Choose file structure in Crowdin
-# e.g. true or false
-#
-"preserve_hierarchy": true
-
-#
-# Files configuration
-#
 files:
-  [
-    {
-      "source": "/Documents/Tutorials/How To Connect WSA/How To Connect WSA.md",
-      "translation": "/Documents/Tutorials/How To Connect WSA/How To Connect WSA.%locale%.md",
-    },
-    {
-      "type": "xml",
-      "dest": "/Documents/Announcements/%file_name%.xml",
-      "source": "/Documents/Announcements/Announcements.xaml",
-      "translation": "/Documents/Announcements/Announcements.%locale%.xaml",
-      "translatable_elements":
-        ["//*[@Title]", "//*[@Header]", "//*[@Message]", "//*[@Content]"],
-    },
-  ]
+  - source: /Documents/Tutorials/How To Connect WSA/How To Connect WSA.md
+    translation: /Documents/Tutorials/How To Connect WSA/How To Connect WSA.%locale%.md
+  - source: /Documents/Announcements/Announcements.xml
+    translation: /Documents/Announcements/Announcements.%locale%.xml
