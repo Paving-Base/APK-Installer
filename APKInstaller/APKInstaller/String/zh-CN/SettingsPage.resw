@@ -130,7 +130,7 @@
     <value>是否自动下载在线安装包？</value>
   </data>
   <data name="BilibiliLink.Content" xml:space="preserve">
-    <value>哔哩哔哩</value>
+    <value>BiliBili</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
     <value>检查失败</value>
@@ -166,25 +166,25 @@
     <value>与我联系</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bug, please report it to me in PM. I will try my best to solve the problem. If you have Telegram account, welcome to chat at Paving Base Group 😊!</value>
+    <value>在社交软件上关注我来获取最新地开发动向。如果你发现了什么 Bug，请通过私信告诉我。我会尽最大可能来解决这些问题。如果你有电报账号，欢迎来铺路根据地群组聊天😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>内容</value>
   </data>
   <data name="CoolapkLink.Content" xml:space="preserve">
-    <value>Coolapk</value>
+    <value>酷安</value>
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
     <value>设备</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
-    <value>Display</value>
+    <value>显示</value>
   </data>
   <data name="DonateSetting.Header" xml:space="preserve">
-    <value>Supports</value>
+    <value>支持</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open source application, and it won't be inserted any ads for profit. If you like this app, don't forget to rate it in the store. Of course it would be better if you could donate a little bit. Thanks for your supports 💕.</value>
+    <value>APK Installer is an open source application, and it won't be inserted any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your supports 💕.</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>用户协议</value>
@@ -205,7 +205,7 @@
     <value>前往更新</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
-    <value>Join Our Chat</value>
+    <value>加入电报聊天</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
     <value>上次检查时间: </value>
@@ -223,7 +223,7 @@
     <value>Patreon</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value>Rate On Store</value>
+    <value>前往商店好评</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
     <value>发行说明</value>
@@ -250,10 +250,10 @@
     <value>是否显示帮助？</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Show Announcements on the top of Settings.</value>
+    <value>在设置顶部显示公告。</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Is Show Announcements?</value>
+    <value>是否显示公告？</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>设置</value>
@@ -262,7 +262,7 @@
     <value>翻译</value>
   </data>
   <data name="TwitterLink.Content" xml:space="preserve">
-    <value>Twitter</value>
+    <value>推特</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
     <value>版本</value>
