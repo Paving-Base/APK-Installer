@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Resources;
+using Windows.Services.Store;
 
 namespace APKInstaller.ViewModels.SettingsPages
 {

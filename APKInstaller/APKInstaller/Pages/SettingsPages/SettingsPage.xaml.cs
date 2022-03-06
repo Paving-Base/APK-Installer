@@ -3,6 +3,7 @@ using APKInstaller.Controls;
 using APKInstaller.Helpers;
 using APKInstaller.Models;
 using APKInstaller.ViewModels.SettingsPages;
+using CommunityToolkit.WinUI;
 using CommunityToolkit.WinUI.UI.Controls;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
@@ -11,6 +12,7 @@ using Microsoft.UI.Xaml.Navigation;
 using System;
 using System.IO;
 using System.Text;
+using Windows.Services.Store;
 using Windows.Storage;
 using Windows.System;
 
@@ -55,6 +57,12 @@ namespace APKInstaller.Pages.SettingsPages
         {
             switch ((sender as FrameworkElement).Tag as string)
             {
+                case "Rate":
+                    _ = Launcher.LaunchUriAsync(new Uri("ms-windows-store://review/?ProductId=9P2JFQ43FPPG"));
+                    break;
+                case "Group":
+                    _ = Launcher.LaunchUriAsync(new Uri("https://t.me/PavingBase"));
+                    break;
                 case "Reset":
                     ApplicationData.Current.LocalSettings.Values.Clear();
                     SettingsHelper.SetDefaultSettings();
