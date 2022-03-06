@@ -120,11 +120,17 @@
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
     <value>О программе</value>
   </data>
+  <data name="AfdianLink.Content" xml:space="preserve">
+    <value>Afdian</value>
+  </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>Auto download when package is from URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
     <value>Is Auto Download Online Packages?</value>
+  </data>
+  <data name="BilibiliLink.Content" xml:space="preserve">
+    <value>BiliBili</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
     <value>Проверка не завершена</value>
@@ -156,11 +162,29 @@
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Подключить устройство</value>
   </data>
+  <data name="ContactMeSetting.Header" xml:space="preserve">
+    <value>Contact Me</value>
+  </data>
+  <data name="ContactMeTextBlock.Text" xml:space="preserve">
+    <value>Follow me on social apps for the latest developments. If you find any bug, please report it to me in PM. I will try my best to solve the problem. If you have Telegram account, welcome to chat at Paving Base Group 😊!</value>
+  </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Содержание</value>
   </data>
+  <data name="CoolapkLink.Content" xml:space="preserve">
+    <value>Coolapk</value>
+  </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
     <value>Устройство</value>
+  </data>
+  <data name="DisplaySettingsHeader.Header" xml:space="preserve">
+    <value>Display</value>
+  </data>
+  <data name="DonateSetting.Header" xml:space="preserve">
+    <value>Supports</value>
+  </data>
+  <data name="DonateTextBlock.Text" xml:space="preserve">
+    <value>APK Installer is an open source application, and it won't be inserted any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your supports 💕.</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
@@ -171,11 +195,17 @@
   <data name="FindUpdate" xml:space="preserve">
     <value>Найти обновление</value>
   </data>
+  <data name="GithubLink.Content" xml:space="preserve">
+    <value>Github</value>
+  </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
     <value>Перейти к тестовой странице</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
     <value>Перейти к обновлению</value>
+  </data>
+  <data name="Group.Content" xml:space="preserve">
+    <value>Join Our Chat</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
     <value>Last Checked: </value>
@@ -188,6 +218,12 @@
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Другое</value>
+  </data>
+  <data name="PatreonLink.Content" xml:space="preserve">
+    <value>Patreon</value>
+  </data>
+  <data name="Rate.Content" xml:space="preserve">
+    <value>Rate On Store</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
     <value>Журнал изменений</value>
@@ -213,11 +249,20 @@
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
     <value>Is Show Helpers?</value>
   </data>
+  <data name="ShowMessagesSettings.Description" xml:space="preserve">
+    <value>Show Announcements on the top of Settings.</value>
+  </data>
+  <data name="ShowMessagesSettings.Header" xml:space="preserve">
+    <value>Is Show Announcements?</value>
+  </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Параметры</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
     <value>Translate</value>
+  </data>
+  <data name="TwitterLink.Content" xml:space="preserve">
+    <value>Twitter</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
     <value>Версия</value>

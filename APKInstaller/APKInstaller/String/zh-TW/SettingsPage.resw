@@ -120,11 +120,17 @@
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
     <value>關於</value>
   </data>
+  <data name="AfdianLink.Content" xml:space="preserve">
+    <value>愛發電</value>
+  </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>當安裝包來自 URL 連結時自動下載。</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
     <value>是否自動下載在線安裝包？</value>
+  </data>
+  <data name="BilibiliLink.Content" xml:space="preserve">
+    <value>嗶哩嗶哩</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
     <value>檢查失敗</value>
@@ -156,11 +162,29 @@
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>連接設備</value>
   </data>
+  <data name="ContactMeSetting.Header" xml:space="preserve">
+    <value>與我聯繫</value>
+  </data>
+  <data name="ContactMeTextBlock.Text" xml:space="preserve">
+    <value>在社交軟體上關注我來獲取最新地開發動向。 如果你發現了什麼 Bug，請通過私信告訴我。 我會盡最大可能來解決這些問題。 如果你有電報賬號，歡迎來鋪路根據地群組聊天😊！</value>
+  </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>內容</value>
   </data>
+  <data name="CoolapkLink.Content" xml:space="preserve">
+    <value>酷安</value>
+  </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
     <value>設備</value>
+  </data>
+  <data name="DisplaySettingsHeader.Header" xml:space="preserve">
+    <value>顯示</value>
+  </data>
+  <data name="DonateSetting.Header" xml:space="preserve">
+    <value>支持</value>
+  </data>
+  <data name="DonateTextBlock.Text" xml:space="preserve">
+    <value>APK 安裝程式是一個開源軟體，它不會內置任何廣告來盈利。 如果你喜歡這個應用，不要忘了在商店裡打上好評哦，當然如果可以捐贈一點點就更好了。 感謝大家的支援💕！</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>用戶協定</value>
@@ -171,11 +195,17 @@
   <data name="FindUpdate" xml:space="preserve">
     <value>找到新的更新</value>
   </data>
+  <data name="GithubLink.Content" xml:space="preserve">
+    <value>Github</value>
+  </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
     <value>前往測試頁面</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
     <value>前往更新</value>
+  </data>
+  <data name="Group.Content" xml:space="preserve">
+    <value>加入電報聊天</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
     <value>上次檢查時間: </value>
@@ -188,6 +218,12 @@
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>其他</value>
+  </data>
+  <data name="PatreonLink.Content" xml:space="preserve">
+    <value>Patreon</value>
+  </data>
+  <data name="Rate.Content" xml:space="preserve">
+    <value>前往商店好評</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
     <value>發布說明</value>
@@ -213,11 +249,20 @@
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
     <value>是否顯示説明？</value>
   </data>
+  <data name="ShowMessagesSettings.Description" xml:space="preserve">
+    <value>在設置頂部顯示公告。</value>
+  </data>
+  <data name="ShowMessagesSettings.Header" xml:space="preserve">
+    <value>是否顯示公告？</value>
+  </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>設定</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
     <value>翻譯</value>
+  </data>
+  <data name="TwitterLink.Content" xml:space="preserve">
+    <value>推特</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
     <value>版本</value>
