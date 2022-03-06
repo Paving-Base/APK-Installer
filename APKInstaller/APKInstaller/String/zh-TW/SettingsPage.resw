@@ -121,7 +121,7 @@
     <value>關於</value>
   </data>
   <data name="AfdianLink.Content" xml:space="preserve">
-    <value>Afdian</value>
+    <value>愛發電</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>當安裝包來自 URL 連結時自動下載。</value>
@@ -130,7 +130,7 @@
     <value>是否自動下載在線安裝包？</value>
   </data>
   <data name="BilibiliLink.Content" xml:space="preserve">
-    <value>Bilibili</value>
+    <value>BiliBili</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
     <value>檢查失敗</value>
@@ -163,28 +163,28 @@
     <value>連接設備</value>
   </data>
   <data name="ContactMeSetting.Header" xml:space="preserve">
-    <value>Contact Me</value>
+    <value>與我聯繫</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bug, please report it to me in PM. I will try my best to solve the problem. If you have Telegram account, welcome to chat at Paving Base Group 😊!</value>
+    <value>在社交軟體上關注我來獲取最新地開發動向。 如果你發現了什麼 Bug，請通過私信告訴我。 我會盡最大可能來解決這些問題。 如果你有電報賬號，歡迎來鋪路根據地群組聊天😊！</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>內容</value>
   </data>
   <data name="CoolapkLink.Content" xml:space="preserve">
-    <value>Coolapk</value>
+    <value>酷安</value>
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
     <value>設備</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
-    <value>Display</value>
+    <value>顯示</value>
   </data>
   <data name="DonateSetting.Header" xml:space="preserve">
-    <value>Supports</value>
+    <value>支持</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open source application, and it won't be inserted any ads for profit. If you like this app, don't forget to rate it in the store. Of course it would be better if you could donate a little bit. Thanks for your supports 💕.</value>
+    <value>APK Installer is an open source application, and it won't be inserted any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your supports 💕.</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>用戶協定</value>
@@ -205,7 +205,7 @@
     <value>前往更新</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
-    <value>Join Our Chat</value>
+    <value>加入電報聊天</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
     <value>上次檢查時間: </value>
@@ -223,7 +223,7 @@
     <value>Patreon</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value>Rate On Store</value>
+    <value>前往商店好評</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
     <value>發布說明</value>
@@ -250,10 +250,10 @@
     <value>是否顯示説明？</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Show Announcements on the top of Settings.</value>
+    <value>在設置頂部顯示公告。</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Is Show Announcements?</value>
+    <value>是否顯示公告？</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>設定</value>
@@ -262,7 +262,7 @@
     <value>翻譯</value>
   </data>
   <data name="TwitterLink.Content" xml:space="preserve">
-    <value>Twitter</value>
+    <value>推特</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
     <value>版本</value>
