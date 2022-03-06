@@ -1,5 +1,5 @@
-﻿using AAPT2ForNet;
-using AAPT2ForNet.Models;
+﻿using AAPTForNet;
+using AAPTForNet.Models;
 using AdvancedSharpAdbClient;
 using AdvancedSharpAdbClient.DeviceCommands;
 using APKInstaller.Controls.Dialogs;
@@ -54,7 +54,7 @@ namespace APKInstaller.ViewModels
         private string _path = string.Empty;
 #else
         private Uri _url = new Uri("apkinstaller:?source=https://dl.coolapk.com/down?pn=com.coolapk.market&id=NDU5OQ&h=46bb9d98&from=from-web");
-        private string _path = @"C:\Users\qq251\Downloads\Programs\Skit_com,pavelrekun,skit,premium_2,4,1.apks";
+        private string _path = @"C:\Users\qq251\Downloads\Programs\weixin8020android2100_arm64_4.apk";
 #endif
         private bool NetAPKExist => _path != APKTemp || File.Exists(_path);
 

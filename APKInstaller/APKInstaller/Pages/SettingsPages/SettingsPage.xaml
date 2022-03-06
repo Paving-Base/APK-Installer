@@ -25,6 +25,7 @@
                         <ReorderThemeTransition />
                     </TransitionCollection>
                 </StackPanel.ChildrenTransitions>
+                <controls:WebXAML Loaded="WebXAML_Loaded" Visibility="{Binding ShowMessages, Converter={StaticResource BoolToVisibilityConverter}}" />
                 <controls:SettingsGroup x:Uid="/SettingsPage/DeviceSettingsHeader" Margin="0,-32,0,0">
                     <ListView
                         x:Name="SelectDeviceBox"
@@ -73,12 +74,19 @@
                         </controls:SettingExpander.Content>
                     </controls:SettingExpander>
                 </controls:SettingsGroup>
-                <controls:SettingsGroup x:Uid="/SettingsPage/ContentSettingsHeader" Margin="0,-32,0,0">
+                <controls:SettingsGroup x:Uid="/SettingsPage/DisplaySettingsHeader" Margin="0,-32,0,0">
                     <controls:Setting x:Uid="/SettingsPage/ShowDialogsSettings" Icon="&#xE82F;">
                         <controls:Setting.ActionContent>
                             <ToggleSwitch IsOn="{Binding ShowDialogs, Mode=TwoWay}" Style="{StaticResource ToggleSwitchSettingStyle}" />
                         </controls:Setting.ActionContent>
                     </controls:Setting>
+                    <controls:Setting x:Uid="/SettingsPage/ShowMessagesSettings" Icon="&#xE82F;">
+                        <controls:Setting.ActionContent>
+                            <ToggleSwitch IsOn="{Binding ShowMessages, Mode=TwoWay}" Style="{StaticResource ToggleSwitchSettingStyle}" />
+                        </controls:Setting.ActionContent>
+                    </controls:Setting>
+                </controls:SettingsGroup>
+                <controls:SettingsGroup x:Uid="/SettingsPage/ContentSettingsHeader" Margin="0,-32,0,0">
                     <controls:Setting x:Uid="/SettingsPage/AutoGetNetAPKSettings" Icon="&#xE896;">
                         <controls:Setting.ActionContent>
                             <ToggleSwitch IsOn="{Binding AutoGetNetAPK, Mode=TwoWay}" Style="{StaticResource ToggleSwitchSettingStyle}" />
@@ -95,43 +103,13 @@
                         </controls:Setting.ActionContent>
                     </controls:Setting>
                 </controls:SettingsGroup>
-                <controls:SettingsGroup x:Uid="/SettingsPage/OthersSettingsHeader" Margin="0,-32,0,0">
-                    <controls:Setting x:Uid="/SettingsPage/ResetSettings" Icon="&#xE777;">
-                        <controls:Setting.ActionContent>
-                            <Button Name="Reset" x:Uid="/SettingsPage/ResetSettingsButton">
-                                <Button.Flyout>
-                                    <Flyout>
-                                        <StackPanel>
-                                            <TextBlock
-                                                x:Uid="/SettingsPage/ResetSettingsTitle"
-                                                Margin="0,0,0,12"
-                                                Style="{ThemeResource BaseTextBlockStyle}" />
-                                            <Button
-                                                x:Uid="/SettingsPage/ResetSettingsConfirm"
-                                                Click="Button_Click"
-                                                Tag="Reset" />
-                                        </StackPanel>
-                                    </Flyout>
-                                </Button.Flyout>
-                            </Button>
-                        </controls:Setting.ActionContent>
-                    </controls:Setting>
-                    <controls:SettingButton
-                        x:Name="GoToTestPage"
-                        Click="Button_Click"
-                        Tag="TestPage">
-                        <controls:SettingButton.Content>
-                            <controls:Setting x:Uid="/SettingsPage/GoToTestPage" Icon="&#xEC7A;" />
-                        </controls:SettingButton.Content>
-                    </controls:SettingButton>
-                </controls:SettingsGroup>
                 <controls:SettingsGroup x:Uid="/SettingsPage/AboutSettingsHeader" Margin="0,-32,0,0">
                     <controls:SettingExpander>
                         <controls:SettingExpander.Header>
                             <controls:Setting Header="{Binding VersionTextBlockText}" Icon="&#xE117;">
                                 <controls:Setting.Description>
                                     <StackPanel Orientation="Vertical">
-                                        <TextBlock Style="{StaticResource SecondaryTextStyle}">
+                                        <TextBlock Style="{StaticResource SecondaryTextStyle}" TextWrapping="WrapWholeWords">
                                             <Run x:Uid="/SettingsPage/LastChecked" />
                                             <Run Text="{Binding UpdateDate, Mode=OneWay}" />
                                         </TextBlock>
@@ -208,6 +186,90 @@
                                 Visibility="{Binding GotoUpdateVisibility}" />
                         </InfoBar.ActionButton>
                     </InfoBar>
+                    <controls:Setting x:Uid="/SettingsPage/ContactMeSetting" Icon="&#xE779;">
+                        <controls:Setting.Description>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock
+                                    x:Uid="/SettingsPage/ContactMeTextBlock"
+                                    Style="{StaticResource SecondaryTextStyle}"
+                                    TextWrapping="WrapWholeWords" />
+                                <StackPanel Margin="0,2,0,0" Orientation="Horizontal">
+                                    <HyperlinkButton
+                                        x:Uid="/SettingsPage/GithubLink"
+                                        Margin="0,0,2,0"
+                                        NavigateUri="https://github.com/wherewhere" />
+                                    <HyperlinkButton
+                                        x:Uid="/SettingsPage/CoolapkLink"
+                                        Margin="2,0"
+                                        NavigateUri="http://www.coolapk.com/u/536381" />
+                                    <HyperlinkButton
+                                        x:Uid="/SettingsPage/TwitterLink"
+                                        Margin="2,0"
+                                        NavigateUri="https://twitter.com/wherewhere7" />
+                                    <HyperlinkButton
+                                        x:Uid="/SettingsPage/BilibiliLink"
+                                        Margin="2,0"
+                                        NavigateUri="https://space.bilibili.com/266112738" />
+                                </StackPanel>
+                            </StackPanel>
+                        </controls:Setting.Description>
+                        <controls:Setting.ActionContent>
+                            <Button Tag="Group" x:Uid="/SettingsPage/Group" Click="Button_Click"/>
+                        </controls:Setting.ActionContent>
+                    </controls:Setting>
+                    <controls:Setting x:Uid="/SettingsPage/DonateSetting" Icon="&#xEB51;">
+                        <controls:Setting.Description>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock
+                                    x:Uid="/SettingsPage/DonateTextBlock"
+                                    Style="{StaticResource SecondaryTextStyle}"
+                                    TextWrapping="WrapWholeWords" />
+                                <StackPanel Orientation="Horizontal">
+                                    <HyperlinkButton
+                                        x:Uid="/SettingsPage/AfdianLink"
+                                        Margin="0,0,2,0"
+                                        NavigateUri="http://afdian.net/@wherewhere" />
+                                    <HyperlinkButton
+                                        x:Uid="/SettingsPage/PatreonLink"
+                                        Margin="2,0"
+                                        NavigateUri="https://patreon.com/wherewhere" />
+                                </StackPanel>
+                            </StackPanel>
+                        </controls:Setting.Description>
+                        <controls:Setting.ActionContent>
+                            <Button Tag="Rate" x:Uid="/SettingsPage/Rate" Click="Button_Click"/>
+                        </controls:Setting.ActionContent>
+                    </controls:Setting>
+                </controls:SettingsGroup>
+                <controls:SettingsGroup x:Uid="/SettingsPage/OthersSettingsHeader" Margin="0,-32,0,0">
+                    <controls:Setting x:Uid="/SettingsPage/ResetSettings" Icon="&#xE777;">
+                        <controls:Setting.ActionContent>
+                            <Button Name="Reset" x:Uid="/SettingsPage/ResetSettingsButton">
+                                <Button.Flyout>
+                                    <Flyout>
+                                        <StackPanel>
+                                            <TextBlock
+                                                x:Uid="/SettingsPage/ResetSettingsTitle"
+                                                Margin="0,0,0,12"
+                                                Style="{ThemeResource BaseTextBlockStyle}" />
+                                            <Button
+                                                x:Uid="/SettingsPage/ResetSettingsConfirm"
+                                                Click="Button_Click"
+                                                Tag="Reset" />
+                                        </StackPanel>
+                                    </Flyout>
+                                </Button.Flyout>
+                            </Button>
+                        </controls:Setting.ActionContent>
+                    </controls:Setting>
+                    <controls:SettingButton
+                        x:Name="GoToTestPage"
+                        Click="Button_Click"
+                        Tag="TestPage">
+                        <controls:SettingButton.Content>
+                            <controls:Setting x:Uid="/SettingsPage/GoToTestPage" Icon="&#xEC7A;" />
+                        </controls:SettingButton.Content>
+                    </controls:SettingButton>
                 </controls:SettingsGroup>
             </StackPanel>
         </ScrollViewer>

@@ -12,7 +12,7 @@
     <GenerateTestArtifacts>False</GenerateTestArtifacts>
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
     <ApplicationManifest>app.manifest</ApplicationManifest>
-	<Copyright>Copyright © 2017 - 2022 PavingBase</Copyright>
+	<Copyright>Copyright © 2017 - 2022 PavingBase. All Rights Reserved.</Copyright>
     <PublishProfile>win10-$(Platform).pubxml</PublishProfile>
     <AppxSymbolPackageEnabled>True</AppxSymbolPackageEnabled>
 	<EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
@@ -81,9 +81,6 @@
        package has not yet been restored -->
   <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnablePreviewMsixTooling)'=='true'">
     <ProjectCapability Include="Msix" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AAPT2ForNet\AAPT2ForNet.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Content Update="Assets\256x256.png">
@@ -232,7 +229,16 @@
     <PRIResource Remove="AppPackages\**" />
   </ItemGroup>
   <ItemGroup>
+    <None Remove="Controls\WebXAML.xaml" />
     <None Remove="Themes\CommonStyles.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AAPTForNet\AAPTForNet.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Controls\WebXAML.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Themes\CommonStyles.xaml">
