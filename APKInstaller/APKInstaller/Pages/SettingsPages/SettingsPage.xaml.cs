@@ -3,16 +3,11 @@ using APKInstaller.Controls;
 using APKInstaller.Helpers;
 using APKInstaller.Models;
 using APKInstaller.ViewModels.SettingsPages;
-using CommunityToolkit.WinUI;
 using CommunityToolkit.WinUI.UI.Controls;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Markup;
 using Microsoft.UI.Xaml.Navigation;
 using System;
-using System.IO;
-using System.Text;
-using Windows.Services.Store;
 using Windows.Storage;
 using Windows.System;
 

@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	<LangVersion>preview</LangVersion>
+    <LangVersion>preview</LangVersion>
     <TargetFrameworks>net4.8;netcoreapp3.1;net6.0-windows10.0.22000.0;net7.0-windows10.0.22000.0</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net4.8'">
     <PackageReference Include="System.IO.Compression" Version="4.3.0" />
   </ItemGroup>
-	
+    
   <ItemGroup Condition="'$(TargetFramework)' != 'net4.8'">
     <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
   </ItemGroup>

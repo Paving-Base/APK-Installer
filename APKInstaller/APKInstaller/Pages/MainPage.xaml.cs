@@ -27,7 +27,7 @@ namespace APKInstaller.Pages
                 SizeChanged += Page_SizeChanged;
                 UIHelper.MainWindow.ExtendsContentIntoTitleBar = true;
                 CustomTitleBarRoot.HorizontalAlignment = HorizontalAlignment.Left;
-                Root.RowDefinitions.Add(new RowDefinition { Height= new GridLength(1, GridUnitType.Auto) });
+                Root.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Auto) });
                 Root.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
             }
             else

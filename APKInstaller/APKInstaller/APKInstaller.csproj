@@ -3,29 +3,29 @@
     <UseWinUI>true</UseWinUI>
     <AppxBundle>Never</AppxBundle>
     <OutputType>WinExe</OutputType>
-	<LangVersion>preview</LangVersion>
+    <LangVersion>preview</LangVersion>
     <Platforms>x86;x64;arm64</Platforms>
-	<VersionPrefix>0.1.10</VersionPrefix>
+    <VersionPrefix>0.1.11</VersionPrefix>
     <RootNamespace>APKInstaller</RootNamespace>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
     <AppxBundlePlatforms>x64</AppxBundlePlatforms>
     <GenerateTestArtifacts>False</GenerateTestArtifacts>
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
     <ApplicationManifest>app.manifest</ApplicationManifest>
-	<Copyright>Copyright © 2017 - 2022 PavingBase. All Rights Reserved.</Copyright>
     <PublishProfile>win10-$(Platform).pubxml</PublishProfile>
     <AppxSymbolPackageEnabled>True</AppxSymbolPackageEnabled>
-	<EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
+    <EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
     <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
     <TargetFramework>net6.0-windows10.0.22000.0</TargetFramework>
-	<TargetPlatformMaxVersion>10.0.22000.0</TargetPlatformMaxVersion>
+    <TargetPlatformMaxVersion>10.0.22000.0</TargetPlatformMaxVersion>
     <TargetPlatformMinVersion>10.0.18362.0</TargetPlatformMinVersion>
-	<Description>An Android Application Installer for Windows</Description>
+    <Description>An Android Application Installer for Windows</Description>
     <RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
     <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
     <GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
-	<RepositoryUrl>https://github.com/Paving-Base/APK-Installer</RepositoryUrl>
-	<PackageProjectUrl>https://github.com/Paving-Base/APK-Installer</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Paving-Base/APK-Installer</RepositoryUrl>
+    <Copyright>Copyright © 2017 - 2022 PavingBase. All Rights Reserved.</Copyright>
+    <PackageProjectUrl>https://github.com/Paving-Base/APK-Installer</PackageProjectUrl>
     <AppxPackageDir>C:\Users\qq251\Downloads\Github\APK-Installer\APKInstaller\APKInstaller\AppPackages\</AppxPackageDir>
   </PropertyGroup>
   <ItemGroup>
@@ -60,11 +60,11 @@
   </ItemGroup>
 
   <ItemGroup>
-	<PackageReference Include="CommunityToolkit.WinUI.Connectivity" Version="7.1.2" />
-	<PackageReference Include="CommunityToolkit.WinUI.UI" Version="7.1.2" />
-	<PackageReference Include="Downloader" Version="2.3.2" />
-	<PackageReference Include="SharpCompress" Version="0.30.1" />
-	<PackageReference Include="PInvoke.User32" Version="0.7.104" />
+    <PackageReference Include="CommunityToolkit.WinUI.Connectivity" Version="7.1.2" />
+    <PackageReference Include="CommunityToolkit.WinUI.UI" Version="7.1.2" />
+    <PackageReference Include="Downloader" Version="2.3.2" />
+    <PackageReference Include="SharpCompress" Version="0.30.1" />
+    <PackageReference Include="PInvoke.User32" Version="0.7.104" />
     <PackageReference Include="AdvancedSharpAdbClient" Version="2.5.2" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.0.0" />
     <PackageReference Include="CommunityToolkit.Mvvm" Version="7.1.2" />
