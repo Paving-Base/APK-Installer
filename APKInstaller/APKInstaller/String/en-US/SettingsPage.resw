@@ -130,7 +130,7 @@
     <value>Is Auto Download Online Packages?</value>
   </data>
   <data name="BilibiliLink.Content" xml:space="preserve">
-    <value>Bilibili</value>
+    <value>BiliBili</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
     <value>Check Failed</value>
@@ -184,7 +184,7 @@
     <value>Supports</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open source application, and it won't be inserted any ads for profit. If you like this app, don't forget to rate it in the store. Of course it would be better if you could donate a little bit. Thanks for your supports 💕.</value>
+    <value>APK Installer is an open source application, and it won't be inserted any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your supports 💕.</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
