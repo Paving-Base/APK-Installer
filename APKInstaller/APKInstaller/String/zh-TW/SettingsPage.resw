@@ -130,7 +130,7 @@
     <value>是否自動下載在線安裝包？</value>
   </data>
   <data name="BilibiliLink.Content" xml:space="preserve">
-    <value>BiliBili</value>
+    <value>嗶哩嗶哩</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
     <value>檢查失敗</value>
@@ -184,7 +184,7 @@
     <value>支持</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open source application, and it won't be inserted any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your supports 💕.</value>
+    <value>APK 安裝程式是一個開源軟體，它不會內置任何廣告來盈利。 如果你喜歡這個應用，不要忘了在商店裡打上好評哦，當然如果可以捐贈一點點就更好了。 感謝大家的支援💕！</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>用戶協定</value>
