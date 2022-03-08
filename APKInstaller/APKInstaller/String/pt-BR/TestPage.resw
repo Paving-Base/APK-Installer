@@ -132,6 +132,12 @@
   <data name="EnterPIP.Content" xml:space="preserve">
     <value>Enter Compact Overlay</value>
   </data>
+  <data name="LanguageSettings.Description" xml:space="preserve">
+    <value>Select language and restart to change language</value>
+  </data>
+  <data name="LanguageSettings.Header" xml:space="preserve">
+    <value>Language</value>
+  </data>
   <data name="OutPIP.Content" xml:space="preserve">
     <value>Exit</value>
   </data>
