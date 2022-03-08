@@ -162,7 +162,7 @@
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Gerät verbinden</value>
   </data>
-  <data name="ContactMeSetting.Header" xml:space="preserve">
+  <data name="ContactMeSettings.Header" xml:space="preserve">
     <value>Contact Me</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
@@ -180,7 +180,7 @@
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
     <value>Display</value>
   </data>
-  <data name="DonateSetting.Header" xml:space="preserve">
+  <data name="DonateSettings.Header" xml:space="preserve">
     <value>Supports</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
