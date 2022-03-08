@@ -997,7 +997,7 @@ namespace APKInstaller.ViewModels
                     {
                         _ = Launcher.LaunchUriAsync(new Uri("ms-windows-store://pdp/?ProductId=9P3395VX91NR&mode=mini"));
                     }
-                    else  if (result == ContentDialogResult.Secondary)
+                    else if (result == ContentDialogResult.Secondary)
                     {
                         UIHelper.Navigate(typeof(SettingsPage), null);
                     }
