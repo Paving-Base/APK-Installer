@@ -214,7 +214,10 @@
                             </StackPanel>
                         </controls:Setting.Description>
                         <controls:Setting.ActionContent>
-                            <Button Tag="Group" x:Uid="/SettingsPage/Group" Click="Button_Click"/>
+                            <Button
+                                x:Uid="/SettingsPage/Group"
+                                Click="Button_Click"
+                                Tag="Group" />
                         </controls:Setting.ActionContent>
                     </controls:Setting>
                     <controls:Setting x:Uid="/SettingsPage/DonateSettings" Icon="&#xEB51;">
@@ -237,7 +240,10 @@
                             </StackPanel>
                         </controls:Setting.Description>
                         <controls:Setting.ActionContent>
-                            <Button Tag="Rate" x:Uid="/SettingsPage/Rate" Click="Button_Click"/>
+                            <Button
+                                x:Uid="/SettingsPage/Rate"
+                                Click="Button_Click"
+                                Tag="Rate" />
                         </controls:Setting.ActionContent>
                     </controls:Setting>
                 </controls:SettingsGroup>
