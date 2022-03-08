@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <LangVersion>preview</LangVersion>
-    <TargetFrameworks>net4.8;netcoreapp3.1;net6.0-windows10.0.22000.0;net7.0-windows10.0.22000.0</TargetFrameworks>
+    <TargetFrameworks>net4.8;netcoreapp3.1;net6.0;net7.0</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net4.8'">

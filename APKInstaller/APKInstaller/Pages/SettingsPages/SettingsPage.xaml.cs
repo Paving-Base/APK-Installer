@@ -107,9 +107,6 @@ namespace APKInstaller.Pages.SettingsPages
 
         private void MarkdownText_LinkClicked(object sender, LinkClickedEventArgs e) => _ = Launcher.LaunchUriAsync(new Uri(e.Link));
 
-        private void WebXAML_Loaded(object sender, RoutedEventArgs e)
-        {
-            (sender as WebXAML).ContentInfo = new GitInfo("Paving-Base", "APK-Installer", "screenshots", "Documents/Announcements", "Announcements.xaml");
-        }
+        private void WebXAML_Loaded(object sender, RoutedEventArgs e) => (sender as WebXAML).ContentInfo = new GitInfo("Paving-Base", "APK-Installer", "screenshots", "Documents/Announcements", "Announcements.xaml");
     }
 }

@@ -7,11 +7,14 @@ namespace APKInstaller.Helpers
 {
     public static class LanguageHelper
     {
+        public static string AutoLanguageCode = "auto";
+
         public static List<string> SupportLanguages = new List<string>
         {
             "af-ZA",
             "ar-SA",
             "ca-ES",
+            "cs-CZ",
             "da-DK",
             "de-DE",
             "el-GR",
@@ -28,6 +31,7 @@ namespace APKInstaller.Helpers
             "no-NO",
             "pl-PL",
             "pt-BR",
+            "pt-PT",
             "ro-RO",
             "ru-RU",
             "sr-SP",
@@ -44,6 +48,7 @@ namespace APKInstaller.Helpers
             "af, af-za",
             "ar, ar-sa, ar-ae, ar-bh, ar-dz, ar-eg, ar-iq, ar-jo, ar-kw, ar-lb, ar-ly, ar-ma, ar-om, ar-qa, ar-sy, ar-tn, ar-ye",
             "ca, ca-es, ca-es-valencia",
+            "cs, cs-cz",
             "da, da-dk",
             "de, de-at, de-ch, de-de, de-lu, de-li",
             "el, el-gr",
@@ -59,7 +64,8 @@ namespace APKInstaller.Helpers
             "nl, nl-nl, nl-be",
             "nb, nb-no, nn, nn-no, no, no-no",
             "pl, pl-pl",
-            "pt, pt-pt, pt-br",
+            "pt-br",
+            "pt, pt-pt",
             "ro, ro-ro",
             "ru, ru-ru",
             "sr-Latn, sr-latn-cs, sr, sr-latn-ba, sr-latn-me, sr-latn-rs, sr-cyrl, sr-cyrl-ba, sr-cyrl-cs, sr-cyrl-me, sr-cyrl-rs",
@@ -71,7 +77,7 @@ namespace APKInstaller.Helpers
             "zh-Hant, zh-hk, zh-mo, zh-tw, zh-hant-hk, zh-hant-mo, zh-hant-tw"
         };
 
-        public static List<CultureInfo> SupportCultures => SupportLanguages.Select(x => new CultureInfo(x)).ToList();
+        public static List<CultureInfo> SupportCultures = SupportLanguages.Select(x => new CultureInfo(x)).ToList();
 
         public static string GetCurrentLanguage()
         {

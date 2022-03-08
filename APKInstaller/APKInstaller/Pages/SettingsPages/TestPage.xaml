@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:contorls="using:APKInstaller.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:globalization="using:System.Globalization"
     xmlns:helper="using:APKInstaller.Helpers"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
@@ -24,6 +25,19 @@
                     <contorls:Setting x:Uid="/TestPage/TitleBarSettings" Icon="&#xE737;">
                         <contorls:Setting.ActionContent>
                             <ToggleSwitch IsOn="{x:Bind IsExtendsTitleBar, Mode=TwoWay}" Style="{StaticResource ToggleSwitchSettingStyle}" />
+                        </contorls:Setting.ActionContent>
+                    </contorls:Setting>
+                    <contorls:Setting x:Uid="/TestPage/LanguageSettings" Icon="&#xF2B7;">
+                        <contorls:Setting.ActionContent>
+                            <ComboBox SelectionChanged="ComboBox_SelectionChanged" Loaded="ComboBox_Loaded" ItemsSource="{x:Bind helper:LanguageHelper.SupportCultures}">
+                                <ComboBox.ItemTemplate>
+                                    <DataTemplate x:DataType="globalization:CultureInfo">
+                                        <TextBlock>
+                                            <Run Text="{x:Bind DisplayName}" />
+                                        </TextBlock>
+                                    </DataTemplate>
+                                </ComboBox.ItemTemplate>
+                            </ComboBox>
                         </contorls:Setting.ActionContent>
                     </contorls:Setting>
                     <contorls:Setting x:Uid="/TestPage/CompactOverlaySettings" Icon="&#xE944;">
