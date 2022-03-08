@@ -162,7 +162,7 @@
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>連接設備</value>
   </data>
-  <data name="ContactMeSetting.Header" xml:space="preserve">
+  <data name="ContactMeSettings.Header" xml:space="preserve">
     <value>與我聯繫</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
@@ -180,7 +180,7 @@
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
     <value>顯示</value>
   </data>
-  <data name="DonateSetting.Header" xml:space="preserve">
+  <data name="DonateSettings.Header" xml:space="preserve">
     <value>支持</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">

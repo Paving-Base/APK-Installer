@@ -194,6 +194,9 @@
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
     <value>原因: </value>
   </data>
+  <data name="InstallWSA" xml:space="preserve">
+    <value>安装 WSA</value>
+  </data>
   <data name="InvalidPackage" xml:space="preserve">
     <value>安装包已损坏或无效。</value>
   </data>
