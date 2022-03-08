@@ -194,6 +194,9 @@
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
     <value>Reason: </value>
   </data>
+  <data name="InstallWSA" xml:space="preserve">
+    <value>Install WSA</value>
+  </data>
   <data name="InvalidPackage" xml:space="preserve">
     <value>The package is either corrupted or invalid.</value>
   </data>
