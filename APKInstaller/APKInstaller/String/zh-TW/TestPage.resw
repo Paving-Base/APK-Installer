@@ -132,6 +132,12 @@
   <data name="EnterPIP.Content" xml:space="preserve">
     <value>進入畫中畫模式</value>
   </data>
+  <data name="LanguageSettings.Description" xml:space="preserve">
+    <value>選擇語言並重啟應用來更改語言</value>
+  </data>
+  <data name="LanguageSettings.Header" xml:space="preserve">
+    <value>語言</value>
+  </data>
   <data name="OutPIP.Content" xml:space="preserve">
     <value>退出</value>
   </data>
