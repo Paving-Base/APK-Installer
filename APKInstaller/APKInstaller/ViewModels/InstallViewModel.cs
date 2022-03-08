@@ -984,15 +984,20 @@ namespace APKInstaller.ViewModels
                     {
                         XamlRoot = _page.XamlRoot,
                         Title = _loader.GetString("NoDevice"),
-                        DefaultButton = ContentDialogButton.Close,
+                        DefaultButton = ContentDialogButton.Primary,
                         CloseButtonText = _loader.GetString("IKnow"),
-                        PrimaryButtonText = _loader.GetString("GoToSetting"),
+                        PrimaryButtonText = _loader.GetString("InstallWSA"),
+                        SecondaryButtonText = _loader.GetString("GoToSetting"),
                         Content = _loader.GetString("NoDeviceInfo"),
                     };
                     ProgressHelper.SetState(ProgressState.None, true);
                     ContentDialogResult result = await dialog.ShowAsync();
                     ProgressHelper.SetState(ProgressState.Indeterminate, true);
                     if (result == ContentDialogResult.Primary)
+                    {
+                        _ = Launcher.LaunchUriAsync(new Uri("ms-windows-store://pdp/?ProductId=9P3395VX91NR&mode=mini"));
+                    }
+                    else  if (result == ContentDialogResult.Secondary)
                     {
                         UIHelper.Navigate(typeof(SettingsPage), null);
                     }

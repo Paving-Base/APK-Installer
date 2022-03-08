@@ -26,6 +26,7 @@ namespace APKInstaller.Helpers
         public const string ShowMessages = "ShowMessages";
         public const string AutoGetNetAPK = "AutoGetNetAPK";
         public const string DefaultDevice = "DefaultDevice";
+        public const string CurrentLanguage = "CurrentLanguage";
         public const string IsBackgroundColorFollowSystem = "IsBackgroundColorFollowSystem";
 
         public static Type Get<Type>(string key) => LocalObject.Read<Type>(key);
@@ -82,6 +83,10 @@ namespace APKInstaller.Helpers
             if (!LocalObject.KeyExists(DefaultDevice))
             {
                 LocalObject.Save(DefaultDevice, new DeviceData());
+            }
+            if (!LocalObject.KeyExists(CurrentLanguage))
+            {
+                LocalObject.Save(CurrentLanguage, LanguageHelper.AutoLanguageCode);
             }
             if (!LocalObject.KeyExists(IsBackgroundColorFollowSystem))
             {
