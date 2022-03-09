@@ -1,5 +1,3 @@
 files:
-  - source: /APKInstaller/APKInstaller (Package)/String/en-US
-    translation: /APKInstaller/APKInstaller (Package)/String/%locale%/%original_file_name%
   - source: /APKInstaller/APKInstaller/String/en-US
     translation: /APKInstaller/APKInstaller/String/%locale%/%original_file_name%
