@@ -121,7 +121,7 @@
     <value>Android Test</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
-    <value>minecraft-1-18-0-21-xbox-servers.apk</value>
+    <value>Applications</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
     <value>Enter or Exit Compact Overlay</value>
