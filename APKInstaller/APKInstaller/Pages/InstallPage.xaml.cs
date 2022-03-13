@@ -4,8 +4,10 @@ using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
 using Microsoft.Windows.AppLifecycle;
+using System;
 using System.Linq;
 using Windows.ApplicationModel.Activation;
+using Windows.Foundation.Collections;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -40,11 +42,46 @@ namespace APKInstaller.Pages
                 switch (args.Kind)
                 {
                     case ExtendedActivationKind.File:
-                        _path = (args.Data as IFileActivatedEventArgs).Files.First().Path;
+                        _path = (args.Data as FileActivatedEventArgs).Files.First().Path;
                         Provider = new InstallViewModel(_path, this);
                         break;
                     case ExtendedActivationKind.Protocol:
-                        Provider = new InstallViewModel((args.Data as IProtocolActivatedEventArgs).Uri, this);
+                        ProtocolActivatedEventArgs ProtocolArgs = args.Data as ProtocolActivatedEventArgs;
+                        ValueSet ProtocolData = ProtocolArgs.Data;
+                        if (ProtocolData.Count <= 0)
+                        {
+                            Provider = new InstallViewModel(ProtocolArgs.Uri, this);
+                        }
+                        else
+                        {
+                            if (ProtocolData.ContainsKey("Url"))
+                            {
+                                Provider = new InstallViewModel(ProtocolData["Url"] as Uri, this);
+                            }
+                            else if (ProtocolData.ContainsKey("FilePath"))
+                            {
+                                Provider = new InstallViewModel(ProtocolData["FilePath"] as string, this);
+                            }
+                        }
+                        break;
+                    case ExtendedActivationKind.ProtocolForResults:
+                        ProtocolForResultsActivatedEventArgs ProtocolForResultsArgs = args.Data as ProtocolForResultsActivatedEventArgs;
+                        ValueSet ProtocolForResultsData = ProtocolForResultsArgs.Data;
+                        if (ProtocolForResultsData.Count <= 0)
+                        {
+                            Provider = new InstallViewModel(ProtocolForResultsArgs.Uri, this, ProtocolForResultsArgs.ProtocolForResultsOperation);
+                        }
+                        else
+                        {
+                            if (ProtocolForResultsData.ContainsKey("Url"))
+                            {
+                                Provider = new InstallViewModel(ProtocolForResultsData["Url"] as Uri, this, ProtocolForResultsArgs.ProtocolForResultsOperation);
+                            }
+                            else if (ProtocolForResultsData.ContainsKey("FilePath"))
+                            {
+                                Provider = new InstallViewModel(ProtocolForResultsData["FilePath"] as string, this, ProtocolForResultsArgs.ProtocolForResultsOperation);
+                            }
+                        }
                         break;
                     default:
                         Provider = new InstallViewModel(_path, this);
@@ -80,7 +117,7 @@ namespace APKInstaller.Pages
                     Provider.OpenAPP();
                     break;
                 case "CancelOperationButton":
-                    Application.Current.Exit();
+                    Provider.CloseAPP();
                     break;
             }
         }

@@ -25,6 +25,7 @@ using System.Runtime.InteropServices;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Windows.ApplicationModel.Resources;
+using Windows.Foundation.Collections;
 using Windows.Storage;
 using Windows.Storage.Pickers;
 using Windows.System;
@@ -46,8 +47,9 @@ namespace APKInstaller.ViewModels
 
         private InstallPage _page;
         private DeviceData _device;
-        private string APKTemp => Path.Combine(CachesHelper.TempPath, "NetAPKTemp.apk");
-        private string ADBTemp => Path.Combine(CachesHelper.TempPath, "platform-tools.zip");
+        private ProtocolForResultsOperation _operation;
+        private static string APKTemp = Path.Combine(CachesHelper.TempPath, "NetAPKTemp.apk");
+        private static string ADBTemp = Path.Combine(CachesHelper.TempPath, "platform-tools.zip");
 
 #if !DEBUG
         private Uri _url;
@@ -521,21 +523,23 @@ namespace APKInstaller.ViewModels
         }
 
         // TODO: 仅当“Dispose(bool disposing)”拥有用于释放未托管资源的代码时才替代终结器
-        public InstallViewModel(Uri Url, InstallPage Page)
+        public InstallViewModel(Uri Url, InstallPage Page, ProtocolForResultsOperation Operation = null)
         {
             _url = Url;
             _page = Page;
             Caches = this;
             _path = APKTemp;
+            _operation = Operation;
             // 不要更改此代码。请将清理代码放入“Dispose(bool disposing)”方法中
             Dispose(disposing: false);
         }
 
         // TODO: 仅当“Dispose(bool disposing)”拥有用于释放未托管资源的代码时才替代终结器
-        public InstallViewModel(string Path, InstallPage Page)
+        public InstallViewModel(string Path, InstallPage Page, ProtocolForResultsOperation Operation = null)
         {
             _page = Page;
             Caches = this;
+            _operation = Operation;
             _path = string.IsNullOrEmpty(Path) ? _path : Path;
             // 不要更改此代码。请将清理代码放入“Dispose(bool disposing)”方法中
             Dispose(disposing: false);
@@ -565,7 +569,7 @@ namespace APKInstaller.ViewModels
             }
         }
 
-        public async Task CheckADB(bool force = false)
+        private async Task CheckADB(bool force = false)
         {
         checkadb:
             if (force || !File.Exists(ADBPath))
@@ -628,6 +632,7 @@ namespace APKInstaller.ViewModels
                             }
                             else
                             {
+                                SendResults(new Exception($"ADB {_loader.GetString("DownloadFailed")}"));
                                 Application.Current.Exit();
                                 return;
                             }
@@ -653,6 +658,7 @@ namespace APKInstaller.ViewModels
                         }
                         else
                         {
+                            SendResults(new Exception($"{_loader.GetString("NoInternet")}, ADB {_loader.GetString("DownloadFailed")}"));
                             Application.Current.Exit();
                             return;
                         }
@@ -680,13 +686,14 @@ namespace APKInstaller.ViewModels
                 }
                 else
                 {
+                    SendResults(new Exception(_loader.GetString("ADBMissing")));
                     Application.Current.Exit();
                     return;
                 }
             }
         }
 
-        public async Task DownloadADB()
+        private async Task DownloadADB()
         {
             if (!Directory.Exists(ADBTemp[..ADBTemp.LastIndexOf(@"\")]))
             {
@@ -757,6 +764,7 @@ namespace APKInstaller.ViewModels
                     }
                     else
                     {
+                        SendResults(new Exception($"ADB {_loader.GetString("DownloadFailed")}"));
                         Application.Current.Exit();
                         return;
                     }
@@ -802,7 +810,7 @@ namespace APKInstaller.ViewModels
             ADBPath = Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe");
         }
 
-        public async Task InitilizeADB()
+        private async Task InitilizeADB()
         {
             WaitProgressText = _loader.GetString("Loading");
             if (!string.IsNullOrEmpty(_path) || _url != null)
@@ -849,7 +857,7 @@ namespace APKInstaller.ViewModels
             }
         }
 
-        public async Task InitilizeUI()
+        private async Task InitilizeUI()
         {
             if (!string.IsNullOrEmpty(_path) || _url != null)
             {
@@ -1025,7 +1033,7 @@ namespace APKInstaller.ViewModels
             return false;
         }
 
-        public async Task ReinitilizeUI()
+        private async Task ReinitilizeUI()
         {
             WaitProgressText = _loader.GetString("Loading");
             if ((!string.IsNullOrEmpty(_path) || _url != null) && NetAPKExist)
@@ -1042,7 +1050,7 @@ namespace APKInstaller.ViewModels
             }
         }
 
-        public void CheckAPK()
+        private void CheckAPK()
         {
             ResetUI();
             AdvancedAdbClient client = new AdvancedAdbClient();
@@ -1074,7 +1082,7 @@ namespace APKInstaller.ViewModels
             }
         }
 
-        public void CheckOnlinePackage()
+        private void CheckOnlinePackage()
         {
             Regex[] UriRegex = new Regex[] { new Regex(@":\?source=(.*)"), new Regex(@"://(.*)") };
             string Uri = UriRegex[0].IsMatch(_url.ToString()) ? UriRegex[0].Match(_url.ToString()).Groups[1].Value : UriRegex[1].Match(_url.ToString()).Groups[1].Value;
@@ -1148,7 +1156,7 @@ namespace APKInstaller.ViewModels
             IsInstalling = false;
         }
 
-        public async Task DownloadAPK()
+        private async Task DownloadAPK()
         {
             if (_url != null)
             {
@@ -1222,6 +1230,7 @@ namespace APKInstaller.ViewModels
                         }
                         else
                         {
+                            SendResults(new Exception($"APK {_loader.GetString("DownloadFailed")}"));
                             Application.Current.Exit();
                             return;
                         }
@@ -1281,7 +1290,7 @@ namespace APKInstaller.ViewModels
             }
         }
 
-        public bool CheckDevice()
+        private bool CheckDevice()
         {
             AdvancedAdbClient client = new AdvancedAdbClient();
             List<DeviceData> devices = client.GetDevices();
@@ -1341,6 +1350,7 @@ namespace APKInstaller.ViewModels
                         }
                     });
                 }
+                SendResults();
                 IsInstalling = false;
                 SecondaryActionVisibility = Visibility.Visible;
                 SecondaryActionButtonText = _loader.GetString("Launch");
@@ -1348,6 +1358,7 @@ namespace APKInstaller.ViewModels
             }
             catch (Exception ex)
             {
+                SendResults(ex);
                 IsInstalling = false;
                 TextOutput = ex.Message;
                 TextOutputVisibility = InstallOutputVisibility = Visibility.Visible;
@@ -1377,6 +1388,21 @@ namespace APKInstaller.ViewModels
                 _path = file.Path;
                 await Refresh();
             }
+        }
+
+        private void SendResults(Exception exception = null)
+        {
+            if (_operation == null) { return; }
+            ValueSet results = new ValueSet();
+            results["Result"] = exception != null;
+            results["Exception"] = exception;
+            _operation.ReportCompleted(results);
+        }
+
+        public void CloseAPP()
+        {
+            SendResults(new Exception($"{_loader.GetString("Install")} {_loader.GetString("Cancel")}"));
+            Application.Current.Exit();
         }
 
         protected virtual void Dispose(bool disposing)
