@@ -121,7 +121,7 @@
     <value>О программе</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>ADB Path</value>
+    <value>Путь ADB</value>
   </data>
   <data name="AfdianLink.Content" xml:space="preserve">
     <value>Afdian</value>
@@ -205,7 +205,7 @@
     <value>Найти обновление</value>
   </data>
   <data name="GithubLink.Content" xml:space="preserve">
-    <value>Github</value>
+    <value>GitHub</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>Go to the page of test.</value>
@@ -220,7 +220,7 @@
     <value>Join Our Chat</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Last Checked: </value>
+    <value>Последняя проверка: </value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>Disable it to connect to other device.</value>
@@ -262,10 +262,10 @@
     <value>Show helpers when no device is connected.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Is Show Helpers?</value>
+    <value>Показывать подсказки?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Show Announcements on the top of Settings.</value>
+    <value>Показывать объявления в верхней части параметров.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
     <value>Is Show Announcements?</value>
