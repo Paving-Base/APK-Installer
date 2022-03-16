@@ -1,5 +1,5 @@
-# How To Connect WSA
-1. Please make sure the APK Installer has been updated to the [newest version](https://github.com/Paving-Base/APK-Installer/releases "APK Installer")
-2. Please make sure you have installed and ran WSA
-3. Turn on Developer Mode, make sure the IP address is displayed ![Developer Mode](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/Images/Snipaste_2021-10-22_14-57-56.png)
-4. Reopen APK Installer, resume installation ![Resume Installation](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/Images/Snipaste_2021-10-22_15-10-06.png)
+# Как подключиться к Подсистеме Windows для Android
+1. Пожалуйста, убедитесь, что программа APK Installer была обновлена до [последней версии](https://github.com/Paving-Base/APK-Installer/releases "APK Installer")
+2. Убедитесь, что вы установили и запустили Подсистему Windows для Android
+3. Включите режим разработчика и убедитесь, что IP адрес отображается![Режим разработчика](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/Images/Snipaste_2021-10-22_14-57-56.png)
+4. Заново откройте APK Installer и продолжите установку![Продолжить установку](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/Images/Snipaste_2021-10-22_15-10-06.png)
