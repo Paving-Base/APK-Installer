@@ -68,6 +68,9 @@ namespace APKInstaller.Pages.SettingsPages
                     _ = Frame.Navigate(typeof(SettingsPage));
                     Frame.GoBack();
                     break;
+                case "ADBPath":
+                    Provider.ChangeADBPath();
+                    break;
                 case "Connect":
                     new AdvancedAdbClient().Connect(ConnectIP.Text);
                     Provider.OnDeviceChanged(null, null);
@@ -82,6 +85,19 @@ namespace APKInstaller.Pages.SettingsPages
                     Provider.CheckUpdate();
                     break;
                 default:
+                    break;
+            }
+        }
+
+        private async void HyperlinkButton_Click(object sender, RoutedEventArgs e)
+        {
+            switch ((sender as FrameworkElement).Tag as string)
+            {
+                case "ADBPath":
+                    _ = await Launcher.LaunchFolderAsync(await StorageFolder.GetFolderFromPathAsync(Provider.ADBPath[..Provider.ADBPath.LastIndexOf(@"\")]));
+                    break;
+                case "LogFolder":
+                    _ = await Launcher.LaunchFolderAsync(await ApplicationData.Current.LocalFolder.CreateFolderAsync("MetroLogs", CreationCollisionOption.OpenIfExists));
                     break;
             }
         }

@@ -8,13 +8,20 @@ using Microsoft.UI.Xaml.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Runtime.InteropServices;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Resources;
+using Windows.Storage;
+using Windows.Storage.Pickers;
+using WinRT;
 
 namespace APKInstaller.ViewModels.SettingsPages
 {
     public class SettingsViewModel : INotifyPropertyChanged
     {
+        [DllImport("user32.dll", ExactSpelling = true, CharSet = CharSet.Auto, PreserveSig = true, SetLastError = false)]
+        private static extern IntPtr GetActiveWindow();
+
         private readonly SettingsPage _page;
         private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("SettingsPage");
 
@@ -65,6 +72,16 @@ namespace APKInstaller.ViewModels.SettingsPages
             set
             {
                 SettingsHelper.Set(SettingsHelper.ShowDialogs, value);
+            }
+        }
+
+        public string ADBPath
+        {
+            get => SettingsHelper.Get<string>(SettingsHelper.ADBPath);
+            set
+            {
+                SettingsHelper.Set(SettingsHelper.ADBPath, value);
+                RaisePropertyChangedEvent();
             }
         }
 
@@ -255,6 +272,27 @@ namespace APKInstaller.ViewModels.SettingsPages
                     _page.SelectDeviceBox.SelectedItem = data;
                     break;
                 }
+            }
+        }
+
+        public async void ChangeADBPath()
+        {
+            FileOpenPicker FileOpen = new FileOpenPicker();
+            FileOpen.FileTypeFilter.Add(".exe");
+            FileOpen.SuggestedStartLocation = PickerLocationId.ComputerFolder;
+
+            // When running on win32, FileSavePicker needs to know the top-level hwnd via IInitializeWithWindow::Initialize.
+            if (Window.Current == null)
+            {
+                IInitializeWithWindow initializeWithWindowWrapper = FileOpen.As<IInitializeWithWindow>();
+                IntPtr hwnd = GetActiveWindow();
+                initializeWithWindowWrapper.Initialize(hwnd);
+            }
+
+            StorageFile file = await FileOpen.PickSingleFileAsync();
+            if (file != null)
+            {
+                ADBPath = file.Path;
             }
         }
     }
