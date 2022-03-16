@@ -120,6 +120,9 @@
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
     <value>關於</value>
   </data>
+  <data name="ADBPathSettings.Header" xml:space="preserve">
+    <value>ADB Path</value>
+  </data>
   <data name="AfdianLink.Content" xml:space="preserve">
     <value>愛發電</value>
   </data>
@@ -131,6 +134,9 @@
   </data>
   <data name="BilibiliLink.Content" xml:space="preserve">
     <value>嗶哩嗶哩</value>
+  </data>
+  <data name="Change.Content" xml:space="preserve">
+    <value>Change</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
     <value>檢查失敗</value>
@@ -154,7 +160,10 @@
     <value>在 APK 安裝完成並啟動後關閉安裝程式。</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>當應用程式準備就緒後是否關閉安裝程式？</value>
+    <value>Is Close Installer when APP is Ready?</value>
+  </data>
+  <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
+    <value>Configs</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
     <value>通過網路連接設備。</value>
@@ -198,6 +207,9 @@
   <data name="GithubLink.Content" xml:space="preserve">
     <value>Github</value>
   </data>
+  <data name="GoToTestPage.Description" xml:space="preserve">
+    <value>Go to the page of test.</value>
+  </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
     <value>前往測試頁面</value>
   </data>
@@ -227,6 +239,9 @@
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
     <value>發布說明</value>
+  </data>
+  <data name="ResetSettings.Description" xml:space="preserve">
+    <value>Reset settings of this application.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
     <value>重置應用</value>
