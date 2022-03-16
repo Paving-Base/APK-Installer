@@ -127,7 +127,7 @@
     <value>ADB не найден</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Разрешения приложения:</value>
+    <value>Возможности: </value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Отмена</value>
@@ -277,18 +277,18 @@
     <comment>{0} - Have done num. {1} - All num.</comment>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>Update</value>
+    <value>Обновить</value>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
     <value>Обновить {0}?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>Version: {0}</value>
+    <value>Версия: {0}</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>Waiting for download...</value>
+    <value>Ожидание загрузки...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
     <value>Ожидание устройства...</value>
@@ -302,6 +302,6 @@
 Это может занять много времени.</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>WSA is Running</value>
+    <value>Подсистема Windows для Android запущена</value>
   </data>
 </root>
