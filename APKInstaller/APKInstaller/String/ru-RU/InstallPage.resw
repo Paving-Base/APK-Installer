@@ -118,22 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, Android Debug Bridge, необходим для работы программы APK Installer. Нажмите "Скачать" для загрузки. Загружая, вы принимаете Условия и Положения Google для ADB. Если вы уже скачали ADB, нажмите "Выбрать", чтобы выбрать его.</value>
+    <value>ADB, Android Debug Bridge, необходим для работы программы APK Installer. Нажмите "Загрузить" для загрузки. Загружая, вы принимаете Условия и Положения Google для ADB. Если вы уже скачали ADB, нажмите "Выбрать", чтобы выбрать его.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Exist</value>
+    <value>ADB установлен</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB не найден</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Capabilities: </value>
+    <value>Разрешения приложения:</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Отмена</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>Не удалось открыть пакет приложений</value>
+    <value>Не удалось открыть пакет</value>
   </data>
   <data name="Checking" xml:space="preserve">
     <value>Проверка...</value>
@@ -142,7 +142,7 @@
     <value>Проверка ADB...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Click here to read them</value>
+    <value>Нажмите здесь, чтобы узнать</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Закрыть</value>
@@ -151,7 +151,7 @@
     <value>Устройства</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Скачать</value>
+    <value>Загрузить</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
     <value>Сбой загрузки</value>
@@ -169,13 +169,13 @@
     <value>Подсистема Windows для Android найдена</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>Go to Setting</value>
+    <value>Параметры</value>
   </data>
   <data name="HowToConnect" xml:space="preserve">
     <value>Как подключиться к Подсистеме Windows для Android?</value>
   </data>
   <data name="IKnow" xml:space="preserve">
-    <value>I Know</value>
+    <value>Ок</value>
   </data>
   <data name="Install" xml:space="preserve">
     <value>Установить</value>
@@ -210,7 +210,7 @@
     <value>Запуск...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>Launch when ready</value>
+    <value>Запустить по мере готовности</value>
   </data>
   <data name="Loading" xml:space="preserve">
     <value>Загрузка...</value>
@@ -219,25 +219,25 @@
     <value>Устройство Android не найдено</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>You can install WSA. Or go to Settings to connect Device.</value>
+    <value>Вы можете установить Подсистему Windows для Android или перейдите в Параметры, чтобы подключить устройство.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>You can go to Settings to connect Device.</value>
+    <value>Чтобы подключить устройство, перейдите в параметры.</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
-    <value>Cannot connect Internet</value>
+    <value>Невозможно подключиться к Интернету</value>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
-    <value>Please connect to the internet before opening the app.</value>
+    <value>Пожалуйста, подключитесь к Интернету перед открытием приложения.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>For proper functioning of the app, try to launch an Android app package.</value>
+    <value>Для правильной работы приложения попробуйте запустить пакет приложений Android.</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>ОК</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
-    <value>Online Package</value>
+    <value>Онлайн-пакет</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
     <value>Имя пакета: {0}</value>
@@ -264,7 +264,7 @@
     <value>Запуск сервера ADB...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>Start WSA</value>
+    <value>Запустить Подсистему Windows для Android</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
     <value>Распаковка ADB...</value>
