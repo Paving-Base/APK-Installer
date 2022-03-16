@@ -121,7 +121,7 @@
     <value>关于</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>ADB Path</value>
+    <value>ADB 路径</value>
   </data>
   <data name="AfdianLink.Content" xml:space="preserve">
     <value>爱发电</value>
@@ -136,7 +136,7 @@
     <value>哔哩哔哩</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
-    <value>Change</value>
+    <value>更改</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
     <value>检查失败</value>
@@ -160,10 +160,10 @@
     <value>在 APK 安装完成并启动后关闭安装程序。</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Is Close Installer when APP is Ready?</value>
+    <value>当应用程序准备就绪后是否关闭安装程序？</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
-    <value>Configs</value>
+    <value>配置</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
     <value>通过网络连接设备。</value>
@@ -208,7 +208,7 @@
     <value>Github</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>Go to the page of test.</value>
+    <value>前往用于测试的页面。</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
     <value>前往测试页面</value>
@@ -241,7 +241,7 @@
     <value>发行说明</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
-    <value>Reset settings of this application.</value>
+    <value>重置此应用程序的设置。</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
     <value>重置应用</value>
