@@ -121,7 +121,7 @@
     <value>About</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>ADB Path</value>
+    <value>Chemin ADB</value>
   </data>
   <data name="AfdianLink.Content" xml:space="preserve">
     <value>Afdian</value>
@@ -136,7 +136,7 @@
     <value>BiliBili</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
-    <value>Change</value>
+    <value>Modifier</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
     <value>Check Failed</value>
@@ -160,10 +160,10 @@
     <value>Close Installer after APK has installed and start.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Is Close Installer when APP is Ready?</value>
+    <value>Fermer l'installateur quand l'application est prête ?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
-    <value>Configs</value>
+    <value>Configurations</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
     <value>Connect device on network.</value>
@@ -208,7 +208,7 @@
     <value>Github</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>Go to the page of test.</value>
+    <value>Aller à la page de test.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
     <value>Go to TestPage</value>
@@ -241,7 +241,7 @@
     <value>Release notes</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
-    <value>Reset settings of this application.</value>
+    <value>Réinitialiser les paramètres de cette application.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
     <value>Reset application</value>
