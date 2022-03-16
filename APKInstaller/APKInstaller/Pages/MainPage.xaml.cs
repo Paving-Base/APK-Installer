@@ -4,6 +4,7 @@ using Microsoft.UI.Dispatching;
 using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
+using Windows.Graphics;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -16,6 +17,7 @@ namespace APKInstaller.Pages
     public sealed partial class MainPage : Page
     {
         private bool HasBeenSmail;
+        private readonly AppWindow AppWindow = UIHelper.GetAppWindowForCurrentWindow();
 
         public MainPage()
         {
@@ -24,7 +26,6 @@ namespace APKInstaller.Pages
             UIHelper.DispatcherQueue = DispatcherQueue.GetForCurrentThread();
             if (UIHelper.HasTitleBar)
             {
-                SizeChanged += Page_SizeChanged;
                 UIHelper.MainWindow.ExtendsContentIntoTitleBar = true;
                 CustomTitleBarRoot.HorizontalAlignment = HorizontalAlignment.Left;
                 Root.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Auto) });
@@ -32,7 +33,6 @@ namespace APKInstaller.Pages
             }
             else
             {
-                AppWindow AppWindow = UIHelper.GetAppWindowForCurrentWindow();
                 AppWindow.TitleBar.ExtendsContentIntoTitleBar = true;
                 UIHelper.CheckTheme();
             }
@@ -56,20 +56,28 @@ namespace APKInstaller.Pages
         {
             try
             {
-                if (XamlRoot.Size.Width <= 268)
+                if (UIHelper.HasTitleBar)
                 {
-                    if (!HasBeenSmail)
+                    if (XamlRoot.Size.Width <= 268)
                     {
-                        HasBeenSmail = true;
-                        UIHelper.MainWindow.SetTitleBar(null);
+                        if (!HasBeenSmail)
+                        {
+                            HasBeenSmail = true;
+                            UIHelper.MainWindow.SetTitleBar(null);
+                        }
                     }
+                    else if (HasBeenSmail)
+                    {
+                        HasBeenSmail = false;
+                        UIHelper.MainWindow.SetTitleBar(CustomTitleBar);
+                    }
+                    CustomTitleBarRoot.Width = XamlRoot.Size.Width - 120;
                 }
-                else if (HasBeenSmail)
+                else
                 {
-                    HasBeenSmail = false;
-                    UIHelper.MainWindow.SetTitleBar(CustomTitleBar);
+                    RectInt32 Rect = new RectInt32((ActualWidth - CustomTitleBar.ActualWidth).GetActualPixel(), 0, CustomTitleBar.ActualWidth.GetActualPixel(), CustomTitleBar.ActualHeight.GetActualPixel());
+                    AppWindow.TitleBar.SetDragRectangles(new RectInt32[] { Rect });
                 }
-                CustomTitleBarRoot.Width = XamlRoot.Size.Width - 120;
             }
             catch { }
         }

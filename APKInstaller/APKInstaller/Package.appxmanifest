@@ -64,7 +64,7 @@
           </uap:FileTypeAssociation>
         </uap:Extension>
         <uap:Extension Category="windows.protocol">
-          <uap:Protocol Name="apkinstaller">
+          <uap:Protocol Name="apkinstaller" ReturnResults="optional">
             <uap:DisplayName>ms-resource:AppName</uap:DisplayName>
             <uap:Logo>Assets\256x256.png</uap:Logo>
           </uap:Protocol>

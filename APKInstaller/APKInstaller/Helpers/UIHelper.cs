@@ -12,6 +12,7 @@ using System.Linq;
 using System.Net;
 using Windows.ApplicationModel.Resources;
 using Windows.UI;
+using WinRT.Interop;
 using WindowId = Microsoft.UI.WindowId;
 
 namespace APKInstaller.Helpers
@@ -27,7 +28,7 @@ namespace APKInstaller.Helpers
 
     internal static partial class UIHelper
     {
-        public static bool HasTitleBar => !AppWindowTitleBar.IsCustomizationSupported();
+        public static bool HasTitleBar = !AppWindowTitleBar.IsCustomizationSupported();
         public static double TitleBarHeight => HasTitleBar ? 28 : 32;
         public static double PageTitleHeight => HasTitleBar ? 48 : 48 + TitleBarHeight;
         public static Thickness StackPanelMargin => new Thickness(0, PageTitleHeight, 0, 0);
@@ -82,6 +83,13 @@ namespace APKInstaller.Helpers
             {
                 _ = (MainPage?.CoreAppFrame.Navigate(pageType, e, TransitionInfo));
             });
+        }
+
+        public static int GetActualPixel(this double pixel)
+        {
+            var windowHandle = WindowNative.GetWindowHandle(MainWindow);
+            var currentDpi = PInvoke.User32.GetDpiForWindow(windowHandle);
+            return Convert.ToInt32(pixel * (currentDpi / 96.0));
         }
 
         public static AppWindow GetAppWindowForCurrentWindow(this Window window)

@@ -6,6 +6,7 @@
     xmlns:helper="using:APKInstaller.Helpers"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     NavigationCacheMode="Enabled"
+    SizeChanged="Page_SizeChanged"
     mc:Ignorable="d">
     <Grid x:Name="Root">
         <Grid.ChildrenTransitions>
