@@ -23,9 +23,16 @@ steps:
     secureFile: 'where.pfx'
 
 - task: UseDotNet@2
-  displayName: "Install .NET Core SDK"
+  displayName: "Install .NET SDK 6"
   inputs:
     version: 6.x
+    performMultiLevelLookup: true
+    includePreviewVersions: true # Required for preview versions
+
+- task: UseDotNet@2
+  displayName: "Install .NET SDK 7"
+  inputs:
+    version: 7.x
     performMultiLevelLookup: true
     includePreviewVersions: true # Required for preview versions
 
