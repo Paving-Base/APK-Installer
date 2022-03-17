@@ -130,7 +130,7 @@
     <value>Автоматически загружать пакеты из URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Автозагрузка пакетов по ссылке</value>
+    <value>Автозагрузка пакетов по ссылке?</value>
   </data>
   <data name="BilibiliLink.Content" xml:space="preserve">
     <value>BiliBili</value>
