@@ -121,7 +121,7 @@
     <value>Android Application Package</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>APK File</value>
+    <value>Archivo APK</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>An Android App Installer. Written by @wherewhere and @Tangent-90.</value>
@@ -133,7 +133,7 @@
     <value>There was an error with the program…</value>
   </data>
   <data name="ImageLoadError" xml:space="preserve">
-    <value>Picture failed to load</value>
+    <value>No se pudo cargar la imagen</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
     <value>Network exception</value>
