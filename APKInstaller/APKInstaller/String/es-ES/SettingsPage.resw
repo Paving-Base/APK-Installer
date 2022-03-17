@@ -169,7 +169,7 @@
     <value>Connect device on network.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
-    <value>Connect Device</value>
+    <value>Conectar Dispositivo</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
     <value>Contactarme</value>
@@ -220,10 +220,10 @@
     <value>Únete a Nuestro Chat</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Last Checked: </value>
+    <value>Última revisión: </value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Disable it to connect to other device.</value>
+    <value>Desactivarlo para conectarlo a otro dispositivo.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
     <value>Is Only for WSA?</value>
@@ -244,19 +244,19 @@
     <value>Reset settings of this application.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
-    <value>Reset application</value>
+    <value>Reiniciar aplicación</value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
-    <value>Reset</value>
+    <value>Reiniciar</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
     <value>Sí</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
-    <value>Are you sure you want to reset the app?</value>
+    <value>¿Estás seguro de que quieres reiniciar la aplicación?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
-    <value>Select Device</value>
+    <value>Seleccionar Dispositivo</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
     <value>Show helpers when no device is connected.</value>
@@ -271,16 +271,16 @@
     <value>Is Show Announcements?</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Settings</value>
+    <value>Ajustes</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>Translate</value>
+    <value>Traducir</value>
   </data>
   <data name="TwitterLink.Content" xml:space="preserve">
     <value>Twitter</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
-    <value>Version</value>
+    <value>Versión</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
     <value>Up To Date</value>

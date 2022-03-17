@@ -118,18 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
-    <value>Waiting for Device...</value>
+    <value>Esperando el dispositivo...</value>
   </data>
   <data name="Start.Text" xml:space="preserve">
-    <value>Start</value>
+    <value>Comenzar</value>
   </data>
   <data name="Stop.Text" xml:space="preserve">
-    <value>Stop</value>
+    <value>Parar</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Applications</value>
+    <value>Aplicaciones</value>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
-    <value>Uninstall</value>
+    <value>Desinstalar</value>
   </data>
 </root>
