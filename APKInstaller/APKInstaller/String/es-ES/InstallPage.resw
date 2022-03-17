@@ -130,13 +130,13 @@
     <value>Capabilities: </value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Cancelar</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>Cannot open app package</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>Checking...</value>
+    <value>Comprobando...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
     <value>Checking ADB...</value>
@@ -145,13 +145,13 @@
     <value>Click here to read them</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Close</value>
+    <value>Cerrar</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>Devices</value>
+    <value>Dispositivos</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Download</value>
+    <value>Descargar</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
     <value>Descarga Fallida</value>
@@ -201,7 +201,7 @@
     <value>The package is either corrupted or invalid.</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
-    <value>The URL is either Incomplete or invalid.</value>
+    <value>La URL es incompleta o inválida.</value>
   </data>
   <data name="Launch" xml:space="preserve">
     <value>Ejecutar</value>
@@ -261,7 +261,7 @@
     <value>Seleccionar</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
-    <value>Starting ADB Server...</value>
+    <value>Iniciando Servidor ADB...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
     <value>Iniciar WSA</value>
@@ -277,18 +277,18 @@
     <comment>{0} - Have done num. {1} - All num.</comment>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>Update</value>
+    <value>Actualización</value>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
-    <value>Update {0}?</value>
+    <value>¿Actualizar {0}?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>Version: {0}</value>
+    <value>Versión: {0}</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>Waiting for download...</value>
+    <value>Esperando la descarga...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
     <value>Waiting for Device...</value>
@@ -302,6 +302,6 @@
 This may take long time. Sit back and relax.</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>WSA is Running</value>
+    <value>WSA se está Ejecutando</value>
   </data>
 </root>
