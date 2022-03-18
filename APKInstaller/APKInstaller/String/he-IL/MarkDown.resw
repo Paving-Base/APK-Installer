@@ -118,30 +118,33 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="About.Text" xml:space="preserve">
-    <value>#### Welcome to the APK Installer!
+    <value>#### ברוכים הבאים למתקין APK!
+##### הצהרה
+1. אנא פעל לפי [הסכם רישיון משתמש הקצה של מתקין APK ומדיניות הפרטיות](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+2. תוכנית זו היא תוכנת קוד פתוח, אז אנא ודא שהתוכנה היא מ[מאגר Github זה](https://github.com/Paving-Base/APK-Installer) או [אפליקציה זו]( https:// www.microsoft.com/store/apps/9P2JFQ43FPPG) כדי לשמור על בטיחות הנתונים שלך.
+3. אם מקור התוכנית אינו חריג, כל הנתונים שלך ישמשו רק להפעלה עם התוכנית או יאוחסנו באופן מקומי במהלך הפעלת התוכנית, והמפתח לא יגנוב אף אחד מהנתונים שלך. אך למרות זאת, אנא שימו לב לאבטחת סביבת השימוש.
+4. התרגום של הטקסט של אפליקציה זו מגיע מקהילת [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin"), וכל הטקסטים אינם מייצגים את דעותיו של המחבר.
 
-##### Declaration
-1. Please follow the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. This program is open source software, so please make sure that the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application]( https://www.microsoft.com/store/apps/9P2JFQ43FPPG) to keep your data safe.
-3. If the source of the program is not abnormal, all your data will only be used to run with the program or stored locally during the program running, and the developer will not steal any of your data. But even so, please pay attention to the security of the use environment.
-4. The translation of the text of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts do not represent the author's views.
-
-##### Translate
-Thanks to [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") translators for their support. If there is any problem with the translation, please come and correct it.
-
-##### Contributors
+##### תורמים
 - [wherewhere](https://github.com/wherewhere)
 - [Void48](https://github.com/Void48)
 - [EP012014](https://github.com/EP012014)
-- [A Big Salty Fish](https://github.com/bigsaltyfishes)
+- [דג מלוח גדול](https://github.com/bigsaltyfishes)
 - [sam1357](https://github.com/sam1357)
 
-##### Citations and References
+##### ציטוטים והפניות
 - [WinUI](https://github.com/microsoft/microsoft-ui-xaml "WinUI")
 - [AAPTForNet](https://github.com/canheo136/QuickLook.Plugin.ApkViewer "AAPTForNet")
-- [Sharp Compress](https://github.com/adamhathcock/sharpcompress "Sharp Compress")
-- [Portable Downloader](https://github.com/madnik7/PortableDownloader "Portable Downloader")
+- [דחיסה חדה](https://github.com/adamhathcock/sharpcompress "דחיסה חדה")
+- [הורדה ניידת](https://github.com/madnik7/PortableDownloader "הורדה ניידת")
 - [Advanced Sharp Adb Client](https://github.com/yungd1plomat/AdvancedSharpAdbClient "Advanced Sharp Adb Client")
-- [Windows Community Toolkit](https://github.com/CommunityToolkit/WindowsCommunityToolkit "Windows Community Toolkit")</value>
+- [ערכת Windows Community Toolkit](https://github.com/CommunityToolkit/WindowsCommunityToolkit "ערכת כלי קהילת Windows")
+
+
+##### תרגום
+תורגם על ידי יוסי כ.
+nenuranski@gmail.com
+
+</value>
   </data>
 </root>
