@@ -60,37 +60,35 @@ namespace APKInstaller.Controls
             {
                 string value = ContentInfo.FormatURL(GitInfo.GITHUB_API);
                 if (!NetworkHelper.Instance.ConnectionInformation.IsInternetAvailable) { return; }
-                using (HttpClient client = new HttpClient())
+                using HttpClient client = new();
+                UIElement UIElement = null;
+                try
                 {
-                    UIElement UIElement = null;
+                    UIElement = (UIElement)XamlReader.Load(await client.GetStringAsync(value));
+                }
+                catch
+                {
                     try
                     {
-                        UIElement = (UIElement)XamlReader.Load(await client.GetStringAsync(value));
+                        UIElement = (UIElement)XamlReader.Load((await client.GetStringAsync(ContentInfo.FormatURL(GitInfo.FASTGIT_API))).Replace("://raw.githubusercontent.com", "://raw.fastgit.org"));
                     }
                     catch
                     {
                         try
                         {
-                            UIElement = (UIElement)XamlReader.Load((await client.GetStringAsync(ContentInfo.FormatURL(GitInfo.FASTGIT_API))).Replace("://raw.githubusercontent.com", "://raw.fastgit.org"));
+                            UIElement = (UIElement)XamlReader.Load(await client.GetStringAsync(ContentInfo.FormatURL(GitInfo.JSDELIVR_API)));
                         }
                         catch
                         {
-                            try
-                            {
-                                UIElement = (UIElement)XamlReader.Load(await client.GetStringAsync(ContentInfo.FormatURL(GitInfo.JSDELIVR_API)));
-                            }
-                            catch
-                            {
-                                UIElement = null;
-                            }
+                            UIElement = null;
                         }
                     }
-                    finally
+                }
+                finally
+                {
+                    if (UIElement != null)
                     {
-                        if (UIElement != null)
-                        {
-                            this.Content = UIElement;
-                        }
+                        this.Content = UIElement;
                     }
                 }
             }
@@ -116,30 +114,28 @@ namespace APKInstaller.Controls
             else if (Content is Uri ContentUri && ContentUri != default)
             {
                 if (!NetworkHelper.Instance.ConnectionInformation.IsInternetAvailable) { return; }
-                using (HttpClient client = new HttpClient())
+                using HttpClient client = new();
+                UIElement UIElement = null;
+                try
                 {
-                    UIElement UIElement = null;
+                    UIElement = (UIElement)XamlReader.Load(await client.GetStringAsync(ContentUri));
+                }
+                catch
+                {
                     try
                     {
-                        UIElement = (UIElement)XamlReader.Load(await client.GetStringAsync(ContentUri));
+                        UIElement = (UIElement)XamlReader.Load((await client.GetStringAsync(ContentUri.ToString().Replace("://raw.githubusercontent.com", "://raw.fastgit.org"))).Replace("://raw.githubusercontent.com", "://raw.fastgit.org"));
                     }
                     catch
                     {
-                        try
-                        {
-                            UIElement = (UIElement)XamlReader.Load((await client.GetStringAsync(ContentUri.ToString().Replace("://raw.githubusercontent.com", "://raw.fastgit.org"))).Replace("://raw.githubusercontent.com", "://raw.fastgit.org"));
-                        }
-                        catch
-                        {
-                            UIElement = null;
-                        }
+                        UIElement = null;
                     }
-                    finally
+                }
+                finally
+                {
+                    if (UIElement != null)
                     {
-                        if (UIElement != null)
-                        {
-                            this.Content = UIElement;
-                        }
+                        this.Content = UIElement;
                     }
                 }
             }

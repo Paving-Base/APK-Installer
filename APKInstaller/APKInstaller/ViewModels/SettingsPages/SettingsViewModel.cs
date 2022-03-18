@@ -277,7 +277,7 @@ namespace APKInstaller.ViewModels.SettingsPages
 
         public async void ChangeADBPath()
         {
-            FileOpenPicker FileOpen = new FileOpenPicker();
+            FileOpenPicker FileOpen = new();
             FileOpen.FileTypeFilter.Add(".exe");
             FileOpen.SuggestedStartLocation = PickerLocationId.ComputerFolder;
 

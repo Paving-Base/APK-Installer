@@ -27,7 +27,7 @@ namespace APKInstaller.Helpers
             }
 
             ServicePointManager.SecurityProtocol = (SecurityProtocolType)3072;
-            HttpClient client = new HttpClient();
+            HttpClient client = new();
             client.DefaultRequestHeaders.Add("User-Agent", username);
             string url = string.Format(GITHUB_API, username, repository);
             HttpResponseMessage response = await client.GetAsync(url);
@@ -53,7 +53,7 @@ namespace APKInstaller.Helpers
                 int build = currentVersion.Build <= 0 ? 0 : currentVersion.Build;
                 int revision = currentVersion.Revision <= 0 ? 0 : currentVersion.Revision;
 
-                SystemVersionInfo currentVersionInfo = new SystemVersionInfo(major, minor, build, revision);
+                SystemVersionInfo currentVersionInfo = new(major, minor, build, revision);
 
                 return new UpdateInfo
                 {
@@ -76,28 +76,19 @@ namespace APKInstaller.Helpers
         {
             System.Collections.Generic.List<int> nums = GetVersionNumbers(version).Split('.').Select(int.Parse).ToList();
 
-            if (nums.Count <= 1)
-            {
-                return new SystemVersionInfo(nums[0], 0, 0, 0);
-            }
-            else if (nums.Count <= 2)
-            {
-                return new SystemVersionInfo(nums[0], nums[1], 0, 0);
-            }
-            else if (nums.Count <= 3)
-            {
-                return new SystemVersionInfo(nums[0], nums[1], nums[2], 0);
-            }
-            else
-            {
-                return new SystemVersionInfo(nums[0], nums[1], nums[2], nums[3]);
-            }
+            return nums.Count <= 1
+                ? new SystemVersionInfo(nums[0], 0, 0, 0)
+                : nums.Count <= 2
+                    ? new SystemVersionInfo(nums[0], nums[1], 0, 0)
+                    : nums.Count <= 3
+                                    ? new SystemVersionInfo(nums[0], nums[1], nums[2], 0)
+                                    : new SystemVersionInfo(nums[0], nums[1], nums[2], nums[3]);
         }
 
         private static string GetVersionNumbers(string version)
         {
             string allowedChars = "01234567890.";
-            return new string(version.Where(c => allowedChars.Contains(c)).ToArray());
+            return new string(version.Where(allowedChars.Contains).ToArray());
         }
     }
 }

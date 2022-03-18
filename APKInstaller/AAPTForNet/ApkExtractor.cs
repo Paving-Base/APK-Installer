@@ -145,7 +145,7 @@ namespace AAPTForNet
             }
 
             bool matchedEntry = false;
-            List<int> indexes = new List<int>();  // Get position of icon in resource list
+            List<int> indexes = new();  // Get position of icon in resource list
             DumpModel resTable = AAPTool.dumpResources(path, (m, i) =>
             {
                 // Dump resources and get icons,
@@ -192,14 +192,14 @@ namespace AAPTForNet
             // because comparison statement with 'hdpi' in config's values,
             // reverse list and get first elem with LINQ
             IEnumerable<string> configNames = Enum.GetNames(typeof(Configs)).Reverse();
-            Dictionary<string, Icon> iconTable = new Dictionary<string, Icon>();
-            Action<string, string> addIcon2Table = (cfg, iconName) =>
+            Dictionary<string, Icon> iconTable = new();
+            void addIcon2Table(string cfg, string iconName)
             {
                 if (!iconTable.ContainsKey(cfg))
                 {
                     iconTable.Add(cfg, new Icon(iconName));
                 }
-            };
+            }
             string msg, resValue, config;
 
             foreach (int index in positions)
@@ -220,7 +220,7 @@ namespace AAPTForNet
                         // go next to get icon name
                         resValue = messages[index + 1];
 
-                        config = configNames.FirstOrDefault(c => msg.Contains(c));
+                        config = configNames.FirstOrDefault(msg.Contains);
 
                         if (Detector.IsResourceValue(resValue))
                         {
@@ -290,21 +290,19 @@ namespace AAPTForNet
                 throw new ArgumentException("Invalid params");
             }
 
-            using (ZipArchive archive = ZipFile.OpenRead(path))
+            using ZipArchive archive = ZipFile.OpenRead(path);
+            ZipArchiveEntry entry;
+
+            for (int i = archive.Entries.Count - 1; i > 0; i--)
             {
-                ZipArchiveEntry entry;
+                entry = archive.Entries[i];
 
-                for (int i = archive.Entries.Count - 1; i > 0; i--)
+                if (entry.Name.Equals(iconName) ||
+                    entry.FullName.Equals(iconName))
                 {
-                    entry = archive.Entries[i];
 
-                    if (entry.Name.Equals(iconName) ||
-                        entry.FullName.Equals(iconName))
-                    {
-
-                        entry.ExtractToFile(desFile, true);
-                        break;
-                    }
+                    entry.ExtractToFile(desFile, true);
+                    break;
                 }
             }
         }

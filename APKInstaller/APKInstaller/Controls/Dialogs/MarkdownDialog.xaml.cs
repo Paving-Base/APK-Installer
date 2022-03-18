@@ -59,7 +59,7 @@ namespace APKInstaller.Controls.Dialogs
                 MarkdownText.Text = value;
                 return;
             }
-            using (HttpClient client = new HttpClient())
+            using (HttpClient client = new())
             {
                 try
                 {

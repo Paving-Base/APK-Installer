@@ -12,7 +12,7 @@ namespace APKInstaller.Helpers
     {
         public static async Task<(bool isfound, IEnumerable<Package> info)> FindPackagesByName(string PackageFamilyName)
         {
-            PackageManager manager = new PackageManager();
+            PackageManager manager = new();
             IEnumerable<Package> WSAList = await Task.Run(() => { return manager.FindPackagesForUser("", PackageFamilyName); });
             return (WSAList != null && WSAList.Any(), WSAList);
         }
@@ -21,8 +21,8 @@ namespace APKInstaller.Helpers
 
         public static async void LaunchWSAPackage(string packagename = "")
         {
-            (bool isfound, IEnumerable<Package> info) result = await FindPackagesByName("MicrosoftCorporationII.WindowsSubsystemForAndroid_8wekyb3d8bbwe");
-            if (result.isfound)
+            (bool isfound, IEnumerable<Package> info) = await FindPackagesByName("MicrosoftCorporationII.WindowsSubsystemForAndroid_8wekyb3d8bbwe");
+            if (isfound)
             {
                 _ = await Launcher.LaunchUriAsync(new Uri($"wsa://{packagename}"));
             }

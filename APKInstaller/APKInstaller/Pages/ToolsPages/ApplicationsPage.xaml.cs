@@ -40,7 +40,7 @@ namespace APKInstaller.Pages.ToolsPages
             ADBHelper.Monitor.DeviceChanged -= OnDeviceChanged;
         }
 
-        private void OnDeviceChanged(object sender, DeviceDataEventArgs e) => _ = DispatcherQueue.EnqueueAsync(() => Provider.GetDevices());
+        private void OnDeviceChanged(object sender, DeviceDataEventArgs e) => _ = DispatcherQueue.EnqueueAsync(Provider.GetDevices);
 
         private void TitleBar_BackRequested(object sender, RoutedEventArgs e)
         {
@@ -54,7 +54,7 @@ namespace APKInstaller.Pages.ToolsPages
         {
             TitleBar.ShowProgressRing();
             int index = DeviceComboBox.SelectedIndex;
-            PackageManager manager = new PackageManager(new AdvancedAdbClient(), Provider.devices[DeviceComboBox.SelectedIndex]);
+            PackageManager manager = new(new AdvancedAdbClient(), Provider.devices[DeviceComboBox.SelectedIndex]);
             Provider.Applications = await Task.Run(() => { return Provider.CheckAPP(manager.Packages, index); });
             TitleBar.HideProgressRing();
         }
@@ -103,7 +103,7 @@ namespace APKInstaller.Pages.ToolsPages
         private async void ComboBox_Loaded(object sender, RoutedEventArgs e)
         {
             Provider.DeviceComboBox = sender as ComboBox;
-            await DispatcherQueue.EnqueueAsync(() => Provider.GetDevices());
+            await DispatcherQueue.EnqueueAsync(Provider.GetDevices);
         }
     }
 }

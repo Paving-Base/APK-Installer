@@ -41,15 +41,15 @@ namespace APKInstaller.ViewModels
 
         private InstallPage _page;
         private DeviceData _device;
-        private ProtocolForResultsOperation _operation;
-        private static string APKTemp = Path.Combine(CachesHelper.TempPath, "NetAPKTemp.apk");
-        private static string ADBTemp = Path.Combine(CachesHelper.TempPath, "platform-tools.zip");
+        private readonly ProtocolForResultsOperation _operation;
+        private static readonly string APKTemp = Path.Combine(CachesHelper.TempPath, "NetAPKTemp.apk");
+        private static readonly string ADBTemp = Path.Combine(CachesHelper.TempPath, "platform-tools.zip");
 
 #if !DEBUG
         private Uri _url;
         private string _path = string.Empty;
 #else
-        private Uri _url = new Uri("apkinstaller:?source=https://dl.coolapk.com/down?pn=com.coolapk.market&id=NDU5OQ&h=46bb9d98&from=from-web");
+        private Uri _url = new("apkinstaller:?source=https://dl.coolapk.com/down?pn=com.coolapk.market&id=NDU5OQ&h=46bb9d98&from=from-web");
         private string _path = @"C:\Users\qq251\Downloads\Programs\weixin8020android2100_arm64_4.apk";
 #endif
         private bool NetAPKExist => _path != APKTemp || File.Exists(_path);
@@ -568,7 +568,7 @@ namespace APKInstaller.ViewModels
         checkadb:
             if (force || !File.Exists(ADBPath))
             {
-                StackPanel StackPanel = new StackPanel();
+                StackPanel StackPanel = new();
                 StackPanel.Children.Add(
                     new TextBlock()
                     {
@@ -581,7 +581,7 @@ namespace APKInstaller.ViewModels
                         Content = _loader.GetString("ClickToRead"),
                         NavigateUri = new Uri("https://developer.android.google.cn/studio/releases/platform-tools")
                     });
-                ContentDialog dialog = new ContentDialog
+                ContentDialog dialog = new()
                 {
                     XamlRoot = _page.XamlRoot,
                     Title = _loader.GetString("ADBMissing"),
@@ -608,7 +608,7 @@ namespace APKInstaller.ViewModels
                         }
                         catch (Exception ex)
                         {
-                            ContentDialog dialogs = new ContentDialog
+                            ContentDialog dialogs = new()
                             {
                                 XamlRoot = _page.XamlRoot,
                                 Title = _loader.GetString("DownloadFailed"),
@@ -634,7 +634,7 @@ namespace APKInstaller.ViewModels
                     }
                     else
                     {
-                        ContentDialog dialogs = new ContentDialog
+                        ContentDialog dialogs = new()
                         {
                             XamlRoot = _page.XamlRoot,
                             Title = _loader.GetString("NoInternet"),
@@ -660,7 +660,7 @@ namespace APKInstaller.ViewModels
                 }
                 else if (result == ContentDialogResult.Secondary)
                 {
-                    FileOpenPicker FileOpen = new FileOpenPicker();
+                    FileOpenPicker FileOpen = new();
                     FileOpen.FileTypeFilter.Add(".exe");
                     FileOpen.SuggestedStartLocation = PickerLocationId.ComputerFolder;
 
@@ -697,7 +697,7 @@ namespace APKInstaller.ViewModels
             {
                 Directory.Delete(ADBTemp, true);
             }
-            using (DownloadService downloader = new DownloadService(DownloadHelper.Configuration))
+            using (DownloadService downloader = new(DownloadHelper.Configuration))
             {
                 bool IsCompleted = false;
                 Exception exception = null;
@@ -741,7 +741,7 @@ namespace APKInstaller.ViewModels
                 if (exception != null)
                 {
                     ProgressHelper.SetState(ProgressState.Error, true);
-                    ContentDialog dialog = new ContentDialog
+                    ContentDialog dialog = new()
                     {
                         XamlRoot = _page.XamlRoot,
                         Content = exception.Message,
@@ -809,7 +809,7 @@ namespace APKInstaller.ViewModels
             WaitProgressText = _loader.GetString("Loading");
             if (!string.IsNullOrEmpty(_path) || _url != null)
             {
-                AdbServer ADBServer = new AdbServer();
+                AdbServer ADBServer = new();
                 if (!ADBServer.GetStatus().IsRunning)
                 {
                     WaitProgressText = _loader.GetString("CheckingADB");
@@ -982,7 +982,7 @@ namespace APKInstaller.ViewModels
                 }
                 else
                 {
-                    ContentDialog dialog = new ContentDialog
+                    ContentDialog dialog = new()
                     {
                         XamlRoot = _page.XamlRoot,
                         Title = _loader.GetString("NoDevice"),
@@ -1007,7 +1007,7 @@ namespace APKInstaller.ViewModels
             }
             else
             {
-                ContentDialog dialog = new ContentDialog
+                ContentDialog dialog = new()
                 {
                     XamlRoot = _page.XamlRoot,
                     Title = _loader.GetString("NoDevice"),
@@ -1047,8 +1047,8 @@ namespace APKInstaller.ViewModels
         private void CheckAPK()
         {
             ResetUI();
-            AdvancedAdbClient client = new AdvancedAdbClient();
-            PackageManager manager = new PackageManager(client, _device);
+            AdvancedAdbClient client = new();
+            PackageManager manager = new(client, _device);
             VersionInfo info = null;
             if (ApkInfo != null && !string.IsNullOrEmpty(ApkInfo?.PackageName))
             {
@@ -1162,7 +1162,7 @@ namespace APKInstaller.ViewModels
                 {
                     Directory.Delete(APKTemp, true);
                 }
-                using (DownloadService downloader = new DownloadService(DownloadHelper.Configuration))
+                using (DownloadService downloader = new(DownloadHelper.Configuration))
                 {
                     bool IsCompleted = false;
                     Exception exception = null;
@@ -1207,7 +1207,7 @@ namespace APKInstaller.ViewModels
                     if (exception != null)
                     {
                         ProgressHelper.SetState(ProgressState.Error, true);
-                        ContentDialog dialog = new ContentDialog
+                        ContentDialog dialog = new()
                         {
                             XamlRoot = _page.XamlRoot,
                             Content = exception.Message,
@@ -1286,9 +1286,9 @@ namespace APKInstaller.ViewModels
 
         private bool CheckDevice()
         {
-            AdvancedAdbClient client = new AdvancedAdbClient();
+            AdvancedAdbClient client = new();
             List<DeviceData> devices = client.GetDevices();
-            ConsoleOutputReceiver receiver = new ConsoleOutputReceiver();
+            ConsoleOutputReceiver receiver = new();
             if (devices.Count <= 0) { return false; }
             foreach (DeviceData device in devices)
             {
@@ -1362,7 +1362,7 @@ namespace APKInstaller.ViewModels
 
         public async void OpenAPK()
         {
-            FileOpenPicker FileOpen = new FileOpenPicker();
+            FileOpenPicker FileOpen = new();
             FileOpen.FileTypeFilter.Add(".apk");
             FileOpen.FileTypeFilter.Add(".apks");
             FileOpen.FileTypeFilter.Add(".apkm");
@@ -1387,9 +1387,11 @@ namespace APKInstaller.ViewModels
         private void SendResults(Exception exception = null)
         {
             if (_operation == null) { return; }
-            ValueSet results = new ValueSet();
-            results["Result"] = exception != null;
-            results["Exception"] = exception;
+            ValueSet results = new()
+            {
+                ["Result"] = exception != null,
+                ["Exception"] = exception
+            };
             _operation.ReportCompleted(results);
         }
 

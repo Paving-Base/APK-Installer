@@ -9,7 +9,7 @@ namespace APKInstaller.Helpers
     {
         public static string AutoLanguageCode = "auto";
 
-        public static List<string> SupportLanguages = new List<string>
+        public static List<string> SupportLanguages = new()
         {
             "af-ZA",
             "ar-SA",
@@ -43,7 +43,7 @@ namespace APKInstaller.Helpers
             "zh-TW"
         };
 
-        private static readonly List<string> SupportLanguageCodes = new List<string>
+        private static readonly List<string> SupportLanguageCodes = new()
         {
             "af, af-za",
             "ar, ar-sa, ar-ae, ar-bh, ar-dz, ar-eg, ar-iq, ar-jo, ar-kw, ar-lb, ar-ly, ar-ma, ar-om, ar-qa, ar-sy, ar-tn, ar-ye",

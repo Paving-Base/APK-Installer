@@ -53,8 +53,8 @@ namespace AAPTForNet
             int index = 0;
             bool terminated = false;
             string msg = string.Empty;
-            AAPTool aapt = new AAPTool();
-            List<string> output = new List<string>();    // Messages from output stream
+            AAPTool aapt = new();
+            List<string> output = new();    // Messages from output stream
 
             switch (type)
             {
@@ -122,7 +122,7 @@ namespace AAPTForNet
 
         internal static DumpModel dumpXmlTree(string path, string asset, Func<string, int, bool> callback = null)
         {
-            callback = callback ?? ((_, __) => false);
+            callback ??= ((_, __) => false);
             return dump(path, asset, DumpTypes.XmlTree, callback);
         }
 
@@ -138,7 +138,7 @@ namespace AAPTForNet
         /// <returns>Filled apk if dump process is not failed</returns>
         public static ApkInfo Decompile(string path)
         {
-            List<string> apks = new List<string>();
+            List<string> apks = new();
             using (ZipArchive archive = ZipFile.OpenRead(path))
             {
                 if (!Directory.Exists(TempPath))
@@ -162,7 +162,7 @@ namespace AAPTForNet
                 }
             }
 
-            List<ApkInfo> apkInfos = new List<ApkInfo>();
+            List<ApkInfo> apkInfos = new();
             foreach (string apkpath in apks)
             {
                 DumpModel manifest = ApkExtractor.ExtractManifest(apkpath);
@@ -197,7 +197,7 @@ namespace AAPTForNet
 
             if (packages.Count > 1) { throw new Exception("This is a Multiple Package."); }
 
-            List<ApkInfo> infos = new List<ApkInfo>();
+            List<ApkInfo> infos = new();
             foreach (ApkInfos package in packages)
             {
                 foreach (ApkInfo baseapk in package.Apks.Where(x => !x.IsSplit))

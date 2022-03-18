@@ -113,7 +113,7 @@ namespace APKInstaller.Pages.SettingsPages
         private void SelectDeviceBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             object vs = (sender as ListView).SelectedItem;
-            if (vs != null && vs is DeviceData device)
+            if (vs is not null and DeviceData device)
             {
                 SettingsHelper.Set(SettingsHelper.DefaultDevice, device);
             }

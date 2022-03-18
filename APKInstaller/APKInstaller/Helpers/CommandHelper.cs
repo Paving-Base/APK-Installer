@@ -37,7 +37,7 @@ namespace APKInstaller.Helpers
         /// <inheritdoc/>
         public static async Task<List<string>> ExecuteShellCommandAsync(string command, CancellationToken cancellationToken)
         {
-            ProcessStartInfo start = new ProcessStartInfo
+            ProcessStartInfo start = new()
             {
                 FileName = "powershell.exe",
                 UseShellExecute = false,
@@ -50,29 +50,27 @@ namespace APKInstaller.Helpers
 
             process.EnableRaisingEvents = true;
 
-            List<string> lines = new List<string>();
+            List<string> lines = new();
 
             try
             {
-                using (StreamReader reader = process.StandardOutput)
+                using StreamReader reader = process.StandardOutput;
+                // Previously, we would loop while reader.Peek() >= 0. Turns out that this would
+                // break too soon in certain cases (about every 10 loops, so it appears to be a timing
+                // issue). Checking for reader.ReadLine() to return null appears to be much more robust
+                // -- one of the integration test fetches output 1000 times and found no truncations.
+                while (!cancellationToken.IsCancellationRequested)
                 {
-                    // Previously, we would loop while reader.Peek() >= 0. Turns out that this would
-                    // break too soon in certain cases (about every 10 loops, so it appears to be a timing
-                    // issue). Checking for reader.ReadLine() to return null appears to be much more robust
-                    // -- one of the integration test fetches output 1000 times and found no truncations.
-                    while (!cancellationToken.IsCancellationRequested)
+                    string line = await reader.ReadLineAsync().ConfigureAwait(false);
+
+                    if (line == null)
                     {
-                        string line = await reader.ReadLineAsync().ConfigureAwait(false);
-
-                        if (line == null)
-                        {
-                            process.Kill();
-                            process.Close();
-                            break;
-                        }
-
-                        lines.Add(line);
+                        process.Kill();
+                        process.Close();
+                        break;
                     }
+
+                    lines.Add(line);
                 }
             }
             catch (Exception e)

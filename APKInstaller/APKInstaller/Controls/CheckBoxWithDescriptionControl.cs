@@ -35,7 +35,7 @@ namespace APKInstaller.Controls
 
         private void CheckBoxSubTextControl_Loaded(object sender, RoutedEventArgs e)
         {
-            StackPanel panel = new StackPanel() { Orientation = Orientation.Vertical };
+            StackPanel panel = new() { Orientation = Orientation.Vertical };
             panel.Children.Add(new TextBlock() { Margin = new Thickness(0, 10, 0, 0), Text = Header });
             panel.Children.Add(new IsEnabledTextBlock() { FontSize = (double)Application.Current.Resources["SecondaryTextFontSize"], Foreground = (SolidColorBrush)Application.Current.Resources["TextFillColorSecondaryBrush"], Text = Description });
             _checkBoxSubTextControl.Content = panel;

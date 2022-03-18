@@ -88,12 +88,7 @@ namespace APKInstaller.Helpers
 
         private static IntPtr GetHandle()
         {
-            if (UIHelper.MainWindow != null)
-            {
-                return WinRT.Interop.WindowNative.GetWindowHandle(UIHelper.MainWindow);
-            }
-
-            return IntPtr.Zero;
+            return UIHelper.MainWindow != null ? WinRT.Interop.WindowNative.GetWindowHandle(UIHelper.MainWindow) : IntPtr.Zero;
         }
     }
 

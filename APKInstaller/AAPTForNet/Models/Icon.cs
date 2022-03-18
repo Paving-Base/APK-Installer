@@ -11,7 +11,7 @@ namespace AAPTForNet.Models
         private const int hdpiWidth = 72;
         public const string DefaultName = "ic_launcher.png";
 
-        internal static readonly Icon Default = new Icon(DefaultName);
+        internal static readonly Icon Default = new(DefaultName);
 
         /// <summary>
         /// Return absolute path to package icon if @isImage is true,
@@ -43,10 +43,8 @@ namespace AAPTForNet.Models
                 {
                     // Load from unsupported format will throw an exception.
                     // But icon can be packed without extension
-                    using (Bitmap image = new Bitmap(RealPath))
-                    {
-                        return image.Width > hdpiWidth;
-                    }
+                    using Bitmap image = new(RealPath);
+                    return image.Width > hdpiWidth;
                 }
                 catch
                 {
@@ -74,11 +72,7 @@ namespace AAPTForNet.Models
 
         public override bool Equals(object obj)
         {
-            if (obj is Icon ic)
-            {
-                return IconName == ic.IconName;
-            }
-            return false;
+            return obj is Icon ic && IconName == ic.IconName;
         }
 
         public override int GetHashCode() => -489061483 + EqualityComparer<string>.Default.GetHashCode(IconName);

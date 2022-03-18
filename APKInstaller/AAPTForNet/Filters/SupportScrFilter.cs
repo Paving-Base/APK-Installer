@@ -24,7 +24,7 @@ namespace AAPTForNet.Filters
 
         public override ApkInfo getAPK()
         {
-            ApkInfo apk = new ApkInfo();
+            ApkInfo apk = new();
 
             if (msg.Contains(SmallScreen))
             {

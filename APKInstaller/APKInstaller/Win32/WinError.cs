@@ -14,7 +14,7 @@ namespace APKInstaller.Win32
         // ReSharper disable InconsistentNaming
         // ReSharper disable UnusedMember.Global
         [Flags]
-        public enum HResult : UInt32
+        public enum HResult : uint
         {
             /// <summary>
             /// Operation successful.

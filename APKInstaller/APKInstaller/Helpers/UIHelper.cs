@@ -19,7 +19,7 @@ namespace APKInstaller.Helpers
 {
     internal static class ADBHelper
     {
-        public static DeviceMonitor Monitor = new DeviceMonitor(new AdbSocket(new IPEndPoint(IPAddress.Loopback, AdvancedAdbClient.AdbServerPort)));
+        public static DeviceMonitor Monitor = new(new AdbSocket(new IPEndPoint(IPAddress.Loopback, AdvancedAdbClient.AdbServerPort)));
         static ADBHelper()
         {
             Monitor.Start();
@@ -31,9 +31,9 @@ namespace APKInstaller.Helpers
         public static bool HasTitleBar = !AppWindowTitleBar.IsCustomizationSupported();
         public static double TitleBarHeight => HasTitleBar ? 28 : 32;
         public static double PageTitleHeight => HasTitleBar ? 48 : 48 + TitleBarHeight;
-        public static Thickness StackPanelMargin => new Thickness(0, PageTitleHeight, 0, 0);
-        public static Thickness ScrollViewerMargin => new Thickness(0, PageTitleHeight, 0, 0);
-        public static Thickness ScrollViewerPadding => new Thickness(0, -PageTitleHeight, 0, 0);
+        public static Thickness StackPanelMargin => new(0, PageTitleHeight, 0, 0);
+        public static Thickness ScrollViewerMargin => new(0, PageTitleHeight, 0, 0);
+        public static Thickness ScrollViewerPadding => new(0, -PageTitleHeight, 0, 0);
 
         private static DispatcherQueue _dispatcherQueue;
         public static DispatcherQueue DispatcherQueue
@@ -87,8 +87,8 @@ namespace APKInstaller.Helpers
 
         public static int GetActualPixel(this double pixel)
         {
-            var windowHandle = WindowNative.GetWindowHandle(MainWindow);
-            var currentDpi = PInvoke.User32.GetDpiForWindow(windowHandle);
+            IntPtr windowHandle = WindowNative.GetWindowHandle(MainWindow);
+            int currentDpi = PInvoke.User32.GetDpiForWindow(windowHandle);
             return Convert.ToInt32(pixel * (currentDpi / 96.0));
         }
 

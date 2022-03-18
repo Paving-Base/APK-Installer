@@ -21,7 +21,7 @@ namespace APKInstaller.ViewModels.ToolsPages
         public List<DeviceData> devices;
         private readonly ApplicationsPage _page;
 
-        private List<string> deviceList = new List<string>();
+        private List<string> deviceList = new();
         public List<string> DeviceList
         {
             get => deviceList;
@@ -98,15 +98,15 @@ namespace APKInstaller.ViewModels.ToolsPages
 
         public List<APKInfo> CheckAPP(Dictionary<string, string> apps, int index)
         {
-            List<APKInfo> Applications = new List<APKInfo>();
-            AdvancedAdbClient client = new AdvancedAdbClient();
-            PackageManager manager = new PackageManager(client, devices[index]);
+            List<APKInfo> Applications = new();
+            AdvancedAdbClient client = new();
+            PackageManager manager = new(client, devices[index]);
             foreach (KeyValuePair<string, string> app in apps)
             {
                 _ = _page.DispatcherQueue.EnqueueAsync(() => TitleBar.SetProgressValue((double)apps.ToList().IndexOf(app) * 100 / apps.Count));
                 if (!string.IsNullOrEmpty(app.Key))
                 {
-                    ConsoleOutputReceiver receiver = new ConsoleOutputReceiver();
+                    ConsoleOutputReceiver receiver = new();
                     client.ExecuteRemoteCommand($"pidof {app.Key}", devices[index], receiver);
                     bool isactive = !string.IsNullOrEmpty(receiver.ToString());
                     Applications.Add(new APKInfo()
@@ -125,7 +125,7 @@ namespace APKInstaller.ViewModels.ToolsPages
             TitleBar.ShowProgressRing();
             GetDevices();
             int index = DeviceComboBox.SelectedIndex;
-            PackageManager manager = new PackageManager(new AdvancedAdbClient(), devices[DeviceComboBox.SelectedIndex]);
+            PackageManager manager = new(new AdvancedAdbClient(), devices[DeviceComboBox.SelectedIndex]);
             Applications = await Task.Run(() => { return CheckAPP(manager.Packages, index); });
             TitleBar.HideProgressRing();
         }
@@ -135,11 +135,11 @@ namespace APKInstaller.ViewModels.ToolsPages
     {
         public object Convert(object value, Type targetType, object parameter, string language)
         {
-            switch ((string)parameter)
+            return (string)parameter switch
             {
-                case "State": return (bool)value ? "Running" : "Stop";
-                default: return value.ToString();
-            }
+                "State" => (bool)value ? "Running" : "Stop",
+                _ => value.ToString(),
+            };
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, string language) => (Visibility)value == Visibility.Visible;

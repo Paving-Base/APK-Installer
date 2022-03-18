@@ -50,7 +50,7 @@ namespace APKInstaller.Helpers.Exceptions
             }
 
 
-            if (!(syncContext is ExceptionHandlingSynchronizationContext customSynchronizationContext))
+            if (syncContext is not ExceptionHandlingSynchronizationContext customSynchronizationContext)
             {
                 customSynchronizationContext = new ExceptionHandlingSynchronizationContext(syncContext);
                 SetSynchronizationContext(customSynchronizationContext);
@@ -65,10 +65,8 @@ namespace APKInstaller.Helpers.Exceptions
         /// </summary>
         /// <param name="rootFrame"></param>
         /// <returns></returns>
-        public static ExceptionHandlingSynchronizationContext RegisterForFrame(Frame rootFrame)
+        public static ExceptionHandlingSynchronizationContext RegisterForFrame(Frame rootFrame!!)
         {
-            if (rootFrame == null) { throw new ArgumentNullException(nameof(rootFrame)); }
-
             ExceptionHandlingSynchronizationContext synchronizationContext = Register();
 
             rootFrame.Navigating += (sender, args) => EnsureContext(synchronizationContext);
@@ -141,7 +139,7 @@ namespace APKInstaller.Helpers.Exceptions
         {
             if (UnhandledException == null) { return false; }
 
-            UnhandledExceptionEventArgs exWrapper = new UnhandledExceptionEventArgs()
+            UnhandledExceptionEventArgs exWrapper = new()
             {
                 Exception = exception
             };

@@ -1,5 +1,4 @@
 ﻿using AAPTForNet.Models;
-using System;
 using System.Collections.Generic;
 
 namespace AAPTForNet.Filters
@@ -7,8 +6,8 @@ namespace AAPTForNet.Filters
     internal class SDKFilter : BaseFilter
     {
 
-        private readonly List<string> msgs = new List<string>();
-        private string[] segments => String.Join(" ", msgs).Split(seperator);
+        private readonly List<string> msgs = new();
+        private string[] segments => string.Join(" ", msgs).Split(seperator);
 
         public override bool canHandle(string msg)
         {

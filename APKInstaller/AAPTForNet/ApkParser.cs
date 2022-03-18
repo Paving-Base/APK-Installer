@@ -18,7 +18,7 @@ namespace AAPTForNet
                 return new ApkInfo();
             }
 
-            List<BaseFilter> filters = new List<BaseFilter>() {
+            List<BaseFilter> filters = new() {
                 new ABIFilter(),
                 new SDKFilter(),
                 new PackageFilter(),

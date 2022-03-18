@@ -32,37 +32,16 @@ namespace APKInstaller.Models
 
         public int CompareTo(SystemVersionInfo other)
         {
-            if (Major != other.Major)
-            {
-                return Major.CompareTo(other.Major);
-            }
-
-            if (Minor != other.Minor)
-            {
-                return Minor.CompareTo(other.Minor);
-            }
-
-            if (Build != other.Build)
-            {
-                return Build.CompareTo(other.Build);
-            }
-
-            if (Revision != other.Revision)
-            {
-                return Revision.CompareTo(other.Revision);
-            }
-
-            return 0;
+            return Major != other.Major
+                ? Major.CompareTo(other.Major)
+                : Minor != other.Minor
+                ? Minor.CompareTo(other.Minor)
+                : Build != other.Build ? Build.CompareTo(other.Build) : Revision != other.Revision ? Revision.CompareTo(other.Revision) : 0;
         }
 
         public int CompareTo(object obj)
         {
-            if (!(obj is SystemVersionInfo other))
-            {
-                throw new ArgumentException();
-            }
-
-            return CompareTo(other);
+            return obj is not SystemVersionInfo other ? throw new ArgumentException() : CompareTo(other);
         }
 
         public static bool operator <(SystemVersionInfo left, SystemVersionInfo right) => left.CompareTo(right) < 0;

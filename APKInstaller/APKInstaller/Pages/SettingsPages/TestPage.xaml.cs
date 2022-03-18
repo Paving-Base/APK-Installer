@@ -4,7 +4,6 @@ using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using System.ComponentModel;
 using System.Globalization;
-using Windows.ApplicationModel.Core;
 using Windows.Globalization;
 
 // To learn more about WinUI, the WinUI project structure,
@@ -75,7 +74,7 @@ namespace APKInstaller.Pages.SettingsPages
         {
             string lang = SettingsHelper.Get<string>(SettingsHelper.CurrentLanguage);
             lang = lang == LanguageHelper.AutoLanguageCode ? LanguageHelper.GetCurrentLanguage() : lang;
-            CultureInfo culture = new CultureInfo(lang);
+            CultureInfo culture = new(lang);
             (sender as ComboBox).SelectedItem = culture;
         }
 

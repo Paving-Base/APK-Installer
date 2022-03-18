@@ -20,7 +20,7 @@ namespace APKInstaller.ViewModels.ToolsPages
         public List<DeviceData> devices;
         private readonly ProcessesPage _page;
 
-        private List<string> deviceList = new List<string>();
+        private List<string> deviceList = new();
         public List<string> DeviceList
         {
             get => deviceList;
@@ -102,27 +102,26 @@ namespace APKInstaller.ViewModels.ToolsPages
     {
         public object Convert(object value, Type targetType, object parameter, string language)
         {
-            switch ((string)parameter)
+            return (string)parameter switch
             {
-                case "Size": return ((double)(int)value).GetSizeString();
-                case "Name": return ((string)value).Split('/').Last().Split(':').First().Split('@').First();
-                case "State":
-                    switch ((AndroidProcessState)value)
-                    {
-                        case AndroidProcessState.Unknown: return "Unknown";
-                        case AndroidProcessState.D: return "Sleep(D)";
-                        case AndroidProcessState.R: return "Running";
-                        case AndroidProcessState.S: return "Sleep(S)";
-                        case AndroidProcessState.T: return "Stopped";
-                        case AndroidProcessState.W: return "Paging";
-                        case AndroidProcessState.X: return "Dead";
-                        case AndroidProcessState.Z: return "Defunct";
-                        case AndroidProcessState.K: return "Wakekill";
-                        case AndroidProcessState.P: return "Parked";
-                        default: return value.ToString();
-                    }
-                default: return value.ToString();
-            }
+                "Size" => ((double)(int)value).GetSizeString(),
+                "Name" => ((string)value).Split('/').Last().Split(':').First().Split('@').First(),
+                "State" => (AndroidProcessState)value switch
+                {
+                    AndroidProcessState.Unknown => "Unknown",
+                    AndroidProcessState.D => "Sleep(D)",
+                    AndroidProcessState.R => "Running",
+                    AndroidProcessState.S => "Sleep(S)",
+                    AndroidProcessState.T => "Stopped",
+                    AndroidProcessState.W => "Paging",
+                    AndroidProcessState.X => "Dead",
+                    AndroidProcessState.Z => "Defunct",
+                    AndroidProcessState.K => "Wakekill",
+                    AndroidProcessState.P => "Parked",
+                    _ => value.ToString(),
+                },
+                _ => value.ToString(),
+            };
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, string language) => (Visibility)value == Visibility.Visible;

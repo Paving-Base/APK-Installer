@@ -91,12 +91,7 @@ namespace AAPTForNet.Models
 
         internal ApkInfo megre(params ApkInfo[] apks)
         {
-            if (apks.Any(a => a == null))
-            {
-                throw new ArgumentNullException();
-            }
-
-            return ApkInfo.Merge(this, apks);
+            return apks.Any(a => a == null) ? throw new ArgumentNullException() : ApkInfo.Merge(this, apks);
         }
 
         internal static ApkInfo Merge(IEnumerable<ApkInfo> apks)

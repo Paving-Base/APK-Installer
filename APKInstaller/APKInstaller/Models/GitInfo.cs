@@ -36,13 +36,11 @@ namespace APKInstaller.Models
 
         private string AddLanguage(string filename, string langcode)
         {
-            Regex file = new Regex(@"^.*(\.\w+)$");
-            Regex lang = new Regex(@"^.*\.[a-z]{2}(-[A-Z]{2})?\.\w+$");
-            if (file.IsMatch(filename) && !lang.IsMatch(filename))
-            {
-                return Regex.Replace(filename, @"(?<name>.*)(?<extension>\.\w+$)", $"${{name}}.{langcode}${{extension}}");
-            }
-            return filename;
+            Regex file = new(@"^.*(\.\w+)$");
+            Regex lang = new(@"^.*\.[a-z]{2}(-[A-Z]{2})?\.\w+$");
+            return file.IsMatch(filename) && !lang.IsMatch(filename)
+                ? Regex.Replace(filename, @"(?<name>.*)(?<extension>\.\w+$)", $"${{name}}.{langcode}${{extension}}")
+                : filename;
         }
     }
 }

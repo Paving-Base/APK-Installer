@@ -4,7 +4,7 @@ namespace AAPTForNet.Models
 {
     public class SDKInfo
     {
-        internal static readonly SDKInfo Unknown = new SDKInfo("0", "0", "0");
+        internal static readonly SDKInfo Unknown = new("0", "0", "0");
 
         // https://source.android.com/setup/start/build-numbers
         private static readonly string[] AndroidCodeNames = {
@@ -108,21 +108,14 @@ namespace AAPTForNet.Models
 
         public override bool Equals(object obj)
         {
-            if (obj is SDKInfo another)
-            {
-                return APILever == another.APILever;
-            }
-            return false;
+            return obj is SDKInfo another && APILever == another.APILever;
         }
 
         public override string ToString()
         {
-            if (APILever.Equals("0") && Version.Equals("0") && CodeName.Equals("0"))
-            {
-                return AndroidCodeNames[0];
-            }
-
-            return $"API Level {APILever} " +
+            return APILever.Equals("0") && Version.Equals("0") && CodeName.Equals("0")
+                ? AndroidCodeNames[0]
+                : $"API Level {APILever} " +
                 $"{(Version == AndroidCodeNames[0] ? $"({AndroidCodeNames[0]} - " : $"(Android {Version} - ")}" +
                 $"{CodeName})";
         }
