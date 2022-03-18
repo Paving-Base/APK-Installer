@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, גשר אנדרואיד באגים, דרוש כדי שמתקין APK יעבוד. לחץ על "הורד" כדי להוריד אותו. בהורדה אתה מקבל את התנאים וההגבלות של Google עבור ADB. אם כבר הורדת את ADB, לחץ על "בחר" כדי לבחור בו.CONTEXTREQUEST</value>
+    <value>ADB, גשר אנדרואיד באגים, דרוש כדי שמתקין APK יעבוד. לחץ על "הורד" כדי להוריד אותו. בהורדה אתה מקבל את התנאים וההגבלות של Google עבור ADB. אם כבר הורדת את ADB, לחץ על "בחר" כדי לבחור בו.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>ADB פועל</value>
@@ -134,7 +134,8 @@
     <value>ביטול</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>Cannot open app package</value>
+    <value>לא ניתן לפתוח את חבילת האפליקציה
+</value>
   </data>
   <data name="Checking" xml:space="preserve">
     <value>בודק...</value>
@@ -161,13 +162,14 @@
     <value>אנא בדוק את חיבור הרשת שלך או את כתובת האתר ונסה שוב.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>Finding WSA...</value>
+    <value>מוצא WSA...</value>
   </data>
   <data name="Finished" xml:space="preserve">
     <value>הושלם</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>WSA Found</value>
+    <value>WSA נמצא
+</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
     <value>עבור ל'הגדרות'</value>
@@ -224,25 +226,25 @@
     <value>אתה יכול להתקין WSA. או עבור אל הגדרות כדי לחבר מכשיר.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>You can go to Settings to connect Device.</value>
+    <value>אתה יכול להתקין WSA. או עבור אל הגדרות כדי לחבר מכשיר.</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
-    <value>Cannot connect Internet</value>
+    <value>אין אפשרות גישה לאינטרנט</value>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
-    <value>Please connect to the internet before opening the app.</value>
+    <value>אנא התחבר לאינטרנט לפני שתמשיך.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>For proper functioning of the app, try to launch an Android app package.</value>
+    <value>לתפקוד תקין של האפליקציה, נסה להפעיל חבילת אפליקציית אנדרואיד.</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>אישור</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
-    <value>Online Package</value>
+    <value>חבילה מקוונת</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>Package Name: {0}</value>
+    <value>שם חבילה:</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
@@ -253,7 +255,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
-    <value>A newer version of {0} is already installed.</value>
+    <value>גרסה חדשה יותר של {0} כבר מותקנת.</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
@@ -263,16 +265,16 @@
     <value>בחירה</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
-    <value>Starting ADB Server...</value>
+    <value>מפעיל את שרת ADB..</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>Start WSA</value>
+    <value>מפעיל WSA</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
-    <value>Unzip ADB...</value>
+    <value>פתח את ADB...</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
-    <value>Unzip completed</value>
+    <value>פריצת הרוכסן הושלמה</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
     <value>Unzipping {0}/{1} ...</value>
@@ -286,24 +288,23 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>Version: {0}</value>
+    <value>גרסה</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>Waiting for download...</value>
+    <value>ממתין להורדה…</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>Waiting for Device...</value>
+    <value>ממתין לחיבור אינטרנטי...</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
     <value>Waiting for install {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
-    <value>Waiting WSA Start...
-This may take long time. Sit back and relax.</value>
+    <value>ממתין ל-WSA Start...זה עשוי להימשך זמן רב. שב לאחור והירגע.</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>WSA is Running</value>
+    <value>WSA פועל</value>
   </data>
 </root>
