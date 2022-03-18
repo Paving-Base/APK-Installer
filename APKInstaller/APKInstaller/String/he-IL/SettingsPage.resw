@@ -121,16 +121,17 @@
     <value>אודות</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>ADB Path</value>
+    <value>ADB נתיב </value>
   </data>
   <data name="AfdianLink.Content" xml:space="preserve">
-    <value>Afdian</value>
+    <value>אפדיאן
+</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>Auto download when package is from URL.</value>
+    <value>הורדה אוטו'</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Is Auto Download Online Packages?</value>
+    <value>האם הורדה אוטומטית של חבילות מקוונות?</value>
   </data>
   <data name="BilibiliLink.Content" xml:space="preserve">
     <value>BiliBili</value>
@@ -151,22 +152,22 @@
     <value>נקה מטמון</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Close ADB may break other Installers when they still open.</value>
+    <value>סגור ADB עלול לשבור מתקין אחרים כשהם עדיין פתוחים.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
     <value>Is Close ADB when Closing Installer?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Close Installer after APK has installed and start.</value>
+    <value>סגור את מתקין לאחר התקנת APK והתחל.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Is Close Installer when APP is Ready?</value>
+    <value>האם מתקין סגור כאשר האפליקציה מוכנה?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>הגדר</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device on network.</value>
+    <value>חבר מכשיר לרשת.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>חבר התקן</value>
@@ -175,7 +176,7 @@
     <value>צור קשר</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bug, please report it to me in PM. I will try my best to solve the problem. If you have Telegram account, welcome to chat at Paving Base Group 😊!</value>
+    <value>עקבו אחרי באפליקציות חברתיות לקבלת ההתפתחויות האחרונות. אם אתה מוצא באג כלשהו, ​​אנא דווח לי על כך ב-PM. אנסה כמיטב יכולתי לפתור את הבעיה. אם יש לך חשבון טלגרם, מוזמן לשוחח בצ'אט בקבוצת Paving Base 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>תוכן</value>
@@ -193,7 +194,7 @@
     <value>תמיכה</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open source application, and it won't be inserted any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your supports 💕.</value>
+    <value>מתקין APK הוא אפליקציית קוד פתוח, ולא יוכנסו לה מודעות למטרות רווח. אם אתה אוהב את האפליקציה הזו, אל תשכח לדרג אותה בחנות. כמובן, מוטב אם תוכל לתרום מעט. תודה על התמיכה שלך 💕.</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>תנאי שימוש</value>
@@ -202,31 +203,31 @@
     <value>משוב</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
-    <value>Find Update</value>
+    <value>מצא  עדכון</value>
   </data>
   <data name="GithubLink.Content" xml:space="preserve">
     <value>Github</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>Go to the page of test.</value>
+    <value>עבור לדף המבחן.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>Go to TestPage</value>
+    <value>עבור אל TestPage</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
-    <value>Go to Update</value>
+    <value>כיצד לעדכן</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
-    <value>Join Our Chat</value>
+    <value>הצטרף לצ'אט שלנו</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Last Checked: </value>
+    <value>נבדק לאחרונה:</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Disable it to connect to other device.</value>
+    <value>השבת אותו כדי להתחבר למכשיר אחר.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>Is Only for WSA?</value>
+    <value>האם רק עבור WSA?</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>אחר</value>
@@ -235,16 +236,16 @@
     <value>Patreon</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value>Rate On Store</value>
+    <value>דרג/י ב- App Store</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
-    <value>Release notes</value>
+    <value>הערות שחרור</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
-    <value>Reset settings of this application.</value>
+    <value>אפס את ההגדרות של יישום זה.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
-    <value>Reset application</value>
+    <value>אפס את האפליקציה</value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
     <value>אתחל</value>
@@ -259,30 +260,30 @@
     <value>בחירת מכשיר</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
-    <value>Show helpers when no device is connected.</value>
+    <value>הצג עוזרים כאשר אין מכשיר מחובר.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Is Show Helpers?</value>
+    <value>האם Show Helpers?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Show Announcements on the top of Settings.</value>
+    <value>הצג הודעות בחלק העליון של ההגדרות.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Is Show Announcements?</value>
+    <value>האם הצג הכרזות?</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Settings</value>
+    <value>הגדרות</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>Translate</value>
+    <value>לתרגם</value>
   </data>
   <data name="TwitterLink.Content" xml:space="preserve">
     <value>Twitter</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
-    <value>Version</value>
+    <value>גרסה</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Up To Date</value>
+    <value>מעודכן</value>
   </data>
 </root>
