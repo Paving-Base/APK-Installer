@@ -16,7 +16,7 @@ namespace APKInstaller.Pages
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        private bool HasBeenSmail;
+        private readonly bool HasBeenSmail;
         private readonly AppWindow AppWindow = UIHelper.GetAppWindowForCurrentWindow();
 
         public MainPage()
@@ -36,7 +36,7 @@ namespace APKInstaller.Pages
                 AppWindow.TitleBar.ExtendsContentIntoTitleBar = true;
                 UIHelper.CheckTheme();
             }
-            UIHelper.MainWindow.SetTitleBar(CustomTitleBar);
+            //UIHelper.MainWindow.SetTitleBar(CustomTitleBar);
             _ = CoreAppFrame.Navigate(typeof(InstallPage));
         }
 
@@ -58,24 +58,24 @@ namespace APKInstaller.Pages
             {
                 if (UIHelper.HasTitleBar)
                 {
-                    if (XamlRoot.Size.Width <= 268)
-                    {
-                        if (!HasBeenSmail)
-                        {
-                            HasBeenSmail = true;
-                            UIHelper.MainWindow.SetTitleBar(null);
-                        }
-                    }
-                    else if (HasBeenSmail)
-                    {
-                        HasBeenSmail = false;
-                        UIHelper.MainWindow.SetTitleBar(CustomTitleBar);
-                    }
+                    //if (XamlRoot.Size.Width <= 268)
+                    //{
+                    //    if (!HasBeenSmail)
+                    //    {
+                    //        HasBeenSmail = true;
+                    //        UIHelper.MainWindow.SetTitleBar(null);
+                    //    }
+                    //}
+                    //else if (HasBeenSmail)
+                    //{
+                    //    HasBeenSmail = false;
+                    //    UIHelper.MainWindow.SetTitleBar(CustomTitleBar);
+                    //}
                     CustomTitleBarRoot.Width = XamlRoot.Size.Width - 120;
                 }
                 else
                 {
-                    RectInt32 Rect = new RectInt32((ActualWidth - CustomTitleBar.ActualWidth).GetActualPixel(), 0, CustomTitleBar.ActualWidth.GetActualPixel(), CustomTitleBar.ActualHeight.GetActualPixel());
+                    RectInt32 Rect = new((ActualWidth - CustomTitleBar.ActualWidth).GetActualPixel(), 0, CustomTitleBar.ActualWidth.GetActualPixel(), CustomTitleBar.ActualHeight.GetActualPixel());
                     AppWindow.TitleBar.SetDragRectangles(new RectInt32[] { Rect });
                 }
             }

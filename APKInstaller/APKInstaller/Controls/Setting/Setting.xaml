@@ -94,7 +94,7 @@
                             Grid.Column="3"
                             Width="32"
                             Height="32"
-                            Margin="20,0,8,0"
+                            Margin="20,0,-8,0"
                             Background="Transparent"
                             BorderBrush="Transparent"
                             BorderThickness="2"
