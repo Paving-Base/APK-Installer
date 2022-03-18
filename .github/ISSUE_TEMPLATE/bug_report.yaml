@@ -27,6 +27,8 @@ body:
       label: Screenshots
       description: If applicable, add screenshots here to help explain your problem
   - type: dropdown
+    validations:
+      required: true
     attributes:
       label: App version
       description: Specify the version of APK Installer you're using.
@@ -44,10 +46,11 @@ body:
         - "0.0.2"
         - "0.0.1"
   - type: dropdown
+    validations:
+      required: true
     attributes:
       label: Windows version
       description: Which Windows versions did you see the issue on?
-      multiple: true
       options:
         - "Insider Build (xxxxx)"
         - "Windows 11 version 21H2 (22000)"
@@ -58,6 +61,21 @@ body:
         - "Windows 10 version 1909 (18363, November 2019 Update)"
         - "Windows 10 version 1903 (18362, May 2019 Update)"
         - "Windows 10 version 1809 (17763, October 2018 Update)"
+  - type: dropdown
+    validations:
+      required: true
+    attributes:
+      label: Android device
+      description: Which kind of Android device did you connect?
+      options:
+        - "Windows Subsystem for Android™"
+        - "Android Studio Emulator"
+        - "Anbox - Android in a Box"
+        - "BlueStacks"
+        - "Waydroid"
+        - "华为移动应用引擎"
+        - "Nomal Device"
+        - "Other Emulator"
   - type: textarea
     attributes:
       label: Additional context
