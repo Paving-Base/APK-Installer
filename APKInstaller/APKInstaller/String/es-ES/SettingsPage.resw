@@ -151,13 +151,13 @@
     <value>Limpiar caché</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Close ADB may break other Installers when they still open.</value>
+    <value>Cerrar ADB puede romper otros Instaladores cuando estos aún siguen abiertos.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
     <value>Is Close ADB when Closing Installer?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Close Installer after APK has installed and start.</value>
+    <value>Cerrar el Instalador después de que la APK haya sido instalada y ejecutar.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
     <value>Is Close Installer when APP is Ready?</value>
@@ -175,7 +175,7 @@
     <value>Contactarme</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bug, please report it to me in PM. I will try my best to solve the problem. If you have Telegram account, welcome to chat at Paving Base Group 😊!</value>
+    <value>Sígueme en las redes sociales para los últimos desarrollos. Si encuentras algún error, por favor notifícamelo en PM. Intentaré todo lo que pueda para solucionar el problema. Si tienes una cuenta de Telegram, ¡bienvenido para chatear en Paving Base Group 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Contenido</value>
@@ -238,10 +238,10 @@
     <value>Valorar en la Tienda</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
-    <value>Release notes</value>
+    <value>Notas de la versión</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
-    <value>Reset settings of this application.</value>
+    <value>Resetear ajustes de esta aplicación.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
     <value>Reiniciar aplicación</value>
@@ -259,13 +259,13 @@
     <value>Seleccionar Dispositivo</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
-    <value>Show helpers when no device is connected.</value>
+    <value>Mostrar ayudantes cuando ningún dispositivo está conectado.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
     <value>Is Show Helpers?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Show Announcements on the top of Settings.</value>
+    <value>Mostrar Anuncios en la parte superior de los Ajustes.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
     <value>Is Show Announcements?</value>
@@ -283,6 +283,6 @@
     <value>Versión</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Up To Date</value>
+    <value>Hasta La Fecha</value>
   </data>
 </root>
