@@ -199,7 +199,7 @@
     <value>EULA</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
-    <value>Feedback</value>
+    <value>Comentarios</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
     <value>Encontrar Actualización</value>
