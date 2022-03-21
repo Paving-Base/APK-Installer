@@ -121,28 +121,28 @@
     <value>ADB, the Android Debug Bridge, is needed for APK Installer to work. Click "Download" to download it. By downloading, you accept the Google Terms and Conditions for ADB. If you have already downloaded ADB, click "Select" to select it.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Exist</value>
+    <value>ADB Existe</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>ADB is missing</value>
+    <value>Falta ADB</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Capabilities: </value>
+    <value>Capacidades: </value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancelar</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>Cannot open app package</value>
+    <value>No se puede abrir el paquete de aplicación</value>
   </data>
   <data name="Checking" xml:space="preserve">
     <value>Comprobando...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Checking ADB...</value>
+    <value>Comprobando ADB...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Click here to read them</value>
+    <value>Haz clic aquí para leerlos</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Cerrar</value>
@@ -157,7 +157,7 @@
     <value>Descarga Fallida</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>Please check your network connection or the URL and try again.</value>
+    <value>Por favor comprueba tu conexión a la red o el URL e intenta otra vez.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
     <value>Buscando WSA...</value>
@@ -198,7 +198,7 @@
     <value>Instalar WSA</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
-    <value>The package is either corrupted or invalid.</value>
+    <value>El paquete está corrupto o es inválido.</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
     <value>La URL es incompleta o inválida.</value>
@@ -219,10 +219,10 @@
     <value>No se puede encontrar el Dispositivo Android</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>You can install WSA. Or go to Settings to connect Device.</value>
+    <value>Puedes instalar WSA. O ir a Ajustes para conectar un Dispositivo.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>You can go to Settings to connect Device.</value>
+    <value>Puedes ir a Ajustes para conectar un Dispositivo.</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
     <value>No se puede conectar a Internet</value>
@@ -231,7 +231,7 @@
     <value>Por favor, conéctate a Internet antes de iniciar la aplicación.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>For proper functioning of the app, try to launch an Android app package.</value>
+    <value>Para un mejor funcionamiento de la aplicación, intenta iniciar un paquete de aplicación Android.</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
@@ -291,10 +291,10 @@
     <value>Esperando la descarga...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>Waiting for Device...</value>
+    <value>Esperando un Dispositivo...</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
-    <value>Waiting for install {0}</value>
+    <value>Esperando para instalación {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
