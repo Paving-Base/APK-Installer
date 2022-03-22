@@ -127,10 +127,10 @@
     <value>Afdian</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>Auto download when package is from URL.</value>
+    <value>Autodescargar cuando el paquete viene de URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Is Auto Download Online Packages?</value>
+    <value>¿Autodescargar Paquetes Online?</value>
   </data>
   <data name="BilibiliLink.Content" xml:space="preserve">
     <value>BiliBili</value>
@@ -154,13 +154,13 @@
     <value>Cerrar ADB puede romper otros Instaladores cuando estos aún siguen abiertos.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Is Close ADB when Closing Installer?</value>
+    <value>¿Cerrar ADB cuando se esté cerrando Installer?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
     <value>Cerrar el Instalador después de que la APK haya sido instalada y ejecutar.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Is Close Installer when APP is Ready?</value>
+    <value>¿Cerrar Installer cuando la APLICACIÓN está Lista?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Configuraciones</value>
