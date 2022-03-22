@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, the Android Debug Bridge, is needed for APK Installer to work. Click "Download" to download it. By downloading, you accept the Google Terms and Conditions for ADB. If you have already downloaded ADB, click "Select" to select it.</value>
+    <value>ADB, el Puente de Depuración de Android, es necesario para que APK Installer funcione. Clica "Descargar" para descargarlo. Al descargar, aceptas los Términos y Condiciones de Google para ADB. Si ya has descargado ADB, clica "Seleccionar" para seleccionarlo.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>ADB Existe</value>
@@ -267,13 +267,13 @@
     <value>Iniciar WSA</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
-    <value>Unzip ADB...</value>
+    <value>Descomprimiendo ADB...</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
-    <value>Unzip completed</value>
+    <value>Descompresión completada</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
-    <value>Unzipping {0}/{1} ...</value>
+    <value>Descomprimiendo {0}/{1}...</value>
     <comment>{0} - Have done num. {1} - All num.</comment>
   </data>
   <data name="Update" xml:space="preserve">
@@ -298,8 +298,8 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
-    <value>Waiting WSA Start...
-This may take long time. Sit back and relax.</value>
+    <value>Esperando a que WSA empiece...
+Puede que esto tome un largo tiempo. Siéntate y relájate.</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA se está Ejecutando</value>
