@@ -133,7 +133,7 @@
     <value>Enter Compact Overlay</value>
   </data>
   <data name="LanguageSettings.Description" xml:space="preserve">
-    <value>Select language and restart to change language</value>
+    <value>Selecciona idioma y reinicia para cambiar el idioma</value>
   </data>
   <data name="LanguageSettings.Header" xml:space="preserve">
     <value>Idioma</value>
