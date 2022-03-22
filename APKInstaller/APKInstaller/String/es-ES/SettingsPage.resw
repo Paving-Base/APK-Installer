@@ -166,7 +166,7 @@
     <value>Configuraciones</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device on network.</value>
+    <value>Conecta el dispositivo a la red.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Conectar Dispositivo</value>
@@ -193,7 +193,7 @@
     <value>Soportes</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open source application, and it won't be inserted any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your supports 💕.</value>
+    <value>APK Installer es una aplicación de código abierto, y no se insertarán anuncios para beneficio. Si te gusta esta aplicación, no te olvides de calificarla en la tienda. Por supuesto, lo mejor sería si pudieses donar un poco. Gracias por tu apoyo 💕.</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
@@ -208,10 +208,10 @@
     <value>Github</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>Go to the page of test.</value>
+    <value>Ir a la página de test.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>Go to TestPage</value>
+    <value>Ir a la Página Test</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
     <value>Ir a Actualizar</value>
@@ -226,7 +226,7 @@
     <value>Desactivarlo para conectarlo a otro dispositivo.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>Is Only for WSA?</value>
+    <value>¿Es solo para WSA?</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Otros</value>
@@ -262,13 +262,13 @@
     <value>Mostrar ayudantes cuando ningún dispositivo está conectado.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Is Show Helpers?</value>
+    <value>¿Mostrar ayudantes?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
     <value>Mostrar Anuncios en la parte superior de los Ajustes.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Is Show Announcements?</value>
+    <value>¿Mostrar anuncios?</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Ajustes</value>
