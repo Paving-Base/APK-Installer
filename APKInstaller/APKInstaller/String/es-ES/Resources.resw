@@ -121,13 +121,13 @@
     <value>Paquete de Aplicación de Android</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>Archivo APK</value>
+    <value>APK файли</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>Una Aplicación Instaladora de Android. Escrito por @wherewhere y @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>Instalador de APK</value>
+    <value>Aplicación instalada</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>Hubo un error con el programa…</value>
