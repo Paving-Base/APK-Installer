@@ -127,10 +127,10 @@
     <value>Afdian</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>Auto download when package is from URL.</value>
+    <value>Autodescargar cuando el paquete viene de URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Is Auto Download Online Packages?</value>
+    <value>¿Autodescargar Paquetes Online?</value>
   </data>
   <data name="BilibiliLink.Content" xml:space="preserve">
     <value>BiliBili</value>
@@ -151,22 +151,22 @@
     <value>Limpiar caché</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Close ADB may break other Installers when they still open.</value>
+    <value>Cerrar ADB puede romper otros Instaladores cuando estos aún siguen abiertos.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Is Close ADB when Closing Installer?</value>
+    <value>¿Cerrar ADB cuando se esté cerrando Installer?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Close Installer after APK has installed and start.</value>
+    <value>Cerrar el Instalador después de que la APK haya sido instalada y ejecutar.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Is Close Installer when APP is Ready?</value>
+    <value>¿Cerrar Installer cuando la APLICACIÓN está Lista?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Configuraciones</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device on network.</value>
+    <value>Conecta el dispositivo a la red.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Conectar Dispositivo</value>
@@ -175,7 +175,7 @@
     <value>Contactarme</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bug, please report it to me in PM. I will try my best to solve the problem. If you have Telegram account, welcome to chat at Paving Base Group 😊!</value>
+    <value>Sígueme en las redes sociales para los últimos desarrollos. Si encuentras algún error, por favor notifícamelo en PM. Intentaré todo lo que pueda para solucionar el problema. Si tienes una cuenta de Telegram, ¡bienvenido para chatear en Paving Base Group 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Contenido</value>
@@ -193,13 +193,13 @@
     <value>Soportes</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open source application, and it won't be inserted any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your supports 💕.</value>
+    <value>APK Installer es una aplicación de código abierto, y no se insertarán anuncios para beneficio. Si te gusta esta aplicación, no te olvides de calificarla en la tienda. Por supuesto, lo mejor sería si pudieses donar un poco. Gracias por tu apoyo 💕.</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
-    <value>Feedback</value>
+    <value>Comentarios</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
     <value>Encontrar Actualización</value>
@@ -208,10 +208,10 @@
     <value>Github</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>Go to the page of test.</value>
+    <value>Ir a la página de test.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>Go to TestPage</value>
+    <value>Ir a la Página Test</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
     <value>Ir a Actualizar</value>
@@ -226,7 +226,7 @@
     <value>Desactivarlo para conectarlo a otro dispositivo.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>Is Only for WSA?</value>
+    <value>¿Es solo para WSA?</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Otros</value>
@@ -238,10 +238,10 @@
     <value>Valorar en la Tienda</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
-    <value>Release notes</value>
+    <value>Notas de la versión</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
-    <value>Reset settings of this application.</value>
+    <value>Resetear ajustes de esta aplicación.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
     <value>Reiniciar aplicación</value>
@@ -259,16 +259,16 @@
     <value>Seleccionar Dispositivo</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
-    <value>Show helpers when no device is connected.</value>
+    <value>Mostrar ayudantes cuando ningún dispositivo está conectado.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Is Show Helpers?</value>
+    <value>¿Mostrar ayudantes?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Show Announcements on the top of Settings.</value>
+    <value>Mostrar Anuncios en la parte superior de los Ajustes.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Is Show Announcements?</value>
+    <value>¿Mostrar anuncios?</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Ajustes</value>
@@ -283,6 +283,6 @@
     <value>Versión</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Up To Date</value>
+    <value>Hasta La Fecha</value>
   </data>
 </root>
