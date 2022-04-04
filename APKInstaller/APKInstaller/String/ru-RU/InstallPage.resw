@@ -302,6 +302,6 @@
 Это может занять много времени.</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>Подсистема Windows для Android запущена</value>
+    <value>WSA запущено</value>
   </data>
 </root>
