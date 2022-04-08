@@ -162,117 +162,117 @@
     <value>Mohon cek koneksi internet anda atau URL dan coba lagi.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>Finding WSA...</value>
+    <value>Mencari WSA...</value>
   </data>
   <data name="Finished" xml:space="preserve">
-    <value>Finished</value>
+    <value>Selesai</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>WSA Found</value>
+    <value>WSA Ditemukan</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>Go to Setting</value>
+    <value>Pergi ke Pengaturan</value>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>How to connect WSA?</value>
+    <value>Bagaimana cara menghubungkan WSA?</value>
   </data>
   <data name="IKnow" xml:space="preserve">
-    <value>I Know</value>
+    <value>Aku Tahu</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>Install</value>
+    <value>Instal</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
-    <value>{0} is ready!</value>
+    <value>{0} sudah siap!</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
-    <value>Install {0}?</value>
+    <value>Instal {0}?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
-    <value>Installing...</value>
+    <value>Menginstal...</value>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
-    <value>Reason: </value>
+    <value>Alasan:</value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
-    <value>Install WSA</value>
+    <value>Instal WSA</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
-    <value>The package is either corrupted or invalid.</value>
+    <value>Paket rusak atau tidak valid.</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
-    <value>The URL is either Incomplete or invalid.</value>
+    <value>URL tidak lengkap atau tidak valid.</value>
   </data>
   <data name="Launch" xml:space="preserve">
-    <value>Launch</value>
+    <value>Luncurkan</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
-    <value>Launching WSA...</value>
+    <value>Meluncurkan WSA...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>Launch when ready</value>
+    <value>Luncurkan ketika sudah siap</value>
   </data>
   <data name="Loading" xml:space="preserve">
-    <value>Loading...</value>
+    <value>Memuat...</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
-    <value>Cannot find Android Device</value>
+    <value>Tidak dapat mencari Perangkat Android</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>You can install WSA. Or go to Settings to connect Device.</value>
+    <value>Anda bisa menginstal WSA. Atau pergi ke Pengaturan untuk Menghubungkan Perangkat.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>You can go to Settings to connect Device.</value>
+    <value>Anda bisa pergi ke Pengaturan untuk Menghubungkan Perangkat.</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
-    <value>Cannot connect Internet</value>
+    <value>Tidak dapat menghubungkan Internet</value>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
-    <value>Please connect to the internet before opening the app.</value>
+    <value>Mohon hubungkan ke internet sebelum membuka aplikasinya.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>For proper functioning of the app, try to launch an Android app package.</value>
+    <value>Agar aplikasi berfungsi dengan baik, coba luncurkan paket aplikasi Android.</value>
   </data>
   <data name="OK" xml:space="preserve">
-    <value>OK</value>
+    <value>Oke</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
-    <value>Online Package</value>
+    <value>Paket Online</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>Package Name: {0}</value>
+    <value>Nama Paket: {0}</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
-    <value>Reinstall</value>
+    <value>Instal Ulang</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>{0} is already installed</value>
+    <value>{0} sudah terinstal</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
-    <value>A newer version of {0} is already installed.</value>
+    <value>Versi terbaru dari {0} sudah terinstal.</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>Retry</value>
+    <value>Ulangi</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>Select</value>
+    <value>Pilih</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
-    <value>Starting ADB Server...</value>
+    <value>Memulai Server ADB...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>Start WSA</value>
+    <value>Mulai WSA</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
-    <value>Unzip ADB...</value>
+    <value>Mengekstrak ADB...</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
-    <value>Unzip completed</value>
+    <value>Mengekstrak selesai</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
     <value>Unzipping {0}/{1} ...</value>
