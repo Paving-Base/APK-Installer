@@ -118,46 +118,48 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, the Android Debug Bridge, is needed for APK Installer to work. Click "Download" to download it. By downloading, you accept the Google Terms and Conditions for ADB. If you have already downloaded ADB, click "Select" to select it.</value>
+    <value>ADB, Android Debug Bridge, diperlukan agar APK Installer berfungsi. Klik "Unduh" untuk mengunduhnya. Dengan mengunduh, Anda menerima Persyaratan dan Ketentuan Google untuk ADB. Jika Anda sudah mengunduh ADB, klik "Pilih" untuk memilihnya.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Exist</value>
+    <value>Ada ADB</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>ADB is missing</value>
+    <value>ADB hilang</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Capabilities: </value>
+    <value>Kemampuan:</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Batal
+</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>Cannot open app package</value>
+    <value>Tidak dapat membuka paket aplikasi</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>Checking...</value>
+    <value>Memeriksa...
+</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Checking ADB...</value>
+    <value>Memeriksa ADB...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Click here to read them</value>
+    <value>Klik di sini untuk membacanya</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Close</value>
+    <value>Tutup</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>Devices</value>
+    <value>Perangkat</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Download</value>
+    <value>Unduh</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>Download Failed</value>
+    <value>Gagal Mengunduh</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>Please check your network connection or the URL and try again.</value>
+    <value>Mohon cek koneksi internet anda atau URL dan coba lagi.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
     <value>Finding WSA...</value>
