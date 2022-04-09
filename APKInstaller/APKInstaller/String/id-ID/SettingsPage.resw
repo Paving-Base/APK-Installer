@@ -117,191 +117,172 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AboutADB" xml:space="preserve">
-    <value>ADB، جسر تصحيح أخطاء أندرويد، مطلوب لتثبيت APK للعمل. انقر فوق "تنزيل" لتحميله. من خلال التنزيل، أنت تقبل شروط وأحكام Google لـ ADB. إذا كنت قد قمت بتنزيل ADB بالفعل، انقر فوق "إختار" لتحديد ذلك.</value>
+  <data name="AboutSettingsHeader.Header" xml:space="preserve">
+    <value>Tentang</value>
   </data>
-  <data name="ADBExist" xml:space="preserve">
-    <value>ADB موجودة</value>
+  <data name="ADBPathSettings.Header" xml:space="preserve">
+    <value>Jalur ADB</value>
   </data>
-  <data name="ADBMissing" xml:space="preserve">
-    <value>ADB is missing</value>
+  <data name="AfdianLink.Content" xml:space="preserve">
+    <value>Afdian</value>
   </data>
-  <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Capabilities: </value>
+  <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
+    <value>Unduh otomatis saat paket berasal dari URL.</value>
   </data>
-  <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
+  <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
+    <value>Apakah Unduh Otomatis Paket Online?</value>
   </data>
-  <data name="CannotOpenPackage" xml:space="preserve">
-    <value>Cannot open app package</value>
+  <data name="BilibiliLink.Content" xml:space="preserve">
+    <value>BiliBili</value>
   </data>
-  <data name="Checking" xml:space="preserve">
-    <value>Checking...</value>
+  <data name="Change.Content" xml:space="preserve">
+    <value>Ubah</value>
   </data>
-  <data name="CheckingADB" xml:space="preserve">
-    <value>Checking ADB...</value>
+  <data name="CheckFailed" xml:space="preserve">
+    <value>Periksa Gagal</value>
   </data>
-  <data name="ClickToRead" xml:space="preserve">
-    <value>Click here to read them</value>
+  <data name="CheckingUpdates.Text" xml:space="preserve">
+    <value>Memeriksa Pembaruan...</value>
   </data>
-  <data name="Close" xml:space="preserve">
-    <value>Close</value>
+  <data name="CheckUpdates.Content" xml:space="preserve">
+    <value>Periksa Pembaruan</value>
   </data>
-  <data name="Devices" xml:space="preserve">
-    <value>Devices</value>
+  <data name="CleanCacheButton.Content" xml:space="preserve">
+    <value>Hapus cache</value>
   </data>
-  <data name="Download" xml:space="preserve">
-    <value>Download</value>
+  <data name="CloseADBSettings.Description" xml:space="preserve">
+    <value>Tutup ADB mungkin dapat merusak Pemasang lain saat masih terbuka.</value>
   </data>
-  <data name="DownloadFailed" xml:space="preserve">
-    <value>Download Failed</value>
+  <data name="CloseADBSettings.Header" xml:space="preserve">
+    <value>Apakah Tutup ADB saat Menutup Penginstal?</value>
   </data>
-  <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>Please check your network connection or the URL and try again.</value>
+  <data name="CloseAPPSettings.Description" xml:space="preserve">
+    <value>Tutup Penginstal setelah APK diinstal dan mulai.</value>
   </data>
-  <data name="FindingWSA" xml:space="preserve">
-    <value>Finding WSA...</value>
+  <data name="CloseAPPSettings.Header" xml:space="preserve">
+    <value>Apakah Tutup Pemasang saat APP sudah Siap?</value>
   </data>
-  <data name="Finished" xml:space="preserve">
-    <value>Finished</value>
+  <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
+    <value>Konfigurasi</value>
   </data>
-  <data name="FoundWSA" xml:space="preserve">
-    <value>WSA Found</value>
+  <data name="ConnectDevice.Description" xml:space="preserve">
+    <value>Hubungkan perangkat ke jaringan.</value>
   </data>
-  <data name="GoToSetting" xml:space="preserve">
-    <value>Go to Setting</value>
+  <data name="ConnectDevice.Header" xml:space="preserve">
+    <value>Hubungkan Perangkat</value>
   </data>
-  <data name="HowToConnect" xml:space="preserve">
-    <value>How to connect WSA?</value>
+  <data name="ContactMeSettings.Header" xml:space="preserve">
+    <value>Hubungi Saya</value>
   </data>
-  <data name="IKnow" xml:space="preserve">
-    <value>I Know</value>
+  <data name="ContactMeTextBlock.Text" xml:space="preserve">
+    <value>Ikuti saya di aplikasi sosial untuk perkembangan terbaru. Jika Anda menemukan bug, harap laporkan kepada saya di PM. Saya akan mencoba yang terbaik untuk memecahkan masalah. Jika Anda memiliki akun Telegram, selamat datang untuk mengobrol di Grup Paving Base 😊!</value>
   </data>
-  <data name="Install" xml:space="preserve">
-    <value>Install</value>
+  <data name="ContentSettingsHeader.Header" xml:space="preserve">
+    <value>Konten</value>
   </data>
-  <data name="InstalledFormat" xml:space="preserve">
-    <value>{0} is ready!</value>
-    <comment>{0} - AppName.</comment>
+  <data name="CoolapkLink.Content" xml:space="preserve">
+    <value>Coolapk</value>
   </data>
-  <data name="InstallFormat" xml:space="preserve">
-    <value>Install {0}?</value>
-    <comment>{0} - AppName.</comment>
+  <data name="DeviceSettingsHeader.Header" xml:space="preserve">
+    <value>Perangkat</value>
   </data>
-  <data name="Installing" xml:space="preserve">
-    <value>Installing...</value>
+  <data name="DisplaySettingsHeader.Header" xml:space="preserve">
+    <value>Tampilan</value>
   </data>
-  <data name="InstallOutputTextBlock.Text" xml:space="preserve">
-    <value>Reason: </value>
+  <data name="DonateSettings.Header" xml:space="preserve">
+    <value>Dukungan</value>
   </data>
-  <data name="InstallWSA" xml:space="preserve">
-    <value>Install WSA</value>
+  <data name="DonateTextBlock.Text" xml:space="preserve">
+    <value>APK Installer adalah aplikasi open source, dan tidak akan disisipkan iklan apapun untuk keuntungan. Jika Anda menyukai aplikasi ini, jangan lupa untuk menilai di toko. Tentu saja, akan lebih baik jika Anda bisa menyumbang sedikit. Terima kasih atas dukungan Anda 💕.</value>
   </data>
-  <data name="InvalidPackage" xml:space="preserve">
-    <value>The package is either corrupted or invalid.</value>
+  <data name="EULA.Content" xml:space="preserve">
+    <value>EULA</value>
   </data>
-  <data name="InvalidURL" xml:space="preserve">
-    <value>The URL is either Incomplete or invalid.</value>
+  <data name="FeedbackLink.Content" xml:space="preserve">
+    <value>Umpan balik</value>
   </data>
-  <data name="Launch" xml:space="preserve">
-    <value>Launch</value>
+  <data name="FindUpdate" xml:space="preserve">
+    <value>Temukan Pembaruan</value>
   </data>
-  <data name="LaunchingWSA" xml:space="preserve">
-    <value>Launching WSA...</value>
+  <data name="GithubLink.Content" xml:space="preserve">
+    <value>Github</value>
   </data>
-  <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>Launch when ready</value>
+  <data name="GoToTestPage.Description" xml:space="preserve">
+    <value>Pergi ke halaman tes.</value>
   </data>
-  <data name="Loading" xml:space="preserve">
-    <value>Loading...</value>
+  <data name="GoToTestPage.Header" xml:space="preserve">
+    <value>Pergi ke TestPage</value>
   </data>
-  <data name="NoDevice" xml:space="preserve">
-    <value>Cannot find Android Device</value>
+  <data name="GoToUpdate.Content" xml:space="preserve">
+    <value>Pergi ke Pembaruan</value>
   </data>
-  <data name="NoDeviceInfo" xml:space="preserve">
-    <value>You can install WSA. Or go to Settings to connect Device.</value>
+  <data name="Group.Content" xml:space="preserve">
+    <value>Gabung Obrolan Kami</value>
   </data>
-  <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>You can go to Settings to connect Device.</value>
+  <data name="LastChecked.Text" xml:space="preserve">
+    <value>Terakhir Periksa:</value>
   </data>
-  <data name="NoInternet" xml:space="preserve">
-    <value>Cannot connect Internet</value>
+  <data name="OnlyWSASettings.Description" xml:space="preserve">
+    <value>Nonaktifkan untuk terhubung ke perangkat lain.</value>
   </data>
-  <data name="NoInternetInfo" xml:space="preserve">
-    <value>Please connect to the internet before opening the app.</value>
+  <data name="OnlyWSASettings.Header" xml:space="preserve">
+    <value>Apakah Hanya untuk WSA?</value>
   </data>
-  <data name="NoPackageWranning" xml:space="preserve">
-    <value>For proper functioning of the app, try to launch an Android app package.</value>
+  <data name="OthersSettingsHeader.Header" xml:space="preserve">
+    <value>Lainnya</value>
   </data>
-  <data name="OK" xml:space="preserve">
-    <value>OK</value>
+  <data name="PatreonLink.Content" xml:space="preserve">
+    <value>Patreon</value>
   </data>
-  <data name="OnlinePackage" xml:space="preserve">
-    <value>Online Package</value>
+  <data name="Rate.Content" xml:space="preserve">
+    <value>Nilai di Toko</value>
   </data>
-  <data name="PackageNameFormat" xml:space="preserve">
-    <value>Package Name: {0}</value>
-    <comment>{0} - Package Name.</comment>
+  <data name="ReleaseNotes.Content" xml:space="preserve">
+    <value>Catatan rilis</value>
   </data>
-  <data name="Reinstall" xml:space="preserve">
-    <value>Reinstall</value>
+  <data name="ResetSettings.Description" xml:space="preserve">
+    <value>Atur ulang pengaturan aplikasi ini.</value>
   </data>
-  <data name="ReinstallFormat" xml:space="preserve">
-    <value>{0} is already installed</value>
-    <comment>{0} - AppName.</comment>
+  <data name="ResetSettings.Header" xml:space="preserve">
+    <value>Atur ulang aplikasi</value>
   </data>
-  <data name="ReinstallOutput" xml:space="preserve">
-    <value>A newer version of {0} is already installed.</value>
-    <comment>{0} - AppName.</comment>
+  <data name="ResetSettingsButton.Content" xml:space="preserve">
+    <value>Atur ulang</value>
   </data>
-  <data name="Retry" xml:space="preserve">
-    <value>Retry</value>
+  <data name="ResetSettingsConfirm.Content" xml:space="preserve">
+    <value>Ya</value>
   </data>
-  <data name="Select" xml:space="preserve">
-    <value>Select</value>
+  <data name="ResetSettingsTitle.Text" xml:space="preserve">
+    <value>Apakah anda yakin anda ingin mengatur ulang aplikasi?</value>
   </data>
-  <data name="StartingADB" xml:space="preserve">
-    <value>Starting ADB Server...</value>
+  <data name="SelectDeviceBox.Header" xml:space="preserve">
+    <value>Pilih Perangkat</value>
   </data>
-  <data name="StartWSA" xml:space="preserve">
-    <value>Start WSA</value>
+  <data name="ShowDialogsSettings.Description" xml:space="preserve">
+    <value>Tampilkan pembantu saat tidak ada perangkat yang terhubung.</value>
   </data>
-  <data name="UnzipADB" xml:space="preserve">
-    <value>Unzip ADB...</value>
+  <data name="ShowDialogsSettings.Header" xml:space="preserve">
+    <value>Apakah Tampilkan Pembantu?</value>
   </data>
-  <data name="UnzipComplete" xml:space="preserve">
-    <value>Unzip completed</value>
+  <data name="ShowMessagesSettings.Description" xml:space="preserve">
+    <value>Tampilkan Pengumuman di bagian atas Pengaturan.</value>
   </data>
-  <data name="UnzippingFormat" xml:space="preserve">
-    <value>Unzipping {0}/{1} ...</value>
-    <comment>{0} - Have done num. {1} - All num.</comment>
+  <data name="ShowMessagesSettings.Header" xml:space="preserve">
+    <value>Apakah Tampilkan Pengumuman?</value>
   </data>
-  <data name="Update" xml:space="preserve">
-    <value>Update</value>
+  <data name="TitleBar.Title" xml:space="preserve">
+    <value>Pengaturan</value>
   </data>
-  <data name="UpdateFormat" xml:space="preserve">
-    <value>Update {0}?</value>
-    <comment>{0} - AppName.</comment>
+  <data name="TranslateLink.Content" xml:space="preserve">
+    <value>Terjemahkan</value>
   </data>
-  <data name="VersionFormat" xml:space="preserve">
-    <value>Version: {0}</value>
-    <comment>{0} - AppVersion.</comment>
+  <data name="TwitterLink.Content" xml:space="preserve">
+    <value>Twitter</value>
   </data>
-  <data name="WaitDownload" xml:space="preserve">
-    <value>Waiting for download...</value>
+  <data name="UpdateSettingsHeader.Header" xml:space="preserve">
+    <value>Versi</value>
   </data>
-  <data name="WaitingDevice" xml:space="preserve">
-    <value>Waiting for Device...</value>
-  </data>
-  <data name="WaitingForInstallFormat" xml:space="preserve">
-    <value>Waiting for install {0}</value>
-    <comment>{0} - AppName.</comment>
-  </data>
-  <data name="WaitingWSAStart" xml:space="preserve">
-    <value>Waiting WSA Start...
-This may take long time. Sit back and relax.</value>
-  </data>
-  <data name="WSARunning" xml:space="preserve">
-    <value>WSA is Running</value>
+  <data name="UpToDate" xml:space="preserve">
+    <value>Terkini</value>
   </data>
 </root>

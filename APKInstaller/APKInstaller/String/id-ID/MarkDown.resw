@@ -118,6 +118,30 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="About.Text" xml:space="preserve">
-    <value>here</value>
+    <value>#### Selamat datang di APK Installer!
+
+##### Deklarasi
+1. Harap ikuti [Perjanjian Lisensi Pengguna Akhir APK Installer dan Kebijakan Privasi](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+2. Program ini adalah perangkat lunak open source, jadi pastikan bahwa program tersebut berasal dari [repositori Github ini](https://github.com/Paving-Base/APK-Installer) atau [aplikasi ini](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) untuk menjaga keamanan data Anda.
+3. Jika sumber program tidak abnormal, semua data Anda hanya akan digunakan untuk menjalankan program atau disimpan secara lokal selama program berjalan, dan pengembang tidak akan mencuri data Anda. Namun demikian, harap perhatikan keamanan lingkungan penggunaan.
+4. Terjemahan teks aplikasi ini berasal dari komunitas [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin"), dan semua teks tidak mewakili pandangan penulis.
+
+##### Menerjemahkan
+Terima kasih kepada penerjemah [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") atas dukungan mereka. Jika ada masalah dengan terjemahan, silakan datang dan perbaiki.
+
+##### Kontributor
+- [wherewhere](https://github.com/wherewhere)
+- [Void48](https://github.com/Void48)
+- [EP012014](https://github.com/EP012014)
+- [A Big Salty Fish](https://github.com/bigsaltyfishes)
+- [sam1357](https://github.com/sam1357)
+
+##### Kutipan dan Referensi
+- [WinUI](https://github.com/microsoft/microsoft-ui-xaml "WinUI")
+- [AAPTForNet](https://github.com/canheo136/QuickLook.Plugin.ApkViewer "AAPTForNet")
+- [Sharp Compress](https://github.com/adamhathcock/sharpcompress "Sharp Compress")
+- [Portable Downloader](https://github.com/madnik7/PortableDownloader "Portable Downloader")
+- [Advanced Sharp Adb Client](https://github.com/yungd1plomat/AdvancedSharpAdbClient "Advanced Sharp Adb Client")
+- [Windows Community Toolkit](https://github.com/CommunityToolkit/WindowsCommunityToolkit "Windows Community Toolkit")</value>
   </data>
 </root>

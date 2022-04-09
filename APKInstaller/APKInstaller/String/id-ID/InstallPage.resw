@@ -118,190 +118,192 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, Android Debug Bridge, необходим для работы программы APK Installer. Нажмите "Загрузить" для загрузки. Загружая, вы принимаете Условия и Положения Google для ADB. Если вы уже скачали ADB, нажмите "Выбрать", чтобы выбрать его.</value>
+    <value>ADB, Android Debug Bridge, diperlukan agar APK Installer berfungsi. Klik "Unduh" untuk mengunduhnya. Dengan mengunduh, Anda menerima Persyaratan dan Ketentuan Google untuk ADB. Jika Anda sudah mengunduh ADB, klik "Pilih" untuk memilihnya.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB установлен</value>
+    <value>Ada ADB</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>ADB не найден</value>
+    <value>ADB hilang</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Возможности: </value>
+    <value>Kemampuan:</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Отмена</value>
+    <value>Batal
+</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>Не удалось открыть пакет</value>
+    <value>Tidak dapat membuka paket aplikasi</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>Проверка...</value>
+    <value>Memeriksa...
+</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Проверка ADB...</value>
+    <value>Memeriksa ADB...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Нажмите здесь, чтобы узнать</value>
+    <value>Klik di sini untuk membacanya</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Закрыть</value>
+    <value>Tutup</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>Устройства</value>
+    <value>Perangkat</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Загрузить</value>
+    <value>Unduh</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>Сбой загрузки</value>
+    <value>Gagal Mengunduh</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>Пожалуйста, проверьте подключение к сети или URL-адрес и повторите попытку.</value>
+    <value>Mohon cek koneksi internet anda atau URL dan coba lagi.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>Поиск Подсистемы Windows для Android...</value>
+    <value>Mencari WSA...</value>
   </data>
   <data name="Finished" xml:space="preserve">
-    <value>Готово</value>
+    <value>Selesai</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>Подсистема Windows для Android найдена</value>
+    <value>WSA Ditemukan</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>Параметры</value>
+    <value>Pergi ke Pengaturan</value>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>Как подключиться к Подсистеме Windows для Android?</value>
+    <value>Bagaimana cara menghubungkan WSA?</value>
   </data>
   <data name="IKnow" xml:space="preserve">
-    <value>Ок</value>
+    <value>Aku Tahu</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>Установить</value>
+    <value>Instal</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
-    <value>{0} установлено!</value>
+    <value>{0} sudah siap!</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
-    <value>Установить {0}?</value>
+    <value>Instal {0}?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
-    <value>Установка...</value>
+    <value>Menginstal...</value>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
-    <value>Причина: </value>
+    <value>Alasan:</value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
-    <value>Установить Подсистему Windows для Android</value>
+    <value>Instal WSA</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
-    <value>Пакет повреждён или недействителен.</value>
+    <value>Paket rusak atau tidak valid.</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
-    <value>Неправильный или недействительный URL-адрес.</value>
+    <value>URL tidak lengkap atau tidak valid.</value>
   </data>
   <data name="Launch" xml:space="preserve">
-    <value>Запустить</value>
+    <value>Luncurkan</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
-    <value>Запуск...</value>
+    <value>Meluncurkan WSA...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>Запустить по мере готовности</value>
+    <value>Luncurkan ketika sudah siap</value>
   </data>
   <data name="Loading" xml:space="preserve">
-    <value>Загрузка...</value>
+    <value>Memuat...</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
-    <value>Устройство Android не найдено</value>
+    <value>Tidak dapat mencari Perangkat Android</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>Вы можете установить Подсистему Windows для Android или перейдите в Параметры, чтобы подключить устройство.</value>
+    <value>Anda bisa menginstal WSA. Atau pergi ke Pengaturan untuk Menghubungkan Perangkat.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>Чтобы подключить устройство, перейдите в параметры.</value>
+    <value>Anda bisa pergi ke Pengaturan untuk Menghubungkan Perangkat.</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
-    <value>Невозможно подключиться к Интернету</value>
+    <value>Tidak dapat menghubungkan Internet</value>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
-    <value>Пожалуйста, подключитесь к Интернету перед открытием приложения.</value>
+    <value>Mohon hubungkan ke internet sebelum membuka aplikasinya.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>Для правильной работы приложения попробуйте запустить пакет приложений Android.</value>
+    <value>Agar aplikasi berfungsi dengan baik, coba luncurkan paket aplikasi Android.</value>
   </data>
   <data name="OK" xml:space="preserve">
-    <value>ОК</value>
+    <value>Oke</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
-    <value>Онлайн-пакет</value>
+    <value>Paket Online</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>Имя пакета: {0}</value>
+    <value>Nama Paket: {0}</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
-    <value>Переустановить</value>
+    <value>Instal Ulang</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>Программа {0} уже установлена</value>
+    <value>{0} sudah terinstal</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
-    <value>Более новая версия {0} уже установлена.</value>
+    <value>Versi terbaru dari {0} sudah terinstal.</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>Повторить</value>
+    <value>Ulangi</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>Выбрать</value>
+    <value>Pilih</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
-    <value>Запуск сервера ADB...</value>
+    <value>Memulai Server ADB...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>Запустить Подсистему Windows для Android</value>
+    <value>Mulai WSA</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
-    <value>Распаковка ADB...</value>
+    <value>Mengekstrak ADB...</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
-    <value>Распаковка завершена</value>
+    <value>Mengekstrak selesai</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
-    <value>Распаковка {0}/{1}...</value>
+    <value>Mengekstrak {0}/{1}...</value>
     <comment>{0} - Have done num. {1} - All num.</comment>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>Обновить</value>
+    <value>Perbarui</value>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
-    <value>Обновить {0}?</value>
+    <value>Perbarui {0}?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>Версия: {0}</value>
+    <value>Versi: {0}</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>Ожидание загрузки...</value>
+    <value>Menunggu untuk mengunduh...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>Ожидание устройства...</value>
+    <value>Menunggu Perangkat...</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
-    <value>Ожидание установки {0}</value>
+    <value>Menunggu untuk menginstal {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
-    <value>Ожидание запуска Подсистемы Windows для Android...
-Это может занять много времени.</value>
+    <value>Menunggu WSA Mulai...
+Ini mungkin memakan waktu lama. Duduk dan rileks.</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>WSA запущено</value>
+    <value>WSA sedang Berjalan</value>
   </data>
 </root>

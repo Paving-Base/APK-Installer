@@ -117,7 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="About.Text" xml:space="preserve">
-    <value>here</value>
+  <data name="Detail.Header" xml:space="preserve">
+    <value>Rincian</value>
+  </data>
+  <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
+    <value>Menunggu perangkat...</value>
+  </data>
+  <data name="Name.Header" xml:space="preserve">
+    <value>Nama</value>
+  </data>
+  <data name="ProcessId.Header" xml:space="preserve">
+    <value>ID Proses</value>
+  </data>
+  <data name="ResidentSetSize.Header" xml:space="preserve">
+    <value>Ukuran Set Penduduk</value>
+  </data>
+  <data name="State.Header" xml:space="preserve">
+    <value>Negara</value>
+  </data>
+  <data name="TitleBar.Title" xml:space="preserve">
+    <value>Proses</value>
   </data>
 </root>

@@ -117,7 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="About.Text" xml:space="preserve">
-    <value>here</value>
+  <data name="AndroidTestSettingsHeader.Header" xml:space="preserve">
+    <value>Tes Android</value>
+  </data>
+  <data name="ApplicationsSettings.Header" xml:space="preserve">
+    <value>Aplikasi</value>
+  </data>
+  <data name="CompactOverlaySettings.Description" xml:space="preserve">
+    <value>Masuk atau Keluar dari Hamparan Ringkas</value>
+  </data>
+  <data name="CompactOverlaySettings.Header" xml:space="preserve">
+    <value>Hamparan Ringkas</value>
+  </data>
+  <data name="EnterPIP.Content" xml:space="preserve">
+    <value>Masuk Hamparan Ringkas</value>
+  </data>
+  <data name="LanguageSettings.Description" xml:space="preserve">
+    <value>Pilih bahasa dan mulai ulang untuk mengubah bahasa</value>
+  </data>
+  <data name="LanguageSettings.Header" xml:space="preserve">
+    <value>Bahasa</value>
+  </data>
+  <data name="OutPIP.Content" xml:space="preserve">
+    <value>Keluar</value>
+  </data>
+  <data name="ProcessesSettings.Header" xml:space="preserve">
+    <value>Proses</value>
+  </data>
+  <data name="TitleBar.Title" xml:space="preserve">
+    <value>Pengujian</value>
+  </data>
+  <data name="TitleBarSettings.Description" xml:space="preserve">
+    <value>Perluas Konten Menjadi TitleBar</value>
+  </data>
+  <data name="TitleBarSettings.Header" xml:space="preserve">
+    <value>Bar Judul</value>
+  </data>
+  <data name="UITestSettingsHeader.Header" xml:space="preserve">
+    <value>Tes UI</value>
   </data>
 </root>
