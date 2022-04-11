@@ -133,10 +133,10 @@
     <value>取消</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Cannot Connect to WSA</value>
+    <value>无法连接到 WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>WSA may not start properly, or there is a problem with ADB. This situation can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
+    <value>WSA 可能没有正常启动，或者 ADB 出了问题。这种情况可能非常难解决。请重新启动安装程序。如果仍然无法使用，尝试重启电脑。</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>无法打开应用程序包</value>
