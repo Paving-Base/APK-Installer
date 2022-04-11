@@ -132,6 +132,12 @@
   <data name="Cancel" xml:space="preserve">
     <value>取消</value>
   </data>
+  <data name="CannotConnectWSA" xml:space="preserve">
+    <value>無法連接到 WSA</value>
+  </data>
+  <data name="CannotConnectWSAInfo" xml:space="preserve">
+    <value>WSA 可能沒有正常啟動，或者 ADB 出了問題。 這種情況可能非常難解決。 請重新啟動安裝程式。 如果仍然無法使用，嘗試重啟電腦。</value>
+  </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>無法打開應用程式包</value>
   </data>

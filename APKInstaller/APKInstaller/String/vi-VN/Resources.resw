@@ -130,7 +130,7 @@
     <value>Cài đặt APK</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
-    <value>There was an error with the file upload.</value>
+    <value>There was an error with the program…</value>
   </data>
   <data name="ImageLoadError" xml:space="preserve">
     <value>Picture failed to load</value>
