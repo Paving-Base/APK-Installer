@@ -134,10 +134,10 @@
     <value>ביטול</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Cannot Connect to WSA</value>
+    <value>אין אפשרות להתחבר אל WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>WSA may not start properly, or there is a problem with ADB. This situation can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
+    <value>ייתכן ש-WSA לא יתחיל כהלכה, או שיש בעיה ב-ADB. מצב זה יכול להיות קשה מאוד לפתרון. אנא הפעל מחדש את המתקין. אם זה עדיין לא עובד, נסה להפעיל מחדש את המחשב.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>לא ניתן לפתוח את חבילת האפליקציה
