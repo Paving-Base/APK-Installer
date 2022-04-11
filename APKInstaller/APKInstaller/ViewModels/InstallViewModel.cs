@@ -23,6 +23,7 @@ using System.Linq;
 using System.Net;
 using System.Runtime.InteropServices;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 using Windows.ApplicationModel.Resources;
 using Windows.Foundation.Collections;
@@ -836,15 +837,22 @@ namespace APKInstaller.ViewModels
                     }
                 }
                 WaitProgressText = _loader.GetString("Loading");
-                if (IsOnlyWSA)
+                if (!CheckDevice())
                 {
-                    if (NetworkHelper.Instance.ConnectionInformation.IsInternetAvailable)
+                    if (IsOnlyWSA)
                     {
-                        await AddressHelper.ConnectHyperV();
-                    }
-                    else
-                    {
-                        new AdvancedAdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
+                        if (NetworkHelper.Instance.ConnectionInformation.IsInternetAvailable)
+                        {
+                            await AddressHelper.ConnectHyperV();
+                            if (!CheckDevice())
+                            {
+                                new AdvancedAdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
+                            }
+                        }
+                        else
+                        {
+                            new AdvancedAdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
+                        }
                     }
                 }
                 ADBHelper.Monitor.DeviceChanged += OnDeviceChanged;
@@ -952,32 +960,62 @@ namespace APKInstaller.ViewModels
                     ProgressHelper.SetState(ProgressState.Indeterminate, true);
                     if (result == ContentDialogResult.Primary)
                     {
-                        WaitProgressText = _loader.GetString("LaunchingWSA");
-                        _ = await Launcher.LaunchUriAsync(new Uri("wsa://"));
-                        bool IsWSARunning = false;
-                        while (!IsWSARunning)
+                    startwsa:
+                        CancellationTokenSource TokenSource = new CancellationTokenSource(TimeSpan.FromMinutes(5));
+                        try
                         {
-                            await Task.Run(() =>
+                            WaitProgressText = _loader.GetString("LaunchingWSA");
+                            _ = await Launcher.LaunchUriAsync(new Uri("wsa://"));
+                            bool IsWSARunning = false;
+                            while (!IsWSARunning)
                             {
-                                Process[] ps = Process.GetProcessesByName("vmmemWSA");
-                                IsWSARunning = ps != null && ps.Length > 0;
-                            });
+                                TokenSource.Token.ThrowIfCancellationRequested();
+                                await Task.Run(() =>
+                                {
+                                    Process[] ps = Process.GetProcessesByName("vmmemWSA");
+                                    IsWSARunning = ps != null && ps.Length > 0;
+                                });
+                            }
+                            WaitProgressText = _loader.GetString("WaitingWSAStart");
+                            while (!CheckDevice())
+                            {
+                                TokenSource.Token.ThrowIfCancellationRequested();
+                                if (NetworkHelper.Instance.ConnectionInformation.IsInternetAvailable)
+                                {
+                                    await AddressHelper.ConnectHyperV();
+                                    if (!CheckDevice())
+                                    {
+                                        new AdvancedAdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
+                                    }
+                                }
+                                else
+                                {
+                                    new AdvancedAdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
+                                }
+                                await Task.Delay(100);
+                            }
+                            WaitProgressText = _loader.GetString("WSARunning");
+                            return true;
                         }
-                        WaitProgressText = _loader.GetString("WaitingWSAStart");
-                        while (!CheckDevice())
+                        catch
                         {
-                            if (NetworkHelper.Instance.ConnectionInformation.IsInternetAvailable)
+                            ContentDialog dialogs = new()
                             {
-                                await AddressHelper.ConnectHyperV();
-                            }
-                            else if (IsOnlyWSA)
+                                XamlRoot = _page.XamlRoot,
+                                Title = _loader.GetString("CannotConnectWSA"),
+                                DefaultButton = ContentDialogButton.Close,
+                                CloseButtonText = _loader.GetString("IKnow"),
+                                PrimaryButtonText = _loader.GetString("Retry"),
+                                Content = _loader.GetString("CannotConnectWSAInfo"),
+                            };
+                            ProgressHelper.SetState(ProgressState.None, true);
+                            ContentDialogResult results = await dialogs.ShowAsync();
+                            ProgressHelper.SetState(ProgressState.Indeterminate, true);
+                            if (results == ContentDialogResult.Primary)
                             {
-                                new AdvancedAdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
+                                goto startwsa;
                             }
-                            await Task.Delay(100);
                         }
-                        WaitProgressText = _loader.GetString("WSARunning");
-                        return true;
                     }
                 }
                 else
@@ -1037,9 +1075,12 @@ namespace APKInstaller.ViewModels
                 {
                     CheckAPK();
                 }
-                else if (ShowDialogs && await ShowDeviceDialog())
+                else if (ShowDialogs)
                 {
-                    goto checkdevice;
+                    if (await ShowDeviceDialog())
+                    {
+                        goto checkdevice;
+                    }
                 }
             }
         }

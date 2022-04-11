@@ -22,7 +22,6 @@ namespace APKInstaller
             UIHelper.GetAppWindowForCurrentWindow(this).SetIcon("favicon.ico");
             IntPtr hwnd = WinRT.Interop.WindowNative.GetWindowHandle(this);
             SetWindowSize(hwnd, 652, 414);
-            MicaHelper.EnableMica(this);
             UIHelper.MainWindow = this;
             MainPage MainPage = new();
             Content = MainPage;
