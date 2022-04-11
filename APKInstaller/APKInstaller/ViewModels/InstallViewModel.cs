@@ -961,7 +961,7 @@ namespace APKInstaller.ViewModels
                     if (result == ContentDialogResult.Primary)
                     {
                     startwsa:
-                        CancellationTokenSource TokenSource = new CancellationTokenSource(TimeSpan.FromMinutes(5));
+                        CancellationTokenSource TokenSource = new(TimeSpan.FromMinutes(5));
                         try
                         {
                             WaitProgressText = _loader.GetString("LaunchingWSA");
