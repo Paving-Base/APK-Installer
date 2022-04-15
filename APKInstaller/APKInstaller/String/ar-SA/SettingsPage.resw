@@ -118,52 +118,52 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
-    <value>About</value>
+    <value>حول</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
     <value>ADB المسار</value>
   </data>
   <data name="AfdianLink.Content" xml:space="preserve">
-    <value>Afdian</value>
+    <value>أفديان</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>Auto download when package is from URL.</value>
+    <value>تحميل تلقائي عندما تكون الحزمة من عنوان URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Is Auto Download Online Packages?</value>
+    <value>هل التنزيل التلقائي للحزم عبر الإنترنت؟</value>
   </data>
   <data name="BilibiliLink.Content" xml:space="preserve">
     <value>BiliBili</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
-    <value>Change</value>
+    <value>تغيير</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>Check Failed</value>
+    <value>فشل التحقق</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>Checking For Updates...</value>
+    <value>التحقق من وجود تحديث...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
-    <value>Check For Updates</value>
+    <value>التحقق من وجود تحديثات</value>
   </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
-    <value>Clear cache</value>
+    <value>مسح ذاكرة التخزين المؤقت</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Close ADB may break other Installers when they still open.</value>
+    <value>إغلاق ADB قد يكسر مثبتات أخرى عند فتحها.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Is Close ADB when Closing Installer?</value>
+    <value>هل أغلق ADB عند إغلاق التثبيت؟</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Close Installer after APK has installed and start.</value>
+    <value>إغلاق المثبت بعد تثبيت APK وبدء التشغيل.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Is Close Installer when APP is Ready?</value>
+    <value>هل إغلاق المثبت عندما يكون التطبيق جاهزاً؟</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
-    <value>Configs</value>
+    <value>التهيئة</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
     <value>ربط الجهاز على الشبكة.</value>
@@ -172,79 +172,79 @@
     <value>توصيل الجهاز</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
-    <value>Contact Me</value>
+    <value>الاتصال بي</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bug, please report it to me in PM. I will try my best to solve the problem. If you have Telegram account, welcome to chat at Paving Base Group 😊!</value>
+    <value>تابعني على التطبيقات الاجتماعية لأحدث التطورات. إذا وجدت أي خطأ، يرجى إبلاغي بذلك في الرسائل الخاصة. سأحاول أفضل ما في وسعي لحل المشكلة. إذا كان لديك حساب تيليجرام، مرحبا بك في الدردشة في مجموعة القاعدة المطلية 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
-    <value>Content</value>
+    <value>المحتوى</value>
   </data>
   <data name="CoolapkLink.Content" xml:space="preserve">
-    <value>Coolapk</value>
+    <value>تجميل</value>
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
-    <value>Device</value>
+    <value>الجهاز</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
-    <value>Display</value>
+    <value>عرض</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
-    <value>Supports</value>
+    <value>الدعم</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open source application, and it won't be inserted any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your supports 💕.</value>
+    <value>مثبت APK هو تطبيق مفتوح المصدر، ولن يتم إدخال أي إعلانات للربح. إذا أعجبك هذا التطبيق، لا تنسى تقييمه في المتجر. بالطبع، سيكون من الأفضل أن تتبرع قليلاً. شكرًا على دعمك 💕.</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
-    <value>Feedback</value>
+    <value>ردود الفعل</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
-    <value>Find Update</value>
+    <value>البحث عن تحديث</value>
   </data>
   <data name="GithubLink.Content" xml:space="preserve">
-    <value>Github</value>
+    <value>قت هاب</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>Go to the page of test.</value>
+    <value>انتقل إلى صفحة الاختبار.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>Go to TestPage</value>
+    <value>انتقل إلى TestPpage</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
-    <value>Go to Update</value>
+    <value>انتقل إلى التحديث</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
-    <value>Join Our Chat</value>
+    <value>انضم إلى فريقنا</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Last Checked: </value>
+    <value>آخر للتأكد:</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Disable it to connect to other device.</value>
+    <value>تعطيله للاتصال بجهاز آخر.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>Is Only for WSA?</value>
+    <value>هل فقط لوكالة WSA؟</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
-    <value>Others</value>
+    <value>أخرى</value>
   </data>
   <data name="PatreonLink.Content" xml:space="preserve">
-    <value>Patreon</value>
+    <value>باتريون</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value>Rate On Store</value>
+    <value>قيمنا في المتجر</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
-    <value>Release notes</value>
+    <value>سجل التغيير</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
-    <value>Reset settings of this application.</value>
+    <value>إعادة تعيين إعدادات هذا التطبيق.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
-    <value>Reset application</value>
+    <value>إعادة تعيين بيانات التطبيق</value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
     <value>12345</value>
@@ -259,30 +259,30 @@
     <value>1111111111111</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
-    <value>Show helpers when no device is connected.</value>
+    <value>إظهار المساعدين عند عدم توصيل أي جهاز.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Is Show Helpers?</value>
+    <value>هل عرض المساعدين؟</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Show Announcements on the top of Settings.</value>
+    <value>إظهار الإعلانات في الجزء العلوي من الإعدادات.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Is Show Announcements?</value>
+    <value>عرض الإعلانات؟</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Settings</value>
+    <value>إعدادات</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>Translate</value>
+    <value>ترجم</value>
   </data>
   <data name="TwitterLink.Content" xml:space="preserve">
     <value>Twitter</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
-    <value>Version</value>
+    <value>الإصدار</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Up To Date</value>
+    <value>تم تحديثه</value>
   </data>
 </root>
