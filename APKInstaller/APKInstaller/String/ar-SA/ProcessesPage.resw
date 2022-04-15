@@ -118,24 +118,24 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Detail.Header" xml:space="preserve">
-    <value>Detail</value>
+    <value>تفاصيل</value>
   </data>
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
-    <value>Waiting for Device...</value>
+    <value>في انتظار الشبكة...</value>
   </data>
   <data name="Name.Header" xml:space="preserve">
-    <value>Name</value>
+    <value>الاسم</value>
   </data>
   <data name="ProcessId.Header" xml:space="preserve">
-    <value>Process ID</value>
+    <value>يجري المعالجة</value>
   </data>
   <data name="ResidentSetSize.Header" xml:space="preserve">
-    <value>Resident Set Size</value>
+    <value>حجم مجموعة المقيمين</value>
   </data>
   <data name="State.Header" xml:space="preserve">
-    <value>State</value>
+    <value>الدولة</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Processes</value>
+    <value>العمليات</value>
   </data>
 </root>
