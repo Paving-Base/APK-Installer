@@ -134,10 +134,10 @@
 </value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Cannot Connect to WSA</value>
+    <value>Tidak Dapat Terhubung ke WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>WSA may not start properly, or there is a problem with ADB. This situation can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
+    <value>WSA mungkin tidak memulai dengan benar, atau ada masalah dengan ADB. Situasi ini bisa sangat sulit untuk diselesaikan. Silakan mulai ulang penginstal. Jika masih tidak berhasil, coba memulai ulang komputer.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>Tidak dapat membuka paket aplikasi</value>
