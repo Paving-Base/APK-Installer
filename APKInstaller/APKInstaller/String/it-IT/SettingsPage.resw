@@ -157,7 +157,7 @@
     <value>Is Close ADB when Closing Installer?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Close Installer after APK has installed and start.</value>
+    <value>Chiudi Installer dopo che APK è stato installato e avviato.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
     <value>Is Close Installer when APP is Ready?</value>
