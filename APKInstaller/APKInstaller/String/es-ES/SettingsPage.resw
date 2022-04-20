@@ -220,13 +220,13 @@
     <value>Únete a Nuestro Chat</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Última revisión: </value>
+    <value>Última Revisión: </value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>Desactivarlo para conectarlo a otro dispositivo.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>¿Es solo para WSA?</value>
+    <value>¿Es Solo para WSA?</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Otros</value>
