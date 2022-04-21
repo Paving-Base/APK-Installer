@@ -13,7 +13,7 @@ variables:
   solution: '*.sln'
   project: 'APKInstaller/APKInstaller/APKInstaller.csproj'
   buildPlatform: 'x86|x64|ARM64'
-  buildConfiguration: 'Release'
+  buildConfiguration: 'Debug'
   appxPackageDir: '$(build.artifactStagingDirectory)\AppxPackages\\'
 
 steps:
