@@ -10,7 +10,8 @@ pool:
   vmImage: 'windows-latest'
 
 variables:
-  solution: 'APKInstaller/APKInstaller/APKInstaller.csproj'
+  solution: '*.sln'
+  project: 'APKInstaller/APKInstaller/APKInstaller.csproj'
   buildPlatform: 'x86|x64|ARM64'
   buildConfiguration: 'Release'
   appxPackageDir: '$(build.artifactStagingDirectory)\AppxPackages\\'
@@ -24,8 +25,8 @@ steps:
 
 - task: VSBuild@1
   inputs:
-    platform: 'x86'
-    solution: '$(solution)'
+    platform: 'x64'
+    solution: '$(project)'
     configuration: '$(buildConfiguration)'
     msbuildArgs: '/p:AppxBundlePlatforms="$(buildPlatform)"
                   /p:AppxPackageDir="$(appxPackageDir)"
