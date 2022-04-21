@@ -127,10 +127,10 @@
     <value>Afdian</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>Auto download when package is from URL.</value>
+    <value>Scaricamento automatico quando il pacchetto è da URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Is Auto Download Online Packages?</value>
+    <value>È Auto Download Pacchetti Online?</value>
   </data>
   <data name="BilibiliLink.Content" xml:space="preserve">
     <value>BiliBili</value>
@@ -151,13 +151,13 @@
     <value>Clear cache</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Close ADB may break other Installers when they still open.</value>
+    <value>Chiudere ADB può rompere altri installatori quando sono ancora aperti.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
     <value>Is Close ADB when Closing Installer?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Close Installer after APK has installed and start.</value>
+    <value>Chiudi Installer dopo che APK è stato installato e avviato.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
     <value>Is Close Installer when APP is Ready?</value>
@@ -166,7 +166,7 @@
     <value>Configs</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device on network.</value>
+    <value>Collega il dispositivo sulla rete.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Connect Device</value>

@@ -118,30 +118,28 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="About.Text" xml:space="preserve">
-    <value>#### Welcome to the APK Installer!
+    <value>#### مرحبا بك في تثبيت APK!
 
-##### Declaration
-1. Please follow the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. This program is open source software, so please make sure that the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application]( https://www.microsoft.com/store/apps/9P2JFQ43FPPG) to keep your data safe.
-3. If the source of the program is not abnormal, all your data will only be used to run with the program or stored locally during the program running, and the developer will not steal any of your data. But even so, please pay attention to the security of the use environment.
-4. The translation of the text of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts do not represent the author's views.
+##### الإعلان[wherewhere]. الرجاء اتباع [اتفاقية ترخيص المستخدم النهائي وسياسة الخصوصية لـ APK](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).. هذا البرنامج برنامج مفتوح المصدر، لذا يرجى التأكد من أن البرنامج من [هذا المستودع Github repository](https://github. om/Paving-Base/APK-Installer) أو [هذا التطبيق](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) للحفاظ على سلامة بياناتك.
+3. إذا كان مصدر البرنامج غير طبيعي، سيتم استخدام جميع بياناتك فقط لتشغيل البرنامج أو تخزينها محلياً أثناء تشغيل البرنامج، ولن يسرق المطور أي من بياناتك. ولكن مع ذلك، يرجى إيلاء الاهتمام لأمن بيئة الاستخدام
+ترجمة نص هذا التطبيق تأتي من مجتمع [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") وجميع النصوص لا تمثل وجهات نظر المؤلف.
 
-##### Translate
-Thanks to [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") translators for their support. If there is any problem with the translation, please come and correct it.
+##### ترجمة
+شكراً إلى [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") المترجمين على دعمهم. إذا كانت هناك أي مشكلة في الترجمة، يرجى المجيء و تصحيحها.
 
-##### Contributors
-- [wherewhere](https://github.com/wherewhere)
+##### # المساهمين
+-[wherewhere] (https://github. om/where)
 - [Void48](https://github.com/Void48)
-- [EP012014](https://github.com/EP012014)
-- [A Big Salty Fish](https://github.com/bigsaltyfishes)
-- [sam1357](https://github.com/sam1357)
+- [EP012014](https://github. om/EP012014)
+- [سمك مالح كبير](https://github.com/bigsaltyfishes)
+- [sam1357](https://github. om/sam1357)
 
-##### Citations and References
-- [WinUI](https://github.com/microsoft/microsoft-ui-xaml "WinUI")
-- [AAPTForNet](https://github.com/canheo136/QuickLook.Plugin.ApkViewer "AAPTForNet")
+##### الإشارات والمراجع
+- [WinUI](https://github.com/microsoft/microsoft-ui-xaml "WinUI") 
+ - [AAPTForNet](https://github. om/canheo136/QuickLook.Plugin.ApkViewer "AAPTForNet")
 - [Sharp Compress](https://github.com/adamhathcock/sharpcompress "Sharp Compress")
-- [Portable Downloader](https://github.com/madnik7/PortableDownloader "Portable Downloader")
-- [Advanced Sharp Adb Client](https://github.com/yungd1plomat/AdvancedSharpAdbClient "Advanced Sharp Adb Client")
+- [التحميل المحمول](https://github.com/madnik7/PortableDownloader "Downloader")
+- [Advanced Sharp Adb Client](https://github. om/yungd1&lt;unk&gt; at/AdvcedSharpAdbClient "عميل شارع متقدم")
 - [Windows Community Toolkit](https://github.com/CommunityToolkit/WindowsCommunityToolkit "Windows Community Toolkit")</value>
   </data>
 </root>

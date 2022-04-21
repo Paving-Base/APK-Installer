@@ -133,7 +133,7 @@
     <value>Abbrechen</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Cannot Connect to WSA</value>
+    <value>Es kann keine Verbindung zu %s hergestellt werden</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
     <value>WSA may not start properly, or there is a problem with ADB. This situation can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
@@ -145,10 +145,10 @@
     <value>Überprüfen...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>ADB wird geprüft...</value>
+    <value>Überprüfen...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Hier klicken zum lesen</value>
+    <value>Hier klicken zum aktualisieren</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Schließen</value>
@@ -184,21 +184,21 @@
     <value>Ich weiß</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>Installieren</value>
+    <value>~Installieren</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
     <value>{0} is ready!</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
-    <value>{0} installieren?</value>
+    <value>{0} Installieren?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
     <value>Installing...</value>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
-    <value>Begründung: </value>
+    <value>Grund: </value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
     <value>Install WSA</value>
@@ -253,54 +253,54 @@
     <value>Neu installieren</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>{0} ist bereits installiert</value>
+    <value>% ist bereits installiert</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
-    <value>Eine neuere Version von {0} ist bereits installiert.</value>
+    <value>Eine aktuelle Version von %s ist bereits installiert.</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>Wiederholen</value>
+    <value>Nochmal</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>Auswählen</value>
+    <value>Wähle</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
-    <value>ADB Server wird gestartet...</value>
+    <value>ADB-Server wird gestartet...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>WSA starten</value>
+    <value>Starte WSA</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
-    <value>ADB wird entpackt...</value>
+    <value>Unzip ADB...</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
     <value>Unzip completed</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
-    <value>Entpacke {0}/{1}...</value>
+    <value>Entpacken von {0}/{1}...</value>
     <comment>{0} - Have done num. {1} - All num.</comment>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>Aktualisierung</value>
+    <value>Aktualisierungen</value>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
-    <value>{0} aktualisieren?</value>
+    <value>Aktualisierungen ({0})?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>Version: {0}</value>
+    <value>  Ausführung {0}</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
     <value>Waiting for download...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>Auf Gerät warten...</value>
+    <value>Warte auf Netzwerk...</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
-    <value>Warte auf die Installation von {0}</value>
+    <value>Installation anstehend</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
@@ -308,6 +308,6 @@
 This may take long time. Sit back and relax.</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>WSA wird ausgeführt</value>
+    <value>%s wird ausgeführt</value>
   </data>
 </root>
