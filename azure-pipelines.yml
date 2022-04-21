@@ -17,6 +17,12 @@ variables:
   appxPackageDir: '$(build.artifactStagingDirectory)\AppxPackages\\'
 
 steps:
+- task: DownloadSecureFile@1
+  name: signingCert
+  displayName: 'Download CA certificate'
+  inputs:
+    secureFile: 'where.pfx'
+    
 - task: NuGetToolInstaller@1
 
 - task: NuGetCommand@2
