@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="APKDescription" xml:space="preserve">
-    <value>Android Application Package</value>
+    <value>Paquet d’aplicació per a l’Android</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>APK File</value>
+    <value>Fitxer APK</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>An Android App Installer. Written by @wherewhere and @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>APK Installer</value>
+    <value>Instal·lador d’APK</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>There was an error with the program…</value>
