@@ -228,7 +228,7 @@
     <value>You can install WSA. Or go to Settings to connect Device.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>You can go to Settings to connect Device.</value>
+    <value>Aneu a Paràmetres per a connectar el dispositiu.</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
     <value>Cannot connect Internet</value>
