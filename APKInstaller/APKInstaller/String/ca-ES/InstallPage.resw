@@ -130,7 +130,7 @@
     <value>Capabilities: </value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Cancel·la</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>Cannot Connect to WSA</value>
@@ -139,28 +139,28 @@
     <value>WSA may not start properly, or there is a problem with ADB. This situation can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>Cannot open app package</value>
+    <value>No s’ha pogut obrir el paquet de l’aplicació</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>Checking...</value>
+    <value>S’està comprovant…</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Checking ADB...</value>
+    <value>S’està comprovant l’ADB…</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>Click here to read them</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Close</value>
+    <value>Tanca</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>Devices</value>
+    <value>Dispositius</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Download</value>
+    <value>Baixa</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>Download Failed</value>
+    <value>Ha fallat la baixada</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
     <value>Please check your network connection or the URL and try again.</value>
@@ -175,7 +175,7 @@
     <value>WSA Found</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>Go to Setting</value>
+    <value>Vés al paràmetre</value>
   </data>
   <data name="HowToConnect" xml:space="preserve">
     <value>How to connect WSA?</value>
@@ -184,51 +184,51 @@
     <value>I Know</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>Install</value>
+    <value>Instal·la</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
     <value>{0} is ready!</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
-    <value>Install {0}?</value>
+    <value>Voleu instal·lar {0}?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
-    <value>Installing...</value>
+    <value>S’està instal·lant…</value>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
-    <value>Reason: </value>
+    <value>Raó:</value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
-    <value>Install WSA</value>
+    <value>Instal·la el WSA</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
     <value>The package is either corrupted or invalid.</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
-    <value>The URL is either Incomplete or invalid.</value>
+    <value>L’URL no és complet o vàlid.</value>
   </data>
   <data name="Launch" xml:space="preserve">
-    <value>Launch</value>
+    <value>Inicia</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
-    <value>Launching WSA...</value>
+    <value>S’està iniciant el WSA…</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>Launch when ready</value>
+    <value>Inicia quan estigui preparat</value>
   </data>
   <data name="Loading" xml:space="preserve">
-    <value>Loading...</value>
+    <value>S’està carregant…</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
-    <value>Cannot find Android Device</value>
+    <value>No s’ha pogut trobar el dispositiu Android</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
     <value>You can install WSA. Or go to Settings to connect Device.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>You can go to Settings to connect Device.</value>
+    <value>Aneu a Paràmetres per a connectar el dispositiu.</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
     <value>Cannot connect Internet</value>
@@ -240,37 +240,37 @@
     <value>For proper functioning of the app, try to launch an Android app package.</value>
   </data>
   <data name="OK" xml:space="preserve">
-    <value>OK</value>
+    <value>D’acord</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
     <value>Online Package</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>Package Name: {0}</value>
+    <value>Nom del paquet: {0}</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
-    <value>Reinstall</value>
+    <value>Torna a instal·lar</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>{0} is already installed</value>
+    <value>Ja s’ha instal·lat {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
-    <value>A newer version of {0} is already installed.</value>
+    <value>Ja s’ha instal·lat una versió més recent de l’aplicació {0}.</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>Retry</value>
+    <value>Torna a provar</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>Select</value>
+    <value>Selecciona</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
     <value>Starting ADB Server...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>Start WSA</value>
+    <value>Inicia el WSA</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
     <value>Unzip ADB...</value>
@@ -283,14 +283,14 @@
     <comment>{0} - Have done num. {1} - All num.</comment>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>Update</value>
+    <value>Actualitza</value>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
-    <value>Update {0}?</value>
+    <value>Voleu actualitzar {0}?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>Version: {0}</value>
+    <value>Versió: {0}</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">

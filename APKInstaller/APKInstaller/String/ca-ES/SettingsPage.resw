@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
-    <value>About</value>
+    <value>Quant a</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>ADB Path</value>
+    <value>Camí ADB</value>
   </data>
   <data name="AfdianLink.Content" xml:space="preserve">
     <value>Afdian</value>
@@ -136,19 +136,19 @@
     <value>BiliBili</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
-    <value>Change</value>
+    <value>Canvia</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>Check Failed</value>
+    <value>Ha fallat la comprovació</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>Checking For Updates...</value>
+    <value>S’està comprovant si hi ha actualitzacions…</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
-    <value>Check For Updates</value>
+    <value>Comprova si hi ha actualitzacions</value>
   </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
-    <value>Clear cache</value>
+    <value>Neteja la memòria cau</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
     <value>Close ADB may break other Installers when they still open.</value>
@@ -163,13 +163,13 @@
     <value>Is Close Installer when APP is Ready?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
-    <value>Configs</value>
+    <value>Paràmetres</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
     <value>Connect device on network.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
-    <value>Connect Device</value>
+    <value>Connecta un dispositiu</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
     <value>Contact Me</value>
@@ -178,25 +178,25 @@
     <value>Follow me on social apps for the latest developments. If you find any bug, please report it to me in PM. I will try my best to solve the problem. If you have Telegram account, welcome to chat at Paving Base Group 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
-    <value>Content</value>
+    <value>Contingut</value>
   </data>
   <data name="CoolapkLink.Content" xml:space="preserve">
     <value>Coolapk</value>
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
-    <value>Device</value>
+    <value>Dispositiu</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
     <value>Display</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
-    <value>Supports</value>
+    <value>Admet</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
     <value>APK Installer is an open source application, and it won't be inserted any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your supports 💕.</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
-    <value>EULA</value>
+    <value>CLUF</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
     <value>Feedback</value>
@@ -205,16 +205,16 @@
     <value>Find Update</value>
   </data>
   <data name="GithubLink.Content" xml:space="preserve">
-    <value>Github</value>
+    <value>GitHub</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>Go to the page of test.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>Go to TestPage</value>
+    <value>Vés a la pàgina de proves</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
-    <value>Go to Update</value>
+    <value>Vés a l’actualització</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
     <value>Join Our Chat</value>
@@ -241,22 +241,22 @@
     <value>Release notes</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
-    <value>Reset settings of this application.</value>
+    <value>Reinicialitza els paràmetres d’aquesta aplicació.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
-    <value>Reset application</value>
+    <value>Reinicialitza l’aplicació</value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
-    <value>Reset</value>
+    <value>Reinicialitza</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
-    <value>Yes</value>
+    <value>Sí</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
-    <value>Are you sure you want to reset the app?</value>
+    <value>Segur que voleu reinicialitzar l’aplicació?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
-    <value>Select Device</value>
+    <value>Selecciona un dispositiu</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
     <value>Show helpers when no device is connected.</value>
@@ -271,18 +271,18 @@
     <value>Is Show Announcements?</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Settings</value>
+    <value>Paràmetres</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>Translate</value>
+    <value>Traducció</value>
   </data>
   <data name="TwitterLink.Content" xml:space="preserve">
     <value>Twitter</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
-    <value>Version</value>
+    <value>Versió</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Up To Date</value>
+    <value>Al dia</value>
   </data>
 </root>

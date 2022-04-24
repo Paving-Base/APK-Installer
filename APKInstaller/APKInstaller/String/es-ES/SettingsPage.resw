@@ -139,7 +139,7 @@
     <value>Cambiar</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>Comprobación Fallida</value>
+    <value>Falló la comprobación</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
     <value>Buscando actualizaciones...</value>

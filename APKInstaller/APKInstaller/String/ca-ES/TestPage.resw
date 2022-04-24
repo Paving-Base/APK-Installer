@@ -121,7 +121,7 @@
     <value>Android Test</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
-    <value>Applications</value>
+    <value>Aplicacions</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
     <value>Enter or Exit Compact Overlay</value>
@@ -136,13 +136,13 @@
     <value>Select language and restart to change language</value>
   </data>
   <data name="LanguageSettings.Header" xml:space="preserve">
-    <value>Language</value>
+    <value>Llengua</value>
   </data>
   <data name="OutPIP.Content" xml:space="preserve">
-    <value>Exit</value>
+    <value>Surt</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
-    <value>Processes</value>
+    <value>Processos</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Testing</value>
@@ -151,7 +151,7 @@
     <value>Extends Content Into TitleBar</value>
   </data>
   <data name="TitleBarSettings.Header" xml:space="preserve">
-    <value>Title Bar</value>
+    <value>Barra de títol</value>
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
     <value>UI Test</value>
