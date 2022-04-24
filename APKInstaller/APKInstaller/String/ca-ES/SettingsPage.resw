@@ -169,7 +169,7 @@
     <value>Connect device on network.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
-    <value>Connect Device</value>
+    <value>Connecta un dispositiu</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
     <value>Contact Me</value>
