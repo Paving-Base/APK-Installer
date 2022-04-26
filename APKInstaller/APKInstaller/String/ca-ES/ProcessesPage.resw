@@ -124,7 +124,7 @@
     <value>Waiting for Device...</value>
   </data>
   <data name="Name.Header" xml:space="preserve">
-    <value>Name</value>
+    <value>Nom</value>
   </data>
   <data name="ProcessId.Header" xml:space="preserve">
     <value>Process ID</value>
@@ -133,9 +133,9 @@
     <value>Resident Set Size</value>
   </data>
   <data name="State.Header" xml:space="preserve">
-    <value>State</value>
+    <value>Estat</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Processes</value>
+    <value>Processos</value>
   </data>
 </root>
