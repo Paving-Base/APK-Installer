@@ -154,13 +154,13 @@
     <value>Cerrar ADB puede romper otros Instaladores cuando estos aún siguen abiertos.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>¿Cerrar ADB cuando se esté cerrando Installer?</value>
+    <value>¿Cerrar ADB cuando se esté Cerrando el Instalador?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
     <value>Cerrar el Instalador después de que la APK haya sido instalada y ejecutar.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>¿Cerrar Installer cuando la APLICACIÓN está Lista?</value>
+    <value>¿Cerrar el Instalador cuando la APLICACIÓN está Lista?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Configuraciones</value>
