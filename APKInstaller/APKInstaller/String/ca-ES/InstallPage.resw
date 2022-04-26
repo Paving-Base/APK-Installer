@@ -172,7 +172,7 @@
     <value>Finished</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>WSA Found</value>
+    <value>S’ha trobat el WSA</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
     <value>Vés al paràmetre</value>
@@ -181,13 +181,13 @@
     <value>How to connect WSA?</value>
   </data>
   <data name="IKnow" xml:space="preserve">
-    <value>I Know</value>
+    <value>Ho sé</value>
   </data>
   <data name="Install" xml:space="preserve">
     <value>Instal·la</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
-    <value>{0} is ready!</value>
+    <value>{0} és a punt.</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
@@ -204,7 +204,7 @@
     <value>Instal·la el WSA</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
-    <value>The package is either corrupted or invalid.</value>
+    <value>El paquet està malmès o no és vàlid.</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
     <value>L’URL no és complet o vàlid.</value>
@@ -267,7 +267,7 @@
     <value>Selecciona</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
-    <value>Starting ADB Server...</value>
+    <value>S’està iniciant el servidor ADB…</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
     <value>Inicia el WSA</value>
