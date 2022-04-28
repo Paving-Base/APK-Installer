@@ -226,7 +226,7 @@
     <value>Desactivarlo para conectarlo a otro dispositivo.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>¿Es Solo para WSA?</value>
+    <value>¿Sólo para WSA?</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Otros</value>
@@ -235,7 +235,7 @@
     <value>Patreon</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value>Valorar en la Tienda</value>
+    <value>Valorar En la Tienda</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
     <value>Notas de la versión</value>
