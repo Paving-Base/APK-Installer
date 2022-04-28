@@ -300,7 +300,7 @@
     <value>Esperando un Dispositivo...</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
-    <value>Esperando para instalación {0}</value>
+    <value>Esperando para instalar {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
