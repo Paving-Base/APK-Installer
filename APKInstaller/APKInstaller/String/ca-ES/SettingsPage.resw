@@ -121,7 +121,7 @@
     <value>Quant a</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>Camí ADB</value>
+    <value>Ruta ADB</value>
   </data>
   <data name="AfdianLink.Content" xml:space="preserve">
     <value>Afdian</value>
@@ -136,16 +136,16 @@
     <value>BiliBili</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
-    <value>Canvia</value>
+    <value>Canviar</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>Ha fallat la comprovació</value>
+    <value>Comprovació Fallida</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>S’està comprovant si hi ha actualitzacions…</value>
+    <value>Comprovant Per Actualitzacions...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
-    <value>Comprova si hi ha actualitzacions</value>
+    <value>Comprovar Per Actualitzacions</value>
   </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
     <value>Neteja la memòria cau</value>
