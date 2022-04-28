@@ -139,13 +139,13 @@
     <value>Cambiar</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>Falló la comprobación</value>
+    <value>Comprobación Fallida</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>Buscando actualizaciones...</value>
+    <value>Buscando Actualizaciones...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
-    <value>Buscar actualizaciones</value>
+    <value>Comprobar Por Actualizaciones</value>
   </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
     <value>Limpiar caché</value>
@@ -193,7 +193,7 @@
     <value>Soportes</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer es una aplicación de código abierto, y no se insertarán anuncios para beneficio. Si te gusta esta aplicación, no te olvides de calificarla en la tienda. Por supuesto, lo mejor sería si pudieses donar un poco. Gracias por tu apoyo 💕.</value>
+    <value>Instalador de APK es una aplicación de código abierto, y no se insertarán anuncios para beneficio. Si te gusta esta aplicación, no te olvides de calificarla en la tienda. Por supuesto, lo mejor sería si pudieses donar un poco. Gracias por tu apoyo 💕.</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
@@ -226,7 +226,7 @@
     <value>Desactivarlo para conectarlo a otro dispositivo.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>¿Es Solo para WSA?</value>
+    <value>¿Sólo para WSA?</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Otros</value>
@@ -235,13 +235,13 @@
     <value>Patreon</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value>Valorar en la Tienda</value>
+    <value>Valorar En la Tienda</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
     <value>Notas de la versión</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
-    <value>Resetear ajustes de esta aplicación.</value>
+    <value>Reiniciar ajustes de esta aplicación.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
     <value>Reiniciar aplicación</value>

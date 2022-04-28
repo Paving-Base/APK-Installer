@@ -121,7 +121,7 @@
     <value>Quant a</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>Camí ADB</value>
+    <value>Ruta ADB</value>
   </data>
   <data name="AfdianLink.Content" xml:space="preserve">
     <value>Afdian</value>
@@ -136,16 +136,16 @@
     <value>BiliBili</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
-    <value>Canvia</value>
+    <value>Canviar</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>Ha fallat la comprovació</value>
+    <value>Comprovació Fallida</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>S’està comprovant si hi ha actualitzacions…</value>
+    <value>Comprovant Per Actualitzacions...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
-    <value>Comprova si hi ha actualitzacions</value>
+    <value>Comprovar Per Actualitzacions</value>
   </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
     <value>Neteja la memòria cau</value>
@@ -163,16 +163,16 @@
     <value>Is Close Installer when APP is Ready?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
-    <value>Paràmetres</value>
+    <value>Configuracions</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
     <value>Connect device on network.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
-    <value>Connecta un dispositiu</value>
+    <value>Connectar Dispositiu</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
-    <value>Contact Me</value>
+    <value>Contactar-me</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
     <value>Follow me on social apps for the latest developments. If you find any bug, please report it to me in PM. I will try my best to solve the problem. If you have Telegram account, welcome to chat at Paving Base Group 😊!</value>
@@ -190,7 +190,7 @@
     <value>Display</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
-    <value>Admet</value>
+    <value>Suports</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
     <value>APK Installer is an open source application, and it won't be inserted any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your supports 💕.</value>
@@ -205,22 +205,22 @@
     <value>Find Update</value>
   </data>
   <data name="GithubLink.Content" xml:space="preserve">
-    <value>GitHub</value>
+    <value>Github</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>Vés a la pàgina de proves.</value>
+    <value>Anar a la pàgina de proves.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>Vés a la pàgina de proves</value>
+    <value>Anar a la Pàgina de Proves</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
-    <value>Vés a l’actualització</value>
+    <value>Anar a Actualitzar</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
-    <value>Uniu-vos al nostre xat</value>
+    <value>Uneix-te al Nostre Xat</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Darrera comprovació: </value>
+    <value>Darrera Comprovació: </value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>Disable it to connect to other device.</value>
@@ -229,7 +229,7 @@
     <value>Is Only for WSA?</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
-    <value>Others</value>
+    <value>Altres</value>
   </data>
   <data name="PatreonLink.Content" xml:space="preserve">
     <value>Patreon</value>
@@ -241,22 +241,22 @@
     <value>Release notes</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
-    <value>Reinicialitza els paràmetres d’aquesta aplicació.</value>
+    <value>Reiniciar els ajustaments d’aquesta aplicació.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
-    <value>Reinicialitza l’aplicació</value>
+    <value>Reiniciar aplicació</value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
-    <value>Reinicialitza</value>
+    <value>Reiniciar</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
     <value>Sí</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
-    <value>Segur que voleu reinicialitzar l’aplicació?</value>
+    <value>Segur que voleu reiniciar l’aplicació?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
-    <value>Selecciona un dispositiu</value>
+    <value>Seleccionar Dispositiu</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
     <value>Show helpers when no device is connected.</value>
@@ -271,10 +271,10 @@
     <value>Is Show Announcements?</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Paràmetres</value>
+    <value>Ajustaments</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>Traducció</value>
+    <value>Traduir</value>
   </data>
   <data name="TwitterLink.Content" xml:space="preserve">
     <value>Twitter</value>
@@ -283,6 +283,6 @@
     <value>Versió</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Al dia</value>
+    <value>Fins a La Data</value>
   </data>
 </root>
