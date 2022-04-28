@@ -121,7 +121,7 @@
     <value>Android 應用程式包</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>APK 文件</value>
+    <value>APK 檔案</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>一個 Android 應用安裝器。作者：@wherewhere 和 @Tangent-90。</value>
