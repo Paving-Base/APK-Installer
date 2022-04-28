@@ -136,10 +136,10 @@
     <value>Select language and restart to change language</value>
   </data>
   <data name="LanguageSettings.Header" xml:space="preserve">
-    <value>Llengua</value>
+    <value>Idioma</value>
   </data>
   <data name="OutPIP.Content" xml:space="preserve">
-    <value>Surt</value>
+    <value>Sortir</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
     <value>Processos</value>
@@ -151,7 +151,7 @@
     <value>Extends Content Into TitleBar</value>
   </data>
   <data name="TitleBarSettings.Header" xml:space="preserve">
-    <value>Barra de títol</value>
+    <value>Barra de Títol</value>
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
     <value>UI Test</value>
