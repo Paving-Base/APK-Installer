@@ -148,12 +148,12 @@
     <value>Probando</value>
   </data>
   <data name="TitleBarSettings.Description" xml:space="preserve">
-    <value>Extiende el Contenido en la Barra de Títulos</value>
+    <value>Extiende el Contenido En la Barra de Títulos</value>
   </data>
   <data name="TitleBarSettings.Header" xml:space="preserve">
-    <value>Barra de Título </value>
+    <value>Barra de Título</value>
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
-    <value>Test UI </value>
+    <value>Test UI</value>
   </data>
 </root>
