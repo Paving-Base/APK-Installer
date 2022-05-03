@@ -229,9 +229,14 @@ namespace APKInstaller.ViewModels.SettingsPages
 
         public async void GetAboutTextBlockText()
         {
-            Uri dataUri = new Uri("ms-appx:///String/en-US/About.md");
-            StorageFile file = await StorageFile.GetFileFromApplicationUriAsync(dataUri);
-            AboutTextBlockText = await FileIO.ReadTextAsync(file);
+            await Task.Run(async () =>
+            {
+                string langcode = LanguageHelper.GetCurrentLanguage();
+                Uri dataUri = new Uri($"ms-appx:///String/{langcode}/About.md");
+                StorageFile file = await StorageFile.GetFileFromApplicationUriAsync(dataUri);
+                string markdown = await FileIO.ReadTextAsync(file);
+                _ = _page?.DispatcherQueue.EnqueueAsync(() => AboutTextBlockText = markdown);
+            });
         }
 
         public SettingsViewModel(SettingsPage Page)
@@ -240,7 +245,7 @@ namespace APKInstaller.ViewModels.SettingsPages
             Caches = this;
         }
 
-        public void OnDeviceChanged(object sender, DeviceDataEventArgs e) => _ = (_page.DispatcherQueue?.EnqueueAsync(() => DeviceList = new AdvancedAdbClient().GetDevices()));
+        public void OnDeviceChanged(object sender, DeviceDataEventArgs e) => _ = (_page?.DispatcherQueue.EnqueueAsync(() => DeviceList = new AdvancedAdbClient().GetDevices()));
 
         public async void CheckUpdate()
         {

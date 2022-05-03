@@ -57,13 +57,43 @@
     <Content Include="favicon.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="String\af-ZA\About.md" />
+    <Content Include="String\ar-SA\About.md" />
+    <Content Include="String\ca-ES\About.md" />
+    <Content Include="String\cs-CZ\About.md" />
+    <Content Include="String\da-DK\About.md" />
+    <Content Include="String\de-DE\About.md" />
+    <Content Include="String\el-GR\About.md" />
     <Content Include="String\en-US\About.md" />
+    <Content Include="String\es-ES\About.md" />
+    <Content Include="String\fi-FI\About.md" />
+    <Content Include="String\fr-FR\About.md" />
+    <Content Include="String\he-IL\About.md" />
+    <Content Include="String\hu-HU\About.md" />
+    <Content Include="String\id-ID\About.md" />
+    <Content Include="String\it-IT\About.md" />
+    <Content Include="String\ja-JP\About.md" />
+    <Content Include="String\ko-KR\About.md" />
+    <Content Include="String\nl-NL\About.md" />
+    <Content Include="String\no-NO\About.md" />
+    <Content Include="String\pl-PL\About.md" />
+    <Content Include="String\pt-BR\About.md" />
+    <Content Include="String\pt-PT\About.md" />
+    <Content Include="String\ro-RO\About.md" />
+    <Content Include="String\ru-RU\About.md" />
+    <Content Include="String\sr-SP\About.md" />
+    <Content Include="String\sv-SE\About.md" />
+    <Content Include="String\tr-TR\About.md" />
+    <Content Include="String\uk-UA\About.md" />
+    <Content Include="String\vi-VN\About.md" />
+    <Content Include="String\zh-CN\About.md" />
+    <Content Include="String\zh-TW\About.md" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="CommunityToolkit.WinUI.Connectivity" Version="7.1.2" />
     <PackageReference Include="CommunityToolkit.WinUI.UI" Version="7.1.2" />
-    <PackageReference Include="Downloader" Version="2.3.3" />
+    <PackageReference Include="Downloader" Version="2.3.4" />
     <PackageReference Include="SharpCompress" Version="0.31.0" />
     <PackageReference Include="PInvoke.User32" Version="0.7.104" />
     <PackageReference Include="AdvancedSharpAdbClient" Version="2.5.2" />
@@ -230,7 +260,37 @@
     <PRIResource Remove="AppPackages\**" />
   </ItemGroup>
   <ItemGroup>
+    <None Remove="String\af-ZA\About.md" />
+    <None Remove="String\ar-SA\About.md" />
+    <None Remove="String\ca-ES\About.md" />
+    <None Remove="String\cs-CZ\About.md" />
+    <None Remove="String\da-DK\About.md" />
+    <None Remove="String\de-DE\About.md" />
+    <None Remove="String\el-GR\About.md" />
     <None Remove="String\en-US\About.md" />
+    <None Remove="String\es-ES\About.md" />
+    <None Remove="String\fi-FI\About.md" />
+    <None Remove="String\fr-FR\About.md" />
+    <None Remove="String\he-IL\About.md" />
+    <None Remove="String\hu-HU\About.md" />
+    <None Remove="String\id-ID\About.md" />
+    <None Remove="String\it-IT\About.md" />
+    <None Remove="String\ja-JP\About.md" />
+    <None Remove="String\ko-KR\About.md" />
+    <None Remove="String\nl-NL\About.md" />
+    <None Remove="String\no-NO\About.md" />
+    <None Remove="String\pl-PL\About.md" />
+    <None Remove="String\pt-BR\About.md" />
+    <None Remove="String\pt-PT\About.md" />
+    <None Remove="String\ro-RO\About.md" />
+    <None Remove="String\ru-RU\About.md" />
+    <None Remove="String\sr-SP\About.md" />
+    <None Remove="String\sv-SE\About.md" />
+    <None Remove="String\tr-TR\About.md" />
+    <None Remove="String\uk-UA\About.md" />
+    <None Remove="String\vi-VN\About.md" />
+    <None Remove="String\zh-CN\About.md" />
+    <None Remove="String\zh-TW\About.md" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AAPTForNet\AAPTForNet.csproj" />
