@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="APKDescription" xml:space="preserve">
-    <value>Aplicación para Android</value>
+    <value>Paquete de Aplicaciones Android</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>APK файли</value>
+    <value>Archivo APK</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>Una Aplicación Instaladora de Android. Escrito por @wherewhere y @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>Aplicación instalada</value>
+    <value>Instalador de APK</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>Hubo un error con el programa…</value>
