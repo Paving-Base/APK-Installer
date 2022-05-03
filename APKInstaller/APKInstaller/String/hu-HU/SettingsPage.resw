@@ -118,171 +118,172 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
-    <value>About</value>
+    <value>Névjegy</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>ADB Path</value>
+    <value>ADB útvonal
+</value>
   </data>
   <data name="AfdianLink.Content" xml:space="preserve">
     <value>Afdian</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>Auto download when package is from URL.</value>
+    <value>Automatikus letöltés, ha a csomag URL-címről származik.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Is Auto Download Online Packages?</value>
+    <value>Automatikus letöltöd az online csomagokat?</value>
   </data>
   <data name="BilibiliLink.Content" xml:space="preserve">
     <value>BiliBili</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
-    <value>Change</value>
+    <value>Módosít</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>Check Failed</value>
+    <value>Ellenőrzés sikertelen</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>Checking For Updates...</value>
+    <value>Frissítések keresése...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
-    <value>Check For Updates</value>
+    <value>Frissítések keresése</value>
   </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
-    <value>Clear cache</value>
+    <value>Gyorsítótár törlése</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Close ADB may break other Installers when they still open.</value>
+    <value>Az ADB bezárása megszakíthatja más telepítők működését, ha azok még nyitva vannak.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Is Close ADB when Closing Installer?</value>
+    <value>Az ADB bezárása a telepítő bezárásakor?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Close Installer after APK has installed and start.</value>
+    <value>Zárja be a telepítőt az APK telepítése és elindítása után.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Is Close Installer when APP is Ready?</value>
+    <value>Bezárja a telepítőt, amikor az APP készen áll?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
-    <value>Configs</value>
+    <value>Konfigurációk</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device on network.</value>
+    <value>Eszköz csatlakoztatása a hálózathoz.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
-    <value>Connect Device</value>
+    <value>Eszköz csatlakoztatása</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
-    <value>Contact Me</value>
+    <value>Kapcsolatfelvétel</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bug, please report it to me in PM. I will try my best to solve the problem. If you have Telegram account, welcome to chat at Paving Base Group 😊!</value>
+    <value>Kövess engem a közösségi alkalmazásokon a legfrissebb fejleményekért. Ha bármilyen hibát találsz, kérlek jelezd nekem PM-ben. Igyekszem mindent megteszek, hogy megoldjam a problémát. Ha van Telegram fiókod, szívesen látlak a Paving Base csoportban 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
-    <value>Content</value>
+    <value>Tartalom</value>
   </data>
   <data name="CoolapkLink.Content" xml:space="preserve">
     <value>Coolapk</value>
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
-    <value>Device</value>
+    <value>Eszköz</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
-    <value>Display</value>
+    <value>Kijelző</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
-    <value>Supports</value>
+    <value>Támogatás</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open source application, and it won't be inserted any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your supports 💕.</value>
+    <value>Az APK Installer egy nyílt forráskódú alkalmazás, és nem lesz beillesztve semmilyen reklám a profitért. Ha tetszik ez az alkalmazás, ne felejtsd el értékelni az áruházban. Természetesen jobb lenne, ha adományoznál egy kicsit. Köszönjük a támogatásokat 💕.</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
-    <value>EULA</value>
+    <value>Végfelhasználói licencszerződés</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
-    <value>Feedback</value>
+    <value>Visszajelzés</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
-    <value>Find Update</value>
+    <value>Frissítés keresése</value>
   </data>
   <data name="GithubLink.Content" xml:space="preserve">
     <value>Github</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>Go to the page of test.</value>
+    <value>Lépjen a teszt oldalára.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>Go to TestPage</value>
+    <value>Menj a TestPage oldalra</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
-    <value>Go to Update</value>
+    <value>Menjen a frissítéshez</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
-    <value>Join Our Chat</value>
+    <value>Csatlakozz a csevegéshez</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Last Checked: </value>
+    <value>Utoljára ellenőrizve: </value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Disable it to connect to other device.</value>
+    <value>Más eszközhöz való csatlakozáshoz tiltsa le.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>Is Only for WSA?</value>
+    <value>Csak a WSA számára?</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
-    <value>Others</value>
+    <value>Egyéb</value>
   </data>
   <data name="PatreonLink.Content" xml:space="preserve">
     <value>Patreon</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value>Rate On Store</value>
+    <value>Értékelés az áruházban</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
-    <value>Release notes</value>
+    <value>Újdonságok</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
-    <value>Reset settings of this application.</value>
+    <value>Az alkalmazás beállításainak visszaállítása.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
-    <value>Reset application</value>
+    <value>Alkalmazás visszaállítása</value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
-    <value>Reset</value>
+    <value>Visszaállítás</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
-    <value>Yes</value>
+    <value>Igen</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
-    <value>Are you sure you want to reset the app?</value>
+    <value>Biztosan alaphelyzetbe állítja az alkalmazást?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
-    <value>Select Device</value>
+    <value>Eszköz kiválasztása</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
-    <value>Show helpers when no device is connected.</value>
+    <value>Segédprogramok megjelenítése, ha nincs csatlakoztatott eszköz.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Is Show Helpers?</value>
+    <value>Segítők megjelenítése?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Show Announcements on the top of Settings.</value>
+    <value>Bejelentések megjelenítése a Beállítások tetején.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Is Show Announcements?</value>
+    <value>Bejelentések megjelenítése?</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Settings</value>
+    <value>Beállítások</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>Translate</value>
+    <value>Fordítás</value>
   </data>
   <data name="TwitterLink.Content" xml:space="preserve">
     <value>Twitter</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
-    <value>Version</value>
+    <value>Verzió</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Up To Date</value>
+    <value>Naprakész</value>
   </data>
 </root>
