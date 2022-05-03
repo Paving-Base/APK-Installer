@@ -199,7 +199,7 @@
                         <controls:SettingExpander.Content>
                             <Grid Style="{StaticResource ExpanderContentGridStyle}">
                                 <cwuc:MarkdownTextBlock
-                                    x:Uid="/MarkDown/About"
+                                    Text="{Binding AboutTextBlockText}"
                                     HorizontalAlignment="Left"
                                     Background="Transparent"
                                     LinkClicked="MarkdownText_LinkClicked" />

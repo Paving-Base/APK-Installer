@@ -1,32 +1,32 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <UseWinUI>true</UseWinUI>
-    <AppxBundle>Never</AppxBundle>
-    <OutputType>WinExe</OutputType>
-    <LangVersion>preview</LangVersion>
-    <Platforms>x86;x64;arm64</Platforms>
-    <VersionPrefix>0.1.14</VersionPrefix>
-    <RootNamespace>APKInstaller</RootNamespace>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
-    <AppxBundlePlatforms>x64</AppxBundlePlatforms>
-    <GenerateTestArtifacts>False</GenerateTestArtifacts>
-    <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
     <ApplicationManifest>app.manifest</ApplicationManifest>
-    <PublishProfile>win10-$(Platform).pubxml</PublishProfile>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Never</AppxBundle>
+    <AppxBundlePlatforms>x64</AppxBundlePlatforms>
+    <AppxPackageDir>AppPackages</AppxPackageDir>
     <AppxSymbolPackageEnabled>True</AppxSymbolPackageEnabled>
+    <Copyright>Copyright © 2017 - 2022 PavingBase. All Rights Reserved.</Copyright>
+    <Description>An Android Application Installer for Windows</Description>
     <EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
     <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
+    <GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
+    <GenerateTestArtifacts>False</GenerateTestArtifacts>
+    <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
+    <LangVersion>preview</LangVersion>
+    <OutputType>WinExe</OutputType>
+    <PackageProjectUrl>https://github.com/Paving-Base/APK-Installer</PackageProjectUrl>
+    <Platforms>x86;x64;arm64</Platforms>
+    <PublishProfile>win10-$(Platform).pubxml</PublishProfile>
+    <RepositoryUrl>https://github.com/Paving-Base/APK-Installer</RepositoryUrl>
+    <RootNamespace>APKInstaller</RootNamespace>
+    <RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
     <TargetFramework>net6.0-windows10.0.22000.0</TargetFramework>
     <TargetPlatformMaxVersion>10.0.22000.0</TargetPlatformMaxVersion>
     <TargetPlatformMinVersion>10.0.18362.0</TargetPlatformMinVersion>
-    <Description>An Android Application Installer for Windows</Description>
-    <RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
-    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
-    <GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
-    <RepositoryUrl>https://github.com/Paving-Base/APK-Installer</RepositoryUrl>
-    <Copyright>Copyright © 2017 - 2022 PavingBase. All Rights Reserved.</Copyright>
-    <PackageProjectUrl>https://github.com/Paving-Base/APK-Installer</PackageProjectUrl>
-    <AppxPackageDir>C:\Users\qq251\Downloads\Github\APK-Installer\APKInstaller\APKInstaller\AppPackages\</AppxPackageDir>
+    <UseWinUI>true</UseWinUI>
+    <VersionPrefix>0.1.14</VersionPrefix>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="AppPackages\**" />
@@ -57,6 +57,7 @@
     <Content Include="favicon.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="String\en-US\About.md" />
   </ItemGroup>
 
   <ItemGroup>
@@ -229,8 +230,7 @@
     <PRIResource Remove="AppPackages\**" />
   </ItemGroup>
   <ItemGroup>
-    <None Remove="Controls\WebXAML.xaml" />
-    <None Remove="Themes\CommonStyles.xaml" />
+    <None Remove="String\en-US\About.md" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AAPTForNet\AAPTForNet.csproj" />

@@ -28,18 +28,25 @@ namespace APKInstaller.Pages.SettingsPages
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            Provider = new SettingsViewModel(this);
+            if (SettingsViewModel.Caches != null)
+            {
+                Provider = SettingsViewModel.Caches;
+            }
+            else
+            {
+                Provider = new SettingsViewModel(this);
+                if (Provider.UpdateDate == DateTime.MinValue) { Provider.CheckUpdate(); }
+                if (new AdbServer().GetStatus().IsRunning)
+                {
+                    ADBHelper.Monitor.DeviceChanged += Provider.OnDeviceChanged;
+                    Provider.DeviceList = new AdvancedAdbClient().GetDevices();
+                }
+            }
             DataContext = Provider;
             //#if DEBUG
             GoToTestPage.Visibility = Visibility.Visible;
             //#endif
             SelectDeviceBox.SelectionMode = Provider.IsOnlyWSA ? ListViewSelectionMode.None : ListViewSelectionMode.Single;
-            if (Provider.UpdateDate == DateTime.MinValue) { Provider.CheckUpdate(); }
-            if (new AdbServer().GetStatus().IsRunning)
-            {
-                ADBHelper.Monitor.DeviceChanged += Provider.OnDeviceChanged;
-                Provider.DeviceList = new AdvancedAdbClient().GetDevices();
-            }
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)

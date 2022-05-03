@@ -27,8 +27,6 @@ namespace APKInstaller.Pages
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            //IReadOnlyList<string> a = ApplicationLanguages.ManifestLanguages;
-            //int b = a.Count;
             if (InstallViewModel.Caches != null)
             {
                 IsCaches = true;

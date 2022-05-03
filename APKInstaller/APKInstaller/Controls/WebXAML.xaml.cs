@@ -1,10 +1,12 @@
 ﻿using APKInstaller.Models;
+using CommunityToolkit.WinUI;
 using CommunityToolkit.WinUI.Connectivity;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Markup;
 using System;
 using System.Net.Http;
+using System.Threading.Tasks;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -49,96 +51,107 @@ namespace APKInstaller.Controls
             set => SetValue(ContentXAMLProperty, value);
         }
 
-        private static void OnContentChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) => (d as WebXAML).UpdateContent(e.NewValue);
+        private static void OnContentChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            (d as WebXAML).UpdateContent(e.NewValue);
+        }
 
         public WebXAML() => InitializeComponent();
 
         private async void UpdateContent(object Content)
         {
-            if (Content == null) { return; }
-            if (Content is GitInfo ContentInfo && ContentInfo != default(GitInfo))
+            await Task.Run(async () =>
             {
-                string value = ContentInfo.FormatURL(GitInfo.GITHUB_API);
-                if (!NetworkHelper.Instance.ConnectionInformation.IsInternetAvailable) { return; }
-                using HttpClient client = new();
-                UIElement UIElement = null;
-                try
+                if (Content == null) { return; }
+                if (Content is GitInfo ContentInfo && ContentInfo != default(GitInfo))
                 {
-                    UIElement = (UIElement)XamlReader.Load(await client.GetStringAsync(value));
-                }
-                catch
-                {
+                    string value = ContentInfo.FormatURL(GitInfo.GITHUB_API);
+                    if (!NetworkHelper.Instance.ConnectionInformation.IsInternetAvailable) { return; }
+                    using HttpClient client = new();
+                    UIElement UIElement = null;
                     try
                     {
-                        UIElement = (UIElement)XamlReader.Load((await client.GetStringAsync(ContentInfo.FormatURL(GitInfo.FASTGIT_API))).Replace("://raw.githubusercontent.com", "://raw.fastgit.org"));
+                        string xaml = await client.GetStringAsync(value);
+                        UIElement = await DispatcherQueue.EnqueueAsync(() => { return (UIElement)XamlReader.Load(xaml); });
                     }
                     catch
                     {
                         try
                         {
-                            UIElement = (UIElement)XamlReader.Load(await client.GetStringAsync(ContentInfo.FormatURL(GitInfo.JSDELIVR_API)));
+                            string xaml = (await client.GetStringAsync(ContentInfo.FormatURL(GitInfo.FASTGIT_API))).Replace("://raw.githubusercontent.com", "://raw.fastgit.org");
+                            UIElement = await DispatcherQueue.EnqueueAsync(() => { return (UIElement)XamlReader.Load(xaml); });
+                        }
+                        catch
+                        {
+                            try
+                            {
+                                string xaml = await client.GetStringAsync(ContentInfo.FormatURL(GitInfo.JSDELIVR_API));
+                                UIElement = await DispatcherQueue.EnqueueAsync(() => { return (UIElement)XamlReader.Load(xaml); });
+                            }
+                            catch
+                            {
+                                UIElement = null;
+                            }
+                        }
+                    }
+                    finally
+                    {
+                        if (UIElement != null)
+                        {
+                            _ = (DispatcherQueue.EnqueueAsync(() => this.Content = UIElement));
+                        }
+                    }
+                }
+                else if (Content is string ContentXAML && ContentXAML != default)
+                {
+                    UIElement UIElement = null;
+                    try
+                    {
+                        UIElement = await DispatcherQueue.EnqueueAsync(() => { return (UIElement)XamlReader.Load(ContentXAML); });
+                    }
+                    catch
+                    {
+                        UIElement = null;
+                    }
+                    finally
+                    {
+                        if (UIElement != null)
+                        {
+                            _ = (DispatcherQueue.EnqueueAsync(() => this.Content = UIElement));
+                        }
+                    }
+                }
+                else if (Content is Uri ContentUri && ContentUri != default)
+                {
+                    if (!NetworkHelper.Instance.ConnectionInformation.IsInternetAvailable) { return; }
+                    using HttpClient client = new();
+                    UIElement UIElement = null;
+                    try
+                    {
+                        string xaml = await client.GetStringAsync(ContentUri);
+                        UIElement = await DispatcherQueue.EnqueueAsync(() => { return (UIElement)XamlReader.Load(xaml); });
+                    }
+                    catch
+                    {
+                        try
+                        {
+                            string xaml = await client.GetStringAsync((await client.GetStringAsync(ContentUri.ToString().Replace("://raw.githubusercontent.com", "://raw.fastgit.org"))).Replace("://raw.githubusercontent.com", "://raw.fastgit.org"));
+                            UIElement = await DispatcherQueue.EnqueueAsync(() => { return (UIElement)XamlReader.Load(xaml); });
                         }
                         catch
                         {
                             UIElement = null;
                         }
                     }
-                }
-                finally
-                {
-                    if (UIElement != null)
+                    finally
                     {
-                        this.Content = UIElement;
+                        if (UIElement != null)
+                        {
+                            this.Content = UIElement;
+                        }
                     }
                 }
-            }
-            else if (Content is string ContentXAML && ContentXAML != default)
-            {
-                UIElement UIElement = null;
-                try
-                {
-                    UIElement = (UIElement)XamlReader.Load(ContentXAML);
-                }
-                catch
-                {
-                    UIElement = null;
-                }
-                finally
-                {
-                    if (UIElement != null)
-                    {
-                        this.Content = UIElement;
-                    }
-                }
-            }
-            else if (Content is Uri ContentUri && ContentUri != default)
-            {
-                if (!NetworkHelper.Instance.ConnectionInformation.IsInternetAvailable) { return; }
-                using HttpClient client = new();
-                UIElement UIElement = null;
-                try
-                {
-                    UIElement = (UIElement)XamlReader.Load(await client.GetStringAsync(ContentUri));
-                }
-                catch
-                {
-                    try
-                    {
-                        UIElement = (UIElement)XamlReader.Load((await client.GetStringAsync(ContentUri.ToString().Replace("://raw.githubusercontent.com", "://raw.fastgit.org"))).Replace("://raw.githubusercontent.com", "://raw.fastgit.org"));
-                    }
-                    catch
-                    {
-                        UIElement = null;
-                    }
-                }
-                finally
-                {
-                    if (UIElement != null)
-                    {
-                        this.Content = UIElement;
-                    }
-                }
-            }
+            });
         }
     }
 }

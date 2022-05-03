@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
+using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Resources;
 using Windows.Storage;
@@ -24,6 +25,8 @@ namespace APKInstaller.ViewModels.SettingsPages
 
         private readonly SettingsPage _page;
         private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("SettingsPage");
+
+        public static SettingsViewModel Caches;
 
         private IEnumerable<DeviceData> _deviceList;
         public IEnumerable<DeviceData> DeviceList
@@ -194,6 +197,17 @@ namespace APKInstaller.ViewModels.SettingsPages
             }
         }
 
+        private string _aboutTextBlockText;
+        public string AboutTextBlockText
+        {
+            get => _aboutTextBlockText;
+            set
+            {
+                _aboutTextBlockText = value;
+                RaisePropertyChangedEvent();
+            }
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void RaisePropertyChangedEvent([System.Runtime.CompilerServices.CallerMemberName] string name = null)
@@ -201,26 +215,32 @@ namespace APKInstaller.ViewModels.SettingsPages
             if (name != null) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
         }
 
-        public static string VersionTextBlockText
+        public string VersionTextBlockText
         {
             get
             {
                 string ver = $"{Package.Current.Id.Version.Major}.{Package.Current.Id.Version.Minor}.{Package.Current.Id.Version.Build}";
                 ResourceLoader loader = ResourceLoader.GetForViewIndependentUse();
                 string name = loader?.GetString("AppName") ?? "APK Installer";
+                GetAboutTextBlockText();
                 return $"{name} v{ver}";
             }
         }
 
-        public SettingsViewModel(SettingsPage Page) => _page = Page;
-
-        public void OnDeviceChanged(object sender, DeviceDataEventArgs e)
+        public async void GetAboutTextBlockText()
         {
-            _page.DispatcherQueue?.EnqueueAsync(() =>
-            {
-                DeviceList = new AdvancedAdbClient().GetDevices();
-            });
+            Uri dataUri = new Uri("ms-appx:///String/en-US/About.md");
+            StorageFile file = await StorageFile.GetFileFromApplicationUriAsync(dataUri);
+            AboutTextBlockText = await FileIO.ReadTextAsync(file);
         }
+
+        public SettingsViewModel(SettingsPage Page)
+        {
+            _page = Page;
+            Caches = this;
+        }
+
+        public void OnDeviceChanged(object sender, DeviceDataEventArgs e) => _ = (_page.DispatcherQueue?.EnqueueAsync(() => DeviceList = new AdvancedAdbClient().GetDevices()));
 
         public async void CheckUpdate()
         {
