@@ -1,4 +1,5 @@
-﻿using APKInstaller.Helpers;
+﻿using APKInstaller.Controls;
+using APKInstaller.Helpers;
 using APKInstaller.Pages.ToolsPages;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
@@ -32,6 +33,35 @@ namespace APKInstaller.Pages.SettingsPages
             }
         }
 
+        private double progressValue = 0;
+        internal double ProgressValue
+        {
+            get => progressValue;
+            set
+            {
+                TitleBar.SetProgressValue(value);
+                progressValue = value;
+            }
+        }
+
+        private bool isShowProgressRing = false;
+        internal bool IsShowProgressRing
+        {
+            get => isShowProgressRing;
+            set
+            {
+                if (value)
+                {
+                    TitleBar.ShowProgressRing();
+                }
+                else
+                {
+                    TitleBar.HideProgressRing();
+                }
+                isShowProgressRing = value;
+            }
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void RaisePropertyChangedEvent([System.Runtime.CompilerServices.CallerMemberName] string name = null)
@@ -62,7 +92,7 @@ namespace APKInstaller.Pages.SettingsPages
             }
         }
 
-        private void TitleBar_BackRequested(object sender, RoutedEventArgs e)
+        private void TitleBar_BackRequested(TitleBar sender, object e)
         {
             if (Frame.CanGoBack)
             {

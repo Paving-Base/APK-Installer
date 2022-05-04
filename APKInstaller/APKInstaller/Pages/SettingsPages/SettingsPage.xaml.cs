@@ -31,6 +31,10 @@ namespace APKInstaller.Pages.SettingsPages
             if (SettingsViewModel.Caches != null)
             {
                 Provider = SettingsViewModel.Caches;
+                if (new AdbServer().GetStatus().IsRunning)
+                {
+                    Provider.DeviceList = new AdvancedAdbClient().GetDevices();
+                }
             }
             else
             {
@@ -109,7 +113,7 @@ namespace APKInstaller.Pages.SettingsPages
             }
         }
 
-        private void TitleBar_BackRequested(object sender, RoutedEventArgs e)
+        private void TitleBar_BackRequested(TitleBar sender, object e)
         {
             if (Frame.CanGoBack)
             {

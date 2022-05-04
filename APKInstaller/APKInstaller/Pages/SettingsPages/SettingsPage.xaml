@@ -13,13 +13,18 @@
     d:DataContext="{d:DesignInstance Type=settingspages:SettingsViewModel}"
     mc:Ignorable="d">
     <Grid>
-        <Grid.ChildrenTransitions>
-            <TransitionCollection>
-                <EntranceThemeTransition />
-            </TransitionCollection>
-        </Grid.ChildrenTransitions>
-        <ScrollViewer Margin="{x:Bind helper:UIHelper.ScrollViewerMargin}" Padding="{x:Bind helper:UIHelper.ScrollViewerPadding}">
-            <StackPanel Margin="{x:Bind helper:UIHelper.StackPanelMargin}" Padding="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <controls:TitleBar
+            x:Name="TitleBar"
+            x:Uid="/SettingsPage/TitleBar"
+            BackRequested="TitleBar_BackRequested"
+            IsBackButtonVisible="True"
+            IsBackEnabled="{x:Bind Frame.CanGoBack}" />
+        <ScrollViewer Grid.Row="1">
+            <StackPanel Padding="16">
                 <StackPanel.ChildrenTransitions>
                     <TransitionCollection>
                         <ReorderThemeTransition />
@@ -199,10 +204,10 @@
                         <controls:SettingExpander.Content>
                             <Grid Style="{StaticResource ExpanderContentGridStyle}">
                                 <cwuc:MarkdownTextBlock
-                                    Text="{Binding AboutTextBlockText}"
                                     HorizontalAlignment="Left"
                                     Background="Transparent"
-                                    LinkClicked="MarkdownText_LinkClicked" />
+                                    LinkClicked="MarkdownText_LinkClicked"
+                                    Text="{Binding AboutTextBlockText}" />
                             </Grid>
                         </controls:SettingExpander.Content>
                     </controls:SettingExpander>
@@ -296,11 +301,5 @@
                 </controls:SettingsGroup>
             </StackPanel>
         </ScrollViewer>
-        <controls:TitleBar
-            x:Name="TitleBar"
-            x:Uid="/SettingsPage/TitleBar"
-            BackRequested="TitleBar_BackRequested"
-            BackgroundVisibility="Visible"
-            IsBackEnable="{x:Bind Frame.CanGoBack}" />
     </Grid>
 </Page>

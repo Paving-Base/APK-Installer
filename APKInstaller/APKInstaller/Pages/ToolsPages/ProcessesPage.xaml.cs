@@ -1,11 +1,14 @@
 ﻿using AdvancedSharpAdbClient;
 using AdvancedSharpAdbClient.DeviceCommands;
+using APKInstaller.Controls;
 using APKInstaller.Helpers;
 using APKInstaller.ViewModels.ToolsPages;
 using CommunityToolkit.WinUI;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -38,7 +41,7 @@ namespace APKInstaller.Pages.ToolsPages
 
         private void OnDeviceChanged(object sender, DeviceDataEventArgs e) => _ = DispatcherQueue.EnqueueAsync(Provider.GetDevices);
 
-        private void TitleBar_BackRequested(object sender, RoutedEventArgs e)
+        private void TitleBar_BackRequested(TitleBar sender, object e)
         {
             if (Frame.CanGoBack)
             {
@@ -48,27 +51,18 @@ namespace APKInstaller.Pages.ToolsPages
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            AdvancedAdbClient client = new();
-            Provider.Processes = DeviceExtensions.ListProcesses(client, Provider.devices[(sender as ComboBox).SelectedIndex]);
+            _ = Provider.GetProcess();
         }
 
-        private async void TitleBar_RefreshEvent(object sender, RoutedEventArgs e)
+        private void TitleBar_RefreshEvent(TitleBar sender, object e)
         {
-            TitleBar.ShowProgressRing();
-            await DispatcherQueue.EnqueueAsync(() =>
-            {
-                Provider.GetDevices();
-                TitleBar.ShowProgressRing();
-                AdvancedAdbClient client = new();
-                Provider.Processes = DeviceExtensions.ListProcesses(client, Provider.devices[DeviceComboBox.SelectedIndex]);
-            });
-            TitleBar.HideProgressRing();
+            _ = Provider.GetDevices().ContinueWith((Task) => _ = Provider.GetProcess());
         }
 
-        private async void ComboBox_Loaded(object sender, RoutedEventArgs e)
+        private void ComboBox_Loaded(object sender, RoutedEventArgs e)
         {
             Provider.DeviceComboBox = sender as ComboBox;
-            await DispatcherQueue.EnqueueAsync(Provider.GetDevices);
+            _ = Provider.GetDevices();
         }
     }
 }

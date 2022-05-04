@@ -1,6 +1,7 @@
 ﻿using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Automation;
 using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Markup;
 using System.ComponentModel;
 
 // To learn more about WinUI, the WinUI project structure,
@@ -8,6 +9,7 @@ using System.ComponentModel;
 
 namespace APKInstaller.Controls
 {
+    [ContentProperty(Name = "ActionContent")]
     [TemplateVisualState(Name = "Normal", GroupName = "CommonStates")]
     [TemplateVisualState(Name = "Disabled", GroupName = "CommonStates")]
     [TemplatePart(Name = PartIconPresenter, Type = typeof(ContentPresenter))]

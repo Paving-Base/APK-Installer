@@ -26,8 +26,8 @@ namespace APKInstaller.Pages
             UIHelper.DispatcherQueue = DispatcherQueue.GetForCurrentThread();
             if (UIHelper.HasTitleBar)
             {
+                LeftPadding.Width = new GridLength(120);
                 UIHelper.MainWindow.ExtendsContentIntoTitleBar = true;
-                CustomTitleBarRoot.HorizontalAlignment = HorizontalAlignment.Left;
                 Root.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Auto) });
                 Root.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
             }
@@ -71,7 +71,6 @@ namespace APKInstaller.Pages
                     //    HasBeenSmail = false;
                     //    UIHelper.MainWindow.SetTitleBar(CustomTitleBar);
                     //}
-                    CustomTitleBarRoot.Width = XamlRoot.Size.Width - 120;
                 }
                 else
                 {
