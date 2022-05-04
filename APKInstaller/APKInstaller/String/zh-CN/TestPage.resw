@@ -144,6 +144,24 @@
   <data name="ProcessesSettings.Header" xml:space="preserve">
     <value>进程</value>
   </data>
+  <data name="ProgressSettings.Description" xml:space="preserve">
+    <value>测试标题栏上的进度环</value>
+  </data>
+  <data name="ProgressSettings.Header" xml:space="preserve">
+    <value>进度</value>
+  </data>
+  <data name="SetProgressValue.Description" xml:space="preserve">
+    <value>设置进度环的值</value>
+  </data>
+  <data name="SetProgressValue.Header" xml:space="preserve">
+    <value>进度值</value>
+  </data>
+  <data name="ShowRefreshButton.Description" xml:space="preserve">
+    <value>显示标题栏上的刷新按钮</value>
+  </data>
+  <data name="ShowRefreshButton.Header" xml:space="preserve">
+    <value>刷新按钮</value>
+  </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>测试</value>
   </data>
