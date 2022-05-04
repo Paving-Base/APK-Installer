@@ -3,6 +3,7 @@ using AdvancedSharpAdbClient.DeviceCommands;
 using APKInstaller.Controls;
 using APKInstaller.Helpers;
 using APKInstaller.Pages.ToolsPages;
+using CommunityToolkit.WinUI;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Data;
@@ -10,6 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace APKInstaller.ViewModels.ToolsPages
 {
@@ -54,47 +56,66 @@ namespace APKInstaller.ViewModels.ToolsPages
             _page = page;
         }
 
-        public void GetDevices()
+        public async Task GetDevices()
         {
-            TitleBar.ShowProgressRing();
-            devices = new AdvancedAdbClient().GetDevices();
-            DeviceList.Clear();
-            if (devices.Count > 0)
+            await Task.Run(async () =>
             {
-                foreach (DeviceData device in devices)
+                _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.ShowProgressRing));
+                devices = new AdvancedAdbClient().GetDevices();
+                await _page?.DispatcherQueue.EnqueueAsync(DeviceList.Clear);
+                if (devices.Count > 0)
                 {
-                    if (!string.IsNullOrEmpty(device.Name))
+                    foreach (DeviceData device in devices)
                     {
-                        DeviceList.Add(device.Name);
+                        if (!string.IsNullOrEmpty(device.Name))
+                        {
+                            await _page?.DispatcherQueue.EnqueueAsync(() => DeviceList.Add(device.Name));
+                        }
+                        else if (!string.IsNullOrEmpty(device.Model))
+                        {
+                            await _page?.DispatcherQueue.EnqueueAsync(() => DeviceList.Add(device.Model));
+                        }
+                        else if (!string.IsNullOrEmpty(device.Product))
+                        {
+                            await _page?.DispatcherQueue.EnqueueAsync(() => DeviceList.Add(device.Product));
+                        }
+                        else if (!string.IsNullOrEmpty(device.Serial))
+                        {
+                            await _page?.DispatcherQueue.EnqueueAsync(() => DeviceList.Add(device.Serial));
+                        }
+                        else
+                        {
+                            await _page?.DispatcherQueue.EnqueueAsync(() => DeviceList.Add("Device"));
+                        }
                     }
-                    else if (!string.IsNullOrEmpty(device.Model))
+                    await _page?.DispatcherQueue.EnqueueAsync(() =>
                     {
-                        DeviceList.Add(device.Model);
-                    }
-                    else if (!string.IsNullOrEmpty(device.Product))
-                    {
-                        DeviceList.Add(device.Product);
-                    }
-                    else if (!string.IsNullOrEmpty(device.Serial))
-                    {
-                        DeviceList.Add(device.Serial);
-                    }
-                    else
-                    {
-                        DeviceList.Add("Device");
-                    }
+                        DeviceComboBox.ItemsSource = DeviceList;
+                        if (DeviceComboBox.SelectedIndex == -1)
+                        {
+                            DeviceComboBox.SelectedIndex = 0;
+                        }
+                    });
                 }
-                DeviceComboBox.ItemsSource = DeviceList;
-                if (DeviceComboBox.SelectedIndex == -1)
+                else if (Processes != null)
                 {
-                    DeviceComboBox.SelectedIndex = 0;
+                    await _page?.DispatcherQueue.EnqueueAsync(() => Processes = null);
                 }
-            }
-            else if (Processes != null)
+                _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.HideProgressRing));
+            });
+        }
+
+        public async Task GetProcess()
+        {
+            await Task.Run(async () =>
             {
-                Processes = null;
-            }
-            TitleBar.HideProgressRing();
+                _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.ShowProgressRing));
+                AdvancedAdbClient client = new();
+                var device = await _page?.DispatcherQueue.EnqueueAsync(() => { return devices[DeviceComboBox.SelectedIndex]; });
+                IEnumerable<AndroidProcess> list = DeviceExtensions.ListProcesses(client, device);
+                await _page?.DispatcherQueue.EnqueueAsync(() => Processes = list);
+                _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.HideProgressRing));
+            });
         }
     }
 

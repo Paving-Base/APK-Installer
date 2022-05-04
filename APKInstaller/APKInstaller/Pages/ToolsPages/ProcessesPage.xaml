@@ -15,8 +15,28 @@
         <toolspages:ProcesseConverter x:Key="TextConverter" />
     </Page.Resources>
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Controls:TitleBar
+            x:Name="TitleBar"
+            x:Uid="/ProcessesPage/TitleBar"
+            BackRequested="TitleBar_BackRequested"
+            IsBackButtonVisible="True"
+            IsBackEnabled="{x:Bind Frame.CanGoBack}"
+            IsRefreshButtonVisible="True"
+            IsRefreshEnabled="True"
+            RefreshRequested="TitleBar_RefreshEvent">
+            <ComboBox
+                x:Name="DeviceComboBox"
+                x:Uid="/ProcessesPage/DeviceComboBox"
+                VerticalAlignment="Center"
+                Loaded="ComboBox_Loaded"
+                SelectionChanged="ComboBox_SelectionChanged" />
+        </Controls:TitleBar>
         <controls:DataGrid
-            Margin="{x:Bind helper:UIHelper.StackPanelMargin}"
+            Grid.Row="1"
             AutoGenerateColumns="False"
             CanUserReorderColumns="True"
             CanUserResizeColumns="True"
@@ -46,22 +66,5 @@
                     Tag="Detail" />
             </controls:DataGrid.Columns>
         </controls:DataGrid>
-        <Controls:TitleBar
-            x:Name="TitleBar"
-            x:Uid="/ProcessesPage/TitleBar"
-            BackRequested="TitleBar_BackRequested"
-            BackgroundVisibility="Visible"
-            IsBackEnable="{x:Bind Frame.CanGoBack}"
-            RefreshButtonVisibility="Visible"
-            RefreshEvent="TitleBar_RefreshEvent">
-            <Controls:TitleBar.RightAreaContent>
-                <ComboBox
-                    x:Name="DeviceComboBox"
-                    x:Uid="/ProcessesPage/DeviceComboBox"
-                    VerticalAlignment="Center"
-                    Loaded="ComboBox_Loaded"
-                    SelectionChanged="ComboBox_SelectionChanged" />
-            </Controls:TitleBar.RightAreaContent>
-        </Controls:TitleBar>
     </Grid>
 </Page>

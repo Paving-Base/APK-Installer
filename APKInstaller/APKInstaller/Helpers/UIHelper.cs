@@ -30,10 +30,7 @@ namespace APKInstaller.Helpers
     {
         public static bool HasTitleBar = !AppWindowTitleBar.IsCustomizationSupported();
         public static double TitleBarHeight => HasTitleBar ? 28 : 32;
-        public static double PageTitleHeight => HasTitleBar ? 48 : 48 + TitleBarHeight;
-        public static Thickness StackPanelMargin => new(0, PageTitleHeight, 0, 0);
-        public static Thickness ScrollViewerMargin => new(0, PageTitleHeight, 0, 0);
-        public static Thickness ScrollViewerPadding => new(0, -PageTitleHeight, 0, 0);
+        public static double PageTitlePadding => HasTitleBar ? 0 : TitleBarHeight;
 
         private static DispatcherQueue _dispatcherQueue;
         public static DispatcherQueue DispatcherQueue
@@ -59,15 +56,38 @@ namespace APKInstaller.Helpers
         {
             if (!HasTitleBar)
             {
-                bool IsDark = IsDarkTheme(SettingsHelper.Theme);
-
-                Color ForegroundColor = IsDark ? Colors.White : Colors.Black;
-                Color BackgroundColor = (Color)Application.Current.Resources["SolidBackgroundFillColorBase"];
-
                 AppWindowTitleBar TitleBar = GetAppWindowForCurrentWindow().TitleBar;
-                TitleBar.ForegroundColor = TitleBar.ButtonForegroundColor = ForegroundColor;
-                TitleBar.BackgroundColor = TitleBar.InactiveBackgroundColor = BackgroundColor;
-                TitleBar.ButtonBackgroundColor = TitleBar.ButtonInactiveBackgroundColor = Colors.Transparent;
+
+                ResourceDictionary ResourceDictionary = new ResourceDictionary();
+                ResourceDictionary.Source = new Uri("ms-appx:///Controls/TitleBar/TitleBar_themeresources.xaml");
+
+                // rest colors
+                var buttonForegroundColor = (Color)ResourceDictionary["TitleBarButtonForegroundColor"];
+                TitleBar.ButtonForegroundColor = buttonForegroundColor;
+
+                var buttonBackgroundColor = (Color)ResourceDictionary["TitleBarButtonBackgroundColor"];
+                TitleBar.ButtonBackgroundColor = buttonBackgroundColor;
+                TitleBar.ButtonInactiveBackgroundColor = buttonBackgroundColor;
+
+                // hover colors
+                var buttonHoverForegroundColor = (Color)ResourceDictionary["TitleBarButtonHoverForegroundColor"];
+                TitleBar.ButtonHoverForegroundColor = buttonHoverForegroundColor;
+
+                var buttonHoverBackgroundColor = (Color)ResourceDictionary["TitleBarButtonHoverBackgroundColor"];
+                TitleBar.ButtonHoverBackgroundColor = buttonHoverBackgroundColor;
+
+                // pressed colors
+                var buttonPressedForegroundColor = (Color)ResourceDictionary["TitleBarButtonPressedForegroundColor"];
+                TitleBar.ButtonPressedForegroundColor = buttonPressedForegroundColor;
+
+                var buttonPressedBackgroundColor = (Color)ResourceDictionary["TitleBarButtonPressedBackgroundColor"];
+                TitleBar.ButtonPressedBackgroundColor = buttonPressedBackgroundColor;
+
+                // inactive foreground
+                var buttonInactiveForegroundColor = (Color)ResourceDictionary["TitleBarButtonInactiveForegroundColor"];
+                TitleBar.ButtonInactiveForegroundColor = buttonInactiveForegroundColor;
+
+                TitleBar.BackgroundColor = (Color)Application.Current.Resources["SolidBackgroundFillColorBase"];
             }
         }
     }
@@ -94,7 +114,7 @@ namespace APKInstaller.Helpers
 
         public static AppWindow GetAppWindowForCurrentWindow(this Window window)
         {
-            IntPtr hWnd = WinRT.Interop.WindowNative.GetWindowHandle(window);
+            IntPtr hWnd = WindowNative.GetWindowHandle(window);
             WindowId myWndId = Win32Interop.GetWindowIdFromWindow(hWnd);
             return AppWindow.GetFromWindowId(myWndId);
         }

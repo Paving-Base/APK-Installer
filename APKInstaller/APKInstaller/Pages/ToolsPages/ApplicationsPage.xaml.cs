@@ -42,7 +42,7 @@ namespace APKInstaller.Pages.ToolsPages
 
         private void OnDeviceChanged(object sender, DeviceDataEventArgs e) => _ = DispatcherQueue.EnqueueAsync(Provider.GetDevices);
 
-        private void TitleBar_BackRequested(object sender, RoutedEventArgs e)
+        private void TitleBar_BackRequested(TitleBar sender, object e)
         {
             if (Frame.CanGoBack)
             {
@@ -50,16 +50,15 @@ namespace APKInstaller.Pages.ToolsPages
             }
         }
 
-        private async void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            TitleBar.ShowProgressRing();
-            int index = DeviceComboBox.SelectedIndex;
-            PackageManager manager = new(new AdvancedAdbClient(), Provider.devices[DeviceComboBox.SelectedIndex]);
-            Provider.Applications = await Task.Run(() => { return Provider.CheckAPP(manager.Packages, index); });
-            TitleBar.HideProgressRing();
+            _ = Provider.GetApps();
         }
 
-        private async void TitleBar_RefreshEvent(object sender, RoutedEventArgs e) => await Provider.Refresh();
+        private void TitleBar_RefreshEvent(TitleBar sender, object e)
+        {
+            _ = Provider.GetDevices().ContinueWith((Task) => _ = Provider.GetApps());
+        }
 
         private void ListViewItem_RightTapped(object sender, RightTappedRoutedEventArgs e)
         {
@@ -88,22 +87,16 @@ namespace APKInstaller.Pages.ToolsPages
         {
             ListView ListView = sender as ListView;
             ItemsStackPanel StackPanel = ListView.FindDescendant<ItemsStackPanel>();
-            ScrollViewer ScrollViewer = ListView.FindDescendant<ScrollViewer>();
             if (StackPanel != null)
             {
-                StackPanel.Margin = new Thickness(14, UIHelper.StackPanelMargin.Top + 16, 14, 16);
-            }
-            if (ScrollViewer != null)
-            {
-                ScrollViewer.Margin = UIHelper.ScrollViewerMargin;
-                ScrollViewer.Padding = UIHelper.ScrollViewerPadding;
+                StackPanel.Margin = new Thickness(14, 16, 14, 16);
             }
         }
 
-        private async void ComboBox_Loaded(object sender, RoutedEventArgs e)
+        private void ComboBox_Loaded(object sender, RoutedEventArgs e)
         {
             Provider.DeviceComboBox = sender as ComboBox;
-            await DispatcherQueue.EnqueueAsync(Provider.GetDevices);
+            _ = Provider.GetDevices();
         }
     }
 }

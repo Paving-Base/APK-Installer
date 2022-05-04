@@ -8,55 +8,49 @@
     NavigationCacheMode="Enabled"
     SizeChanged="Page_SizeChanged"
     mc:Ignorable="d">
+    <Page.Resources>
+        <ResourceDictionary Source="ms-appx:///Controls/TitleBar/TitleBar.xaml" />
+    </Page.Resources>
+
     <Grid x:Name="Root">
         <Grid.ChildrenTransitions>
             <TransitionCollection>
                 <EntranceThemeTransition />
             </TransitionCollection>
         </Grid.ChildrenTransitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition x:Name="LeftPadding" />
+        </Grid.ColumnDefinitions>
         <Grid
-            x:Name="CustomTitleBarRoot"
-            Grid.Row="0"
+            x:Name="CustomTitleBar"
+            Grid.Column="1"
+            Height="{x:Bind helper:UIHelper.TitleBarHeight}"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Top"
-            Canvas.ZIndex="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="auto" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Grid
-                x:Name="CustomTitleBar"
-                Grid.Column="1"
-                Height="{x:Bind helper:UIHelper.TitleBarHeight}"
-                Background="{StaticResource ApplicationPageBackgroundThemeBrush}" />
+            Background="{StaticResource ApplicationPageBackgroundThemeBrush}" />
+        <Border
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="{StaticResource ApplicationPageBackgroundThemeBrush}"
+            Canvas.ZIndex="1"
+            Visibility="{x:Bind CoreAppFrame.CanGoBack, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='true'}">
             <Button
                 x:Name="AboutButton"
-                Grid.Column="0"
+                x:Uid="/TitleBar/AboutButton"
                 Width="{x:Bind helper:UIHelper.TitleBarHeight}"
                 Height="{x:Bind helper:UIHelper.TitleBarHeight}"
-                HorizontalAlignment="Left"
-                VerticalAlignment="Top"
-                Background="{StaticResource ApplicationPageBackgroundThemeBrush}"
-                BorderThickness="2"
+                Margin="0"
                 Click="Button_Click"
                 IsTabStop="True"
-                Style="{StaticResource ButtonRevealStyle}"
-                Visibility="{x:Bind CoreAppFrame.CanGoBack, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='true'}">
-                <StackPanel>
-                    <TextBlock
-                        Margin="-10"
-                        HorizontalAlignment="Center"
-                        VerticalAlignment="Center"
-                        FontFamily="Segoe MDL2 Assets"
-                        FontSize="18"
-                        Foreground="{StaticResource ApplicationPageBackgroundThemeBrush}"
-                        Text="" />
-                </StackPanel>
-            </Button>
-        </Grid>
+                Style="{StaticResource TitleBarSettingsButtonStyle}"
+                ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" />
+        </Border>
         <Frame
             x:Name="CoreAppFrame"
             Grid.Row="1"
+            Grid.ColumnSpan="3"
             x:FieldModifier="Public"
             Background="{StaticResource ApplicationPageBackgroundThemeBrush}" />
     </Grid>

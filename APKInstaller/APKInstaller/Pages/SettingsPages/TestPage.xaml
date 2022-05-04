@@ -9,13 +9,19 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Grid>
-        <Grid.ChildrenTransitions>
-            <TransitionCollection>
-                <EntranceThemeTransition />
-            </TransitionCollection>
-        </Grid.ChildrenTransitions>
-        <ScrollViewer Margin="{x:Bind helper:UIHelper.ScrollViewerMargin}" Padding="{x:Bind helper:UIHelper.ScrollViewerPadding}">
-            <StackPanel Margin="{x:Bind helper:UIHelper.StackPanelMargin}" Padding="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <contorls:TitleBar
+            x:Name="TitleBar"
+            x:Uid="/TestPage/TitleBar"
+            BackRequested="TitleBar_BackRequested"
+            IsBackButtonVisible="True"
+            IsBackEnabled="{x:Bind Frame.CanGoBack}"
+            IsRefreshEnabled="True" />
+        <ScrollViewer Grid.Row="1">
+            <StackPanel Padding="16">
                 <StackPanel.ChildrenTransitions>
                     <TransitionCollection>
                         <ReorderThemeTransition />
@@ -27,9 +33,40 @@
                             <ToggleSwitch IsOn="{x:Bind IsExtendsTitleBar, Mode=TwoWay}" Style="{StaticResource ToggleSwitchSettingStyle}" />
                         </contorls:Setting.ActionContent>
                     </contorls:Setting>
+                    <contorls:SettingExpander>
+                        <contorls:SettingExpander.Header>
+                            <contorls:Setting x:Uid="/TestPage/ProgressSettings" Icon="&#xF16A;">
+                                <contorls:Setting.ActionContent>
+                                    <ToggleSwitch IsOn="{x:Bind IsShowProgressRing, Mode=TwoWay}" Style="{StaticResource ToggleSwitchSettingStyle}" />
+                                </contorls:Setting.ActionContent>
+                            </contorls:Setting>
+                        </contorls:SettingExpander.Header>
+                        <contorls:SettingExpander.Content>
+                            <StackPanel>
+                                <contorls:Setting x:Uid="/TestPage/SetProgressValue" Style="{StaticResource ExpanderContentSettingStyle}">
+                                    <contorls:Setting.ActionContent>
+                                        <Slider
+                                            Width="180"
+                                            HorizontalAlignment="Stretch"
+                                            VerticalAlignment="Center"
+                                            Maximum="100"
+                                            Value="{x:Bind ProgressValue, Mode=TwoWay}" />
+                                    </contorls:Setting.ActionContent>
+                                </contorls:Setting>
+                                <contorls:Setting x:Uid="/TestPage/ShowRefreshButton" Style="{StaticResource ExpanderContentSettingStyle}">
+                                    <contorls:Setting.ActionContent>
+                                        <ToggleSwitch IsOn="{x:Bind TitleBar.IsRefreshButtonVisible, Mode=TwoWay}" Style="{StaticResource ToggleSwitchSettingStyle}" />
+                                    </contorls:Setting.ActionContent>
+                                </contorls:Setting>
+                            </StackPanel>
+                        </contorls:SettingExpander.Content>
+                    </contorls:SettingExpander>
                     <contorls:Setting x:Uid="/TestPage/LanguageSettings" Icon="&#xF2B7;">
                         <contorls:Setting.ActionContent>
-                            <ComboBox SelectionChanged="ComboBox_SelectionChanged" Loaded="ComboBox_Loaded" ItemsSource="{x:Bind helper:LanguageHelper.SupportCultures}">
+                            <ComboBox
+                                ItemsSource="{x:Bind helper:LanguageHelper.SupportCultures}"
+                                Loaded="ComboBox_Loaded"
+                                SelectionChanged="ComboBox_SelectionChanged">
                                 <ComboBox.ItemTemplate>
                                     <DataTemplate x:DataType="globalization:CultureInfo">
                                         <TextBlock>
@@ -72,10 +109,5 @@
                 </contorls:SettingsGroup>
             </StackPanel>
         </ScrollViewer>
-        <contorls:TitleBar
-            x:Uid="/TestPage/TitleBar"
-            BackRequested="TitleBar_BackRequested"
-            BackgroundVisibility="Visible"
-            IsBackEnable="{x:Bind Frame.CanGoBack}" />
     </Grid>
 </Page>
