@@ -121,9 +121,9 @@
     <value>Ajustes</value>
   </data>
   <data name="BackButton.Tag" xml:space="preserve">
-    <value>Back</value>
+    <value>Atrás</value>
   </data>
   <data name="RefreshButton.Tag" xml:space="preserve">
-    <value>Refresh</value>
+    <value>Refrescar</value>
   </data>
 </root>
