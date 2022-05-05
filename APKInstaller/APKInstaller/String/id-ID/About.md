@@ -1,22 +1,22 @@
-#### Welcome to the APK Installer!
+#### Selamat datang di Penginstal APK!
 
-##### Declaration
-1. Please follow the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. This program is open source software, so please make sure that the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) to keep your data safe.
-3. If the source of the program is not abnormal, all your data will only be used to run with the program or stored locally during the program running, and the developer will not steal any of your data. But even so, please pay attention to the security of the use environment.
-4. The translation of the text of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts do not represent the author's views.
+##### Pernyataan
+1. Harap ikuti [Perjanjian Lisensi Pengguna Akhir Penginstal APK dan Kebijakan Privasi](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+2. Program ini adalah perangkat lunak open source, jadi pastikan program tersebut berasal dari [repositori GitHub ini](https://github.com/Paving-Base/APK-Installer) atau [aplikasi ini](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) untuk menjaga keamanan data Anda.
+3. Jika sumber program tidak abnormal, semua data Anda hanya akan digunakan untuk menjalankan program atau disimpan secara lokal selama program berjalan, dan pengembang tidak akan mencuri data Anda. Namun demikian, harap perhatikan keamanan lingkungan penggunaan.
+4. Terjemahan teks aplikasi ini berasal dari komunitas [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin"), dan semua teks tidak mewakili pandangan penulis.
 
 ##### Terjemahkan
-Thanks to [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") translators for their support. If there is any problem with the translation, please come and correct it.
+Terima kasih kepada penerjemah [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") atas dukungan mereka. Jika ada masalah dengan terjemahan, silakan datang dan perbaiki.
 
-##### Contributors
+##### Kontributor
 - [wherewhere](https://github.com/wherewhere)
 - [Void48](https://github.com/Void48)
 - [EP012014](https://github.com/EP012014)
 - [A Big Salty Fish](https://github.com/bigsaltyfishes)
 - [sam1357](https://github.com/sam1357)
 
-##### Citations and References
+##### Kutipan dan Referensi
 - [WinUI](https://github.com/microsoft/microsoft-ui-xaml "WinUI")
 - [AAPTForNet](https://github.com/canheo136/QuickLook.Plugin.ApkViewer "AAPTForNet")
 - [Sharp Compress](https://github.com/adamhathcock/sharpcompress "Sharp Compress")
