@@ -1,22 +1,22 @@
-#### Welcome to the APK Installer!
+#### Witaj w APK Installer!
 
-##### Declaration
-1. Please follow the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. This program is open source software, so please make sure that the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) to keep your data safe.
-3. If the source of the program is not abnormal, all your data will only be used to run with the program or stored locally during the program running, and the developer will not steal any of your data. But even so, please pay attention to the security of the use environment.
-4. The translation of the text of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts do not represent the author's views.
+##### Deklaracja
+1. Postępuj zgodnie z [Umową licencyjną użytkownika Apk Installer](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+2. Ten program jest oprogramowaniem open source, więc upewnij się, że program pochodzi z [tego repozytorium Github](https://github.com/Paving-Base/APK-Installer) lub [tej aplikacji](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) , aby zachować bezpieczeństwo twoich danych.
+3. Jeśli źródło programu nie jest nieprawidłowe, wszystkie Twoje dane będą używane tylko do uruchamiania z programem lub przechowywane lokalnie podczas uruchamiania programu, a deweloper nie będzie kradł żadnych twoich danych. Jednak mimo to proszę zwrócić uwagę na bezpieczeństwo środowiska użytkowania.
+4. Tłumaczenie tekstu tej aplikacji pochodzi ze społeczności [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") i wszystkie teksty nie reprezentują poglądów autora.
 
-##### Translate
-Thanks to [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") translators for their support. If there is any problem with the translation, please come and correct it.
+##### Przetłumacz
+Dziękujemy tłumaczom [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") za ich wsparcie. Jeśli wystąpił jakiś problem z tłumaczeniem, przyjdź i popraw to.
 
-##### Contributors
+##### Współtwórcy
 - [wherewhere](https://github.com/wherewhere)
 - [Void48](https://github.com/Void48)
 - [EP012014](https://github.com/EP012014)
 - [A Big Salty Fish](https://github.com/bigsaltyfishes)
 - [sam1357](https://github.com/sam1357)
 
-##### Citations and References
+##### Cytaty i odniesienia
 - [WinUI](https://github.com/microsoft/microsoft-ui-xaml "WinUI")
 - [AAPTForNet](https://github.com/canheo136/QuickLook.Plugin.ApkViewer "AAPTForNet")
 - [Sharp Compress](https://github.com/adamhathcock/sharpcompress "Sharp Compress")
