@@ -193,7 +193,7 @@
     <value>Dukungan</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer adalah aplikasi open source, dan tidak akan disisipkan iklan apapun untuk keuntungan. Jika Anda menyukai aplikasi ini, jangan lupa untuk menilai di toko. Tentu saja, akan lebih baik jika Anda bisa menyumbang sedikit. Terima kasih atas dukungan Anda 💕.</value>
+    <value>Penginstal APK adalah aplikasi open source, dan tidak akan disisipkan iklan apapun untuk keuntungan. Jika Anda menyukai aplikasi ini, jangan lupa untuk menilai di toko. Tentu saja, akan lebih baik jika Anda bisa menyumbang sedikit. Terima kasih atas dukungan Anda 💕.</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
@@ -205,7 +205,7 @@
     <value>Temukan Pembaruan</value>
   </data>
   <data name="GithubLink.Content" xml:space="preserve">
-    <value>Github</value>
+    <value>GitHub</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>Pergi ke halaman tes.</value>
