@@ -118,114 +118,114 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, the Android Debug Bridge, is needed for APK Installer to work. Click "Download" to download it. By downloading, you accept the Google Terms and Conditions for ADB. If you have already downloaded ADB, click "Select" to select it.</value>
+    <value>ADB, czyli Android Debug Bridge, jest wymagane do funkcjonowania APK Installer. Naciśnij na "Pobierz", aby pobrać ADB. Pobierając, wyrażasz zgodę na Warunki użytkowania Google odnośnie ADB. Jeśli już pobrano ADB, naciśnij na "Wybierz", aby wybrać.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Exist</value>
+    <value>Wykryto ADB</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>ADB is missing</value>
+    <value>Brakuje ADB</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Capabilities: </value>
+    <value>Uprawnienia: </value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Anuluj</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Cannot Connect to WSA</value>
+    <value>Nie można połączyć z WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>WSA may not start properly, or there is a problem with ADB. This situation can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
+    <value>WSA może się nie rozpoczynać prawidłowo lub istnieje problem z ADB. Sytuację tę może być bardzo trudno rozwiązać. Uruchom ponownie instalator. Jeśli nadal nie działa, spróbuj ponownie uruchomić komputer.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>Cannot open app package</value>
+    <value>Nie można otworzyć pakietu aplikacji</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>Checking...</value>
+    <value>Sprawdzanie...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Checking ADB...</value>
+    <value>Sprawdzanie ADB...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Click here to read them</value>
+    <value>Naciśnij tutaj, aby je przeczytać</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Close</value>
+    <value>Zamknij</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>Devices</value>
+    <value>Urządzenia</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Download</value>
+    <value>Pobierz</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>Download Failed</value>
+    <value>Pobieranie nie powiodło się</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>Please check your network connection or the URL and try again.</value>
+    <value>Sprawdź swoje połączenie z Internetem lub poprawność adresu URL i spróbuj ponownie.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>Finding WSA...</value>
+    <value>Szukanie WSA...</value>
   </data>
   <data name="Finished" xml:space="preserve">
-    <value>Finished</value>
+    <value>Zakończono</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>WSA Found</value>
+    <value>Znaleziono WSA</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>Go to Setting</value>
+    <value>Przejdź do Ustawień</value>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>How to connect WSA?</value>
+    <value>Jak połączyć WSA?</value>
   </data>
   <data name="IKnow" xml:space="preserve">
-    <value>I Know</value>
+    <value>Wiem</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>Install</value>
+    <value>Zainstaluj</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
-    <value>{0} is ready!</value>
+    <value>{0} jest gotowe!</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
-    <value>Install {0}?</value>
+    <value>Zainstalować {0}?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
-    <value>Installing...</value>
+    <value>Instalowanie...</value>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
-    <value>Reason: </value>
+    <value>Powód: </value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
-    <value>Install WSA</value>
+    <value>Zainstaluj WSA</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
-    <value>The package is either corrupted or invalid.</value>
+    <value>Pakiet jest uszkodzony lub nieprawidłowy.</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
-    <value>The URL is either Incomplete or invalid.</value>
+    <value>Adres URL nie jest kompletny lub jest nieprawidłowy.</value>
   </data>
   <data name="Launch" xml:space="preserve">
-    <value>Launch</value>
+    <value>Uruchom</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
-    <value>Launching WSA...</value>
+    <value>Uruchamianie WSA...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>Launch when ready</value>
+    <value>Uruchom kiedy będzie gotowe</value>
   </data>
   <data name="Loading" xml:space="preserve">
-    <value>Loading...</value>
+    <value>Ładowanie...</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
-    <value>Cannot find Android Device</value>
+    <value>Nie znaleziono urządzenia z Androidem</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>You can install WSA. Or go to Settings to connect Device.</value>
+    <value>Możesz zainstalować WSA. Lub przejdź do Ustawień, aby połączyć urządzenie.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
     <value>You can go to Settings to connect Device.</value>
