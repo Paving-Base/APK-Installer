@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, Android Debug Bridge, diperlukan agar APK Installer berfungsi. Klik "Unduh" untuk mengunduhnya. Dengan mengunduh, Anda menerima Persyaratan dan Ketentuan Google untuk ADB. Jika Anda sudah mengunduh ADB, klik "Pilih" untuk memilihnya.</value>
+    <value>ADB, Android Debug Bridge, diperlukan agar Penginstal APK berfungsi. Klik "Unduh" untuk mengunduhnya. Dengan mengunduh, Anda menerima Persyaratan dan Ketentuan Google untuk ADB. Jika Anda sudah mengunduh ADB, klik "Pilih" untuk memilihnya.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>Ada ADB</value>
