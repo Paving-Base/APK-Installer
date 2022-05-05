@@ -121,9 +121,9 @@
     <value>Pengaturan</value>
   </data>
   <data name="BackButton.Tag" xml:space="preserve">
-    <value>Back</value>
+    <value>Kembali</value>
   </data>
   <data name="RefreshButton.Tag" xml:space="preserve">
-    <value>Refresh</value>
+    <value>Segarkan</value>
   </data>
 </root>
