@@ -124,7 +124,7 @@
     <value>Arquivos APK</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>An Android App Installer. Written by @wherewhere and @Tangent-90.</value>
+    <value>Um instalador de aplicativos Android. Escrito por @wherewhere e @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
     <value>Instalador APK</value>
