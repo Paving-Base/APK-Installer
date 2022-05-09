@@ -111,7 +111,7 @@ namespace APKInstaller.ViewModels.ToolsPages
             {
                 _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.ShowProgressRing));
                 AdvancedAdbClient client = new();
-                var device = await _page?.DispatcherQueue.EnqueueAsync(() => { return devices[DeviceComboBox.SelectedIndex]; });
+                DeviceData device = await _page?.DispatcherQueue.EnqueueAsync(() => { return devices[DeviceComboBox.SelectedIndex]; });
                 IEnumerable<AndroidProcess> list = DeviceExtensions.ListProcesses(client, device);
                 await _page?.DispatcherQueue.EnqueueAsync(() => Processes = list);
                 _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.HideProgressRing));

@@ -34,6 +34,7 @@ namespace APKInstaller.Pages
             else
             {
                 AppWindow.TitleBar.ExtendsContentIntoTitleBar = true;
+                ActualThemeChanged += (sender, arg) => UIHelper.CheckTheme();
                 UIHelper.CheckTheme();
             }
             //UIHelper.MainWindow.SetTitleBar(CustomTitleBar);

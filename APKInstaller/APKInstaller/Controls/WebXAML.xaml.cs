@@ -98,7 +98,7 @@ namespace APKInstaller.Controls
                     {
                         if (UIElement != null)
                         {
-                            _ = (DispatcherQueue.EnqueueAsync(() => this.Content = UIElement));
+                            _ = DispatcherQueue.EnqueueAsync(() => this.Content = UIElement);
                         }
                     }
                 }
@@ -117,7 +117,7 @@ namespace APKInstaller.Controls
                     {
                         if (UIElement != null)
                         {
-                            _ = (DispatcherQueue.EnqueueAsync(() => this.Content = UIElement));
+                            _ = DispatcherQueue.EnqueueAsync(() => this.Content = UIElement);
                         }
                     }
                 }

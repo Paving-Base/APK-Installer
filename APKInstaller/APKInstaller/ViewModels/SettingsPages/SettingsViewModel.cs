@@ -232,7 +232,7 @@ namespace APKInstaller.ViewModels.SettingsPages
             await Task.Run(async () =>
             {
                 string langcode = LanguageHelper.GetCurrentLanguage();
-                Uri dataUri = new Uri($"ms-appx:///String/{langcode}/About.md");
+                Uri dataUri = new($"ms-appx:///String/{langcode}/About.md");
                 StorageFile file = await StorageFile.GetFileFromApplicationUriAsync(dataUri);
                 string markdown = await FileIO.ReadTextAsync(file);
                 _ = _page?.DispatcherQueue.EnqueueAsync(() => AboutTextBlockText = markdown);

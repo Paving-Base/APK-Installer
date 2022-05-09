@@ -29,6 +29,7 @@ namespace APKInstaller.Pages.SettingsPages
                 else
                 {
                     UIHelper.GetAppWindowForCurrentWindow().TitleBar.ExtendsContentIntoTitleBar = value;
+                    UIHelper.CheckTheme();
                 }
             }
         }

@@ -26,7 +26,7 @@
     <TargetPlatformMaxVersion>10.0.22000.0</TargetPlatformMaxVersion>
     <TargetPlatformMinVersion>10.0.18362.0</TargetPlatformMinVersion>
     <UseWinUI>true</UseWinUI>
-    <VersionPrefix>0.1.14</VersionPrefix>
+    <VersionPrefix>0.1.15</VersionPrefix>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="AppPackages\**" />
@@ -297,11 +297,6 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="Controls\WebXAML.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <Page Update="Themes\CommonStyles.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>

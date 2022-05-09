@@ -21,7 +21,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto" />
             <ColumnDefinition Width="*" />
-            <ColumnDefinition x:Name="LeftPadding" />
+            <ColumnDefinition x:Name="LeftPadding" Width="0" />
         </Grid.ColumnDefinitions>
         <Grid
             x:Name="CustomTitleBar"

@@ -21,6 +21,7 @@
             <Color x:Key="TitleBarButtonInactiveForegroundColor">#717171</Color>
             <!--  TextFillColorTertiary over SolidBackgroundFillColorBase  -->
 
+            <StaticResource x:Key="TitleBarBackgroudColor" ResourceKey="SolidBackgroundFillColorBase" />
             <StaticResource x:Key="TitleBarButtonBackgroundColor" ResourceKey="SubtleFillColorTransparent" />
             <StaticResource x:Key="TitleBarButtonHoverBackgroundColor" ResourceKey="SubtleFillColorSecondary" />
             <StaticResource x:Key="TitleBarButtonPressedBackgroundColor" ResourceKey="SubtleFillColorTertiary" />
@@ -43,6 +44,7 @@
             <Color x:Key="TitleBarButtonInactiveForegroundColor">#9b9b9b</Color>
             <!--  TextFillColorTertiary over SolidBackgroundFillColorBase  -->
 
+            <StaticResource x:Key="TitleBarBackgroudColor" ResourceKey="SolidBackgroundFillColorBase" />
             <StaticResource x:Key="TitleBarButtonBackgroundColor" ResourceKey="SubtleFillColorTransparent" />
             <StaticResource x:Key="TitleBarButtonHoverBackgroundColor" ResourceKey="SubtleFillColorSecondary" />
             <StaticResource x:Key="TitleBarButtonPressedBackgroundColor" ResourceKey="SubtleFillColorTertiary" />
@@ -60,6 +62,7 @@
             <StaticResource x:Key="TitleBarButtonPressedForegroundColor" ResourceKey="TextFillColorSecondary" />
             <StaticResource x:Key="TitleBarButtonInactiveForegroundColor" ResourceKey="TextFillColorTertiary" />
 
+            <StaticResource x:Key="TitleBarBackgroudColor" ResourceKey="SystemColorWindowColor" />
             <StaticResource x:Key="TitleBarButtonBackgroundColor" ResourceKey="SubtleFillColorTransparent" />
             <StaticResource x:Key="TitleBarButtonHoverBackgroundColor" ResourceKey="SubtleFillColorSecondary" />
             <StaticResource x:Key="TitleBarButtonPressedBackgroundColor" ResourceKey="SubtleFillColorTertiary" />

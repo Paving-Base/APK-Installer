@@ -16,15 +16,6 @@
             <converters:StringVisibilityConverter x:Key="StringVisibilityConverter" />
             <converters:CollectionVisibilityConverter x:Key="CollectionVisibilityConverter" />
             <converters:DoubleToVisibilityConverter x:Key="DoubleToVisibilityConverter" GreaterThan="0" />
-            <Style
-                x:Key="IconButtonStyle"
-                BasedOn="{StaticResource ButtonRevealStyle}"
-                TargetType="Button">
-                <Setter Property="Width" Value="40" />
-                <Setter Property="Height" Value="40" />
-                <Setter Property="Padding" Value="0" />
-                <Setter Property="Background" Value="Transparent" />
-            </Style>
             <SolidColorBrush x:Key="WindowCaptionBackground" Color="{ThemeResource SolidBackgroundFillColorBase}" />
             <SolidColorBrush x:Key="WindowCaptionBackgroundDisabled" Color="{ThemeResource SolidBackgroundFillColorBase}" />
         </ResourceDictionary>

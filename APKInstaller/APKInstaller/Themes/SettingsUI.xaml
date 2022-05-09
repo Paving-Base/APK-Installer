@@ -4,7 +4,6 @@
         <ResourceDictionary Source="ms-appx:///Styles/Button.xaml" />
         <ResourceDictionary Source="ms-appx:///Styles/Common.xaml" />
         <ResourceDictionary Source="ms-appx:///Styles/TextBlock.xaml" />
-        <ResourceDictionary Source="ms-appx:///Themes/CommonStyles.xaml" />
         <ResourceDictionary Source="ms-appx:///Controls/SettingButton/SettingButton.xaml" />
         <ResourceDictionary Source="ms-appx:///Controls/SettingExpander/SettingExpander.xaml" />
     </ResourceDictionary.MergedDictionaries>
