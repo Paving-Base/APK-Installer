@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, czyli Android Debug Bridge, jest wymagane do funkcjonowania APK Installer. Naciśnij na "Pobierz", aby pobrać ADB. Pobierając, wyrażasz zgodę na Warunki użytkowania Google odnośnie ADB. Jeśli już pobrano ADB, naciśnij na "Wybierz", aby wybrać.</value>
+    <value>ADB, czyli Android Debug Bridge, jest wymagane do działania APK Installer. Naciśnij na "Pobierz", aby pobrać ADB. Pobierając, wyrażasz zgodę na Warunki użytkowania Google odnośnie ADB. Jeśli już pobrano ADB, naciśnij na "Wybierz", aby wybrać.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>Wykryto ADB</value>
@@ -136,7 +136,7 @@
     <value>Nie można połączyć z WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>WSA może się nie rozpoczynać prawidłowo lub istnieje problem z ADB. Sytuację tę może być bardzo trudno rozwiązać. Uruchom ponownie instalator. Jeśli nadal nie działa, spróbuj ponownie uruchomić komputer.</value>
+    <value>WSA nie może uruchomić się prawidłowo lub istnieje problem z ADB. Sytuację tę może być bardzo trudno rozwiązać. Uruchom ponownie instalator. Jeśli nadal nie działa, spróbuj ponownie uruchomić komputer.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>Nie można otworzyć pakietu aplikacji</value>
@@ -148,7 +148,7 @@
     <value>Sprawdzanie ADB...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Naciśnij tutaj, aby je przeczytać</value>
+    <value>Naciśnij tutaj, aby przeczytać to</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Zamknij</value>
@@ -228,86 +228,86 @@
     <value>Możesz zainstalować WSA. Lub przejdź do Ustawień, aby połączyć urządzenie.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>You can go to Settings to connect Device.</value>
+    <value>Możesz przejść do Ustawień, aby połączyć urządzenie.</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
-    <value>Cannot connect Internet</value>
+    <value>Brak połączenia z Internetem</value>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
-    <value>Please connect to the internet before opening the app.</value>
+    <value>Połącz się z Internetem przed uruchomieniem aplikacji.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>For proper functioning of the app, try to launch an Android app package.</value>
+    <value>Dla prawidłowego funkcjonowania aplikacji spróbuj uruchomić pakiet aplikacji Android.</value>
   </data>
   <data name="OK" xml:space="preserve">
-    <value>OK</value>
+    <value>Ok</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
-    <value>Online Package</value>
+    <value>Pakiet online</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>Package Name: {0}</value>
+    <value>Nazwa pakietu: {0}</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
-    <value>Reinstall</value>
+    <value>Reinstalacja</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>{0} is already installed</value>
+    <value>{0} jest już zainstalowane</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
-    <value>A newer version of {0} is already installed.</value>
+    <value>Nowa wersja {0} jest już zainstalowana.</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>Retry</value>
+    <value>Ponów</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>Select</value>
+    <value>Wybierz</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
-    <value>Starting ADB Server...</value>
+    <value>Uruchamianie serwera ADB...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>Start WSA</value>
+    <value>Uruchom WSA</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
-    <value>Unzip ADB...</value>
+    <value>Wypakuj ADB...</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
-    <value>Unzip completed</value>
+    <value>Wypakowane zakończone</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
-    <value>Unzipping {0}/{1} ...</value>
+    <value>Wypakowywanie {0}/{1} ...</value>
     <comment>{0} - Have done num. {1} - All num.</comment>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>Update</value>
+    <value>Aktualizacja</value>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
-    <value>Update {0}?</value>
+    <value>Zaktualizować {0}?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>Version: {0}</value>
+    <value>Wersja: {0}</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>Waiting for download...</value>
+    <value>Oczekiwanie na pobranie...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>Waiting for Device...</value>
+    <value>Oczekiwanie na urządzenie...</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
-    <value>Waiting for install {0}</value>
+    <value>Oczekiwanie na instalację {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
-    <value>Waiting WSA Start...
-This may take long time. Sit back and relax.</value>
+    <value>Oczekiwanie na start WSA...
+Może to zająć trochę czasu. Usiądź i się zrelaksuj.</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>WSA is Running</value>
+    <value>WSA jest uruchomione</value>
   </data>
 </root>
