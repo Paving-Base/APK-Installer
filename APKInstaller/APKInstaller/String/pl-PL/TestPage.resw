@@ -142,7 +142,7 @@
     <value>Exit</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
-    <value>Processes</value>
+    <value>Procesy</value>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
     <value>Test Progress Ring on the Title Bar</value>
