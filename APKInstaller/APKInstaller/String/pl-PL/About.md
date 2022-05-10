@@ -1,4 +1,4 @@
-#### Witaj w APK Installer!
+#### Witaj w Instalatorze APK!
 
 ##### Deklaracja
 1. Postępuj zgodnie z [Umową licencyjną użytkownika Apk Installer](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
