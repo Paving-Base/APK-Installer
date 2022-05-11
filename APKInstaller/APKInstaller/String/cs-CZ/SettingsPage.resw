@@ -184,10 +184,10 @@
     <value>Coolapk</value>
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
-    <value>Device</value>
+    <value>Zařízení</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
-    <value>Display</value>
+    <value>Zobraz</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
     <value>Supports</value>
