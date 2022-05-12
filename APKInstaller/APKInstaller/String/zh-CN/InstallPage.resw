@@ -204,7 +204,7 @@
     <value>安装 WSA</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
-    <value>安装包已损坏或无效。</value>
+    <value>这个安装包已损坏或无效。</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
     <value>URL 链接不完整或无效。</value>
