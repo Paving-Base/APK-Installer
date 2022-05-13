@@ -204,10 +204,10 @@
     <value>安装 WSA</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
-    <value>这个安装包已经损坏或无效了。</value>
+    <value>安装包已损坏或无效。</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
-    <value>URL无效。</value>
+    <value>URL 链接不完整或无效。</value>
   </data>
   <data name="Launch" xml:space="preserve">
     <value>启动</value>
@@ -225,10 +225,10 @@
     <value>找不到 Android 设备</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>您可以安装 WSA。或者前往设置连接设备。</value>
+    <value>您可以安装 WSA，或者前往设置连接其他设备。</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>您可以前往设置连接设备。</value>
+    <value>您可以到设置中连接设备。</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
     <value>无法连接到网络</value>
@@ -237,7 +237,7 @@
     <value>请连接网络后再打开应用。</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>要安装 Android应用，请尝试打开一个 Android 应用程序包（Apk）。</value>
+    <value>为了使应用程序正常运行，请尝试打开 Android 应用程序包。</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>确定</value>
@@ -305,7 +305,7 @@
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
     <value>正在等待 WSA 启动……
-这通常需要一些时间。这段时间里你可以坐和放宽。</value>
+这通常需要很长时间。请坐和放宽。</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA 正在运行</value>
