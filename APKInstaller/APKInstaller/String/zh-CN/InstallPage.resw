@@ -204,7 +204,7 @@
     <value>安装 WSA</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
-    <value>这个安装包已损坏或无效。</value>
+    <value>安装包已损坏或无效。</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
     <value>URL 链接不完整或无效。</value>
@@ -225,7 +225,7 @@
     <value>找不到 Android 设备</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>您可以安装 WSA。或者前往设置连接设备。</value>
+    <value>您可以安装 WSA，或者前往设置连接其他设备。</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
     <value>您可以到设置中连接设备。</value>
