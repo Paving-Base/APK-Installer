@@ -133,7 +133,7 @@
     <value>Capabilities: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>App Name</value>
+    <value>Nom de l’aplicació</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancel·lar</value>
@@ -187,13 +187,13 @@
     <value>How to connect WSA?</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
-    <value>Icon</value>
+    <value>Icona</value>
   </data>
   <data name="IKnow" xml:space="preserve">
     <value>Ho Sé</value>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
-    <value>Infos</value>
+    <value>Informació</value>
   </data>
   <data name="Install" xml:space="preserve">
     <value>Instal·lar</value>
@@ -234,7 +234,7 @@
     <value>Carregant...</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
-    <value>More Info</value>
+    <value>Més informació</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
     <value>No es pot trobar el Dispositiu Android</value>
@@ -261,7 +261,7 @@
     <value>Online Package</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
-    <value>Package Name</value>
+    <value>Nom del paquet</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
     <value>Nom del Paquet: {0}</value>
@@ -308,7 +308,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
-    <value>Version Code</value>
+    <value>Codi de la versió</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
     <value>Versió: {0}</value>
