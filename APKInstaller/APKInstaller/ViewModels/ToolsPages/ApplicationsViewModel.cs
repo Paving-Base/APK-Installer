@@ -1,16 +1,21 @@
 ﻿using AdvancedSharpAdbClient;
 using AdvancedSharpAdbClient.DeviceCommands;
 using APKInstaller.Controls;
+using APKInstaller.Helpers;
 using APKInstaller.Pages.ToolsPages;
 using CommunityToolkit.WinUI;
+using IWshRuntimeLibrary;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Data;
+using Microsoft.UI.Xaml.Media.Imaging;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using File = System.IO.File;
 
 namespace APKInstaller.ViewModels.ToolsPages
 {
@@ -20,6 +25,7 @@ namespace APKInstaller.ViewModels.ToolsPages
         public ComboBox DeviceComboBox;
         public List<DeviceData> devices;
         private readonly ApplicationsPage _page;
+        private Dictionary<string, (string Name, BitmapImage Icon)> PackageInfos;
 
         private List<string> deviceList = new();
         public List<string> DeviceList
@@ -53,6 +59,33 @@ namespace APKInstaller.ViewModels.ToolsPages
         public ApplicationsViewModel(ApplicationsPage page)
         {
             _page = page;
+        }
+
+        private async Task GetInfos()
+        {
+            await Task.Run(async () =>
+            {
+                string ProgramFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.StartMenu), "Programs");
+                string[] InkInfos = Directory.GetFiles(ProgramFolder, "*.lnk");
+                PackageInfos = new Dictionary<string, (string Name, BitmapImage Icon)>();
+                foreach (string file in InkInfos)
+                {
+                    Type shellType = Type.GetTypeFromProgID("WScript.Shell");
+                    WshShell shell = new();
+                    WshShortcut shortcut = shell.CreateShortcut(file);
+                    string args = shortcut.Arguments;
+                    string icon = shortcut.IconLocation.Replace(",0", string.Empty);
+                    string path = shortcut.TargetPath;
+                    if (Path.GetFileNameWithoutExtension(path) == "WsaClient")
+                    {
+                        string pic = Path.ChangeExtension(icon, "png");
+                        if (File.Exists(pic)) { icon = pic; }
+                        Uri imageuri = new(pic);
+                        BitmapImage image = await UIHelper.DispatcherQueue.EnqueueAsync(() => { return new BitmapImage(imageuri); });
+                        PackageInfos.Add(args.Replace("/launch wsa://", string.Empty), (Path.GetFileNameWithoutExtension(file), image));
+                    }
+                }
+            });
         }
 
         public async Task GetDevices()
@@ -107,10 +140,11 @@ namespace APKInstaller.ViewModels.ToolsPages
         public async Task<List<APKInfo>> CheckAPP(Dictionary<string, string> apps, int index)
         {
             List<APKInfo> Applications = new();
-            await Task.Run(() =>
+            await Task.Run(async () =>
             {
                 AdvancedAdbClient client = new();
                 PackageManager manager = new(client, devices[index]);
+                if (PackageInfos == null) { await GetInfos(); }
                 foreach (KeyValuePair<string, string> app in apps)
                 {
                     _ = _page.DispatcherQueue.EnqueueAsync(() => TitleBar.SetProgressValue((double)apps.ToList().IndexOf(app) * 100 / apps.Count));
@@ -119,12 +153,30 @@ namespace APKInstaller.ViewModels.ToolsPages
                         ConsoleOutputReceiver receiver = new();
                         client.ExecuteRemoteCommand($"pidof {app.Key}", devices[index], receiver);
                         bool isactive = !string.IsNullOrEmpty(receiver.ToString());
-                        Applications.Add(new APKInfo()
+                        if (PackageInfos.ContainsKey(app.Key))
                         {
-                            Name = app.Key,
-                            IsActive = isactive,
-                            VersionInfo = manager.GetVersionInfo(app.Key),
-                        });
+                            (string Name, BitmapImage Icon) = PackageInfos[app.Key];
+                            ImageIcon source = await UIHelper.DispatcherQueue.EnqueueAsync(() => { return new ImageIcon { Source = Icon, Width = 20, Height = 20 }; });
+                            Applications.Add(new APKInfo
+                            {
+                                Name = Name,
+                                Icon = source,
+                                PackageName = app.Key,
+                                IsActive = isactive,
+                                VersionInfo = manager.GetVersionInfo(app.Key),
+                            });
+                        }
+                        else
+                        {
+                            FontIcon source = await UIHelper.DispatcherQueue.EnqueueAsync(() => { return new FontIcon { Glyph = "\xECAA" }; });
+                            Applications.Add(new APKInfo
+                            {
+                                Name = app.Key,
+                                Icon = source,
+                                IsActive = isactive,
+                                VersionInfo = manager.GetVersionInfo(app.Key),
+                            });
+                        }
                     }
                 }
             });
@@ -163,6 +215,8 @@ namespace APKInstaller.ViewModels.ToolsPages
     public class APKInfo
     {
         public string Name { get; set; }
+        public IconElement Icon { get; set; }
+        public string PackageName { get; set; }
         public bool IsActive { get; set; }
         public VersionInfo VersionInfo { get; set; }
     }

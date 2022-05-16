@@ -11,6 +11,10 @@
                 <ResourceDictionary Source="ms-appx:///Themes/SettingsUI.xaml" />
             </ResourceDictionary.MergedDictionaries>
             <!--  Other app resources here  -->
+            <converters:EmptyStringToObjectConverter
+                x:Key="StringToBoolConverter"
+                EmptyValue="False"
+                NotEmptyValue="True" />
             <converters:BoolNegationConverter x:Name="BoolNegationConverter" />
             <converters:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
             <converters:StringVisibilityConverter x:Key="StringVisibilityConverter" />

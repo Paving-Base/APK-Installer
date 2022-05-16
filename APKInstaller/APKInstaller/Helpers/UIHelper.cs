@@ -204,9 +204,9 @@ namespace APKInstaller.Helpers
             double a1 = c1.A / 255;
             double a2 = c2.A / 255;
             int a = Math.Min(c1.A + c2.A, 255);
-            int r = Convert.ToInt32(Math.Min(c1.R * a1 + c2.R * a2, 255));
-            int g = Convert.ToInt32(Math.Min(c1.G * a1 + c2.G * a2, 255));
-            int b = Convert.ToInt32(Math.Min(c1.B * a1 + c2.B * a2, 255));
+            int r = Convert.ToInt32(Math.Min((c1.R * a1) + (c2.R * a2), 255));
+            int g = Convert.ToInt32(Math.Min((c1.G * a1) + (c2.G * a2), 255));
+            int b = Convert.ToInt32(Math.Min((c1.B * a1) + (c2.B * a2), 255));
             Color color_mixing = Color.FromArgb(Convert.ToByte(a), Convert.ToByte(r), Convert.ToByte(g), Convert.ToByte(b));
             return color_mixing;
         }

@@ -1,9 +1,6 @@
-using APKInstaller.Helpers;
-using CommunityToolkit.WinUI;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Windows.ApplicationModel;
 using Windows.ApplicationModel.DataTransfer;
 using Windows.Storage;
 using Windows.Storage.Streams;
@@ -17,7 +14,7 @@ namespace APKInstaller.Helper
     {
         private static DataPackage GetTextDataPackage(string text, string title, string description)
         {
-            var dataPackage = new DataPackage();
+            DataPackage dataPackage = new();
             dataPackage.SetText(text);
             dataPackage.Properties.Title = title;
             dataPackage.Properties.Description = description;
@@ -30,7 +27,7 @@ namespace APKInstaller.Helper
 
             IEnumerable<IStorageFile> files = new List<StorageFile> { file };
 
-            var dataPackage = new DataPackage();
+            DataPackage dataPackage = new();
             dataPackage.SetStorageItems(files);
             dataPackage.Properties.Title = fileName;
             dataPackage.Properties.Description = description;
@@ -44,7 +41,7 @@ namespace APKInstaller.Helper
 
             RandomAccessStreamReference bitmap = RandomAccessStreamReference.CreateFromFile(file);
 
-            var dataPackage = new DataPackage();
+            DataPackage dataPackage = new();
             dataPackage.SetBitmap(bitmap);
             dataPackage.Properties.Title = bitmapName;
             dataPackage.Properties.Description = description;
@@ -56,19 +53,19 @@ namespace APKInstaller.Helper
 
         public static void CopyText(string text, string title, string description = null)
         {
-            var dataPackage = GetTextDataPackage(text, title, description);
+            DataPackage dataPackage = GetTextDataPackage(text, title, description);
             dataPackage.Copy();
         }
 
         public static async void CopyFile(string filePath, string fileName, string description = null)
         {
-            var dataPackage = await GetFileDataPackage(filePath, fileName, description);
+            DataPackage dataPackage = await GetFileDataPackage(filePath, fileName, description);
             dataPackage.Copy();
         }
 
         public static async void CopyBitmap(string bitmapPath, string bitmapName, string description = null)
         {
-            var dataPackage = await GetFileDataPackage(bitmapPath, bitmapName, description);
+            DataPackage dataPackage = await GetFileDataPackage(bitmapPath, bitmapName, description);
             dataPackage.Copy();
         }
 
@@ -89,13 +86,13 @@ namespace APKInstaller.Helper
 
         public static async void ShareURL(string filePath, string fileName, string description = null)
         {
-            var dataPackage = await GetFileDataPackage(filePath, fileName, description);
+            DataPackage dataPackage = await GetFileDataPackage(filePath, fileName, description);
             dataPackage.Share();
         }
 
         public static async void ShareFile(string filePath, string fileName, string description = null)
         {
-            var dataPackage = await GetFileDataPackage(filePath, fileName, description);
+            DataPackage dataPackage = await GetFileDataPackage(filePath, fileName, description);
             dataPackage.Share();
         }
     }

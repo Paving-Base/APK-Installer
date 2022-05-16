@@ -6,7 +6,6 @@ using CommunityToolkit.WinUI;
 using CommunityToolkit.WinUI.UI;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Navigation;
 
 // To learn more about WinUI, the WinUI project structure,
@@ -56,13 +55,6 @@ namespace APKInstaller.Pages.ToolsPages
         private void TitleBar_RefreshEvent(TitleBar sender, object e)
         {
             _ = Provider.GetDevices().ContinueWith((Task) => _ = Provider.GetApps());
-        }
-
-        private void ListViewItem_RightTapped(object sender, RightTappedRoutedEventArgs e)
-        {
-            Button Button = (sender as FrameworkElement).FindDescendant<Button>();
-            MenuFlyout Flyout = (MenuFlyout)Button.Flyout;
-            Flyout.ShowAt(sender as UIElement, e.GetPosition(sender as UIElement));
         }
 
         private void MenuFlyoutItem_Click(object sender, RoutedEventArgs e)
