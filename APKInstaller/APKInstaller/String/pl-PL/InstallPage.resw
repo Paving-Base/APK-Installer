@@ -133,7 +133,7 @@
     <value>Uprawnienia: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>App Name</value>
+    <value>Nazwa aplikacji</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Anuluj</value>
@@ -187,13 +187,13 @@
     <value>Jak połączyć WSA?</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
-    <value>Icon</value>
+    <value>Ikona</value>
   </data>
   <data name="IKnow" xml:space="preserve">
     <value>Wiem</value>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
-    <value>Infos</value>
+    <value>Informacje</value>
   </data>
   <data name="Install" xml:space="preserve">
     <value>Zainstaluj</value>
@@ -234,7 +234,7 @@
     <value>Ładowanie...</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
-    <value>More Info</value>
+    <value>Więcej informacji</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
     <value>Nie znaleziono urządzenia z Androidem</value>
@@ -261,7 +261,7 @@
     <value>Pakiet online</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
-    <value>Package Name</value>
+    <value>Nazwa pakietu</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
     <value>Nazwa pakietu: {0}</value>
@@ -308,7 +308,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
-    <value>Version Code</value>
+    <value>Kod wersji</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
     <value>Wersja: {0}</value>
