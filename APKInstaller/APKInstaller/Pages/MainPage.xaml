@@ -43,6 +43,7 @@
                 Height="{x:Bind helper:UIHelper.TitleBarHeight}"
                 Margin="0"
                 Click="Button_Click"
+                FocusVisualMargin="0"
                 IsTabStop="True"
                 Style="{StaticResource TitleBarSettingsButtonStyle}"
                 ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" />

@@ -28,6 +28,7 @@
     <UseWinUI>true</UseWinUI>
     <VersionPrefix>0.1.15</VersionPrefix>
   </PropertyGroup>
+
   <ItemGroup>
     <Compile Remove="AppPackages\**" />
     <EmbeddedResource Remove="AppPackages\**" />

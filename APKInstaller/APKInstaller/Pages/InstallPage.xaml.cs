@@ -1,4 +1,5 @@
-﻿using APKInstaller.Pages.SettingsPages;
+﻿using APKInstaller.Helper;
+using APKInstaller.Pages.SettingsPages;
 using APKInstaller.ViewModels;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
@@ -123,6 +124,30 @@ namespace APKInstaller.Pages
         private async void InitialLoadingUI_Loaded(object sender, RoutedEventArgs e)
         {
             await Provider.Refresh(!IsCaches);
+        }
+
+        private void CopyFileItem_Click(object sender, RoutedEventArgs e)
+        {
+            MenuFlyoutItem element = sender as MenuFlyoutItem;
+            ClipboardHelper.CopyFile(element.Tag.ToString(), element.Text);
+        }
+
+        private void CopyStringItem_Click(object sender, RoutedEventArgs e)
+        {
+            MenuFlyoutItem element = sender as MenuFlyoutItem;
+            ClipboardHelper.CopyText(element.Tag.ToString(), element.Text);
+        }
+
+        private void CopyBitmapItem_Click(object sender, RoutedEventArgs e)
+        {
+            MenuFlyoutItem element = sender as MenuFlyoutItem;
+            ClipboardHelper.CopyBitmap(element.Tag.ToString(), element.Text);
+        }
+
+        private void ShareFileItem_Click(object sender, RoutedEventArgs e)
+        {
+            MenuFlyoutItem element = sender as MenuFlyoutItem;
+            ClipboardHelper.ShareFile(element.Tag.ToString(), element.Text);
         }
     }
 }

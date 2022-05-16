@@ -59,46 +59,46 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string"/>
-              <xsd:attribute name="type" type="xsd:string"/>
-              <xsd:attribute name="mimetype" type="xsd:string"/>
-              <xsd:attribute ref="xml:space"/>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string"/>
-              <xsd:attribute name="name" type="xsd:string"/>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
-              <xsd:attribute ref="xml:space"/>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required"/>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -126,8 +126,14 @@
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB is missing</value>
   </data>
+  <data name="APKFileFlyoutItem.Text" xml:space="preserve">
+    <value>APK File</value>
+  </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>Capabilities: </value>
+  </data>
+  <data name="AppNameFlyoutItem.Text" xml:space="preserve">
+    <value>App Name</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancel</value>
@@ -180,8 +186,14 @@
   <data name="HowToConnect" xml:space="preserve">
     <value>How to connect WSA?</value>
   </data>
+  <data name="IconFlyoutItem.Text" xml:space="preserve">
+    <value>Icon</value>
+  </data>
   <data name="IKnow" xml:space="preserve">
     <value>I Know</value>
+  </data>
+  <data name="InfosFlyoutItem.Text" xml:space="preserve">
+    <value>Infos</value>
   </data>
   <data name="Install" xml:space="preserve">
     <value>Install</value>
@@ -221,6 +233,9 @@
   <data name="Loading" xml:space="preserve">
     <value>Loading...</value>
   </data>
+  <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
+    <value>More Info</value>
+  </data>
   <data name="NoDevice" xml:space="preserve">
     <value>Cannot find Android Device</value>
   </data>
@@ -244,6 +259,9 @@
   </data>
   <data name="OnlinePackage" xml:space="preserve">
     <value>Online Package</value>
+  </data>
+  <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
+    <value>Package Name</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
     <value>Package Name: {0}</value>
@@ -288,6 +306,9 @@
   <data name="UpdateFormat" xml:space="preserve">
     <value>Update {0}?</value>
     <comment>{0} - AppName.</comment>
+  </data>
+  <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
+    <value>Version Code</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
     <value>Version: {0}</value>
