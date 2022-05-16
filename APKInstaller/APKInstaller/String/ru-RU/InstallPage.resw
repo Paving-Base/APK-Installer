@@ -126,8 +126,15 @@
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB не найден</value>
   </data>
+  <data name="APKFileFlyoutItem.Text" xml:space="preserve">
+    <value>APK-файл
+</value>
+  </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>Возможности: </value>
+  </data>
+  <data name="AppNameFlyoutItem.Text" xml:space="preserve">
+    <value>App Name</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Отмена</value>
@@ -180,8 +187,14 @@
   <data name="HowToConnect" xml:space="preserve">
     <value>Как подключиться к Подсистеме Windows для Android?</value>
   </data>
+  <data name="IconFlyoutItem.Text" xml:space="preserve">
+    <value>Icon</value>
+  </data>
   <data name="IKnow" xml:space="preserve">
     <value>Ок</value>
+  </data>
+  <data name="InfosFlyoutItem.Text" xml:space="preserve">
+    <value>Infos</value>
   </data>
   <data name="Install" xml:space="preserve">
     <value>Установить</value>
@@ -221,6 +234,9 @@
   <data name="Loading" xml:space="preserve">
     <value>Загрузка...</value>
   </data>
+  <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
+    <value>More Info</value>
+  </data>
   <data name="NoDevice" xml:space="preserve">
     <value>Устройство Android не найдено</value>
   </data>
@@ -244,6 +260,9 @@
   </data>
   <data name="OnlinePackage" xml:space="preserve">
     <value>Онлайн-пакет</value>
+  </data>
+  <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
+    <value>Package Name</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
     <value>Имя пакета: {0}</value>
@@ -288,6 +307,9 @@
   <data name="UpdateFormat" xml:space="preserve">
     <value>Обновить {0}?</value>
     <comment>{0} - AppName.</comment>
+  </data>
+  <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
+    <value>Version Code</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
     <value>Версия: {0}</value>
