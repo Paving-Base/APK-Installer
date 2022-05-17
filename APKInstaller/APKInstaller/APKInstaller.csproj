@@ -94,7 +94,8 @@
   <ItemGroup>
     <PackageReference Include="CommunityToolkit.WinUI.Connectivity" Version="7.1.2" />
     <PackageReference Include="CommunityToolkit.WinUI.UI" Version="7.1.2" />
-    <PackageReference Include="Downloader" Version="2.3.4" />
+    <PackageReference Include="Downloader" Version="2.3.5" />
+    <PackageReference Include="NativeMethods" Version="0.0.3" />
     <PackageReference Include="SharpCompress" Version="0.31.0" />
     <PackageReference Include="PInvoke.User32" Version="0.7.104" />
     <PackageReference Include="AdvancedSharpAdbClient" Version="2.5.2" />

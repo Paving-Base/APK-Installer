@@ -1,7 +1,8 @@
-﻿using APKInstaller.Win32;
+﻿using APKInstaller.Interop;
 using CommunityToolkit.WinUI;
 using Microsoft.UI.Xaml;
 using System;
+using static APKInstaller.Interop.ShObjIdl;
 
 namespace APKInstaller.Helpers
 {
@@ -13,21 +14,20 @@ namespace APKInstaller.Helpers
     /// </summary>
     public static class ProgressHelper
     {
-        private static readonly ShobjidlCore.ITaskbarList _taskbarList;
+        private static readonly ShObjIdl.ITaskbarList4 _taskbarList;
 
         static ProgressHelper()
         {
             if (!IsSupported()) { return; }
 
-            _taskbarList = new ShobjidlCore.CTaskbarList() as ShobjidlCore.ITaskbarList;
+            _taskbarList = new ShObjIdl.CTaskbarList() as ShObjIdl.ITaskbarList4;
 
             _taskbarList?.HrInit();
         }
 
         private static bool IsSupported()
         {
-            return Environment.OSVersion.Platform == PlatformID.Win32NT &&
-                Environment.OSVersion.Version.CompareTo(new Version(6, 1)) >= 0;
+            return OSVersionHelper.IsWindows7OrGreater;
         }
 
         /// <summary>
@@ -67,15 +67,14 @@ namespace APKInstaller.Helpers
 
             // using System.Windows.Interop
             _ = UIHelper.DispatcherQueue.EnqueueAsync(() =>
-              {
-                  SetProgressValue(current, max);
-              });
+            {
+                SetProgressValue(current, max);
+            });
         }
 
         private static void SetProgressState(ProgressState state)
         {
-            // Application.Current.MainWindow.TaskbarItemInfo.ProgressState = (System.Windows.Shell.TaskbarItemProgressState) state;
-            _taskbarList?.SetProgressState(GetHandle(), state);
+            _taskbarList?.SetProgressState(GetHandle(), (TBPFLAG)Enum.Parse(typeof(TBPFLAG), state.ToString()));
         }
 
         private static void SetProgressValue(int current, int max)

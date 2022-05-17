@@ -121,6 +121,21 @@ namespace APKInstaller.Helpers
                 Color buttonInactiveForegroundColor = (Color)ResourceDictionary["TitleBarButtonInactiveForegroundColor"];
                 TitleBar.ButtonInactiveForegroundColor = buttonInactiveForegroundColor;
             }
+
+            if (IsDarkTheme())
+            {
+                foreach (Window window in WindowHelper.ActiveWindows)
+                {
+                    window?.ApplyWindowDarkMode();
+                }
+            }
+            else
+            {
+                foreach (Window window in WindowHelper.ActiveWindows)
+                {
+                    window?.RemoveWindowDarkMode();
+                }
+            }
         }
     }
 }

@@ -28,6 +28,7 @@ namespace APKInstaller.Pages
             {
                 LeftPadding.Width = new GridLength(120);
                 UIHelper.MainWindow.ExtendsContentIntoTitleBar = true;
+                WindowHelper.SetTitleBar(UIHelper.MainWindow, CustomTitleBar);
                 Root.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Auto) });
                 Root.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
             }
