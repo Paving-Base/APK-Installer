@@ -150,6 +150,15 @@
   <data name="ProgressSettings.Header" xml:space="preserve">
     <value>Progreso</value>
   </data>
+  <data name="RadioThemeDark.Content" xml:space="preserve">
+    <value>Oscuro</value>
+  </data>
+  <data name="RadioThemeDefault.Content" xml:space="preserve">
+    <value>Por defecto de Windows</value>
+  </data>
+  <data name="RadioThemeLight.Content" xml:space="preserve">
+    <value>Claro</value>
+  </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
     <value>Establecer el valor del anillo de progreso</value>
   </data>
@@ -162,6 +171,9 @@
   <data name="ShowRefreshButton.Header" xml:space="preserve">
     <value>Botón de refrescar</value>
   </data>
+  <data name="ThemeSettings.Header" xml:space="preserve">
+    <value>Tema de la aplicación</value>
+  </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Probando</value>
   </data>
@@ -173,5 +185,8 @@
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
     <value>Test UI</value>
+  </data>
+  <data name="WindowsColorButton.Content" xml:space="preserve">
+    <value>Ajustes de color de Windows</value>
   </data>
 </root>

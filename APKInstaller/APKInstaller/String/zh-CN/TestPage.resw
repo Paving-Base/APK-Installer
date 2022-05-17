@@ -150,6 +150,15 @@
   <data name="ProgressSettings.Header" xml:space="preserve">
     <value>进度</value>
   </data>
+  <data name="RadioThemeDark.Content" xml:space="preserve">
+    <value>深色</value>
+  </data>
+  <data name="RadioThemeDefault.Content" xml:space="preserve">
+    <value>Windows 默认</value>
+  </data>
+  <data name="RadioThemeLight.Content" xml:space="preserve">
+    <value>浅色</value>
+  </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
     <value>设置进度环的值</value>
   </data>
@@ -162,6 +171,9 @@
   <data name="ShowRefreshButton.Header" xml:space="preserve">
     <value>刷新按钮</value>
   </data>
+  <data name="ThemeSettings.Header" xml:space="preserve">
+    <value>应用主题</value>
+  </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>测试</value>
   </data>
@@ -173,5 +185,8 @@
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
     <value>界面测试</value>
+  </data>
+  <data name="WindowsColorButton.Content" xml:space="preserve">
+    <value>Windows 颜色设置</value>
   </data>
 </root>
