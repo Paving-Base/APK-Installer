@@ -13,7 +13,7 @@
     mc:Ignorable="d">
     <Page.Resources>
         <MenuFlyout x:Key="IconMenuFlyout">
-            <MenuFlyoutSubItem Text="Copy">
+            <MenuFlyoutSubItem x:Uid="/InstallPage/CopyFlyoutItem">
                 <MenuFlyoutSubItem.Icon>
                     <FontIcon Glyph="&#xE8C8;" />
                 </MenuFlyoutSubItem.Icon>
