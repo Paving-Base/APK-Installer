@@ -1,7 +1,11 @@
+using APKInstaller.Helpers;
 using APKInstaller.Helpers.Exceptions;
 using Microsoft.UI.Xaml;
 using System;
+using Windows.ApplicationModel;
 using Windows.ApplicationModel.Resources;
+using Windows.Foundation.Metadata;
+using Windows.System.Profile;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -22,6 +26,10 @@ namespace APKInstaller
             InitializeComponent();
             UnhandledException += Application_UnhandledException;
             AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
+            if (ApiInformation.IsApiContractPresent("Windows.Foundation.UniversalApiContract", 6))
+            {
+                this.FocusVisualKind = AnalyticsInfo.VersionInfo.DeviceFamily == "Xbox" ? FocusVisualKind.Reveal : FocusVisualKind.HighVisibility;
+            }
         }
 
         /// <summary>
@@ -32,11 +40,12 @@ namespace APKInstaller
         protected override void OnLaunched(LaunchActivatedEventArgs args)
         {
             RegisterExceptionHandlingSynchronizationContext();
-            ResourceLoader loader = ResourceLoader.GetForViewIndependentUse();
             m_window = new MainWindow()
             {
-                Title = loader.GetString("AppName")
+                Title = Package.Current.DisplayName
             };
+            m_window.TrackWindow();
+            ThemeHelper.Initialize();
             m_window.Activate();
         }
 

@@ -29,7 +29,7 @@ namespace APKInstaller.Helpers
     internal static partial class UIHelper
     {
         public static bool HasTitleBar = !AppWindowTitleBar.IsCustomizationSupported();
-        public static bool TitleBarExtended => HasTitleBar ? MainWindow.ExtendsContentIntoTitleBar : GetAppWindowForCurrentWindow().TitleBar.ExtendsContentIntoTitleBar;
+        public static bool TitleBarExtended => HasTitleBar ? MainWindow.ExtendsContentIntoTitleBar : WindowHelper.GetAppWindowForCurrentWindow().TitleBar.ExtendsContentIntoTitleBar;
         public static double TitleBarHeight => TitleBarExtended ? HasTitleBar ? 28 : 32 : 0;
         public static double PageTitlePadding => HasTitleBar ? 0 : TitleBarHeight;
 
@@ -43,55 +43,6 @@ namespace APKInstaller.Helpers
                 {
                     _dispatcherQueue = value;
                 }
-            }
-        }
-
-        public static bool IsDarkTheme(ElementTheme theme)
-        {
-            return theme == ElementTheme.Default ? Application.Current.RequestedTheme == ApplicationTheme.Dark : theme == ElementTheme.Dark;
-        }
-
-        public static bool IsDarkTheme() => IsDarkTheme(SettingsHelper.Theme);
-
-        public static void CheckTheme()
-        {
-            if (!HasTitleBar)
-            {
-                AppWindowTitleBar TitleBar = GetAppWindowForCurrentWindow().TitleBar;
-
-                ResourceDictionary ResourceDictionary = new()
-                {
-                    Source = new Uri("ms-appx:///Controls/TitleBar/TitleBar_themeresources.xaml")
-                };
-
-                Color titleBarBackgroundColor = (Color)ResourceDictionary["TitleBarBackgroudColor"];
-                TitleBar.BackgroundColor = titleBarBackgroundColor;
-
-                // rest colors
-                Color buttonForegroundColor = (Color)ResourceDictionary["TitleBarButtonForegroundColor"];
-                TitleBar.ButtonForegroundColor = buttonForegroundColor;
-
-                Color buttonBackgroundColor = (Color)ResourceDictionary["TitleBarButtonBackgroundColor"];
-                TitleBar.ButtonBackgroundColor = TitleBarExtended ? buttonBackgroundColor : titleBarBackgroundColor;
-                TitleBar.ButtonInactiveBackgroundColor = buttonBackgroundColor;
-
-                // hover colors
-                Color buttonHoverForegroundColor = (Color)ResourceDictionary["TitleBarButtonHoverForegroundColor"];
-                TitleBar.ButtonHoverForegroundColor = buttonHoverForegroundColor;
-
-                Color buttonHoverBackgroundColor = (Color)ResourceDictionary["TitleBarButtonHoverBackgroundColor"];
-                TitleBar.ButtonHoverBackgroundColor = TitleBarExtended ? buttonHoverBackgroundColor : null;
-
-                // pressed colors
-                Color buttonPressedForegroundColor = (Color)ResourceDictionary["TitleBarButtonPressedForegroundColor"];
-                TitleBar.ButtonPressedForegroundColor = buttonPressedForegroundColor;
-
-                Color buttonPressedBackgroundColor = (Color)ResourceDictionary["TitleBarButtonPressedBackgroundColor"];
-                TitleBar.ButtonPressedBackgroundColor = TitleBarExtended ? buttonPressedBackgroundColor : null;
-
-                // inactive foreground
-                Color buttonInactiveForegroundColor = (Color)ResourceDictionary["TitleBarButtonInactiveForegroundColor"];
-                TitleBar.ButtonInactiveForegroundColor = buttonInactiveForegroundColor;
             }
         }
     }
@@ -114,18 +65,6 @@ namespace APKInstaller.Helpers
             IntPtr windowHandle = WindowNative.GetWindowHandle(MainWindow);
             int currentDpi = PInvoke.User32.GetDpiForWindow(windowHandle);
             return Convert.ToInt32(pixel * (currentDpi / 96.0));
-        }
-
-        public static AppWindow GetAppWindowForCurrentWindow(this Window window)
-        {
-            IntPtr hWnd = WindowNative.GetWindowHandle(window);
-            WindowId myWndId = Win32Interop.GetWindowIdFromWindow(hWnd);
-            return AppWindow.GetFromWindowId(myWndId);
-        }
-
-        public static AppWindow GetAppWindowForCurrentWindow()
-        {
-            return MainWindow != null ? GetAppWindowForCurrentWindow(MainWindow) : null;
         }
     }
 

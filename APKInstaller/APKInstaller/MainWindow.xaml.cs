@@ -5,6 +5,8 @@ using Microsoft.UI.Xaml;
 using System;
 using System.Diagnostics;
 using System.Linq;
+using Windows.Graphics;
+using WinRT.Interop;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -19,8 +21,8 @@ namespace APKInstaller
         public MainWindow()
         {
             InitializeComponent();
-            UIHelper.GetAppWindowForCurrentWindow(this).SetIcon("favicon.ico");
-            IntPtr hwnd = WinRT.Interop.WindowNative.GetWindowHandle(this);
+            this.GetAppWindowForCurrentWindow().SetIcon("favicon.ico");
+            IntPtr hwnd = WindowNative.GetWindowHandle(this);
             SetWindowSize(hwnd, 652, 414);
             UIHelper.MainWindow = this;
             MainPage MainPage = new();
@@ -51,7 +53,7 @@ namespace APKInstaller
             float scalingFactor = (float)dpi / 96;
             width = (int)(width * scalingFactor);
             height = (int)(height * scalingFactor);
-            UIHelper.GetAppWindowForCurrentWindow(this).Resize(new Windows.Graphics.SizeInt32(width, height));
+            this.GetAppWindowForCurrentWindow().Resize(new SizeInt32(width, height));
         }
     }
 }

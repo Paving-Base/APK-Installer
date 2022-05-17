@@ -220,8 +220,7 @@ namespace APKInstaller.ViewModels.SettingsPages
             get
             {
                 string ver = $"{Package.Current.Id.Version.Major}.{Package.Current.Id.Version.Minor}.{Package.Current.Id.Version.Build}";
-                ResourceLoader loader = ResourceLoader.GetForViewIndependentUse();
-                string name = loader?.GetString("AppName") ?? "APK Installer";
+                string name = Package.Current.DisplayName; ;
                 GetAboutTextBlockText();
                 return $"{name} v{ver}";
             }

@@ -17,7 +17,7 @@ namespace APKInstaller.Pages
     public sealed partial class MainPage : Page
     {
         private readonly bool HasBeenSmail;
-        private readonly AppWindow AppWindow = UIHelper.GetAppWindowForCurrentWindow();
+        private readonly AppWindow AppWindow = WindowHelper.GetAppWindowForCurrentWindow();
 
         public MainPage()
         {
@@ -34,8 +34,7 @@ namespace APKInstaller.Pages
             else
             {
                 AppWindow.TitleBar.ExtendsContentIntoTitleBar = true;
-                ActualThemeChanged += (sender, arg) => UIHelper.CheckTheme();
-                UIHelper.CheckTheme();
+                ActualThemeChanged += (sender, arg) => ThemeHelper.UpdateSystemCaptionButtonColors();
             }
             //UIHelper.MainWindow.SetTitleBar(CustomTitleBar);
             _ = CoreAppFrame.Navigate(typeof(InstallPage));

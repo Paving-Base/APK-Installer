@@ -13,11 +13,6 @@
     </Page.Resources>
 
     <Grid x:Name="Root">
-        <Grid.ChildrenTransitions>
-            <TransitionCollection>
-                <EntranceThemeTransition />
-            </TransitionCollection>
-        </Grid.ChildrenTransitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto" />
             <ColumnDefinition Width="*" />

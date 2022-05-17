@@ -66,7 +66,8 @@
                             <ComboBox
                                 ItemsSource="{x:Bind helper:LanguageHelper.SupportCultures}"
                                 Loaded="ComboBox_Loaded"
-                                SelectionChanged="ComboBox_SelectionChanged">
+                                SelectionChanged="ComboBox_SelectionChanged"
+                                Tag="Language">
                                 <ComboBox.ItemTemplate>
                                     <DataTemplate x:DataType="globalization:CultureInfo">
                                         <TextBlock>
@@ -74,6 +75,24 @@
                                         </TextBlock>
                                     </DataTemplate>
                                 </ComboBox.ItemTemplate>
+                            </ComboBox>
+                        </contorls:Setting.ActionContent>
+                    </contorls:Setting>
+                    <contorls:Setting x:Uid="/TestPage/ThemeSettings" Icon="&#xE790;">
+                        <contorls:Setting.Description>
+                            <HyperlinkButton
+                                x:Uid="/TestPage/WindowsColorButton"
+                                Click="Button_Click"
+                                Tag="WindowsColor" />
+                        </contorls:Setting.Description>
+                        <contorls:Setting.ActionContent>
+                            <ComboBox
+                                Loaded="ComboBox_Loaded"
+                                SelectionChanged="ComboBox_SelectionChanged"
+                                Tag="Theme">
+                                <ComboBoxItem x:Uid="/TestPage/RadioThemeDark" />
+                                <ComboBoxItem x:Uid="/TestPage/RadioThemeLight" />
+                                <ComboBoxItem x:Uid="/TestPage/RadioThemeDefault" />
                             </ComboBox>
                         </contorls:Setting.ActionContent>
                     </contorls:Setting>

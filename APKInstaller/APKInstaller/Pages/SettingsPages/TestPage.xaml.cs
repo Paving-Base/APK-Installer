@@ -3,9 +3,11 @@ using APKInstaller.Helpers;
 using APKInstaller.Pages.ToolsPages;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
+using System;
 using System.ComponentModel;
 using System.Globalization;
 using Windows.Globalization;
+using Windows.System;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -19,7 +21,7 @@ namespace APKInstaller.Pages.SettingsPages
     {
         internal bool IsExtendsTitleBar
         {
-            get => UIHelper.HasTitleBar ? UIHelper.MainWindow.ExtendsContentIntoTitleBar : UIHelper.GetAppWindowForCurrentWindow().TitleBar.ExtendsContentIntoTitleBar;
+            get => UIHelper.HasTitleBar ? UIHelper.MainWindow.ExtendsContentIntoTitleBar : WindowHelper.GetAppWindowForCurrentWindow().TitleBar.ExtendsContentIntoTitleBar;
             set
             {
                 if (UIHelper.HasTitleBar)
@@ -28,8 +30,8 @@ namespace APKInstaller.Pages.SettingsPages
                 }
                 else
                 {
-                    UIHelper.GetAppWindowForCurrentWindow().TitleBar.ExtendsContentIntoTitleBar = value;
-                    UIHelper.CheckTheme();
+                    WindowHelper.GetAppWindowForCurrentWindow().TitleBar.ExtendsContentIntoTitleBar = value;
+                    ThemeHelper.UpdateSystemCaptionButtonColors();
                 }
             }
         }
@@ -88,6 +90,9 @@ namespace APKInstaller.Pages.SettingsPages
                 case "Applications":
                     _ = Frame.Navigate(typeof(ApplicationsPage));
                     break;
+                case "WindowsColor":
+                    _ = Launcher.LaunchUriAsync(new Uri("ms-settings:colors"));
+                    break;
                 default:
                     break;
             }
@@ -103,24 +108,43 @@ namespace APKInstaller.Pages.SettingsPages
 
         private void ComboBox_Loaded(object sender, RoutedEventArgs e)
         {
-            string lang = SettingsHelper.Get<string>(SettingsHelper.CurrentLanguage);
-            lang = lang == LanguageHelper.AutoLanguageCode ? LanguageHelper.GetCurrentLanguage() : lang;
-            CultureInfo culture = new(lang);
-            (sender as ComboBox).SelectedItem = culture;
+            ComboBox ComboBox = sender as ComboBox;
+            switch (ComboBox.Tag as string)
+            {
+                case "Theme":
+                    ElementTheme Theme = ThemeHelper.RootTheme;
+                    ComboBox.SelectedIndex = 2 - (int)Theme;
+                    break;
+                case "Language":
+                    string lang = SettingsHelper.Get<string>(SettingsHelper.CurrentLanguage);
+                    lang = lang == LanguageHelper.AutoLanguageCode ? LanguageHelper.GetCurrentLanguage() : lang;
+                    CultureInfo culture = new(lang);
+                    ComboBox.SelectedItem = culture;
+                    break;
+            }
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            CultureInfo culture = (sender as ComboBox).SelectedItem as CultureInfo;
-            if (culture.Name != LanguageHelper.GetCurrentLanguage())
+            ComboBox ComboBox = sender as ComboBox;
+            switch (ComboBox.Tag as string)
             {
-                ApplicationLanguages.PrimaryLanguageOverride = culture.Name;
-                SettingsHelper.Set(SettingsHelper.CurrentLanguage, culture.Name);
-            }
-            else
-            {
-                ApplicationLanguages.PrimaryLanguageOverride = string.Empty;
-                SettingsHelper.Set(SettingsHelper.CurrentLanguage, LanguageHelper.AutoLanguageCode);
+                case "Theme":
+                    ThemeHelper.RootTheme = (ElementTheme)Enum.Parse(typeof(ElementTheme), (2 - ComboBox.SelectedIndex).ToString());
+                    break;
+                case "Language":
+                    CultureInfo culture = ComboBox.SelectedItem as CultureInfo;
+                    if (culture.Name != LanguageHelper.GetCurrentLanguage())
+                    {
+                        ApplicationLanguages.PrimaryLanguageOverride = culture.Name;
+                        SettingsHelper.Set(SettingsHelper.CurrentLanguage, culture.Name);
+                    }
+                    else
+                    {
+                        ApplicationLanguages.PrimaryLanguageOverride = string.Empty;
+                        SettingsHelper.Set(SettingsHelper.CurrentLanguage, LanguageHelper.AutoLanguageCode);
+                    }
+                    break;
             }
         }
     }

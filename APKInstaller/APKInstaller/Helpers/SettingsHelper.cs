@@ -17,7 +17,6 @@ namespace APKInstaller.Helpers
         public const string ADBPath = "ADBPath";
         public const string IsOpenApp = "IsOpenApp";
         public const string IsOnlyWSA = "IsOnlyWSA";
-        public const string IsDarkMode = "IsDarkMode";
         public const string UpdateDate = "UpdateDate";
         public const string IsFirstRun = "IsFirstRun";
         public const string IsCloseADB = "IsCloseADB";
@@ -27,7 +26,7 @@ namespace APKInstaller.Helpers
         public const string AutoGetNetAPK = "AutoGetNetAPK";
         public const string DefaultDevice = "DefaultDevice";
         public const string CurrentLanguage = "CurrentLanguage";
-        public const string IsBackgroundColorFollowSystem = "IsBackgroundColorFollowSystem";
+        public const string SelectedAppTheme = "SelectedAppTheme";
 
         public static Type Get<Type>(string key) => LocalObject.Read<Type>(key);
         public static void Set(string key, object value) => LocalObject.Save(key, value);
@@ -55,10 +54,6 @@ namespace APKInstaller.Helpers
             if (!LocalObject.KeyExists(IsFirstRun))
             {
                 LocalObject.Save(IsFirstRun, true);
-            }
-            if (!LocalObject.KeyExists(IsDarkMode))
-            {
-                LocalObject.Save(IsDarkMode, false);
             }
             if (!LocalObject.KeyExists(IsCloseADB))
             {
@@ -88,9 +83,9 @@ namespace APKInstaller.Helpers
             {
                 LocalObject.Save(CurrentLanguage, LanguageHelper.AutoLanguageCode);
             }
-            if (!LocalObject.KeyExists(IsBackgroundColorFollowSystem))
+            if (!LocalObject.KeyExists(SelectedAppTheme))
             {
-                LocalObject.Save(IsBackgroundColorFollowSystem, true);
+                LocalObject.Save(SelectedAppTheme, ElementTheme.Default);
             }
         }
     }
@@ -112,17 +107,6 @@ namespace APKInstaller.Helpers
         static SettingsHelper()
         {
             SetDefaultSettings();
-            UISettings.ColorValuesChanged += SetBackgroundTheme;
-        }
-
-        private static void SetBackgroundTheme(UISettings sender, object args)
-        {
-            if (Get<bool>(IsBackgroundColorFollowSystem))
-            {
-                bool value = sender.GetColorValue(UIColorType.Background) == Colors.Black;
-                Set(IsDarkMode, value);
-                _ = UIHelper.DispatcherQueue?.EnqueueAsync(UIHelper.CheckTheme);
-            }
         }
     }
 
