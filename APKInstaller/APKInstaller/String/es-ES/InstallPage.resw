@@ -159,6 +159,9 @@
   <data name="Close" xml:space="preserve">
     <value>Cerrar</value>
   </data>
+  <data name="CopyFlyoutItem.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
   <data name="Devices" xml:space="preserve">
     <value>Dispositivos</value>
   </data>
