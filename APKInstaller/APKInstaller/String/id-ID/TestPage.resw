@@ -151,13 +151,13 @@
     <value>Kemajuan</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>Dark</value>
+    <value>Gelap</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>Windows Default</value>
+    <value>Default Windows</value>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
-    <value>Light</value>
+    <value>Terang</value>
   </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
     <value>Atur nilai Cincin Kemajuan</value>
@@ -172,7 +172,7 @@
     <value>Tombol Segarkan</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
-    <value>App Theme</value>
+    <value>Tema Aplikasi</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Pengujian</value>
@@ -187,6 +187,6 @@
     <value>Tes UI</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Windows Color Settings</value>
+    <value>Pengaturan Warna Windows</value>
   </data>
 </root>
