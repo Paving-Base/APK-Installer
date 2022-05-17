@@ -160,7 +160,7 @@
     <value>Zamknij</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
-    <value>Copy</value>
+    <value>Kopiuj</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Urządzenia</value>
