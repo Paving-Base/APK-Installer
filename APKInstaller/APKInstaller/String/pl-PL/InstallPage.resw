@@ -136,7 +136,7 @@
     <value>Nazwa aplikacji</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Anuluj</value>
+    <value>Cancel</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>Nie można połączyć z WSA</value>
