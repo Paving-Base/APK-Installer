@@ -159,6 +159,9 @@
   <data name="Close" xml:space="preserve">
     <value>关闭</value>
   </data>
+  <data name="CopyFlyoutItem.Text" xml:space="preserve">
+    <value>複製</value>
+  </data>
   <data name="Devices" xml:space="preserve">
     <value>設備</value>
   </data>
