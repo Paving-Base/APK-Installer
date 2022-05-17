@@ -3,9 +3,6 @@ using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using WinRT.Interop;
 
 namespace APKInstaller.Helpers
@@ -17,26 +14,27 @@ namespace APKInstaller.Helpers
     // windows.  In the future, we would like to support this in platform APIs.
     public static class WindowHelper
     {
-        static public Window CreateWindow()
+        public static Window CreateWindow()
         {
-            Window newWindow = new Window();
+            Window newWindow = new();
             TrackWindow(newWindow);
             return newWindow;
         }
 
-        static public void TrackWindow(this Window window)
+        public static void TrackWindow(this Window window)
         {
-            window.Closed += (sender, args) => {
-                _activeWindows.Remove(window);
+            window.Closed += (sender, args) =>
+            {
+                ActiveWindows.Remove(window);
             };
-            _activeWindows.Add(window);
+            ActiveWindows.Add(window);
         }
 
-        static public Window GetWindowForElement(this UIElement element)
+        public static Window GetWindowForElement(this UIElement element)
         {
             if (element.XamlRoot != null)
             {
-                foreach (Window window in _activeWindows)
+                foreach (Window window in ActiveWindows)
                 {
                     if (element.XamlRoot == window.Content.XamlRoot)
                     {
@@ -56,8 +54,6 @@ namespace APKInstaller.Helpers
 
         public static AppWindow GetAppWindowForCurrentWindow() => UIHelper.MainWindow.GetAppWindowForCurrentWindow();
 
-        static public List<Window> ActiveWindows { get { return _activeWindows; } }
-
-        static private List<Window> _activeWindows = new List<Window>();
+        public static List<Window> ActiveWindows { get; } = new List<Window>();
     }
 }

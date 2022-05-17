@@ -1,7 +1,5 @@
 ﻿using AdvancedSharpAdbClient;
-using CommunityToolkit.WinUI;
 using CommunityToolkit.WinUI.Helpers;
-using Microsoft.UI;
 using Microsoft.UI.Xaml;
 using System;
 using System.IO;

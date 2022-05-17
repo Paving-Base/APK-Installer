@@ -3,7 +3,6 @@ using APKInstaller.Helpers.Exceptions;
 using Microsoft.UI.Xaml;
 using System;
 using Windows.ApplicationModel;
-using Windows.ApplicationModel.Resources;
 using Windows.Foundation.Metadata;
 using Windows.System.Profile;
 

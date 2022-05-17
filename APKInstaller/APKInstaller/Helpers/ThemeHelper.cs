@@ -1,10 +1,6 @@
 ﻿using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Windows.UI;
 
 namespace APKInstaller.Helpers
@@ -80,11 +76,9 @@ namespace APKInstaller.Helpers
 
         public static bool IsDarkTheme()
         {
-            if (RootTheme == ElementTheme.Default)
-            {
-                return Application.Current.RequestedTheme == ApplicationTheme.Dark;
-            }
-            return RootTheme == ElementTheme.Dark;
+            return RootTheme == ElementTheme.Default
+                ? Application.Current.RequestedTheme == ApplicationTheme.Dark
+                : RootTheme == ElementTheme.Dark;
         }
 
         public static void UpdateSystemCaptionButtonColors()

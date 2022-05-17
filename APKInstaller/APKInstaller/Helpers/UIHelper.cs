@@ -1,10 +1,8 @@
 ﻿using AdvancedSharpAdbClient;
 using APKInstaller.Pages;
 using CommunityToolkit.WinUI;
-using Microsoft.UI;
 using Microsoft.UI.Dispatching;
 using Microsoft.UI.Windowing;
-using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Media.Animation;
 using System;
 using System.Collections.Generic;
@@ -13,7 +11,6 @@ using System.Net;
 using Windows.ApplicationModel.Resources;
 using Windows.UI;
 using WinRT.Interop;
-using WindowId = Microsoft.UI.WindowId;
 
 namespace APKInstaller.Helpers
 {
