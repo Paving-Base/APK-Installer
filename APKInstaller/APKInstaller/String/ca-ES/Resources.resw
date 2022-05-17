@@ -136,7 +136,7 @@
     <value>No s’ha pogut carregar la imatge</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>Network exception</value>
+    <value>Excepció de la xarxa</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>No</value>

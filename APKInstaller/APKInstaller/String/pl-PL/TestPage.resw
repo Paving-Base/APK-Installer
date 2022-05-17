@@ -151,13 +151,13 @@
     <value>Postęp</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>Dark</value>
+    <value>Ciemny</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>Windows Default</value>
+    <value>Domyślne Windows</value>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
-    <value>Light</value>
+    <value>Jasny</value>
   </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
     <value>Ustaw wartość koła progresu</value>
@@ -172,7 +172,7 @@
     <value>Przycisk odświeżania</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
-    <value>App Theme</value>
+    <value>Motyw aplikacji</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Testowanie</value>
@@ -187,6 +187,6 @@
     <value>Test interfejsu użytkownika</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Windows Color Settings</value>
+    <value>Ustawienia kolorów Windows</value>
   </data>
 </root>

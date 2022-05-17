@@ -136,7 +136,7 @@
     <value>Nazwa aplikacji</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Anuluj</value>
+    <value>Cancel</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>Nie można połączyć z WSA</value>
@@ -158,6 +158,9 @@
   </data>
   <data name="Close" xml:space="preserve">
     <value>Zamknij</value>
+  </data>
+  <data name="CopyFlyoutItem.Text" xml:space="preserve">
+    <value>Kopiuj</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Urządzenia</value>

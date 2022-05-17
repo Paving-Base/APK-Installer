@@ -124,7 +124,7 @@
     <value>Oczekiwanie na urządzenie...</value>
   </data>
   <data name="Name.Header" xml:space="preserve">
-    <value>Name</value>
+    <value>Nazwa</value>
   </data>
   <data name="ProcessId.Header" xml:space="preserve">
     <value>Identyfikator procesu</value>
