@@ -136,7 +136,7 @@
     <value>BiliBili</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
-    <value>Modifier</value>
+    <value>Remplacer</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
     <value>Check Failed</value>
