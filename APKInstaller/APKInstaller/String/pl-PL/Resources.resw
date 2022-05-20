@@ -121,7 +121,7 @@
     <value>Pakiet aplikacji</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>Plik APK.</value>
+    <value>APK File</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>Instalator aplikacji Android. Napisany przez @where i @Tangent-90.</value>
