@@ -268,21 +268,21 @@
     <value>Pokaż ogłoszenia na górze ustawień.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Pokazać ogłoszenia?</value>
+    <value>Pokaż ogłoszenia</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Ustawienia</value>
+    <value>Ustawienie</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>Tłumaczenie</value>
+    <value>Przetłumacz witrynę</value>
   </data>
   <data name="TwitterLink.Content" xml:space="preserve">
-    <value>Twitter</value>
+    <value>Twitterze</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
-    <value>Wersja</value>
+    <value>Wersje</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Aktualna na dzień</value>
+    <value>Dotychczasowy</value>
   </data>
 </root>
