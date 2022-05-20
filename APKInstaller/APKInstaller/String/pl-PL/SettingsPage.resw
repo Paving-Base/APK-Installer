@@ -193,22 +193,22 @@
     <value>Wsparcie</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>Instalator APK jest aplikacją open source i nie zostaną wstawione żadne reklamy dla zysku. Jeśli podoba Ci się ta aplikacja, nie zapomnij ocenić jej w sklepie. Oczywiście, byłoby lepiej, gdybyś mógł przekazać małą dotację. Dziękujemy za twoje wsparcie 💕.</value>
+    <value>Instalator APK jest aplikacją open source i nie będzie wstawiany żadnych reklam dla zysku. Jeśli podoba ci się ta aplikacja, nie zapomnij ocenić jej w sklepie. Oczywiście, byłoby lepiej, gdybyś mógł trochę przekazać dotacje. Dziękujemy za wsparcie 💕.</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
-    <value>Licencja dla użytkownika końcowego</value>
+    <value>EULA</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
-    <value>Opinia</value>
+    <value>Sprzężenie zwrotne</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
-    <value>Znajdź aktualizację</value>
+    <value>Znajdź aktualizacje</value>
   </data>
   <data name="GithubLink.Content" xml:space="preserve">
-    <value>Github</value>
+    <value>GitHub</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>Idź do strony testowej.</value>
+    <value>Przejdź do strony testowej.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
     <value>Idź do strony testowej</value>
