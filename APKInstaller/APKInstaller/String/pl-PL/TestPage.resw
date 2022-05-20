@@ -178,15 +178,15 @@
     <value>الاختبار</value>
   </data>
   <data name="TitleBarSettings.Description" xml:space="preserve">
-    <value>Rozszerza zawartość paska tytułowego</value>
+    <value>將內容擴展到標題列</value>
   </data>
   <data name="TitleBarSettings.Header" xml:space="preserve">
-    <value>Pasek tytułu </value>
+    <value>標題列</value>
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
-    <value>Test interfejsu użytkownika</value>
+    <value>Tes UI</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Ustawienia kolorów Windows</value>
+    <value>Pengaturan Warna Windows</value>
   </data>
 </root>
