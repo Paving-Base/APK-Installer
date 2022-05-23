@@ -127,15 +127,15 @@
     <value>Name</value>
   </data>
   <data name="ProcessId.Header" xml:space="preserve">
-    <value>Process ID</value>
+    <value>Prozess ID</value>
   </data>
   <data name="ResidentSetSize.Header" xml:space="preserve">
-    <value>Resident Set Size</value>
+    <value>Residenter Satz Größe</value>
   </data>
   <data name="State.Header" xml:space="preserve">
-    <value>State</value>
+    <value>Zustand</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Processes</value>
+    <value>Prozesse</value>
   </data>
 </root>
