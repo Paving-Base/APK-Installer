@@ -124,7 +124,7 @@
     <value>Ruta ADB</value>
   </data>
   <data name="AfdianLink.Content" xml:space="preserve">
-    <value>Afdian</value>
+    <value>Ardían</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>Autodescargar cuando el paquete viene de URL.</value>
