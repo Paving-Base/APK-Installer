@@ -74,6 +74,7 @@
             <uap:SupportedFileTypes>
               <uap:FileType>.apks</uap:FileType>
               <uap:FileType>.apkm</uap:FileType>
+              <uap:FileType>.xapk</uap:FileType>
             </uap:SupportedFileTypes>
             <uap:DisplayName>ms-resource:SplitAPKFile</uap:DisplayName>
             <uap:Logo>Assets\256x256.png</uap:Logo>

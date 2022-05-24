@@ -1367,10 +1367,22 @@ namespace APKInstaller.ViewModels
                 CancelOperationButtonText = _loader.GetString("Cancel");
                 CancelOperationVisibility = LaunchWhenReadyVisibility = Visibility.Visible;
                 ActionVisibility = SecondaryActionVisibility = TextOutputVisibility = InstallOutputVisibility = Visibility.Collapsed;
-                await Task.Run(() =>
+                if (ApkInfo.IsSplit)
                 {
-                    new AdvancedAdbClient().Install(_device, File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read));
-                });
+                    await Task.Run(() => { new AdvancedAdbClient().InstallMultiple(_device, new Stream[] { File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read) }, ApkInfo.PackageName); });
+                }
+                else if (ApkInfo.IsBundle)
+                {
+                    await Task.Run(() =>
+                    {
+                        Stream[] streams = ApkInfo.SplitApks.Select(x => File.Open(x.FullPath, FileMode.Open, FileAccess.Read)).ToArray();
+                        new AdvancedAdbClient().InstallMultiple(_device, File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read), streams);
+                    });
+                }
+                else
+                {
+                    await Task.Run(() => { new AdvancedAdbClient().Install(_device, File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read)); });
+                }
                 AppName = string.Format(_loader.GetString("InstalledFormat"), ApkInfo?.AppName);
                 if (IsOpenApp)
                 {
@@ -1407,6 +1419,7 @@ namespace APKInstaller.ViewModels
             FileOpen.FileTypeFilter.Add(".apk");
             FileOpen.FileTypeFilter.Add(".apks");
             FileOpen.FileTypeFilter.Add(".apkm");
+            FileOpen.FileTypeFilter.Add(".xapk");
             FileOpen.SuggestedStartLocation = PickerLocationId.ComputerFolder;
 
             // When running on win32, FileSavePicker needs to know the top-level hwnd via IInitializeWithWindow::Initialize.
