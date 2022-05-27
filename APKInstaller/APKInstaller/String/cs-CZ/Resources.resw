@@ -124,7 +124,7 @@
     <value>Soubor APK</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>Instalátor aplikace pro Android. Napsal @where a @Tangent-90.</value>
+    <value>Instalátor aplikace pro Android. Napsáno @where a @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
     <value>Instalace APK</value>

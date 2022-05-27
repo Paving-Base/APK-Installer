@@ -121,13 +121,13 @@
     <value>Info</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>ADB Path</value>
+    <value>ADB-Pfad</value>
   </data>
   <data name="AfdianLink.Content" xml:space="preserve">
     <value>Afdian</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>Auto download when package is from URL.</value>
+    <value>Automatischer Download, wenn das Paket von einer URL stammt.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
     <value>Is Auto Download Online Packages?</value>
@@ -136,13 +136,13 @@
     <value>BiliBili</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
-    <value>Change</value>
+    <value>Wechseln</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
     <value>Überprüfung fehlgeschlagen</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>Checking For Updates...</value>
+    <value>Nach Updates suchen...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
     <value>Nach Updates suchen</value>
@@ -163,7 +163,7 @@
     <value>Is Close Installer when APP is Ready?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
-    <value>Configs</value>
+    <value>Konfigurationen</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
     <value>Gerät im Netzwerk verbinden.</value>
@@ -172,7 +172,7 @@
     <value>Gerät verbinden</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
-    <value>Contact Me</value>
+    <value>Kontaktiere mich</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
     <value>Follow me on social apps for the latest developments. If you find any bug, please report it to me in PM. I will try my best to solve the problem. If you have Telegram account, welcome to chat at Paving Base Group 😊!</value>
@@ -187,16 +187,16 @@
     <value>Gerät</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
-    <value>Display</value>
+    <value>Anzeige</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
-    <value>Supports</value>
+    <value>Unterstützung</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
     <value>APK Installer is an open source application, and it won't be inserted any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your supports 💕.</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
-    <value>EULA</value>
+    <value>Allgemeine Geschäftsbedingungen</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
     <value>Feedback</value>
@@ -205,10 +205,10 @@
     <value>Update suchen</value>
   </data>
   <data name="GithubLink.Content" xml:space="preserve">
-    <value>Github</value>
+    <value>GitHub</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>Go to the page of test.</value>
+    <value>Gehen Sie zur Testseite.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
     <value>Zur Testseite gehen</value>
@@ -217,10 +217,10 @@
     <value>Zum Update wechseln</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
-    <value>Join Our Chat</value>
+    <value>Kommen Sie in unseren Chat</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Last Checked: </value>
+    <value>Zuletzt geprüft:</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>Deaktivieren, um mit einem anderen Gerät zu verbinden.</value>
@@ -235,13 +235,13 @@
     <value>Patreon</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value>Rate On Store</value>
+    <value>Im Store bewerten</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
     <value>Versionshinweise</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
-    <value>Reset settings of this application.</value>
+    <value>Einstellungen dieser Anwendung zurücksetzen.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
     <value>Anwendung zurücksetzen</value>
@@ -265,16 +265,16 @@
     <value>Is Show Helpers?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Show Announcements on the top of Settings.</value>
+    <value>Ankündigungen oben in den Einstellungen anzeigen.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Is Show Announcements?</value>
+    <value>Zeigt Ankündigungen an?</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Einstellungen</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>Translate</value>
+    <value>Übersetzen</value>
   </data>
   <data name="TwitterLink.Content" xml:space="preserve">
     <value>Twitter</value>

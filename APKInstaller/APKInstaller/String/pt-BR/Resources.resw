@@ -136,7 +136,7 @@
     <value>OI</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>Network exception</value>
+    <value>Exceções de memória</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>No</value>

@@ -118,145 +118,145 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
-    <value>O programie</value>
+    <value>O</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>Ścieżka ADB</value>
+    <value>Ścieżka do ADB</value>
   </data>
   <data name="AfdianLink.Content" xml:space="preserve">
-    <value>Afdian</value>
+    <value>Adian</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>Automatyczne pobieranie, gdy pakiet jest z adresu URL.</value>
+    <value>Automatycznie pobieraj pakiety z adresów URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Czy automatycznie pobierać pakiety z sieci?</value>
+    <value>Czy automatyczne pobieranie pakietów online?</value>
   </data>
   <data name="BilibiliLink.Content" xml:space="preserve">
     <value>BiliBili</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
-    <value>Zmiana</value>
+    <value>Change=Zmiana</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>Sprawdzanie nie powiodło się</value>
+    <value>Sprawdzenie nie powiodło się</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>Sprawdzanie aktualizacji...</value>
+    <value>Wyszukiwanie aktualizacji...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
-    <value>Sprawdź aktualizacje</value>
+    <value>Sprawdzanie aktualizacji</value>
   </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
-    <value>Wyczyść pamięć podręczną</value>
+    <value>Usuń pamięć podręczną</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Zamknięcie ADB może uszkodzić pozostałe instalacje, jeśli są nadal uruchomione.</value>
+    <value>Zamknij ADB może uszkodzić innych instalatorów, gdy nadal będą otwarte.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Czy zamknąć ADB po zamknięciu instalacji?</value>
+    <value>Czy jest zamknięte ADB podczas zamykania instalatora?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Zamknij instalator po zainstalowaniu aplikacji i uruchom ją.</value>
+    <value>Zamknij Instalator po instalacji i uruchomieniu APK.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Czy zamknąć instalator, kiedy aplikacja jest gotowa?</value>
+    <value>Czy Zamknij Instalator gdy aplikacja jest gotowy?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
-    <value>Konfiguracja</value>
+    <value>Konfig</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Podłącz urządzenie do sieci.</value>
+    <value>Podłącz urządzenie w sieci.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
-    <value>Podłącz urządzenie</value>
+    <value>Połącz urządzenia</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
-    <value>Kontakt ze mną</value>
+    <value>Kontakt ze Mną</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Obserwuj mnie w aplikacjach społecznościowych, aby uzyskać najnowsze zmiany. Jeśli znajdziesz jakiś błąd, zgłoś go do mnie w PW. Postaram się jak najlepiej rozwiązać problem. Jeśli posiadasz konto Telegram, witaj na czacie w Paving Base Group 😊!</value>
+    <value>Śledź mnie w aplikacjach społecznościowych w celu wykrycia najnowszych wydarzeń. Jeśli znajdziesz jakiś błąd, zgłoś go do mnie w PM. Postaram się jak najlepiej rozwiązać problem. Jeśli posiadasz konto Telegram, witamy na czacie grupy bazowej ratownictwa 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
-    <value>Zawartość</value>
+    <value>Zadowolony</value>
   </data>
   <data name="CoolapkLink.Content" xml:space="preserve">
-    <value>Coolapk</value>
+    <value>Chłodnica</value>
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
-    <value>Urządzenie</value>
+    <value>Urządzenia</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
-    <value>Wyświetl</value>
+    <value>Pokaż</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
-    <value>Wsparcie</value>
+    <value>Agent</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>Instalator APK jest aplikacją open source i nie zostaną wstawione żadne reklamy dla zysku. Jeśli podoba Ci się ta aplikacja, nie zapomnij ocenić jej w sklepie. Oczywiście, byłoby lepiej, gdybyś mógł przekazać małą dotację. Dziękujemy za twoje wsparcie 💕.</value>
+    <value>Instalator APK jest aplikacją open source, która nie zostanie wstawiona do zysku. Jeśli lubisz tą aplikację, nie zapomnij ocenić jej w sklepie. Oczywiście, byłoby lepiej, gdybyś mógł nieco przekazać darowiznę. Dziękujemy za wsparcie: two_hearts.</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
-    <value>Licencja dla użytkownika końcowego</value>
+    <value>Umowa licencyjna</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
-    <value>Opinia</value>
+    <value>Informacja zwrotna</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
-    <value>Znajdź aktualizację</value>
+    <value>Szukaj aktualizacji</value>
   </data>
   <data name="GithubLink.Content" xml:space="preserve">
-    <value>Github</value>
+    <value>&amp;aWyczyszczono</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>Idź do strony testowej.</value>
+    <value>Idź na stronę testu.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>Idź do strony testowej</value>
+    <value>Przejdź do Strony testowej</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
-    <value>Przejdź do aktualizacji</value>
+    <value>Jak zaktualizować</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
-    <value>Dołącz do czatu</value>
+    <value>Dołącz do naszego zespołu</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Ostatnio sprawdzano:</value>
+    <value>Ostatnio sprawdzane:</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Wyłącz, aby połączyć się z innym urządzeniem.</value>
+    <value>Wyłącz go, aby połączyć się z innym urządzeniem.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>Czy to tylko dla WSA?</value>
+    <value>Czy tylko dla WSA?</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
-    <value>Inne</value>
+    <value>Inni</value>
   </data>
   <data name="PatreonLink.Content" xml:space="preserve">
-    <value>Patreon</value>
+    <value>"Patreon"</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value>Oceń w sklepie</value>
+    <value>Oceń w App Store</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
-    <value>Lista zmian</value>
+    <value>Informacje o wydaniu</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
-    <value>Zresetuj ustawienia tej aplikacji.</value>
+    <value>Resetuj ustawienia tej aplikacji.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
-    <value>Zresetuj aplikację</value>
+    <value>Zrestartuj aplikacje</value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
-    <value>Reset</value>
+    <value>Wyzeruj</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
-    <value>Tak</value>
+    <value>&amp;Tak</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
-    <value>Czy na pewno chcesz zresetować aplikację?</value>
+    <value>Czy na pewno chcesz zresetować wygląd aplikacji?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
-    <value>Wybierz urządzenie</value>
+    <value>Wybierz urządzenia</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
     <value>Pokaż podpowiedzi, gdy brak podłączonych urządzeń.</value>
@@ -268,21 +268,21 @@
     <value>Pokaż ogłoszenia na górze ustawień.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Pokazać ogłoszenia?</value>
+    <value>Pokaż ogłoszenia</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Ustawienia</value>
+    <value>Ustawienie</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>Tłumaczenie</value>
+    <value>Przetłumacz witrynę</value>
   </data>
   <data name="TwitterLink.Content" xml:space="preserve">
-    <value>Twitter</value>
+    <value>Twitterze</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
-    <value>Wersja</value>
+    <value>Wersje</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Aktualna na dzień</value>
+    <value>Dotychczasowy</value>
   </data>
 </root>

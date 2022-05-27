@@ -228,53 +228,53 @@
     <value>Uruchom</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
-    <value>Uruchamianie WSA...</value>
+    <value>Uruchamianie...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>Uruchom kiedy będzie gotowe</value>
+    <value>Kliknij kiedy jesteś gotowy</value>
   </data>
   <data name="Loading" xml:space="preserve">
     <value>Ładowanie...</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
-    <value>Więcej informacji</value>
+    <value>Płatność została pomyślnie zaktualizowana.</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
-    <value>Nie znaleziono urządzenia z Androidem</value>
+    <value>Nie można znaleźć urządzenia z systemem Android</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>Możesz zainstalować WSA. Lub przejdź do Ustawień, aby połączyć urządzenie.</value>
+    <value>Możesz podłączyć urządzenie poprzez Ustawienia.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>Możesz przejść do Ustawień, aby połączyć urządzenie.</value>
+    <value>Możesz zainstalować WSA. Podłączyć urządzenie możesz również poprzez Ustawienia.</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
-    <value>Brak połączenia z Internetem</value>
+    <value>Nie można połączyć się z Internetem</value>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
-    <value>Połącz się z Internetem przed uruchomieniem aplikacji.</value>
+    <value>Połącz się z Internetem przed otwarciem aplikacji.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>Dla prawidłowego funkcjonowania aplikacji spróbuj uruchomić pakiet aplikacji Android.</value>
+    <value>Dla prawidłowego funkcjonowania aplikacji, spróbuj uruchomić pakiet aplikacji na Androida.</value>
   </data>
   <data name="OK" xml:space="preserve">
-    <value>Ok</value>
+    <value>OK</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
-    <value>Pakiet online</value>
+    <value>Pakiet internetowy</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
-    <value>Nazwa pakietu</value>
+    <value>Nazwa paczki</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>Nazwa pakietu: {0}</value>
+    <value>Nazwa pakietu:</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
-    <value>Reinstalacja</value>
+    <value>Zainstaluj ponownie</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>{0} jest już zainstalowane</value>
+    <value>Dotclear jest już zainstalowany</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">

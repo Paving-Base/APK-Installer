@@ -142,7 +142,7 @@
     <value>Es kann keine Verbindung zu %s hergestellt werden</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>WSA may not start properly, or there is a problem with ADB. This situation can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
+    <value>WSA startet möglicherweise nicht richtig, oder es gibt ein Problem mit ADB. Diese Situation kann sehr schwierig zu beheben sein. Bitte starten Sie das Installationsprogramm neu. Wenn es immer noch nicht funktioniert, versuchen Sie, den Computer neu zu starten.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>App Paket kann nicht geöffnet werden</value>
@@ -160,16 +160,16 @@
     <value>Schließen</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
-    <value>Copy</value>
+    <value>Kopieren</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>Devices</value>
+    <value>Geräte</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Download</value>
+    <value>Herunterladen</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>Download Failed</value>
+    <value>Herunterladen fehlgeschlagen</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
     <value>Please check your network connection or the URL and try again.</value>
@@ -190,7 +190,7 @@
     <value>Wie verbindet man WSA?</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
-    <value>Icon</value>
+    <value>Symbol</value>
   </data>
   <data name="IKnow" xml:space="preserve">
     <value>Ich weiß</value>
@@ -202,7 +202,7 @@
     <value>~Installieren</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
-    <value>{0} is ready!</value>
+    <value>{0} ist bereit!</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
@@ -210,19 +210,19 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
-    <value>Installing...</value>
+    <value>Installiere...</value>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
     <value>Grund: </value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
-    <value>Install WSA</value>
+    <value>WSA installieren</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
     <value>Das Paket ist beschädigt oder ungültig.</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
-    <value>The URL is either Incomplete or invalid.</value>
+    <value>Die URL ist entweder unvollständig oder ungültig.</value>
   </data>
   <data name="Launch" xml:space="preserve">
     <value>Starten</value>
@@ -231,13 +231,13 @@
     <value>WSA wird gestartet...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>Launch when ready</value>
+    <value>Klicken, wenn bereit</value>
   </data>
   <data name="Loading" xml:space="preserve">
     <value>Wird geladen...</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
-    <value>More Info</value>
+    <value>Weitere Infos</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
     <value>Android Gerät nicht gefunden</value>
@@ -246,7 +246,7 @@
     <value>Sie können WSA installieren, oder zu den Einstellungen gehen, um Gerät zu verbinden.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>You can go to Settings to connect Device.</value>
+    <value>Sie können zu den Einstellungen gehen, um das Gerät zu verbinden.</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
     <value>Keine Internetverbindung möglich</value>
@@ -261,10 +261,10 @@
     <value>OK</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
-    <value>Online Package</value>
+    <value>Online Paket</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
-    <value>Package Name</value>
+    <value>Paketname</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
     <value>Paketname: {0}</value>
@@ -297,7 +297,7 @@
     <value>Unzip ADB...</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
-    <value>Unzip completed</value>
+    <value>Entpacken ist abgeschlossen</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
     <value>Entpacken von {0}/{1}...</value>
@@ -311,14 +311,14 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
-    <value>Version Code</value>
+    <value>Versionsnummer</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
     <value>  Ausführung {0}</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>Waiting for download...</value>
+    <value>Warten auf Download ...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
     <value>Warte auf Netzwerk...</value>
@@ -328,8 +328,8 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
-    <value>Waiting WSA Start...
-This may take long time. Sit back and relax.</value>
+    <value>Warte auf WSA Start...
+Dies kann lange dauern. Setze dich zurück und entspannen.</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>%s wird ausgeführt</value>

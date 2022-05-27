@@ -127,11 +127,10 @@
     <value>ADB не найден</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>APK-файл
-</value>
+    <value>APK-файл File</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Возможности: </value>
+    <value>Возможности:</value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
     <value>Название приложения</value>
@@ -161,22 +160,22 @@
     <value>Закрыть</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
-    <value>Copy</value>
+    <value>Копировать</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Устройства</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Загрузить</value>
+    <value>Скачать</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
     <value>Сбой загрузки</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>Пожалуйста, проверьте подключение к сети или URL-адрес и повторите попытку.</value>
+    <value>Пожалуйста, проверьте подключение к интернету или URL и повторите попытку.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>Поиск Подсистемы Windows для Android...</value>
+    <value>Поиск</value>
   </data>
   <data name="Finished" xml:space="preserve">
     <value>Готово</value>
