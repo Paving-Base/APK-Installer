@@ -175,7 +175,7 @@
     <value>Пожалуйста, проверьте подключение к интернету или URL и повторите попытку.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>Поиск</value>
+    <value>Поиск Подсистемы Windows для Android...</value>
   </data>
   <data name="Finished" xml:space="preserve">
     <value>Готово</value>
