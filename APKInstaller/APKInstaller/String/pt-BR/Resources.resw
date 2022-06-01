@@ -133,7 +133,7 @@
     <value>Ocorreu um erro com o programa…</value>
   </data>
   <data name="ImageLoadError" xml:space="preserve">
-    <value>OI</value>
+    <value>Picture failed to load</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
     <value>Exceções de memória</value>
