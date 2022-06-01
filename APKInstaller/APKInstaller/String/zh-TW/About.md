@@ -7,7 +7,7 @@
 4. 本應用文本翻譯來自 [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") 社區，所有文本均不代表作者觀點。
 
 ##### 翻譯
-感謝 [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") 翻譯者的支援。 Sollte es ein Problem mit der Übersetzung geben, kommen Sie bitte und korrigieren Sie sie.
+感謝 [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") 翻譯者的支援。 如果翻譯出現了什麼問題，歡迎前來糾正。
 
 ##### 參與人員
 - [wherewhere](https://github.com/wherewhere)
