@@ -253,7 +253,7 @@
     <value>123</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
-    <value>111111111111111111111111111111111111111</value>
+    <value>Are you sure you want to reset the app?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>1111111111111</value>

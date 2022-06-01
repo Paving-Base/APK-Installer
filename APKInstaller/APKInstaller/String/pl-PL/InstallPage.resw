@@ -136,7 +136,7 @@
     <value>Nazwa aplikacji</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Anuluj</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>Nie można połączyć z WSA</value>
@@ -228,53 +228,53 @@
     <value>Uruchom</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
-    <value>Uruchamianie...</value>
+    <value>Uruchamianie WSA...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>Kliknij kiedy jesteś gotowy</value>
+    <value>Uruchom kiedy będzie gotowe</value>
   </data>
   <data name="Loading" xml:space="preserve">
     <value>Ładowanie...</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
-    <value>Płatność została pomyślnie zaktualizowana.</value>
+    <value>Więcej informacji</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
-    <value>Nie można znaleźć urządzenia z systemem Android</value>
+    <value>Nie znaleziono urządzenia z Androidem</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>Możesz podłączyć urządzenie poprzez Ustawienia.</value>
+    <value>Możesz zainstalować WSA. Lub przejdź do Ustawień, aby połączyć urządzenie.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>Możesz zainstalować WSA. Podłączyć urządzenie możesz również poprzez Ustawienia.</value>
+    <value>Możesz przejść do Ustawień, aby połączyć urządzenie.</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
-    <value>Nie można połączyć się z Internetem</value>
+    <value>Brak połączenia z Internetem</value>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
-    <value>Połącz się z Internetem przed otwarciem aplikacji.</value>
+    <value>Połącz się z Internetem przed uruchomieniem aplikacji.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>Dla prawidłowego funkcjonowania aplikacji, spróbuj uruchomić pakiet aplikacji na Androida.</value>
+    <value>Dla prawidłowego funkcjonowania aplikacji spróbuj uruchomić pakiet aplikacji Android.</value>
   </data>
   <data name="OK" xml:space="preserve">
-    <value>OK</value>
+    <value>Ok</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
-    <value>Pakiet internetowy</value>
+    <value>Pakiet online</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
-    <value>Nazwa paczki</value>
+    <value>Nazwa pakietu</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>Nazwa pakietu:</value>
+    <value>Nazwa pakietu: {0}</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
-    <value>Zainstaluj ponownie</value>
+    <value>Reinstalacja</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>Dotclear jest już zainstalowany</value>
+    <value>{0} jest już zainstalowane</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
