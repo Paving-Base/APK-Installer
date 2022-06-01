@@ -130,7 +130,7 @@
     <value>Auto download when package is from URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Czy automatyczne pobieranie pakietów online?</value>
+    <value>Is Auto Download Online Packages?</value>
   </data>
   <data name="BilibiliLink.Content" xml:space="preserve">
     <value>BiliBili</value>
