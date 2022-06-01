@@ -268,14 +268,14 @@
     <value>Package Name</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>اسم الحزمة   </value>
+    <value>Package Name: {0}</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
     <value>إعادة التثبيت</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>% مُثبتٌ بالفعل</value>
+    <value>{0} is already installed</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
@@ -325,7 +325,7 @@
     <value>في انتظار الشبكة...</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
-    <value>في انتظار التثبيت</value>
+    <value>في انتظار التثبيت {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
