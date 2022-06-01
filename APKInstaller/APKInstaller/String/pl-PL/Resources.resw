@@ -118,33 +118,33 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="APKDescription" xml:space="preserve">
-    <value>Pakiet aplikacji</value>
+    <value>Pakiet aplikacji Android</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>APK File</value>
+    <value>Plik APK</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>Instalator aplikacji Android. Napisany przez @where i @Tangent-90.</value>
+    <value>Instalator aplikacji Android. Napisany przez @wherewhere i @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>Instalator API</value>
+    <value>Instalator APK</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
-    <value>Wystąpił błąd w tym programie do obsługi kart.</value>
+    <value>Wystąpił błąd w programie…</value>
   </data>
   <data name="ImageLoadError" xml:space="preserve">
-    <value>nie udało się załadować obrazu</value>
+    <value>Nie udało załadować się obrazu</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>Wyjątki sieciowe</value>
+    <value>Wyjątek sieci</value>
   </data>
   <data name="No" xml:space="preserve">
-    <value>Nr</value>
+    <value>Nie</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>Poddziel plik APK</value>
+    <value>Podziel plik APK</value>
   </data>
   <data name="Yes" xml:space="preserve">
-    <value>Tak.</value>
+    <value>Tak</value>
   </data>
 </root>
