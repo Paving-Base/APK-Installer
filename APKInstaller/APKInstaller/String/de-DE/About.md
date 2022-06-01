@@ -6,8 +6,8 @@
 3. Wenn die Quelle des Programms nicht abnormal ist, werden alle Ihre Daten nur verwendet, um mit dem Programm zu laufen oder lokal gespeichert, während das Programm läuft, und der Entwickler wird keine Ihrer Daten stehlen. Achten Sie aber trotzdem auf die Sicherheit der Nutzungsumgebung.
 4. Die Übersetzung des Textes dieser Anwendung stammt von der [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin")-Community, und alle Texte geben nicht die Ansichten des Autors wieder.
 
-##### Translate
-Dank an die <0›Crowdin‹/0>-Übersetzer für ihre Unterstützung. Sollte es ein Problem mit der Übersetzung geben, kommen Sie bitte und korrigieren Sie sie.
+##### Übersetzen
+Dank an die [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin")-Übersetzer für ihre Unterstützung. Sollte es ein Problem mit der Übersetzung geben, kommen Sie bitte und korrigieren Sie sie.
 
 ##### Mitwirkende
 - [wherewhere](https://github.com/wherewhere)
