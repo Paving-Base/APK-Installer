@@ -118,75 +118,75 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AndroidTestSettingsHeader.Header" xml:space="preserve">
-    <value>System Android</value>
+    <value>Test Android</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
-    <value>Podania o pracę</value>
+    <value>Aplikacje</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
-    <value>Wprowadź nakładkę kompaktową</value>
+    <value>Wprowadź lub wyjdź z kompaktowej nakładki</value>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
-    <value>Wprowadź nakładkę kompaktową</value>
+    <value>Kompaktowa nakładka</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
-    <value>Schowaj nakładkę</value>
+    <value>Wprowadź nakładkę kompaktową</value>
   </data>
   <data name="LanguageSettings.Description" xml:space="preserve">
-    <value>Wybierz język i uruchom ponownie, aby zmienić język</value>
+    <value>Wybierz język i zrestartuj, aby zmienić język</value>
   </data>
   <data name="LanguageSettings.Header" xml:space="preserve">
-    <value>Językiem</value>
+    <value>Język</value>
   </data>
   <data name="OutPIP.Content" xml:space="preserve">
-    <value>Zakończ</value>
+    <value>Wyjście</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
-    <value>Proces</value>
+    <value>Procesy</value>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
-    <value>Testuj Dzień Postępu na pasku tytułu</value>
+    <value>Koło progresu na pasku tytułowym</value>
   </data>
   <data name="ProgressSettings.Header" xml:space="preserve">
-    <value>Postępy</value>
+    <value>Postęp</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>Oscuro</value>
+    <value>Ciemny</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>Windows 預設</value>
+    <value>Domyślne Windows</value>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
-    <value>Terang</value>
+    <value>Jasny</value>
   </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
-    <value>Atur nilai Cincin Kemajuan</value>
+    <value>Ustaw wartość koła progresu</value>
   </data>
   <data name="SetProgressValue.Header" xml:space="preserve">
-    <value>Valor del progreso</value>
+    <value>Wartość progresu</value>
   </data>
   <data name="ShowRefreshButton.Description" xml:space="preserve">
-    <value>顯示標題列上的刷新按鈕</value>
+    <value>Pokaż przycisk odświeżania na pasku tytułowym</value>
   </data>
   <data name="ShowRefreshButton.Header" xml:space="preserve">
-    <value>刷新按鈕</value>
+    <value>Przycisk odświeżania</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
-    <value>Tema de la aplicación</value>
+    <value>Motyw aplikacji</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>الاختبار</value>
+    <value>Testowanie</value>
   </data>
   <data name="TitleBarSettings.Description" xml:space="preserve">
-    <value>將內容擴展到標題列</value>
+    <value>Rozszerza zawartość paska tytułowego</value>
   </data>
   <data name="TitleBarSettings.Header" xml:space="preserve">
-    <value>標題列</value>
+    <value>Pasek tytułu </value>
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
-    <value>Tes UI</value>
+    <value>Test interfejsu użytkownika</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Pengaturan Warna Windows</value>
+    <value>Ustawienia kolorów Windows</value>
   </data>
 </root>
