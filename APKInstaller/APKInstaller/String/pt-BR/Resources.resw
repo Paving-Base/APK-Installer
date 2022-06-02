@@ -133,7 +133,7 @@
     <value>Ocorreu um erro com o programa…</value>
   </data>
   <data name="ImageLoadError" xml:space="preserve">
-    <value>Picture failed to load</value>
+    <value>Falha ao carregar a imagem</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
     <value>Exceções de memória</value>
@@ -142,9 +142,9 @@
     <value>Não</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>Split APK File</value>
+    <value>Dividir arquivo APK</value>
   </data>
   <data name="Yes" xml:space="preserve">
-    <value>Yes</value>
+    <value>Sim</value>
   </data>
 </root>
