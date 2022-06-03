@@ -810,7 +810,7 @@ namespace APKInstaller.ViewModels
             WaitProgressText = _loader.GetString("Loading");
             if (!string.IsNullOrEmpty(_path) || _url != null)
             {
-                AdbServer ADBServer = new();
+                IAdbServer ADBServer = AdbServer.Instance;
                 if (!ADBServer.GetStatus().IsRunning)
                 {
                     WaitProgressText = _loader.GetString("CheckingADB");

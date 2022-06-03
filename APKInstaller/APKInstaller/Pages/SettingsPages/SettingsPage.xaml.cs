@@ -31,7 +31,7 @@ namespace APKInstaller.Pages.SettingsPages
             if (SettingsViewModel.Caches != null)
             {
                 Provider = SettingsViewModel.Caches;
-                if (new AdbServer().GetStatus().IsRunning)
+                if (AdbServer.Instance.GetStatus().IsRunning)
                 {
                     Provider.DeviceList = new AdvancedAdbClient().GetDevices();
                 }
@@ -40,7 +40,7 @@ namespace APKInstaller.Pages.SettingsPages
             {
                 Provider = new SettingsViewModel(this);
                 if (Provider.UpdateDate == DateTime.MinValue) { Provider.CheckUpdate(); }
-                if (new AdbServer().GetStatus().IsRunning)
+                if (AdbServer.Instance.GetStatus().IsRunning)
                 {
                     ADBHelper.Monitor.DeviceChanged += Provider.OnDeviceChanged;
                     Provider.DeviceList = new AdvancedAdbClient().GetDevices();
@@ -56,7 +56,7 @@ namespace APKInstaller.Pages.SettingsPages
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             base.OnNavigatedFrom(e);
-            if (new AdbServer().GetStatus().IsRunning) { ADBHelper.Monitor.DeviceChanged -= Provider.OnDeviceChanged; }
+            if (AdbServer.Instance.GetStatus().IsRunning) { ADBHelper.Monitor.DeviceChanged -= Provider.OnDeviceChanged; }
         }
 
         private async void Button_Click(object sender, RoutedEventArgs e)
