@@ -136,13 +136,13 @@
     <value>BiliBili</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
-    <value>Change</value>
+    <value>Alterar</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>Check Failed</value>
+    <value>A verificação falhou</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>Checking For Updates...</value>
+    <value>A verificar existência de atualizações...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
     <value>Verificar atualizações</value>
@@ -220,7 +220,7 @@
     <value>Join Our Chat</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Last Checked: </value>
+    <value>Última verificação: </value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>Disable it to connect to other device.</value>
@@ -238,7 +238,7 @@
     <value>Classificar na loja</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
-    <value>Release notes</value>
+    <value>Notas de lançamento</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
     <value>Reset settings of this application.</value>
@@ -271,18 +271,18 @@
     <value>Is Show Announcements?</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Settings</value>
+    <value>Definições</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>Translate</value>
+    <value>Traduzir</value>
   </data>
   <data name="TwitterLink.Content" xml:space="preserve">
     <value>Twitter</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
-    <value>Version</value>
+    <value>Versão</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Up To Date</value>
+    <value>Versão atualizada</value>
   </data>
 </root>
