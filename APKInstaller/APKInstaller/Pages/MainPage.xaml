@@ -23,12 +23,10 @@
             Grid.Column="1"
             Height="{x:Bind helper:UIHelper.TitleBarHeight}"
             HorizontalAlignment="Stretch"
-            VerticalAlignment="Top"
-            Background="{StaticResource ApplicationPageBackgroundThemeBrush}" />
+            VerticalAlignment="Top" />
         <Border
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
-            Background="{StaticResource ApplicationPageBackgroundThemeBrush}"
             Canvas.ZIndex="1"
             Visibility="{x:Bind CoreAppFrame.CanGoBack, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='true'}">
             <Button
@@ -47,7 +45,6 @@
             x:Name="CoreAppFrame"
             Grid.Row="1"
             Grid.ColumnSpan="3"
-            x:FieldModifier="Public"
-            Background="{StaticResource ApplicationPageBackgroundThemeBrush}" />
+            x:FieldModifier="Public" />
     </Grid>
 </Page>

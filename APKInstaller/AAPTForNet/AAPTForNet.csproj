@@ -12,10 +12,6 @@
   <ItemGroup Condition="'$(TargetFramework)' != 'net4.8'">
     <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
   </ItemGroup>
-    
-  <ItemGroup>
-    <PackageReference Include="adk-build-tools" Version="29.0.1" />
-  </ItemGroup>
 
   <ItemGroup>
     <None Update="tool\aapt.exe">

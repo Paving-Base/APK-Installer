@@ -18,15 +18,19 @@ namespace APKInstaller
     /// </summary>
     public sealed partial class MainWindow : Window
     {
+        public BackdropHelper Backdrop;
+
         public MainWindow()
         {
             InitializeComponent();
             this.GetAppWindowForCurrentWindow().SetIcon("favicon.ico");
             IntPtr hwnd = WindowNative.GetWindowHandle(this);
+            Backdrop = new BackdropHelper(this);
             SetWindowSize(hwnd, 652, 414);
             UIHelper.MainWindow = this;
             MainPage MainPage = new();
             Content = MainPage;
+            Backdrop.SetBackdrop(BackdropType.Mica);
         }
 
         private void Window_Closed(object sender, WindowEventArgs args)

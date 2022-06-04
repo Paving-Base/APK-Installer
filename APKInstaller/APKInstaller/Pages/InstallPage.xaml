@@ -86,7 +86,6 @@
             Grid.Row="0"
             Height="{x:Bind helper:UIHelper.TitleBarHeight}"
             HorizontalAlignment="Stretch"
-            Background="{StaticResource ApplicationPageBackgroundThemeBrush}"
             Visibility="{x:Bind helper:UIHelper.HasTitleBar, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='true'}" />
         <Grid
             x:Name="CoreAppUI"
