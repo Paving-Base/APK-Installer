@@ -121,7 +121,7 @@
     <value>Android Test</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
-    <value>Applications</value>
+    <value>Aplicações</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Select Backdrop Type for Windows 11</value>
@@ -142,28 +142,28 @@
     <value>Select language and restart to change language</value>
   </data>
   <data name="LanguageSettings.Header" xml:space="preserve">
-    <value>Language</value>
+    <value>Idioma</value>
   </data>
   <data name="OutPIP.Content" xml:space="preserve">
-    <value>Exit</value>
+    <value>Sair</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
-    <value>Processes</value>
+    <value>Processos</value>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
     <value>Test Progress Ring on the Title Bar</value>
   </data>
   <data name="ProgressSettings.Header" xml:space="preserve">
-    <value>Progress</value>
+    <value>Progresso</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>Dark</value>
+    <value>Escuro</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>Windows Default</value>
+    <value>Padrão do Windows</value>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
-    <value>Light</value>
+    <value>Claro</value>
   </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
     <value>Set the value of Progress Ring</value>
@@ -181,7 +181,7 @@
     <value>App Theme</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Testing</value>
+    <value>A testar</value>
   </data>
   <data name="TitleBarSettings.Description" xml:space="preserve">
     <value>Extends Content Into TitleBar</value>
@@ -193,6 +193,6 @@
     <value>UI Test</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Windows Color Settings</value>
+    <value>Definições de cor do Windows</value>
   </data>
 </root>
