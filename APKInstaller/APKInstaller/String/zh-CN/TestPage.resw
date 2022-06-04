@@ -123,6 +123,12 @@
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>应用程序</value>
   </data>
+  <data name="BackdropSettings.Description" xml:space="preserve">
+    <value>Select Backdrop Type for Windows 11</value>
+  </data>
+  <data name="BackdropSettings.Header" xml:space="preserve">
+    <value>Backdrop</value>
+  </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
     <value>进入或退出画中画模式</value>
   </data>
