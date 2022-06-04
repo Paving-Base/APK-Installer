@@ -294,13 +294,13 @@
     <value>Start WSA</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
-    <value>Unzip ADB...</value>
+    <value>A extrair ADB...</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
     <value>Unzip completed</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
-    <value>Unzipping {0}/{1} ...</value>
+    <value>A extrair {0}/{1} ...</value>
     <comment>{0} - Have done num. {1} - All num.</comment>
   </data>
   <data name="Update" xml:space="preserve">
