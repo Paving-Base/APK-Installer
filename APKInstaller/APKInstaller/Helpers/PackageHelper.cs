@@ -8,7 +8,7 @@ using Windows.System;
 
 namespace APKInstaller.Helpers
 {
-    internal static partial class PackageHelper
+    public static partial class PackageHelper
     {
         public static async Task<(bool isfound, IEnumerable<Package> info)> FindPackagesByName(string PackageFamilyName)
         {

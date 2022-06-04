@@ -1,6 +1,7 @@
 ﻿using Microsoft.UI.Composition;
 using Microsoft.UI.Composition.SystemBackdrops;
 using Microsoft.UI.Xaml;
+using Windows.Foundation;
 using WinRT; // required to support Window.As<ICompositionSupportsSystemBackdrop>()
 
 namespace APKInstaller.Helpers
@@ -16,10 +17,12 @@ namespace APKInstaller.Helpers
     {
         private readonly Window window;
         private readonly WindowsSystemDispatcherQueueHelper m_wsdqHelper;
-        private BackdropType m_currentBackdrop = BackdropType.DefaultColor;
+        private BackdropType? m_currentBackdrop = null;
         private MicaController m_micaController;
         private DesktopAcrylicController m_acrylicController;
         private SystemBackdropConfiguration m_configurationSource;
+
+        public event TypedEventHandler<BackdropHelper, object> BackdropTypeChanged;
 
         public BackdropHelper(Window window)
         {
@@ -30,7 +33,7 @@ namespace APKInstaller.Helpers
 
         public void SetBackdrop(BackdropType type)
         {
-            if(type == m_currentBackdrop) { return; }
+            if (type == m_currentBackdrop) { return; }
 
             // Reset to default color. If the requested type is supported, we'll update to that.
             // Note: This sample completely removes any previous controller to reset to the default
@@ -75,6 +78,8 @@ namespace APKInstaller.Helpers
                     m_currentBackdrop = type;
                 }
             }
+
+            BackdropTypeChanged?.Invoke(this, m_currentBackdrop);
         }
 
         private bool TrySetMicaBackdrop()

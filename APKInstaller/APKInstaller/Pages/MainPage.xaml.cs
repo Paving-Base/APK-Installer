@@ -4,6 +4,8 @@ using Microsoft.UI.Dispatching;
 using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Media;
+using System;
 using Windows.Graphics;
 
 // To learn more about WinUI, the WinUI project structure,
@@ -16,7 +18,7 @@ namespace APKInstaller.Pages
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        private readonly bool HasBeenSmail;
+        private bool HasBeenSmail;
         private readonly AppWindow AppWindow = WindowHelper.GetAppWindowForCurrentWindow();
 
         public MainPage()
@@ -24,11 +26,11 @@ namespace APKInstaller.Pages
             InitializeComponent();
             UIHelper.MainPage = this;
             UIHelper.DispatcherQueue = DispatcherQueue.GetForCurrentThread();
+            UIHelper.MainWindow.Backdrop.BackdropTypeChanged += OnBackdropTypeChanged;
             if (UIHelper.HasTitleBar)
             {
                 LeftPadding.Width = new GridLength(120);
                 UIHelper.MainWindow.ExtendsContentIntoTitleBar = true;
-                WindowHelper.SetTitleBar(UIHelper.MainWindow, CustomTitleBar);
                 Root.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Auto) });
                 Root.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
             }
@@ -37,8 +39,15 @@ namespace APKInstaller.Pages
                 AppWindow.TitleBar.ExtendsContentIntoTitleBar = true;
                 ActualThemeChanged += (sender, arg) => ThemeHelper.UpdateSystemCaptionButtonColors();
             }
-            //UIHelper.MainWindow.SetTitleBar(CustomTitleBar);
+            UIHelper.MainWindow.SetTitleBar(CustomTitleBar);
             _ = CoreAppFrame.Navigate(typeof(InstallPage));
+        }
+
+        private void OnBackdropTypeChanged(BackdropHelper sender, object args)
+        {
+            CustomTitleBar.Background = (BackdropType)args == BackdropType.DefaultColor
+                ? (AboutButtonBorder.Background = CoreAppFrame.Background = (SolidColorBrush)Application.Current.Resources["ApplicationPageBackgroundThemeBrush"])
+                : (AboutButtonBorder.Background = CoreAppFrame.Background = (SolidColorBrush)Application.Current.Resources["ControlFillColorTransparentBrush"]);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -59,19 +68,19 @@ namespace APKInstaller.Pages
             {
                 if (UIHelper.HasTitleBar)
                 {
-                    //if (XamlRoot.Size.Width <= 268)
-                    //{
-                    //    if (!HasBeenSmail)
-                    //    {
-                    //        HasBeenSmail = true;
-                    //        UIHelper.MainWindow.SetTitleBar(null);
-                    //    }
-                    //}
-                    //else if (HasBeenSmail)
-                    //{
-                    //    HasBeenSmail = false;
-                    //    UIHelper.MainWindow.SetTitleBar(CustomTitleBar);
-                    //}
+                    if (XamlRoot.Size.Width <= 268)
+                    {
+                        if (!HasBeenSmail)
+                        {
+                            HasBeenSmail = true;
+                            UIHelper.MainWindow.SetTitleBar(null);
+                        }
+                    }
+                    else if (HasBeenSmail)
+                    {
+                        HasBeenSmail = false;
+                        UIHelper.MainWindow.SetTitleBar(CustomTitleBar);
+                    }
                 }
                 else
                 {

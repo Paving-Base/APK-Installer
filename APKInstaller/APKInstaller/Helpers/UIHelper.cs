@@ -14,16 +14,17 @@ using WinRT.Interop;
 
 namespace APKInstaller.Helpers
 {
-    internal static class ADBHelper
+    public static class ADBHelper
     {
         public static DeviceMonitor Monitor = new(new AdbSocket(new IPEndPoint(IPAddress.Loopback, AdvancedAdbClient.AdbServerPort)));
+        
         static ADBHelper()
         {
             Monitor.Start();
         }
     }
 
-    internal static partial class UIHelper
+    public static partial class UIHelper
     {
         public static bool HasTitleBar = !AppWindowTitleBar.IsCustomizationSupported();
         public static bool TitleBarExtended => HasTitleBar ? MainWindow.ExtendsContentIntoTitleBar : WindowHelper.GetAppWindowForCurrentWindow().TitleBar.ExtendsContentIntoTitleBar;
@@ -44,7 +45,7 @@ namespace APKInstaller.Helpers
         }
     }
 
-    internal static partial class UIHelper
+    public static partial class UIHelper
     {
         public static MainPage MainPage;
         public static MainWindow MainWindow;
@@ -65,7 +66,7 @@ namespace APKInstaller.Helpers
         }
     }
 
-    internal static partial class UIHelper
+    public static partial class UIHelper
     {
         public static string GetSizeString(this double size)
         {

@@ -10,7 +10,7 @@ using Windows.UI.ViewManagement;
 
 namespace APKInstaller.Helpers
 {
-    internal static partial class SettingsHelper
+    public static partial class SettingsHelper
     {
         public const string ADBPath = "ADBPath";
         public const string IsOpenApp = "IsOpenApp";

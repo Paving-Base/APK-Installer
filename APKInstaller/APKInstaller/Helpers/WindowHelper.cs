@@ -1,8 +1,6 @@
 ﻿using Microsoft.UI;
-using Microsoft.UI.Input;
 using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
-using Microsoft.UI.Xaml.Input;
 using NativeMethods.Interop;
 using System;
 using System.Collections.Generic;
@@ -128,44 +126,13 @@ namespace APKInstaller.Helpers
 
         #endregion
 
-        [DllImportAttribute("user32.dll")]
-        public static extern bool ReleaseCapture();
-
-        public static bool SetTitleBar(Window window, FrameworkElement element)
-            => GetHandle(window, out IntPtr windowHandle) && SetTitleBar(windowHandle, element);
-
-        public static bool SetTitleBar(IntPtr handle, FrameworkElement element)
-        {
-            void On_PointerReleased(object sender, PointerRoutedEventArgs e)
-            {
-                ReleaseCapture();
-                PointerPoint Point = e.GetCurrentPoint(sender as FrameworkElement);
-                switch (Point.Properties.PointerUpdateKind)
-                {
-                    case PointerUpdateKind.RightButtonReleased:
-                        User32.SendMessage(handle, User32.WM.NCRBUTTONUP, (IntPtr)User32.WM_NCHITTEST.CAPTION, (IntPtr)0);
-                        break;
-                }
-            }
-
-            void On_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
-            {
-                ReleaseCapture();
-                User32.SendMessage(handle, User32.WM.NCLBUTTONDBLCLK, (IntPtr)User32.WM_NCHITTEST.CAPTION, (IntPtr)0);
-            }
-
-            element.PointerReleased += On_PointerReleased;
-            element.DoubleTapped += On_DoubleTapped;
-            return true;
-        }
-
         /// <summary>
         /// Tries to get the pointer to the window handle.
         /// </summary>
         /// <param name="window"></param>
         /// <param name="windowHandle"></param>
         /// <returns><see langword="true"/> if the handle is not <see cref="IntPtr.Zero"/>.</returns>
-        private static bool GetHandle(Window window, out IntPtr windowHandle)
+        public static bool GetHandle(Window window, out IntPtr windowHandle)
         {
             windowHandle = WindowNative.GetWindowHandle(window);
 
