@@ -123,6 +123,12 @@
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>應用程式</value>
   </data>
+  <data name="BackdropSettings.Description" xml:space="preserve">
+    <value>選擇適用於 Windows 11 的背景色類型</value>
+  </data>
+  <data name="BackdropSettings.Header" xml:space="preserve">
+    <value>背景色</value>
+  </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
     <value>進入或退出畫中畫模式</value>
   </data>

@@ -123,6 +123,12 @@
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>Aplicação </value>
   </data>
+  <data name="BackdropSettings.Description" xml:space="preserve">
+    <value>Select Backdrop Type for Windows 11</value>
+  </data>
+  <data name="BackdropSettings.Header" xml:space="preserve">
+    <value>Backdrop</value>
+  </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
     <value>Enter or Exit Compact Overlay</value>
   </data>
