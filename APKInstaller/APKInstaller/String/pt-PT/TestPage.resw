@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AndroidTestSettingsHeader.Header" xml:space="preserve">
-    <value>Android Test</value>
+    <value>Teste de Android</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>Aplicações</value>
@@ -139,7 +139,7 @@
     <value>Enter Compact Overlay</value>
   </data>
   <data name="LanguageSettings.Description" xml:space="preserve">
-    <value>Select language and restart to change language</value>
+    <value>Selecione o idioma e reinicie o programa</value>
   </data>
   <data name="LanguageSettings.Header" xml:space="preserve">
     <value>Idioma</value>
@@ -178,7 +178,7 @@
     <value>Refresh Button</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
-    <value>App Theme</value>
+    <value>Tema da aplicação</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>A testar</value>
@@ -187,10 +187,10 @@
     <value>Extends Content Into TitleBar</value>
   </data>
   <data name="TitleBarSettings.Header" xml:space="preserve">
-    <value>Title Bar</value>
+    <value>Barra de título</value>
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
-    <value>UI Test</value>
+    <value>Teste de interface</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
     <value>Definições de cor do Windows</value>
