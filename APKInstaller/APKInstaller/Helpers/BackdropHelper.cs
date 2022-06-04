@@ -16,7 +16,7 @@ namespace APKInstaller.Helpers
     {
         private readonly Window window;
         private readonly WindowsSystemDispatcherQueueHelper m_wsdqHelper;
-        private BackdropType m_currentBackdrop;
+        private BackdropType m_currentBackdrop = BackdropType.DefaultColor;
         private MicaController m_micaController;
         private DesktopAcrylicController m_acrylicController;
         private SystemBackdropConfiguration m_configurationSource;
@@ -30,6 +30,8 @@ namespace APKInstaller.Helpers
 
         public void SetBackdrop(BackdropType type)
         {
+            if(type == m_currentBackdrop) { return; }
+
             // Reset to default color. If the requested type is supported, we'll update to that.
             // Note: This sample completely removes any previous controller to reset to the default
             //       state. This is done so this sample can show what is expected to be the most

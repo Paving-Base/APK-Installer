@@ -130,7 +130,7 @@ namespace APKInstaller.Pages.SettingsPages
             switch (ComboBox.Tag as string)
             {
                 case "Theme":
-                    ThemeHelper.RootTheme = (ElementTheme)Enum.Parse(typeof(ElementTheme), (2 - ComboBox.SelectedIndex).ToString());
+                    ThemeHelper.RootTheme = Enum.Parse<ElementTheme>((2 - ComboBox.SelectedIndex).ToString());
                     break;
                 case "Language":
                     CultureInfo culture = ComboBox.SelectedItem as CultureInfo;
@@ -144,6 +144,10 @@ namespace APKInstaller.Pages.SettingsPages
                         ApplicationLanguages.PrimaryLanguageOverride = string.Empty;
                         SettingsHelper.Set(SettingsHelper.CurrentLanguage, LanguageHelper.AutoLanguageCode);
                     }
+                    break;
+                case "Backdrop":
+                    BackdropType type = Enum.Parse<BackdropType>(ComboBox.SelectedIndex.ToString());
+                    UIHelper.MainWindow.Backdrop.SetBackdrop(type);
                     break;
             }
         }

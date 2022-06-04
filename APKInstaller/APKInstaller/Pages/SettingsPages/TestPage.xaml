@@ -2,7 +2,7 @@
     x:Class="APKInstaller.Pages.SettingsPages.TestPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:contorls="using:APKInstaller.Controls"
+    xmlns:controls="using:APKInstaller.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:globalization="using:System.Globalization"
     xmlns:helper="using:APKInstaller.Helpers"
@@ -13,7 +13,7 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <contorls:TitleBar
+        <controls:TitleBar
             x:Name="TitleBar"
             x:Uid="/TestPage/TitleBar"
             BackRequested="TitleBar_BackRequested"
@@ -27,42 +27,54 @@
                         <ReorderThemeTransition />
                     </TransitionCollection>
                 </StackPanel.ChildrenTransitions>
-                <contorls:SettingsGroup x:Uid="/TestPage/UITestSettingsHeader" Margin="0,-32,0,0">
-                    <contorls:Setting x:Uid="/TestPage/TitleBarSettings" Icon="&#xE737;">
-                        <contorls:Setting.ActionContent>
+                <controls:SettingsGroup x:Uid="/TestPage/UITestSettingsHeader" Margin="0,-32,0,0">
+                    <controls:Setting x:Uid="/TestPage/TitleBarSettings" Icon="&#xE737;">
+                        <controls:Setting.ActionContent>
                             <ToggleSwitch IsOn="{x:Bind IsExtendsTitleBar, Mode=TwoWay}" Style="{StaticResource ToggleSwitchSettingStyle}" />
-                        </contorls:Setting.ActionContent>
-                    </contorls:Setting>
-                    <contorls:SettingExpander>
-                        <contorls:SettingExpander.Header>
-                            <contorls:Setting x:Uid="/TestPage/ProgressSettings" Icon="&#xF16A;">
-                                <contorls:Setting.ActionContent>
+                        </controls:Setting.ActionContent>
+                    </controls:Setting>
+                    <controls:Setting x:Uid="/TestPage/BackdropSettings" Icon="&#xE81E;">
+                        <controls:Setting.ActionContent>
+                            <ComboBox
+                                SelectedIndex="0"
+                                SelectionChanged="ComboBox_SelectionChanged"
+                                Tag="Backdrop">
+                                <x:String>Mica</x:String>
+                                <x:String>Acrylic</x:String>
+                                <x:String>DefaultColor</x:String>
+                            </ComboBox>
+                        </controls:Setting.ActionContent>
+                    </controls:Setting>
+                    <controls:SettingExpander>
+                        <controls:SettingExpander.Header>
+                            <controls:Setting x:Uid="/TestPage/ProgressSettings" Icon="&#xF16A;">
+                                <controls:Setting.ActionContent>
                                     <ToggleSwitch IsOn="{x:Bind IsShowProgressRing, Mode=TwoWay}" Style="{StaticResource ToggleSwitchSettingStyle}" />
-                                </contorls:Setting.ActionContent>
-                            </contorls:Setting>
-                        </contorls:SettingExpander.Header>
-                        <contorls:SettingExpander.Content>
+                                </controls:Setting.ActionContent>
+                            </controls:Setting>
+                        </controls:SettingExpander.Header>
+                        <controls:SettingExpander.Content>
                             <StackPanel>
-                                <contorls:Setting x:Uid="/TestPage/SetProgressValue" Style="{StaticResource ExpanderContentSettingStyle}">
-                                    <contorls:Setting.ActionContent>
+                                <controls:Setting x:Uid="/TestPage/SetProgressValue" Style="{StaticResource ExpanderContentSettingStyle}">
+                                    <controls:Setting.ActionContent>
                                         <Slider
                                             Width="180"
                                             HorizontalAlignment="Stretch"
                                             VerticalAlignment="Center"
                                             Maximum="100"
                                             Value="{x:Bind ProgressValue, Mode=TwoWay}" />
-                                    </contorls:Setting.ActionContent>
-                                </contorls:Setting>
-                                <contorls:Setting x:Uid="/TestPage/ShowRefreshButton" Style="{StaticResource ExpanderContentSettingStyle}">
-                                    <contorls:Setting.ActionContent>
+                                    </controls:Setting.ActionContent>
+                                </controls:Setting>
+                                <controls:Setting x:Uid="/TestPage/ShowRefreshButton" Style="{StaticResource ExpanderContentSettingStyle}">
+                                    <controls:Setting.ActionContent>
                                         <ToggleSwitch IsOn="{x:Bind TitleBar.IsRefreshButtonVisible, Mode=TwoWay}" Style="{StaticResource ToggleSwitchSettingStyle}" />
-                                    </contorls:Setting.ActionContent>
-                                </contorls:Setting>
+                                    </controls:Setting.ActionContent>
+                                </controls:Setting>
                             </StackPanel>
-                        </contorls:SettingExpander.Content>
-                    </contorls:SettingExpander>
-                    <contorls:Setting x:Uid="/TestPage/LanguageSettings" Icon="&#xF2B7;">
-                        <contorls:Setting.ActionContent>
+                        </controls:SettingExpander.Content>
+                    </controls:SettingExpander>
+                    <controls:Setting x:Uid="/TestPage/LanguageSettings" Icon="&#xF2B7;">
+                        <controls:Setting.ActionContent>
                             <ComboBox
                                 ItemsSource="{x:Bind helper:LanguageHelper.SupportCultures}"
                                 Loaded="ComboBox_Loaded"
@@ -76,16 +88,16 @@
                                     </DataTemplate>
                                 </ComboBox.ItemTemplate>
                             </ComboBox>
-                        </contorls:Setting.ActionContent>
-                    </contorls:Setting>
-                    <contorls:Setting x:Uid="/TestPage/ThemeSettings" Icon="&#xE790;">
-                        <contorls:Setting.Description>
+                        </controls:Setting.ActionContent>
+                    </controls:Setting>
+                    <controls:Setting x:Uid="/TestPage/ThemeSettings" Icon="&#xE790;">
+                        <controls:Setting.Description>
                             <HyperlinkButton
                                 x:Uid="/TestPage/WindowsColorButton"
                                 Click="Button_Click"
                                 Tag="WindowsColor" />
-                        </contorls:Setting.Description>
-                        <contorls:Setting.ActionContent>
+                        </controls:Setting.Description>
+                        <controls:Setting.ActionContent>
                             <ComboBox
                                 Loaded="ComboBox_Loaded"
                                 SelectionChanged="ComboBox_SelectionChanged"
@@ -94,10 +106,10 @@
                                 <ComboBoxItem x:Uid="/TestPage/RadioThemeLight" />
                                 <ComboBoxItem x:Uid="/TestPage/RadioThemeDefault" />
                             </ComboBox>
-                        </contorls:Setting.ActionContent>
-                    </contorls:Setting>
-                    <contorls:Setting x:Uid="/TestPage/CompactOverlaySettings" Icon="&#xE944;">
-                        <contorls:Setting.ActionContent>
+                        </controls:Setting.ActionContent>
+                    </controls:Setting>
+                    <controls:Setting x:Uid="/TestPage/CompactOverlaySettings" Icon="&#xE944;">
+                        <controls:Setting.ActionContent>
                             <StackPanel
                                 Margin="0,2"
                                 Orientation="Horizontal"
@@ -111,21 +123,21 @@
                                     Click="Button_Click"
                                     Tag="OutPIP" />
                             </StackPanel>
-                        </contorls:Setting.ActionContent>
-                    </contorls:Setting>
-                </contorls:SettingsGroup>
-                <contorls:SettingsGroup x:Uid="/TestPage/AndroidTestSettingsHeader" Margin="0,-32,0,0">
-                    <contorls:SettingButton Click="Button_Click" Tag="Applications">
-                        <contorls:SettingButton.Content>
-                            <contorls:Setting x:Uid="/TestPage/ApplicationsSettings" Icon="&#xE7B8;" />
-                        </contorls:SettingButton.Content>
-                    </contorls:SettingButton>
-                    <contorls:SettingButton Click="Button_Click" Tag="Processes">
-                        <contorls:SettingButton.Content>
-                            <contorls:Setting x:Uid="/TestPage/ProcessesSettings" Icon="&#xE9D9;" />
-                        </contorls:SettingButton.Content>
-                    </contorls:SettingButton>
-                </contorls:SettingsGroup>
+                        </controls:Setting.ActionContent>
+                    </controls:Setting>
+                </controls:SettingsGroup>
+                <controls:SettingsGroup x:Uid="/TestPage/AndroidTestSettingsHeader" Margin="0,-32,0,0">
+                    <controls:SettingButton Click="Button_Click" Tag="Applications">
+                        <controls:SettingButton.Content>
+                            <controls:Setting x:Uid="/TestPage/ApplicationsSettings" Icon="&#xE7B8;" />
+                        </controls:SettingButton.Content>
+                    </controls:SettingButton>
+                    <controls:SettingButton Click="Button_Click" Tag="Processes">
+                        <controls:SettingButton.Content>
+                            <controls:Setting x:Uid="/TestPage/ProcessesSettings" Icon="&#xE9D9;" />
+                        </controls:SettingButton.Content>
+                    </controls:SettingButton>
+                </controls:SettingsGroup>
             </StackPanel>
         </ScrollViewer>
     </Grid>
