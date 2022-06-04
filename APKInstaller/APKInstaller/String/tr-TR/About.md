@@ -1,22 +1,22 @@
-#### Welcome to the APK Installer!
+#### APK Installer'a Hoş Geldin!
 
-##### Declaration
-1. Please follow the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. This program is open source software, so please make sure that the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) to keep your data safe.
-3. If the source of the program is not abnormal, all your data will only be used to run with the program or stored locally during the program running, and the developer will not steal any of your data. But even so, please pay attention to the security of the use environment.
-4. The translation of the text of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts do not represent the author's views.
+##### Açıklama
+1. Lütfen [ APK Installer Son Kullanıcı Lisans Sözleşmesini ve Gizlilik Politikasını ](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md) takip edin.
+2. Bu program açık kaynaklı bir yazılımdır, bu nedenle verilerinizi güvende tutmak için lütfen programın [ bu Github deposundan ](https://github.com/Paving-Base/APK-Installer) veya [ bu uygulamadan ](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) olduğundan emin olun.
+3. Programın kaynağı anormal değilse, tüm verileriniz yalnızca programla birlikte çalışmak için kullanılır veya program çalışırken yerel olarak depolanır ve geliştirici verilerinizden hiçbirini çalmaz. Ancak yine de, lütfen kullanım ortamının güvenliğine dikkat edin.
+4. Bu uygulamanın metninin çevirisi [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") topluluğundan gelir ve tüm metinler yazarın görüşlerini temsil etmez.
 
-##### Translate
-Thanks to [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") translators for their support. If there is any problem with the translation, please come and correct it.
+##### Çeviri
+[Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") çevirmenlerine destekleri için teşekkür ederiz. Çeviriyle ilgili herhangi bir sorun varsa, lütfen gelin ve düzeltin.
 
-##### Contributors
+##### Katkıda bulunanlar
 - [wherewhere](https://github.com/wherewhere)
 - [Void48](https://github.com/Void48)
 - [EP012014](https://github.com/EP012014)
 - [A Big Salty Fish](https://github.com/bigsaltyfishes)
 - [sam1357](https://github.com/sam1357)
 
-##### Citations and References
+##### Atıflar ve Referanslar
 - [WinUI](https://github.com/microsoft/microsoft-ui-xaml "WinUI")
 - [AAPTForNet](https://github.com/canheo136/QuickLook.Plugin.ApkViewer "AAPTForNet")
 - [Sharp Compress](https://github.com/adamhathcock/sharpcompress "Sharp Compress")
