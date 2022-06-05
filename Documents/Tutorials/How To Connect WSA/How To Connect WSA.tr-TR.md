@@ -1,5 +1,5 @@
-# How To Connect WSA
-1. Please make sure the APK Installer has been updated to the [newest version](https://github.com/Paving-Base/APK-Installer/releases "APK Installer")
-2. Please make sure you have installed and ran WSA
-3. Turn on Developer Mode, make sure the IP address is displayed ![Geliştirici Modu](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/Images/Snipaste_2021-10-22_14-57-56.png)
-4. Reopen APK Installer, resume installation ![Resume Installation](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/Images/Snipaste_2021-10-22_15-10-06.png)
+# WSA'ya Nasıl Bağlanılır
+1. Lütfen APK Installer'ın [en yeni sürüme](https://github.com/Paving-Base/APK-Installer/releases "APK Installer") güncellendiğinden emin olun
+2. Lütfen WSA'yı yüklediğinizden ve çalıştırdığınızdan emin olun
+3. Geliştirici Modu'nu açın, IP adresinin gözüktüğünden emin olun![Geliştirici Modu](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/Images/Snipaste_2021-10-22_14-57-56.png)
+4. APK Installer'ı yeniden açın, yüklemeye devam edin![Yüklemeyi Sürdür](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/Images/Snipaste_2021-10-22_15-10-06.png)
