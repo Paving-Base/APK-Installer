@@ -121,7 +121,7 @@
     <value>Android Test</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
-    <value>Applications</value>
+    <value>Uygulamalar</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Select Backdrop Type for Windows 11</value>
@@ -148,7 +148,7 @@
     <value>Exit</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
-    <value>Processes</value>
+    <value>İşlem</value>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
     <value>Test Progress Ring on the Title Bar</value>
