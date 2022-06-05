@@ -121,19 +121,19 @@
     <value>ADB, the Android Debug Bridge, is needed for APK Installer to work. Click "Download" to download it. By downloading, you accept the Google Terms and Conditions for ADB. If you have already downloaded ADB, click "Select" to select it.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Exist</value>
+    <value>ADB detetado</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>ADB is missing</value>
+    <value>ADB em falta</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
     <value>Ficheiro APK</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Capabilities: </value>
+    <value>Características: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>App Name</value>
+    <value>Nome da aplicação</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancelar</value>
@@ -145,13 +145,13 @@
     <value>WSA may not start properly, or there is a problem with ADB. This situation can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>Cannot open app package</value>
+    <value>Não foi possível abrir o pacote da aplicação</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>Checking...</value>
+    <value>A verificar...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Checking ADB...</value>
+    <value>A verificar ADB...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>Clique aqui para lê-los</value>
@@ -288,7 +288,7 @@
     <value>Selecionar</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
-    <value>Starting ADB Server...</value>
+    <value>A iniciar o ADB...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
     <value>Start WSA</value>
