@@ -124,10 +124,10 @@
     <value>Aplicaciones</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>Select Backdrop Type for Windows 11</value>
+    <value>Seleccionar el tipo de fondo para Windows 11</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>Backdrop</value>
+    <value>Fondo</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
     <value>Introducir o Salir de Superposición Compacta</value>
