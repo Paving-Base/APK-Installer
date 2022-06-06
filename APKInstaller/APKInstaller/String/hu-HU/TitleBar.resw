@@ -121,9 +121,9 @@
     <value>Beállítások</value>
   </data>
   <data name="BackButton.Tag" xml:space="preserve">
-    <value>Back</value>
+    <value>Vissza</value>
   </data>
   <data name="RefreshButton.Tag" xml:space="preserve">
-    <value>Refresh</value>
+    <value>Frissítés</value>
   </data>
 </root>

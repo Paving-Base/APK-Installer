@@ -118,25 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="APKDescription" xml:space="preserve">
-    <value>Android Application Package</value>
+    <value>Pacote de Aplicação Android</value>
   </data>
   <data name="APKFile" xml:space="preserve">
     <value>Ficheiro APK</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>An Android App Installer. Written by @wherewhere and @Tangent-90.</value>
+    <value>Um instalador de aplicações Android. Desenvolvido por @wherewhere e @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
     <value>APK Installer</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
-    <value>There was an error with the program…</value>
+    <value>Ocorreu um erro com o programa…</value>
   </data>
   <data name="ImageLoadError" xml:space="preserve">
-    <value>Picture failed to load</value>
+    <value>Ocorreu um erro ao carregar a imagem</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>Network exception</value>
+    <value>Falha na ligação à Internet</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>Não</value>

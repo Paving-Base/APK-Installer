@@ -133,7 +133,7 @@
     <value>Képességek: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>App Name</value>
+    <value>Alkalmazás neve</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Mégsem</value>
@@ -160,7 +160,7 @@
     <value>Bezárás</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
-    <value>Copy</value>
+    <value>Másolás</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Készülékek</value>
@@ -190,13 +190,13 @@
     <value>Hogyan csatlakoztatom a WSA-t?</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
-    <value>Icon</value>
+    <value>Ikon</value>
   </data>
   <data name="IKnow" xml:space="preserve">
     <value>Tudom</value>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
-    <value>Infos</value>
+    <value>Információk</value>
   </data>
   <data name="Install" xml:space="preserve">
     <value>Telepítés</value>
@@ -237,7 +237,7 @@
     <value>Betöltés...</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
-    <value>More Info</value>
+    <value>További információ</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
     <value>Nem találja az Android eszközt</value>
@@ -264,7 +264,7 @@
     <value>Online csomag</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
-    <value>Package Name</value>
+    <value>Csomag neve</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
     <value>Csomag neve:  {0}</value>
@@ -311,7 +311,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
-    <value>Version Code</value>
+    <value>Verzió kód</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
     <value>Verzió: {0}</value>
