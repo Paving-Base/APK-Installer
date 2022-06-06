@@ -95,7 +95,7 @@ namespace APKInstaller.Helpers
         NoPicChanged,
     }
 
-    internal static partial class SettingsHelper
+    public static partial class SettingsHelper
     {
         public static readonly UISettings UISettings = new();
         public static OSVersion OperatingSystemVersion => SystemInformation.Instance.OperatingSystemVersion;

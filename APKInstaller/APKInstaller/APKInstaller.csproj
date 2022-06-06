@@ -9,7 +9,6 @@
     <AppxSymbolPackageEnabled>True</AppxSymbolPackageEnabled>
     <Copyright>Copyright © 2017 - 2022 PavingBase. All Rights Reserved.</Copyright>
     <Description>An Android Application Installer for Windows</Description>
-    <EnableMsixTooling>true</EnableMsixTooling>
     <EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
     <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
     <GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
@@ -27,7 +26,7 @@
     <TargetPlatformMaxVersion>10.0.22000.0</TargetPlatformMaxVersion>
     <TargetPlatformMinVersion>10.0.18362.0</TargetPlatformMinVersion>
     <UseWinUI>true</UseWinUI>
-    <VersionPrefix>0.1.15</VersionPrefix>
+    <VersionPrefix>0.1.16</VersionPrefix>
   </PropertyGroup>
 
   <ItemGroup>
@@ -115,15 +114,6 @@
   <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnablePreviewMsixTooling)'=='true'">
     <ProjectCapability Include="Msix" />
   </ItemGroup>
-
-  <!-- 
-    Defining the "HasPackageAndPublishMenuAddedByProject" property here allows the Solution 
-    Explorer "Package and Publish" context menu entry to be enabled for this project even if 
-    the Windows App SDK Nuget package has not yet been restored.
-  -->
-  <PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
-    <HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
-  </PropertyGroup>
 
   <ItemGroup>
     <Content Update="Assets\256x256.png">
