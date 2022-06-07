@@ -1413,6 +1413,15 @@ namespace APKInstaller.ViewModels
             }
         }
 
+        public async void OpenAPK(string path)
+        {
+            if (path != null)
+            {
+                _path = path;
+                await Refresh();
+            }
+        }
+
         public async void OpenAPK()
         {
             FileOpenPicker FileOpen = new();

@@ -6,9 +6,12 @@ using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
 using Microsoft.Windows.AppLifecycle;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using Windows.ApplicationModel.Activation;
+using Windows.ApplicationModel.DataTransfer;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -148,6 +151,24 @@ namespace APKInstaller.Pages
         {
             MenuFlyoutItem element = sender as MenuFlyoutItem;
             ClipboardHelper.ShareFile(element.Tag.ToString(), element.Text);
+        }
+
+        private void Page_DragOver(object sender, DragEventArgs e)
+        {
+            e.AcceptedOperation = DataPackageOperation.Copy;
+        }
+
+        private async void Page_Drop(object sender, DragEventArgs e)
+        {
+            if (e.DataView.Contains(StandardDataFormats.StorageItems))
+            {
+                IReadOnlyList<IStorageItem> items = await e.DataView.GetStorageItemsAsync();
+                if (items.Any())
+                {
+                    StorageFile storageFile = items[0] as StorageFile;
+                    Provider.OpenAPK(storageFile.Path);
+                }
+            }
         }
     }
 }

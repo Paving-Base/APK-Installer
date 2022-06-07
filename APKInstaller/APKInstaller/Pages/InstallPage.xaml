@@ -9,6 +9,9 @@
     xmlns:sys="using:System"
     xmlns:viewmodels="using:APKInstaller.ViewModels"
     d:DataContext="{d:DesignInstance Type=viewmodels:InstallViewModel}"
+    AllowDrop="True"
+    DragOver="Page_DragOver"
+    Drop="Page_Drop"
     NavigationCacheMode="Enabled"
     mc:Ignorable="d">
     <Page.Resources>
