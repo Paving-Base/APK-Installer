@@ -307,24 +307,24 @@
     <value>Mettre à jour</value>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
-    <value>Mettre à jour {0}?</value>
+    <value>Mettre à jour {0} ?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
     <value>Version Code</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>Version: {0}</value>
+    <value>Version : {0}</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
     <value>En attente du téléchargement...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>En attente du périphérique...</value>
+    <value>En attente de l'appareil...</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
-    <value>En attente de l'installation {0}</value>
+    <value>En attente de l'installation de {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
