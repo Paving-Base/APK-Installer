@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
-    <value>About</value>
+    <value>À propos</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
     <value>Chemin ADB</value>
@@ -139,16 +139,16 @@
     <value>Modifier</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>Check Failed</value>
+    <value>La vérification a échoué</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>Checking For Updates...</value>
+    <value>Recherche de mises à jour...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
-    <value>Check For Updates</value>
+    <value>Rechercher des mises à jour</value>
   </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
-    <value>Clear cache</value>
+    <value>Effacer le cache</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
     <value>Close ADB may break other Installers when they still open.</value>
@@ -169,25 +169,25 @@
     <value>Connect device on network.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
-    <value>Connect Device</value>
+    <value>Connecter l'appareil</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
-    <value>Contact Me</value>
+    <value>Me contacter</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bug, please report it to me in PM. I will try my best to solve the problem. If you have Telegram account, welcome to chat at Paving Base Group 😊!</value>
+    <value>Suivez-moi sur les réseaux sociaux pour les derniers développements. Si vous trouvez un bug, merci de me le signaler en MP. Je ferai mon mieux pour résoudre le problème. Si vous avez un compte Telegram, n'hésitez pas à parler dans le Paving Base Group😊 !</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
-    <value>Content</value>
+    <value>Contenu</value>
   </data>
   <data name="CoolapkLink.Content" xml:space="preserve">
     <value>Coolapk</value>
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
-    <value>Device</value>
+    <value>Appareil</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
-    <value>Display</value>
+    <value>Affichage</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
     <value>Supports</value>
@@ -199,7 +199,7 @@
     <value>EULA</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
-    <value>Feedback</value>
+    <value>Commentaire</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
     <value>Find Update</value>
@@ -250,7 +250,7 @@
     <value>Reset</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
-    <value>Yes</value>
+    <value>Oui</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
     <value>Are you sure you want to reset the app?</value>
