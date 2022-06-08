@@ -14,6 +14,7 @@ using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using SharpCompress.Archives;
 using SharpCompress.Common;
+using SharpCompress.Writers;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,6 +26,7 @@ using System.Runtime.InteropServices;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
+using Windows.ApplicationModel.DataTransfer;
 using Windows.ApplicationModel.Resources;
 using Windows.Foundation.Collections;
 using Windows.Storage;
@@ -1444,6 +1446,143 @@ namespace APKInstaller.ViewModels
             {
                 _path = file.Path;
                 await Refresh();
+            }
+        }
+
+        public async void OpenAPK(DataPackageView data)
+        {
+            void CreateAPKS(IReadOnlyList<IStorageItem> items)
+            {
+                List<string> apks = new();
+                foreach (IStorageItem item in items)
+                {
+                    if (item != null)
+                    {
+                        if (item.Name.ToLower().EndsWith(".apk"))
+                        {
+                            apks.Add(item.Path);
+                            continue;
+                        }
+                        try
+                        {
+                            using (IArchive archive = ArchiveFactory.Open(item.Path))
+                            {
+                                foreach (IArchiveEntry entry in archive.Entries.Where(x => !x.Key.Contains('/')))
+                                {
+                                    if (entry.Key.ToLower().EndsWith(".apk"))
+                                    {
+                                        OpenAPK(item.Path);
+                                        return;
+                                    }
+                                }
+                            }
+                            apks.Add(item.Path);
+                            continue;
+                        }
+                        catch
+                        {
+                            continue;
+                        }
+                    }
+                }
+
+                if (apks.Count == 1)
+                {
+                    OpenAPK(apks.First());
+                    return;
+                }
+                else if (apks.Count >= 1)
+                {
+                    var apklist = apks.Where(x => x.EndsWith(".apk"));
+                    if (apklist.Any())
+                    {
+                        string temp = Path.Combine(CachesHelper.TempPath, "NetAPKTemp.apks");
+
+                        if (!Directory.Exists(temp[..temp.LastIndexOf(@"\")]))
+                        {
+                            _ = Directory.CreateDirectory(temp[..temp.LastIndexOf(@"\")]);
+                        }
+                        else if (Directory.Exists(temp))
+                        {
+                            Directory.Delete(temp, true);
+                        }
+
+                        if (File.Exists(temp))
+                        {
+                            File.Delete(temp);
+                        }
+
+                        using (FileStream zip = File.OpenWrite(temp))
+                        {
+                            using (var zipWriter = WriterFactory.Open(zip, ArchiveType.Zip, CompressionType.Deflate))
+                            {
+                                foreach (string apk in apks.Where(x => x.EndsWith(".apk")))
+                                {
+                                    zipWriter.Write(Path.GetFileName(apk), apk);
+                                }
+                                OpenAPK(temp);
+                                return;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        var apkslist = apks.Where(x => !x.EndsWith(".apk"));
+                        if (apkslist.Count() == 1)
+                        {
+                            OpenAPK(apkslist.First());
+                            return;
+                        }
+                    }
+                }
+            }
+
+            if (data.Contains(StandardDataFormats.StorageItems))
+            {
+                IReadOnlyList<IStorageItem> items = await data.GetStorageItemsAsync();
+                if (items.Count == 1)
+                {
+                    IStorageItem storageItem = items.First();
+                    if (storageItem != null)
+                    {
+                        if (storageItem is StorageFolder folder)
+                        {
+                            List<string> apks = new();
+                            var files = await folder.GetFilesAsync();
+                            CreateAPKS(files);
+                        }
+                        else
+                        {
+                            if (storageItem.Name.ToLower().EndsWith(".apk"))
+                            {
+                                OpenAPK(storageItem.Path);
+                                return;
+                            }
+                            try
+                            {
+                                using (IArchive archive = ArchiveFactory.Open(storageItem.Path))
+                                {
+                                    foreach (IArchiveEntry entry in archive.Entries.Where(x => !x.Key.Contains('/')))
+                                    {
+                                        if (entry.Key.ToLower().EndsWith(".apk"))
+                                        {
+                                            OpenAPK(storageItem.Path);
+                                            return;
+                                        }
+                                    }
+                                }
+                            }
+                            catch
+                            {
+                                return;
+                            }
+                        }
+                    }
+                }
+                else if (items.Count >= 1)
+                {
+                    CreateAPKS(items);
+                }
             }
         }
 

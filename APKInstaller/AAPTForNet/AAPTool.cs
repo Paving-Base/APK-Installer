@@ -21,7 +21,7 @@ namespace AAPTForNet
         }
 
         private static readonly string AppPath = Path.GetDirectoryName(System.Reflection.Assembly.GetCallingAssembly().Location);
-#if NET5_0_OR_GREATER && !NETCOREAPP
+#if NET5_0_OR_GREATER
         private static readonly string TempPath = Path.Combine(Path.GetTempPath(), @"APKInstaller\Caches", $"{Environment.ProcessId}", "AppPackages");
 #else
         private static readonly string TempPath = Path.Combine(Path.GetTempPath(), @"APKInstaller\Caches", $"{GetCurrentProcess().Id}", "AppPackages");
@@ -139,26 +139,34 @@ namespace AAPTForNet
         public static ApkInfo Decompile(string path)
         {
             List<string> apks = new();
-            using (ZipArchive archive = ZipFile.OpenRead(path))
+
+            if (path.EndsWith(".apk"))
             {
-                if (!Directory.Exists(TempPath))
+                apks.Add(path);
+            }
+            else
+            {
+                using (ZipArchive archive = ZipFile.OpenRead(path))
                 {
-                    Directory.CreateDirectory(TempPath);
-                }
-
-                foreach (ZipArchiveEntry entry in archive.Entries.Where(x => !x.FullName.Contains("/")))
-                {
-                    if (entry.Name.ToLower().EndsWith(".apk"))
+                    if (!Directory.Exists(TempPath))
                     {
-                        string APKTemp = Path.Combine(TempPath, entry.FullName);
-                        entry.ExtractToFile(APKTemp, true);
-                        apks.Add(APKTemp);
+                        Directory.CreateDirectory(TempPath);
                     }
-                }
 
-                if (!apks.Any())
-                {
-                    apks.Add(path);
+                    foreach (ZipArchiveEntry entry in archive.Entries.Where(x => !x.FullName.Contains("/")))
+                    {
+                        if (entry.Name.ToLower().EndsWith(".apk"))
+                        {
+                            string APKTemp = Path.Combine(TempPath, entry.FullName);
+                            entry.ExtractToFile(APKTemp, true);
+                            apks.Add(APKTemp);
+                        }
+                    }
+
+                    if (!apks.Any())
+                    {
+                        apks.Add(path);
+                    }
                 }
             }
 

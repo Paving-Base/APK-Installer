@@ -290,19 +290,21 @@ namespace AAPTForNet
                 throw new ArgumentException("Invalid params");
             }
 
-            using ZipArchive archive = ZipFile.OpenRead(path);
-            ZipArchiveEntry entry;
-
-            for (int i = archive.Entries.Count - 1; i > 0; i--)
+            using (ZipArchive archive = ZipFile.OpenRead(path))
             {
-                entry = archive.Entries[i];
+                ZipArchiveEntry entry;
 
-                if (entry.Name.Equals(iconName) ||
-                    entry.FullName.Equals(iconName))
+                for (int i = archive.Entries.Count - 1; i > 0; i--)
                 {
+                    entry = archive.Entries[i];
 
-                    entry.ExtractToFile(desFile, true);
-                    break;
+                    if (entry.Name.Equals(iconName) ||
+                        entry.FullName.Equals(iconName))
+                    {
+
+                        entry.ExtractToFile(desFile, true);
+                        break;
+                    }
                 }
             }
         }

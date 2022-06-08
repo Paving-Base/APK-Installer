@@ -1,12 +1,18 @@
 ﻿using APKInstaller.Helper;
+using APKInstaller.Helpers;
 using APKInstaller.Pages.SettingsPages;
 using APKInstaller.ViewModels;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
 using Microsoft.Windows.AppLifecycle;
+using SharpCompress.Archives;
+using SharpCompress.Archives.Zip;
+using SharpCompress.Common;
+using SharpCompress.Writers;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using Windows.ApplicationModel.Activation;
 using Windows.ApplicationModel.DataTransfer;
@@ -158,17 +164,10 @@ namespace APKInstaller.Pages
             e.AcceptedOperation = DataPackageOperation.Copy;
         }
 
-        private async void Page_Drop(object sender, DragEventArgs e)
+        private void Page_Drop(object sender, DragEventArgs e)
         {
-            if (e.DataView.Contains(StandardDataFormats.StorageItems))
-            {
-                IReadOnlyList<IStorageItem> items = await e.DataView.GetStorageItemsAsync();
-                if (items.Any())
-                {
-                    StorageFile storageFile = items[0] as StorageFile;
-                    Provider.OpenAPK(storageFile.Path);
-                }
-            }
+            Provider.OpenAPK(e.DataView);
+            e.Handled = true;
         }
     }
 }

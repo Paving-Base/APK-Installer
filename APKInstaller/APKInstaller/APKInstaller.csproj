@@ -258,9 +258,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+
   <ItemGroup>
     <PRIResource Remove="AppPackages\**" />
   </ItemGroup>
+
   <ItemGroup>
     <None Remove="String\af-ZA\About.md" />
     <None Remove="String\ar-SA\About.md" />
@@ -294,6 +296,7 @@
     <None Remove="String\zh-CN\About.md" />
     <None Remove="String\zh-TW\About.md" />
   </ItemGroup>
+
   <ItemGroup>
     <COMReference Include="IWshRuntimeLibrary">
       <WrapperTool>tlbimp</WrapperTool>
@@ -305,10 +308,12 @@
       <EmbedInteropTypes>true</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\..\..\AdvancedSharpAdbClient\AdvancedSharpAdbClient\AdvancedSharpAdbClient.csproj" />
     <ProjectReference Include="..\AAPTForNet\AAPTForNet.csproj" />
   </ItemGroup>
+
   <ItemGroup>
     <Page Update="Controls\WebXAML.xaml">
       <Generator>MSBuild:Compile</Generator>
