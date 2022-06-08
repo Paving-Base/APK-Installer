@@ -124,10 +124,10 @@
     <value>Applications</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>Select Backdrop Type for Windows 11</value>
+    <value>Sélectionner le type d'arrière-plan pour Windows 11</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>Backdrop</value>
+    <value>Arrière-plan</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
     <value>Enter or Exit Compact Overlay</value>
@@ -160,10 +160,10 @@
     <value>Dark</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>Windows Default</value>
+    <value>Par défaut de Windows</value>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
-    <value>Light</value>
+    <value>Clair</value>
   </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
     <value>Set the value of Progress Ring</value>
@@ -190,9 +190,9 @@
     <value>Title Bar</value>
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
-    <value>UI Test</value>
+    <value>Test Interface Utilisateur</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Windows Color Settings</value>
+    <value>Paramètres de couleur Windows</value>
   </data>
 </root>
