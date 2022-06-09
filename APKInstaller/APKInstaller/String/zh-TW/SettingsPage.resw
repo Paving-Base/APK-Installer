@@ -123,17 +123,11 @@
   <data name="ADBPathSettings.Header" xml:space="preserve">
     <value>ADB 路徑</value>
   </data>
-  <data name="AfdianLink.Content" xml:space="preserve">
-    <value>愛發電</value>
-  </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>當安裝包來自 URL 連結時自動下載。</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
     <value>是否自動下載在線安裝包？</value>
-  </data>
-  <data name="BilibiliLink.Content" xml:space="preserve">
-    <value>嗶哩嗶哩</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
     <value>更改</value>
@@ -180,9 +174,6 @@
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>內容</value>
   </data>
-  <data name="CoolapkLink.Content" xml:space="preserve">
-    <value>酷安</value>
-  </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
     <value>設備</value>
   </data>
@@ -203,9 +194,6 @@
   </data>
   <data name="FindUpdate" xml:space="preserve">
     <value>找到新的更新</value>
-  </data>
-  <data name="GithubLink.Content" xml:space="preserve">
-    <value>Github</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>前往用於測試的頁面。</value>
@@ -230,9 +218,6 @@
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>其他</value>
-  </data>
-  <data name="PatreonLink.Content" xml:space="preserve">
-    <value>Patreon</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
     <value>前往商店好評</value>
@@ -275,9 +260,6 @@
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
     <value>翻譯</value>
-  </data>
-  <data name="TwitterLink.Content" xml:space="preserve">
-    <value>推特</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
     <value>版本</value>
