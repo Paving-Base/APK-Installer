@@ -3,7 +3,7 @@
     <InfoBar Title="這裡是公告 (不要問我為什麼這個通知為什麼沒有關閉鍵)" IsClosable="False" IsOpen="True" Message="以後你可以在這裡看到各種各樣的通知，如果你不想看到，可以在下方設置里關閉。" Severity="Informational"/>
     <InfoBar Title="更多翻譯" IsClosable="True" IsOpen="True" Message="由於作者只會中文和英文，所以翻譯全部都交給了社區。 如果你想讓軟體不再是陌生的語言，歡迎前來 Crowdin 翻譯！" Severity="Informational">
         <InfoBar.ActionButton>
-            <HyperlinkButton HorizontalAlignment="Right" Content="點我前往" NavigateUri="https://crowdin.com/project/APKInstaller"/>
+            <HyperlinkButton HorizontalAlignment="Right" Content="Click Me" NavigateUri="https://crowdin.com/project/APKInstaller"/>
         </InfoBar.ActionButton>
     </InfoBar>
 </controls:SettingsGroup>
