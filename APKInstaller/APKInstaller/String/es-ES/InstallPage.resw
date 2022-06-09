@@ -288,7 +288,7 @@
     <value>Seleccionar</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>Share</value>
+    <value>Compartir</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
     <value>Iniciando Servidor ADB...</value>
@@ -297,7 +297,7 @@
     <value>Iniciar WSA</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
-    <value>Store Links</value>
+    <value>Enlaces de tienda</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
     <value>Descomprimiendo ADB...</value>
