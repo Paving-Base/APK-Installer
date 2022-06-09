@@ -123,17 +123,11 @@
   <data name="ADBPathSettings.Header" xml:space="preserve">
     <value>ADB Path</value>
   </data>
-  <data name="AfdianLink.Content" xml:space="preserve">
-    <value>Afdian</value>
-  </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>Auto download when package is from URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
     <value>Is Auto Download Online Packages?</value>
-  </data>
-  <data name="BilibiliLink.Content" xml:space="preserve">
-    <value>BiliBili</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
     <value>Change</value>
@@ -180,9 +174,6 @@
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Content</value>
   </data>
-  <data name="CoolapkLink.Content" xml:space="preserve">
-    <value>Coolapk</value>
-  </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
     <value>Zařízení</value>
   </data>
@@ -203,9 +194,6 @@
   </data>
   <data name="FindUpdate" xml:space="preserve">
     <value>Find Update</value>
-  </data>
-  <data name="GithubLink.Content" xml:space="preserve">
-    <value>Github</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>Go to the page of test.</value>
@@ -230,9 +218,6 @@
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Others</value>
-  </data>
-  <data name="PatreonLink.Content" xml:space="preserve">
-    <value>Patreon</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
     <value>Rate On Store</value>
@@ -275,9 +260,6 @@
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
     <value>Translate</value>
-  </data>
-  <data name="TwitterLink.Content" xml:space="preserve">
-    <value>Twitter</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
     <value>Version</value>
