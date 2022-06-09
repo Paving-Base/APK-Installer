@@ -3,7 +3,7 @@
     <InfoBar Title="Hier ist die Ankündigung (fragen Sie mich nicht, warum diese Nachricht keine Schaltfläche zum Schließen hat)" IsClosable="False" IsOpen="True" Message="In Zukunft können Sie hier alle Arten von Benachrichtigungen sehen. Wenn Sie diese nicht sehen möchten, können Sie sie in den Einstellungen unten deaktivieren." Severity="Informational"/>
     <InfoBar Title="Weitere Übersetzungen" IsClosable="True" IsOpen="True" Message="Da der Autor nur Chinesisch und Englisch kann, werden alle Übersetzungen der Community überlassen. Wenn Sie eine unbekannte Sprache nicht sehen wollen, können Sie gerne bei Crowdin übersetzen!" Severity="Informational">
         <InfoBar.ActionButton>
-            <HyperlinkButton HorizontalAlignment="Right" Content="Klicken Sie mich zu" NavigateUri="https://crowdin.com/project/APKInstaller"/>
+            <HyperlinkButton HorizontalAlignment="Right" Content="Click Me" NavigateUri="https://crowdin.com/project/APKInstaller"/>
         </InfoBar.ActionButton>
     </InfoBar>
 </controls:SettingsGroup>
