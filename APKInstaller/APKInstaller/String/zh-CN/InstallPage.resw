@@ -288,7 +288,7 @@
     <value>选取</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>Share</value>
+    <value>分享</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
     <value>启动 ADB 服务……</value>
@@ -297,7 +297,7 @@
     <value>启动 WSA</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
-    <value>Store Links</value>
+    <value>商店链接</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
     <value>解压 ADB ……</value>
