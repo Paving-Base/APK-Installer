@@ -66,6 +66,40 @@
                     </MenuFlyoutItem.Icon>
                 </MenuFlyoutItem>
             </MenuFlyoutSubItem>
+            <MenuFlyoutSubItem x:Uid="/InstallPage/ShareFlyoutItem">
+                <MenuFlyoutSubItem.Icon>
+                    <FontIcon Glyph="&#xE72D;" />
+                </MenuFlyoutSubItem.Icon>
+                <MenuFlyoutItem
+                    x:Uid="/InstallPage/APKFileFlyoutItem"
+                    Click="ShareFileItem_Click"
+                    Tag="{Binding ApkInfo.FullPath}">
+                    <MenuFlyoutItem.Icon>
+                        <FontIcon Glyph="&#xE7B8;" />
+                    </MenuFlyoutItem.Icon>
+                </MenuFlyoutItem>
+                <MenuFlyoutSubItem x:Uid="/InstallPage/StoreLinkFlyoutItem">
+                    <MenuFlyoutSubItem.Icon>
+                        <FontIcon Glyph="&#xE71B;" />
+                    </MenuFlyoutSubItem.Icon>
+                    <MenuFlyoutItem
+                        Click="ShareUrlItem_Click"
+                        Tag="{x:Bind sys:String.Format('https://play.google.com/store/apps/details?id={0}', Provider.ApkInfo.PackageName), Mode=OneWay}"
+                        Text="Google Play" />
+                    <MenuFlyoutItem
+                        Click="ShareUrlItem_Click"
+                        Tag="{x:Bind sys:String.Format('https://f-droid.org/packages/{0}', Provider.ApkInfo.PackageName), Mode=OneWay}"
+                        Text="F-Droid" />
+                    <MenuFlyoutItem
+                        Click="ShareUrlItem_Click"
+                        Tag="{x:Bind sys:String.Format('https://www.coolapk.com/apps/{0}', Provider.ApkInfo.PackageName), Mode=OneWay}"
+                        Text="Coolapk" />
+                    <MenuFlyoutItem
+                        Click="ShareUrlItem_Click"
+                        Tag="{x:Bind sys:String.Format('https://www.amazon.com/gp/mas/dl/android?p={0}', Provider.ApkInfo.PackageName), Mode=OneWay}"
+                        Text="Amazon" />
+                </MenuFlyoutSubItem>
+            </MenuFlyoutSubItem>
             <!--<MenuFlyoutItem x:Uid="/InstallPage/MoreInfoFlyoutItem">
                 <MenuFlyoutItem.Icon>
                     <FontIcon Glyph="&#xE946;" />

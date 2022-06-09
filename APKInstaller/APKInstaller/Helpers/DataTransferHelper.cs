@@ -1,17 +1,31 @@
 using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using Windows.ApplicationModel.DataTransfer;
 using Windows.Storage;
 using Windows.Storage.Streams;
+using WinRT;
+using WinRT.Interop;
 
-namespace APKInstaller.Helper
+namespace APKInstaller.Helpers
 {
     /// <summary>
     /// Class providing functionality to support generating and copying protocol activation URIs.
     /// </summary>
-    public static class ClipboardHelper
+    public static class DataTransferHelper
     {
+        [ComImport]
+        [Guid("3A3DCD6C-3EAB-43DC-BCDE-45671CE800C8")]
+        [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+        interface IDataTransferManagerInterop
+        {
+            IntPtr GetForWindow([In] IntPtr appWindow, [In] ref Guid riid);
+            void ShowShareUIForWindow(IntPtr appWindow);
+        }
+
+        static readonly Guid _dtm_iid = new Guid(0xa5caee9b, 0x8708, 0x49d1, 0x8d, 0x36, 0x67, 0xd2, 0x5a, 0x8d, 0xa0, 0x0c);
+
         private static DataPackage GetTextDataPackage(string text, string title, string description)
         {
             DataPackage dataPackage = new();
@@ -30,6 +44,20 @@ namespace APKInstaller.Helper
             DataPackage dataPackage = new();
             dataPackage.SetStorageItems(files);
             dataPackage.Properties.Title = fileName;
+            dataPackage.Properties.Description = description;
+
+            return dataPackage;
+        }
+
+        private static DataPackage GetUrlDataPackage(Uri uri, string displayName, string description)
+        {
+            string htmlFormat = HtmlFormatHelper.CreateHtmlFormat($"<a href='{uri}'>{displayName}</a>");
+
+            DataPackage dataPackage = new();
+            dataPackage.SetWebLink(uri);
+            dataPackage.SetText(uri.ToString());
+            dataPackage.SetHtmlFormat(htmlFormat);
+            dataPackage.Properties.Title = displayName;
             dataPackage.Properties.Description = description;
 
             return dataPackage;
@@ -71,22 +99,23 @@ namespace APKInstaller.Helper
 
         public static void Share(this DataPackage dataPackage)
         {
-            DataTransferManager dataTransferManager = DataTransferManager.GetForCurrentView();
+            // Retrieve the window handle (HWND) of the current WinUI 3 window.
+            var hWnd = WindowNative.GetWindowHandle(UIHelper.MainWindow);
 
-            void On_DataRequested(DataTransferManager sender, DataRequestedEventArgs args)
-            {
-                dataTransferManager.DataRequested -= On_DataRequested;
-                DataRequest request = args.Request;
-                request.Data = dataPackage;
-            }
+            IDataTransferManagerInterop interop = DataTransferManager.As<IDataTransferManagerInterop>();
 
-            dataTransferManager.DataRequested += On_DataRequested;
-            DataTransferManager.ShowShareUI();
+            IntPtr result = interop.GetForWindow(hWnd, _dtm_iid);
+            var dataTransferManager = MarshalInterface<DataTransferManager>.FromAbi(result);
+
+            dataTransferManager.DataRequested += (sender, args) => { args.Request.Data = dataPackage; };
+
+            // Show the Share UI
+            interop.ShowShareUIForWindow(hWnd);
         }
 
-        public static async void ShareURL(string filePath, string fileName, string description = null)
+        public static void ShareURL(Uri url, string displayName, string description = null)
         {
-            DataPackage dataPackage = await GetFileDataPackage(filePath, fileName, description);
+            DataPackage dataPackage = GetUrlDataPackage(url, displayName, description);
             dataPackage.Share();
         }
 

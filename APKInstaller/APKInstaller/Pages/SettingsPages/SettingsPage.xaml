@@ -237,20 +237,20 @@
                                     TextWrapping="WrapWholeWords" />
                                 <StackPanel Margin="0,2,0,0" Orientation="Horizontal">
                                     <HyperlinkButton
-                                        x:Uid="/SettingsPage/GithubLink"
                                         Margin="0,0,2,0"
+                                        Content="Github"
                                         NavigateUri="https://github.com/wherewhere" />
                                     <HyperlinkButton
-                                        x:Uid="/SettingsPage/CoolapkLink"
                                         Margin="2,0"
+                                        Content="Coolapk"
                                         NavigateUri="http://www.coolapk.com/u/536381" />
                                     <HyperlinkButton
-                                        x:Uid="/SettingsPage/TwitterLink"
                                         Margin="2,0"
+                                        Content="Twitter"
                                         NavigateUri="https://twitter.com/wherewhere7" />
                                     <HyperlinkButton
-                                        x:Uid="/SettingsPage/BilibiliLink"
                                         Margin="2,0"
+                                        Content="Bilibili"
                                         NavigateUri="https://space.bilibili.com/266112738" />
                                 </StackPanel>
                             </StackPanel>
@@ -271,12 +271,12 @@
                                     TextWrapping="WrapWholeWords" />
                                 <StackPanel Orientation="Horizontal">
                                     <HyperlinkButton
-                                        x:Uid="/SettingsPage/AfdianLink"
                                         Margin="0,0,2,0"
+                                        Content="爱发电"
                                         NavigateUri="http://afdian.net/@wherewhere" />
                                     <HyperlinkButton
-                                        x:Uid="/SettingsPage/PatreonLink"
                                         Margin="2,0"
+                                        Content="Patreon"
                                         NavigateUri="https://patreon.com/wherewhere" />
                                 </StackPanel>
                             </StackPanel>

@@ -1,4 +1,4 @@
-﻿using APKInstaller.Helper;
+﻿using APKInstaller.Helpers;
 using APKInstaller.Helpers;
 using APKInstaller.Pages.SettingsPages;
 using APKInstaller.ViewModels;
@@ -138,25 +138,31 @@ namespace APKInstaller.Pages
         private void CopyFileItem_Click(object sender, RoutedEventArgs e)
         {
             MenuFlyoutItem element = sender as MenuFlyoutItem;
-            ClipboardHelper.CopyFile(element.Tag.ToString(), element.Text);
+            DataTransferHelper.CopyFile(element.Tag.ToString(), element.Text);
         }
 
         private void CopyStringItem_Click(object sender, RoutedEventArgs e)
         {
             MenuFlyoutItem element = sender as MenuFlyoutItem;
-            ClipboardHelper.CopyText(element.Tag.ToString(), element.Text);
+            DataTransferHelper.CopyText(element.Tag.ToString(), element.Text);
         }
 
         private void CopyBitmapItem_Click(object sender, RoutedEventArgs e)
         {
             MenuFlyoutItem element = sender as MenuFlyoutItem;
-            ClipboardHelper.CopyBitmap(element.Tag.ToString(), element.Text);
+            DataTransferHelper.CopyBitmap(element.Tag.ToString(), element.Text);
         }
 
         private void ShareFileItem_Click(object sender, RoutedEventArgs e)
         {
             MenuFlyoutItem element = sender as MenuFlyoutItem;
-            ClipboardHelper.ShareFile(element.Tag.ToString(), element.Text);
+            DataTransferHelper.ShareFile(element.Tag.ToString(), element.Text, element.Tag.ToString());
+        }
+
+        private void ShareUrlItem_Click(object sender, RoutedEventArgs e)
+        {
+            MenuFlyoutItem element = sender as MenuFlyoutItem;
+            DataTransferHelper.ShareURL(new Uri(element.Tag.ToString()), element.Text, element.Tag.ToString());
         }
 
         private void Page_DragOver(object sender, DragEventArgs e)
