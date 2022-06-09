@@ -287,11 +287,17 @@
   <data name="Select" xml:space="preserve">
     <value>選取</value>
   </data>
+  <data name="ShareFlyoutItem.Text" xml:space="preserve">
+    <value>Share</value>
+  </data>
   <data name="StartingADB" xml:space="preserve">
     <value>啟動 ADB 服務……</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
     <value>啓動 WSA</value>
+  </data>
+  <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
+    <value>Store Links</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
     <value>解壓 ADB ……</value>
