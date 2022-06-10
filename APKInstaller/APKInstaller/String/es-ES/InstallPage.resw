@@ -287,11 +287,17 @@
   <data name="Select" xml:space="preserve">
     <value>Seleccionar</value>
   </data>
+  <data name="ShareFlyoutItem.Text" xml:space="preserve">
+    <value>Compartir</value>
+  </data>
   <data name="StartingADB" xml:space="preserve">
     <value>Iniciando Servidor ADB...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
     <value>Iniciar WSA</value>
+  </data>
+  <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
+    <value>Enlaces de tienda</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
     <value>Descomprimiendo ADB...</value>

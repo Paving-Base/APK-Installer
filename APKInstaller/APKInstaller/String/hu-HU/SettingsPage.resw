@@ -124,17 +124,11 @@
     <value>ADB útvonal
 </value>
   </data>
-  <data name="AfdianLink.Content" xml:space="preserve">
-    <value>Afdian</value>
-  </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>Automatikus letöltés, ha a csomag URL-címről származik.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
     <value>Automatikus letöltöd az online csomagokat?</value>
-  </data>
-  <data name="BilibiliLink.Content" xml:space="preserve">
-    <value>BiliBili</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
     <value>Módosít</value>
@@ -181,9 +175,6 @@
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Tartalom</value>
   </data>
-  <data name="CoolapkLink.Content" xml:space="preserve">
-    <value>Coolapk</value>
-  </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
     <value>Eszköz</value>
   </data>
@@ -204,9 +195,6 @@
   </data>
   <data name="FindUpdate" xml:space="preserve">
     <value>Frissítés keresése</value>
-  </data>
-  <data name="GithubLink.Content" xml:space="preserve">
-    <value>Github</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>Lépjen a teszt oldalára.</value>
@@ -231,9 +219,6 @@
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Egyéb</value>
-  </data>
-  <data name="PatreonLink.Content" xml:space="preserve">
-    <value>Patreon</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
     <value>Értékelés az áruházban</value>
@@ -276,9 +261,6 @@
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
     <value>Fordítás</value>
-  </data>
-  <data name="TwitterLink.Content" xml:space="preserve">
-    <value>Twitter</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
     <value>Verzió</value>

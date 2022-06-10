@@ -289,11 +289,17 @@
   <data name="Select" xml:space="preserve">
     <value>Pilih</value>
   </data>
+  <data name="ShareFlyoutItem.Text" xml:space="preserve">
+    <value>Bagikan</value>
+  </data>
   <data name="StartingADB" xml:space="preserve">
     <value>Memulai Server ADB...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
     <value>Mulai WSA</value>
+  </data>
+  <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
+    <value>Tautan Toko</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
     <value>Mengekstrak ADB...</value>

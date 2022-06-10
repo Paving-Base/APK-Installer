@@ -123,17 +123,11 @@
   <data name="ADBPathSettings.Header" xml:space="preserve">
     <value>Путь ADB</value>
   </data>
-  <data name="AfdianLink.Content" xml:space="preserve">
-    <value>Afdian</value>
-  </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>Автоматически загружать пакеты из URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
     <value>Автозагрузка пакетов по ссылке?</value>
-  </data>
-  <data name="BilibiliLink.Content" xml:space="preserve">
-    <value>BiliBili</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
     <value>Изменить</value>
@@ -180,9 +174,6 @@
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Содержание</value>
   </data>
-  <data name="CoolapkLink.Content" xml:space="preserve">
-    <value>Coolapk</value>
-  </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
     <value>Устройство</value>
   </data>
@@ -203,9 +194,6 @@
   </data>
   <data name="FindUpdate" xml:space="preserve">
     <value>Найти обновление</value>
-  </data>
-  <data name="GithubLink.Content" xml:space="preserve">
-    <value>GitHub</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>Перейти на страницу тестирования.</value>
@@ -230,9 +218,6 @@
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Другое</value>
-  </data>
-  <data name="PatreonLink.Content" xml:space="preserve">
-    <value>Patreon</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
     <value>Оценить в магазине приложений</value>
@@ -275,9 +260,6 @@
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
     <value>Перевод</value>
-  </data>
-  <data name="TwitterLink.Content" xml:space="preserve">
-    <value>Twitter</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
     <value>Версия</value>
