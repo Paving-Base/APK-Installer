@@ -130,21 +130,21 @@
     <value>APK-installationsprogram</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
-    <value>There was an error with the program…</value>
+    <value>Der opstod en fejl med programmet…</value>
   </data>
   <data name="ImageLoadError" xml:space="preserve">
-    <value>Picture failed to load</value>
+    <value>Billedet kunne ikke indlæses</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>Network exception</value>
+    <value>Netværksundtagelse</value>
   </data>
   <data name="No" xml:space="preserve">
-    <value>No</value>
+    <value>Ingen</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>Split APK File</value>
+    <value>Opdel APK fil</value>
   </data>
   <data name="Yes" xml:space="preserve">
-    <value>Yes</value>
+    <value>Ja</value>
   </data>
 </root>
