@@ -3,7 +3,7 @@
     <InfoBar Title="Itt van a bejelentés (Ne kérdezzétek, miért nincs bezárógomb az üzenetben)" IsClosable="False" IsOpen="True" Message="A jövőben mindenféle értesítést láthat itt. Ha nem szeretné látni őket, az alábbi beállítások között kikapcsolhatja őket." Severity="Informational"/>
     <InfoBar Title="További fordítások" IsClosable="True" IsOpen="True" Message="Mivel a szerző csak kínaiul és angolul tud, a fordításokat a közösségre bízza. Ha nem szeretnél ismeretlen nyelvet látni, itt a Crowdin, hogy lefordítsd!" Severity="Informational">
         <InfoBar.ActionButton>
-            <HyperlinkButton HorizontalAlignment="Right" Content="Click Me" NavigateUri="https://crowdin.com/project/APKInstaller"/>
+            <HyperlinkButton HorizontalAlignment="Right" Content="Kattints ide" NavigateUri="https://crowdin.com/project/APKInstaller"/>
         </InfoBar.ActionButton>
     </InfoBar>
 </controls:SettingsGroup>
