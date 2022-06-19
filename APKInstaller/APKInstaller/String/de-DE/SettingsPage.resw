@@ -127,7 +127,7 @@
     <value>Automatischer Download, wenn das Paket von einer URL stammt.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Is Auto Download Online Packages?</value>
+    <value>Online-Pakete automatisch herunterladen?</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
     <value>Wechseln</value>
@@ -145,16 +145,16 @@
     <value>Cache löschen</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Close ADB may break other Installers when they still open.</value>
+    <value>Das Schließen von ADB kann andere Installer unterbrechen, wenn diese noch geöffnet sind.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
     <value>ADB beim Beenden vom Installer schließen?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Close Installer after APK has installed and start.</value>
+    <value>Schließen Sie das Installationsprogramm, nachdem die APK installiert wurde, und starten Sie es.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Is Close Installer when APP is Ready?</value>
+    <value>Installer schließen, wenn APP bereit ist?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Konfigurationen</value>
@@ -169,7 +169,7 @@
     <value>Kontaktiere mich</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bug, please report it to me in PM. I will try my best to solve the problem. If you have Telegram account, welcome to chat at Paving Base Group 😊!</value>
+    <value>Folgen Sie mir auf Social Apps für die neuesten Entwicklungen. Wenn Sie einen Fehler finden, melden Sie ihn bitte per PM an mich. Ich werde mein Bestes tun, um das Problem zu lösen. Wenn Sie ein Telegram-Konto haben, können Sie gerne in der Paving Base Group chatten 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Inhalt</value>
@@ -184,7 +184,7 @@
     <value>Unterstützung</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open source application, and it won't be inserted any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your supports 💕.</value>
+    <value>APK Installer ist eine Open-Source-Anwendung, und es wird keine Werbung für Profit eingefügt werden. Wenn Sie diese App mögen, vergessen Sie nicht, sie im Store zu bewerten. Natürlich wäre es besser, wenn Sie ein wenig spenden könnten. Danke für eure Unterstützung 💕.</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>Allgemeine Geschäftsbedingungen</value>
@@ -244,10 +244,10 @@
     <value>Gerät auswählen</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
-    <value>Show helpers when no device is connected.</value>
+    <value>Hilfsprogramme anzeigen, wenn kein Gerät angeschlossen ist.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Is Show Helpers?</value>
+    <value>Helfer anzeigen?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
     <value>Ankündigungen oben in den Einstellungen anzeigen.</value>
