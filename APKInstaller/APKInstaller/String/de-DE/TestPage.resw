@@ -124,22 +124,22 @@
     <value>Anwendungen</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>Select Backdrop Type for Windows 11</value>
+    <value>Hintergrundtyp für Windows 11 auswählen</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>Backdrop</value>
+    <value>Hintergrund</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
-    <value>Enter or Exit Compact Overlay</value>
+    <value>Kompaktes Overlay ein- oder ausblenden</value>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
-    <value>Compact Overlay</value>
+    <value>Kompaktes Overlay</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
-    <value>Enter Compact Overlay</value>
+    <value>Zum kompakten Overlay wechseln</value>
   </data>
   <data name="LanguageSettings.Description" xml:space="preserve">
-    <value>Select language and restart to change language</value>
+    <value>Sprache auswählen und neu starten, um die Sprache zu ändern</value>
   </data>
   <data name="LanguageSettings.Header" xml:space="preserve">
     <value>Sprache</value>
@@ -151,7 +151,7 @@
     <value>Prozesse</value>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
-    <value>Test Progress Ring on the Title Bar</value>
+    <value>Test-Fortschrittsring in der Titelleiste</value>
   </data>
   <data name="ProgressSettings.Header" xml:space="preserve">
     <value>Fortschritt</value>
@@ -166,7 +166,7 @@
     <value>Hell</value>
   </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
-    <value>Set the value of Progress Ring</value>
+    <value>Setze den Wert des Fortschrittsrings</value>
   </data>
   <data name="SetProgressValue.Header" xml:space="preserve">
     <value>Fortschrittswert</value>
@@ -184,7 +184,7 @@
     <value>Testen</value>
   </data>
   <data name="TitleBarSettings.Description" xml:space="preserve">
-    <value>Extends Content Into TitleBar</value>
+    <value>Inhalt in Titelleiste erweitern</value>
   </data>
   <data name="TitleBarSettings.Header" xml:space="preserve">
     <value>Titelleiste</value>
