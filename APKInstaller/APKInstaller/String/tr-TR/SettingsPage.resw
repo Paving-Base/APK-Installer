@@ -121,7 +121,7 @@
     <value>Hakkında</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>ADB Path</value>
+    <value>ADB Yolu</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>Paket URL'den olduğunda otomatik indir.</value>
@@ -199,7 +199,7 @@
     <value>Test sayfasına gidin.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>Go to TestPage</value>
+    <value>Test sayfasına git</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
     <value>Güncellemeye git</value>
