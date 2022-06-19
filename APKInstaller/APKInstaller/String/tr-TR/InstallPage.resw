@@ -288,7 +288,7 @@
     <value>Seç</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>Share</value>
+    <value>Paylaş</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
     <value>ADB Sunucu Başlatılıyor...</value>
@@ -297,16 +297,16 @@
     <value>WSA'yı Başlat</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
-    <value>Store Links</value>
+    <value>Linkleri Sakla</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
-    <value>Unzip ADB...</value>
+    <value>ADB Çıkarılıyor...</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
-    <value>Unzip completed</value>
+    <value>Çıkarma tamamlandı</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
-    <value>Unzipping {0}/{1} ...</value>
+    <value>Çıkarılıyor {0}/{1}...</value>
     <comment>{0} - Have done num. {1} - All num.</comment>
   </data>
   <data name="Update" xml:space="preserve">
