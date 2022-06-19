@@ -133,10 +133,10 @@
     <value>Change</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>Check Failed</value>
+    <value>Tjek mislykkedes</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>Checking For Updates...</value>
+    <value>Søger efter opdateringer...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
     <value>Check For Updates</value>
