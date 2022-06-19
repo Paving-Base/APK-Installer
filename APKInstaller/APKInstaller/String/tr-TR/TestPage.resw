@@ -130,13 +130,13 @@
     <value>Arka plan</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
-    <value>Enter or Exit Compact Overlay</value>
+    <value>Kompakt Yerleşime Girin veya Çıkın</value>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
-    <value>Compact Overlay</value>
+    <value>Kompak Arayüz</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
-    <value>Enter Compact Overlay</value>
+    <value>Kompakt Yerleşime Girin</value>
   </data>
   <data name="LanguageSettings.Description" xml:space="preserve">
     <value>Dili seçin ve dili değiştirmek için yeniden başlatın</value>
@@ -151,7 +151,7 @@
     <value>İşlem</value>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
-    <value>Test Progress Ring on the Title Bar</value>
+    <value>Başlık Çubuğunda Test İlerleme Halkası</value>
   </data>
   <data name="ProgressSettings.Header" xml:space="preserve">
     <value>İlerleme</value>
@@ -166,7 +166,7 @@
     <value>Açık</value>
   </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
-    <value>Set the value of Progress Ring</value>
+    <value>İlerleme Halkasının değerini ayarlayın</value>
   </data>
   <data name="SetProgressValue.Header" xml:space="preserve">
     <value>İlerleme Değeri</value>
@@ -184,15 +184,15 @@
     <value>Test Ediliyor</value>
   </data>
   <data name="TitleBarSettings.Description" xml:space="preserve">
-    <value>Extends Content Into TitleBar</value>
+    <value>İçeriği TitleBar'a Genişletir</value>
   </data>
   <data name="TitleBarSettings.Header" xml:space="preserve">
     <value>Başlık Çubuğu</value>
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
-    <value>UI Test</value>
+    <value>Arayüz Testi</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Windows Color Settings</value>
+    <value>Windows Renk Ayarları</value>
   </data>
 </root>
