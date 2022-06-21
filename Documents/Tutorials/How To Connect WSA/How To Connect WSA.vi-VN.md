@@ -1,5 +1,5 @@
-# How To Connect WSA
-1. Please make sure the APK Installer has been updated to the [newest version](https://github.com/Paving-Base/APK-Installer/releases "APK Installer")
-2. Please make sure you have installed and ran WSA
-3. Turn on Developer Mode, make sure the IP address is displayed ![Developer Mode](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/Images/Snipaste_2021-10-22_14-57-56.png)
-4. Reopen APK Installer, resume installation ![Resume Installation](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/Images/Snipaste_2021-10-22_15-10-06.png)
+# Cách kết nối WSA
+1. Hãy đảm bảo rằng Trình Cài Đặt APK đã được cập nhật lên [phiên bản mới nhất](https://github.com/Paving-Base/APK-Installer/releases "APK Installer")
+2. Hãy đảm bảo rằng bạn đã cài đặt và chạy WSA
+3. Bật Chế độ nhà phát triển, đảm bảo địa chỉ IP được hiển thị ![Chế độ Nhà Phát Triển](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/Images/Snipaste_2021-10-22_14-57-56.png)
+4. Mở lại Trình Cài Đặt APK, tiếp tục cài đặt ![Resume Installation](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/Images/Snipaste_2021-10-22_15-10-06.png)
