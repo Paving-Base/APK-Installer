@@ -133,7 +133,7 @@
     <value>Capacités :</value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>App Name</value>
+    <value>Nom de l'application</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Annuler</value>
@@ -160,7 +160,7 @@
     <value>Fermer</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
-    <value>Copy</value>
+    <value>Copier</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Appareils</value>
@@ -190,7 +190,7 @@
     <value>Comment se connecter à WSA ?</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
-    <value>Icon</value>
+    <value>Icône</value>
   </data>
   <data name="IKnow" xml:space="preserve">
     <value>Je sais</value>
@@ -237,7 +237,7 @@
     <value>Chargement...</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
-    <value>More Info</value>
+    <value>Plus d'infos</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
     <value>Impossible de trouver le périphérique Android</value>
@@ -264,7 +264,7 @@
     <value>Online Package</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
-    <value>Package Name</value>
+    <value>Nom du paquet</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
     <value>Nom du paquet: {0}</value>
@@ -288,7 +288,7 @@
     <value>Sélectionner</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>Share</value>
+    <value>Partager</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
     <value>Démarrage du serveur ADB...</value>
