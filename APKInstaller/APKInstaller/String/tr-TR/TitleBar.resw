@@ -118,12 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutButton.Tag" xml:space="preserve">
-    <value>Settings</value>
+    <value>Ayarlar</value>
   </data>
   <data name="BackButton.Tag" xml:space="preserve">
-    <value>Back</value>
+    <value>Geri</value>
   </data>
   <data name="RefreshButton.Tag" xml:space="preserve">
-    <value>Refresh</value>
+    <value>Yenile</value>
   </data>
 </root>

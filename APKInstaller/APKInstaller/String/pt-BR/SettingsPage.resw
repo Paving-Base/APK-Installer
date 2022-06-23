@@ -121,13 +121,13 @@
     <value>Sobre</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>ADB Path</value>
+    <value>Caminho do ADB</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>Baixar automaticamente quando o pacote vier de um URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Is Auto Download Online Packages?</value>
+    <value>Download automático de pacotes online?</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
     <value>Alterar</value>
