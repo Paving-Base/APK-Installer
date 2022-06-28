@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="APKDescription" xml:space="preserve">
-    <value>                                                     </value>
+    <value>ID do aplicativo Android</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>Arquivos APK</value>
+    <value>Arquivo APK</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>Um instalador de aplicativos Android. Escrito por @wherewhere e @Tangent-90.</value>
