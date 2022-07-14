@@ -199,7 +199,7 @@
     <value>Infos</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>Installer</value>
+    <value>Install</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
     <value>{0} est prêt !</value>
