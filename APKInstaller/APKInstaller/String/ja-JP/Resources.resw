@@ -118,33 +118,33 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="APKDescription" xml:space="preserve">
-    <value>Android Application Package</value>
+    <value>Android アプリパッケージ</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>APK File</value>
+    <value>APKファイル</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>An Android App Installer. Written by @wherewhere and @Tangent-90.</value>
+    <value>Androidアプリインストーラー。@whereと@Tangent-90によって書かれています。</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>APK Installer</value>
+    <value>APKインストーラー</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
-    <value>There was an error with the program…</value>
+    <value>プログラムでエラーが発生しました…</value>
   </data>
   <data name="ImageLoadError" xml:space="preserve">
-    <value>Picture failed to load</value>
+    <value>画像の読み込みに失敗しました</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>Network exception</value>
+    <value>ネットワークエラー</value>
   </data>
   <data name="No" xml:space="preserve">
-    <value>No</value>
+    <value>いいえ</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>Split APK File</value>
+    <value>APKファイルの分割</value>
   </data>
   <data name="Yes" xml:space="preserve">
-    <value>Yes</value>
+    <value>はい</value>
   </data>
 </root>
