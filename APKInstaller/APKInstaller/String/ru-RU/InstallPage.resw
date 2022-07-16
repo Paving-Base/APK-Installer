@@ -297,7 +297,7 @@
     <value>Запустить Подсистему Windows для Android</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
-    <value>Store Links</value>
+    <value>Ссылка на Магазин</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
     <value>Распаковка ADB...</value>
