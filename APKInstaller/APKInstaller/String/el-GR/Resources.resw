@@ -118,33 +118,33 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="APKDescription" xml:space="preserve">
-    <value>English</value>
+    <value>Android Application Package</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>Αρχεία APK</value>
+    <value>APK File</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>Ένας Android App Installer. Γράφτηκε από @wherewhere και @Tangent-90.</value>
+    <value>An Android App Installer. Written by @wherewhere and @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>Εγκατάσταση APK</value>
+    <value>APK Installer</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
-    <value>There was an error with the file upload…</value>
+    <value>There was an error with the program…</value>
   </data>
   <data name="ImageLoadError" xml:space="preserve">
-    <value>Παρουσιάστηκε πρόβλημα στη φόρτωση του γραφικού στοιχείου</value>
+    <value>Picture failed to load</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>Εξουσιοδότηση δικτύου</value>
+    <value>Network exception</value>
   </data>
   <data name="No" xml:space="preserve">
-    <value>Αριθ</value>
+    <value>No</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>Άνοιγμα Αρχείου APK</value>
+    <value>Split APK File</value>
   </data>
   <data name="Yes" xml:space="preserve">
-    <value>Ναι</value>
+    <value>Yes</value>
   </data>
 </root>
