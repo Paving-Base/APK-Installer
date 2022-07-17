@@ -154,7 +154,7 @@
     <value>Überprüfen...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Hier klicken zum aktualisieren</value>
+    <value>Hier klicken zum lesen</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Schließen</value>
@@ -300,7 +300,7 @@
     <value>Store-Links</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
-    <value>Unzip ADB...</value>
+    <value>ADB wird entpackt...</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
     <value>Entpacken ist abgeschlossen</value>
