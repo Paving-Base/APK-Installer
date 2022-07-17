@@ -118,19 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
-    <value>Σχετικά με</value>
+    <value>About</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>Διαδρομή ADB</value>
+    <value>ADB Path</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>Αυτόματη λήψη όταν το πακέτο είναι από URL.</value>
+    <value>Auto download when package is from URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Είναι Αυτόματη Λήψη Σε Απευθείας Σύνδεση Συσκευασίες;</value>
+    <value>Is Auto Download Online Packages?</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
-    <value>Αλλαγές</value>
+    <value>Change</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
     <value>Check Failed</value>
@@ -235,7 +235,7 @@
     <value>Reset</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
-    <value>Ναι</value>
+    <value>Yes</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
     <value>Are you sure you want to reset the app?</value>
