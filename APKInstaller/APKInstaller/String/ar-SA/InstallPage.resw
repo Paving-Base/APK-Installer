@@ -133,7 +133,7 @@
     <value>القدرات:</value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>App Name</value>
+    <value>اسماء التطبيق</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>إلغاء</value>
@@ -191,7 +191,7 @@
     <value>كيف يمكن ربط WSA؟</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
-    <value>Icon</value>
+    <value>الصورة الرمزية</value>
   </data>
   <data name="IKnow" xml:space="preserve">
     <value>أعرف</value>
@@ -238,7 +238,7 @@
     <value>التحميل...</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
-    <value>More Info</value>
+    <value>معلومات أكثر</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
     <value>لا يمكن العثور على جهاز أندرويد</value>
@@ -265,7 +265,7 @@
     <value>حزمة عبر الإنترنت</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
-    <value>Package Name</value>
+    <value>اسم الباقة</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
     <value>Package Name: {0}</value>
