@@ -65,8 +65,10 @@ namespace APKInstaller.Helpers.Exceptions
         /// </summary>
         /// <param name="rootFrame"></param>
         /// <returns></returns>
-        public static ExceptionHandlingSynchronizationContext RegisterForFrame(Frame rootFrame!!)
+        public static ExceptionHandlingSynchronizationContext RegisterForFrame(Frame rootFrame)
         {
+            if (rootFrame == null) { throw new ArgumentNullException(nameof(rootFrame)); }
+
             ExceptionHandlingSynchronizationContext synchronizationContext = Register();
 
             rootFrame.Navigating += (sender, args) => EnsureContext(synchronizationContext);

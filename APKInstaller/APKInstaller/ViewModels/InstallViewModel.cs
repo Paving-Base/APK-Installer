@@ -563,6 +563,7 @@ namespace APKInstaller.ViewModels
             catch (Exception ex)
             {
                 PackageError(ex.Message);
+                IsInstalling = false;
             }
         }
 

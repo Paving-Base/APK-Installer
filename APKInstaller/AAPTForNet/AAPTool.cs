@@ -20,7 +20,7 @@ namespace AAPTForNet
             XmlTree = 2,
         }
 
-        private static readonly string AppPath = Path.GetDirectoryName(System.Reflection.Assembly.GetCallingAssembly().Location);
+        private static readonly string AppPath = AppDomain.CurrentDomain.BaseDirectory;
 #if NET5_0_OR_GREATER
         private static readonly string TempPath = Path.Combine(Path.GetTempPath(), @"APKInstaller\Caches", $"{Environment.ProcessId}", "AppPackages");
 #else
@@ -52,7 +52,6 @@ namespace AAPTForNet
 
             int index = 0;
             bool terminated = false;
-            string msg = string.Empty;
             AAPTool aapt = new();
             List<string> output = new();    // Messages from output stream
 
@@ -73,7 +72,7 @@ namespace AAPTForNet
 
             while (!aapt.StandardOutput.EndOfStream && !terminated)
             {
-                msg = aapt.StandardOutput.ReadLine();
+                string msg = aapt.StandardOutput.ReadLine();
 
                 if (callback(msg, index))
                 {
