@@ -729,6 +729,10 @@ namespace APKInstaller.ViewModels
                 while (TotalBytesToReceive <= 0)
                 {
                     await Task.Delay(1);
+                    if (IsCompleted)
+                    {
+                        goto downloadfinish;
+                    }
                 }
                 WaitProgressIndeterminate = false;
                 ProgressHelper.SetState(ProgressState.Normal, true);
@@ -742,6 +746,7 @@ namespace APKInstaller.ViewModels
                 ProgressHelper.SetState(ProgressState.Indeterminate, true);
                 WaitProgressIndeterminate = true;
                 WaitProgressValue = 0;
+            downloadfinish:
                 if (exception != null)
                 {
                     ProgressHelper.SetState(ProgressState.Error, true);

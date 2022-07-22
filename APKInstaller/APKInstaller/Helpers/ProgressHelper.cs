@@ -74,7 +74,7 @@ namespace APKInstaller.Helpers
 
         private static void SetProgressState(ProgressState state)
         {
-            _taskbarList?.SetProgressState(GetHandle(), (TBPFLAG)Enum.Parse(typeof(TBPFLAG), state.ToString()));
+            _taskbarList?.SetProgressState(GetHandle(), (TBPFLAG)Enum.Parse(typeof(TBPFLAG), ((int)state).ToString()));
         }
 
         private static void SetProgressValue(int current, int max)

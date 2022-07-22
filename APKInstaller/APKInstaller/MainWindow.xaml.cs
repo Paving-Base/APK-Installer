@@ -30,7 +30,6 @@ namespace APKInstaller
             UIHelper.MainWindow = this;
             MainPage MainPage = new();
             Content = MainPage;
-            Backdrop.SetBackdrop(BackdropType.Mica);
         }
 
         private void Window_Closed(object sender, WindowEventArgs args)

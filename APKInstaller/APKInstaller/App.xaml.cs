@@ -45,6 +45,7 @@ namespace APKInstaller
             };
             m_window.TrackWindow();
             ThemeHelper.Initialize();
+            ((MainWindow)m_window).Backdrop.SetBackdrop(BackdropType.Mica);
             m_window.Activate();
         }
 
