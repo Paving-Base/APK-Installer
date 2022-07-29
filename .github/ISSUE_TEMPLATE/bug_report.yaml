@@ -33,6 +33,11 @@ body:
       label: App version
       description: Specify the version of APK Installer you're using.
       options:
+        - "0.1.17"
+        - "0.1.16"
+        - "0.1.15"
+        - "0.1.14"
+        - "0.1.13"
         - "0.1.12"
         - "0.1.11"
         - "0.1.10"
@@ -53,6 +58,7 @@ body:
       description: Which Windows versions did you see the issue on?
       options:
         - "Insider Build (xxxxx)"
+        - "Windows 11 version 22H2 (25169)"
         - "Windows 11 version 21H2 (22000)"
         - "Windows 10 version 21H2 (19044, November 2021 Update)"
         - "Windows 10 version 21H1 (19043, May 2021 Update)"
