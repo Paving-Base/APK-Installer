@@ -157,10 +157,10 @@
     <value>Is Close Installer when APP is Ready?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
-    <value>Configs</value>
+    <value>Configuraçao</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device on network.</value>
+    <value>Conectar o dispositivo na rede.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Connect Device</value>
