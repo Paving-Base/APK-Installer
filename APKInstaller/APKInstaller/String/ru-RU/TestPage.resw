@@ -124,10 +124,10 @@
     <value>Приложения</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>Select Backdrop Type for Windows 11</value>
+    <value>Выберите тип фона для Windows 11</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>Backdrop</value>
+    <value>Цвет фона уведомления</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
     <value>Включить или выключить компактное отображение</value>
@@ -151,10 +151,10 @@
     <value>Процессы</value>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
-    <value>Test Progress Ring on the Title Bar</value>
+    <value>Тестировать кольцо прогресса в заголовке</value>
   </data>
   <data name="ProgressSettings.Header" xml:space="preserve">
-    <value>Progress</value>
+    <value>Прогресс</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Темная</value>
@@ -166,13 +166,13 @@
     <value>Светлая</value>
   </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
-    <value>Set the value of Progress Ring</value>
+    <value>Установить значение кольца прогресса</value>
   </data>
   <data name="SetProgressValue.Header" xml:space="preserve">
-    <value>Progress Value</value>
+    <value>Значение прогресса</value>
   </data>
   <data name="ShowRefreshButton.Description" xml:space="preserve">
-    <value>Show Refresh Button on the Title Bar</value>
+    <value>Показывать кнопку обновления на заголовке</value>
   </data>
   <data name="ShowRefreshButton.Header" xml:space="preserve">
     <value>Кнопка "Обновить"</value>
