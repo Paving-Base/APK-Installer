@@ -317,7 +317,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
-    <value>Version Code</value>
+    <value>Код версии</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
     <value>Версия: {0}</value>
