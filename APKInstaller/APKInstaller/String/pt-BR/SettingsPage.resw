@@ -148,7 +148,7 @@
     <value>Fechar o ADB pode fazer outros Instaladores abertos pararem de funcionar.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Is Close ADB when Closing Installer?</value>
+    <value>Fechar ADB ao fechar o instalador?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
     <value>Fechar o Instalador após o APK ter sido instalado e iniciado.</value>
