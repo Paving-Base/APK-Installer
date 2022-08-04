@@ -154,7 +154,7 @@
     <value>Fechar o Instalador após o APK ter sido instalado e iniciado.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Is Close Installer when APP is Ready?</value>
+    <value>Fechar o Installer quando o app estiver pronto?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Configuraçao</value>
@@ -163,7 +163,7 @@
     <value>Conectar o dispositivo na rede.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
-    <value>Connect Device</value>
+    <value>Conectar Dispositivos</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
     <value>Contact Me</value>
