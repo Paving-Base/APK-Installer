@@ -211,7 +211,7 @@
     <value>Última verificação:</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Disable it to connect to other device.</value>
+    <value>Desative para conectar a outro dispositivo.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
     <value>Is Only for WSA?</value>
@@ -226,7 +226,7 @@
     <value>Notas de lançamento</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
-    <value>Reset settings of this application.</value>
+    <value>Redefinir configurações deste aplicativo.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
     <value>Reset application</value>
@@ -259,7 +259,7 @@
     <value>Configurações</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>Traduzir</value>
+    <value>Traduza</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
     <value>Versão</value>
