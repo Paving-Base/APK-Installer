@@ -166,7 +166,7 @@
     <value>Conectar Dispositivos</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
-    <value>Contact Me</value>
+    <value>Entrar em contato comigo</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
     <value>Siga-me nas redes sociais para os últimos lançamentos. Se você encontrar algum problema, por favor me avise no privado. Vou tentar meu melhor para resolver o problema. Se você tiver uma conta do Telegram, sinta-se bem-vindo para conversar no Paving Base Group 😊!</value>
@@ -178,13 +178,13 @@
     <value>Dispositivo</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
-    <value>Display</value>
+    <value>Apresentar</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
-    <value>Supports</value>
+    <value>Votos</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open source application, and it won't be inserted any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your supports 💕.</value>
+    <value>O Instalador de APK é um aplicativo de código aberto e não será inserido anúncios com lucro. Se você gosta deste aplicativo, não se esqueça de avaliá-lo na loja. Claro, seria melhor se você pudesse doar um pouco. Obrigado pelos seus votos 💕.</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
@@ -193,7 +193,7 @@
     <value>Feedback</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
-    <value>Find Update</value>
+    <value>Procurar atualização</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>Ir para página de teste.</value>
