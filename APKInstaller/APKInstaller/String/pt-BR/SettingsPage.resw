@@ -214,13 +214,13 @@
     <value>Desative para conectar a outro dispositivo.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>Is Only for WSA?</value>
+    <value>É somente para WSA?</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Outras</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value>Rate On Store</value>
+    <value>Avalie este applicativo</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
     <value>Notas de lançamento</value>
@@ -229,10 +229,10 @@
     <value>Redefinir configurações deste aplicativo.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
-    <value>Reset application</value>
+    <value>Redefinir dados do aplicativo</value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
-    <value>Reset</value>
+    <value>Redefinir</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
     <value>Sim</value>
