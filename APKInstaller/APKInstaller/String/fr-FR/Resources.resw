@@ -121,19 +121,19 @@
     <value>Paquet d'application Android</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>Fichier APK</value>
+    <value>Fichier de l'APK</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>Un installeur d'application Android. Écrit par @wherewhere et @Tangent-90.</value>
+    <value>Un installateur d'applications Android. Écrit par @wherewhere et @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>APK Installer</value>
+    <value>Installateur de APK</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
-    <value>Une erreur s'est produite avec le programme…</value>
+    <value>Il y a eu une erreur avec le programme…</value>
   </data>
   <data name="ImageLoadError" xml:space="preserve">
-    <value>Échec du chargement de l'image</value>
+    <value>Le chargement de l'image a échoué</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
     <value>Erreur réseau</value>
