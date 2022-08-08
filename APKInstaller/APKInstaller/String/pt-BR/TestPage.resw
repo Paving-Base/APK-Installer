@@ -121,7 +121,7 @@
     <value>Android Test</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
-    <value>Apps</value>
+    <value>Aplicação </value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Select Backdrop Type for Windows 11</value>
