@@ -123,14 +123,10 @@
 </value>
   </data>
   <data name="Start.Text" xml:space="preserve">
-    <value>Iniciar
-
-
-</value>
+    <value>Iniciar</value>
   </data>
   <data name="Stop.Text" xml:space="preserve">
-    <value>Pare 
-</value>
+    <value>Pare</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Aplicação 
