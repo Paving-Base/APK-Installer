@@ -121,13 +121,14 @@
     <value>ADB, Android Debug Bridge, необходим для работы программы APK Installer. Нажмите "Загрузить" для загрузки. Загружая, вы принимаете Условия и Положения Google для ADB. Если вы уже скачали ADB, нажмите "Выбрать", чтобы выбрать его.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB установлен</value>
+    <value>ADB существует</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>ADB не найден</value>
+    <value>АБР отсутствует</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>APK-файл File</value>
+    <value>APK-файл
+</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>Возможности:</value>
@@ -317,7 +318,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
-    <value>Version Code</value>
+    <value>Версия кода</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
     <value>Версия: {0}</value>
@@ -338,6 +339,6 @@
 Это может занять много времени.</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>WSA запущено</value>
+    <value>WSA работает</value>
   </data>
 </root>

@@ -148,25 +148,25 @@
     <value>Fechar o ADB pode fazer outros Instaladores abertos pararem de funcionar.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Is Close ADB when Closing Installer?</value>
+    <value>Fechar ADB ao fechar o instalador?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
     <value>Fechar o Instalador após o APK ter sido instalado e iniciado.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Is Close Installer when APP is Ready?</value>
+    <value>Fechar o Installer quando o app estiver pronto?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
-    <value>Configs</value>
+    <value>Configuraçao</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device on network.</value>
+    <value>Conectar o dispositivo na rede.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
-    <value>Connect Device</value>
+    <value>Conectar Dispositivos</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
-    <value>Contact Me</value>
+    <value>Entrar em contato comigo</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
     <value>Siga-me nas redes sociais para os últimos lançamentos. Se você encontrar algum problema, por favor me avise no privado. Vou tentar meu melhor para resolver o problema. Se você tiver uma conta do Telegram, sinta-se bem-vindo para conversar no Paving Base Group 😊!</value>
@@ -178,13 +178,13 @@
     <value>Dispositivo</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
-    <value>Display</value>
+    <value>Apresentar</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
-    <value>Supports</value>
+    <value>Votos</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open source application, and it won't be inserted any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your supports 💕.</value>
+    <value>O Instalador de APK é um aplicativo de código aberto e não será inserido anúncios com lucro. Se você gosta deste aplicativo, não se esqueça de avaliá-lo na loja. Claro, seria melhor se você pudesse doar um pouco. Obrigado pelos seus votos 💕.</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
@@ -193,7 +193,7 @@
     <value>Feedback</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
-    <value>Find Update</value>
+    <value>Procurar atualização</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>Ir para página de teste.</value>
@@ -211,28 +211,28 @@
     <value>Última verificação:</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Disable it to connect to other device.</value>
+    <value>Desative para conectar a outro dispositivo.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>Is Only for WSA?</value>
+    <value>É somente para WSA?</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Outras</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value>Rate On Store</value>
+    <value>Avalie este applicativo</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
     <value>Notas de lançamento</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
-    <value>Reset settings of this application.</value>
+    <value>Redefinir configurações deste aplicativo.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
-    <value>Reset application</value>
+    <value>Redefinir dados do aplicativo</value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
-    <value>Reset</value>
+    <value>Redefinir</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
     <value>Sim</value>
@@ -259,7 +259,7 @@
     <value>Configurações</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>Traduzir</value>
+    <value>Traduza</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
     <value>Versão</value>
