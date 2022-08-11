@@ -121,7 +121,7 @@
     <value>Android Application Package</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>APK File</value>
+    <value>앱 설치 파일</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>An Android App Installer. Written by @wherewhere and @Tangent-90.</value>
@@ -139,12 +139,12 @@
     <value>Network exception</value>
   </data>
   <data name="No" xml:space="preserve">
-    <value>No</value>
+    <value>아니오</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
     <value>Split APK File</value>
   </data>
   <data name="Yes" xml:space="preserve">
-    <value>Yes</value>
+    <value>예</value>
   </data>
 </root>
