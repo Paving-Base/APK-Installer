@@ -166,7 +166,7 @@
     <value>Devices</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Download</value>
+    <value>Baixar</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
     <value>Download Failed</value>
