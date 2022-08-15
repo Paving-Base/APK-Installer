@@ -184,7 +184,7 @@
     <value>Поддержать</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer — это приложение с открытым исходным кодом, и в нем не будет использоваться реклама для получения прибыли. Если вам нравится это приложение, не забудьте оценить его в магазине. Конечно, было бы лучше, если бы вы могли совершить небольшое пожертвование. Спасибо за вашу поддержку 💕.</value>
+    <value>APK Installer is an open-source application, and no ads will be added for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your support.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>Лицензионное соглашение</value>
@@ -211,7 +211,7 @@
     <value>Последняя проверка: </value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Выключите тумблер для подключения к другому устройству.</value>
+    <value>Disable it to connect to other devices.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
     <value>Только для WSA?</value>
