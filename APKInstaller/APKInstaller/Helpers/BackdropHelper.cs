@@ -22,6 +22,7 @@ namespace APKInstaller.Helpers
         private DesktopAcrylicController m_acrylicController;
         private SystemBackdropConfiguration m_configurationSource;
 
+        public BackdropType? Backdrop => m_currentBackdrop;
         public event TypedEventHandler<BackdropHelper, object> BackdropTypeChanged;
 
         public BackdropHelper(Window window)

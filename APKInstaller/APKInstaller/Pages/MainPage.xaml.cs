@@ -18,7 +18,6 @@ namespace APKInstaller.Pages
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        private bool HasBeenSmail;
         private readonly AppWindow AppWindow = WindowHelper.GetAppWindowForCurrentWindow();
 
         public MainPage()
@@ -29,10 +28,7 @@ namespace APKInstaller.Pages
             UIHelper.MainWindow.Backdrop.BackdropTypeChanged += OnBackdropTypeChanged;
             if (UIHelper.HasTitleBar)
             {
-                LeftPadding.Width = new GridLength(120);
                 UIHelper.MainWindow.ExtendsContentIntoTitleBar = true;
-                Root.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Auto) });
-                Root.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
             }
             else
             {
@@ -43,12 +39,7 @@ namespace APKInstaller.Pages
             _ = CoreAppFrame.Navigate(typeof(InstallPage));
         }
 
-        private void OnBackdropTypeChanged(BackdropHelper sender, object args)
-        {
-            CustomTitleBar.Background = (BackdropType)args == BackdropType.DefaultColor
-                ? (AboutButtonBorder.Background = CoreAppFrame.Background = (SolidColorBrush)Application.Current.Resources["ApplicationPageBackgroundThemeBrush"])
-                : (AboutButtonBorder.Background = CoreAppFrame.Background = (SolidColorBrush)Application.Current.Resources["ControlFillColorTransparentBrush"]);
-        }
+        private void OnBackdropTypeChanged(BackdropHelper sender, object args) => RootBackground.Opacity = (BackdropType)args == BackdropType.DefaultColor ? 1 : 0;
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -66,23 +57,7 @@ namespace APKInstaller.Pages
         {
             try
             {
-                if (UIHelper.HasTitleBar)
-                {
-                    if (XamlRoot.Size.Width <= 268)
-                    {
-                        if (!HasBeenSmail)
-                        {
-                            HasBeenSmail = true;
-                            UIHelper.MainWindow.SetTitleBar(null);
-                        }
-                    }
-                    else if (HasBeenSmail)
-                    {
-                        HasBeenSmail = false;
-                        UIHelper.MainWindow.SetTitleBar(CustomTitleBar);
-                    }
-                }
-                else
+                if (!UIHelper.HasTitleBar)
                 {
                     RectInt32 Rect = new((ActualWidth - CustomTitleBar.ActualWidth).GetActualPixel(), 0, CustomTitleBar.ActualWidth.GetActualPixel(), CustomTitleBar.ActualHeight.GetActualPixel());
                     AppWindow.TitleBar.SetDragRectangles(new RectInt32[] { Rect });

@@ -122,8 +122,7 @@
             x:Name="CustomTitleBar"
             Grid.Row="0"
             Height="{x:Bind helper:UIHelper.TitleBarHeight}"
-            HorizontalAlignment="Stretch"
-            Visibility="{x:Bind helper:UIHelper.HasTitleBar, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='true'}" />
+            HorizontalAlignment="Stretch" />
         <Grid
             x:Name="CoreAppUI"
             Grid.Row="1"

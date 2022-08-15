@@ -1,7 +1,9 @@
-﻿using Microsoft.UI.Windowing;
+﻿using Microsoft.UI;
+using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using System;
 using Windows.UI;
+using Windows.UI.ViewManagement;
 
 namespace APKInstaller.Helpers
 {
@@ -88,39 +90,17 @@ namespace APKInstaller.Helpers
             {
                 AppWindowTitleBar TitleBar = WindowHelper.GetAppWindowForCurrentWindow().TitleBar;
 
-                ResourceDictionary ResourceDictionary = new()
-                {
-                    Source = new Uri("ms-appx:///Controls/TitleBar/TitleBar_themeresources.xaml")
-                };
+                Color ForegroundColor = IsDarkTheme() ? Colors.White : Colors.Black;
+                Color BackgroundColor = new AccessibilitySettings().HighContrast ? Color.FromArgb(255, 0, 0, 0) : IsDarkTheme() ? Color.FromArgb(255, 32, 32, 32) : Color.FromArgb(255, 243, 243, 243);
 
-                Color titleBarBackgroundColor = (Color)ResourceDictionary["TitleBarBackgroudColor"];
-                TitleBar.BackgroundColor = titleBarBackgroundColor;
+                TitleBar.ForegroundColor = TitleBar.ButtonForegroundColor = ForegroundColor;
+                TitleBar.BackgroundColor = TitleBar.InactiveBackgroundColor = BackgroundColor;
+                TitleBar.ButtonBackgroundColor = TitleBar.ButtonInactiveBackgroundColor = UIHelper.TitleBarExtended ? BackgroundColor : Colors.Transparent;
+            }
 
-                // rest colors
-                Color buttonForegroundColor = (Color)ResourceDictionary["TitleBarButtonForegroundColor"];
-                TitleBar.ButtonForegroundColor = buttonForegroundColor;
-
-                Color buttonBackgroundColor = (Color)ResourceDictionary["TitleBarButtonBackgroundColor"];
-                TitleBar.ButtonBackgroundColor = UIHelper.TitleBarExtended ? buttonBackgroundColor : titleBarBackgroundColor;
-                TitleBar.ButtonInactiveBackgroundColor = buttonBackgroundColor;
-
-                // hover colors
-                Color buttonHoverForegroundColor = (Color)ResourceDictionary["TitleBarButtonHoverForegroundColor"];
-                TitleBar.ButtonHoverForegroundColor = buttonHoverForegroundColor;
-
-                Color buttonHoverBackgroundColor = (Color)ResourceDictionary["TitleBarButtonHoverBackgroundColor"];
-                TitleBar.ButtonHoverBackgroundColor = UIHelper.TitleBarExtended ? buttonHoverBackgroundColor : null;
-
-                // pressed colors
-                Color buttonPressedForegroundColor = (Color)ResourceDictionary["TitleBarButtonPressedForegroundColor"];
-                TitleBar.ButtonPressedForegroundColor = buttonPressedForegroundColor;
-
-                Color buttonPressedBackgroundColor = (Color)ResourceDictionary["TitleBarButtonPressedBackgroundColor"];
-                TitleBar.ButtonPressedBackgroundColor = UIHelper.TitleBarExtended ? buttonPressedBackgroundColor : null;
-
-                // inactive foreground
-                Color buttonInactiveForegroundColor = (Color)ResourceDictionary["TitleBarButtonInactiveForegroundColor"];
-                TitleBar.ButtonInactiveForegroundColor = buttonInactiveForegroundColor;
+            if (UIHelper.MainWindow.Backdrop != null && UIHelper.MainWindow.Backdrop.Backdrop.HasValue)
+            {
+                UpdateTitleBarColor(UIHelper.MainWindow.Backdrop, UIHelper.MainWindow.Backdrop.Backdrop);
             }
 
             if (IsDarkTheme())
@@ -142,9 +122,8 @@ namespace APKInstaller.Helpers
         private static void UpdateTitleBarColor(BackdropHelper sender, object args)
         {
             ResourceDictionary resources = Application.Current.Resources;
-            resources["WindowCaptionBackground"] = (BackdropType)args == BackdropType.DefaultColor
-                ? (resources["WindowCaptionBackgroundDisabled"] = (Color)Application.Current.Resources["SolidBackgroundFillColorBase"])
-                : (resources["WindowCaptionBackgroundDisabled"] = (Color)Application.Current.Resources["ControlFillColorTransparent"]);
+
+            resources["WindowCaptionForeground"] = IsDarkTheme() ? Colors.White : Colors.Black;
 
             TitleBarHelper.TriggerTitleBarRepaint();
         }

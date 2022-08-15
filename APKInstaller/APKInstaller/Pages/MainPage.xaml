@@ -11,13 +11,20 @@
     <Page.Resources>
         <ResourceDictionary Source="ms-appx:///Controls/TitleBar/TitleBar.xaml" />
     </Page.Resources>
-
     <Grid x:Name="Root">
+        <Grid.Background>
+            <SolidColorBrush
+                x:Name="RootBackground"
+                Opacity="0"
+                Color="{ThemeResource SolidBackgroundFillColorBase}" />
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto" />
             <ColumnDefinition Width="*" />
-            <ColumnDefinition x:Name="LeftPadding" Width="0" />
         </Grid.ColumnDefinitions>
+        <Grid.BackgroundTransition>
+            <BrushTransition />
+        </Grid.BackgroundTransition>
         <Grid
             x:Name="CustomTitleBar"
             Grid.Column="1"
