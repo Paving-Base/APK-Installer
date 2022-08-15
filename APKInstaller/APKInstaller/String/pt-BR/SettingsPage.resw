@@ -244,10 +244,11 @@
     <value>Selecione dispositivos</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
-    <value>Show helpers when no device is connected.</value>
+    <value>download </value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Is Show Helpers?</value>
+    <value>O Show Helpers?como instalar passo a passo
+</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
     <value>Mostrar Avisos no topo das Configurações.</value>
