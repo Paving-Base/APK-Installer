@@ -121,7 +121,7 @@
     <value>ADB, die Android Debug Bridge, wird für den APK Installer benötigt. Klicken Sie auf "Download", um sie herunterzuladen. Mit dem Download akzeptieren Sie die AGB von Google für ADB.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB existiert</value>
+    <value>ADB Exists</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB fehlt</value>
@@ -142,7 +142,7 @@
     <value>Es kann keine Verbindung zu %s hergestellt werden</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>WSA startet möglicherweise nicht richtig, oder es gibt ein Problem mit ADB. Diese Situation kann sehr schwierig zu beheben sein. Bitte starten Sie das Installationsprogramm neu. Wenn es immer noch nicht funktioniert, versuchen Sie, den Computer neu zu starten.</value>
+    <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>App Paket kann nicht geöffnet werden</value>
