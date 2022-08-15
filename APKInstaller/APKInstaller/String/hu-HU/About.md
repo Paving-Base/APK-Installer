@@ -3,7 +3,7 @@
 ##### Nyilatkozat
 1. Kérjük, kövesse az [APK telepítő végfelhasználói licencszerződést és adatvédelmi szabályzatot](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
 2. Ez a program nyílt forráskódú szoftver, ezért kérjük, győződjön meg róla, hogy a program [ez a Github tároló](https://github.com/Paving-Base/APK-Installer) vagy [ez az alkalmazás](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) az adatok biztonsága érdekében.
-3. Ha a program forrása nem abnormális, akkor az összes adatodat csak a programmal való futtatáshoz használják, vagy a program futása közben helyben tárolják, és a fejlesztő nem lopja el az adataidat. De még így is, kérjük, figyeljen a használati környezet biztonságára.
+3. Ha a program forrása nem abnormális, akkor az összes adatodat csak a programmal való futtatáshoz használják, vagy a program futása közben helyben tárolják, és a fejlesztő nem lopja el az adataidat. Still, please pay attention to the security of the environment.
 4. Az alkalmazás szövegének fordítása a [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") közösségtől származik, és nem minden szöveg képviseli a szerző nézeteit.
 
 ##### Fordítás
