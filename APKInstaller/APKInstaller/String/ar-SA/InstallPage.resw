@@ -121,7 +121,7 @@
     <value>ADB، جسر تصحيح أخطاء أندرويد، مطلوب لتثبيت APK للعمل. انقر فوق "تنزيل" لتحميله. من خلال التنزيل، أنت تقبل شروط وأحكام Google لـ ADB. إذا كنت قد قمت بتنزيل ADB بالفعل، انقر فوق "إختار" لتحديد ذلك.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB موجودة</value>
+    <value>ADB Exists</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB مفقود</value>
@@ -142,7 +142,7 @@
     <value>لا يمكن الاتصال بالمضيف</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>وقد لا تبدأ إدارة شؤون المرأة على نحو سليم، أو قد تكون هناك مشكلة مع مصرف التنمية الآسيوي. الرجاء إعادة تشغيل المثبت. إذا كان لا يزال لا يعمل، حاول إعادة تشغيل الكمبيوتر.</value>
+    <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>لا يمكن فتح حزمة التطبيقات</value>
