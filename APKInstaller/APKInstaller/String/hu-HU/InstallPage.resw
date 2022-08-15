@@ -121,7 +121,7 @@
     <value>Az APK Installer működéséhez az ADB, azaz az Android Debug Bridge szükséges. Kattintson a "Letöltés" gombra a letöltéshez. A letöltéssel elfogadja a Google ADB-re vonatkozó általános szerződési feltételeit. Ha már letöltötte az ADB-t, kattintson a "Kiválasztás" gombra a kiválasztáshoz.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB gyökér</value>
+    <value>ADB Exists</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB hiányzik</value>
@@ -142,7 +142,7 @@
     <value>Nem tud csatlakozni a WSA-hoz</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Előfordulhat, hogy a WSA nem indul el megfelelően, vagy az ADB-vel van probléma. Ezt a helyzetet nagyon nehéz lehet megoldani. Kérjük, indítsa újra a telepítőt. Ha még mindig nem működik, próbálja meg újraindítani a számítógépet.</value>
+    <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>Nem lehet megnyitni az alkalmazáscsomagot</value>
