@@ -184,7 +184,7 @@
     <value>Wsparcie</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>Instalator APK jest aplikacją open source i nie zostaną wstawione żadne reklamy dla zysku. Jeśli podoba Ci się ta aplikacja, nie zapomnij ocenić jej w sklepie. Oczywiście, byłoby lepiej, gdybyś mógł przekazać małą dotację. Dziękujemy za twoje wsparcie 💕.</value>
+    <value>APK Installer is an open-source application, and no ads will be added for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your support.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>Licencja dla użytkownika końcowego</value>
@@ -211,7 +211,7 @@
     <value>Ostatnio sprawdzano:</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Wyłącz, aby połączyć się z innym urządzeniem.</value>
+    <value>Disable it to connect to other devices.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
     <value>Czy to tylko dla WSA?</value>
