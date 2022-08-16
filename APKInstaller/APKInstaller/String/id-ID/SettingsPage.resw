@@ -184,7 +184,7 @@
     <value>Dukungan</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application, and no ads will be added for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your support.💕</value>
+    <value>APK Installer adalah aplikasi sumber terbuka, dan tidak ada iklan yang akan ditambahkan untuk mendapatkan keuntungan. Jika Anda menyukai aplikasi ini, jangan lupa untuk menilai di toko. Tentu saja, akan lebih baik jika Anda bisa menyumbang sedikit. Terima kasih atas dukungan Anda.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
@@ -211,7 +211,7 @@
     <value>Terakhir Periksa:</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Disable it to connect to other devices.</value>
+    <value>Nonaktifkan untuk terhubung ke perangkat lain.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
     <value>Apakah Hanya untuk WSA?</value>
