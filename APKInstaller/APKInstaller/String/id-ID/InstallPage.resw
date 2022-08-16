@@ -121,7 +121,7 @@
     <value>ADB, Android Debug Bridge, diperlukan agar Penginstal APK berfungsi. Klik "Unduh" untuk mengunduhnya. Dengan mengunduh, Anda menerima Persyaratan dan Ketentuan Google untuk ADB. Jika Anda sudah mengunduh ADB, klik "Pilih" untuk memilihnya.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Exists</value>
+    <value>Ada ADB</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB hilang</value>
@@ -143,7 +143,7 @@
     <value>Tidak Dapat Terhubung ke WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
+    <value>Entah WSA tidak memulai dengan benar, atau ada masalah dengan ADB. Masalah ini bisa sangat sulit untuk diselesaikan. Silakan mulai ulang penginstal. Jika masih tidak bisa, coba memulai ulang komputer.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>Tidak dapat membuka paket aplikasi</value>
