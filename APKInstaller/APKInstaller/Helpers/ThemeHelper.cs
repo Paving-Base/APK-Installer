@@ -73,7 +73,6 @@ namespace APKInstaller.Helpers
         {
             // Save reference as this might be null when the user is in another app
             CurrentApplicationWindow = UIHelper.MainWindow;
-            UIHelper.MainWindow.Backdrop.BackdropTypeChanged += UpdateTitleBarColor;
             RootTheme = SettingsHelper.Get<ElementTheme>(SettingsHelper.SelectedAppTheme);
         }
 
@@ -95,13 +94,12 @@ namespace APKInstaller.Helpers
 
                 TitleBar.ForegroundColor = TitleBar.ButtonForegroundColor = ForegroundColor;
                 TitleBar.BackgroundColor = TitleBar.InactiveBackgroundColor = BackgroundColor;
-                TitleBar.ButtonBackgroundColor = TitleBar.ButtonInactiveBackgroundColor = UIHelper.TitleBarExtended ? BackgroundColor : Colors.Transparent;
+                TitleBar.ButtonBackgroundColor = TitleBar.ButtonInactiveBackgroundColor = UIHelper.TitleBarExtended ? Colors.Transparent : BackgroundColor;
             }
 
-            if (UIHelper.MainWindow.Backdrop != null && UIHelper.MainWindow.Backdrop.Backdrop.HasValue)
-            {
-                UpdateTitleBarColor(UIHelper.MainWindow.Backdrop, UIHelper.MainWindow.Backdrop.Backdrop);
-            }
+            ResourceDictionary resources = Application.Current.Resources;
+            resources["WindowCaptionForeground"] = IsDarkTheme() ? Colors.White : Colors.Black;
+            TitleBarHelper.TriggerTitleBarRepaint();
 
             if (IsDarkTheme())
             {
@@ -117,15 +115,6 @@ namespace APKInstaller.Helpers
                     window?.RemoveWindowDarkMode();
                 }
             }
-        }
-
-        private static void UpdateTitleBarColor(BackdropHelper sender, object args)
-        {
-            ResourceDictionary resources = Application.Current.Resources;
-
-            resources["WindowCaptionForeground"] = IsDarkTheme() ? Colors.White : Colors.Black;
-
-            TitleBarHelper.TriggerTitleBarRepaint();
         }
     }
 }

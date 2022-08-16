@@ -5,11 +5,11 @@
     <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)' == 'net4.8'">
+  <ItemGroup Condition="'$(TargetFrameworkIdentifier)' == '.NETFramework'">
     <PackageReference Include="System.IO.Compression" Version="4.3.0" />
   </ItemGroup>
     
-  <ItemGroup Condition="'$(TargetFramework)' != 'net4.8'">
+  <ItemGroup Condition="'$(TargetFrameworkIdentifier)' != '.NETFramework'">
     <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
   </ItemGroup>
 
