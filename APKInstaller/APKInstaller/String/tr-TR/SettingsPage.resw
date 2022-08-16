@@ -184,7 +184,7 @@
     <value>Destek</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer açık kaynaklı bir uygulamadır ve kâr amaçlı herhangi bir reklam eklenmeyecektir. Bu uygulamayı beğendiyseniz, oy vermeyi unutmayın. Tabii ki, biraz bağış yapabilirseniz daha iyi olur. Destekleriniz için teşekkürler 💕.</value>
+    <value>APK Installer is an open-source application, and no ads will be added for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your support.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
@@ -211,7 +211,7 @@
     <value>Son Kontrol:</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Başka bir cihaza bağlanmak için devre dışı bırakın.</value>
+    <value>Disable it to connect to other devices.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
     <value>Sadece WSA için mi?</value>

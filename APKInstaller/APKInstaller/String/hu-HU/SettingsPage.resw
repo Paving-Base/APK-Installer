@@ -185,7 +185,7 @@
     <value>Támogatás</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>Az APK Installer egy nyílt forráskódú alkalmazás, és nem lesz beillesztve semmilyen reklám a profitért. Ha tetszik ez az alkalmazás, ne felejtsd el értékelni az áruházban. Természetesen jobb lenne, ha adományoznál egy kicsit. Köszönjük a támogatásokat 💕.</value>
+    <value>Az APK Installer nyílt forráskódú alkalmazás, és nincs semmilyen reklám a profitért. Ha tetszik ez az alkalmazás, ne felejtsd el értékelni az áruházban. Természetesen jobb lenne, ha adományoznál egy kicsit. Köszönjük a támogatásokat.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>Végfelhasználói licencszerződés</value>

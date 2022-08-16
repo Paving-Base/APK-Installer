@@ -121,7 +121,7 @@
     <value>ADB、Android デバッグブリッジはAPKインストーラが動作するために必要です。「ダウンロード」をクリックしてダウンロードします。ダウンロードすることにより、ADBに関するGoogleの利用規約に同意したことになります。すでにダウンロードしている場合は、「選択」をクリックしてファイルを選択します。</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADBが存在します</value>
+    <value>ADB Exists</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>ADBが見つかりません</value>
@@ -142,7 +142,7 @@
     <value>WSAに接続できません</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>WSAが正しく起動しない場合や、ADBに問題が発生している場合があります。 インストーラを再起動してください。それでも動作しない場合は、コンピュータを再起動してみてください。</value>
+    <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>アプリパッケージを開けません</value>

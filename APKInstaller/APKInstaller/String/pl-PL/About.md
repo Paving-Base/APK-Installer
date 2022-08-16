@@ -3,7 +3,7 @@
 ##### Deklaracja
 1. Postępuj zgodnie z [Umową licencyjną użytkownika Apk Installer](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
 2. Ten program jest oprogramowaniem open source, więc upewnij się, że program pochodzi z [tego repozytorium Github](https://github.com/Paving-Base/APK-Installer) lub [tej aplikacji](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) , aby zachować bezpieczeństwo twoich danych.
-3. Jeśli źródło programu nie jest nieprawidłowe, wszystkie Twoje dane będą używane tylko do uruchamiania z programem lub przechowywane lokalnie podczas uruchamiania programu, a deweloper nie będzie kradł żadnych twoich danych. Jednak mimo to proszę zwrócić uwagę na bezpieczeństwo środowiska użytkowania.
+3. Jeśli źródło programu nie jest nieprawidłowe, wszystkie Twoje dane będą używane tylko do uruchamiania z programem lub przechowywane lokalnie podczas uruchamiania programu, a deweloper nie będzie kradł żadnych twoich danych. Still, please pay attention to the security of the environment.
 4. Tłumaczenie tekstu tej aplikacji pochodzi ze społeczności [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") i wszystkie teksty nie reprezentują poglądów autora.
 
 ##### Przetłumacz

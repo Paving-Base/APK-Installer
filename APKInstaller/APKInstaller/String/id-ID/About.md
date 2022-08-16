@@ -3,7 +3,7 @@
 ##### Pernyataan
 1. Harap ikuti [Perjanjian Lisensi Pengguna Akhir Penginstal APK dan Kebijakan Privasi](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
 2. Program ini adalah perangkat lunak open source, jadi pastikan program tersebut berasal dari [repositori GitHub ini](https://github.com/Paving-Base/APK-Installer) atau [aplikasi ini](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) untuk menjaga keamanan data Anda.
-3. Jika sumber program tidak abnormal, semua data Anda hanya akan digunakan untuk menjalankan program atau disimpan secara lokal selama program berjalan, dan pengembang tidak akan mencuri data Anda. Namun demikian, harap perhatikan keamanan lingkungan penggunaan.
+3. Jika sumber program tidak abnormal, semua data Anda hanya akan digunakan untuk menjalankan program atau disimpan secara lokal selama program berjalan, dan pengembang tidak akan mencuri data Anda. Tetap saja, harap perhatikan keamanan lingkungan.
 4. Terjemahan teks aplikasi ini berasal dari komunitas [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin"), dan semua teks tidak mewakili pandangan penulis.
 
 ##### Terjemahkan

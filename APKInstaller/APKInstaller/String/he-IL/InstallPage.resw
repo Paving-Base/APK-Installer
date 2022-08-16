@@ -121,7 +121,7 @@
     <value>ADB, גשר אנדרואיד באגים, דרוש כדי שמתקין APK יעבוד. לחץ על "הורד" כדי להוריד אותו. בהורדה אתה מקבל את התנאים וההגבלות של Google עבור ADB. אם כבר הורדת את ADB, לחץ על "בחר" כדי לבחור בו.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB פועל</value>
+    <value>ADB Exists</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB חסר
@@ -143,7 +143,7 @@
     <value>אין אפשרות להתחבר אל WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>ייתכן ש-WSA לא יתחיל כהלכה, או שיש בעיה ב-ADB. מצב זה יכול להיות קשה מאוד לפתרון. אנא הפעל מחדש את המתקין. אם זה עדיין לא עובד, נסה להפעיל מחדש את המחשב.</value>
+    <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>לא ניתן לפתוח את חבילת האפליקציה

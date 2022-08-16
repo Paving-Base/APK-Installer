@@ -121,7 +121,7 @@
     <value>Az APK Installer működéséhez az ADB, azaz az Android Debug Bridge szükséges. Kattintson a "Letöltés" gombra a letöltéshez. A letöltéssel elfogadja a Google ADB-re vonatkozó általános szerződési feltételeit. Ha már letöltötte az ADB-t, kattintson a "Kiválasztás" gombra a kiválasztáshoz.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB gyökér</value>
+    <value>Az ADB létezik</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB hiányzik</value>
