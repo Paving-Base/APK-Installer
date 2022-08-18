@@ -184,7 +184,7 @@
     <value>Votos</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application, and no ads will be added for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your support.💕</value>
+    <value>O instalador do APK é um aplicativo de código aberto e nenhum anúncio será adicionado com lucro. Se você gosta deste aplicativo, não se esqueça de classificá-lo na loja. Claro, seria melhor se você pudesse doar um pouco. Obrigado pelo seu apoio. Dois corpos</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
@@ -211,7 +211,7 @@
     <value>Última verificação:</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Disable it to connect to other devices.</value>
+    <value>Desative para conectar a outro dispositivo.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
     <value>É somente para WSA?</value>
@@ -244,16 +244,16 @@
     <value>Selecione dispositivos</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
-    <value>Show helpers when no device is connected.</value>
+    <value>Mostrar ajudantes quando nenhum dispositivo estiver conectado.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Is Show Helpers?</value>
+    <value>O Show de Ajudas?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
     <value>Mostrar Avisos no topo das Configurações.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Is Show Announcements?</value>
+    <value>É um Show De Anúncios?</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Configurações</value>
@@ -265,6 +265,6 @@
     <value>Versão</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Up To Date</value>
+    <value>Atualizado</value>
   </data>
 </root>
