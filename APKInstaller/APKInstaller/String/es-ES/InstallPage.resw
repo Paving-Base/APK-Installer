@@ -121,7 +121,7 @@
     <value>ADB, el Puente de Depuración de Android, es necesario para que el Instalador de APK funcione. Clica "Descargar" para descargarlo. Al descargar, aceptas los Términos y Condiciones de Google para ADB. Si ya has descargado ADB, clica "Seleccionar" para seleccionarlo.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Exists</value>
+    <value>ADB Existe</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>Falta ADB</value>
@@ -142,7 +142,7 @@
     <value>No se puede Conectar a WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
+    <value>Puede que el WSA no empezase correctamente o hay un problema con el ADB. Este problema puede ser muy difícil de resolver. Por favor reinicia el instalador. Si sigue sin funcionar, prueba a reiniciar el equipo.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>No se puede abrir el paquete de aplicación</value>
