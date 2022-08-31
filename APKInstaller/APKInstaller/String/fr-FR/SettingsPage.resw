@@ -145,7 +145,7 @@
     <value>Effacer le cache</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>téléchargeriptv.com</value>
+    <value>Close ADB may break other Installers when they still open.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
     <value>Is Close ADB when Closing Installer?</value>
@@ -184,7 +184,7 @@
     <value>Supports</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer est une application open-source, et aucune publicité ne sera ajoutée pour le profit. Si vous aimez cette application, n'oubliez pas de la noter dans la boutique. Bien sûr, il serait préférable de faire un petit don. Merci pour votre soutien.💕</value>
+    <value>APK Installer is an open-source application, and no ads will be added for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your support.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
@@ -205,7 +205,7 @@
     <value>Go to Update</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
-    <value>français</value>
+    <value>Join Our Chat</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
     <value>Last Checked: </value>
@@ -229,7 +229,7 @@
     <value>Réinitialiser les paramètres de cette application.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
-    <value>"Réinitialiser l'application"</value>
+    <value>Reset application</value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
     <value>Reset</value>
@@ -241,10 +241,10 @@
     <value>Are you sure you want to reset the app?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
-    <value>Choisir un appareil</value>
+    <value>Select Device</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
-    <value>Afficher les aides lorsque aucun périphérique n'est connecté.</value>
+    <value>Show helpers when no device is connected.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
     <value>Is Show Helpers?</value>
