@@ -121,7 +121,7 @@
     <value>APK Installer cần ADB (Android Debug Bridge) để hoạt động được. Bấm "Tải" để tải về. Khi tải về, bạn đồng ý với điều khoản và điều kiện của Google về ADB. Nếu bạn đã tải sẵn ADB, bấm "Chọn" để chọn nó.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Exists</value>
+    <value>ADB đã tồn tại</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>Thiếu ADB</value>
@@ -130,10 +130,10 @@
     <value>Tệp APK</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Capabilities: </value>
+    <value>Khả năng:</value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>App Name</value>
+    <value>Tên ứng dụng</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Hủy</value>
@@ -142,7 +142,7 @@
     <value>Không thể kết nối đến WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
+    <value>WSA không bắt đầu đúng cách hoặc có vấn đề với ADB. Vấn đề này có thể rất khó giải quyết. Vui lòng khởi động lại trình cài đặt. Nếu vẫn không được, hãy thử khởi động lại máy tính.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>Không thể mở gói ứng dụng</value>
@@ -155,7 +155,7 @@
     <value>Đang kiểm tra ADB...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Click here to read them</value>
+    <value>Nhấp vào đây để đọc</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Đóng
@@ -189,157 +189,159 @@
     <value>Đến Cài đặt</value>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>How to connect WSA?</value>
+    <value>Cách để kết nối WSA?</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
-    <value>Icon</value>
+    <value>Biểu tượng</value>
   </data>
   <data name="IKnow" xml:space="preserve">
-    <value>I Know</value>
+    <value>Tôi biết</value>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
-    <value>Infos</value>
+    <value>Thông tin</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>Install</value>
+    <value>Cài đặt</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
-    <value>{0} is ready!</value>
+    <value>{0} đã sẵn sàng!</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
-    <value>Install {0}?</value>
+    <value>Cài đặt {0}?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
-    <value>Installing...</value>
+    <value>Đang cài đặt...</value>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
-    <value>Reason: </value>
+    <value>Lý do:</value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
-    <value>Install WSA</value>
+    <value>Cài đặt WSA</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
-    <value>The package is either corrupted or invalid.</value>
+    <value>Gói có thể bị hỏng hoặc không hợp lệ.</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
-    <value>The URL is either Incomplete or invalid.</value>
+    <value>URL có thể bị thiếu hoặc không hợp lệ.</value>
   </data>
   <data name="Launch" xml:space="preserve">
-    <value>Launch</value>
+    <value>Chạy</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
-    <value>Launching WSA...</value>
+    <value>Đang chạy WSA...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>Launch when ready</value>
+    <value>Chạy khi sẵn sàng</value>
   </data>
   <data name="Loading" xml:space="preserve">
-    <value>Loading...</value>
+    <value>Đang tải...</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
-    <value>More Info</value>
+    <value>Tìm hiểu thêm</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
-    <value>Cannot find Android Device</value>
+    <value>Không thể tìm thấy thiết bị Android</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>You can install WSA. Or go to Settings to connect Device.</value>
+    <value>Bạn có thể cài đặt WSA hoặc vào phần Cài đặt để kết nối thiết bị.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>You can go to Settings to connect Device.</value>
+    <value>Bạn có thể vào phần Cài đặt để kêt nối thiết bị.</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
-    <value>Cannot connect Internet</value>
+    <value>Không thể kết nối tới Internet</value>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
-    <value>Please connect to the internet before opening the app.</value>
+    <value>Hãy kết nối tới Internet trước khi mở ứng dụng.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>For proper functioning of the app, try to launch an Android app package.</value>
+    <value>Để ứng dụng hoạt động bình thường, hãy thử chạy một Gói ứng dụng Android.</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
-    <value>Online Package</value>
+    <value>Gói Trực tuyến</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
-    <value>Package Name</value>
+    <value>Tên Gói</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>Package Name: {0}</value>
+    <value>Tên Gói: {0}</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
-    <value>Reinstall</value>
+    <value>Cài đặt lại</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>{0} is already installed</value>
+    <value>{0} đã được cài đặt trước đó</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
-    <value>A newer version of {0} is already installed.</value>
+    <value>Một phiên bản mới hơn của {0} đã được cài đặt trước đó.</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>Retry</value>
+    <value>Thử lại</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>Select</value>
+    <value>Chọn</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>Share</value>
+    <value>Chia sẻ</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
-    <value>Starting ADB Server...</value>
+    <value>Đang khởi động máy chủ ADB...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>Start WSA</value>
+    <value>Bắt đầu WSA</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
-    <value>Store Links</value>
+    <value>Lưu liên kết</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
-    <value>Unzip ADB...</value>
+    <value>Giải nén ADB...</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
-    <value>Unzip completed</value>
+    <value>Giải nén hoàn tất</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
-    <value>Unzipping {0}/{1} ...</value>
+    <value>Giải nén {0}/{1}...</value>
     <comment>{0} - Have done num. {1} - All num.</comment>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>Update</value>
+    <value>Cập nhật</value>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
-    <value>Update {0}?</value>
+    <value>Cập nhật {0}?
+</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
-    <value>Version Code</value>
+    <value>Phiên bản mã</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>Version: {0}</value>
+    <value>Phiên bản: {0}</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>Waiting for download...</value>
+    <value>Đang chờ tải xuống...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>Waiting for Device...</value>
+    <value>Đang chờ thiết bị...</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
-    <value>Waiting for install {0}</value>
+    <value>Đang chờ cài đặt {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
-    <value>Waiting WSA Start...
-This may take long time. Sit back and relax.</value>
+    <value>Đang chờ WSA khởi động
+Điều này có thể mất nhiều thời gian, hãy ngồi lại và thư giãn :3.
+</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>WSA is Running</value>
+    <value>WSA đang chạy</value>
   </data>
 </root>
