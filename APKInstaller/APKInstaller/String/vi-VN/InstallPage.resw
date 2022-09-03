@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, the Android Debug Bridge, is needed for APK Installer to work. Click "Download" to download it. By downloading, you accept the Google Terms and Conditions for ADB. If you have already downloaded ADB, click "Select" to select it.</value>
+    <value>APK Installer cần ADB (Android Debug Bridge) để hoạt động được. Bấm "Tải" để tải về. Khi tải về, bạn đồng ý với điều khoản và điều kiện của Google về ADB. Nếu bạn đã tải sẵn ADB, bấm "Chọn" để chọn nó.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>ADB Exists</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>ADB is missing</value>
+    <value>Thiếu ADB</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
     <value>Tệp APK</value>
@@ -136,55 +136,57 @@
     <value>App Name</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Hủy</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Cannot Connect to WSA</value>
+    <value>Không thể kết nối đến WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
     <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>Cannot open app package</value>
+    <value>Không thể mở gói ứng dụng</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>Checking...</value>
+    <value>Đang kiểm tra...
+</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Checking ADB...</value>
+    <value>Đang kiểm tra ADB...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>Click here to read them</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Close</value>
+    <value>Đóng
+</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
-    <value>Copy</value>
+    <value>Sao chép</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>Devices</value>
+    <value>Thiết bị</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Download</value>
+    <value>Tải xuống</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>Download Failed</value>
+    <value>Tải xuống thất bại</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>Please check your network connection or the URL and try again.</value>
+    <value>Vui lòng kiểm tra kết nối mạng của bạn và thử lại.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>Finding WSA...</value>
+    <value>Đang tìm WSA...</value>
   </data>
   <data name="Finished" xml:space="preserve">
-    <value>Finished</value>
+    <value>Hoàn thành</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>WSA Found</value>
+    <value>Đã tìm thấy WSA</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>Go to Setting</value>
+    <value>Đến Cài đặt</value>
   </data>
   <data name="HowToConnect" xml:space="preserve">
     <value>How to connect WSA?</value>
