@@ -99,6 +99,7 @@
 
   <ItemGroup>
     <PackageReference Include="Downloader" Version="2.3.8" />
+    <PackageReference Include="MetroLog.Net6" Version="2.0.1" />
     <PackageReference Include="NativeMethods" Version="0.0.3" />
     <PackageReference Include="SharpCompress" Version="0.32.2" />
     <PackageReference Include="PInvoke.User32" Version="0.7.124" />

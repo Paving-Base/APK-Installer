@@ -5,6 +5,8 @@ namespace APKInstaller.Models
 {
     public class GitInfo
     {
+        public static string NUAA_API = "https://raw.nuaa.cf/{0}/{1}/{2}/{3}/{4}";
+        public static string YZUU_API = "https://raw.yzuu.cf/{0}/{1}/{2}/{3}/{4}";
         public static string FASTGIT_API = "https://raw.fastgit.org/{0}/{1}/{2}/{3}/{4}";
         public static string JSDELIVR_API = "https://cdn.jsdelivr.net/gh/{0}/{1}@{2}/{3}/{4}";
         public static string GITHUB_API = "https://raw.githubusercontent.com/{0}/{1}/{2}/{3}/{4}";

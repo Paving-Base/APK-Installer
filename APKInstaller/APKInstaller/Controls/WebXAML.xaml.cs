@@ -76,13 +76,6 @@ namespace APKInstaller.Controls
                     }
                     catch
                     {
-                        try
-                        {
-                            string xaml = (await client.GetStringAsync(ContentInfo.FormatURL(GitInfo.FASTGIT_API))).Replace("://raw.githubusercontent.com", "://raw.fastgit.org");
-                            UIElement = await DispatcherQueue.EnqueueAsync(() => { return (UIElement)XamlReader.Load(xaml); });
-                        }
-                        catch
-                        {
                             try
                             {
                                 string xaml = await client.GetStringAsync(ContentInfo.FormatURL(GitInfo.JSDELIVR_API));
@@ -92,7 +85,6 @@ namespace APKInstaller.Controls
                             {
                                 UIElement = null;
                             }
-                        }
                     }
                     finally
                     {
@@ -133,15 +125,7 @@ namespace APKInstaller.Controls
                     }
                     catch
                     {
-                        try
-                        {
-                            string xaml = await client.GetStringAsync((await client.GetStringAsync(ContentUri.ToString().Replace("://raw.githubusercontent.com", "://raw.fastgit.org"))).Replace("://raw.githubusercontent.com", "://raw.fastgit.org"));
-                            UIElement = await DispatcherQueue.EnqueueAsync(() => { return (UIElement)XamlReader.Load(xaml); });
-                        }
-                        catch
-                        {
-                            UIElement = null;
-                        }
+                        UIElement = null;
                     }
                     finally
                     {

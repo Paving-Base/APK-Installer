@@ -161,6 +161,11 @@
                                                 Margin="0,0,2,0"
                                                 NavigateUri="https://github.com/Paving-Base/APK-Installer/issues" />
                                             <HyperlinkButton
+                                                x:Uid="/SettingsPage/LogFolderLink"
+                                                Margin="2,0"
+                                                Click="Button_Click"
+                                                Tag="LogFolder" />
+                                            <HyperlinkButton
                                                 x:Uid="/SettingsPage/TranslateLink"
                                                 Margin="2,0"
                                                 NavigateUri="https://crowdin.com/project/APKInstaller" />
@@ -170,7 +175,7 @@
                                                 NavigateUri="https://github.com/Paving-Base/APK-Installer/releases/latest" />
                                             <HyperlinkButton
                                                 x:Uid="/SettingsPage/EULA"
-                                                Margin="2,0"
+                                                Margin="2,0,0,0"
                                                 NavigateUri="https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md" />
                                         </StackPanel>
                                     </StackPanel>

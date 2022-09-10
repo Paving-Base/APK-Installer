@@ -1,5 +1,6 @@
 ﻿using AdvancedSharpAdbClient;
 using CommunityToolkit.WinUI.Helpers;
+using MetroLog;
 using Microsoft.UI.Xaml;
 using System;
 using System.IO;
@@ -103,6 +104,7 @@ namespace APKInstaller.Helpers
     public static partial class SettingsHelper
     {
         public static readonly UISettings UISettings = new();
+        public static readonly ILogManager LogManager = LogManagerFactory.CreateLogManager();
         public static OSVersion OperatingSystemVersion => SystemInformation.Instance.OperatingSystemVersion;
         private static readonly ApplicationDataStorageHelper LocalObject = ApplicationDataStorageHelper.GetCurrent(new SystemTextJsonObjectSerializer());
         public static ElementTheme Theme => Get<bool>("IsBackgroundColorFollowSystem") ? ElementTheme.Default : (Get<bool>("IsDarkMode") ? ElementTheme.Dark : ElementTheme.Light);

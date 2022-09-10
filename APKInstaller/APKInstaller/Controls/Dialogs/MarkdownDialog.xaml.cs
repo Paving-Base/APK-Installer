@@ -70,20 +70,12 @@ namespace APKInstaller.Controls.Dialogs
                 {
                     try
                     {
-                        MarkdownText.Text = (await client.GetStringAsync(ContentInfo.FormatURL(GitInfo.FASTGIT_API))).Replace("://raw.githubusercontent.com", "://raw.fastgit.org");
+                        MarkdownText.Text = await client.GetStringAsync(ContentInfo.FormatURL(GitInfo.JSDELIVR_API));
                         Title = string.Empty;
                     }
                     catch
                     {
-                        try
-                        {
-                            MarkdownText.Text = await client.GetStringAsync(ContentInfo.FormatURL(GitInfo.JSDELIVR_API));
-                            Title = string.Empty;
-                        }
-                        catch
-                        {
-                            MarkdownText.Text = value;
-                        }
+                        MarkdownText.Text = value;
                     }
                 }
             }
