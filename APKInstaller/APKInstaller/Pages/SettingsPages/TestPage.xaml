@@ -35,11 +35,9 @@
                     </controls:Setting>
                     <controls:Setting x:Uid="/TestPage/BackdropSettings" Icon="&#xE81E;">
                         <controls:Setting.ActionContent>
-                            <ComboBox
-                                SelectedIndex="0"
-                                SelectionChanged="ComboBox_SelectionChanged"
-                                Tag="Backdrop">
+                            <ComboBox SelectedIndex="{x:Bind SelectedBackdrop, Mode=TwoWay}">
                                 <x:String>Mica</x:String>
+                                <x:String>MicaAlt</x:String>
                                 <x:String>Acrylic</x:String>
                                 <x:String>DefaultColor</x:String>
                             </ComboBox>

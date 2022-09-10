@@ -83,6 +83,13 @@ namespace APKInstaller.Helpers
                 : RootTheme == ElementTheme.Dark;
         }
 
+        public static bool IsDarkTheme(ElementTheme ElementTheme)
+        {
+            return ElementTheme == ElementTheme.Default
+                ? Application.Current.RequestedTheme == ApplicationTheme.Dark
+                : ElementTheme == ElementTheme.Dark;
+        }
+
         public static void UpdateSystemCaptionButtonColors()
         {
             if (!UIHelper.HasTitleBar)

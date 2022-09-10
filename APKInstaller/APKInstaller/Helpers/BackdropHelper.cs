@@ -2,6 +2,8 @@
 using Microsoft.UI.Composition.SystemBackdrops;
 using Microsoft.UI.Xaml;
 using Windows.Foundation;
+using Windows.UI;
+using Windows.UI.ViewManagement;
 using WinRT; // required to support Window.As<ICompositionSupportsSystemBackdrop>()
 
 namespace APKInstaller.Helpers
@@ -9,6 +11,7 @@ namespace APKInstaller.Helpers
     public enum BackdropType
     {
         Mica,
+        MicaAlt,
         DesktopAcrylic,
         DefaultColor,
     }
@@ -55,14 +58,14 @@ namespace APKInstaller.Helpers
                 m_acrylicController.Dispose();
                 m_acrylicController = null;
             }
-            window.Activated -= Window_Activated;
             window.Closed -= Window_Closed;
+            window.Activated -= Window_Activated;
             ((FrameworkElement)window.Content).ActualThemeChanged -= Window_ThemeChanged;
             m_configurationSource = null;
 
-            if (type == BackdropType.Mica)
+            if (type == BackdropType.Mica || type == BackdropType.MicaAlt)
             {
-                if (TrySetMicaBackdrop())
+                if (TrySetMicaBackdrop(type == BackdropType.MicaAlt ? MicaKind.BaseAlt : MicaKind.Base))
                 {
                     m_currentBackdrop = type;
                 }
@@ -83,21 +86,22 @@ namespace APKInstaller.Helpers
             BackdropTypeChanged?.Invoke(this, m_currentBackdrop);
         }
 
-        private bool TrySetMicaBackdrop()
+        private bool TrySetMicaBackdrop(MicaKind kind = MicaKind.Base)
         {
             if (MicaController.IsSupported())
             {
                 // Hooking up the policy object
                 m_configurationSource = new SystemBackdropConfiguration();
-                window.Activated += Window_Activated;
+
                 window.Closed += Window_Closed;
+                window.Activated += Window_Activated;
                 ((FrameworkElement)window.Content).ActualThemeChanged += Window_ThemeChanged;
 
                 // Initial configuration state.
                 m_configurationSource.IsInputActive = true;
                 SetConfigurationSourceTheme();
 
-                m_micaController = new MicaController();
+                m_micaController = new MicaController { Kind = kind };
 
                 // Enable the system backdrop.
                 // Note: Be sure to have "using WinRT;" to support the Window.As<...>() call.
@@ -115,15 +119,17 @@ namespace APKInstaller.Helpers
             {
                 // Hooking up the policy object
                 m_configurationSource = new SystemBackdropConfiguration();
-                window.Activated += Window_Activated;
+
                 window.Closed += Window_Closed;
+                window.Activated += Window_Activated;
                 ((FrameworkElement)window.Content).ActualThemeChanged += Window_ThemeChanged;
 
                 // Initial configuration state.
                 m_configurationSource.IsInputActive = true;
                 SetConfigurationSourceTheme();
 
-                m_acrylicController = new DesktopAcrylicController();
+                Color BackgroundColor = ThemeHelper.IsDarkTheme() ? Color.FromArgb(255, 32, 32, 32) : Color.FromArgb(255, 243, 243, 243);
+                m_acrylicController = new DesktopAcrylicController { TintColor = BackgroundColor, FallbackColor = BackgroundColor };
 
                 // Enable the system backdrop.
                 // Note: Be sure to have "using WinRT;" to support the Window.As<...>() call.
@@ -154,6 +160,7 @@ namespace APKInstaller.Helpers
                 m_acrylicController.Dispose();
                 m_acrylicController = null;
             }
+            ((FrameworkElement)window.Content).ActualThemeChanged -= Window_ThemeChanged;
             window.Activated -= Window_Activated;
             m_configurationSource = null;
         }
@@ -163,6 +170,11 @@ namespace APKInstaller.Helpers
             if (m_configurationSource != null)
             {
                 SetConfigurationSourceTheme();
+            }
+            if (m_acrylicController != null)
+            {
+                Color BackgroundColor = ThemeHelper.IsDarkTheme(sender.ActualTheme) ? Color.FromArgb(255, 32, 32, 32) : Color.FromArgb(255, 243, 243, 243);
+                m_acrylicController.TintColor = m_acrylicController.FallbackColor = BackgroundColor;
             }
         }
 

@@ -65,6 +65,20 @@ namespace APKInstaller.Pages.SettingsPages
             }
         }
 
+        internal int SelectedBackdrop
+        {
+            get => (int)SettingsHelper.Get<BackdropType>(SettingsHelper.SelectedBackdrop);
+            set
+            {
+                if (SelectedBackdrop != value)
+                {
+                    BackdropType type = (BackdropType)value;
+                    SettingsHelper.Set(SettingsHelper.SelectedBackdrop, type);
+                    UIHelper.MainWindow.Backdrop.SetBackdrop(type);
+                }
+            }
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void RaisePropertyChangedEvent([System.Runtime.CompilerServices.CallerMemberName] string name = null)
@@ -144,10 +158,6 @@ namespace APKInstaller.Pages.SettingsPages
                         ApplicationLanguages.PrimaryLanguageOverride = string.Empty;
                         SettingsHelper.Set(SettingsHelper.CurrentLanguage, LanguageHelper.AutoLanguageCode);
                     }
-                    break;
-                case "Backdrop":
-                    BackdropType type = Enum.Parse<BackdropType>(ComboBox.SelectedIndex.ToString());
-                    UIHelper.MainWindow.Backdrop.SetBackdrop(type);
                     break;
             }
         }

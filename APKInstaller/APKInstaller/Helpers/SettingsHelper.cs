@@ -25,6 +25,7 @@ namespace APKInstaller.Helpers
         public const string DefaultDevice = "DefaultDevice";
         public const string CurrentLanguage = "CurrentLanguage";
         public const string SelectedAppTheme = "SelectedAppTheme";
+        public const string SelectedBackdrop = "SelectedBackdrop";
 
         public static Type Get<Type>(string key) => LocalObject.Read<Type>(key);
         public static void Set(string key, object value) => LocalObject.Save(key, value);
@@ -84,6 +85,10 @@ namespace APKInstaller.Helpers
             if (!LocalObject.KeyExists(SelectedAppTheme))
             {
                 LocalObject.Save(SelectedAppTheme, ElementTheme.Default);
+            }
+            if (!LocalObject.KeyExists(SelectedBackdrop))
+            {
+                LocalObject.Save(SelectedBackdrop, BackdropType.Mica);
             }
         }
     }
