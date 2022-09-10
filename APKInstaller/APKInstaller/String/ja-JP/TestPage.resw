@@ -130,7 +130,7 @@
     <value>背景</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
-    <value>コンパクトなオーバーレイを入力または終了します</value>
+    <value>コンパクトなオーバーレイを入力または終了</value>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
     <value>コンパクトなオーバーレイ</value>

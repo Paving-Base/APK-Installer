@@ -232,13 +232,13 @@ Capacidades:</value>
     <value>Iniciando WSA...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>Launch when ready</value>
+    <value>Clique quando estiver pronto</value>
   </data>
   <data name="Loading" xml:space="preserve">
-    <value>Loading...</value>
+    <value>Carregando...</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
-    <value>More Info</value>
+    <value>Mais informações</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
     <value>Cannot find Android Device</value>

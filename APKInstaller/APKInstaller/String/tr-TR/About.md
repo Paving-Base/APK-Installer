@@ -3,7 +3,7 @@
 ##### Açıklama
 1. Lütfen [ APK Installer Son Kullanıcı Lisans Sözleşmesini ve Gizlilik Politikasını ](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md) takip edin.
 2. Bu program açık kaynaklı bir yazılımdır, bu nedenle verilerinizi güvende tutmak için lütfen programın [ bu Github deposundan ](https://github.com/Paving-Base/APK-Installer) veya [ bu uygulamadan ](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) olduğundan emin olun.
-3. Programın kaynağı anormal değilse, tüm verileriniz yalnızca programla birlikte çalışmak için kullanılır veya program çalışırken yerel olarak depolanır ve geliştirici verilerinizden hiçbirini çalmaz. Still, please pay attention to the security of the environment.
+3. Programın kaynağı anormal değilse, tüm verileriniz yalnızca programla birlikte çalışmak için kullanılır veya program çalışırken yerel olarak depolanır ve geliştirici verilerinizden hiçbirini çalmaz. Ancak yine de, lütfen kullanım ortamının güvenliğine dikkat edin.
 4. Bu uygulamanın metninin çevirisi [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") topluluğundan gelir ve tüm metinler yazarın görüşlerini temsil etmez.
 
 ##### Çeviri
