@@ -211,7 +211,7 @@
     <value>上次檢查時間: </value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
-    <value>Logs</value>
+    <value>日誌</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>關閉它以連接到其他設備。</value>
