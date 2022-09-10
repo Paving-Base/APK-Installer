@@ -210,6 +210,9 @@
   <data name="LastChecked.Text" xml:space="preserve">
     <value>上次检查时间: </value>
   </data>
+  <data name="LogFolderLink.Content" xml:space="preserve">
+    <value>Logs</value>
+  </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>关闭它以连接到其他设备。</value>
   </data>
