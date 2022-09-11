@@ -210,6 +210,9 @@
   <data name="LastChecked.Text" xml:space="preserve">
     <value>Son Kontrol:</value>
   </data>
+  <data name="LogFolderLink.Content" xml:space="preserve">
+    <value>Günlükler</value>
+  </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>Başka bir cihaza bağlanmak için devre dışı bırakın.</value>
   </data>

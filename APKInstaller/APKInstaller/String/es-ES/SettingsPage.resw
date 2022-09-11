@@ -210,6 +210,9 @@
   <data name="LastChecked.Text" xml:space="preserve">
     <value>Última Revisión: </value>
   </data>
+  <data name="LogFolderLink.Content" xml:space="preserve">
+    <value>Logs</value>
+  </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>Desactívalo para conectarlo a otros dispositivos.</value>
   </data>

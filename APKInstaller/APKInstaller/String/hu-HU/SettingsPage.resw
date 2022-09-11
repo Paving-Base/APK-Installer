@@ -211,6 +211,9 @@
   <data name="LastChecked.Text" xml:space="preserve">
     <value>Utoljára ellenőrizve: </value>
   </data>
+  <data name="LogFolderLink.Content" xml:space="preserve">
+    <value>Logs</value>
+  </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>Más eszközhöz való csatlakozáshoz tiltsa le.</value>
   </data>
