@@ -1,4 +1,4 @@
-#### Добро пожаловать в APK Installer!
+#### Добро пожаловать в установщик APK!
 
 ##### Декларация
 1. Пожалуйста, следуйте [Лицензионному соглашению и политике конфиденциальности программы APK Installer](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
