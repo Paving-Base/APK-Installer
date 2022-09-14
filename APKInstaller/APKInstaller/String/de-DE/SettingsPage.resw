@@ -129,6 +129,12 @@
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
     <value>Online-Pakete automatisch herunterladen?</value>
   </data>
+  <data name="BackdropSettings.Description" xml:space="preserve">
+    <value>Hintergrundtyp für Windows 11 auswählen</value>
+  </data>
+  <data name="BackdropSettings.Header" xml:space="preserve">
+    <value>Hintergrund</value>
+  </data>
   <data name="Change.Content" xml:space="preserve">
     <value>Wechseln</value>
   </data>
@@ -222,6 +228,15 @@
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Sonstige</value>
   </data>
+  <data name="RadioThemeDark.Content" xml:space="preserve">
+    <value>Dunkel</value>
+  </data>
+  <data name="RadioThemeDefault.Content" xml:space="preserve">
+    <value>Windows-Standard</value>
+  </data>
+  <data name="RadioThemeLight.Content" xml:space="preserve">
+    <value>Hell</value>
+  </data>
   <data name="Rate.Content" xml:space="preserve">
     <value>Im Store bewerten</value>
   </data>
@@ -258,6 +273,12 @@
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
     <value>Zeigt Ankündigungen an?</value>
   </data>
+  <data name="ThemeSettings.Header" xml:space="preserve">
+    <value>App-Design</value>
+  </data>
+  <data name="ThemesSettingsHeader.Header" xml:space="preserve">
+    <value>Themes</value>
+  </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Einstellungen</value>
   </data>
@@ -269,5 +290,8 @@
   </data>
   <data name="UpToDate" xml:space="preserve">
     <value>Aktuell</value>
+  </data>
+  <data name="WindowsColorButton.Content" xml:space="preserve">
+    <value>Windows Farbeinstellungen</value>
   </data>
 </root>
