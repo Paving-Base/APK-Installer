@@ -123,12 +123,6 @@
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>Anwendungen</value>
   </data>
-  <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>Hintergrundtyp für Windows 11 auswählen</value>
-  </data>
-  <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>Hintergrund</value>
-  </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
     <value>Kompaktes Overlay ein- oder ausblenden</value>
   </data>
@@ -156,15 +150,6 @@
   <data name="ProgressSettings.Header" xml:space="preserve">
     <value>Fortschritt</value>
   </data>
-  <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>Dunkel</value>
-  </data>
-  <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>Windows-Standard</value>
-  </data>
-  <data name="RadioThemeLight.Content" xml:space="preserve">
-    <value>Hell</value>
-  </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
     <value>Setze den Wert des Fortschrittsrings</value>
   </data>
@@ -177,9 +162,6 @@
   <data name="ShowRefreshButton.Header" xml:space="preserve">
     <value>Aktualisierungsknopf</value>
   </data>
-  <data name="ThemeSettings.Header" xml:space="preserve">
-    <value>App-Design</value>
-  </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Testen</value>
   </data>
@@ -191,8 +173,5 @@
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
     <value>UI-Test</value>
-  </data>
-  <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Windows Farbeinstellungen</value>
   </data>
 </root>

@@ -123,12 +123,6 @@
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>アプリ</value>
   </data>
-  <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>Windows 11用の背景の種類を選択</value>
-  </data>
-  <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>背景</value>
-  </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
     <value>コンパクトなオーバーレイを入力または終了</value>
   </data>
@@ -157,15 +151,6 @@
   <data name="ProgressSettings.Header" xml:space="preserve">
     <value>進行状況</value>
   </data>
-  <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>暗め</value>
-  </data>
-  <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>Windows のデフォルト（既定）</value>
-  </data>
-  <data name="RadioThemeLight.Content" xml:space="preserve">
-    <value>白基調</value>
-  </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
     <value>プログレスリングの値を設定する</value>
   </data>
@@ -178,9 +163,6 @@
   <data name="ShowRefreshButton.Header" xml:space="preserve">
     <value>リフレッシュボタン</value>
   </data>
-  <data name="ThemeSettings.Header" xml:space="preserve">
-    <value>アプリのテーマ</value>
-  </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>テスト</value>
   </data>
@@ -192,8 +174,5 @@
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
     <value>UI テスト</value>
-  </data>
-  <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Windows の設定</value>
   </data>
 </root>

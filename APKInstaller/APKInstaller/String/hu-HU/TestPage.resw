@@ -123,12 +123,6 @@
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>Alkalmazások</value>
   </data>
-  <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>Háttértípus kiválasztása a Windows 11 számára</value>
-  </data>
-  <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>Háttérkép</value>
-  </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
     <value>Belépés vagy kilépés a kompakt felületen</value>
   </data>
@@ -156,15 +150,6 @@
   <data name="ProgressSettings.Header" xml:space="preserve">
     <value>Előrehaladás</value>
   </data>
-  <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>Sötét</value>
-  </data>
-  <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>Windows alapértelmezett</value>
-  </data>
-  <data name="RadioThemeLight.Content" xml:space="preserve">
-    <value>Fény</value>
-  </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
     <value>A előrehaladási gyűrű értékének beállítása</value>
   </data>
@@ -177,9 +162,6 @@
   <data name="ShowRefreshButton.Header" xml:space="preserve">
     <value>Frissítés gomb</value>
   </data>
-  <data name="ThemeSettings.Header" xml:space="preserve">
-    <value>App téma</value>
-  </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Tesztelés</value>
   </data>
@@ -191,8 +173,5 @@
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
     <value>UI Teszt</value>
-  </data>
-  <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Windows színbeállítások</value>
   </data>
 </root>
