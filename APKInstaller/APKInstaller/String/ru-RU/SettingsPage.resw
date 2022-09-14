@@ -129,6 +129,12 @@
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
     <value>Автозагрузка пакетов по ссылке?</value>
   </data>
+  <data name="BackdropSettings.Description" xml:space="preserve">
+    <value>Выберите тип фона для Windows 11</value>
+  </data>
+  <data name="BackdropSettings.Header" xml:space="preserve">
+    <value>Цвет фона уведомления</value>
+  </data>
   <data name="Change.Content" xml:space="preserve">
     <value>Изменить</value>
   </data>
@@ -222,6 +228,15 @@
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Другое</value>
   </data>
+  <data name="RadioThemeDark.Content" xml:space="preserve">
+    <value>Темная</value>
+  </data>
+  <data name="RadioThemeDefault.Content" xml:space="preserve">
+    <value>По умолчанию</value>
+  </data>
+  <data name="RadioThemeLight.Content" xml:space="preserve">
+    <value>Светлая</value>
+  </data>
   <data name="Rate.Content" xml:space="preserve">
     <value>Оценить в магазине приложений</value>
   </data>
@@ -258,6 +273,12 @@
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
     <value>Показывать уведомления?</value>
   </data>
+  <data name="ThemeSettings.Header" xml:space="preserve">
+    <value>Тема приложения</value>
+  </data>
+  <data name="ThemesSettingsHeader.Header" xml:space="preserve">
+    <value>Themes</value>
+  </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Параметры</value>
   </data>
@@ -269,5 +290,8 @@
   </data>
   <data name="UpToDate" xml:space="preserve">
     <value>Последняя версия</value>
+  </data>
+  <data name="WindowsColorButton.Content" xml:space="preserve">
+    <value>Настройки цветов Windows</value>
   </data>
 </root>
