@@ -129,6 +129,12 @@
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
     <value>オンラインパッケージは自動でダウンロードしますか?</value>
   </data>
+  <data name="BackdropSettings.Description" xml:space="preserve">
+    <value>Windows 11用の背景の種類を選択</value>
+  </data>
+  <data name="BackdropSettings.Header" xml:space="preserve">
+    <value>背景</value>
+  </data>
   <data name="Change.Content" xml:space="preserve">
     <value>変更</value>
   </data>
@@ -222,6 +228,15 @@
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>その他</value>
   </data>
+  <data name="RadioThemeDark.Content" xml:space="preserve">
+    <value>暗め</value>
+  </data>
+  <data name="RadioThemeDefault.Content" xml:space="preserve">
+    <value>Windows のデフォルト（既定）</value>
+  </data>
+  <data name="RadioThemeLight.Content" xml:space="preserve">
+    <value>白基調</value>
+  </data>
   <data name="Rate.Content" xml:space="preserve">
     <value>ストアで評価</value>
   </data>
@@ -258,6 +273,12 @@
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
     <value>お知らせを表示しますか？</value>
   </data>
+  <data name="ThemeSettings.Header" xml:space="preserve">
+    <value>アプリのテーマ</value>
+  </data>
+  <data name="ThemesSettingsHeader.Header" xml:space="preserve">
+    <value>Themes</value>
+  </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>設定</value>
   </data>
@@ -269,5 +290,8 @@
   </data>
   <data name="UpToDate" xml:space="preserve">
     <value>最新</value>
+  </data>
+  <data name="WindowsColorButton.Content" xml:space="preserve">
+    <value>Windows の設定</value>
   </data>
 </root>
