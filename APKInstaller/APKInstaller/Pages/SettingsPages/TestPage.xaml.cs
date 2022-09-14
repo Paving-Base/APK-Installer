@@ -65,20 +65,6 @@ namespace APKInstaller.Pages.SettingsPages
             }
         }
 
-        internal int SelectedBackdrop
-        {
-            get => (int)SettingsHelper.Get<BackdropType>(SettingsHelper.SelectedBackdrop);
-            set
-            {
-                if (SelectedBackdrop != value)
-                {
-                    BackdropType type = (BackdropType)value;
-                    SettingsHelper.Set(SettingsHelper.SelectedBackdrop, type);
-                    UIHelper.MainWindow.Backdrop.SetBackdrop(type);
-                }
-            }
-        }
-
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void RaisePropertyChangedEvent([System.Runtime.CompilerServices.CallerMemberName] string name = null)
@@ -104,9 +90,6 @@ namespace APKInstaller.Pages.SettingsPages
                 case "Applications":
                     _ = Frame.Navigate(typeof(ApplicationsPage));
                     break;
-                case "WindowsColor":
-                    _ = Launcher.LaunchUriAsync(new Uri("ms-settings:colors"));
-                    break;
                 default:
                     break;
             }
@@ -125,10 +108,6 @@ namespace APKInstaller.Pages.SettingsPages
             ComboBox ComboBox = sender as ComboBox;
             switch (ComboBox.Tag as string)
             {
-                case "Theme":
-                    ElementTheme Theme = ThemeHelper.RootTheme;
-                    ComboBox.SelectedIndex = 2 - (int)Theme;
-                    break;
                 case "Language":
                     string lang = SettingsHelper.Get<string>(SettingsHelper.CurrentLanguage);
                     lang = lang == LanguageHelper.AutoLanguageCode ? LanguageHelper.GetCurrentLanguage() : lang;
@@ -143,9 +122,6 @@ namespace APKInstaller.Pages.SettingsPages
             ComboBox ComboBox = sender as ComboBox;
             switch (ComboBox.Tag as string)
             {
-                case "Theme":
-                    ThemeHelper.RootTheme = Enum.Parse<ElementTheme>((2 - ComboBox.SelectedIndex).ToString());
-                    break;
                 case "Language":
                     CultureInfo culture = ComboBox.SelectedItem as CultureInfo;
                     if (culture.Name != LanguageHelper.GetCurrentLanguage())

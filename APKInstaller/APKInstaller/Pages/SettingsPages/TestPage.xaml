@@ -33,16 +33,6 @@
                             <ToggleSwitch IsOn="{x:Bind IsExtendsTitleBar, Mode=TwoWay}" Style="{StaticResource ToggleSwitchSettingStyle}" />
                         </controls:Setting.ActionContent>
                     </controls:Setting>
-                    <controls:Setting x:Uid="/TestPage/BackdropSettings" Icon="&#xE81E;">
-                        <controls:Setting.ActionContent>
-                            <ComboBox SelectedIndex="{x:Bind SelectedBackdrop, Mode=TwoWay}">
-                                <x:String>Mica</x:String>
-                                <x:String>MicaAlt</x:String>
-                                <x:String>Acrylic</x:String>
-                                <x:String>DefaultColor</x:String>
-                            </ComboBox>
-                        </controls:Setting.ActionContent>
-                    </controls:Setting>
                     <controls:SettingExpander>
                         <controls:SettingExpander.Header>
                             <controls:Setting x:Uid="/TestPage/ProgressSettings" Icon="&#xF16A;">
@@ -85,24 +75,6 @@
                                         </TextBlock>
                                     </DataTemplate>
                                 </ComboBox.ItemTemplate>
-                            </ComboBox>
-                        </controls:Setting.ActionContent>
-                    </controls:Setting>
-                    <controls:Setting x:Uid="/TestPage/ThemeSettings" Icon="&#xE790;">
-                        <controls:Setting.Description>
-                            <HyperlinkButton
-                                x:Uid="/TestPage/WindowsColorButton"
-                                Click="Button_Click"
-                                Tag="WindowsColor" />
-                        </controls:Setting.Description>
-                        <controls:Setting.ActionContent>
-                            <ComboBox
-                                Loaded="ComboBox_Loaded"
-                                SelectionChanged="ComboBox_SelectionChanged"
-                                Tag="Theme">
-                                <ComboBoxItem x:Uid="/TestPage/RadioThemeDark" />
-                                <ComboBoxItem x:Uid="/TestPage/RadioThemeLight" />
-                                <ComboBoxItem x:Uid="/TestPage/RadioThemeDefault" />
                             </ComboBox>
                         </controls:Setting.ActionContent>
                     </controls:Setting>

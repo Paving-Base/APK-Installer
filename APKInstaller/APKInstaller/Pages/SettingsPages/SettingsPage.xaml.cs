@@ -90,11 +90,11 @@ namespace APKInstaller.Pages.SettingsPages
                 case "TestPage":
                     _ = Frame.Navigate(typeof(TestPage));
                     break;
-                case "LogFolder":
-                    _ = await Launcher.LaunchUriAsync(new Uri(Path.Combine(ApplicationData.Current.LocalFolder.Path, "MetroLogs")));
-                    break;
                 case "CheckUpdate":
                     Provider.CheckUpdate();
+                    break;
+                case "WindowsColor":
+                    _ = Launcher.LaunchUriAsync(new Uri("ms-settings:colors"));
                     break;
                 default:
                     break;
@@ -109,7 +109,12 @@ namespace APKInstaller.Pages.SettingsPages
                     _ = await Launcher.LaunchFolderAsync(await StorageFolder.GetFolderFromPathAsync(Provider.ADBPath[..Provider.ADBPath.LastIndexOf(@"\")]));
                     break;
                 case "LogFolder":
-                    _ = await Launcher.LaunchFolderAsync(await ApplicationData.Current.LocalFolder.CreateFolderAsync("MetroLogs", CreationCollisionOption.OpenIfExists));
+                    _ = Launcher.LaunchUriAsync(new Uri(Path.Combine(ApplicationData.Current.LocalFolder.Path, "MetroLogs")));
+                    break;
+                case "WindowsColor":
+                    _ = Launcher.LaunchUriAsync(new Uri("ms-settings:colors"));
+                    break;
+                default:
                     break;
             }
         }

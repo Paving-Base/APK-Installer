@@ -34,9 +34,12 @@ namespace APKInstaller.ViewModels.SettingsPages
             get => _deviceList;
             set
             {
-                _deviceList = value;
-                RaisePropertyChangedEvent();
-                if (!IsOnlyWSA) { ChooseDevice(); }
+                if (_deviceList != value)
+                {
+                    _deviceList = value;
+                    RaisePropertyChangedEvent();
+                    if (!IsOnlyWSA) { ChooseDevice(); }
+                }
             }
         }
 
@@ -45,9 +48,12 @@ namespace APKInstaller.ViewModels.SettingsPages
             get => SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
             set
             {
-                SettingsHelper.Set(SettingsHelper.IsOnlyWSA, value);
-                _page.SelectDeviceBox.SelectionMode = value ? ListViewSelectionMode.None : ListViewSelectionMode.Single;
-                if (!value) { ChooseDevice(); }
+                if (IsOnlyWSA != value)
+                {
+                    SettingsHelper.Set(SettingsHelper.IsOnlyWSA, value);
+                    _page.SelectDeviceBox.SelectionMode = value ? ListViewSelectionMode.None : ListViewSelectionMode.Single;
+                    if (!value) { ChooseDevice(); }
+                }
             }
         }
 
@@ -56,7 +62,10 @@ namespace APKInstaller.ViewModels.SettingsPages
             get => SettingsHelper.Get<bool>(SettingsHelper.IsCloseADB);
             set
             {
-                SettingsHelper.Set(SettingsHelper.IsCloseADB, value);
+                if (IsCloseADB != value)
+                {
+                    SettingsHelper.Set(SettingsHelper.IsCloseADB, value);
+                }
             }
         }
 
@@ -65,7 +74,10 @@ namespace APKInstaller.ViewModels.SettingsPages
             get => SettingsHelper.Get<bool>(SettingsHelper.IsCloseAPP);
             set
             {
-                SettingsHelper.Set(SettingsHelper.IsCloseAPP, value);
+                if (IsCloseAPP != value)
+                {
+                    SettingsHelper.Set(SettingsHelper.IsCloseAPP, value);
+                }
             }
         }
 
@@ -74,7 +86,10 @@ namespace APKInstaller.ViewModels.SettingsPages
             get => SettingsHelper.Get<bool>(SettingsHelper.ShowDialogs);
             set
             {
-                SettingsHelper.Set(SettingsHelper.ShowDialogs, value);
+                if (ShowDialogs != value)
+                {
+                    SettingsHelper.Set(SettingsHelper.ShowDialogs, value);
+                }
             }
         }
 
@@ -83,8 +98,11 @@ namespace APKInstaller.ViewModels.SettingsPages
             get => SettingsHelper.Get<string>(SettingsHelper.ADBPath);
             set
             {
-                SettingsHelper.Set(SettingsHelper.ADBPath, value);
-                RaisePropertyChangedEvent();
+                if (ADBPath != value)
+                {
+                    SettingsHelper.Set(SettingsHelper.ADBPath, value);
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -106,8 +124,11 @@ namespace APKInstaller.ViewModels.SettingsPages
             get => SettingsHelper.Get<DateTime>(SettingsHelper.UpdateDate);
             set
             {
-                SettingsHelper.Set(SettingsHelper.UpdateDate, value);
-                RaisePropertyChangedEvent();
+                if (UpdateDate != value)
+                {
+                    SettingsHelper.Set(SettingsHelper.UpdateDate, value);
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -116,7 +137,36 @@ namespace APKInstaller.ViewModels.SettingsPages
             get => SettingsHelper.Get<bool>(SettingsHelper.AutoGetNetAPK);
             set
             {
-                SettingsHelper.Set(SettingsHelper.AutoGetNetAPK, value);
+                if (AutoGetNetAPK != value)
+                {
+                    SettingsHelper.Set(SettingsHelper.AutoGetNetAPK, value);
+                }
+            }
+        }
+
+        public int SelectedTheme
+        {
+            get => 2 - (int)ThemeHelper.RootTheme;
+            set
+            {
+                if (SelectedTheme != value)
+                {
+                    ThemeHelper.RootTheme = (ElementTheme)(2 - value);
+                }
+            }
+        }
+
+        public int SelectedBackdrop
+        {
+            get => (int)SettingsHelper.Get<BackdropType>(SettingsHelper.SelectedBackdrop);
+            set
+            {
+                if (SelectedBackdrop != value)
+                {
+                    BackdropType type = (BackdropType)value;
+                    SettingsHelper.Set(SettingsHelper.SelectedBackdrop, type);
+                    UIHelper.MainWindow.Backdrop.SetBackdrop(type);
+                }
             }
         }
 

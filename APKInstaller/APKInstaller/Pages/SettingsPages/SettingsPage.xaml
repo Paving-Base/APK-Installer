@@ -91,6 +91,33 @@
                         </controls:Setting.ActionContent>
                     </controls:Setting>
                 </controls:SettingsGroup>
+                <controls:SettingsGroup x:Uid="/SettingsPage/ThemesSettingsHeader" Margin="0,-32,0,0">
+                    <controls:Setting x:Uid="/SettingsPage/ThemeSettings" Icon="&#xE790;">
+                        <controls:Setting.Description>
+                            <HyperlinkButton
+                                x:Uid="/SettingsPage/WindowsColorButton"
+                                Click="HyperlinkButton_Click"
+                                Tag="WindowsColor" />
+                        </controls:Setting.Description>
+                        <controls:Setting.ActionContent>
+                            <ComboBox SelectedIndex="{Binding SelectedTheme, Mode=TwoWay}">
+                                <ComboBoxItem x:Uid="/SettingsPage/RadioThemeDark" />
+                                <ComboBoxItem x:Uid="/SettingsPage/RadioThemeLight" />
+                                <ComboBoxItem x:Uid="/SettingsPage/RadioThemeDefault" />
+                            </ComboBox>
+                        </controls:Setting.ActionContent>
+                    </controls:Setting>
+                    <controls:Setting x:Uid="/SettingsPage/BackdropSettings" Icon="&#xE81E;">
+                        <controls:Setting.ActionContent>
+                            <ComboBox SelectedIndex="{Binding SelectedBackdrop, Mode=TwoWay}">
+                                <x:String>Mica</x:String>
+                                <x:String>MicaAlt</x:String>
+                                <x:String>Acrylic</x:String>
+                                <x:String>DefaultColor</x:String>
+                            </ComboBox>
+                        </controls:Setting.ActionContent>
+                    </controls:Setting>
+                </controls:SettingsGroup>
                 <controls:SettingsGroup x:Uid="/SettingsPage/ContentSettingsHeader" Margin="0,-32,0,0">
                     <controls:Setting x:Uid="/SettingsPage/AutoGetNetAPKSettings" Icon="&#xE896;">
                         <controls:Setting.ActionContent>
