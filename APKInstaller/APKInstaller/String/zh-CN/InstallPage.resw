@@ -154,7 +154,7 @@
     <value>检查 ADB ……</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Checking Path...</value>
+    <value>检查路径……</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>点击阅读</value>
