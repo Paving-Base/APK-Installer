@@ -123,12 +123,6 @@
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>Các ứng dụng</value>
   </data>
-  <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>Chọn loại phông nền cho Windows 11</value>
-  </data>
-  <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>Phông Nền</value>
-  </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
     <value>Vào hoặc thoát khỏi Lớp phủ thu gọn</value>
   </data>
@@ -156,15 +150,6 @@
   <data name="ProgressSettings.Header" xml:space="preserve">
     <value>Tiến trình</value>
   </data>
-  <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>Tối</value>
-  </data>
-  <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>Mặc định Windows</value>
-  </data>
-  <data name="RadioThemeLight.Content" xml:space="preserve">
-    <value>Sáng</value>
-  </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
     <value>Đặt giá trị của Vòng tiến trình</value>
   </data>
@@ -177,9 +162,6 @@
   <data name="ShowRefreshButton.Header" xml:space="preserve">
     <value>Nút làm mới</value>
   </data>
-  <data name="ThemeSettings.Header" xml:space="preserve">
-    <value>Chủ đề Ứng dụng</value>
-  </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Thử nghiệm</value>
   </data>
@@ -191,8 +173,5 @@
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
     <value>Kiểm tra giao diện người dùng</value>
-  </data>
-  <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Cài đặt màu Windows</value>
   </data>
 </root>
