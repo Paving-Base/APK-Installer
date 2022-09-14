@@ -154,7 +154,7 @@
     <value>ADB Denetleniyor...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Checking Path...</value>
+    <value>Yol Kontrol Ediliyor...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>Bunları okumak için buraya tıklayın</value>
