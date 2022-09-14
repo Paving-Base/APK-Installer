@@ -101,10 +101,7 @@ namespace AAPTForNet.Models
 
         internal static ApkInfo Merge(ApkInfo init, IEnumerable<ApkInfo> apks)
         {
-            if (init == null)
-            {
-                init = new ApkInfo();
-            }
+            init ??= new ApkInfo();
 
             ApkInfo appApk = apks.FirstOrDefault(a => a.AppName.Length > 0);
             if (appApk != null)

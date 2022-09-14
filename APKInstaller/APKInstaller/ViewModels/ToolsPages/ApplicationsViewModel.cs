@@ -93,7 +93,7 @@ namespace APKInstaller.ViewModels.ToolsPages
             await Task.Run(async () =>
             {
                 _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.ShowProgressRing));
-                devices = new AdvancedAdbClient().GetDevices();
+                devices = new AdbClient().GetDevices();
                 await _page?.DispatcherQueue.EnqueueAsync(DeviceList.Clear);
                 if (devices.Count > 0)
                 {
@@ -142,7 +142,7 @@ namespace APKInstaller.ViewModels.ToolsPages
             List<APKInfo> Applications = new();
             await Task.Run(async () =>
             {
-                AdvancedAdbClient client = new();
+                AdbClient client = new();
                 PackageManager manager = new(client, devices[index]);
                 if (PackageInfos == null) { await GetInfos(); }
                 foreach (KeyValuePair<string, string> app in apps)
@@ -188,9 +188,9 @@ namespace APKInstaller.ViewModels.ToolsPages
             await Task.Run(async () =>
             {
                 _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.ShowProgressRing));
-                AdvancedAdbClient client = new();
+                AdbClient client = new();
                 int index = await _page?.DispatcherQueue.EnqueueAsync(() => { return DeviceComboBox.SelectedIndex; });
-                PackageManager manager = new(new AdvancedAdbClient(), devices[index]);
+                PackageManager manager = new(new AdbClient(), devices[index]);
                 List<APKInfo> list = await CheckAPP(manager.Packages, index);
                 await _page?.DispatcherQueue.EnqueueAsync(() => Applications = list);
                 _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.HideProgressRing));

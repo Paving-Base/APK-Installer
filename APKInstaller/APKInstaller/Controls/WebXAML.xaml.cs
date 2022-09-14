@@ -76,15 +76,15 @@ namespace APKInstaller.Controls
                     }
                     catch
                     {
-                            try
-                            {
-                                string xaml = await client.GetStringAsync(ContentInfo.FormatURL(GitInfo.JSDELIVR_API));
-                                UIElement = await DispatcherQueue.EnqueueAsync(() => { return (UIElement)XamlReader.Load(xaml); });
-                            }
-                            catch
-                            {
-                                UIElement = null;
-                            }
+                        try
+                        {
+                            string xaml = await client.GetStringAsync(ContentInfo.FormatURL(GitInfo.JSDELIVR_API));
+                            UIElement = await DispatcherQueue.EnqueueAsync(() => { return (UIElement)XamlReader.Load(xaml); });
+                        }
+                        catch
+                        {
+                            UIElement = null;
+                        }
                     }
                     finally
                     {

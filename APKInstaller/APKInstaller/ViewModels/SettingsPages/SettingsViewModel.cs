@@ -5,10 +5,10 @@ using APKInstaller.Pages.SettingsPages;
 using CommunityToolkit.WinUI;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
+using PInvoke;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Resources;
@@ -20,9 +20,6 @@ namespace APKInstaller.ViewModels.SettingsPages
 {
     public class SettingsViewModel : INotifyPropertyChanged
     {
-        [DllImport("user32.dll", ExactSpelling = true, CharSet = CharSet.Auto, PreserveSig = true, SetLastError = false)]
-        private static extern IntPtr GetActiveWindow();
-
         private readonly SettingsPage _page;
         private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("SettingsPage");
 
@@ -294,7 +291,7 @@ namespace APKInstaller.ViewModels.SettingsPages
             Caches = this;
         }
 
-        public void OnDeviceChanged(object sender, DeviceDataEventArgs e) => _ = (_page?.DispatcherQueue.EnqueueAsync(() => DeviceList = new AdvancedAdbClient().GetDevices()));
+        public void OnDeviceChanged(object sender, DeviceDataEventArgs e) => _ = (_page?.DispatcherQueue.EnqueueAsync(() => DeviceList = new AdbClient().GetDevices()));
 
         public async void CheckUpdate()
         {
@@ -359,7 +356,7 @@ namespace APKInstaller.ViewModels.SettingsPages
             if (Window.Current == null)
             {
                 IInitializeWithWindow initializeWithWindowWrapper = FileOpen.As<IInitializeWithWindow>();
-                IntPtr hwnd = GetActiveWindow();
+                IntPtr hwnd = User32.GetActiveWindow();
                 initializeWithWindowWrapper.Initialize(hwnd);
             }
 

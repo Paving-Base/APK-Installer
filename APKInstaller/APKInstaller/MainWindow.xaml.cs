@@ -2,10 +2,10 @@ using AdvancedSharpAdbClient;
 using APKInstaller.Helpers;
 using APKInstaller.Pages;
 using Microsoft.UI.Xaml;
+using PInvoke;
 using System;
 using System.Diagnostics;
 using System.Linq;
-using System.Text;
 using Windows.Graphics;
 using WinRT.Interop;
 
@@ -42,7 +42,7 @@ namespace APKInstaller
 
                 if (SettingsHelper.Get<bool>(SettingsHelper.IsCloseADB))
                 {
-                    try { new AdvancedAdbClient().KillAdb(); } catch { }
+                    try { new AdbClient().KillAdb(); } catch { }
                 }
             }
             else
@@ -53,7 +53,7 @@ namespace APKInstaller
 
         private void SetWindowSize(IntPtr hwnd, int width, int height)
         {
-            int dpi = PInvoke.User32.GetDpiForWindow(hwnd);
+            int dpi = User32.GetDpiForWindow(hwnd);
             float scalingFactor = (float)dpi / 96;
             width = (int)(width * scalingFactor);
             height = (int)(height * scalingFactor);

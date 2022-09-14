@@ -4,8 +4,6 @@ using Microsoft.UI.Dispatching;
 using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Media;
-using System;
 using Windows.Graphics;
 
 // To learn more about WinUI, the WinUI project structure,

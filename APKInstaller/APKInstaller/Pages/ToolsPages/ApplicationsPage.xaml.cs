@@ -63,10 +63,10 @@ namespace APKInstaller.Pages.ToolsPages
             switch (Button.Name)
             {
                 case "Stop":
-                    new AdvancedAdbClient().StopApp(Provider.devices[DeviceComboBox.SelectedIndex], Button.Tag.ToString());
+                    new AdbClient().StopApp(Provider.devices[DeviceComboBox.SelectedIndex], Button.Tag.ToString());
                     break;
                 case "Start":
-                    new AdvancedAdbClient().StartApp(Provider.devices[DeviceComboBox.SelectedIndex], Button.Tag.ToString());
+                    new AdbClient().StartApp(Provider.devices[DeviceComboBox.SelectedIndex], Button.Tag.ToString());
                     break;
                 case "Uninstall":
                     break;

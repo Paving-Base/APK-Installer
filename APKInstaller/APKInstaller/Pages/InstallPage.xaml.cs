@@ -1,23 +1,15 @@
 ﻿using APKInstaller.Helpers;
-using APKInstaller.Helpers;
 using APKInstaller.Pages.SettingsPages;
 using APKInstaller.ViewModels;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
 using Microsoft.Windows.AppLifecycle;
-using SharpCompress.Archives;
-using SharpCompress.Archives.Zip;
-using SharpCompress.Common;
-using SharpCompress.Writers;
 using System;
-using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using Windows.ApplicationModel.Activation;
 using Windows.ApplicationModel.DataTransfer;
 using Windows.Foundation.Collections;
-using Windows.Storage;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.

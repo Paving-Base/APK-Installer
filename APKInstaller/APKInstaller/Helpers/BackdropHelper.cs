@@ -3,7 +3,6 @@ using Microsoft.UI.Composition.SystemBackdrops;
 using Microsoft.UI.Xaml;
 using Windows.Foundation;
 using Windows.UI;
-using Windows.UI.ViewManagement;
 using WinRT; // required to support Window.As<ICompositionSupportsSystemBackdrop>()
 
 namespace APKInstaller.Helpers
@@ -20,12 +19,11 @@ namespace APKInstaller.Helpers
     {
         private readonly Window window;
         private readonly WindowsSystemDispatcherQueueHelper m_wsdqHelper;
-        private BackdropType? m_currentBackdrop = null;
         private MicaController m_micaController;
         private DesktopAcrylicController m_acrylicController;
         private SystemBackdropConfiguration m_configurationSource;
 
-        public BackdropType? Backdrop => m_currentBackdrop;
+        public BackdropType? Backdrop { get; private set; } = null;
         public event TypedEventHandler<BackdropHelper, object> BackdropTypeChanged;
 
         public BackdropHelper(Window window)
@@ -37,7 +35,7 @@ namespace APKInstaller.Helpers
 
         public void SetBackdrop(BackdropType type)
         {
-            if (type == m_currentBackdrop) { return; }
+            if (type == Backdrop) { return; }
 
             // Reset to default color. If the requested type is supported, we'll update to that.
             // Note: This sample completely removes any previous controller to reset to the default
@@ -47,7 +45,7 @@ namespace APKInstaller.Helpers
             //       call RemoveSystemBackdropTarget() on the old controller and then setup the new
             //       controller, reusing any existing m_configurationSource and Activated/Closed
             //       event handlers.
-            m_currentBackdrop = BackdropType.DefaultColor;
+            Backdrop = BackdropType.DefaultColor;
             if (m_micaController != null)
             {
                 m_micaController.Dispose();
@@ -63,11 +61,11 @@ namespace APKInstaller.Helpers
             ((FrameworkElement)window.Content).ActualThemeChanged -= Window_ThemeChanged;
             m_configurationSource = null;
 
-            if (type == BackdropType.Mica || type == BackdropType.MicaAlt)
+            if (type is BackdropType.Mica or BackdropType.MicaAlt)
             {
                 if (TrySetMicaBackdrop(type == BackdropType.MicaAlt ? MicaKind.BaseAlt : MicaKind.Base))
                 {
-                    m_currentBackdrop = type;
+                    Backdrop = type;
                 }
                 else
                 {
@@ -79,11 +77,11 @@ namespace APKInstaller.Helpers
             {
                 if (TrySetAcrylicBackdrop())
                 {
-                    m_currentBackdrop = type;
+                    Backdrop = type;
                 }
             }
 
-            BackdropTypeChanged?.Invoke(this, m_currentBackdrop);
+            BackdropTypeChanged?.Invoke(this, Backdrop);
         }
 
         private bool TrySetMicaBackdrop(MicaKind kind = MicaKind.Base)

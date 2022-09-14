@@ -61,7 +61,7 @@ namespace APKInstaller.ViewModels.ToolsPages
             await Task.Run(async () =>
             {
                 _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.ShowProgressRing));
-                devices = new AdvancedAdbClient().GetDevices();
+                devices = new AdbClient().GetDevices();
                 await _page?.DispatcherQueue.EnqueueAsync(DeviceList.Clear);
                 if (devices.Count > 0)
                 {
@@ -110,7 +110,7 @@ namespace APKInstaller.ViewModels.ToolsPages
             await Task.Run(async () =>
             {
                 _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.ShowProgressRing));
-                AdvancedAdbClient client = new();
+                AdbClient client = new();
                 DeviceData device = await _page?.DispatcherQueue.EnqueueAsync(() => { return devices[DeviceComboBox.SelectedIndex]; });
                 IEnumerable<AndroidProcess> list = DeviceExtensions.ListProcesses(client, device);
                 await _page?.DispatcherQueue.EnqueueAsync(() => Processes = list);

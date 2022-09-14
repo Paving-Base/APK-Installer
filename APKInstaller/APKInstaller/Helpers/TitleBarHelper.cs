@@ -12,14 +12,11 @@ namespace APKInstaller.Helpers
         public const int WA_ACTIVE = 0x01;
         public const int WA_INACTIVE = 0x00;
 
-        [DllImport("user32.dll")]
-        public static extern IntPtr GetActiveWindow();
-
         public static void TriggerTitleBarRepaint()
         {
             // to trigger repaint tracking task id 38044406
-            var hwnd = WinRT.Interop.WindowNative.GetWindowHandle(UIHelper.MainWindow);
-            var activeWindow = GetActiveWindow();
+            IntPtr hwnd = WinRT.Interop.WindowNative.GetWindowHandle(UIHelper.MainWindow);
+            IntPtr activeWindow = PInvoke.User32.GetActiveWindow();
             if (hwnd == activeWindow)
             {
                 _ = User32.SendMessage(hwnd, User32.WM.ACTIVATE, (IntPtr)WA_INACTIVE, IntPtr.Zero);

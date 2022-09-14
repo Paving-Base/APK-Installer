@@ -18,13 +18,13 @@ namespace APKInstaller.Helpers
         [ComImport]
         [Guid("3A3DCD6C-3EAB-43DC-BCDE-45671CE800C8")]
         [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
-        interface IDataTransferManagerInterop
+        private interface IDataTransferManagerInterop
         {
             IntPtr GetForWindow([In] IntPtr appWindow, [In] ref Guid riid);
             void ShowShareUIForWindow(IntPtr appWindow);
         }
 
-        static readonly Guid _dtm_iid = new Guid(0xa5caee9b, 0x8708, 0x49d1, 0x8d, 0x36, 0x67, 0xd2, 0x5a, 0x8d, 0xa0, 0x0c);
+        private static readonly Guid _dtm_iid = new(0xa5caee9b, 0x8708, 0x49d1, 0x8d, 0x36, 0x67, 0xd2, 0x5a, 0x8d, 0xa0, 0x0c);
 
         private static DataPackage GetTextDataPackage(string text, string title, string description)
         {
@@ -100,12 +100,12 @@ namespace APKInstaller.Helpers
         public static void Share(this DataPackage dataPackage)
         {
             // Retrieve the window handle (HWND) of the current WinUI 3 window.
-            var hWnd = WindowNative.GetWindowHandle(UIHelper.MainWindow);
+            IntPtr hWnd = WindowNative.GetWindowHandle(UIHelper.MainWindow);
 
             IDataTransferManagerInterop interop = DataTransferManager.As<IDataTransferManagerInterop>();
 
             IntPtr result = interop.GetForWindow(hWnd, _dtm_iid);
-            var dataTransferManager = MarshalInterface<DataTransferManager>.FromAbi(result);
+            DataTransferManager dataTransferManager = MarshalInterface<DataTransferManager>.FromAbi(result);
 
             dataTransferManager.DataRequested += (sender, args) => { args.Request.Data = dataPackage; };
 

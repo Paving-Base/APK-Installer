@@ -24,7 +24,7 @@ namespace APKInstaller.Helpers
 
         public static async Task ConnectHyperV()
         {
-            AdvancedAdbClient AdbClient = new();
+            AdbClient AdbClient = new();
             List<string> addresses = await GetAddressID("00-15-5d");
             foreach (string address in addresses)
             {

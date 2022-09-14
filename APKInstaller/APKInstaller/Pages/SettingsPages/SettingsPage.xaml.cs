@@ -34,7 +34,7 @@ namespace APKInstaller.Pages.SettingsPages
                 Provider = SettingsViewModel.Caches;
                 if (AdbServer.Instance.GetStatus().IsRunning)
                 {
-                    Provider.DeviceList = new AdvancedAdbClient().GetDevices();
+                    Provider.DeviceList = new AdbClient().GetDevices();
                 }
             }
             else
@@ -44,7 +44,7 @@ namespace APKInstaller.Pages.SettingsPages
                 if (AdbServer.Instance.GetStatus().IsRunning)
                 {
                     ADBHelper.Monitor.DeviceChanged += Provider.OnDeviceChanged;
-                    Provider.DeviceList = new AdvancedAdbClient().GetDevices();
+                    Provider.DeviceList = new AdbClient().GetDevices();
                 }
             }
             DataContext = Provider;
@@ -84,7 +84,7 @@ namespace APKInstaller.Pages.SettingsPages
                     Provider.ChangeADBPath();
                     break;
                 case "Connect":
-                    new AdvancedAdbClient().Connect(ConnectIP.Text);
+                    new AdbClient().Connect(ConnectIP.Text);
                     Provider.OnDeviceChanged(null, null);
                     break;
                 case "TestPage":

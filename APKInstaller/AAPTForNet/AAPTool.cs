@@ -145,27 +145,25 @@ namespace AAPTForNet
             }
             else
             {
-                using (ZipArchive archive = ZipFile.OpenRead(path))
+                using ZipArchive archive = ZipFile.OpenRead(path);
+                if (!Directory.Exists(TempPath))
                 {
-                    if (!Directory.Exists(TempPath))
-                    {
-                        Directory.CreateDirectory(TempPath);
-                    }
+                    Directory.CreateDirectory(TempPath);
+                }
 
-                    foreach (ZipArchiveEntry entry in archive.Entries.Where(x => !x.FullName.Contains("/")))
+                foreach (ZipArchiveEntry entry in archive.Entries.Where(x => !x.FullName.Contains("/")))
+                {
+                    if (entry.Name.ToLower().EndsWith(".apk"))
                     {
-                        if (entry.Name.ToLower().EndsWith(".apk"))
-                        {
-                            string APKTemp = Path.Combine(TempPath, entry.FullName);
-                            entry.ExtractToFile(APKTemp, true);
-                            apks.Add(APKTemp);
-                        }
+                        string APKTemp = Path.Combine(TempPath, entry.FullName);
+                        entry.ExtractToFile(APKTemp, true);
+                        apks.Add(APKTemp);
                     }
+                }
 
-                    if (!apks.Any())
-                    {
-                        apks.Add(path);
-                    }
+                if (!apks.Any())
+                {
+                    apks.Add(path);
                 }
             }
 
