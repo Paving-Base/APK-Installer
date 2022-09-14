@@ -130,6 +130,12 @@
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
     <value>Automatikus letöltöd az online csomagokat?</value>
   </data>
+  <data name="BackdropSettings.Description" xml:space="preserve">
+    <value>Háttértípus kiválasztása a Windows 11 számára</value>
+  </data>
+  <data name="BackdropSettings.Header" xml:space="preserve">
+    <value>Háttérkép</value>
+  </data>
   <data name="Change.Content" xml:space="preserve">
     <value>Módosít</value>
   </data>
@@ -223,6 +229,15 @@
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Egyéb</value>
   </data>
+  <data name="RadioThemeDark.Content" xml:space="preserve">
+    <value>Sötét</value>
+  </data>
+  <data name="RadioThemeDefault.Content" xml:space="preserve">
+    <value>Windows alapértelmezett</value>
+  </data>
+  <data name="RadioThemeLight.Content" xml:space="preserve">
+    <value>Fény</value>
+  </data>
   <data name="Rate.Content" xml:space="preserve">
     <value>Értékelés az áruházban</value>
   </data>
@@ -259,6 +274,12 @@
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
     <value>Bejelentések megjelenítése?</value>
   </data>
+  <data name="ThemeSettings.Header" xml:space="preserve">
+    <value>App téma</value>
+  </data>
+  <data name="ThemesSettingsHeader.Header" xml:space="preserve">
+    <value>Themes</value>
+  </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Beállítások</value>
   </data>
@@ -270,5 +291,8 @@
   </data>
   <data name="UpToDate" xml:space="preserve">
     <value>Naprakész</value>
+  </data>
+  <data name="WindowsColorButton.Content" xml:space="preserve">
+    <value>Windows színbeállítások</value>
   </data>
 </root>
