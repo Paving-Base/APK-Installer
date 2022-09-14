@@ -129,6 +129,12 @@
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
     <value>Apakah Unduh Otomatis Paket Online?</value>
   </data>
+  <data name="BackdropSettings.Description" xml:space="preserve">
+    <value>Pilih Jenis Tampilan Latar Belakang untuk Windows 11</value>
+  </data>
+  <data name="BackdropSettings.Header" xml:space="preserve">
+    <value>Latar belakang</value>
+  </data>
   <data name="Change.Content" xml:space="preserve">
     <value>Ubah</value>
   </data>
@@ -222,6 +228,15 @@
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Lainnya</value>
   </data>
+  <data name="RadioThemeDark.Content" xml:space="preserve">
+    <value>Gelap</value>
+  </data>
+  <data name="RadioThemeDefault.Content" xml:space="preserve">
+    <value>Default Windows</value>
+  </data>
+  <data name="RadioThemeLight.Content" xml:space="preserve">
+    <value>Terang</value>
+  </data>
   <data name="Rate.Content" xml:space="preserve">
     <value>Nilai di Toko</value>
   </data>
@@ -258,6 +273,12 @@
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
     <value>Apakah Tampilkan Pengumuman?</value>
   </data>
+  <data name="ThemeSettings.Header" xml:space="preserve">
+    <value>Tema Aplikasi</value>
+  </data>
+  <data name="ThemesSettingsHeader.Header" xml:space="preserve">
+    <value>Tema</value>
+  </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Pengaturan</value>
   </data>
@@ -269,5 +290,8 @@
   </data>
   <data name="UpToDate" xml:space="preserve">
     <value>Terkini</value>
+  </data>
+  <data name="WindowsColorButton.Content" xml:space="preserve">
+    <value>Pengaturan Warna Windows</value>
   </data>
 </root>

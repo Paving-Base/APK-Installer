@@ -129,6 +129,12 @@
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
     <value>Is Auto Download Online Packages?</value>
   </data>
+  <data name="BackdropSettings.Description" xml:space="preserve">
+    <value>Chọn loại phông nền cho Windows 11</value>
+  </data>
+  <data name="BackdropSettings.Header" xml:space="preserve">
+    <value>Phông Nền</value>
+  </data>
   <data name="Change.Content" xml:space="preserve">
     <value>Change</value>
   </data>
@@ -222,6 +228,15 @@
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Others</value>
   </data>
+  <data name="RadioThemeDark.Content" xml:space="preserve">
+    <value>Tối</value>
+  </data>
+  <data name="RadioThemeDefault.Content" xml:space="preserve">
+    <value>Mặc định Windows</value>
+  </data>
+  <data name="RadioThemeLight.Content" xml:space="preserve">
+    <value>Sáng</value>
+  </data>
   <data name="Rate.Content" xml:space="preserve">
     <value>Rate On Store</value>
   </data>
@@ -258,6 +273,12 @@
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
     <value>Is Show Announcements?</value>
   </data>
+  <data name="ThemeSettings.Header" xml:space="preserve">
+    <value>Chủ đề Ứng dụng</value>
+  </data>
+  <data name="ThemesSettingsHeader.Header" xml:space="preserve">
+    <value>Themes</value>
+  </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Settings</value>
   </data>
@@ -269,5 +290,8 @@
   </data>
   <data name="UpToDate" xml:space="preserve">
     <value>Up To Date</value>
+  </data>
+  <data name="WindowsColorButton.Content" xml:space="preserve">
+    <value>Cài đặt màu Windows</value>
   </data>
 </root>

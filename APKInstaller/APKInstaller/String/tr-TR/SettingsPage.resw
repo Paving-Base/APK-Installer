@@ -129,6 +129,12 @@
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
     <value>Çevrimiçi paketler otomatik indirilsin mi?</value>
   </data>
+  <data name="BackdropSettings.Description" xml:space="preserve">
+    <value>Windows 11 için Arka Plan Türünü Seçin</value>
+  </data>
+  <data name="BackdropSettings.Header" xml:space="preserve">
+    <value>Arka plan</value>
+  </data>
   <data name="Change.Content" xml:space="preserve">
     <value>Değiştir</value>
   </data>
@@ -222,6 +228,15 @@
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Diğerleri</value>
   </data>
+  <data name="RadioThemeDark.Content" xml:space="preserve">
+    <value>Koyu</value>
+  </data>
+  <data name="RadioThemeDefault.Content" xml:space="preserve">
+    <value>Windows Varsayılanı</value>
+  </data>
+  <data name="RadioThemeLight.Content" xml:space="preserve">
+    <value>Açık</value>
+  </data>
   <data name="Rate.Content" xml:space="preserve">
     <value>Mağazada Puan Ver</value>
   </data>
@@ -258,6 +273,12 @@
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
     <value>Duyurular gösterilsin mi?</value>
   </data>
+  <data name="ThemeSettings.Header" xml:space="preserve">
+    <value>Uygulama Teması</value>
+  </data>
+  <data name="ThemesSettingsHeader.Header" xml:space="preserve">
+    <value>Themes</value>
+  </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Ayarlar</value>
   </data>
@@ -269,5 +290,8 @@
   </data>
   <data name="UpToDate" xml:space="preserve">
     <value>Güncel</value>
+  </data>
+  <data name="WindowsColorButton.Content" xml:space="preserve">
+    <value>Windows Renk Ayarları</value>
   </data>
 </root>
