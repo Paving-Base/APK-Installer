@@ -139,7 +139,7 @@
     <value>Cambiar</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>Comprobación Fallida</value>
+    <value>Comprobación fallida</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
     <value>Buscando Actualizaciones...</value>
@@ -157,7 +157,7 @@
     <value>¿Cerrar ADB cuando se esté Cerrando el Instalador?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Cerrar el Instalador después de que la APK haya sido instalada y ejecutar.</value>
+    <value>Cerrar el instalador después de que la APK haya sido instalada y ejecutar.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
     <value>¿Cerrar el Instalador cuando la APLICACIÓN está Lista?</value>
