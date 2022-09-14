@@ -153,6 +153,9 @@
   <data name="CheckingADB" xml:space="preserve">
     <value>ADBを確認中...</value>
   </data>
+  <data name="CheckingPath" xml:space="preserve">
+    <value>Checking Path...</value>
+  </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>ここをクリックして読みます。</value>
   </data>
