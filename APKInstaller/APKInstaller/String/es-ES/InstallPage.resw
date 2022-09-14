@@ -139,7 +139,7 @@
     <value>Cancelar</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>No se puede Conectar a WSA</value>
+    <value>No se puede conectar a WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
     <value>Puede que el WSA no empezase correctamente o hay un problema con el ADB. Este problema puede ser muy difícil de resolver. Por favor reinicia el instalador. Si sigue sin funcionar, prueba a reiniciar el equipo.</value>
@@ -169,7 +169,7 @@
     <value>Descargar</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>Descarga Fallida</value>
+    <value>Descarga fallida</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
     <value>Por favor comprueba tu conexión a la red o el URL e intenta otra vez.</value>
@@ -184,7 +184,7 @@
     <value>WSA Encontrado</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>Ir a Ajustes</value>
+    <value>Ir a ajustes</value>
   </data>
   <data name="HowToConnect" xml:space="preserve">
     <value>¿Cómo conectar WSA?</value>
@@ -193,7 +193,7 @@
     <value>Icono</value>
   </data>
   <data name="IKnow" xml:space="preserve">
-    <value>Lo Sé</value>
+    <value>Lo sé</value>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
     <value>Información</value>
@@ -261,13 +261,13 @@
     <value>OK</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
-    <value>Paquete en Línea</value>
+    <value>Paquete en línea</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
     <value>Nombre del paquete</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>Nombre del Paquete: {0}</value>
+    <value>Nombre del paquete: {0}</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
@@ -291,7 +291,7 @@
     <value>Compartir</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
-    <value>Iniciando Servidor ADB...</value>
+    <value>Iniciando servidor ADB...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
     <value>Iniciar WSA</value>
@@ -327,7 +327,7 @@
     <value>Esperando la descarga...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>Esperando un Dispositivo...</value>
+    <value>Esperando un dispositivo...</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
     <value>Esperando para instalar {0}</value>
@@ -338,6 +338,6 @@
 Puede que esto tome un largo tiempo. Siéntate y relájate.</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>WSA se está Ejecutando</value>
+    <value>WSA se está ejecutando</value>
   </data>
 </root>
