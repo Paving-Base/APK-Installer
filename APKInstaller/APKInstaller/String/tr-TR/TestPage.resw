@@ -123,12 +123,6 @@
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>Uygulamalar</value>
   </data>
-  <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>Windows 11 için Arka Plan Türünü Seçin</value>
-  </data>
-  <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>Arka plan</value>
-  </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
     <value>Kompakt Yerleşime Girin veya Çıkın</value>
   </data>
@@ -156,15 +150,6 @@
   <data name="ProgressSettings.Header" xml:space="preserve">
     <value>İlerleme</value>
   </data>
-  <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>Koyu</value>
-  </data>
-  <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>Windows Varsayılanı</value>
-  </data>
-  <data name="RadioThemeLight.Content" xml:space="preserve">
-    <value>Açık</value>
-  </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
     <value>İlerleme Halkasının değerini ayarlayın</value>
   </data>
@@ -177,9 +162,6 @@
   <data name="ShowRefreshButton.Header" xml:space="preserve">
     <value>Yenileme Butonu</value>
   </data>
-  <data name="ThemeSettings.Header" xml:space="preserve">
-    <value>Uygulama Teması</value>
-  </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Test Ediliyor</value>
   </data>
@@ -191,8 +173,5 @@
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
     <value>Arayüz Testi</value>
-  </data>
-  <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Windows Renk Ayarları</value>
   </data>
 </root>
