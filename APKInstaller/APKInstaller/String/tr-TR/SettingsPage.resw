@@ -229,7 +229,7 @@
     <value>Diğerleri</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>Koyu</value>
+    <value>Karanlık</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
     <value>Windows Varsayılanı</value>
@@ -277,7 +277,7 @@
     <value>Uygulama Teması</value>
   </data>
   <data name="ThemesSettingsHeader.Header" xml:space="preserve">
-    <value>Themes</value>
+    <value>Temalar</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Ayarlar</value>
