@@ -155,6 +155,9 @@
   <data name="CheckingADB" xml:space="preserve">
     <value>בודק...</value>
   </data>
+  <data name="CheckingPath" xml:space="preserve">
+    <value>Checking Path...</value>
+  </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>לחץ כאן כדי לשחזר אותם.</value>
   </data>
