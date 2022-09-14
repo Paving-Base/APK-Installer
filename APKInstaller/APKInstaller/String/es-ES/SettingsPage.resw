@@ -145,7 +145,7 @@
     <value>Buscando Actualizaciones...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
-    <value>Comprobar Por Actualizaciones</value>
+    <value>Comprobar si hay actualizaciones</value>
   </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
     <value>Limpiar caché</value>
@@ -169,7 +169,7 @@
     <value>Conecta el dispositivo a la red.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
-    <value>Conectar Dispositivo</value>
+    <value>Conectar dispositivo</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
     <value>Contactarme</value>
@@ -199,13 +199,13 @@
     <value>Comentarios</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
-    <value>Encontrar Actualización</value>
+    <value>Encontrar actualización</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>Ir a la página de test.</value>
+    <value>Ir a la página de prueba.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>Ir a la Página Test</value>
+    <value>Ir a la Página de prueba</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
     <value>Ir a Actualizar</value>
@@ -217,7 +217,7 @@
     <value>Última Revisión: </value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
-    <value>Logs</value>
+    <value>Registros</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>Desactívalo para conectarlo a otros dispositivos.</value>
@@ -238,7 +238,7 @@
     <value>Claro</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value>Valorar En la Tienda</value>
+    <value>Valorar en la tienda</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
     <value>Notas de la versión</value>
@@ -259,7 +259,7 @@
     <value>¿Estás seguro de que quieres reiniciar la aplicación?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
-    <value>Seleccionar Dispositivo</value>
+    <value>Seleccionar dispositivo</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
     <value>Mostrar ayudantes cuando ningún dispositivo está conectado.</value>
@@ -268,7 +268,7 @@
     <value>¿Mostrar ayudantes?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Mostrar Anuncios en la parte superior de los Ajustes.</value>
+    <value>Mostrar anuncios en la parte superior de los ajustes.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
     <value>¿Mostrar anuncios?</value>
@@ -277,7 +277,7 @@
     <value>Tema de la aplicación</value>
   </data>
   <data name="ThemesSettingsHeader.Header" xml:space="preserve">
-    <value>Themes</value>
+    <value>Temas</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Ajustes</value>
@@ -289,7 +289,7 @@
     <value>Versión</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Hasta La Fecha</value>
+    <value>Hasta la fecha</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
     <value>Ajustes de color de Windows</value>
