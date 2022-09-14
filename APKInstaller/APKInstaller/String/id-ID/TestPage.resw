@@ -123,12 +123,6 @@
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>Aplikasi</value>
   </data>
-  <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>Pilih Jenis Tampilan Latar Belakang untuk Windows 11</value>
-  </data>
-  <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>Latar belakang</value>
-  </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
     <value>Masuk atau Keluar dari Hamparan Ringkas</value>
   </data>
@@ -156,15 +150,6 @@
   <data name="ProgressSettings.Header" xml:space="preserve">
     <value>Kemajuan</value>
   </data>
-  <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>Gelap</value>
-  </data>
-  <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>Default Windows</value>
-  </data>
-  <data name="RadioThemeLight.Content" xml:space="preserve">
-    <value>Terang</value>
-  </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
     <value>Atur nilai Cincin Kemajuan</value>
   </data>
@@ -177,9 +162,6 @@
   <data name="ShowRefreshButton.Header" xml:space="preserve">
     <value>Tombol Segarkan</value>
   </data>
-  <data name="ThemeSettings.Header" xml:space="preserve">
-    <value>Tema Aplikasi</value>
-  </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Pengujian</value>
   </data>
@@ -191,8 +173,5 @@
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
     <value>Tes UI</value>
-  </data>
-  <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Pengaturan Warna Windows</value>
   </data>
 </root>
