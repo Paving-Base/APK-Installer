@@ -129,6 +129,12 @@
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
     <value>是否自动下载在线安装包？</value>
   </data>
+  <data name="BackdropSettings.Description" xml:space="preserve">
+    <value>选择适用于 Windows 11 的背景色类型</value>
+  </data>
+  <data name="BackdropSettings.Header" xml:space="preserve">
+    <value>背景色</value>
+  </data>
   <data name="Change.Content" xml:space="preserve">
     <value>更改</value>
   </data>
@@ -222,6 +228,15 @@
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>其他</value>
   </data>
+  <data name="RadioThemeDark.Content" xml:space="preserve">
+    <value>深色</value>
+  </data>
+  <data name="RadioThemeDefault.Content" xml:space="preserve">
+    <value>Windows 默认</value>
+  </data>
+  <data name="RadioThemeLight.Content" xml:space="preserve">
+    <value>浅色</value>
+  </data>
   <data name="Rate.Content" xml:space="preserve">
     <value>前往商店好评</value>
   </data>
@@ -258,6 +273,12 @@
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
     <value>是否显示公告？</value>
   </data>
+  <data name="ThemeSettings.Header" xml:space="preserve">
+    <value>应用主题</value>
+  </data>
+  <data name="ThemesSettingsHeader.Header" xml:space="preserve">
+    <value>Themes</value>
+  </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>设置</value>
   </data>
@@ -269,5 +290,8 @@
   </data>
   <data name="UpToDate" xml:space="preserve">
     <value>最新</value>
+  </data>
+  <data name="WindowsColorButton.Content" xml:space="preserve">
+    <value>Windows 颜色设置</value>
   </data>
 </root>
