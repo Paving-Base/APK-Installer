@@ -5,6 +5,7 @@ using Microsoft.UI.Xaml;
 using System;
 using System.Diagnostics;
 using System.Linq;
+using System.Text;
 using Windows.Graphics;
 using WinRT.Interop;
 

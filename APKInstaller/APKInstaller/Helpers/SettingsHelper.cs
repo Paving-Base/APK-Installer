@@ -1,6 +1,7 @@
 ﻿using AdvancedSharpAdbClient;
 using CommunityToolkit.WinUI.Helpers;
 using MetroLog;
+using MetroLog.Targets;
 using Microsoft.UI.Xaml;
 using System;
 using System.IO;
@@ -104,7 +105,7 @@ namespace APKInstaller.Helpers
     public static partial class SettingsHelper
     {
         public static readonly UISettings UISettings = new();
-        public static readonly ILogManager LogManager = LogManagerFactory.CreateLogManager();
+        public static readonly ILogManager LogManager = LogManagerFactory.CreateLogManager(GetDefaultReleaseConfiguration());
         public static OSVersion OperatingSystemVersion => SystemInformation.Instance.OperatingSystemVersion;
         private static readonly ApplicationDataStorageHelper LocalObject = ApplicationDataStorageHelper.GetCurrent(new SystemTextJsonObjectSerializer());
         public static ElementTheme Theme => Get<bool>("IsBackgroundColorFollowSystem") ? ElementTheme.Default : (Get<bool>("IsDarkMode") ? ElementTheme.Dark : ElementTheme.Light);
@@ -113,6 +114,16 @@ namespace APKInstaller.Helpers
         {
             SetDefaultSettings();
         }
+
+        private static LoggingConfiguration GetDefaultReleaseConfiguration()
+        {
+            string path = Path.Combine(ApplicationData.Current.LocalFolder.Path, "MetroLogs");
+            if (!Directory.Exists(path)) { Directory.CreateDirectory(path); }
+            LoggingConfiguration loggingConfiguration = new LoggingConfiguration();
+            loggingConfiguration.AddTarget(LogLevel.Info, LogLevel.Fatal, new StreamingFileTarget(path, 7));
+            return loggingConfiguration;
+        }
+
     }
 
     public class SystemTextJsonObjectSerializer : CommunityToolkit.Common.Helpers.IObjectSerializer

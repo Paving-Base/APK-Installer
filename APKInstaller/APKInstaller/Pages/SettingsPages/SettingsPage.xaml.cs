@@ -8,6 +8,7 @@ using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
 using System;
+using System.IO;
 using Windows.Storage;
 using Windows.System;
 
@@ -90,7 +91,7 @@ namespace APKInstaller.Pages.SettingsPages
                     _ = Frame.Navigate(typeof(TestPage));
                     break;
                 case "LogFolder":
-                    _ = await Launcher.LaunchFolderAsync(await ApplicationData.Current.LocalFolder.CreateFolderAsync("MetroLogs", CreationCollisionOption.OpenIfExists));
+                    _ = await Launcher.LaunchUriAsync(new Uri(Path.Combine(ApplicationData.Current.LocalFolder.Path, "MetroLogs")));
                     break;
                 case "CheckUpdate":
                     Provider.CheckUpdate();

@@ -2,6 +2,7 @@ using APKInstaller.Helpers;
 using APKInstaller.Helpers.Exceptions;
 using Microsoft.UI.Xaml;
 using System;
+using System.Text;
 using Windows.ApplicationModel;
 using Windows.Foundation.Metadata;
 using Windows.System.Profile;
@@ -27,7 +28,7 @@ namespace APKInstaller
             AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
             if (ApiInformation.IsApiContractPresent("Windows.Foundation.UniversalApiContract", 6))
             {
-                this.FocusVisualKind = AnalyticsInfo.VersionInfo.DeviceFamily == "Xbox" ? FocusVisualKind.Reveal : FocusVisualKind.HighVisibility;
+                FocusVisualKind = AnalyticsInfo.VersionInfo.DeviceFamily == "Xbox" ? FocusVisualKind.Reveal : FocusVisualKind.HighVisibility;
             }
         }
 
@@ -52,13 +53,16 @@ namespace APKInstaller
 
         private void Application_UnhandledException(object sender, Microsoft.UI.Xaml.UnhandledExceptionEventArgs e)
         {
-            SettingsHelper.LogManager.GetLogger("UnhandledException").Error($"\n{e.Exception.Message}\n{e.Exception.HResult}\n{e.Exception.StackTrace}\nHelperLink: {e.Exception.HelpLink}", e.Exception);
+            SettingsHelper.LogManager.GetLogger("UnhandledException").Error(ExceptionToMessage(e.Exception), e.Exception);
             e.Handled = true;
         }
 
         private void CurrentDomain_UnhandledException(object sender, System.UnhandledExceptionEventArgs e)
         {
-            SettingsHelper.LogManager.GetLogger("UnhandledException").Error(e.ExceptionObject.ToString());
+            if (e.ExceptionObject is Exception Exception)
+            {
+                SettingsHelper.LogManager.GetLogger("UnhandledException").Error(ExceptionToMessage(Exception), Exception);
+            }
         }
 
         /// <summary>
@@ -73,8 +77,19 @@ namespace APKInstaller
 
         private void SynchronizationContext_UnhandledException(object sender, Helpers.Exceptions.UnhandledExceptionEventArgs e)
         {
-            SettingsHelper.LogManager.GetLogger("UnhandledException").Error($"\n{e.Exception.Message}\n{e.Exception.HResult}(0x{Convert.ToString(e.Exception.HResult, 16)})\n{e.Exception.StackTrace}\nHelperLink: {e.Exception.HelpLink}", e.Exception);
+            SettingsHelper.LogManager.GetLogger("UnhandledException").Error(ExceptionToMessage(e.Exception), e.Exception);
             e.Handled = true;
+        }
+
+        private string ExceptionToMessage(Exception ex)
+        {
+            StringBuilder builder = new StringBuilder();
+            builder.Append('\n');
+            if (!string.IsNullOrWhiteSpace(ex.Message)) { builder.AppendLine($"Message: {ex.Message}"); }
+            builder.AppendLine($"HResult: {ex.HResult} (0x{Convert.ToString(ex.HResult, 16)})");
+            if (!string.IsNullOrWhiteSpace(ex.StackTrace)) { builder.AppendLine(ex.StackTrace); }
+            if (!string.IsNullOrWhiteSpace(ex.HelpLink)) { builder.Append($"HelperLink: {ex.HelpLink}"); }
+            return builder.ToString();
         }
 
         private Window m_window;
