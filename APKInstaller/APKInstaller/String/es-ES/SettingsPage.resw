@@ -223,7 +223,7 @@
     <value>Registros</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may contains something unpleasant. Such as ADs, broken functions even virus. Please go to Microsoft Store to download the original one. See our Github Repository to learn more about it.</value>
+    <value>Una versión modificada puede contener algo desagradable. Como anuncios, funciones rotas e incluso virus. Por favor ve a la tienda de Microsoft para descargar el original. Mira nuestro repositorio de Github para aprender más sobre ello.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>¡Estás usando una versión modificada!</value>
