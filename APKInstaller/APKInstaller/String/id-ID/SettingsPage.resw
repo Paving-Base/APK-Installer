@@ -127,7 +127,7 @@
     <value>Unduh otomatis saat paket berasal dari URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Does Auto Download Online Packages?</value>
+    <value>Apakah Otomatis Unduh Paket Daring?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Pilih Jenis Tampilan Latar Belakang untuk Windows 11</value>
@@ -154,13 +154,13 @@
     <value>Tutup ADB mungkin dapat merusak Pemasang lain saat masih terbuka.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Does Close ADB when Closing Installer?</value>
+    <value>Apakah Tutup ADB saat Menutup Penginstal?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
     <value>Tutup Penginstal setelah APK diinstal dan mulai.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Does Close Installer when APP is Ready?</value>
+    <value>Apakah Tutup Pemasang saat Aplikasi sudah Siap?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Konfigurasi</value>
@@ -217,16 +217,16 @@
     <value>Terakhir Periksa:</value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
-    <value>Learn More</value>
+    <value>Pelajari Lebih Lanjut</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
     <value>Logs</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may contains something unpleasant. Such as ADs, broken functions even virus. Please go to Microsoft Store to download the original one. See our Github Repository to learn more about it.</value>
+    <value>Versi yang dimodifikasi mungkin berisi sesuatu yang tidak menyenangkan. Seperti iklan, fungsi rusak bahkan virus. Silahkan buka Microsoft Store untuk mengunduh yang asli. Lihat Repositori GitHub kami untuk mempelajari lebih lanjut tentangnya.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>You are using a modified version!</value>
+    <value>Anda sedang menggunakan versi yang dimodifikasi!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>Nonaktifkan untuk terhubung ke perangkat lain.</value>
