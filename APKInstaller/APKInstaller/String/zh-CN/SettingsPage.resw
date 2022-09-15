@@ -127,7 +127,7 @@
     <value>当安装包来自 URL 链接时自动下载。</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Does Auto Download Online Packages?</value>
+    <value>是否自动下载在线安装包？</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>选择适用于 Windows 11 的背景色类型</value>
@@ -154,13 +154,13 @@
     <value>关闭 ADB 可能会使其他正在运行的安装程序崩溃。</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Does Close ADB when Closing Installer?</value>
+    <value>关闭安装程序时是否关闭ADB？</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
     <value>在 APK 安装完成并启动后关闭安装程序。</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Does Close Installer when APP is Ready?</value>
+    <value>当应用程序准备就绪后是否关闭安装程序？</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>配置</value>
@@ -217,7 +217,7 @@
     <value>上次检查时间: </value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
-    <value>Learn More</value>
+    <value>了解更多</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
     <value>日志</value>
