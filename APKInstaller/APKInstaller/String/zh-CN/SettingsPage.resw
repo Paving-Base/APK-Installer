@@ -223,10 +223,10 @@
     <value>日志</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may contains something unpleasant. Such as ADs, broken functions even virus. Please go to Microsoft Store to download the original one. See our Github Repository to learn more about it.</value>
+    <value>修改版可能会包含一些不好的东西，包括但不限于广告、损坏的特性，甚至是病毒。请前往 Microsoft Store 安装原版。请参阅我们的 Github 仓库了解更多信息。</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>You are using a modified version!</value>
+    <value>您正在使用修改版！</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>关闭它以连接到其他设备。</value>
