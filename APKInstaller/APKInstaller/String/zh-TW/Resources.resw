@@ -133,10 +133,10 @@
     <value>程式出現了錯誤……</value>
   </data>
   <data name="ImageLoadError" xml:space="preserve">
-    <value>Picture loading failed.</value>
+    <value>圖片載入失敗。</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>There are some problems with the network...</value>
+    <value>網路出現了一些問題……</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>否</value>
