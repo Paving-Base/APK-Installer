@@ -130,10 +130,11 @@
     <value>Compactar superposición</value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
-    <value>A development version app may not stable. Download release version on Microsoft Store.</value>
+    <value>Una aplicación en versión de desarrollo puede no ser estable.
+Descarga la versión de publicación en la tienda de Microsoft.</value>
   </data>
   <data name="DevelopmentInfoBar.Title" xml:space="preserve">
-    <value>You are using a development version app.</value>
+    <value>Estás usando una aplicación en versión de desarrollo.</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
     <value>Introducir superposición compacta</value>
