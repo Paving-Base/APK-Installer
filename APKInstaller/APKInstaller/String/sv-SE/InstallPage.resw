@@ -127,7 +127,7 @@
     <value>ADB is missing</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>APK File</value>
+    <value>APK-fil</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>Capabilities: </value>
@@ -152,6 +152,9 @@
   </data>
   <data name="CheckingADB" xml:space="preserve">
     <value>Checking ADB...</value>
+  </data>
+  <data name="CheckingPath" xml:space="preserve">
+    <value>Checking Path...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>Click here to read them</value>

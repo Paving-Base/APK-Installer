@@ -1,4 +1,4 @@
-#### ¡Bienvenido al Instalador de APK!
+#### ¡Bienvenido a APK Installer!
 
 ##### Declaración
 1. Por favor, sigue el [contrato de licencia de usuario final del Instalador de APK y la política de privacidad](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
@@ -9,7 +9,7 @@
 ##### Traducir
 Gracias a los traductores de [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") por su apoyo. Si hay algún problema con la traducción, por favor ven y corrígela.
 
-##### Colaboradores
+##### Contribuidores
 - [wherewhere](https://github.com/wherewhere)
 - [Void48](https://github.com/Void48)
 - [EP012014](https://github.com/EP012014)

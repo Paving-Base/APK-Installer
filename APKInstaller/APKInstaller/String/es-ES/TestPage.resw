@@ -124,13 +124,13 @@
     <value>Aplicaciones</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
-    <value>Introducir o Salir de Superposición Compacta</value>
+    <value>Introducir o salir de superposición compacta</value>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
-    <value>Compactar Superposición</value>
+    <value>Compactar superposición</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
-    <value>Introducir Superposición Compacta</value>
+    <value>Introducir superposición compacta</value>
   </data>
   <data name="LanguageSettings.Description" xml:space="preserve">
     <value>Selecciona idioma y reinicia para cambiar el idioma</value>
@@ -166,10 +166,10 @@
     <value>Probando</value>
   </data>
   <data name="TitleBarSettings.Description" xml:space="preserve">
-    <value>Extiende el Contenido En la Barra de Títulos</value>
+    <value>Extiende el contenido en la barra de títulos</value>
   </data>
   <data name="TitleBarSettings.Header" xml:space="preserve">
-    <value>Barra de Título</value>
+    <value>Barra de título</value>
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
     <value>Test UI</value>
