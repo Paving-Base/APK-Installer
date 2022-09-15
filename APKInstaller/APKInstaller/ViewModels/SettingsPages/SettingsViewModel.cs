@@ -2,6 +2,7 @@
 using APKInstaller.Helpers;
 using APKInstaller.Models;
 using APKInstaller.Pages.SettingsPages;
+using ColorCode.Compilation.Languages;
 using CommunityToolkit.WinUI;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
@@ -141,7 +142,7 @@ namespace APKInstaller.ViewModels.SettingsPages
             }
         }
 
-        public int SelectedTheme
+        public static int SelectedTheme
         {
             get => 2 - (int)ThemeHelper.RootTheme;
             set
@@ -153,7 +154,7 @@ namespace APKInstaller.ViewModels.SettingsPages
             }
         }
 
-        public int SelectedBackdrop
+        public static int SelectedBackdrop
         {
             get => (int)SettingsHelper.Get<BackdropType>(SettingsHelper.SelectedBackdrop);
             set
@@ -166,6 +167,11 @@ namespace APKInstaller.ViewModels.SettingsPages
                 }
             }
         }
+
+        public static bool IsModified => Package.Current.PublisherDisplayName != "wherewhere"
+            || Package.Current.Id.Name != "18184wherewhere.AndroidAppInstaller"
+            || (Package.Current.Id.PublisherId != "4v4sx105x6y4r" && Package.Current.Id.PublisherId != "d0s2e6z6qkbn0")
+            || (Package.Current.Id.Publisher != "CN=2C3A37C0-35FC-4839-B08C-751C1C1AFBF5" && Package.Current.Id.Publisher != "CN=where");
 
         private bool _checkingUpdate;
         public bool CheckingUpdate

@@ -7,6 +7,7 @@ using System;
 using System.ComponentModel;
 using System.Net.Http;
 using Windows.System;
+using static System.Net.Mime.MediaTypeNames;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -63,14 +64,18 @@ namespace APKInstaller.Controls.Dialogs
             {
                 try
                 {
-                    MarkdownText.Text = await client.GetStringAsync(value);
+                    string text = await client.GetStringAsync(value);
+                    if (string.IsNullOrWhiteSpace(text)) { throw new ArgumentNullException(nameof(text)); }
+                    MarkdownText.Text = text;
                     Title = string.Empty;
                 }
                 catch
                 {
                     try
                     {
-                        MarkdownText.Text = await client.GetStringAsync(ContentInfo.FormatURL(GitInfo.JSDELIVR_API));
+                        string text = await client.GetStringAsync(ContentInfo.FormatURL(GitInfo.JSDELIVR_API));
+                        if (string.IsNullOrWhiteSpace(text)) { throw new ArgumentNullException(nameof(text)); }
+                        MarkdownText.Text = text;
                         Title = string.Empty;
                     }
                     catch

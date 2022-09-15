@@ -48,12 +48,13 @@ namespace APKInstaller
             ThemeHelper.Initialize();
             BackdropType Backdrop = SettingsHelper.Get<BackdropType>(SettingsHelper.SelectedBackdrop);
             ((MainWindow)m_window).Backdrop.SetBackdrop(Backdrop);
+            SettingsHelper.CheckAssembly();
             m_window.Activate();
         }
 
         private void Application_UnhandledException(object sender, Microsoft.UI.Xaml.UnhandledExceptionEventArgs e)
         {
-            SettingsHelper.LogManager.GetLogger("UnhandledException").Error(ExceptionToMessage(e.Exception), e.Exception);
+            SettingsHelper.LogManager.GetLogger("Unhandled Exception - Application").Error(ExceptionToMessage(e.Exception), e.Exception);
             e.Handled = true;
         }
 
@@ -61,7 +62,7 @@ namespace APKInstaller
         {
             if (e.ExceptionObject is Exception Exception)
             {
-                SettingsHelper.LogManager.GetLogger("UnhandledException").Error(ExceptionToMessage(Exception), Exception);
+                SettingsHelper.LogManager.GetLogger("Unhandled Exception - CurrentDomain").Error(ExceptionToMessage(Exception), Exception);
             }
         }
 
@@ -77,7 +78,7 @@ namespace APKInstaller
 
         private void SynchronizationContext_UnhandledException(object sender, Helpers.Exceptions.UnhandledExceptionEventArgs e)
         {
-            SettingsHelper.LogManager.GetLogger("UnhandledException").Error(ExceptionToMessage(e.Exception), e.Exception);
+            SettingsHelper.LogManager.GetLogger("Unhandled Exception - SynchronizationContext").Error(ExceptionToMessage(e.Exception), e.Exception);
             e.Handled = true;
         }
 
