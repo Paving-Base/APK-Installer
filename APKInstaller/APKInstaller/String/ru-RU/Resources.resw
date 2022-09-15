@@ -135,7 +135,7 @@
     <value>В работе программы произошёл сбой…</value>
   </data>
   <data name="ImageLoadError" xml:space="preserve">
-    <value>Picture load failed</value>
+    <value>Picture loading failed.</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
     <value>There are some problems with the network...</value>
