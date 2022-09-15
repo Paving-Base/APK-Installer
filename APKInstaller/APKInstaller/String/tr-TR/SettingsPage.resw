@@ -127,7 +127,7 @@
     <value>Paket URL'den olduğunda otomatik indir.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Does Auto Download Online Packages?</value>
+    <value>Çevrimiçi Paketleri Otomatik İndirir mi?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Windows 11 için Arka Plan Türünü Seçin</value>
@@ -154,13 +154,13 @@
     <value>ADB'yi kapatmak diğer yükleyicileri hala açıkken bozabilir.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Does Close ADB when Closing Installer?</value>
+    <value>Yükleyici kapatılırken ADB kapatılsın mı?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
     <value>APK yüklendikten sonra yükleyiciyi kapatın ve başlatın.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Does Close Installer when APP is Ready?</value>
+    <value>Uygulama hazır olduğunda yükleyici kapatılsın mı?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Yapılandırmalar</value>
@@ -217,16 +217,16 @@
     <value>Son Kontrol:</value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
-    <value>Learn More</value>
+    <value>Daha Fazla Bilgi</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
     <value>Günlükler</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may contains something unpleasant. Such as ADs, broken functions even virus. Please go to Microsoft Store to download the original one. See our Github Repository to learn more about it.</value>
+    <value>Değiştirilmiş bir sürüm hoş olmayan bir şey içerebilir. AD'ler gibi, bozuk işlevler hatta virüs. Orijinalini indirmek için lütfen Microsoft Store'a gidin. Bununla ilgili daha fazla bilgi edinmek için Github Depomuza bakın.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>You are using a modified version!</value>
+    <value>Değiştirilmiş bir sürüm kullanıyorsunuz!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>Başka bir cihaza bağlanmak için devre dışı bırakın.</value>
