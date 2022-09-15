@@ -6,7 +6,7 @@
         <Setter Property="ItemsPanel">
             <Setter.Value>
                 <ItemsPanelTemplate>
-                    <StackPanel Orientation="Vertical" Spacing="2" >
+                    <StackPanel Orientation="Vertical" Spacing="2">
                         <StackPanel.ChildrenTransitions>
                             <TransitionCollection>
                                 <ReorderThemeTransition />
@@ -33,7 +33,8 @@
                             Margin="1,32,0,8"
                             AutomationProperties.HeadingLevel="Level2"
                             Style="{ThemeResource BodyStrongTextBlockStyle}"
-                            Text="{TemplateBinding Header}" />
+                            Text="{TemplateBinding Header}"
+                            Visibility="{Binding Header, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource StringVisibilityConverter}}" />
                         <ItemsPresenter Grid.Row="1" />
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">

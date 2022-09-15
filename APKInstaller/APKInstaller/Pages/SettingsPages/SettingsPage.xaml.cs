@@ -60,7 +60,7 @@ namespace APKInstaller.Pages.SettingsPages
             if (AdbServer.Instance.GetStatus().IsRunning) { ADBHelper.Monitor.DeviceChanged -= Provider.OnDeviceChanged; }
         }
 
-        private async void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             switch ((sender as FrameworkElement).Tag as string)
             {
@@ -109,7 +109,7 @@ namespace APKInstaller.Pages.SettingsPages
                     _ = await Launcher.LaunchFolderAsync(await StorageFolder.GetFolderFromPathAsync(Provider.ADBPath[..Provider.ADBPath.LastIndexOf(@"\")]));
                     break;
                 case "LogFolder":
-                    _ = Launcher.LaunchUriAsync(new Uri(Path.Combine(ApplicationData.Current.LocalFolder.Path, "MetroLogs")));
+                    _ = Launcher.LaunchFolderAsync(await StorageFolder.GetFolderFromPathAsync(Path.Combine(ApplicationData.Current.LocalFolder.Path, "MetroLogs")));
                     break;
                 case "WindowsColor":
                     _ = Launcher.LaunchUriAsync(new Uri("ms-settings:colors"));

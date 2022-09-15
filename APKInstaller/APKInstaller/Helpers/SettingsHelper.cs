@@ -5,8 +5,10 @@ using MetroLog.Targets;
 using Microsoft.UI.Xaml;
 using System;
 using System.IO;
+using System.Reflection;
 using System.Text.Json;
 using System.Threading.Tasks;
+using Windows.ApplicationModel;
 using Windows.Storage;
 using Windows.UI.ViewManagement;
 
@@ -115,6 +117,14 @@ namespace APKInstaller.Helpers
             SetDefaultSettings();
         }
 
+        public static void CheckAssembly()
+        {
+            LogManager.GetLogger("Hello World!").Info("\nThis is a hello from the author @wherewhere.\nIf you can't find this hello in your installed version, that means you have installed a piracy one.\nRemember, the author is @wherewhere. If not, you possible install a modified one too.");
+            AssemblyName Info = Assembly.GetExecutingAssembly().GetName();
+            if (Info.Name != $"{"APK"}{"Installer"}") { LogManager.GetLogger("Check Assembly").Error($"\nAssembly name is wrong.\nThe wrong name is {Info.Name}.\nIt should be {$"{"APK"}{"Installer"}"}."); };
+            if (Info.Version.Major != Package.Current.Id.Version.Major || Info.Version.Minor != Package.Current.Id.Version.Minor || Info.Version.Build != Package.Current.Id.Version.Build) { LogManager.GetLogger("CheckAssembly").Error($"\nAssembly version is wrong.\nThe wrong version is {Info.Version}.\nIt should be {Package.Current.Id.Version.ToFormattedString()}."); };
+        }
+
         private static LoggingConfiguration GetDefaultReleaseConfiguration()
         {
             string path = Path.Combine(ApplicationData.Current.LocalFolder.Path, "MetroLogs");
@@ -123,7 +133,6 @@ namespace APKInstaller.Helpers
             loggingConfiguration.AddTarget(LogLevel.Info, LogLevel.Fatal, new StreamingFileTarget(path, 7));
             return loggingConfiguration;
         }
-
     }
 
     public class SystemTextJsonObjectSerializer : CommunityToolkit.Common.Helpers.IObjectSerializer

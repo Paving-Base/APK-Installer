@@ -72,6 +72,7 @@ namespace APKInstaller.Controls
                     try
                     {
                         string xaml = await client.GetStringAsync(value);
+                        if (string.IsNullOrWhiteSpace(xaml)) { throw new ArgumentNullException(nameof(xaml)); }
                         UIElement = await DispatcherQueue.EnqueueAsync(() => { return (UIElement)XamlReader.Load(xaml); });
                     }
                     catch
@@ -79,6 +80,7 @@ namespace APKInstaller.Controls
                         try
                         {
                             string xaml = await client.GetStringAsync(ContentInfo.FormatURL(GitInfo.JSDELIVR_API));
+                            if (string.IsNullOrWhiteSpace(xaml)) { throw new ArgumentNullException(nameof(xaml)); }
                             UIElement = await DispatcherQueue.EnqueueAsync(() => { return (UIElement)XamlReader.Load(xaml); });
                         }
                         catch
@@ -121,6 +123,7 @@ namespace APKInstaller.Controls
                     try
                     {
                         string xaml = await client.GetStringAsync(ContentUri);
+                        if (string.IsNullOrWhiteSpace(xaml)) { throw new ArgumentNullException(nameof(xaml)); }
                         UIElement = await DispatcherQueue.EnqueueAsync(() => { return (UIElement)XamlReader.Load(xaml); });
                     }
                     catch
@@ -131,7 +134,7 @@ namespace APKInstaller.Controls
                     {
                         if (UIElement != null)
                         {
-                            this.Content = UIElement;
+                            _ = DispatcherQueue.EnqueueAsync(() => this.Content = UIElement);
                         }
                     }
                 }

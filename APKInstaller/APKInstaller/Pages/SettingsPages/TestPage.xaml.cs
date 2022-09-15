@@ -3,9 +3,12 @@ using APKInstaller.Helpers;
 using APKInstaller.Pages.ToolsPages;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
+using System;
 using System.ComponentModel;
 using System.Globalization;
+using Windows.ApplicationModel;
 using Windows.Globalization;
+using Windows.System;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -63,6 +66,11 @@ namespace APKInstaller.Pages.SettingsPages
             }
         }
 
+        internal bool IsDevelopment => Package.Current.IsDevelopmentMode
+            || Package.Current.SignatureKind != PackageSignatureKind.None
+            || Package.Current.SignatureKind != PackageSignatureKind.Developer
+            || Package.Current.Status.Modified;
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void RaisePropertyChangedEvent([System.Runtime.CompilerServices.CallerMemberName] string name = null)
@@ -76,6 +84,9 @@ namespace APKInstaller.Pages.SettingsPages
         {
             switch ((sender as FrameworkElement).Tag as string)
             {
+                case "Store":
+                    _ = Launcher.LaunchUriAsync(new Uri("ms-windows-store://pdp/?ProductId=9P2JFQ43FPPG&mode=mini"));
+                    break;
                 case "OutPIP":
                     UIHelper.MainWindow.GetAppWindowForCurrentWindow().SetPresenter(Microsoft.UI.Windowing.AppWindowPresenterKind.Default);
                     break;
