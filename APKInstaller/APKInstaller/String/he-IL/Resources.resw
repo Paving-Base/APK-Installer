@@ -133,11 +133,10 @@
     <value>היתה שגיאה בתוכנה...</value>
   </data>
   <data name="ImageLoadError" xml:space="preserve">
-    <value>נכשלה טעינת התמונה
-</value>
+    <value>Picture load failed</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>חריג רשת</value>
+    <value>There are some problems with the network...</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>לא</value>
