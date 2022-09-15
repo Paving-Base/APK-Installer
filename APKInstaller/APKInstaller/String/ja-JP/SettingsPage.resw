@@ -127,7 +127,7 @@
     <value>パッケージがURLからの場合、自動的にダウンロードします。</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>オンラインパッケージは自動でダウンロードしますか?</value>
+    <value>Does Auto Download Online Packages?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Windows 11用の背景の種類を選択</value>
@@ -154,13 +154,13 @@
     <value>Close ADB はまだ開いているときに他のインストーラを壊す可能性があります。</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>インストーラを閉じるときにADBを閉じますか？</value>
+    <value>Does Close ADB when Closing Installer?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
     <value>APKがインストールされ、起動した後にインストーラを閉じます。</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>APPの準備ができたらインストーラを閉じますか？</value>
+    <value>Does Close Installer when APP is Ready?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>コンフィグ</value>
@@ -216,8 +216,17 @@
   <data name="LastChecked.Text" xml:space="preserve">
     <value>最終チェック日時: </value>
   </data>
+  <data name="LearnMoreLink.Content" xml:space="preserve">
+    <value>Learn More</value>
+  </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
     <value>Logs</value>
+  </data>
+  <data name="ModifiedInfoBar.Message" xml:space="preserve">
+    <value>A modified version may contains something unpleasant. Such as ADs, broken functions even virus. Please go to Microsoft Store to download the original one. See our Github Repository to learn more about it.</value>
+  </data>
+  <data name="ModifiedInfoBar.Title" xml:space="preserve">
+    <value>You are using a modified version!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>Disable it to connect to other devices.</value>

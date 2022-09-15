@@ -127,7 +127,7 @@
     <value>Baixar automaticamente quando o pacote vier de um URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Download automático de pacotes online?</value>
+    <value>Does Auto Download Online Packages?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Select Backdrop Type for Windows 11</value>
@@ -154,13 +154,13 @@
     <value>Fechar o ADB pode fazer outros Instaladores abertos pararem de funcionar.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Fechar ADB ao fechar o instalador?</value>
+    <value>Does Close ADB when Closing Installer?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
     <value>Fechar o Instalador após o APK ter sido instalado e iniciado.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Fechar o Installer quando o app estiver pronto?</value>
+    <value>Does Close Installer when APP is Ready?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Configuraçao</value>
@@ -216,8 +216,17 @@
   <data name="LastChecked.Text" xml:space="preserve">
     <value>Última verificação:</value>
   </data>
+  <data name="LearnMoreLink.Content" xml:space="preserve">
+    <value>Learn More</value>
+  </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
     <value>Registros</value>
+  </data>
+  <data name="ModifiedInfoBar.Message" xml:space="preserve">
+    <value>A modified version may contains something unpleasant. Such as ADs, broken functions even virus. Please go to Microsoft Store to download the original one. See our Github Repository to learn more about it.</value>
+  </data>
+  <data name="ModifiedInfoBar.Title" xml:space="preserve">
+    <value>You are using a modified version!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>Desative para conectar a outro dispositivo.</value>

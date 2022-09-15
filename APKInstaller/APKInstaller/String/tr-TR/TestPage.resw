@@ -129,6 +129,12 @@
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
     <value>Kompak Arayüz</value>
   </data>
+  <data name="DevelopmentInfoBar.Message" xml:space="preserve">
+    <value>Bir geliştirme sürümü uygulaması kararlı olmayabilir. Yayın sürümünü Microsoft Store'dan indirin.</value>
+  </data>
+  <data name="DevelopmentInfoBar.Title" xml:space="preserve">
+    <value>Bir geliştirme sürümü uygulaması kullanıyorsunuz.</value>
+  </data>
   <data name="EnterPIP.Content" xml:space="preserve">
     <value>Kompakt Yerleşime Girin</value>
   </data>

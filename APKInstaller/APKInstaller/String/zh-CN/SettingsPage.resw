@@ -154,7 +154,7 @@
     <value>关闭 ADB 可能会使其他正在运行的安装程序崩溃。</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>关闭安装程序时是否关闭 ADB？</value>
+    <value>关闭安装程序时是否关闭ADB？</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
     <value>在 APK 安装完成并启动后关闭安装程序。</value>
@@ -216,8 +216,17 @@
   <data name="LastChecked.Text" xml:space="preserve">
     <value>上次检查时间: </value>
   </data>
+  <data name="LearnMoreLink.Content" xml:space="preserve">
+    <value>了解更多</value>
+  </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
     <value>日志</value>
+  </data>
+  <data name="ModifiedInfoBar.Message" xml:space="preserve">
+    <value>修改版可能会包含一些不好的东西，包括但不限于广告、损坏的特性，甚至是病毒。请前往 Microsoft Store 安装原版。请参阅我们的 Github 仓库了解更多信息。</value>
+  </data>
+  <data name="ModifiedInfoBar.Title" xml:space="preserve">
+    <value>您正在使用修改版！</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>关闭它以连接到其他设备。</value>

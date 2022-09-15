@@ -216,8 +216,17 @@
   <data name="LastChecked.Text" xml:space="preserve">
     <value>上次檢查時間: </value>
   </data>
+  <data name="LearnMoreLink.Content" xml:space="preserve">
+    <value>瞭解更多</value>
+  </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
     <value>日誌</value>
+  </data>
+  <data name="ModifiedInfoBar.Message" xml:space="preserve">
+    <value>修改版可能會包含一些不好的東西，包括但不限於廣告、損壞的特性，甚至是病毒。 請前往 Microsoft Store 安裝原版。 請參閱我們的 Github 倉庫瞭解更多資訊。</value>
+  </data>
+  <data name="ModifiedInfoBar.Title" xml:space="preserve">
+    <value>您正在使用修改版！</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>關閉它以連接到其他設備。</value>

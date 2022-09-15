@@ -129,6 +129,12 @@
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
     <value>Hamparan Ringkas</value>
   </data>
+  <data name="DevelopmentInfoBar.Message" xml:space="preserve">
+    <value>Aplikasi versi pengembangan mungkin tidak stabil. Unduh versi rilis di Microsoft Store.</value>
+  </data>
+  <data name="DevelopmentInfoBar.Title" xml:space="preserve">
+    <value>Anda sedang menggunakan versi pengembangan aplikasi.</value>
+  </data>
   <data name="EnterPIP.Content" xml:space="preserve">
     <value>Masuk Hamparan Ringkas</value>
   </data>

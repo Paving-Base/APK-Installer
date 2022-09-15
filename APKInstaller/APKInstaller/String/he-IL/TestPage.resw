@@ -129,6 +129,12 @@
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
     <value>שכבת על קומפקטית</value>
   </data>
+  <data name="DevelopmentInfoBar.Message" xml:space="preserve">
+    <value>A development version app may not stable. Download release version on Microsoft Store.</value>
+  </data>
+  <data name="DevelopmentInfoBar.Title" xml:space="preserve">
+    <value>You are using a development version app.</value>
+  </data>
   <data name="EnterPIP.Content" xml:space="preserve">
     <value>היכנס או צא מ-Comact Overlay</value>
   </data>

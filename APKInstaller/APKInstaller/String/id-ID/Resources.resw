@@ -133,10 +133,10 @@
     <value>Terjadi kesalahan pada program…</value>
   </data>
   <data name="ImageLoadError" xml:space="preserve">
-    <value>Gambar gagal untuk dimuat</value>
+    <value>Memuat gambar gagal.</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>Pengecualian jaringan</value>
+    <value>Ada beberapa masalah dengan jaringan...</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>Tidak</value>

@@ -133,10 +133,10 @@
     <value>S’ha produït un error en el programa…</value>
   </data>
   <data name="ImageLoadError" xml:space="preserve">
-    <value>No s’ha pogut carregar la imatge</value>
+    <value>Picture loading failed.</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>Excepció de la xarxa</value>
+    <value>There are some problems with the network...</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>No</value>
