@@ -121,7 +121,7 @@
     <value>詳細</value>
   </data>
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
-    <value>デバイスを待っています...</value>
+    <value>デバイスを待機しています...</value>
   </data>
   <data name="Name.Header" xml:space="preserve">
     <value>名前</value>
@@ -130,7 +130,7 @@
     <value>プロセスID</value>
   </data>
   <data name="ResidentSetSize.Header" xml:space="preserve">
-    <value>Resident Set Size</value>
+    <value>常駐セットサイズ</value>
   </data>
   <data name="State.Header" xml:space="preserve">
     <value>状態</value>
