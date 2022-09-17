@@ -136,7 +136,7 @@
     <value>App Name</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Скасувати</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>Cannot Connect to WSA</value>
@@ -148,7 +148,7 @@
     <value>Cannot open app package</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>Checking...</value>
+    <value>Перевірка...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
     <value>Checking ADB...</value>
@@ -160,19 +160,19 @@
     <value>Click here to read them</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Close</value>
+    <value>Закрити</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
-    <value>Copy</value>
+    <value>Копіювати</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>Devices</value>
+    <value>Пристрої</value>
   </data>
   <data name="Download" xml:space="preserve">
     <value>Download</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>Download Failed</value>
+    <value>Помилка завантаження</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
     <value>Please check your network connection or the URL and try again.</value>
@@ -181,7 +181,7 @@
     <value>Finding WSA...</value>
   </data>
   <data name="Finished" xml:space="preserve">
-    <value>Finished</value>
+    <value>Завершено</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
     <value>WSA Found</value>
@@ -193,7 +193,7 @@
     <value>How to connect WSA?</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
-    <value>Icon</value>
+    <value>Іконка</value>
   </data>
   <data name="IKnow" xml:space="preserve">
     <value>I Know</value>
@@ -240,7 +240,7 @@
     <value>Loading...</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
-    <value>More Info</value>
+    <value>Детальніше</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
     <value>Cannot find Android Device</value>
