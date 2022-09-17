@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
-    <value>について</value>
+    <value>概要</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>ADB Path</value>
+    <value>ADBのパス</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>パッケージがURLからの場合、自動的にダウンロードします。</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Does Auto Download Online Packages?</value>
+    <value>オンラインパッケージは自動でダウンロードしますか?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Windows 11用の背景の種類を選択</value>
@@ -151,34 +151,34 @@
     <value>キャッシュを削除</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Close ADB はまだ開いているときに他のインストーラを壊す可能性があります。</value>
+    <value>ADBを閉じると、他のインストーラがまだ開いているときに壊れる可能性があります。</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Does Close ADB when Closing Installer?</value>
+    <value>インストーラを閉じるときに、ADBを終了しますか？</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
     <value>APKがインストールされ、起動した後にインストーラを閉じます。</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Does Close Installer when APP is Ready?</value>
+    <value>アプリの準備ができたらインストーラを閉じますか？</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
-    <value>コンフィグ</value>
+    <value>設定</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>ネットワーク上でデバイスを接続します。</value>
+    <value>ネットワーク上で端末を接続します。</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
-    <value>デバイスと接続</value>
+    <value>端末と接続</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
-    <value>コンタクト</value>
+    <value>問い合わせ</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>最新の開発のためにソーシャルアプリでフォローしてください。バグを見つけた場合は、PMに報告してください。 私は問題を解決するために最善を尽くします. あなたはテレグラムアカウントを持っている場合, ベース・グループの舗装でチャットへようこそ 😊 !</value>
+    <value>最新の開発のためにソーシャルアプリでフォローしてください。バグを見つけた場合は、PMに報告してください。 私は問題を解決するために最善を尽くします。あなたがTelegramアカウントを持っているなら、ベース・グループのペーブでチャットへ歓迎します 😊 ！</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
-    <value>コンテンツ</value>
+    <value>内容</value>
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
     <value>デバイス</value>
@@ -190,61 +190,61 @@
     <value>サポート</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application, and no ads will be added for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your support.💕</value>
+    <value>APKインストーラはオープンソースのアプリケーションであり、利益のために広告は追加されません。 このアプリが気に入った場合はストアで評価することを忘れないでください。 もちろん、少し寄付して頂けると良いでしょう。ご支援ありがとうございます。💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
-    <value>EULA</value>
+    <value>エンドユーザー向け使用許諾契約</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
-    <value>フィードバック</value>
+    <value>ご意見・ご要望</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
-    <value>アップデートを検索</value>
+    <value>更新を検索</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>テストのページに移動します。</value>
+    <value>テストページに移動します。</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
     <value>テストページへ移動</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
-    <value>アップデートへ</value>
+    <value>更新に移動</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
     <value>我々のチャットに参加</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>最終チェック日時: </value>
+    <value>最終確認日時: </value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
-    <value>Learn More</value>
+    <value>もっと詳しく</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
-    <value>Logs</value>
+    <value>ログ</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may contains something unpleasant. Such as ADs, broken functions even virus. Please go to Microsoft Store to download the original one. See our Github Repository to learn more about it.</value>
+    <value>変更を加えられたバージョンには、不快なものが含まれている可能性があります。ADなど、壊れた機能、更にはウイルス。Microsoft Storeにアクセスして、オリジナルのものをダウンロードしてください。詳細についてはGithubリポジトリを参照してください。</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>You are using a modified version!</value>
+    <value>変更されたバージョンを使用しています！</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Disable it to connect to other devices.</value>
+    <value>他の端末に接続するには無効にしてください。</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>WSAのみですか?</value>
+    <value>WSA専用ですか?</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>その他</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>暗め</value>
+    <value>ダーク</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
     <value>Windows のデフォルト（既定）</value>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
-    <value>白基調</value>
+    <value>ライト</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
     <value>ストアで評価</value>
@@ -259,7 +259,7 @@
     <value>アプリをリセット</value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
-    <value>初期化</value>
+    <value>リセット</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
     <value>はい</value>
@@ -268,10 +268,10 @@
     <value>データをリセットしてもよろしいですか。</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
-    <value>デバイスを選択</value>
+    <value>端末を選択</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
-    <value>デバイスが接続されていないときにヘルパーを表示する</value>
+    <value>端末が接続されていないときにヘルパーを表示する</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
     <value>表示ヘルパーとは？</value>
@@ -286,7 +286,7 @@
     <value>アプリのテーマ</value>
   </data>
   <data name="ThemesSettingsHeader.Header" xml:space="preserve">
-    <value>Themes</value>
+    <value>テーマ</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>設定</value>
@@ -301,6 +301,6 @@
     <value>最新</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Windows の設定</value>
+    <value>Windows のカラー設定</value>
   </data>
 </root>
