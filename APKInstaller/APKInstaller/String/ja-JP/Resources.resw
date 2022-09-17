@@ -136,13 +136,13 @@
     <value>画像の読み込みに失敗しました。</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>There are some problems with the network...</value>
+    <value>ネットワークに問題があります。</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>いいえ</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>APKファイルの分割</value>
+    <value>分割APKファイル</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>はい</value>
