@@ -2,8 +2,8 @@
 
 ##### 宣言
 1. [APKインストーラのエンドユーザーライセンス契約とプライバシーポリシーに従ってください](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. このプログラムはオープンソースソフトウェアです そのため、このGithub リポジトリ [または](https://github.com/Paving-Base/APK-Installer) アプリケーション [からのプログラムが](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) であることを確認してデータを安全に保つようにしてください。
-3. プログラムのソースが異常でない場合。 すべてのデータはプログラムで実行されたり、プログラム実行中にローカルに保存されたりするためだけに使用されます 開発者はあなたのデータを盗むことはありません Still, please pay attention to the security of the environment.
+2. このプログラムはオープンソースソフトウェアです そのため、[このGithub リポジトリ](https://github.com/Paving-Base/APK-Installer)  または [このアプリケーション](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) からのプログラムであることを確認してデータを安全に保つようにしてください。
+3. プログラムのソースが異常でない場合、すべてのデータはプログラムで実行するためだけに使用されるか プログラム実行中にローカルに保存され、開発者はあなたのデータを盗むことはありません。 それでも、あなたの環境のセキュリティには注意してください。
 4. このアプリケーションのテキストの翻訳は、 [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") コミュニティから来ており、すべてのテキストが著者の見解を表しているわけではありません。
 
 ##### 翻訳する
