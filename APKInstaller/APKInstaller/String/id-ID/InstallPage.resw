@@ -342,8 +342,8 @@
     <value>Menunggu WSA Mulai...
 Ini mungkin memakan waktu lama. Duduk dan rileks.</value>
   </data>
-  <data name="Wellcome" xml:space="preserve">
-    <value>Wellcome!</value>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA sedang Berjalan</value>
