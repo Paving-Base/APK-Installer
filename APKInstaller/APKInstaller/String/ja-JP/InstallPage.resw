@@ -341,7 +341,7 @@
 これには時間がかかる場合があります。</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome!</value>
+    <value>ようこそ！</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSAは実行中です</value>
