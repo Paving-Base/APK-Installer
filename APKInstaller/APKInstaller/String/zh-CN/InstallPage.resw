@@ -341,7 +341,7 @@
 这通常需要很长时间。请坐和放宽。</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome!</value>
+    <value>欢迎！</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA 正在运行</value>
