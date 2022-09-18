@@ -7,7 +7,7 @@
 4. Bu uygulamanın metninin çevirisi [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") topluluğundan gelir ve tüm metinler yazarın görüşlerini temsil etmez.
 
 ##### Çeviri
-[Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") çevirmenlerine destekleri için teşekkür ederiz. Çeviriyle ilgili herhangi bir sorun varsa, lütfen gelin ve düzeltin. And please take translation seriously. Your words will be read all over the world.
+[Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") çevirmenlerine destekleri için teşekkür ederiz. Çeviriyle ilgili herhangi bir sorun varsa, lütfen gelin ve düzeltin. Ve lütfen çeviriyi ciddiye alın. Kelimeleriniz tüm dünyada okunacak.
 
 ##### Katkıda bulunanlar
 - [wherewhere](https://github.com/wherewhere)
