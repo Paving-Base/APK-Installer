@@ -340,8 +340,8 @@
     <value>正在等待 WSA 启动……
 这通常需要很长时间。请坐和放宽。</value>
   </data>
-  <data name="Wellcome" xml:space="preserve">
-    <value>Wellcome!</value>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA 正在运行</value>
