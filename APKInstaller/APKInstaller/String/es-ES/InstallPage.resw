@@ -340,8 +340,8 @@
     <value>Esperando a que WSA empiece...
 Puede que esto tome un largo tiempo. Siéntate y relájate.</value>
   </data>
-  <data name="Wellcome" xml:space="preserve">
-    <value>Wellcome!</value>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA se está ejecutando</value>
