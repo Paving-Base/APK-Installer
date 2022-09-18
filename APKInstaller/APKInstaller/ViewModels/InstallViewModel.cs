@@ -9,12 +9,9 @@ using APKInstaller.Pages;
 using APKInstaller.Pages.SettingsPages;
 using CommunityToolkit.WinUI;
 using CommunityToolkit.WinUI.Connectivity;
-using CommunityToolkit.WinUI.UI.Controls;
 using Downloader;
-using Microsoft.UI;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Media;
 using PInvoke;
 using SharpCompress.Archives;
 using SharpCompress.Common;
@@ -26,7 +23,6 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net;
-using System.Reflection;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
@@ -578,7 +574,7 @@ namespace APKInstaller.ViewModels
                 ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("InstallPage");
                 MarkdownDialog dialog = new()
                 {
-                    Title = _loader.GetString("Wellcome"),
+                    Title = _loader.GetString("Welcome"),
                     XamlRoot = _page.XamlRoot,
                     DefaultButton = ContentDialogButton.Close,
                     CloseButtonText = _loader.GetString("IKnow"),

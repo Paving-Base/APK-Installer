@@ -1,18 +1,13 @@
 using APKInstaller.Models;
-using CommunityToolkit.WinUI;
 using CommunityToolkit.WinUI.Connectivity;
 using CommunityToolkit.WinUI.UI.Controls;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Markup;
-using SharpCompress.Common;
 using System;
 using System.ComponentModel;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Windows.Media.Protection.PlayReady;
 using Windows.System;
-using static System.Net.Mime.MediaTypeNames;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
