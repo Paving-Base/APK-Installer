@@ -7,7 +7,7 @@
 4. 本应用文本翻译来自 [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") 社区，所有文本均不代表作者观点。
 
 ##### 翻译
-感谢 [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") 翻译者的支持。 如果翻译出现了什么问题，欢迎前来纠正。
+感谢 [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") 翻译者的支持。 如果翻译出现了什么问题，欢迎前来纠正。 And please take translation seriously. Your words will be read all over the world.
 
 ##### 参与人员
 - [wherewhere](https://github.com/wherewhere)
@@ -18,8 +18,9 @@
 
 ##### 引用及参考
 - [WinUI](https://github.com/microsoft/microsoft-ui-xaml "WinUI")
+- [MetroLog](https://github.com/roubachof/MetroLog "MetroLog")
+- [Downloader](https://github.com/bezzad/Downloader "Downloader")
 - [AAPTForNet](https://github.com/canheo136/QuickLook.Plugin.ApkViewer "AAPTForNet")
 - [Sharp Compress](https://github.com/adamhathcock/sharpcompress "Sharp Compress")
-- [Portable Downloader](https://github.com/madnik7/PortableDownloader "Portable Downloader")
 - [Advanced Sharp Adb Client](https://github.com/yungd1plomat/AdvancedSharpAdbClient "Advanced Sharp Adb Client")
 - [Windows Community Toolkit](https://github.com/CommunityToolkit/WindowsCommunityToolkit "Windows Community Toolkit")
