@@ -11,6 +11,7 @@ An Android Application Installer for Windows
 
 [![Microsoft Store](https://img.shields.io/badge/download-%e4%b8%8b%e8%bd%bd-magenta.svg?label=Microsoft%20Store&logo=Microsoft&style=for-the-badge&color=11a2f8)](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG "Microsoft Store")
 [![GitHub All Releases](https://img.shields.io/github/downloads/Paving-Base/APK-Installer/total.svg?label=DOWNLOAD&logo=github&style=for-the-badge)](https://github.com/Paving-Base/APK-Installer/releases/latest "GitHub All Releases")
+
 ## 语言
  - [中文](README.md)
  - [English](README.en-US.md)
@@ -32,12 +33,12 @@ An Android Application Installer for Windows
 
 ## 如何安装应用
 ### 最低需求
-- Windows 10 Build 18362及以上
-- 设备需支持ARM64/x86/x64
-- 至少400MB的空余储存空间(用于储存安装包与安装应用)
+- Windows 10 Build 17763 及以上
+- 设备需支持 ARM64/x86/x64
+- 至少 400MB 的空余储存空间 (用于储存安装包与安装应用)
 
 ### 使用应用安装脚本安装应用
-- 下载并解压最新的[安装包`(APKInstaller (Package)_x.x.x.0_Test.rar)`](https://github.com/Tangent-90/Coolapk-UWP/releases/latest "下载安装包")
+- 下载并解压最新的[安装包`(APKInstaller (Package)_x.x.x.0_Test.rar)`](https://github.com/Paving-Base/APK-Installer/releases/latest "下载安装包")
 - 如果没有应用安装脚本，下载[`Install.ps1`](Install.ps1)到目标目录
 ![Install.ps1](Images/Guides/Snipaste_2019-10-12_22-49-11.png)
 - 右击`Install.ps1`，选择“使用PowerShell运行”
@@ -68,6 +69,7 @@ An Android Application Installer for Windows
 
 ## 使用到的模块
 - [WinUI](https://github.com/microsoft/microsoft-ui-xaml "WinUI")
+- [MetroLog](https://github.com/roubachof/MetroLog "MetroLog")
 - [Downloader](https://github.com/bezzad/Downloader "Downloader")
 - [AAPTForNet](https://github.com/canheo136/QuickLook.Plugin.ApkViewer "AAPTForNet")
 - [Sharp Compress](https://github.com/adamhathcock/sharpcompress "Sharp Compress")

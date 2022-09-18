@@ -9,9 +9,12 @@ using APKInstaller.Pages;
 using APKInstaller.Pages.SettingsPages;
 using CommunityToolkit.WinUI;
 using CommunityToolkit.WinUI.Connectivity;
+using CommunityToolkit.WinUI.UI.Controls;
 using Downloader;
+using Microsoft.UI;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Media;
 using PInvoke;
 using SharpCompress.Archives;
 using SharpCompress.Common;
@@ -546,6 +549,8 @@ namespace APKInstaller.ViewModels
         public async Task Refresh(bool force = true)
         {
             IsInitialized = false;
+            WaitProgressText = _loader.GetString("Loading");
+            await OnFirstRun();
             try
             {
                 if (force)
@@ -563,6 +568,30 @@ namespace APKInstaller.ViewModels
             {
                 PackageError(ex.Message);
                 IsInstalling = false;
+            }
+        }
+
+        private async Task OnFirstRun()
+        {
+            if (SettingsHelper.Get<bool>(SettingsHelper.IsFirstRun))
+            {
+                ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("InstallPage");
+                MarkdownDialog dialog = new()
+                {
+                    Title = _loader.GetString("Wellcome"),
+                    XamlRoot = _page.XamlRoot,
+                    DefaultButton = ContentDialogButton.Close,
+                    CloseButtonText = _loader.GetString("IKnow"),
+                    ContentTask = async () =>
+                    {
+                        string langcode = LanguageHelper.GetCurrentLanguage();
+                        Uri dataUri = new($"ms-appx:///String/{langcode}/About.md");
+                        StorageFile file = await StorageFile.GetFileFromApplicationUriAsync(dataUri);
+                        return await FileIO.ReadTextAsync(file);
+                    }
+                };
+                _ = await _page.DispatcherQueue.EnqueueAsync(async () => await dialog.ShowAsync());
+                SettingsHelper.Set(SettingsHelper.IsFirstRun, false);
             }
         }
 
