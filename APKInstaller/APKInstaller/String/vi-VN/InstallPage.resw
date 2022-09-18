@@ -344,8 +344,8 @@
 Điều này có thể mất nhiều thời gian, hãy ngồi lại và thư giãn :3.
 </value>
   </data>
-  <data name="Wellcome" xml:space="preserve">
-    <value>Wellcome!</value>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA đang chạy</value>
