@@ -340,6 +340,9 @@
     <value>Waiting WSA Start...
 This may take long time. Sit back and relax.</value>
   </data>
+  <data name="Wellcome" xml:space="preserve">
+    <value>Wellcome!</value>
+  </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA is Running</value>
   </data>
