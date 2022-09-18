@@ -341,7 +341,7 @@
 Bu uzun sürebilir. Arkanıza yaslanın ve rahatlayın.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome!</value>
+    <value>Hoşgeldiniz!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA Çalışıyor</value>
