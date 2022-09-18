@@ -341,8 +341,8 @@
     <value>في انتظار بدء WSA...
 قد يستغرق هذا وقتا طويلا. اجلس إلى الوراء والاسترخاء.</value>
   </data>
-  <data name="Wellcome" xml:space="preserve">
-    <value>Wellcome!</value>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>تعمل وكالة WSA</value>
