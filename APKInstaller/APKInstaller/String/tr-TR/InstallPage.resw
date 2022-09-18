@@ -340,6 +340,9 @@
     <value>WSA'nın Başlaması Bekleniyor
 Bu uzun sürebilir. Arkanıza yaslanın ve rahatlayın.</value>
   </data>
+  <data name="Wellcome" xml:space="preserve">
+    <value>Wellcome!</value>
+  </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA Çalışıyor</value>
   </data>
