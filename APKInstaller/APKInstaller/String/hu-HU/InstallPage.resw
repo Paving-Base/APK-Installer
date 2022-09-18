@@ -340,6 +340,9 @@
     <value>Várakozás WSA indítására...
 Ez sokáig tarthat. Dőljön hátra és pihenjen.</value>
   </data>
+  <data name="Wellcome" xml:space="preserve">
+    <value>Wellcome!</value>
+  </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA fut</value>
   </data>
