@@ -7,7 +7,7 @@
 4. このアプリケーションのテキストの翻訳は、 [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") コミュニティから来ており、すべてのテキストが著者の見解を表しているわけではありません。
 
 ##### 翻訳する
-[Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") の翻訳者のサポートに感謝します。 翻訳に問題がある場合は、是非、修正してください。 And please take translation seriously. Your words will be read all over the world.
+[Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") の翻訳者のサポートに感謝します。 翻訳に問題がある場合は、是非、修正してください。 そして、真剣に翻訳を検討してください。 あなたの言葉は世界中で読まれます。
 
 ##### 貢献者
 - [wherewhere](https://github.com/wherewhere)
