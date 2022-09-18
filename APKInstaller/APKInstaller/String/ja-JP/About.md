@@ -7,7 +7,7 @@
 4. このアプリケーションのテキストの翻訳は、 [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") コミュニティから来ており、すべてのテキストが著者の見解を表しているわけではありません。
 
 ##### 翻訳する
-[Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") の翻訳者のサポートに感謝します。 翻訳に問題がある場合は、是非、修正してください。
+[Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") の翻訳者のサポートに感謝します。 翻訳に問題がある場合は、是非、修正してください。 And please take translation seriously. Your words will be read all over the world.
 
 ##### 貢献者
 - [wherewhere](https://github.com/wherewhere)
@@ -18,8 +18,9 @@
 
 ##### 文献と参照
 - [WinUI](https://github.com/microsoft/microsoft-ui-xaml "WinUI")
+- [MetroLog](https://github.com/roubachof/MetroLog "MetroLog")
+- [Downloader](https://github.com/bezzad/Downloader "Downloader")
 - [AAPTForNet](https://github.com/canheo136/QuickLook.Plugin.ApkViewer "AAPTForNet")
 - [Sharp Compress](https://github.com/adamhathcock/sharpcompress "Sharp Compress")
-- [Portable Downloader](https://github.com/madnik7/PortableDownloader "Portable Downloader")
 - [Advanced Sharp Adb Client](https://github.com/yungd1plomat/AdvancedSharpAdbClient "Advanced Sharp Adb Client")
 - [Windows Community Toolkit](https://github.com/CommunityToolkit/WindowsCommunityToolkit "Windows Community Toolkit")
