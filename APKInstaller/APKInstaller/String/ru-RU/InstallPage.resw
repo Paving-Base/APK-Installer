@@ -341,8 +341,8 @@
     <value>Ожидание запуска Подсистемы Windows для Android...
 Это может занять много времени.</value>
   </data>
-  <data name="Wellcome" xml:space="preserve">
-    <value>Wellcome!</value>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA работает</value>
