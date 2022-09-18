@@ -7,7 +7,7 @@
 4. Oversættelsen af teksten til denne applikation kommer fra [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") -fællesskabet, og alle tekster repræsenterer ikke forfatterens visninger.
 
 ##### Oversæt
-Tak til [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") oversættere for deres support. Hvis der er problemer med oversættelsen, bedes du venligst komme og rette den.
+Tak til [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") oversættere for deres support. Hvis der er problemer med oversættelsen, bedes du venligst komme og rette den. And please take translation seriously. Your words will be read all over the world.
 
 ##### Bidragsydere
 - [wherewhere](https://github.com/wherewhere)
@@ -18,8 +18,9 @@ Tak til [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") oversætte
 
 ##### Citater og referencer
 - [WinUI](https://github.com/microsoft/microsoft-ui-xaml "WinUI")
+- [MetroLog](https://github.com/roubachof/MetroLog "MetroLog")
+- [Downloader](https://github.com/bezzad/Downloader "Downloader")
 - [AAPTForNet](https://github.com/canheo136/QuickLook.Plugin.ApkViewer "AAPTForNet")
 - [Sharp Compress](https://github.com/adamhathcock/sharpcompress "Sharp Compress")
-- [Portable Downloader](https://github.com/madnik7/PortableDownloader "Portable Downloader")
 - [Advanced Sharp Adb Client](https://github.com/yungd1plomat/AdvancedSharpAdbClient "Advanced Sharp Adb Client")
 - [Windows Community Toolkit](https://github.com/CommunityToolkit/WindowsCommunityToolkit "Windows Community Toolkit")

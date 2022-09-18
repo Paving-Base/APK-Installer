@@ -340,6 +340,9 @@
     <value>Oczekiwanie na start WSA...
 Może to zająć trochę czasu. Usiądź i się zrelaksuj.</value>
   </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome!</value>
+  </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA jest uruchomione</value>
   </data>

@@ -118,22 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AndroidTestSettingsHeader.Header" xml:space="preserve">
-    <value>Androidテスト</value>
+    <value>Androidのテスト</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>アプリ</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
-    <value>コンパクトなオーバーレイを入力または終了</value>
+    <value>コンパクトなオーバーレイを入力または終了する</value>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
     <value>コンパクトなオーバーレイ</value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
-    <value>A development version app may not stable. Download release version on Microsoft Store.</value>
+    <value>開発バージョンのアプリが安定しない可能性があります。Microsoft Storeでリリースバージョンをダウンロードしてください。</value>
   </data>
   <data name="DevelopmentInfoBar.Title" xml:space="preserve">
-    <value>You are using a development version app.</value>
+    <value>開発バージョンのアプリを使用しています。</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
     <value>コンパクト オーバーレイを開始</value>
@@ -145,32 +145,31 @@
     <value>言語</value>
   </data>
   <data name="OutPIP.Content" xml:space="preserve">
-    <value>退出する
-</value>
+    <value>終了</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
     <value>プロセス</value>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
-    <value>タイトルバーでプログレスリングをテストする</value>
+    <value>タイトルバーで進捗状況をテストする</value>
   </data>
   <data name="ProgressSettings.Header" xml:space="preserve">
     <value>進行状況</value>
   </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
-    <value>プログレスリングの値を設定する</value>
+    <value>進行状況リングの値を設定する</value>
   </data>
   <data name="SetProgressValue.Header" xml:space="preserve">
-    <value>進行状況</value>
+    <value>進捗値</value>
   </data>
   <data name="ShowRefreshButton.Description" xml:space="preserve">
     <value>タイトルバーに更新ボタンを表示する</value>
   </data>
   <data name="ShowRefreshButton.Header" xml:space="preserve">
-    <value>リフレッシュボタン</value>
+    <value>更新ボタン</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>テスト</value>
+    <value>テスト中</value>
   </data>
   <data name="TitleBarSettings.Description" xml:space="preserve">
     <value>コンテンツをタイトルバーに拡張</value>

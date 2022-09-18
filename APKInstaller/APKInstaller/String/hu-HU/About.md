@@ -7,7 +7,7 @@
 4. Az alkalmazás szövegének fordítása a [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") közösségtől származik, és nem minden szöveg képviseli a szerző nézeteit.
 
 ##### Fordítás
-Köszönet a [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") fordítóknak a támogatásért. Ha bármilyen probléma van a fordítással, kérjük, jöjjön és javítsa ki.
+Köszönet a [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") fordítóknak a támogatásért. Ha bármilyen probléma van a fordítással, kérjük, jöjjön és javítsa ki. And please take translation seriously. Your words will be read all over the world.
 
 ##### Hozzájárulók
 - [wherewhere](https://github.com/wherewhere)
@@ -18,8 +18,9 @@ Köszönet a [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") ford�
 
 ##### Idézetek és hivatkozások
 - [WinUI](https://github.com/microsoft/microsoft-ui-xaml "WinUI")
+- [MetroLog](https://github.com/roubachof/MetroLog "MetroLog")
+- [Downloader](https://github.com/bezzad/Downloader "Downloader")
 - [AAPTForNet](https://github.com/canheo136/QuickLook.Plugin.ApkViewer "AAPTForNet")
 - [Sharp Compress](https://github.com/adamhathcock/sharpcompress "Sharp Compress")
-- [Portable Downloader](https://github.com/madnik7/PortableDownloader "Portable Downloader")
 - [Advanced Sharp Adb Client](https://github.com/yungd1plomat/AdvancedSharpAdbClient "Advanced Sharp Adb Client")
 - [Windows Community Toolkit](https://github.com/CommunityToolkit/WindowsCommunityToolkit "Windows Community Toolkit")

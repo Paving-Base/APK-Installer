@@ -7,7 +7,7 @@
 4. La traducción del texto de esta aplicación viene de la comunidad de [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") y todos los textos no representan las vistas del autor.
 
 ##### Traducir
-Gracias a los traductores de [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") por su apoyo. Si hay algún problema con la traducción, por favor ven y corrígela.
+Gracias a los traductores de [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") por su apoyo. Si hay algún problema con la traducción, por favor ven y corrígela. Por favor, tómate la traducción en serio. Tus palabras serán leídas en todo el mundo.
 
 ##### Contribuidores
 - [wherewhere](https://github.com/wherewhere)
@@ -18,8 +18,9 @@ Gracias a los traductores de [Crowdin](https://crowdin.com/project/APKInstaller 
 
 ##### Citaciones y referencias
 - [WinUI](https://github.com/microsoft/microsoft-ui-xaml "WinUI")
+- [MetroLog](https://github.com/roubachof/MetroLog "MetroLog")
+- [Downloader](https://github.com/bezzad/Downloader "Downloader")
 - [AAPTForNet](https://github.com/canheo136/QuickLook.Plugin.ApkViewer "AAPTForNet")
 - [Sharp Compress](https://github.com/adamhathcock/sharpcompress "Sharp Compress")
-- [Portable Downloader](https://github.com/madnik7/PortableDownloader "Portable Downloader")
 - [Advanced Sharp Adb Client](https://github.com/yungd1plomat/AdvancedSharpAdbClient "Advanced Sharp Adb Client")
 - [Windows Community Toolkit](https://github.com/CommunityToolkit/WindowsCommunityToolkit "Windows Community Toolkit")

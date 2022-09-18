@@ -7,7 +7,7 @@
 4. Bu uygulamanın metninin çevirisi [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") topluluğundan gelir ve tüm metinler yazarın görüşlerini temsil etmez.
 
 ##### Çeviri
-[Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") çevirmenlerine destekleri için teşekkür ederiz. Çeviriyle ilgili herhangi bir sorun varsa, lütfen gelin ve düzeltin.
+[Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") çevirmenlerine destekleri için teşekkür ederiz. Çeviriyle ilgili herhangi bir sorun varsa, lütfen gelin ve düzeltin. Ve lütfen çeviriyi ciddiye alın. Kelimeleriniz tüm dünyada okunacak.
 
 ##### Katkıda bulunanlar
 - [wherewhere](https://github.com/wherewhere)
@@ -18,8 +18,9 @@
 
 ##### Atıflar ve Referanslar
 - [WinUI](https://github.com/microsoft/microsoft-ui-xaml "WinUI")
+- [MetroLog](https://github.com/roubachof/MetroLog "MetroLog")
+- [Downloader](https://github.com/bezzad/Downloader "Downloader")
 - [AAPTForNet](https://github.com/canheo136/QuickLook.Plugin.ApkViewer "AAPTForNet")
 - [Sharp Compress](https://github.com/adamhathcock/sharpcompress "Sharp Compress")
-- [Portable Downloader](https://github.com/madnik7/PortableDownloader "Portable Downloader")
 - [Advanced Sharp Adb Client](https://github.com/yungd1plomat/AdvancedSharpAdbClient "Advanced Sharp Adb Client")
 - [Windows Community Toolkit](https://github.com/CommunityToolkit/WindowsCommunityToolkit "Windows Community Toolkit")

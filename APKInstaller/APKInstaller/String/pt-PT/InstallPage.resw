@@ -340,6 +340,9 @@
     <value>A aguardar pelo Subsistema Windows para Android...
 Isto pode levar muito tempo. Sente-se e relaxe.</value>
   </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome!</value>
+  </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA is Running</value>
   </data>

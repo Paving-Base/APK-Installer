@@ -154,7 +154,7 @@
     <value>Comprobando ADB...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Checking Path...</value>
+    <value>Comprobando la ruta...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>Haz clic aquí para leerlos</value>
@@ -339,6 +339,9 @@
   <data name="WaitingWSAStart" xml:space="preserve">
     <value>Esperando a que WSA empiece...
 Puede que esto tome un largo tiempo. Siéntate y relájate.</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>¡Bienvenido!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA se está ejecutando</value>

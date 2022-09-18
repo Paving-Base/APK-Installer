@@ -343,6 +343,9 @@
   <data name="WaitingWSAStart" xml:space="preserve">
     <value>ממתין ל-WSA Start...זה עשוי להימשך זמן רב. שב לאחור והירגע.</value>
   </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome!</value>
+  </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA פועל</value>
   </data>

@@ -127,7 +127,7 @@
     <value>Autodescargar cuando el paquete viene de URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Does Auto Download Online Packages?</value>
+    <value>¿Autodescargar paquetes en línea? </value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Seleccionar el tipo de fondo para Windows 11</value>
@@ -154,13 +154,13 @@
     <value>Cerrar ADB puede romper otros Instaladores cuando estos aún siguen abiertos.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Does Close ADB when Closing Installer?</value>
+    <value>¿Cerrar ADB cuando se cierre el instalador?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
     <value>Cerrar el instalador después de que la APK haya sido instalada y ejecutar.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Does Close Installer when APP is Ready?</value>
+    <value>¿Cerrar el instalador cuando la aplicación esté lista?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Configuraciones</value>
@@ -217,16 +217,16 @@
     <value>Última Revisión: </value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
-    <value>Learn More</value>
+    <value>Aprender más</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
     <value>Registros</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may contains something unpleasant. Such as ADs, broken functions even virus. Please go to Microsoft Store to download the original one. See our Github Repository to learn more about it.</value>
+    <value>Una versión modificada puede contener algo desagradable. Como anuncios, funciones rotas e incluso virus. Por favor ve a la tienda de Microsoft para descargar el original. Mira nuestro repositorio de Github para aprender más sobre ello.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>You are using a modified version!</value>
+    <value>¡Estás usando una versión modificada!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>Desactívalo para conectarlo a otros dispositivos.</value>

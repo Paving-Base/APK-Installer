@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB、Android デバッグブリッジはAPKインストーラが動作するために必要です。「ダウンロード」をクリックしてダウンロードします。ダウンロードすることにより、ADBに関するGoogleの利用規約に同意したことになります。すでにダウンロードしている場合は、「選択」をクリックしてファイルを選択します。</value>
+    <value>APK インストーラーが機能するには、ADB（Android Debug Bridge） が必要です。 「ダウンロード」をクリックしてダウンロードしてください。 ダウンロードすると、 Google の ADB利用規約に同意したことになります。 既にADBをダウンロードしている場合は、「選択」をクリックして選択します。</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Exists</value>
+    <value>ADBが見つかりました</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>ADBが見つかりません</value>
@@ -142,7 +142,7 @@
     <value>WSAに接続できません</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
+    <value>WSA が正常に起動しなかったか、ADB に問題があります。 この問題は解決が非常に難しい場合があります。インストーラーを再起動してください。 それでも問題が解決しない場合は、コンピューターを再起動してみてください。</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>アプリパッケージを開けません</value>
@@ -154,7 +154,7 @@
     <value>ADBを確認中...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Checking Path...</value>
+    <value>パスを確認しています...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>ここをクリックして読みます。</value>
@@ -178,7 +178,7 @@
     <value>ネットワーク接続またはURLを確認して、もう一度お試しください。</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>WSAを検索しています...</value>
+    <value>WSAを探しています...</value>
   </data>
   <data name="Finished" xml:space="preserve">
     <value>完了しました</value>
@@ -196,7 +196,7 @@
     <value>アイコン</value>
   </data>
   <data name="IKnow" xml:space="preserve">
-    <value>了解しました</value>
+    <value>分かりました</value>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
     <value>情報</value>
@@ -222,7 +222,7 @@
     <value>WSAをインストール</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
-    <value>パッケージが壊れているか、無効です。</value>
+    <value>パッケージが破損しているか、無効です。</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
     <value>URLが不完全または無効です。</value>
@@ -234,7 +234,7 @@
     <value>WSAを起動中...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>準備ができたときに起動</value>
+    <value>準備ができたら起動</value>
   </data>
   <data name="Loading" xml:space="preserve">
     <value>読み込み中…</value>
@@ -261,7 +261,7 @@
     <value>アプリが正しく機能するために、Androidアプリパッケージを起動してみてください。</value>
   </data>
   <data name="OK" xml:space="preserve">
-    <value>はい</value>
+    <value>OK</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
     <value>オンラインパッケージ</value>
@@ -274,7 +274,7 @@
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
-    <value>再インストールする</value>
+    <value>再インストール</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
     <value>{0} は既にインストールされています</value>
@@ -285,13 +285,13 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>再試行する</value>
+    <value>再試行</value>
   </data>
   <data name="Select" xml:space="preserve">
     <value>選択</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>シェア</value>
+    <value>共有</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
     <value>ADB サーバーを開始しています...</value>
@@ -313,7 +313,7 @@
     <comment>{0} - Have done num. {1} - All num.</comment>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>アップデート</value>
+    <value>更新</value>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
     <value>{0} を更新しますか？</value>
@@ -330,15 +330,18 @@
     <value>ダウンロードを待機中...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>デバイスを待っています...</value>
+    <value>端末を待機しています...</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
-    <value>{0} のインストールを待っています</value>
+    <value>{0} のインストールを待機しています...</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
-    <value>WSA開始を待っています...
-これは時間がかかる場合があります。</value>
+    <value>WSAの起動を待機しています...
+これには時間がかかる場合があります。</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>ようこそ！</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSAは実行中です</value>
