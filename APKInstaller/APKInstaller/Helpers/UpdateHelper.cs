@@ -31,12 +31,7 @@ namespace APKInstaller.Helpers
             client.DefaultRequestHeaders.Add("User-Agent", username);
             string url = string.Format(GITHUB_API, username, repository);
             HttpResponseMessage response = await client.GetAsync(url);
-            if (!response.IsSuccessStatusCode)
-            {
-                url = string.Format(KKPP_API, username, repository);
-                response = await client.GetAsync(url);
-                response.EnsureSuccessStatusCode();
-            }
+            response.EnsureSuccessStatusCode();
             string responseBody = await response.Content.ReadAsStringAsync();
             UpdateInfo result = JsonSerializer.Deserialize<UpdateInfo>(responseBody);
 
