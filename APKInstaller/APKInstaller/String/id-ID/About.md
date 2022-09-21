@@ -7,7 +7,7 @@
 4. Terjemahan teks aplikasi ini berasal dari komunitas [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin"), dan semua teks tidak mewakili pandangan penulis.
 
 ##### Terjemahkan
-Terima kasih kepada penerjemah [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") atas dukungan mereka. Jika ada masalah dengan terjemahan, silakan datang dan perbaiki. And please take translation seriously. Your words will be read all over the world.
+Terima kasih kepada penerjemah [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") atas dukungan mereka. Jika ada masalah dengan terjemahan, silakan datang dan perbaiki. Dan tolong lakukan terjemahan dengan serius. Terjemahan Anda akan dibaca di seluruh dunia.
 
 ##### Kontributor
 - [wherewhere](https://github.com/wherewhere)
