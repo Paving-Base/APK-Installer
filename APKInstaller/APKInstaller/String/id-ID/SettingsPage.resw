@@ -169,7 +169,7 @@
     <value>Hubungkan perangkat ke jaringan.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
-    <value>Hubungkan Perangkat</value>
+    <value>Hubungkan perangkat</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
     <value>Hubungi Saya</value>
