@@ -220,7 +220,7 @@
     <value>Pelajari Lebih Lanjut</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
-    <value>D</value>
+    <value>Logs</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
     <value>Versi yang dimodifikasi mungkin berisi sesuatu yang tidak menyenangkan. Seperti iklan, fungsi rusak bahkan virus. Silahkan buka Microsoft Store untuk mengunduh yang asli. Lihat Repositori GitHub kami untuk mempelajari lebih lanjut tentangnya.</value>
