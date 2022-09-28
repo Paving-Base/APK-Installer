@@ -144,7 +144,7 @@
     <value>Нет</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>Разделить файл</value>
+    <value>Файл Split APK</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Да</value>
