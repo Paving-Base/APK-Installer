@@ -160,7 +160,7 @@
     <value>Set the value of Progress Ring</value>
   </data>
   <data name="SetProgressValue.Header" xml:space="preserve">
-    <value>Progress Value</value>
+    <value>Valor do progresso</value>
   </data>
   <data name="ShowRefreshButton.Description" xml:space="preserve">
     <value>Show Refresh Button on the Title Bar</value>
