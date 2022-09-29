@@ -217,10 +217,10 @@
     <value>Última verificação: </value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
-    <value>Learn More</value>
+    <value>Saber mais</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
-    <value>Logs</value>
+    <value>Registos</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
     <value>A modified version may contains something unpleasant. Such as ADs, broken functions even virus. Please go to Microsoft Store to download the original one. See our Github Repository to learn more about it.</value>
@@ -286,7 +286,7 @@
     <value>Tema da aplicação</value>
   </data>
   <data name="ThemesSettingsHeader.Header" xml:space="preserve">
-    <value>Themes</value>
+    <value>Temas</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Definições</value>
