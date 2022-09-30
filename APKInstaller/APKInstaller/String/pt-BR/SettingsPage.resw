@@ -127,13 +127,13 @@
     <value>Baixar automaticamente quando o pacote vier de um URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Does Auto Download Online Packages?</value>
+    <value>Download automático de pacotes online?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>Select Backdrop Type for Windows 11</value>
+    <value>Selecione o tipo de fundo para windows 11</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>Backdrop</value>
+    <value>Fundo</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
     <value>Alterar</value>
@@ -154,13 +154,13 @@
     <value>Fechar o ADB pode fazer outros Instaladores abertos pararem de funcionar.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Does Close ADB when Closing Installer?</value>
+    <value>Fechar ADB ao fechar o instalador?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
     <value>Fechar o Instalador após o APK ter sido instalado e iniciado.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Does Close Installer when APP is Ready?</value>
+    <value>Fechar o installer quando o app estiver pronto?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Configuraçao</value>
@@ -217,16 +217,16 @@
     <value>Última verificação:</value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
-    <value>Learn More</value>
+    <value>Aprender mais</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
     <value>Registros</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may contains something unpleasant. Such as ADs, broken functions even virus. Please go to Microsoft Store to download the original one. See our Github Repository to learn more about it.</value>
+    <value>Uma versão modificada pode conter algo desagradável. Como ADs, funções quebradas até o vírus. Acesse a Microsoft Store para baixar o original. Consulte nosso repositório do Github para saber mais sobre ele.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>You are using a modified version!</value>
+    <value>Você está usando uma versão modificada!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>Desative para conectar a outro dispositivo.</value>
@@ -238,13 +238,13 @@
     <value>Outras</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>Dark</value>
+    <value>Escuro</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>Windows Default</value>
+    <value>Padrão do Windows</value>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
-    <value>Light</value>
+    <value>Luz</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
     <value>Avalie este applicativo</value>
@@ -283,10 +283,10 @@
     <value>É um Show De Anúncios?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
-    <value>App Theme</value>
+    <value>Tema do aplicativo</value>
   </data>
   <data name="ThemesSettingsHeader.Header" xml:space="preserve">
-    <value>Themes</value>
+    <value>Temas</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Configurações</value>
@@ -301,6 +301,6 @@
     <value>Atualizado</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Windows Color Settings</value>
+    <value>Configurações de cor do Windows</value>
   </data>
 </root>
