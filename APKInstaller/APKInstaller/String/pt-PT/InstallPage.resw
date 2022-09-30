@@ -154,7 +154,7 @@
     <value>A verificar ADB...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Checking Path...</value>
+    <value>A verificar o caminho...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>Clique aqui para lê-los</value>
@@ -291,7 +291,7 @@
     <value>Selecionar</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>Share</value>
+    <value>Partilhar</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
     <value>A iniciar o ADB...</value>
@@ -341,7 +341,7 @@
 Isto pode levar muito tempo. Sente-se e relaxe.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome!</value>
+    <value>Bem-vindo!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA is Running</value>
