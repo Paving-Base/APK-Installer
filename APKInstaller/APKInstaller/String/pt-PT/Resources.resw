@@ -136,7 +136,7 @@
     <value>Falha ao carregar imagem.</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>There are some problems with the network...</value>
+    <value>Ocorreu um problema com a sua ligação à Internet...</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>Não</value>
