@@ -155,7 +155,7 @@ Capacidades:</value>
     <value>Checando ADB...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Checking Path...</value>
+    <value>Checando Adb...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>Clique aqui para ler eles</value>
@@ -244,107 +244,108 @@ Capacidades:</value>
     <value>Mais informações</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
-    <value>Cannot find Android Device</value>
+    <value>Não foi possível encontrar dispositivo Android</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>You can install WSA. Or go to Settings to connect Device.</value>
+    <value>Você pode instalar o WSA. Ou vá para Configurações para conectar o dispositivo.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>You can go to Settings to connect Device.</value>
+    <value>Você pode ir às Configurações para conectar o dispositivo.</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
-    <value>Cannot connect Internet</value>
+    <value>Não é possível conectar à Internet</value>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
-    <value>Please connect to the internet before opening the app.</value>
+    <value>Por favor, conecte-se à internet antes de continuar.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>For proper functioning of the app, try to launch an Android app package.</value>
+    <value>Para o funcionamento adequado do aplicativo, tente iniciar um pacote do aplicativo Android.</value>
   </data>
   <data name="OK" xml:space="preserve">
-    <value>OK</value>
+    <value>Aceitar</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
-    <value>Online Package</value>
+    <value>Pacote online</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
-    <value>Package Name</value>
+    <value>Nome do Pacote</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>Package Name: {0}</value>
+    <value>Nome do Pacote</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
-    <value>Reinstall</value>
+    <value>Reinstalar</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>{0} is already installed</value>
+    <value>% já está instalado</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
-    <value>A newer version of {0} is already installed.</value>
+    <value>Uma nova versão do {0} está disponivel.</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>Retry</value>
+    <value>Tente novamente</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>Select</value>
+    <value>Selecionar</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>Share</value>
+    <value>Compartilhar</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
-    <value>Starting ADB Server...</value>
+    <value>Iniciando o servidor web...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>Start WSA</value>
+    <value>Iniciar WSA</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
-    <value>Store Links</value>
+    <value>Links da Loja</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
     <value>Unzip ADB...</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
-    <value>Unzip completed</value>
+    <value>Descompactar concluído</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
-    <value>Unzipping {0}/{1} ...</value>
+    <value>Descompactando {0}/{1}...</value>
     <comment>{0} - Have done num. {1} - All num.</comment>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>Update</value>
+    <value>Atualização</value>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
-    <value>Update {0}?</value>
+    <value>Atualizar {0}?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
-    <value>Version Code</value>
+    <value>Código da Versão</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>Version: {0}</value>
+    <value>Versão: {0}</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>Waiting for download...</value>
+    <value>Aguardando o download...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>Waiting for Device...</value>
+    <value>Aguardando dispositivo...
+</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
-    <value>Waiting for install {0}</value>
+    <value>Aguardando a etapa: {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
-    <value>Waiting WSA Start...
-This may take long time. Sit back and relax.</value>
+    <value>Esperando início do WSA...
+Isto pode levar muito tempo. Sente-se e relaxe.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome!</value>
+    <value>Bem vindo(a)!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>WSA is Running</value>
+    <value>DSU está em execução</value>
   </data>
 </root>
