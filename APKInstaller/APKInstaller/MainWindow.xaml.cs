@@ -31,6 +31,7 @@ namespace APKInstaller
             UIHelper.MainWindow = this;
             MainPage MainPage = new();
             Content = MainPage;
+            SetBackdrop();
         }
 
         private void Window_Closed(object sender, WindowEventArgs args)
@@ -58,6 +59,12 @@ namespace APKInstaller
             width = (int)(width * scalingFactor);
             height = (int)(height * scalingFactor);
             this.GetAppWindowForCurrentWindow().Resize(new SizeInt32(width, height));
+        }
+
+        private void SetBackdrop()
+        {
+            BackdropType type = SettingsHelper.Get<BackdropType>(SettingsHelper.SelectedBackdrop);
+            Backdrop.SetBackdrop(type);
         }
     }
 }

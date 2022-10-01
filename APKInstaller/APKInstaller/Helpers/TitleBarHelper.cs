@@ -4,6 +4,7 @@ using Microsoft.UI.Xaml.Input;
 using NativeMethods.Interop;
 using System;
 using System.Runtime.InteropServices;
+using WinRT.Interop;
 
 namespace APKInstaller.Helpers
 {
@@ -15,7 +16,7 @@ namespace APKInstaller.Helpers
         public static void TriggerTitleBarRepaint()
         {
             // to trigger repaint tracking task id 38044406
-            IntPtr hwnd = WinRT.Interop.WindowNative.GetWindowHandle(UIHelper.MainWindow);
+            IntPtr hwnd = WindowNative.GetWindowHandle(UIHelper.MainWindow);
             IntPtr activeWindow = PInvoke.User32.GetActiveWindow();
             if (hwnd == activeWindow)
             {

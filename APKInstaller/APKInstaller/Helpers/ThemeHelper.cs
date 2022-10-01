@@ -93,10 +93,11 @@ namespace APKInstaller.Helpers
         {
             if (!UIHelper.HasTitleBar)
             {
+                bool IsHighContrast = new AccessibilitySettings().HighContrast;
                 AppWindowTitleBar TitleBar = WindowHelper.GetAppWindowForCurrentWindow().TitleBar;
 
-                Color ForegroundColor = IsDarkTheme() ? Colors.White : Colors.Black;
-                Color BackgroundColor = new AccessibilitySettings().HighContrast ? Color.FromArgb(255, 0, 0, 0) : IsDarkTheme() ? Color.FromArgb(255, 32, 32, 32) : Color.FromArgb(255, 243, 243, 243);
+                Color ForegroundColor = IsDarkTheme() || IsHighContrast ? Colors.White : Colors.Black;
+                Color BackgroundColor = IsHighContrast ? Color.FromArgb(255, 0, 0, 0) : IsDarkTheme() ? Color.FromArgb(255, 32, 32, 32) : Color.FromArgb(255, 243, 243, 243);
 
                 TitleBar.ForegroundColor = TitleBar.ButtonForegroundColor = ForegroundColor;
                 TitleBar.BackgroundColor = TitleBar.InactiveBackgroundColor = BackgroundColor;
@@ -105,7 +106,11 @@ namespace APKInstaller.Helpers
 
             ResourceDictionary resources = Application.Current.Resources;
             resources["WindowCaptionForeground"] = IsDarkTheme() ? Colors.White : Colors.Black;
-            TitleBarHelper.TriggerTitleBarRepaint();
+
+            if (UIHelper.HasTitleBar && (UIHelper.MainPage?.IsLoaded).Equals(true))
+            {
+                TitleBarHelper.TriggerTitleBarRepaint();
+            }
 
             if (IsDarkTheme())
             {

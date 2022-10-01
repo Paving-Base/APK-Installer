@@ -26,7 +26,7 @@ namespace APKInstaller.Pages
 
         public InstallPage() => InitializeComponent();
 
-        protected override async void OnNavigatedTo(NavigationEventArgs e)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
             if (InstallViewModel.Caches != null)
@@ -122,9 +122,9 @@ namespace APKInstaller.Pages
             }
         }
 
-        private async void InitialLoadingUI_Loaded(object sender, RoutedEventArgs e)
+        private void InitialLoadingUI_Loaded(object sender, RoutedEventArgs e)
         {
-            await Provider.Refresh(!IsCaches);
+            _ = Provider.Refresh(!IsCaches);
         }
 
         private void CopyFileItem_Click(object sender, RoutedEventArgs e)

@@ -163,6 +163,7 @@
                     <StackPanel
                         x:Name="AppSignatureInfoCotainer"
                         Grid.Row="1"
+                        x:Load="False"
                         Orientation="Horizontal"
                         Visibility="Collapsed">
                         <Image x:Name="AppSignatureInfoImage" Stretch="Uniform" />
@@ -213,6 +214,7 @@
             <Grid
                 x:Name="AppBigPictureMainContentContainer"
                 Grid.Row="0"
+                x:Load="False"
                 Visibility="Collapsed">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
@@ -291,6 +293,7 @@
                             x:Name="WarningMessageModificationPackage"
                             Grid.Row="1"
                             Margin="0,0,0,6"
+                            x:Load="False"
                             FontWeight="Bold"
                             TextWrapping="WrapWholeWords"
                             ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"
@@ -355,6 +358,7 @@
                             Width="120"
                             Height="32"
                             Margin="12,0,0,0"
+                            x:Load="False"
                             TabIndex="1"
                             Visibility="Collapsed" />
                         <Button
@@ -379,6 +383,7 @@
                             Width="120"
                             Height="32"
                             Margin="12,0,0,0"
+                            x:Load="False"
                             TabIndex="1"
                             Visibility="Collapsed" />
                         <Button
@@ -471,6 +476,7 @@
                     <StackPanel
                         x:Name="TermsAndConditionsGrid"
                         Grid.Row="2"
+                        x:Load="False"
                         Visibility="Collapsed">
                         <HyperlinkButton
                             x:Name="MoreDetailsHyperLink"
