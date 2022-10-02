@@ -142,16 +142,16 @@
     <value>Select language and restart to change language</value>
   </data>
   <data name="LanguageSettings.Header" xml:space="preserve">
-    <value>Language</value>
+    <value>Idioma</value>
   </data>
   <data name="OutPIP.Content" xml:space="preserve">
-    <value>Exit</value>
+    <value>Sair</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
     <value>Processes</value>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
-    <value>Test Progress Ring on the Title Bar</value>
+    <value>Testar Anel de Progresso na Barra de Título</value>
   </data>
   <data name="ProgressSettings.Header" xml:space="preserve">
     <value>Progress</value>

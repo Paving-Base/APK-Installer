@@ -127,7 +127,7 @@
     <value>Um instalador de aplicações Android. Desenvolvido por @wherewhere e @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>APK Installer</value>
+    <value>Instalador APK</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>Ocorreu um erro com o programa…</value>
@@ -136,7 +136,7 @@
     <value>Falha ao carregar imagem.</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>There are some problems with the network...</value>
+    <value>Ocorreu um problema com a sua ligação à Internet...</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>Não</value>
