@@ -148,7 +148,7 @@
     <value>Sair</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
-    <value>PORTUGUES</value>
+    <value>Processes</value>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
     <value>Testar Anel de Progresso na Barra de Título</value>
