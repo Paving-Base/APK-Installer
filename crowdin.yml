@@ -3,3 +3,5 @@ files:
     translation: /Documents/Tutorials/How To Connect WSA/How To Connect WSA.%locale%.md
   - source: /Documents/Announcements/Announcements.xml
     translation: /Documents/Announcements/Announcements.%locale%.xaml
+  - source: /Documents/Tutorials/How To Connect Device/How To Connect Device.md
+    translation: /Documents/Tutorials/How To Connect Device/How To Connect Device.%locale%.md
