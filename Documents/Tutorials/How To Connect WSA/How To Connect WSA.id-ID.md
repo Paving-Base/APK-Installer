@@ -1,5 +1,5 @@
 # Cara Menghubungkan WSA
-1. Pastikan Penginstal APK telah diperbarui ke [versi terbaru](https://github.com/Paving-Base/APK-Installer/releases "APK Installer")
-2. Pastikan Anda telah menginstal dan menjalankan WSA
-3. Aktifkan Mode Pengembang, pastikan alamat IP ditampilkan![Mode Pengembang](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/Images/Snipaste_2021-10-22_14-57-56.png)
+1. Please make sure APK Installer has been updated to the [newest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Please make sure you have installed and running [Windows Subsystem for Android™](https://www.microsoft.com/store/productId/9P3395VX91NR)
+3. Aktifkan Mode Pengembang, pastikan alamat IP ditampilkan![Mode Pengembang](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/Images/Snipaste_2022-10-02_17-08-37.png)
 4. Buka kembali Penginstal APK, lanjutkan penginstalan![Lanjutkan Instalasi](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/Images/Snipaste_2021-10-22_15-10-06.png)
