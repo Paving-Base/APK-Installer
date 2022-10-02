@@ -67,8 +67,7 @@ namespace APKInstaller.Pages.SettingsPages
         }
 
         internal bool IsDevelopment => Package.Current.IsDevelopmentMode
-            || Package.Current.SignatureKind != PackageSignatureKind.None
-            || Package.Current.SignatureKind != PackageSignatureKind.Developer
+            || Package.Current.SignatureKind != PackageSignatureKind.Store
             || Package.Current.Status.Modified;
 
         public event PropertyChangedEventHandler PropertyChanged;
