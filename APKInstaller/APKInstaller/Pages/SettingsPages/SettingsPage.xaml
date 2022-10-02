@@ -206,33 +206,38 @@
                                             <Run x:Uid="/SettingsPage/LastChecked" />
                                             <Run Text="{Binding UpdateDate, Mode=OneWay}" />
                                         </TextBlock>
-                                        <StackPanel Margin="0,2,0,0" Orientation="Horizontal">
-                                            <HyperlinkButton
-                                                x:Uid="/SettingsPage/FeedbackLink"
-                                                Margin="0,0,2,0"
-                                                NavigateUri="https://github.com/Paving-Base/APK-Installer/issues"
-                                                ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
-                                            <HyperlinkButton
-                                                x:Uid="/SettingsPage/LogFolderLink"
-                                                Margin="2,0"
-                                                Click="HyperlinkButton_Click"
-                                                Tag="LogFolder" />
-                                            <HyperlinkButton
-                                                x:Uid="/SettingsPage/TranslateLink"
-                                                Margin="2,0"
-                                                NavigateUri="https://crowdin.com/project/APKInstaller"
-                                                ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
-                                            <HyperlinkButton
-                                                x:Uid="/SettingsPage/ReleaseNotes"
-                                                Margin="2,0"
-                                                NavigateUri="https://github.com/Paving-Base/APK-Installer/releases/latest"
-                                                ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
-                                            <HyperlinkButton
-                                                x:Uid="/SettingsPage/EULA"
-                                                Margin="2,0,0,0"
-                                                NavigateUri="https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md"
-                                                ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
-                                        </StackPanel>
+                                        <ScrollViewer
+                                            Margin="0,2,0,0"
+                                            HorizontalScrollBarVisibility="Auto"
+                                            VerticalScrollBarVisibility="Disabled">
+                                            <StackPanel Orientation="Horizontal">
+                                                <HyperlinkButton
+                                                    x:Uid="/SettingsPage/FeedbackLink"
+                                                    Margin="0,0,2,0"
+                                                    NavigateUri="https://github.com/Paving-Base/APK-Installer/issues"
+                                                    ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
+                                                <HyperlinkButton
+                                                    x:Uid="/SettingsPage/LogFolderLink"
+                                                    Margin="2,0"
+                                                    Click="HyperlinkButton_Click"
+                                                    Tag="LogFolder" />
+                                                <HyperlinkButton
+                                                    x:Uid="/SettingsPage/TranslateLink"
+                                                    Margin="2,0"
+                                                    NavigateUri="https://crowdin.com/project/APKInstaller"
+                                                    ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
+                                                <HyperlinkButton
+                                                    x:Uid="/SettingsPage/ReleaseNotes"
+                                                    Margin="2,0"
+                                                    NavigateUri="https://github.com/Paving-Base/APK-Installer/releases/latest"
+                                                    ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
+                                                <HyperlinkButton
+                                                    x:Uid="/SettingsPage/EULA"
+                                                    Margin="2,0,0,0"
+                                                    NavigateUri="https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md"
+                                                    ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
+                                            </StackPanel>
+                                        </ScrollViewer>
                                     </StackPanel>
                                 </controls:Setting.Description>
                                 <controls:Setting.ActionContent>
@@ -295,28 +300,33 @@
                                     x:Uid="/SettingsPage/ContactMeTextBlock"
                                     Style="{StaticResource SecondaryTextStyle}"
                                     TextWrapping="WrapWholeWords" />
-                                <StackPanel Margin="0,2,0,0" Orientation="Horizontal">
-                                    <HyperlinkButton
-                                        Margin="0,0,2,0"
-                                        Content="Github"
-                                        NavigateUri="https://github.com/wherewhere"
-                                        ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
-                                    <HyperlinkButton
-                                        Margin="2,0"
-                                        Content="Coolapk"
-                                        NavigateUri="http://www.coolapk.com/u/536381"
-                                        ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
-                                    <HyperlinkButton
-                                        Margin="2,0"
-                                        Content="Twitter"
-                                        NavigateUri="https://twitter.com/wherewhere7"
-                                        ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
-                                    <HyperlinkButton
-                                        Margin="2,0"
-                                        Content="Bilibili"
-                                        NavigateUri="https://space.bilibili.com/266112738"
-                                        ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
-                                </StackPanel>
+                                <ScrollViewer
+                                    Margin="0,2,0,0"
+                                    HorizontalScrollBarVisibility="Auto"
+                                    VerticalScrollBarVisibility="Disabled">
+                                    <StackPanel Orientation="Horizontal">
+                                        <HyperlinkButton
+                                            Margin="0,0,2,0"
+                                            Content="Github"
+                                            NavigateUri="https://github.com/wherewhere"
+                                            ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
+                                        <HyperlinkButton
+                                            Margin="2,0"
+                                            Content="Coolapk"
+                                            NavigateUri="http://www.coolapk.com/u/536381"
+                                            ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
+                                        <HyperlinkButton
+                                            Margin="2,0"
+                                            Content="Twitter"
+                                            NavigateUri="https://twitter.com/wherewhere7"
+                                            ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
+                                        <HyperlinkButton
+                                            Margin="2,0"
+                                            Content="Bilibili"
+                                            NavigateUri="https://space.bilibili.com/266112738"
+                                            ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
+                                    </StackPanel>
+                                </ScrollViewer>
                             </StackPanel>
                         </controls:Setting.Description>
                         <controls:Setting.ActionContent>

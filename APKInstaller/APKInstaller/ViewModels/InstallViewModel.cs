@@ -546,7 +546,7 @@ namespace APKInstaller.ViewModels
         {
             IsInitialized = false;
             WaitProgressText = _loader.GetString("Loading");
-            await OnFirstRun();
+            //await OnFirstRun();
             try
             {
                 if (force)
@@ -1067,7 +1067,7 @@ namespace APKInstaller.ViewModels
                     ProgressHelper.SetState(ProgressState.Indeterminate, true);
                     if (result == ContentDialogResult.Primary)
                     {
-                        _ = Launcher.LaunchUriAsync(new Uri("ms-windows-store://pdp/?ProductId=9P3395VX91NR&mode=mini"));
+                        _ = await Launcher.LaunchUriAsync(new Uri("ms-windows-store://pdp/?ProductId=9P3395VX91NR&mode=mini"));
                     }
                     else if (result == ContentDialogResult.Secondary)
                     {

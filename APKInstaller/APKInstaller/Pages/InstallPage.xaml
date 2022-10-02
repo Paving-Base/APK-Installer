@@ -330,134 +330,156 @@
                         <RowDefinition Height="*" />
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
-                    <StackPanel
-                        x:Name="ButtonsContainer"
+                    <ScrollViewer
                         Grid.Row="0"
                         HorizontalAlignment="Right"
-                        Orientation="Horizontal">
-                        <Button
-                            x:Name="ActionButton"
-                            Width="120"
-                            Height="32"
-                            Margin="12,0,0,0"
-                            Click="Button_Click"
-                            IsEnabled="{Binding ActionButtonEnable}"
-                            Style="{StaticResource AccentButtonStyle}"
-                            TabIndex="1"
-                            Visibility="{Binding ActionVisibility}">
-                            <StackPanel Orientation="Horizontal">
-                                <Image x:Name="ActionButtonImage" Stretch="Uniform" />
-                                <TextBlock
-                                    x:Name="ActionButtonText"
-                                    Text="{Binding ActionButtonText}"
-                                    ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
-                            </StackPanel>
-                        </Button>
-                        <HyperlinkButton
-                            x:Name="HyperLinkButton"
-                            Width="120"
-                            Height="32"
-                            Margin="12,0,0,0"
-                            x:Load="False"
-                            TabIndex="1"
-                            Visibility="Collapsed" />
-                        <Button
-                            x:Name="SecondaryActionButton"
-                            Width="120"
-                            Height="32"
-                            Margin="12,0,0,0"
-                            Click="Button_Click"
-                            IsEnabled="{Binding SecondaryActionButtonEnable}"
-                            Style="{StaticResource AccentButtonStyle}"
-                            TabIndex="1"
-                            Visibility="{Binding SecondaryActionVisibility}">
-                            <StackPanel>
-                                <TextBlock
-                                    x:Name="SecondaryActionButtonText"
-                                    Text="{Binding SecondaryActionButtonText}"
-                                    ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
-                            </StackPanel>
-                        </Button>
-                        <HyperlinkButton
-                            x:Name="SecondaryHyperLinkButton"
-                            Width="120"
-                            Height="32"
-                            Margin="12,0,0,0"
-                            x:Load="False"
-                            TabIndex="1"
-                            Visibility="Collapsed" />
-                        <Button
-                            x:Name="FileSelectButton"
-                            Width="120"
-                            Height="32"
-                            Margin="12,0,0,0"
-                            Click="Button_Click"
-                            IsEnabled="{Binding FileSelectButtonEnable}"
-                            Style="{StaticResource AccentButtonStyle}"
-                            TabIndex="1"
-                            Visibility="{Binding FileSelectVisibility}">
-                            <StackPanel Orientation="Horizontal">
-                                <Image x:Name="FileSelectButtonImage" Stretch="Uniform" />
-                                <TextBlock
-                                    x:Name="FileSelectButtonText"
-                                    Text="{Binding FileSelectButtonText}"
-                                    ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
-                            </StackPanel>
-                        </Button>
-                        <Button
-                            x:Name="DownloadButton"
-                            Width="120"
-                            Height="32"
-                            Margin="12,0,0,0"
-                            Click="Button_Click"
-                            IsEnabled="{Binding DownloadButtonEnable}"
-                            Style="{StaticResource AccentButtonStyle}"
-                            TabIndex="1"
-                            Visibility="{Binding DownloadVisibility}">
-                            <StackPanel Orientation="Horizontal">
-                                <Image x:Name="DownloadButtonImage" Stretch="Uniform" />
-                                <TextBlock
-                                    x:Name="DownloadButtonText"
-                                    Text="{Binding DownloadButtonText}"
-                                    ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
-                            </StackPanel>
-                        </Button>
-                        <Button
-                            x:Name="CancelOperationButton"
-                            Width="120"
-                            Height="32"
-                            Margin="12,0,0,0"
-                            Click="Button_Click"
-                            IsEnabled="{Binding CancelOperationButtonEnable}"
-                            Style="{StaticResource AccentButtonStyle}"
-                            TabIndex="1"
-                            Visibility="{Binding CancelOperationVisibility}">
-                            <StackPanel>
-                                <TextBlock
-                                    x:Name="CancelOperationButtonText"
-                                    Text="{Binding CancelOperationButtonText}"
-                                    ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
-                            </StackPanel>
-                        </Button>
-                        <Button
-                            x:Name="DeviceSelectButton"
-                            Width="120"
-                            Height="32"
-                            Margin="12,0,0,0"
-                            Click="Button_Click"
-                            IsEnabled="{Binding DeviceSelectButtonEnable}"
-                            Style="{StaticResource AccentButtonStyle}"
-                            TabIndex="1"
-                            Visibility="{Binding DeviceSelectVisibility}">
-                            <StackPanel Orientation="Horizontal">
-                                <Image x:Name="DeviceSelectButtonImage" Stretch="Uniform" />
-                                <TextBlock
-                                    x:Name="DeviceSelectButtonText"
-                                    Text="{Binding DeviceSelectButtonText}"
-                                    ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
-                            </StackPanel>
-                        </Button>
-                    </StackPanel>
+                        HorizontalScrollBarVisibility="Auto"
+                        VerticalScrollBarVisibility="Disabled">
+                        <StackPanel x:Name="ButtonsContainer" Orientation="Horizontal">
+                            <Button
+                                x:Name="ActionButton"
+                                Width="120"
+                                Height="32"
+                                Margin="12,0,0,0"
+                                Click="Button_Click"
+                                IsEnabled="{Binding ActionButtonEnable}"
+                                Style="{StaticResource AccentButtonStyle}"
+                                TabIndex="1"
+                                Visibility="{Binding ActionVisibility}">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image
+                                        x:Name="ActionButtonImage"
+                                        x:Load="False"
+                                        Stretch="Uniform" />
+                                    <TextBlock
+                                        x:Name="ActionButtonText"
+                                        Text="{Binding ActionButtonText}"
+                                        ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
+                                </StackPanel>
+                            </Button>
+                            <HyperlinkButton
+                                x:Name="HyperLinkButton"
+                                Width="120"
+                                Height="32"
+                                Margin="12,0,0,0"
+                                x:Load="False"
+                                TabIndex="1"
+                                Visibility="Collapsed" />
+                            <Button
+                                x:Name="SecondaryActionButton"
+                                Width="120"
+                                Height="32"
+                                Margin="12,0,0,0"
+                                Click="Button_Click"
+                                IsEnabled="{Binding SecondaryActionButtonEnable}"
+                                Style="{StaticResource AccentButtonStyle}"
+                                TabIndex="1"
+                                Visibility="{Binding SecondaryActionVisibility}">
+                                <StackPanel>
+                                    <Image
+                                        x:Name="SecondaryActionButtonImage"
+                                        x:Load="False"
+                                        Stretch="Uniform" />
+                                    <TextBlock
+                                        x:Name="SecondaryActionButtonText"
+                                        Text="{Binding SecondaryActionButtonText}"
+                                        ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
+                                </StackPanel>
+                            </Button>
+                            <HyperlinkButton
+                                x:Name="SecondaryHyperLinkButton"
+                                Width="120"
+                                Height="32"
+                                Margin="12,0,0,0"
+                                x:Load="False"
+                                TabIndex="1"
+                                Visibility="Collapsed" />
+                            <Button
+                                x:Name="FileSelectButton"
+                                Width="120"
+                                Height="32"
+                                Margin="12,0,0,0"
+                                Click="Button_Click"
+                                IsEnabled="{Binding FileSelectButtonEnable}"
+                                Style="{StaticResource AccentButtonStyle}"
+                                TabIndex="1"
+                                Visibility="{Binding FileSelectVisibility}">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image
+                                        x:Name="FileSelectButtonImage"
+                                        x:Load="False"
+                                        Stretch="Uniform" />
+                                    <TextBlock
+                                        x:Name="FileSelectButtonText"
+                                        Text="{Binding FileSelectButtonText}"
+                                        ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
+                                </StackPanel>
+                            </Button>
+                            <Button
+                                x:Name="DownloadButton"
+                                Width="120"
+                                Height="32"
+                                Margin="12,0,0,0"
+                                Click="Button_Click"
+                                IsEnabled="{Binding DownloadButtonEnable}"
+                                Style="{StaticResource AccentButtonStyle}"
+                                TabIndex="1"
+                                Visibility="{Binding DownloadVisibility}">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image
+                                        x:Name="DownloadButtonImage"
+                                        x:Load="False"
+                                        Stretch="Uniform" />
+                                    <TextBlock
+                                        x:Name="DownloadButtonText"
+                                        Text="{Binding DownloadButtonText}"
+                                        ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
+                                </StackPanel>
+                            </Button>
+                            <Button
+                                x:Name="CancelOperationButton"
+                                Width="120"
+                                Height="32"
+                                Margin="12,0,0,0"
+                                Click="Button_Click"
+                                IsEnabled="{Binding CancelOperationButtonEnable}"
+                                Style="{StaticResource AccentButtonStyle}"
+                                TabIndex="1"
+                                Visibility="{Binding CancelOperationVisibility}">
+                                <StackPanel>
+                                    <Image
+                                        x:Name="CancelOperationButtonImage"
+                                        x:Load="False"
+                                        Stretch="Uniform" />
+                                    <TextBlock
+                                        x:Name="CancelOperationButtonText"
+                                        Text="{Binding CancelOperationButtonText}"
+                                        ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
+                                </StackPanel>
+                            </Button>
+                            <Button
+                                x:Name="DeviceSelectButton"
+                                Width="120"
+                                Height="32"
+                                Margin="12,0,0,0"
+                                Click="Button_Click"
+                                IsEnabled="{Binding DeviceSelectButtonEnable}"
+                                Style="{StaticResource AccentButtonStyle}"
+                                TabIndex="1"
+                                Visibility="{Binding DeviceSelectVisibility}">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image
+                                        x:Name="DeviceSelectButtonImage"
+                                        x:Load="False"
+                                        Stretch="Uniform" />
+                                    <TextBlock
+                                        x:Name="DeviceSelectButtonText"
+                                        Text="{Binding DeviceSelectButtonText}"
+                                        ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+                    </ScrollViewer>
                     <CheckBox
                         x:Name="LaunchWhenReadyCheckbox"
                         x:Uid="/InstallPage/LaunchWhenReadyCheckbox"

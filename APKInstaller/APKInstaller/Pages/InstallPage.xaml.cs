@@ -122,9 +122,9 @@ namespace APKInstaller.Pages
             }
         }
 
-        private void InitialLoadingUI_Loaded(object sender, RoutedEventArgs e)
+        private async void InitialLoadingUI_Loaded(object sender, RoutedEventArgs e)
         {
-            _ = Provider.Refresh(!IsCaches);
+            await Provider.Refresh(!IsCaches);
         }
 
         private void CopyFileItem_Click(object sender, RoutedEventArgs e)
