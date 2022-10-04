@@ -190,7 +190,7 @@
     <value>Soportes</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer es una aplicación de código abierto y no se añadirán anuncios para beneficio. Si te gusta esta aplicación, no te olvides de calificarla en la tienda. Por supuesto, lo mejor sería si pudieses donar un poco. Gracias por tu apoyo. 💕</value>
+    <value>APK Instalar es una aplicación de código abierto y no se añadirán anuncios para beneficio. Si te gusta esta aplicación, no te olvides de calificarla en la tienda. Por supuesto, lo mejor sería si pudieses donar un poco. Gracias por tu apoyo. 💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
@@ -223,7 +223,7 @@
     <value>Registros</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>Una versión modificada puede contener algo desagradable. Como anuncios, funciones rotas e incluso virus. Por favor, ve a la tienda de Microsoft para descargar el original. Mira nuestro repositorio de Github para aprender más sobre ello.</value>
+    <value>Una versión modificada puede contener algo desagradable. Como anuncios, funciones rotas e incluso virus. Por favor, ve a la tienda de Microsoft para descargar el original. Mira nuestro repositorio de GitHub para aprender más sobre ello.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>¡Estás usando una versión modificada!</value>
