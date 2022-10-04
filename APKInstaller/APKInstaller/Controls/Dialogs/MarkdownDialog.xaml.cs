@@ -18,6 +18,18 @@ namespace APKInstaller.Controls.Dialogs
     {
         private object title;
 
+        public static readonly DependencyProperty FallbackContentProperty = DependencyProperty.Register(
+           "FallbackContent",
+           typeof(string),
+           typeof(MarkdownDialog),
+           new PropertyMetadata("{0}"));
+
+        public string FallbackContent
+        {
+            get => (string)GetValue(FallbackContentProperty);
+            set => SetValue(FallbackContentProperty, value);
+        }
+
         public static readonly DependencyProperty ContentInfoProperty = DependencyProperty.Register(
            "ContentInfo",
            typeof(GitInfo),
@@ -101,7 +113,7 @@ namespace APKInstaller.Controls.Dialogs
                 string value = ContentInfo.FormatURL(GitInfo.GITHUB_API);
                 if (!NetworkHelper.Instance.ConnectionInformation.IsInternetAvailable)
                 {
-                    MarkdownText.Text = value;
+                    MarkdownText.Text = string.Format(FallbackContent, value);
                     Title ??= title;
                     return;
                 }
@@ -124,7 +136,7 @@ namespace APKInstaller.Controls.Dialogs
                     }
                     catch
                     {
-                        MarkdownText.Text = value;
+                        MarkdownText.Text = string.Format(FallbackContent, value);
                         Title ??= title;
                     }
                 }
@@ -140,7 +152,7 @@ namespace APKInstaller.Controls.Dialogs
                 }
                 catch
                 {
-                    MarkdownText.Text = string.Empty;
+                    MarkdownText.Text = FallbackContent;
                     Title ??= title;
                 }
             }
@@ -153,7 +165,7 @@ namespace APKInstaller.Controls.Dialogs
             {
                 if (!NetworkHelper.Instance.ConnectionInformation.IsInternetAvailable)
                 {
-                    MarkdownText.Text = ContentUri.ToString();
+                    MarkdownText.Text = string.Format(FallbackContent, ContentUri.ToString());
                     Title ??= title;
                     return;
                 }
@@ -167,7 +179,7 @@ namespace APKInstaller.Controls.Dialogs
                 }
                 catch
                 {
-                    MarkdownText.Text = ContentUri.ToString();
+                    MarkdownText.Text = string.Format(FallbackContent, ContentUri.ToString());
                     Title ??= title;
                 }
             }

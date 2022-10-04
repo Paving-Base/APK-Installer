@@ -33,8 +33,11 @@ namespace APKInstaller.ViewModels.ToolsPages
             get => deviceList;
             set
             {
-                deviceList = value;
-                RaisePropertyChangedEvent();
+                if (deviceList != value)
+                {
+                    deviceList = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -44,8 +47,11 @@ namespace APKInstaller.ViewModels.ToolsPages
             get => applications;
             set
             {
-                applications = value;
-                RaisePropertyChangedEvent();
+                if (applications != value)
+                {
+                    applications = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 

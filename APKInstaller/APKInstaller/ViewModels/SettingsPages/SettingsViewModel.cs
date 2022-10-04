@@ -57,37 +57,25 @@ namespace APKInstaller.ViewModels.SettingsPages
         public static bool IsCloseADB
         {
             get => SettingsHelper.Get<bool>(SettingsHelper.IsCloseADB);
-            set
-            {
-                if (IsCloseADB != value)
-                {
-                    SettingsHelper.Set(SettingsHelper.IsCloseADB, value);
-                }
-            }
+            set => SettingsHelper.Set(SettingsHelper.IsCloseADB, value);
         }
 
         public static bool IsCloseAPP
         {
             get => SettingsHelper.Get<bool>(SettingsHelper.IsCloseAPP);
-            set
-            {
-                if (IsCloseAPP != value)
-                {
-                    SettingsHelper.Set(SettingsHelper.IsCloseAPP, value);
-                }
-            }
+            set => SettingsHelper.Set(SettingsHelper.IsCloseAPP, value);
         }
 
         public static bool ShowDialogs
         {
             get => SettingsHelper.Get<bool>(SettingsHelper.ShowDialogs);
-            set
-            {
-                if (ShowDialogs != value)
-                {
-                    SettingsHelper.Set(SettingsHelper.ShowDialogs, value);
-                }
-            }
+            set => SettingsHelper.Set(SettingsHelper.ShowDialogs, value);
+        }
+
+        public static bool AutoGetNetAPK
+        {
+            get => SettingsHelper.Get<bool>(SettingsHelper.AutoGetNetAPK);
+            set => SettingsHelper.Set(SettingsHelper.AutoGetNetAPK, value);
         }
 
         public string ADBPath
@@ -129,18 +117,6 @@ namespace APKInstaller.ViewModels.SettingsPages
             }
         }
 
-        public static bool AutoGetNetAPK
-        {
-            get => SettingsHelper.Get<bool>(SettingsHelper.AutoGetNetAPK);
-            set
-            {
-                if (AutoGetNetAPK != value)
-                {
-                    SettingsHelper.Set(SettingsHelper.AutoGetNetAPK, value);
-                }
-            }
-        }
-
         public static int SelectedTheme
         {
             get => 2 - (int)ThemeHelper.RootTheme;
@@ -178,8 +154,11 @@ namespace APKInstaller.ViewModels.SettingsPages
             get => _checkingUpdate;
             set
             {
-                _checkingUpdate = value;
-                RaisePropertyChangedEvent();
+                if (_checkingUpdate != value)
+                {
+                    _checkingUpdate = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -189,8 +168,11 @@ namespace APKInstaller.ViewModels.SettingsPages
             get => _gotoUpdateTag;
             set
             {
-                _gotoUpdateTag = value;
-                RaisePropertyChangedEvent();
+                if (_gotoUpdateTag != value)
+                {
+                    _gotoUpdateTag = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -200,8 +182,11 @@ namespace APKInstaller.ViewModels.SettingsPages
             get => _gotoUpdateVisibility;
             set
             {
-                _gotoUpdateVisibility = value;
-                RaisePropertyChangedEvent();
+                if (_gotoUpdateVisibility != value)
+                {
+                    _gotoUpdateVisibility = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -211,8 +196,11 @@ namespace APKInstaller.ViewModels.SettingsPages
             get => _updateStateIsOpen;
             set
             {
-                _updateStateIsOpen = value;
-                RaisePropertyChangedEvent();
+                if (_updateStateIsOpen != value)
+                {
+                    _updateStateIsOpen = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -222,8 +210,11 @@ namespace APKInstaller.ViewModels.SettingsPages
             get => _updateStateMessage;
             set
             {
-                _updateStateMessage = value;
-                RaisePropertyChangedEvent();
+                if (_updateStateMessage != value)
+                {
+                    _updateStateMessage = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -233,8 +224,11 @@ namespace APKInstaller.ViewModels.SettingsPages
             get => _updateStateSeverity;
             set
             {
-                _updateStateSeverity = value;
-                RaisePropertyChangedEvent();
+                if (_updateStateSeverity != value)
+                {
+                    _updateStateSeverity = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -244,8 +238,11 @@ namespace APKInstaller.ViewModels.SettingsPages
             get => _updateStateTitle;
             set
             {
-                _updateStateTitle = value;
-                RaisePropertyChangedEvent();
+                if (_updateStateTitle != value)
+                {
+                    _updateStateTitle = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -255,8 +252,11 @@ namespace APKInstaller.ViewModels.SettingsPages
             get => _aboutTextBlockText;
             set
             {
-                _aboutTextBlockText = value;
-                RaisePropertyChangedEvent();
+                if (_aboutTextBlockText != value)
+                {
+                    _aboutTextBlockText = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 

@@ -25,15 +25,18 @@ namespace APKInstaller.Pages.SettingsPages
             get => UIHelper.HasTitleBar ? UIHelper.MainWindow.ExtendsContentIntoTitleBar : WindowHelper.GetAppWindowForCurrentWindow().TitleBar.ExtendsContentIntoTitleBar;
             set
             {
-                if (UIHelper.HasTitleBar)
+                if (IsExtendsTitleBar != value)
                 {
-                    UIHelper.MainWindow.ExtendsContentIntoTitleBar = value;
+                    if (UIHelper.HasTitleBar)
+                    {
+                        UIHelper.MainWindow.ExtendsContentIntoTitleBar = value;
+                    }
+                    else
+                    {
+                        WindowHelper.GetAppWindowForCurrentWindow().TitleBar.ExtendsContentIntoTitleBar = value;
+                    }
+                    ThemeHelper.UpdateSystemCaptionButtonColors();
                 }
-                else
-                {
-                    WindowHelper.GetAppWindowForCurrentWindow().TitleBar.ExtendsContentIntoTitleBar = value;
-                }
-                ThemeHelper.UpdateSystemCaptionButtonColors();
             }
         }
 
@@ -43,8 +46,11 @@ namespace APKInstaller.Pages.SettingsPages
             get => progressValue;
             set
             {
-                TitleBar.SetProgressValue(value);
-                progressValue = value;
+                if (progressValue != value)
+                {
+                    TitleBar.SetProgressValue(value);
+                    progressValue = value;
+                }
             }
         }
 
@@ -54,15 +60,18 @@ namespace APKInstaller.Pages.SettingsPages
             get => isShowProgressRing;
             set
             {
-                if (value)
+                if (isShowProgressRing != value)
                 {
-                    TitleBar.ShowProgressRing();
+                    if (value)
+                    {
+                        TitleBar.ShowProgressRing();
+                    }
+                    else
+                    {
+                        TitleBar.HideProgressRing();
+                    }
+                    isShowProgressRing = value;
                 }
-                else
-                {
-                    TitleBar.HideProgressRing();
-                }
-                isShowProgressRing = value;
             }
         }
 

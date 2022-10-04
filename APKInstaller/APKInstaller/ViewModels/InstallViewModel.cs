@@ -74,8 +74,11 @@ namespace APKInstaller.ViewModels
             get => _apkInfo;
             set
             {
-                _apkInfo = value;
-                RaisePropertyChangedEvent();
+                if (_apkInfo != value)
+                {
+                    _apkInfo = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -84,18 +87,18 @@ namespace APKInstaller.ViewModels
             get => SettingsHelper.Get<string>(SettingsHelper.ADBPath);
             set
             {
-                SettingsHelper.Set(SettingsHelper.ADBPath, value);
-                RaisePropertyChangedEvent();
+                if (ADBPath != value)
+                {
+                    SettingsHelper.Set(SettingsHelper.ADBPath, value);
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
         public static bool IsOpenApp
         {
             get => SettingsHelper.Get<bool>(SettingsHelper.IsOpenApp);
-            set
-            {
-                SettingsHelper.Set(SettingsHelper.IsOpenApp, value);
-            }
+            set => SettingsHelper.Set(SettingsHelper.IsOpenApp, value);
         }
 
         private bool _isInstalling;
@@ -104,16 +107,19 @@ namespace APKInstaller.ViewModels
             get => _isInstalling;
             set
             {
-                _isInstalling = value;
-                if (value)
+                if (_isInstalling != value)
                 {
-                    ProgressHelper.SetState(ProgressState.Indeterminate, true);
+                    _isInstalling = value;
+                    if (value)
+                    {
+                        ProgressHelper.SetState(ProgressState.Indeterminate, true);
+                    }
+                    else
+                    {
+                        ProgressHelper.SetState(ProgressState.None, true);
+                    }
+                    RaisePropertyChangedEvent();
                 }
-                else
-                {
-                    ProgressHelper.SetState(ProgressState.None, true);
-                }
-                RaisePropertyChangedEvent();
             }
         }
 
@@ -123,16 +129,19 @@ namespace APKInstaller.ViewModels
             get => _isInitialized;
             set
             {
-                _isInitialized = value;
-                if (value)
+                if (_isInitialized != value)
                 {
-                    ProgressHelper.SetState(ProgressState.None, true);
+                    _isInitialized = value;
+                    if (value)
+                    {
+                        ProgressHelper.SetState(ProgressState.None, true);
+                    }
+                    else
+                    {
+                        ProgressHelper.SetState(ProgressState.Indeterminate, true);
+                    }
+                    RaisePropertyChangedEvent();
                 }
-                else
-                {
-                    ProgressHelper.SetState(ProgressState.Indeterminate, true);
-                }
-                RaisePropertyChangedEvent();
             }
         }
 
@@ -142,8 +151,11 @@ namespace APKInstaller.ViewModels
             get => _appName;
             set
             {
-                _appName = value;
-                RaisePropertyChangedEvent();
+                if (_appName != value)
+                {
+                    _appName = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -153,8 +165,11 @@ namespace APKInstaller.ViewModels
             get => _textOutput;
             set
             {
-                _textOutput = value;
-                RaisePropertyChangedEvent();
+                if (_textOutput != value)
+                {
+                    _textOutput = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -164,8 +179,11 @@ namespace APKInstaller.ViewModels
             get => _infoMessage;
             set
             {
-                _infoMessage = value;
-                RaisePropertyChangedEvent();
+                if (_infoMessage != value)
+                {
+                    _infoMessage = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -175,8 +193,11 @@ namespace APKInstaller.ViewModels
             get => _progressText;
             set
             {
-                _progressText = value;
-                RaisePropertyChangedEvent();
+                if (_progressText != value)
+                {
+                    _progressText = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -186,8 +207,11 @@ namespace APKInstaller.ViewModels
             get => _actionButtonEnable;
             set
             {
-                _actionButtonEnable = value;
-                RaisePropertyChangedEvent();
+                if (_actionButtonEnable != value)
+                {
+                    _actionButtonEnable = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -197,8 +221,11 @@ namespace APKInstaller.ViewModels
             get => _secondaryActionButtonEnable;
             set
             {
-                _secondaryActionButtonEnable = value;
-                RaisePropertyChangedEvent();
+                if (_secondaryActionButtonEnable != value)
+                {
+                    _secondaryActionButtonEnable = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -208,8 +235,11 @@ namespace APKInstaller.ViewModels
             get => _fileSelectButtonEnable;
             set
             {
-                _fileSelectButtonEnable = value;
-                RaisePropertyChangedEvent();
+                if (_fileSelectButtonEnable != value)
+                {
+                    _fileSelectButtonEnable = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -219,8 +249,11 @@ namespace APKInstaller.ViewModels
             get => _downloadButtonEnable;
             set
             {
-                _downloadButtonEnable = value;
-                RaisePropertyChangedEvent();
+                if (_downloadButtonEnable != value)
+                {
+                    _downloadButtonEnable = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -230,8 +263,11 @@ namespace APKInstaller.ViewModels
             get => _deviceSelectButtonEnable;
             set
             {
-                _deviceSelectButtonEnable = value;
-                RaisePropertyChangedEvent();
+                if (_deviceSelectButtonEnable != value)
+                {
+                    _deviceSelectButtonEnable = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -241,8 +277,11 @@ namespace APKInstaller.ViewModels
             get => _cancelOperationButtonEnable;
             set
             {
-                _cancelOperationButtonEnable = value;
-                RaisePropertyChangedEvent();
+                if (_cancelOperationButtonEnable != value)
+                {
+                    _cancelOperationButtonEnable = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -252,8 +291,11 @@ namespace APKInstaller.ViewModels
             get => _waitProgressText;
             set
             {
-                _waitProgressText = value;
-                RaisePropertyChangedEvent();
+                if (_waitProgressText != value)
+                {
+                    _waitProgressText = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -263,8 +305,11 @@ namespace APKInstaller.ViewModels
             get => _waitProgressValue;
             set
             {
-                _waitProgressValue = value;
-                RaisePropertyChangedEvent();
+                if (_waitProgressValue != value)
+                {
+                    _waitProgressValue = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -274,8 +319,11 @@ namespace APKInstaller.ViewModels
             get => _appxInstallBarValue;
             set
             {
-                _appxInstallBarValue = value;
-                RaisePropertyChangedEvent();
+                if (_appxInstallBarValue != value)
+                {
+                    _appxInstallBarValue = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -285,8 +333,11 @@ namespace APKInstaller.ViewModels
             get => _waitProgressIndeterminate;
             set
             {
-                _waitProgressIndeterminate = value;
-                RaisePropertyChangedEvent();
+                if (_waitProgressIndeterminate != value)
+                {
+                    _waitProgressIndeterminate = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -296,8 +347,11 @@ namespace APKInstaller.ViewModels
             get => _appxInstallBarIndeterminate;
             set
             {
-                _appxInstallBarIndeterminate = value;
-                RaisePropertyChangedEvent();
+                if (_appxInstallBarIndeterminate != value)
+                {
+                    _appxInstallBarIndeterminate = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -307,8 +361,11 @@ namespace APKInstaller.ViewModels
             get => _actionButtonText;
             set
             {
-                _actionButtonText = value;
-                RaisePropertyChangedEvent();
+                if (_actionButtonText != value)
+                {
+                    _actionButtonText = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -318,8 +375,11 @@ namespace APKInstaller.ViewModels
             get => _secondaryActionButtonText;
             set
             {
-                _secondaryActionButtonText = value;
-                RaisePropertyChangedEvent();
+                if (_secondaryActionButtonText != value)
+                {
+                    _secondaryActionButtonText = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -329,8 +389,11 @@ namespace APKInstaller.ViewModels
             get => _fileSelectButtonText;
             set
             {
-                _fileSelectButtonText = value;
-                RaisePropertyChangedEvent();
+                if (_fileSelectButtonText != value)
+                {
+                    _fileSelectButtonText = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -340,8 +403,11 @@ namespace APKInstaller.ViewModels
             get => _downloadButtonText;
             set
             {
-                _downloadButtonText = value;
-                RaisePropertyChangedEvent();
+                if (_downloadButtonText != value)
+                {
+                    _downloadButtonText = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -351,8 +417,11 @@ namespace APKInstaller.ViewModels
             get => _deviceSelectButtonText;
             set
             {
-                _deviceSelectButtonText = value;
-                RaisePropertyChangedEvent();
+                if (_deviceSelectButtonText != value)
+                {
+                    _deviceSelectButtonText = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -362,8 +431,11 @@ namespace APKInstaller.ViewModels
             get => _cancelOperationButtonText;
             set
             {
-                _cancelOperationButtonText = value;
-                RaisePropertyChangedEvent();
+                if (_cancelOperationButtonText != value)
+                {
+                    _cancelOperationButtonText = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -373,8 +445,11 @@ namespace APKInstaller.ViewModels
             get => _textOutputVisibility;
             set
             {
-                _textOutputVisibility = value;
-                RaisePropertyChangedEvent();
+                if (_textOutputVisibility != value)
+                {
+                    _textOutputVisibility = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -384,8 +459,11 @@ namespace APKInstaller.ViewModels
             get => _installOutputVisibility;
             set
             {
-                _installOutputVisibility = value;
-                RaisePropertyChangedEvent();
+                if (_installOutputVisibility != value)
+                {
+                    _installOutputVisibility = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -395,8 +473,11 @@ namespace APKInstaller.ViewModels
             get => _actionVisibility;
             set
             {
-                _actionVisibility = value;
-                RaisePropertyChangedEvent();
+                if (_actionVisibility != value)
+                {
+                    _actionVisibility = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -406,8 +487,11 @@ namespace APKInstaller.ViewModels
             get => _secondaryActionVisibility;
             set
             {
-                _secondaryActionVisibility = value;
-                RaisePropertyChangedEvent();
+                if (_secondaryActionVisibility != value)
+                {
+                    _secondaryActionVisibility = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -417,8 +501,11 @@ namespace APKInstaller.ViewModels
             get => _fileSelectVisibility;
             set
             {
-                _fileSelectVisibility = value;
-                RaisePropertyChangedEvent();
+                if (_fileSelectVisibility != value)
+                {
+                    _fileSelectVisibility = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -428,8 +515,11 @@ namespace APKInstaller.ViewModels
             get => _downloadVisibility;
             set
             {
-                _downloadVisibility = value;
-                RaisePropertyChangedEvent();
+                if (_downloadVisibility != value)
+                {
+                    _downloadVisibility = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -439,8 +529,11 @@ namespace APKInstaller.ViewModels
             get => _deviceSelectVisibility;
             set
             {
-                _deviceSelectVisibility = value;
-                RaisePropertyChangedEvent();
+                if (_deviceSelectVisibility != value)
+                {
+                    _deviceSelectVisibility = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -450,8 +543,11 @@ namespace APKInstaller.ViewModels
             get => _cancelOperationVisibility;
             set
             {
-                _cancelOperationVisibility = value;
-                RaisePropertyChangedEvent();
+                if (_cancelOperationVisibility != value)
+                {
+                    _cancelOperationVisibility = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -461,8 +557,11 @@ namespace APKInstaller.ViewModels
             get => _messagesToUserVisibility;
             set
             {
-                _messagesToUserVisibility = value;
-                RaisePropertyChangedEvent();
+                if (_messagesToUserVisibility != value)
+                {
+                    _messagesToUserVisibility = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -472,8 +571,11 @@ namespace APKInstaller.ViewModels
             get => _launchWhenReadyVisibility;
             set
             {
-                _launchWhenReadyVisibility = value;
-                RaisePropertyChangedEvent();
+                if (_launchWhenReadyVisibility != value)
+                {
+                    _launchWhenReadyVisibility = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -483,8 +585,11 @@ namespace APKInstaller.ViewModels
             get => _appVersionVisibility;
             set
             {
-                _appVersionVisibility = value;
-                RaisePropertyChangedEvent();
+                if (_appVersionVisibility != value)
+                {
+                    _appVersionVisibility = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -494,8 +599,11 @@ namespace APKInstaller.ViewModels
             get => _appPublisherVisibility;
             set
             {
-                _appPublisherVisibility = value;
-                RaisePropertyChangedEvent();
+                if (_appPublisherVisibility != value)
+                {
+                    _appPublisherVisibility = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -505,8 +613,11 @@ namespace APKInstaller.ViewModels
             get => _appCapabilitiesVisibility;
             set
             {
-                _appCapabilitiesVisibility = value;
-                RaisePropertyChangedEvent();
+                if (_appCapabilitiesVisibility != value)
+                {
+                    _appCapabilitiesVisibility = value;
+                    RaisePropertyChangedEvent();
+                }
             }
         }
 
@@ -985,6 +1096,7 @@ namespace APKInstaller.ViewModels
                         DefaultButton = ContentDialogButton.Close,
                         CloseButtonText = _loader.GetString("IKnow"),
                         PrimaryButtonText = _loader.GetString("StartWSA"),
+                        FallbackContent = _loader.GetString("HowToConnectInfo"),
                         ContentInfo = new GitInfo("Paving-Base", "APK-Installer", "screenshots", "Documents/Tutorials/How%20To%20Connect%20WSA", "How%20To%20Connect%20WSA.md")
                     };
                     ProgressHelper.SetState(ProgressState.None, true);
@@ -1055,7 +1167,7 @@ namespace APKInstaller.ViewModels
                     ContentDialog dialog = new()
                     {
                         XamlRoot = _page.XamlRoot,
-                        Title = _loader.GetString("NoDevice"),
+                        Title = _loader.GetString("NoDevice10"),
                         DefaultButton = ContentDialogButton.Primary,
                         CloseButtonText = _loader.GetString("IKnow"),
                         PrimaryButtonText = _loader.GetString("InstallWSA"),
@@ -1077,14 +1189,15 @@ namespace APKInstaller.ViewModels
             }
             else
             {
-                ContentDialog dialog = new()
+                ContentDialog dialog = new MarkdownDialog
                 {
                     XamlRoot = _page.XamlRoot,
                     Title = _loader.GetString("NoDevice"),
                     DefaultButton = ContentDialogButton.Close,
                     CloseButtonText = _loader.GetString("IKnow"),
                     PrimaryButtonText = _loader.GetString("GoToSetting"),
-                    Content = _loader.GetString("NoDeviceInfo10"),
+                    FallbackContent = _loader.GetString("NoDeviceInfo10"),
+                    ContentInfo = new GitInfo("Paving-Base", "APK-Installer", "screenshots", "Documents/Tutorials/How%20To%20Connect%20Device", "How%20To%20Connect%20Device.md")
                 };
                 ProgressHelper.SetState(ProgressState.None, true);
                 ContentDialogResult result = await dialog.ShowAsync();
