@@ -192,15 +192,15 @@
     <value>Pergi ke Pengaturan</value>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>How to connect WSA</value>
+    <value>Bagaimana cara menghubungkan WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Please make sure APK Installer has been updated to the latest version
-2. Make sure you have the Android Subsystem installed and running
-3. Turn on developer mode and make sure the IP address is displayed successfully
-4. Reopen APK Installer and continue your installation
+    <value>1. Pastikan Penginstal APK telah diperbarui ke versi terbaru
+2. Pastikan Anda telah menginstal dan menjalankan Subsistem Android
+3. Aktifkan mode pengembang dan pastikan alamat IP berhasil ditampilkan
+4. Buka kembali Penginstal APK dan lanjutkan penginstalan Anda
 
-[Learn More]({0})</value>
+[Pelajari Lebih Lanjut]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
     <value>Ikon</value>
@@ -256,25 +256,25 @@
     <value>Tidak dapat mencari Perangkat Android</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>How to connect device</value>
+    <value>Bagaimana cara menghubungkan perangkat</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>If you want to install app into Windows Subsystem for Android™, you need to install it first . If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
+    <value>Jika Anda ingin menginstal aplikasi ke Windows Subsystem for Android™, Anda harus menginstalnya terlebih dahulu. Jika Anda ingin menginstal ke perangkat lain, silakan buka Halaman Pengaturan, matikan "Hanya untuk WSA", dan sambungkan perangkat Anda.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>#### Using USB
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open USB Debug
-3. Go to the Settings Page of APK Installer, select your device
-4. Go back, resume installation
-#### Using Wifi
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open Remote Debug
-3. Remember the IP address of your device
-4. Go to the Settings Page of APK Installer, connect and select your device
-5. Go back, resume installation
+    <value>#### Menggunakan USB
+1. Pastikan Penginstal APK telah diperbarui ke [versi terbaru](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Aktifkan Mode Pengembang, buka USB Debug
+3. Buka Halaman Pengaturan Penginstal APK, pilih perangkat Anda
+4. Kembali, lanjutkan instalasi
+#### Menggunakan Wifi
+1. Pastikan Penginstal APK telah diperbarui ke [versi terbaru](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Aktifkan Mode Pengembang, buka Debug Jarak Jauh
+3. Ingat alamat IP perangkat Anda
+4. Buka Halaman Pengaturan Penginstal APK, sambungkan dan pilih perangkat Anda
+5. Kembali, lanjutkan instalasi
 
-[Learn More]({0})</value>
+[Pelajari Lebih Lanjut]({0})</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
     <value>Tidak dapat menghubungkan Internet</value>
