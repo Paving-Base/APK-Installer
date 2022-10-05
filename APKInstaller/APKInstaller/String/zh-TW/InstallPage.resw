@@ -190,7 +190,7 @@
     <value>前往設定頁面</value>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>How to connect WSA</value>
+    <value>如何連接 Android 子系統</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
     <value>1. Please make sure APK Installer has been updated to the latest version
@@ -254,7 +254,7 @@
     <value>找不到 Android 設備</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>How to connect device</value>
+    <value>如何連接設備</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
     <value>If you want to install app into Windows Subsystem for Android™, you need to install it first . If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
