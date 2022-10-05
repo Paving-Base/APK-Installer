@@ -1,12 +1,12 @@
-# How To Connect Device
-#### Using USB
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open USB Debug ![Modo desarrollador](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Screenshot_20221002-172252.jpg)
-3. Go to the Settings Page of APK Installer, select your device ![Settings Page](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Snipaste_2022-10-02_17-37-30.png)
-4. Go back, resume installation ![Resumir la instalación](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Snipaste_2022-10-02_17-34-04.png)
-#### Using Wifi
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open Remote Debug ![Modo desarrollador](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Screenshot_20221002-174001.jpg)
-3. Remember the IP address of your device ![IP address](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Screenshot_20221002-174200.jpg)
-3. Go to the Settings Page of APK Installer, connect and select your device ![Settings Page](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Snipaste_2022-10-02_17-46-28.png)
-4. Go back, resume installation ![Resumir la instalación](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Snipaste_2022-10-02_17-34-04.png)
+# Cómo conectar un dispositivo
+#### Usando USB
+1. Por favor, asegúrate de que APK Installer ha sido actualizado a la [última versión](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Activar el modo de desarrollador, abrir depuración USB![Modo de desarrollador](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Screenshot_20221002-172252.jpg)
+3. Ir a la página de ajustes de APK Installer, selecciona tu dispositivo![Página de ajustes](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Snipaste_2022-10-02_17-37-30.png)
+4. Volver, resumir la instalación![Resumir la instalación](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Snipaste_2022-10-02_17-34-04.png)
+#### Usando Wifi
+1. Por favor, asegúrate de que APK Installer ha sido actualizado a la [última versión](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Activar el modo de desarrollador, abrir depuración remota![Modo de desarrollador ](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Screenshot_20221002-174001.jpg)
+3. Recuerda la dirección IP de tu dispositivo![Dirección IP](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Screenshot_20221002-174200.jpg)
+3. Ir a la página de ajustes de APK Installer, conecta y selecciona tu dispositivo![Página de ajustes](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Snipaste_2022-10-02_17-46-28.png)
+4. Volver, resumir la instalación![Resumir la instalación](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Snipaste_2022-10-02_17-34-04.png)
