@@ -190,15 +190,15 @@
     <value>前往设置页面</value>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>How to connect WSA</value>
+    <value>如何连接 Android 子系统</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Please make sure APK Installer has been updated to the latest version
-2. Make sure you have the Android Subsystem installed and running
-3. Turn on developer mode and make sure the IP address is displayed successfully
-4. Reopen APK Installer and continue your installation
+    <value>1. 请确保 APK Installer 已经更新到了最新版本
+2. 请确保您已经安装并运行了 Android 子系统
+3. 打开开发人员模式，并确保成功显示了 IP 地址
+4. 重新打开 APK Installer，继续您的安装
 
-[Learn More]({0})</value>
+[了解更多]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
     <value>图标</value>
@@ -254,10 +254,10 @@
     <value>找不到 Android 设备</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>How to connect device</value>
+    <value>如何连接设备</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>If you want install app into Windows Subsystem for Android™, you need to install it frist . If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
+    <value>如果您想要将应用程序安装到适用于 Windows 的 Android™ 子系统，您需要先安装它。 如果您想要安装到其他设备，请进入设置页面，关闭“仅适用于 WSA”，并连接您的设备。</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
     <value>#### Using USB
