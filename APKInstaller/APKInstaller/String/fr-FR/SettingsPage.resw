@@ -127,7 +127,7 @@
     <value>Auto download when package is from URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Does Auto Download Online Packages?</value>
+    <value>Téléchargement auto des paquets en ligne ?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Sélectionner le type d'arrière-plan pour Windows 11</value>
@@ -151,22 +151,22 @@
     <value>Effacer le cache</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Close ADB may break other Installers when they still open.</value>
+    <value>Fermer ADB risque de corrompre les autres installations toujours en cours.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Does Close ADB when Closing Installer?</value>
+    <value>ADB doit-il se fermer après l'installation ?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Close Installer after APK has installed and start.</value>
+    <value>Ferme l'installeur une fois l'APK installée et lancée.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Does Close Installer when APP is Ready?</value>
+    <value>Fermer l'installateur lorsque l'application est prête ?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Configurations</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device on network.</value>
+    <value>Connecter l'appareil au réseau.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Connecter l'appareil</value>
@@ -190,7 +190,7 @@
     <value>Supports</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application, and no ads will be added for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your support.💕</value>
+    <value>L'installateur d'APK est une application open-source, et aucune publicité ne sera ajoutée pour le profit. Si vous aimez cette application, n'oubliez pas de l'évaluer dans la boutique. Bien sûr, ce serait mieux si vous pouviez faire un don. Merci pour votre soutien.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
@@ -211,19 +211,19 @@
     <value>Go to Update</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
-    <value>Join Our Chat</value>
+    <value>Rejoignez notre chat</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Last Checked: </value>
+    <value>Dernier vérifié : </value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
-    <value>Learn More</value>
+    <value>En savoir plus</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
     <value>Logs</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may contains something unpleasant. Such as ADs, broken functions even virus. Please go to Microsoft Store to download the original one. See our Github Repository to learn more about it.</value>
+    <value>Une version modifiée peut contenir du contenu désagréable, comme des pubs, des fonctionnalités cassées ou même des virus. Veuillez vous rendre sur le Microsoft Store pour télécharger le dépôt original.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>You are using a modified version!</value>

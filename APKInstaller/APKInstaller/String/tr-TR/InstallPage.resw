@@ -190,7 +190,15 @@
     <value>Ayarlara Git</value>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>WSA'ya Nasıl Bağlanılır?</value>
+    <value>WSA'ya nasıl bağlanılır</value>
+  </data>
+  <data name="HowToConnectInfo" xml:space="preserve">
+    <value>1. Lütfen APK Installer'ın en son sürüme güncellendiğinden emin olun
+2. Android Alt Sisteminin kurulu ve çalışır durumda olduğundan emin olun
+3. Geliştirici modunu açın ve IP adresinin başarıyla görüntülendiğinden emin olun
+4. APK Installer'ı yeniden açın ve kurulumunuza devam edin
+
+[Daha Fazla Bilgi]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
     <value>Simge</value>
@@ -245,11 +253,26 @@
   <data name="NoDevice" xml:space="preserve">
     <value>Android Cihazı Bulunamıyor</value>
   </data>
+  <data name="NoDevice10" xml:space="preserve">
+    <value>Cihaz nasıl bağlanır</value>
+  </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>WSA'yı yükleyebilirsiniz ya da cihazı bağlamak için ayarlara gidin.</value>
+    <value>Uygulamayı Android™ için Windows Alt Sistemine yüklemek istiyorsanız, önce onu yüklemeniz gerekir. Başka cihazlara yüklemek istiyorsanız, lütfen Ayarlar Sayfasına gidin, "Yalnızca WSA İçindir" seçeneğini kapatın ve cihazınızı bağlayın.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>Cihazı bağlamak için ayarlara gidebilirsiniz.</value>
+    <value>#### USB'yi Kullanma
+1. Lütfen APK Yükleyici'nin [en son sürüme] güncellendiğinden emin olun(https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Yükleyici")
+2. Geliştirici Modunu açın, USB Hata Ayıklamayı açın
+3. APK Installer'ın Ayarlar Sayfasına gidin, cihazınızı seçin
+4. Geri dönün, kuruluma devam edin
+#### Wifi Kullanımı
+1. Lütfen APK Yükleyici'nin [en son sürüme] güncellendiğinden emin olun(https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Yükleyici")
+2. Geliştirici Modunu açın, Uzaktan Hata Ayıklamayı açın
+3. Cihazınızın IP adresini hatırlayın
+4. APK Installer'ın Ayarlar Sayfasına gidin, bağlanın ve cihazınızı seçin
+5. Geri dönün, kuruluma devam edin
+
+[Daha Fazla Bilgi]({0})</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
     <value>İnternete bağlanılamadı</value>
