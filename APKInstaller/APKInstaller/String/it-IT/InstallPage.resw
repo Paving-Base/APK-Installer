@@ -130,16 +130,16 @@
     <value>File APK</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Capabilities: </value>
+    <value>Permessi:</value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>App Name</value>
+    <value>Nome App</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Annulla</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Cannot Connect to WSA</value>
+    <value>Impossibile connettersi a WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
     <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
@@ -257,7 +257,7 @@
     <value>How to connect device</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>If you want install app into Windows Subsystem for Android™, you need to install it frist . If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
+    <value>If you want to install app into Windows Subsystem for Android™, you need to install it first . If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
     <value>#### Using USB
@@ -270,7 +270,7 @@
 2. Turn on Developer Mode, open Remote Debug
 3. Remember the IP address of your device
 4. Go to the Settings Page of APK Installer, connect and select your device
-5. Go back, resume installation 
+5. Go back, resume installation
 
 [Learn More]({0})</value>
   </data>
