@@ -154,7 +154,7 @@
     <value>Test Progress Ring on the Title Bar</value>
   </data>
   <data name="ProgressSettings.Header" xml:space="preserve">
-    <value>Progress</value>
+    <value>Avanzamento</value>
   </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
     <value>Set the value of Progress Ring</value>
