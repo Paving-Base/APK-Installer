@@ -226,7 +226,7 @@
     <value>Une version modifiée peut contenir du contenu désagréable, comme des pubs, des fonctionnalités cassées ou même des virus. Veuillez vous rendre sur le Microsoft Store pour télécharger le dépôt original.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>You are using a modified version!</value>
+    <value>Vous utilisez une version modifiée!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>Disable it to connect to other devices.</value>
