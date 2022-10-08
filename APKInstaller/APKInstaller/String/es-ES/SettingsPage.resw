@@ -166,7 +166,7 @@
     <value>Configuraciones</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Conecta el dispositivo a la red.</value>
+    <value>Conectar el dispositivo a la red.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Conectar dispositivo</value>

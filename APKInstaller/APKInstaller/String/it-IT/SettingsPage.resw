@@ -124,10 +124,10 @@
     <value>Percorso ADB</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>Scaricamento automatico quando il pacchetto è da URL.</value>
+    <value>Download automatico quando il pacchetto proviene da un URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Auto Download Pacchetti Online?</value>
+    <value>Auto Download dei Pacchetti Online?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Scegli il Contesto per Windows 11</value>
@@ -142,7 +142,7 @@
     <value>Verifica Fallita</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>Ricerca Aggiornamenti...</value>
+    <value>Ricerca Aggiornamenti in Corso...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
     <value>Controlla Aggiornamenti</value>
@@ -151,13 +151,13 @@
     <value>Svuota Cache</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Chiudere ADB può rompere altri installatori quando sono ancora aperti.</value>
+    <value>Chiudere ADB può interrompere altri installatori avviati.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
     <value>Chiudere ADB quando si Chiude l'Installatore?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Chiudi Installer dopo che APK è stato installato e avviato.</value>
+    <value>Chiudere il programma di installazione dopo che l'APK è stato installato e avviarlo.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
     <value>Chiudere l'Installatore appena l'App è pronta?</value>
@@ -166,7 +166,7 @@
     <value>Configurazioni</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Collega il dispositivo sulla rete.</value>
+    <value>Connetti dispositivo alla rete.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Connetti Dispositivo</value>
@@ -175,7 +175,7 @@
     <value>Contattami</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Seguimi nelle Social Apps per scoprire nuovi sviluppi. Se trovi qualche bug, per favore segnalamelo in PM. Farò del mio meglio per risolvere il problema. Se hai un account Telegram, ti invito nel Gruppo @PavingBase 😊!</value>
+    <value>Seguimi nelle Social Apps per scoprire nuovi sviluppi. Se trovi qualche bug, per favore segnalamelo in PM. Farò del mio meglio per risolvere il problema. Se hai un account Telegram, ti invito nel Gruppo @PavingBase @CyberMarique😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Contenuto</value>
@@ -187,7 +187,7 @@
     <value>Display</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
-    <value>Supporta</value>
+    <value>Supportaci</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
     <value>APK Installer è un'applicazione open-source e nessun annuncio è stato o sarà aggiunto per ricavarne del profitto. Se ti piace questa app, non dimenticare di votarla nello store. Naturalmente, sarebbe meglio una piccola donazione. Grazie per il tuo supporto.💕</value>
@@ -202,7 +202,7 @@
     <value>Cerca Aggiornamenti</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>Spostati nella pagina di prova.</value>
+    <value>Vai alla pagina di test.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
     <value>Vai alla TestPage</value>

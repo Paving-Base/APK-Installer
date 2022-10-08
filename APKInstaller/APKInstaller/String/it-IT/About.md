@@ -1,22 +1,22 @@
-#### Welcome to the APK Installer!
+#### Benvenuto su APK Installer!
 
-##### Declaration
-1. Please follow the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. This program is open source software, so please make sure that the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) to keep your data safe.
-3. If the source of the program is not abnormal, all your data will only be used to run with the program or stored locally during the program running, and the developer will not steal any of your data. Still, please pay attention to the security of the environment.
-4. The translation of the text of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts do not represent the author's views.
+##### Dichiarazione
+1. Si prega di leggere [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+2. Questo programma è software open source, quindi assicurati che il programma provenga da [questo repository Github](https://github.com/Paving-Base/APK-Installer) o sia [questa applicazione](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) perché i tuoi dati siano protetti.
+3. Se la sorgente del programma è conforme, tutti i tuoi dati saranno utilizzati solo per eseguire il programma oppure saranno memorizzati localmente durante l'esecuzione del programma e lo sviluppatore non se ne impossesserà. Tuttavia, presta attenzione alla sicurezza dell'ambiente.
+4. La traduzione del testo di questa applicazione viene dalla comunità [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") e tutti i testi non dipendono dallo sviluppatore. (Italiano t.me@CyberMatique)
 
 ##### Traduzioni
-Thanks to [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") translators for their support. If there is any problem with the translation, please come and correct it. And please take translation seriously. Your words will be read all over the world.
+Grazie a @CyberMatique per il suo supporto. Se c'è qualche errore di  traduzione, corregilo su <0>Crowdin</0>. Ricorda di prendere seriamente la traduzione. Le vostre parole saranno lette in tutto il mondo.
 
-##### Contributors
+##### Collaboratori
 - [wherewhere](https://github.com/wherewhere)
 - [Void48](https://github.com/Void48)
 - [EP012014](https://github.com/EP012014)
 - [A Big Salty Fish](https://github.com/bigsaltyfishes)
 - [sam1357](https://github.com/sam1357)
 
-##### Citations and References
+##### Citazioni e Riferimenti
 - [WinUI](https://github.com/microsoft/microsoft-ui-xaml "WinUI")
 - [MetroLog](https://github.com/roubachof/MetroLog "MetroLog")
 - [Downloader](https://github.com/bezzad/Downloader "Downloader")
