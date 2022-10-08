@@ -259,7 +259,7 @@
     <value>Bagaimana cara menghubungkan perangkat</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>If you want to install app into Windows Subsystem for Android™, you need to install it first. If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
+    <value>Jika Anda ingin menginstal aplikasi ke Windows Subsystem for Android™, Anda harus menginstalnya terlebih dahulu. Jika Anda ingin menginstal ke perangkat lain, silakan buka Halaman Pengaturan, matikan "Hanya untuk WSA", dan sambungkan perangkat Anda.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
     <value>#### Menggunakan USB
