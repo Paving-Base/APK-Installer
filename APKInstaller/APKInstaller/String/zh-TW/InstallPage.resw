@@ -257,7 +257,7 @@
     <value>如何連接設備</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>If you want to install app into Windows Subsystem for Android™, you need to install it first. If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
+    <value>如果您想要將應用程式安裝到適用於 Windows 的 Android™ 子系統，您需要先安裝它。 如果您想要安裝到其他設備，請進入設置頁面，關閉「僅適用於 WSA」 ，並連接您的設備。</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
     <value>#### 使用 USB
