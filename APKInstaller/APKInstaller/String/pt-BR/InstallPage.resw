@@ -155,7 +155,7 @@ Capacidades:</value>
     <value>Checando ADB...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Checking Path...</value>
+    <value>Checando ADB...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>Clique aqui para ler eles</value>
