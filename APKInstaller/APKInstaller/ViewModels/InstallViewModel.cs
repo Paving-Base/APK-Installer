@@ -704,6 +704,11 @@ namespace APKInstaller.ViewModels
 
         private async Task CheckADB(bool force = false)
         {
+            if (!File.Exists(ADBPath))
+            {
+                ADBPath = @"C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe";
+            }
+
             checkadb:
             if (force || !File.Exists(ADBPath))
             {
