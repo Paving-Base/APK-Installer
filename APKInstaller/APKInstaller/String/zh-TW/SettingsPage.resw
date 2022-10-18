@@ -118,22 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
-    <value>關於本軟體</value>
+    <value>關於</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>ADB 路径</value>
+    <value>ADB 路徑</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>当安装包来自 URL 链接时自动下载。</value>
+    <value>當安裝包來自 URL 連結時自動下載。</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>是否自动下载在线安装包？</value>
+    <value>是否自動下載在線安裝包？</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>Windows 11用の背景の種類を選択</value>
+    <value>選擇適用於 Windows 11 的背景色類型</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>背景</value>
+    <value>背景色</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
     <value>更改</value>
