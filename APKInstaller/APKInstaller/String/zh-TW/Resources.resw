@@ -130,21 +130,21 @@
     <value>APK 應用安裝程式</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
-    <value>There was an error with the file upload.</value>
+    <value>程式出現了錯誤……</value>
   </data>
   <data name="ImageLoadError" xml:space="preserve">
-    <value>圖片上傳失敗</value>
+    <value>圖片載入失敗。</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>這些檔案出現了一些問題：</value>
+    <value>網路出現了一些問題……</value>
   </data>
   <data name="No" xml:space="preserve">
-    <value>取消</value>
+    <value>否</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>分割文件</value>
+    <value>Split APK 文件</value>
   </data>
   <data name="Yes" xml:space="preserve">
-    <value>Yes</value>
+    <value>是</value>
   </data>
 </root>
