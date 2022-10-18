@@ -155,7 +155,7 @@ Capacidades:</value>
     <value>Checando ADB...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Checking Path...</value>
+    <value>Checando ADB...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>Clique aqui para ler eles</value>
@@ -191,7 +191,7 @@ Capacidades:</value>
     <value>Vá para configurações</value>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>How to connect WSA</value>
+    <value>Como conectar o WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
     <value>1. Please make sure APK Installer has been updated to the latest version
@@ -258,7 +258,7 @@ Capacidades:</value>
     <value>How to connect device</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>If you want to install app into Windows Subsystem for Android™, you need to install it first . If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
+    <value>If you want to install app into Windows Subsystem for Android™, you need to install it first. If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
     <value>#### Using USB

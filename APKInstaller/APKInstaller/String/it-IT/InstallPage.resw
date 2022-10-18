@@ -257,7 +257,7 @@
     <value>Come connettere il dispositivo</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>Se desideri installare l'app in Windows Subsystem for Android™, è necessario farlo prima. Se vuoi installarla in altri dispositivi, vai alla Pagina delle Impostazioni, disattiva "Solo WSA" e connetti il tuo dispositivo.</value>
+    <value>Se vuoi installare l'applicazione in Windows Subsystem for Android™, devi farlo prima. Se vuoi installare l'app in altri dispositivi, vai alla pagina delle impostazioni, disattiva "Solo WSA" e collega il nuovo dispositivo.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
     <value>#### Tramite USB
