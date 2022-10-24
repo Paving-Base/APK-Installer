@@ -714,7 +714,7 @@ namespace APKInstaller.ViewModels
             {
                 StackPanel StackPanel = new();
                 StackPanel.Children.Add(
-                    new TextBlock()
+                    new TextBlock
                     {
                         TextWrapping = TextWrapping.Wrap,
                         Text = _loader.GetString("AboutADB")
@@ -1518,25 +1518,44 @@ namespace APKInstaller.ViewModels
             try
             {
                 IsInstalling = true;
+                AppxInstallBarIndeterminate = true;
                 ProgressText = _loader.GetString("Installing");
                 CancelOperationButtonText = _loader.GetString("Cancel");
                 CancelOperationVisibility = LaunchWhenReadyVisibility = Visibility.Visible;
                 ActionVisibility = SecondaryActionVisibility = TextOutputVisibility = InstallOutputVisibility = Visibility.Collapsed;
                 if (ApkInfo.IsSplit)
                 {
-                    await Task.Run(() => { new AdbClient().InstallMultiple(_device, new Stream[] { File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read) }, ApkInfo.PackageName); });
+                    AppxInstallBarIndeterminate = false;
+                    await Task.Run(() =>
+                    {
+                        PackageManager manager = new PackageManager(new AdbClient(), _device);
+                        manager.InstallProgressChanged += OnInstallProgressChanged;
+                        manager.InstallMultiplePackage(new string[] { ApkInfo.FullPath }, ApkInfo.PackageName, true);
+                    });
+                    AppxInstallBarValue = 100;
                 }
                 else if (ApkInfo.IsBundle)
                 {
+                    AppxInstallBarIndeterminate = false;
                     await Task.Run(() =>
                     {
-                        Stream[] streams = ApkInfo.SplitApks.Select(x => File.Open(x.FullPath, FileMode.Open, FileAccess.Read)).ToArray();
-                        new AdbClient().InstallMultiple(_device, File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read), streams);
+                        PackageManager manager = new PackageManager(new AdbClient(), _device);
+                        manager.InstallProgressChanged += OnInstallProgressChanged;
+                        string[] strings = ApkInfo.SplitApks.Select(x => x.FullPath).ToArray();
+                        manager.InstallMultiplePackage(ApkInfo.FullPath, strings, true);
                     });
+                    AppxInstallBarValue = 100;
                 }
                 else
                 {
-                    await Task.Run(() => { new AdbClient().Install(_device, File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read)); });
+                    AppxInstallBarIndeterminate = false;
+                    await Task.Run(() =>
+                    {
+                        PackageManager manager = new PackageManager(new AdbClient(), _device);
+                        manager.InstallProgressChanged += OnInstallProgressChanged;
+                        manager.InstallPackage(ApkInfo.FullPath, true);
+                    });
+                    AppxInstallBarValue = 100;
                 }
                 AppName = string.Format(_loader.GetString("InstalledFormat"), ApkInfo?.AppName);
                 if (IsOpenApp)
@@ -1554,6 +1573,8 @@ namespace APKInstaller.ViewModels
                 }
                 SendResults();
                 IsInstalling = false;
+                AppxInstallBarValue = 0;
+                AppxInstallBarIndeterminate = true;
                 SecondaryActionVisibility = Visibility.Visible;
                 SecondaryActionButtonText = _loader.GetString("Launch");
                 CancelOperationVisibility = LaunchWhenReadyVisibility = Visibility.Collapsed;
@@ -1565,6 +1586,16 @@ namespace APKInstaller.ViewModels
                 TextOutput = ex.Message;
                 TextOutputVisibility = InstallOutputVisibility = Visibility.Visible;
                 ActionVisibility = SecondaryActionVisibility = CancelOperationVisibility = LaunchWhenReadyVisibility = Visibility.Collapsed;
+            }
+
+            void OnInstallProgressChanged(object sender, double e)
+            {
+                ProgressHelper.SetValue(Convert.ToInt32(e), 100, true);
+                _page.DispatcherQueue.TryEnqueue(() =>
+                {
+                    AppxInstallBarValue = e;
+                    ProgressText = string.Format(_loader.GetString("InstallingPercent"), $"{e:N0}%");
+                });
             }
         }
 
