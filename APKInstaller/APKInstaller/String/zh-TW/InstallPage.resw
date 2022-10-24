@@ -221,10 +221,10 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
-    <value>安裝中……</value>
+    <value>正在安裝……</value>
   </data>
   <data name="InstallingPercent" xml:space="preserve">
-    <value>Installing {0}...</value>
+    <value>正在安裝 {0}……</value>
     <comment>{0} - Progress.</comment>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
