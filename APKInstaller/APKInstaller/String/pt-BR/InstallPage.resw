@@ -224,6 +224,10 @@ Capacidades:</value>
   <data name="Installing" xml:space="preserve">
     <value>Instalando...</value>
   </data>
+  <data name="InstallingPercent" xml:space="preserve">
+    <value>Installing {0}...</value>
+    <comment>{0} - Progress.</comment>
+  </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
     <value>Reação:</value>
   </data>
