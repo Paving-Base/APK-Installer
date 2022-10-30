@@ -130,16 +130,16 @@
     <value>Archivo APK</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Capacidades: 5000:</value>
+    <value>Capacidades: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>Dark App (DA)</value>
+    <value>Dar App Da</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>C</value>
+    <value>Cancel</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>No se puede conectar a WSA</value>
+    <value>No se puede conectar a %1</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
     <value>Puede que el WSA no empezase correctamente o hay un problema con el ADB. Este problema puede ser muy difícil de resolver. Por favor, reinicia el instalador. Si sigue sin funcionar, prueba a reiniciar el equipo.</value>
@@ -148,13 +148,13 @@
     <value>No se puede abrir el paquete de aplicación</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>Comprobando...</value>
+    <value>Verificando...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Comprobando ADB...</value>
+    <value>Verificando ADB...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Comprobando la ruta...</value>
+    <value>Verificando la ruta...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>Haz clic aquí para leerlos</value>
