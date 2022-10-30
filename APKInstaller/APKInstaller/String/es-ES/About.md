@@ -7,16 +7,16 @@
 4. La traducción del texto de esta aplicación proviene de la comunidad [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") y todos los textos no representan las vistas del autor.
 
 ##### Traducir
-Gracias a [los traductores](https://crowdin.com/project/APKInstaller "Crowdin") de Crowdin por su apoyo. Si hay algún problema con la traducción, por favor venga y corrígela. Por favor, tómate la traducción en serio. Tus palabras serán leídas en todo el mundo.
+Gracias a [los traductores](https://crowdin.com/project/APKInstaller "Crowdin") de Crowdin por su apoyo. Si hay algún problema con la traducción, por favor venga y corrígela. Y por favor, tome la traducción en serio. Sus palabras se leerán en todo el mundo.
 
-##### Contribuidores
+##### Equipo de Evolution X
 - [wherewhere](https://github.com/wherewhere)
 - [Void48](https://github.com/Void48)
 - [EP012014](https://github.com/EP012014)
 - [A Big Salty Fish](https://github.com/bigsaltyfishes)
 - [sam1357](https://github.com/sam1357)
 
-##### Citaciones y referencias
+##### Citas y Referencias
 - [WinUI](https://github.com/microsoft/microsoft-ui-xaml "WinUI")
 - [MetroLog](https://github.com/roubachof/MetroLog "MetroLog")
 - [Downloader](https://github.com/bezzad/Downloader "Downloader")
