@@ -130,13 +130,13 @@
     <value>Archivo APK</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Capacidades: </value>
+    <value>Capacidades: 5000:</value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>Nombre de la aplicación</value>
+    <value>Dark App (DA)</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancelar</value>
+    <value>C</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>No se puede conectar a WSA</value>
