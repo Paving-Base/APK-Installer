@@ -133,13 +133,13 @@
     <value>Capacidades: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>Dar App Da</value>
+    <value>Nombre de la aplicación</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Cancelar</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>No se puede conectar a %1</value>
+    <value>No se puede conectar a WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
     <value>Puede que el WSA no empezase correctamente o hay un problema con el ADB. Este problema puede ser muy difícil de resolver. Por favor, reinicia el instalador. Si sigue sin funcionar, prueba a reiniciar el equipo.</value>
@@ -148,13 +148,13 @@
     <value>No se puede abrir el paquete de aplicación</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>Verificando...</value>
+    <value>Comprobando...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Verificando ADB...</value>
+    <value>Comprobando ADB...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Verificando la ruta...</value>
+    <value>Comprobando la ruta...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>Haz clic aquí para leerlos</value>
