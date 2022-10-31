@@ -4,46 +4,45 @@ namespace AAPTForNet.Filters
 {
     internal class ApplicationFilter : BaseFilter
     {
+        private string[] Segments = new string[] { };
 
-        private string[] segments = new string[] { };
-
-        public override bool canHandle(string msg)
+        public override bool CanHandle(string msg)
         {
             return msg.StartsWith("application:");
         }
 
-        public override void addMessage(string msg = "")
+        public override void AddMessage(string msg = "")
         {
-            segments = msg.Split(seperator);
+            Segments = msg.Split(Seperator);
         }
 
-        public override ApkInfo getAPK()
+        public override ApkInfo GetAPK()
         {
             // Try getting icon name from manifest, may be an image
-            string iconName = getValue("icon=");
+            string iconName = GetValue("icon=");
 
             return new ApkInfo()
             {
-                AppName = getValue("label="),
-                Icon = iconName == defaultEmptyValue ?
+                AppName = GetValue("label="),
+                Icon = iconName == DefaultEmptyValue ?
                     Icon.Default : new Icon(iconName)
             };
         }
 
-        public override void clear() => segments = new string[] { };
+        public override void Clear() => Segments = new string[] { };
 
-        private string getValue(string key)
+        private string GetValue(string key)
         {
             string output = string.Empty;
-            for (int i = 0; i < segments.Length; i++)
+            for (int i = 0; i < Segments.Length; i++)
             {
-                if (segments[i].Contains(key))
+                if (Segments[i].Contains(key))
                 {
-                    output = segments[++i];
+                    output = Segments[++i];
                     break;
                 }
             }
-            return string.IsNullOrEmpty(output) ? defaultEmptyValue : output;
+            return string.IsNullOrEmpty(output) ? DefaultEmptyValue : output;
         }
     }
 }

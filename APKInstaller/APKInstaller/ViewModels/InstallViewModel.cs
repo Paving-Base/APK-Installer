@@ -50,7 +50,7 @@ namespace APKInstaller.ViewModels
         private string _path = string.Empty;
 #else
         private Uri _url = new("apkinstaller:?source=https://dl.coolapk.com/down?pn=com.coolapk.market&id=NDU5OQ&h=46bb9d98&from=from-web");
-        private string _path = @"C:\Users\qq251\Downloads\Programs\weixin8020android2100_arm64_4.apk";
+        private string _path = @"C:\Users\qq251\Downloads\Programs\weixin8028android2240_arm64.apk";
 #endif
         private bool NetAPKExist => _path != APKTemp || File.Exists(_path);
 
@@ -1528,7 +1528,7 @@ namespace APKInstaller.ViewModels
                     AppxInstallBarIndeterminate = false;
                     await Task.Run(() =>
                     {
-                        PackageManager manager = new PackageManager(new AdbClient(), _device);
+                        PackageManager manager = new(new AdbClient(), _device);
                         manager.InstallProgressChanged += OnInstallProgressChanged;
                         manager.InstallMultiplePackage(new string[] { ApkInfo.FullPath }, ApkInfo.PackageName, true);
                     });
@@ -1539,7 +1539,7 @@ namespace APKInstaller.ViewModels
                     AppxInstallBarIndeterminate = false;
                     await Task.Run(() =>
                     {
-                        PackageManager manager = new PackageManager(new AdbClient(), _device);
+                        PackageManager manager = new(new AdbClient(), _device);
                         manager.InstallProgressChanged += OnInstallProgressChanged;
                         string[] strings = ApkInfo.SplitApks.Select(x => x.FullPath).ToArray();
                         manager.InstallMultiplePackage(ApkInfo.FullPath, strings, true);
@@ -1551,7 +1551,7 @@ namespace APKInstaller.ViewModels
                     AppxInstallBarIndeterminate = false;
                     await Task.Run(() =>
                     {
-                        PackageManager manager = new PackageManager(new AdbClient(), _device);
+                        PackageManager manager = new(new AdbClient(), _device);
                         manager.InstallProgressChanged += OnInstallProgressChanged;
                         manager.InstallPackage(ApkInfo.FullPath, true);
                     });
@@ -1645,7 +1645,7 @@ namespace APKInstaller.ViewModels
                     IReadOnlyList<IStorageItem> items = await data.GetStorageItemsAsync();
                     if (items.Count == 1)
                     {
-                        IStorageItem storageItem = items.First();
+                        IStorageItem storageItem = items.FirstOrDefault();
                         await OpenPath(storageItem);
                         return;
                     }

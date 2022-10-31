@@ -22,19 +22,19 @@ namespace AAPTForNet.Models
         /// <summary>
         /// Determines whether icon of package is an image
         /// </summary>
-        public bool isImage => !DefaultName.Equals(IconName) && !isMarkup;
+        public bool IsImage => !DefaultName.Equals(IconName, StringComparison.Ordinal) && !IsMarkup;
 
-        internal bool isMarkup => IconName
+        internal bool IsMarkup => IconName
             .EndsWith(".xml", StringComparison.OrdinalIgnoreCase);
 
         // Not real icon, it refer to another
         internal bool isRefernce => IconName.StartsWith("0x");
 
-        internal bool isHighDensity
+        internal bool IsHighDensity
         {
             get
             {
-                if (!isImage || !File.Exists(RealPath))
+                if (!IsImage || !File.Exists(RealPath))
                 {
                     return false;
                 }

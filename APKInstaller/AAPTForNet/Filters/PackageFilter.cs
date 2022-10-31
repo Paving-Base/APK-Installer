@@ -5,19 +5,19 @@ namespace AAPTForNet.Filters
     internal class PackageFilter : BaseFilter
     {
 
-        private string[] segments = new string[] { };
+        private string[] Segments = new string[] { };
 
-        public override bool canHandle(string msg)
+        public override bool CanHandle(string msg)
         {
             return msg.StartsWith("package:");
         }
 
-        public override void addMessage(string msg)
+        public override void AddMessage(string msg)
         {
-            segments = msg.Split(seperator);
+            Segments = msg.Split(Seperator);
         }
 
-        public override ApkInfo getAPK()
+        public override ApkInfo GetAPK()
         {
             return new ApkInfo()
             {
@@ -28,20 +28,20 @@ namespace AAPTForNet.Filters
             };
         }
 
-        public override void clear() => segments = new string[] { };
+        public override void Clear() => Segments = new string[] { };
 
         private string getValueOrDefault(string key)
         {
             string output = string.Empty;
-            for (int i = 0; i < segments.Length; i++)
+            for (int i = 0; i < Segments.Length; i++)
             {
-                if (segments[i].Contains(key))
+                if (Segments[i].Contains(key))
                 {    // Find key
-                    output = segments[++i];         // Get value
+                    output = Segments[++i];         // Get value
                     break;
                 }
             }
-            return string.IsNullOrEmpty(output) ? defaultEmptyValue : output;
+            return string.IsNullOrEmpty(output) ? DefaultEmptyValue : output;
         }
     }
 }

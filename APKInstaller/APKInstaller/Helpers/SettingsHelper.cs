@@ -110,12 +110,8 @@ namespace APKInstaller.Helpers
         public static readonly ILogManager LogManager = LogManagerFactory.CreateLogManager(GetDefaultReleaseConfiguration());
         public static OSVersion OperatingSystemVersion => SystemInformation.Instance.OperatingSystemVersion;
         private static readonly ApplicationDataStorageHelper LocalObject = ApplicationDataStorageHelper.GetCurrent(new SystemTextJsonObjectSerializer());
-        public static ElementTheme Theme => Get<bool>("IsBackgroundColorFollowSystem") ? ElementTheme.Default : (Get<bool>("IsDarkMode") ? ElementTheme.Dark : ElementTheme.Light);
 
-        static SettingsHelper()
-        {
-            SetDefaultSettings();
-        }
+        static SettingsHelper() => SetDefaultSettings();
 
         public static void CheckAssembly()
         {

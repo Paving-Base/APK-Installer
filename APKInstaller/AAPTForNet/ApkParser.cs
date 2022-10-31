@@ -1,6 +1,5 @@
 ﻿using AAPTForNet.Filters;
 using AAPTForNet.Models;
-
 using System.Collections.Generic;
 using System.Linq;
 
@@ -13,7 +12,7 @@ namespace AAPTForNet
     {
         public static ApkInfo Parse(DumpModel model)
         {
-            if (!model.isSuccess)
+            if (!model.IsSuccess)
             {
                 return new ApkInfo();
             }
@@ -31,15 +30,15 @@ namespace AAPTForNet
             {
                 foreach (BaseFilter f in filters)
                 {
-                    if (f.canHandle(msg))
+                    if (f.CanHandle(msg))
                     {
-                        f.addMessage(msg);
+                        f.AddMessage(msg);
                         break;
                     }
                 }
             }
 
-            return ApkInfo.Merge(filters.Select(f => f.getAPK()));
+            return ApkInfo.Merge(filters.Select(f => f.GetAPK()));
         }
     }
 }

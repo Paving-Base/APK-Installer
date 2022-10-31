@@ -29,7 +29,7 @@ namespace AAPTForNet
 
         protected AAPTool()
         {
-            StartInfo.FileName = AppPath + @"\tool\aapt.exe";
+            StartInfo.FileName = AppPath + @"\Tools\aapt.exe";
             StartInfo.CreateNoWindow = true;
             StartInfo.UseShellExecute = false; // For read output data
             StartInfo.RedirectStandardError = true;
@@ -40,10 +40,10 @@ namespace AAPTForNet
         protected new bool Start(string args)
         {
             StartInfo.Arguments = args;
-            return base.Start();
+            return Start();
         }
 
-        private static DumpModel dump(
+        private static DumpModel Dump(
             string path,
             string args,
             DumpTypes type,
@@ -109,25 +109,25 @@ namespace AAPTForNet
             return new DumpModel(path, isSuccess, output);
         }
 
-        internal static DumpModel dumpManifest(string path)
+        internal static DumpModel DumpManifest(string path)
         {
-            return dump(path, string.Empty, DumpTypes.Manifest, (msg, i) => false);
+            return Dump(path, string.Empty, DumpTypes.Manifest, (msg, i) => false);
         }
 
-        internal static DumpModel dumpResources(string path, Func<string, int, bool> callback)
+        internal static DumpModel DumpResources(string path, Func<string, int, bool> callback)
         {
-            return dump(path, string.Empty, DumpTypes.Resources, callback);
+            return Dump(path, string.Empty, DumpTypes.Resources, callback);
         }
 
-        internal static DumpModel dumpXmlTree(string path, string asset, Func<string, int, bool> callback = null)
+        internal static DumpModel DumpXmlTree(string path, string asset, Func<string, int, bool> callback = null)
         {
             callback ??= ((_, __) => false);
-            return dump(path, asset, DumpTypes.XmlTree, callback);
+            return Dump(path, asset, DumpTypes.XmlTree, callback);
         }
 
-        internal static DumpModel dumpManifestTree(string path, Func<string, int, bool> callback = null)
+        internal static DumpModel DumpManifestTree(string path, Func<string, int, bool> callback = null)
         {
-            return dumpXmlTree(path, "AndroidManifest.xml", callback);
+            return DumpXmlTree(path, "AndroidManifest.xml", callback);
         }
 
         /// <summary>
@@ -171,7 +171,7 @@ namespace AAPTForNet
             foreach (string apkpath in apks)
             {
                 DumpModel manifest = ApkExtractor.ExtractManifest(apkpath);
-                if (!manifest.isSuccess)
+                if (!manifest.IsSuccess)
                 {
                     continue;
                 }
@@ -179,11 +179,11 @@ namespace AAPTForNet
                 ApkInfo apk = ApkParser.Parse(manifest);
                 apk.FullPath = apkpath;
 
-                if (apk.Icon.isImage)
+                if (apk.Icon.IsImage)
                 {
                     // Included icon in manifest, extract it from apk
                     apk.Icon.RealPath = ApkExtractor.ExtractIconImage(apkpath, apk.Icon);
-                    if (apk.Icon.isHighDensity)
+                    if (apk.Icon.IsHighDensity)
                     {
                         apkInfos.Add(apk);
                         continue;
