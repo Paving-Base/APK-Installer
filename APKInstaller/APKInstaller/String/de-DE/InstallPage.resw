@@ -121,7 +121,7 @@
     <value>ADB, die Android Debug Bridge, wird für den APK Installer benötigt. Klicken Sie auf "Download", um sie herunterzuladen. Mit dem Download akzeptieren Sie die AGB von Google für ADB.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Exists</value>
+    <value>ADB Existiert</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB fehlt</value>
@@ -142,7 +142,7 @@
     <value>Es kann keine Verbindung zu %s hergestellt werden</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
+    <value>Entweder wurde der WSA nicht ordnungsgemäß gestartet, oder es liegt ein Problem mit der ADB vor. Dieses Problem kann sehr schwer zu beheben sein. Bitte starten Sie das Installationsprogramm neu. Wenn es immer noch nicht funktioniert, versuchen Sie, den Computer neu zu starten.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>App Paket kann nicht geöffnet werden</value>
@@ -154,7 +154,7 @@
     <value>Überprüfen...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Checking Path...</value>
+    <value>Überprüfe Pfad...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>Hier klicken zum lesen</value>
@@ -190,15 +190,15 @@
     <value>Einstellungen öffnen</value>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>How to connect WSA</value>
+    <value>So verbinden Sie WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Please make sure APK Installer has been updated to the latest version
-2. Make sure you have the Android Subsystem installed and running
-3. Turn on developer mode and make sure the IP address is displayed successfully
-4. Reopen APK Installer and continue your installation
+    <value>1. Bitte vergewissern Sie sich, dass der APK Installer auf die neueste Version aktualisiert wurde.
+2. Vergewissern Sie sich, dass Sie das Android-Subsystem installiert haben und es läuft.
+3. Schalten Sie den Entwicklermodus ein und stellen Sie sicher, dass die IP-Adresse erfolgreich angezeigt wird
+4. Öffnen Sie APK Installer erneut und setzen Sie die Installation fort
 
-[Learn More]({0})</value>
+[Mehr erfahren]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
     <value>Symbol</value>
@@ -224,7 +224,7 @@
     <value>Installiere...</value>
   </data>
   <data name="InstallingPercent" xml:space="preserve">
-    <value>Installing {0}...</value>
+    <value>Wird installiert {0}...</value>
     <comment>{0} - Progress.</comment>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
