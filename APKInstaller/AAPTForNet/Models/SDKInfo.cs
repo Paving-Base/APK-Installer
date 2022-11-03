@@ -29,7 +29,7 @@ namespace AAPTForNet.Models
             "Jelly Bean",
             "Jelly Bean",
             "KitKat",
-            "Unknown",  // API level 20
+            "KitKat",  // API level 20
             "Lollipop",
             "Lollipop",
             "Marshmallow",
@@ -39,15 +39,17 @@ namespace AAPTForNet.Models
             "Oreo",
             "Pie",
             "Q",
-            "R",        // API level 30
-            "S",
-            "T",
+            "Red Velvet Cake",  // API level 30
+            "Snow Cone",
+            "Snow Cone",
+            "Tiramisu",
             "U",
             "V",
             "W",
             "X",
             "Y",
-            "Z"         // API level 38
+            "Z",
+            "??"         // API level 40
         };
 
         private static readonly string[] AndroidVersionCodes = {
@@ -79,17 +81,19 @@ namespace AAPTForNet.Models
             "7.1",
             "8.0",
             "8.1",
-            "9",
+            "9.0",
             "10",
             "11",   // API level 30
             "12",
+            "12.1",
             "13",
             "14",
             "15",
             "16",
             "17",
             "18",
-            "19"    // API level 38
+            "19",
+            "20"    // API level 40
         };
 
         public string APILevel { get; }
