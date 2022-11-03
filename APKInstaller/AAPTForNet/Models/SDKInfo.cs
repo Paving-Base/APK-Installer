@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace AAPTForNet.Models
 {
-    public class SDKInfo
+    public class SDKInfo : IComparable
     {
         internal static readonly SDKInfo Unknown = new("0", "0", "0");
 
@@ -49,7 +49,7 @@ namespace AAPTForNet.Models
             "X",
             "Y",
             "Z",
-            "??"         // API level 40
+            "Hello from 2022!"  // API level 40
         };
 
         private static readonly string[] AndroidVersionCodes = {
@@ -109,32 +109,21 @@ namespace AAPTForNet.Models
 
         public static SDKInfo GetInfo(int sdkVer)
         {
-            int index = (sdkVer < 1 || sdkVer > AndroidCodeNames.Length - 1) ? 0 : sdkVer;
-
-            return new SDKInfo(sdkVer.ToString(),
-                AndroidVersionCodes[index], AndroidCodeNames[index]);
+            int index = Math.Min(Math.Max(sdkVer, 0), AndroidCodeNames.Length - 1);
+            string version = sdkVer <= AndroidVersionCodes.Length - 1 ? AndroidVersionCodes[index] : (sdkVer - 20).ToString();
+            return new SDKInfo(sdkVer.ToString(), version, AndroidCodeNames[index]);
         }
 
-        public static SDKInfo GetInfo(string sdkVer)
-        {
-            return int.TryParse(sdkVer, out int ver)
-                ? ver > AndroidVersionCodes.Length - 1 ? new SDKInfo(sdkVer, sdkVer, "Hello from 2022!") : GetInfo(ver)
-                : new SDKInfo(sdkVer, sdkVer, AndroidCodeNames[0]);
-        }
+        public static SDKInfo GetInfo(string sdkVer) => int.TryParse(sdkVer, out int ver) ? GetInfo(ver) : new SDKInfo(sdkVer, sdkVer, AndroidCodeNames[0]);
 
         public override int GetHashCode() => 1008763889 + EqualityComparer<string>.Default.GetHashCode(APILevel);
 
-        public override bool Equals(object obj)
-        {
-            return obj is SDKInfo another && APILevel == another.APILevel;
-        }
+        public override bool Equals(object obj) => obj is SDKInfo another && APILevel == another.APILevel;
 
-        public int CompareTo(object obj)
-        {
-            return obj is SDKInfo another
-                ? int.TryParse(APILevel, out int ver) && int.TryParse(another.APILevel, out int anotherver) ? ver.CompareTo(anotherver) : 0
-                : throw new ArgumentException();
-        }
+        public int CompareTo(object obj) => obj is SDKInfo another
+            ? int.TryParse(APILevel, out int ver) && int.TryParse(another.APILevel, out int anotherver)
+            ? ver.CompareTo(anotherver) : 0
+            : throw new ArgumentException();
 
         public static bool operator ==(SDKInfo left, SDKInfo right) => left.Equals(right);
 
@@ -148,13 +137,11 @@ namespace AAPTForNet.Models
 
         public static bool operator >=(SDKInfo left, SDKInfo right) => left.CompareTo(right) >= 0;
 
-        public override string ToString()
-        {
-            return this == Unknown
-                ? AndroidCodeNames[0]
-                : $"API Level {APILevel} " +
-                $"{(Version == AndroidVersionCodes[0] ? $"({Version} - " : $"(Android {Version} - ")}" +
+        public override string ToString() => this == Unknown
+            ? AndroidCodeNames[0]
+            : $"API Level {APILevel} " +
+                $"{(Version == AndroidVersionCodes[0]
+                ? $"({Version} - " : $"(Android {Version} - ")}" +
                 $"{CodeName})";
-        }
     }
 }

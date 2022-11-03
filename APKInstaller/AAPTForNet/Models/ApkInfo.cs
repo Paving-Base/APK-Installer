@@ -46,29 +46,11 @@ namespace AAPTForNet.Models
         /// <summary>
         /// Determines whether this package is filled or not
         /// </summary>
-        public bool IsEmpty
-        {
-            get
-            {
-                return AppName == string.Empty && PackageName == string.Empty;
-            }
-        }
+        public bool IsEmpty => AppName == string.Empty && PackageName == string.Empty;
 
-        public bool IsSplit
-        {
-            get
-            {
-                return SplitName != "Unknown";
-            }
-        }
+        public bool IsSplit => SplitName != "Unknown";
 
-        public bool IsBundle
-        {
-            get
-            {
-                return SplitApks != null && SplitApks.Any();
-            }
-        }
+        public bool IsBundle => SplitApks != null && SplitApks.Any();
 
         public ApkInfo()
         {
@@ -89,15 +71,9 @@ namespace AAPTForNet.Models
 
         public void AddSplit(string path) => SplitApks.Add(AAPTool.Decompile(path));
 
-        internal ApkInfo Megre(params ApkInfo[] apks)
-        {
-            return apks.Any(a => a == null) ? throw new ArgumentNullException() : ApkInfo.Merge(this, apks);
-        }
+        internal ApkInfo Megre(params ApkInfo[] apks) => apks.Any(a => a == null) ? throw new ArgumentNullException() : Merge(this, apks);
 
-        internal static ApkInfo Merge(IEnumerable<ApkInfo> apks)
-        {
-            return Merge(null, apks);
-        }
+        internal static ApkInfo Merge(IEnumerable<ApkInfo> apks) => Merge(null, apks);
 
         internal static ApkInfo Merge(ApkInfo init, IEnumerable<ApkInfo> apks)
         {

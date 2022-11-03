@@ -36,7 +36,7 @@ namespace AAPTForNet
                 return Icon.Default;
             }
 
-            if (iconTable.Values.All(i => i.isRefernce))
+            if (iconTable.Values.All(i => i.IsRefernce))
             {
                 string refID = iconTable.Values.FirstOrDefault().IconName;
                 iconTable = ExtractIconTable(path, refID);

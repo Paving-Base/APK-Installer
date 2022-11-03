@@ -11,8 +11,7 @@ namespace APKInstaller.Helpers
             Configuration = new DownloadConfiguration
             {
                 ChunkCount = 8,
-                ParallelDownload = true,
-                TempDirectory = CachesHelper.TempPath
+                ParallelDownload = true
             };
         }
     }

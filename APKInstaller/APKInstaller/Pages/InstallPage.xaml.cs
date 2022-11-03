@@ -48,7 +48,7 @@ namespace APKInstaller.Pages
                     case ExtendedActivationKind.Protocol:
                         ProtocolActivatedEventArgs ProtocolArgs = args.Data as ProtocolActivatedEventArgs;
                         ValueSet ProtocolData = ProtocolArgs.Data;
-                        if (ProtocolData.Count <= 0)
+                        if (ProtocolData == null || !ProtocolData.Any())
                         {
                             Provider = new InstallViewModel(ProtocolArgs.Uri, this);
                         }
@@ -67,7 +67,7 @@ namespace APKInstaller.Pages
                     case ExtendedActivationKind.ProtocolForResults:
                         ProtocolForResultsActivatedEventArgs ProtocolForResultsArgs = args.Data as ProtocolForResultsActivatedEventArgs;
                         ValueSet ProtocolForResultsData = ProtocolForResultsArgs.Data;
-                        if (ProtocolForResultsData.Count <= 0)
+                        if (ProtocolForResultsData == null || !ProtocolForResultsData.Any())
                         {
                             Provider = new InstallViewModel(ProtocolForResultsArgs.Uri, this, ProtocolForResultsArgs.ProtocolForResultsOperation);
                         }

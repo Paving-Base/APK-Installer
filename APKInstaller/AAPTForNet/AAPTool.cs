@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
+using System.Runtime.InteropServices;
 
 namespace AAPTForNet
 {
@@ -183,7 +184,7 @@ namespace AAPTForNet
                 {
                     // Included icon in manifest, extract it from apk
                     apk.Icon.RealPath = ApkExtractor.ExtractIconImage(apkpath, apk.Icon);
-                    if (apk.Icon.IsHighDensity)
+                    if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows) && apk.Icon.IsHighDensity)
                     {
                         apkInfos.Add(apk);
                         continue;
