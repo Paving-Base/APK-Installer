@@ -167,64 +167,66 @@
     <value>Cấu hình</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device on network.</value>
+    <value>Kết nối thiết bị trên mạng.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
-    <value>Connect Device</value>
+    <value>Kết nối thiết bị</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
-    <value>Contact Me</value>
+    <value>Liên hệ với tôi</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bug, please report it to me in PM. I will try my best to solve the problem. If you have Telegram account, welcome to chat at Paving Base Group 😊!</value>
+    <value>Theo dõi tôi trên các ứng dụng xã hội để biết những phát triển mới nhất. Nếu bạn tìm thấy bất kỳ lỗi nào, vui lòng báo cáo cho tôi trong PM. Tôi sẽ cố gắng hết sức để giải quyết vấn đề. Nếu bạn có tài khoản Telegram, chào mừng bạn đến trò chuyện tại Paving Base Group 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
-    <value>Content</value>
+    <value>Nội dung</value>
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
-    <value>Device</value>
+    <value>Thiết bị</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
-    <value>Display</value>
+    <value>Trưng bày</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
-    <value>Supports</value>
+    <value>Hỗ trợ</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application, and no ads will be added for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your support.💕</value>
+    <value>APK Cài đặt là một ứng dụng mã nguồn mở và sẽ không có quảng cáo nào được thêm vào để kiếm lợi nhuận. Nếu bạn thích ứng dụng này, đừng quên đánh giá nó trong cửa hàng. Tất nhiên, sẽ tốt hơn nếu bạn có thể quyên góp một chút. Cảm ơn sự hỗ trợ của bạn. 💕
+</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
-    <value>Feedback</value>
+    <value>Phản hồi</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
-    <value>Find Update</value>
+    <value>Tìm bản cập nhật</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>Go to the page of test.</value>
+    <value>Chuyển đến trang thử nghiệm.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>Go to TestPage</value>
+    <value>Truy cập TestPage</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
-    <value>Go to Update</value>
+    <value>Đi tới Cập nhật</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
-    <value>Join Our Chat</value>
+    <value>Tham gia cuộc trò chuyện của chúng tôi</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Last Checked: </value>
+    <value>Lần kiểm tra cuối cùng:</value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
-    <value>Learn More</value>
+    <value>Tìm hiểu thêm</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
-    <value>Logs</value>
+    <value>nhật ký</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may contains something unpleasant. Such as ADs, broken functions even virus. Please go to Microsoft Store to download the original one. See our Github Repository to learn more about it.</value>
+    <value>Một phiên bản sửa đổi có thể chứa một cái gì đó khó chịu. Chẳng hạn như ADs, chức năng bị hỏng thậm chí cả virus. Vui lòng truy cập Microsoft Store để tải xuống bản gốc. Xem Kho lưu trữ Github của chúng tôi để tìm hiểu thêm về nó.
+</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>You are using a modified version!</value>
