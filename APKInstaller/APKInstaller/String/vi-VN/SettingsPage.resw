@@ -145,7 +145,7 @@
     <value>Đang kiểm tra bản cập nhật...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
-    <value>Chec để cập nhật</value>
+    <value>Kiểm tra bản cập nhật</value>
   </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
     <value>Làm sạch bộ nhớ nhớ</value>
@@ -229,16 +229,16 @@
 </value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>You are using a modified version!</value>
+    <value>Bạn đang sử dụng một phiên bản sửa đổi!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Disable it to connect to other devices.</value>
+    <value>Vô hiệu hóa nó để kết nối với các thiết bị khác.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>Is Only for WSA?</value>
+    <value>Chỉ dành cho WSA?</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
-    <value>Others</value>
+    <value>Khác</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Tối</value>
@@ -250,58 +250,58 @@
     <value>Sáng</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value>Rate On Store</value>
+    <value>Giá trên cửa hàng</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
-    <value>Release notes</value>
+    <value>Ghi chú phát hành</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
-    <value>Reset settings of this application.</value>
+    <value>Đặt lại cài đặt của ứng dụng này.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
-    <value>Reset application</value>
+    <value>Đặt lại ứng dụng</value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
-    <value>Reset</value>
+    <value>Đặt lại</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
     <value>Có</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
-    <value>Are you sure you want to reset the app?</value>
+    <value>Bạn có chắc chắn muốn đặt lại ứng dụng không?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
-    <value>Select Device</value>
+    <value>Chọn thiết bị</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
-    <value>Show helpers when no device is connected.</value>
+    <value>Hiển thị người trợ giúp khi không có thiết bị nào được kết nối.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Is Show Helpers?</value>
+    <value>Có phải người trợ giúp chương trình không?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Show Announcements on the top of Settings.</value>
+    <value>Hiển thị Thông báo ở đầu Cài đặt.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Is Show Announcements?</value>
+    <value>Có phải Hiển thị Thông báo không?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Chủ đề Ứng dụng</value>
   </data>
   <data name="ThemesSettingsHeader.Header" xml:space="preserve">
-    <value>Themes</value>
+    <value>Chủ đề</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Settings</value>
+    <value>Cài đặt</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>Translate</value>
+    <value>Dịch</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
-    <value>Version</value>
+    <value>Phiên bản</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Up To Date</value>
+    <value>Đến nay</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
     <value>Cài đặt màu Windows</value>
