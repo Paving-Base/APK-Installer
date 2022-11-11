@@ -127,7 +127,7 @@
     <value>Automatischer Download, wenn das Paket von einer URL stammt.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Does Auto Download Online Packages?</value>
+    <value>Kann Auto Download Online-Pakete herunterladen?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Hintergrundtyp für Windows 11 auswählen</value>
@@ -154,13 +154,13 @@
     <value>Das Schließen von ADB kann andere Installer unterbrechen, wenn diese noch geöffnet sind.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Does Close ADB when Closing Installer?</value>
+    <value>Wird ADB beim Schließen des Installationsprogramms geschlossen?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
     <value>Schließen Sie das Installationsprogramm, nachdem die APK installiert wurde, und starten Sie es.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Does Close Installer when APP is Ready?</value>
+    <value>Wird das Installationsprogramm geschlossen, wenn die APP bereit ist?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Konfigurationen</value>
@@ -190,7 +190,7 @@
     <value>Unterstützung</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application, and no ads will be added for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your support.💕</value>
+    <value>APK Installer ist eine Open-Source-Anwendung, und es wird keine Werbung für Profit hinzugefügt. Wenn Sie diese App mögen, vergessen Sie nicht, sie im Store zu bewerten. Natürlich wäre es besser, wenn Sie ein wenig spenden könnten. Danke für deine Unterstützung.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>Allgemeine Geschäftsbedingungen</value>
@@ -217,19 +217,19 @@
     <value>Zuletzt geprüft:</value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
-    <value>Learn More</value>
+    <value>Mehr erfahren</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
     <value>Logs</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may contains something unpleasant. Such as ADs, broken functions even virus. Please go to Microsoft Store to download the original one. See our Github Repository to learn more about it.</value>
+    <value>Eine modifizierte Version kann etwas Unangenehmes enthalten. Zum Beispiel ADs, defekte Funktionen oder sogar Viren. Bitte gehen Sie zum Microsoft Store, um die Originalversion herunterzuladen. Besuchen Sie unser Github Repository, um mehr darüber zu erfahren.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>You are using a modified version!</value>
+    <value>Sie verwenden eine modifizierte Version!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Disable it to connect to other devices.</value>
+    <value>Deaktivieren Sie es, um eine Verbindung zu anderen Geräten herzustellen.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
     <value>Nur für WSA?</value>

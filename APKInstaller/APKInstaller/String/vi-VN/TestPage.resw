@@ -130,10 +130,10 @@
     <value>Lớp phủ nhỏ gọn</value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
-    <value>A development version app may not stable. Download release version on Microsoft Store.</value>
+    <value>Ứng dụng phiên bản phát triển có thể không ổn định. Tải xuống phiên bản phát hành trên Microsoft Store.</value>
   </data>
   <data name="DevelopmentInfoBar.Title" xml:space="preserve">
-    <value>You are using a development version app.</value>
+    <value>Yqu đang sử dụng ứng dụng phiên bản phát triển.</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
     <value>Nhập Lớp phủ thu gọn</value>

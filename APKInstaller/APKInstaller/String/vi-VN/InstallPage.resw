@@ -155,7 +155,7 @@
     <value>Đang kiểm tra ADB...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Checking Path...</value>
+    <value>Đường dẫn kiểm tra...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>Nhấp vào đây để đọc</value>
@@ -192,15 +192,13 @@
     <value>Đến Cài đặt</value>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>How to connect WSA</value>
+    <value>Cách kết nối WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Please make sure APK Installer has been updated to the latest version
-2. Make sure you have the Android Subsystem installed and running
-3. Turn on developer mode and make sure the IP address is displayed successfully
-4. Reopen APK Installer and continue your installation
-
-[Learn More]({0})</value>
+    <value>1. Hãy đảm bảo rằng APK Installer đã được cập nhật lên phiên bản 
+2 mới nhất. Đảm bảo rằng bạn đã cài đặt và chạy Hệ thống con Android 
+3. Bật chế độ nhà phát triển và đảm bảo địa chỉ IP được hiển thị thành công 
+4. Mở lại Trình cài đặt APK và tiếp tục cài đặt</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
     <value>Biểu tượng</value>
@@ -226,7 +224,7 @@
     <value>Đang cài đặt...</value>
   </data>
   <data name="InstallingPercent" xml:space="preserve">
-    <value>Installing {0}...</value>
+    <value>Đang cài đặt {0}...</value>
     <comment>{0} - Progress.</comment>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
@@ -260,10 +258,11 @@
     <value>Không thể tìm thấy thiết bị Android</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>How to connect device</value>
+    <value>Cách kết nối thiết bị</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>If you want to install app into Windows Subsystem for Android™, you need to install it first. If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
+    <value>Nếu bạn muốn cài đặt ứng dụng vào Windows Subsystem cho Android, trước tiên bạn cần cài đặt nó. Nếu bạn muốn cài đặt vào các thiết bị khác, vui lòng truy cập Trang cài đặt, tắt "Chỉ dành cho WSA" và kết nối thiết bị của bạn.
+</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
     <value>#### Using USB
@@ -372,7 +371,7 @@
 </value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome!</value>
+    <value>Chào mừng!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA đang chạy</value>

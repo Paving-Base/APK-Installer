@@ -1,13 +1,13 @@
-#### Chào mừng đến APK Installer!
+#### Chào mừng đến APK Cài đặt!
 
-##### Declaration
-1. Please follow the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. This program is open source software, so please make sure that the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) to keep your data safe.
-3. If the source of the program is not abnormal, all your data will only be used to run with the program or stored locally during the program running, and the developer will not steal any of your data. Still, please pay attention to the security of the environment.
-4. The translation of the text of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts do not represent the author's views.
+##### Tuyên bố
+1. Vui lòng làm theo Thỏa thuận cấp phép người dùng cuối [APK Installer và Chính sách quyền riêng tư](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+2. Chương trình này là phần mềm mã nguồn mở, vì vậy hãy đảm bảo rằng chương trình là từ [kho lưu trữ Github](https://github.com/Paving-Base/APK-Installer) hoặc [ứng dụng này](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) để giữ an toàn cho dữ liệu của bạn.
+3. Nếu nguồn của chương trình không có gì bất thường, tất cả dữ liệu của bạn sẽ chỉ được sử dụng để chạy với chương trình hoặc được lưu trữ cục bộ trong quá trình chạy chương trình và nhà phát triển sẽ không đánh cắp bất kỳ dữ liệu nào của bạn. Tuy nhiên, hãy chú ý đến an ninh của môi trường.
+4. Bản dịch văn bản của ứng dụng này xuất phát từ cộng đồng [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") và tất cả các văn bản không đại diện cho quan điểm của tác giả.
 
-##### Translate
-Thanks to [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") translators for their support. Nếu có bất kỳ vấn đề với bản dịch, xin vui lòng đến và sửa nó. And please take translation seriously. Your words will be read all over the world.
+##### Dịch
+Cảm ơn các dịch giả [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") đã hỗ trợ họ. Nếu có bất kỳ vấn đề với bản dịch, xin vui lòng đến và sửa nó. Và xin hãy dịch thuật một cách nghiêm túc. Lời nói của bạn sẽ được đọc trên toàn thế giới.
 
 ##### Những người đóng góp
 - [wherewhere](https://github.com/wherewhere)
