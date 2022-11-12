@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices; // For DllImport
+using Windows.System;
 
 namespace APKInstaller.Helpers
 {
@@ -7,9 +8,9 @@ namespace APKInstaller.Helpers
         [StructLayout(LayoutKind.Sequential)]
         private struct DispatcherQueueOptions
         {
-            internal int dwSize;
-            internal int threadType;
-            internal int apartmentType;
+            internal int DWSize;
+            internal int ThreadType;
+            internal int ApartmentType;
         }
 
         [DllImport("CoreMessaging.dll")]
@@ -18,7 +19,7 @@ namespace APKInstaller.Helpers
         private object m_dispatcherQueueController = null;
         public void EnsureWindowsSystemDispatcherQueueController()
         {
-            if (Windows.System.DispatcherQueue.GetForCurrentThread() != null)
+            if (DispatcherQueue.GetForCurrentThread() != null)
             {
                 // one already exists, so we'll just use it.
                 return;
@@ -27,11 +28,11 @@ namespace APKInstaller.Helpers
             if (m_dispatcherQueueController == null)
             {
                 DispatcherQueueOptions options;
-                options.dwSize = Marshal.SizeOf(typeof(DispatcherQueueOptions));
-                options.threadType = 2;    // DQTYPE_THREAD_CURRENT
-                options.apartmentType = 2; // DQTAT_COM_STA
+                options.DWSize = Marshal.SizeOf(typeof(DispatcherQueueOptions));
+                options.ThreadType = 2;    // DQTYPE_THREAD_CURRENT
+                options.ApartmentType = 2; // DQTAT_COM_STA
 
-                CreateDispatcherQueueController(options, ref m_dispatcherQueueController);
+                _ = CreateDispatcherQueueController(options, ref m_dispatcherQueueController);
             }
         }
     }

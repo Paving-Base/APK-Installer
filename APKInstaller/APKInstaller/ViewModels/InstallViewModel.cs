@@ -50,7 +50,7 @@ namespace APKInstaller.ViewModels
         private string _path = string.Empty;
 #else
         private Uri _url = new("apkinstaller:?source=https://dl.coolapk.com/down?pn=com.coolapk.market&id=NDU5OQ&h=46bb9d98&from=from-web");
-        private string _path = @"C:\Users\qq251\Downloads\Programs\weixin8028android2240_arm64.apk";
+        private string _path = @"C:\Users\qq251\Downloads\Programs\weixin8030android2260_arm64.apk";
 #endif
         private bool NetAPKExist => _path != APKTemp || File.Exists(_path);
 

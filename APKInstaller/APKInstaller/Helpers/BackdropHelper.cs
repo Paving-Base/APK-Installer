@@ -67,11 +67,11 @@ namespace APKInstaller.Helpers
                 {
                     Backdrop = type;
                 }
-                else
-                {
-                    // Mica isn't supported. Try Acrylic.
-                    type = BackdropType.DesktopAcrylic;
-                }
+                //else
+                //{
+                //    // Mica isn't supported. Try Acrylic.
+                //    type = BackdropType.DesktopAcrylic;
+                //}
             }
             if (type == BackdropType.DesktopAcrylic)
             {
