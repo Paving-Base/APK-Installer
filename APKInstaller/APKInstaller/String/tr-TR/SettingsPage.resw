@@ -123,6 +123,9 @@
   <data name="ADBPathSettings.Header" xml:space="preserve">
     <value>ADB Yolu</value>
   </data>
+  <data name="ADBVersionTextBlock.Text" xml:space="preserve">
+    <value>ADB Version</value>
+  </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>Paket URL'den olduğunda otomatik indir.</value>
   </data>
@@ -201,6 +204,15 @@
   <data name="FindUpdate" xml:space="preserve">
     <value>Güncelleme Bul</value>
   </data>
+  <data name="FrameworkSettings.Description" xml:space="preserve">
+    <value>Information about the frameworks of this app.</value>
+  </data>
+  <data name="FrameworkSettings.Header" xml:space="preserve">
+    <value>Framework information</value>
+  </data>
+  <data name="FrameworkTextBlock.Text" xml:space="preserve">
+    <value>Framework</value>
+  </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>Test sayfasına gidin.</value>
   </data>
@@ -233,6 +245,12 @@
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
     <value>Sadece WSA için mi?</value>
+  </data>
+  <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
+    <value>OS Architecture</value>
+  </data>
+  <data name="OSPlatformTextBlock.Text" xml:space="preserve">
+    <value>OS Platform</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Diğerleri</value>
