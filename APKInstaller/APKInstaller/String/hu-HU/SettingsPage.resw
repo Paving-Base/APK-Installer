@@ -124,6 +124,9 @@
     <value>ADB útvonal
 </value>
   </data>
+  <data name="ADBVersionTextBlock.Text" xml:space="preserve">
+    <value>ADB Version</value>
+  </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>Automatikus letöltés, ha a csomag URL-címről származik.</value>
   </data>
@@ -202,6 +205,15 @@
   <data name="FindUpdate" xml:space="preserve">
     <value>Frissítés keresése</value>
   </data>
+  <data name="FrameworkSettings.Description" xml:space="preserve">
+    <value>Information about the frameworks of this app.</value>
+  </data>
+  <data name="FrameworkSettings.Header" xml:space="preserve">
+    <value>Framework information</value>
+  </data>
+  <data name="FrameworkTextBlock.Text" xml:space="preserve">
+    <value>Framework</value>
+  </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>Lépjen a teszt oldalára.</value>
   </data>
@@ -234,6 +246,12 @@
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
     <value>Csak a WSA számára?</value>
+  </data>
+  <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
+    <value>OS Architecture</value>
+  </data>
+  <data name="OSPlatformTextBlock.Text" xml:space="preserve">
+    <value>OS Platform</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Egyéb</value>
