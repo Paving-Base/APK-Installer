@@ -123,6 +123,9 @@
   <data name="ADBPathSettings.Header" xml:space="preserve">
     <value>ADB 路径</value>
   </data>
+  <data name="ADBVersionTextBlock.Text" xml:space="preserve">
+    <value>ADB Version</value>
+  </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>当安装包来自 URL 链接时自动下载。</value>
   </data>
@@ -201,6 +204,15 @@
   <data name="FindUpdate" xml:space="preserve">
     <value>找到新的更新</value>
   </data>
+  <data name="FrameworkSettings.Description" xml:space="preserve">
+    <value>Information about the frameworks of this app.</value>
+  </data>
+  <data name="FrameworkSettings.Header" xml:space="preserve">
+    <value>Framework information</value>
+  </data>
+  <data name="FrameworkTextBlock.Text" xml:space="preserve">
+    <value>Framework</value>
+  </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>前往用于测试的页面。</value>
   </data>
@@ -233,6 +245,12 @@
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
     <value>是否仅用于WSA？</value>
+  </data>
+  <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
+    <value>OS Architecture</value>
+  </data>
+  <data name="OSPlatformTextBlock.Text" xml:space="preserve">
+    <value>OS Platform</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>其他</value>
