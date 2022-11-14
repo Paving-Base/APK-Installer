@@ -1,20 +1,15 @@
 ﻿using AAPTForNet.Models;
+using System;
 
 namespace AAPTForNet.Filters
 {
     internal class ApplicationFilter : BaseFilter
     {
-        private string[] Segments = new string[] { };
+        private string[] Segments = Array.Empty<string>();
 
-        public override bool CanHandle(string msg)
-        {
-            return msg.StartsWith("application:");
-        }
+        public override bool CanHandle(string msg) => msg.StartsWith("application:");
 
-        public override void AddMessage(string msg = "")
-        {
-            Segments = msg.Split(Seperator);
-        }
+        public override void AddMessage(string msg = "") => Segments = msg.Split(Seperator);
 
         public override ApkInfo GetAPK()
         {
@@ -29,7 +24,7 @@ namespace AAPTForNet.Filters
             };
         }
 
-        public override void Clear() => Segments = new string[] { };
+        public override void Clear() => Segments = Array.Empty<string>();
 
         private string GetValue(string key)
         {

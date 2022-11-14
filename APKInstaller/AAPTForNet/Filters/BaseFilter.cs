@@ -10,6 +10,7 @@ namespace AAPTForNet.Filters
         public abstract bool CanHandle(string msg);
         public abstract void AddMessage(string msg);
         public abstract ApkInfo GetAPK();
+
         /// <summary>
         /// Test in loop
         /// </summary>

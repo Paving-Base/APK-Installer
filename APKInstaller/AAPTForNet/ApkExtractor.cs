@@ -12,7 +12,7 @@ namespace AAPTForNet
     {
         private static int id = 0;
 
-#if NET5_0_OR_GREATER
+#if NET
         private static readonly string TempPath = Path.Combine(Path.GetTempPath(), @"APKInstaller\Caches", $"{Environment.ProcessId}");
 #else
         private static readonly string TempPath = Path.Combine(Path.GetTempPath(), @"APKInstaller\Caches", $"{Process.GetCurrentProcess().Id}");
@@ -192,7 +192,7 @@ namespace AAPTForNet
             // reverse list and get first elem with LINQ
             IEnumerable<string> configNames = Enum.GetNames(typeof(Configs)).Reverse();
             Dictionary<string, Icon> iconTable = new();
-            void addIcon2Table(string cfg, string iconName)
+            void AddIcon2Table(string cfg, string iconName)
             {
                 if (!iconTable.ContainsKey(cfg))
                 {
@@ -226,13 +226,13 @@ namespace AAPTForNet
                             // Resource value is icon url
                             string iconName = resValue.Split(seperator)
                                 .FirstOrDefault(n => n.Contains('/'));
-                            addIcon2Table(config, iconName);
+                            AddIcon2Table(config, iconName);
                             break;
                         }
                         if (Detector.IsReference(resValue))
                         {
                             string iconID = resValue.Trim().Split(' ')[1];
-                            addIcon2Table(config, iconID);
+                            AddIcon2Table(config, iconID);
                             break;
                         }
 

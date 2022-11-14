@@ -13,12 +13,12 @@ namespace AAPT2ForNet
     {
         public static ApkInfo Parse(DumpModel model)
         {
-            if (!model.isSuccess)
+            if (!model.IsSuccess)
             {
                 return new ApkInfo();
             }
 
-            List<BaseFilter> filters = new List<BaseFilter>() {
+            List<BaseFilter> filters = new() {
                 new ABIFilter(),
                 new SDKFilter(),
                 new PackageFilter(),
@@ -31,15 +31,15 @@ namespace AAPT2ForNet
             {
                 foreach (BaseFilter f in filters)
                 {
-                    if (f.canHandle(msg))
+                    if (f.CanHandle(msg))
                     {
-                        f.addMessage(msg);
+                        f.AddMessage(msg);
                         break;
                     }
                 }
             }
 
-            return ApkInfo.Merge(filters.Select(f => f.getAPK()));
+            return ApkInfo.Merge(filters.Select(f => f.GetAPK()));
         }
     }
 }

@@ -8,7 +8,6 @@ namespace AAPTForNet.Models
 {
     public class Icon
     {
-
         private const int hdpiWidth = 72;
         public const string DefaultName = "ic_launcher.png";
 

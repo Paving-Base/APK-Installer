@@ -11,11 +11,16 @@ namespace AAPT2ForNet
     internal class ApkExtractor
     {
         private static int id = 0;
-        private static readonly string tempPath = Path.Combine(Path.GetTempPath(), @"APKInstaller\Caches", $"{Environment.ProcessId}");
+
+#if NET
+        private static readonly string TempPath = Path.Combine(Path.GetTempPath(), @"APKInstaller\Caches", $"{Environment.ProcessId}");
+#else
+        private static readonly string TempPath = Path.Combine(Path.GetTempPath(), @"APKInstaller\Caches", $"{Process.GetCurrentProcess().Id}");
+#endif
 
         public static DumpModel ExtractManifest(string path)
         {
-            return AAPTool.dumpManifest(path);
+            return AAPTool.DumpManifest(path);
         }
 
         /// <summary>
@@ -31,17 +36,17 @@ namespace AAPT2ForNet
                 return Icon.Default;
             }
 
-            if (iconTable.Values.All(i => i.isRefernce))
+            if (iconTable.Values.All(i => i.IsRefernce))
             {
                 string refID = iconTable.Values.FirstOrDefault().IconName;
                 iconTable = ExtractIconTable(path, refID);
             }
 
-            if (iconTable.Values.All(i => i.isMarkup))
+            if (iconTable.Values.All(i => i.IsMarkup))
             {
                 // Try dumping markup asset and get icon
                 string asset = iconTable.Values.FirstOrDefault().IconName;
-                iconTable = dumpMarkupIcon(path, asset);
+                iconTable = DumpMarkupIcon(path, asset);
             }
 
             Icon largestIcon = ExtractLargestIcon(iconTable);
@@ -50,16 +55,16 @@ namespace AAPT2ForNet
             return largestIcon;
         }
 
-        private static Dictionary<string, Icon> dumpMarkupIcon(string path, string asset, int startIndex = -1)
+        private static Dictionary<string, Icon> DumpMarkupIcon(string path, string asset, int startIndex = -1)
         {
-            Dictionary<string, Icon> output = dumpMarkupIcon(path, asset, out startIndex);
+            Dictionary<string, Icon> output = DumpMarkupIcon(path, asset, out startIndex);
 
             return output.Count == 0 && startIndex < 5
-                ? dumpMarkupIcon(path, asset, startIndex + 1)
+                ? DumpMarkupIcon(path, asset, startIndex + 1)
                 : output;
         }
 
-        private static Dictionary<string, Icon> dumpMarkupIcon(
+        private static Dictionary<string, Icon> DumpMarkupIcon(
             string path, string asset, out int lastTryIndex, int start = -1)
         {
             // Not found any icon image in package?,
@@ -67,8 +72,8 @@ namespace AAPT2ForNet
             // try getting some images from markup.
             lastTryIndex = -1;
 
-            DumpModel tree = AAPTool.dumpXmlTree(path, asset);
-            if (!tree.isSuccess)
+            DumpModel tree = AAPTool.DumpXmlTree(path, asset);
+            if (!tree.IsSuccess)
             {
                 return new Dictionary<string, Icon>();
             }
@@ -104,7 +109,7 @@ namespace AAPT2ForNet
         private static string ExtractIconID(string path)
         {
             int iconIndex = 0;
-            DumpModel manifestTree = AAPTool.dumpManifestTree(
+            DumpModel manifestTree = AAPTool.DumpManifestTree(
                 path,
                 (m, i) =>
                 {
@@ -122,7 +127,7 @@ namespace AAPT2ForNet
                 return string.Empty;
             }
 
-            if (manifestTree.isSuccess)
+            if (manifestTree.IsSuccess)
             {
                 string msg = manifestTree.Messages[iconIndex];
                 return msg.Split('@')[1];
@@ -139,8 +144,8 @@ namespace AAPT2ForNet
             }
 
             bool matchedEntry = false;
-            List<int> indexes = new List<int>();  // Get position of icon in resource list
-            DumpModel resTable = AAPTool.dumpResources(path, (m, i) =>
+            List<int> indexes = new();  // Get position of icon in resource list
+            DumpModel resTable = AAPTool.DumpResources(path, (m, i) =>
             {
                 // Dump resources and get icons,
                 // terminate when meet the end of mipmap entry,
@@ -168,13 +173,13 @@ namespace AAPT2ForNet
                 return false;
             });
 
-            return createIconTable(indexes, resTable.Messages);
+            return CreateIconTable(indexes, resTable.Messages);
         }
 
         // Create table like below
         //  configs  |    mdpi           hdpi    ...    anydpi
         //  icon     |    icon1          icon2   ...    icon4
-        private static Dictionary<string, Icon> createIconTable(List<int> positions, List<string> messages)
+        private static Dictionary<string, Icon> CreateIconTable(List<int> positions, List<string> messages)
         {
             if (positions.Count == 0 || messages.Count <= 2)    // If dump failed
             {
@@ -186,14 +191,14 @@ namespace AAPT2ForNet
             // because comparison statement with 'hdpi' in config's values,
             // reverse list and get first elem with LINQ
             IEnumerable<string> configNames = Enum.GetNames(typeof(Configs)).Reverse();
-            Dictionary<string, Icon> iconTable = new Dictionary<string, Icon>();
-            Action<string, string> addIcon2Table = (cfg, iconName) =>
+            Dictionary<string, Icon> iconTable = new();
+            void AddIcon2Table(string cfg, string iconName)
             {
                 if (!iconTable.ContainsKey(cfg))
                 {
                     iconTable.Add(cfg, new Icon(iconName));
                 }
-            };
+            }
             string msg, config;
 
             foreach (int index in positions)
@@ -213,9 +218,9 @@ namespace AAPT2ForNet
                         config = configNames.FirstOrDefault(c => msg.Contains(c));
 
                         string iconName = msg.Trim().Split(seperator)
-                                .FirstOrDefault(n => n.Contains("/") || n.Contains("0x"));
+                                .FirstOrDefault(n => n.Contains('/') || n.Contains("0x"));
 
-                        addIcon2Table(config, iconName);
+                        AddIcon2Table(config, iconName);
                     }
                 }
             }
@@ -235,12 +240,12 @@ namespace AAPT2ForNet
                 return Icon.DefaultName;
             }
 
-            if (!Directory.Exists(tempPath))
+            if (!Directory.Exists(TempPath))
             {
-                Directory.CreateDirectory(tempPath);
+                Directory.CreateDirectory(TempPath);
             }
 
-            string IconPath = Path.Combine(tempPath, $@"AAPToolTempImage-{id++}.png");
+            string IconPath = Path.Combine(TempPath, $@"AAPToolTempImage-{id++}.png");
 
             TryExtractIconImage(path, icon.IconName, IconPath);
             return IconPath;
@@ -268,21 +273,19 @@ namespace AAPT2ForNet
                 throw new ArgumentException("Invalid params");
             }
 
-            using (ZipArchive archive = ZipFile.OpenRead(path))
+            using ZipArchive archive = ZipFile.OpenRead(path);
+            ZipArchiveEntry entry;
+
+            for (int i = archive.Entries.Count - 1; i > 0; i--)
             {
-                ZipArchiveEntry entry;
+                entry = archive.Entries[i];
 
-                for (int i = archive.Entries.Count - 1; i > 0; i--)
+                if (entry.Name.Equals(iconName) ||
+                    entry.FullName.Equals(iconName))
                 {
-                    entry = archive.Entries[i];
 
-                    if (entry.Name.Equals(iconName) ||
-                        entry.FullName.Equals(iconName))
-                    {
-
-                        entry.ExtractToFile(desFile, true);
-                        break;
-                    }
+                    entry.ExtractToFile(desFile, true);
+                    break;
                 }
             }
         }
@@ -322,8 +325,8 @@ namespace AAPT2ForNet
         {
             public int Compare(string x, string y)
             {
-                Enum.TryParse<Configs>(x, out Configs ex);
-                Enum.TryParse<Configs>(y, out Configs ey);
+                _ = Enum.TryParse<Configs>(x, out Configs ex);
+                _ = Enum.TryParse<Configs>(y, out Configs ey);
                 return ex > ey ? -1 : 1;
             }
         }

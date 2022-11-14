@@ -12,6 +12,7 @@ namespace AAPT2ForNet.Models
         public string PackageName { get; set; }
         public string VersionName { get; set; }
         public string VersionCode { get; set; }
+
         /// <summary>
         /// Absolute path to apk file
         /// </summary>
@@ -21,11 +22,13 @@ namespace AAPT2ForNet.Models
         public SDKInfo TargetSDK { get; set; }
         public List<ApkInfo> SplitApks { get; set; }
         public List<string> Permissions { get; set; }
+
         /// <summary>
         /// Supported application binary interfaces
         /// </summary>
         public List<string> SupportedABIs { get; set; }
         public List<string> SupportScreens { get; set; }
+
         /// <summary>
         /// Size of package, in bytes
         /// </summary>
@@ -43,32 +46,15 @@ namespace AAPT2ForNet.Models
                 }
             }
         }
+
         /// <summary>
         /// Determines whether this package is filled or not
         /// </summary>
-        public bool IsEmpty
-        {
-            get
-            {
-                return AppName == string.Empty && PackageName == string.Empty;
-            }
-        }
+        public bool IsEmpty => AppName == string.Empty && PackageName == string.Empty;
 
-        public bool IsSplit
-        {
-            get
-            {
-                return SplitName != "Unknown";
-            }
-        }
+        public bool IsSplit => SplitName != "Unknown";
 
-        public bool IsBundle
-        {
-            get
-            {
-                return SplitApks != null && SplitApks.Any();
-            }
-        }
+        public bool IsBundle => SplitApks != null && SplitApks.Any();
 
         public ApkInfo()
         {
@@ -89,27 +75,13 @@ namespace AAPT2ForNet.Models
 
         public void AddSplit(string path) => SplitApks.Add(AAPTool.Decompile(path));
 
-        internal ApkInfo megre(params ApkInfo[] apks)
-        {
-            if (apks.Any(a => a == null))
-            {
-                throw new ArgumentNullException();
-            }
+        internal ApkInfo Megre(params ApkInfo[] apks) => apks.Any(a => a == null) ? throw new ArgumentNullException(nameof(apks)) : Merge(this, apks);
 
-            return ApkInfo.Merge(this, apks);
-        }
-
-        internal static ApkInfo Merge(IEnumerable<ApkInfo> apks)
-        {
-            return ApkInfo.Merge(null, apks);
-        }
+        internal static ApkInfo Merge(IEnumerable<ApkInfo> apks) => Merge(null, apks);
 
         internal static ApkInfo Merge(ApkInfo init, IEnumerable<ApkInfo> apks)
         {
-            if (init == null)
-            {
-                init = new ApkInfo();
-            }
+            init ??= new ApkInfo();
 
             ApkInfo appApk = apks.FirstOrDefault(a => a.AppName.Length > 0);
             if (appApk != null)

@@ -10,25 +10,14 @@ namespace AAPT2ForNet.Filters
     /// <remarks>https://developer.android.com/ndk/guides/abis</remarks>
     internal class ABIFilter : BaseFilter
     {
+        private string[] Segments = Array.Empty<string>();
 
-        private string[] segments = new string[] { };
+        public override bool CanHandle(string msg) => msg.StartsWith("native-code:");
 
-        public override bool canHandle(string msg)
-            => msg.StartsWith("native-code:");
+        public override void AddMessage(string msg) => Segments = msg.Split(new char[2] { ' ', '\'' }, StringSplitOptions.RemoveEmptyEntries);
 
-        public override void addMessage(string msg)
-        {
-            segments = msg.Split(new char[2] { ' ', '\'' }, StringSplitOptions.RemoveEmptyEntries);
-        }
+        public override ApkInfo GetAPK() => new() { SupportedABIs = Segments.Skip(1).ToList() }; // Skip "native-code"        
 
-        public override ApkInfo getAPK()
-        {
-            return new ApkInfo()
-            {
-                SupportedABIs = segments.Skip(1).ToList()   // Skip "native-code"
-            };
-        }
-
-        public override void clear() => throw new NotImplementedException();
+        public override void Clear() => throw new NotImplementedException();
     }
 }

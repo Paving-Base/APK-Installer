@@ -123,7 +123,7 @@ namespace AAPTForNet.Models
         public int CompareTo(object obj) => obj is SDKInfo another
             ? int.TryParse(APILevel, out int ver) && int.TryParse(another.APILevel, out int anotherver)
             ? ver.CompareTo(anotherver) : 0
-            : throw new ArgumentException();
+            : throw new ArgumentException(null, nameof(obj));
 
         public static bool operator ==(SDKInfo left, SDKInfo right) => left.Equals(right);
 

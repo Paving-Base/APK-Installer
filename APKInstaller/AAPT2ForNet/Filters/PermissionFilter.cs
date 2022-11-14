@@ -5,28 +5,19 @@ namespace AAPT2ForNet.Filters
 {
     internal class PermissionFilter : BaseFilter
     {
-        private readonly List<string> permissions = new List<string>();
+        private readonly List<string> Permissions = new();
 
-        public override bool canHandle(string msg)
-        {
-            return msg.StartsWith("uses-permission:");
-        }
+        public override bool CanHandle(string msg) => msg.StartsWith("uses-permission:");
 
-        public override void addMessage(string msg)
+        public override void AddMessage(string msg)
         {
             // uses-permission: name='<per>'
             // -> ["uses-permission: name=", "<per, get this value!!!>", ""]
-            permissions.Add(msg.Split(seperator)[1]);
+            Permissions.Add(msg.Split(Seperator)[1]);
         }
 
-        public override ApkInfo getAPK()
-        {
-            return new ApkInfo()
-            {
-                Permissions = permissions
-            };
-        }
+        public override ApkInfo GetAPK() => new() { Permissions = Permissions };
 
-        public override void clear() => permissions.Clear();
+        public override void Clear() => Permissions.Clear();
     }
 }

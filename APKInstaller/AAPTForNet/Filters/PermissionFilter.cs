@@ -7,10 +7,7 @@ namespace AAPTForNet.Filters
     {
         private readonly List<string> Permissions = new();
 
-        public override bool CanHandle(string msg)
-        {
-            return msg.StartsWith("uses-permission:");
-        }
+        public override bool CanHandle(string msg) => msg.StartsWith("uses-permission:");
 
         public override void AddMessage(string msg)
         {
@@ -19,13 +16,7 @@ namespace AAPTForNet.Filters
             Permissions.Add(msg.Split(Seperator)[1]);
         }
 
-        public override ApkInfo GetAPK()
-        {
-            return new ApkInfo()
-            {
-                Permissions = Permissions
-            };
-        }
+        public override ApkInfo GetAPK() => new() { Permissions = Permissions };
 
         public override void Clear() => Permissions.Clear();
     }

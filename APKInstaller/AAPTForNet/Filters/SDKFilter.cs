@@ -5,14 +5,10 @@ namespace AAPTForNet.Filters
 {
     internal class SDKFilter : BaseFilter
     {
-
         private readonly List<string> Msessges = new();
         private string[] Segments => string.Join(" ", Msessges).Split(Seperator);
 
-        public override bool CanHandle(string msg)
-        {
-            return msg.StartsWith("sdkVersion:") || msg.StartsWith("targetSdkVersion:");
-        }
+        public override bool CanHandle(string msg) => msg.StartsWith("sdkVersion:") || msg.StartsWith("targetSdkVersion:");
 
         public override void AddMessage(string msg)
         {
@@ -24,7 +20,7 @@ namespace AAPTForNet.Filters
 
         public override ApkInfo GetAPK()
         {
-            return new ApkInfo()
+            return new ApkInfo
             {
                 MinSDK = SDKInfo.GetInfo(GetMinSDKVersion()),
                 TargetSDK = SDKInfo.GetInfo(GetTargetSDKVersion())

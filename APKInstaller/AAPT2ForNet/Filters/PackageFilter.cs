@@ -1,47 +1,42 @@
 ﻿using AAPT2ForNet.Models;
+using System;
 
 namespace AAPT2ForNet.Filters
 {
     internal class PackageFilter : BaseFilter
     {
+        private string[] Segments = Array.Empty<string>();
 
-        private string[] segments = new string[] { };
+        public override bool CanHandle(string msg) => msg.StartsWith("package:");
 
-        public override bool canHandle(string msg)
+        public override void AddMessage(string msg) => Segments = msg.Split(Seperator);
+
+        public override ApkInfo GetAPK()
         {
-            return msg.StartsWith("package:");
-        }
-
-        public override void addMessage(string msg)
-        {
-            segments = msg.Split(seperator);
-        }
-
-        public override ApkInfo getAPK()
-        {
-            return new ApkInfo()
+            return new ApkInfo
             {
-                SplitName = getValueOrDefault("split"),
-                PackageName = getValueOrDefault("package"),
-                VersionName = getValueOrDefault("versionName"),
-                VersionCode = getValueOrDefault("versionCode"),
+                SplitName = GetValueOrDefault("split"),
+                PackageName = GetValueOrDefault("package"),
+                VersionName = GetValueOrDefault("versionName"),
+                VersionCode = GetValueOrDefault("versionCode"),
             };
         }
 
-        public override void clear() => segments = new string[] { };
+        public override void Clear() => Segments = Array.Empty<string>();
 
-        private string getValueOrDefault(string key)
+        private string GetValueOrDefault(string key)
         {
             string output = string.Empty;
-            for (int i = 0; i < segments.Length; i++)
+            for (int i = 0; i < Segments.Length; i++)
             {
-                if (segments[i].Contains(key))
-                {    // Find key
-                    output = segments[++i];         // Get value
+                if (Segments[i].Contains(key))
+                {
+                    // Find key
+                    output = Segments[++i]; // Get value
                     break;
                 }
             }
-            return string.IsNullOrEmpty(output) ? defaultEmptyValue : output;
+            return string.IsNullOrEmpty(output) ? DefaultEmptyValue : output;
         }
     }
 }

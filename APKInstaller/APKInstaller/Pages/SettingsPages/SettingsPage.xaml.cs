@@ -48,6 +48,7 @@ namespace APKInstaller.Pages.SettingsPages
                 }
             }
             DataContext = Provider;
+            Provider.GetADBVersion();
             //#if DEBUG
             GoToTestPage.Visibility = Visibility.Visible;
             //#endif

@@ -9,6 +9,8 @@ using PInvoke;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
+using System.IO;
 using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Resources;
@@ -246,6 +248,20 @@ namespace APKInstaller.ViewModels.SettingsPages
             }
         }
 
+        private string _ADBVersion;
+        public string ADBVersion
+        {
+            get => _ADBVersion;
+            set
+            {
+                if (_ADBVersion != value)
+                {
+                    _ADBVersion = value;
+                    RaisePropertyChangedEvent();
+                }
+            }
+        }
+
         private string _aboutTextBlockText;
         public string AboutTextBlockText
         {
@@ -272,13 +288,30 @@ namespace APKInstaller.ViewModels.SettingsPages
             get
             {
                 string ver = $"{Package.Current.Id.Version.Major}.{Package.Current.Id.Version.Minor}.{Package.Current.Id.Version.Build}";
-                string name = Package.Current.DisplayName; ;
+                string name = Package.Current.DisplayName;
                 GetAboutTextBlockText();
                 return $"{name} v{ver}";
             }
         }
 
-        public async void GetAboutTextBlockText()
+        public async void GetADBVersion()
+        {
+            await Task.Run(() =>
+            {
+                string version = "Unknown";
+                if (File.Exists(ADBPath))
+                {
+                    AdbServerStatus info = AdbServer.Instance.GetStatus();
+                    if (info.IsRunning)
+                    {
+                        version = info.Version.ToString(3);
+                    }
+                }
+                _ = _page?.DispatcherQueue.EnqueueAsync(() => ADBVersion = version);
+            });
+        }
+
+        private async void GetAboutTextBlockText()
         {
             await Task.Run(async () =>
             {

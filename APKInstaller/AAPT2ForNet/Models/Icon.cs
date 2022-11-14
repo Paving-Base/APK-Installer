@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
+using System.Runtime.Versioning;
 
 namespace AAPT2ForNet.Models
 {
     public class Icon
     {
-
         private const int hdpiWidth = 72;
         public const string DefaultName = "ic_launcher.png";
 
-        internal static readonly Icon Default = new Icon(DefaultName);
+        internal static readonly Icon Default = new(DefaultName);
 
         /// <summary>
         /// Return absolute path to package icon if @isImage is true,
@@ -22,19 +22,19 @@ namespace AAPT2ForNet.Models
         /// <summary>
         /// Determines whether icon of package is an image
         /// </summary>
-        public bool isImage => !DefaultName.Equals(IconName) && !isMarkup;
+        public bool IsImage => !DefaultName.Equals(IconName, StringComparison.Ordinal) && !IsMarkup;
 
-        internal bool isMarkup => IconName
-            .EndsWith(".xml", StringComparison.OrdinalIgnoreCase);
+        internal bool IsMarkup => IconName.EndsWith(".xml", StringComparison.OrdinalIgnoreCase);
 
         // Not real icon, it refer to another
-        internal bool isRefernce => IconName.StartsWith("0x");
+        internal bool IsRefernce => IconName.StartsWith("0x");
 
-        internal bool isHighDensity
+        [SupportedOSPlatform("windows")]
+        internal bool IsHighDensity
         {
             get
             {
-                if (!isImage || !File.Exists(RealPath))
+                if (!IsImage || !File.Exists(RealPath))
                 {
                     return false;
                 }
@@ -43,10 +43,8 @@ namespace AAPT2ForNet.Models
                 {
                     // Load from unsupported format will throw an exception.
                     // But icon can be packed without extension
-                    using (Bitmap image = new Bitmap(RealPath))
-                    {
-                        return image.Width > hdpiWidth;
-                    }
+                    using Bitmap image = new(RealPath);
+                    return image.Width > hdpiWidth;
                 }
                 catch
                 {
@@ -62,24 +60,15 @@ namespace AAPT2ForNet.Models
         /// </summary>
         internal string IconName { get; set; }
 
-        internal Icon() => throw new NotImplementedException();
-
         internal Icon(string iconName)
         {
             IconName = iconName ?? string.Empty;
-            RealPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Assets\256x256.png");
+            RealPath = "/Assets/256x256.png";
         }
 
         public override string ToString() => IconName;
 
-        public override bool Equals(object obj)
-        {
-            if (obj is Icon ic)
-            {
-                return IconName == ic.IconName;
-            }
-            return false;
-        }
+        public override bool Equals(object obj) => obj is Icon ic && IconName == ic.IconName;
 
         public override int GetHashCode() => -489061483 + EqualityComparer<string>.Default.GetHashCode(IconName);
     }

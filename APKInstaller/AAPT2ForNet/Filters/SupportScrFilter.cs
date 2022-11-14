@@ -4,44 +4,37 @@ namespace AAPT2ForNet.Filters
 {
     internal class SupportScrFilter : BaseFilter
     {
-
         public const string SmallScreen = "small";
         public const string NormalScreen = "normal";
         public const string LargeScreen = "large";
         public const string xLargeScreen = "xlarge";
 
-        private string msg = string.Empty;
+        private string Message = string.Empty;
 
-        public override bool canHandle(string msg)
+        public override bool CanHandle(string msg) => msg.StartsWith("supports-screens:");
+
+        public override void AddMessage(string msg) => Message = msg;
+
+        public override ApkInfo GetAPK()
         {
-            return msg.StartsWith("supports-screens:");
-        }
+            ApkInfo apk = new();
 
-        public override void addMessage(string msg)
-        {
-            this.msg = msg;
-        }
-
-        public override ApkInfo getAPK()
-        {
-            ApkInfo apk = new ApkInfo();
-
-            if (msg.Contains(SmallScreen))
+            if (Message.Contains(SmallScreen))
             {
                 apk.SupportScreens.Add(SmallScreen);
             }
 
-            if (msg.Contains(NormalScreen))
+            if (Message.Contains(NormalScreen))
             {
                 apk.SupportScreens.Add(NormalScreen);
             }
 
-            if (msg.Contains(LargeScreen))
+            if (Message.Contains(LargeScreen))
             {
                 apk.SupportScreens.Add(LargeScreen);
             }
 
-            if (msg.Contains(xLargeScreen))
+            if (Message.Contains(xLargeScreen))
             {
                 apk.SupportScreens.Add(xLargeScreen);
             }
@@ -49,6 +42,6 @@ namespace AAPT2ForNet.Filters
             return apk;
         }
 
-        public override void clear() => msg = string.Empty;
+        public override void Clear() => Message = string.Empty;
     }
 }

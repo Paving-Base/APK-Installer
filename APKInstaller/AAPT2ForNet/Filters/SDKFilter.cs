@@ -6,53 +6,49 @@ namespace AAPT2ForNet.Filters
 {
     internal class SDKFilter : BaseFilter
     {
+        private readonly List<string> Msessges = new();
+        private string[] Segments => string.Join(" ", Msessges).Split(Seperator);
 
-        private readonly List<string> msgs = new List<string>();
-        private string[] segments => String.Join(" ", msgs).Split(seperator);
+        public override bool CanHandle(string msg) => msg.StartsWith("sdkVersion:") || msg.StartsWith("targetSdkVersion:");
 
-        public override bool canHandle(string msg)
+        public override void AddMessage(string msg)
         {
-            return msg.StartsWith("sdkVersion:") || msg.StartsWith("targetSdkVersion:");
-        }
-
-        public override void addMessage(string msg)
-        {
-            if (!msgs.Contains(msg))
+            if (!Msessges.Contains(msg))
             {
-                msgs.Add(msg);
+                Msessges.Add(msg);
             }
         }
 
-        public override ApkInfo getAPK()
+        public override ApkInfo GetAPK()
         {
-            return new ApkInfo()
+            return new ApkInfo
             {
-                MinSDK = SDKInfo.GetInfo(getMinSDKVersion()),
-                TargetSDK = SDKInfo.GetInfo(getTargetSDKVersion())
+                MinSDK = SDKInfo.GetInfo(GetMinSDKVersion()),
+                TargetSDK = SDKInfo.GetInfo(GetTargetSDKVersion())
             };
         }
 
-        public override void clear() => msgs.Clear();
+        public override void Clear() => Msessges.Clear();
 
-        private string getMinSDKVersion()
+        private string GetMinSDKVersion()
         {
-            for (int i = 0; i < segments.Length; i++)
+            for (int i = 0; i < Segments.Length; i++)
             {
-                if (segments[i].Contains("sdkVersion"))
+                if (Segments[i].Contains("sdkVersion"))
                 {
-                    return segments[++i];
+                    return Segments[++i];
                 }
             }
             return string.Empty;
         }
 
-        private string getTargetSDKVersion()
+        private string GetTargetSDKVersion()
         {
-            for (int i = 0; i < segments.Length; i++)
+            for (int i = 0; i < Segments.Length; i++)
             {
-                if (segments[i].Contains("targetSdkVersion"))
+                if (Segments[i].Contains("targetSdkVersion"))
                 {
-                    return segments[++i];
+                    return Segments[++i];
                 }
             }
             return string.Empty;

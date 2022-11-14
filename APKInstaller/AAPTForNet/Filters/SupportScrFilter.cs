@@ -4,7 +4,6 @@ namespace AAPTForNet.Filters
 {
     internal class SupportScrFilter : BaseFilter
     {
-
         public const string SmallScreen = "small";
         public const string NormalScreen = "normal";
         public const string LargeScreen = "large";
@@ -12,15 +11,9 @@ namespace AAPTForNet.Filters
 
         private string Message = string.Empty;
 
-        public override bool CanHandle(string msg)
-        {
-            return msg.StartsWith("supports-screens:");
-        }
+        public override bool CanHandle(string msg) => msg.StartsWith("supports-screens:");
 
-        public override void AddMessage(string msg)
-        {
-            Message = msg;
-        }
+        public override void AddMessage(string msg) => Message = msg;
 
         public override ApkInfo GetAPK()
         {

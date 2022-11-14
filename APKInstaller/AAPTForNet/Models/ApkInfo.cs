@@ -12,6 +12,7 @@ namespace AAPTForNet.Models
         public string PackageName { get; set; }
         public string VersionName { get; set; }
         public string VersionCode { get; set; }
+
         /// <summary>
         /// Absolute path to apk file
         /// </summary>
@@ -21,11 +22,13 @@ namespace AAPTForNet.Models
         public SDKInfo TargetSDK { get; set; }
         public List<ApkInfo> SplitApks { get; set; }
         public List<string> Permissions { get; set; }
+
         /// <summary>
         /// Supported application binary interfaces
         /// </summary>
         public List<string> SupportedABIs { get; set; }
         public List<string> SupportScreens { get; set; }
+
         /// <summary>
         /// Size of package, in bytes
         /// </summary>
@@ -43,6 +46,7 @@ namespace AAPTForNet.Models
                 }
             }
         }
+
         /// <summary>
         /// Determines whether this package is filled or not
         /// </summary>
@@ -71,7 +75,7 @@ namespace AAPTForNet.Models
 
         public void AddSplit(string path) => SplitApks.Add(AAPTool.Decompile(path));
 
-        internal ApkInfo Megre(params ApkInfo[] apks) => apks.Any(a => a == null) ? throw new ArgumentNullException() : Merge(this, apks);
+        internal ApkInfo Megre(params ApkInfo[] apks) => apks.Any(a => a == null) ? throw new ArgumentNullException(nameof(apks)) : Merge(this, apks);
 
         internal static ApkInfo Merge(IEnumerable<ApkInfo> apks) => Merge(null, apks);
 

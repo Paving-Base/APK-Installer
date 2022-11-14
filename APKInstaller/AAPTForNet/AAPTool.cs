@@ -6,6 +6,7 @@ using System.IO;
 using System.IO.Compression;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Text;
 
 namespace AAPTForNet
 {
@@ -22,7 +23,7 @@ namespace AAPTForNet
         }
 
         private static readonly string AppPath = AppDomain.CurrentDomain.BaseDirectory;
-#if NET5_0_OR_GREATER
+#if NET
         private static readonly string TempPath = Path.Combine(Path.GetTempPath(), @"APKInstaller\Caches", $"{Environment.ProcessId}", "AppPackages");
 #else
         private static readonly string TempPath = Path.Combine(Path.GetTempPath(), @"APKInstaller\Caches", $"{GetCurrentProcess().Id}", "AppPackages");
@@ -35,7 +36,7 @@ namespace AAPTForNet
             StartInfo.UseShellExecute = false; // For read output data
             StartInfo.RedirectStandardError = true;
             StartInfo.RedirectStandardOutput = true;
-            StartInfo.StandardOutputEncoding = System.Text.Encoding.GetEncoding("utf-8");
+            StartInfo.StandardOutputEncoding = Encoding.UTF8;
         }
 
         protected new bool Start(string args)

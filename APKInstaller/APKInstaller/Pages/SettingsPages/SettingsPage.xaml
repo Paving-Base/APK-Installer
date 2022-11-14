@@ -6,6 +6,7 @@
     xmlns:cwuc="using:CommunityToolkit.WinUI.UI.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:helper="using:APKInstaller.Helpers"
+    xmlns:interopservices="using:System.Runtime.InteropServices"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:settingspages="using:APKInstaller.ViewModels.SettingsPages"
     xmlns:sharpadbclient="using:AdvancedSharpAdbClient"
@@ -195,6 +196,73 @@
                             </Button>
                         </controls:Setting.ActionContent>
                     </controls:Setting>
+                    <controls:SettingExpander>
+                        <controls:SettingExpander.Header>
+                            <controls:Setting x:Uid="/SettingsPage/FrameworkSettings" Icon="&#xE950;" />
+                        </controls:SettingExpander.Header>
+                        <controls:SettingExpander.Content>
+                            <Grid Style="{StaticResource ExpanderContentGridStyle}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+
+                                <TextBlock
+                                    x:Uid="/SettingsPage/ADBVersionTextBlock"
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Padding="0,0,0,8"
+                                    Opacity="0.75" />
+                                <TextBlock
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    Padding="32,0,0,8"
+                                    Text="{Binding ADBVersion}" />
+
+                                <TextBlock
+                                    x:Uid="/SettingsPage/FrameworkTextBlock"
+                                    Grid.Row="1"
+                                    Grid.Column="0"
+                                    Padding="0,0,0,8"
+                                    Opacity="0.75" />
+                                <TextBlock
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    Padding="32,0,0,8"
+                                    Text="{x:Bind interopservices:RuntimeInformation.FrameworkDescription}" />
+
+                                <TextBlock
+                                    x:Uid="/SettingsPage/OSPlatformTextBlock"
+                                    Grid.Row="2"
+                                    Grid.Column="0"
+                                    Padding="0,0,0,8"
+                                    Opacity="0.75" />
+                                <TextBlock
+                                    Grid.Row="2"
+                                    Grid.Column="1"
+                                    Padding="32,0,0,8"
+                                    Text="{x:Bind interopservices:RuntimeInformation.OSDescription}" />
+
+                                <TextBlock
+                                    x:Uid="/SettingsPage/OSArchitectureTextBlock"
+                                    Grid.Row="3"
+                                    Grid.Column="0"
+                                    Padding="0,0,0,8"
+                                    Opacity="0.75" />
+                                <TextBlock
+                                    Grid.Row="3"
+                                    Grid.Column="1"
+                                    Padding="32,0,0,8"
+                                    Text="{x:Bind interopservices:RuntimeInformation.OSArchitecture}" />
+                            </Grid>
+                        </controls:SettingExpander.Content>
+                    </controls:SettingExpander>
                 </controls:SettingsGroup>
                 <controls:SettingsGroup x:Uid="/SettingsPage/AboutSettingsHeader">
                     <controls:SettingExpander>
