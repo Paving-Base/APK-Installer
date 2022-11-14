@@ -208,7 +208,7 @@
     <value>关于此应用程序框架的信息。</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
-    <value>Framework Information</value>
+    <value>框架信息</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
     <value>框架</value>
