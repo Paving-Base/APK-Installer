@@ -123,6 +123,9 @@
   <data name="ADBPathSettings.Header" xml:space="preserve">
     <value>Jalur ADB</value>
   </data>
+  <data name="ADBVersionTextBlock.Text" xml:space="preserve">
+    <value>ADB Version</value>
+  </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>Unduh otomatis saat paket berasal dari URL.</value>
   </data>
@@ -201,6 +204,15 @@
   <data name="FindUpdate" xml:space="preserve">
     <value>Temukan Pembaruan</value>
   </data>
+  <data name="FrameworkSettings.Description" xml:space="preserve">
+    <value>Information about the frameworks of this app.</value>
+  </data>
+  <data name="FrameworkSettings.Header" xml:space="preserve">
+    <value>Framework information</value>
+  </data>
+  <data name="FrameworkTextBlock.Text" xml:space="preserve">
+    <value>Framework</value>
+  </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>Pergi ke halaman tes.</value>
   </data>
@@ -233,6 +245,12 @@
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
     <value>Apakah Hanya untuk WSA?</value>
+  </data>
+  <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
+    <value>OS Architecture</value>
+  </data>
+  <data name="OSPlatformTextBlock.Text" xml:space="preserve">
+    <value>OS Platform</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Lainnya</value>
