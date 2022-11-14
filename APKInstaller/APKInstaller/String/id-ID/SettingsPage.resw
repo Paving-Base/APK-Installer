@@ -124,10 +124,10 @@
     <value>Jalur ADB</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>ADB Version</value>
+    <value>Izin ADB</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>Unduh otomatis saat paket berasal dari URL.</value>
+    <value>Unduh otomatis saat paket berasal dari URL.the spaiek</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
     <value>Apakah Otomatis Unduh Paket Daring?</value>
