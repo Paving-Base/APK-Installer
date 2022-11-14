@@ -210,7 +210,7 @@
     <value>Information about the frameworks of this app.</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
-    <value>Framework information</value>
+    <value>Framework Information</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
     <value>Framework</value>
