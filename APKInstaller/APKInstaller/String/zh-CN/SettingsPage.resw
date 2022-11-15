@@ -244,7 +244,7 @@
     <value>关闭它以连接到其他设备。</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>是否仅用于WSA？</value>
+    <value>是否仅用于 WSA？</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>操作系统架构</value>
