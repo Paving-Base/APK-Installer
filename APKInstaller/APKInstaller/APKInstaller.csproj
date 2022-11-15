@@ -26,7 +26,7 @@
     <TargetPlatformMaxVersion>10.0.22621.0</TargetPlatformMaxVersion>
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <UseWinUI>True</UseWinUI>
-    <VersionPrefix>0.1.19</VersionPrefix>
+    <VersionPrefix>0.1.20</VersionPrefix>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">

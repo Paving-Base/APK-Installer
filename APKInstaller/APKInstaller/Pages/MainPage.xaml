@@ -6,18 +6,17 @@
     xmlns:helper="using:APKInstaller.Helpers"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     NavigationCacheMode="Enabled"
-    SizeChanged="Page_SizeChanged"
     mc:Ignorable="d">
     <Page.Resources>
-        <ResourceDictionary Source="ms-appx:///Controls/TitleBar/TitleBar.xaml" />
+        <ResourceDictionary Source="ms-appx:///Controls/TitleBar/TitleBar_themeresources.xaml" />
     </Page.Resources>
+    <Page.Background>
+        <SolidColorBrush
+            x:Name="RootBackground"
+            Opacity="0"
+            Color="{ThemeResource SolidBackgroundFillColorBase}" />
+    </Page.Background>
     <Grid x:Name="Root">
-        <Grid.Background>
-            <SolidColorBrush
-                x:Name="RootBackground"
-                Opacity="0"
-                Color="{ThemeResource SolidBackgroundFillColorBase}" />
-        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto" />
             <ColumnDefinition Width="*" />
@@ -28,9 +27,38 @@
         <Grid
             x:Name="CustomTitleBar"
             Grid.Column="1"
+            SizeChanged="CustomTitleBar_SizeChanged"
             Height="{x:Bind helper:UIHelper.TitleBarHeight}"
             HorizontalAlignment="Stretch"
-            VerticalAlignment="Top" />
+            VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <ImageIcon
+                x:Name="Icon"
+                Grid.Column="0"
+                MaxWidth="16"
+                MaxHeight="16"
+                Margin="16,0"
+                VerticalAlignment="Center"
+                x:Load="{x:Bind helper:UIHelper.TitleBarExtended}"
+                Source="/Assets/256x256.png"
+                Visibility="{x:Bind CoreAppFrame.CanGoBack, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}}" />
+            <TextBlock
+                x:Name="AppTitle"
+                Grid.Column="1"
+                Margin="0,0,16,2"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                x:Load="{x:Bind helper:UIHelper.TitleBarExtended}"
+                Foreground="{ThemeResource TitleBarForegroundBrush}"
+                Style="{StaticResource CaptionTextBlockStyle}"
+                Text="{x:Bind GetAppTitleFromSystem}"
+                TextTrimming="CharacterEllipsis"
+                TextWrapping="NoWrap"
+                Visibility="{x:Bind CoreAppFrame.CanGoBack, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}}" />
+        </Grid>
         <Border
             x:Name="AboutButtonBorder"
             HorizontalAlignment="Left"

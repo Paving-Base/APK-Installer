@@ -42,7 +42,7 @@ namespace APKInstaller.Pages
                 switch (args.Kind)
                 {
                     case ExtendedActivationKind.File:
-                        _path = (args.Data as FileActivatedEventArgs).Files.First().Path;
+                        _path = (args.Data as FileActivatedEventArgs).Files[0].Path;
                         Provider = new InstallViewModel(_path, this);
                         break;
                     case ExtendedActivationKind.Protocol:

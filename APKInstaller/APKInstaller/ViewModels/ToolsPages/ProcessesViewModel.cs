@@ -132,7 +132,7 @@ namespace APKInstaller.ViewModels.ToolsPages
             return (string)parameter switch
             {
                 "Size" => ((double)(int)value).GetSizeString(),
-                "Name" => ((string)value).Split('/').Last().Split(':').First().Split('@').First(),
+                "Name" => ((string)value).Split('/').Last().Split(':').FirstOrDefault().Split('@').FirstOrDefault(),
                 "State" => (AndroidProcessState)value switch
                 {
                     AndroidProcessState.Unknown => "Unknown",

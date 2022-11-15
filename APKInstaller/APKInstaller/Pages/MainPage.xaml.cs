@@ -4,6 +4,7 @@ using Microsoft.UI.Dispatching;
 using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
+using Windows.ApplicationModel;
 using Windows.Graphics;
 
 // To learn more about WinUI, the WinUI project structure,
@@ -17,6 +18,8 @@ namespace APKInstaller.Pages
     public sealed partial class MainPage : Page
     {
         private readonly AppWindow AppWindow = WindowHelper.GetAppWindowForCurrentWindow();
+
+        public string GetAppTitleFromSystem => Package.Current.DisplayName;
 
         public MainPage()
         {
@@ -51,17 +54,13 @@ namespace APKInstaller.Pages
             }
         }
 
-        private void Page_SizeChanged(object sender, SizeChangedEventArgs e)
+        private void CustomTitleBar_SizeChanged(object sender, SizeChangedEventArgs e)
         {
-            try
+            if (!UIHelper.HasTitleBar)
             {
-                if (!UIHelper.HasTitleBar)
-                {
-                    RectInt32 Rect = new((ActualWidth - CustomTitleBar.ActualWidth).GetActualPixel(), 0, CustomTitleBar.ActualWidth.GetActualPixel(), CustomTitleBar.ActualHeight.GetActualPixel());
-                    AppWindow.TitleBar.SetDragRectangles(new RectInt32[] { Rect });
-                }
+                RectInt32 Rect = new((ActualWidth - CustomTitleBar.ActualWidth).GetActualPixel(), 0, CustomTitleBar.ActualWidth.GetActualPixel(), CustomTitleBar.ActualHeight.GetActualPixel());
+                AppWindow.TitleBar.SetDragRectangles(new RectInt32[] { Rect });
             }
-            catch { }
         }
     }
 }

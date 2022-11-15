@@ -198,7 +198,7 @@ namespace AAPTForNet
 
             if (!apkInfos.Any()) { return new ApkInfo(); }
 
-            if (apkInfos.Count <= 1) { return apkInfos.First(); }
+            if (apkInfos.Count <= 1) { return apkInfos.FirstOrDefault(); }
 
             List<ApkInfos> packages = apkInfos.GroupBy(x => x.PackageName).Select(x => new ApkInfos { PackageName = x.Key, Apks = x.ToList() }).ToList();
 
@@ -218,7 +218,7 @@ namespace AAPTForNet
 
             if (!infos.Any()) { throw new Exception("There are all dependents in this Package."); }
 
-            ApkInfo info = infos.First();
+            ApkInfo info = infos.FirstOrDefault();
 
             return info;
         }
