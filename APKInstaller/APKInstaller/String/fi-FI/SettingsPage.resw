@@ -123,6 +123,9 @@
   <data name="ADBPathSettings.Header" xml:space="preserve">
     <value>ADB Path</value>
   </data>
+  <data name="ADBVersionTextBlock.Text" xml:space="preserve">
+    <value>ADB Version</value>
+  </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>Auto download when package is from URL.</value>
   </data>
@@ -201,6 +204,15 @@
   <data name="FindUpdate" xml:space="preserve">
     <value>Find Update</value>
   </data>
+  <data name="FrameworkSettings.Description" xml:space="preserve">
+    <value>Information about the frameworks of this app.</value>
+  </data>
+  <data name="FrameworkSettings.Header" xml:space="preserve">
+    <value>Framework Information</value>
+  </data>
+  <data name="FrameworkTextBlock.Text" xml:space="preserve">
+    <value>Framework</value>
+  </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>Go to the page of test.</value>
   </data>
@@ -233,6 +245,12 @@
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
     <value>Is Only for WSA?</value>
+  </data>
+  <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
+    <value>OS Architecture</value>
+  </data>
+  <data name="OSPlatformTextBlock.Text" xml:space="preserve">
+    <value>OS Platform</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Others</value>
