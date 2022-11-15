@@ -1,15 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using Windows.Globalization;
 using Windows.System.UserProfile;
 
 namespace APKInstaller.Helpers
 {
     public static class LanguageHelper
     {
-        public static string AutoLanguageCode = "auto";
+        public const string AutoLanguageCode = "auto";
 
-        public static List<string> SupportLanguages = new()
+        public static readonly List<string> SupportLanguages = new()
         {
             "af-ZA",
             "ar-SA",
@@ -79,7 +80,7 @@ namespace APKInstaller.Helpers
             "zh-Hant, zh-hk, zh-mo, zh-tw, zh-hant-hk, zh-hant-mo, zh-hant-tw"
         };
 
-        public static List<CultureInfo> SupportCultures = SupportLanguages.Select(x => new CultureInfo(x)).ToList();
+        public static readonly List<CultureInfo> SupportCultures = SupportLanguages.Select(x => new CultureInfo(x)).ToList();
 
         public static string GetCurrentLanguage()
         {
@@ -93,6 +94,21 @@ namespace APKInstaller.Helpers
                         int temp = SupportLanguageCodes.IndexOf(code);
                         return SupportLanguages[temp];
                     }
+                }
+            }
+            return SupportLanguages[6];
+        }
+
+        public static string GetPrimaryLanguage()
+        {
+            string language = ApplicationLanguages.PrimaryLanguageOverride;
+            if (string.IsNullOrEmpty(language)) { return GetCurrentLanguage(); }
+            foreach (string code in SupportLanguageCodes)
+            {
+                if (code.ToLower().Contains(language.ToLower()))
+                {
+                    int temp = SupportLanguageCodes.IndexOf(code);
+                    return SupportLanguages[temp];
                 }
             }
             return SupportLanguages[6];

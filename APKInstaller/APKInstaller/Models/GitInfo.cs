@@ -30,13 +30,13 @@ namespace APKInstaller.Models
         {
             if (local)
             {
-                string Culture = LanguageHelper.GetCurrentLanguage();
+                string Culture = LanguageHelper.GetPrimaryLanguage();
                 return string.Format(API, UserName, Repository, Branch, Path, AddLanguage(FileName, Culture));
             }
             return string.Format(API, UserName, Repository, Branch, Path, FileName);
         }
 
-        private string AddLanguage(string filename, string langcode)
+        private static string AddLanguage(string filename, string langcode)
         {
             Regex file = new(@"^.*(\.\w+)$");
             Regex lang = new(@"^.*\.[a-z]{2}(-[A-Z]{2})?\.\w+$");

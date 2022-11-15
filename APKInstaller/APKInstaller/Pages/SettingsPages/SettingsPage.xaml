@@ -211,6 +211,8 @@
                                     <RowDefinition Height="Auto" />
                                     <RowDefinition Height="Auto" />
                                     <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
                                 </Grid.RowDefinitions>
 
                                 <TextBlock
@@ -238,7 +240,7 @@
                                     Text="{x:Bind interopservices:RuntimeInformation.FrameworkDescription}" />
 
                                 <TextBlock
-                                    x:Uid="/SettingsPage/OSPlatformTextBlock"
+                                    Text="CS/WinRT"
                                     Grid.Row="2"
                                     Grid.Column="0"
                                     Padding="0,0,0,8"
@@ -247,16 +249,40 @@
                                     Grid.Row="2"
                                     Grid.Column="1"
                                     Padding="32,0,0,8"
-                                    Text="{x:Bind interopservices:RuntimeInformation.OSDescription}" />
+                                    Text="{Binding WinRTVersion}" />
 
                                 <TextBlock
-                                    x:Uid="/SettingsPage/OSArchitectureTextBlock"
+                                    Text="Windows App SDK"
                                     Grid.Row="3"
                                     Grid.Column="0"
                                     Padding="0,0,0,8"
                                     Opacity="0.75" />
                                 <TextBlock
                                     Grid.Row="3"
+                                    Grid.Column="1"
+                                    Padding="32,0,0,8"
+                                    Text="{Binding WASVersion}" />
+
+                                <TextBlock
+                                    x:Uid="/SettingsPage/OSPlatformTextBlock"
+                                    Grid.Row="4"
+                                    Grid.Column="0"
+                                    Padding="0,0,0,8"
+                                    Opacity="0.75" />
+                                <TextBlock
+                                    Grid.Row="4"
+                                    Grid.Column="1"
+                                    Padding="32,0,0,8"
+                                    Text="{x:Bind interopservices:RuntimeInformation.OSDescription}" />
+
+                                <TextBlock
+                                    x:Uid="/SettingsPage/OSArchitectureTextBlock"
+                                    Grid.Row="5"
+                                    Grid.Column="0"
+                                    Padding="0,0,0,8"
+                                    Opacity="0.75" />
+                                <TextBlock
+                                    Grid.Row="5"
                                     Grid.Column="1"
                                     Padding="32,0,0,8"
                                     Text="{x:Bind interopservices:RuntimeInformation.OSArchitecture}" />

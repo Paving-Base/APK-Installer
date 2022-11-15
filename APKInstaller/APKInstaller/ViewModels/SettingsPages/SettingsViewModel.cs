@@ -5,12 +5,13 @@ using APKInstaller.Pages.SettingsPages;
 using CommunityToolkit.WinUI;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
+using Microsoft.Windows.AppLifecycle;
 using PInvoke;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Diagnostics;
 using System.IO;
+using System.Reflection;
 using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Resources;
@@ -26,6 +27,15 @@ namespace APKInstaller.ViewModels.SettingsPages
         private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("SettingsPage");
 
         public static SettingsViewModel Caches;
+
+        public static bool IsModified => Package.Current.PublisherDisplayName != "wherewhere"
+            || Package.Current.Id.Name != "18184wherewhere.AndroidAppInstaller"
+            || (Package.Current.Id.PublisherId != "4v4sx105x6y4r" && Package.Current.Id.PublisherId != "d0s2e6z6qkbn0")
+            || (Package.Current.Id.Publisher != "CN=2C3A37C0-35FC-4839-B08C-751C1C1AFBF5" && Package.Current.Id.Publisher != "CN=where");
+
+        public static string WASVersion => Assembly.GetAssembly(typeof(ExtendedActivationKind)).GetName().Version.ToString(3);
+
+        public static string WinRTVersion => Assembly.GetAssembly(typeof(TrustLevel)).GetName().Version.ToString(3);
 
         private IEnumerable<DeviceData> _deviceList;
         public IEnumerable<DeviceData> DeviceList
@@ -144,11 +154,6 @@ namespace APKInstaller.ViewModels.SettingsPages
                 }
             }
         }
-
-        public static bool IsModified => Package.Current.PublisherDisplayName != "wherewhere"
-            || Package.Current.Id.Name != "18184wherewhere.AndroidAppInstaller"
-            || (Package.Current.Id.PublisherId != "4v4sx105x6y4r" && Package.Current.Id.PublisherId != "d0s2e6z6qkbn0")
-            || (Package.Current.Id.Publisher != "CN=2C3A37C0-35FC-4839-B08C-751C1C1AFBF5" && Package.Current.Id.Publisher != "CN=where");
 
         private bool _checkingUpdate;
         public bool CheckingUpdate
@@ -315,7 +320,7 @@ namespace APKInstaller.ViewModels.SettingsPages
         {
             await Task.Run(async () =>
             {
-                string langcode = LanguageHelper.GetCurrentLanguage();
+                string langcode = LanguageHelper.GetPrimaryLanguage();
                 Uri dataUri = new($"ms-appx:///String/{langcode}/About.md");
                 StorageFile file = await StorageFile.GetFileFromApplicationUriAsync(dataUri);
                 string markdown = await FileIO.ReadTextAsync(file);
