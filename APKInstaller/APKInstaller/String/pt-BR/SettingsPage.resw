@@ -247,7 +247,7 @@
     <value>É somente para WSA?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>&amp; Arquitetura</value>
+    <value>OS Architecture</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
     <value>OS Platform</value>
