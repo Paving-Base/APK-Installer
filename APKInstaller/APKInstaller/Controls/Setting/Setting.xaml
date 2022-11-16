@@ -58,7 +58,8 @@
                                 x:Name="HeaderPresenter"
                                 VerticalAlignment="Center"
                                 Foreground="{ThemeResource CardPrimaryForegroundBrush}"
-                                Text="{TemplateBinding Header}" />
+                                Text="{TemplateBinding Header}"
+                                TextWrapping="WrapWholeWords" />
 
                             <ContentPresenter
                                 x:Name="DescriptionPresenter"

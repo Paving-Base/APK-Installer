@@ -11,10 +11,7 @@
         <ResourceDictionary Source="ms-appx:///Controls/TitleBar/TitleBar_themeresources.xaml" />
     </Page.Resources>
     <Page.Background>
-        <SolidColorBrush
-            x:Name="RootBackground"
-            Opacity="0"
-            Color="{ThemeResource SolidBackgroundFillColorBase}" />
+        <SolidColorBrush x:Name="RootBackground" Color="{ThemeResource SolidBackgroundFillColorBase}" />
     </Page.Background>
     <Grid x:Name="Root">
         <Grid.ColumnDefinitions>
@@ -27,10 +24,10 @@
         <Grid
             x:Name="CustomTitleBar"
             Grid.Column="1"
-            SizeChanged="CustomTitleBar_SizeChanged"
             Height="{x:Bind helper:UIHelper.TitleBarHeight}"
             HorizontalAlignment="Stretch"
-            VerticalAlignment="Top">
+            VerticalAlignment="Top"
+            SizeChanged="CustomTitleBar_SizeChanged">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />

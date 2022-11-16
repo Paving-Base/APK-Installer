@@ -1,7 +1,8 @@
 {
   "profiles": {
     "APKInstaller (Package)": {
-      "commandName": "MsixPackage"
+      "commandName": "MsixPackage",
+      "nativeDebugging": true
     },
     "APKInstaller (Unpackaged)": {
       "commandName": "Project"

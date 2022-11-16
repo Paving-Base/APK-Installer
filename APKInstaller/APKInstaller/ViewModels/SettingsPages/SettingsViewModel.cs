@@ -35,6 +35,8 @@ namespace APKInstaller.ViewModels.SettingsPages
 
         public static string WASVersion => Assembly.GetAssembly(typeof(ExtendedActivationKind)).GetName().Version.ToString(3);
 
+        public static string SDKVersion => Assembly.GetAssembly(typeof(PackageSignatureKind)).GetName().Version.ToString();
+
         public static string WinRTVersion => Assembly.GetAssembly(typeof(TrustLevel)).GetName().Version.ToString(3);
 
         private IEnumerable<DeviceData> _deviceList;

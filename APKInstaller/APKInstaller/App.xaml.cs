@@ -80,7 +80,7 @@ namespace APKInstaller
             e.Handled = true;
         }
 
-        private string ExceptionToMessage(Exception ex)
+        private static string ExceptionToMessage(Exception ex)
         {
             StringBuilder builder = new();
             builder.Append('\n');

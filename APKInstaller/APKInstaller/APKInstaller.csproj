@@ -2,18 +2,9 @@
   <PropertyGroup>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
     <ApplicationManifest>app.manifest</ApplicationManifest>
-    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
-    <AppxBundle>Never</AppxBundle>
-    <AppxBundlePlatforms>x64</AppxBundlePlatforms>
-    <AppxPackageDir>AppPackages</AppxPackageDir>
-    <AppxSymbolPackageEnabled>True</AppxSymbolPackageEnabled>
     <Copyright>Copyright © 2017 - 2022 PavingBase. All Rights Reserved.</Copyright>
     <Description>An Android Application Installer for Windows</Description>
     <EnablePreviewMsixTooling>True</EnablePreviewMsixTooling>
-    <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
-    <GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
-    <GenerateTestArtifacts>False</GenerateTestArtifacts>
-    <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
     <LangVersion>preview</LangVersion>
     <OutputType>WinExe</OutputType>
     <PackageProjectUrl>https://github.com/Paving-Base/APK-Installer</PackageProjectUrl>
@@ -22,11 +13,23 @@
     <RepositoryUrl>https://github.com/Paving-Base/APK-Installer</RepositoryUrl>
     <RootNamespace>APKInstaller</RootNamespace>
     <RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
-    <TargetFramework>net7.0-windows10.0.22621.0</TargetFramework>
+    <TargetFramework>net6.0-windows10.0.22621.0</TargetFramework>
     <TargetPlatformMaxVersion>10.0.22621.0</TargetPlatformMaxVersion>
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <UseWinUI>True</UseWinUI>
     <VersionPrefix>0.1.20</VersionPrefix>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Never</AppxBundle>
+    <AppxBundlePlatforms>x64</AppxBundlePlatforms>
+    <AppxPackageDir>AppPackages</AppxPackageDir>
+    <AppxSymbolPackageEnabled>True</AppxSymbolPackageEnabled>
+    <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
+    <GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
+    <GenerateTestArtifacts>False</GenerateTestArtifacts>
+    <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
@@ -103,10 +106,9 @@
     <PackageReference Include="NativeMethods" Version="0.0.3" />
     <PackageReference Include="SharpCompress" Version="0.32.2" />
     <PackageReference Include="PInvoke.User32" Version="0.7.124" />
-    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
     <PackageReference Include="CommunityToolkit.WinUI" Version="7.1.2" />
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.2.221109.1" />
     <PackageReference Include="CommunityToolkit.WinUI.UI" Version="7.1.2" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.2.221109.1" />
     <PackageReference Include="CommunityToolkit.WinUI.Connectivity" Version="7.1.2" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.755" />
     <PackageReference Include="CommunityToolkit.WinUI.UI.Controls.Layout" Version="7.1.2" />
