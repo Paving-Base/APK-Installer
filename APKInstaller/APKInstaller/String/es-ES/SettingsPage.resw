@@ -124,7 +124,7 @@
     <value>Ruta ADB</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>ADB Version</value>
+    <value>Versión ADB</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>Autodescargar cuando el paquete viene de URL.</value>
@@ -247,10 +247,10 @@
     <value>¿Solo para WSA?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>OS Architecture</value>
+    <value>Arquitectura OS</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
-    <value>OS Platform</value>
+    <value>Plataforma OS</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Otros</value>
