@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>APK 安装程序需要 ADB 才能工作。如果你没有下载ADB，请单击“下载”进行下载。如下载即表示您接受  Google 制定的条款。如果您已经下载了 ADB，请单击“选择”按钮来选择它的路径。</value>
+    <value>APK 安装程序需要 ADB 即 Android 调试桥才能工作。单击“下载”进行下载。下载即表示您接受  Google 为 ADB 制定的条款和条件。如果您已经下载了 ADB，请点击“选择”来选择它。</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>ADB 已存在</value>
@@ -151,7 +151,7 @@
     <value>检查中……</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>检查 ADB 中……</value>
+    <value>检查 ADB ……</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
     <value>检查路径……</value>
@@ -175,10 +175,10 @@
     <value>下载失败</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>请检查您的网络连接和 URL 并重试。</value>
+    <value>请检查您的网络连接或 URL 链接并重试。</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>寻找 WSA 中……</value>
+    <value>正在寻找 WSA ……</value>
   </data>
   <data name="Finished" xml:space="preserve">
     <value>完成</value>
@@ -234,10 +234,10 @@
     <value>安装 WSA</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
-    <value>这个安装包已经损坏或无效了。</value>
+    <value>安装包已损坏或无效。</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
-    <value>URL无效。</value>
+    <value>URL 链接不完整或无效。</value>
   </data>
   <data name="Launch" xml:space="preserve">
     <value>启动</value>
@@ -246,7 +246,7 @@
     <value>正在启动 WSA ……</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>当安装完成时启动</value>
+    <value>当准备就绪时启动</value>
   </data>
   <data name="Loading" xml:space="preserve">
     <value>加载中……</value>
@@ -285,7 +285,7 @@
     <value>请连接网络后再打开应用。</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>要安装 Android应用，请尝试打开一个 Android 应用程序包（Apk）。</value>
+    <value>为了使应用程序正常运行，请尝试打开 Android 应用程序包。</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>确定</value>
@@ -297,7 +297,7 @@
     <value>程序包名称</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>安装包名称: {0}</value>
+    <value>包名称: {0}</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
@@ -315,13 +315,13 @@
     <value>重试</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>选择</value>
+    <value>选取</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
     <value>分享</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
-    <value>启动 ADB 服务中……</value>
+    <value>启动 ADB 服务……</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
     <value>启动 WSA</value>
@@ -365,7 +365,7 @@
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
     <value>正在等待 WSA 启动……
-这通常需要一些时间。这段时间里你可以坐和放宽。</value>
+这通常需要很长时间。请坐和放宽。</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>欢迎！</value>
