@@ -187,138 +187,138 @@
     <value>Shèbèi</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
-    <value>显示</value>
+    <value>Xiǎnshì</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
-    <value>支持</value>
+    <value>Zhīchí</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK 安装程序是一个开源软件，它不会内置任何广告来盈利。如果你喜欢这个应用，不要忘了在商店里打上好评哦，当然如果可以捐赠一点点就更好了。感谢大家的支持💕！</value>
+    <value>APK ānzhuāngchéngxù shì yígè kāiyuán ruǎnjiàn, tā búhuì nèizhì rènhé guǎnggào lái yínglì. Rúguǒ nǐ xǐhuān zhège yìngyòng, búyào wàng le zài shāngdiàn lǐ dǎshàng hǎopíng ō, dāngrán rúguǒ kěyǐ juānzèng yìdiǎndiǎn jiù gènghǎo le. Gǎnxiè dàjiā de zhīchí💕! </value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
-    <value>用户协议</value>
+    <value>Yònghù xiéyì</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
-    <value>反馈</value>
+    <value>Fǎnkuì</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
-    <value>找到新的更新</value>
+    <value>Zhǎodào xīn de gēngxīn</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>关于此应用程序框架的信息。</value>
+    <value>Guānyú cǐ yìngyòngchéngxù kuāngjià de xìnxī. </value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
-    <value>框架信息</value>
+    <value>Kuāngjià xìnxī</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
-    <value>框架</value>
+    <value>Kuāngjià</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>前往用于测试的页面。</value>
+    <value>Qiánwǎng yòngyú cèshì de yèmiàn. </value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>前往测试页面</value>
+    <value>Qiánwǎng cèshì yèmiàn</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
-    <value>前往更新</value>
+    <value>Qiánwǎng gēngxīn</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
-    <value>加入电报聊天</value>
+    <value>Jiā'rù diànbào liáotiān</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>上次检查时间: </value>
+    <value>Shàngcì jiǎnchá shíjiān: </value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
-    <value>了解更多</value>
+    <value>Liǎojiě gèngduō</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
-    <value>日志</value>
+    <value>Rìzhì</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>修改版可能会包含一些不好的东西，包括但不限于广告、损坏的特性，甚至是病毒。请前往 Microsoft Store 安装原版。请参阅我们的 Github 仓库了解更多信息。</value>
+    <value>Xiūgǎibǎn kě'néng huì bāohán yīxiē bùhǎo de dōngxi, bāokuò dàn búxiànyú guǎnggào, sǔnhuài de tèxìng, shènzhì shì bìngdú. Qǐng qiánwǎng Microsoft Store ānzhuāng yuánbǎn. Qǐngcānyuè wǒmen de Github cāngkù liǎojiě gèngduō xìnxī. </value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>您正在使用修改版！</value>
+    <value>Nín zhèngzài shǐyòng xiūgǎibǎn! </value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>关闭它以连接到其他设备。</value>
+    <value>Guānbì tā yǐ liánjiē dào qítā shèbèi. </value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>是否仅用于 WSA？</value>
+    <value>Shìfǒu jǐn yòngyú WSA? </value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>操作系统架构</value>
+    <value>Cāozuòxìtǒng jiàgòu</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
-    <value>操作系统平台</value>
+    <value>Cāozuòxìtǒng píngtái</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
-    <value>其他</value>
+    <value>Qítā</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>深色</value>
+    <value>Shēnsè</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>Windows 默认</value>
+    <value>Windows mò'rèn</value>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
-    <value>浅色</value>
+    <value>Qiǎnsè</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value>前往商店好评</value>
+    <value>Qiánwǎng shāngdiàn hǎopíng</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
-    <value>发行说明</value>
+    <value>Fāxíng shuōmíng</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
-    <value>重置此应用程序的设置。</value>
+    <value>Chóngzhì cǐ yìngyòngchéngxù de shèzhì. </value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
-    <value>重置应用</value>
+    <value>Chóngzhì yìngyòng</value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
-    <value>重置</value>
+    <value>Chóngzhì</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
     <value>Shì</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
-    <value>您确定要重置应用吗？</value>
+    <value>Nín quèdìng yào chóngzhì yìngyòng ma? </value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
-    <value>选择设备</value>
+    <value>Xuǎnzé shèbèi</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
-    <value>当没有连接到设备时显示帮助。</value>
+    <value>Dāng méiyǒu liánjiē dào shèbèi shí xiǎnshì bāngzhù. </value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>是否显示帮助？</value>
+    <value>Shìfǒu xiǎnshì bāngzhù? </value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>在设置顶部显示公告。</value>
+    <value>Zài shèzhì dǐngbù xiǎnshì gōnggào. </value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>是否显示公告？</value>
+    <value>Shìfǒu xiǎnshì gōnggào? </value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
-    <value>应用主题</value>
+    <value>Yìngyòng zhǔtí</value>
   </data>
   <data name="ThemesSettingsHeader.Header" xml:space="preserve">
-    <value>主题</value>
+    <value>Zhǔtí</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>设置</value>
+    <value>Shèzhì</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>翻译</value>
+    <value>Fānyì</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
-    <value>版本</value>
+    <value>Bǎnběn</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>最新</value>
+    <value>Zuìxīn</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Windows 颜色设置</value>
+    <value>Windows yánsè shèzhì</value>
   </data>
 </root>
