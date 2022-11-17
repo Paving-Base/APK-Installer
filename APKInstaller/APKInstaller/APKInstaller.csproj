@@ -1,4 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
     <ApplicationManifest>app.manifest</ApplicationManifest>
@@ -46,61 +47,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Assets\SplashScreen.scale-200.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\LockScreenLogo.scale-200.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\Square150x150Logo.scale-200.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\Square44x44Logo.scale-200.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\Wide310x150Logo.scale-200.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="favicon.ico">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="String\af-ZA\About.md" />
-    <Content Include="String\ar-SA\About.md" />
-    <Content Include="String\ca-ES\About.md" />
-    <Content Include="String\cs-CZ\About.md" />
-    <Content Include="String\da-DK\About.md" />
-    <Content Include="String\de-DE\About.md" />
-    <Content Include="String\el-GR\About.md" />
-    <Content Include="String\en-US\About.md" />
-    <Content Include="String\es-ES\About.md" />
-    <Content Include="String\fi-FI\About.md" />
-    <Content Include="String\fr-FR\About.md" />
-    <Content Include="String\he-IL\About.md" />
-    <Content Include="String\hu-HU\About.md" />
-    <Content Include="String\id-ID\About.md" />
-    <Content Include="String\it-IT\About.md" />
-    <Content Include="String\ja-JP\About.md" />
-    <Content Include="String\ko-KR\About.md" />
-    <Content Include="String\nl-NL\About.md" />
-    <Content Include="String\no-NO\About.md" />
-    <Content Include="String\pl-PL\About.md" />
-    <Content Include="String\pt-BR\About.md" />
-    <Content Include="String\pt-PT\About.md" />
-    <Content Include="String\ro-RO\About.md" />
-    <Content Include="String\ru-RU\About.md" />
-    <Content Include="String\sr-SP\About.md" />
-    <Content Include="String\sv-SE\About.md" />
-    <Content Include="String\tr-TR\About.md" />
-    <Content Include="String\uk-UA\About.md" />
-    <Content Include="String\vi-VN\About.md" />
-    <Content Include="String\zh-CN\About.md" />
-    <Content Include="String\zh-TW\About.md" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Downloader" Version="3.0.1" />
     <PackageReference Include="MetroLog.Net6" Version="2.0.1" />
     <PackageReference Include="NativeMethods" Version="0.0.3" />
@@ -136,186 +82,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Update="Assets\256x256.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\LargeTile.scale-100.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\LargeTile.scale-125.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\LargeTile.scale-150.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\LargeTile.scale-200.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\LargeTile.scale-400.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\SmallTile.scale-100.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\SmallTile.scale-125.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\SmallTile.scale-150.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\SmallTile.scale-200.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\SmallTile.scale-400.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\SplashScreen.scale-100.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\SplashScreen.scale-125.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\SplashScreen.scale-150.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\SplashScreen.scale-400.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\Square150x150Logo.scale-100.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\Square150x150Logo.scale-125.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\Square150x150Logo.scale-150.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\Square150x150Logo.scale-400.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\Square44x44Logo.scale-100.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\Square44x44Logo.scale-125.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\Square44x44Logo.scale-150.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\Square44x44Logo.scale-400.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\Square44x44Logo.targetsize-16.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\Square44x44Logo.targetsize-24.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\Square44x44Logo.targetsize-256.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\Square44x44Logo.targetsize-32.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\Square44x44Logo.targetsize-48.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\StoreLogo.backup.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\StoreLogo.scale-100.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\StoreLogo.scale-125.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\StoreLogo.scale-150.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\StoreLogo.scale-200.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\StoreLogo.scale-400.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\Wide310x150Logo.scale-100.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\Wide310x150Logo.scale-125.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\Wide310x150Logo.scale-150.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Assets\Wide310x150Logo.scale-400.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
     <PRIResource Remove="AppPackages\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Assets\256x256.png" />
-    <None Remove="String\af-ZA\About.md" />
-    <None Remove="String\ar-SA\About.md" />
-    <None Remove="String\ca-ES\About.md" />
-    <None Remove="String\cs-CZ\About.md" />
-    <None Remove="String\da-DK\About.md" />
-    <None Remove="String\de-DE\About.md" />
-    <None Remove="String\el-GR\About.md" />
-    <None Remove="String\en-US\About.md" />
-    <None Remove="String\es-ES\About.md" />
-    <None Remove="String\fi-FI\About.md" />
-    <None Remove="String\fr-FR\About.md" />
-    <None Remove="String\he-IL\About.md" />
-    <None Remove="String\hu-HU\About.md" />
-    <None Remove="String\id-ID\About.md" />
-    <None Remove="String\it-IT\About.md" />
-    <None Remove="String\ja-JP\About.md" />
-    <None Remove="String\ko-KR\About.md" />
-    <None Remove="String\nl-NL\About.md" />
-    <None Remove="String\no-NO\About.md" />
-    <None Remove="String\pl-PL\About.md" />
-    <None Remove="String\pt-BR\About.md" />
-    <None Remove="String\pt-PT\About.md" />
-    <None Remove="String\ro-RO\About.md" />
-    <None Remove="String\ru-RU\About.md" />
-    <None Remove="String\sr-SP\About.md" />
-    <None Remove="String\sv-SE\About.md" />
-    <None Remove="String\tr-TR\About.md" />
-    <None Remove="String\uk-UA\About.md" />
-    <None Remove="String\vi-VN\About.md" />
-    <None Remove="String\zh-CN\About.md" />
-    <None Remove="String\zh-TW\About.md" />
+    <None Remove="favicon.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -331,13 +102,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="favicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\..\AdvancedSharpAdbClient\AdvancedSharpAdbClient\AdvancedSharpAdbClient.csproj" />
     <ProjectReference Include="..\AAPTForNet\AAPTForNet.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Page Update="Controls\WebXAML.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
 </Project>

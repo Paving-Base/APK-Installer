@@ -323,10 +323,13 @@ namespace APKInstaller.ViewModels.SettingsPages
             await Task.Run(async () =>
             {
                 string langcode = LanguageHelper.GetPrimaryLanguage();
-                Uri dataUri = new($"ms-appx:///Assets/About.{langcode}.md");
+                Uri dataUri = new($"ms-appx:///Assets/About/About.{langcode}.md");
                 StorageFile file = await StorageFile.GetFileFromApplicationUriAsync(dataUri);
-                string markdown = await FileIO.ReadTextAsync(file);
-                _ = _page?.DispatcherQueue.EnqueueAsync(() => AboutTextBlockText = markdown);
+                if (file != null)
+                {
+                    string markdown = await FileIO.ReadTextAsync(file);
+                    _ = _page?.DispatcherQueue.EnqueueAsync(() => AboutTextBlockText = markdown);
+                }
             });
         }
 
