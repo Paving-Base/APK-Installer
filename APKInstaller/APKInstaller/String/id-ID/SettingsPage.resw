@@ -235,7 +235,7 @@
     <value>Logs</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>Versi yang dimodifikasi mungkin berisi sesuatu yang tidak menyenangkan. Seperti iklan, fungsi rusak bahkan virus. Silahkan buka Microsoft Store untuk mengunduh yang asli. Lihat Repositori GitHub kami untuk mempelajari lebih lanjut tentangnya.</value>
+    <value>A modified version may contain something unpleasant. Such as AD, broken functions even virus. Please go to Microsoft Store to download the original one. See our GitHub Repository to learn more about it.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>Anda sedang menggunakan versi yang dimodifikasi!</value>

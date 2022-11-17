@@ -235,7 +235,7 @@
     <value>Günlükler</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>Değiştirilmiş bir sürüm hoş olmayan bir şey içerebilir. AD'ler gibi, bozuk işlevler hatta virüs. Orijinalini indirmek için lütfen Microsoft Store'a gidin. Bununla ilgili daha fazla bilgi edinmek için Github Depomuza bakın.</value>
+    <value>A modified version may contain something unpleasant. Such as AD, broken functions even virus. Please go to Microsoft Store to download the original one. See our GitHub Repository to learn more about it.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>Değiştirilmiş bir sürüm kullanıyorsunuz!</value>

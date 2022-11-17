@@ -235,7 +235,7 @@
     <value>ログ</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>変更を加えられたバージョンには、不快なものが含まれている可能性があります。ADなど、壊れた機能、更にはウイルス。Microsoft Storeにアクセスして、オリジナルのものをダウンロードしてください。詳細についてはGithubリポジトリを参照してください。</value>
+    <value>A modified version may contain something unpleasant. Such as AD, broken functions even virus. Please go to Microsoft Store to download the original one. See our GitHub Repository to learn more about it.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>変更されたバージョンを使用しています！</value>
