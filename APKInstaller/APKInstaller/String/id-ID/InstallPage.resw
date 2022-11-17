@@ -156,7 +156,7 @@
     <value>Memeriksa ADB...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Checking Path...</value>
+    <value>Memeriksa Jalur...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>Klik di sini untuk membacanya</value>
@@ -370,7 +370,7 @@
 Ini mungkin memakan waktu lama. Duduk dan rileks.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome!</value>
+    <value>Selamat datang!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA sedang Berjalan</value>
