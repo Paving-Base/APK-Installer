@@ -130,10 +130,10 @@
     <value>Компактное отображение</value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
-    <value>A development version app may not stable. Download release version on Microsoft Store.</value>
+    <value>Версия для разработчиков может не стабильно работать. Загрузите приложение в Microsoft Store.</value>
   </data>
   <data name="DevelopmentInfoBar.Title" xml:space="preserve">
-    <value>You are using a development version app.</value>
+    <value>Вы используете версию для разработчиков.</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
     <value>Включить компактное отображение</value>
