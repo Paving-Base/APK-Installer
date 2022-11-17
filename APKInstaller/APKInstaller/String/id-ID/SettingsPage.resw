@@ -205,13 +205,13 @@
     <value>Temukan Pembaruan</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>Information about the frameworks of this app.</value>
+    <value>Informasi tentang kerangka kerja aplikasi ini.</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
-    <value>Framework Information</value>
+    <value>Informasi Kerangka</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
-    <value>Framework</value>
+    <value>Kerangka</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>Pergi ke halaman tes.</value>
@@ -232,10 +232,10 @@
     <value>Pelajari Lebih Lanjut</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
-    <value>Logs</value>
+    <value>Log</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may contain something unpleasant. Such as AD, broken functions even virus. Please go to Microsoft Store to download the original one. See our GitHub Repository to learn more about it.</value>
+    <value>Versi yang dimodifikasi mungkin berisi sesuatu yang tidak menyenangkan. Seperti iklan, fungsi rusak bahkan virus. Silahkan buka Microsoft Store untuk mengunduh yang asli. Lihat Repositori GitHub kami untuk mempelajari lebih lanjut tentangnya.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>Anda sedang menggunakan versi yang dimodifikasi!</value>
@@ -247,10 +247,10 @@
     <value>Apakah Hanya untuk WSA?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>OS Architecture</value>
+    <value>Arsitektur OS</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
-    <value>OS Platform</value>
+    <value>Platform OS</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Lainnya</value>
