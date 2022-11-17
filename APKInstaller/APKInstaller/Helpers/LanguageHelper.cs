@@ -9,6 +9,7 @@ namespace APKInstaller.Helpers
     public static class LanguageHelper
     {
         public const string AutoLanguageCode = "auto";
+        public const string FallbackLanguageCode = "en-US";
 
         public static readonly List<string> SupportLanguages = new()
         {
@@ -42,6 +43,7 @@ namespace APKInstaller.Helpers
             "uk-UA",
             "vi-VN",
             "zh-CN",
+            "zh-Latn",
             "zh-TW"
         };
 
@@ -77,41 +79,34 @@ namespace APKInstaller.Helpers
             "uk, uk-ua",
             "vi, vi-vn",
             "zh-Hans, zh-cn, zh-hans-cn, zh-sg, zh-hans-sg",
+            "zh-Latn, zh-latn-pinyin, zh-latn-cn, zh-latn-sg",
             "zh-Hant, zh-hk, zh-mo, zh-tw, zh-hant-hk, zh-hant-mo, zh-hant-tw"
         };
 
         public static readonly List<CultureInfo> SupportCultures = SupportLanguages.Select(x => new CultureInfo(x)).ToList();
+
+        public static int FindIndexFromSupportLanguageCodes(string language) => SupportLanguageCodes.FindIndex(code => code.ToLowerInvariant().Contains(language.ToLowerInvariant()));
 
         public static string GetCurrentLanguage()
         {
             IReadOnlyList<string> languages = GlobalizationPreferences.Languages;
             foreach (string language in languages)
             {
-                foreach (string code in SupportLanguageCodes)
+                int temp = FindIndexFromSupportLanguageCodes(language);
+                if (temp != -1)
                 {
-                    if (code.ToLower().Contains(language.ToLower()))
-                    {
-                        int temp = SupportLanguageCodes.IndexOf(code);
-                        return SupportLanguages[temp];
-                    }
+                    return SupportLanguages[temp];
                 }
             }
-            return SupportLanguages[6];
+            return FallbackLanguageCode;
         }
 
         public static string GetPrimaryLanguage()
         {
             string language = ApplicationLanguages.PrimaryLanguageOverride;
             if (string.IsNullOrEmpty(language)) { return GetCurrentLanguage(); }
-            foreach (string code in SupportLanguageCodes)
-            {
-                if (code.ToLower().Contains(language.ToLower()))
-                {
-                    int temp = SupportLanguageCodes.IndexOf(code);
-                    return SupportLanguages[temp];
-                }
-            }
-            return SupportLanguages[6];
+            int temp = FindIndexFromSupportLanguageCodes(language);
+            return temp == -1 ? FallbackLanguageCode : SupportLanguages[temp];
         }
     }
 }
