@@ -124,7 +124,7 @@
     <value>Caminho do ADB</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>ADB Version</value>
+    <value>Permissões ADB</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>Baixar automaticamente quando o pacote vier de um URL.</value>
@@ -208,7 +208,7 @@
     <value>Information about the frameworks of this app.</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
-    <value>Framework Information</value>
+    <value>Descrição da estrutura</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
     <value>Framework</value>

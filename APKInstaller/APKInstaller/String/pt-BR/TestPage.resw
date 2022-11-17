@@ -124,19 +124,19 @@
     <value>Aplicação </value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
-    <value>Enter or Exit Compact Overlay</value>
+    <value>Digite ou Saia de Sobreposição Compacta</value>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
     <value>Compact Overlay</value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
-    <value>A development version app may not stable. Download release version on Microsoft Store.</value>
+    <value>Uma versão de desenvolvimento pode não estável. Baixe a versão de lançamento na Microsoft Store.</value>
   </data>
   <data name="DevelopmentInfoBar.Title" xml:space="preserve">
     <value>You are using a development version app.</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
-    <value>Enter Compact Overlay</value>
+    <value>Insira a sobreposição compacta</value>
   </data>
   <data name="LanguageSettings.Description" xml:space="preserve">
     <value>Select language and restart to change language</value>
@@ -154,30 +154,30 @@
     <value>Testar Anel de Progresso na Barra de Título</value>
   </data>
   <data name="ProgressSettings.Header" xml:space="preserve">
-    <value>Progress</value>
+    <value>Progresso</value>
   </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
     <value>Set the value of Progress Ring</value>
   </data>
   <data name="SetProgressValue.Header" xml:space="preserve">
-    <value>Progress Value</value>
+    <value>Valor de progressão</value>
   </data>
   <data name="ShowRefreshButton.Description" xml:space="preserve">
     <value>Show Refresh Button on the Title Bar</value>
   </data>
   <data name="ShowRefreshButton.Header" xml:space="preserve">
-    <value>Refresh Button</value>
+    <value>Botão de Atualização</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Testing</value>
   </data>
   <data name="TitleBarSettings.Description" xml:space="preserve">
-    <value>Extends Content Into TitleBar</value>
+    <value>Estende conteúdo na barra de título</value>
   </data>
   <data name="TitleBarSettings.Header" xml:space="preserve">
     <value>Title Bar</value>
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
-    <value>UI Test</value>
+    <value>Teste de UI</value>
   </data>
 </root>

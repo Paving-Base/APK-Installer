@@ -194,12 +194,12 @@ Capacidades:</value>
     <value>Como conectar o WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Please make sure APK Installer has been updated to the latest version
-2. Make sure you have the Android Subsystem installed and running
-3. Turn on developer mode and make sure the IP address is displayed successfully
-4. Reopen APK Installer and continue your installation
+    <value>1. Certifique-se de que o instalador APK foi atualizado para a última versão
+2. Certifique-se de que você tem o Subsistema Android instalado e executando
+3. Ative o modo de desenvolvedor e certifique-se de que o endereço IP seja exibido com sucesso
+4. Reabra o instalador de APK e continue sua instalação
 
-[Learn More]({0})</value>
+[Saiba Mais]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
     <value>Ícone</value>
@@ -262,7 +262,7 @@ Capacidades:</value>
     <value>How to connect device</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>If you want to install app into Windows Subsystem for Android™, you need to install it first. If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
+    <value>Se quiser instalar o app no Subsistema Windows para o AndroidTM, é necessário instalá-lo primeiro. Se você quiser instalar em outros dispositivos, acesse a página de configurações, desative o recurso "Somente para WSA" e conecte seu dispositivo.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
     <value>#### Using USB

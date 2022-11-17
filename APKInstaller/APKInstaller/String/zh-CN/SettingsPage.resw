@@ -178,7 +178,7 @@
     <value>与我联系</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>在社交软件上关注我来获取最新地开发动向。如果你发现了什么 Bug，请通过私信告诉我。我会尽最大可能来解决这些问题。如果你有电报账号，欢迎来铺路根据地群组聊天😊!</value>
+    <value>在社交软件上关注我来获取最新开发动向。如果你发现了什么 Bug，请通过私信告诉我。我会尽最大可能来解决这些问题。如果你有电报账号，欢迎来铺路根据地群组聊天😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>内容</value>
@@ -244,7 +244,7 @@
     <value>关闭它以连接到其他设备。</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>是否仅用于WSA？</value>
+    <value>是否仅用于 WSA？</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>操作系统架构</value>
