@@ -118,261 +118,259 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, Android Debug Bridge, diperlukan agar Penginstal APK berfungsi. Klik "Unduh" untuk mengunduhnya. Dengan mengunduh, Anda menerima Persyaratan dan Ketentuan Google untuk ADB. Jika Anda sudah mengunduh ADB, klik "Pilih" untuk memilihnya.</value>
+    <value>APK ānzhuāngchéngxù xūyào ADB jí Android tiáoshì qiáo cái'néng gōngzuò. Dānjī "xiàzǎi" jìnxíng xiàzǎi. Xiàzǎi jí biǎoshì nín jiēshòu  Google wéi ADB zhìdìng de tiáokuǎn hé tiáojiàn. Rúguǒ nín yǐjīng xiàzǎi le ADB, qǐng diǎnjī "xuǎnzé" lái xuǎnzé tā. </value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>Ada ADB</value>
+    <value>ADB yǐ cúnzài</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>ADB hilang</value>
+    <value>Zhǎo búdào ADB</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>File APK</value>
+    <value>APK wénjiàn</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Kemampuan:</value>
+    <value>Gōngnéng: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>Nama Aplikasi</value>
+    <value>Yìngyòng míngchēng</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Batal
-</value>
+    <value>Qǔxiāo</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Tidak Dapat Terhubung ke WSA</value>
+    <value>Wúfǎ liánjiē dào WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Entah WSA tidak memulai dengan benar, atau ada masalah dengan ADB. Masalah ini bisa sangat sulit untuk diselesaikan. Silakan mulai ulang penginstal. Jika masih tidak bisa, coba memulai ulang komputer.</value>
+    <value>WSA kě'néng méiyǒu zhèngcháng qǐdòng, huòzhě ADB chū le wèntí. Zhèzhǒng qíngkuàng kě'néng fēicháng nán jiějué. Qǐng chóngxīnqǐdòng ānzhuāngchéngxù. Rúguǒ réngrán wúfǎ shǐyòng, chángshì chóngqǐ diànnǎo. </value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>Tidak dapat membuka paket aplikasi</value>
+    <value>Wúfǎ dǎkāi yìngyòng chéngxùbāo</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>Memeriksa...
-</value>
+    <value>Jiǎnchá zhōng……</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Memeriksa ADB...</value>
+    <value>Jiǎnchá ADB ……</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Memeriksa Jalur...</value>
+    <value>Jiǎnchá lùjìng……</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Klik di sini untuk membacanya</value>
+    <value>Diǎnjī yuèdú</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Tutup</value>
+    <value>Guānbì</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
-    <value>Salin</value>
+    <value>Fùzhì</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>Perangkat</value>
+    <value>Shèbèi</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Unduh</value>
+    <value>Xiàzǎi</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>Gagal Mengunduh</value>
+    <value>Xiàzǎi shībài</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>Mohon cek koneksi internet anda atau URL dan coba lagi.</value>
+    <value>Qǐng jiǎnchá nín de wǎngluòliánjiē huò URL liànjiē bìngzhòng shì. </value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>Mencari WSA...</value>
+    <value>Zhèngzài xúnzhǎo WSA ……</value>
   </data>
   <data name="Finished" xml:space="preserve">
-    <value>Selesai</value>
+    <value>Wánchéng</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>WSA Ditemukan</value>
+    <value>Zhǎodào WSA</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>Pergi ke Pengaturan</value>
+    <value>Qiánwǎng shèzhì yèmiàn</value>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>Bagaimana cara menghubungkan WSA</value>
+    <value>Rúhé liánjiē Android zǐxìtǒng</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Pastikan Penginstal APK telah diperbarui ke versi terbaru
-2. Pastikan Anda telah menginstal dan menjalankan Subsistem Android
-3. Aktifkan mode pengembang dan pastikan alamat IP berhasil ditampilkan
-4. Buka kembali Penginstal APK dan lanjutkan penginstalan Anda
+    <value>1. Qǐng quèbǎo APK Installer yǐjīng gēngxīn dào le zuìxīn bǎnběn
+2. Qǐng quèbǎo'nín yǐjīng ānzhuāng bìng yùnxíng le Android zǐxìtǒng
+3. Dǎkāi kāifā'rényuán móshì, bìng quèbǎo chénggōng xiǎnshì le IP dìzhǐ
+4. Chóngxīn dǎkāi APK Installer, jìxù nín de ānzhuāng
 
-[Pelajari Lebih Lanjut]({0})</value>
+ [Liǎojiě gèngduō]({0}) </value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
-    <value>Ikon</value>
+    <value>Túbiāo</value>
   </data>
   <data name="IKnow" xml:space="preserve">
-    <value>Aku Tahu</value>
+    <value>Zhīdào le</value>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
-    <value>Informasi</value>
+    <value>Xìnxī</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>Instal</value>
+    <value>Ānzhuāng</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
-    <value>{0} sudah siap!</value>
+    <value>{0} yǐ zhǔnbèijiùxù!</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
-    <value>Instal {0}?</value>
+    <value>Ānzhuāng {0}?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
-    <value>Menginstal...</value>
+    <value>Zhèngzài ānzhuāng……</value>
   </data>
   <data name="InstallingPercent" xml:space="preserve">
-    <value>Memasang {0}...</value>
+    <value>Zhèngzài ānzhuāng {0}……</value>
     <comment>{0} - Progress.</comment>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
-    <value>Alasan:</value>
+    <value>Yuányīn: </value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
-    <value>Instal WSA</value>
+    <value>Ānzhuāng WSA</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
-    <value>Paket rusak atau tidak valid.</value>
+    <value>Ānzhuāngbāo yǐsǔnhuài huò wúxiào. </value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
-    <value>URL tidak lengkap atau tidak valid.</value>
+    <value>URL liànjiē bù wánzhěng huò wúxiào. </value>
   </data>
   <data name="Launch" xml:space="preserve">
-    <value>Luncurkan</value>
+    <value>Qǐdòng</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
-    <value>Meluncurkan WSA...</value>
+    <value>Zhèngzài qǐdòng WSA ……</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>Luncurkan ketika sudah siap</value>
+    <value>Dāng zhǔnbèijiùxù shí qǐdòng</value>
   </data>
   <data name="Loading" xml:space="preserve">
-    <value>Memuat...</value>
+    <value>Jiāzài zhōng……</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
-    <value>Info lebih lanjut</value>
+    <value>Xiángxìxìnxī</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
-    <value>Tidak dapat mencari Perangkat Android</value>
+    <value>Zhǎo búdào Android shèbèi</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>Bagaimana cara menghubungkan perangkat</value>
+    <value>Rúhé liánjiē shèbèi</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>Jika Anda ingin menginstal aplikasi ke Windows Subsystem for Android™, Anda harus menginstalnya terlebih dahulu. Jika Anda ingin menginstal ke perangkat lain, silakan buka Halaman Pengaturan, matikan "Hanya untuk WSA", dan sambungkan perangkat Anda.</value>
+    <value>Rúguǒ nín xiǎngyào jiāng yìngyòng chéngxùānzhuāng dào shìyòng yú Windows de Android™ zǐxìtǒng, nín xūyào xiān ānzhuāng tā.  Rúguǒ nín xiǎngyào ānzhuāng dào qítā shèbèi, qǐng jìnrù shèzhì yèmiàn, guānbì "jǐn shìyòng yú WSA" , bìng liánjiē nín de shèbèi. </value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>#### Menggunakan USB
-1. Pastikan Penginstal APK telah diperbarui ke [versi terbaru](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Aktifkan Mode Pengembang, buka USB Debug
-3. Buka Halaman Pengaturan Penginstal APK, pilih perangkat Anda
-4. Kembali, lanjutkan instalasi
-#### Menggunakan Wifi
-1. Pastikan Penginstal APK telah diperbarui ke [versi terbaru](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Aktifkan Mode Pengembang, buka Debug Jarak Jauh
-3. Ingat alamat IP perangkat Anda
-4. Buka Halaman Pengaturan Penginstal APK, sambungkan dan pilih perangkat Anda
-5. Kembali, lanjutkan instalasi
+    <value>#### Shǐyòng USB
+1. Qǐng quèbǎo APK Installer yǐjīng gēngxīn dào le [Zuìxīn bǎnběn](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer") 
+2. Dǎkāi kāifāzhě móshì, dǎkāi USB tiáoshì
+3. Qiánwǎng APK Installer de shèzhì yèmiàn, xuǎnzé nín de shèbèi
+4. Fǎnhuí, jìxù ānzhuāng
+#### Shǐyòng Wifi
+1. Qǐng quèbǎo APK Installer yǐjīng gēngxīn dào le [Zuìxīn bǎnběn](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer") 
+2. Dǎkāi kāifāzhě móshì, dǎkāi yuǎnchéng tiáoshì
+3. Jìzhù nín shèbèi de IP dìzhǐ
+4. Qiánwǎng APK Installer de shèzhì yèmiàn, liánjiē bìng xuǎnzé nín de shèbèi
+5. Fǎnhuí, jìxù ānzhuāng
 
-[Pelajari Lebih Lanjut]({0})</value>
+ [Liǎojiě gèngduō]({0}) </value>
   </data>
   <data name="NoInternet" xml:space="preserve">
-    <value>Tidak dapat menghubungkan Internet</value>
+    <value>Wúfǎ liánjiē dào wǎngluò</value>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
-    <value>Mohon hubungkan ke internet sebelum membuka aplikasinya.</value>
+    <value>Qǐng liánjiē wǎngluò hòu zài dǎkāi yìngyòng. </value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>Agar aplikasi berfungsi dengan baik, coba luncurkan paket aplikasi Android.</value>
+    <value>Wèile shǐ yìngyòngchéngxù zhèngcháng yùnxíng, qǐng chángshì dǎkāi Android yìngyòng chéngxùbāo. </value>
   </data>
   <data name="OK" xml:space="preserve">
-    <value>Oke</value>
+    <value>Quèdìng</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
-    <value>Paket Online</value>
+    <value>Zàixiàn ānzhuāngbāo</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
-    <value>Nama Paket</value>
+    <value>Chéngxùbāo míngchēng</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>Nama Paket: {0}</value>
+    <value>Bāo míngchēng: {0}</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
-    <value>Instal Ulang</value>
+    <value>Chóngxīnānzhuāng</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>{0} sudah terinstal</value>
+    <value>{0} yǐ ānzhuāng</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
-    <value>Versi terbaru dari {0} sudah terinstal.</value>
+    <value>Yǐ ānzhuāng jiào xīn bǎnběn de {0}. </value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>Ulangi</value>
+    <value>Zhòngshì</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>Pilih</value>
+    <value>Xuǎnqǔ</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>Bagikan</value>
+    <value>Fēnxiǎng</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
-    <value>Memulai Server ADB...</value>
+    <value>Qǐdòng ADB fúwù……</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>Mulai WSA</value>
+    <value>Qǐdòng WSA</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
-    <value>Tautan Toko</value>
+    <value>Shāngdiàn liànjiē</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
-    <value>Mengekstrak ADB...</value>
+    <value>Jiěyā ADB ……</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
-    <value>Mengekstrak selesai</value>
+    <value>Jiěyā wánchéng</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
-    <value>Mengekstrak {0}/{1}...</value>
+    <value>Jiěyā zhōng {0}/{1} ……</value>
     <comment>{0} - Have done num. {1} - All num.</comment>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>Perbarui</value>
+    <value>Gēngxīn</value>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
-    <value>Perbarui {0}?</value>
+    <value>Gēngxīn {0}?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
-    <value>Kode Versi</value>
+    <value>Bǎnběn dàimǎ</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>Versi: {0}</value>
+    <value>Bǎnběn: {0}</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>Menunggu untuk mengunduh...</value>
+    <value>Děngdài xiàzǎi zhōng……</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>Menunggu Perangkat...</value>
+    <value>Děngdài shèbèi liánjiē……</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
-    <value>Menunggu untuk menginstal {0}</value>
+    <value>Děngdài ānzhuāng {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
-    <value>Menunggu WSA Mulai...
-Ini mungkin memakan waktu lama. Duduk dan rileks.</value>
+    <value>Zhèngzài děngdài WSA qǐdòng……
+zhè tōngcháng xūyào hěn chángshíjiān. Qǐng zuò hé fàngkuān. </value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Selamat datang!</value>
+    <value>Huānyíng! </value>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>WSA sedang Berjalan</value>
+    <value>WSA zhèngzài yùnxíng</value>
   </data>
 </root>

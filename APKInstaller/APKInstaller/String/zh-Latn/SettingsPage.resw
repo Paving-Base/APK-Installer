@@ -118,207 +118,207 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
-    <value>Tentang</value>
+    <value>Guānyú</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>Jalur ADB</value>
+    <value>ADB lùjìng</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>Izin ADB</value>
+    <value>ADB bǎnběn</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>Unduh otomatis saat paket berasal dari URL.the spaiek</value>
+    <value>Dāng ānzhuāngbāo láizì URL liànjiē shí zìdòng xiàzǎi. </value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Apakah Otomatis Unduh Paket Daring?</value>
+    <value>Shìfǒu zìdòng xiàzǎi zàixiàn ānzhuāngbāo? </value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>Pilih Jenis Tampilan Latar Belakang untuk Windows 11</value>
+    <value>Xuǎnzé shìyòng yú Windows 11 de bèijǐngsè lèixíng</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>Latar belakang</value>
+    <value>Bèijǐngsè</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
-    <value>Ubah</value>
+    <value>Gēnggǎi</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>Periksa Gagal</value>
+    <value>Jiǎnchá shībài</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>Memeriksa Pembaruan...</value>
+    <value>Zhèngzài jiǎnchá gēngxīn……</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
-    <value>Periksa Pembaruan</value>
+    <value>Jiǎnchá gēngxīn</value>
   </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
-    <value>Hapus cache</value>
+    <value>Qīngchú huǎncún</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Tutup ADB mungkin dapat merusak Pemasang lain saat masih terbuka.</value>
+    <value>Guānbì ADB kě'néng huì shǐ qítā zhèngzài yùnxíng de ānzhuāngchéngxù bēngkuì. </value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Apakah Tutup ADB saat Menutup Penginstal?</value>
+    <value>Guānbì ānzhuāngchéngxù shí shìfǒu guānbì ADB? </value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Tutup Penginstal setelah APK diinstal dan mulai.</value>
+    <value>Zài APK ānzhuāng wánchéng bìng qǐdòng hòu guānbì ānzhuāngchéngxù. </value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Apakah Tutup Pemasang saat Aplikasi sudah Siap?</value>
+    <value>Dāng yìngyòngchéngxù zhǔnbèijiùxù hòu shìfǒu guānbì ānzhuāngchéngxù? </value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
-    <value>Konfigurasi</value>
+    <value>Pèizhì</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Hubungkan perangkat ke jaringan.</value>
+    <value>Tōngguò wǎngluòliánjiē shèbèi. </value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
-    <value>Hubungkan perangkat</value>
+    <value>Liánjiē shèbèi</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
-    <value>Hubungi Saya</value>
+    <value>Yǔ wǒ liánxì</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Ikuti saya di aplikasi sosial untuk perkembangan terbaru. Jika Anda menemukan bug, harap laporkan kepada saya di PM. Saya akan mencoba yang terbaik untuk memecahkan masalah. Jika Anda memiliki akun Telegram, selamat datang untuk mengobrol di Grup Paving Base 😊!</value>
+    <value>Zài shèjiāo ruǎnjiàn shàng guānzhù wǒ lái huòqǔ zuìxīn kāifā dòngxiàng. Rúguǒ nǐ fāxiàn le shéme Bug, qǐng tōngguò sīxìn gàosù wǒ. Wǒhuì jìn zuìdà kě'néng lái jiějué zhèixiē wèntí. Rúguǒ nǐ yǒu diànbào zhànghào, huānyíng lái pūlù gēnjùdì qúnzǔ liáotiān😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
-    <value>Konten</value>
+    <value>Nèi'róng</value>
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
-    <value>Perangkat</value>
+    <value>Shèbèi</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
-    <value>Tampilan</value>
+    <value>Xiǎnshì</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
-    <value>Dukungan</value>
+    <value>Zhīchí</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer adalah aplikasi sumber terbuka, dan tidak ada iklan yang akan ditambahkan untuk mendapatkan keuntungan. Jika Anda menyukai aplikasi ini, jangan lupa untuk menilai di toko. Tentu saja, akan lebih baik jika Anda bisa menyumbang sedikit. Terima kasih atas dukungan Anda.💕</value>
+    <value>APK ānzhuāngchéngxù shì yígè kāiyuán ruǎnjiàn, tā búhuì nèizhì rènhé guǎnggào lái yínglì. Rúguǒ nǐ xǐhuān zhège yìngyòng, búyào wàng le zài shāngdiàn lǐ dǎshàng hǎopíng ō, dāngrán rúguǒ kěyǐ juānzèng yìdiǎndiǎn jiù gènghǎo le. Gǎnxiè dàjiā de zhīchí💕! </value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
-    <value>EULA</value>
+    <value>Yònghù xiéyì</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
-    <value>Umpan balik</value>
+    <value>Fǎnkuì</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
-    <value>Temukan Pembaruan</value>
+    <value>Zhǎodào xīn de gēngxīn</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>Informasi tentang kerangka kerja aplikasi ini.</value>
+    <value>Guānyú cǐ yìngyòngchéngxù kuāngjià de xìnxī. </value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
-    <value>Informasi Kerangka</value>
+    <value>Kuāngjià xìnxī</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
-    <value>Kerangka</value>
+    <value>Kuāngjià</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>Pergi ke halaman tes.</value>
+    <value>Qiánwǎng yòngyú cèshì de yèmiàn. </value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>Pergi ke TestPage</value>
+    <value>Qiánwǎng cèshì yèmiàn</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
-    <value>Pergi ke Pembaruan</value>
+    <value>Qiánwǎng gēngxīn</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
-    <value>Gabung Obrolan Kami</value>
+    <value>Jiā'rù diànbào liáotiān</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Terakhir Periksa:</value>
+    <value>Shàngcì jiǎnchá shíjiān: </value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
-    <value>Pelajari Lebih Lanjut</value>
+    <value>Liǎojiě gèngduō</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
-    <value>Log</value>
+    <value>Rìzhì</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>Versi yang dimodifikasi mungkin berisi sesuatu yang tidak menyenangkan. Seperti iklan, fungsi rusak bahkan virus. Silahkan buka Microsoft Store untuk mengunduh yang asli. Lihat Repositori GitHub kami untuk mempelajari lebih lanjut tentangnya.</value>
+    <value>Xiūgǎibǎn kě'néng huì bāohán yīxiē bùhǎo de dōngxi, bāokuò dàn búxiànyú guǎnggào, sǔnhuài de tèxìng, shènzhì shì bìngdú. Qǐng qiánwǎng Microsoft Store ānzhuāng yuánbǎn. Qǐngcānyuè wǒmen de Github cāngkù liǎojiě gèngduō xìnxī. </value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>Anda sedang menggunakan versi yang dimodifikasi!</value>
+    <value>Nín zhèngzài shǐyòng xiūgǎibǎn! </value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Nonaktifkan untuk terhubung ke perangkat lain.</value>
+    <value>Guānbì tā yǐ liánjiē dào qítā shèbèi. </value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>Apakah Hanya untuk WSA?</value>
+    <value>Shìfǒu jǐn yòngyú WSA? </value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>Arsitektur OS</value>
+    <value>Cāozuòxìtǒng jiàgòu</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
-    <value>Platform OS</value>
+    <value>Cāozuòxìtǒng píngtái</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
-    <value>Lainnya</value>
+    <value>Qítā</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>Gelap</value>
+    <value>Shēnsè</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>Default Windows</value>
+    <value>Windows mò'rèn</value>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
-    <value>Terang</value>
+    <value>Qiǎnsè</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value>Nilai di Toko</value>
+    <value>Qiánwǎng shāngdiàn hǎopíng</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
-    <value>Catatan rilis</value>
+    <value>Fāxíng shuōmíng</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
-    <value>Atur ulang pengaturan aplikasi ini.</value>
+    <value>Chóngzhì cǐ yìngyòngchéngxù de shèzhì. </value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
-    <value>Atur ulang aplikasi</value>
+    <value>Chóngzhì yìngyòng</value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
-    <value>Atur ulang</value>
+    <value>Chóngzhì</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
-    <value>Ya</value>
+    <value>Shì</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
-    <value>Apakah anda yakin anda ingin mengatur ulang aplikasi?</value>
+    <value>Nín quèdìng yào chóngzhì yìngyòng ma? </value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
-    <value>Pilih Perangkat</value>
+    <value>Xuǎnzé shèbèi</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
-    <value>Tampilkan pembantu saat tidak ada perangkat yang terhubung.</value>
+    <value>Dāng méiyǒu liánjiē dào shèbèi shí xiǎnshì bāngzhù. </value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Apakah Tampilkan Pembantu?</value>
+    <value>Shìfǒu xiǎnshì bāngzhù? </value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Tampilkan Pengumuman di bagian atas Pengaturan.</value>
+    <value>Zài shèzhì dǐngbù xiǎnshì gōnggào. </value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Apakah Tampilkan Pengumuman?</value>
+    <value>Shìfǒu xiǎnshì gōnggào? </value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
-    <value>Tema Aplikasi</value>
+    <value>Yìngyòng zhǔtí</value>
   </data>
   <data name="ThemesSettingsHeader.Header" xml:space="preserve">
-    <value>Tema</value>
+    <value>Zhǔtí</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Pengaturan</value>
+    <value>Shèzhì</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>Terjemahkan</value>
+    <value>Fānyì</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
-    <value>Versi</value>
+    <value>Bǎnběn</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Terkini</value>
+    <value>Zuìxīn</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Pengaturan Warna Windows</value>
+    <value>Windows yánsè shèzhì</value>
   </data>
 </root>
