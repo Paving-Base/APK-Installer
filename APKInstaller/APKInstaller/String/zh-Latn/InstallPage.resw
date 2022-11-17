@@ -118,259 +118,259 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>APK 安装程序需要 ADB 才能工作。如果你没有下载ADB，请单击“下载”进行下载。如下载即表示您接受  Google 制定的条款。如果您已经下载了 ADB，请单击“选择”按钮来选择它的路径。</value>
+    <value>APK ānzhuāngchéngxù xūyào ADB jí Android tiáoshì qiáo cái'néng gōngzuò. Dānjī "xiàzǎi" jìnxíng xiàzǎi. Xiàzǎi jí biǎoshì nín jiēshòu  Google wéi ADB zhìdìng de tiáokuǎn hé tiáojiàn. Rúguǒ nín yǐjīng xiàzǎi le ADB, qǐng diǎnjī "xuǎnzé" lái xuǎnzé tā. </value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB 已存在</value>
+    <value>ADB yǐ cúnzài</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>找不到 ADB</value>
+    <value>Zhǎo búdào ADB</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>APK 文件</value>
+    <value>APK wénjiàn</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>功能: </value>
+    <value>Gōngnéng: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>应用名称</value>
+    <value>Yìngyòng míngchēng</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>取消</value>
+    <value>Qǔxiāo</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>无法连接到 WSA</value>
+    <value>Wúfǎ liánjiē dào WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>WSA 可能没有正常启动，或者 ADB 出了问题。这种情况可能非常难解决。请重新启动安装程序。如果仍然无法使用，尝试重启电脑。</value>
+    <value>WSA kě'néng méiyǒu zhèngcháng qǐdòng, huòzhě ADB chū le wèntí. Zhèzhǒng qíngkuàng kě'néng fēicháng nán jiějué. Qǐng chóngxīnqǐdòng ānzhuāngchéngxù. Rúguǒ réngrán wúfǎ shǐyòng, chángshì chóngqǐ diànnǎo. </value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>无法打开应用程序包</value>
+    <value>Wúfǎ dǎkāi yìngyòng chéngxùbāo</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>检查中……</value>
+    <value>Jiǎnchá zhōng……</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>检查 ADB 中……</value>
+    <value>Jiǎnchá ADB ……</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>检查路径……</value>
+    <value>Jiǎnchá lùjìng……</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>点击阅读</value>
+    <value>Diǎnjī yuèdú</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>关闭</value>
+    <value>Guānbì</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
-    <value>复制</value>
+    <value>Fùzhì</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>设备</value>
+    <value>Shèbèi</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>下载</value>
+    <value>Xiàzǎi</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>下载失败</value>
+    <value>Xiàzǎi shībài</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>请检查您的网络连接和 URL 并重试。</value>
+    <value>Qǐng jiǎnchá nín de wǎngluòliánjiē huò URL liànjiē bìngzhòng shì. </value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>寻找 WSA 中……</value>
+    <value>Zhèngzài xúnzhǎo WSA ……</value>
   </data>
   <data name="Finished" xml:space="preserve">
-    <value>完成</value>
+    <value>Wánchéng</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>找到 WSA</value>
+    <value>Zhǎodào WSA</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>前往设置页面</value>
+    <value>Qiánwǎng shèzhì yèmiàn</value>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>如何连接 Android 子系统</value>
+    <value>Rúhé liánjiē Android zǐxìtǒng</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. 请确保 APK Installer 已经更新到了最新版本
-2. 请确保您已经安装并运行了 Android 子系统
-3. 打开开发人员模式，并确保成功显示了 IP 地址
-4. 重新打开 APK Installer，继续您的安装
+    <value>1. Qǐng quèbǎo APK Installer yǐjīng gēngxīn dào le zuìxīn bǎnběn
+2. Qǐng quèbǎo'nín yǐjīng ānzhuāng bìng yùnxíng le Android zǐxìtǒng
+3. Dǎkāi kāifā'rényuán móshì, bìng quèbǎo chénggōng xiǎnshì le IP dìzhǐ
+4. Chóngxīn dǎkāi APK Installer, jìxù nín de ānzhuāng
 
-[了解更多]({0})</value>
+ [Liǎojiě gèngduō]({0}) </value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
-    <value>图标</value>
+    <value>Túbiāo</value>
   </data>
   <data name="IKnow" xml:space="preserve">
-    <value>知道了</value>
+    <value>Zhīdào le</value>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
-    <value>信息</value>
+    <value>Xìnxī</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>安装</value>
+    <value>Ānzhuāng</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
-    <value>{0} 已准备就绪!</value>
+    <value>{0} yǐ zhǔnbèijiùxù!</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
-    <value>安装 {0}?</value>
+    <value>Ānzhuāng {0}?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
-    <value>正在安装……</value>
+    <value>Zhèngzài ānzhuāng……</value>
   </data>
   <data name="InstallingPercent" xml:space="preserve">
-    <value>正在安装 {0}……</value>
+    <value>Zhèngzài ānzhuāng {0}……</value>
     <comment>{0} - Progress.</comment>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
-    <value>原因: </value>
+    <value>Yuányīn: </value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
-    <value>安装 WSA</value>
+    <value>Ānzhuāng WSA</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
-    <value>这个安装包已经损坏或无效了。</value>
+    <value>Ānzhuāngbāo yǐsǔnhuài huò wúxiào. </value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
-    <value>URL无效。</value>
+    <value>URL liànjiē bù wánzhěng huò wúxiào. </value>
   </data>
   <data name="Launch" xml:space="preserve">
-    <value>启动</value>
+    <value>Qǐdòng</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
-    <value>正在启动 WSA ……</value>
+    <value>Zhèngzài qǐdòng WSA ……</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>当安装完成时启动</value>
+    <value>Dāng zhǔnbèijiùxù shí qǐdòng</value>
   </data>
   <data name="Loading" xml:space="preserve">
-    <value>加载中……</value>
+    <value>Jiāzài zhōng……</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
-    <value>详细信息</value>
+    <value>Xiángxìxìnxī</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
-    <value>找不到 Android 设备</value>
+    <value>Zhǎo búdào Android shèbèi</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>如何连接设备</value>
+    <value>Rúhé liánjiē shèbèi</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>如果您想要将应用程序安装到适用于 Windows 的 Android™ 子系统，您需要先安装它。 如果您想要安装到其他设备，请进入设置页面，关闭“仅适用于 WSA”，并连接您的设备。</value>
+    <value>Rúguǒ nín xiǎngyào jiāng yìngyòng chéngxùānzhuāng dào shìyòng yú Windows de Android™ zǐxìtǒng, nín xūyào xiān ānzhuāng tā.  Rúguǒ nín xiǎngyào ānzhuāng dào qítā shèbèi, qǐng jìnrù shèzhì yèmiàn, guānbì "jǐn shìyòng yú WSA" , bìng liánjiē nín de shèbèi. </value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>#### 使用 USB
-1. 请确保 APK Installer 已经更新到了[最新版本](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. 打开开发者模式，打开 USB 调试
-3. 前往 APK Installer 的设置页面，选择您的设备
-4. 返回，继续安装
-#### 使用 Wifi
-1. 请确保 APK Installer 已经更新到了[最新版本](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. 打开开发者模式，打开远程调试
-3. 记住您设备的 IP 地址
-4. 前往 APK Installer 的设置页面，连接并选择您的设备
-5. 返回，继续安装
+    <value>#### Shǐyòng USB
+1. Qǐng quèbǎo APK Installer yǐjīng gēngxīn dào le [Zuìxīn bǎnběn](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer") 
+2. Dǎkāi kāifāzhě móshì, dǎkāi USB tiáoshì
+3. Qiánwǎng APK Installer de shèzhì yèmiàn, xuǎnzé nín de shèbèi
+4. Fǎnhuí, jìxù ānzhuāng
+#### Shǐyòng Wifi
+1. Qǐng quèbǎo APK Installer yǐjīng gēngxīn dào le [Zuìxīn bǎnběn](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer") 
+2. Dǎkāi kāifāzhě móshì, dǎkāi yuǎnchéng tiáoshì
+3. Jìzhù nín shèbèi de IP dìzhǐ
+4. Qiánwǎng APK Installer de shèzhì yèmiàn, liánjiē bìng xuǎnzé nín de shèbèi
+5. Fǎnhuí, jìxù ānzhuāng
 
-[了解更多]({0})</value>
+ [Liǎojiě gèngduō]({0}) </value>
   </data>
   <data name="NoInternet" xml:space="preserve">
-    <value>无法连接到网络</value>
+    <value>Wúfǎ liánjiē dào wǎngluò</value>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
-    <value>请连接网络后再打开应用。</value>
+    <value>Qǐng liánjiē wǎngluò hòu zài dǎkāi yìngyòng. </value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>要安装 Android应用，请尝试打开一个 Android 应用程序包（Apk）。</value>
+    <value>Wèile shǐ yìngyòngchéngxù zhèngcháng yùnxíng, qǐng chángshì dǎkāi Android yìngyòng chéngxùbāo. </value>
   </data>
   <data name="OK" xml:space="preserve">
-    <value>确定</value>
+    <value>Quèdìng</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
-    <value>在线安装包</value>
+    <value>Zàixiàn ānzhuāngbāo</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
-    <value>程序包名称</value>
+    <value>Chéngxùbāo míngchēng</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>安装包名称: {0}</value>
+    <value>Bāo míngchēng: {0}</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
-    <value>重新安装</value>
+    <value>Chóngxīnānzhuāng</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>{0} 已安装</value>
+    <value>{0} yǐ ānzhuāng</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
-    <value>已安装较新版本的 {0}。</value>
+    <value>Yǐ ānzhuāng jiào xīn bǎnběn de {0}. </value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>重试</value>
+    <value>Zhòngshì</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>选择</value>
+    <value>Xuǎnqǔ</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>分享</value>
+    <value>Fēnxiǎng</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
-    <value>启动 ADB 服务中……</value>
+    <value>Qǐdòng ADB fúwù……</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>启动 WSA</value>
+    <value>Qǐdòng WSA</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
-    <value>商店链接</value>
+    <value>Shāngdiàn liànjiē</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
-    <value>解压 ADB ……</value>
+    <value>Jiěyā ADB ……</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
-    <value>解压完成</value>
+    <value>Jiěyā wánchéng</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
-    <value>解压中 {0}/{1} ……</value>
+    <value>Jiěyā zhōng {0}/{1} ……</value>
     <comment>{0} - Have done num. {1} - All num.</comment>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>更新</value>
+    <value>Gēngxīn</value>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
-    <value>更新 {0}?</value>
+    <value>Gēngxīn {0}?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
-    <value>版本代码</value>
+    <value>Bǎnběn dàimǎ</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>版本: {0}</value>
+    <value>Bǎnběn: {0}</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>等待下载中……</value>
+    <value>Děngdài xiàzǎi zhōng……</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>等待设备连接……</value>
+    <value>Děngdài shèbèi liánjiē……</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
-    <value>等待安装 {0}</value>
+    <value>Děngdài ānzhuāng {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
-    <value>正在等待 WSA 启动……
-这通常需要一些时间。这段时间里你可以坐和放宽。</value>
+    <value>Zhèngzài děngdài WSA qǐdòng……
+zhè tōngcháng xūyào hěn chángshíjiān. Qǐng zuò hé fàngkuān. </value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>欢迎！</value>
+    <value>Huānyíng! </value>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>WSA 正在运行</value>
+    <value>WSA zhèngzài yùnxíng</value>
   </data>
 </root>
