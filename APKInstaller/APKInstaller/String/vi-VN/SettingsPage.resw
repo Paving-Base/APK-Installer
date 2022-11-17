@@ -237,8 +237,7 @@
     <value>nhật ký</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>Một phiên bản sửa đổi có thể chứa một cái gì đó khó chịu. Chẳng hạn như ADs, chức năng bị hỏng thậm chí cả virus. Vui lòng truy cập Microsoft Store để tải xuống bản gốc. Xem Kho lưu trữ Github của chúng tôi để tìm hiểu thêm về nó.
-</value>
+    <value>A modified version may contain something unpleasant. Such as AD, broken functions even virus. Please go to Microsoft Store to download the original one. See our GitHub Repository to learn more about it.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>Bạn đang sử dụng một phiên bản sửa đổi!</value>
