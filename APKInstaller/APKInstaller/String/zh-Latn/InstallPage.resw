@@ -199,7 +199,7 @@
     <value>Qiánwǎng shèzhì yèmiàn</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>A newer version is already installed</value>
+    <value>已安装新版本</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
     <value>您已经安装了此应用的新版本 {0}。是否确实要重新安装版本 {1}？</value>
