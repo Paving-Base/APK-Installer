@@ -301,10 +301,10 @@
     <value>Shìfǒu xiǎnshì gōnggào? </value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
-    <value>It may leave temp files when an unexpected interruption occurs.</value>
+    <value>Rúguǒ ānzhuāng shí chūxiàn le yìwài qíngkuàng, zé kě'néng huì zài nǐ de shèbèi lǐ líuxia yīxiē línshíwénjiàn. </value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Is Show Progress of Installation?</value>
+    <value>Shìfǒu xiǎnshì ānzhuāng jìndù? </value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Yìngyòng zhǔtí</value>
