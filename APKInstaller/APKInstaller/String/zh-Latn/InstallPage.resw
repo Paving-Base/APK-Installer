@@ -145,7 +145,7 @@
     <value>Shì</value>
   </data>
   <data name="CancelFlyoutTextBlock.Text" xml:space="preserve">
-    <value>确定要取消安装吗？</value>
+    <value>Quèdìng yào qǔxiāo ānzhuāng ma? </value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>Wúfǎ liánjiē dào WSA</value>
@@ -199,10 +199,10 @@
     <value>Qiánwǎng shèzhì yèmiàn</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>已安装新版本</value>
+    <value>Yǐ ānzhuāng xīn bǎnběn</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>您已经安装了此应用的新版本 {0}。是否确实要重新安装版本 {1}？</value>
+    <value>Nín yǐjīng ānzhuāng le cǐ yìngyòng de xīn bǎnběn {0}. Shìfǒu quèshí yào chóngxīnānzhuāng bǎnběn {1}? </value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
@@ -223,10 +223,10 @@
     <value>Zhīdào le</value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
-    <value>不兼容的应用</value>
+    <value>Bù jiānróng de yìngyòng</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
-    <value>此应用最低要求 {0}，您的设备支持{1}。请更新您的设备或选择旧版本安装包。</value>
+    <value>Cǐ yìngyòng zuìdī yāoqíu {0}, nín de shèbèi zhīchí {1}. Qǐng gēngxīn nín de shèbèi huò xuǎnzé jiùbǎnběn ānzhuāngbāo. </value>
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
