@@ -72,12 +72,9 @@ namespace APKInstaller.Pages.SettingsPages
                     _ = Launcher.LaunchUriAsync(new Uri("https://t.me/PavingBase"));
                     break;
                 case "Reset":
+                    Reset.Flyout?.Hide();
                     ApplicationData.Current.LocalSettings.Values.Clear();
                     SettingsHelper.SetDefaultSettings();
-                    if (Reset.Flyout is Flyout flyout_reset)
-                    {
-                        flyout_reset.Hide();
-                    }
                     _ = Frame.Navigate(typeof(SettingsPage));
                     Frame.GoBack();
                     break;

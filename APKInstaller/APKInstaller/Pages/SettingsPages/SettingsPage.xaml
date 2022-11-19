@@ -241,11 +241,11 @@
                                     Text="{x:Bind interopservices:RuntimeInformation.FrameworkDescription}" />
 
                                 <TextBlock
-                                    Text="CS/WinRT"
                                     Grid.Row="2"
                                     Grid.Column="0"
                                     Padding="0,0,0,8"
-                                    Opacity="0.75" />
+                                    Opacity="0.75"
+                                    Text="CS/WinRT" />
                                 <TextBlock
                                     Grid.Row="2"
                                     Grid.Column="1"
@@ -253,11 +253,11 @@
                                     Text="{Binding WinRTVersion}" />
 
                                 <TextBlock
-                                    Text="Windows SDK"
                                     Grid.Row="3"
                                     Grid.Column="0"
                                     Padding="0,0,0,8"
-                                    Opacity="0.75" />
+                                    Opacity="0.75"
+                                    Text="Windows SDK" />
                                 <TextBlock
                                     Grid.Row="3"
                                     Grid.Column="1"
@@ -265,11 +265,11 @@
                                     Text="{Binding SDKVersion}" />
 
                                 <TextBlock
-                                    Text="Windows App SDK"
                                     Grid.Row="4"
                                     Grid.Column="0"
                                     Padding="0,0,0,8"
-                                    Opacity="0.75" />
+                                    Opacity="0.75"
+                                    Text="Windows App SDK" />
                                 <TextBlock
                                     Grid.Row="4"
                                     Grid.Column="1"

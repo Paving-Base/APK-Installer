@@ -1247,11 +1247,10 @@ namespace APKInstaller.ViewModels
         {
             ResetUI();
             AdbClient client = new();
-            PackageManager manager = new(client, _device);
             VersionInfo info = null;
-            if (ApkInfo != null && !(ApkInfo?.IsEmpty).GetValueOrDefault(true))
+            if (ApkInfo != null && !ApkInfo.IsEmpty)
             {
-                info = manager.GetVersionInfo(ApkInfo?.PackageName);
+                info = client.GetPackageVersion(_device, ApkInfo?.PackageName);
             }
             if (info == null)
             {
@@ -1273,6 +1272,8 @@ namespace APKInstaller.ViewModels
                 TextOutput = string.Format(_loader.GetString("ReinstallOutput"), ApkInfo?.AppName);
                 ActionVisibility = SecondaryActionVisibility = TextOutputVisibility = Visibility.Visible;
             }
+            try { ActionButtonEnable = int.Parse(client.GetProperty(_device, "ro.build.version.sdk")) > int.Parse(ApkInfo.MinSDK.APILevel); }
+            catch { ActionButtonEnable = false; }
         }
 
         private void CheckOnlinePackage()
@@ -1525,6 +1526,26 @@ namespace APKInstaller.ViewModels
         {
             try
             {
+                AdbClient client = new();
+                VersionInfo info = null;
+                if (ApkInfo != null && !ApkInfo.IsEmpty)
+                {
+                    info = client.GetPackageVersion(_device, ApkInfo?.PackageName);
+                }
+                if (info != null && info.VersionCode >= int.Parse(ApkInfo?.VersionCode))
+                {
+                    ContentDialog dialog = new()
+                    {
+                        XamlRoot = _page?.XamlRoot,
+                        Content = string.Format("您已经安装了此应用的新版本 {0}。是否确实要重新安装版本 {1}？", info.VersionName, ApkInfo?.VersionName),
+                        Title = "已安装新版本",
+                        PrimaryButtonText = _loader.GetString("Reinstall"),
+                        CloseButtonText = _loader.GetString("Cancel"),
+                        DefaultButton = ContentDialogButton.Primary
+                    };
+                    ContentDialogResult result = await dialog.ShowAsync();
+                    if (result != ContentDialogResult.Primary) { return; }
+                }
                 IsInstalling = true;
                 AppxInstallBarIndeterminate = true;
                 ProgressText = _loader.GetString("Installing");
@@ -1583,8 +1604,9 @@ namespace APKInstaller.ViewModels
                 IsInstalling = false;
                 AppxInstallBarValue = 0;
                 AppxInstallBarIndeterminate = true;
-                SecondaryActionVisibility = Visibility.Visible;
+                ActionButtonText = _loader.GetString("Reinstall");
                 SecondaryActionButtonText = _loader.GetString("Launch");
+                ActionVisibility = SecondaryActionVisibility = Visibility.Visible;
                 CancelOperationVisibility = LaunchWhenReadyVisibility = Visibility.Collapsed;
             }
             catch (Exception ex)

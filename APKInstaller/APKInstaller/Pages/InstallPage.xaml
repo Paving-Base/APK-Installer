@@ -446,6 +446,26 @@
                                 Style="{StaticResource AccentButtonStyle}"
                                 TabIndex="1"
                                 Visibility="{Binding CancelOperationVisibility}">
+                                <Button.Flyout>
+                                    <Flyout>
+                                        <StackPanel>
+                                            <TextBlock
+                                                Margin="0,0,0,12"
+                                                Style="{ThemeResource BaseTextBlockStyle}"
+                                                Text="确定要取消安装吗？" />
+                                            <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+                                                <Button
+                                                    Click="Button_Click"
+                                                    Content="是"
+                                                    Tag="CancelFlyoutButtonYes" />
+                                                <Button
+                                                    Click="Button_Click"
+                                                    Content="否"
+                                                    Tag="CancelFlyoutButtonNo" />
+                                            </StackPanel>
+                                        </StackPanel>
+                                    </Flyout>
+                                </Button.Flyout>
                                 <StackPanel>
                                     <Image
                                         x:Name="CancelOperationButtonImage"

@@ -113,10 +113,14 @@ namespace APKInstaller.Pages
                 case "DeviceSelectButton":
                     Frame.Navigate(typeof(SettingsPage));
                     break;
+                case "CancelFlyoutButtonNo":
+                    CancelOperationButton.Flyout?.Hide();
+                    break;
                 case "SecondaryActionButton":
                     Provider.OpenAPP();
                     break;
-                case "CancelOperationButton":
+                case "CancelFlyoutButtonYes":
+                    CancelOperationButton.Flyout?.Hide();
                     Provider.CloseAPP();
                     break;
             }
