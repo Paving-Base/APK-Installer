@@ -138,6 +138,15 @@
   <data name="Cancel" xml:space="preserve">
     <value>İptal</value>
   </data>
+  <data name="CancelFlyoutButtonNo.Content" xml:space="preserve">
+    <value>Hayır</value>
+  </data>
+  <data name="CancelFlyoutButtonYes.Content" xml:space="preserve">
+    <value>Evet</value>
+  </data>
+  <data name="CancelFlyoutTextBlock.Text" xml:space="preserve">
+    <value>Kurulumu iptal etmek istediğinize emin misiniz?</value>
+  </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>WSA'ya Bağlanılamıyor</value>
   </data>
@@ -189,6 +198,13 @@
   <data name="GoToSetting" xml:space="preserve">
     <value>Ayarlara Git</value>
   </data>
+  <data name="HasNewerVersion" xml:space="preserve">
+    <value>Daha yeni bir sürüm zaten yüklü</value>
+  </data>
+  <data name="HasNewerVersionInfo" xml:space="preserve">
+    <value>Bu uygulamanın {0} yeni bir sürümü zaten yüklü. {1} sürümünü yeniden yüklemek istediğinize emin misiniz?</value>
+    <comment>{0} - Installed Version. {1} - Install Version.</comment>
+  </data>
   <data name="HowToConnect" xml:space="preserve">
     <value>WSA'ya nasıl bağlanılır</value>
   </data>
@@ -205,6 +221,13 @@
   </data>
   <data name="IKnow" xml:space="preserve">
     <value>Biliyorum</value>
+  </data>
+  <data name="IncompatibleApp" xml:space="preserve">
+    <value>Uyumsuz Uygulama</value>
+  </data>
+  <data name="IncompatibleAppInfo" xml:space="preserve">
+    <value>Bu uygulama için gereken minimum konfigürasyon {0}'dir. Cihazınız {1}'i destekliyor. Lütfen cihazınızı güncelleyin veya sipariş paketini seçin.</value>
+    <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
     <value>Bilgiler</value>

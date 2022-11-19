@@ -118,33 +118,33 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="APKDescription" xml:space="preserve">
-    <value>Android Application Package</value>
+    <value>Pachetul de aplicații</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>APK File</value>
+    <value>Fisier APK</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>An Android App Installer. Written by @wherewhere and @Tangent-90.</value>
+    <value>Un Android App Installer. Scris de @wherewhere and @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>APK Installer</value>
+    <value>Instalare APK</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
-    <value>There was an error with the program…</value>
+    <value>A apărut o eroare cu acest program de card.</value>
   </data>
   <data name="ImageLoadError" xml:space="preserve">
-    <value>Picture loading failed.</value>
+    <value>Încărcarea fotografiei a eșuat</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>There are some problems with the network...</value>
+    <value>Există unele probleme cu rețea...</value>
   </data>
   <data name="No" xml:space="preserve">
-    <value>No</value>
+    <value>Nu</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>Split APK File</value>
+    <value>Divide fişier</value>
   </data>
   <data name="Yes" xml:space="preserve">
-    <value>Yes</value>
+    <value>Da</value>
   </data>
 </root>

@@ -138,7 +138,7 @@
     <value>Не удалось загрузить картинку.</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>There are some problems with the network...</value>
+    <value>Есть некоторые проблемы с сетью...</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>Нет</value>

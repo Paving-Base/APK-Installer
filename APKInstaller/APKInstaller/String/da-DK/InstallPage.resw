@@ -138,6 +138,15 @@
   <data name="Cancel" xml:space="preserve">
     <value>Cancel</value>
   </data>
+  <data name="CancelFlyoutButtonNo.Content" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="CancelFlyoutButtonYes.Content" xml:space="preserve">
+    <value>Ja</value>
+  </data>
+  <data name="CancelFlyoutTextBlock.Text" xml:space="preserve">
+    <value>Are you sure to cancel the installation?</value>
+  </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>Cannot Connect to WSA</value>
   </data>
@@ -189,6 +198,13 @@
   <data name="GoToSetting" xml:space="preserve">
     <value>Go to Setting</value>
   </data>
+  <data name="HasNewerVersion" xml:space="preserve">
+    <value>A newer version is already installed</value>
+  </data>
+  <data name="HasNewerVersionInfo" xml:space="preserve">
+    <value>You already have installed a new version {0} of this app. Are you sure to reinstall version {1}?</value>
+    <comment>{0} - Installed Version. {1} - Install Version.</comment>
+  </data>
   <data name="HowToConnect" xml:space="preserve">
     <value>How to connect WSA</value>
   </data>
@@ -205,6 +221,13 @@
   </data>
   <data name="IKnow" xml:space="preserve">
     <value>I Know</value>
+  </data>
+  <data name="IncompatibleApp" xml:space="preserve">
+    <value>Incompatible App</value>
+  </data>
+  <data name="IncompatibleAppInfo" xml:space="preserve">
+    <value>The minimum required for this app is {0}. Your device supports {1}. Please update your device or choose order package.</value>
+    <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
     <value>Infos</value>

@@ -280,7 +280,7 @@
     <value>Reset</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
-    <value>Yes</value>
+    <value>Da</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
     <value>Are you sure you want to reset the app?</value>
@@ -299,6 +299,12 @@
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
     <value>Is Show Announcements?</value>
+  </data>
+  <data name="ShowProgressSettings.Description" xml:space="preserve">
+    <value>It may leave temp files when an unexpected interruption occurs.</value>
+  </data>
+  <data name="ShowProgressSettings.Header" xml:space="preserve">
+    <value>Is Show Progress of Installation?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>App Theme</value>

@@ -300,6 +300,12 @@
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
     <value>是否显示公告？</value>
   </data>
+  <data name="ShowProgressSettings.Description" xml:space="preserve">
+    <value>它可能会在发生意外中断后留下临时文件。</value>
+  </data>
+  <data name="ShowProgressSettings.Header" xml:space="preserve">
+    <value>是否显示安装进度？</value>
+  </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>应用主题</value>
   </data>

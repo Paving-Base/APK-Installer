@@ -124,13 +124,13 @@
     <value>Путь ADB</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>ADB Version</value>
+    <value>Версия ADB</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>Автоматически загружать пакеты из URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Does Auto Download Online Packages?</value>
+    <value>Разрешить автоматическую загрузку онлайн пакетов?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Выберите тип фона для Windows 11</value>
@@ -157,13 +157,13 @@
     <value>Закрытие ADB может прервать работу других установщиков, если они открыты.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Does Close ADB when Closing Installer?</value>
+    <value>Закрывать ADB при закрытии программы установки?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
     <value>Закрывает программу установки после того, как APK установлен и запущен.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Does Close Installer when APP is Ready?</value>
+    <value>Закрывать программу установки, когда приложение готово?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Настройки</value>
@@ -193,7 +193,7 @@
     <value>Поддержать</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application, and no ads will be added for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your support.💕</value>
+    <value>APK Installer — это приложение с открытым исходным кодом, и в нем не будет использоваться реклама для получения прибыли. Если вам нравится это приложение, не забудьте оценить его в магазине. Конечно, было бы лучше, если бы вы могли совершить небольшое пожертвование. Спасибо за вашу поддержку.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>Лицензионное соглашение</value>
@@ -229,28 +229,28 @@
     <value>Последняя проверка: </value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
-    <value>Learn More</value>
+    <value>Подробнее</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
-    <value>Logs</value>
+    <value>Логи</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may contain something unpleasant. Such as AD, broken functions even virus. Please go to Microsoft Store to download the original one. See our GitHub Repository to learn more about it.</value>
+    <value>Измененная версия может содержать что-нибудь неприятное. Например, AD, сломанные функции, даже вирусы. Пожалуйста, перейдите в магазин Microsoft, чтобы скачать оригинал. Смотрите наш репозиторий GitHub, чтобы узнать больше о нем.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>You are using a modified version!</value>
+    <value>Вы используете измененную версию</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Disable it to connect to other devices.</value>
+    <value>Отключите его, чтобы подключаться к другим устройствами.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
     <value>Только для WSA?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>OS Architecture</value>
+    <value>Архитектура ОС</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
-    <value>OS Platform</value>
+    <value>Платформа ОС</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Другое</value>
@@ -300,11 +300,17 @@
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
     <value>Показывать уведомления?</value>
   </data>
+  <data name="ShowProgressSettings.Description" xml:space="preserve">
+    <value>It may leave temp files when an unexpected interruption occurs.</value>
+  </data>
+  <data name="ShowProgressSettings.Header" xml:space="preserve">
+    <value>Is Show Progress of Installation?</value>
+  </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Тема приложения</value>
   </data>
   <data name="ThemesSettingsHeader.Header" xml:space="preserve">
-    <value>Themes</value>
+    <value>Темы</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Параметры</value>

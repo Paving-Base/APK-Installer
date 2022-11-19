@@ -121,7 +121,7 @@
     <value>ADB, Android Debug Bridge, необходим для работы программы APK Installer. Нажмите "Загрузить" для загрузки. Загружая, вы принимаете Условия и Положения Google для ADB. Если вы уже скачали ADB, нажмите "Выбрать", чтобы выбрать его.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Exists</value>
+    <value>ADB существует</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>АБР отсутствует</value>
@@ -139,11 +139,20 @@
   <data name="Cancel" xml:space="preserve">
     <value>Отмена</value>
   </data>
+  <data name="CancelFlyoutButtonNo.Content" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="CancelFlyoutButtonYes.Content" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="CancelFlyoutTextBlock.Text" xml:space="preserve">
+    <value>Вы уверены, что хотите отменить установку?</value>
+  </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>Не удаётся подключиться к WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
+    <value>WSA запустилась некорректно или возникли проблемы с ADB. Пожалуйста, перезагрузите APK Installer. Если это не поможет, попробуйте перезагрузить компьютер.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>Не удалось открыть пакет</value>
@@ -155,7 +164,7 @@
     <value>Проверка ADB...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Checking Path...</value>
+    <value>Проверка пути...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>Нажмите здесь, чтобы узнать</value>
@@ -190,22 +199,36 @@
   <data name="GoToSetting" xml:space="preserve">
     <value>Параметры</value>
   </data>
+  <data name="HasNewerVersion" xml:space="preserve">
+    <value>Новая версия уже установлена</value>
+  </data>
+  <data name="HasNewerVersionInfo" xml:space="preserve">
+    <value>У вас уже установлена новая версия {0} этого приложения. Вы уверены, что хотите переустановить версию {1}?</value>
+    <comment>{0} - Installed Version. {1} - Install Version.</comment>
+  </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>How to connect WSA</value>
+    <value>Как подключиться к WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Please make sure APK Installer has been updated to the latest version
-2. Make sure you have the Android Subsystem installed and running
-3. Turn on developer mode and make sure the IP address is displayed successfully
-4. Reopen APK Installer and continue your installation
+    <value>1. Пожалуйста, убедитесь, что программа APK Installer была обновлена до последней версии
+2. Убедитесь, что у вас установлена и запущена подсистема Windows для Android
+3. Включите режим разработчика и убедитесь, что IP-адрес отображается корректно
+4. Перезапустить установщик APK и продолжить установку
 
-[Learn More]({0})</value>
+[Подробнее]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
     <value>Иконка</value>
   </data>
   <data name="IKnow" xml:space="preserve">
     <value>Ок</value>
+  </data>
+  <data name="IncompatibleApp" xml:space="preserve">
+    <value>Несовместимое приложение</value>
+  </data>
+  <data name="IncompatibleAppInfo" xml:space="preserve">
+    <value>Для этого приложения требуется минимум {0}. Ваше устройство поддерживает {1}. Пожалуйста, обновите ваше устройство или выберите другой пакет.</value>
+    <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
     <value>Информация</value>
@@ -259,25 +282,25 @@
     <value>Устройство Android не найдено</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>How to connect device</value>
+    <value>Как подключить устройство</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>If you want to install app into Windows Subsystem for Android™, you need to install it first. If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
+    <value>Если вы хотите установить приложение в подсистему Windows для Android™, то сначала её нужно установить. Если вы хотите установить приложение на другие устройства, то перейдите в Настройки программы, включите "Только для WSA" и подключите ваше устройство.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>#### Using USB
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open USB Debug
-3. Go to the Settings Page of APK Installer, select your device
-4. Go back, resume installation
-#### Using Wifi
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open Remote Debug
-3. Remember the IP address of your device
-4. Go to the Settings Page of APK Installer, connect and select your device
-5. Go back, resume installation
+    <value>#### С помощью USB
+1. Убедитесь, что программа установки APK обновлена до [последней версии](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Включите режим разработчика, откройте отладку по USB
+3. Перейдите на страницу настроек программы APK Installer, выберите ваше устройство
+4. Вернитесь назад, возобновите установку
+#### С помощью Wi-Fi
+1. Пожалуйста, убедитесь, что программа APK Installer обновлена до [последней версии](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Включите режим разработчика, откройте беспроводную отладку
+3. Запомните IP-адрес вашего устройства
+4. Перейдите на страницу настроек программы APK Installer, подключитесь и выберите устройство
+5. Вернитесь, продолжите установку
 
-[Learn More]({0})</value>
+[Подробнее]({0})</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
     <value>Невозможно подключиться к Интернету</value>
@@ -369,7 +392,7 @@
 Это может занять много времени.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome!</value>
+    <value>Добро пожаловать!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA работает</value>
