@@ -199,7 +199,7 @@
     <value>Einstellungen öffnen</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>A newer version is already installed.</value>
+    <value>A newer version is already installed</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
     <value>You already have installed a new version {0} of this app. Are you sure to reinstall version {1}?</value>
