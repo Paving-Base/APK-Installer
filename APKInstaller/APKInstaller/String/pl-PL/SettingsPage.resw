@@ -300,6 +300,12 @@
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
     <value>Pokazać ogłoszenia?</value>
   </data>
+  <data name="ShowProgressSettings.Description" xml:space="preserve">
+    <value>It may leave temp files when an unexpected interruption occurs.</value>
+  </data>
+  <data name="ShowProgressSettings.Header" xml:space="preserve">
+    <value>Is Show Progress of Installation?</value>
+  </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Motyw aplikacji</value>
   </data>
