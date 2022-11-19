@@ -86,6 +86,12 @@ namespace APKInstaller.ViewModels.SettingsPages
             set => SettingsHelper.Set(SettingsHelper.ShowDialogs, value);
         }
 
+        public static bool ShowProgress
+        {
+            get => SettingsHelper.Get<bool>(SettingsHelper.ShowProgress);
+            set => SettingsHelper.Set(SettingsHelper.ShowProgress, value);
+        }
+
         public static bool AutoGetNetAPK
         {
             get => SettingsHelper.Get<bool>(SettingsHelper.AutoGetNetAPK);

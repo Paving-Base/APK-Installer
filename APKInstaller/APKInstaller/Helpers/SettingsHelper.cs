@@ -25,6 +25,7 @@ namespace APKInstaller.Helpers
         public const string IsCloseAPP = "IsCloseAPP";
         public const string ShowDialogs = "ShowDialogs";
         public const string ShowMessages = "ShowMessages";
+        public const string ShowProgress = "ShowProgress";
         public const string AutoGetNetAPK = "AutoGetNetAPK";
         public const string DefaultDevice = "DefaultDevice";
         public const string CurrentLanguage = "CurrentLanguage";
@@ -73,6 +74,10 @@ namespace APKInstaller.Helpers
             if (!LocalObject.KeyExists(ShowMessages))
             {
                 LocalObject.Save(ShowMessages, true);
+            }
+            if (!LocalObject.KeyExists(ShowProgress))
+            {
+                LocalObject.Save(ShowProgress, true);
             }
             if (!LocalObject.KeyExists(AutoGetNetAPK))
             {

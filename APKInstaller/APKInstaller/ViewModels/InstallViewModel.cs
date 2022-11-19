@@ -67,6 +67,7 @@ namespace APKInstaller.ViewModels
         private static bool IsOnlyWSA => SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
         private static bool IsCloseAPP => SettingsHelper.Get<bool>(SettingsHelper.IsCloseAPP);
         private static bool ShowDialogs => SettingsHelper.Get<bool>(SettingsHelper.ShowDialogs);
+        private static bool ShowProgress => SettingsHelper.Get<bool>(SettingsHelper.ShowProgress);
         private static bool AutoGetNetAPK => SettingsHelper.Get<bool>(SettingsHelper.AutoGetNetAPK);
 
         private ApkInfo _apkInfo = null;
@@ -1565,37 +1566,62 @@ namespace APKInstaller.ViewModels
                 ActionVisibility = SecondaryActionVisibility = TextOutputVisibility = InstallOutputVisibility = Visibility.Collapsed;
                 if ((ApkInfo?.IsSplit).GetValueOrDefault(false))
                 {
-                    AppxInstallBarIndeterminate = false;
-                    await Task.Run(() =>
+                    if (ShowProgress)
                     {
-                        PackageManager manager = new(new AdbClient(), _device);
-                        manager.InstallProgressChanged += OnInstallProgressChanged;
-                        manager.InstallMultiplePackage(new string[] { ApkInfo?.FullPath }, ApkInfo?.PackageName, true);
-                    });
-                    AppxInstallBarValue = 100;
+                        AppxInstallBarIndeterminate = false;
+                        await Task.Run(() =>
+                        {
+                            PackageManager manager = new(new AdbClient(), _device);
+                            manager.InstallProgressChanged += OnInstallProgressChanged;
+                            manager.InstallMultiplePackage(new string[] { ApkInfo?.FullPath }, ApkInfo?.PackageName, true);
+                        });
+                        AppxInstallBarValue = 100;
+                    }
+                    else
+                    {
+                        await Task.Run(() => { new AdbClient().InstallMultiple(_device, new Stream[] { File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read) }, ApkInfo.PackageName); });
+                    }
                 }
                 else if ((ApkInfo?.IsBundle).GetValueOrDefault(false))
                 {
-                    AppxInstallBarIndeterminate = false;
-                    await Task.Run(() =>
+                    if (ShowProgress)
                     {
-                        PackageManager manager = new(new AdbClient(), _device);
-                        manager.InstallProgressChanged += OnInstallProgressChanged;
-                        string[] strings = ApkInfo?.SplitApks?.Select(x => x.FullPath).ToArray();
-                        manager.InstallMultiplePackage(ApkInfo?.FullPath, strings, true);
-                    });
-                    AppxInstallBarValue = 100;
+                        AppxInstallBarIndeterminate = false;
+                        await Task.Run(() =>
+                        {
+                            PackageManager manager = new(new AdbClient(), _device);
+                            manager.InstallProgressChanged += OnInstallProgressChanged;
+                            string[] strings = ApkInfo?.SplitApks?.Select(x => x.FullPath).ToArray();
+                            manager.InstallMultiplePackage(ApkInfo?.FullPath, strings, true);
+                        });
+                        AppxInstallBarValue = 100;
+                    }
+                    else
+                    {
+                        await Task.Run(() =>
+                        {
+                            Stream[] streams = ApkInfo.SplitApks.Select(x => File.Open(x.FullPath, FileMode.Open, FileAccess.Read)).ToArray();
+                            new AdbClient().InstallMultiple(_device, File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read), streams);
+                        });
+                    }
                 }
                 else
                 {
-                    AppxInstallBarIndeterminate = false;
-                    await Task.Run(() =>
+                    if (ShowProgress)
                     {
-                        PackageManager manager = new(new AdbClient(), _device);
-                        manager.InstallProgressChanged += OnInstallProgressChanged;
-                        manager.InstallPackage(ApkInfo?.FullPath, true);
-                    });
-                    AppxInstallBarValue = 100;
+                        AppxInstallBarIndeterminate = false;
+                        await Task.Run(() =>
+                        {
+                            PackageManager manager = new(new AdbClient(), _device);
+                            manager.InstallProgressChanged += OnInstallProgressChanged;
+                            manager.InstallPackage(ApkInfo?.FullPath, true);
+                        });
+                        AppxInstallBarValue = 100;
+                    }
+                    else
+                    {
+                        await Task.Run(() => { new AdbClient().Install(_device, File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read)); });
+                    }
                 }
                 AppName = string.Format(_loader.GetString("InstalledFormat"), ApkInfo?.AppName);
                 if (IsOpenApp)

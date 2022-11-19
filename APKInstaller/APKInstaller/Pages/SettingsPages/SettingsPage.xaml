@@ -115,6 +115,11 @@
                             <ToggleSwitch IsOn="{Binding ShowMessages, Mode=TwoWay}" Style="{StaticResource ToggleSwitchSettingStyle}" />
                         </controls:Setting.ActionContent>
                     </controls:Setting>
+                    <controls:Setting x:Uid="/SettingsPage/ShowProgressSettings" Icon="&#xF16A;">
+                        <controls:Setting.ActionContent>
+                            <ToggleSwitch IsOn="{Binding ShowProgress, Mode=TwoWay}" Style="{StaticResource ToggleSwitchSettingStyle}" />
+                        </controls:Setting.ActionContent>
+                    </controls:Setting>
                 </controls:SettingsGroup>
                 <controls:SettingsGroup x:Uid="/SettingsPage/ThemesSettingsHeader">
                     <controls:Setting x:Uid="/SettingsPage/ThemeSettings" Icon="&#xE790;">
