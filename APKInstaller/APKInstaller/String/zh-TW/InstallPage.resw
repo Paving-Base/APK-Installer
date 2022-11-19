@@ -199,7 +199,7 @@
     <value>前往設定頁面</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>A newer version is already installed</value>
+    <value>已安裝新版本</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
     <value>您已經安裝了此應用的新版本 {0}。 是否確實要重新安裝版本 {1}？</value>
