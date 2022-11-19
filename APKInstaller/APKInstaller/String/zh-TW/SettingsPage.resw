@@ -301,10 +301,10 @@
     <value>是否顯示公告？</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
-    <value>It may leave temp files when an unexpected interruption occurs.</value>
+    <value>它可能會在發生意外中斷後留下臨時檔。</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Is Show Progress of Installation?</value>
+    <value>是否顯示安裝進度？</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>應用主題</value>
