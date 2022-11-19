@@ -451,17 +451,18 @@
                                         <StackPanel>
                                             <TextBlock
                                                 Margin="0,0,0,12"
+                                                    x:Uid="/InstallPage/CancelFlyoutTextBlock"
                                                 Style="{ThemeResource BaseTextBlockStyle}"
                                                 Text="确定要取消安装吗？" />
                                             <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
                                                 <Button
-                                                    Click="Button_Click"
-                                                    Content="是"
-                                                    Tag="CancelFlyoutButtonYes" />
+                                                    x:Name="CancelFlyoutButtonYes"
+                                                    x:Uid="/InstallPage/CancelFlyoutButtonYes"
+                                                    Click="Button_Click" />
                                                 <Button
-                                                    Click="Button_Click"
-                                                    Content="否"
-                                                    Tag="CancelFlyoutButtonNo" />
+                                                    x:Name="CancelFlyoutButtonNo"
+                                                    x:Uid="/InstallPage/CancelFlyoutButtonNo"
+                                                    Click="Button_Click" />
                                             </StackPanel>
                                         </StackPanel>
                                     </Flyout>

@@ -1272,8 +1272,20 @@ namespace APKInstaller.ViewModels
                 TextOutput = string.Format(_loader.GetString("ReinstallOutput"), ApkInfo?.AppName);
                 ActionVisibility = SecondaryActionVisibility = TextOutputVisibility = Visibility.Visible;
             }
-            try { ActionButtonEnable = int.Parse(client.GetProperty(_device, "ro.build.version.sdk")) > int.Parse(ApkInfo.MinSDK.APILevel); }
-            catch { ActionButtonEnable = false; }
+            SDKInfo sdk = SDKInfo.GetInfo(client.GetProperty(_device, "ro.build.version.sdk"));
+            if (sdk < ApkInfo.MinSDK)
+            {
+                ActionButtonEnable = false;
+                ContentDialog dialog = new()
+                {
+                    XamlRoot = _page?.XamlRoot,
+                    Content = string.Format(_loader.GetString("IncompatibleAppInfo"), ApkInfo?.MinSDK.ToString(), sdk.ToString()),
+                    Title = _loader.GetString("IncompatibleApp"),
+                    CloseButtonText = _loader.GetString("IKnow"),
+                    DefaultButton = ContentDialogButton.Close
+                };
+                _ = dialog.ShowAsync();
+            }
         }
 
         private void CheckOnlinePackage()
@@ -1537,11 +1549,10 @@ namespace APKInstaller.ViewModels
                     ContentDialog dialog = new()
                     {
                         XamlRoot = _page?.XamlRoot,
-                        Content = string.Format("您已经安装了此应用的新版本 {0}。是否确实要重新安装版本 {1}？", info.VersionName, ApkInfo?.VersionName),
-                        Title = "已安装新版本",
+                        Content = string.Format(_loader.GetString("HasNewerVersionInfo"), info.VersionName, ApkInfo?.VersionName),
+                        Title = _loader.GetString("HasNewerVersion"),
                         PrimaryButtonText = _loader.GetString("Reinstall"),
-                        CloseButtonText = _loader.GetString("Cancel"),
-                        DefaultButton = ContentDialogButton.Primary
+                        CloseButtonText = _loader.GetString("Cancel")
                     };
                     ContentDialogResult result = await dialog.ShowAsync();
                     if (result != ContentDialogResult.Primary) { return; }
