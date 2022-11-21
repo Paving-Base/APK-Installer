@@ -1655,6 +1655,8 @@ namespace APKInstaller.ViewModels
                 ActionVisibility = SecondaryActionVisibility = CancelOperationVisibility = LaunchWhenReadyVisibility = Visibility.Collapsed;
             }
 
+            _page.CancelFlyout.Hide();
+
             void OnInstallProgressChanged(object sender, double e)
             {
                 ProgressHelper.SetValue(Convert.ToInt32(e), 100, true);

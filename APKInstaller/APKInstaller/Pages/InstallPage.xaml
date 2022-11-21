@@ -447,23 +447,28 @@
                                 TabIndex="1"
                                 Visibility="{Binding CancelOperationVisibility}">
                                 <Button.Flyout>
-                                    <Flyout>
+                                    <Flyout x:Name="CancelFlyout" x:FieldModifier="Public">
                                         <StackPanel>
                                             <TextBlock
-                                                x:Uid="/InstallPage/CancelFlyoutTextBlock"
+                                                x:Name="ConfirmationText"
+                                                x:Uid="/InstallPage/ConfirmationText"
                                                 Margin="0,0,0,12"
-                                                Style="{ThemeResource BaseTextBlockStyle}"
-                                                Text="确定要取消安装吗？" />
-                                            <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+                                                Style="{ThemeResource BaseTextBlockStyle}" />
+                                            <RelativePanel>
                                                 <Button
-                                                    x:Name="CancelFlyoutButtonYes"
-                                                    x:Uid="/InstallPage/CancelFlyoutButtonYes"
+                                                    x:Name="CancelConfirmButton"
+                                                    x:Uid="/InstallPage/CancelConfirmButton"
+                                                    MinWidth="80"
+                                                    Margin="120,5,0,0"
                                                     Click="Button_Click" />
                                                 <Button
-                                                    x:Name="CancelFlyoutButtonNo"
-                                                    x:Uid="/InstallPage/CancelFlyoutButtonNo"
-                                                    Click="Button_Click" />
-                                            </StackPanel>
+                                                    x:Name="CancelContinueButton"
+                                                    x:Uid="/InstallPage/CancelContinueButton"
+                                                    MinWidth="80"
+                                                    Margin="12,5,0,0"
+                                                    Click="Button_Click"
+                                                    RelativePanel.RightOf="CancelConfirmButton" />
+                                            </RelativePanel>
                                         </StackPanel>
                                     </Flyout>
                                 </Button.Flyout>
