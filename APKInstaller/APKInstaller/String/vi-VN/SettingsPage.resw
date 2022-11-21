@@ -124,7 +124,7 @@
     <value>Đường dẫn ADB</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>ADB Version</value>
+    <value>Phiên bản ADB</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>Tự động tải xuống khi gói từ URL.</value>
@@ -207,13 +207,13 @@
     <value>Tìm bản cập nhật</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>Information about the frameworks of this app.</value>
+    <value>Thông tin về các khuôn khổ của ứng dụng này.</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
-    <value>Framework Information</value>
+    <value>Thông tin khung</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
-    <value>Framework</value>
+    <value>Khuôn khổ</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>Chuyển đến trang thử nghiệm.</value>
@@ -237,7 +237,7 @@
     <value>nhật ký</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may contain something unpleasant. Such as AD, broken functions even virus. Please go to Microsoft Store to download the original one. See our GitHub Repository to learn more about it.</value>
+    <value>Một phiên bản sửa đổi có thể chứa một cái gì đó khó chịu. Chẳng hạn như AD, các chức năng bị hỏng thậm chí cả virus. Vui lòng truy cập Microsoft Store để tải xuống bản gốc. Xem Kho lưu trữ GitHub của chúng tôi để tìm hiểu thêm về nó.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>Bạn đang sử dụng một phiên bản sửa đổi!</value>
@@ -249,10 +249,10 @@
     <value>Chỉ dành cho WSA?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>OS Architecture</value>
+    <value>Kiến trúc hệ điều hành</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
-    <value>OS Platform</value>
+    <value>Nền tảng hệ điều hành</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Khác</value>
@@ -303,10 +303,10 @@
     <value>Có phải Hiển thị Thông báo không?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
-    <value>It may leave temp files when an unexpected interruption occurs.</value>
+    <value>Nó có thể để lại các tệp tạm thời khi xảy ra gián đoạn không mong muốn.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Is Show Progress of Installation?</value>
+    <value>Có phải Hiển thị tiến trình cài đặt không?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Chủ đề Ứng dụng</value>
