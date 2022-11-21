@@ -139,6 +139,12 @@
   <data name="Cancel" xml:space="preserve">
     <value>Отмена</value>
   </data>
+  <data name="CancelConfirmButton.Content" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="CancelContinueButton.Content" xml:space="preserve">
+    <value>Нет</value>
+  </data>
   <data name="CancelFlyoutButtonNo.Content" xml:space="preserve">
     <value>Нет</value>
   </data>
@@ -171,6 +177,9 @@
   </data>
   <data name="Close" xml:space="preserve">
     <value>Закрыть</value>
+  </data>
+  <data name="ConfirmationText.Text" xml:space="preserve">
+    <value>Вы уверены, что хотите отменить установку?</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Копировать</value>

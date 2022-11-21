@@ -121,7 +121,7 @@
     <value>ADB, גשר אנדרואיד באגים, דרוש כדי שמתקין APK יעבוד. לחץ על "הורד" כדי להוריד אותו. בהורדה אתה מקבל את התנאים וההגבלות של Google עבור ADB. אם כבר הורדת את ADB, לחץ על "בחר" כדי לבחור בו.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Exists</value>
+    <value>ADB קיים</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB חסר
@@ -134,10 +134,16 @@
     <value>יכולות</value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>App Name</value>
+    <value>שם האפליקציה</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>ביטול</value>
+  </data>
+  <data name="CancelConfirmButton.Content" xml:space="preserve">
+    <value>כן</value>
+  </data>
+  <data name="CancelContinueButton.Content" xml:space="preserve">
+    <value>לא</value>
   </data>
   <data name="CancelFlyoutButtonNo.Content" xml:space="preserve">
     <value>לא</value>
@@ -146,13 +152,14 @@
     <value>כן</value>
   </data>
   <data name="CancelFlyoutTextBlock.Text" xml:space="preserve">
-    <value>Are you sure to cancel the installation?</value>
+    <value>האם אתה בטוח לבטל את ההתקנה?</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>אין אפשרות להתחבר אל WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
+    <value>או ש-WSA לא התחיל כמו שצריך, או שיש בעיה עם ADB. בעיה זו יכולה להיות קשה מאוד לפתרון. הפעל מחדש את תוכנית ההתקנה. אם זה עדיין לא עובד, נסה להפעיל מחדש את המחשב.
+</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>לא ניתן לפתוח את חבילת האפליקציה
@@ -165,7 +172,7 @@
     <value>בודק...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Checking Path...</value>
+    <value>בודק נתיב...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>לחץ כאן כדי לשחזר אותם.</value>
@@ -173,8 +180,11 @@
   <data name="Close" xml:space="preserve">
     <value>סגור</value>
   </data>
+  <data name="ConfirmationText.Text" xml:space="preserve">
+    <value>האם אתה בטוח לבטל את ההתקנה?</value>
+  </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
-    <value>Copy</value>
+    <value>עותק</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>התקנים</value>
@@ -202,44 +212,45 @@
     <value>עבור ל'הגדרות'</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>A newer version is already installed</value>
+    <value>גרסה חדשה יותר כבר מותקנת</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>You already have installed a new version {0} of this app. Are you sure to reinstall version {1}?</value>
+    <value>כבר התקנת גירסה חדשה {0} של יישום זה. האם אתה בטוח שתתקין מחדש את גירסה {1}?</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>How to connect WSA</value>
+    <value>כיצד לחבר את WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Please make sure APK Installer has been updated to the latest version
-2. Make sure you have the Android Subsystem installed and running
-3. Turn on developer mode and make sure the IP address is displayed successfully
-4. Reopen APK Installer and continue your installation
+    <value>1. ודא שמתקין APK עודכן לגרסה האחרונה
+2. ודא שיש לך את מערכת המשנה אנדרואיד מותקן ופועל
+3. הפעל את מצב המפתח וודא שכתובת ה- IP מוצגת בהצלחה
+4. פתח מחדש את מתקין ה- APK והמשך בהתקנה
 
-[Learn More]({0})</value>
+[מידע נוסף] ({0})
+</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
-    <value>Icon</value>
+    <value>סמל</value>
   </data>
   <data name="IKnow" xml:space="preserve">
     <value>אני יודע</value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
-    <value>Incompatible App</value>
+    <value>אפליקציה לא תואמת</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
-    <value>The minimum required for this app is {0}. Your device supports {1}. Please update your device or choose order package.</value>
+    <value>המינימום הנדרש עבור יישום זה הוא {0}. המכשיר שלך תומך {1}. אנא עדכן את המכשיר שלך או בחר חבילת הזמנה.</value>
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
-    <value>Infos</value>
+    <value>מידע</value>
   </data>
   <data name="Install" xml:space="preserve">
     <value>התקן</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
-    <value>{0} is ready!</value>
+    <value>{0} מוכן!</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
@@ -250,7 +261,7 @@
     <value>התקן.</value>
   </data>
   <data name="InstallingPercent" xml:space="preserve">
-    <value>Installing {0}...</value>
+    <value>התקנת {0}...</value>
     <comment>{0} - Progress.</comment>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
@@ -279,31 +290,32 @@
     <value>טוען...</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
-    <value>More Info</value>
+    <value>מידע נוסף</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
     <value>לא ניתן למצוא מכשיר אנדרואיד</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>How to connect device</value>
+    <value>כיצד לחבר התקן</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>If you want to install app into Windows Subsystem for Android™, you need to install it first. If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
+    <value>אם ברצונך להתקין אפליקציה במערכת המשנה של Windows עבור Android™, עליך להתקין אותה תחילה. אם ברצונך להתקין בהתקנים אחרים, עבור אל דף ההגדרות, כבה את "Is Only for WSA" וחבר את ההתקן שלך.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>#### Using USB
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open USB Debug
-3. Go to the Settings Page of APK Installer, select your device
-4. Go back, resume installation
-#### Using Wifi
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open Remote Debug
-3. Remember the IP address of your device
-4. Go to the Settings Page of APK Installer, connect and select your device
-5. Go back, resume installation
+    <value>#### באמצעות USB
+1. ודא שמתקין APK עודכן ל [הגרסה האחרונה](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "מתקין APK")
+2. הפעל את מצב מפתח, פתח את איתור באגים ב- USB
+3. עבור אל דף ההגדרות של מתקין APK, בחר את המכשיר שלך
+4. חזור אחורה, חדש את ההתקנה
+#### באמצעות WiFi
+1. ודא שמתקין APK עודכן ל [הגרסה האחרונה](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "מתקין APK")
+2. הפעל את מצב מפתח, פתח איתור באגים מרחוק
+3. זכרו את כתובת ה-IP של המכשיר שלכם
+4. עבור אל דף ההגדרות של מתקין APK, חבר ובחר את המכשיר שלך
+5. חזור אחורה, חדש את ההתקנה
 
-[Learn More]({0})</value>
+[מידע נוסף] ({0})
+</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
     <value>אין אפשרות גישה לאינטרנט</value>
@@ -321,17 +333,17 @@
     <value>חבילה מקוונת</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
-    <value>Package Name</value>
+    <value>שם החבילה</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>Package Name: {0}</value>
+    <value>שם החבילה: {0}</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
     <value>התקן מחדש</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>{0} is already installed</value>
+    <value>{0} כבר מותקן</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
@@ -363,7 +375,7 @@
     <value>פריצת הרוכסן הושלמה</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
-    <value>Unzipping {0}/{1} ...</value>
+    <value>פתיחת {0}/{1} ...</value>
     <comment>{0} - Have done num. {1} - All num.</comment>
   </data>
   <data name="Update" xml:space="preserve">
@@ -374,10 +386,10 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
-    <value>Version Code</value>
+    <value>קוד גרסה</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>Version: {0}</value>
+    <value>גרסה: {0}</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
@@ -387,14 +399,14 @@
     <value>ממתין לחיבור אינטרנטי...</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
-    <value>Waiting for install {0}</value>
+    <value>ממתין להתקנה {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
     <value>ממתין ל-WSA Start...זה עשוי להימשך זמן רב. שב לאחור והירגע.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome!</value>
+    <value>ברוך הבא!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA פועל</value>

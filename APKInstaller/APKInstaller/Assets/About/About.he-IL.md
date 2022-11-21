@@ -1,22 +1,22 @@
-#### Welcome to the APK Installer!
+#### ברוכים הבאים למתקין ה- APK!
 
-##### Declaration
-1. Please follow the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. This program is open source software, so please make sure that the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) to keep your data safe.
-3. If the source of the program is not abnormal, all your data will only be used to run with the program or stored locally during the program running, and the developer will not steal any of your data. Still, please pay attention to the security of the environment.
-4. The translation of the text of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts do not represent the author's views.
+##### הצהרת
+1. אנא עקוב אחר הסכם הרישיון למשתמש הקצה של מתקין [APK ומדיניות הפרטיות ](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+2. תוכנית זו היא תוכנת קוד פתוח, אז אנא ודא כי התוכנית היא מ [מאגר Github זה](https://github.com/Paving-Base/APK-Installer) או [יישום זה](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) כדי לשמור על הנתונים שלך בטוחים.
+3. אם מקור התוכנית אינו חריג, כל הנתונים שלך ישמשו רק להפעלה עם התוכנית או יאוחסנו באופן מקומי במהלך הפעלת התוכנית, והמפתח לא יגנוב אף אחד מהנתונים שלך. ובכל זאת, אנא שימו לב לביטחון הסביבה.
+4. התרגום של הטקסט של יישום זה מגיע מקהילת [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin"), וכל הטקסטים אינם מייצגים את דעות המחבר.
 
-##### לתרגם
-Thanks to [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") translators for their support. If there is any problem with the translation, please come and correct it. And please take translation seriously. Your words will be read all over the world.
+##### תרגם
+תודה למתרגמים [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") על תמיכתם. אם יש בעיה עם התרגום, אנא בואו לתקן אותה. ואנא התייחסו ברצינות לתרגום. דבריך ייקראו בכל רחבי העולם.
 
-##### Contributors
+##### תורמים
 - [wherewhere](https://github.com/wherewhere)
 - [Void48](https://github.com/Void48)
 - [EP012014](https://github.com/EP012014)
 - [A Big Salty Fish](https://github.com/bigsaltyfishes)
 - [sam1357](https://github.com/sam1357)
 
-##### Citations and References
+##### ציטוטים והפניות
 - [WinUI](https://github.com/microsoft/microsoft-ui-xaml "WinUI")
 - [MetroLog](https://github.com/roubachof/MetroLog "MetroLog")
 - [Downloader](https://github.com/bezzad/Downloader "Downloader")

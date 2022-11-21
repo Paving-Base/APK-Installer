@@ -124,19 +124,19 @@
     <value>ADB נתיב </value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>ADB Version</value>
+    <value>גרסת ADB</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>הורדה אוטו'</value>
+    <value>הורדה אוטומטית כאשר החבילה מגיעה מכתובת URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Does Auto Download Online Packages?</value>
+    <value>האם הורדה אוטומטית של חבילות מקוונות?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>Select Backdrop Type for Windows 11</value>
+    <value>בחר סוג רקע עבור Windows 11</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>Backdrop</value>
+    <value>רקע</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
     <value>שנה</value>
@@ -157,13 +157,13 @@
     <value>סגור ADB עלול לשבור מתקין אחרים כשהם עדיין פתוחים.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Does Close ADB when Closing Installer?</value>
+    <value>האם לסגור את ADB בעת סגירת תוכנית ההתקנה?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
     <value>סגור את מתקין לאחר התקנת APK והתחל.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Does Close Installer when APP is Ready?</value>
+    <value>האם לסגור את תוכנית ההתקנה כאשר האפליקציה מוכנה?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>הגדר</value>
@@ -193,7 +193,7 @@
     <value>תמיכה</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application, and no ads will be added for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your support.💕</value>
+    <value>מתקין APK הוא יישום קוד פתוח, ולא יתווספו מודעות למטרות רווח. אם אתה אוהב את האפליקציה הזו, אל תשכח לדרג אותה בחנות. כמובן, זה יהיה טוב יותר אם אתה יכול לתרום קצת. תודה על תמיכתך. 💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>תנאי שימוש</value>
@@ -205,13 +205,13 @@
     <value>מצא  עדכון</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>Information about the frameworks of this app.</value>
+    <value>מידע על המסגרות של אפליקציה זו.</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
-    <value>Framework Information</value>
+    <value>מידע על מסגרת</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
-    <value>Framework</value>
+    <value>מסגרת</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>עבור לדף המבחן.</value>
@@ -229,40 +229,41 @@
     <value>נבדק לאחרונה:</value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
-    <value>Learn More</value>
+    <value>למד עוד</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
-    <value>Logs</value>
+    <value>יומני</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may contain something unpleasant. Such as AD, broken functions even virus. Please go to Microsoft Store to download the original one. See our GitHub Repository to learn more about it.</value>
+    <value>גרסה שונה עשויה להכיל משהו לא נעים. כגון AD, פונקציות שבורות אפילו וירוס. עבור אל Microsoft Store כדי להוריד את החנות המקורית. עיין במאגר GitHub שלנו כדי ללמוד עוד עליו.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>You are using a modified version!</value>
+    <value>אתה משתמש בגרסה ששונתה!
+</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Disable it to connect to other devices.</value>
+    <value>השבת אותו כדי להתחבר להתקנים אחרים.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
     <value>האם רק עבור WSA?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>OS Architecture</value>
+    <value>ארכיטקטורת מערכת הפעלה</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
-    <value>OS Platform</value>
+    <value>פלטפורמת מערכת ההפעלה</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>אחר</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>Dark</value>
+    <value>חשוך</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>Windows Default</value>
+    <value>ברירת המחדל של Windows</value>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
-    <value>Light</value>
+    <value>אור</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
     <value>דרג/י ב- App Store</value>
@@ -301,16 +302,16 @@
     <value>האם הצג הכרזות?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
-    <value>It may leave temp files when an unexpected interruption occurs.</value>
+    <value>הוא עלול להשאיר קבצים זמניים כאשר מתרחשת הפרעה בלתי צפויה.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Is Show Progress of Installation?</value>
+    <value>האם הצגת התקדמות ההתקנה?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
-    <value>App Theme</value>
+    <value>ערכת נושא של אפליקציה</value>
   </data>
   <data name="ThemesSettingsHeader.Header" xml:space="preserve">
-    <value>Themes</value>
+    <value>ערכות נושא</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>הגדרות</value>
@@ -325,6 +326,7 @@
     <value>מעודכן</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Windows Color Settings</value>
+    <value>הגדרות צבע של Windows
+</value>
   </data>
 </root>

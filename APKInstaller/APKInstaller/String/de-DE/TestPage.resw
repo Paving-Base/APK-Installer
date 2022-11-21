@@ -130,10 +130,10 @@
     <value>Kompaktes Overlay</value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
-    <value>A development version app may not stable. Download release version on Microsoft Store.</value>
+    <value>Eine Entwicklungsversions-App ist möglicherweise nicht stabil. Laden Sie die endgültige Produktversion im Microsoft Store herunter.</value>
   </data>
   <data name="DevelopmentInfoBar.Title" xml:space="preserve">
-    <value>You are using a development version app.</value>
+    <value>Sie verwenden eine Entwicklungsversion-App.</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
     <value>Zum kompakten Overlay wechseln</value>

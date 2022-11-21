@@ -138,6 +138,12 @@
   <data name="Cancel" xml:space="preserve">
     <value>Abbrechen</value>
   </data>
+  <data name="CancelConfirmButton.Content" xml:space="preserve">
+    <value>Ja</value>
+  </data>
+  <data name="CancelContinueButton.Content" xml:space="preserve">
+    <value>Nein</value>
+  </data>
   <data name="CancelFlyoutButtonNo.Content" xml:space="preserve">
     <value>Nein</value>
   </data>
@@ -145,7 +151,7 @@
     <value>Ja</value>
   </data>
   <data name="CancelFlyoutTextBlock.Text" xml:space="preserve">
-    <value>Are you sure to cancel the installation?</value>
+    <value>Sind Sie sicher, die Installation abzubrechen?</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>Es kann keine Verbindung zu %s hergestellt werden</value>
@@ -170,6 +176,9 @@
   </data>
   <data name="Close" xml:space="preserve">
     <value>Schließen</value>
+  </data>
+  <data name="ConfirmationText.Text" xml:space="preserve">
+    <value>Sind Sie sicher, die Installation abzubrechen?</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Kopieren</value>
@@ -199,10 +208,10 @@
     <value>Einstellungen öffnen</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>A newer version is already installed</value>
+    <value>Eine neuere Version ist bereits installiert</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>You already have installed a new version {0} of this app. Are you sure to reinstall version {1}?</value>
+    <value>Sie haben bereits eine neue Version {0} dieser App installiert. Sind Sie sicher, dass Sie Version {1} neu installieren?</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
@@ -223,7 +232,7 @@
     <value>Ich weiß</value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
-    <value>Incompatible App</value>
+    <value>Inkompatible App</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
     <value>The minimum required for this app is {0}. Your device supports {1}. Please update your device or choose order package.</value>
@@ -281,25 +290,26 @@
     <value>Android Gerät nicht gefunden</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>How to connect device</value>
+    <value>So verbinden Sie ein Gerät</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>If you want to install app into Windows Subsystem for Android™, you need to install it first. If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
+    <value>Wenn Sie die App im Windows-Subsystem für Android™ installieren möchten, müssen Sie sie zuerst installieren. Wenn Sie auf anderen Geräten installieren möchten, gehen Sie bitte zur Einstellungsseite, deaktivieren Sie "Ist nur für WSA" und verbinden Sie Ihr Gerät.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>#### Using USB
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open USB Debug
-3. Go to the Settings Page of APK Installer, select your device
-4. Go back, resume installation
-#### Using Wifi
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open Remote Debug
-3. Remember the IP address of your device
-4. Go to the Settings Page of APK Installer, connect and select your device
-5. Go back, resume installation
+    <value>#### Verwenden von USB
+1. Bitte stellen Sie sicher, dass APK Installer auf [die neueste Version] aktualisiert wurde (https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Schalten Sie den Entwicklermodus ein, öffnen Sie USB Debug
+3. Gehen Sie zur Einstellungsseite des APK-Installationsprogramms, wählen Sie Ihr Gerät aus
+4. Gehen Sie zurück, setzen Sie die Installation fort
+#### Mit Wifi
+1. Bitte stellen Sie sicher, dass APK Installer auf [die neueste Version] aktualisiert wurde (https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Schalten Sie den Entwicklermodus ein, öffnen Sie Remote Debug
+3. Merken Sie sich die IP-Adresse Ihres Geräts
+4. Gehen Sie zur Einstellungsseite des APK-Installationsprogramms, verbinden Sie sich und wählen Sie Ihr Gerät aus
+5. Gehen Sie zurück, setzen Sie die Installation fort
 
-[Learn More]({0})</value>
+[Erfahren Sie mehr] ({0})
+</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
     <value>Keine Internetverbindung möglich</value>
@@ -391,7 +401,7 @@
 Dies kann lange dauern. Setze dich zurück und entspannen.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome!</value>
+    <value>Willkommen!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>%s wird ausgeführt</value>

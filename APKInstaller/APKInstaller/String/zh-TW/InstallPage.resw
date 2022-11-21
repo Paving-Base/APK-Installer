@@ -138,6 +138,12 @@
   <data name="Cancel" xml:space="preserve">
     <value>取消</value>
   </data>
+  <data name="CancelConfirmButton.Content" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="CancelContinueButton.Content" xml:space="preserve">
+    <value>否</value>
+  </data>
   <data name="CancelFlyoutButtonNo.Content" xml:space="preserve">
     <value>否</value>
   </data>
@@ -170,6 +176,9 @@
   </data>
   <data name="Close" xml:space="preserve">
     <value>关闭</value>
+  </data>
+  <data name="ConfirmationText.Text" xml:space="preserve">
+    <value>確定要取消安裝嗎？</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>複製</value>
@@ -226,7 +235,7 @@
     <value>不相容的應用</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
-    <value>此應用最低要求 {0}，您的設備支援{1}。 請更新您的設備或選擇舊版本安裝包。</value>
+    <value>此應用最低要求 {0}，您的設備支援 {1}。 請更新您的設備或選擇舊版本安裝包。</value>
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
