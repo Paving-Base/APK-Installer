@@ -139,6 +139,12 @@
     <value>Batal
 </value>
   </data>
+  <data name="CancelConfirmButton.Content" xml:space="preserve">
+    <value>Ya</value>
+  </data>
+  <data name="CancelContinueButton.Content" xml:space="preserve">
+    <value>Tidak</value>
+  </data>
   <data name="CancelFlyoutButtonNo.Content" xml:space="preserve">
     <value>Tidak</value>
   </data>
@@ -172,6 +178,9 @@
   </data>
   <data name="Close" xml:space="preserve">
     <value>Tutup</value>
+  </data>
+  <data name="ConfirmationText.Text" xml:space="preserve">
+    <value>Are you sure to cancel the installation?</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Salin</value>
