@@ -145,15 +145,6 @@
   <data name="CancelContinueButton.Content" xml:space="preserve">
     <value>לא</value>
   </data>
-  <data name="CancelFlyoutButtonNo.Content" xml:space="preserve">
-    <value>לא</value>
-  </data>
-  <data name="CancelFlyoutButtonYes.Content" xml:space="preserve">
-    <value>כן</value>
-  </data>
-  <data name="CancelFlyoutTextBlock.Text" xml:space="preserve">
-    <value>האם אתה בטוח לבטל את ההתקנה?</value>
-  </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>אין אפשרות להתחבר אל WSA</value>
   </data>
