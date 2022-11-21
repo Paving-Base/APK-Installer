@@ -130,7 +130,7 @@
     <value>מתקין APK</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
-    <value>היתה שגיאה בתוכנה...</value>
+    <value>היתה שגיאה בתוכנה…</value>
   </data>
   <data name="ImageLoadError" xml:space="preserve">
     <value>טעינת התמונות נכשלה.</value>
