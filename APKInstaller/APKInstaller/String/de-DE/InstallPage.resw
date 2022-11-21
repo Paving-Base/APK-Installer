@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, die Android Debuggen Bridge, wird für den APK Installer benötigt. Klicken Sie auf "Download", um sie herunterzuladen. Mit dem Download akzeptieren Sie die AGB von Google für ADB.</value>
+    <value>ADB, die Android Debug Bridge, wird für den APK Installer benötigt. Klicken Sie auf "Download", um sie herunterzuladen. Mit dem Download akzeptieren Sie die AGB von Google für ADB.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>ADB Existiert</value>
@@ -226,8 +226,7 @@
     <value>Inkompatible App</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
-    <value>Das Minimum für diese App ist {0}. Ihr Gerät unterstützt {1}. Bitte aktualisieren Sie Ihr Gerät oder wählen Sie Paket bestellen.
-</value>
+    <value>The minimum required for this app is {0}. Your device supports {1}. Please update your device or choose order package.</value>
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
