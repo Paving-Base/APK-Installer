@@ -139,6 +139,12 @@
   <data name="Cancel" xml:space="preserve">
     <value>ביטול</value>
   </data>
+  <data name="CancelConfirmButton.Content" xml:space="preserve">
+    <value>כן</value>
+  </data>
+  <data name="CancelContinueButton.Content" xml:space="preserve">
+    <value>לא</value>
+  </data>
   <data name="CancelFlyoutButtonNo.Content" xml:space="preserve">
     <value>לא</value>
   </data>
@@ -173,6 +179,9 @@
   </data>
   <data name="Close" xml:space="preserve">
     <value>סגור</value>
+  </data>
+  <data name="ConfirmationText.Text" xml:space="preserve">
+    <value>האם אתה בטוח לבטל את ההתקנה?</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>עותק</value>
