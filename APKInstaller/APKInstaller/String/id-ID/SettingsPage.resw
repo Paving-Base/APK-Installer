@@ -301,10 +301,10 @@
     <value>Apakah Tampilkan Pengumuman?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
-    <value>It may leave temp files when an unexpected interruption occurs.</value>
+    <value>Itu mungkin meninggalkan file temp ketika terjadi gangguan yang tidak terduga.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Is Show Progress of Installation?</value>
+    <value>Apakah Tampilkan Kemajuan Instalasi?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Tema Aplikasi</value>
