@@ -130,7 +130,7 @@
     <value>ID Quá trình</value>
   </data>
   <data name="ResidentSetSize.Header" xml:space="preserve">
-    <value>Resident Set Size</value>
+    <value>Kích thước bộ cư dân</value>
   </data>
   <data name="State.Header" xml:space="preserve">
     <value>Trạng thái</value>
