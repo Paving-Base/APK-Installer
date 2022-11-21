@@ -130,10 +130,10 @@
     <value>שכבת על קומפקטית</value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
-    <value>A development version app may not stable. Download release version on Microsoft Store.</value>
+    <value>ייתכן שאפליקציית גרסת פיתוח לא תהיה יציבה. הורד את גירסת ההפצה ב- Microsoft Store.</value>
   </data>
   <data name="DevelopmentInfoBar.Title" xml:space="preserve">
-    <value>You are using a development version app.</value>
+    <value>אתה משתמש באפליקציית גירסת פיתוח.</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
     <value>היכנס או צא מ-Comact Overlay</value>
@@ -151,22 +151,24 @@
     <value>תהליכים</value>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
-    <value>Test Progress Ring on the Title Bar</value>
+    <value>טבעת התקדמות בדיקה בפס הכותרת</value>
   </data>
   <data name="ProgressSettings.Header" xml:space="preserve">
-    <value>Progress</value>
+    <value>התקדמות</value>
   </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
-    <value>Set the value of Progress Ring</value>
+    <value>הגדרת הערך של טבעת התקדמות
+</value>
   </data>
   <data name="SetProgressValue.Header" xml:space="preserve">
-    <value>Progress Value</value>
+    <value>ערך התקדמות</value>
   </data>
   <data name="ShowRefreshButton.Description" xml:space="preserve">
-    <value>Show Refresh Button on the Title Bar</value>
+    <value>הצג לחצן 'רענן' בפס הכותרת
+</value>
   </data>
   <data name="ShowRefreshButton.Header" xml:space="preserve">
-    <value>Refresh Button</value>
+    <value>לחצן 'רענן'</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>בדיקות</value>
