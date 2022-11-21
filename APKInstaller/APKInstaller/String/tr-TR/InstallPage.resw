@@ -144,15 +144,6 @@
   <data name="CancelContinueButton.Content" xml:space="preserve">
     <value>Hayır</value>
   </data>
-  <data name="CancelFlyoutButtonNo.Content" xml:space="preserve">
-    <value>Hayır</value>
-  </data>
-  <data name="CancelFlyoutButtonYes.Content" xml:space="preserve">
-    <value>Evet</value>
-  </data>
-  <data name="CancelFlyoutTextBlock.Text" xml:space="preserve">
-    <value>Kurulumu iptal etmek istediğinize emin misiniz?</value>
-  </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>WSA'ya Bağlanılamıyor</value>
   </data>
