@@ -124,7 +124,8 @@
     <value>ADB-Pfad</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>ADB Version</value>
+    <value>ADB Version
+</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>Automatischer Download, wenn das Paket von einer URL stammt.</value>
@@ -205,13 +206,13 @@
     <value>Update suchen</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>Information about the frameworks of this app.</value>
+    <value>Informationen zu den Frameworks dieser App.</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
-    <value>Framework Information</value>
+    <value>Rahmeninformationen</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
-    <value>Framework</value>
+    <value>Fachwerk</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>Gehen Sie zur Testseite.</value>
@@ -235,7 +236,8 @@
     <value>Logs</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may contain something unpleasant. Such as AD, broken functions even virus. Please go to Microsoft Store to download the original one. See our GitHub Repository to learn more about it.</value>
+    <value>Eine modifizierte Version kann etwas Unangenehmes enthalten. Wie AD, kaputte Funktionen sogar Virus. Bitte gehen Sie zum Microsoft Store, um das Original herunterzuladen. Weitere Informationen finden Sie in unserem GitHub-Repository.
+</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>Sie verwenden eine modifizierte Version!</value>
@@ -247,10 +249,10 @@
     <value>Nur für WSA?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>OS Architecture</value>
+    <value>Betriebssystemarchitektur</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
-    <value>OS Platform</value>
+    <value>Betriebssystem-Plattform</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Sonstige</value>
@@ -301,10 +303,10 @@
     <value>Zeigt Ankündigungen an?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
-    <value>It may leave temp files when an unexpected interruption occurs.</value>
+    <value>Es kann temporäre Dateien hinterlassen, wenn eine unerwartete Unterbrechung auftritt.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Is Show Progress of Installation?</value>
+    <value>Wird der Installationsfortschritt angezeigt?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>App-Design</value>
