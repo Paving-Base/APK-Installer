@@ -138,6 +138,12 @@
   <data name="Cancel" xml:space="preserve">
     <value>İptal</value>
   </data>
+  <data name="CancelConfirmButton.Content" xml:space="preserve">
+    <value>Evet</value>
+  </data>
+  <data name="CancelContinueButton.Content" xml:space="preserve">
+    <value>Hayır</value>
+  </data>
   <data name="CancelFlyoutButtonNo.Content" xml:space="preserve">
     <value>Hayır</value>
   </data>
@@ -170,6 +176,9 @@
   </data>
   <data name="Close" xml:space="preserve">
     <value>Kapat</value>
+  </data>
+  <data name="ConfirmationText.Text" xml:space="preserve">
+    <value>Kurulumu iptal etmek istediğinize emin misiniz?</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Kopyala</value>
