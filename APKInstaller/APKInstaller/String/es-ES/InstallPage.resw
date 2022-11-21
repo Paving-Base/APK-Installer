@@ -138,6 +138,12 @@
   <data name="Cancel" xml:space="preserve">
     <value>Cancelar</value>
   </data>
+  <data name="CancelConfirmButton.Content" xml:space="preserve">
+    <value>Sí</value>
+  </data>
+  <data name="CancelContinueButton.Content" xml:space="preserve">
+    <value>No</value>
+  </data>
   <data name="CancelFlyoutButtonNo.Content" xml:space="preserve">
     <value>No</value>
   </data>
@@ -170,6 +176,9 @@
   </data>
   <data name="Close" xml:space="preserve">
     <value>Cerrar</value>
+  </data>
+  <data name="ConfirmationText.Text" xml:space="preserve">
+    <value>Are you sure to cancel the installation?</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Copiar</value>
