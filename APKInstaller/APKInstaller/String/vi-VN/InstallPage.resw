@@ -138,6 +138,12 @@
   <data name="Cancel" xml:space="preserve">
     <value>Hủy</value>
   </data>
+  <data name="CancelConfirmButton.Content" xml:space="preserve">
+    <value>Có</value>
+  </data>
+  <data name="CancelContinueButton.Content" xml:space="preserve">
+    <value>Không</value>
+  </data>
   <data name="CancelFlyoutButtonNo.Content" xml:space="preserve">
     <value>Không</value>
   </data>
@@ -172,6 +178,9 @@
   <data name="Close" xml:space="preserve">
     <value>Đóng
 </value>
+  </data>
+  <data name="ConfirmationText.Text" xml:space="preserve">
+    <value>Bạn có chắc chắn hủy bỏ cài đặt?</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Sao chép</value>
