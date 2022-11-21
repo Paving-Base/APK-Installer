@@ -118,8 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, גשר איתור הבאגים של אנדרואיד, נחוץ למתקין APK כדי לעבוד. לחץ על "הורד" כדי להוריד אותו. על ידי הורדה, אתה מקבל את התנאים וההתניות של גוגל עבור ADB. אם כבר הורדת את ADB, לחץ על "בחר" כדי לבחור אותו.
-</value>
+    <value>ADB, גשר אנדרואיד באגים, דרוש כדי שמתקין APK יעבוד. לחץ על "הורד" כדי להוריד אותו. בהורדה אתה מקבל את התנאים וההגבלות של Google עבור ADB. אם כבר הורדת את ADB, לחץ על "בחר" כדי לבחור בו.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>ADB קיים</value>
