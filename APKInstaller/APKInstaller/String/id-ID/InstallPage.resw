@@ -171,7 +171,7 @@
     <value>Tutup</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>Are you sure to cancel the installation?</value>
+    <value>Apakah Anda yakin ingin membatalkan penginstalan?</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Salin</value>
@@ -201,10 +201,10 @@
     <value>Pergi ke Pengaturan</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>A newer version is already installed</value>
+    <value>Versi yang lebih baru sudah diinstal</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>You already have installed a new version {0} of this app. Are you sure to reinstall version {1}?</value>
+    <value>Anda sudah memiliki versi baru {0} yang diinstal di aplikasi ini. Apakah anda yakin ingin menginstal ulang versi {1}?</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
@@ -225,10 +225,10 @@
     <value>Aku Tahu</value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
-    <value>Incompatible App</value>
+    <value>Aplikasi Tidak Kompatibel</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
-    <value>The minimum required for this app is {0}. Your device supports {1}. Please update your device or choose order package.</value>
+    <value>Persyaratan minimum untuk aplikasi ini adalah {0}. Perangkat Anda mendukung {1}. Perbarui perangkat Anda atau pilih paket pesanan.</value>
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
