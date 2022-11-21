@@ -121,7 +121,7 @@
     <value>ADB, גשר אנדרואיד באגים, דרוש כדי שמתקין APK יעבוד. לחץ על "הורד" כדי להוריד אותו. בהורדה אתה מקבל את התנאים וההגבלות של Google עבור ADB. אם כבר הורדת את ADB, לחץ על "בחר" כדי לבחור בו.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Exists</value>
+    <value>ADB קיים</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB חסר
@@ -134,7 +134,7 @@
     <value>יכולות</value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>App Name</value>
+    <value>שם האפליקציה</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>ביטול</value>
@@ -146,13 +146,14 @@
     <value>כן</value>
   </data>
   <data name="CancelFlyoutTextBlock.Text" xml:space="preserve">
-    <value>Are you sure to cancel the installation?</value>
+    <value>האם אתה בטוח לבטל את ההתקנה?</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>אין אפשרות להתחבר אל WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
+    <value>או ש-WSA לא התחיל כמו שצריך, או שיש בעיה עם ADB. בעיה זו יכולה להיות קשה מאוד לפתרון. הפעל מחדש את תוכנית ההתקנה. אם זה עדיין לא עובד, נסה להפעיל מחדש את המחשב.
+</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>לא ניתן לפתוח את חבילת האפליקציה
@@ -165,7 +166,7 @@
     <value>בודק...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Checking Path...</value>
+    <value>בודק נתיב...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>לחץ כאן כדי לשחזר אותם.</value>
@@ -174,7 +175,7 @@
     <value>סגור</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
-    <value>Copy</value>
+    <value>עותק</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>התקנים</value>
@@ -202,22 +203,23 @@
     <value>עבור ל'הגדרות'</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>A newer version is already installed</value>
+    <value>גרסה חדשה יותר כבר מותקנת</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>You already have installed a new version {0} of this app. Are you sure to reinstall version {1}?</value>
+    <value>כבר התקנת גירסה חדשה {0} של יישום זה. האם אתה בטוח שתתקין מחדש את גירסה {1}?</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>How to connect WSA</value>
+    <value>כיצד לחבר את WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Please make sure APK Installer has been updated to the latest version
-2. Make sure you have the Android Subsystem installed and running
-3. Turn on developer mode and make sure the IP address is displayed successfully
-4. Reopen APK Installer and continue your installation
+    <value>1. ודא שמתקין APK עודכן לגרסה האחרונה
+2. ודא שיש לך את מערכת המשנה אנדרואיד מותקן ופועל
+3. הפעל את מצב המפתח וודא שכתובת ה- IP מוצגת בהצלחה
+4. פתח מחדש את מתקין ה- APK והמשך בהתקנה
 
-[Learn More]({0})</value>
+[מידע נוסף] ({0})
+</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
     <value>Icon</value>
