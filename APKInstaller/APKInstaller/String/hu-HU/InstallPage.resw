@@ -144,15 +144,6 @@
   <data name="CancelContinueButton.Content" xml:space="preserve">
     <value>Nem</value>
   </data>
-  <data name="CancelFlyoutButtonNo.Content" xml:space="preserve">
-    <value>Nem</value>
-  </data>
-  <data name="CancelFlyoutButtonYes.Content" xml:space="preserve">
-    <value>Igen</value>
-  </data>
-  <data name="CancelFlyoutTextBlock.Text" xml:space="preserve">
-    <value>Are you sure to cancel the installation?</value>
-  </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>Nem tud csatlakozni a WSA-hoz</value>
   </data>
