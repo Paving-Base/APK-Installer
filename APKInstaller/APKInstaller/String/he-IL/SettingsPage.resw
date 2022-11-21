@@ -133,7 +133,7 @@
     <value>האם הורדה אוטומטית של חבילות מקוונות?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>בחר סוג רקע עבור Windows 11</value>
+    <value>בחר סוג רקע עבור Windows11</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
     <value>רקע</value>
@@ -142,7 +142,7 @@
     <value>שנה</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>צק אין נכשל</value>
+    <value>הבדיקה נכשלה</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
     <value>בודק עדכונים...</value>
