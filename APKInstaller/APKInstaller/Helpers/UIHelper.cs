@@ -52,10 +52,7 @@ namespace APKInstaller.Helpers
 
         public static void Navigate(Type pageType, NavigationTransitionInfo TransitionInfo, object e = null)
         {
-            DispatcherQueue?.EnqueueAsync(() =>
-            {
-                _ = (MainPage?.CoreAppFrame.Navigate(pageType, e, TransitionInfo));
-            });
+            _ = (DispatcherQueue?.EnqueueAsync(() => { _ = (MainPage?.CoreAppFrame.Navigate(pageType, e, TransitionInfo)); }));
         }
 
         public static int GetActualPixel(this double pixel)
@@ -71,7 +68,7 @@ namespace APKInstaller.Helpers
         public static string GetSizeString(this double size)
         {
             int index = 0;
-            while (true)
+            while (index <= 11)
             {
                 index++;
                 size /= 1024;
@@ -92,10 +89,17 @@ namespace APKInstaller.Helpers
                 case 2: str = "MB"; break;
                 case 3: str = "GB"; break;
                 case 4: str = "TB"; break;
+                case 5: str = "PB"; break;
+                case 6: str = "EB"; break;
+                case 7: str = "ZB"; break;
+                case 8: str = "YB"; break;
+                case 9: str = "BB"; break;
+                case 10: str = "NB"; break;
+                case 11: str = "DB"; break;
                 default:
                     break;
             }
-            return $"{size:N2}{str}";
+            return $"{size:0.##}{str}";
         }
 
         public static string GetPermissionName(this string permission)
@@ -112,8 +116,9 @@ namespace APKInstaller.Helpers
             }
         }
 
-        public static double GetProgressValue<T>(this List<T> lists, T list)
+        public static double GetProgressValue<T>(this IList<T> lists, T list)
         {
+            lists.Any();
             return (double)(lists.IndexOf(list) + 1) * 100 / lists.Count;
         }
 

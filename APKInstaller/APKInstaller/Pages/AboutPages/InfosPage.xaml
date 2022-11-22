@@ -15,6 +15,7 @@
     mc:Ignorable="d">
     <Page.Resources>
         <ResourceDictionary>
+            <converter:DoubleToBoolConverter x:Key="DoubleToBoolConverter" />
             <converter:JoinEnumerableConverter x:Key="JoinEnumerableConverter" />
             <converters:FileSizeToFriendlyStringConverter x:Key="FileSizeToFriendlyStringConverter" />
         </ResourceDictionary>
@@ -57,7 +58,6 @@
                                 <Run Foreground="{ThemeResource CardPrimaryForegroundBrush}" Text="{Binding ApkInfo.PackageName}" />
                                 <Run Foreground="{ThemeResource TextFillColorSecondaryBrush}" Text="{x:Bind sys:String.Format('v{0}', Provider.ApkInfo.VersionName), Mode=OneWay}" />
                                 <Run Foreground="{ThemeResource TextFillColorSecondaryBrush}" Text="{x:Bind sys:String.Format('({0})', Provider.ApkInfo.VersionCode), Mode=OneWay}" />
-                                <Run Foreground="{ThemeResource TextFillColorSecondaryBrush}" Text="{Binding ApkInfo.PackageSize, Converter={StaticResource FileSizeToFriendlyStringConverter}}" />
                             </Paragraph>
                             <Paragraph Foreground="{ThemeResource TextFillColorSecondaryBrush}">
                                 <Run Text="{Binding ApkInfo.MinSDK}" />
@@ -67,6 +67,9 @@
                             <Paragraph Foreground="{ThemeResource TextFillColorSecondaryBrush}">
                                 <Run x:Uid="/InfosPage/PermissionsCount" />
                                 <Run Text="{Binding ApkInfo.Permissions.Count}" />
+                                <Run Foreground="{StaticResource CardPrimaryForegroundBrush}" Text="|" />
+                                <Run x:Uid="/InfosPage/PackageSize" />
+                                <Run Text="{Binding ApkInfo.PackageSize, Converter={StaticResource FileSizeToFriendlyStringConverter}}" />
                             </Paragraph>
                         </RichTextBlock>
                         <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
@@ -188,22 +191,26 @@
                                     TextWrapping="WrapWholeWords" />
 
                                 <TextBlock
+                                    x:Name="SupportedArchitectures"
                                     x:Uid="/InfosPage/SupportedArchitectures"
                                     Grid.Row="5"
                                     Grid.Column="0"
                                     Padding="0,0,0,8"
+                                    x:Load="{x:Bind Provider.ApkInfo.SupportedABIs.Count, Converter={StaticResource DoubleToBoolConverter}, Mode=OneWay}"
                                     Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
                                 <TextBlock
+                                    x:Name="SupportedABIs"
                                     Grid.Row="5"
                                     Grid.Column="1"
                                     Padding="32,0,0,8"
+                                    x:Load="{x:Bind Provider.ApkInfo.SupportedABIs.Count, Converter={StaticResource DoubleToBoolConverter}, Mode=OneWay}"
                                     Foreground="{ThemeResource TextFillColorSecondaryBrush}"
                                     IsTextSelectionEnabled="True"
                                     Text="{Binding ApkInfo.SupportedABIs, Converter={StaticResource JoinEnumerableConverter}, ConverterParameter=', '}"
                                     TextWrapping="WrapWholeWords" />
 
                                 <TextBlock
-                                    x:Uid="/InfosPage/SupportResolutions"
+                                    x:Uid="/InfosPage/SupportScreenSizes"
                                     Grid.Row="6"
                                     Grid.Column="0"
                                     Padding="0,0,0,8"
@@ -251,7 +258,7 @@
                     </controls:SettingExpander>
                     <controls:SettingExpander x:Name="BundleInfo" x:Load="{x:Bind Provider.ApkInfo.IsBundle, Mode=OneWay}">
                         <controls:SettingExpander.Header>
-                            <controls:Setting Header="{x:Bind sys:String.Format(Provider.DepandentsHeaderFormat, Provider.ApkInfo.SplitApks.Count), Mode=OneWay}" Icon="&#xE74C;" />
+                            <controls:Setting Header="{x:Bind sys:String.Format(Provider.DependenciesHeaderFormat, Provider.ApkInfo.SplitApks.Count), Mode=OneWay}" Icon="&#xE74C;" />
                         </controls:SettingExpander.Header>
                         <controls:SettingExpander.Content>
                             <ItemsControl IsTabStop="False" ItemsSource="{Binding ApkInfo.SplitApks}">

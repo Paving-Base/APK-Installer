@@ -19,8 +19,8 @@ namespace APKInstaller.ViewModels.AboutPages
         private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("InfosPage");
 
         public string TitleFormat => _loader.GetString("TitleFormat");
-        public string DepandentsHeaderFormat => _loader.GetString("DepandentsHeaderFormat");
         public string PermissionsHeaderFormat => _loader.GetString("PermissionsHeaderFormat");
+        public string DependenciesHeaderFormat => _loader.GetString("DependenciesHeaderFormat");
 
         private ApkInfo _apkInfo = null;
         public ApkInfo ApkInfo
