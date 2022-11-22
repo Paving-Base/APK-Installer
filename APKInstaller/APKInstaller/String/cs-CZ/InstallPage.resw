@@ -139,7 +139,7 @@
     <value>Cancel</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
-    <value>Yes</value>
+    <value>Ano</value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
     <value>Ne</value>
@@ -209,61 +209,61 @@
     <value>How to connect WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Please make sure APK Installer has been updated to the latest version
-2. Make sure you have the Android Subsystem installed and running
-3. Turn on developer mode and make sure the IP address is displayed successfully
-4. Reopen APK Installer and continue your installation
+    <value>1. Ujistěte se, že instalační program APK byl aktualizován na nejnovější verzi
+2. Ujistěte se, že máte nainstalovaný a spuštěný subsystém Android
+3. Zapněte režim vývojáře a ujistěte se, že se adresa IP úspěšně zobrazuje
+4. Znovu otevřete instalační program APK a pokračujte v instalaci
 
-[Learn More]({0})</value>
+[Zjistěte více] ({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
-    <value>Icon</value>
+    <value>Ikona</value>
   </data>
   <data name="IKnow" xml:space="preserve">
-    <value>I Know</value>
+    <value>Já vím</value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
-    <value>Incompatible App</value>
+    <value>Nekompatibilní aplikace</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
-    <value>The minimum required for this app is {0}. Your device supports {1}. Please update your device or choose order package.</value>
+    <value>Minimum požadované pro tuto aplikaci je {0}. Vaše zařízení podporuje {1}. Aktualizujte zařízení nebo vyberte balíček objednávky.</value>
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
-    <value>Infos</value>
+    <value>Info</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>Install</value>
+    <value>Nainstalovat</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
-    <value>{0} is ready!</value>
+    <value>{0} je připraven!</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
-    <value>Install {0}?</value>
+    <value>Instalovat {0}?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
-    <value>Installing...</value>
+    <value>Instalování...</value>
   </data>
   <data name="InstallingPercent" xml:space="preserve">
-    <value>Installing {0}...</value>
+    <value>Instalace {0}...</value>
     <comment>{0} - Progress.</comment>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
-    <value>Reason: </value>
+    <value>Důvod:</value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
-    <value>Install WSA</value>
+    <value>Instalace služby WSA</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
-    <value>The package is either corrupted or invalid.</value>
+    <value>Balíček je poškozen nebo neplatný.</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
-    <value>The URL is either Incomplete or invalid.</value>
+    <value>Adresa URL je buď neúplná, nebo neplatná.</value>
   </data>
   <data name="Launch" xml:space="preserve">
-    <value>Launch</value>
+    <value>Spustit</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
     <value>Launching WSA...</value>
