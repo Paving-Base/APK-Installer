@@ -107,7 +107,7 @@ namespace APKInstaller.Pages.SettingsPages
                     _ = await Launcher.LaunchFolderAsync(await StorageFolder.GetFolderFromPathAsync(Provider.ADBPath[..Provider.ADBPath.LastIndexOf(@"\")]));
                     break;
                 case "LogFolder":
-                    _ = Launcher.LaunchFolderAsync(await StorageFolder.GetFolderFromPathAsync(Path.Combine(ApplicationData.Current.LocalFolder.Path, "MetroLogs")));
+                    _ = await Launcher.LaunchFolderAsync(await ApplicationData.Current.LocalFolder.CreateFolderAsync("MetroLogs", CreationCollisionOption.OpenIfExists));
                     break;
                 case "WindowsColor":
                     _ = Launcher.LaunchUriAsync(new Uri("ms-settings:colors"));

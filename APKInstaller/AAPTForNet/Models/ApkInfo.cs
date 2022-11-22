@@ -17,6 +17,7 @@ namespace AAPTForNet.Models
         /// Absolute path to apk file
         /// </summary>
         public string FullPath { get; set; }
+        public string PackagePath { get; set; }
         public Icon Icon { get; set; }
         public SDKInfo MinSDK { get; set; }
         public SDKInfo TargetSDK { get; set; }

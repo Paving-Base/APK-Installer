@@ -4,6 +4,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:aboutpages="using:APKInstaller.ViewModels.AboutPages"
     xmlns:controls="using:APKInstaller.Controls"
+    xmlns:converter="using:APKInstaller.Helpers.Converter"
+    xmlns:converters="using:CommunityToolkit.WinUI.UI.Converters"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="using:APKInstaller.AboutPages.Pages"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -11,6 +13,12 @@
     xmlns:sys="using:System"
     d:DataContext="{d:DesignInstance Type=aboutpages:InfosViewModel}"
     mc:Ignorable="d">
+    <Page.Resources>
+        <ResourceDictionary>
+            <converter:JoinEnumerableConverter x:Key="JoinEnumerableConverter" />
+            <converters:FileSizeToFriendlyStringConverter x:Key="FileSizeToFriendlyStringConverter" />
+        </ResourceDictionary>
+    </Page.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -18,7 +26,7 @@
         </Grid.RowDefinitions>
         <controls:TitleBar
             x:Name="TitleBar"
-            Title="{x:Bind sys:String.Format('About {0}', Provider.ApkInfo.AppName), Mode=OneWay}"
+            Title="{x:Bind sys:String.Format(Provider.TitleFormat, Provider.ApkInfo.AppName), Mode=OneWay}"
             BackRequested="TitleBar_BackRequested"
             IsBackButtonVisible="True"
             IsBackEnabled="{x:Bind Frame.CanGoBack}" />
@@ -37,13 +45,10 @@
                         <ColumnDefinition Width="90" />
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-                    <Border VerticalAlignment="Top">
-                        <Image AutomationProperties.AccessibilityView="Raw">
-                            <Image.Source>
-                                <BitmapImage UriSource="{Binding ApkInfo.Icon.RealPath}" />
-                            </Image.Source>
-                        </Image>
-                    </Border>
+                    <Image
+                        VerticalAlignment="Top"
+                        AutomationProperties.AccessibilityView="Raw"
+                        Source="{Binding ApkInfo.Icon.RealPath}" />
                     <StackPanel Grid.Column="1">
                         <RichTextBlock IsTextSelectionEnabled="True" TextWrapping="WrapWholeWords">
                             <Paragraph>
@@ -60,21 +65,25 @@
                                 <Run Text="{Binding ApkInfo.TargetSDK}" />
                             </Paragraph>
                             <Paragraph Foreground="{ThemeResource TextFillColorSecondaryBrush}">
-                                <Run Text="Permissions Count:" />
+                                <Run x:Uid="/InfosPage/PermissionsCount" />
                                 <Run Text="{Binding ApkInfo.Permissions.Count}" />
                             </Paragraph>
                         </RichTextBlock>
                         <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
                             <StackPanel Orientation="Horizontal">
                                 <HyperlinkButton
+                                    x:Uid="/InfosPage/OpenPackageFolder"
                                     Margin="0,0,6,0"
-                                    Content="Open Package Folder"
+                                    Click="HyperlinkButton_Click"
                                     Style="{StaticResource TextButtonStyle}"
-                                    ToolTipService.ToolTip="{Binding ApkInfo.FullPath}" />
+                                    Tag="OpenPackageFolder"
+                                    ToolTipService.ToolTip="{Binding ApkInfo.PackagePath}" />
                                 <HyperlinkButton
+                                    x:Uid="/InfosPage/SharePackage"
                                     Margin="6,0"
-                                    Content="Share Package"
-                                    Style="{StaticResource TextButtonStyle}" />
+                                    Click="HyperlinkButton_Click"
+                                    Style="{StaticResource TextButtonStyle}"
+                                    Tag="SharePackage" />
                             </StackPanel>
                         </ScrollViewer>
                     </StackPanel>
@@ -82,7 +91,7 @@
                 <controls:SettingsGroup>
                     <controls:SettingExpander IsExpanded="True">
                         <controls:SettingExpander.Header>
-                            <controls:Setting Header="基本信息" Icon="&#xE950;" />
+                            <controls:Setting x:Uid="/InfosPage/BasicInfoSettings" Icon="&#xE783;" />
                         </controls:SettingExpander.Header>
                         <controls:SettingExpander.Content>
                             <Grid Style="{StaticResource ExpanderContentGridStyle}">
@@ -102,11 +111,11 @@
                                 </Grid.RowDefinitions>
 
                                 <TextBlock
+                                    x:Uid="/InfosPage/AppName"
                                     Grid.Row="0"
                                     Grid.Column="0"
                                     Padding="0,0,0,8"
-                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}"
-                                    Text="应用名" />
+                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
                                 <TextBlock
                                     Grid.Row="0"
                                     Grid.Column="1"
@@ -117,11 +126,11 @@
                                     TextWrapping="WrapWholeWords" />
 
                                 <TextBlock
+                                    x:Uid="/InfosPage/PackageName"
                                     Grid.Row="1"
                                     Grid.Column="0"
                                     Padding="0,0,0,8"
-                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}"
-                                    Text="包名" />
+                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
                                 <TextBlock
                                     Grid.Row="1"
                                     Grid.Column="1"
@@ -132,11 +141,11 @@
                                     TextWrapping="WrapWholeWords" />
 
                                 <TextBlock
+                                    x:Uid="/InfosPage/Version"
                                     Grid.Row="2"
                                     Grid.Column="0"
                                     Padding="0,0,0,8"
-                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}"
-                                    Text="版本号" />
+                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
                                 <TextBlock
                                     Grid.Row="2"
                                     Grid.Column="1"
@@ -149,11 +158,11 @@
                                 </TextBlock>
 
                                 <TextBlock
+                                    x:Uid="/InfosPage/MinSDK"
                                     Grid.Row="3"
                                     Grid.Column="0"
                                     Padding="0,0,0,8"
-                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}"
-                                    Text="最低 SDK" />
+                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
                                 <TextBlock
                                     Grid.Row="3"
                                     Grid.Column="1"
@@ -164,11 +173,11 @@
                                     TextWrapping="WrapWholeWords" />
 
                                 <TextBlock
+                                    x:Uid="/InfosPage/TargetSDK"
                                     Grid.Row="4"
                                     Grid.Column="0"
                                     Padding="0,0,0,8"
-                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}"
-                                    Text="目标 SDK" />
+                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
                                 <TextBlock
                                     Grid.Row="4"
                                     Grid.Column="1"
@@ -179,11 +188,11 @@
                                     TextWrapping="WrapWholeWords" />
 
                                 <TextBlock
+                                    x:Uid="/InfosPage/SupportedArchitectures"
                                     Grid.Row="5"
                                     Grid.Column="0"
                                     Padding="0,0,0,8"
-                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}"
-                                    Text="支持的构架" />
+                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
                                 <TextBlock
                                     Grid.Row="5"
                                     Grid.Column="1"
@@ -194,11 +203,11 @@
                                     TextWrapping="WrapWholeWords" />
 
                                 <TextBlock
+                                    x:Uid="/InfosPage/SupportResolutions"
                                     Grid.Row="6"
                                     Grid.Column="0"
                                     Padding="0,0,0,8"
-                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}"
-                                    Text="支持的分辨率" />
+                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
                                 <TextBlock
                                     Grid.Row="6"
                                     Grid.Column="1"
@@ -209,11 +218,11 @@
                                     TextWrapping="WrapWholeWords" />
 
                                 <TextBlock
+                                    x:Uid="/InfosPage/PackageSize"
                                     Grid.Row="7"
                                     Grid.Column="0"
                                     Padding="0,0,0,8"
-                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}"
-                                    Text="安装包大小" />
+                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
                                 <TextBlock
                                     Grid.Row="7"
                                     Grid.Column="1"
@@ -227,7 +236,7 @@
                     </controls:SettingExpander>
                     <controls:SettingExpander>
                         <controls:SettingExpander.Header>
-                            <controls:Setting Header="{x:Bind sys:String.Format('权限 - 共 {0} 个', Provider.ApkInfo.Permissions.Count), Mode=OneWay}" Icon="&#xE950;" />
+                            <controls:Setting Header="{x:Bind sys:String.Format(Provider.PermissionsHeaderFormat, Provider.ApkInfo.Permissions.Count), Mode=OneWay}" Icon="&#xEA0D;" />
                         </controls:SettingExpander.Header>
                         <controls:SettingExpander.Content>
                             <Grid Style="{StaticResource ExpanderContentGridStyle}">
@@ -242,7 +251,7 @@
                     </controls:SettingExpander>
                     <controls:SettingExpander x:Name="BundleInfo" x:Load="{x:Bind Provider.ApkInfo.IsBundle, Mode=OneWay}">
                         <controls:SettingExpander.Header>
-                            <controls:Setting Header="{x:Bind sys:String.Format('依赖 - 共{0}个', Provider.ApkInfo.SplitApks.Count), Mode=OneWay}" Icon="&#xE950;" />
+                            <controls:Setting Header="{x:Bind sys:String.Format(Provider.DepandentsHeaderFormat, Provider.ApkInfo.SplitApks.Count), Mode=OneWay}" Icon="&#xE74C;" />
                         </controls:SettingExpander.Header>
                         <controls:SettingExpander.Content>
                             <ItemsControl IsTabStop="False" ItemsSource="{Binding ApkInfo.SplitApks}">

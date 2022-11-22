@@ -12,13 +12,9 @@
                 <ResourceDictionary Source="ms-appx:///Themes/SettingsUI.xaml" />
             </ResourceDictionary.MergedDictionaries>
             <!--  Other app resources here  -->
-            <converter:StringToBoolConverter x:Key="StringToBoolConverter" />
             <converters:BoolNegationConverter x:Name="BoolNegationConverter" />
-            <converter:JoinEnumerableConverter x:Key="JoinEnumerableConverter" />
             <converters:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
             <converters:StringVisibilityConverter x:Key="StringVisibilityConverter" />
-            <converters:CollectionVisibilityConverter x:Key="CollectionVisibilityConverter" />
-            <converters:FileSizeToFriendlyStringConverter x:Key="FileSizeToFriendlyStringConverter" />
             <converters:DoubleToVisibilityConverter x:Key="DoubleToVisibilityConverter" GreaterThan="0" />
             <SolidColorBrush x:Key="WindowCaptionBackground" Color="{ThemeResource ControlFillColorTransparent}" />
             <SolidColorBrush x:Key="WindowCaptionBackgroundDisabled" Color="{ThemeResource ControlFillColorTransparent}" />

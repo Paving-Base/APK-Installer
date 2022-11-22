@@ -180,6 +180,7 @@ namespace AAPTForNet
 
                 ApkInfo apk = ApkParser.Parse(manifest);
                 apk.FullPath = apkpath;
+                apk.PackagePath = path;
 
                 if (apk.Icon.IsImage)
                 {

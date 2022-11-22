@@ -102,9 +102,6 @@ namespace APKInstaller.Pages
         {
             switch ((sender as FrameworkElement).Name)
             {
-                case "MoreInfo":
-                    _ = Frame.Navigate(typeof(InfosPage), Provider.ApkInfo);
-                    break;
                 case "ActionButton":
                     Provider.InstallAPP();
                     break;
@@ -113,6 +110,9 @@ namespace APKInstaller.Pages
                     break;
                 case "FileSelectButton":
                     Provider.OpenAPK();
+                    break;
+                case "MoreInfoFlyoutItem":
+                    _ = Frame.Navigate(typeof(InfosPage), Provider.ApkInfo);
                     break;
                 case "DeviceSelectButton":
                     _ = Frame.Navigate(typeof(SettingsPage));

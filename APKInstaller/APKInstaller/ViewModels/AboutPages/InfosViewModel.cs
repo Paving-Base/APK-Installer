@@ -1,12 +1,14 @@
 ﻿using AAPTForNet.Models;
 using APKInstaller.Pages;
 using APKInstaller.Pages.AboutPages;
+using CommunityToolkit.Common;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.ApplicationModel.Resources;
 using Windows.System;
 
 namespace APKInstaller.ViewModels.AboutPages
@@ -14,6 +16,11 @@ namespace APKInstaller.ViewModels.AboutPages
     public class InfosViewModel : INotifyPropertyChanged
     {
         private InfosPage _page;
+        private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("InfosPage");
+
+        public string TitleFormat => _loader.GetString("TitleFormat");
+        public string DepandentsHeaderFormat => _loader.GetString("DepandentsHeaderFormat");
+        public string PermissionsHeaderFormat => _loader.GetString("PermissionsHeaderFormat");
 
         private ApkInfo _apkInfo = null;
         public ApkInfo ApkInfo
