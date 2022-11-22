@@ -217,7 +217,7 @@
     <value>עבור לדף המבחן.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>עבור אל TestPage</value>
+    <value>עבור אל דף בדיקה</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
     <value>כיצד לעדכן</value>
@@ -235,7 +235,7 @@
     <value>יומני</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>גרסה שונה עשויה להכיל משהו לא נעים. כגון AD, פונקציות שבורות אפילו וירוס. עבור אל Microsoft Store כדי להוריד את החנות המקורית. עיין במאגר GitHub שלנו כדי ללמוד עוד עליו.</value>
+    <value>גרסה שונה עשויה להכיל משהו לא נעים. כגון AD, פונקציות שבורות אפילו וירוס. עבור אל מיקרוסופט סטור כדי להוריד את החנות המקורית. עיין במאגר גיטהאב שלנו כדי ללמוד עוד עליו.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>אתה משתמש בגרסה ששונתה!
@@ -260,13 +260,13 @@
     <value>חשוך</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>ברירת המחדל של Windows</value>
+    <value>ברירת המחדל של חלונות</value>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
     <value>אור</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value>דרג/י ב- App Store</value>
+    <value>דרג/י ב- חנות האפליקציות</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
     <value>הערות שחרור</value>
@@ -293,7 +293,7 @@
     <value>הצג עוזרים כאשר אין מכשיר מחובר.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>האם Show Helpers?</value>
+    <value>האם הצג עוזרים?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
     <value>הצג הודעות בחלק העליון של ההגדרות.</value>
@@ -326,7 +326,7 @@
     <value>מעודכן</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>הגדרות צבע של Windows
+    <value>הגדרות צבע של חלונות
 </value>
   </data>
 </root>

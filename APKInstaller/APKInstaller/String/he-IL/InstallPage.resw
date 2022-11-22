@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, גשר אנדרואיד באגים, דרוש כדי שמתקין APK יעבוד. לחץ על "הורד" כדי להוריד אותו. בהורדה אתה מקבל את התנאים וההגבלות של Google עבור ADB. אם כבר הורדת את ADB, לחץ על "בחר" כדי לבחור בו.</value>
+    <value>ADB, גשר אנדרואיד באגים, דרוש כדי שמתקין APK יעבוד. לחץ על "הורד" כדי להוריד אותו. בהורדה אתה מקבל את התנאים וההגבלות של גוגל עבור ADB. אם כבר הורדת את ADB, לחץ על "בחר" כדי לבחור בו.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>ADB קיים</value>
@@ -131,7 +131,7 @@
     <value>קובץ APK</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>יכולות</value>
+    <value>יכולות:</value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
     <value>שם האפליקציה</value>
@@ -144,15 +144,6 @@
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
     <value>לא</value>
-  </data>
-  <data name="CancelFlyoutButtonNo.Content" xml:space="preserve">
-    <value>לא</value>
-  </data>
-  <data name="CancelFlyoutButtonYes.Content" xml:space="preserve">
-    <value>כן</value>
-  </data>
-  <data name="CancelFlyoutTextBlock.Text" xml:space="preserve">
-    <value>האם אתה בטוח לבטל את ההתקנה?</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>אין אפשרות להתחבר אל WSA</value>
@@ -175,7 +166,7 @@
     <value>בודק נתיב...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>לחץ כאן כדי לשחזר אותם.</value>
+    <value>לחץ כאן כדי לשחזר אותם</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>סגור</value>
@@ -209,7 +200,7 @@
 </value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>עבור ל'הגדרות'</value>
+    <value>עבור אל הגדרה</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
     <value>גרסה חדשה יותר כבר מותקנת</value>
@@ -258,7 +249,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
-    <value>התקן.</value>
+    <value>התקן...</value>
   </data>
   <data name="InstallingPercent" xml:space="preserve">
     <value>התקנת {0}...</value>
@@ -266,7 +257,7 @@
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
     <value>
-סיבה: </value>
+סיבה:</value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
     <value>הפעל WSA</value>
@@ -281,7 +272,7 @@
     <value>הפעל</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
-    <value>הַשָׁקָה...</value>
+    <value>הַשָׁקָהWSA...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
     <value>הפעל כשמוכן</value>
