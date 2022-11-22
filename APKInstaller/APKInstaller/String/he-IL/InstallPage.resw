@@ -272,7 +272,7 @@
     <value>הפעל</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
-    <value>הַשָׁקָה WSA...</value>
+    <value>הַשָׁקָהWSA...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
     <value>הפעל כשמוכן</value>
