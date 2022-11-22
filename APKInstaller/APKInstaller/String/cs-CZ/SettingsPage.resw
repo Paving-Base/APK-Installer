@@ -118,70 +118,70 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
-    <value>About</value>
+    <value>Asi</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>ADB Path</value>
+    <value>Cesta ADB</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>ADB Version</value>
+    <value>Verze ADB</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>Auto download when package is from URL.</value>
+    <value>Automatické stahování, pokud je balíček z adresy URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Does Auto Download Online Packages?</value>
+    <value>Stahuje se automaticky online balíčky?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>Select Backdrop Type for Windows 11</value>
+    <value>Vyberte typ pozadí pro Windows 11</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>Backdrop</value>
+    <value>Pozadí</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
-    <value>Change</value>
+    <value>Vyměnit</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>Check Failed</value>
+    <value>Kontrola se nezdařila</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>Checking For Updates...</value>
+    <value>Kontrola aktualizací...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
-    <value>Check For Updates</value>
+    <value>Vyhledat aktualizace</value>
   </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
-    <value>Clear cache</value>
+    <value>Vymazat mezipaměť</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Close ADB may break other Installers when they still open.</value>
+    <value>Zavřít ADB může přerušit ostatní instalační programy, pokud jsou stále otevřené.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Does Close ADB when Closing Installer?</value>
+    <value>Ukončí ADB při zavírání instalačního programu?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Close Installer after APK has installed and start.</value>
+    <value>Po instalaci a spuštění souboru APK zavřete instalační program.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Does Close Installer when APP is Ready?</value>
+    <value>Zavře instalační program, když je aplikace APP připravena?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
-    <value>Configs</value>
+    <value>Konfigurace</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device on network.</value>
+    <value>Připojte zařízení k síti.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
-    <value>Connect Device</value>
+    <value>Připojit zařízení</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
-    <value>Contact Me</value>
+    <value>Kontaktujte mě</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bug, please report it to me in PM. I will try my best to solve the problem. If you have Telegram account, welcome to chat at Paving Base Group 😊!</value>
+    <value>Sledujte mě na sociálních aplikacích pro nejnovější vývoj. Pokud najdete nějakou chybu, nahlaste mi ji prosím v PM. Pokusím se problém vyřešit. Pokud máte účet Telegram, vítejte na chatu na Paving Base Group 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
-    <value>Content</value>
+    <value>Obsah</value>
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
     <value>Zařízení</value>
@@ -190,70 +190,71 @@
     <value>Zobraz</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
-    <value>Supports</value>
+    <value>Podporuje</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application, and no ads will be added for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your support.💕</value>
+    <value>APK Installer je open-source aplikace a žádné reklamy nebudou přidány za účelem zisku. Pokud se vám tato aplikace líbí, nezapomeňte ji ohodnotit v obchodě. Samozřejmě by bylo lepší, kdybyste mohli trochu darovat. Děkujeme za podporu. 💕
+</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
-    <value>Feedback</value>
+    <value>Zpětná vazba</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
-    <value>Find Update</value>
+    <value>Najít aktualizaci</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>Information about the frameworks of this app.</value>
+    <value>Informace o architekturách této aplikace.</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
-    <value>Framework Information</value>
+    <value>Rámcové informace</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
-    <value>Framework</value>
+    <value>Rámec</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>Go to the page of test.</value>
+    <value>Přejděte na stránku testu.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>Go to TestPage</value>
+    <value>Přejít na TestPage</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
-    <value>Go to Update</value>
+    <value>Přejít na Aktualizovat</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
-    <value>Join Our Chat</value>
+    <value>Připojte se k našemu chatu</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Last Checked: </value>
+    <value>Poslední kontrola:</value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
-    <value>Learn More</value>
+    <value>Víc se uč</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
-    <value>Logs</value>
+    <value>Polena</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may contain something unpleasant. Such as AD, broken functions even virus. Please go to Microsoft Store to download the original one. See our GitHub Repository to learn more about it.</value>
+    <value>Upravená verze může obsahovat něco nepříjemného. Jako je AD, rozbité funkce i virus. Přejděte do obchodu Microsoft Store a stáhněte si původní produkt. Další informace najdete v našem úložišti GitHub.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>You are using a modified version!</value>
+    <value>Používáte upravenou verzi!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Disable it to connect to other devices.</value>
+    <value>Deaktivujte jej, abyste se připojili k jiným zařízením.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>Is Only for WSA?</value>
+    <value>Je pouze pro WSA?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>OS Architecture</value>
+    <value>Architektura operačního systému</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
-    <value>OS Platform</value>
+    <value>Platforma OS</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
-    <value>Others</value>
+    <value>Jiní</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Dark</value>
@@ -280,7 +281,7 @@
     <value>Reset</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
-    <value>Yes</value>
+    <value>Ano</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
     <value>Are you sure you want to reset the app?</value>
