@@ -1,8 +1,8 @@
 #### Welkom by die APK-installeerder!
 
 ##### Verklaring
-1. Volg asseblief die [APK-installeerder-eindgebruikerlisensie-ooreenkoms en privaatheidsbeleid](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. Volg asseblief die [Apk-installeerder-eindgebruikerlisensie-ooreenkoms en privaatheidsbeleid](https://github.com/Paving-Base/APK-Installer).
+1. Please follow the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+2. This program is open source software, so please make sure that the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) to keep your data safe.
 3. As die bron van die program nie abnormaal is nie, sal al jou data slegs gebruik word om saam met die program te loop of plaaslik gestoor word tydens die program wat loop, en die ontwikkelaar sal nie enige van jou data steel nie. Gee tog asseblief aandag aan die veiligheid van die omgewing.
 4. Die vertaling van die teks van hierdie toepassing kom van die [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin")-gemeenskap, en alle tekste verteenwoordig nie die skrywer se sienings nie.
 
