@@ -1,4 +1,5 @@
 ﻿using APKInstaller.Helpers;
+using APKInstaller.Pages.AboutPages;
 using APKInstaller.Pages.SettingsPages;
 using APKInstaller.ViewModels;
 using Microsoft.UI.Xaml;
@@ -101,6 +102,9 @@ namespace APKInstaller.Pages
         {
             switch ((sender as FrameworkElement).Name)
             {
+                case "MoreInfo":
+                    _ = Frame.Navigate(typeof(InfosPage), Provider.ApkInfo);
+                    break;
                 case "ActionButton":
                     Provider.InstallAPP();
                     break;
@@ -111,7 +115,7 @@ namespace APKInstaller.Pages
                     Provider.OpenAPK();
                     break;
                 case "DeviceSelectButton":
-                    Frame.Navigate(typeof(SettingsPage));
+                    _ = Frame.Navigate(typeof(SettingsPage));
                     break;
                 case "CancelConfirmButton":
                     CancelFlyout.Hide();

@@ -2,6 +2,7 @@
     x:Class="APKInstaller.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:converter="using:APKInstaller.Helpers.Converter"
     xmlns:converters="using:CommunityToolkit.WinUI.UI.Converters">
     <Application.Resources>
         <ResourceDictionary>
@@ -11,14 +12,13 @@
                 <ResourceDictionary Source="ms-appx:///Themes/SettingsUI.xaml" />
             </ResourceDictionary.MergedDictionaries>
             <!--  Other app resources here  -->
-            <converters:EmptyStringToObjectConverter
-                x:Key="StringToBoolConverter"
-                EmptyValue="False"
-                NotEmptyValue="True" />
+            <converter:StringToBoolConverter x:Key="StringToBoolConverter" />
             <converters:BoolNegationConverter x:Name="BoolNegationConverter" />
+            <converter:JoinEnumerableConverter x:Key="JoinEnumerableConverter" />
             <converters:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
             <converters:StringVisibilityConverter x:Key="StringVisibilityConverter" />
             <converters:CollectionVisibilityConverter x:Key="CollectionVisibilityConverter" />
+            <converters:FileSizeToFriendlyStringConverter x:Key="FileSizeToFriendlyStringConverter" />
             <converters:DoubleToVisibilityConverter x:Key="DoubleToVisibilityConverter" GreaterThan="0" />
             <SolidColorBrush x:Key="WindowCaptionBackground" Color="{ThemeResource ControlFillColorTransparent}" />
             <SolidColorBrush x:Key="WindowCaptionBackgroundDisabled" Color="{ThemeResource ControlFillColorTransparent}" />

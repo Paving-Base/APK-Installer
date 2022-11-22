@@ -151,6 +151,6 @@ namespace APKInstaller.ViewModels.ToolsPages
             };
         }
 
-        public object ConvertBack(object value, Type targetType, object parameter, string language) => (Visibility)value == Visibility.Visible;
+        public object ConvertBack(object value, Type targetType, object parameter, string language) => throw new NotImplementedException();
     }
 }

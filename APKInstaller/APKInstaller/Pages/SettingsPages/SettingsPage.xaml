@@ -226,84 +226,98 @@
                                     Grid.Row="0"
                                     Grid.Column="0"
                                     Padding="0,0,0,8"
-                                    Opacity="0.75" />
+                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
                                 <TextBlock
                                     Grid.Row="0"
                                     Grid.Column="1"
                                     Padding="32,0,0,8"
-                                    Text="{Binding ADBVersion}" />
+                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                    Text="{Binding ADBVersion}"
+                                    TextWrapping="WrapWholeWords" />
 
                                 <TextBlock
                                     x:Uid="/SettingsPage/FrameworkTextBlock"
                                     Grid.Row="1"
                                     Grid.Column="0"
                                     Padding="0,0,0,8"
-                                    Opacity="0.75" />
+                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
                                 <TextBlock
                                     Grid.Row="1"
                                     Grid.Column="1"
                                     Padding="32,0,0,8"
-                                    Text="{x:Bind interopservices:RuntimeInformation.FrameworkDescription}" />
+                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                    Text="{x:Bind interopservices:RuntimeInformation.FrameworkDescription}"
+                                    TextWrapping="WrapWholeWords" />
 
                                 <TextBlock
                                     Grid.Row="2"
                                     Grid.Column="0"
                                     Padding="0,0,0,8"
-                                    Opacity="0.75"
+                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}"
                                     Text="CS/WinRT" />
                                 <TextBlock
                                     Grid.Row="2"
                                     Grid.Column="1"
                                     Padding="32,0,0,8"
-                                    Text="{Binding WinRTVersion}" />
+                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                    Text="{Binding WinRTVersion}"
+                                    TextWrapping="WrapWholeWords" />
 
                                 <TextBlock
                                     Grid.Row="3"
                                     Grid.Column="0"
                                     Padding="0,0,0,8"
-                                    Opacity="0.75"
+                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}"
                                     Text="Windows SDK" />
                                 <TextBlock
                                     Grid.Row="3"
                                     Grid.Column="1"
                                     Padding="32,0,0,8"
-                                    Text="{Binding SDKVersion}" />
+                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                    Text="{Binding SDKVersion}"
+                                    TextWrapping="WrapWholeWords" />
 
                                 <TextBlock
                                     Grid.Row="4"
                                     Grid.Column="0"
                                     Padding="0,0,0,8"
-                                    Opacity="0.75"
+                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}"
                                     Text="Windows App SDK" />
                                 <TextBlock
                                     Grid.Row="4"
                                     Grid.Column="1"
                                     Padding="32,0,0,8"
-                                    Text="{Binding WASVersion}" />
+                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                    Text="{Binding WASVersion}"
+                                    TextWrapping="WrapWholeWords" />
 
                                 <TextBlock
                                     x:Uid="/SettingsPage/OSPlatformTextBlock"
                                     Grid.Row="5"
                                     Grid.Column="0"
                                     Padding="0,0,0,8"
-                                    Opacity="0.75" />
+                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
                                 <TextBlock
                                     Grid.Row="5"
                                     Grid.Column="1"
                                     Padding="32,0,0,8"
-                                    Text="{x:Bind interopservices:RuntimeInformation.OSDescription}" />
+                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                    Text="{x:Bind interopservices:RuntimeInformation.OSDescription}"
+                                    TextWrapping="WrapWholeWords" />
 
                                 <TextBlock
                                     x:Uid="/SettingsPage/OSArchitectureTextBlock"
                                     Grid.Row="6"
                                     Grid.Column="0"
                                     Padding="0,0,0,8"
-                                    Opacity="0.75" />
+                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
                                 <TextBlock
                                     Grid.Row="6"
                                     Grid.Column="1"
                                     Padding="32,0,0,8"
-                                    Text="{x:Bind interopservices:RuntimeInformation.OSArchitecture}" />
+                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                    Text="{x:Bind interopservices:RuntimeInformation.OSArchitecture}"
+                                    TextWrapping="WrapWholeWords" />
                             </Grid>
                         </controls:SettingExpander.Content>
                     </controls:SettingExpander>

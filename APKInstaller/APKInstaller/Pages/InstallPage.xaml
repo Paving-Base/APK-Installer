@@ -100,11 +100,14 @@
                         Text="Amazon" />
                 </MenuFlyoutSubItem>
             </MenuFlyoutSubItem>
-            <!--<MenuFlyoutItem x:Uid="/InstallPage/MoreInfoFlyoutItem">
+            <MenuFlyoutItem
+                x:Name="MoreInfo"
+                x:Uid="/InstallPage/MoreInfoFlyoutItem"
+                Click="Button_Click">
                 <MenuFlyoutItem.Icon>
                     <FontIcon Glyph="&#xE946;" />
                 </MenuFlyoutItem.Icon>
-            </MenuFlyoutItem>-->
+            </MenuFlyoutItem>
         </MenuFlyout>
     </Page.Resources>
 
