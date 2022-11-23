@@ -156,7 +156,7 @@
     <value>Resoluciones soportadas</value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
-    <value>Support Screen Sizes</value>
+    <value>Tamaños de pantalla soportados</value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
     <value>SDK objetivo</value>
