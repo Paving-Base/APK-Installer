@@ -235,7 +235,7 @@
     <value>Registros</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may contain something unpleasant. Such as AD, broken functions even virus. Please go to Microsoft Store to download the original one. See our GitHub Repository to learn more about it.</value>
+    <value>Una versión modificada puede contener algo desagradable. Como anuncios, funciones rotas e incluso virus. Por favor, ve a la tienda de Microsoft para descargar el original. Mira nuestro repositorio de GitHub para aprender más sobre ello.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>¡Estás usando una versión modificada!</value>
@@ -301,7 +301,7 @@
     <value>¿Mostrar anuncios?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
-    <value>It may leave temp files when an unexpected interruption occurs.</value>
+    <value>Puede que deje archivos temporales cuando una interrupción inesperada ocurra.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
     <value>¿Mostrar progreso de la instalación?</value>
