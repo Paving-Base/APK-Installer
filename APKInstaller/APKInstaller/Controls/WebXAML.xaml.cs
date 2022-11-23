@@ -1,5 +1,4 @@
-﻿using APKInstaller.Controls.Dialogs;
-using APKInstaller.Helpers;
+﻿using APKInstaller.Helpers;
 using APKInstaller.Models;
 using CommunityToolkit.WinUI;
 using CommunityToolkit.WinUI.Connectivity;

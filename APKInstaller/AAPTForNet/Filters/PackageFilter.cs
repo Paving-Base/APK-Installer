@@ -30,7 +30,7 @@ namespace AAPTForNet.Filters
             for (int i = 0; i < Segments.Length; i++)
             {
                 if (Segments[i].Contains(key))
-                {    
+                {
                     // Find key
                     output = Segments[++i]; // Get value
                     break;

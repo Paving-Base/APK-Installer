@@ -1,15 +1,7 @@
 ﻿using AAPTForNet.Models;
-using APKInstaller.Pages;
 using APKInstaller.Pages.AboutPages;
-using CommunityToolkit.Common;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Windows.ApplicationModel.Resources;
-using Windows.System;
 
 namespace APKInstaller.ViewModels.AboutPages
 {

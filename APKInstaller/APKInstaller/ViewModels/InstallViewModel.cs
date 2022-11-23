@@ -7,7 +7,6 @@ using APKInstaller.Helpers;
 using APKInstaller.Models;
 using APKInstaller.Pages;
 using APKInstaller.Pages.SettingsPages;
-using APKInstaller.ViewModels.ToolsPages;
 using CommunityToolkit.WinUI;
 using CommunityToolkit.WinUI.Connectivity;
 using Downloader;
