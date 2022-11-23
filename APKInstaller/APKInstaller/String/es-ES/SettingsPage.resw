@@ -304,7 +304,7 @@
     <value>It may leave temp files when an unexpected interruption occurs.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Is Show Progress of Installation?</value>
+    <value>¿Mostrar progreso de la instalación?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Tema de la aplicación</value>
