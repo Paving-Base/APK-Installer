@@ -1,4 +1,6 @@
-﻿using APKInstaller.Models;
+﻿using APKInstaller.Controls.Dialogs;
+using APKInstaller.Helpers;
+using APKInstaller.Models;
 using CommunityToolkit.WinUI;
 using CommunityToolkit.WinUI.Connectivity;
 using Microsoft.UI.Xaml;
@@ -72,19 +74,21 @@ namespace APKInstaller.Controls
                     try
                     {
                         string xaml = await client.GetStringAsync(value);
-                        if (string.IsNullOrWhiteSpace(xaml)) { throw new ArgumentNullException(nameof(xaml)); }
+                        if (string.IsNullOrWhiteSpace(xaml)) { throw new ArgumentNullException(nameof(xaml), $"The text fetched from {value} is empty."); }
                         UIElement = await DispatcherQueue.EnqueueAsync(() => { return (UIElement)XamlReader.Load(xaml); });
                     }
-                    catch
+                    catch (Exception e)
                     {
+                        SettingsHelper.LogManager.GetLogger(nameof(WebXAML)).Warn(e.ExceptionToMessage(), e);
                         try
                         {
                             string xaml = await client.GetStringAsync(ContentInfo.FormatURL(GitInfo.JSDELIVR_API));
-                            if (string.IsNullOrWhiteSpace(xaml)) { throw new ArgumentNullException(nameof(xaml)); }
+                            if (string.IsNullOrWhiteSpace(xaml)) { throw new ArgumentNullException(nameof(xaml), $"The text fetched from {ContentInfo.FormatURL(GitInfo.JSDELIVR_API)} is empty."); }
                             UIElement = await DispatcherQueue.EnqueueAsync(() => { return (UIElement)XamlReader.Load(xaml); });
                         }
-                        catch
+                        catch (Exception ex)
                         {
+                            SettingsHelper.LogManager.GetLogger(nameof(WebXAML)).Warn(ex.ExceptionToMessage(), ex);
                             UIElement = null;
                         }
                     }
@@ -103,8 +107,9 @@ namespace APKInstaller.Controls
                     {
                         UIElement = await DispatcherQueue.EnqueueAsync(() => { return (UIElement)XamlReader.Load(ContentXAML); });
                     }
-                    catch
+                    catch (Exception e)
                     {
+                        SettingsHelper.LogManager.GetLogger(nameof(WebXAML)).Warn(e.ExceptionToMessage(), e);
                         UIElement = null;
                     }
                     finally
@@ -123,11 +128,12 @@ namespace APKInstaller.Controls
                     try
                     {
                         string xaml = await client.GetStringAsync(ContentUri);
-                        if (string.IsNullOrWhiteSpace(xaml)) { throw new ArgumentNullException(nameof(xaml)); }
+                        if (string.IsNullOrWhiteSpace(xaml)) { throw new ArgumentNullException(nameof(xaml), $"The text fetched from {ContentUri} is empty."); }
                         UIElement = await DispatcherQueue.EnqueueAsync(() => { return (UIElement)XamlReader.Load(xaml); });
                     }
-                    catch
+                    catch (Exception e)
                     {
+                        SettingsHelper.LogManager.GetLogger(nameof(WebXAML)).Warn(e.ExceptionToMessage(), e);
                         UIElement = null;
                     }
                     finally

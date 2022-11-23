@@ -37,13 +37,14 @@ namespace APKInstaller
         private void Window_Closed(object sender, WindowEventArgs args)
         {
             Process[] processes = Process.GetProcessesByName(Process.GetCurrentProcess().ProcessName);
-            if (processes.Count() <= 1)
+            if (processes.Length <= 1)
             {
                 CachesHelper.CleanAllCaches(true);
 
                 if (SettingsHelper.Get<bool>(SettingsHelper.IsCloseADB))
                 {
-                    try { new AdbClient().KillAdb(); } catch { }
+                    try { new AdbClient().KillAdb(); }
+                    catch (Exception e) { SettingsHelper.LogManager.GetLogger(nameof(MainWindow)).Error(e.ExceptionToMessage(), e); }
                 }
             }
             else

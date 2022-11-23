@@ -362,6 +362,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                 UpdateStateSeverity = InfoBarSeverity.Error;
                 GotoUpdateVisibility = Visibility.Collapsed;
                 UpdateStateTitle = _loader.GetString("CheckFailed");
+                SettingsHelper.LogManager.GetLogger(nameof(SettingsViewModel)).Error(ex.ExceptionToMessage(), ex);
             }
             if (info != null)
             {

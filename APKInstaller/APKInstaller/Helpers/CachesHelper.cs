@@ -15,14 +15,16 @@ namespace APKInstaller.Helpers
             {
                 if (Directory.Exists(TempPath[..TempPath.LastIndexOf(@"\")]))
                 {
-                    try { Directory.Delete(TempPath[..TempPath.LastIndexOf(@"\")], true); } catch { }
+                    try { Directory.Delete(TempPath[..TempPath.LastIndexOf(@"\")], true); }
+                    catch (Exception e) { SettingsHelper.LogManager.GetLogger(nameof(CachesHelper)).Error(e.ExceptionToMessage(), e); }
                 }
             }
             else
             {
                 if (Directory.Exists(TempPath))
                 {
-                    try { Directory.Delete(TempPath, true); } catch { }
+                    try { Directory.Delete(TempPath, true); }
+                    catch (Exception e) { SettingsHelper.LogManager.GetLogger(nameof(CachesHelper)).Error(e.ExceptionToMessage(), e); }
                 }
             }
         }
@@ -33,14 +35,16 @@ namespace APKInstaller.Helpers
             {
                 if (Directory.Exists(OldTempPath[..OldTempPath.LastIndexOf(@"\")]))
                 {
-                    try { Directory.Delete(OldTempPath[..OldTempPath.LastIndexOf(@"\")], true); } catch { }
+                    try { Directory.Delete(OldTempPath[..OldTempPath.LastIndexOf(@"\")], true); }
+                    catch (Exception e) { SettingsHelper.LogManager.GetLogger(nameof(CachesHelper)).Error(e.ExceptionToMessage(), e); }
                 }
             }
             else
             {
                 if (Directory.Exists(OldTempPath))
                 {
-                    try { Directory.Delete(OldTempPath, true); } catch { }
+                    try { Directory.Delete(OldTempPath, true); }
+                    catch (Exception e) { SettingsHelper.LogManager.GetLogger(nameof(CachesHelper)).Error(e.ExceptionToMessage(), e); }
                 }
             }
         }

@@ -75,6 +75,7 @@ namespace APKInstaller.Helpers
             }
             catch (Exception e)
             {
+                SettingsHelper.LogManager.GetLogger(nameof(CommandHelper)).Error(e.ExceptionToMessage(), e);
 #if DEBUG
                 Debug.WriteLine(e.Message);
 #endif

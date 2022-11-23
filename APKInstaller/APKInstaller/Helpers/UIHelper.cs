@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Text;
 using Windows.ApplicationModel.Resources;
 using Windows.UI;
 using WinRT.Interop;
@@ -110,15 +111,15 @@ namespace APKInstaller.Helpers
                 string name = _loader.GetString(permission) ?? string.Empty;
                 return string.IsNullOrEmpty(name) ? permission : name;
             }
-            catch
+            catch (Exception e)
             {
+                SettingsHelper.LogManager.GetLogger(nameof(UIHelper)).Warn(e.ExceptionToMessage(), e);
                 return permission;
             }
         }
 
         public static double GetProgressValue<T>(this IList<T> lists, T list)
         {
-            lists.Any();
             return (double)(lists.IndexOf(list) + 1) * 100 / lists.Count;
         }
 
@@ -134,11 +135,22 @@ namespace APKInstaller.Helpers
             {
                 uri = new Uri(uriString.Contains("://") ? uriString : uriString.Contains("//") ? uriString.Replace("//", "://") : $"http://{uriString}");
             }
-            catch (FormatException)
+            catch (FormatException e)
             {
-
+                SettingsHelper.LogManager.GetLogger(nameof(UIHelper)).Error(e.ExceptionToMessage(), e);
             }
             return uri;
+        }
+
+        public static string ExceptionToMessage(this Exception ex)
+        {
+            StringBuilder builder = new();
+            builder.Append('\n');
+            if (!string.IsNullOrWhiteSpace(ex.Message)) { builder.AppendLine($"Message: {ex.Message}"); }
+            builder.AppendLine($"HResult: {ex.HResult} (0x{Convert.ToString(ex.HResult, 16)})");
+            if (!string.IsNullOrWhiteSpace(ex.StackTrace)) { builder.AppendLine(ex.StackTrace); }
+            if (!string.IsNullOrWhiteSpace(ex.HelpLink)) { builder.Append($"HelperLink: {ex.HelpLink}"); }
+            return builder.ToString();
         }
 
         public static Color ColorMixing(Color c1, Color c2)

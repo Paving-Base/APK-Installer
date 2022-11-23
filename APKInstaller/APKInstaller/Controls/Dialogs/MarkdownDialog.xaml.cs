@@ -1,3 +1,4 @@
+using APKInstaller.Helpers;
 using APKInstaller.Models;
 using CommunityToolkit.WinUI.Connectivity;
 using CommunityToolkit.WinUI.UI.Controls;
@@ -121,21 +122,23 @@ namespace APKInstaller.Controls.Dialogs
                 try
                 {
                     string text = await client.GetStringAsync(value);
-                    if (string.IsNullOrWhiteSpace(text)) { throw new ArgumentNullException(nameof(text)); }
+                    if (string.IsNullOrWhiteSpace(text)) { throw new ArgumentNullException(nameof(text), $"The text fetched from {value} is empty."); }
                     MarkdownText.Text = text;
                     Title = null;
                 }
-                catch
+                catch (Exception e)
                 {
+                    SettingsHelper.LogManager.GetLogger(nameof(MarkdownDialog)).Warn(e.ExceptionToMessage(), e);
                     try
                     {
                         string text = await client.GetStringAsync(ContentInfo.FormatURL(GitInfo.JSDELIVR_API));
-                        if (string.IsNullOrWhiteSpace(text)) { throw new ArgumentNullException(nameof(text)); }
+                        if (string.IsNullOrWhiteSpace(text)) { throw new ArgumentNullException(nameof(text), $"The text fetched from the {ContentInfo.FormatURL(GitInfo.JSDELIVR_API)} is empty."); }
                         MarkdownText.Text = text;
                         Title = null;
                     }
-                    catch
+                    catch (Exception ex)
                     {
+                        SettingsHelper.LogManager.GetLogger(nameof(MarkdownDialog)).Warn(ex.ExceptionToMessage(), ex);
                         MarkdownText.Text = string.Format(FallbackContent, value);
                         Title ??= title;
                     }
@@ -146,12 +149,13 @@ namespace APKInstaller.Controls.Dialogs
                 try
                 {
                     string text = await ContentTask();
-                    if (string.IsNullOrWhiteSpace(text)) { throw new ArgumentNullException(nameof(text)); }
+                    if (string.IsNullOrWhiteSpace(text)) { throw new ArgumentNullException(nameof(text), "The text fetched from Task is empty."); }
                     MarkdownText.Text = text;
                     Title = null;
                 }
-                catch
+                catch (Exception e)
                 {
+                    SettingsHelper.LogManager.GetLogger(nameof(MarkdownDialog)).Warn(e.ExceptionToMessage(), e);
                     MarkdownText.Text = FallbackContent;
                     Title ??= title;
                 }
@@ -173,12 +177,13 @@ namespace APKInstaller.Controls.Dialogs
                 try
                 {
                     string text = await client.GetStringAsync(ContentUri);
-                    if (string.IsNullOrWhiteSpace(text)) { throw new ArgumentNullException(nameof(text)); }
+                    if (string.IsNullOrWhiteSpace(text)) { throw new ArgumentNullException(nameof(text), $"The text fetched from {ContentUri} is empty."); }
                     MarkdownText.Text = text;
                     Title = null;
                 }
-                catch
+                catch (Exception e)
                 {
+                    SettingsHelper.LogManager.GetLogger(nameof(MarkdownDialog)).Warn(e.ExceptionToMessage(), e);
                     MarkdownText.Text = string.Format(FallbackContent, ContentUri.ToString());
                     Title ??= title;
                 }

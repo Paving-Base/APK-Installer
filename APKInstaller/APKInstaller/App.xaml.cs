@@ -2,7 +2,6 @@ using APKInstaller.Helpers;
 using APKInstaller.Helpers.Exceptions;
 using Microsoft.UI.Xaml;
 using System;
-using System.Text;
 using Windows.ApplicationModel;
 using Windows.Foundation.Metadata;
 using Windows.System.Profile;
@@ -26,9 +25,9 @@ namespace APKInstaller
             InitializeComponent();
             UnhandledException += Application_UnhandledException;
             AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
-            if (ApiInformation.IsApiContractPresent("Windows.Foundation.UniversalApiContract", 6))
+            if (ApiInformation.IsEnumNamedValuePresent("Microsoft.UI.Xaml.FocusVisualKind", "Reveal"))
             {
-                FocusVisualKind = AnalyticsInfo.VersionInfo.DeviceFamily == "Xbox" ? FocusVisualKind.Reveal : FocusVisualKind.HighVisibility;
+                FocusVisualKind = AnalyticsInfo.VersionInfo.DeviceFamily == "Windows.Xbox" ? FocusVisualKind.Reveal : FocusVisualKind.HighVisibility;
             }
         }
 
@@ -52,7 +51,7 @@ namespace APKInstaller
 
         private void Application_UnhandledException(object sender, Microsoft.UI.Xaml.UnhandledExceptionEventArgs e)
         {
-            SettingsHelper.LogManager.GetLogger("Unhandled Exception - Application").Error(ExceptionToMessage(e.Exception), e.Exception);
+            SettingsHelper.LogManager.GetLogger("Unhandled Exception - Application").Error(e.Exception.ExceptionToMessage(), e.Exception);
             e.Handled = true;
         }
 
@@ -60,7 +59,7 @@ namespace APKInstaller
         {
             if (e.ExceptionObject is Exception Exception)
             {
-                SettingsHelper.LogManager.GetLogger("Unhandled Exception - CurrentDomain").Error(ExceptionToMessage(Exception), Exception);
+                SettingsHelper.LogManager.GetLogger("Unhandled Exception - CurrentDomain").Error(Exception.ExceptionToMessage(), Exception);
             }
         }
 
@@ -76,19 +75,8 @@ namespace APKInstaller
 
         private void SynchronizationContext_UnhandledException(object sender, Helpers.Exceptions.UnhandledExceptionEventArgs e)
         {
-            SettingsHelper.LogManager.GetLogger("Unhandled Exception - SynchronizationContext").Error(ExceptionToMessage(e.Exception), e.Exception);
+            SettingsHelper.LogManager.GetLogger("Unhandled Exception - SynchronizationContext").Error(e.Exception.ExceptionToMessage(), e.Exception);
             e.Handled = true;
-        }
-
-        private static string ExceptionToMessage(Exception ex)
-        {
-            StringBuilder builder = new();
-            builder.Append('\n');
-            if (!string.IsNullOrWhiteSpace(ex.Message)) { builder.AppendLine($"Message: {ex.Message}"); }
-            builder.AppendLine($"HResult: {ex.HResult} (0x{Convert.ToString(ex.HResult, 16)})");
-            if (!string.IsNullOrWhiteSpace(ex.StackTrace)) { builder.AppendLine(ex.StackTrace); }
-            if (!string.IsNullOrWhiteSpace(ex.HelpLink)) { builder.Append($"HelperLink: {ex.HelpLink}"); }
-            return builder.ToString();
         }
 
         private Window m_window;

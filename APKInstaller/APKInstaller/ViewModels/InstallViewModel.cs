@@ -675,6 +675,7 @@ namespace APKInstaller.ViewModels
             }
             catch (Exception ex)
             {
+                SettingsHelper.LogManager.GetLogger(nameof(InstallViewModel)).Error(ex.ExceptionToMessage(), ex);
                 PackageError(ex.Message);
                 IsInstalling = false;
             }
@@ -754,6 +755,7 @@ namespace APKInstaller.ViewModels
                         }
                         catch (Exception ex)
                         {
+                            SettingsHelper.LogManager.GetLogger(nameof(InstallViewModel)).Error(ex.ExceptionToMessage(), ex);
                             ContentDialog dialogs = new()
                             {
                                 XamlRoot = _page?.XamlRoot,
@@ -972,8 +974,9 @@ namespace APKInstaller.ViewModels
                     {
                         await Task.Run(() => ADBServer.StartServer((processes != null && processes.Any()) ? processes.FirstOrDefault().MainModule?.FileName : ADBPath, restartServerIfNewer: false));
                     }
-                    catch
+                    catch (Exception ex)
                     {
+                        SettingsHelper.LogManager.GetLogger(nameof(InstallViewModel)).Warn(ex.ExceptionToMessage(), ex);
                         if (processes != null && processes.Any())
                         {
                             foreach (Process process in processes)
@@ -1022,6 +1025,7 @@ namespace APKInstaller.ViewModels
                     }
                     catch (Exception ex)
                     {
+                        SettingsHelper.LogManager.GetLogger(nameof(InstallViewModel)).Error(ex.ExceptionToMessage(), ex);
                         PackageError(ex.Message);
                         IsInitialized = true;
                         return;
@@ -1148,8 +1152,9 @@ namespace APKInstaller.ViewModels
                             WaitProgressText = _loader.GetString("WSARunning");
                             return true;
                         }
-                        catch
+                        catch (Exception ex)
                         {
+                            SettingsHelper.LogManager.GetLogger(nameof(InstallViewModel)).Error(ex.ExceptionToMessage(), ex);
                             ContentDialog dialogs = new()
                             {
                                 XamlRoot = _page?.XamlRoot,
@@ -1323,6 +1328,7 @@ namespace APKInstaller.ViewModels
             }
             catch (Exception ex)
             {
+                SettingsHelper.LogManager.GetLogger(nameof(InstallViewModel)).Error(ex.ExceptionToMessage(), ex);
                 PackageError(ex.Message);
                 IsInstalling = false;
                 return;
@@ -1334,6 +1340,7 @@ namespace APKInstaller.ViewModels
             }
             catch (Exception ex)
             {
+                SettingsHelper.LogManager.GetLogger(nameof(InstallViewModel)).Error(ex.ExceptionToMessage(), ex);
                 PackageError(ex.Message);
                 IsInstalling = false;
                 return;
@@ -1652,6 +1659,7 @@ namespace APKInstaller.ViewModels
                 IsInstalling = false;
                 TextOutput = ex.Message;
                 TextOutputVisibility = InstallOutputVisibility = Visibility.Visible;
+                SettingsHelper.LogManager.GetLogger(nameof(InstallViewModel)).Error(ex.ExceptionToMessage(), ex);
                 ActionVisibility = SecondaryActionVisibility = CancelOperationVisibility = LaunchWhenReadyVisibility = Visibility.Collapsed;
             }
 
@@ -1791,7 +1799,7 @@ namespace APKInstaller.ViewModels
                             }
                             await (_page?.DispatcherQueue.EnqueueAsync(() => { IsInitialized = true; }));
                         }
-                        catch { }
+                        catch (Exception ex) { SettingsHelper.LogManager.GetLogger(nameof(InstallViewModel)).Warn(ex.ExceptionToMessage(), ex); }
                     }
                 }
                 await (_page?.DispatcherQueue.EnqueueAsync(() => { IsInitialized = true; }));
@@ -1825,8 +1833,9 @@ namespace APKInstaller.ViewModels
                             apks.Add(item.Path);
                             continue;
                         }
-                        catch
+                        catch (Exception ex)
                         {
+                            SettingsHelper.LogManager.GetLogger(nameof(InstallViewModel)).Warn(ex.ExceptionToMessage(), ex);
                             continue;
                         }
                     }
