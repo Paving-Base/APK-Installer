@@ -2,6 +2,7 @@
 using CommunityToolkit.WinUI;
 using Microsoft.UI.Xaml;
 using System;
+using WinRT.Interop;
 using static APKInstaller.Interop.ShObjIdl;
 
 namespace APKInstaller.Helpers
@@ -14,21 +15,18 @@ namespace APKInstaller.Helpers
     /// </summary>
     public static class ProgressHelper
     {
-        private static readonly ShObjIdl.ITaskbarList4 _taskbarList;
+        private static readonly ITaskbarList4 _taskbarList;
 
         static ProgressHelper()
         {
             if (!IsSupported()) { return; }
 
-            _taskbarList = new ShObjIdl.CTaskbarList() as ShObjIdl.ITaskbarList4;
+            _taskbarList = new CTaskbarList() as ITaskbarList4;
 
             _taskbarList?.HrInit();
         }
 
-        private static bool IsSupported()
-        {
-            return OSVersionHelper.IsWindows7OrGreater;
-        }
+        private static bool IsSupported() => OSVersionHelper.IsWindows7OrGreater;
 
         /// <summary>
         /// Allows to change the status of the progress bar in the task bar.
@@ -45,9 +43,9 @@ namespace APKInstaller.Helpers
             }
 
             _ = UIHelper.DispatcherQueue.EnqueueAsync(() =>
-              {
-                  SetProgressState(state);
-              });
+            {
+                SetProgressState(state);
+            });
         }
 
         /// <summary>
@@ -74,7 +72,7 @@ namespace APKInstaller.Helpers
 
         private static void SetProgressState(ProgressState state)
         {
-            _taskbarList?.SetProgressState(GetHandle(), (TBPFLAG)Enum.Parse(typeof(TBPFLAG), ((int)state).ToString()));
+            _taskbarList?.SetProgressState(GetHandle(), (TBPFLAG)(int)state);
         }
 
         private static void SetProgressValue(int current, int max)
@@ -87,7 +85,7 @@ namespace APKInstaller.Helpers
 
         private static IntPtr GetHandle()
         {
-            return UIHelper.MainWindow != null ? WinRT.Interop.WindowNative.GetWindowHandle(UIHelper.MainWindow) : IntPtr.Zero;
+            return UIHelper.MainWindow != null ? WindowNative.GetWindowHandle(UIHelper.MainWindow) : IntPtr.Zero;
         }
     }
 

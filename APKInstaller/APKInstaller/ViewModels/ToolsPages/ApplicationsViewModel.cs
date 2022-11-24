@@ -75,7 +75,6 @@ namespace APKInstaller.ViewModels.ToolsPages
                 PackageInfos = new Dictionary<string, (string Name, BitmapImage Icon)>();
                 foreach (string file in InkInfos)
                 {
-                    Type shellType = Type.GetTypeFromProgID("WScript.Shell");
                     WshShell shell = new();
                     WshShortcut shortcut = shell.CreateShortcut(file);
                     string args = shortcut.Arguments;

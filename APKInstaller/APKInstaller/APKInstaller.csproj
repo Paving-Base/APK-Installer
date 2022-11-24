@@ -1,11 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <Copyright>Copyright © 2017 - 2022 PavingBase. All Rights Reserved.</Copyright>
     <Description>An Android Application Installer for Windows</Description>
-    <EnablePreviewMsixTooling>True</EnablePreviewMsixTooling>
+    <EnableMsixTooling>True</EnableMsixTooling>
     <LangVersion>preview</LangVersion>
     <OutputType>WinExe</OutputType>
     <PackageProjectUrl>https://github.com/Paving-Base/APK-Installer</PackageProjectUrl>
@@ -31,6 +32,7 @@
     <GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
     <GenerateTestArtifacts>False</GenerateTestArtifacts>
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">

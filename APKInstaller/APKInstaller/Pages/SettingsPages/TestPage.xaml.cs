@@ -96,10 +96,10 @@ namespace APKInstaller.Pages.SettingsPages
                     _ = Launcher.LaunchUriAsync(new Uri("ms-windows-store://pdp/?ProductId=9P2JFQ43FPPG&mode=mini"));
                     break;
                 case "OutPIP":
-                    UIHelper.MainWindow.GetAppWindowForCurrentWindow().SetPresenter(Microsoft.UI.Windowing.AppWindowPresenterKind.Default);
+                    WindowHelper.GetAppWindowForCurrentWindow().SetPresenter(Microsoft.UI.Windowing.AppWindowPresenterKind.Default);
                     break;
                 case "EnterPIP":
-                    UIHelper.MainWindow.GetAppWindowForCurrentWindow().SetPresenter(Microsoft.UI.Windowing.AppWindowPresenterKind.CompactOverlay);
+                    WindowHelper.GetAppWindowForCurrentWindow().SetPresenter(Microsoft.UI.Windowing.AppWindowPresenterKind.CompactOverlay);
                     break;
                 case "Processes":
                     _ = Frame.Navigate(typeof(ProcessesPage));

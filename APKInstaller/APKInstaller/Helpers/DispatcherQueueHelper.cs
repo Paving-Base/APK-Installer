@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices; // For DllImport
+﻿using System;
+using System.Runtime.InteropServices; // For DllImport
 using Windows.System;
 
 namespace APKInstaller.Helpers
@@ -14,9 +15,9 @@ namespace APKInstaller.Helpers
         }
 
         [DllImport("CoreMessaging.dll")]
-        private static extern int CreateDispatcherQueueController([In] DispatcherQueueOptions options, [In, Out, MarshalAs(UnmanagedType.IUnknown)] ref object dispatcherQueueController);
+        private static unsafe extern int CreateDispatcherQueueController(DispatcherQueueOptions options, IntPtr* instance);
 
-        private object m_dispatcherQueueController = null;
+        IntPtr m_dispatcherQueueController = IntPtr.Zero;
         public void EnsureWindowsSystemDispatcherQueueController()
         {
             if (DispatcherQueue.GetForCurrentThread() != null)
@@ -25,14 +26,19 @@ namespace APKInstaller.Helpers
                 return;
             }
 
-            if (m_dispatcherQueueController == null)
+            if (m_dispatcherQueueController == IntPtr.Zero)
             {
                 DispatcherQueueOptions options;
                 options.DWSize = Marshal.SizeOf(typeof(DispatcherQueueOptions));
                 options.ThreadType = 2;    // DQTYPE_THREAD_CURRENT
                 options.ApartmentType = 2; // DQTAT_COM_STA
 
-                _ = CreateDispatcherQueueController(options, ref m_dispatcherQueueController);
+                unsafe
+                {
+                    IntPtr dispatcherQueueController;
+                    _ = CreateDispatcherQueueController(options, &dispatcherQueueController);
+                    m_dispatcherQueueController = dispatcherQueueController;
+                }
             }
         }
     }
