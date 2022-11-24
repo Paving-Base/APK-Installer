@@ -1,4 +1,4 @@
-#### Willkommen zum Camila-Inst aller!
+#### Willkommen zum Chamilo-Installer
 
 ##### Erklärungen
 1. Bitte befolgen Sie die [APK Installer Endbenutzer-Lizenzvereinbarung und die Datenschutzerklärung](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
