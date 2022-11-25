@@ -123,9 +123,9 @@
   <data name="BasicInfoSettings.Header" xml:space="preserve">
     <value>基本信息</value>
   </data>
-  <data name="DepandentsHeaderFormat" xml:space="preserve">
+  <data name="DependenciesHeaderFormat" xml:space="preserve">
     <value>依赖 - 共 {0} 个</value>
-    <comment>{0} - Depandents Count.</comment>
+    <comment>{0} - Dependencies Count.</comment>
   </data>
   <data name="MinSDK.Text" xml:space="preserve">
     <value>最低 SDK</value>
@@ -140,7 +140,7 @@
     <value>安装包大小</value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
-    <value>权限数量：</value>
+    <value>权限数量</value>
   </data>
   <data name="PermissionsHeaderFormat" xml:space="preserve">
     <value>权限 - 共 {0} 个</value>
@@ -154,6 +154,9 @@
   </data>
   <data name="SupportResolutions.Text" xml:space="preserve">
     <value>支持的分辨率</value>
+  </data>
+  <data name="SupportScreenSizes.Text" xml:space="preserve">
+    <value>支持屏幕大小</value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
     <value>目标 SDK</value>
