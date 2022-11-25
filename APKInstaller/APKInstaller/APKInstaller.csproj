@@ -10,7 +10,7 @@
     <LangVersion>preview</LangVersion>
     <OutputType>WinExe</OutputType>
     <PackageProjectUrl>https://github.com/Paving-Base/APK-Installer</PackageProjectUrl>
-    <Platforms>x86;x64;arm64</Platforms>
+    <Platforms>x86;x64;ARM64</Platforms>
     <PublishProfile>win10-$(Platform).pubxml</PublishProfile>
     <RepositoryUrl>https://github.com/Paving-Base/APK-Installer</RepositoryUrl>
     <RootNamespace>APKInstaller</RootNamespace>
@@ -33,12 +33,6 @@
     <GenerateTestArtifacts>False</GenerateTestArtifacts>
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
-    <AllowedReferenceRelatedFileExtensions>.allowedextension</AllowedReferenceRelatedFileExtensions>
-    <DebugType>embedded</DebugType>
-    <Optimize>True</Optimize>
   </PropertyGroup>
 
   <ItemGroup>

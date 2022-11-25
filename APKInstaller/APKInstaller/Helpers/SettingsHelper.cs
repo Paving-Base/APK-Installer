@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.Storage;
 using Windows.UI.ViewManagement;
+using IObjectSerializer = CommunityToolkit.Common.Helpers.IObjectSerializer;
 
 namespace APKInstaller.Helpers
 {
@@ -136,9 +137,9 @@ namespace APKInstaller.Helpers
         }
     }
 
-    public class SystemTextJsonObjectSerializer : CommunityToolkit.Common.Helpers.IObjectSerializer
+    public class SystemTextJsonObjectSerializer : IObjectSerializer
     {
-        string CommunityToolkit.Common.Helpers.IObjectSerializer.Serialize<T>(T value) => JsonSerializer.Serialize(value);
+        string IObjectSerializer.Serialize<T>(T value) => JsonSerializer.Serialize(value);
 
         public T Deserialize<T>(string value) => JsonSerializer.Deserialize<T>(value);
     }

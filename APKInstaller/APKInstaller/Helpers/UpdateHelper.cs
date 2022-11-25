@@ -1,5 +1,6 @@
 ﻿using APKInstaller.Models;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -69,15 +70,15 @@ namespace APKInstaller.Helpers
 
         private static SystemVersionInfo GetAsVersionInfo(string version)
         {
-            System.Collections.Generic.List<int> nums = GetVersionNumbers(version).Split('.').Select(int.Parse).ToList();
+            List<int> nums = GetVersionNumbers(version).Split('.').Select(int.Parse).ToList();
 
             return nums.Count <= 1
                 ? new SystemVersionInfo(nums[0], 0, 0, 0)
                 : nums.Count <= 2
                     ? new SystemVersionInfo(nums[0], nums[1], 0, 0)
                     : nums.Count <= 3
-                                    ? new SystemVersionInfo(nums[0], nums[1], nums[2], 0)
-                                    : new SystemVersionInfo(nums[0], nums[1], nums[2], nums[3]);
+                        ? new SystemVersionInfo(nums[0], nums[1], nums[2], 0)
+                        : new SystemVersionInfo(nums[0], nums[1], nums[2], nums[3]);
         }
 
         private static string GetVersionNumbers(string version)

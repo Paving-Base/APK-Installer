@@ -46,7 +46,7 @@
                     Visibility="Collapsed" />
             </Grid>
         </ScrollViewer>
-        <Button
+        <HyperlinkButton
             x:Name="MoreButton"
             x:Uid="/CapabilitiesInfoControl/MoreButton"
             Grid.Row="2"
@@ -55,7 +55,6 @@
             Background="Transparent"
             BorderThickness="0"
             Click="MoreButton_Click"
-            Foreground="{StaticResource SystemAccentColor}"
             TabIndex="4"
             UseSystemFocusVisuals="True" />
     </Grid>
