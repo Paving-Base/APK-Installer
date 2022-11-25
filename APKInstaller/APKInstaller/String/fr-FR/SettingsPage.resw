@@ -205,13 +205,13 @@
     <value>Find Update</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>Information about the frameworks of this app.</value>
+    <value>Informations sur les frameworks de cette application.</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
-    <value>Framework Information</value>
+    <value>Informations sur le cadre</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
-    <value>Framework</value>
+    <value>Structure</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>Aller à la page de test.</value>
@@ -235,28 +235,28 @@
     <value>Logs</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may contain something unpleasant. Such as AD, broken functions even virus. Please go to Microsoft Store to download the original one. See our GitHub Repository to learn more about it.</value>
+    <value>Une version modifiée peut contenir quelque chose de désagréable, comme la AD, des fonctions cassées même le virus. Veuillez vous rendre sur Microsoft Store pour télécharger le dépôt original. Consultez notre dépôt GitHub pour en savoir plus.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>Vous utilisez une version modifiée!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Disable it to connect to other devices.</value>
+    <value>Désactivez-le pour vous connecter à d'autres appareils.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>Is Only for WSA?</value>
+    <value>Est seulement pour la WSA?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>OS Architecture</value>
+    <value>L'architecture</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
-    <value>OS Platform</value>
+    <value>Plateforme OS</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
-    <value>Others</value>
+    <value>D'autres</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>Dark</value>
+    <value>Fonce</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
     <value>Par défaut de Windows</value>
@@ -265,31 +265,31 @@
     <value>Clair</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value>Rate On Store</value>
+    <value>Noter sur l'App Store</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
-    <value>Release notes</value>
+    <value>Informations sur les versions</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
     <value>Réinitialiser les paramètres de cette application.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
-    <value>Reset application</value>
+    <value>Réinitialiser l'application</value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
-    <value>Reset</value>
+    <value>Réinitialiser</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
     <value>Oui</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
-    <value>Are you sure you want to reset the app?</value>
+    <value>Êtes-vous sûr de vouloir réinitialiser l'interface graphique ?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
-    <value>Select Device</value>
+    <value>Sélectionner l’appareil</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
-    <value>Show helpers when no device is connected.</value>
+    <value>Afficher les aides quand aucun périphérique n'est connecté.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
     <value>Is Show Helpers?</value>
