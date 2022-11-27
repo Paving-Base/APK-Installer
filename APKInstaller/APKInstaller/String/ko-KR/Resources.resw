@@ -118,31 +118,31 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="APKDescription" xml:space="preserve">
-    <value>안드로이드 앱 아이콘</value>
+    <value>신청서 패키지</value>
   </data>
   <data name="APKFile" xml:space="preserve">
     <value>앱 설치 파일</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>An Android App Installer. Written by @wherewhere and @Tangent-90.</value>
+    <value>APK Installer. 제작자: @wherewhere 와 @Tangent-90 </value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>APK Installer</value>
+    <value>APK 설치되었습니다</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
-    <value>There was an error with the program…</value>
+    <value>There was an error with the file upload.</value>
   </data>
   <data name="ImageLoadError" xml:space="preserve">
-    <value>Picture loading failed.</value>
+    <value>이미지 업로드 실패. 다시 시도하세요.</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
     <value>There are some problems with the network...</value>
   </data>
   <data name="No" xml:space="preserve">
-    <value>아니오</value>
+    <value>비활성화</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>Split APK File</value>
+    <value>파일 분할하기</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>예</value>
