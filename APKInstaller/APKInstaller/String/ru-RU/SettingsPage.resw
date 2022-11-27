@@ -301,10 +301,10 @@
     <value>Показывать уведомления?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
-    <value>It may leave temp files when an unexpected interruption occurs.</value>
+    <value>Могут остаться временные файлы при неожиданной остановке.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Is Show Progress of Installation?</value>
+    <value>Показать прогресс установки?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Тема приложения</value>
