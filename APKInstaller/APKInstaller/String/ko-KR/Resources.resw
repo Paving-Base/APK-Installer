@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="APKDescription" xml:space="preserve">
-    <value>신청서 패키지</value>
+    <value>Android Application Package</value>
   </data>
   <data name="APKFile" xml:space="preserve">
     <value>앱 설치 파일</value>
