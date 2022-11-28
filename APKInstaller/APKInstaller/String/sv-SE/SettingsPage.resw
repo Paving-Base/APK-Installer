@@ -136,7 +136,7 @@
     <value>Välj Typ av bakgrund för Windows 11</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>%d Bakgrund</value>
+    <value>Backdrop</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
     <value>Ändringar</value>
