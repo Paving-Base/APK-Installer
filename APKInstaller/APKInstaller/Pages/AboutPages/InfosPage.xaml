@@ -27,7 +27,7 @@
         </Grid.RowDefinitions>
         <controls:TitleBar
             x:Name="TitleBar"
-            Title="{x:Bind sys:String.Format(Provider.TitleFormat, Provider.ApkInfo.AppName), Mode=OneWay}"
+            Title="{x:Bind sys:String.Format(Provider.TitleFormat, Provider.AppLocaleName), Mode=OneWay}"
             BackRequested="TitleBar_BackRequested"
             IsBackButtonVisible="True"
             IsBackEnabled="{x:Bind Frame.CanGoBack}" />
@@ -53,7 +53,7 @@
                     <StackPanel Grid.Column="1">
                         <RichTextBlock IsTextSelectionEnabled="True" TextWrapping="WrapWholeWords">
                             <Paragraph>
-                                <Run Foreground="{ThemeResource CardPrimaryForegroundBrush}" Text="{Binding ApkInfo.AppName}" />
+                                <Run Foreground="{ThemeResource CardPrimaryForegroundBrush}" Text="{Binding AppLocaleName}" />
                                 <Run Foreground="{ThemeResource CardPrimaryForegroundBrush}" Text="-" />
                                 <Run Foreground="{ThemeResource CardPrimaryForegroundBrush}" Text="{Binding ApkInfo.PackageName}" />
                                 <Run Foreground="{ThemeResource TextFillColorSecondaryBrush}" Text="{x:Bind sys:String.Format('v{0}', Provider.ApkInfo.VersionName), Mode=OneWay}" />
@@ -103,6 +103,8 @@
                                     <ColumnDefinition Width="*" />
                                 </Grid.ColumnDefinitions>
                                 <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
                                     <RowDefinition Height="Auto" />
                                     <RowDefinition Height="Auto" />
                                     <RowDefinition Height="Auto" />
@@ -225,23 +227,61 @@
                                     TextWrapping="WrapWholeWords" />
 
                                 <TextBlock
-                                    x:Uid="/InfosPage/PackageSize"
+                                    x:Name="SupportResolutions"
+                                    x:Uid="/InfosPage/SupportResolutions"
                                     Grid.Row="7"
+                                    Grid.Column="0"
+                                    Padding="0,0,0,8"
+                                    x:Load="{x:Bind Provider.ApkInfo.SupportDensities.Count, Converter={StaticResource DoubleToBoolConverter}, Mode=OneWay}"
+                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
+                                <TextBlock
+                                    x:Name="SupportDensities"
+                                    Grid.Row="7"
+                                    Grid.Column="1"
+                                    Padding="32,0,0,8"
+                                    x:Load="{x:Bind Provider.ApkInfo.SupportDensities.Count, Converter={StaticResource DoubleToBoolConverter}, Mode=OneWay}"
+                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                    IsTextSelectionEnabled="True"
+                                    Text="{Binding ApkInfo.SupportDensities, Converter={StaticResource JoinEnumerableConverter}, ConverterParameter=', '}"
+                                    TextWrapping="WrapWholeWords" />
+
+                                <TextBlock
+                                    x:Uid="/InfosPage/PackageSize"
+                                    Grid.Row="8"
                                     Grid.Column="0"
                                     Padding="0,0,0,8"
                                     Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
                                 <TextBlock
-                                    Grid.Row="7"
+                                    Grid.Row="8"
                                     Grid.Column="1"
                                     Padding="32,0,0,8"
                                     Foreground="{ThemeResource TextFillColorSecondaryBrush}"
                                     IsTextSelectionEnabled="True"
                                     Text="{Binding ApkInfo.PackageSize, Converter={StaticResource FileSizeToFriendlyStringConverter}}"
                                     TextWrapping="WrapWholeWords" />
+
+                                <TextBlock
+                                    x:Name="Languages"
+                                    x:Uid="/InfosPage/Languages"
+                                    Grid.Row="9"
+                                    Grid.Column="0"
+                                    Padding="0,0,0,8"
+                                    x:Load="{x:Bind Provider.ApkInfo.SupportLocales.Count, Converter={StaticResource DoubleToBoolConverter}, Mode=OneWay}"
+                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
+                                <TextBlock
+                                    x:Name="SupportLocales"
+                                    Grid.Row="9"
+                                    Grid.Column="1"
+                                    Padding="32,0,0,8"
+                                    x:Load="{x:Bind Provider.ApkInfo.SupportLocales.Count, Converter={StaticResource DoubleToBoolConverter}, Mode=OneWay}"
+                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                    IsTextSelectionEnabled="True"
+                                    Text="{Binding ApkInfo.SupportLocales, Converter={StaticResource JoinEnumerableConverter}, ConverterParameter=', '}"
+                                    TextWrapping="WrapWholeWords" />
                             </Grid>
                         </controls:SettingExpander.Content>
                     </controls:SettingExpander>
-                    <controls:SettingExpander>
+                    <controls:SettingExpander x:Name="PermissionInfoSettings" x:Load="{x:Bind Provider.ApkInfo.Permissions.Count, Converter={StaticResource DoubleToBoolConverter}, Mode=OneWay}">
                         <controls:SettingExpander.Header>
                             <controls:Setting Header="{x:Bind sys:String.Format(Provider.PermissionsHeaderFormat, Provider.ApkInfo.Permissions.Count), Mode=OneWay}" Icon="&#xEA0D;" />
                         </controls:SettingExpander.Header>
@@ -256,7 +296,22 @@
                             </Grid>
                         </controls:SettingExpander.Content>
                     </controls:SettingExpander>
-                    <controls:SettingExpander x:Name="BundleInfo" x:Load="{x:Bind Provider.ApkInfo.IsBundle, Mode=OneWay}">
+                    <controls:SettingExpander x:Name="FeatureInfoSettings" x:Load="{x:Bind Provider.ApkInfo.Features.Count, Converter={StaticResource DoubleToBoolConverter}, Mode=OneWay}">
+                        <controls:SettingExpander.Header>
+                            <controls:Setting Header="{x:Bind sys:String.Format(Provider.FeaturesHeaderFormat, Provider.ApkInfo.Features.Count), Mode=OneWay}" Icon="&#xEA0D;" />
+                        </controls:SettingExpander.Header>
+                        <controls:SettingExpander.Content>
+                            <Grid Style="{StaticResource ExpanderContentGridStyle}">
+                                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+                                    <TextBlock
+                                        Foreground="{ThemeResource CardPrimaryForegroundBrush}"
+                                        IsTextSelectionEnabled="True"
+                                        Text="{Binding Features}" />
+                                </ScrollViewer>
+                            </Grid>
+                        </controls:SettingExpander.Content>
+                    </controls:SettingExpander>
+                    <controls:SettingExpander x:Name="BundleInfoSettings" x:Load="{x:Bind Provider.ApkInfo.IsBundle, Mode=OneWay}">
                         <controls:SettingExpander.Header>
                             <controls:Setting Header="{x:Bind sys:String.Format(Provider.DependenciesHeaderFormat, Provider.ApkInfo.SplitApks.Count), Mode=OneWay}" Icon="&#xE74C;" />
                         </controls:SettingExpander.Header>

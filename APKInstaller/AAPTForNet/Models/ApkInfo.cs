@@ -7,28 +7,33 @@ namespace AAPTForNet.Models
 {
     public class ApkInfo
     {
-        public string AppName { get; set; }
-        public string SplitName { get; set; }
-        public string PackageName { get; set; }
-        public string VersionName { get; set; }
-        public string VersionCode { get; set; }
+        public string AppName { get; set; } = string.Empty;
+        public string SplitName { get; set; } = string.Empty;
+        public string PackageName { get; set; } = string.Empty;
+        public string VersionName { get; set; } = string.Empty;
+        public string VersionCode { get; set; } = string.Empty;
 
         /// <summary>
         /// Absolute path to apk file
         /// </summary>
-        public string FullPath { get; set; }
-        public string PackagePath { get; set; }
-        public Icon Icon { get; set; }
-        public SDKInfo MinSDK { get; set; }
-        public SDKInfo TargetSDK { get; set; }
-        public List<ApkInfo> SplitApks { get; set; }
-        public List<string> Permissions { get; set; }
+        public string FullPath { get; set; } = string.Empty;
+        public string PackagePath { get; set; } = string.Empty;
+        public string LaunchableActivity { get; set; } = string.Empty;
+        public Icon Icon { get; set; } = Icon.Default;
+        public SDKInfo MinSDK { get; set; } = SDKInfo.Unknown;
+        public SDKInfo TargetSDK { get; set; } = SDKInfo.Unknown;
+        public List<ApkInfo> SplitApks { get; set; } = new();
+        public List<string> Features { get; set; } = new();
+        public List<string> Permissions { get; set; } = new();
 
         /// <summary>
         /// Supported application binary interfaces
         /// </summary>
-        public List<string> SupportedABIs { get; set; }
-        public List<string> SupportScreens { get; set; }
+        public List<string> SupportedABIs { get; set; } = new();
+        public List<string> SupportLocales { get; set; } = new();
+        public List<string> SupportScreens { get; set; } = new();
+        public List<string> SupportDensities { get; set; } = new();
+        public Dictionary<string, string> LocaleLabels { get; set; } = new();
 
         /// <summary>
         /// Size of package, in bytes
@@ -57,21 +62,6 @@ namespace AAPTForNet.Models
 
         public bool IsBundle => SplitApks != null && SplitApks.Any();
 
-        public ApkInfo()
-        {
-            AppName = string.Empty;
-            PackageName = string.Empty;
-            VersionName = string.Empty;
-            VersionCode = string.Empty;
-            FullPath = string.Empty;
-            Icon = Icon.Default;
-            MinSDK = SDKInfo.Unknown;
-            TargetSDK = SDKInfo.Unknown;
-            Permissions = new List<string>();
-            SupportedABIs = new List<string>();
-            SupportScreens = new List<string>();
-        }
-
         public void AddSplit(ApkInfo info) => SplitApks.Add(info);
 
         public void AddSplit(string path) => SplitApks.Add(AAPTool.Decompile(path));
@@ -99,11 +89,23 @@ namespace AAPTForNet.Models
                 init.PackageName = pckApk.PackageName;
             }
 
+            ApkInfo lauApk = apks.FirstOrDefault(a => a.LaunchableActivity.Length > 0);
+            if (lauApk != null)
+            {
+                init.LaunchableActivity = lauApk.LaunchableActivity;
+            }
+
             ApkInfo sdkApk = apks.FirstOrDefault(a => !SDKInfo.Unknown.Equals(a.MinSDK));
             if (sdkApk != null)
             {
                 init.MinSDK = sdkApk.MinSDK;
                 init.TargetSDK = sdkApk.TargetSDK;
+            }
+
+            ApkInfo feaApk = apks.FirstOrDefault(a => a.Features.Count > 0);
+            if (feaApk != null)
+            {
+                init.Features = feaApk.Features;
             }
 
             ApkInfo perApk = apks.FirstOrDefault(a => a.Permissions.Count > 0);
@@ -112,16 +114,34 @@ namespace AAPTForNet.Models
                 init.Permissions = perApk.Permissions;
             }
 
+            ApkInfo labApk = apks.FirstOrDefault(a => a.LocaleLabels.Count > 0);
+            if (labApk != null)
+            {
+                init.LocaleLabels = labApk.LocaleLabels;
+            }
+
             ApkInfo abiApk = apks.FirstOrDefault(a => a.SupportedABIs.Count > 0);
             if (abiApk != null)
             {
                 init.SupportedABIs = abiApk.SupportedABIs;
             }
 
+            ApkInfo locApk = apks.FirstOrDefault(a => a.SupportLocales.Count > 0);
+            if (locApk != null)
+            {
+                init.SupportLocales = locApk.SupportLocales;
+            }
+
             ApkInfo scrApk = apks.FirstOrDefault(a => a.SupportScreens.Count > 0);
             if (scrApk != null)
             {
                 init.SupportScreens = scrApk.SupportScreens;
+            }
+
+            ApkInfo denApk = apks.FirstOrDefault(a => a.SupportDensities.Count > 0);
+            if (denApk != null)
+            {
+                init.SupportDensities = denApk.SupportDensities;
             }
 
             ApkInfo iconApk = apks.FirstOrDefault(a => !Icon.Default.Equals(a.Icon));

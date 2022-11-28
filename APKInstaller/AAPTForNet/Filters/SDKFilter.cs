@@ -6,7 +6,7 @@ namespace AAPTForNet.Filters
     internal class SDKFilter : BaseFilter
     {
         private readonly List<string> Msessges = new();
-        private string[] Segments => string.Join(" ", Msessges).Split(Seperator);
+        private string[] Segments => string.Join(string.Empty, Msessges).Split(Seperator);
 
         public override bool CanHandle(string msg) => msg.StartsWith("sdkVersion:") || msg.StartsWith("targetSdkVersion:");
 
@@ -33,7 +33,7 @@ namespace AAPTForNet.Filters
         {
             for (int i = 0; i < Segments.Length; i++)
             {
-                if (Segments[i].Contains("sdkVersion"))
+                if (Segments[i].StartsWith("sdkVersion:"))
                 {
                     return Segments[++i];
                 }
@@ -45,7 +45,7 @@ namespace AAPTForNet.Filters
         {
             for (int i = 0; i < Segments.Length; i++)
             {
-                if (Segments[i].Contains("targetSdkVersion"))
+                if (Segments[i].StartsWith("targetSdkVersion:"))
                 {
                     return Segments[++i];
                 }

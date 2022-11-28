@@ -1,4 +1,5 @@
-﻿using AdvancedSharpAdbClient;
+﻿using AAPTForNet.Models;
+using AdvancedSharpAdbClient;
 using APKInstaller.Pages;
 using CommunityToolkit.WinUI;
 using Microsoft.UI.Dispatching;
@@ -109,7 +110,7 @@ namespace APKInstaller.Helpers
             try
             {
                 string name = _loader.GetString(permission) ?? string.Empty;
-                return string.IsNullOrEmpty(name) ? permission : name;
+                return string.IsNullOrWhiteSpace(name) ? permission : name;
             }
             catch (Exception e)
             {

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using AAPTForNet.Models;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using Windows.Globalization;
@@ -85,7 +86,7 @@ namespace APKInstaller.Helpers
 
         public static readonly List<CultureInfo> SupportCultures = SupportLanguages.Select(x => new CultureInfo(x)).ToList();
 
-        public static int FindIndexFromSupportLanguageCodes(string language) => SupportLanguageCodes.FindIndex(code => code.ToLowerInvariant().Contains(language.ToLowerInvariant()));
+        public static int FindIndexFromSupportLanguageCodes(string language) => SupportLanguageCodes.FindIndex(code => code.ToLowerInvariant().Split(", ").Contains(language.ToLowerInvariant()));
 
         public static string GetCurrentLanguage()
         {
@@ -104,9 +105,43 @@ namespace APKInstaller.Helpers
         public static string GetPrimaryLanguage()
         {
             string language = ApplicationLanguages.PrimaryLanguageOverride;
-            if (string.IsNullOrEmpty(language)) { return GetCurrentLanguage(); }
+            if (string.IsNullOrWhiteSpace(language)) { return GetCurrentLanguage(); }
             int temp = FindIndexFromSupportLanguageCodes(language);
             return temp == -1 ? FallbackLanguageCode : SupportLanguages[temp];
+        }
+
+        public static string GetLocaleLabel(this ApkInfo info)
+        {
+            if (info.LocaleLabels.Any())
+            {
+                int index = -1;
+                string language = ApplicationLanguages.PrimaryLanguageOverride;
+                if (string.IsNullOrWhiteSpace(language))
+                {
+                    IReadOnlyList<string> languages = GlobalizationPreferences.Languages;
+                    foreach (string lang in languages)
+                    {
+                        index = FindIndexFromSupportLanguageCodes(lang);
+                        if (index != -1) { break; }
+                    }
+                }
+                else
+                {
+                    index = FindIndexFromSupportLanguageCodes(language);
+                }
+                if (index != -1)
+                {
+                    string code = SupportLanguageCodes[index].ToLowerInvariant();
+                    foreach (KeyValuePair<string, string> label in info.LocaleLabels)
+                    {
+                        if (code.ToLowerInvariant().Contains(label.Key.ToLowerInvariant()))
+                        {
+                            return label.Value;
+                        }
+                    }
+                }
+            }
+            return info.AppName;
         }
     }
 }

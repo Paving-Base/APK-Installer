@@ -1,4 +1,5 @@
 ﻿using AAPTForNet.Models;
+using APKInstaller.Helpers;
 using APKInstaller.Pages.AboutPages;
 using System.ComponentModel;
 using Windows.ApplicationModel.Resources;
@@ -11,6 +12,7 @@ namespace APKInstaller.ViewModels.AboutPages
         private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("InfosPage");
 
         public string TitleFormat => _loader.GetString("TitleFormat");
+        public string FeaturesHeaderFormat => _loader.GetString("FeaturesHeaderFormat");
         public string PermissionsHeaderFormat => _loader.GetString("PermissionsHeaderFormat");
         public string DependenciesHeaderFormat => _loader.GetString("DependenciesHeaderFormat");
 
@@ -29,6 +31,20 @@ namespace APKInstaller.ViewModels.AboutPages
             }
         }
 
+        private string _features;
+        public string Features
+        {
+            get => _features;
+            set
+            {
+                if (_features != value)
+                {
+                    _features = value;
+                    RaisePropertyChangedEvent();
+                }
+            }
+        }
+
         private string _permissions;
         public string Permissions
         {
@@ -38,6 +54,20 @@ namespace APKInstaller.ViewModels.AboutPages
                 if (_permissions != value)
                 {
                     _permissions = value;
+                    RaisePropertyChangedEvent();
+                }
+            }
+        }
+
+        private string _appLocaleName;
+        public string AppLocaleName
+        {
+            get => _appLocaleName;
+            set
+            {
+                if (_appLocaleName != value)
+                {
+                    _appLocaleName = value;
                     RaisePropertyChangedEvent();
                 }
             }
@@ -58,7 +88,9 @@ namespace APKInstaller.ViewModels.AboutPages
 
         private void UpdateInfos(ApkInfo value)
         {
+            Features = string.Join('\n', value.Features);
             Permissions = string.Join('\n', value.Permissions);
+            AppLocaleName = value.GetLocaleLabel();
         }
     }
 }

@@ -18,12 +18,17 @@ namespace AAPTForNet
             }
 
             List<BaseFilter> filters = new() {
-                new ABIFilter(),
+                new PermissionFilter(),
+                new LabelFilter(),
+                new FeatureFilter(),
                 new SDKFilter(),
                 new PackageFilter(),
-                new PermissionFilter(),
+                new ApplicationFilter(),
                 new SupportScrFilter(),
-                new ApplicationFilter()
+                new LocaleFilter(),
+                new DensityFilter(),
+                new ABIFilter(),
+                new LaunchableFilter()
             };
 
             foreach (string msg in model.Messages)

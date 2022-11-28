@@ -59,6 +59,7 @@ namespace APKInstaller.ViewModels
 
         public static InstallViewModel Caches;
 
+        public string AppLocaleName = string.Empty;
         public string InstallFormat => _loader.GetString("InstallFormat");
         public string VersionFormat => _loader.GetString("VersionFormat");
         public string PackageNameFormat => _loader.GetString("PackageNameFormat");
@@ -647,7 +648,7 @@ namespace APKInstaller.ViewModels
             _page = Page;
             Caches = this;
             _operation = Operation;
-            _path = string.IsNullOrEmpty(Path) ? _path : Path;
+            _path = string.IsNullOrWhiteSpace(Path) ? _path : Path;
             // 不要更改此代码。请将清理代码放入“Dispose(bool disposing)”方法中
             Dispose(disposing: false);
         }
@@ -959,7 +960,7 @@ namespace APKInstaller.ViewModels
         private async Task InitilizeADB()
         {
             WaitProgressText = _loader.GetString("Loading");
-            if (!string.IsNullOrEmpty(_path) || _url != null)
+            if (!string.IsNullOrWhiteSpace(_path) || _url != null)
             {
                 IAdbServer ADBServer = AdbServer.Instance;
                 if (!ADBServer.GetStatus().IsRunning)
@@ -1013,7 +1014,7 @@ namespace APKInstaller.ViewModels
 
         private async Task InitilizeUI()
         {
-            if (!string.IsNullOrEmpty(_path) || _url != null)
+            if (!string.IsNullOrWhiteSpace(_path) || _url != null)
             {
                 WaitProgressText = _loader.GetString("Loading");
                 if (NetAPKExist)
@@ -1021,6 +1022,7 @@ namespace APKInstaller.ViewModels
                     try
                     {
                         ApkInfo = await Task.Run(() => { return AAPTool.Decompile(_path); });
+                        AppLocaleName = ApkInfo.GetLocaleLabel();
                     }
                     catch (Exception ex)
                     {
@@ -1063,7 +1065,7 @@ namespace APKInstaller.ViewModels
                             ActionButtonText = _loader.GetString("Install");
                             InfoMessage = _loader.GetString("WaitingDevice");
                             DeviceSelectButtonText = _loader.GetString("Devices");
-                            AppName = string.Format(_loader.GetString("WaitingForInstallFormat"), ApkInfo?.AppName);
+                            AppName = string.Format(_loader.GetString("WaitingForInstallFormat"), AppLocaleName);
                             ActionVisibility = DeviceSelectVisibility = MessagesToUserVisibility = Visibility.Visible;
                         }
                         else
@@ -1224,7 +1226,7 @@ namespace APKInstaller.ViewModels
         private async Task ReinitilizeUI()
         {
             WaitProgressText = _loader.GetString("Loading");
-            if ((!string.IsNullOrEmpty(_path) || _url != null) && NetAPKExist)
+            if ((!string.IsNullOrWhiteSpace(_path) || _url != null) && NetAPKExist)
             {
                 checkdevice:
                 if (CheckDevice() && _device != null)
@@ -1260,22 +1262,25 @@ namespace APKInstaller.ViewModels
             if (info == null)
             {
                 ActionButtonText = _loader.GetString("Install");
-                AppName = string.Format(_loader.GetString("InstallFormat"), ApkInfo?.AppName);
-                ActionVisibility = LaunchWhenReadyVisibility = Visibility.Visible;
+                AppName = string.Format(_loader.GetString("InstallFormat"), AppLocaleName);
+                ActionVisibility = Visibility.Visible;
+                LaunchWhenReadyVisibility = string.IsNullOrWhiteSpace(ApkInfo?.LaunchableActivity) ? Visibility.Collapsed : Visibility.Visible;
             }
             else if (info.VersionCode < int.Parse(ApkInfo?.VersionCode))
             {
                 ActionButtonText = _loader.GetString("Update");
-                AppName = string.Format(_loader.GetString("UpdateFormat"), ApkInfo?.AppName);
-                ActionVisibility = LaunchWhenReadyVisibility = Visibility.Visible;
+                AppName = string.Format(_loader.GetString("UpdateFormat"), AppLocaleName);
+                ActionVisibility = Visibility.Visible;
+                LaunchWhenReadyVisibility = string.IsNullOrWhiteSpace(ApkInfo?.LaunchableActivity) ? Visibility.Collapsed : Visibility.Visible;
             }
             else
             {
                 ActionButtonText = _loader.GetString("Reinstall");
                 SecondaryActionButtonText = _loader.GetString("Launch");
-                AppName = string.Format(_loader.GetString("ReinstallFormat"), ApkInfo?.AppName);
-                TextOutput = string.Format(_loader.GetString("ReinstallOutput"), ApkInfo?.AppName);
-                ActionVisibility = SecondaryActionVisibility = TextOutputVisibility = Visibility.Visible;
+                AppName = string.Format(_loader.GetString("ReinstallFormat"), AppLocaleName);
+                TextOutput = string.Format(_loader.GetString("ReinstallOutput"), AppLocaleName);
+                ActionVisibility = TextOutputVisibility = Visibility.Visible;
+                SecondaryActionVisibility = string.IsNullOrWhiteSpace(ApkInfo?.LaunchableActivity) ? Visibility.Collapsed : Visibility.Visible;
             }
             SDKInfo sdk = SDKInfo.GetInfo(client.GetProperty(_device, "ro.build.version.sdk"));
             if (sdk < ApkInfo.MinSDK)
@@ -1362,7 +1367,7 @@ namespace APKInstaller.ViewModels
                     ActionButtonText = _loader.GetString("Install");
                     InfoMessage = _loader.GetString("WaitingDevice");
                     DeviceSelectButtonText = _loader.GetString("Devices");
-                    AppName = string.Format(_loader.GetString("WaitingForInstallFormat"), ApkInfo?.AppName);
+                    AppName = string.Format(_loader.GetString("WaitingForInstallFormat"), AppLocaleName);
                     ActionVisibility = DeviceSelectVisibility = MessagesToUserVisibility = Visibility.Visible;
                 }
             }
@@ -1568,8 +1573,9 @@ namespace APKInstaller.ViewModels
                 AppxInstallBarIndeterminate = true;
                 ProgressText = _loader.GetString("Installing");
                 CancelOperationButtonText = _loader.GetString("Cancel");
-                CancelOperationVisibility = LaunchWhenReadyVisibility = Visibility.Visible;
+                CancelOperationVisibility = Visibility.Visible;
                 ActionVisibility = SecondaryActionVisibility = TextOutputVisibility = InstallOutputVisibility = Visibility.Collapsed;
+                LaunchWhenReadyVisibility = string.IsNullOrWhiteSpace(ApkInfo?.LaunchableActivity) ? Visibility.Collapsed : Visibility.Visible;
                 if ((ApkInfo?.IsSplit).GetValueOrDefault(false))
                 {
                     if (ShowProgress)
@@ -1629,8 +1635,8 @@ namespace APKInstaller.ViewModels
                         await Task.Run(() => { new AdbClient().Install(_device, File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read)); });
                     }
                 }
-                AppName = string.Format(_loader.GetString("InstalledFormat"), ApkInfo?.AppName);
-                if (IsOpenApp)
+                AppName = string.Format(_loader.GetString("InstalledFormat"), AppLocaleName);
+                if (IsOpenApp && !string.IsNullOrWhiteSpace(ApkInfo?.LaunchableActivity))
                 {
                     _ = Task.Run(async () =>
                     {
@@ -1649,8 +1655,9 @@ namespace APKInstaller.ViewModels
                 AppxInstallBarIndeterminate = true;
                 ActionButtonText = _loader.GetString("Reinstall");
                 SecondaryActionButtonText = _loader.GetString("Launch");
-                ActionVisibility = SecondaryActionVisibility = Visibility.Visible;
+                ActionVisibility = Visibility.Visible;
                 CancelOperationVisibility = LaunchWhenReadyVisibility = Visibility.Collapsed;
+                SecondaryActionVisibility = string.IsNullOrWhiteSpace(ApkInfo?.LaunchableActivity) ? Visibility.Collapsed : Visibility.Visible;
             }
             catch (Exception ex)
             {
