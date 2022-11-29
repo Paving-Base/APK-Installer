@@ -1,0 +1,69 @@
+# Universal Windows Platform
+# Build a Universal Windows Platform project using Visual Studio.
+# Add steps that test and distribute an app, save build artifacts, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'x86|x64|ARM64'
+  buildConfiguration: 'Release'
+  appxPackageDir: '$(build.artifactStagingDirectory)\AppxPackages\\'
+
+steps:
+
+- task: CmdLine@2
+  displayName: 'Clone SharpAdbClient'
+  inputs:
+    script: |
+      echo 'Cloning into sources folder at: $(Build.SourcesDirectory)\..\AdvancedSharpAdbClient'
+      git clone https://github.com/wherewhere/AdvancedSharpAdbClient.git --progress --branch main --single-branch --depth=1 $(Build.SourcesDirectory)\..\AdvancedSharpAdbClient
+      exit
+
+- task: UseDotNet@2
+  inputs:
+    packageType: sdk
+    version: 6.0.x
+
+- task: MSBuild@1
+  displayName: 'Restore Solution'
+  inputs:
+    platform: 'x64'
+    solution: '$(solution)'
+    configuration: '$(buildConfiguration)'
+    msbuildArguments: '/t:restore
+                       /p:Configuration="$(buildConfiguration)"
+                       /p:Platform="$(buildPlatform)"
+                       /p:PublishReadyToRun=true'
+    maximumCpuCount: true
+
+- task: VSBuild@1
+  displayName: 'Build Solution'
+  inputs:
+    platform: 'x64'
+    solution: '$(solution)'
+    configuration: '$(buildConfiguration)'
+    msbuildArgs: '/p:AppxBundlePlatforms="$(buildPlatform)"
+                  /p:AppxPackageDir="$(appxPackageDir)"
+                  /p:AppxBundle=Always
+                  /p:UapAppxPackageBuildMode=SideloadOnly
+                  /p:GenerateAppxPackageOnBuild=true
+                  /p:AppxPackageSigningEnabled=false'
+    maximumCpuCount: true
+
+- task: CopyFiles@2
+  displayName: 'Copy Generated Artifacts'
+  inputs:
+    SourceFolder: '$(system.defaultworkingdirectory)'
+    Contents: '**\bin\$(buildConfiguration)\**'
+    TargetFolder: '$(build.artifactstagingdirectory)'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: drop'
+  inputs:
+    PathtoPublish: '$(build.artifactstagingdirectory)'
