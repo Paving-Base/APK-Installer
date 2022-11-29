@@ -10,13 +10,12 @@ pool:
   vmImage: 'windows-latest'
 
 variables:
-  solution: '**/*.sln'
+  solution: '*.sln'
   buildPlatform: 'x86|x64|ARM64'
   buildConfiguration: 'Release'
   appxPackageDir: '$(build.artifactStagingDirectory)\AppxPackages\\'
 
 steps:
-
 - task: CmdLine@2
   displayName: 'Clone SharpAdbClient'
   inputs:
@@ -26,6 +25,7 @@ steps:
       exit
 
 - task: UseDotNet@2
+  displayName: 'Setup .NET Core'
   inputs:
     packageType: sdk
     version: 6.0.x
@@ -55,13 +55,6 @@ steps:
                   /p:GenerateAppxPackageOnBuild=true
                   /p:AppxPackageSigningEnabled=false'
     maximumCpuCount: true
-
-- task: CopyFiles@2
-  displayName: 'Copy Generated Artifacts'
-  inputs:
-    SourceFolder: '$(system.defaultworkingdirectory)'
-    Contents: '**\bin\$(buildConfiguration)\**'
-    TargetFolder: '$(build.artifactstagingdirectory)'
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
