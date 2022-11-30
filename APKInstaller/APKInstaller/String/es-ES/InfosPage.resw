@@ -127,6 +127,12 @@
     <value>Dependencias - {0} en total</value>
     <comment>{0} - Dependencies Count.</comment>
   </data>
+  <data name="FeaturesHeaderFormat" xml:space="preserve">
+    <value>Características - {0} en total</value>
+  </data>
+  <data name="Languages.Text" xml:space="preserve">
+    <value>Idiomas</value>
+  </data>
   <data name="MinSDK.Text" xml:space="preserve">
     <value>SDK mín</value>
   </data>

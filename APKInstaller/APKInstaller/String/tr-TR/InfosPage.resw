@@ -127,6 +127,12 @@
     <value>Bağımlılıklar - toplamda {0}</value>
     <comment>{0} - Dependencies Count.</comment>
   </data>
+  <data name="FeaturesHeaderFormat" xml:space="preserve">
+    <value>Özellikler - toplamda {0}</value>
+  </data>
+  <data name="Languages.Text" xml:space="preserve">
+    <value>Diller</value>
+  </data>
   <data name="MinSDK.Text" xml:space="preserve">
     <value>Min SDK</value>
   </data>

@@ -127,6 +127,12 @@
     <value>Ketergantungan - total {0}</value>
     <comment>{0} - Dependencies Count.</comment>
   </data>
+  <data name="FeaturesHeaderFormat" xml:space="preserve">
+    <value>Fitur - total {0}</value>
+  </data>
+  <data name="Languages.Text" xml:space="preserve">
+    <value>Bahasa</value>
+  </data>
   <data name="MinSDK.Text" xml:space="preserve">
     <value>Min SDK</value>
   </data>

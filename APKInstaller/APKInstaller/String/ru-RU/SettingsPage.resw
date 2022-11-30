@@ -205,10 +205,10 @@
     <value>Найти обновление</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>Information about the frameworks of this app.</value>
+    <value>Информация о компонентах этого приложения.</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
-    <value>Framework Information</value>
+    <value>Информация о компонентах</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
     <value>Framework</value>
@@ -301,10 +301,10 @@
     <value>Показывать уведомления?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
-    <value>It may leave temp files when an unexpected interruption occurs.</value>
+    <value>Могут остаться временные файлы при неожиданной остановке.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Is Show Progress of Installation?</value>
+    <value>Показать прогресс установки?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Тема приложения</value>

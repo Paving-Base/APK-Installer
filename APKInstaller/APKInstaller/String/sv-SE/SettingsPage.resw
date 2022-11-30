@@ -121,25 +121,25 @@
     <value>About</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>ADB Path</value>
+    <value>ADB sökväg</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
     <value>ADB Version</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>Auto download when package is from URL.</value>
+    <value>Hämta automatiskt när paketet är från URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Does Auto Download Online Packages?</value>
+    <value>Ladda ner paket online automatiskt?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>Select Backdrop Type for Windows 11</value>
+    <value>Välj Typ av bakgrund för Windows 11</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
     <value>Backdrop</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
-    <value>Change</value>
+    <value>Ändringar</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
     <value>Check Failed</value>
@@ -202,7 +202,7 @@
     <value>Feedback</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
-    <value>Find Update</value>
+    <value>Hitta uppdatering</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
     <value>Information about the frameworks of this app.</value>
@@ -250,7 +250,7 @@
     <value>OS Architecture</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
-    <value>OS Platform</value>
+    <value>OS Plattform</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Others</value>

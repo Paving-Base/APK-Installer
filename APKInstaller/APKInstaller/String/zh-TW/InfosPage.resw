@@ -127,6 +127,12 @@
     <value>依賴 - 共 {0} 個</value>
     <comment>{0} - Dependencies Count.</comment>
   </data>
+  <data name="FeaturesHeaderFormat" xml:space="preserve">
+    <value>特性 - 共 {0} 個</value>
+  </data>
+  <data name="Languages.Text" xml:space="preserve">
+    <value>語言</value>
+  </data>
   <data name="MinSDK.Text" xml:space="preserve">
     <value>最低 SDK</value>
   </data>

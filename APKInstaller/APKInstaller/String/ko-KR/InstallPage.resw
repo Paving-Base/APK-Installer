@@ -142,7 +142,7 @@
     <value>예</value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
-    <value>아니오</value>
+    <value>비활성화</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>Cannot Connect to WSA</value>
