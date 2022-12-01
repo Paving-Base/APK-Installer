@@ -4,7 +4,20 @@
 # https://aka.ms/yaml
 
 trigger:
-- main
+  branches:
+    include:
+      - main
+  paths:
+    include:
+      - APKInstaller/**
+
+pr:
+  branches:
+    include:
+      - main
+  paths:
+    include:
+      - APKInstaller/**
 
 pool:
   vmImage: 'windows-latest'
