@@ -43,16 +43,14 @@ steps:
     packageType: sdk
     version: 6.0.x
 
-- task: MSBuild@1
+- task: VSBuild@1
   displayName: 'Restore Solution'
   inputs:
     platform: 'x64'
     solution: '$(solution)'
     configuration: '$(buildConfiguration)'
-    msbuildArguments: '/t:restore
-                       /p:Configuration="$(buildConfiguration)"
-                       /p:Platform="$(buildPlatform)"
-                       /p:PublishReadyToRun=true'
+    msbuildArgs: '/t:restore'
+    msbuildArchitecture: 'x64'
     maximumCpuCount: true
 
 - task: VSBuild@1
@@ -67,9 +65,11 @@ steps:
                   /p:UapAppxPackageBuildMode=SideloadOnly
                   /p:GenerateAppxPackageOnBuild=true
                   /p:AppxPackageSigningEnabled=false'
+    msbuildArchitecture: 'x64'
     maximumCpuCount: true
 
 - task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact: drop'
+  displayName: 'Publish Artifact'
   inputs:
+    ArtifactName: 'MSIX Package'
     PathtoPublish: '$(build.artifactstagingdirectory)'
