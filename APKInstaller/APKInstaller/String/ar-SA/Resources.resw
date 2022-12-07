@@ -136,7 +136,7 @@
     <value>فشل رفع الصورة</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>There are some problems with the network...</value>
+    <value>كانت هناك بعض المشاكل في هذه الملفات:</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>لا</value>
