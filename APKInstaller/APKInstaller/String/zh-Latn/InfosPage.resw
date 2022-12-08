@@ -121,54 +121,54 @@
     <value>Yìngyòng míngchēng</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
-    <value>基本信息</value>
+    <value>Jīběn xìnxī</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
-    <value>依赖 - 共 {0} 个</value>
+    <value>Yīlài - gòng {0} gè</value>
     <comment>{0} - Dependencies Count.</comment>
   </data>
   <data name="FeaturesHeaderFormat" xml:space="preserve">
-    <value>特性 - 共 {0} 个</value>
+    <value>Tèxìng - gòng {0} gè</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
-    <value>语言</value>
+    <value>Yǔyán</value>
   </data>
   <data name="MinSDK.Text" xml:space="preserve">
-    <value>最低 SDK</value>
+    <value>Zuìdī SDK</value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
-    <value>打开软件包文件夹</value>
+    <value>Dǎkāi ruǎnjiànbāo wénjiànjiā</value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
     <value>Chéngxùbāo míngchēng</value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
-    <value>安装包大小</value>
+    <value>Ānzhuāngbāo dàxiǎo</value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
-    <value>权限数量</value>
+    <value>Quánxiàn shùliàng</value>
   </data>
   <data name="PermissionsHeaderFormat" xml:space="preserve">
-    <value>权限 - 共 {0} 个</value>
+    <value>Quánxiàn - gòng {0} gè</value>
     <comment>{0} - Permissions Count.</comment>
   </data>
   <data name="SharePackage.Content" xml:space="preserve">
-    <value>分享软件包</value>
+    <value>Fēnxiǎng ruǎnjiànbāo</value>
   </data>
   <data name="SupportedArchitectures.Text" xml:space="preserve">
-    <value>支持的架构</value>
+    <value>Zhīchí de jiàgòu</value>
   </data>
   <data name="SupportResolutions.Text" xml:space="preserve">
-    <value>支持的分辨率</value>
+    <value>Zhīchí de fēnbiànlù</value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
-    <value>支持屏幕大小</value>
+    <value>Zhīchí de píngmù dàxiǎo</value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
-    <value>目标 SDK</value>
+    <value>Mùbiāo SDK</value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
-    <value>关于 {0}</value>
+    <value>Guānyú {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Version.Text" xml:space="preserve">

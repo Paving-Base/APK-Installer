@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
-    <value>في انتظار جهاز...</value>
+    <value>في انتظار الجهاز...</value>
   </data>
   <data name="Start.Text" xml:space="preserve">
     <value>تشغيل</value>
@@ -130,6 +130,6 @@
     <value>التطبيقات</value>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
-    <value>إلغاء التثبيت</value>
+    <value>ملكة اموضة</value>
   </data>
 </root>
