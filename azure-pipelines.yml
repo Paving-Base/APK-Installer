@@ -43,13 +43,13 @@ steps:
     packageType: sdk
     version: 6.0.x
 
-- task: MSBuild@1
+- task: VSBuild@1
   displayName: 'Restore Solution'
   inputs:
     platform: 'x64'
     solution: '$(solution)'
     configuration: '$(buildConfiguration)'
-    msbuildArguments: '/t:restore'
+    msbuildArgs: '/t:restore'
     msbuildArchitecture: 'x64'
     maximumCpuCount: true
 
