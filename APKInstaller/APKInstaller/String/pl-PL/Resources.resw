@@ -133,16 +133,16 @@
     <value>Wystąpił błąd w programie…</value>
   </data>
   <data name="ImageLoadError" xml:space="preserve">
-    <value>Przesyłanie nie powiodło się</value>
+    <value>Picture loading failed.</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>Wystąpiły problemy z następującymi polami:</value>
+    <value>There are some problems with the network...</value>
   </data>
   <data name="No" xml:space="preserve">
-    <value>Nie dotyczy</value>
+    <value>Nie</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>Dziele plik APK</value>
+    <value>Podziel plik APK</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Tak</value>
