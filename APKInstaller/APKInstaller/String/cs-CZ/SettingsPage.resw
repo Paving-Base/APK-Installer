@@ -257,7 +257,7 @@
     <value>Jiní</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>Dark</value>
+    <value>Tmavý</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
     <value>Výchozí Windows</value>
@@ -266,34 +266,34 @@
     <value>Světlý</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value>Rate On Store</value>
+    <value>Ohodnoťte v App Store</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
-    <value>Release notes</value>
+    <value>Seznam změn</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
-    <value>Reset settings of this application.</value>
+    <value>Obnovit nastavení této aplikace.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
-    <value>Reset application</value>
+    <value>Resetovat aplikaci</value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
-    <value>Reset</value>
+    <value>Resetovat</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
     <value>Ano</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
-    <value>Are you sure you want to reset the app?</value>
+    <value>Jste si jisti, že chcete aplikaci obnovit?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
-    <value>Select Device</value>
+    <value>Vyberte zařízení</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
-    <value>Show helpers when no device is connected.</value>
+    <value>Zobrazit pomocníky, pokud není připojeno žádné zařízení.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Is Show Helpers?</value>
+    <value>Zobrazit pomocníka?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
     <value>Show Announcements on the top of Settings.</value>
