@@ -124,7 +124,7 @@
     <value>ADBのパス</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>ADB Version</value>
+    <value>ADBのバージョン</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>パッケージがURLからの場合、自動的にダウンロードします。</value>
@@ -142,7 +142,7 @@
     <value>変更</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>チェックに失敗しました</value>
+    <value>チェック失敗</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
     <value>アップデートを確認しています...</value>
@@ -208,10 +208,10 @@
     <value>Information about the frameworks of this app.</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
-    <value>Framework Information</value>
+    <value>フレームワーク情報</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
-    <value>Framework</value>
+    <value>フレームワーク</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>テストページに移動します。</value>
