@@ -124,7 +124,7 @@
     <value>ADB المسار</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>ADB Version</value>
+    <value>صلاحية ال ADB</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>تحميل تلقائي عندما تكون الحزمة من عنوان URL.</value>
