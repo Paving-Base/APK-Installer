@@ -296,7 +296,7 @@
     <value>Zobrazit pomocníka?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Show Announcements on the top of Settings.</value>
+    <value>Zobrazit oznámení v horní části nastavení.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
     <value>Is Show Announcements?</value>
