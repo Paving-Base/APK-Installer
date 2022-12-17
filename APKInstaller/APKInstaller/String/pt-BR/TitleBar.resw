@@ -121,7 +121,7 @@
     <value>Configurações</value>
   </data>
   <data name="BackButton.Tag" xml:space="preserve">
-    <value>Back</value>
+    <value>Voltar</value>
   </data>
   <data name="RefreshButton.Tag" xml:space="preserve">
     <value>Atualizar</value>
