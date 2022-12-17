@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, the Android Debug Bridge, is needed for APK Installer to work. Click "Download" to download it. By downloading, you accept the Google Terms and Conditions for ADB. If you have already downloaded ADB, click "Select" to select it.</value>
+    <value>ADB, o Android Debug Bridge, é necessário para que o APK Installer funcione. Clique em "Baixar" para baixá-lo. Ao baixar, você aceita os Termos e Condições para ADB do Google. Se você já baixou o ADB, clique em "Selecionar" para selecioná-lo.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Exists</value>
+    <value>ADB Existe</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB em falta</value>
@@ -145,7 +145,7 @@
     <value>Não</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Cannot Connect to WSA</value>
+    <value>Não é possível conectar-se ao WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
     <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
