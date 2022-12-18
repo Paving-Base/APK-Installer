@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AndroidTestSettingsHeader.Header" xml:space="preserve">
-    <value>Android Test</value>
+    <value>Equipa Android</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>Aplicação </value>
@@ -127,19 +127,19 @@
     <value>Digite ou Saia de Sobreposição Compacta</value>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
-    <value>Compact Overlay</value>
+    <value>Sobreposição Compactada</value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
     <value>Uma versão de desenvolvimento pode não estável. Baixe a versão de lançamento na Microsoft Store.</value>
   </data>
   <data name="DevelopmentInfoBar.Title" xml:space="preserve">
-    <value>You are using a development version app.</value>
+    <value>Você está usando uma aplicação de versão de desenvolvimento.</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
     <value>Insira a sobreposição compacta</value>
   </data>
   <data name="LanguageSettings.Description" xml:space="preserve">
-    <value>Select language and restart to change language</value>
+    <value>Selecione o idioma e reinicie para alterar o idioma</value>
   </data>
   <data name="LanguageSettings.Header" xml:space="preserve">
     <value>Idioma</value>
@@ -157,25 +157,25 @@
     <value>Progresso</value>
   </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
-    <value>Set the value of Progress Ring</value>
+    <value>Definir o valor do Anel de Progresso</value>
   </data>
   <data name="SetProgressValue.Header" xml:space="preserve">
     <value>Valor de progressão</value>
   </data>
   <data name="ShowRefreshButton.Description" xml:space="preserve">
-    <value>Show Refresh Button on the Title Bar</value>
+    <value>Mostrar botão atualizar na barra de título</value>
   </data>
   <data name="ShowRefreshButton.Header" xml:space="preserve">
     <value>Botão de Atualização</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Testing</value>
+    <value>Testando</value>
   </data>
   <data name="TitleBarSettings.Description" xml:space="preserve">
     <value>Estende conteúdo na barra de título</value>
   </data>
   <data name="TitleBarSettings.Header" xml:space="preserve">
-    <value>Title Bar</value>
+    <value>Barra de título</value>
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
     <value>Teste de UI</value>
