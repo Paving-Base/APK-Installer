@@ -223,40 +223,40 @@
     <value>Ir para Atualização</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
-    <value>Participe do Nosso Chat</value>
+    <value>Bate-papo</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Última verificação:</value>
+    <value>Última Consulta:</value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
-    <value>Aprender mais</value>
+    <value>Saiba Mais</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
-    <value>Registros</value>
+    <value>Logs</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>Uma versão modificada pode conter algo desagradável. Como ADs, funções quebradas até o vírus. Acesse a Microsoft Store para baixar o original. Consulte nosso repositório do Github para saber mais sobre ele.</value>
+    <value>Uma versão modificada pode conter algo desagradável. Como AD, funções quebradas até o vírus. Acesse a Microsoft Store para baixar o original. Consulte nosso repositório GitHub para saber mais sobre ele.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>Você está usando uma versão modificada!</value>
+    <value>Você está usando a versão modificada!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Desative para conectar a outro dispositivo.</value>
+    <value>Desative-o para se conectar a outros dispositivos.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>É somente para WSA?</value>
+    <value>Só para WSA?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>Arquitectura</value>
+    <value>Arquitetura</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
-    <value>Plataforma operacional</value>
+    <value>Plataforma Sistema operacional</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
-    <value>Outras</value>
+    <value>Outros,</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>Escuro</value>
+    <value>Escura</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
     <value>Padrão do Windows</value>
