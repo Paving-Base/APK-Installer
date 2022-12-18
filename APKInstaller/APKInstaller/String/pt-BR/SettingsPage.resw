@@ -211,7 +211,7 @@
     <value>Descrição da estrutura</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
-    <value>Framework</value>
+    <value>Modelos e Estruturas</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>Ir para página de teste.</value>
@@ -235,7 +235,7 @@
     <value>Registros</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may contain something unpleasant. Such as AD, broken functions even virus. Please go to Microsoft Store to download the original one. See our GitHub Repository to learn more about it.</value>
+    <value>Uma versão modificada pode conter algo desagradável. Como ADs, funções quebradas até o vírus. Acesse a Microsoft Store para baixar o original. Consulte nosso repositório do Github para saber mais sobre ele.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>Você está usando uma versão modificada!</value>
@@ -247,10 +247,10 @@
     <value>É somente para WSA?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>OS Architecture</value>
+    <value>Arquitectura</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
-    <value>OS Platform</value>
+    <value>Plataforma operacional</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Outras</value>
@@ -301,10 +301,10 @@
     <value>É um Show De Anúncios?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
-    <value>It may leave temp files when an unexpected interruption occurs.</value>
+    <value>Pode deixar arquivos temporários quando ocorrer uma interrupção inesperada.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Is Show Progress of Installation?</value>
+    <value>É Show de Progresso da Instalação?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Tema do aplicativo</value>
