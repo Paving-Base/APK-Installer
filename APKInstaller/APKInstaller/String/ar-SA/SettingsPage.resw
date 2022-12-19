@@ -124,7 +124,7 @@
     <value>ADB المسار</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>ADB Version</value>
+    <value>صلاحية ال ADB</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>تحميل تلقائي عندما تكون الحزمة من عنوان URL.</value>
@@ -193,7 +193,7 @@
     <value>الدعم</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application, and no ads will be added for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your support.💕</value>
+    <value>مثبت APK هو تطبيق مفتوح المصدر، ولن يتم إدخال أي إعلانات للربح. إذا أعجبك هذا التطبيق، لا تنسى تقييمه في المتجر. بالطبع، سيكون من الأفضل أن تتبرع قليلاً. شكرًا على دعمك.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>

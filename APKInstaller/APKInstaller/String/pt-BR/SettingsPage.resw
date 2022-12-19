@@ -211,7 +211,7 @@
     <value>Descrição da estrutura</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
-    <value>Framework</value>
+    <value>Modelos e Estruturas</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>Ir para página de teste.</value>
@@ -223,40 +223,40 @@
     <value>Ir para Atualização</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
-    <value>Participe do Nosso Chat</value>
+    <value>Bate-papo</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Última verificação:</value>
+    <value>Última Consulta:</value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
-    <value>Aprender mais</value>
+    <value>Saiba Mais</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
-    <value>Registros</value>
+    <value>Logs</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may contain something unpleasant. Such as AD, broken functions even virus. Please go to Microsoft Store to download the original one. See our GitHub Repository to learn more about it.</value>
+    <value>Uma versão modificada pode conter algo desagradável. Como AD, funções quebradas até o vírus. Acesse a Microsoft Store para baixar o original. Consulte nosso repositório GitHub para saber mais sobre ele.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>Você está usando uma versão modificada!</value>
+    <value>Você está usando a versão modificada!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Desative para conectar a outro dispositivo.</value>
+    <value>Desative-o para se conectar a outros dispositivos.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>É somente para WSA?</value>
+    <value>Só para WSA?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>OS Architecture</value>
+    <value>Arquitetura</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
-    <value>OS Platform</value>
+    <value>Plataforma Sistema operacional</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
-    <value>Outras</value>
+    <value>Outros,</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>Escuro</value>
+    <value>Escura</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
     <value>Padrão do Windows</value>
@@ -301,10 +301,10 @@
     <value>É um Show De Anúncios?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
-    <value>It may leave temp files when an unexpected interruption occurs.</value>
+    <value>Pode deixar arquivos temporários quando ocorrer uma interrupção inesperada.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Is Show Progress of Installation?</value>
+    <value>É Show de Progresso da Instalação?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Tema do aplicativo</value>

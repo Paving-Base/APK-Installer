@@ -247,7 +247,7 @@
     <value>Est seulement pour la WSA?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>OS Architecture</value>
+    <value>L'architecture</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
     <value>Plateforme OS</value>
@@ -292,7 +292,7 @@
     <value>Afficher les aides quand aucun périphérique n'est connecté.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Is Show Helpers?</value>
+    <value>Montrer les assistants ?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
     <value>Show Announcements on the top of Settings.</value>

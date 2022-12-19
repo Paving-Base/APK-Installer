@@ -169,7 +169,7 @@
     <value>閉じる</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>Are you sure to cancel the installation?</value>
+    <value>インストール解消しますか？</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>コピー</value>
@@ -199,14 +199,14 @@
     <value>設定に移動する</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>A newer version is already installed</value>
+    <value>新しいバージョンはすでにインストールされています</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>You already have installed a new version {0} of this app. Are you sure to reinstall version {1}?</value>
+    <value>既にこのアプリの新しいバージョン {0} がインストールされています。 {1} をインストールし直してもよろしいですか？</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>WSAに接続するには</value>
+    <value>WSAを接続する方法</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
     <value>1. Please make sure APK Installer has been updated to the latest version
@@ -233,7 +233,7 @@
     <value>情報</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>インストールする</value>
+    <value>インストール</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
     <value>{0} の準備ができました！</value>
@@ -247,7 +247,7 @@
     <value>インストール中...</value>
   </data>
   <data name="InstallingPercent" xml:space="preserve">
-    <value>Installing {0}...</value>
+    <value>{0}　をインストール中...</value>
     <comment>{0} - Progress.</comment>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
@@ -257,13 +257,13 @@
     <value>WSAをインストール</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
-    <value>パッケージが破損しているか、無効です。</value>
+    <value>パッケージ無効、破損してしまっているかもしれません。</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
     <value>URLが不完全または無効です。</value>
   </data>
   <data name="Launch" xml:space="preserve">
-    <value>起動</value>
+    <value>開く</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
     <value>WSAを起動中...</value>
@@ -275,7 +275,7 @@
     <value>読み込み中…</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
-    <value>詳細</value>
+    <value>詳しい情報</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
     <value>Android端末が見つかりません</value>

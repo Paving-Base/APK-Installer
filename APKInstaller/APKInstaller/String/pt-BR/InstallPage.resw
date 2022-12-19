@@ -170,7 +170,7 @@ Capacidades:</value>
     <value>Fechar</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>Are you sure to cancel the installation?</value>
+    <value>Deseja cancelar a cura?</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Copiar</value>
@@ -200,10 +200,10 @@ Capacidades:</value>
     <value>Vá para configurações</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>A newer version is already installed</value>
+    <value>Uma nova versão do  está disponivel</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>You already have installed a new version {0} of this app. Are you sure to reinstall version {1}?</value>
+    <value>Você já instalou uma nova versão {0} deste aplicativo. Tem certeza que deseja reinstalar a versão {1}?</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
@@ -224,10 +224,10 @@ Capacidades:</value>
     <value>Eu sei</value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
-    <value>Incompatible App</value>
+    <value>Tipos incompatíveis</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
-    <value>The minimum required for this app is {0}. Your device supports {1}. Please update your device or choose order package.</value>
+    <value>O mínimo necessário para este aplicativo é {0}. Seu dispositivo suporta {1}. Por favor, atualize seu dispositivo ou escolha um pacote de pedidos.</value>
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
@@ -248,7 +248,7 @@ Capacidades:</value>
     <value>Instalando...</value>
   </data>
   <data name="InstallingPercent" xml:space="preserve">
-    <value>Installing {0}...</value>
+    <value>Instalando {0}...</value>
     <comment>{0} - Progress.</comment>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
@@ -282,25 +282,25 @@ Capacidades:</value>
     <value>Não foi possível encontrar dispositivo Android</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>How to connect device</value>
+    <value>Como conectar dispositivos</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
     <value>Se quiser instalar o app no Subsistema Windows para o AndroidTM, é necessário instalá-lo primeiro. Se você quiser instalar em outros dispositivos, acesse a página de configurações, desative o recurso "Somente para WSA" e conecte seu dispositivo.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>#### Using USB
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open USB Debug
-3. Go to the Settings Page of APK Installer, select your device
-4. Go back, resume installation
-#### Using Wifi
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open Remote Debug
-3. Remember the IP address of your device
-4. Go to the Settings Page of APK Installer, connect and select your device
-5. Go back, resume installation
+    <value>#### Usando o USB
+1. Certifique-se de que o instalador do APK foi atualizado para [a última versão](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "Instalador APK")
+2. Ative o Modo de Desenvolvedor, abra o Debug USB
+3. Vá para a página de configurações do instalador APK, selecione o seu dispositivo
+4. Volte atrás, instale
+#### Usando Wifi
+1. Certifique-se de que o instalador do APK foi atualizado para [a versão mais recente](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "Installer")
+2. Ative o Modo Desenvolvedor, abra o Depuração Remota
+3. Lembre-se do endereço IP do seu dispositivo
+4. Vá para a página de configurações do instalador APK, conecte e selecione o seu dispositivo
+5. Retomar a instalação
 
-[Learn More]({0})</value>
+[Saiba Mais]({0})</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
     <value>Não é possível conectar à Internet</value>

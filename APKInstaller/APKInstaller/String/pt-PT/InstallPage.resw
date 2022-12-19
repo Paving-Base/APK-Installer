@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, the Android Debug Bridge, is needed for APK Installer to work. Click "Download" to download it. By downloading, you accept the Google Terms and Conditions for ADB. If you have already downloaded ADB, click "Select" to select it.</value>
+    <value>ADB, o Android Debug Bridge, é necessário para que o APK Installer funcione. Clique em "Baixar" para baixá-lo. Ao baixar, você aceita os Termos e Condições para ADB do Google. Se você já baixou o ADB, clique em "Selecionar" para selecioná-lo.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Exists</value>
+    <value>ADB Existe</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB em falta</value>
@@ -145,10 +145,10 @@
     <value>Não</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Cannot Connect to WSA</value>
+    <value>Não é possível conectar-se ao WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
+    <value>WSA não iniciou corretamente ou há um problema com o ADB. Este problema pode ser muito difícil de resolver. Por favor reinicie o instalador. Se ainda não funcionar, tente reiniciar o computador.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>Não foi possível abrir o pacote da aplicação</value>
@@ -169,7 +169,7 @@
     <value>Fechar</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>Are you sure to cancel the installation?</value>
+    <value>Você tem certeza que deseja cancelar a instalação?</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Copiar</value>
@@ -187,34 +187,34 @@
     <value>Por favor, verifique a sua ligação à Internet ou a URL e tente novamente.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>Finding WSA...</value>
+    <value>Localizando WSA...</value>
   </data>
   <data name="Finished" xml:space="preserve">
     <value>Concluído</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>WSA Found</value>
+    <value>WSA encontrado</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
     <value>Ir para Definições</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>A newer version is already installed</value>
+    <value>Uma versão mais recente ja está instalada</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>You already have installed a new version {0} of this app. Are you sure to reinstall version {1}?</value>
+    <value>Você já instalou uma nova versão {0} deste aplicativo. Tem certeza que deseja reinstalar a versão {1}?</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>How to connect WSA</value>
+    <value>Como conectar o WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Please make sure APK Installer has been updated to the latest version
-2. Make sure you have the Android Subsystem installed and running
-3. Turn on developer mode and make sure the IP address is displayed successfully
-4. Reopen APK Installer and continue your installation
+    <value>1. Certifique-se de que o instalador APK foi atualizado para a última versão
+2. Certifique-se de que você tem o Subsistema Android instalado e executando
+3. Ative o modo de desenvolvedor e certifique-se de que o endereço IP seja exibido com sucesso
+4. Reabra o instalador de APK e continue sua instalação
 
-[Learn More]({0})</value>
+[Saiba Mais]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
     <value>Ícone</value>
@@ -223,10 +223,10 @@
     <value>OK</value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
-    <value>Incompatible App</value>
+    <value>App incompatível</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
-    <value>The minimum required for this app is {0}. Your device supports {1}. Please update your device or choose order package.</value>
+    <value>O mínimo necessário para este aplicativo é {0}. Seu dispositivo suporta {1}. Por favor, atualize seu dispositivo ou escolha um pacote de pedidos.</value>
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
@@ -247,14 +247,14 @@
     <value>A instalar...</value>
   </data>
   <data name="InstallingPercent" xml:space="preserve">
-    <value>Installing {0}...</value>
+    <value>Instalando {0}...</value>
     <comment>{0} - Progress.</comment>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
     <value>Motivo: </value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
-    <value>Install WSA</value>
+    <value>Instalar WSA</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
     <value>O pacote está corrompido ou é inválido.</value>
@@ -266,7 +266,7 @@
     <value>Iniciar</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
-    <value>Launching WSA...</value>
+    <value>Iniciando WSA...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
     <value>Iniciar quando pronto</value>
@@ -281,25 +281,25 @@
     <value>Não foi possível encontrar dispositivo Android</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>How to connect device</value>
+    <value>Como conectar o dispositivo</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>If you want to install app into Windows Subsystem for Android™, you need to install it first. If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
+    <value>Se quiser instalar apps no subsistema do Windows para Android™, é necessário instalá-lo primeiro. Se você quiser instalar em outros dispositivos, acesse a página de configurações, desative o recurso "Somente para WSA" e conecte seu dispositivo.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>#### Using USB
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open USB Debug
-3. Go to the Settings Page of APK Installer, select your device
-4. Go back, resume installation
-#### Using Wifi
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open Remote Debug
-3. Remember the IP address of your device
-4. Go to the Settings Page of APK Installer, connect and select your device
-5. Go back, resume installation
+    <value>#### Usando USB
+1. Certifique-se de que o instalador do APK foi atualizado para [a última versão](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "Instalador APK")
+2. Ative o Modo Desenvolvedor, abra a Depuração USB
+3. Vá para a página de configurações do instalador APK, selecione o seu dispositivo
+4. Volte e continue a instalação
+#### Usando Wi-fi
+1. Certifique-se de que o instalador do APK foi atualizado para [a versão mais recente](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "Installer")
+2. Ative o Modo Desenvolvedor, abra o Depuração Remota
+3. Lembre-se do endereço IP do seu dispositivo
+4. Vá para a página de configurações do instalador APK, conecte e selecione o seu dispositivo
+5. Volte e continue a instalação
 
-[Learn More]({0})</value>
+[Saiba Mais]({0})</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
     <value>Não foi possível estabelecer ligação à Internet</value>
@@ -308,7 +308,7 @@
     <value>Por favor, ligue-se à Internet antes de abrir a aplicação.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>For proper functioning of the app, try to launch an Android app package.</value>
+    <value>Para o funcionamento adequado do app, tente iniciar um pacote de aplicativo do Android.</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
@@ -347,16 +347,16 @@
     <value>A iniciar o ADB...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>Start WSA</value>
+    <value>Iniciar WSA</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
-    <value>Store Links</value>
+    <value>Links da Loja</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
     <value>A extrair ADB...</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
-    <value>Unzip completed</value>
+    <value>Descompactação concluída</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
     <value>A extrair {0}/{1} ...</value>
@@ -394,6 +394,6 @@ Isto pode levar muito tempo. Sente-se e relaxe.</value>
     <value>Bem-vindo!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>WSA is Running</value>
+    <value>WSA está sendo executado</value>
   </data>
 </root>

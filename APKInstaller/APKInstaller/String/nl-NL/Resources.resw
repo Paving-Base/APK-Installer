@@ -124,7 +124,7 @@
     <value>APK File</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>An Android App Installer. Written by @wherewhere and @Tangent-90.</value>
+    <value>Een Android App Installer. Geschreven door @wherewhere en @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
     <value>APK Installer</value>
