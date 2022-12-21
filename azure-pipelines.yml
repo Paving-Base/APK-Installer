@@ -34,7 +34,7 @@ steps:
   inputs:
     script: |
       echo 'Cloning into sources folder at: $(Build.SourcesDirectory)\..\AdvancedSharpAdbClient'
-      git clone https://github.com/wherewhere/AdvancedSharpAdbClient.git --progress --branch main --single-branch --depth=1 $(Build.SourcesDirectory)\..\AdvancedSharpAdbClient
+      git clone https://github.com/yungd1plomat/AdvancedSharpAdbClient.git --progress --branch dev --single-branch --depth=1 $(Build.SourcesDirectory)\..\AdvancedSharpAdbClient
       exit
 
 - task: UseDotNet@2
