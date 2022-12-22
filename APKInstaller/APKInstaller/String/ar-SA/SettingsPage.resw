@@ -157,7 +157,7 @@
     <value>إغلاق ADB قد يكسر مثبتات أخرى عند فتحها.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Does Close ADB when Closing Installer?</value>
+    <value>هل أغلق ADB عند إغلاق التثبيت؟</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
     <value>إغلاق المثبت بعد تثبيت APK وبدء التشغيل.</value>
