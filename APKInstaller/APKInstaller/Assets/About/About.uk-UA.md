@@ -1,22 +1,22 @@
-#### Welcome to the APK Installer!
+#### Ласкаво просимо до APK Installer!
 
-##### Declaration
-1. Please follow the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. This program is open source software, so please make sure that the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) to keep your data safe.
-3. If the source of the program is not abnormal, all your data will only be used to run with the program or stored locally during the program running, and the developer will not steal any of your data. Still, please pay attention to the security of the environment.
-4. The translation of the text of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts do not represent the author's views.
+##### Оголошення
+1. Дотримуйтеся [ліцензійної угоди кінцевого користувача та політики конфіденційності APK Installer](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+2. Ця програма є програмним забезпеченням з відкритим вихідним кодом, тому переконайтеся, що вона з [цього сховища Github](https://github.com/Paving-Base/APK-Installer) або [цього застосунка](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) для захисту ваших даних.
+3. Якщо джерело програми не є незвичайним, усі ваші дані використовуватимуться лише для роботи з програмою або зберігатимуться локально під час роботи програми, і розробник не викраде жодних ваших даних. Проте зверніть увагу на безпеку навколишнього середовища.
+4. Переклад тексту цієї програми походить від спільноти [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin"), і всі тексти не відображають погляди автора.
 
-##### Translate
-Thanks to [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") translators for their support. If there is any problem with the translation, please come and correct it. And please take translation seriously. Your words will be read all over the world.
+##### Переклад
+Дякую перекладачам [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") за підтримку. Якщо є проблеми з перекладом, будь ласка, зайдіть і виправте їх. І, будь ласка, поставтеся до перекладу серйозно. Ваші слова читатимуть у всьому світі.
 
-##### Contributors
+##### Співавтори
 - [wherewhere](https://github.com/wherewhere)
 - [Void48](https://github.com/Void48)
 - [EP012014](https://github.com/EP012014)
 - [A Big Salty Fish](https://github.com/bigsaltyfishes)
 - [sam1357](https://github.com/sam1357)
 
-##### Citations and References
+##### Цитування та посилання
 - [WinUI](https://github.com/microsoft/microsoft-ui-xaml "WinUI")
 - [MetroLog](https://github.com/roubachof/MetroLog "MetroLog")
 - [Downloader](https://github.com/bezzad/Downloader "Downloader")
