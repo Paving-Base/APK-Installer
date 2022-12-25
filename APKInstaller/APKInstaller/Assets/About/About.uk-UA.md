@@ -9,7 +9,7 @@
 ##### Переклад
 Дякую перекладачам [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") за підтримку. Якщо є проблеми з перекладом, будь ласка, зайдіть і виправте їх. І, будь ласка, поставтеся до перекладу серйозно. Ваші слова читатимуть у всьому світі.
 
-##### Співавтори
+##### Розробники
 - [wherewhere](https://github.com/wherewhere)
 - [Void48](https://github.com/Void48)
 - [EP012014](https://github.com/EP012014)
