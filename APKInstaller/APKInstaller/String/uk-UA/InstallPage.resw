@@ -127,7 +127,7 @@
     <value>ADB is missing</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>APK File</value>
+    <value>Файл APK</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>Capabilities: </value>
@@ -139,10 +139,10 @@
     <value>Скасувати</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
-    <value>Yes</value>
+    <value>Так</value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
-    <value>No</value>
+    <value>Ні</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>Cannot Connect to WSA</value>
@@ -311,7 +311,7 @@
     <value>For proper functioning of the app, try to launch an Android app package.</value>
   </data>
   <data name="OK" xml:space="preserve">
-    <value>OK</value>
+    <value>Гаразд</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
     <value>Online Package</value>
@@ -331,23 +331,23 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
-    <value>A newer version of {0} is already installed.</value>
+    <value>Новіша версія {0} уже встановлена.</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>Retry</value>
+    <value>Повторити</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>Select</value>
+    <value>Вибрати</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>Share</value>
+    <value>Поділитися</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
-    <value>Starting ADB Server...</value>
+    <value>Запуск сервера ADB...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>Start WSA</value>
+    <value>Запустити підсистему Windows для Android</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
     <value>Store Links</value>
