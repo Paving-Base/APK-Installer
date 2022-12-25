@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppName.Text" xml:space="preserve">
-    <value>اسماء التطبيق</value>
+    <value>اسم التطبيق</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
     <value>المعلومات الأساسية </value>
@@ -137,38 +137,38 @@
     <value>أدنى SDK</value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
-    <value>فتح مجلد الحزمة</value>
+    <value>فتح مجلد الحُزْمَة</value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
-    <value>اسم الباقة</value>
+    <value>إسم الباقة</value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
-    <value>حجم الحزمة</value>
+    <value>حجم الحُزْمَة</value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
     <value>عدد الأذونات</value>
   </data>
   <data name="PermissionsHeaderFormat" xml:space="preserve">
-    <value>الأذونات - {0} في المجموع</value>
+    <value>الأُذونات- {0} في المجموع</value>
     <comment>{0} - Permissions Count.</comment>
   </data>
   <data name="SharePackage.Content" xml:space="preserve">
-    <value>Share Package</value>
+    <value>مشاركة الحُزْمَة</value>
   </data>
   <data name="SupportedArchitectures.Text" xml:space="preserve">
-    <value>Support Architectures</value>
+    <value>المعماريات المدعومة</value>
   </data>
   <data name="SupportResolutions.Text" xml:space="preserve">
-    <value>Support Resolutions</value>
+    <value>الدقَّات المدعومة</value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
-    <value>Support Screen Sizes</value>
+    <value>أحجام الشاشة المدعومة</value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
-    <value>Target SDK</value>
+    <value>الهدف SDK</value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
-    <value>About {0}</value>
+    <value>حول: {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Version.Text" xml:space="preserve">
