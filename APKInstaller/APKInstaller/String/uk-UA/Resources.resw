@@ -124,7 +124,7 @@
     <value>Файл APK</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>Android App Installer. Автори @wherewhere та @Tangent-90.</value>
+    <value>Інсталятор програм для Android. Автори @wherewhere та @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
     <value>Інсталятор APK</value>
