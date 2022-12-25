@@ -163,7 +163,7 @@
     <value>إغلاق المثبت بعد تثبيت APK وبدء التشغيل.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Does Close Installer when APP is Ready?</value>
+    <value>هل إغلاق المثبت عندما يكون التطبيق جاهزاً؟</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>التهيئة</value>
@@ -205,10 +205,10 @@
     <value>البحث عن تحديث</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>Information about the frameworks of this app.</value>
+    <value>معلومات عن أطر هذا التطبيق.</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
-    <value>Framework Information</value>
+    <value>وصف الإطار</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
     <value>Framework</value>
