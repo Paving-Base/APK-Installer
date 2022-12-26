@@ -141,6 +141,9 @@
   <data name="No" xml:space="preserve">
     <value>No</value>
   </data>
+  <data name="ShareDescription" xml:space="preserve">
+    <value>Install this Package</value>
+  </data>
   <data name="SplitAPKFile" xml:space="preserve">
     <value>Dividir archivo APK</value>
   </data>
