@@ -141,6 +141,9 @@
   <data name="No" xml:space="preserve">
     <value>비활성화</value>
   </data>
+  <data name="ShareDescription" xml:space="preserve">
+    <value>Install this Package</value>
+  </data>
   <data name="SplitAPKFile" xml:space="preserve">
     <value>파일 분할하기</value>
   </data>
