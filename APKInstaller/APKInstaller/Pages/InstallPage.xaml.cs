@@ -46,6 +46,12 @@ namespace APKInstaller.Pages
                         _path = (args.Data as FileActivatedEventArgs).Files[0].Path;
                         Provider = new InstallViewModel(_path, this);
                         break;
+                    case ExtendedActivationKind.ShareTarget:
+                        ShareTargetActivatedEventArgs ShareTargetEventArgs = args.Data as ShareTargetActivatedEventArgs;
+                        ShareTargetEventArgs.ShareOperation.DismissUI();
+                        Provider = new InstallViewModel(string.Empty, this);
+                        Provider.OpenAPK(ShareTargetEventArgs.ShareOperation.Data);
+                        break;
                     case ExtendedActivationKind.Protocol:
                         ProtocolActivatedEventArgs ProtocolArgs = args.Data as ProtocolActivatedEventArgs;
                         ValueSet ProtocolData = ProtocolArgs.Data;
@@ -90,12 +96,6 @@ namespace APKInstaller.Pages
                 }
             }
             DataContext = Provider;
-        }
-
-        protected override void OnNavigatedFrom(NavigationEventArgs e)
-        {
-            base.OnNavigatedFrom(e);
-            Provider.Dispose();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

@@ -37,7 +37,7 @@ using DownloadProgressChangedEventArgs = Downloader.DownloadProgressChangedEvent
 
 namespace APKInstaller.ViewModels
 {
-    public class InstallViewModel : INotifyPropertyChanged, IDisposable
+    public class InstallViewModel : INotifyPropertyChanged
     {
         private InstallPage _page;
         private DeviceData _device;
@@ -54,7 +54,6 @@ namespace APKInstaller.ViewModels
 #endif
         private bool NetAPKExist => _path != APKTemp || File.Exists(_path);
 
-        private bool _disposedValue;
         private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("InstallPage");
 
         public static InstallViewModel Caches;
@@ -630,7 +629,6 @@ namespace APKInstaller.ViewModels
             if (name != null) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
         }
 
-        // TODO: 仅当“Dispose(bool disposing)”拥有用于释放未托管资源的代码时才替代终结器
         public InstallViewModel(Uri Url, InstallPage Page, ProtocolForResultsOperation Operation = null)
         {
             _url = Url;
@@ -638,19 +636,14 @@ namespace APKInstaller.ViewModels
             Caches = this;
             _path = APKTemp;
             _operation = Operation;
-            // 不要更改此代码。请将清理代码放入“Dispose(bool disposing)”方法中
-            Dispose(disposing: false);
         }
 
-        // TODO: 仅当“Dispose(bool disposing)”拥有用于释放未托管资源的代码时才替代终结器
         public InstallViewModel(string Path, InstallPage Page, ProtocolForResultsOperation Operation = null)
         {
             _page = Page;
             Caches = this;
             _operation = Operation;
             _path = string.IsNullOrWhiteSpace(Path) ? _path : Path;
-            // 不要更改此代码。请将清理代码放入“Dispose(bool disposing)”方法中
-            Dispose(disposing: false);
         }
 
         public static void SetPage(InstallPage Page) => Caches._page = Page;
@@ -1915,29 +1908,6 @@ namespace APKInstaller.ViewModels
         {
             SendResults(new Exception($"{_loader.GetString("Install")} {_loader.GetString("Cancel")}"));
             Application.Current.Exit();
-        }
-
-        protected virtual void Dispose(bool disposing)
-        {
-            if (!_disposedValue)
-            {
-                if (disposing)
-                {
-                    // TODO: 释放托管状态(托管对象)
-                    ADBHelper.Monitor.DeviceChanged -= OnDeviceChanged;
-                }
-
-                // TODO: 释放未托管的资源(未托管的对象)并重写终结器
-                // TODO: 将大型字段设置为 null
-                _disposedValue = true;
-            }
-        }
-
-        public void Dispose()
-        {
-            // 不要更改此代码。请将清理代码放入“Dispose(bool disposing)”方法中
-            Dispose(disposing: true);
-            GC.SuppressFinalize(this);
         }
     }
 }
