@@ -142,7 +142,7 @@
     <value>لا</value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
-    <value>Install this Package</value>
+    <value>تثبيت الحزمة</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
     <value>تقسيم ملفّ التطبيق</value>
