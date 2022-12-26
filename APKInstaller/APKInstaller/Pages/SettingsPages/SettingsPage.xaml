@@ -91,6 +91,11 @@
                                         MinWidth="{StaticResource SettingActionControlMinWidth}"
                                         ui:TextBoxExtensions.Regex="^(\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])(\.(\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])){3}(:([0-9]|[1-9]\d|[1-9]\d{2}|[1-9]\d{3}|[1-5]\d{4}|6[0-4]\d{3}|65[0-4]\d{2}|655[0-2]\d|6553[0-5]))?$"
                                         PlaceholderText="127.0.0.1:58526" />
+                                    <ProgressRing
+                                        Width="24"
+                                        Height="24"
+                                        Margin="8,6"
+                                        Visibility="{Binding ConnectingDevice, Converter={StaticResource BoolToVisibilityConverter}}" />
                                     <Button
                                         Width="40"
                                         Height="36"
@@ -98,11 +103,17 @@
                                         Content="&#xE71B;"
                                         FontFamily="{StaticResource SymbolThemeFontFamily}"
                                         IsEnabled="{x:Bind ConnectIP.(ui:TextBoxExtensions.IsValid), Mode=OneWay}"
-                                        Tag="Connect" />
+                                        Tag="Connect"
+                                        Visibility="{Binding ConnectingDevice, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='true'}" />
                                 </StackPanel>
                             </controls:Setting>
                         </controls:SettingExpander.Content>
                     </controls:SettingExpander>
+                    <InfoBar
+                        x:Name="ConnectInfo"
+                        Title="{Binding ConnectInfoTitle}"
+                        IsOpen="{Binding ConnectInfoIsOpen}"
+                        Severity="{Binding ConnectInfoSeverity}" />
                 </controls:SettingsGroup>
                 <controls:SettingsGroup x:Uid="/SettingsPage/DisplaySettingsHeader">
                     <controls:Setting x:Uid="/SettingsPage/ShowDialogsSettings" Icon="&#xE82F;">
@@ -330,7 +341,7 @@
                                     <StackPanel Orientation="Vertical">
                                         <TextBlock Style="{StaticResource SecondaryTextStyle}" TextWrapping="WrapWholeWords">
                                             <Run x:Uid="/SettingsPage/LastChecked" />
-                                            <Run Text="{Binding UpdateDate, Mode=OneWay}" />
+                                            <Run Text="{Binding UpdateDate}" />
                                         </TextBlock>
                                         <ScrollViewer
                                             Margin="0,2,0,0"
@@ -374,20 +385,20 @@
                                         <ProgressRing
                                             Width="24"
                                             Height="24"
-                                            Visibility="{Binding CheckingUpdate, Mode=OneWay}" />
+                                            Visibility="{Binding CheckingUpdate, Converter={StaticResource BoolToVisibilityConverter}}" />
                                         <TextBlock
                                             x:Uid="/SettingsPage/CheckingUpdates"
                                             VerticalAlignment="Center"
                                             FontWeight="SemiBold"
                                             Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                            Visibility="{Binding CheckingUpdate, Mode=OneWay}" />
+                                            Visibility="{Binding CheckingUpdate, Converter={StaticResource BoolToVisibilityConverter}}" />
                                         <Button
                                             x:Name="Update"
                                             x:Uid="/SettingsPage/CheckUpdates"
                                             HorizontalAlignment="Right"
                                             Click="Button_Click"
                                             Tag="CheckUpdate"
-                                            Visibility="{Binding CheckingUpdate, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='true'}" />
+                                            Visibility="{Binding CheckingUpdate, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='true'}" />
                                     </StackPanel>
                                 </controls:Setting.ActionContent>
                             </controls:Setting>

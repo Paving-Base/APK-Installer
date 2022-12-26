@@ -81,8 +81,7 @@ namespace APKInstaller.Pages.SettingsPages
                     Provider.ChangeADBPath();
                     break;
                 case "Connect":
-                    new AdbClient().Connect(ConnectIP.Text);
-                    Provider.OnDeviceChanged(null, null);
+                    Provider.ConnectDevice(ConnectIP.Text);
                     break;
                 case "TestPage":
                     _ = Frame.Navigate(typeof(TestPage));

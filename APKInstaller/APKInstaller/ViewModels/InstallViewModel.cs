@@ -983,22 +983,19 @@ namespace APKInstaller.ViewModels
                     }
                 }
                 WaitProgressText = _loader.GetString("Loading");
-                if (!CheckDevice())
+                if (!await CheckDevice())
                 {
-                    if (IsOnlyWSA)
+                    if (NetworkHelper.Instance.ConnectionInformation.IsInternetAvailable)
                     {
-                        if (NetworkHelper.Instance.ConnectionInformation.IsInternetAvailable)
+                        await AddressHelper.ConnectHyperV();
+                        if (!await CheckDevice())
                         {
-                            await AddressHelper.ConnectHyperV();
-                            if (!CheckDevice())
-                            {
-                                new AdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
-                            }
+                            _ = new AdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
                         }
-                        else
-                        {
-                            new AdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
-                        }
+                    }
+                    else
+                    {
+                        _ = new AdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
                     }
                 }
                 ADBHelper.Monitor.DeviceChanged += OnDeviceChanged;
@@ -1037,7 +1034,7 @@ namespace APKInstaller.ViewModels
                 {
                     checkdevice:
                     WaitProgressText = _loader.GetString("Checking");
-                    if (CheckDevice() && _device != null)
+                    if (await CheckDevice() && _device != null)
                     {
                         if (NetAPKExist)
                         {
@@ -1126,20 +1123,20 @@ namespace APKInstaller.ViewModels
                                 });
                             }
                             WaitProgressText = _loader.GetString("WaitingWSAStart");
-                            while (!CheckDevice())
+                            while (!await CheckDevice())
                             {
                                 TokenSource.Token.ThrowIfCancellationRequested();
                                 if (NetworkHelper.Instance.ConnectionInformation.IsInternetAvailable)
                                 {
                                     await AddressHelper.ConnectHyperV();
-                                    if (!CheckDevice())
+                                    if (!await CheckDevice())
                                     {
-                                        new AdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
+                                        _ = new AdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
                                     }
                                 }
                                 else
                                 {
-                                    new AdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
+                                    _ = new AdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
                                 }
                                 await Task.Delay(100);
                             }
@@ -1222,7 +1219,7 @@ namespace APKInstaller.ViewModels
             if ((!string.IsNullOrWhiteSpace(_path) || _url != null) && NetAPKExist)
             {
                 checkdevice:
-                if (CheckDevice() && _device != null)
+                if (await CheckDevice() && _device != null)
                 {
                     CheckAPK();
                 }
@@ -1349,7 +1346,7 @@ namespace APKInstaller.ViewModels
             }
             else
             {
-                if (CheckDevice() && _device != null)
+                if (await CheckDevice() && _device != null)
                 {
                     CheckAPK();
                 }
@@ -1496,9 +1493,9 @@ namespace APKInstaller.ViewModels
         {
             if (IsInitialized && !IsInstalling)
             {
-                _page?.DispatcherQueue.EnqueueAsync(() =>
+                _page?.DispatcherQueue.EnqueueAsync(async () =>
                 {
-                    if (CheckDevice() && _device != null)
+                    if (await CheckDevice() && _device != null)
                     {
                         CheckAPK();
                     }
@@ -1506,7 +1503,7 @@ namespace APKInstaller.ViewModels
             }
         }
 
-        private bool CheckDevice()
+        private async Task<bool> CheckDevice()
         {
             AdbClient client = new();
             List<DeviceData> devices = client.GetDevices();
@@ -1517,7 +1514,7 @@ namespace APKInstaller.ViewModels
                 if (device == null || device.State == DeviceState.Offline) { continue; }
                 if (IsOnlyWSA)
                 {
-                    client.ExecuteRemoteCommand("getprop ro.boot.hardware", device, receiver);
+                    await client.ExecuteRemoteCommandAsync("getprop ro.boot.hardware", device, receiver);
                     if (receiver.ToString().Contains("windows"))
                     {
                         _device = device ?? _device;

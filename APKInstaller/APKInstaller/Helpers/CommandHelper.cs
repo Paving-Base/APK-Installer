@@ -10,11 +10,10 @@ namespace APKInstaller.Helpers
     public class CommandHelper
     {
         /// <summary>
-        /// Executes a shell command on the remote device
+        /// Executes a command.
         /// </summary>
-        /// </param>
-        /// <param name="command">The command to execute</param>
-        /// <param name="rcvr">The shell output receiver</param>
+        /// <param name="command">The command to execute.</param>
+        /// <returns>The list of results.</returns>
         public static async Task<List<string>> ExecuteShellCommand(string command)
         {
             try
@@ -34,7 +33,12 @@ namespace APKInstaller.Helpers
             }
         }
 
-        /// <inheritdoc/>
+        /// <summary>
+        /// Executes a command.
+        /// </summary>
+        /// <param name="command">The command to execute.</param>
+        /// <param name="cancellationToken">A <see cref="CancellationToken"/> which can be used to cancel the asynchronous operation.</param>
+        /// <returns>A <see cref="Task"/> which represents the asynchronous operation.</returns>
         public static async Task<List<string>> ExecuteShellCommandAsync(string command, CancellationToken cancellationToken)
         {
             ProcessStartInfo start = new()

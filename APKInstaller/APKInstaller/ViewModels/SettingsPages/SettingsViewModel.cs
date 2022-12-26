@@ -261,6 +261,62 @@ namespace APKInstaller.ViewModels.SettingsPages
             }
         }
 
+        private bool _connectingDevice;
+        public bool ConnectingDevice
+        {
+            get => _connectingDevice;
+            set
+            {
+                if (_connectingDevice != value)
+                {
+                    _connectingDevice = value;
+                    RaisePropertyChangedEvent();
+                }
+            }
+        }
+
+        private bool _connectInfoIsOpen;
+        public bool ConnectInfoIsOpen
+        {
+            get => _connectInfoIsOpen;
+            set
+            {
+                if (_connectInfoIsOpen != value)
+                {
+                    _connectInfoIsOpen = value;
+                    RaisePropertyChangedEvent();
+                }
+            }
+        }
+
+        private InfoBarSeverity _connectInfoSeverity;
+        public InfoBarSeverity ConnectInfoSeverity
+        {
+            get => _connectInfoSeverity;
+            set
+            {
+                if (_connectInfoSeverity != value)
+                {
+                    _connectInfoSeverity = value;
+                    RaisePropertyChangedEvent();
+                }
+            }
+        }
+
+        private string _connectInfoTitle;
+        public string ConnectInfoTitle
+        {
+            get => _connectInfoTitle;
+            set
+            {
+                if (_connectInfoTitle != value)
+                {
+                    _connectInfoTitle = value;
+                    RaisePropertyChangedEvent();
+                }
+            }
+        }
+
         private string _ADBVersion;
         public string ADBVersion
         {
@@ -399,6 +455,31 @@ namespace APKInstaller.ViewModels.SettingsPages
                     break;
                 }
             }
+        }
+
+        public async void ConnectDevice(string ip)
+        {
+            ConnectingDevice = true;
+            string results = (await new AdbClient().Connect(ip)).TrimStart();
+            if (results.ToLowerInvariant().StartsWith("connected to"))
+            {
+                ConnectInfoSeverity = InfoBarSeverity.Success;
+                ConnectInfoTitle = results;
+                ConnectInfoIsOpen = true;
+            }
+            else if (results.ToLowerInvariant().StartsWith("cannot connect to"))
+            {
+                ConnectInfoSeverity = InfoBarSeverity.Error;
+                ConnectInfoTitle = results;
+                ConnectInfoIsOpen = true;
+            }
+            else if (!string.IsNullOrWhiteSpace(results))
+            {
+                ConnectInfoSeverity = InfoBarSeverity.Warning;
+                ConnectInfoTitle = results;
+                ConnectInfoIsOpen = true;
+            }
+            ConnectingDevice = false;
         }
 
         public async void ChangeADBPath()
