@@ -1,4 +1,4 @@
-#### 歡迎使用 APK 安裝程式！
+#### 欢迎使用 APK 安装程序！
 
 ##### 聲明
 1. 請遵守 [APK Installer 最終使用者許可協定與隱私條款](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md)。
