@@ -130,7 +130,7 @@
     <value>APK Installer</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
-    <value>Hubo un error con el programa…</value>
+    <value>There was an error with the file upload.</value>
   </data>
   <data name="ImageLoadError" xml:space="preserve">
     <value>Fallo al cargar la imagen. </value>
@@ -142,7 +142,7 @@
     <value>No</value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
-    <value>Instalar este paquete</value>
+    <value>Paquete de instalación</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
     <value>Dividir archivo APK</value>
