@@ -3,6 +3,7 @@ using APKInstaller.Controls;
 using APKInstaller.Helpers;
 using APKInstaller.Models;
 using APKInstaller.ViewModels.SettingsPages;
+using CommunityToolkit.WinUI.UI;
 using CommunityToolkit.WinUI.UI.Controls;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
@@ -92,6 +93,9 @@ namespace APKInstaller.Pages.SettingsPages
                 case "WindowsColor":
                     _ = Launcher.LaunchUriAsync(new Uri("ms-settings:colors"));
                     break;
+                case "CopyConnectInfo":
+                    DataTransferHelper.CopyText(Provider.ConnectInfoTitle, "Connect Info");
+                    break;
                 default:
                     break;
             }
@@ -129,6 +133,19 @@ namespace APKInstaller.Pages.SettingsPages
             if (vs is not null and DeviceData device)
             {
                 SettingsHelper.Set(SettingsHelper.DefaultDevice, device);
+            }
+        }
+
+        private void InfoBar_Loaded(object sender, RoutedEventArgs e)
+        {
+            FrameworkElement element = sender as FrameworkElement;
+            if (element?.FindDescendant("Title") is TextBlock title)
+            {
+                title.IsTextSelectionEnabled = true;
+            }
+            if (element?.FindDescendant("Message") is TextBlock message)
+            {
+                message.IsTextSelectionEnabled = true;
             }
         }
 

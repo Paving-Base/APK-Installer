@@ -28,8 +28,20 @@ namespace APKInstaller.Helpers
             List<string> addresses = await GetAddressID("00-15-5d");
             foreach (string address in addresses)
             {
-                AdbClient.Connect(address);
+                _ = AdbClient.Connect(address);
             }
+        }
+
+        public static async Task<IEnumerable<string>> ConnectHyperVAsync()
+        {
+            AdbClient AdbClient = new();
+            List<string> addresses = await GetAddressID("00-15-5d");
+            List<string> results = new();
+            foreach (string address in addresses)
+            {
+                results.Add(await AdbClient.Connect(address));
+            }
+            return results;
         }
     }
 }

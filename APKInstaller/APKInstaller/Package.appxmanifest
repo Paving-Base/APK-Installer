@@ -51,7 +51,7 @@
           <uap:Rotation Preference="landscape"/>
           <uap:Rotation Preference="landscapeFlipped"/>
           <uap:Rotation Preference="portraitFlipped"/>
-		</uap:InitialRotationPreference>
+        </uap:InitialRotationPreference>
       </uap:VisualElements>
       <Extensions>
         <uap:Extension Category="windows.fileTypeAssociation">
@@ -84,6 +84,7 @@
             <uap:EditFlags OpenIsSafe="true"/>
           </uap:FileTypeAssociation>
         </uap:Extension>
+        <!--
         <uap:Extension Category="windows.shareTarget">
           <uap:ShareTarget Description="ms-resource:ShareDescription">
             <uap:SupportedFileTypes>
@@ -92,16 +93,16 @@
               <uap:FileType>.apkm</uap:FileType>
               <uap:FileType>.xapk</uap:FileType>
             </uap:SupportedFileTypes>
-            <uap:DataFormat>Bitmap</uap:DataFormat>
             <uap:DataFormat>StorageItems</uap:DataFormat>
           </uap:ShareTarget>
         </uap:Extension>
+        -->
       </Extensions>
     </Application>
   </Applications>
 
   <Capabilities>
-	<Capability Name="internetClient" />
-	<rescap:Capability Name="runFullTrust" />
+    <Capability Name="internetClient" />
+    <rescap:Capability Name="runFullTrust" />
   </Capabilities>
 </Package>

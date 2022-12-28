@@ -1128,7 +1128,7 @@ namespace APKInstaller.ViewModels
                                 TokenSource.Token.ThrowIfCancellationRequested();
                                 if (NetworkHelper.Instance.ConnectionInformation.IsInternetAvailable)
                                 {
-                                    await AddressHelper.ConnectHyperV();
+                                    _ = await AddressHelper.ConnectHyperVAsync();
                                     if (!await CheckDevice())
                                     {
                                         _ = new AdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));

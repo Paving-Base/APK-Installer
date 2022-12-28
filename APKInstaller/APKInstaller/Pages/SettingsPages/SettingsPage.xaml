@@ -113,6 +113,7 @@
                         x:Name="ConnectInfo"
                         Title="{Binding ConnectInfoTitle}"
                         IsOpen="{Binding ConnectInfoIsOpen}"
+                        Loaded="InfoBar_Loaded"
                         Severity="{Binding ConnectInfoSeverity}" />
                 </controls:SettingsGroup>
                 <controls:SettingsGroup x:Uid="/SettingsPage/DisplaySettingsHeader">
@@ -418,6 +419,7 @@
                         Title="{Binding UpdateStateTitle}"
                         IsClosable="True"
                         IsOpen="{Binding UpdateStateIsOpen}"
+                        Loaded="InfoBar_Loaded"
                         Message="{Binding UpdateStateMessage}"
                         Severity="{Binding UpdateStateSeverity}">
                         <InfoBar.ActionButton>
