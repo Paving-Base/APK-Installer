@@ -127,7 +127,7 @@
     <value>ADB lipsește</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>Fisier APK</value>
+    <value>Fișier APK</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>Capabilități:</value>

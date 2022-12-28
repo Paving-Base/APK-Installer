@@ -124,12 +124,12 @@
     <value>Почати</value>
   </data>
   <data name="Stop.Text" xml:space="preserve">
-    <value>Stop</value>
+    <value>Зупинити</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Applications</value>
+    <value>Додатки</value>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
-    <value>Uninstall</value>
+    <value>Видалити</value>
   </data>
 </root>

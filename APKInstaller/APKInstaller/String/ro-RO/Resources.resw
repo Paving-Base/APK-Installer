@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="APKDescription" xml:space="preserve">
-    <value>Pachetul de aplicații</value>
+    <value>Pachetul Aplicații Android</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>Fisier APK</value>
+    <value>Fișier APK</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>Un Android App Installer. Scris de @wherewhere and @Tangent-90.</value>
@@ -140,6 +140,9 @@
   </data>
   <data name="No" xml:space="preserve">
     <value>Nu</value>
+  </data>
+  <data name="ShareDescription" xml:space="preserve">
+    <value>Instalează acest pachet</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
     <value>Divide fişier</value>

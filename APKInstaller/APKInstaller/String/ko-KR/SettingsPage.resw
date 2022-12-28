@@ -274,10 +274,10 @@
     <value>Reset settings of this application.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
-    <value>Reset application</value>
+    <value>애플리케이션 초기화</value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
-    <value>Reset</value>
+    <value>초기화</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
     <value>예</value>
