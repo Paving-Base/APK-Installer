@@ -32,7 +32,7 @@ namespace APKInstaller.Helpers
             }
         }
 
-        public static async Task<IEnumerable<string>> ConnectHyperVAsync()
+        public static async Task<List<string>> ConnectHyperVAsync()
         {
             AdbClient AdbClient = new();
             List<string> addresses = await GetAddressID("00-15-5d");

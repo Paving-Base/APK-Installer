@@ -1,5 +1,4 @@
-﻿using AAPTForNet.Models;
-using AdvancedSharpAdbClient;
+﻿using AdvancedSharpAdbClient;
 using APKInstaller.Pages;
 using CommunityToolkit.WinUI;
 using Microsoft.UI.Dispatching;

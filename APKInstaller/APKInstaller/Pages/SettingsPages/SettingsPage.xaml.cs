@@ -32,20 +32,16 @@ namespace APKInstaller.Pages.SettingsPages
             if (SettingsViewModel.Caches != null)
             {
                 Provider = SettingsViewModel.Caches;
-                if (AdbServer.Instance.GetStatus().IsRunning)
-                {
-                    Provider.DeviceList = new AdbClient().GetDevices();
-                }
             }
             else
             {
                 Provider = new SettingsViewModel(this);
                 if (Provider.UpdateDate == DateTime.MinValue) { Provider.CheckUpdate(); }
-                if (AdbServer.Instance.GetStatus().IsRunning)
-                {
-                    ADBHelper.Monitor.DeviceChanged += Provider.OnDeviceChanged;
-                    Provider.DeviceList = new AdbClient().GetDevices();
-                }
+            }
+            if (AdbServer.Instance.GetStatus().IsRunning)
+            {
+                ADBHelper.Monitor.DeviceChanged += Provider.OnDeviceChanged;
+                Provider.DeviceList = new AdbClient().GetDevices();
             }
             DataContext = Provider;
             Provider.GetADBVersion();

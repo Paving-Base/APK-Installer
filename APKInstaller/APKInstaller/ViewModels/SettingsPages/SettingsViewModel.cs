@@ -10,6 +10,7 @@ using PInvoke;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 using System.Threading.Tasks;
@@ -460,6 +461,24 @@ namespace APKInstaller.ViewModels.SettingsPages
         public async void ConnectDevice(string ip)
         {
             ConnectingDevice = true;
+            IAdbServer ADBServer = AdbServer.Instance;
+            if (!ADBServer.GetStatus().IsRunning)
+            {
+                try
+                {
+                    _ = await Task.Run(() => ADBServer.StartServer(ADBPath, restartServerIfNewer: false));
+                    ADBHelper.Monitor.DeviceChanged += OnDeviceChanged;
+                }
+                catch (Exception ex)
+                {
+                    SettingsHelper.LogManager.GetLogger(nameof(SettingsViewModel)).Warn(ex.ExceptionToMessage(), ex);
+                    ConnectInfoSeverity = InfoBarSeverity.Warning;
+                    ConnectInfoTitle = ResourceLoader.GetForViewIndependentUse("InstallPage").GetString("ADBMissing");
+                    ConnectInfoIsOpen = true;
+                    ConnectingDevice = false;
+                    return;
+                }
+            }
             string results = (await new AdbClient().Connect(ip)).TrimStart();
             if (results.ToLowerInvariant().StartsWith("connected to"))
             {
