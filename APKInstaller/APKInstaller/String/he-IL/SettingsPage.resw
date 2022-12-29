@@ -121,7 +121,7 @@
     <value>אודות</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>ADB נתיב </value>
+    <value>נתיב ADB</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
     <value>גרסת ADB</value>
@@ -154,16 +154,16 @@
     <value>נקה מטמון</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>סגור ADB עלול לשבור מתקין אחרים כשהם עדיין פתוחים.</value>
+    <value>בחירת אפשרות זו עלולה לסגור מתקינים אחרים באמצע פעולתם.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
     <value>האם לסגור את ADB בעת סגירת תוכנית ההתקנה?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>סגור את מתקין לאחר התקנת APK והתחל.</value>
+    <value>סגור את "מתקין APK" לאחר התקנת האפליקציה והפעלתה.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>האם לסגור את תוכנית ההתקנה כאשר האפליקציה מוכנה?</value>
+    <value>האם לסגור את מתקין APK כאשר האפליקציה מוכנה?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>הגדר</value>
@@ -232,10 +232,10 @@
     <value>למד עוד</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
-    <value>יומני</value>
+    <value>יומן רישום</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>גרסה שונה עשויה להכיל משהו לא נעים. כגון AD, פונקציות שבורות אפילו וירוס. עבור אל מיקרוסופט סטור כדי להוריד את החנות המקורית. עיין במאגר גיטהאב שלנו כדי ללמוד עוד עליו.</value>
+    <value>גרסה שונה עשויה להכיל משהו לא נעים. כגון AD, פונקציות שבורות, ואפילו וירוס. עבור אל מיקרוסופט סטור כדי להוריד את הגרסה המקורית. עיין במאגר גיטהאב שלנו כדי ללמוד עוד עליו.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>אתה משתמש בגרסה ששונתה!
@@ -245,7 +245,7 @@
     <value>השבת אותו כדי להתחבר להתקנים אחרים.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>האם רק עבור WSA?</value>
+    <value>האם האפליקציה מיועדת רק עבור WSA?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>ארכיטקטורת מערכת הפעלה</value>
@@ -293,19 +293,19 @@
     <value>הצג עוזרים כאשר אין מכשיר מחובר.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>האם הצג עוזרים?</value>
+    <value>האם להציג עוזרים?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
     <value>הצג הודעות בחלק העליון של ההגדרות.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>האם הצג הכרזות?</value>
+    <value>האם להציג הכרזות?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
-    <value>הוא עלול להשאיר קבצים זמניים כאשר מתרחשת הפרעה בלתי צפויה.</value>
+    <value>היישום עלול להשאיר קבצים זמניים כאשר מתרחשת הפרעה בלתי צפויה.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>האם הצגת התקדמות ההתקנה?</value>
+    <value>האם להציג התקדמות התקנה?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>ערכת נושא של אפליקציה</value>
