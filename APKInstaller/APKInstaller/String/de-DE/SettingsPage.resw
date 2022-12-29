@@ -124,7 +124,7 @@
     <value>ADB-Pfad</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>ADB Version</value>
+    <value>ADB-Version</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>Automatischer Download, wenn das Paket von einer URL stammt.</value>
