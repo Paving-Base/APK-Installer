@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="APKDescription" xml:space="preserve">
-    <value>Android Anwendungspaket</value>
+    <value>Android-Anwendungssymbol</value>
   </data>
   <data name="APKFile" xml:space="preserve">
     <value>APK Datei</value>
@@ -142,7 +142,7 @@
     <value>Nein</value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
-    <value>Install this Package</value>
+    <value>Installiere das Paket</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
     <value>Split APK Datei</value>
