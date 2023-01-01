@@ -211,7 +211,7 @@
     <value>وصف الإطار</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
-    <value>Framework</value>
+    <value>الإطار البرمجي</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>انتقل إلى صفحة الاختبار.</value>
