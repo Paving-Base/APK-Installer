@@ -124,7 +124,7 @@
     <value>Ruta ADB</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>Versión ADB</value>
+    <value>Versión ADBversiontextblock. text</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>Autodescargar cuando el paquete viene de URL.</value>
