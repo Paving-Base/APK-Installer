@@ -142,7 +142,7 @@
     <value>Yes</value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
-    <value>No</value>
+    <value>Ні</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>Cannot Connect to WSA</value>
