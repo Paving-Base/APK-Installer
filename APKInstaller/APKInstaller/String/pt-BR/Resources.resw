@@ -121,7 +121,7 @@
     <value>ID do aplicativo Android</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>Arquivo APK</value>
+    <value>APK File</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>Um instalador de aplicativos Android. Escrito por @wherewhere e @Tangent-90.</value>
