@@ -130,10 +130,10 @@
     <value>تراكب مضغوط</value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
-    <value>A development version app may not stable. Download release version on Microsoft Store.</value>
+    <value>قد لا يكون تطبيق إصدار التطوير ثابتًا. قم بتحميل الإصدار على متجر Microsoft Store.</value>
   </data>
   <data name="DevelopmentInfoBar.Title" xml:space="preserve">
-    <value>You are using a development version app.</value>
+    <value>أنت تستخدم تطبيق إصدار التطوير.</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
     <value>أدخل أو الخروج من تراكب المضغوط</value>
@@ -151,22 +151,22 @@
     <value>العمليات</value>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
-    <value>Test Progress Ring on the Title Bar</value>
+    <value>اختبار خاتم التقدم في شريط العنوان</value>
   </data>
   <data name="ProgressSettings.Header" xml:space="preserve">
-    <value>Progress</value>
+    <value>مستوى التقدُّم</value>
   </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
-    <value>Set the value of Progress Ring</value>
+    <value>تعيين قيمة خاتم التقدم</value>
   </data>
   <data name="SetProgressValue.Header" xml:space="preserve">
-    <value>Progress Value</value>
+    <value>قيمة التقدم</value>
   </data>
   <data name="ShowRefreshButton.Description" xml:space="preserve">
-    <value>Show Refresh Button on the Title Bar</value>
+    <value>إظهار زر التحديث في شريط العنوان</value>
   </data>
   <data name="ShowRefreshButton.Header" xml:space="preserve">
-    <value>Refresh Button</value>
+    <value>زر التحديث</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>الاختبار</value>
