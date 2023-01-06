@@ -137,7 +137,7 @@
     <value>أدنى SDK</value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
-    <value>فتح مجلد الحُزْمَة</value>
+    <value>فتح ملف الحزمة</value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
     <value>إسم الباقة</value>
