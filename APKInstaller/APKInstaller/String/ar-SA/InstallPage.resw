@@ -121,7 +121,7 @@
     <value>ADB، جسر تصحيح أخطاء أندرويد، مطلوب لتثبيت APK للعمل. انقر فوق "تنزيل" لتحميله. من خلال التنزيل، أنت تقبل شروط وأحكام Google لـ ADB. إذا كنت قد قمت بتنزيل ADB بالفعل، انقر فوق "إختار" لتحديد ذلك.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Exists</value>
+    <value>ADB موجودة</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB مفقود</value>
@@ -148,7 +148,7 @@
     <value>لا يمكن الاتصال بالمضيف</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
+    <value>وقد لا تبدأ إدارة شؤون المرأة على نحو سليم، أو قد تكون هناك مشكلة مع مصرف التنمية الآسيوي. الرجاء إعادة تشغيل المثبت. إذا كان لا يزال لا يعمل، حاول إعادة تشغيل الكمبيوتر.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>لا يمكن فتح حزمة التطبيقات</value>
@@ -160,7 +160,7 @@
     <value>التحقق من ADB...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Checking Path...</value>
+    <value>التحقق من Adb...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>قم بالنقر هنا من أجل التسجيل</value>
@@ -169,7 +169,7 @@
     <value>إغلاق</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>Are you sure to cancel the installation?</value>
+    <value>هل تريد بالتأكيد إلغاء التثبيت؟</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Copy</value>
@@ -200,22 +200,22 @@
     <value>اذهب للإعدادات</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>A newer version is already installed</value>
+    <value>تم تثبيت نسخة أحدث بالفعل</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>You already have installed a new version {0} of this app. Are you sure to reinstall version {1}?</value>
+    <value>لقد قمت بالفعل بتثبيت إصدار جديد {0} من هذا التطبيق. هل أنت متأكد من إعادة تثبيت الإصدار {1}؟</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>How to connect WSA</value>
+    <value>كيف يمكن ربط WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Please make sure APK Installer has been updated to the latest version
-2. Make sure you have the Android Subsystem installed and running
-3. Turn on developer mode and make sure the IP address is displayed successfully
-4. Reopen APK Installer and continue your installation
+    <value>1. الرجاء التأكد من أن تثبيت APK قد تم تحديثه إلى أحدث إصدار
+2. تأكد من أن لديك نظام أندرويد الفرعي مثبت وتشغل
+3. قم بتشغيل وضع المطور وتأكد من عرض عنوان IP بنجاح
+4. إعادة فتح تثبيت APK ومواصلة التثبيت الخاص بك
 
-[Learn More]({0})</value>
+[معرفة المزيد]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
     <value>الصورة الرمزية</value>
@@ -224,10 +224,10 @@
     <value>أعرف</value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
-    <value>Incompatible App</value>
+    <value>قائمة غير متوافقة</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
-    <value>The minimum required for this app is {0}. Your device supports {1}. Please update your device or choose order package.</value>
+    <value>الحد الأدنى المطلوب لهذا التطبيق هو {0}. جهازك يدعم {1}. الرجاء تحديث جهازك أو اختيار حزمة الطلب.</value>
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
@@ -248,7 +248,7 @@
     <value>جاري التثبيت... </value>
   </data>
   <data name="InstallingPercent" xml:space="preserve">
-    <value>Installing {0}...</value>
+    <value>جاري التثبيت... </value>
     <comment>{0} - Progress.</comment>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
@@ -282,25 +282,25 @@
     <value>لا يمكن العثور على جهاز أندرويد</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>How to connect device</value>
+    <value>كيف يمكن ربط Wsa</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>If you want to install app into Windows Subsystem for Android™, you need to install it first. If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
+    <value>إذا كنت ترغب في تثبيت التطبيق في نظام ويندوز الفرعي لنظام AndroidTM، تحتاج إلى تثبيته أولاً. إذا كنت ترغب في التثبيت في أجهزة أخرى، يرجى الذهاب إلى صفحة الإعدادات، وقم بإيقاف تشغيل "فقط لWSA"، وتوصيل جهازك.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>#### Using USB
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open USB Debug
-3. Go to the Settings Page of APK Installer, select your device
-4. Go back, resume installation
-#### Using Wifi
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open Remote Debug
-3. Remember the IP address of your device
-4. Go to the Settings Page of APK Installer, connect and select your device
-5. Go back, resume installation
+    <value>#### استخدام USB
+1. الرجاء التأكد من تحديث APK Installer إلى [أحدث إصدار](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. تشغيل وضع المطور، فتح تصحيح أخطاء USB
+3. انتقل إلى صفحة إعدادات تثبيت APK ، حدد جهازك
+4. العودة ، استئناف التثبيت
+#### باستخدام Wifi
+1. الرجاء التأكد من أن مثبت APK قد تم تحديثه إلى [أحدث إصدار](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. تشغيل وضع المطور، فتح التصحيح عن بعد
+3. تذكر عنوان IP لجهازك
+4. انتقل إلى صفحة إعدادات تثبيت APK ، واتصل وحدد جهازك
+5. العودة، استئناف التثبيت
 
-[Learn More]({0})</value>
+[اعرف المزيد]({0})</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
     <value>لا يمكن الاتصال بالإنترنت</value>
@@ -321,14 +321,14 @@
     <value>اسم الباقة</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>Package Name: {0}</value>
+    <value>اسم الحزمة   </value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
     <value>إعادة التثبيت</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>{0} is already installed</value>
+    <value>% مُثبتٌ بالفعل</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
@@ -342,7 +342,7 @@
     <value>حدّد</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>Share</value>
+    <value>مشاركة</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
     <value>جارٍ بدء الخادم...</value>
@@ -351,7 +351,7 @@
     <value>ابدأ WSA</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
-    <value>Store Links</value>
+    <value>رابط المتجر</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
     <value>Unzip ADB...</value>
@@ -371,7 +371,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
-    <value>Version Code</value>
+    <value>إصدار التعليمات البرمجية</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
     <value>الإصدار: {0}</value>
@@ -392,7 +392,7 @@
 قد يستغرق هذا وقتا طويلا. اجلس إلى الوراء والاسترخاء.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome!</value>
+    <value>مرحبا!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>تعمل وكالة WSA</value>
