@@ -131,19 +131,19 @@
     <value>المميزات - {0} في المجموع</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
-    <value>اللغات</value>
+    <value>لغة</value>
   </data>
   <data name="MinSDK.Text" xml:space="preserve">
-    <value>أدنى SDK</value>
+    <value>مين SDK</value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
-    <value>فتح ملف الحزمة</value>
+    <value>فتح مِلَفّ الحُزْمَة</value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
     <value>إسم الباقة</value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
-    <value>حجم الحُزْمَة</value>
+    <value>إسم الباقة</value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
     <value>عدد الأذونات</value>
@@ -156,19 +156,19 @@
     <value>مشاركة الحُزْمَة</value>
   </data>
   <data name="SupportedArchitectures.Text" xml:space="preserve">
-    <value>المعماريات المدعومة</value>
+    <value>معماريات الدعم</value>
   </data>
   <data name="SupportResolutions.Text" xml:space="preserve">
-    <value>الدقَّات المدعومة</value>
+    <value>القرارات المدعومة</value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
-    <value>أحجام الشاشة المدعومة</value>
+    <value>دعم حجم الشاشة</value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
-    <value>الهدف SDK</value>
+    <value>Target SDK</value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
-    <value>حول: {0}</value>
+    <value>عن {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Version.Text" xml:space="preserve">
