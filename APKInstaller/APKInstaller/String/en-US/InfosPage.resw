@@ -172,7 +172,6 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Version.Text" xml:space="preserve">
-    <value>Version
-</value>
+    <value>Version</value>
   </data>
 </root>
