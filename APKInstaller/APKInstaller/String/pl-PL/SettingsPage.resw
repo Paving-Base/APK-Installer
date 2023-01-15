@@ -124,7 +124,7 @@
     <value>Ścieżka ADB</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>ADB Version</value>
+    <value>ADB Wersja</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>Automatyczne pobieranie, gdy pakiet jest z adresu URL.</value>
