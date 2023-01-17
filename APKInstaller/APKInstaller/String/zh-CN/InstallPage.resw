@@ -142,7 +142,7 @@
     <value>是</value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
-    <value>Fǒu</value>
+    <value>否</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>无法连接到 WSA</value>
