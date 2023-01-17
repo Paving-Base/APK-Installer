@@ -50,8 +50,8 @@
     <PackageReference Include="CommunityToolkit.WinUI.UI.Controls.DataGrid" Version="7.1.2" />
     <PackageReference Include="CommunityToolkit.WinUI.UI.Controls.Layout" Version="7.1.2" />
     <PackageReference Include="CommunityToolkit.WinUI.UI.Controls.Markdown" Version="7.1.2" />
-    <PackageReference Include="Downloader" Version="3.0.1" />
-    <PackageReference Include="MetroLog.Net6" Version="2.0.1" />
+    <PackageReference Include="Downloader" Version="3.0.2" />
+    <PackageReference Include="MetroLog.Net6" Version="2.1.0" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.755" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.2.221209.1" />
     <PackageReference Include="NativeMethods" Version="0.0.3" />
