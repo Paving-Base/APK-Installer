@@ -121,10 +121,10 @@
     <value>Menunggu perangkat...</value>
   </data>
   <data name="Start.Text" xml:space="preserve">
-    <value>Diaktifkan</value>
+    <value>Mulai</value>
   </data>
   <data name="Stop.Text" xml:space="preserve">
-    <value>Jeda</value>
+    <value>Berhenti</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Aplikasi</value>
