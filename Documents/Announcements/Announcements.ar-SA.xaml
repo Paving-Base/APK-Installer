@@ -3,7 +3,7 @@
     <InfoBar Title="هذا هو الإعلان (لا تسألني لماذا لا تحتوي هذه الرسالة على زر الإغلاق)" IsClosable="False" IsOpen="True" Message="يمكنك رؤية جميع أنواع الإشعارات هنا في المستقبل. إذا كنت لا تريد رؤيتهم، يمكنك إيقافهم في الإعدادات أدناه." Severity="Informational"/>
     <InfoBar Title="ترجمات" IsClosable="True" IsOpen="True" Message="وبما أن صاحب البلاغ لا يعرف سوى اللغتين الصينية والإنكليزية، فإن جميع الترجمات متروكة للمجتمع المحلي. إذا كنت لا تريد رؤية لغة غير مألوفة، مرحبا بك في كراودِن للترجمة!" Severity="Informational">
         <InfoBar.ActionButton>
-            <HyperlinkButton HorizontalAlignment="Right" Content="Click Me" NavigateUri="https://crowdin.com/project/APKInstaller"/>
+            <HyperlinkButton HorizontalAlignment="Right" Content="انقرني" NavigateUri="https://crowdin.com/project/APKInstaller"/>
         </InfoBar.ActionButton>
     </InfoBar>
 </controls:SettingsGroup>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<controls:SettingsGroup xmlns:controls="using:APKInstaller.Controls" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Header="Announcements" Margin="0,-28,0,0">
-    <InfoBar Title="Here is the announcement (Don't ask me why this message doesn't have a close button)" IsClosable="False" IsOpen="True" Message="You can see all kinds of notifications here in the future. If you don't want to see them, you can turn them off in the settings below." Severity="Informational"/>
-    <InfoBar Title="Meer Vertalingen" IsClosable="True" IsOpen="True" Message="Since the author only knows Chinese and English, all translations are left to the community. If you don't want to see an unfamiliar language, welcome to Crowdin to translate!" Severity="Informational">
+<controls:SettingsGroup xmlns:controls="using:APKInstaller.Controls" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Header="Mededelingen" Margin="0,-28,0,0">
+    <InfoBar Title="Hier is de aankondiging (Vraag me niet waarom dit bericht geen sluit knop heeft)" IsClosable="False" IsOpen="True" Message="Je kunt hier in de toekomst allerlei meldingen zien. Als je ze niet wilt zien, kun je ze uitschakelen in de instellingen hieronder." Severity="Informational"/>
+    <InfoBar Title="Meer Vertalingen" IsClosable="True" IsOpen="True" Message="Omdat de auteur alleen Chinees en Engels kent, worden alle vertalingen aan de community overgelaten. Als u geen onbekende taal wilt zien, heten we je welkom om bij Crowdin te vertalen!" Severity="Informational">
         <InfoBar.ActionButton>
-            <HyperlinkButton HorizontalAlignment="Right" Content="Click Me" NavigateUri="https://crowdin.com/project/APKInstaller"/>
+            <HyperlinkButton HorizontalAlignment="Right" Content="Klik op mij" NavigateUri="https://crowdin.com/project/APKInstaller"/>
         </InfoBar.ActionButton>
     </InfoBar>
 </controls:SettingsGroup>

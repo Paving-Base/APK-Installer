@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<controls:SettingsGroup xmlns:controls="using:APKInstaller.Controls" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Header="Announcements" Margin="0,-28,0,0">
-    <InfoBar Title="Here is the announcement (Don't ask me why this message doesn't have a close button)" IsClosable="False" IsOpen="True" Message="You can see all kinds of notifications here in the future. If you don't want to see them, you can turn them off in the settings below." Severity="Informational"/>
-    <InfoBar Title="More Translations" IsClosable="True" IsOpen="True" Message="Since the author only knows Chinese and English, all translations are left to the community. If you don't want to see an unfamiliar language, welcome to Crowdin to translate!" Severity="Informational">
+<controls:SettingsGroup xmlns:controls="using:APKInstaller.Controls" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Header="Оголошення" Margin="0,-28,0,0">
+    <InfoBar Title="Ось тут оголошення (не питайте мене, чому це повідомлення не має кнопки закриття)" IsClosable="False" IsOpen="True" Message="У майбутньому ви зможете бачити всі види сповіщень тут. Якщо ви не хочете їх бачити, ви можете вимкнути їх у налаштуваннях нижче." Severity="Informational"/>
+    <InfoBar Title="Більше перекладів" IsClosable="True" IsOpen="True" Message="Оскільки автор знає лише китайську та англійську мови, усі переклади залишаються за спільнотою. Якщо ви хочете бачити рідну мову, ласкаво просимо до Crowdin для перекладу!" Severity="Informational">
         <InfoBar.ActionButton>
-            <HyperlinkButton HorizontalAlignment="Right" Content="Click Me" NavigateUri="https://crowdin.com/project/APKInstaller"/>
+            <HyperlinkButton HorizontalAlignment="Right" Content="Натисни на мене" NavigateUri="https://crowdin.com/project/APKInstaller"/>
         </InfoBar.ActionButton>
     </InfoBar>
 </controls:SettingsGroup>
