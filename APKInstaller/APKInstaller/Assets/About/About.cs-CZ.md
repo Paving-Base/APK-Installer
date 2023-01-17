@@ -1,4 +1,4 @@
-#### Vítejte v instalaci APK!
+#### Welcome to the APK Installer!
 
 ##### Declaration
 1. Please follow the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
@@ -17,10 +17,11 @@ Thanks to [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") translat
 - [sam1357](https://github.com/sam1357)
 
 ##### Citations and References
-- [WinUI](https://github.com/microsoft/microsoft-ui-xaml "WinUI")
 - [MetroLog](https://github.com/roubachof/MetroLog "MetroLog")
+- [Windows UI](https://github.com/microsoft/microsoft-ui-xaml "Windows UI")
 - [Downloader](https://github.com/bezzad/Downloader "Downloader")
 - [AAPTForNet](https://github.com/canheo136/QuickLook.Plugin.ApkViewer "AAPTForNet")
+- [NativeMethods](https://github.com/lepoco/nativemethods "NativeMethods")
 - [Sharp Compress](https://github.com/adamhathcock/sharpcompress "Sharp Compress")
 - [Advanced Sharp Adb Client](https://github.com/yungd1plomat/AdvancedSharpAdbClient "Advanced Sharp Adb Client")
 - [Windows Community Toolkit](https://github.com/CommunityToolkit/WindowsCommunityToolkit "Windows Community Toolkit")
