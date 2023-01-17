@@ -124,7 +124,7 @@
     <value>Ruta ADB</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>ADB Version</value>
+    <value>Versió de l’ADB</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>Baixa automàticament quan el paquet prové d’un URL.</value>
@@ -256,13 +256,13 @@
     <value>Altres</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>Dark</value>
+    <value>Fosc</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>Windows Default</value>
+    <value>Valor per defecte del Windows</value>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
-    <value>Light</value>
+    <value>Clar</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
     <value>Rate On Store</value>
