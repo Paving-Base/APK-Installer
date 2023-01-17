@@ -133,7 +133,7 @@
     <value>هل التنزيل التلقائي للحزم عبر الإنترنت؟</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>Select Backdrop Type for Windows 11</value>
+    <value>حدد نوع الخلفية للويندوز 11</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
     <value>Backdrop</value>
@@ -211,7 +211,7 @@
     <value>وصف الإطار</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
-    <value>Framework</value>
+    <value>الإطار البرمجي</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>انتقل إلى صفحة الاختبار.</value>
@@ -229,7 +229,7 @@
     <value>آخر للتأكد:</value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
-    <value>Learn More</value>
+    <value>معرفة المزيد</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
     <value>Logs</value>
@@ -283,7 +283,7 @@
     <value>123</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
-    <value>هل أنت متأكد من أنك تريد إعادة تعيين التطبيق؟</value>
+    <value>هل أنت متحقِّق من أنك تريد إعادة ضبط التطبيق؟</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Select Device</value>
@@ -307,10 +307,10 @@
     <value>Is Show Progress of Installation?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
-    <value>App Theme</value>
+    <value>مظهر التطبيق</value>
   </data>
   <data name="ThemesSettingsHeader.Header" xml:space="preserve">
-    <value>Themes</value>
+    <value>سمة البرنامج</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>إعدادات</value>
@@ -325,6 +325,6 @@
     <value>تم تحديثه</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Windows Color Settings</value>
+    <value>إعدادات ألوان ويندوز</value>
   </data>
 </root>

@@ -118,213 +118,213 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
-    <value>About</value>
+    <value>Over</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>ADB Path</value>
+    <value>ADB pad</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>ADB Version</value>
+    <value>ADB versie</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>Auto download when package is from URL.</value>
+    <value>Automatisch downloaden wanneer een pakket van een URL is.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Does Auto Download Online Packages?</value>
+    <value>Online pakketten automatisch downloaden?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>Select Backdrop Type for Windows 11</value>
+    <value>Selecteer Achtergrondtype voor Windows 11</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>Backdrop</value>
+    <value>Achtergrond</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
-    <value>Change</value>
+    <value>Wijzigen</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>Check Failed</value>
+    <value>Controleren is mislukt</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>Checking For Updates...</value>
+    <value>Controleren op updates...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
-    <value>Check For Updates</value>
+    <value>Controleer op Updates</value>
   </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
-    <value>Clear cache</value>
+    <value>Cache wissen</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Close ADB may break other Installers when they still open.</value>
+    <value>ADB sluiten kan andere installers breken wanneer ze nog open zijn.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Does Close ADB when Closing Installer?</value>
+    <value>ADB sluiten bij het sluiten van de installer</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Close Installer after APK has installed and start.</value>
+    <value>Sluit de installatie nadat de APK is geïnstalleerd en opgestart.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Does Close Installer when APP is Ready?</value>
+    <value>Sluit Installer wanneer de App klaar is</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
-    <value>Configs</value>
+    <value>Configuratie</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device on network.</value>
+    <value>Apparaat verbinden met netwerk.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
-    <value>Connect Device</value>
+    <value>Apparaat verbinden</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
-    <value>Contact Me</value>
+    <value>Neem contact met mij op</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bug, please report it to me in PM. I will try my best to solve the problem. If you have Telegram account, welcome to chat at Paving Base Group 😊!</value>
+    <value>Volg mij op sociale apps voor de nieuwste ontwikkelingen. Als u een bug vindt, rapporteer deze dan aan mij in PM. Ik zal mijn best doen om het probleem op te lossen. Als je een Telegram-account hebt, dan ben je van harte welkom om te chatten in de Paving Base Groep 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
-    <value>Content</value>
+    <value>Inhoud</value>
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
-    <value>Device</value>
+    <value>Apparaat</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
-    <value>Display</value>
+    <value>Weergave</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
-    <value>Supports</value>
+    <value>Ondersteuning</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application, and no ads will be added for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your support.💕</value>
+    <value>APK Installer is een open-source applicatie en er worden geen advertenties toegevoegd voor winst. Als deze app je bevalt, vergeet dan niet om hem in de winkel te beoordelen. Natuurlijk zou het beter zijn als je wat zou kunnen doneren. Bedankt voor je steun.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
-    <value>EULA</value>
+    <value>Gebruikersovereenkomst</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
     <value>Feedback</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
-    <value>Find Update</value>
+    <value>Update gevonden</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>Information about the frameworks of this app.</value>
+    <value>Informatie over de frameworks van deze app.</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
-    <value>Framework Information</value>
+    <value>Framework Informatie</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
     <value>Framework</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>Go to the page of test.</value>
+    <value>Ga naar de testpagina.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>Go to TestPage</value>
+    <value>Ga naar Testpagina</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
-    <value>Go to Update</value>
+    <value>Update downloaden</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
-    <value>Join Our Chat</value>
+    <value>Word lid van onze chat</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Last Checked: </value>
+    <value>Laatst gecontroleerd:</value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
-    <value>Learn More</value>
+    <value>Lees Meer</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
-    <value>Logs</value>
+    <value>Logboeken</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may contain something unpleasant. Such as AD, broken functions even virus. Please go to Microsoft Store to download the original one. See our GitHub Repository to learn more about it.</value>
+    <value>Een aangepaste versie kan iets onaangenaams bevatten, zoals reclame, kapotte functies of zelfs virussen. Ga naar Microsoft Store om de originele versie te downloaden. Bekijk onze GitHub Repository voor meer informatie.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>You are using a modified version!</value>
+    <value>U gebruikt een aangepaste versie!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Disable it to connect to other devices.</value>
+    <value>Schakel uit om verbinding te maken met andere apparaten.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>Is Only for WSA?</value>
+    <value>Alelen voor WSA</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>OS Architecture</value>
+    <value>OS architectuur</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
-    <value>OS Platform</value>
+    <value>OS platform</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
-    <value>Others</value>
+    <value>Overige</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>Dark</value>
+    <value>Donker</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>Windows Default</value>
+    <value>Windows standaard</value>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
-    <value>Light</value>
+    <value>Licht</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value>Rate On Store</value>
+    <value>Beoordeel ons in de Store</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
-    <value>Release notes</value>
+    <value>Releaseopmerkingen</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
-    <value>Reset settings of this application.</value>
+    <value>Instellingen resetten van deze applicatie.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
-    <value>Reset application</value>
+    <value>Applicatie resetten</value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
-    <value>Reset</value>
+    <value>Resetten</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
-    <value>Yes</value>
+    <value>Ja</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
-    <value>Are you sure you want to reset the app?</value>
+    <value>Weet u zeker dat u de app wilt resetten?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
-    <value>Select Device</value>
+    <value>Selecteer apparaat</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
-    <value>Show helpers when no device is connected.</value>
+    <value>Toon helpers wanneer er geen apparaat is aangesloten.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Is Show Helpers?</value>
+    <value>Helper tonen</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Show Announcements on the top of Settings.</value>
+    <value>Toon mededelingen bovenaan de instellingen.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Is Show Announcements?</value>
+    <value>Mededelingen tonen</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
-    <value>It may leave temp files when an unexpected interruption occurs.</value>
+    <value>Het kan tijdelijke bestanden achterlaten als er een onverwachte onderbreking optreedt.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Is Show Progress of Installation?</value>
+    <value>Toon voortgang van de installatie</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
-    <value>App Theme</value>
+    <value>Appthema</value>
   </data>
   <data name="ThemesSettingsHeader.Header" xml:space="preserve">
-    <value>Themes</value>
+    <value>Thema's</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Settings</value>
+    <value>Instellingen</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>Translate</value>
+    <value>Vertalen</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
-    <value>Version</value>
+    <value>Versie</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Up To Date</value>
+    <value>Actueel</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Windows Color Settings</value>
+    <value>Windows Kleurinstellingen</value>
   </data>
 </root>

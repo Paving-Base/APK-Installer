@@ -121,7 +121,7 @@
     <value>في انتظار الجهاز...</value>
   </data>
   <data name="Start.Text" xml:space="preserve">
-    <value>تشغيل</value>
+    <value>إبدأ</value>
   </data>
   <data name="Stop.Text" xml:space="preserve">
     <value>توقف</value>

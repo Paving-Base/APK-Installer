@@ -124,7 +124,7 @@
     <value>Очікування пристрою...</value>
   </data>
   <data name="Name.Header" xml:space="preserve">
-    <value>Ім'я</value>
+    <value>Назва</value>
   </data>
   <data name="ProcessId.Header" xml:space="preserve">
     <value>ID процесу</value>

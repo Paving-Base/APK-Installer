@@ -118,282 +118,283 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, the Android Debug Bridge, is needed for APK Installer to work. Click "Download" to download it. By downloading, you accept the Google Terms and Conditions for ADB. If you have already downloaded ADB, click "Select" to select it.</value>
+    <value>ADB, de Android Debug Bridge, is nodig om APK Installer te laten werken. Klik op "Download" om het te downloaden. Door te downloaden, accepteer je de Google voorwaarden voor ADB. Als je de ADB al hebt gedownload, klik je op "Selecteren" om het te selecteren.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Exists</value>
+    <value>ADB bestaat al</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>ADB is missing</value>
+    <value>ADB ontbreekt</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>APK File</value>
+    <value>APK bestand</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Capabilities: </value>
+    <value>Mogelijkheden:</value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>App Name</value>
+    <value>Applicatie naam</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Annuleren</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
-    <value>Yes</value>
+    <value>Ja</value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
-    <value>No</value>
+    <value>Nee</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Cannot Connect to WSA</value>
+    <value>Kan geen verbinding maken met WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
+    <value>Of WSA is niet goed gestart, of er is een probleem met ADB. Dit probleem kan erg moeilijk op te lossen zijn. Start het installatieprogramma opnieuw op. Als het nog steeds niet werkt, probeer dan de computer opnieuw te starten.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>Cannot open app package</value>
+    <value>Kan app pakket niet openen</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>Checking...</value>
+    <value>Controleren...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Checking ADB...</value>
+    <value>ADB controleren...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Checking Path...</value>
+    <value>Pad controleren...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Click here to read them</value>
+    <value>Klik hier om het te bekijken</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Close</value>
+    <value>Sluiten</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>Are you sure to cancel the installation?</value>
+    <value>Weet u zeker dat u de installatie wilt annuleren?</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
-    <value>Copy</value>
+    <value>Kopiëren</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>Devices</value>
+    <value>Apparaten</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Download</value>
+    <value>Downloaden</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>Download Failed</value>
+    <value>Downloaden mislukt</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>Please check your network connection or the URL and try again.</value>
+    <value>Controleer uw netwerkverbinding of de URL en probeer opnieuw.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>Finding WSA...</value>
+    <value>WSA zoeken...</value>
   </data>
   <data name="Finished" xml:space="preserve">
-    <value>Finished</value>
+    <value>Voltooid</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>WSA Found</value>
+    <value>WSA gevonden</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>Go to Setting</value>
+    <value>Ga naar Instellingen</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>A newer version is already installed</value>
+    <value>Een nieuwere versie is al geïnstalleerd</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>You already have installed a new version {0} of this app. Are you sure to reinstall version {1}?</value>
+    <value>U heeft al de nieuwere versie {0} geïnstalleerd. Weet u zeker dat u versie {1} opnieuw wilt installeren?</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>How to connect WSA</value>
+    <value>Hoe maak je verbinding met WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Please make sure APK Installer has been updated to the latest version
-2. Make sure you have the Android Subsystem installed and running
-3. Turn on developer mode and make sure the IP address is displayed successfully
-4. Reopen APK Installer and continue your installation
+    <value>1. Zorg ervoor dat de APK Installer is bijgewerkt naar de laatste versie
+2. Zorg ervoor dat het Android Subsysteem is geïnstalleerd en wordt uitgevoerd
+3. Schakel Ontwikkelaarsmodus in en zorg ervoor dat het IP-adres wordt weergegeven
+4. Open APK Installer opnieuw en ga verder met de installatie
 
-[Learn More]({0})</value>
+[Meer informatie]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
-    <value>Icon</value>
+    <value>Icoon</value>
   </data>
   <data name="IKnow" xml:space="preserve">
-    <value>I Know</value>
+    <value>Ik begrijp het</value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
-    <value>Incompatible App</value>
+    <value>Incompatibele Applicatie</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
-    <value>The minimum required for this app is {0}. Your device supports {1}. Please update your device or choose order package.</value>
+    <value>Minimale vereiste voor deze app is {0}. Uw apparaat ondersteunt {1}. Update uw apparaat of kies een ander pakket.</value>
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
-    <value>Infos</value>
+    <value>Informatie</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>Install</value>
+    <value>Installeren</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
-    <value>{0} is ready!</value>
+    <value>{0} is klaar!</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
-    <value>Install {0}?</value>
+    <value>{0} installeren?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
-    <value>Installing...</value>
+    <value>Installeren...</value>
   </data>
   <data name="InstallingPercent" xml:space="preserve">
-    <value>Installing {0}...</value>
+    <value>{0} installeren...</value>
     <comment>{0} - Progress.</comment>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
-    <value>Reason: </value>
+    <value>Reden: </value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
-    <value>Install WSA</value>
+    <value>Installeer WSA</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
-    <value>The package is either corrupted or invalid.</value>
+    <value>Het pakket is beschadigd of ongeldig.</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
-    <value>The URL is either Incomplete or invalid.</value>
+    <value>De URL is onvolledig of ongeldig.</value>
   </data>
   <data name="Launch" xml:space="preserve">
-    <value>Launch</value>
+    <value>Starten</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
-    <value>Launching WSA...</value>
+    <value>WSA starten...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>Launch when ready</value>
+    <value>Start wanneer klaar</value>
   </data>
   <data name="Loading" xml:space="preserve">
-    <value>Loading...</value>
+    <value>Bezig met laden...</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
-    <value>More Info</value>
+    <value>Meer Informatie</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
-    <value>Cannot find Android Device</value>
+    <value>Kan Android Apparaat niet vinden</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>How to connect device</value>
+    <value>Hoe verbind je een apparaat</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>If you want to install app into Windows Subsystem for Android™, you need to install it first. If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
+    <value>Als u de app wilt installeren in Windows Subsysteem voor Android™, moet u deze eerst installeren. Als u het op andere apparaten wilt installeren, ga dan naar Instellingen en zet "Alleen voor WSA" uit en verbind uw apparaat.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>#### Using USB
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open USB Debug
-3. Go to the Settings Page of APK Installer, select your device
-4. Go back, resume installation
-#### Using Wifi
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open Remote Debug
-3. Remember the IP address of your device
-4. Go to the Settings Page of APK Installer, connect and select your device
-5. Go back, resume installation
+    <value>#### Bij gebruik van USB
+1. Controleer of de APK Installer is bijgewerkt naar [de nieuwste versie](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Schakel Ontwikkelaarsmodus in, open USB Debug
+3. Ga naar Instellingen cvan APK Installer, selecteer uw apparaat
+4. Ga terug, ga verder met de installatie
+#### Bij gebruik van WiFi
+1. Controleer of de APK Installer is bijgewerkt naar [de nieuwste versie](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Schakel Ontwikkelaarsmodus in, open Remote Debug
+3. Onthoud het IP-adres van uw apparaat
+3. Ga naar Instellingen cvan APK Installer, verbind en selecteer uw apparaat
+4. Ga terug, ga verder met de installatie
 
-[Learn More]({0})</value>
+[Meer informatie]({0})</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
-    <value>Cannot connect Internet</value>
+    <value>Kan geen verbinding maken met internet</value>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
-    <value>Please connect to the internet before opening the app.</value>
+    <value>Maak verbinding met internet voordat u de app opent.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>For proper functioning of the app, try to launch an Android app package.</value>
+    <value>Om de app goed te laten functioneren, probeer een Android-app-pakket te starten.</value>
   </data>
   <data name="OK" xml:space="preserve">
-    <value>OK</value>
+    <value>Oké</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
-    <value>Online Package</value>
+    <value>Online Pakket</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
-    <value>Package Name</value>
+    <value>Pakketnaam</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>Package Name: {0}</value>
+    <value>Pakketnaam: {0}</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
-    <value>Reinstall</value>
+    <value>Opnieuw installeren</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>{0} is already installed</value>
+    <value>{0} is al geïnstalleerd</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
-    <value>A newer version of {0} is already installed.</value>
+    <value>Er is al een nieuwere versie van {0} geïnstalleerd.</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>Retry</value>
+    <value>Opnieuw proberen</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>Select</value>
+    <value>Selecteer</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>Share</value>
+    <value>Deel</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
-    <value>Starting ADB Server...</value>
+    <value>
+ADB-server starten...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>Start WSA</value>
+    <value>WSA starten</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
     <value>Store Links</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
-    <value>Unzip ADB...</value>
+    <value>ADB uitpakken...</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
-    <value>Unzip completed</value>
+    <value>Uitpakken voltooid</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
-    <value>Unzipping {0}/{1} ...</value>
+    <value>Uitpakken {0}/{1}...</value>
     <comment>{0} - Have done num. {1} - All num.</comment>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>Update</value>
+    <value>Bijwerken</value>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
-    <value>Update {0}?</value>
+    <value>{0} bijwerken?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
-    <value>Version Code</value>
+    <value>Versienummer</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>Version: {0}</value>
+    <value>Versie: {0}</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>Waiting for download...</value>
+    <value>Wachten op download...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>Waiting for Device...</value>
+    <value>Wachten op apparaat...</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
-    <value>Waiting for install {0}</value>
+    <value>Wachten op installatie {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
-    <value>Waiting WSA Start...
-This may take long time. Sit back and relax.</value>
+    <value>Wachten totdat WSA is gestart...
+Dit kan lang duren. Leun achterover en ontspan.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome!</value>
+    <value>Welkom!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>WSA is Running</value>
+    <value>WSA wordt uitgevoerd</value>
   </data>
 </root>

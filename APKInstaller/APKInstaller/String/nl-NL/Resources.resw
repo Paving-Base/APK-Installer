@@ -121,7 +121,7 @@
     <value>Android Applicatie Pakket</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>APK File</value>
+    <value>APK bestand</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>Een Android App Installer. Geschreven door @wherewhere en @Tangent-90.</value>
@@ -130,24 +130,24 @@
     <value>APK Installer</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
-    <value>There was an error with the program…</value>
+    <value>Er is een fout opgetreden bij het programma…</value>
   </data>
   <data name="ImageLoadError" xml:space="preserve">
-    <value>Picture loading failed.</value>
+    <value>Afbeelding laden mislukt.</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>There are some problems with the network...</value>
+    <value>Er zijn wat problemen met het netwerk...</value>
   </data>
   <data name="No" xml:space="preserve">
-    <value>No</value>
+    <value>Nee</value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
-    <value>Install this Package</value>
+    <value>Installeer dit pakket</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>Split APK File</value>
+    <value>Splits APK-bestand</value>
   </data>
   <data name="Yes" xml:space="preserve">
-    <value>Yes</value>
+    <value>Ja</value>
   </data>
 </root>
