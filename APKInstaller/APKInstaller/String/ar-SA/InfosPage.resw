@@ -165,7 +165,7 @@
     <value>دعم حجم الشاشة</value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
-    <value>Target SDK</value>
+    <value>الهدف SDK</value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
     <value>عن {0}</value>
