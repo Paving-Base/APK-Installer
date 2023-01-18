@@ -1,4 +1,4 @@
-#### مرحبا بكم في تثبيت APK!
+#### مرحبا في اداة تنصيب كاميلو
 
 ##### أعلان
 1. Please follow the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
