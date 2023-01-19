@@ -232,7 +232,7 @@
     <value>معرفة المزيد</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
-    <value>Logs</value>
+    <value>سجلات</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
     <value>A modified version may contain something unpleasant. Such as AD, broken functions even virus. Please go to Microsoft Store to download the original one. See our GitHub Repository to learn more about it.</value>
