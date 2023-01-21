@@ -142,7 +142,7 @@
     <value>Tidak</value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
-    <value>Pasang paket ini</value>
+    <value>Paket pemasangan</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
     <value>Pisahkan File APK</value>
