@@ -121,7 +121,7 @@
     <value>Paket Aplikasi Android</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>File APK</value>
+    <value>berkas APK</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>Penginstal Aplikasi Android. Ditulis oleh @wherewhere dan @Tangent-90.</value>
