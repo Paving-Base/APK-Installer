@@ -121,7 +121,7 @@
     <value>Πακέτο Εφαρμογών Android</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>APK File</value>
+    <value>Αρχείο APK</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>An Android App Installer. Written by @wherewhere and @Tangent-90.</value>
