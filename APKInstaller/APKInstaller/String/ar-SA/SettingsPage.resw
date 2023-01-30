@@ -235,7 +235,7 @@
     <value>سجلات</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may contain something unpleasant. Such as AD, broken functions even virus. Please go to Microsoft Store to download the original one. See our GitHub Repository to learn more about it.</value>
+    <value>قد تحتوي النسخة المعدلة على شيء غير سار. مثل AD ، وظائف مكسورة حتى الفيروس. الرجاء الذهاب إلى متجر مايكروسوفت لتنزيل المتجر الأصلي. راجع مستودع GitHub لمعرفة المزيد عنها.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>You are using a modified version!</value>
