@@ -28,7 +28,7 @@ namespace APKInstaller.Helpers
             List<string> addresses = await GetAddressID("00-15-5d");
             foreach (string address in addresses)
             {
-                _ = AdbClient.Connect(address);
+                _ = AdbClient.ConnectAsync(address);
             }
         }
 
@@ -39,7 +39,7 @@ namespace APKInstaller.Helpers
             List<string> results = new();
             foreach (string address in addresses)
             {
-                results.Add(await AdbClient.Connect(address));
+                results.Add(await AdbClient.ConnectAsync(address));
             }
             return results;
         }

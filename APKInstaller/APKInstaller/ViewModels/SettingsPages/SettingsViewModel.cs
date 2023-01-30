@@ -479,7 +479,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                     return;
                 }
             }
-            string results = (await new AdbClient().Connect(ip)).TrimStart();
+            string results = (await new AdbClient().ConnectAsync(ip)).TrimStart();
             if (results.ToLowerInvariant().StartsWith("connected to"))
             {
                 ConnectInfoSeverity = InfoBarSeverity.Success;

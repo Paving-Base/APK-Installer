@@ -990,12 +990,12 @@ namespace APKInstaller.ViewModels
                         await AddressHelper.ConnectHyperV();
                         if (!await CheckDevice())
                         {
-                            _ = new AdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
+                            _ = new AdbClient().ConnectAsync(new DnsEndPoint("127.0.0.1", 58526));
                         }
                     }
                     else
                     {
-                        _ = new AdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
+                        _ = new AdbClient().ConnectAsync(new DnsEndPoint("127.0.0.1", 58526));
                     }
                 }
                 ADBHelper.Monitor.DeviceChanged += OnDeviceChanged;
@@ -1131,12 +1131,12 @@ namespace APKInstaller.ViewModels
                                     _ = await AddressHelper.ConnectHyperVAsync();
                                     if (!await CheckDevice())
                                     {
-                                        _ = new AdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
+                                        _ = new AdbClient().ConnectAsync(new DnsEndPoint("127.0.0.1", 58526));
                                     }
                                 }
                                 else
                                 {
-                                    _ = new AdbClient().Connect(new DnsEndPoint("127.0.0.1", 58526));
+                                    _ = new AdbClient().ConnectAsync(new DnsEndPoint("127.0.0.1", 58526));
                                 }
                                 await Task.Delay(100);
                             }
