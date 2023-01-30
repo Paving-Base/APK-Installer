@@ -169,7 +169,7 @@
     <value>Chiudi</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>Are you sure to cancel the installation?</value>
+    <value>Sei sicuro di voler annullare l'installazione?</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Copia</value>
@@ -199,10 +199,10 @@
     <value>Vai alle impostazioni</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>A newer version is already installed</value>
+    <value>Una versione più recente è già installata</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>You already have installed a new version {0} of this app. Are you sure to reinstall version {1}?</value>
+    <value>Hai già installato una nuova versione {0} di quest'app. Sei sicuro di voler reinstallare la versione {1}?</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
@@ -223,10 +223,10 @@
     <value>Ok</value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
-    <value>Incompatible App</value>
+    <value>App Incompatibile</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
-    <value>The minimum required for this app is {0}. Your device supports {1}. Please update your device or choose order package.</value>
+    <value>La versione minima necessaria per quest'app è {0}. Il tuo dispositivo supporta la {1}. Sei pregato di aggiornare il tuo dispositivo o di scegliere un pacchetto precedente.</value>
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
@@ -247,7 +247,7 @@
     <value>Installazione in corso...</value>
   </data>
   <data name="InstallingPercent" xml:space="preserve">
-    <value>Installing {0}...</value>
+    <value>Installazione di {0}...</value>
     <comment>{0} - Progress.</comment>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
