@@ -5,7 +5,7 @@
  Instalador de APK´s Licença do Utilizador acabou devido à aceitação com o Termo de política e Privacidade.</li> 
    
    2 Este programa é de um "Software" de fonte aberta, então por favor tenha a certeza que o Programa é a forma [ este Repositório do GitHub](https://github.com/Paving-Base/APK-Installer) ou </a> para manter os seus dados seguros.
-3 If the source of the program is not abnormal, all your data will only be used to run with the program or stored locally during the program running, and the developer will not steal any of your data. Still, please pay attention to the security of the environment.
+3 Se a fonte do Programa não estiver "anormal", todos os seus dados serão apenas usados para executar ou para armazenar localmente durante a execução do Programa, e o programador não ira roubar os seus arquivos/dados.  Ainda assim, por favor preste atenção à segurança ambiental /segurança do Ambiente.
 4 A tradução desta aplicação é responsabilidade da [comunidade Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") e nenhuma parte do texto representa a opinião do seu autor.</ol> 
 
 
