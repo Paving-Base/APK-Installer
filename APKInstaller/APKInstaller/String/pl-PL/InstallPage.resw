@@ -206,7 +206,7 @@
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>How to connect WSA</value>
+    <value>Jak łączyć WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
     <value>1. Please make sure APK Installer has been updated to the latest version
@@ -284,7 +284,7 @@
     <value>How to connect device</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>If you want to install app into Windows Subsystem for Android™, you need to install it first. If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
+    <value>Jeśli chcesz zainstalować aplikację w podsystemie Windows dla AndroidTM, musisz ją najpierw zainstalować. Jeśli chcesz zainstalować na innych urządzeniach, przejdź do strony Ustawień, włącz "Jest tylko dla WSA" i podłącz swoje urządzenie.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
     <value>#### Using USB
@@ -347,7 +347,7 @@
     <value>Uruchamianie serwera ADB...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>Uruchom WSA</value>
+    <value>Rozpocznij WSA</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
     <value>Store Links</value>
