@@ -206,7 +206,7 @@
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>Jak łączyć WSA</value>
+    <value>Jak połączyć się z WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
     <value>1. Please make sure APK Installer has been updated to the latest version
@@ -388,12 +388,12 @@
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
     <value>Oczekiwanie na start WSA...
-Może to zająć trochę czasu. Usiądź i się zrelaksuj.</value>
+Może to zająć dużo czasu. Usiądź i zrelaksuj się.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Welcome!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>WSA jest uruchomione</value>
+    <value>WSA jest uruchomiona</value>
   </data>
 </root>
