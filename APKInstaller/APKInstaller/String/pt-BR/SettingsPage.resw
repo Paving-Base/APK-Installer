@@ -124,7 +124,7 @@
     <value>Caminho do ADB</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>Permissões ADB</value>
+    <value>Permissões do ADB</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>Baixar automaticamente quando o pacote vier de um URL.</value>
@@ -142,10 +142,10 @@
     <value>Alterar</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>Verificação Falhou</value>
+    <value>Falha na verificação</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>Verificando Se Há Atualizações...</value>
+    <value>Verificando se há atualizações...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
     <value>Verificar Se Há Atualizações</value>
@@ -154,7 +154,7 @@
     <value>Limpar cache</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Fechar o ADB pode fazer outros Instaladores abertos pararem de funcionar.</value>
+    <value>Fechar o ADB pode fazer outros instaladores abertos pararem de funcionar.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
     <value>Fechar ADB ao fechar o instalador?</value>
@@ -205,10 +205,10 @@
     <value>Procurar atualização</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>Information about the frameworks of this app.</value>
+    <value>Informação sobre os frameworks desse app.</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
-    <value>Descrição da estrutura</value>
+    <value>Descrição do framework</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
     <value>Modelos e Estruturas</value>
@@ -220,7 +220,7 @@
     <value>Ir para PáginaDeTeste</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
-    <value>Ir para Atualização</value>
+    <value>Atualizar</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
     <value>Bate-papo</value>
@@ -292,19 +292,19 @@
     <value>Mostrar ajudantes quando nenhum dispositivo estiver conectado.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>O Show de Ajudas?</value>
+    <value>Mostrar dicas?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
     <value>Mostrar Avisos no topo das Configurações.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>É um Show De Anúncios?</value>
+    <value>Mostrar anúncios?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>Pode deixar arquivos temporários quando ocorrer uma interrupção inesperada.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>É Show de Progresso da Instalação?</value>
+    <value>Mostrar progresso de atualização?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Tema do aplicativo</value>
