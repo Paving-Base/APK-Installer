@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
-    <value>Về</value>
+    <value>Về cút</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>Đường dẫn ADB</value>
+    <value>Đường dẫn ADB adb</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>Phiên bản ADB</value>
+    <value>Phiên bản ADB vesion</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>Tự động tải xuống khi gói từ URL.</value>
