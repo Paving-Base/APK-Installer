@@ -144,7 +144,7 @@
     <value>Нет</value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
-    <value>Install this Package</value>
+    <value>Установить пакет</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
     <value>Файл Split APK</value>
