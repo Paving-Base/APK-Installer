@@ -247,22 +247,22 @@
     <value>هل فقط لوكالة WSA؟</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>OS Architecture</value>
+    <value>بنية نظام التشغيل</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
-    <value>OS Platform</value>
+    <value>منصة نظام التشغيل</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>أخرى</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>Dark</value>
+    <value>مظلم</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>Windows Default</value>
+    <value>الافتراضي للويندوز</value>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
-    <value>Light</value>
+    <value>فاتح</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
     <value>قيمنا في المتجر</value>
@@ -286,7 +286,7 @@
     <value>هل أنت متحقِّق من أنك تريد إعادة ضبط التطبيق؟44</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
-    <value>Select Device</value>
+    <value>اختار جهاز</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
     <value>إظهار المساعدين عند عدم توصيل أي جهاز.</value>
@@ -301,10 +301,10 @@
     <value>عرض الإعلانات؟</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
-    <value>It may leave temp files when an unexpected interruption occurs.</value>
+    <value>قد تترك ملفات مؤقته عند حدوث انقطاع غير متوقع.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Is Show Progress of Installation?</value>
+    <value>عرض تقدم التثبيت؟</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>مظهر التطبيق</value>
