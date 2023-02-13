@@ -1,4 +1,4 @@
-#### مرحبا في اداة تنصيب كاميلون
+#### مرحبا بكم في تثبيت APK!
 
 ##### أعلان
 1. Please follow the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
@@ -7,16 +7,16 @@
 4. The translation of the text of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts do not represent the author's views.
 
 ##### ترجم
-Thanks to [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") translators for their support. If there is any problem with the translation, please come and correct it. And please take translation seriously. Your words will be read all over the world.
+Thanks to [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") translators for their support. If there is any problem with the translation, please come and correct it. وأرجو أن تأخذ الترجمة على محمل الجد. سوف تقرأ كلماتك في جميع أنحاء العالم.
 
-##### Contributors
+##### المساهمون
 - [wherewhere](https://github.com/wherewhere)
 - [Void48](https://github.com/Void48)
 - [EP012014](https://github.com/EP012014)
 - [A Big Salty Fish](https://github.com/bigsaltyfishes)
 - [sam1357](https://github.com/sam1357)
 
-##### Citations and References
+##### الإشارات والمراجع
 - [MetroLog](https://github.com/roubachof/MetroLog "MetroLog")
 - [Windows UI](https://github.com/microsoft/microsoft-ui-xaml "Windows UI")
 - [Downloader](https://github.com/bezzad/Downloader "Downloader")
