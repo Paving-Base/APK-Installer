@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="APKDescription" xml:space="preserve">
-    <value>Android Anwendungspaket</value>
+    <value>Anwendungspaket</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>APK Datei</value>
+    <value>APK-Datei</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>Ein Android App Installer. Geschrieben von @wherewhere und @Tangent-90.</value>
