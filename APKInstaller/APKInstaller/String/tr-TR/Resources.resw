@@ -132,9 +132,6 @@
   <data name="ExceptionThrown" xml:space="preserve">
     <value>Programla ilgili bir hata oluştu…</value>
   </data>
-  <data name="ImageLoadError" xml:space="preserve">
-    <value>Fotoğraf yüklemesi başarısız.</value>
-  </data>
   <data name="NetworkError" xml:space="preserve">
     <value>Ağda bazı sorunlar var...</value>
   </data>
