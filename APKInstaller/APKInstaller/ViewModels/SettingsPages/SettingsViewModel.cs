@@ -263,6 +263,20 @@ namespace APKInstaller.ViewModels.SettingsPages
             }
         }
 
+        private bool _pairingDevice;
+        public bool PairingDevice
+        {
+            get => _pairingDevice;
+            set
+            {
+                if (_pairingDevice != value)
+                {
+                    _pairingDevice = value;
+                    RaisePropertyChangedEvent();
+                }
+            }
+        }
+
         private bool _connectingDevice;
         public bool ConnectingDevice
         {
@@ -480,26 +494,89 @@ namespace APKInstaller.ViewModels.SettingsPages
                     return;
                 }
             }
-            string results = (await new AdbClient().ConnectAsync(ip)).TrimStart();
-            if (results.ToLowerInvariant().StartsWith("connected to"))
+            try
             {
-                ConnectInfoSeverity = InfoBarSeverity.Success;
-                ConnectInfoTitle = results;
-                ConnectInfoIsOpen = true;
+                string results = (await new AdbClient().ConnectAsync(ip)).TrimStart();
+                if (results.ToLowerInvariant().StartsWith("connected to"))
+                {
+                    ConnectInfoSeverity = InfoBarSeverity.Success;
+                    ConnectInfoTitle = results;
+                    ConnectInfoIsOpen = true;
+                }
+                else if (results.ToLowerInvariant().StartsWith("cannot connect to"))
+                {
+                    ConnectInfoSeverity = InfoBarSeverity.Error;
+                    ConnectInfoTitle = results;
+                    ConnectInfoIsOpen = true;
+                }
+                else if (!string.IsNullOrWhiteSpace(results))
+                {
+                    ConnectInfoSeverity = InfoBarSeverity.Warning;
+                    ConnectInfoTitle = results;
+                    ConnectInfoIsOpen = true;
+                }
             }
-            else if (results.ToLowerInvariant().StartsWith("cannot connect to"))
+            catch (Exception ex)
             {
+                SettingsHelper.LogManager.GetLogger(nameof(SettingsViewModel)).Warn(ex.ExceptionToMessage(), ex);
                 ConnectInfoSeverity = InfoBarSeverity.Error;
-                ConnectInfoTitle = results;
-                ConnectInfoIsOpen = true;
-            }
-            else if (!string.IsNullOrWhiteSpace(results))
-            {
-                ConnectInfoSeverity = InfoBarSeverity.Warning;
-                ConnectInfoTitle = results;
+                ConnectInfoTitle = ex.Message;
                 ConnectInfoIsOpen = true;
             }
             ConnectingDevice = false;
+        }
+
+        public async void PairDevice(string ip, string code)
+        {
+            PairingDevice = true;
+            IAdbServer ADBServer = AdbServer.Instance;
+            if (!ADBServer.GetStatus().IsRunning)
+            {
+                try
+                {
+                    _ = await Task.Run(() => ADBServer.StartServer(ADBPath, restartServerIfNewer: false));
+                    ADBHelper.Monitor.DeviceChanged += OnDeviceChanged;
+                }
+                catch (Exception ex)
+                {
+                    SettingsHelper.LogManager.GetLogger(nameof(SettingsViewModel)).Warn(ex.ExceptionToMessage(), ex);
+                    ConnectInfoSeverity = InfoBarSeverity.Warning;
+                    ConnectInfoTitle = ResourceLoader.GetForViewIndependentUse("InstallPage").GetString("ADBMissing");
+                    ConnectInfoIsOpen = true;
+                    PairingDevice = false;
+                    return;
+                }
+            }
+            try
+            {
+                string results = (await new AdbClient().PairAsync(ip, code)).TrimStart();
+                if (results.ToLowerInvariant().StartsWith("successfully"))
+                {
+                    ConnectInfoSeverity = InfoBarSeverity.Success;
+                    ConnectInfoTitle = results;
+                    ConnectInfoIsOpen = true;
+                }
+                else if (results.ToLowerInvariant().StartsWith("failed:"))
+                {
+                    ConnectInfoSeverity = InfoBarSeverity.Error;
+                    ConnectInfoTitle = results[8..];
+                    ConnectInfoIsOpen = true;
+                }
+                else if (!string.IsNullOrWhiteSpace(results))
+                {
+                    ConnectInfoSeverity = InfoBarSeverity.Warning;
+                    ConnectInfoTitle = results;
+                    ConnectInfoIsOpen = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                SettingsHelper.LogManager.GetLogger(nameof(SettingsViewModel)).Warn(ex.ExceptionToMessage(), ex);
+                ConnectInfoSeverity = InfoBarSeverity.Error;
+                ConnectInfoTitle = ex.Message;
+                ConnectInfoIsOpen = true;
+            }
+            PairingDevice = false;
         }
 
         public async void ChangeADBPath()

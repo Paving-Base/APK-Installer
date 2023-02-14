@@ -62,6 +62,9 @@ namespace APKInstaller.Pages.SettingsPages
         {
             switch ((sender as FrameworkElement).Tag as string)
             {
+                case "Pair":
+                    Provider.PairDevice(ConnectIP.Text, PairCode.Text);
+                    break;
                 case "Rate":
                     _ = Launcher.LaunchUriAsync(new Uri("ms-windows-store://review/?ProductId=9P2JFQ43FPPG"));
                     break;

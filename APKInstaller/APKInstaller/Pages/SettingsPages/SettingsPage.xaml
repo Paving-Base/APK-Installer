@@ -84,29 +84,71 @@
                             </controls:Setting>
                         </controls:SettingExpander.Header>
                         <controls:SettingExpander.Content>
-                            <controls:Setting x:Uid="/SettingsPage/ConnectDevice" Style="{StaticResource ExpanderContentSettingStyle}">
-                                <StackPanel Orientation="Horizontal" Spacing="8">
-                                    <TextBox
-                                        x:Name="ConnectIP"
-                                        MinWidth="{StaticResource SettingActionControlMinWidth}"
-                                        ui:TextBoxExtensions.Regex="^(\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])(\.(\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])){3}(:([0-9]|[1-9]\d|[1-9]\d{2}|[1-9]\d{3}|[1-5]\d{4}|6[0-4]\d{3}|65[0-4]\d{2}|655[0-2]\d|6553[0-5]))?$"
-                                        PlaceholderText="127.0.0.1:58526" />
-                                    <ProgressRing
-                                        Width="24"
-                                        Height="24"
-                                        Margin="8,6"
-                                        Visibility="{Binding ConnectingDevice, Converter={StaticResource BoolToVisibilityConverter}}" />
-                                    <Button
-                                        Width="40"
-                                        Height="36"
-                                        Click="Button_Click"
-                                        Content="&#xE71B;"
-                                        FontFamily="{StaticResource SymbolThemeFontFamily}"
-                                        IsEnabled="{x:Bind ConnectIP.(ui:TextBoxExtensions.IsValid), Mode=OneWay}"
-                                        Tag="Connect"
-                                        Visibility="{Binding ConnectingDevice, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='true'}" />
-                                </StackPanel>
-                            </controls:Setting>
+                            <StackPanel>
+                                <controls:Setting x:Uid="/SettingsPage/ConnectDevice" Style="{StaticResource ExpanderContentSettingStyle}">
+                                    <Grid MinWidth="{StaticResource SettingActionControlMinWidth}" ColumnSpacing="8">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="40" />
+                                        </Grid.ColumnDefinitions>
+                                        <TextBox
+                                            x:Name="ConnectIP"
+                                            Grid.Column="0"
+                                            ui:TextBoxExtensions.Regex="^(\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])(\.(\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])){3}(:([0-9]|[1-9]\d|[1-9]\d{2}|[1-9]\d{3}|[1-5]\d{4}|6[0-4]\d{3}|65[0-4]\d{2}|655[0-2]\d|6553[0-5]))?$"
+                                            PlaceholderText="127.0.0.1:58526" />
+                                        <Grid Grid.Column="1">
+                                            <ProgressRing
+                                                Width="24"
+                                                Height="24"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                Visibility="{Binding ConnectingDevice, Converter={StaticResource BoolToVisibilityConverter}}" />
+                                            <Button
+                                                Width="40"
+                                                Height="36"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                Click="Button_Click"
+                                                Content="&#xE71B;"
+                                                FontFamily="{StaticResource SymbolThemeFontFamily}"
+                                                IsEnabled="{x:Bind ConnectIP.(ui:TextBoxExtensions.IsValid), Mode=OneWay}"
+                                                Tag="Connect"
+                                                Visibility="{Binding ConnectingDevice, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='true'}" />
+                                        </Grid>
+                                    </Grid>
+                                </controls:Setting>
+                                <controls:Setting x:Uid="/SettingsPage/PairDevice" Style="{StaticResource ExpanderContentSettingStyle}">
+                                    <Grid MinWidth="{StaticResource SettingActionControlMinWidth}" ColumnSpacing="8">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="40" />
+                                        </Grid.ColumnDefinitions>
+                                        <TextBox
+                                            x:Name="PairCode"
+                                            Grid.Column="0"
+                                            PlaceholderText="888888" />
+                                        <Grid Grid.Column="1">
+                                            <ProgressRing
+                                                Width="24"
+                                                Height="24"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                Visibility="{Binding PairingDevice, Converter={StaticResource BoolToVisibilityConverter}}" />
+                                            <Button
+                                                Width="40"
+                                                Height="36"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                Click="Button_Click"
+                                                Content="&#xE8D7;"
+                                                FontFamily="{StaticResource SymbolThemeFontFamily}"
+                                                IsEnabled="{x:Bind ConnectIP.(ui:TextBoxExtensions.IsValid), Mode=OneWay}"
+                                                Tag="Pair"
+                                                Visibility="{Binding PairingDevice, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='true'}" />
+                                        </Grid>
+                                    </Grid>
+                                </controls:Setting>
+                            </StackPanel>
                         </controls:SettingExpander.Content>
                     </controls:SettingExpander>
                     <InfoBar

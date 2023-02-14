@@ -2,7 +2,6 @@
     x:Class="APKInstaller.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:converter="using:APKInstaller.Helpers.Converter"
     xmlns:converters="using:CommunityToolkit.WinUI.UI.Converters">
     <Application.Resources>
         <ResourceDictionary>
@@ -18,6 +17,7 @@
             <converters:DoubleToVisibilityConverter x:Key="DoubleToVisibilityConverter" GreaterThan="0" />
             <SolidColorBrush x:Key="WindowCaptionBackground" Color="{ThemeResource ControlFillColorTransparent}" />
             <SolidColorBrush x:Key="WindowCaptionBackgroundDisabled" Color="{ThemeResource ControlFillColorTransparent}" />
+            <FontFamily x:Key="SymbolThemeFontFamily">Segoe Fluent Icons,Segoe MDL2 Assets,Segoe UI Symbol</FontFamily>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
