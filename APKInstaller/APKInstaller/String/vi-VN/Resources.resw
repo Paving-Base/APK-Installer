@@ -132,9 +132,6 @@
   <data name="ExceptionThrown" xml:space="preserve">
     <value>Đã xảy ra lỗi với chương trình…error</value>
   </data>
-  <data name="ImageLoadError" xml:space="preserve">
-    <value>Tải ảnh không thành công.error</value>
-  </data>
   <data name="NetworkError" xml:space="preserve">
     <value>Có một số vấn đề với mạng...not data</value>
   </data>
