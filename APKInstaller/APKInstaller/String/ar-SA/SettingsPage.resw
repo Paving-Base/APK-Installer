@@ -130,7 +130,7 @@
     <value>تحميل تلقائي عندما تكون الحزمة من عنوان URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>هل التنزيل التلقائي للحزم عبر الإنترنت؟</value>
+    <value>Auto Download Online Packages?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>حدد نوع الخلفية للويندوز 11</value>
@@ -154,22 +154,22 @@
     <value>مسح ذاكرة التخزين المؤقت</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>إغلاق ADB قد يكسر مثبتات أخرى عند فتحها.</value>
+    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>هل أغلق ADB عند إغلاق التثبيت؟</value>
+    <value>Terminate ADB when Exit Installer?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>إغلاق المثبت بعد تثبيت APK وبدء التشغيل.</value>
+    <value>Exit Installer after installation is complete.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>هل إغلاق المثبت عندما يكون التطبيق جاهزاً؟</value>
+    <value>Exit Installer when APP is Ready?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>التهيئة</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>ربط الجهاز على الشبكة.</value>
+    <value>Connect device through network.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>توصيل الجهاز</value>
@@ -178,7 +178,7 @@
     <value>الاتصال بي</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>تابعني على التطبيقات الاجتماعية لأحدث التطورات. إذا وجدت أي خطأ، يرجى إبلاغي بذلك في الرسائل الخاصة. سأحاول أفضل ما في وسعي لحل المشكلة. إذا كان لديك حساب تيليجرام، مرحبا بك في الدردشة في مجموعة القاعدة المطلية 😊!</value>
+    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>المحتوى</value>
@@ -193,7 +193,7 @@
     <value>الدعم</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>مثبت APK هو تطبيق مفتوح المصدر، ولن يتم إدخال أي إعلانات للربح. إذا أعجبك هذا التطبيق، لا تنسى تقييمه في المتجر. بالطبع، سيكون من الأفضل أن تتبرع قليلاً. شكرًا على دعمك.💕</value>
+    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
@@ -235,7 +235,7 @@
     <value>سجلات</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>قد تحتوي النسخة المعدلة على شيء غير سار. مثل AD ، وظائف مكسورة حتى الفيروس. الرجاء الذهاب إلى متجر مايكروسوفت لتنزيل المتجر الأصلي. راجع مستودع GitHub لمعرفة المزيد عنها.</value>
+    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>أنت تستخدم نسخة معدلة!</value>
@@ -244,7 +244,7 @@
     <value>تعطيله للاتصال بجهاز آخر.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>هل فقط لوكالة WSA؟</value>
+    <value>For WSA only?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>بنية نظام التشغيل</value>
@@ -254,6 +254,12 @@
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>أخرى</value>
+  </data>
+  <data name="PairDevice.Description" xml:space="preserve">
+    <value>Pair device through network.</value>
+  </data>
+  <data name="PairDevice.Header" xml:space="preserve">
+    <value>Pair Device</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>مظلم</value>
@@ -292,19 +298,19 @@
     <value>إظهار المساعدين عند عدم توصيل أي جهاز.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>هل عرض المساعدين؟</value>
+    <value>Whether to Show Helps?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>إظهار الإعلانات في الجزء العلوي من الإعدادات.</value>
+    <value>Display announcements at the top of Settings.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>عرض الإعلانات؟</value>
+    <value>Whether to Show Announcements?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>قد تترك ملفات مؤقته عند حدوث انقطاع غير متوقع.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>عرض تقدم التثبيت؟</value>
+    <value>Whether to Show Installation Progress?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>مظهر التطبيق</value>
