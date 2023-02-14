@@ -202,7 +202,7 @@
     <value>Eine neuere Version ist bereits installiert</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>Sie haben bereits eine neue Version {0} dieser App installiert. Sind Sie sicher, dass Sie Version {1} neu installieren?</value>
+    <value>Sie haben bereits eine neue Version von {0}  installiert. Sind Sie sicher, dass Sie Version {1} neu installieren möchten?</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
@@ -230,10 +230,10 @@
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
-    <value>Infos</value>
+    <value>Informationen</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>~Installieren</value>
+    <value>Installieren</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
     <value>{0} ist bereit!</value>
@@ -247,7 +247,7 @@
     <value>Installiere...</value>
   </data>
   <data name="InstallingPercent" xml:space="preserve">
-    <value>Wird installiert {0}...</value>
+    <value>{0} wird installiert ...</value>
     <comment>{0} - Progress.</comment>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
@@ -260,7 +260,7 @@
     <value>Das Paket ist beschädigt oder ungültig.</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
-    <value>Die URL ist entweder unvollständig oder ungültig.</value>
+    <value>Die URL ist unvollständig oder ungültig.</value>
   </data>
   <data name="Launch" xml:space="preserve">
     <value>Starten</value>
@@ -297,9 +297,9 @@
 2. Schalten Sie den Entwicklermodus ein, öffnen Sie Remote Debug
 3. Merken Sie sich die IP-Adresse Ihres Geräts
 4. Gehen Sie zur Einstellungsseite des APK-Installationsprogramms, verbinden Sie sich und wählen Sie Ihr Gerät aus
-5. Gehen Sie zurück, setzen Sie die Installation fort
+5. Gehen Sie zurück und setzen Sie die Installation fort
 
-[Erfahren Sie mehr] ({0})
+[mehr erfahren...] ({0})
 </value>
   </data>
   <data name="NoInternet" xml:space="preserve">
@@ -339,7 +339,7 @@
     <value>Nochmal</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>Wähle</value>
+    <value>APK auswählen...</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
     <value>Teilen</value>
