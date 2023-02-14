@@ -130,7 +130,7 @@
     <value>当安装包来自 URL 链接时自动下载。</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Auto Download Online Packages?</value>
+    <value>是否自动下载在线安装包？</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>选择适用于 Windows 11 的背景色类型</value>
@@ -154,22 +154,22 @@
     <value>清除缓存</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
+    <value>如果您终止 ADB 服务器，需要在下次安装时重启。</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Terminate ADB when Exit Installer?</value>
+    <value>退出安装程序时终止 ADB ？</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Exit Installer after installation is complete.</value>
+    <value>安装完成后退出安装程序。</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Exit Installer when APP is Ready?</value>
+    <value>当应用程序准备就绪后是否关闭安装程序？</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>配置</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value>通过网络连接设备。</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>连接设备</value>
@@ -178,7 +178,7 @@
     <value>与我联系</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
+    <value>在社交软件上关注我来获取最新开发动向。如果你发现了什么 Bug，请通过私信告诉我。我会尽最大可能来解决这些问题。如果你有电报账号，欢迎来铺路根据地群组聊天😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>内容</value>
@@ -193,7 +193,7 @@
     <value>支持</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
+    <value>APK 安装程序是一个开源软件，它不会内置任何广告来盈利。如果你喜欢这个应用，不要忘了在商店里打上好评哦，当然如果可以捐赠一点点就更好了。感谢大家的支持💕！</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>用户协议</value>
@@ -235,7 +235,7 @@
     <value>日志</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
+    <value>修改版可能会包含一些不好的东西，包括但不限于广告、损坏的特性，甚至是病毒。请前往 Microsoft Store 安装原版。请参阅我们的 Github 仓库了解更多信息。</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>您正在使用修改版！</value>
@@ -244,7 +244,7 @@
     <value>关闭它以连接到其他设备。</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>For WSA only?</value>
+    <value>是否仅用于 WSA ？</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>操作系统架构</value>
@@ -256,10 +256,10 @@
     <value>其他</value>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
-    <value>Pair device through network.</value>
+    <value>通过网络配对设备。</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>Pair Device</value>
+    <value>配对设备</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>深色</value>
@@ -298,19 +298,19 @@
     <value>当没有连接到设备时显示帮助。</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Whether to Show Helps?</value>
+    <value>是否显示帮助？</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Display announcements at the top of Settings.</value>
+    <value>在设置顶部显示公告。</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Whether to Show Announcements?</value>
+    <value>是否显示公告？</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>它可能会在发生意外中断后留下临时文件。</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Whether to Show Installation Progress?</value>
+    <value>是否显示安装进度？</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>应用主题</value>
