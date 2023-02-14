@@ -132,9 +132,6 @@
   <data name="ExceptionThrown" xml:space="preserve">
     <value>Terjadi kesalahan pada program…</value>
   </data>
-  <data name="ImageLoadError" xml:space="preserve">
-    <value>Memuat gambar gagal.</value>
-  </data>
   <data name="NetworkError" xml:space="preserve">
     <value>Ada beberapa masalah dengan jaringan...</value>
   </data>
