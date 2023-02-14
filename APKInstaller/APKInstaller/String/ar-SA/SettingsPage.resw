@@ -283,7 +283,7 @@
     <value>123</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
-    <value>هل أنت متحقِّق من أنك تريد إعادة ضبط التطبيق؟44</value>
+    <value>هل أنت متحقِّق من أنك تريد إعادة ضبط التطبيق؟</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>اختار جهاز</value>
