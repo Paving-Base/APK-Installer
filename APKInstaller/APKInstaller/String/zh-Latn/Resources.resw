@@ -132,9 +132,6 @@
   <data name="ExceptionThrown" xml:space="preserve">
     <value>Chéngxù chūxiàn le cuòwù……</value>
   </data>
-  <data name="ImageLoadError" xml:space="preserve">
-    <value>Túpiàn jiāzài shībài. </value>
-  </data>
   <data name="NetworkError" xml:space="preserve">
     <value>Wǎngluò chūxiàn le yīxiē wèntí……</value>
   </data>
