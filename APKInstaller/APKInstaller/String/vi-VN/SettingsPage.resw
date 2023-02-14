@@ -130,7 +130,7 @@
     <value>Tự động tải xuống khi gói từ URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Có tự động tải xuống các gói trực tuyến không?</value>
+    <value>Auto Download Online Packages?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Chọn loại phông nền cho Windows 11</value>
@@ -154,23 +154,22 @@
     <value>Làm sạch bộ nhớ nhớ</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Đóng ADB có thể phá vỡ các Trình cài đặt khác khi chúng vẫn mở.
-</value>
+    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Có đóng ADB khi đóng trình cài đặt không?</value>
+    <value>Terminate ADB when Exit Installer?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Đóng Trình cài đặt sau khi APK đã cài đặt và khởi động.</value>
+    <value>Exit Installer after installation is complete.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Đóng Trình cài đặt khi APP đã sẵn sàng chưa?</value>
+    <value>Exit Installer when APP is Ready?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Cấu hình</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Kết nối thiết bị trên mạng.</value>
+    <value>Connect device through network.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Kết nối thiết bị</value>
@@ -179,7 +178,7 @@
     <value>Liên hệ với tôi</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Theo dõi tôi trên các ứng dụng xã hội để biết những phát triển mới nhất. Nếu bạn tìm thấy bất kỳ lỗi nào, vui lòng báo cáo cho tôi trong PM. Tôi sẽ cố gắng hết sức để giải quyết vấn đề. Nếu bạn có tài khoản Telegram, chào mừng bạn đến trò chuyện tại Paving Base Group 😊!</value>
+    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Nội dung</value>
@@ -194,8 +193,7 @@
     <value>Hỗ trợ</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Cài đặt là một ứng dụng mã nguồn mở và sẽ không có quảng cáo nào được thêm vào để kiếm lợi nhuận. Nếu bạn thích ứng dụng này, đừng quên đánh giá nó trong cửa hàng. Tất nhiên, sẽ tốt hơn nếu bạn có thể quyên góp một chút. Cảm ơn sự hỗ trợ của bạn. 💕
-</value>
+    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
@@ -237,7 +235,7 @@
     <value>nhật ký</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>Một phiên bản sửa đổi có thể chứa một cái gì đó khó chịu. Chẳng hạn như AD, các chức năng bị hỏng thậm chí cả virus. Vui lòng truy cập Microsoft Store để tải xuống bản gốc. Xem Kho lưu trữ GitHub của chúng tôi để tìm hiểu thêm về nó.</value>
+    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>Bạn đang sử dụng một phiên bản sửa đổi!</value>
@@ -246,7 +244,7 @@
     <value>Vô hiệu hóa nó để kết nối với các thiết bị khác.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>Chỉ dành cho WSA?</value>
+    <value>For WSA only?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>Kiến trúc hệ điều hành</value>
@@ -256,6 +254,12 @@
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Khác</value>
+  </data>
+  <data name="PairDevice.Description" xml:space="preserve">
+    <value>Pair device through network.</value>
+  </data>
+  <data name="PairDevice.Header" xml:space="preserve">
+    <value>Pair Device</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Tối</value>
@@ -294,19 +298,19 @@
     <value>Hiển thị người trợ giúp khi không có thiết bị nào được kết nối.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Có phải người trợ giúp chương trình không?</value>
+    <value>Whether to Show Helps?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Hiển thị Thông báo ở đầu Cài đặt.</value>
+    <value>Display announcements at the top of Settings.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Có phải Hiển thị Thông báo không?</value>
+    <value>Whether to Show Announcements?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>Nó có thể để lại các tệp tạm thời khi xảy ra gián đoạn không mong muốn.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Có phải Hiển thị tiến trình cài đặt không?</value>
+    <value>Whether to Show Installation Progress?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Chủ đề Ứng dụng</value>
