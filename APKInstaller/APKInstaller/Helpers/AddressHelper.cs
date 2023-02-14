@@ -11,7 +11,7 @@ namespace APKInstaller.Helpers
         {
             List<string> addresses = new();
             Regex Regex = new($@"\s*(\d+.\d+.\d+.\d+)\s*{mac}\S*\s*\w+");
-            List<string> lines = await CommandHelper.ExecuteShellCommand($"arp -a|findstr {mac}");
+            List<string> lines = await CommandHelper.ExecuteShellCommandAsync($"arp -a|findstr {mac}");
             foreach (string line in lines)
             {
                 if (Regex.IsMatch(line))

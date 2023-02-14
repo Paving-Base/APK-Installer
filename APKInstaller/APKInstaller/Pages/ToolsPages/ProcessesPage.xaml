@@ -2,8 +2,8 @@
     x:Class="APKInstaller.Pages.ToolsPages.ProcessesPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:Controls="using:APKInstaller.Controls"
-    xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
+    xmlns:controls="using:APKInstaller.Controls"
+    xmlns:cwuc="using:CommunityToolkit.WinUI.UI.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:toolspages="using:APKInstaller.ViewModels.ToolsPages"
@@ -18,7 +18,7 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <Controls:TitleBar
+        <controls:TitleBar
             x:Name="TitleBar"
             x:Uid="/ProcessesPage/TitleBar"
             BackRequested="TitleBar_BackRequested"
@@ -33,8 +33,8 @@
                 VerticalAlignment="Center"
                 Loaded="ComboBox_Loaded"
                 SelectionChanged="ComboBox_SelectionChanged" />
-        </Controls:TitleBar>
-        <controls:DataGrid
+        </controls:TitleBar>
+        <cwuc:DataGrid
             Grid.Row="1"
             AutoGenerateColumns="False"
             CanUserReorderColumns="True"
@@ -42,28 +42,28 @@
             CanUserSortColumns="True"
             IsReadOnly="True"
             ItemsSource="{Binding Processes, Mode=OneWay}">
-            <controls:DataGrid.Columns>
-                <controls:DataGridTextColumn
+            <cwuc:DataGrid.Columns>
+                <cwuc:DataGridTextColumn
                     x:Uid="/ProcessesPage/Name"
                     Binding="{Binding Name, Converter={StaticResource TextConverter}, ConverterParameter='Name'}"
                     Tag="Name" />
-                <controls:DataGridTextColumn
+                <cwuc:DataGridTextColumn
                     x:Uid="/ProcessesPage/ProcessId"
                     Binding="{Binding ProcessId}"
                     Tag="ProcessId" />
-                <controls:DataGridTextColumn
+                <cwuc:DataGridTextColumn
                     x:Uid="/ProcessesPage/State"
                     Binding="{Binding State, Converter={StaticResource TextConverter}, ConverterParameter='State'}"
                     Tag="State" />
-                <controls:DataGridTextColumn
+                <cwuc:DataGridTextColumn
                     x:Uid="/ProcessesPage/ResidentSetSize"
                     Binding="{Binding ResidentSetSize, Converter={StaticResource TextConverter}, ConverterParameter='Size'}"
                     Tag="Resident Set Size" />
-                <controls:DataGridTextColumn
+                <cwuc:DataGridTextColumn
                     x:Uid="/ProcessesPage/Detail"
                     Binding="{Binding Name}"
                     Tag="Detail" />
-            </controls:DataGrid.Columns>
-        </controls:DataGrid>
+            </cwuc:DataGrid.Columns>
+        </cwuc:DataGrid>
     </Grid>
 </Page>

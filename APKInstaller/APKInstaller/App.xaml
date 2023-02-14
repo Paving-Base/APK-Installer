@@ -9,7 +9,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
                 <!--  Other merged dictionaries here  -->
-                <ResourceDictionary Source="ms-appx:///Themes/SettingsUI.xaml" />
+                <ResourceDictionary Source="ms-appx:///Themes/CustomStyles.xaml" />
             </ResourceDictionary.MergedDictionaries>
             <!--  Other app resources here  -->
             <converters:BoolNegationConverter x:Name="BoolNegationConverter" />

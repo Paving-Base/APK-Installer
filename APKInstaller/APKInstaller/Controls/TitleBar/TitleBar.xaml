@@ -13,6 +13,10 @@
             <Setter.Value>
                 <ControlTemplate TargetType="local:TitleBar">
                     <Grid x:Name="LayoutRoot" Background="{TemplateBinding Background}">
+                        <Grid.BackgroundTransition>
+                            <BrushTransition />
+                        </Grid.BackgroundTransition>
+
                         <Grid.RowDefinitions>
                             <RowDefinition Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.TopPaddingColumnGridLength}" />
                             <RowDefinition Height="Auto" />

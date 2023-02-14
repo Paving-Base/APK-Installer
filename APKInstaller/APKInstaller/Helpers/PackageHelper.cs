@@ -17,7 +17,7 @@ namespace APKInstaller.Helpers
             return (WSAList != null && WSAList.Any(), WSAList);
         }
 
-        public static async void LaunchPackage(string packagefamilyname, string appname = "App") => await CommandHelper.ExecuteShellCommand($@"explorer.exe shell:appsFolder\{packagefamilyname}!{appname}");
+        public static async void LaunchPackage(string packagefamilyname, string appname = "App") => await CommandHelper.ExecuteShellCommandAsync($@"explorer.exe shell:appsFolder\{packagefamilyname}!{appname}");
 
         public static async void LaunchWSAPackage(string packagename = "")
         {

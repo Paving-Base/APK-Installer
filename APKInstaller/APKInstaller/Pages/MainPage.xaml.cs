@@ -5,6 +5,7 @@ using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Windows.ApplicationModel;
+using Windows.ApplicationModel.Resources;
 using Windows.Graphics;
 
 // To learn more about WinUI, the WinUI project structure,
@@ -19,7 +20,7 @@ namespace APKInstaller.Pages
     {
         private readonly AppWindow AppWindow = WindowHelper.GetAppWindowForCurrentWindow();
 
-        public string GetAppTitleFromSystem => Package.Current.DisplayName;
+        public string GetAppTitleFromSystem => ResourceLoader.GetForViewIndependentUse()?.GetString("AppName") ?? Package.Current.DisplayName;
 
         public MainPage()
         {

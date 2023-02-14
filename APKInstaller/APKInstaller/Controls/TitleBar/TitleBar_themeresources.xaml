@@ -2,8 +2,6 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:animatedvisuals="using:Microsoft.UI.Xaml.Controls.AnimatedVisuals"
-    xmlns:contract7NotPresent="http://schemas.microsoft.com/winfx/2006/xaml/presentation?IsApiContractNotPresent(Windows.Foundation.UniversalApiContract,7)"
-    xmlns:contract7Present="http://schemas.microsoft.com/winfx/2006/xaml/presentation?IsApiContractPresent(Windows.Foundation.UniversalApiContract,7)"
     xmlns:controls="using:Microsoft.UI.Xaml.Controls">
 
     <ResourceDictionary.ThemeDictionaries>
@@ -92,9 +90,12 @@
                 <ControlTemplate TargetType="Button">
                     <Grid
                         x:Name="RootGrid"
-                        contract7NotPresent:CornerRadius="{ThemeResource ControlCornerRadius}"
-                        contract7Present:CornerRadius="{TemplateBinding CornerRadius}"
+                        CornerRadius="{TemplateBinding CornerRadius}"
                         Background="{TemplateBinding Background}">
+                        <Grid.BackgroundTransition>
+                            <BrushTransition Duration="0:0:0.083" />
+                        </Grid.BackgroundTransition>
+                        
                         <controls:AnimatedIcon
                             x:Name="Content"
                             Width="16"
@@ -171,9 +172,12 @@
                 <ControlTemplate TargetType="Button">
                     <Grid
                         x:Name="RootGrid"
-                        contract7NotPresent:CornerRadius="{ThemeResource ControlCornerRadius}"
-                        contract7Present:CornerRadius="{TemplateBinding CornerRadius}"
+                        CornerRadius="{TemplateBinding CornerRadius}"
                         Background="{TemplateBinding Background}">
+                        <Grid.BackgroundTransition>
+                            <BrushTransition Duration="0:0:0.083" />
+                        </Grid.BackgroundTransition>
+                        
                         <controls:AnimatedIcon
                             x:Name="Content"
                             Width="16"
@@ -248,9 +252,12 @@
                 <ControlTemplate TargetType="Button">
                     <Grid
                         x:Name="RootGrid"
-                        contract7NotPresent:CornerRadius="{ThemeResource ControlCornerRadius}"
-                        contract7Present:CornerRadius="{TemplateBinding CornerRadius}"
+                        CornerRadius="{TemplateBinding CornerRadius}"
                         Background="{TemplateBinding Background}">
+                        <Grid.BackgroundTransition>
+                            <BrushTransition Duration="0:0:0.083" />
+                        </Grid.BackgroundTransition>
+                        
                         <FontIcon
                             x:Name="Content"
                             Width="16"
