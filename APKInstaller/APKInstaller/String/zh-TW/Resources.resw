@@ -132,9 +132,6 @@
   <data name="ExceptionThrown" xml:space="preserve">
     <value>程式出現了錯誤……</value>
   </data>
-  <data name="ImageLoadError" xml:space="preserve">
-    <value>圖片載入失敗。</value>
-  </data>
   <data name="NetworkError" xml:space="preserve">
     <value>網路出現了一些問題……</value>
   </data>
