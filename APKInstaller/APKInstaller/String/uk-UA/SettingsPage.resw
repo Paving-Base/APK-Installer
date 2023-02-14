@@ -130,7 +130,7 @@
     <value>Автоматичне завантаження пакета з URL-адреси.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Чи автоматично завантажує онлайн пакети?</value>
+    <value>Auto Download Online Packages?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Вибрати тип фону для Windows 11</value>
@@ -154,22 +154,22 @@
     <value>Очистити кеш</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Закриття ADB може зламати інші інсталятори, коли вони все ще відкриті.</value>
+    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Закривати ADB під час закриття інсталятора?</value>
+    <value>Terminate ADB when Exit Installer?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Закриває інсталятор після того, як APK встановлено та запущено.</value>
+    <value>Exit Installer after installation is complete.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Закривати інсталятор, коли додаток готовий?</value>
+    <value>Exit Installer when APP is Ready?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Налаштування</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Підключити пристрій до мережі.</value>
+    <value>Connect device through network.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Підключити пристрій</value>
@@ -178,7 +178,7 @@
     <value>Звʼязатися зі мною</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Слідкуйте за мною в соціальних додатках, щоб бути в курсі останніх подій. Якщо ви знайдете будь-яку помилку, повідомте про це мені особисто. Я докладу всіх зусиль, щоб вирішити проблему. Якщо у вас є обліковий запис Telegram, ласкаво просимо до чату Paving Base Group 😊!</value>
+    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Вміст</value>
@@ -193,7 +193,7 @@
     <value>Підтримати</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>Інсталятор APK є програмою з відкритим вихідним кодом, і реклама не буде додана з метою отримання прибутку. Якщо вам подобається ця програма, не забудьте оцінити її в магазині.  Звичайно, було б краще, якби ви могли трохи підтримати. Дякуємо за вашу підтримку.💕</value>
+    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>Ліцензійна угода</value>
@@ -235,7 +235,7 @@
     <value>Журнали</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>Модифікована версія може містити щось неприємне. Таке, як реклама, порушення функцій та навіть віруси. Перейдіть у Microsoft Store, щоб завантажити оригінальну версію. Перегляньте наш репозиторій GitHub, щоб дізнатися більше про це.</value>
+    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>Ви використовуєте модифіковану версію!</value>
@@ -244,7 +244,7 @@
     <value>Вимкнути це для підключення до інших пристроїв.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>Тільки для WSA?</value>
+    <value>For WSA only?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>Архітектура ОС</value>
@@ -254,6 +254,12 @@
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Різне</value>
+  </data>
+  <data name="PairDevice.Description" xml:space="preserve">
+    <value>Pair device through network.</value>
+  </data>
+  <data name="PairDevice.Header" xml:space="preserve">
+    <value>Pair Device</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Темна</value>
@@ -292,19 +298,19 @@
     <value>Показати підказки, коли жоден пристрій не підключено.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Показувати підказки?</value>
+    <value>Whether to Show Helps?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Показати сповіщення вгорі налаштувань.</value>
+    <value>Display announcements at the top of Settings.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Показувати сповіщення?</value>
+    <value>Whether to Show Announcements?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>Він може залишати тимчасові файли, коли виникає несподівана перерва.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Показувати прогрес встановлення?</value>
+    <value>Whether to Show Installation Progress?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Тема програми</value>
