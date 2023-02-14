@@ -132,9 +132,6 @@
   <data name="ExceptionThrown" xml:space="preserve">
     <value>Došlo k chybě v programu…</value>
   </data>
-  <data name="ImageLoadError" xml:space="preserve">
-    <value>Načítání obrázku se nezdařilo.</value>
-  </data>
   <data name="NetworkError" xml:space="preserve">
     <value>Vyskytly se nějaké problémy se sítí...</value>
   </data>
