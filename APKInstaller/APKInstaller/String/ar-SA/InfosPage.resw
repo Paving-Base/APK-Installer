@@ -143,7 +143,7 @@
     <value>إسم الباقة</value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
-    <value>أسم الباقة</value>
+    <value>إسم الباقة</value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
     <value>عدد الأذونات</value>
@@ -156,19 +156,19 @@
     <value>مشاركة الحُزْمَة</value>
   </data>
   <data name="SupportedArchitectures.Text" xml:space="preserve">
-    <value>كمعماريات الدعم</value>
+    <value>معماريات الدعم</value>
   </data>
   <data name="SupportResolutions.Text" xml:space="preserve">
-    <value>القرارات المدعومة9</value>
+    <value>القرارات المدعومة</value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
-    <value>1دعم حجم الشاشة</value>
+    <value>دعم حجم الشاشة</value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
-    <value>الهدف SDK3</value>
+    <value>الهدف SDK</value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
-    <value>عن 3</value>
+    <value>عن {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Version.Text" xml:space="preserve">
