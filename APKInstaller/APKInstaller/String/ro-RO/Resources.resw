@@ -132,9 +132,6 @@
   <data name="ExceptionThrown" xml:space="preserve">
     <value>A apărut o eroare cu acest program de card.</value>
   </data>
-  <data name="ImageLoadError" xml:space="preserve">
-    <value>Încărcarea fotografiei a eșuat</value>
-  </data>
   <data name="NetworkError" xml:space="preserve">
     <value>Există unele probleme cu rețea...</value>
   </data>
