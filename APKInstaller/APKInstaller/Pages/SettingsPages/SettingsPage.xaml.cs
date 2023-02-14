@@ -9,6 +9,7 @@ using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
 using System;
+using System.Linq;
 using Windows.Storage;
 using Windows.System;
 
@@ -41,7 +42,7 @@ namespace APKInstaller.Pages.SettingsPages
             if (AdbServer.Instance.GetStatus().IsRunning)
             {
                 ADBHelper.Monitor.DeviceChanged += Provider.OnDeviceChanged;
-                Provider.DeviceList = new AdbClient().GetDevices();
+                Provider.DeviceList = new AdbClient().GetDevices().Where(x => x.State == DeviceState.Online);
             }
             DataContext = Provider;
             Provider.GetADBVersion();

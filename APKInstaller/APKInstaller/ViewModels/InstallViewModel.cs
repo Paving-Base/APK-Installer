@@ -1506,12 +1506,12 @@ namespace APKInstaller.ViewModels
         private async Task<bool> CheckDevice()
         {
             AdbClient client = new();
-            List<DeviceData> devices = client.GetDevices();
+            IEnumerable<DeviceData> devices = client.GetDevices().Where(x => x.State == DeviceState.Online);
             ConsoleOutputReceiver receiver = new();
-            if (devices.Count <= 0) { return false; }
+            if (!devices.Any()) { return false; }
             foreach (DeviceData device in devices)
             {
-                if (device == null || device.State == DeviceState.Offline) { continue; }
+                if (device == null || device.State != DeviceState.Online) { continue; }
                 if (IsOnlyWSA)
                 {
                     await client.ExecuteRemoteCommandAsync("getprop ro.boot.hardware", device, receiver);

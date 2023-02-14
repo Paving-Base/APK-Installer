@@ -97,7 +97,7 @@ namespace APKInstaller.ViewModels.ToolsPages
             await Task.Run(async () =>
             {
                 _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.ShowProgressRing));
-                devices = new AdbClient().GetDevices();
+                devices = new AdbClient().GetDevices().Where(x => x.State == DeviceState.Online).ToList();
                 await _page?.DispatcherQueue.EnqueueAsync(DeviceList.Clear);
                 if (devices.Count > 0)
                 {
