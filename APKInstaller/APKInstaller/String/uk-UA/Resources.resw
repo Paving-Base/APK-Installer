@@ -132,9 +132,6 @@
   <data name="ExceptionThrown" xml:space="preserve">
     <value>У програмі сталася помилка…</value>
   </data>
-  <data name="ImageLoadError" xml:space="preserve">
-    <value>Не вдалося завантажити зображення.</value>
-  </data>
   <data name="NetworkError" xml:space="preserve">
     <value>Виникли проблеми з мережею...</value>
   </data>
