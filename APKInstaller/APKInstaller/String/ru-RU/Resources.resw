@@ -118,8 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="APKDescription" xml:space="preserve">
-    <value>Пакет приложения Android
-</value>
+    <value>Пакет приложения Android</value>
   </data>
   <data name="APKFile" xml:space="preserve">
     <value>APK-файл
@@ -129,7 +128,7 @@
     <value>Установщик APK. Написано @wherewhere и @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>Установщик приложений</value>
+    <value>Установка APK</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>В работе программы произошёл сбой…</value>
@@ -144,7 +143,7 @@
     <value>Нет</value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
-    <value>Установить пакет</value>
+    <value>Install this Package</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
     <value>Файл Split APK</value>
