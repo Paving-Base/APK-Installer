@@ -130,7 +130,7 @@
     <value>Automatischer Download, wenn das Paket von einer URL stammt.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Auto Download Online Packages?</value>
+    <value>Online-Pakete automatisch herunterladen?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Hintergrundtyp für Windows 11 auswählen</value>
@@ -139,7 +139,7 @@
     <value>Hintergrund</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
-    <value>Wechseln</value>
+    <value>Ändern</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
     <value>Überprüfung fehlgeschlagen</value>
@@ -154,22 +154,22 @@
     <value>Cache löschen</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
+    <value>Wenn Sie den ADB Server beenden, muss er bei der nächsten Installation neu gestartet werden.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Terminate ADB when Exit Installer?</value>
+    <value>ADB beim Beenden des Installers auch beenden?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Exit Installer after installation is complete.</value>
+    <value>Installer beenden, nachdem die Installation abgeschlossen ist.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Exit Installer when APP is Ready?</value>
+    <value>Installer beenden, wenn die App bereit ist?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Konfigurationen</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value>Sie müssen das Gerät mit dem Internet verbinden.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Gerät verbinden</value>
@@ -178,7 +178,7 @@
     <value>Kontaktiere mich</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
+    <value>Folgen Sie mir auf Social Apps für die neuesten Entwicklungen. Wenn Sie einen Fehler finden, melden Sie ihn bitte per PM an mich. Ich werde mein Bestes tun, um das Problem zu lösen. Wenn Sie ein Telegram-Konto haben, können Sie gerne in der Paving Base Group chatten 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Inhalt</value>
@@ -193,7 +193,7 @@
     <value>Unterstützung</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
+    <value>Dieser APK Installer ist eine Open-Source-Anwendung, und es wird keine Werbung für Profit angezeigt. Wenn Sie diese App mögen, vergessen Sie nicht, sie im Store zu bewerten. Natürlich wäre es freundlich, wenn Sie ein wenig spenden könnten. Danke für ihre Unterstützung.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>Allgemeine Geschäftsbedingungen</value>
@@ -211,10 +211,10 @@
     <value>Rahmeninformationen</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
-    <value>Fachwerk</value>
+    <value>Framework</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>Gehen Sie zur Testseite.</value>
+    <value>Zur Testseite gehen.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
     <value>Zur Testseite gehen</value>
@@ -235,7 +235,7 @@
     <value>Logs</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
+    <value>Eine modifizierte Version kann einige unangenehme Dinge wie Werbung, beschädigte Funktionen oder sogar Viren enthalten. Bitte installieren Sie die Originalversion aus dem Microsoft Store. Besuchen Sie unser GitHub Repository für weitere Informationen.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>Sie verwenden eine modifizierte Version!</value>
@@ -244,7 +244,7 @@
     <value>Deaktivieren Sie es, um eine Verbindung zu anderen Geräten herzustellen.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>For WSA only?</value>
+    <value>Nur für Installationen auf dem Windows Subsystem für Android?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>Betriebssystemarchitektur</value>
@@ -256,10 +256,10 @@
     <value>Sonstige</value>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
-    <value>Pair device through network.</value>
+    <value>Gerät im Netzwerk koppeln.</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>Pair Device</value>
+    <value>Gerät koppeln</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Dunkel</value>
@@ -298,19 +298,19 @@
     <value>Hilfsprogramme anzeigen, wenn kein Gerät angeschlossen ist.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Whether to Show Helps?</value>
+    <value>Hilfe anzeigen?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Display announcements at the top of Settings.</value>
+    <value>Ankündigungen in den Einstellungen anzeigen.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Whether to Show Announcements?</value>
+    <value>Ankündigungen anzeigen?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>Es kann temporäre Dateien hinterlassen, wenn eine unerwartete Unterbrechung auftritt.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Whether to Show Installation Progress?</value>
+    <value>Installationsfortschritt anzeigen?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>App-Design</value>
