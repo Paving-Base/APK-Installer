@@ -130,7 +130,7 @@
     <value>Dāng ānzhuāngbāo láizì URL liànjiē shí zìdòng xiàzǎi. </value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Shìfǒu zìdòng xiàzǎi zàixiàn ānzhuāngbāo? </value>
+    <value>Auto Download Online Packages?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Xuǎnzé shìyòng yú Windows 11 de bèijǐngsè lèixíng</value>
@@ -154,22 +154,22 @@
     <value>Qīngchú huǎncún</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Guānbì ADB kě'néng huì shǐ qítā zhèngzài yùnxíng de ānzhuāngchéngxù bēngkuì. </value>
+    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Guānbì ānzhuāngchéngxù shí shìfǒu guānbì ADB? </value>
+    <value>Terminate ADB when Exit Installer?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Zài APK ānzhuāng wánchéng bìng qǐdòng hòu guānbì ānzhuāngchéngxù. </value>
+    <value>Exit Installer after installation is complete.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Dāng yìngyòngchéngxù zhǔnbèijiùxù hòu shìfǒu guānbì ānzhuāngchéngxù? </value>
+    <value>Exit Installer when APP is Ready?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Pèizhì</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Tōngguò wǎngluòliánjiē shèbèi. </value>
+    <value>Connect device through network.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Liánjiē shèbèi</value>
@@ -178,7 +178,7 @@
     <value>Yǔ wǒ liánxì</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Zài shèjiāo ruǎnjiàn shàng guānzhù wǒ lái huòqǔ zuìxīn kāifā dòngxiàng. Rúguǒ nǐ fāxiàn le shéme Bug, qǐng tōngguò sīxìn gàosù wǒ. Wǒhuì jìn zuìdà kě'néng lái jiějué zhèixiē wèntí. Rúguǒ nǐ yǒu diànbào zhànghào, huānyíng lái pūlù gēnjùdì qúnzǔ liáotiān😊!</value>
+    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Nèi'róng</value>
@@ -193,7 +193,7 @@
     <value>Zhīchí</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK ānzhuāngchéngxù shì yígè kāiyuán ruǎnjiàn, tā búhuì nèizhì rènhé guǎnggào lái yínglì. Rúguǒ nǐ xǐhuān zhège yìngyòng, búyào wàng le zài shāngdiàn lǐ dǎshàng hǎopíng ō, dāngrán rúguǒ kěyǐ juānzèng yìdiǎndiǎn jiù gènghǎo le. Gǎnxiè dàjiā de zhīchí💕! </value>
+    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>Yònghù xiéyì</value>
@@ -235,7 +235,7 @@
     <value>Rìzhì</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>Xiūgǎibǎn kě'néng huì bāohán yīxiē bùhǎo de dōngxi, bāokuò dàn búxiànyú guǎnggào, sǔnhuài de tèxìng, shènzhì shì bìngdú. Qǐng qiánwǎng Microsoft Store ānzhuāng yuánbǎn. Qǐngcānyuè wǒmen de Github cāngkù liǎojiě gèngduō xìnxī. </value>
+    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>Nín zhèngzài shǐyòng xiūgǎibǎn! </value>
@@ -244,7 +244,7 @@
     <value>Guānbì tā yǐ liánjiē dào qítā shèbèi. </value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>Shìfǒu jǐn yòngyú WSA? </value>
+    <value>For WSA only?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>Cāozuòxìtǒng jiàgòu</value>
@@ -254,6 +254,12 @@
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Qítā</value>
+  </data>
+  <data name="PairDevice.Description" xml:space="preserve">
+    <value>Pair device through network.</value>
+  </data>
+  <data name="PairDevice.Header" xml:space="preserve">
+    <value>Pair Device</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Shēnsè</value>
@@ -292,19 +298,19 @@
     <value>Dāng méiyǒu liánjiē dào shèbèi shí xiǎnshì bāngzhù. </value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Shìfǒu xiǎnshì bāngzhù? </value>
+    <value>Whether to Show Helps?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Zài shèzhì dǐngbù xiǎnshì gōnggào. </value>
+    <value>Display announcements at the top of Settings.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Shìfǒu xiǎnshì gōnggào? </value>
+    <value>Whether to Show Announcements?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>Rúguǒ ānzhuāng shí chūxiàn le yìwài qíngkuàng, zé kě'néng huì zài nǐ de shèbèi lǐ líuxia yīxiē línshíwénjiàn. </value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Shìfǒu xiǎnshì ānzhuāng jìndù? </value>
+    <value>Whether to Show Installation Progress?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Yìngyòng zhǔtí</value>
