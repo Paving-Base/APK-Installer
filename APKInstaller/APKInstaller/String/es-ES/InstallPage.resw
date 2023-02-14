@@ -278,13 +278,13 @@
     <value>Más información</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
-    <value>No se puede encontrar el Dispositivo Android</value>
+    <value>No se puede encontrar el dispositivo Android</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>Cómo conectar el dispositivo</value>
+    <value>Cómo conectar dispositivos</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>Si quieres instalar la aplicación al Subsistema Windows para Android™, necesitas instalarlo primero. Si quieres instalar en otros dispositivos, por favor, ve a la página de ajustes, desactiva "Solo para WSA" y conecta tu dispositivo.</value>
+    <value>Si desea instalar una aplicación en el Subsistema de Windows para AndroidTM, necesita instalarla primero. Si desea instalar en otros dispositivos, por favor vaya a la Página de configuración, desactive "Sólo está para WSA" y conecte su dispositivo.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
     <value>#### Usando USB
@@ -299,58 +299,58 @@
 4. Ve a la página de ajustes de APK Installer, conecta y selecciona tu dispositivo
 5. Vuelve, resume la instalación 
 
-[Saber más]({0})</value>
+[Saber más]({0})1</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
-    <value>No se puede conectar a Internet</value>
+    <value>No se pudo conectar a Internet</value>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
-    <value>Por favor, conéctate a Internet antes de iniciar la aplicación.</value>
+    <value>Por favor, conéctate a Internet antes de continuar.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>Para un mejor funcionamiento de la aplicación, intenta iniciar un paquete de aplicación Android.</value>
+    <value>Para el correcto funcionamiento de la aplicación, intente lanzar un paquete de aplicaciones Android.</value>
   </data>
   <data name="OK" xml:space="preserve">
-    <value>OK</value>
+    <value>Ok</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
-    <value>Paquete en línea</value>
+    <value>Paquetes en línea</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
-    <value>Nombre del paquete</value>
+    <value>Package Name</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>Nombre del paquete: {0}</value>
+    <value>Nombre del paquete</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
-    <value>Reinstalar</value>
+    <value>Reinstalar %@</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>{0} ya está instalado</value>
+    <value>Plugin ya está instalado</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
-    <value>Una versión más nueva de {0} ya está instalada.</value>
+    <value>Una nueva versión de {0} está disponible.</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
     <value>Reintentar</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>Seleccionar</value>
+    <value>Elegir</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>Compartir</value>
+    <value>Compartido</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
-    <value>Iniciando servidor ADB...</value>
+    <value>Iniciando el servidor web...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>Iniciar WSA</value>
+    <value>Inicia WSA</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
-    <value>Enlaces de tienda</value>
+    <value>Tienda Enlaces</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
     <value>Descomprimiendo ADB...</value>

@@ -146,7 +146,7 @@ Capacidades:</value>
     <value>Não</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Não Foi Possível Conectar a WSA</value>
+    <value>Não foi possível conectar ao WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
     <value>O WSA não foi iniciado corretamente ou há um problema com o ADB. Este problema pode ser muito difícil de resolver. Por favor, reinicie o instalador. Se ainda não funcionar, tente reiniciar o computador.</value>

@@ -1,4 +1,4 @@
-#### ¡Bienvenido al instalador de APK!
+#### Bienvenido al instalador de Chamilo
 
 ##### Declaración
 1. Por favor, sigue el [contrato de licencia de usuario final del Instalador de APK y la política de privacidad](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).

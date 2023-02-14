@@ -202,7 +202,7 @@
     <value>Geri bildirim</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
-    <value>Güncelleme Bul</value>
+    <value>Güncellemeleri ara</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
     <value>Bu uygulamanın çerçeveleri hakkında bilgi.</value>

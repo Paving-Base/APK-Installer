@@ -124,7 +124,7 @@
     <value>Arquivo APK</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>Um instalador de aplicativos Android. Escrito por @wherewhere e @Tangent-90.</value>
+    <value>Um instalador de aplicativos Android. Desenvolvido por @wherewhere e @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
     <value>Instalador APK</value>
@@ -136,13 +136,13 @@
     <value>Falha ao enviar imagem.</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>Houve algumns problemas com esses arquivos...</value>
+    <value>Houve alguns problemas com a rede...</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>Não</value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
-    <value>Install this Package</value>
+    <value>Instalar este pacote</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
     <value>Dividir arquivo APK</value>

@@ -140,7 +140,7 @@
     <value>Abrir carpeta de paquete</value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
-    <value>Nombre del paquete</value>
+    <value>Package Name</value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
     <value>Tamaño del paquete</value>

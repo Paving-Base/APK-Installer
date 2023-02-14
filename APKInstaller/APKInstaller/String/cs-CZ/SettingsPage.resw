@@ -299,7 +299,7 @@
     <value>Zobrazit oznámení v horní části nastavení.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Is Show Announcements?</value>
+    <value>Zobrazit oznámení</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>It may leave temp files when an unexpected interruption occurs.</value>

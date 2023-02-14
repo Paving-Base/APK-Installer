@@ -142,7 +142,7 @@
     <value>Ne</value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
-    <value>Install this Package</value>
+    <value>Nainstalované balíčky</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
     <value>Rozdělit soubor APK</value>

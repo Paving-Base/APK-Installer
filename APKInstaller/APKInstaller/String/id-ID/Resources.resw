@@ -121,7 +121,7 @@
     <value>Paket Aplikasi Android</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>File APK</value>
+    <value>berkas APK</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>Penginstal Aplikasi Android. Ditulis oleh @wherewhere dan @Tangent-90.</value>
@@ -142,7 +142,7 @@
     <value>Tidak</value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
-    <value>Pasang paket ini</value>
+    <value>Paket pemasangan</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
     <value>Pisahkan File APK</value>

@@ -127,7 +127,7 @@
     <value>ADB is missing</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>APK File</value>
+    <value>APK Tiedosto</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>Capabilities: </value>
@@ -139,10 +139,10 @@
     <value>Cancel</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
-    <value>Yes</value>
+    <value>~Kyllä</value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
-    <value>No</value>
+    <value>Ei</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>Cannot Connect to WSA</value>

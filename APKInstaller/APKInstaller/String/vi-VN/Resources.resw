@@ -118,36 +118,36 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="APKDescription" xml:space="preserve">
-    <value>Biểu tượng ứng dụng Android</value>
+    <value>Biểu tượng ứng dụng Androidsiuu</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>Tệp APK</value>
+    <value>Tệp APKfiles</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>Một bộ cài ứng dụng Android được viết bởi @wherewhere và @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>Trình Cài Đặt APK</value>
+    <value>Trình Cài Đặt APKinstall</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
-    <value>đã xảy ra lỗi với chương trình…</value>
+    <value>Đã xảy ra lỗi với chương trình…error</value>
   </data>
   <data name="ImageLoadError" xml:space="preserve">
-    <value>Tải ảnh không thành công.</value>
+    <value>Tải ảnh không thành công.error</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>Có một số vấn đề với mạng...</value>
+    <value>Có một số vấn đề với mạng...not data</value>
   </data>
   <data name="No" xml:space="preserve">
-    <value>Không</value>
+    <value>Không Nope</value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
-    <value>Install this Package</value>
+    <value>Cài đặt gói phần mềm arceus x 2.1.4 v3</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>Chia nhỏ APK Tập tin</value>
+    <value>Chia nhỏ APK Tập tin ddddddddddddddddddddd</value>
   </data>
   <data name="Yes" xml:space="preserve">
-    <value>Có</value>
+    <value>Có yep</value>
   </data>
 </root>
