@@ -132,9 +132,6 @@
   <data name="ExceptionThrown" xml:space="preserve">
     <value>Er is een fout opgetreden bij het programma…</value>
   </data>
-  <data name="ImageLoadError" xml:space="preserve">
-    <value>Afbeelding laden mislukt.</value>
-  </data>
   <data name="NetworkError" xml:space="preserve">
     <value>Er zijn wat problemen met het netwerk...</value>
   </data>
