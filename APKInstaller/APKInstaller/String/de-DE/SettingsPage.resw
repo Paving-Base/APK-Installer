@@ -241,7 +241,7 @@
     <value>Sie verwenden eine modifizierte Version!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Deaktivieren Sie es, um eine Verbindung zu anderen Geräten herzustellen.</value>
+    <value>Wenn Sie diesen App-Installer für ein anderes gerät nutzen wollen, deaktivieren sie diese Option, ansonsten lassen Sie sie eingeschaltet.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
     <value>Nur für Installationen auf dem Windows Subsystem für Android?</value>
