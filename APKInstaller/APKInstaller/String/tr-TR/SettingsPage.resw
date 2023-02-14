@@ -130,7 +130,7 @@
     <value>Paket URL'den olduğunda otomatik indir.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Auto Download Online Packages?</value>
+    <value>Çevrimiçi Paketler Otomatik İndirilsin mi?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Windows 11 için Arka Plan Türünü Seçin</value>
@@ -154,22 +154,22 @@
     <value>Önbelleği temizle</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
+    <value>ADB Sunucusunu sonlandırırsanız, bir sonraki kurulumda yeniden başlatılması gerekir.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Terminate ADB when Exit Installer?</value>
+    <value>Yükleyiciden Çıkıldığında ADB sonlandırılsın mı?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Exit Installer after installation is complete.</value>
+    <value>Yükleme tamamlandıktan sonra Yükleyiciden çıkın.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Exit Installer when APP is Ready?</value>
+    <value>Uygulama hazır olduğunda yükleyici kapatılsın mı?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Yapılandırmalar</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value>Cihazı ağ üzerinden bağlayın.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Cihazı Bağla</value>
@@ -178,7 +178,7 @@
     <value>Bana Ulaş</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
+    <value>En son gelişmeler için beni sosyal uygulamalarda takip edin. Herhangi bir hata bulursanız, lütfen bunları bana PM ile bildirin. Çözmek için elimden geleni yapacağım. Telegram hesabınız varsa, Paving Base Group'ta sohbet etmekten çekinmeyin 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>İçerik</value>
@@ -193,7 +193,7 @@
     <value>Destek</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
+    <value>APK Installer, kar amaçlı herhangi bir reklam eklemeyen açık kaynaklı bir uygulamadır. Bu uygulamayı beğendiyseniz, mağazada derecelendirmeyi unutmayın. Tabii biraz bağışta bulunursanız çok iyi olur. Desteğiniz için teşekkür ederiz.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
@@ -235,7 +235,7 @@
     <value>Günlükler</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
+    <value>Değiştirilmiş bir sürüm bazı hoş olmayan şeyler içerebilir. Reklamlar, bozulmuş özellikler ve hatta virüsler gibi. Orijinal sürümü indirmek için lütfen Microsoft Store'a gidin. Daha fazla bilgi için lütfen GitHub Depomuza bakın.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>Değiştirilmiş bir sürüm kullanıyorsunuz!</value>
@@ -244,7 +244,7 @@
     <value>Başka bir cihaza bağlanmak için devre dışı bırakın.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>For WSA only?</value>
+    <value>Sadece WSA için mi?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>İşletim Sistemi Mimarisi</value>
@@ -256,10 +256,10 @@
     <value>Diğerleri</value>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
-    <value>Pair device through network.</value>
+    <value>Cihazı ağ üzerinden eşleştirin.</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>Pair Device</value>
+    <value>Cihazı Eşleştir</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Karanlık</value>
@@ -298,19 +298,19 @@
     <value>Hiçbir cihaz bağlı değilken yardımcıları göster.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Whether to Show Helps?</value>
+    <value>Yardımları Göstermek İster Misiniz?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Display announcements at the top of Settings.</value>
+    <value>Ayarlar'ın üst kısmında duyuruları göster.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Whether to Show Announcements?</value>
+    <value>Duyuruları Göstermek İster Misiniz?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>Beklenmeyen bir kesinti meydana geldiğinde geçici dosyaları bırakabilir.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Whether to Show Installation Progress?</value>
+    <value>Kurulum İlerleme Durumu Gösterilsin mi?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Uygulama Teması</value>
