@@ -130,7 +130,7 @@
     <value>Lataa automaattisesti kun paketti on URL-osoitteesta.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Noudetaanko Automaattisesti Online-pakettia?</value>
+    <value>Auto Download Online Packages?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Select Backdrop Type for Windows 11</value>
@@ -154,22 +154,22 @@
     <value>Tyhjennä välimuisti</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Sulje ADB saattaa rikkoa muita asentajia vielä auki.</value>
+    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Sulkeeko ADB asennuksen lopettamisen yhteydessä?</value>
+    <value>Terminate ADB when Exit Installer?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Sulje asentaja, kun APK on asentanut ja käynnistänyt.</value>
+    <value>Exit Installer after installation is complete.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Sulje Asentaja, kun APP on valmis?</value>
+    <value>Exit Installer when APP is Ready?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Asetukset</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Yhdistä laite verkkoon.</value>
+    <value>Connect device through network.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Liitetyt laitteet</value>
@@ -178,7 +178,7 @@
     <value>Ota yhteyttä</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bug, please report it to me in PM. I will try my best to solve the problem. If you have Telegram account, welcome to chat at Paving Base Group 😊!</value>
+    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Sisältö</value>
@@ -193,7 +193,7 @@
     <value>Tuki</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application, and no ads will be added for profit. If you like this app, don't forget to rate it in the store. Of course, it would be better if you could donate a little. Thanks for your support.💕</value>
+    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>Loppukäyttäjän lisenssisopimus</value>
@@ -235,7 +235,7 @@
     <value>Lokitiedot</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>Muunnettu versio voi sisältää jotain epämiellyttävää. kuten AD, rikki toiminnot jopa virus. Ole hyvä ja mene Microsoft Store ladata alkuperäinen. Katso meidän GitHub Repository oppia lisää siitä.</value>
+    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>Käytössäsi on muokattu versio!</value>
@@ -244,7 +244,7 @@
     <value>Poista se käytöstä, jos haluat yhteyden muihin laitteisiin.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>Is Only for WSA?</value>
+    <value>For WSA only?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>&amp;Arkkitehtuuri</value>
@@ -254,6 +254,12 @@
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Muut</value>
+  </data>
+  <data name="PairDevice.Description" xml:space="preserve">
+    <value>Pair device through network.</value>
+  </data>
+  <data name="PairDevice.Header" xml:space="preserve">
+    <value>Pair Device</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Tumma</value>
@@ -292,19 +298,19 @@
     <value>Show helpers when no device is connected.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Is Show Helpers?</value>
+    <value>Whether to Show Helps?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Show Announcements on the top of Settings.</value>
+    <value>Display announcements at the top of Settings.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Is Show Announcements?</value>
+    <value>Whether to Show Announcements?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>It may leave temp files when an unexpected interruption occurs.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Is Show Progress of Installation?</value>
+    <value>Whether to Show Installation Progress?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>App Theme</value>
