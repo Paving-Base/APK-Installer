@@ -154,13 +154,13 @@
     <value>清除缓存</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>关闭 ADB 可能会使其他正在运行的安装程序崩溃。</value>
+    <value>如果您终止 ADB 服务器，需要在下次安装时重启。</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>关闭安装程序时是否关闭ADB？</value>
+    <value>退出安装程序时终止 ADB ？</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>在 APK 安装完成并启动后关闭安装程序。</value>
+    <value>安装完成后退出安装程序。</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
     <value>当应用程序准备就绪后是否关闭安装程序？</value>
@@ -244,7 +244,7 @@
     <value>关闭它以连接到其他设备。</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>是否仅用于 WSA？</value>
+    <value>是否仅用于 WSA ？</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>操作系统架构</value>
@@ -254,6 +254,12 @@
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>其他</value>
+  </data>
+  <data name="PairDevice.Description" xml:space="preserve">
+    <value>通过网络配对设备。</value>
+  </data>
+  <data name="PairDevice.Header" xml:space="preserve">
+    <value>配对设备</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>深色</value>

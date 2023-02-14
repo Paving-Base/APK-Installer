@@ -130,7 +130,7 @@
     <value>Paket URL'den olduğunda otomatik indir.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Çevrimiçi Paketleri Otomatik İndirir mi?</value>
+    <value>Çevrimiçi Paketler Otomatik İndirilsin mi?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Windows 11 için Arka Plan Türünü Seçin</value>
@@ -154,13 +154,13 @@
     <value>Önbelleği temizle</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>ADB'yi kapatmak diğer yükleyicileri hala açıkken bozabilir.</value>
+    <value>ADB Sunucusunu sonlandırırsanız, bir sonraki kurulumda yeniden başlatılması gerekir.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Yükleyici kapatılırken ADB kapatılsın mı?</value>
+    <value>Yükleyiciden Çıkıldığında ADB sonlandırılsın mı?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>APK yüklendikten sonra yükleyiciyi kapatın ve başlatın.</value>
+    <value>Yükleme tamamlandıktan sonra Yükleyiciden çıkın.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
     <value>Uygulama hazır olduğunda yükleyici kapatılsın mı?</value>
@@ -169,7 +169,7 @@
     <value>Yapılandırmalar</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Cihazı ağa bağlayın.</value>
+    <value>Cihazı ağ üzerinden bağlayın.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Cihazı Bağla</value>
@@ -178,7 +178,7 @@
     <value>Bana Ulaş</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>En son gelişmeler için beni sosyal medyadan takip edin. Herhangi bir hata bulursanız, lütfen bana özel mesaj ile bildirin. Sorunu çözmek için elimden geleni yapacağım. Telegram hesabınız varsa, Paving Base Group'ta sohbet etmeye gelin 😊!</value>
+    <value>En son gelişmeler için beni sosyal uygulamalarda takip edin. Herhangi bir hata bulursanız, lütfen bunları bana PM ile bildirin. Çözmek için elimden geleni yapacağım. Telegram hesabınız varsa, Paving Base Group'ta sohbet etmekten çekinmeyin 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>İçerik</value>
@@ -193,7 +193,7 @@
     <value>Destek</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer açık kaynaklı bir uygulamadır ve kâr amaçlı herhangi bir reklam eklenmeyecektir. Bu uygulamayı beğendiyseniz, oy vermeyi unutmayın. Elbette, biraz bağış yapabilirseniz iyi olur. Destekleriniz için teşekkürler.💕</value>
+    <value>APK Installer, kar amaçlı herhangi bir reklam eklemeyen açık kaynaklı bir uygulamadır. Bu uygulamayı beğendiyseniz, mağazada derecelendirmeyi unutmayın. Tabii biraz bağışta bulunursanız çok iyi olur. Desteğiniz için teşekkür ederiz.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
@@ -235,7 +235,7 @@
     <value>Günlükler</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>Modifiye edilmiş bir sürüm hoş olmayan bir şey içerebilir. AD'ler gibi, bozuk işlevler hatta virüs. Orijinalini indirmek için lütfen Microsoft Store'a gidin. Bununla ilgili daha fazla bilgi edinmek için Github Depomuza bakın.</value>
+    <value>Değiştirilmiş bir sürüm bazı hoş olmayan şeyler içerebilir. Reklamlar, bozulmuş özellikler ve hatta virüsler gibi. Orijinal sürümü indirmek için lütfen Microsoft Store'a gidin. Daha fazla bilgi için lütfen GitHub Depomuza bakın.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>Değiştirilmiş bir sürüm kullanıyorsunuz!</value>
@@ -254,6 +254,12 @@
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Diğerleri</value>
+  </data>
+  <data name="PairDevice.Description" xml:space="preserve">
+    <value>Cihazı ağ üzerinden eşleştirin.</value>
+  </data>
+  <data name="PairDevice.Header" xml:space="preserve">
+    <value>Cihazı Eşleştir</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Karanlık</value>
@@ -292,19 +298,19 @@
     <value>Hiçbir cihaz bağlı değilken yardımcıları göster.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Yardımcılar gösterilsin mi?</value>
+    <value>Yardımları Göstermek İster Misiniz?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
     <value>Ayarlar'ın üst kısmında duyuruları göster.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Duyurular gösterilsin mi?</value>
+    <value>Duyuruları Göstermek İster Misiniz?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>Beklenmeyen bir kesinti meydana geldiğinde geçici dosyaları bırakabilir.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Kurulum İlerleme Durumu Gösteriliyor mu?</value>
+    <value>Kurulum İlerleme Durumu Gösterilsin mi?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Uygulama Teması</value>

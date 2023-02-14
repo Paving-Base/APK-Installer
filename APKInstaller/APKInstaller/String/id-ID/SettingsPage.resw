@@ -130,7 +130,7 @@
     <value>Unduh otomatis saat paket berasal dari URL.the spaiek</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Apakah Otomatis Unduh Paket Daring?</value>
+    <value>Auto Download Online Packages?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Pilih Jenis Tampilan Latar Belakang untuk Windows 11</value>
@@ -154,22 +154,22 @@
     <value>Hapus cache</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Tutup ADB mungkin dapat merusak Pemasang lain saat masih terbuka.</value>
+    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Apakah Tutup ADB saat Menutup Penginstal?</value>
+    <value>Terminate ADB when Exit Installer?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Tutup Penginstal setelah APK diinstal dan mulai.</value>
+    <value>Exit Installer after installation is complete.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Apakah Tutup Pemasang saat Aplikasi sudah Siap?</value>
+    <value>Exit Installer when APP is Ready?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Konfigurasi</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Hubungkan perangkat ke jaringan.</value>
+    <value>Connect device through network.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Hubungkan perangkat</value>
@@ -178,7 +178,7 @@
     <value>Hubungi Saya</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Ikuti saya di aplikasi sosial untuk perkembangan terbaru. Jika Anda menemukan bug, harap laporkan kepada saya di PM. Saya akan mencoba yang terbaik untuk memecahkan masalah. Jika Anda memiliki akun Telegram, selamat datang untuk mengobrol di Grup Paving Base 😊!</value>
+    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Konten</value>
@@ -193,7 +193,7 @@
     <value>Dukungan</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer adalah aplikasi sumber terbuka, dan tidak ada iklan yang akan ditambahkan untuk mendapatkan keuntungan. Jika Anda menyukai aplikasi ini, jangan lupa untuk menilai di toko. Tentu saja, akan lebih baik jika Anda bisa menyumbang sedikit. Terima kasih atas dukungan Anda.💕</value>
+    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
@@ -235,7 +235,7 @@
     <value>Log</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>Versi yang dimodifikasi mungkin berisi sesuatu yang tidak menyenangkan. Seperti iklan, fungsi rusak bahkan virus. Silahkan buka Microsoft Store untuk mengunduh yang asli. Lihat Repositori GitHub kami untuk mempelajari lebih lanjut tentangnya.</value>
+    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>Anda sedang menggunakan versi yang dimodifikasi!</value>
@@ -244,7 +244,7 @@
     <value>Nonaktifkan untuk terhubung ke perangkat lain.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>Apakah Hanya untuk WSA?</value>
+    <value>For WSA only?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>Arsitektur OS</value>
@@ -254,6 +254,12 @@
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Lainnya</value>
+  </data>
+  <data name="PairDevice.Description" xml:space="preserve">
+    <value>Pair device through network.</value>
+  </data>
+  <data name="PairDevice.Header" xml:space="preserve">
+    <value>Pair Device</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Gelap</value>
@@ -292,19 +298,19 @@
     <value>Tampilkan pembantu saat tidak ada perangkat yang terhubung.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Apakah Tampilkan Pembantu?</value>
+    <value>Whether to Show Helps?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Tampilkan Pengumuman di bagian atas Pengaturan.</value>
+    <value>Display announcements at the top of Settings.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Apakah Tampilkan Pengumuman?</value>
+    <value>Whether to Show Announcements?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>Itu mungkin meninggalkan file temp ketika terjadi gangguan yang tidak terduga.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Apakah Tampilkan Kemajuan Instalasi?</value>
+    <value>Whether to Show Installation Progress?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Tema Aplikasi</value>

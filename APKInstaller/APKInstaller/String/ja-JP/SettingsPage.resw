@@ -130,7 +130,7 @@
     <value>パッケージがURLからの場合、自動的にダウンロードします。</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>オンラインパッケージは自動でダウンロードしますか?</value>
+    <value>Auto Download Online Packages?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Windows 11用の背景の種類を選択</value>
@@ -154,22 +154,22 @@
     <value>キャッシュを削除</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>ADBを閉じると、他のインストーラがまだ開いているときに壊れる可能性があります。</value>
+    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>インストーラを閉じるときに、ADBを終了しますか？</value>
+    <value>Terminate ADB when Exit Installer?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>APKがインストールされ、起動した後にインストーラを閉じます。</value>
+    <value>Exit Installer after installation is complete.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>アプリの準備ができたらインストーラを閉じますか？</value>
+    <value>Exit Installer when APP is Ready?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>設定</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>ネットワーク上で端末を接続します。</value>
+    <value>Connect device through network.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>端末と接続</value>
@@ -178,7 +178,7 @@
     <value>問い合わせ</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>最新の開発のためにソーシャルアプリでフォローしてください。バグを見つけた場合は、PMに報告してください。 私は問題を解決するために最善を尽くします。あなたがTelegramアカウントを持っているなら、ベース・グループのペーブでチャットへ歓迎します 😊 ！</value>
+    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>内容</value>
@@ -193,7 +193,7 @@
     <value>サポート</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APKインストーラはオープンソースのアプリケーションであり、利益のために広告は追加されません。 このアプリが気に入った場合はストアで評価することを忘れないでください。 もちろん、少し寄付して頂けると良いでしょう。ご支援ありがとうございます。💕</value>
+    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>エンドユーザー向け使用許諾契約</value>
@@ -235,7 +235,7 @@
     <value>ログ</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may contain something unpleasant. Such as AD, broken functions even virus. Please go to Microsoft Store to download the original one. See our GitHub Repository to learn more about it.</value>
+    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>変更されたバージョンを使用しています！</value>
@@ -244,7 +244,7 @@
     <value>他の端末に接続するには無効にしてください。</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>WSA専用ですか?</value>
+    <value>For WSA only?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>OS Architecture</value>
@@ -254,6 +254,12 @@
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>その他</value>
+  </data>
+  <data name="PairDevice.Description" xml:space="preserve">
+    <value>Pair device through network.</value>
+  </data>
+  <data name="PairDevice.Header" xml:space="preserve">
+    <value>Pair Device</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>ダーク</value>
@@ -292,19 +298,19 @@
     <value>端末が接続されていないときにヘルパーを表示する</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>表示ヘルパーとは？</value>
+    <value>Whether to Show Helps?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>設定の上部にアナウンスを表示します。</value>
+    <value>Display announcements at the top of Settings.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>お知らせを表示しますか？</value>
+    <value>Whether to Show Announcements?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>It may leave temp files when an unexpected interruption occurs.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Is Show Progress of Installation?</value>
+    <value>Whether to Show Installation Progress?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>アプリのテーマ</value>

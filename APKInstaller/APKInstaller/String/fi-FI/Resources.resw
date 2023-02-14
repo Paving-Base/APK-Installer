@@ -132,9 +132,6 @@
   <data name="ExceptionThrown" xml:space="preserve">
     <value>Ohjelman kanssa tapahtui virhe…</value>
   </data>
-  <data name="ImageLoadError" xml:space="preserve">
-    <value>Kuvan lataus epäonnistui.</value>
-  </data>
   <data name="NetworkError" xml:space="preserve">
     <value>There are some problems with the network...</value>
   </data>

@@ -130,7 +130,7 @@
     <value>Descărcare automată când pachetul este din URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Descarcă automat pachete online?</value>
+    <value>Auto Download Online Packages?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Selectaţi tipul de fereastră pentru Windows 11</value>
@@ -154,22 +154,22 @@
     <value>Ştergeţi memoria cache</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Închiderea ADB poate strica alte instalatoare care încă sunt deschise.</value>
+    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Închide ADB la închiderea instalatorului?</value>
+    <value>Terminate ADB when Exit Installer?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Închide Instalatorul după ce APK a fost instalat și pornit.</value>
+    <value>Exit Installer after installation is complete.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Închide Instalarea atunci când aplicația este pregătită?</value>
+    <value>Exit Installer when APP is Ready?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Configurări</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Conectați dispozitivul în rețea.</value>
+    <value>Connect device through network.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Conectare dispozitiv</value>
@@ -178,7 +178,7 @@
     <value>Contactați-mă</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Urmărește-mă pe aplicațiile sociale pentru cele mai recente noutăți. Dacă găsești o problemă, te rugăm să o raportezi printr-un mesaj privat. Voi încerca tot posibilul să rezolv problema. Dacă ai cont de Telegram, te invit să vorbești la Paving Base Group 😊!</value>
+    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Conținut</value>
@@ -193,7 +193,7 @@
     <value>Suport</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer este o aplicație open-source și nu vor fi adăugate reclame pentru profit. Dacă vă place această aplicație, nu uitați să o evaluați în magazin. Desigur, ar fi mai bine dacă ai putea dona un pic. Mulțumim pentru sprijin.💕</value>
+    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>ALUF</value>
@@ -235,7 +235,7 @@
     <value>Log-uri</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>O versiune modificată poate conține ceva neplăcut. Cum ar fi AD, funcții defecte chiar și viruși. Vă rugăm să mergeți la Microsoft Store pentru a-l pe cel original. Vedeți repozitorul nostru GitHub pentru a afla mai multe despre acesta.</value>
+    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>Folosiți o versiune modificată!</value>
@@ -244,7 +244,7 @@
     <value>Dezactivați-l pentru a vă conecta la alte dispozitive.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>Este doar pentru WSA?</value>
+    <value>For WSA only?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>Arhitectură SO</value>
@@ -254,6 +254,12 @@
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Altele</value>
+  </data>
+  <data name="PairDevice.Description" xml:space="preserve">
+    <value>Pair device through network.</value>
+  </data>
+  <data name="PairDevice.Header" xml:space="preserve">
+    <value>Pair Device</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Întunecat</value>
@@ -292,19 +298,19 @@
     <value>Arată ajutoarele atunci când nu este conectat niciun dispozitiv.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Arată Ajutoarele?</value>
+    <value>Whether to Show Helps?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Arată anunțurile în partea de sus a setărilor.</value>
+    <value>Display announcements at the top of Settings.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Arată Anunțurile?</value>
+    <value>Whether to Show Announcements?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>Poate lăsa fişiere temporare atunci când are loc o întrerupere neaşteptată.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Arată progresul instalării?</value>
+    <value>Whether to Show Installation Progress?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Tema aplicației</value>

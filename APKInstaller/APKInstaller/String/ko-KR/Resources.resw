@@ -132,9 +132,6 @@
   <data name="ExceptionThrown" xml:space="preserve">
     <value>There was an error with the file upload.</value>
   </data>
-  <data name="ImageLoadError" xml:space="preserve">
-    <value>이미지 업로드 실패. 다시 시도하세요.</value>
-  </data>
   <data name="NetworkError" xml:space="preserve">
     <value>There are some problems with the network...</value>
   </data>

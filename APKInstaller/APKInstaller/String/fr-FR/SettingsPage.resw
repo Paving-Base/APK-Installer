@@ -130,7 +130,7 @@
     <value>Auto download when package is from URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Téléchargement auto des paquets en ligne ?</value>
+    <value>Auto Download Online Packages?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Sélectionner le type d'arrière-plan pour Windows 11</value>
@@ -154,22 +154,22 @@
     <value>Effacer le cache</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Fermer ADB risque de corrompre les autres installations toujours en cours.</value>
+    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>ADB doit-il se fermer après l'installation ?</value>
+    <value>Terminate ADB when Exit Installer?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Ferme l'installeur une fois l'APK installée et lancée.</value>
+    <value>Exit Installer after installation is complete.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Fermer l'installateur lorsque l'application est prête ?</value>
+    <value>Exit Installer when APP is Ready?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Configurations</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connecter l'appareil au réseau.</value>
+    <value>Connect device through network.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Connecter l'appareil</value>
@@ -178,7 +178,7 @@
     <value>Me contacter</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Suivez-moi sur les réseaux sociaux pour les derniers développements. Si vous trouvez un bug, merci de me le signaler en MP. Je ferai mon mieux pour résoudre le problème. Si vous avez un compte Telegram, n'hésitez pas à parler dans le Paving Base Group😊 !</value>
+    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Contenu</value>
@@ -193,7 +193,7 @@
     <value>Supports</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>L'installateur d'APK est une application open-source, et aucune publicité ne sera ajoutée pour le profit. Si vous aimez cette application, n'oubliez pas de l'évaluer dans la boutique. Bien sûr, ce serait mieux si vous pouviez faire un don. Merci pour votre soutien.💕</value>
+    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
@@ -235,7 +235,7 @@
     <value>Logs</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>Une version modifiée peut contenir quelque chose de désagréable, comme la AD, des fonctions cassées même le virus. Veuillez vous rendre sur Microsoft Store pour télécharger le dépôt original. Consultez notre dépôt GitHub pour en savoir plus.</value>
+    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>Vous utilisez une version modifiée!</value>
@@ -244,7 +244,7 @@
     <value>Désactivez-le pour vous connecter à d'autres appareils.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>Est seulement pour la WSA?</value>
+    <value>For WSA only?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>L'architecture</value>
@@ -254,6 +254,12 @@
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>D'autres</value>
+  </data>
+  <data name="PairDevice.Description" xml:space="preserve">
+    <value>Pair device through network.</value>
+  </data>
+  <data name="PairDevice.Header" xml:space="preserve">
+    <value>Pair Device</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Fonce</value>
@@ -292,19 +298,19 @@
     <value>Afficher les aides quand aucun périphérique n'est connecté.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Montrer les assistants ?</value>
+    <value>Whether to Show Helps?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Show Announcements on the top of Settings.</value>
+    <value>Display announcements at the top of Settings.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Is Show Announcements?</value>
+    <value>Whether to Show Announcements?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>It may leave temp files when an unexpected interruption occurs.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Is Show Progress of Installation?</value>
+    <value>Whether to Show Installation Progress?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>App Theme</value>

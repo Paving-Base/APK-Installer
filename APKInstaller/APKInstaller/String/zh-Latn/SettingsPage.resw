@@ -130,7 +130,7 @@
     <value>Dāng ānzhuāngbāo láizì URL liànjiē shí zìdòng xiàzǎi. </value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Shìfǒu zìdòng xiàzǎi zàixiàn ānzhuāngbāo? </value>
+    <value>是否自动下载在线安装包？</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Xuǎnzé shìyòng yú Windows 11 de bèijǐngsè lèixíng</value>
@@ -154,22 +154,22 @@
     <value>Qīngchú huǎncún</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Guānbì ADB kě'néng huì shǐ qítā zhèngzài yùnxíng de ānzhuāngchéngxù bēngkuì. </value>
+    <value>如果您终止 ADB 服务器，需要在下次安装时重启。</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Guānbì ānzhuāngchéngxù shí shìfǒu guānbì ADB? </value>
+    <value>退出安装程序时终止 ADB ？</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Zài APK ānzhuāng wánchéng bìng qǐdòng hòu guānbì ānzhuāngchéngxù. </value>
+    <value>安装完成后退出安装程序。</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Dāng yìngyòngchéngxù zhǔnbèijiùxù hòu shìfǒu guānbì ānzhuāngchéngxù? </value>
+    <value>当应用程序准备就绪后是否关闭安装程序？</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Pèizhì</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Tōngguò wǎngluòliánjiē shèbèi. </value>
+    <value>通过网络连接设备。</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Liánjiē shèbèi</value>
@@ -178,7 +178,7 @@
     <value>Yǔ wǒ liánxì</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Zài shèjiāo ruǎnjiàn shàng guānzhù wǒ lái huòqǔ zuìxīn kāifā dòngxiàng. Rúguǒ nǐ fāxiàn le shéme Bug, qǐng tōngguò sīxìn gàosù wǒ. Wǒhuì jìn zuìdà kě'néng lái jiějué zhèixiē wèntí. Rúguǒ nǐ yǒu diànbào zhànghào, huānyíng lái pūlù gēnjùdì qúnzǔ liáotiān😊!</value>
+    <value>在社交软件上关注我来获取最新开发动向。如果你发现了什么 Bug，请通过私信告诉我。我会尽最大可能来解决这些问题。如果你有电报账号，欢迎来铺路根据地群组聊天😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Nèi'róng</value>
@@ -193,7 +193,7 @@
     <value>Zhīchí</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK ānzhuāngchéngxù shì yígè kāiyuán ruǎnjiàn, tā búhuì nèizhì rènhé guǎnggào lái yínglì. Rúguǒ nǐ xǐhuān zhège yìngyòng, búyào wàng le zài shāngdiàn lǐ dǎshàng hǎopíng ō, dāngrán rúguǒ kěyǐ juānzèng yìdiǎndiǎn jiù gènghǎo le. Gǎnxiè dàjiā de zhīchí💕! </value>
+    <value>APK 安装程序是一个开源软件，它不会内置任何广告来盈利。如果你喜欢这个应用，不要忘了在商店里打上好评哦，当然如果可以捐赠一点点就更好了。感谢大家的支持💕！</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>Yònghù xiéyì</value>
@@ -235,7 +235,7 @@
     <value>Rìzhì</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>Xiūgǎibǎn kě'néng huì bāohán yīxiē bùhǎo de dōngxi, bāokuò dàn búxiànyú guǎnggào, sǔnhuài de tèxìng, shènzhì shì bìngdú. Qǐng qiánwǎng Microsoft Store ānzhuāng yuánbǎn. Qǐngcānyuè wǒmen de Github cāngkù liǎojiě gèngduō xìnxī. </value>
+    <value>修改版可能会包含一些不好的东西，包括但不限于广告、损坏的特性，甚至是病毒。请前往 Microsoft Store 安装原版。请参阅我们的 Github 仓库了解更多信息。</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>Nín zhèngzài shǐyòng xiūgǎibǎn! </value>
@@ -244,7 +244,7 @@
     <value>Guānbì tā yǐ liánjiē dào qítā shèbèi. </value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>Shìfǒu jǐn yòngyú WSA? </value>
+    <value>是否仅用于 WSA ？</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>Cāozuòxìtǒng jiàgòu</value>
@@ -254,6 +254,12 @@
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Qítā</value>
+  </data>
+  <data name="PairDevice.Description" xml:space="preserve">
+    <value>通过网络配对设备。</value>
+  </data>
+  <data name="PairDevice.Header" xml:space="preserve">
+    <value>配对设备</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Shēnsè</value>
@@ -292,19 +298,19 @@
     <value>Dāng méiyǒu liánjiē dào shèbèi shí xiǎnshì bāngzhù. </value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Shìfǒu xiǎnshì bāngzhù? </value>
+    <value>是否显示帮助？</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Zài shèzhì dǐngbù xiǎnshì gōnggào. </value>
+    <value>在设置顶部显示公告。</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Shìfǒu xiǎnshì gōnggào? </value>
+    <value>是否显示公告？</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>Rúguǒ ānzhuāng shí chūxiàn le yìwài qíngkuàng, zé kě'néng huì zài nǐ de shèbèi lǐ líuxia yīxiē línshíwénjiàn. </value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Shìfǒu xiǎnshì ānzhuāng jìndù? </value>
+    <value>是否显示安装进度？</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Yìngyòng zhǔtí</value>
