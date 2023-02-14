@@ -145,7 +145,7 @@
     <value>Nein</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Es kann keine Verbindung zu %s hergestellt werden</value>
+    <value>WSA kann nicht verbunden werden</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
     <value>Entweder wurde der WSA nicht ordnungsgemäß gestartet, oder es liegt ein Problem mit der ADB vor. Dieses Problem kann sehr schwer zu beheben sein. Bitte starten Sie das Installationsprogramm neu. Wenn es immer noch nicht funktioniert, versuchen Sie, den Computer neu zu starten.</value>
