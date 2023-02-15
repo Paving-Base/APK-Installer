@@ -269,7 +269,7 @@
     <value>WSA wird gestartet...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>Klicken, wenn bereit</value>
+    <value>Starten, wenn bereit</value>
   </data>
   <data name="Loading" xml:space="preserve">
     <value>Wird geladen...</value>
@@ -395,6 +395,6 @@ Dies kann lange dauern. Setze dich zurück und entspannen.</value>
     <value>Willkommen!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>%s wird ausgeführt</value>
+    <value>WSA wird ausgeführt</value>
   </data>
 </root>
