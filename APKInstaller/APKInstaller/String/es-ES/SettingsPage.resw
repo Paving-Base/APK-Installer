@@ -169,7 +169,7 @@
     <value>Configuraciones</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value>Conectar el dispositivo a través de la red.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Conectar dispositivo</value>
@@ -244,7 +244,7 @@
     <value>Desactívalo para conectarlo a otros dispositivos.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>For WSA only?</value>
+    <value>¿Solo para WSA?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>Arquitectura OS</value>
@@ -256,7 +256,7 @@
     <value>Otros</value>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
-    <value>Pair device through network.</value>
+    <value>Emparejar el dispositivo a través de la red.</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
     <value>Emparejar dispositivo</value>
@@ -298,19 +298,19 @@
     <value>Mostrar ayudantes cuando ningún dispositivo está conectado.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Whether to Show Helps?</value>
+    <value>¿Mostrar ayudas?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Display announcements at the top of Settings.</value>
+    <value>Mostrar anuncios en la parte superior de los ajustes.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Whether to Show Announcements?</value>
+    <value>¿Mostrar anuncios?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>Puede que deje archivos temporales cuando una interrupción inesperada ocurra.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Whether to Show Installation Progress?</value>
+    <value>¿Mostrar el proceso de instalación?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Tema de la aplicación</value>
