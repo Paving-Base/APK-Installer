@@ -130,7 +130,7 @@
     <value>Autodescargar cuando el paquete viene de URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Auto Download Online Packages?</value>
+    <value>¿Quiere que se descarguen automáticamente los paquetes en línea?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Seleccionar el tipo de fondo para Windows 11</value>
@@ -154,16 +154,16 @@
     <value>Limpiar caché</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
+    <value>El servidor ADB necesita reiniciarse en la próxima instalación si la finaliza.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Terminate ADB when Exit Installer?</value>
+    <value>¿Quiere finalizar ADB al salir del instalador?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Exit Installer after installation is complete.</value>
+    <value>Salir del instalador cuando finalice la instalación.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Exit Installer when APP is Ready?</value>
+    <value>¿Quiere salir del instalador cuando la aplicación esté preparada?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Configuraciones</value>
@@ -259,7 +259,7 @@
     <value>Pair device through network.</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>Pair Device</value>
+    <value>Emparejar dispositivo</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Oscuro</value>
