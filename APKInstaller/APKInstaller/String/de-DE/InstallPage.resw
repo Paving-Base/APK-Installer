@@ -121,7 +121,7 @@
     <value>ADB, die Android Debug Bridge, wird für den APK Installer benötigt. Klicken Sie auf "Download", um sie herunterzuladen. Mit dem Download akzeptieren Sie die AGB von Google für ADB.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Existiert</value>
+    <value>ADB ist vorhanden</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB fehlt</value>
@@ -148,7 +148,7 @@
     <value>WSA kann nicht verbunden werden</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Entweder wurde der WSA nicht ordnungsgemäß gestartet, oder es liegt ein Problem mit der ADB vor. Dieses Problem kann sehr schwer zu beheben sein. Bitte starten Sie das Installationsprogramm neu. Wenn es immer noch nicht funktioniert, versuchen Sie, den Computer neu zu starten.</value>
+    <value>Entweder wurde WSA nicht ordnungsgemäß gestartet, oder es liegt ein Problem mit der ADB vor. Dieses Problem kann sehr schwer zu beheben sein. Bitte starten Sie den Installer neu. Wenn es dann immer noch nicht funktioniert, versuchen Sie, den Computer neu zu starten.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>App Paket kann nicht geöffnet werden</value>
@@ -157,7 +157,7 @@
     <value>Überprüfen...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Überprüfen...</value>
+    <value>ADB wird geprüft...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
     <value>Überprüfe Pfad...</value>
@@ -169,7 +169,7 @@
     <value>Schließen</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>Sind Sie sicher, die Installation abzubrechen?</value>
+    <value>Sind Sie sicher, dass Sie die Installation abbrechen möchten?</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Kopieren</value>
@@ -184,7 +184,7 @@
     <value>Herunterladen fehlgeschlagen</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>Please check your network connection or the URL and try again.</value>
+    <value>Bitte überprüfen Sie ihre Internetverbindung und versuchen sie es dann erneut.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
     <value>WSA wird gesucht...</value>
