@@ -145,7 +145,7 @@
     <value>Check Failed</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>Checking For Updates...</value>
+    <value>Soek tans na bywerkings...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
     <value>Check For Updates</value>
@@ -187,10 +187,10 @@
     <value>Device</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
-    <value>Display</value>
+    <value>Vertoon</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
-    <value>Supports</value>
+    <value>Ondersteuning</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
     <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
