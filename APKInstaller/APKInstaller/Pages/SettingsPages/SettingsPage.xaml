@@ -3,13 +3,14 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:controls="using:APKInstaller.Controls"
+    xmlns:converters="using:CommunityToolkit.WinUI.UI.Converters"
     xmlns:cwuc="using:CommunityToolkit.WinUI.UI.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:helper="using:APKInstaller.Helpers"
     xmlns:interopservices="using:System.Runtime.InteropServices"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:settingspages="using:APKInstaller.ViewModels.SettingsPages"
     xmlns:sharpadbclient="using:AdvancedSharpAdbClient"
+    xmlns:sys="using:System"
     xmlns:ui="using:CommunityToolkit.WinUI.UI"
     d:DataContext="{d:DesignInstance Type=settingspages:SettingsViewModel}"
     NavigationCacheMode="Enabled"
@@ -148,6 +149,42 @@
                                         </Grid>
                                     </Grid>
                                 </controls:Setting>
+                                <Grid Style="{StaticResource ExpanderContentGridStyle}">
+                                    <Grid.Resources>
+                                        <Style BasedOn="{StaticResource CaptionTextBlockStyle}" TargetType="TextBlock">
+                                            <Style.Setters>
+                                                <Setter Property="TextWrapping" Value="WrapWholeWords" />
+                                            </Style.Setters>
+                                        </Style>
+                                        <Style BasedOn="{StaticResource TextButtonStyle}" TargetType="HyperlinkButton">
+                                            <Style.Setters>
+                                                <Setter Property="FontSize" Value="12" />
+                                                <Setter Property="Padding" Value="0,0,0,0" />
+                                            </Style.Setters>
+                                        </Style>
+                                    </Grid.Resources>
+                                    <ItemsRepeaterScrollHost>
+                                        <ScrollViewer
+                                            Margin="0,0,0,-8"
+                                            Padding="0,2,0,8"
+                                            HorizontalScrollBarVisibility="Auto"
+                                            VerticalScrollBarVisibility="Disabled">
+                                            <ItemsRepeater ItemsSource="{Binding ConnectHelpers}">
+                                                <ItemsRepeater.Layout>
+                                                    <StackLayout Orientation="Horizontal" Spacing="4" />
+                                                </ItemsRepeater.Layout>
+                                                <ItemsRepeater.ItemTemplate>
+                                                    <DataTemplate x:DataType="settingspages:HyperlinkContent">
+                                                        <HyperlinkButton
+                                                            Content="{x:Bind Content}"
+                                                            NavigateUri="{x:Bind NavigateUri}"
+                                                            ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
+                                                    </DataTemplate>
+                                                </ItemsRepeater.ItemTemplate>
+                                            </ItemsRepeater>
+                                        </ScrollViewer>
+                                    </ItemsRepeaterScrollHost>
+                                </Grid>
                             </StackPanel>
                         </controls:SettingExpander.Content>
                     </controls:SettingExpander>
@@ -387,33 +424,29 @@
                                             <Run Text="{Binding UpdateDate}" />
                                         </TextBlock>
                                         <ScrollViewer
-                                            Margin="0,2,0,0"
+                                            Margin="0,0,0,-8"
+                                            Padding="0,2,0,8"
                                             HorizontalScrollBarVisibility="Auto"
                                             VerticalScrollBarVisibility="Disabled">
-                                            <StackPanel Orientation="Horizontal">
+                                            <StackPanel Orientation="Horizontal" Spacing="4">
                                                 <HyperlinkButton
                                                     x:Uid="/SettingsPage/FeedbackLink"
-                                                    Margin="0,0,2,0"
                                                     NavigateUri="https://github.com/Paving-Base/APK-Installer/issues"
                                                     ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
                                                 <HyperlinkButton
                                                     x:Uid="/SettingsPage/LogFolderLink"
-                                                    Margin="2,0"
                                                     Click="HyperlinkButton_Click"
                                                     Tag="LogFolder" />
                                                 <HyperlinkButton
                                                     x:Uid="/SettingsPage/TranslateLink"
-                                                    Margin="2,0"
                                                     NavigateUri="https://crowdin.com/project/APKInstaller"
                                                     ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
                                                 <HyperlinkButton
                                                     x:Uid="/SettingsPage/ReleaseNotes"
-                                                    Margin="2,0"
                                                     NavigateUri="https://github.com/Paving-Base/APK-Installer/releases/latest"
                                                     ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
                                                 <HyperlinkButton
                                                     x:Uid="/SettingsPage/EULA"
-                                                    Margin="2,0,0,0"
                                                     NavigateUri="https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md"
                                                     ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
                                             </StackPanel>
@@ -482,27 +515,24 @@
                                     Style="{StaticResource SecondaryTextStyle}"
                                     TextWrapping="WrapWholeWords" />
                                 <ScrollViewer
-                                    Margin="0,2,0,0"
+                                    Margin="0,0,0,-8"
+                                    Padding="0,2,0,8"
                                     HorizontalScrollBarVisibility="Auto"
                                     VerticalScrollBarVisibility="Disabled">
-                                    <StackPanel Orientation="Horizontal">
+                                    <StackPanel Orientation="Horizontal" Spacing="4">
                                         <HyperlinkButton
-                                            Margin="0,0,2,0"
                                             Content="Github"
                                             NavigateUri="https://github.com/wherewhere"
                                             ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
                                         <HyperlinkButton
-                                            Margin="2,0"
                                             Content="Coolapk"
                                             NavigateUri="http://www.coolapk.com/u/536381"
                                             ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
                                         <HyperlinkButton
-                                            Margin="2,0"
                                             Content="Twitter"
                                             NavigateUri="https://twitter.com/wherewhere7"
                                             ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
                                         <HyperlinkButton
-                                            Margin="2,0"
                                             Content="Bilibili"
                                             NavigateUri="https://space.bilibili.com/266112738"
                                             ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
@@ -524,18 +554,22 @@
                                     x:Uid="/SettingsPage/DonateTextBlock"
                                     Style="{StaticResource SecondaryTextStyle}"
                                     TextWrapping="WrapWholeWords" />
-                                <StackPanel Orientation="Horizontal">
-                                    <HyperlinkButton
-                                        Margin="0,0,2,0"
-                                        Content="爱发电"
-                                        NavigateUri="http://afdian.net/@wherewhere"
-                                        ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
-                                    <HyperlinkButton
-                                        Margin="2,0"
-                                        Content="Patreon"
-                                        NavigateUri="https://patreon.com/wherewhere"
-                                        ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
-                                </StackPanel>
+                                <ScrollViewer
+                                    Margin="0,0,0,-8"
+                                    Padding="0,2,0,8"
+                                    HorizontalScrollBarVisibility="Auto"
+                                    VerticalScrollBarVisibility="Disabled">
+                                    <StackPanel Orientation="Horizontal" Spacing="4">
+                                        <HyperlinkButton
+                                            Content="爱发电"
+                                            NavigateUri="http://afdian.net/@wherewhere"
+                                            ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
+                                        <HyperlinkButton
+                                            Content="Patreon"
+                                            NavigateUri="https://patreon.com/wherewhere"
+                                            ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
+                                    </StackPanel>
+                                </ScrollViewer>
                             </StackPanel>
                         </controls:Setting.Description>
                         <controls:Setting.ActionContent>

@@ -12,7 +12,6 @@ using CommunityToolkit.WinUI.Connectivity;
 using Downloader;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using PInvoke;
 using SharpCompress.Archives;
 using SharpCompress.Common;
 using SharpCompress.Writers;
@@ -32,6 +31,7 @@ using Windows.Foundation.Collections;
 using Windows.Storage;
 using Windows.Storage.Pickers;
 using Windows.System;
+using Windows.Win32;
 using WinRT;
 using DownloadProgressChangedEventArgs = Downloader.DownloadProgressChangedEventArgs;
 
@@ -657,6 +657,7 @@ namespace APKInstaller.ViewModels
             {
                 if (force)
                 {
+                    ProgressHelper.SetState(ProgressState.Indeterminate, true);
                     await InitilizeADB();
                     await InitilizeUI();
                 }
@@ -809,7 +810,7 @@ namespace APKInstaller.ViewModels
                     if (Window.Current == null)
                     {
                         IInitializeWithWindow initializeWithWindowWrapper = FileOpen.As<IInitializeWithWindow>();
-                        IntPtr hwnd = User32.GetActiveWindow();
+                        IntPtr hwnd = PInvoke.GetActiveWindow();
                         initializeWithWindowWrapper.Initialize(hwnd);
                     }
 
@@ -1694,7 +1695,7 @@ namespace APKInstaller.ViewModels
             if (Window.Current == null)
             {
                 IInitializeWithWindow initializeWithWindowWrapper = FileOpen.As<IInitializeWithWindow>();
-                IntPtr hwnd = User32.GetActiveWindow();
+                IntPtr hwnd = PInvoke.GetActiveWindow();
                 initializeWithWindowWrapper.Initialize(hwnd);
             }
 

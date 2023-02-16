@@ -1,10 +1,12 @@
 ﻿using Microsoft.UI;
 using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
-using NativeMethods.Interop;
 using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using Windows.Win32;
+using Windows.Win32.Foundation;
+using Windows.Win32.Graphics.Dwm;
 using WinRT.Interop;
 
 namespace APKInstaller.Helpers
@@ -71,22 +73,22 @@ namespace APKInstaller.Helpers
         /// </summary>
         /// <param name="handle">Window handle.</param>
         /// <returns><see langword="true"/> if invocation of native Windows function succeeds.</returns>
-        public static bool RemoveWindowDarkMode(IntPtr handle)
+        public static unsafe bool RemoveWindowDarkMode(IntPtr handle)
         {
-            int pvAttribute = 0x0; // Disable
-            Dwmapi.DWMWINDOWATTRIBUTE dwAttribute = Dwmapi.DWMWINDOWATTRIBUTE.DWMWA_USE_IMMERSIVE_DARK_MODE;
+            void* pvAttribute = (void*)0x0; // Disable
+            DWMWINDOWATTRIBUTE dwAttribute = DWMWINDOWATTRIBUTE.DWMWA_USE_IMMERSIVE_DARK_MODE;
 
             if (!22523.IsOSVersonGreater())
             {
-                dwAttribute = Dwmapi.DWMWINDOWATTRIBUTE.DMWA_USE_IMMERSIVE_DARK_MODE_OLD;
+                dwAttribute = (DWMWINDOWATTRIBUTE)19;
             }
 
             // TODO: Validate HRESULT
-            _ = Dwmapi.DwmSetWindowAttribute(
-                handle,
+            _ = PInvoke.DwmSetWindowAttribute(
+                new HWND(handle),
                 dwAttribute,
-                ref pvAttribute,
-                Marshal.SizeOf(typeof(int)));
+                pvAttribute,
+                (uint)Marshal.SizeOf(typeof(int)));
 
             return true;
         }
@@ -104,22 +106,22 @@ namespace APKInstaller.Helpers
         /// </summary>
         /// <param name="handle">Window handle.</param>
         /// <returns><see langword="true"/> if invocation of native Windows function succeeds.</returns>
-        public static bool ApplyWindowDarkMode(IntPtr handle)
+        public static unsafe bool ApplyWindowDarkMode(IntPtr handle)
         {
-            int pvAttribute = 0x1; // Enable
-            Dwmapi.DWMWINDOWATTRIBUTE dwAttribute = Dwmapi.DWMWINDOWATTRIBUTE.DWMWA_USE_IMMERSIVE_DARK_MODE;
+            void* pvAttribute = (void*)0x1; // Enable
+            DWMWINDOWATTRIBUTE dwAttribute = DWMWINDOWATTRIBUTE.DWMWA_USE_IMMERSIVE_DARK_MODE;
 
             if (!22523.IsOSVersonGreater())
             {
-                dwAttribute = Dwmapi.DWMWINDOWATTRIBUTE.DMWA_USE_IMMERSIVE_DARK_MODE_OLD;
+                dwAttribute = (DWMWINDOWATTRIBUTE)19;
             }
 
             // TODO: Validate HRESULT
-            _ = Dwmapi.DwmSetWindowAttribute(
-                handle,
+            _ = PInvoke.DwmSetWindowAttribute(
+                new HWND(handle),
                 dwAttribute,
-                ref pvAttribute,
-                Marshal.SizeOf(typeof(int)));
+                pvAttribute,
+                (uint)Marshal.SizeOf(typeof(int)));
 
             return true;
         }

@@ -6,11 +6,9 @@ using CommunityToolkit.WinUI;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.Windows.AppLifecycle;
-using PInvoke;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -19,6 +17,7 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Resources;
 using Windows.Storage;
 using Windows.Storage.Pickers;
+using Windows.Win32;
 using WinRT;
 
 namespace APKInstaller.ViewModels.SettingsPages
@@ -174,6 +173,14 @@ namespace APKInstaller.ViewModels.SettingsPages
                 if (_checkingUpdate != value)
                 {
                     _checkingUpdate = value;
+                    if (value)
+                    {
+                        ProgressHelper.SetState(ProgressState.Indeterminate, true);
+                    }
+                    else
+                    {
+                        ProgressHelper.SetState(ProgressState.None, true);
+                    }
                     RaisePropertyChangedEvent();
                 }
             }
@@ -272,6 +279,14 @@ namespace APKInstaller.ViewModels.SettingsPages
                 if (_pairingDevice != value)
                 {
                     _pairingDevice = value;
+                    if (value)
+                    {
+                        ProgressHelper.SetState(ProgressState.Indeterminate, true);
+                    }
+                    else
+                    {
+                        ProgressHelper.SetState(ProgressState.None, true);
+                    }
                     RaisePropertyChangedEvent();
                 }
             }
@@ -286,6 +301,14 @@ namespace APKInstaller.ViewModels.SettingsPages
                 if (_connectingDevice != value)
                 {
                     _connectingDevice = value;
+                    if (value)
+                    {
+                        ProgressHelper.SetState(ProgressState.Indeterminate, true);
+                    }
+                    else
+                    {
+                        ProgressHelper.SetState(ProgressState.None, true);
+                    }
                     RaisePropertyChangedEvent();
                 }
             }
@@ -376,6 +399,21 @@ namespace APKInstaller.ViewModels.SettingsPages
                 string name = Package.Current.DisplayName;
                 GetAboutTextBlockText();
                 return $"{name} v{ver}";
+            }
+        }
+
+        public static List<HyperlinkContent> ConnectHelpers
+        {
+            get
+            {
+                string langcode = LanguageHelper.GetPrimaryLanguage();
+                ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("InstallPage");
+                List<HyperlinkContent> values = new()
+                {
+                    new(_loader.GetString("NoDevice10"),new Uri($"https://github.com/Paving-Base/APK-Installer/blob/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/How%20To%20Connect%20Device.{langcode}.md")),
+                    new(_loader.GetString("HowToConnect"),new Uri($"https://github.com/Paving-Base/APK-Installer/blob/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/How%20To%20Connect%20WSA.{langcode}.md"))
+                };
+                return values;
             }
         }
 
@@ -589,7 +627,7 @@ namespace APKInstaller.ViewModels.SettingsPages
             if (Window.Current == null)
             {
                 IInitializeWithWindow initializeWithWindowWrapper = FileOpen.As<IInitializeWithWindow>();
-                IntPtr hwnd = User32.GetActiveWindow();
+                IntPtr hwnd = PInvoke.GetActiveWindow();
                 initializeWithWindowWrapper.Initialize(hwnd);
             }
 
@@ -600,4 +638,6 @@ namespace APKInstaller.ViewModels.SettingsPages
             }
         }
     }
+
+    public record class HyperlinkContent(string Content, Uri NavigateUri);
 }

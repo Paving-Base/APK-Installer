@@ -65,6 +65,7 @@ namespace APKInstaller.ViewModels.ToolsPages
         {
             await Task.Run(async () =>
             {
+                ProgressHelper.SetState(ProgressState.Indeterminate, true);
                 _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.ShowProgressRing));
                 devices = new AdbClient().GetDevices().Where(x => x.State == DeviceState.Online).ToList();
                 await _page?.DispatcherQueue.EnqueueAsync(DeviceList.Clear);
@@ -107,6 +108,7 @@ namespace APKInstaller.ViewModels.ToolsPages
                     await _page?.DispatcherQueue.EnqueueAsync(() => Processes = null);
                 }
                 _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.HideProgressRing));
+                ProgressHelper.SetState(ProgressState.None, true);
             });
         }
 
@@ -114,12 +116,14 @@ namespace APKInstaller.ViewModels.ToolsPages
         {
             await Task.Run(async () =>
             {
+                ProgressHelper.SetState(ProgressState.Indeterminate, true);
                 _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.ShowProgressRing));
                 AdbClient client = new();
                 DeviceData device = await _page?.DispatcherQueue.EnqueueAsync(() => { return devices[DeviceComboBox.SelectedIndex]; });
                 IEnumerable<AndroidProcess> list = DeviceExtensions.ListProcesses(client, device);
                 await _page?.DispatcherQueue.EnqueueAsync(() => Processes = list);
                 _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.HideProgressRing));
+                ProgressHelper.SetState(ProgressState.None, true);
             });
         }
     }

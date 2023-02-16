@@ -1,9 +1,9 @@
-﻿using APKInstaller.Interop;
-using CommunityToolkit.WinUI;
+﻿using CommunityToolkit.WinUI;
 using Microsoft.UI.Xaml;
 using System;
+using Windows.Win32.Foundation;
+using Windows.Win32.UI.Shell;
 using WinRT.Interop;
-using static APKInstaller.Interop.ShObjIdl;
 
 namespace APKInstaller.Helpers
 {
@@ -15,13 +15,17 @@ namespace APKInstaller.Helpers
     /// </summary>
     public static class ProgressHelper
     {
+        private static readonly Window CurrentApplicationWindow;
+
         private static readonly ITaskbarList4 _taskbarList;
 
         static ProgressHelper()
         {
             if (!IsSupported()) { return; }
 
-            _taskbarList = new CTaskbarList() as ITaskbarList4;
+            CurrentApplicationWindow = UIHelper.MainWindow;
+
+            _taskbarList = new TaskbarList() as ITaskbarList4;
 
             _taskbarList?.HrInit();
         }
@@ -42,7 +46,7 @@ namespace APKInstaller.Helpers
                 return;
             }
 
-            _ = UIHelper.DispatcherQueue.EnqueueAsync(() =>
+            _ = CurrentApplicationWindow.DispatcherQueue.EnqueueAsync(() =>
             {
                 SetProgressState(state);
             });
@@ -64,7 +68,7 @@ namespace APKInstaller.Helpers
             }
 
             // using System.Windows.Interop
-            _ = UIHelper.DispatcherQueue.EnqueueAsync(() =>
+            _ = CurrentApplicationWindow.DispatcherQueue.EnqueueAsync(() =>
             {
                 SetProgressValue(current, max);
             });
@@ -83,10 +87,8 @@ namespace APKInstaller.Helpers
                      Convert.ToUInt64(max));
         }
 
-        private static IntPtr GetHandle()
-        {
-            return UIHelper.MainWindow != null ? WindowNative.GetWindowHandle(UIHelper.MainWindow) : IntPtr.Zero;
-        }
+        private static HWND GetHandle() =>
+            new(CurrentApplicationWindow != null ? WindowNative.GetWindowHandle(CurrentApplicationWindow) : IntPtr.Zero);
     }
 
     /// <summary>

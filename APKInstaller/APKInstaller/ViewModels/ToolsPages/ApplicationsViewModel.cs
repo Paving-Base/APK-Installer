@@ -96,6 +96,7 @@ namespace APKInstaller.ViewModels.ToolsPages
         {
             await Task.Run(async () =>
             {
+                ProgressHelper.SetState(ProgressState.Indeterminate, true);
                 _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.ShowProgressRing));
                 devices = new AdbClient().GetDevices().Where(x => x.State == DeviceState.Online).ToList();
                 await _page?.DispatcherQueue.EnqueueAsync(DeviceList.Clear);
@@ -138,6 +139,7 @@ namespace APKInstaller.ViewModels.ToolsPages
                     await _page?.DispatcherQueue.EnqueueAsync(() => Applications = null);
                 }
                 _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.HideProgressRing));
+                ProgressHelper.SetState(ProgressState.None, true);
             });
         }
 
@@ -149,8 +151,10 @@ namespace APKInstaller.ViewModels.ToolsPages
                 AdbClient client = new();
                 PackageManager manager = new(client, devices[index]);
                 if (PackageInfos == null) { await GetInfos(); }
+                ProgressHelper.SetState(ProgressState.Normal, true);
                 foreach (KeyValuePair<string, string> app in apps)
                 {
+                    ProgressHelper.SetValue(apps.ToList().IndexOf(app), apps.Count, true);
                     _ = _page.DispatcherQueue.EnqueueAsync(() => TitleBar.SetProgressValue((double)apps.ToList().IndexOf(app) * 100 / apps.Count));
                     if (!string.IsNullOrEmpty(app.Key))
                     {
@@ -191,6 +195,7 @@ namespace APKInstaller.ViewModels.ToolsPages
         {
             await Task.Run(async () =>
             {
+                ProgressHelper.SetState(ProgressState.Indeterminate, true);
                 _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.ShowProgressRing));
                 AdbClient client = new();
                 int index = await _page?.DispatcherQueue.EnqueueAsync(() => { return DeviceComboBox.SelectedIndex; });
@@ -198,6 +203,7 @@ namespace APKInstaller.ViewModels.ToolsPages
                 List<APKInfo> list = await CheckAPP(manager.Packages, index);
                 await _page?.DispatcherQueue.EnqueueAsync(() => Applications = list);
                 _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.HideProgressRing));
+                ProgressHelper.SetState(ProgressState.None, true);
             });
         }
     }

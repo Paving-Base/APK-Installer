@@ -11,6 +11,8 @@ using System.Net;
 using System.Text;
 using Windows.ApplicationModel.Resources;
 using Windows.UI;
+using Windows.Win32;
+using Windows.Win32.Foundation;
 using WinRT.Interop;
 
 namespace APKInstaller.Helpers
@@ -59,7 +61,7 @@ namespace APKInstaller.Helpers
         public static int GetActualPixel(this double pixel)
         {
             IntPtr windowHandle = WindowNative.GetWindowHandle(MainWindow);
-            int currentDpi = PInvoke.User32.GetDpiForWindow(windowHandle);
+            uint currentDpi = PInvoke.GetDpiForWindow(new HWND(windowHandle));
             return Convert.ToInt32(pixel * (currentDpi / 96.0));
         }
     }

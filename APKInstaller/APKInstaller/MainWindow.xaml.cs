@@ -2,10 +2,11 @@ using AdvancedSharpAdbClient;
 using APKInstaller.Helpers;
 using APKInstaller.Pages;
 using Microsoft.UI.Xaml;
-using PInvoke;
 using System;
 using System.Diagnostics;
 using Windows.Graphics;
+using Windows.Win32;
+using Windows.Win32.Foundation;
 using WinRT.Interop;
 
 // To learn more about WinUI, the WinUI project structure,
@@ -25,8 +26,8 @@ namespace APKInstaller
             InitializeComponent();
             this.GetAppWindowForCurrentWindow().SetIcon("favicon.ico");
             IntPtr hwnd = WindowNative.GetWindowHandle(this);
+            SetWindowSize(new HWND(hwnd), 652, 414);
             Backdrop = new BackdropHelper(this);
-            SetWindowSize(hwnd, 652, 414);
             UIHelper.MainWindow = this;
             MainPage MainPage = new();
             Content = MainPage;
@@ -52,9 +53,9 @@ namespace APKInstaller
             }
         }
 
-        private void SetWindowSize(IntPtr hwnd, int width, int height)
+        private void SetWindowSize(HWND hwnd, int width, int height)
         {
-            int dpi = User32.GetDpiForWindow(hwnd);
+            uint dpi = PInvoke.GetDpiForWindow(hwnd);
             float scalingFactor = (float)dpi / 96;
             width = (int)(width * scalingFactor);
             height = (int)(height * scalingFactor);

@@ -1,0 +1,17 @@
+﻿ITaskbarList4
+TaskbarList
+
+HTCAPTION
+
+WA_ACTIVE
+WA_INACTIVE
+
+WM_ACTIVATE
+WM_NCLBUTTONDBLCLK
+WM_NCRBUTTONUP
+
+DwmSetWindowAttribute
+GetActiveWindow
+GetDpiForWindow
+ReleaseCapture
+SendMessage
