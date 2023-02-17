@@ -120,6 +120,9 @@
   <data name="AndroidTestSettingsHeader.Header" xml:space="preserve">
     <value>Android 測試</value>
   </data>
+  <data name="ApplicationsSettings.Description" xml:space="preserve">
+    <value>管理已連接設備的應用程式</value>
+  </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>應用程式</value>
   </data>
@@ -146,6 +149,9 @@
   </data>
   <data name="OutPIP.Content" xml:space="preserve">
     <value>退出</value>
+  </data>
+  <data name="ProcessesSettings.Description" xml:space="preserve">
+    <value>管理已連接設備的進程</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
     <value>進程</value>
