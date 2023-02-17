@@ -120,6 +120,9 @@
   <data name="AndroidTestSettingsHeader.Header" xml:space="preserve">
     <value>Android cèshì</value>
   </data>
+  <data name="ApplicationsSettings.Description" xml:space="preserve">
+    <value>管理已连接设备的应用程序</value>
+  </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>Yìngyòngchéngxù</value>
   </data>
@@ -146,6 +149,9 @@
   </data>
   <data name="OutPIP.Content" xml:space="preserve">
     <value>Tuìchū</value>
+  </data>
+  <data name="ProcessesSettings.Description" xml:space="preserve">
+    <value>管理已连接设备的进程</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
     <value>Jìnchéng</value>
