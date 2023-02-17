@@ -1,5 +1,5 @@
-﻿using Microsoft.UI.Xaml;
-using Microsoft.UI.Xaml.Automation;
+﻿using Microsoft.UI.Xaml.Automation;
+using Microsoft.UI.Xaml.Automation.Peers;
 using Microsoft.UI.Xaml.Controls;
 
 // To learn more about WinUI, the WinUI project structure,
@@ -7,31 +7,44 @@ using Microsoft.UI.Xaml.Controls;
 
 namespace APKInstaller.Controls
 {
-    public partial class SettingExpander : Expander
+    /// <summary>
+    /// The SettingExpander is a collapsable control to host multiple SettingsCards.
+    /// </summary>
+    public partial class SettingExpander : ItemsControl
     {
+        /// <summary>
+        /// Creates a new instance of the <see cref="SettingExpander"/> class.
+        /// </summary>
         public SettingExpander()
         {
-            DefaultStyleKey = typeof(Expander);
-            Style = (Style)Application.Current.Resources["SettingExpanderStyle"];
-            RegisterPropertyChangedCallback(Expander.HeaderProperty, OnHeaderChanged);
+            DefaultStyleKey = typeof(SettingExpander);
         }
 
-        private static void OnHeaderChanged(DependencyObject d, DependencyProperty dp)
+        /// <inheritdoc />
+        protected override void OnApplyTemplate()
         {
-            SettingExpander self = (SettingExpander)d;
-            if (self.Header != null)
-            {
-                if (self.Header.GetType() == typeof(Setting))
-                {
-                    Setting selfSetting = (Setting)self.Header;
-                    selfSetting.Style = (Style)Application.Current.Resources["ExpanderHeaderSettingStyle"];
+            base.OnApplyTemplate();
+            RegisterAutomation();
+        }
 
-                    if (!string.IsNullOrEmpty(selfSetting.Header))
-                    {
-                        AutomationProperties.SetName(self, selfSetting.Header);
-                    }
+        private void RegisterAutomation()
+        {
+            if (Header is string headerString && headerString != string.Empty)
+            {
+                if (!string.IsNullOrEmpty(headerString) && string.IsNullOrEmpty(AutomationProperties.GetName(this)))
+                {
+                    AutomationProperties.SetName(this, headerString);
                 }
             }
+        }
+
+        /// <summary>
+        /// Creates AutomationPeer
+        /// </summary>
+        /// <returns>An automation peer for <see cref="SettingsExpander"/>.</returns>
+        protected override AutomationPeer OnCreateAutomationPeer()
+        {
+            return new SettingExpanderAutomationPeer(this);
         }
     }
 }

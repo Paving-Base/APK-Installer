@@ -4,8 +4,9 @@
         <ResourceDictionary Source="ms-appx:///Styles/Button.xaml" />
         <ResourceDictionary Source="ms-appx:///Styles/Common.xaml" />
         <ResourceDictionary Source="ms-appx:///Styles/TextBlock.xaml" />
-        <ResourceDictionary Source="ms-appx:///Controls/SettingButton/SettingButton.xaml" />
-        <ResourceDictionary Source="ms-appx:///Controls/SettingExpander/SettingExpander.xaml" />
+        <ResourceDictionary Source="ms-appx:///Controls/Setting/Setting.ThemeResources.xaml" />
+        <ResourceDictionary Source="ms-appx:///Controls/TitleBar/TitleBar.ThemeResources.xaml" />
+        <ResourceDictionary Source="ms-appx:///Controls/SettingExpander/SettingExpander.ThemeResources.xaml" />
     </ResourceDictionary.MergedDictionaries>
     <x:Double x:Key="SettingActionControlMinWidth">240</x:Double>
 </ResourceDictionary>

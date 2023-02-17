@@ -27,14 +27,15 @@
                             <RowDefinition Height="Auto" />
                             <RowDefinition Height="Auto" />
                         </Grid.RowDefinitions>
-                        <TextBlock
+                        <ContentPresenter
                             x:Name="HeaderPresenter"
                             Grid.Row="0"
                             Margin="1,32,0,8"
                             AutomationProperties.HeadingLevel="Level2"
+                            Content="{TemplateBinding Header}"
+                            HighContrastAdjustment="None"
                             Style="{ThemeResource BodyStrongTextBlockStyle}"
-                            Text="{TemplateBinding Header}"
-                            Visibility="{Binding Header, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource StringVisibilityConverter}}" />
+                            TextWrapping="Wrap" />
                         <ItemsPresenter Grid.Row="1" />
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">
@@ -42,6 +43,14 @@
                                 <VisualState x:Name="Disabled">
                                     <VisualState.Setters>
                                         <Setter Target="HeaderPresenter.Foreground" Value="{ThemeResource TextFillColorDisabledBrush}" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="HeaderVisibilityGroup">
+                                <VisualState x:Name="HeaderVisible" />
+                                <VisualState x:Name="HeaderCollapsed">
+                                    <VisualState.Setters>
+                                        <Setter Target="HeaderPresenter.Visibility" Value="Collapsed" />
                                     </VisualState.Setters>
                                 </VisualState>
                             </VisualStateGroup>

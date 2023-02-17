@@ -3,7 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:APKInstaller.Controls">
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="TitleBar_themeresources.xaml" />
+        <ResourceDictionary Source="TitleBar.ThemeResources.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <Style TargetType="local:TitleBar">

@@ -92,251 +92,251 @@
                     </StackPanel>
                 </Grid>
                 <controls:SettingsGroup>
-                    <controls:SettingExpander IsExpanded="True">
-                        <controls:SettingExpander.Header>
-                            <controls:Setting x:Uid="/InfosPage/BasicInfoSettings" Icon="&#xE783;" />
-                        </controls:SettingExpander.Header>
-                        <controls:SettingExpander.Content>
-                            <Grid Style="{StaticResource ExpanderContentGridStyle}">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto" />
-                                    <ColumnDefinition Width="*" />
-                                </Grid.ColumnDefinitions>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                </Grid.RowDefinitions>
+                    <controls:SettingExpander
+                        x:Uid="/InfosPage/BasicInfoSettings"
+                        Icon="&#xE783;"
+                        IsExpanded="True">
+                        <Grid Style="{StaticResource SettingExpanderContentGridStyle}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
 
-                                <TextBlock
-                                    x:Uid="/InfosPage/AppName"
-                                    Grid.Row="0"
-                                    Grid.Column="0"
-                                    Padding="0,0,0,8"
-                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
-                                <TextBlock
-                                    Grid.Row="0"
-                                    Grid.Column="1"
-                                    Padding="32,0,0,8"
-                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                    IsTextSelectionEnabled="True"
-                                    Text="{Binding ApkInfo.AppName}"
-                                    TextWrapping="WrapWholeWords" />
+                            <TextBlock
+                                x:Uid="/InfosPage/AppName"
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Padding="0,0,0,8"
+                                Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
+                            <TextBlock
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                Padding="32,0,0,8"
+                                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                IsTextSelectionEnabled="True"
+                                Text="{Binding ApkInfo.AppName}"
+                                TextWrapping="WrapWholeWords" />
 
-                                <TextBlock
-                                    x:Uid="/InfosPage/PackageName"
-                                    Grid.Row="1"
-                                    Grid.Column="0"
-                                    Padding="0,0,0,8"
-                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
-                                <TextBlock
-                                    Grid.Row="1"
-                                    Grid.Column="1"
-                                    Padding="32,0,0,8"
-                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                    IsTextSelectionEnabled="True"
-                                    Text="{Binding ApkInfo.PackageName}"
-                                    TextWrapping="WrapWholeWords" />
+                            <TextBlock
+                                x:Uid="/InfosPage/PackageName"
+                                Grid.Row="1"
+                                Grid.Column="0"
+                                Padding="0,0,0,8"
+                                Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
+                            <TextBlock
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                Padding="32,0,0,8"
+                                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                IsTextSelectionEnabled="True"
+                                Text="{Binding ApkInfo.PackageName}"
+                                TextWrapping="WrapWholeWords" />
 
-                                <TextBlock
-                                    x:Uid="/InfosPage/Version"
-                                    Grid.Row="2"
-                                    Grid.Column="0"
-                                    Padding="0,0,0,8"
-                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
-                                <TextBlock
-                                    Grid.Row="2"
-                                    Grid.Column="1"
-                                    Padding="32,0,0,8"
-                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                    IsTextSelectionEnabled="True"
-                                    TextWrapping="WrapWholeWords">
-                                    <Run Text="{Binding ApkInfo.VersionName}" />
-                                    <Run Text="{x:Bind sys:String.Format('({0})', Provider.ApkInfo.VersionCode), Mode=OneWay}" />
-                                </TextBlock>
+                            <TextBlock
+                                x:Uid="/InfosPage/Version"
+                                Grid.Row="2"
+                                Grid.Column="0"
+                                Padding="0,0,0,8"
+                                Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
+                            <TextBlock
+                                Grid.Row="2"
+                                Grid.Column="1"
+                                Padding="32,0,0,8"
+                                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                IsTextSelectionEnabled="True"
+                                TextWrapping="WrapWholeWords">
+                                <Run Text="{Binding ApkInfo.VersionName}" />
+                                <Run Text="{x:Bind sys:String.Format('({0})', Provider.ApkInfo.VersionCode), Mode=OneWay}" />
+                            </TextBlock>
 
-                                <TextBlock
-                                    x:Uid="/InfosPage/MinSDK"
-                                    Grid.Row="3"
-                                    Grid.Column="0"
-                                    Padding="0,0,0,8"
-                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
-                                <TextBlock
-                                    Grid.Row="3"
-                                    Grid.Column="1"
-                                    Padding="32,0,0,8"
-                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                    IsTextSelectionEnabled="True"
-                                    Text="{Binding ApkInfo.MinSDK}"
-                                    TextWrapping="WrapWholeWords" />
+                            <TextBlock
+                                x:Uid="/InfosPage/MinSDK"
+                                Grid.Row="3"
+                                Grid.Column="0"
+                                Padding="0,0,0,8"
+                                Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
+                            <TextBlock
+                                Grid.Row="3"
+                                Grid.Column="1"
+                                Padding="32,0,0,8"
+                                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                IsTextSelectionEnabled="True"
+                                Text="{Binding ApkInfo.MinSDK}"
+                                TextWrapping="WrapWholeWords" />
 
-                                <TextBlock
-                                    x:Uid="/InfosPage/TargetSDK"
-                                    Grid.Row="4"
-                                    Grid.Column="0"
-                                    Padding="0,0,0,8"
-                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
-                                <TextBlock
-                                    Grid.Row="4"
-                                    Grid.Column="1"
-                                    Padding="32,0,0,8"
-                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                    IsTextSelectionEnabled="True"
-                                    Text="{Binding ApkInfo.TargetSDK}"
-                                    TextWrapping="WrapWholeWords" />
+                            <TextBlock
+                                x:Uid="/InfosPage/TargetSDK"
+                                Grid.Row="4"
+                                Grid.Column="0"
+                                Padding="0,0,0,8"
+                                Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
+                            <TextBlock
+                                Grid.Row="4"
+                                Grid.Column="1"
+                                Padding="32,0,0,8"
+                                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                IsTextSelectionEnabled="True"
+                                Text="{Binding ApkInfo.TargetSDK}"
+                                TextWrapping="WrapWholeWords" />
 
-                                <TextBlock
-                                    x:Name="SupportedArchitectures"
-                                    x:Uid="/InfosPage/SupportedArchitectures"
-                                    Grid.Row="5"
-                                    Grid.Column="0"
-                                    Padding="0,0,0,8"
-                                    x:Load="{x:Bind Provider.ApkInfo.SupportedABIs.Count, Converter={StaticResource DoubleToBoolConverter}, Mode=OneWay}"
-                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
-                                <TextBlock
-                                    x:Name="SupportedABIs"
-                                    Grid.Row="5"
-                                    Grid.Column="1"
-                                    Padding="32,0,0,8"
-                                    x:Load="{x:Bind Provider.ApkInfo.SupportedABIs.Count, Converter={StaticResource DoubleToBoolConverter}, Mode=OneWay}"
-                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                    IsTextSelectionEnabled="True"
-                                    Text="{Binding ApkInfo.SupportedABIs, Converter={StaticResource JoinEnumerableConverter}, ConverterParameter=', '}"
-                                    TextWrapping="WrapWholeWords" />
+                            <TextBlock
+                                x:Name="SupportedArchitectures"
+                                x:Uid="/InfosPage/SupportedArchitectures"
+                                Grid.Row="5"
+                                Grid.Column="0"
+                                Padding="0,0,0,8"
+                                x:Load="{x:Bind Provider.ApkInfo.SupportedABIs.Count, Converter={StaticResource DoubleToBoolConverter}, Mode=OneWay}"
+                                Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
+                            <TextBlock
+                                x:Name="SupportedABIs"
+                                Grid.Row="5"
+                                Grid.Column="1"
+                                Padding="32,0,0,8"
+                                x:Load="{x:Bind Provider.ApkInfo.SupportedABIs.Count, Converter={StaticResource DoubleToBoolConverter}, Mode=OneWay}"
+                                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                IsTextSelectionEnabled="True"
+                                Text="{Binding ApkInfo.SupportedABIs, Converter={StaticResource JoinEnumerableConverter}, ConverterParameter=', '}"
+                                TextWrapping="WrapWholeWords" />
 
-                                <TextBlock
-                                    x:Uid="/InfosPage/SupportScreenSizes"
-                                    Grid.Row="6"
-                                    Grid.Column="0"
-                                    Padding="0,0,0,8"
-                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
-                                <TextBlock
-                                    Grid.Row="6"
-                                    Grid.Column="1"
-                                    Padding="32,0,0,8"
-                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                    IsTextSelectionEnabled="True"
-                                    Text="{Binding ApkInfo.SupportScreens, Converter={StaticResource JoinEnumerableConverter}, ConverterParameter=', '}"
-                                    TextWrapping="WrapWholeWords" />
+                            <TextBlock
+                                x:Uid="/InfosPage/SupportScreenSizes"
+                                Grid.Row="6"
+                                Grid.Column="0"
+                                Padding="0,0,0,8"
+                                Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
+                            <TextBlock
+                                Grid.Row="6"
+                                Grid.Column="1"
+                                Padding="32,0,0,8"
+                                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                IsTextSelectionEnabled="True"
+                                Text="{Binding ApkInfo.SupportScreens, Converter={StaticResource JoinEnumerableConverter}, ConverterParameter=', '}"
+                                TextWrapping="WrapWholeWords" />
 
-                                <TextBlock
-                                    x:Name="SupportResolutions"
-                                    x:Uid="/InfosPage/SupportResolutions"
-                                    Grid.Row="7"
-                                    Grid.Column="0"
-                                    Padding="0,0,0,8"
-                                    x:Load="{x:Bind Provider.ApkInfo.SupportDensities.Count, Converter={StaticResource DoubleToBoolConverter}, Mode=OneWay}"
-                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
-                                <TextBlock
-                                    x:Name="SupportDensities"
-                                    Grid.Row="7"
-                                    Grid.Column="1"
-                                    Padding="32,0,0,8"
-                                    x:Load="{x:Bind Provider.ApkInfo.SupportDensities.Count, Converter={StaticResource DoubleToBoolConverter}, Mode=OneWay}"
-                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                    IsTextSelectionEnabled="True"
-                                    Text="{Binding ApkInfo.SupportDensities, Converter={StaticResource JoinEnumerableConverter}, ConverterParameter=', '}"
-                                    TextWrapping="WrapWholeWords" />
+                            <TextBlock
+                                x:Name="SupportResolutions"
+                                x:Uid="/InfosPage/SupportResolutions"
+                                Grid.Row="7"
+                                Grid.Column="0"
+                                Padding="0,0,0,8"
+                                x:Load="{x:Bind Provider.ApkInfo.SupportDensities.Count, Converter={StaticResource DoubleToBoolConverter}, Mode=OneWay}"
+                                Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
+                            <TextBlock
+                                x:Name="SupportDensities"
+                                Grid.Row="7"
+                                Grid.Column="1"
+                                Padding="32,0,0,8"
+                                x:Load="{x:Bind Provider.ApkInfo.SupportDensities.Count, Converter={StaticResource DoubleToBoolConverter}, Mode=OneWay}"
+                                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                IsTextSelectionEnabled="True"
+                                Text="{Binding ApkInfo.SupportDensities, Converter={StaticResource JoinEnumerableConverter}, ConverterParameter=', '}"
+                                TextWrapping="WrapWholeWords" />
 
-                                <TextBlock
-                                    x:Uid="/InfosPage/PackageSize"
-                                    Grid.Row="8"
-                                    Grid.Column="0"
-                                    Padding="0,0,0,8"
-                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
-                                <TextBlock
-                                    Grid.Row="8"
-                                    Grid.Column="1"
-                                    Padding="32,0,0,8"
-                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                    IsTextSelectionEnabled="True"
-                                    Text="{Binding ApkInfo.PackageSize, Converter={StaticResource FileSizeToFriendlyStringConverter}}"
-                                    TextWrapping="WrapWholeWords" />
+                            <TextBlock
+                                x:Uid="/InfosPage/PackageSize"
+                                Grid.Row="8"
+                                Grid.Column="0"
+                                Padding="0,0,0,8"
+                                Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
+                            <TextBlock
+                                Grid.Row="8"
+                                Grid.Column="1"
+                                Padding="32,0,0,8"
+                                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                IsTextSelectionEnabled="True"
+                                Text="{Binding ApkInfo.PackageSize, Converter={StaticResource FileSizeToFriendlyStringConverter}}"
+                                TextWrapping="WrapWholeWords" />
 
-                                <TextBlock
-                                    x:Name="Languages"
-                                    x:Uid="/InfosPage/Languages"
-                                    Grid.Row="9"
-                                    Grid.Column="0"
-                                    Padding="0,0,0,8"
-                                    x:Load="{x:Bind Provider.ApkInfo.SupportLocales.Count, Converter={StaticResource DoubleToBoolConverter}, Mode=OneWay}"
-                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
-                                <TextBlock
-                                    x:Name="SupportLocales"
-                                    Grid.Row="9"
-                                    Grid.Column="1"
-                                    Padding="32,0,0,8"
-                                    x:Load="{x:Bind Provider.ApkInfo.SupportLocales.Count, Converter={StaticResource DoubleToBoolConverter}, Mode=OneWay}"
-                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                    IsTextSelectionEnabled="True"
-                                    Text="{Binding ApkInfo.SupportLocales, Converter={StaticResource JoinEnumerableConverter}, ConverterParameter=', '}"
-                                    TextWrapping="WrapWholeWords" />
-                            </Grid>
-                        </controls:SettingExpander.Content>
+                            <TextBlock
+                                x:Name="Languages"
+                                x:Uid="/InfosPage/Languages"
+                                Grid.Row="9"
+                                Grid.Column="0"
+                                Padding="0,0,0,8"
+                                x:Load="{x:Bind Provider.ApkInfo.SupportLocales.Count, Converter={StaticResource DoubleToBoolConverter}, Mode=OneWay}"
+                                Foreground="{ThemeResource CardPrimaryForegroundBrush}" />
+                            <TextBlock
+                                x:Name="SupportLocales"
+                                Grid.Row="9"
+                                Grid.Column="1"
+                                Padding="32,0,0,8"
+                                x:Load="{x:Bind Provider.ApkInfo.SupportLocales.Count, Converter={StaticResource DoubleToBoolConverter}, Mode=OneWay}"
+                                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                IsTextSelectionEnabled="True"
+                                Text="{Binding ApkInfo.SupportLocales, Converter={StaticResource JoinEnumerableConverter}, ConverterParameter=', '}"
+                                TextWrapping="WrapWholeWords" />
+                        </Grid>
                     </controls:SettingExpander>
-                    <controls:SettingExpander x:Name="PermissionInfoSettings" x:Load="{x:Bind Provider.ApkInfo.Permissions.Count, Converter={StaticResource DoubleToBoolConverter}, Mode=OneWay}">
-                        <controls:SettingExpander.Header>
-                            <controls:Setting Header="{x:Bind sys:String.Format(Provider.PermissionsHeaderFormat, Provider.ApkInfo.Permissions.Count), Mode=OneWay}" Icon="&#xEA0D;" />
-                        </controls:SettingExpander.Header>
-                        <controls:SettingExpander.Content>
-                            <Grid Style="{StaticResource ExpanderContentGridStyle}">
-                                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
-                                    <TextBlock
-                                        Foreground="{ThemeResource CardPrimaryForegroundBrush}"
-                                        IsTextSelectionEnabled="True"
-                                        Text="{Binding Permissions}" />
-                                </ScrollViewer>
-                            </Grid>
-                        </controls:SettingExpander.Content>
+                    <controls:SettingExpander
+                        x:Name="PermissionInfoSettings"
+                        x:Load="{x:Bind Provider.ApkInfo.Permissions.Count, Converter={StaticResource DoubleToBoolConverter}, Mode=OneWay}"
+                        Header="{x:Bind sys:String.Format(Provider.PermissionsHeaderFormat, Provider.ApkInfo.Permissions.Count), Mode=OneWay}"
+                        Icon="&#xEA0D;">
+                        <Grid MinHeight="{ThemeResource ExpanderMinHeight}" Style="{StaticResource SettingExpanderContentGridStyle}">
+                            <ScrollViewer
+                                VerticalAlignment="Center"
+                                HorizontalScrollBarVisibility="Auto"
+                                VerticalScrollBarVisibility="Disabled">
+                                <TextBlock
+                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}"
+                                    IsTextSelectionEnabled="True"
+                                    Text="{Binding Permissions}" />
+                            </ScrollViewer>
+                        </Grid>
                     </controls:SettingExpander>
-                    <controls:SettingExpander x:Name="FeatureInfoSettings" x:Load="{x:Bind Provider.ApkInfo.Features.Count, Converter={StaticResource DoubleToBoolConverter}, Mode=OneWay}">
-                        <controls:SettingExpander.Header>
-                            <controls:Setting Header="{x:Bind sys:String.Format(Provider.FeaturesHeaderFormat, Provider.ApkInfo.Features.Count), Mode=OneWay}" Icon="&#xEA0D;" />
-                        </controls:SettingExpander.Header>
-                        <controls:SettingExpander.Content>
-                            <Grid Style="{StaticResource ExpanderContentGridStyle}">
-                                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
-                                    <TextBlock
-                                        Foreground="{ThemeResource CardPrimaryForegroundBrush}"
-                                        IsTextSelectionEnabled="True"
-                                        Text="{Binding Features}" />
-                                </ScrollViewer>
-                            </Grid>
-                        </controls:SettingExpander.Content>
+                    <controls:SettingExpander
+                        x:Name="FeatureInfoSettings"
+                        x:Load="{x:Bind Provider.ApkInfo.Features.Count, Converter={StaticResource DoubleToBoolConverter}, Mode=OneWay}"
+                        Header="{x:Bind sys:String.Format(Provider.FeaturesHeaderFormat, Provider.ApkInfo.Features.Count), Mode=OneWay}"
+                        Icon="&#xEA0D;">
+                        <Grid MinHeight="{ThemeResource ExpanderMinHeight}" Style="{StaticResource SettingExpanderContentGridStyle}">
+                            <ScrollViewer
+                                VerticalAlignment="Center"
+                                HorizontalScrollBarVisibility="Auto"
+                                VerticalScrollBarVisibility="Disabled">
+                                <TextBlock
+                                    Foreground="{ThemeResource CardPrimaryForegroundBrush}"
+                                    IsTextSelectionEnabled="True"
+                                    Text="{Binding Features}" />
+                            </ScrollViewer>
+                        </Grid>
                     </controls:SettingExpander>
-                    <controls:SettingExpander x:Name="BundleInfoSettings" x:Load="{x:Bind Provider.ApkInfo.IsBundle, Mode=OneWay}">
-                        <controls:SettingExpander.Header>
-                            <controls:Setting Header="{x:Bind sys:String.Format(Provider.DependenciesHeaderFormat, Provider.ApkInfo.SplitApks.Count), Mode=OneWay}" Icon="&#xE74C;" />
-                        </controls:SettingExpander.Header>
-                        <controls:SettingExpander.Content>
-                            <ItemsControl IsTabStop="False" ItemsSource="{Binding ApkInfo.SplitApks}">
-                                <ItemsControl.ItemTemplate>
-                                    <DataTemplate x:DataType="models:ApkInfo">
-                                        <controls:Setting Header="{x:Bind AppName}" Style="{StaticResource ExpanderContentSettingStyle}">
-                                            <controls:Setting.Icon>
-                                                <ImageIcon Source="{x:Bind Icon.RealPath}" />
-                                            </controls:Setting.Icon>
-                                            <controls:Setting.Description>
-                                                <TextBlock>
-                                                    <Run Text="{x:Bind VersionName}" />
-                                                    <Run Foreground="{StaticResource CardPrimaryForegroundBrush}" Text=" | " />
-                                                    <Run Text="{x:Bind PackageName}" />
-                                                    <Run Foreground="{StaticResource CardPrimaryForegroundBrush}" Text=" | " />
-                                                    <Run Text="{x:Bind PackageSize, Converter={StaticResource FileSizeToFriendlyStringConverter}}" />
-                                                </TextBlock>
-                                            </controls:Setting.Description>
-                                        </controls:Setting>
-                                    </DataTemplate>
-                                </ItemsControl.ItemTemplate>
-                            </ItemsControl>
-                        </controls:SettingExpander.Content>
+                    <controls:SettingExpander
+                        x:Name="BundleInfoSettings"
+                        x:Load="{x:Bind Provider.ApkInfo.IsBundle, Mode=OneWay}"
+                        Header="{x:Bind sys:String.Format(Provider.DependenciesHeaderFormat, Provider.ApkInfo.SplitApks.Count), Mode=OneWay}"
+                        Icon="&#xE74C;"
+                        ItemsSource="{Binding ApkInfo.SplitApks}">
+                        <controls:SettingExpander.ItemTemplate>
+                            <DataTemplate x:DataType="models:ApkInfo">
+                                <controls:Setting Header="{x:Bind AppName}" Style="{StaticResource DefaultSettingExpanderItemStyle}">
+                                    <controls:Setting.Icon>
+                                        <ImageIcon Source="{x:Bind Icon.RealPath}" />
+                                    </controls:Setting.Icon>
+                                    <controls:Setting.Description>
+                                        <TextBlock>
+                                            <Run Text="{x:Bind VersionName}" />
+                                            <Run Foreground="{StaticResource CardPrimaryForegroundBrush}" Text=" | " />
+                                            <Run Text="{x:Bind PackageName}" />
+                                            <Run Foreground="{StaticResource CardPrimaryForegroundBrush}" Text=" | " />
+                                            <Run Text="{x:Bind PackageSize, Converter={StaticResource FileSizeToFriendlyStringConverter}}" />
+                                        </TextBlock>
+                                    </controls:Setting.Description>
+                                </controls:Setting>
+                            </DataTemplate>
+                        </controls:SettingExpander.ItemTemplate>
                     </controls:SettingExpander>
                 </controls:SettingsGroup>
             </StackPanel>

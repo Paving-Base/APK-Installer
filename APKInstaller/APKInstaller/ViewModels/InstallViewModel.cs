@@ -56,7 +56,7 @@ namespace APKInstaller.ViewModels
 
         private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("InstallPage");
 
-        public static InstallViewModel Caches;
+        public static InstallViewModel Caches { get; set; }
 
         public string AppLocaleName = string.Empty;
         public string InstallFormat => _loader.GetString("InstallFormat");

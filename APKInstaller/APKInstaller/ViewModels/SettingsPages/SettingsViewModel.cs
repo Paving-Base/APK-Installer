@@ -27,7 +27,7 @@ namespace APKInstaller.ViewModels.SettingsPages
         private readonly SettingsPage _page;
         private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("SettingsPage");
 
-        public static SettingsViewModel Caches;
+        public static SettingsViewModel Caches { get; set; }
 
         public static bool IsModified => Package.Current.PublisherDisplayName != "wherewhere"
             || Package.Current.Id.Name != "18184wherewhere.AndroidAppInstaller"

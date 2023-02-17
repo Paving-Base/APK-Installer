@@ -3,7 +3,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:animatedvisuals="using:Microsoft.UI.Xaml.Controls.AnimatedVisuals"
     xmlns:controls="using:Microsoft.UI.Xaml.Controls">
-
     <ResourceDictionary.ThemeDictionaries>
         <ResourceDictionary x:Key="Default">
             <StaticResource x:Key="TitleBarForegroundBrush" ResourceKey="TextFillColorPrimaryBrush" />
@@ -90,12 +89,12 @@
                 <ControlTemplate TargetType="Button">
                     <Grid
                         x:Name="RootGrid"
-                        CornerRadius="{TemplateBinding CornerRadius}"
-                        Background="{TemplateBinding Background}">
+                        Background="{TemplateBinding Background}"
+                        CornerRadius="{TemplateBinding CornerRadius}">
                         <Grid.BackgroundTransition>
                             <BrushTransition Duration="0:0:0.083" />
                         </Grid.BackgroundTransition>
-                        
+
                         <controls:AnimatedIcon
                             x:Name="Content"
                             Width="16"
@@ -172,12 +171,12 @@
                 <ControlTemplate TargetType="Button">
                     <Grid
                         x:Name="RootGrid"
-                        CornerRadius="{TemplateBinding CornerRadius}"
-                        Background="{TemplateBinding Background}">
+                        Background="{TemplateBinding Background}"
+                        CornerRadius="{TemplateBinding CornerRadius}">
                         <Grid.BackgroundTransition>
                             <BrushTransition Duration="0:0:0.083" />
                         </Grid.BackgroundTransition>
-                        
+
                         <controls:AnimatedIcon
                             x:Name="Content"
                             Width="16"
@@ -252,12 +251,12 @@
                 <ControlTemplate TargetType="Button">
                     <Grid
                         x:Name="RootGrid"
-                        CornerRadius="{TemplateBinding CornerRadius}"
-                        Background="{TemplateBinding Background}">
+                        Background="{TemplateBinding Background}"
+                        CornerRadius="{TemplateBinding CornerRadius}">
                         <Grid.BackgroundTransition>
                             <BrushTransition Duration="0:0:0.083" />
                         </Grid.BackgroundTransition>
-                        
+
                         <FontIcon
                             x:Name="Content"
                             Width="16"
@@ -310,5 +309,4 @@
             </Setter.Value>
         </Setter>
     </Style>
-
 </ResourceDictionary>

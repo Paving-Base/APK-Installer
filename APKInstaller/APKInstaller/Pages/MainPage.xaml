@@ -7,9 +7,6 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     NavigationCacheMode="Enabled"
     mc:Ignorable="d">
-    <Page.Resources>
-        <ResourceDictionary Source="ms-appx:///Controls/TitleBar/TitleBar_themeresources.xaml" />
-    </Page.Resources>
     <Page.Background>
         <SolidColorBrush x:Name="RootBackground" Color="{ThemeResource SolidBackgroundFillColorBase}" />
     </Page.Background>
