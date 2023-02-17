@@ -11,16 +11,21 @@
     <Thickness x:Key="SettingExpanderItemPadding">58,8,44,8</Thickness>
     <Thickness x:Key="SettingExpanderItemBorderThickness">0,1,0,0</Thickness>
     <Thickness x:Key="ClickableSettingExpanderItemPadding">58,8,16,8</Thickness>
-
-    <x:Double x:Key="SettingExpanderWrapThreshold">409</x:Double>
-    <x:Double x:Key="SettingExpanderWrapNoIconThreshold">222</x:Double>
     
+    <x:Double x:Key="SettingExpanderWrapThreshold">409</x:Double>
+    <x:Double x:Key="SettingExpanderWrapNoIconThreshold">219</x:Double>
+
+    <x:Double x:Key="SettingExpanderItemWrapThreshold">473</x:Double>
+    <x:Double x:Key="SettingExpanderItemWrapNoIconThreshold">283</x:Double>
+
     <Style x:Key="DefaultSettingExpanderItemStyle" TargetType="controls:Setting">
         <Style.Setters>
             <Setter Property="Background" Value="{ThemeResource SystemControlTransparentBrush}" />
             <Setter Property="BorderThickness" Value="{ThemeResource SettingExpanderItemBorderThickness}" />
             <Setter Property="MinHeight" Value="{StaticResource ExpanderMinHeight}" />
             <Setter Property="Padding" Value="{ThemeResource SettingExpanderItemPadding}" />
+            <Setter Property="WrapThreshold" Value="{StaticResource SettingExpanderItemWrapThreshold}" />
+            <Setter Property="WrapNoIconThreshold" Value="{StaticResource SettingExpanderItemWrapNoIconThreshold}" />
             <Setter Property="CornerRadius" Value="0" />
         </Style.Setters>
     </Style>
