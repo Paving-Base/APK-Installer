@@ -120,6 +120,9 @@
   <data name="AndroidTestSettingsHeader.Header" xml:space="preserve">
     <value>Android Test</value>
   </data>
+  <data name="ApplicationsSettings.Description" xml:space="preserve">
+    <value>Manage the applications of connected devices</value>
+  </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>Aansoeke</value>
   </data>
@@ -146,6 +149,9 @@
   </data>
   <data name="OutPIP.Content" xml:space="preserve">
     <value>Exit</value>
+  </data>
+  <data name="ProcessesSettings.Description" xml:space="preserve">
+    <value>Manage the processes of connected devices</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
     <value>Processes</value>
