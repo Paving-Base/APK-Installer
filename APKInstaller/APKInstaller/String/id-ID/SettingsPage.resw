@@ -130,7 +130,7 @@
     <value>Unduh otomatis saat paket berasal dari URL.the spaiek</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Auto Download Online Packages?</value>
+    <value>Apakah Otomatis Unduh Paket Daring?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Pilih Jenis Tampilan Latar Belakang untuk Windows 11</value>

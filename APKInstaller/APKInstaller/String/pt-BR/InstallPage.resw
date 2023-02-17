@@ -155,7 +155,7 @@ Capacidades:</value>
     <value>Não Foi Possível abrir o pacote do aplicativo</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>Checando...</value>
+    <value>Checando Adb...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
     <value>Checando ADB...</value>

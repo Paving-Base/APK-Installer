@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="APKDescription" xml:space="preserve">
-    <value>Android Anwendungspaket</value>
+    <value>Android App-Paket</value>
   </data>
   <data name="APKFile" xml:space="preserve">
     <value>APK Datei</value>
@@ -130,7 +130,7 @@
     <value>APK Installer</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
-    <value>Es trat ein Fehler mit dem Programm auf…</value>
+    <value>😞 Ein Fehler ist aufgetreten… </value>
   </data>
   <data name="NetworkError" xml:space="preserve">
     <value>Es gibt Probleme mit dem Netzwerk...</value>
@@ -139,10 +139,10 @@
     <value>Nein</value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
-    <value>Installiere das Paket</value>
+    <value>Dieses Paket installieren</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>Split APK Datei</value>
+    <value>APK Datei aufteilen</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Ja</value>
