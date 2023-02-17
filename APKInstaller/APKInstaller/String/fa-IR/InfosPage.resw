@@ -117,73 +117,61 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AndroidTestSettingsHeader.Header" xml:space="preserve">
-    <value>Android Test</value>
+  <data name="AppName.Text" xml:space="preserve">
+    <value>App Name</value>
   </data>
-  <data name="ApplicationsSettings.Description" xml:space="preserve">
-    <value>Manage the applications of connected devices</value>
+  <data name="BasicInfoSettings.Header" xml:space="preserve">
+    <value>Basic Information</value>
   </data>
-  <data name="ApplicationsSettings.Header" xml:space="preserve">
-    <value>Applications</value>
+  <data name="DependenciesHeaderFormat" xml:space="preserve">
+    <value>Dependencies - {0} in total</value>
+    <comment>{0} - Dependencies Count.</comment>
   </data>
-  <data name="CompactOverlaySettings.Description" xml:space="preserve">
-    <value>Enter or Exit Compact Overlay</value>
+  <data name="FeaturesHeaderFormat" xml:space="preserve">
+    <value>Features - {0} in total</value>
   </data>
-  <data name="CompactOverlaySettings.Header" xml:space="preserve">
-    <value>Compact Overlay</value>
+  <data name="Languages.Text" xml:space="preserve">
+    <value>Languages</value>
   </data>
-  <data name="DevelopmentInfoBar.Message" xml:space="preserve">
-    <value>A development version app may not stable. Download release version on Microsoft Store.</value>
+  <data name="MinSDK.Text" xml:space="preserve">
+    <value>Min SDK</value>
   </data>
-  <data name="DevelopmentInfoBar.Title" xml:space="preserve">
-    <value>You are using a development version app.</value>
+  <data name="OpenPackageFolder.Content" xml:space="preserve">
+    <value>Open Package Folder</value>
   </data>
-  <data name="EnterPIP.Content" xml:space="preserve">
-    <value>Enter Compact Overlay</value>
+  <data name="PackageName.Text" xml:space="preserve">
+    <value>Package Name</value>
   </data>
-  <data name="LanguageSettings.Description" xml:space="preserve">
-    <value>Select language and restart to change language</value>
+  <data name="PackageSize.Text" xml:space="preserve">
+    <value>Package Size</value>
   </data>
-  <data name="LanguageSettings.Header" xml:space="preserve">
-    <value>Language</value>
+  <data name="PermissionsCount.Text" xml:space="preserve">
+    <value>Permissions Count</value>
   </data>
-  <data name="OutPIP.Content" xml:space="preserve">
-    <value>Exit</value>
+  <data name="PermissionsHeaderFormat" xml:space="preserve">
+    <value>Permissions - {0} in total</value>
+    <comment>{0} - Permissions Count.</comment>
   </data>
-  <data name="ProcessesSettings.Description" xml:space="preserve">
-    <value>Manage the processes of connected devices</value>
+  <data name="SharePackage.Content" xml:space="preserve">
+    <value>Share Package</value>
   </data>
-  <data name="ProcessesSettings.Header" xml:space="preserve">
-    <value>Processes</value>
+  <data name="SupportedArchitectures.Text" xml:space="preserve">
+    <value>Support Architectures</value>
   </data>
-  <data name="ProgressSettings.Description" xml:space="preserve">
-    <value>Test Progress Ring on the Title Bar</value>
+  <data name="SupportResolutions.Text" xml:space="preserve">
+    <value>Support Resolutions</value>
   </data>
-  <data name="ProgressSettings.Header" xml:space="preserve">
-    <value>Progress</value>
+  <data name="SupportScreenSizes.Text" xml:space="preserve">
+    <value>Support Screen Sizes</value>
   </data>
-  <data name="SetProgressValue.Description" xml:space="preserve">
-    <value>Set the value of Progress Ring</value>
+  <data name="TargetSDK.Text" xml:space="preserve">
+    <value>Target SDK</value>
   </data>
-  <data name="SetProgressValue.Header" xml:space="preserve">
-    <value>Progress Value</value>
+  <data name="TitleFormat" xml:space="preserve">
+    <value>About {0}</value>
+    <comment>{0} - AppName.</comment>
   </data>
-  <data name="ShowRefreshButton.Description" xml:space="preserve">
-    <value>Show Refresh Button on the Title Bar</value>
-  </data>
-  <data name="ShowRefreshButton.Header" xml:space="preserve">
-    <value>Refresh Button</value>
-  </data>
-  <data name="TitleBar.Title" xml:space="preserve">
-    <value>Testing</value>
-  </data>
-  <data name="TitleBarSettings.Description" xml:space="preserve">
-    <value>Extends Content Into TitleBar</value>
-  </data>
-  <data name="TitleBarSettings.Header" xml:space="preserve">
-    <value>Title Bar</value>
-  </data>
-  <data name="UITestSettingsHeader.Header" xml:space="preserve">
-    <value>UI Test</value>
+  <data name="Version.Text" xml:space="preserve">
+    <value>Version</value>
   </data>
 </root>
