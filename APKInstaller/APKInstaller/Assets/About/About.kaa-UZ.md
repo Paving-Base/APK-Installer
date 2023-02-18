@@ -1,4 +1,4 @@
-#### Welcome to the APK Installer!
+#### APK ornatıwshısına xosh kelibsiz!
 
 ##### Declaration
 1. Please follow the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
@@ -9,7 +9,7 @@
 ##### Awdarıw
 Thanks to [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") translators for their support. If there is any problem with the translation, please come and correct it. And please take translation seriously. Your words will be read all over the world.
 
-##### Contributors
+##### Avtorlar
 - [wherewhere](https://github.com/wherewhere)
 - [Void48](https://github.com/Void48)
 - [EP012014](https://github.com/EP012014)
