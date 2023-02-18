@@ -121,7 +121,7 @@
     <value>Android Testi</value>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
-    <value>Manage the applications of connected devices</value>
+    <value>Bağlı cihazların uygulamalarını yönetin</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>Uygulamalar</value>
@@ -151,7 +151,7 @@
     <value>Çık</value>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
-    <value>Manage the processes of connected devices</value>
+    <value>Bağlı cihazların süreçlerini yönetin</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
     <value>İşlem</value>
