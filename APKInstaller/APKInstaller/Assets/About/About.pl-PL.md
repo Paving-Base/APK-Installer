@@ -1,13 +1,13 @@
 #### Witaj w Instalatorze APK!
 
 ##### Deklaracja
-1. Postępuj zgodnie z [Umową licencyjną użytkownika Apk Installer](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. Ten program jest oprogramowaniem open source, więc upewnij się, że program pochodzi z [tego repozytorium Github](https://github.com/Paving-Base/APK-Installer) lub [tej aplikacji](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) , aby zachować bezpieczeństwo twoich danych.
-3. Jeśli źródło programu nie jest nieprawidłowe, wszystkie Twoje dane będą używane tylko do uruchamiania z programem lub przechowywane lokalnie podczas uruchamiania programu, a deweloper nie będzie kradł żadnych twoich danych. Still, please pay attention to the security of the environment.
-4. Tłumaczenie tekstu tej aplikacji pochodzi ze społeczności [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") i wszystkie teksty nie reprezentują poglądów autora.
+1. Please comply with the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+2. This program is open source software, so please make sure the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) to ensure your data security.
+3. If the source of the program is not abnormal, all your data will be used only for the running of the program or stored locally during the running, and the developer will not steal any of your data. Still, please pay attention to the security of the environment.
+4. The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.
 
 ##### Tłumaczenie
-Dziękujemy tłumaczom [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") za ich wsparcie. Jeśli wystąpił jakiś problem z tłumaczeniem, przyjdź i popraw to. And please take translation seriously. Your words will be read all over the world.
+Dziękujemy tłumaczom [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") za ich wsparcie. If there are any problems with the translation, please feel free to correct us. And please translate seriously. Everything you write will be read all over the world.
 
 ##### Współtwórcy
 - [wherewhere](https://github.com/wherewhere)
