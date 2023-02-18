@@ -133,16 +133,16 @@
     <value>Capabilities: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>App Name</value>
+    <value>Baǵdarlama ataması</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancel</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
-    <value>Yes</value>
+    <value>Awa</value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
-    <value>No</value>
+    <value>Yaq</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>Cannot Connect to WSA</value>
@@ -166,7 +166,7 @@
     <value>Click here to read them</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Close</value>
+    <value>Jabıw</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
     <value>Are you sure to cancel the installation?</value>
@@ -175,10 +175,10 @@
     <value>Copy</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>Devices</value>
+    <value>Qurılmalar</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Download</value>
+    <value>Júklep alıw</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
     <value>Download Failed</value>
@@ -233,10 +233,10 @@
     <value>Infos</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>Install</value>
+    <value>Ornatıw</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
-    <value>{0} is ready!</value>
+    <value>{0} ornatıldı!</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
@@ -244,7 +244,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
-    <value>Installing...</value>
+    <value>Ornatılmaqta...</value>
   </data>
   <data name="InstallingPercent" xml:space="preserve">
     <value>Installing {0}...</value>
@@ -272,7 +272,7 @@
     <value>Launch when ready</value>
   </data>
   <data name="Loading" xml:space="preserve">
-    <value>Loading...</value>
+    <value>Júklenbekte...</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
     <value>More Info</value>
@@ -311,7 +311,7 @@
     <value>For proper functioning of the app, try to launch an Android app package.</value>
   </data>
   <data name="OK" xml:space="preserve">
-    <value>OK</value>
+    <value>MAQUL</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
     <value>Online Package</value>
@@ -338,10 +338,10 @@
     <value>Retry</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>Select</value>
+    <value>Tańlaw</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>Share</value>
+    <value>Bólisiw</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
     <value>Starting ADB Server...</value>
@@ -363,7 +363,7 @@
     <comment>{0} - Have done num. {1} - All num.</comment>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>Update</value>
+    <value>Jańalaw</value>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
     <value>Update {0}?</value>
@@ -373,7 +373,7 @@
     <value>Version Code</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>Version: {0}</value>
+    <value>Versiya: {0}</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
@@ -391,7 +391,7 @@
 This may take long time. Sit back and relax.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome!</value>
+    <value>Xosh kelibsiz!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA is Running</value>
