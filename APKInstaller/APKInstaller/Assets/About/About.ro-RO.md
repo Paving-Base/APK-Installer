@@ -1,13 +1,13 @@
 #### Bine ați venit la APK Installer!
 
 ##### Declarație
-1. Vă rugăm să urmați [APK Installer End User License Acord și Politica de Confidențialitate](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. Acest program este software open source, asigură-te că programul este din [acest depozit Github](https://github.com/Paving-Base/APK-Installer) sau [această aplicație](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) pentru a-ți păstra datele în siguranță.
-3. Dacă sursa programului nu este anormală, toate datele tale vor fi folosite doar pentru a rula cu programul sau stocate local în timpul rulării programului, iar dezvoltatorul nu va fura niciuna dintre datele dvs. Totuşi, vă rog să acordaţi atenţie securităţii mediului.
-4. Traducerea textului acestei aplicații vine de la comunitatea [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") și toate textele nu reprezintă punctele de vedere ale autorului.
+1. Please comply with the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+2. This program is open source software, so please make sure the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) to ensure your data security.
+3. If the source of the program is not abnormal, all your data will be used only for the running of the program or stored locally during the running, and the developer will not steal any of your data. Totuşi, vă rog să acordaţi atenţie securităţii mediului.
+4. The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.
 
 ##### Traducere
-Mulţumim traducătorilor [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") pentru sprijinul lor. Dacă există vreo problemă cu traducerea, vă rugăm să veniți și să o corectați. Şi vă rog să luaţi traducerea în serios. Cuvintele tale vor fi citite peste tot în lume.
+Mulţumim traducătorilor [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") pentru sprijinul lor. If there are any problems with the translation, please feel free to correct us. And please translate seriously. Everything you write will be read all over the world.
 
 ##### Contribuitori
 - [wherewhere](https://github.com/wherewhere)
