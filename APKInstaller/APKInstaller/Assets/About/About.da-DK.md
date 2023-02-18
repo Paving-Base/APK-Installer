@@ -1,13 +1,13 @@
 #### Velkommen til APK Installeret!
 
 ##### Erklæring
-1. Følg venligst [APK Installer End User License Agreement og Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. Dette program er open source software, så sørg for, at programmet er fra [dette Github repository](https://github.com/Paving-Base/APK-Installer) eller [denne applikation](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) for at holde dine data sikre.
-3. Hvis kilden til programmet ikke er unormal, alle dine data vil kun blive brugt til at køre med programmet eller gemt lokalt under programmet kører, og udvikleren vil ikke stjæle nogen af dine data. Still, please pay attention to the security of the environment.
-4. Oversættelsen af teksten til denne applikation kommer fra [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") -fællesskabet, og alle tekster repræsenterer ikke forfatterens visninger.
+1. Please comply with the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+2. This program is open source software, so please make sure the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) to ensure your data security.
+3. If the source of the program is not abnormal, all your data will be used only for the running of the program or stored locally during the running, and the developer will not steal any of your data. Still, please pay attention to the security of the environment.
+4. The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.
 
 ##### Translate
-Tak til [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") oversættere for deres support. Hvis der er problemer med oversættelsen, bedes du venligst komme og rette den. And please take translation seriously. Your words will be read all over the world.
+Tak til [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") oversættere for deres support. If there are any problems with the translation, please feel free to correct us. And please translate seriously. Everything you write will be read all over the world.
 
 ##### Bidragsydere
 - [wherewhere](https://github.com/wherewhere)
