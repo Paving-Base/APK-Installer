@@ -20,7 +20,7 @@ namespace APKInstaller.Pages
     {
         private readonly AppWindow AppWindow = WindowHelper.GetAppWindowForCurrentWindow();
 
-        public string GetAppTitleFromSystem => ResourceLoader.GetForViewIndependentUse()?.GetString("AppName") ?? Package.Current.DisplayName;
+        public readonly string GetAppTitleFromSystem = ResourceLoader.GetForViewIndependentUse()?.GetString("AppName") ?? Package.Current.DisplayName;
 
         public MainPage()
         {

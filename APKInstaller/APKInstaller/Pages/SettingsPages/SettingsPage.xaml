@@ -160,8 +160,8 @@
                             </Grid.Resources>
                             <ItemsRepeaterScrollHost>
                                 <ScrollViewer
-                                    Margin="0,0,0,-8"
-                                    Padding="0,2,0,8"
+                                    Margin="0,-2,0,-8"
+                                    Padding="0,0,0,8"
                                     HorizontalScrollBarVisibility="Auto"
                                     VerticalScrollBarVisibility="Disabled">
                                     <ItemsRepeater ItemsSource="{Binding ConnectHelpers}">
@@ -237,7 +237,6 @@
                     <controls:Setting x:Uid="/SettingsPage/ADBPathSettings" Icon="&#xE8B7;">
                         <controls:Setting.Description>
                             <HyperlinkButton
-                                Margin="0,0,2,0"
                                 Click="HyperlinkButton_Click"
                                 Content="{Binding ADBPath}"
                                 Tag="ADBPath" />
