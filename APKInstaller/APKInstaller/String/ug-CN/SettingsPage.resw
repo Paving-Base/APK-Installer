@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
-    <value>About</value>
+    <value>ھەققىدە</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
     <value>ADB Path</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>ADB Version</value>
+    <value>ADB نەشرى</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>Auto download when package is from URL.</value>
@@ -139,28 +139,28 @@
     <value>Backdrop</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
-    <value>Change</value>
+    <value>ئۆزگەرتىش</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>Check Failed</value>
+    <value>تەكشۈرەلمىدى</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>Checking For Updates...</value>
+    <value>يېڭىلانمىلارنى تەكشۈرىۋاتىدۇ...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
-    <value>Check For Updates</value>
+    <value>يېڭىلانمىلارنى تەكشۈرۈش</value>
   </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
-    <value>Clear cache</value>
+    <value>غەملەك تازىلاش</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
     <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Terminate ADB when Exit Installer?</value>
+    <value>قاچىلىغۇچتىن چېكىنگەندە ADBنى ئاخىرلاشتۇرامدۇ؟</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Exit Installer after installation is complete.</value>
+    <value>قاچىلاش تاماملانغاندا قاچىلىغۇچتىن چېكىنىش.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
     <value>Exit Installer when APP is Ready?</value>
@@ -181,28 +181,28 @@
     <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
-    <value>Content</value>
+    <value>مەزمۇنى</value>
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
-    <value>Device</value>
+    <value>ئۈسكۈنە</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
-    <value>Display</value>
+    <value>كۆرسىتىش</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
-    <value>Supports</value>
+    <value>قوللاش</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
     <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
-    <value>EULA</value>
+    <value>ئىشلەتكۈچىلەر كېلىشىمى</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
-    <value>Feedback</value>
+    <value>تەكلىپ-پىكىر</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
-    <value>Find Update</value>
+    <value>يېڭىلانما تېپىلدى</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
     <value>Information about the frameworks of this app.</value>
@@ -214,19 +214,19 @@
     <value>Framework</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>Go to the page of test.</value>
+    <value>سىناق بەتكە ئاتلاش.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>Go to TestPage</value>
+    <value>سىناق بەتكە ئاتلاش</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
-    <value>Go to Update</value>
+    <value>يېڭىلاشقا ئاتلاش</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
-    <value>Join Our Chat</value>
+    <value>سۆھبەتكە قوشۇلۇش</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Last Checked: </value>
+    <value>ئاخىرقى تەكشۈرۈش: </value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
     <value>Learn More</value>
@@ -286,7 +286,7 @@
     <value>Reset</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
-    <value>Yes</value>
+    <value>ھەئە</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
     <value>Are you sure you want to reset the app?</value>
@@ -331,6 +331,6 @@
     <value>Up To Date</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Windows Color Settings</value>
+    <value>Windows رەڭ تەڭشىكى</value>
   </data>
 </root>
