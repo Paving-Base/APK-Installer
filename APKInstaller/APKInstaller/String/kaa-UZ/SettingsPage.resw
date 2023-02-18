@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
-    <value>About</value>
+    <value>Baǵdarlama haqqında</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
     <value>ADB Path</value>
@@ -184,7 +184,7 @@
     <value>Content</value>
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
-    <value>Device</value>
+    <value>Qurılma</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
     <value>Display</value>
@@ -286,7 +286,7 @@
     <value>Reset</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
-    <value>Yes</value>
+    <value>Awa</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
     <value>Are you sure you want to reset the app?</value>
@@ -313,19 +313,19 @@
     <value>Whether to Show Installation Progress?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
-    <value>App Theme</value>
+    <value>Baǵdarlama teması</value>
   </data>
   <data name="ThemesSettingsHeader.Header" xml:space="preserve">
-    <value>Themes</value>
+    <value>Temalar</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Settings</value>
+    <value>Sazlawlar</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
     <value>Translate</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
-    <value>Version</value>
+    <value>Versiya</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
     <value>Up To Date</value>
