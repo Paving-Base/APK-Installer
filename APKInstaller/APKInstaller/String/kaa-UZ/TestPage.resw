@@ -124,13 +124,13 @@
     <value>Manage the applications of connected devices</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
-    <value>Applications</value>
+    <value>Baǵdarlamalar</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
     <value>Enter or Exit Compact Overlay</value>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
-    <value>Compact Overlay</value>
+    <value>Jıynaqlı kórinis</value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
     <value>A development version app may not stable. Download release version on Microsoft Store.</value>
@@ -139,10 +139,10 @@
     <value>You are using a development version app.</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
-    <value>Enter Compact Overlay</value>
+    <value>Jıynaqlı kórinisti qosıw</value>
   </data>
   <data name="LanguageSettings.Description" xml:space="preserve">
-    <value>Select language and restart to change language</value>
+    <value>Tildı tańlań hám til ózgeriwi ushın qayta iske túsirıń</value>
   </data>
   <data name="LanguageSettings.Header" xml:space="preserve">
     <value>Til</value>
@@ -172,7 +172,7 @@
     <value>Show Refresh Button on the Title Bar</value>
   </data>
   <data name="ShowRefreshButton.Header" xml:space="preserve">
-    <value>Refresh Button</value>
+    <value>"Jańalaw" túymesi</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Testing</value>
