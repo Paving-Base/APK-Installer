@@ -1,13 +1,13 @@
 #### Bienvenido al instalador de Chamilo
 
 ##### Declaración
-1. Por favor, sigue el [contrato de licencia de usuario final del Instalador de APK y la política de privacidad](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. Este programa es software de código abierto, así que por favor, asegúrate de que este programa es de [este repositorio de Github](https://github.com/Paving-Base/APK-Installer) o [esta aplicación](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) para mantener tus datos seguros.
-3. Si la fuente del programa no es anormal, todos tus datos solo serán usados para ejecutar con el programa o almacenados localmente durante el programa en ejecución y el desarrollador no robará ninguno de tus datos. Aún así, por favor, presta atención a la seguridad del medio ambiente.
-4. La traducción del texto de esta aplicación viene de la comunidad de [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") y todos los textos no representan las vistas del autor.
+1. Please comply with the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+2. This program is open source software, so please make sure the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) to ensure your data security.
+3. If the source of the program is not abnormal, all your data will be used only for the running of the program or stored locally during the running, and the developer will not steal any of your data. Aún así, por favor, presta atención a la seguridad del medio ambiente.
+4. The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.
 
 ##### Traducir
-Gracias a los traductores de [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") por su apoyo. Si hay algún problema con la traducción, por favor, ven y corrígela. Por favor, tómate la traducción en serio. Tus palabras serán leídas en todo el mundo.
+Gracias a los traductores de [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") por su apoyo. If there are any problems with the translation, please feel free to correct us. And please translate seriously. Everything you write will be read all over the world.
 
 ##### Contribuidores
 - [wherewhere](https://github.com/wherewhere)
