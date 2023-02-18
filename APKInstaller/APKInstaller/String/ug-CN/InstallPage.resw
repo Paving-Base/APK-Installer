@@ -127,7 +127,7 @@
     <value>ADB is missing</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>APK File</value>
+    <value>APK ھۆججىتى</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>Capabilities: </value>
@@ -136,13 +136,13 @@
     <value>App Name</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>ئىناۋەتسىز</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
-    <value>Yes</value>
+    <value>ھەئە</value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
-    <value>No</value>
+    <value>ياق</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>Cannot Connect to WSA</value>
@@ -166,22 +166,22 @@
     <value>Click here to read them</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Close</value>
+    <value>تاقاش</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
     <value>Are you sure to cancel the installation?</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
-    <value>Copy</value>
+    <value>كۆچۈرۈش</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Devices</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Download</value>
+    <value>چۈشۈرۈش</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>Download Failed</value>
+    <value>چۈشۈرەلمىدى</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
     <value>Please check your network connection or the URL and try again.</value>
@@ -196,10 +196,10 @@
     <value>WSA Found</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>Go to Setting</value>
+    <value>تەڭشەككە ئاتلاش</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>A newer version is already installed</value>
+    <value>يېڭى نەشرى قاچىلانغان</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
     <value>You already have installed a new version {0} of this app. Are you sure to reinstall version {1}?</value>
@@ -233,25 +233,25 @@
     <value>Infos</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>Install</value>
+    <value>قاچىلاش</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
-    <value>{0} is ready!</value>
+    <value>{0} تەييارلاندى!</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
-    <value>Install {0}?</value>
+    <value>{0} نى قاچىلامسىز؟</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
-    <value>Installing...</value>
+    <value>قاچىلىنىۋاتىدۇ...</value>
   </data>
   <data name="InstallingPercent" xml:space="preserve">
-    <value>Installing {0}...</value>
+    <value>{0} قاچىلىنىۋاتىدۇ...</value>
     <comment>{0} - Progress.</comment>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
-    <value>Reason: </value>
+    <value>سەۋەبى: </value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
     <value>Install WSA</value>
@@ -263,7 +263,7 @@
     <value>The URL is either Incomplete or invalid.</value>
   </data>
   <data name="Launch" xml:space="preserve">
-    <value>Launch</value>
+    <value>قوزغىتىش</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
     <value>Launching WSA...</value>
@@ -272,7 +272,7 @@
     <value>Launch when ready</value>
   </data>
   <data name="Loading" xml:space="preserve">
-    <value>Loading...</value>
+    <value>يۈكلىنىۋاتىدۇ...</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
     <value>More Info</value>
