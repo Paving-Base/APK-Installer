@@ -136,7 +136,7 @@
     <value>Baǵdarlama ataması</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Biykarlaw</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
     <value>Awa</value>
@@ -154,25 +154,25 @@
     <value>Cannot open app package</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>Checking...</value>
+    <value>Tekserilmekte...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Checking ADB...</value>
+    <value>ADB tekserilmekte...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Checking Path...</value>
+    <value>Jol tekserilmekte...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Click here to read them</value>
+    <value>Biliw ushın, usı jerge basıń</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Jabıw</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>Are you sure to cancel the installation?</value>
+    <value>Ornatıwdı biykarlawǵa isenimińiz kámil me?</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
-    <value>Copy</value>
+    <value>Kóshirip alıw</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Qurılmalar</value>
@@ -181,16 +181,16 @@
     <value>Júklep alıw</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>Download Failed</value>
+    <value>Júklew ámelge aspadı</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>Please check your network connection or the URL and try again.</value>
+    <value>Ótinish, internet jalǵanıwın yamasa URLdı tekserıń hám qayta urınıp kóriń.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
     <value>Finding WSA...</value>
   </data>
   <data name="Finished" xml:space="preserve">
-    <value>Finished</value>
+    <value>Tayar</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
     <value>WSA Found</value>
@@ -220,10 +220,10 @@
     <value>Icon</value>
   </data>
   <data name="IKnow" xml:space="preserve">
-    <value>I Know</value>
+    <value>Maqul</value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
-    <value>Incompatible App</value>
+    <value>Mas emes baǵdarlama</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
     <value>The minimum required for this app is {0}. Your device supports {1}. Please update your device or choose order package.</value>
@@ -247,7 +247,7 @@
     <value>Ornatılmaqta...</value>
   </data>
   <data name="InstallingPercent" xml:space="preserve">
-    <value>Installing {0}...</value>
+    <value>Ornatılmaqta {0}...</value>
     <comment>{0} - Progress.</comment>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
@@ -324,10 +324,10 @@
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
-    <value>Reinstall</value>
+    <value>Qayta ornatıw</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>{0} is already installed</value>
+    <value>{0} baǵdarlaması álleqashan ornatılǵan</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
@@ -335,7 +335,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>Retry</value>
+    <value>Qayta urınıw</value>
   </data>
   <data name="Select" xml:space="preserve">
     <value>Tańlaw</value>
@@ -366,7 +366,7 @@
     <value>Jańalaw</value>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
-    <value>Update {0}?</value>
+    <value>{0} baǵdarlaması jańalansın ba?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
