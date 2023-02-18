@@ -139,7 +139,7 @@
     <value>Backdrop</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
-    <value>Change</value>
+    <value>Ózgertiw</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
     <value>Check Failed</value>
@@ -166,7 +166,7 @@
     <value>Exit Installer when APP is Ready?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
-    <value>Configs</value>
+    <value>Sazlawlar</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
     <value>Connect device through network.</value>
