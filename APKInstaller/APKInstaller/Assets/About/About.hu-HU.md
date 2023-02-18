@@ -1,13 +1,13 @@
 #### Üdvözöljük az APK telepítőben!
 
 ##### Nyilatkozat
-1. Kérjük, kövesse az [APK telepítő végfelhasználói licencszerződést és adatvédelmi szabályzatot](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. Ez a program nyílt forráskódú szoftver, ezért kérjük, győződjön meg róla, hogy a program [ez a Github tároló](https://github.com/Paving-Base/APK-Installer) vagy [ez az alkalmazás](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) az adatok biztonsága érdekében.
-3. Ha a program forrása nem abnormális, akkor az összes adatodat csak a programmal való futtatáshoz használják, vagy a program futása közben helyben tárolják, és a fejlesztő nem lopja el az adataidat. Ennek ellenére kérjük, ügyeljen a környezet biztonságára.
-4. Az alkalmazás szövegének fordítása a [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") közösségtől származik, és nem minden szöveg képviseli a szerző nézeteit.
+1. Please comply with the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+2. This program is open source software, so please make sure the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) to ensure your data security.
+3. If the source of the program is not abnormal, all your data will be used only for the running of the program or stored locally during the running, and the developer will not steal any of your data. Ennek ellenére kérjük, ügyeljen a környezet biztonságára.
+4. The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.
 
 ##### Fordítás
-Köszönet a [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") fordítóknak a támogatásért. Ha bármilyen probléma van a fordítással, kérjük, jöjjön és javítsa ki. And please take translation seriously. Your words will be read all over the world.
+Köszönet a [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") fordítóknak a támogatásért. If there are any problems with the translation, please feel free to correct us. And please translate seriously. Everything you write will be read all over the world.
 
 ##### Hozzájárulók
 - [wherewhere](https://github.com/wherewhere)
