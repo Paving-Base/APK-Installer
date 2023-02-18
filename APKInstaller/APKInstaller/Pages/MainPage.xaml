@@ -11,10 +11,19 @@
         <SolidColorBrush x:Name="RootBackground" Color="{ThemeResource SolidBackgroundFillColorBase}" />
     </Page.Background>
     <Grid x:Name="Root">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <ReorderThemeTransition />
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
         <Grid.BackgroundTransition>
             <BrushTransition />
         </Grid.BackgroundTransition>
@@ -68,8 +77,7 @@
                 Click="Button_Click"
                 FocusVisualMargin="0"
                 IsTabStop="True"
-                Style="{StaticResource TitleBarSettingsButtonStyle}"
-                ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" />
+                Style="{StaticResource TitleBarSettingsButtonStyle}" />
         </Border>
         <Frame
             x:Name="CoreAppFrame"

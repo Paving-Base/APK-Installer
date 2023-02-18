@@ -27,7 +27,7 @@ namespace APKInstaller.Controls
            "TopPaddingColumnGridLength",
            typeof(GridLength),
            typeof(TitleBarTemplateSettings),
-           new PropertyMetadata(new GridLength(UIHelper.PageTitlePadding)));
+           new PropertyMetadata(new GridLength(0)));
 
         public static readonly DependencyProperty LeftPaddingColumnGridLengthProperty = DependencyProperty.Register(
            "LeftPaddingColumnGridLength",

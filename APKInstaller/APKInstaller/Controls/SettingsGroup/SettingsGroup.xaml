@@ -33,8 +33,11 @@
                             Margin="1,32,0,8"
                             AutomationProperties.HeadingLevel="Level2"
                             Content="{TemplateBinding Header}"
+                            FontSize="{StaticResource BodyStrongTextBlockFontSize}"
+                            FontWeight="SemiBold"
                             HighContrastAdjustment="None"
-                            Style="{ThemeResource BodyStrongTextBlockStyle}"
+                            LineStackingStrategy="MaxHeight"
+                            TextLineBounds="Full"
                             TextWrapping="Wrap" />
                         <ItemsPresenter Grid.Row="1" />
                         <VisualStateManager.VisualStateGroups>

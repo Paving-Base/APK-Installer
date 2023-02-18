@@ -55,8 +55,7 @@
                                     x:Uid="/TitleBar/BackButton"
                                     Grid.Column="0"
                                     IsEnabled="{TemplateBinding IsBackEnabled}"
-                                    Style="{ThemeResource TitleBarBackButtonStyle}"
-                                    ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" />
+                                    Style="{ThemeResource TitleBarBackButtonStyle}" />
 
                                 <Viewbox
                                     x:Name="Icon"
@@ -122,8 +121,7 @@
                                         Grid.Column="2"
                                         Content="&#xE72C;"
                                         IsEnabled="{TemplateBinding IsRefreshEnabled}"
-                                        Style="{StaticResource TitleBarIconButtonStyle}"
-                                        ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" />
+                                        Style="{StaticResource TitleBarIconButtonStyle}" />
                                 </Grid>
                             </Grid>
                         </Grid>

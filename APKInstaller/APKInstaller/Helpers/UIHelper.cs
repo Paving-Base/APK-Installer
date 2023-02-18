@@ -32,7 +32,6 @@ namespace APKInstaller.Helpers
         public static bool HasTitleBar = !AppWindowTitleBar.IsCustomizationSupported();
         public static bool TitleBarExtended => HasTitleBar ? MainWindow.ExtendsContentIntoTitleBar : WindowHelper.GetAppWindowForCurrentWindow().TitleBar.ExtendsContentIntoTitleBar;
         public static double TitleBarHeight => TitleBarExtended ? HasTitleBar ? 28 : 32 : 0;
-        public static double PageTitlePadding => TitleBarHeight;
 
         private static DispatcherQueue _dispatcherQueue;
         public static DispatcherQueue DispatcherQueue

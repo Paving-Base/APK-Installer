@@ -63,5 +63,7 @@ namespace APKInstaller.Pages
                 AppWindow.TitleBar.SetDragRectangles(new RectInt32[] { Rect });
             }
         }
+
+        internal void UpdateTitleBarHeight() => CustomTitleBar.Height = UIHelper.TitleBarHeight;
     }
 }

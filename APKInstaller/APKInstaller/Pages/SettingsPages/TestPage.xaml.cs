@@ -35,6 +35,7 @@ namespace APKInstaller.Pages.SettingsPages
                     {
                         WindowHelper.GetAppWindowForCurrentWindow().TitleBar.ExtendsContentIntoTitleBar = value;
                     }
+                    UIHelper.MainPage?.UpdateTitleBarHeight();
                     ThemeHelper.UpdateSystemCaptionButtonColors();
                 }
             }
