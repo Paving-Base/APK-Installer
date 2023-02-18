@@ -1,13 +1,13 @@
 #### مرحبا بكم في تثبيت APK!
 
 ##### تصريح
-1. الرجاء اتباع [اتفاق ترخيص المستخدم النهائي وسياسة الخصوصية لـ APK](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. هذا البرنامَج مفتوح المصدر، لذا يرجى التأكد أن البرنامَج [ من قيت هب(Github) ](https://github.com/Paving-Base/APK-Installer)أو [مكان موثوق](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) للحفاظ على سلامة بياناتك.
-3. إذا كان مصدر البرنامَج غير طبيعي، سيتم استخدام جميع بياناتك فقط لتشغيل البرنامَج أو تخزينها محلياً وقت تشغيل البرنامَج، ولن يسرق المطور أي من بياناتك. ومع ذلك، يرجى الاهتمام في الناحية الأمنية إلى بيئة البرنامَج.
-4. تَرْجَمَة نصوص هذا التطبيق تأتي من مجتمع [كراودِن](https://crowdin.com/project/APKInstaller "Crowdin") وجميع النصوص لا تمثل وجهات نظر المؤلف.
+1. Please comply with the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+2. This program is open source software, so please make sure the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) to ensure your data security.
+3. If the source of the program is not abnormal, all your data will be used only for the running of the program or stored locally during the running, and the developer will not steal any of your data. ومع ذلك، يرجى الاهتمام في الناحية الأمنية إلى بيئة البرنامَج.
+4. The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.
 
 ##### ترجم
-شكرا لمترجمي [كراودين](https://crowdin.com/project/APKInstaller "Crowdin") على دعمهم. إذا كانت هناك أي مشكلة في التَّرْجَمَةً، يرجى محاولة تصحيحها. وأرجو أن تأخذ التَّرْجَمَةً على محمل الجِدّ. ستقرأ كلماتك في جميع أنحاء العالم.
+شكرا لمترجمي [كراودين](https://crowdin.com/project/APKInstaller "Crowdin") على دعمهم. If there are any problems with the translation, please feel free to correct us. And please translate seriously. Everything you write will be read all over the world.
 
 ##### المساهمون
 - [wherewhere](https://github.com/wherewhere)

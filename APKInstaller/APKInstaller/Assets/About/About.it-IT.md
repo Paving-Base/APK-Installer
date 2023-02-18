@@ -1,13 +1,13 @@
 #### Benvenuto su APK Installer!
 
 ##### Dichiarazione
-1. Si prega di leggere [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. Questo programma è software open source, quindi assicurati che il programma provenga da [questo repository Github](https://github.com/Paving-Base/APK-Installer) o sia [questa applicazione](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) perché i tuoi dati siano protetti.
-3. Se la sorgente del programma è conforme, tutti i tuoi dati saranno utilizzati solo per eseguire il programma oppure saranno memorizzati localmente durante l'esecuzione del programma e lo sviluppatore non se ne impossesserà. Tuttavia, presta attenzione alla sicurezza dell'ambiente.
-4. La traduzione del testo di questa applicazione viene dalla comunità [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") e tutti i testi non dipendono dallo sviluppatore.
+1. Please comply with the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+2. This program is open source software, so please make sure the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) to ensure your data security.
+3. If the source of the program is not abnormal, all your data will be used only for the running of the program or stored locally during the running, and the developer will not steal any of your data. Tuttavia, presta attenzione alla sicurezza dell'ambiente.
+4. The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.
 
 ##### Traduzioni
-Grazie a @CyberMatique per il suo supporto. Se c'è qualche errore di  traduzione, corregilo su Ricorda di prendere seriamente la traduzione. Le vostre parole saranno lette in tutto il mondo.
+Grazie a @CyberMatique per il suo supporto. If there are any problems with the translation, please feel free to correct us. And please translate seriously. Everything you write will be read all over the world.
 
 ##### Collaboratori
 - [wherewhere](https://github.com/wherewhere)

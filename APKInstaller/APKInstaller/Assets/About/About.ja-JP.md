@@ -1,13 +1,13 @@
 #### APKインストーラーへようこそ！
 
 ##### 宣言
-1. [APKインストーラのエンドユーザーライセンス契約とプライバシーポリシーに従ってください](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. このプログラムはオープンソースソフトウェアです そのため、[このGithub リポジトリ](https://github.com/Paving-Base/APK-Installer)  または [このアプリケーション](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) からのプログラムであることを確認してデータを安全に保つようにしてください。
-3. プログラムのソースが異常でない場合、すべてのデータはプログラムで実行するためだけに使用されるか プログラム実行中にローカルに保存され、開発者はあなたのデータを盗むことはありません。 それでも、あなたの環境のセキュリティには注意してください。
-4. このアプリケーションのテキストの翻訳は、 [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") コミュニティから来ており、すべてのテキストが著者の見解を表しているわけではありません。
+1. Please comply with the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+2. This program is open source software, so please make sure the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) to ensure your data security.
+3. If the source of the program is not abnormal, all your data will be used only for the running of the program or stored locally during the running, and the developer will not steal any of your data. それでも、あなたの環境のセキュリティには注意してください。
+4. The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.
 
 ##### 翻訳する
-[Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") の翻訳者のサポートに感謝します。 翻訳に問題がある場合は、是非、修正してください。 そして、真剣に翻訳を検討してください。 あなたの言葉は世界中で読まれます。
+[Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") の翻訳者のサポートに感謝します。 If there are any problems with the translation, please feel free to correct us. And please translate seriously. Everything you write will be read all over the world.
 
 ##### 貢献者
 - [wherewhere](https://github.com/wherewhere)

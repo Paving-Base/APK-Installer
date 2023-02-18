@@ -1,13 +1,13 @@
 #### Добро пожаловать в установщик APK!
 
 ##### Декларация
-1. Пожалуйста, следуйте [Лицензионному соглашению и политике конфиденциальности программы APK Installer](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. Эта программа с открытым исходным кодом, поэтому убедитесь, что программа взята с </a>репозитория Github</0> или [этого приложения](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG), чтобы обеспечить безопасность ваших данных.
-3. Если источник программы не является надежным, все ваши данные буду использоваться только для работы с программой или сохранены локально во время работы программы, и разработчик не похитит ничего из ваших данных. Тем не менее обращайте внимание на безопасность окружения.
-4. Перевод текста этого приложения происходит от сообщества [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin"), и все тексты не отражают мнения автора.
+1. Please comply with the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+2. This program is open source software, so please make sure the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) to ensure your data security.
+3. If the source of the program is not abnormal, all your data will be used only for the running of the program or stored locally during the running, and the developer will not steal any of your data. Тем не менее обращайте внимание на безопасность окружения.
+4. The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.
 
 ##### Перевод
-Спасибо переводчикам [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") за их помощь. Вы также можете помочь с переводом. И, пожалуйста, отнеситесь к этому серьезно. Ваши слова будут читать другие люди.
+Спасибо переводчикам [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") за их помощь. If there are any problems with the translation, please feel free to correct us. And please translate seriously. Everything you write will be read all over the world.
 
 ##### Авторы
 - [wherewhere](https://github.com/wherewhere)

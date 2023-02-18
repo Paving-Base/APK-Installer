@@ -1,13 +1,13 @@
 #### APK Installer'a Hoş Geldin!
 
 ##### Açıklama
-1. Lütfen [ APK Installer Son Kullanıcı Lisans Sözleşmesini ve Gizlilik Politikasını ](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md) takip edin.
-2. Bu program açık kaynaklı bir yazılımdır, bu nedenle verilerinizi güvende tutmak için lütfen programın [ bu Github deposundan ](https://github.com/Paving-Base/APK-Installer) veya [ bu uygulamadan ](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) olduğundan emin olun.
-3. Programın kaynağı anormal değilse, tüm verileriniz yalnızca programla birlikte çalışmak için kullanılır veya program çalışırken yerel olarak depolanır ve geliştirici verilerinizden hiçbirini çalmaz. Ancak yine de, lütfen kullanım ortamının güvenliğine dikkat edin.
-4. Bu uygulamanın metninin çevirisi [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") topluluğundan gelir ve tüm metinler yazarın görüşlerini temsil etmez.
+1. Please comply with the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+2. This program is open source software, so please make sure the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) to ensure your data security.
+3. If the source of the program is not abnormal, all your data will be used only for the running of the program or stored locally during the running, and the developer will not steal any of your data. Ancak yine de, lütfen kullanım ortamının güvenliğine dikkat edin.
+4. The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.
 
 ##### Çeviri
-[Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") çevirmenlerine destekleri için teşekkür ederiz. Çeviriyle ilgili herhangi bir sorun varsa, lütfen gelin ve düzeltin. Ve lütfen çeviriyi ciddiye alın. Kelimeleriniz tüm dünyada okunacak.
+[Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") çevirmenlerine destekleri için teşekkür ederiz. If there are any problems with the translation, please feel free to correct us. And please translate seriously. Everything you write will be read all over the world.
 
 ##### Katkıda bulunanlar
 - [wherewhere](https://github.com/wherewhere)
