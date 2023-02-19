@@ -1,9 +1,9 @@
 #### مرحبا بكم في تثبيت APK!
 
-##### تصريح
+##### Declaration
 1. Please comply with the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. This program is open source software, so please make sure the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) to ensure your data security.
-3. If the source of the program is not abnormal, all your data will be used only for the running of the program or stored locally during the running, and the developer will not steal any of your data. ومع ذلك، يرجى الاهتمام في الناحية الأمنية إلى بيئة البرنامَج.
+2. هذا البرنامَج مفتوح المصدر، لذا يرجى التأكد أن البرنامَج [ من قيت هب(Github) ](https://github.com/Paving-Base/APK-Installer)أو [مكان موثوق](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) للحفاظ على سلامة بياناتك.
+3. إذا كان مصدر البرنامج غير طبيعي، سيتم استخدام جميع بياناتك فقط لتشغيل البرنامج أو تخزينها محلياً أثناء التشغيل، ولن يسرق المطور أي من بياناتك. Still, please pay attention to the security of the environment.
 4. The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.
 
 ##### ترجم
