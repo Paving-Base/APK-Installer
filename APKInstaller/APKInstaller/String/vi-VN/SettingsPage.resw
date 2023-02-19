@@ -328,7 +328,7 @@
     <value>Phiên bản</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Đến nay</value>
+    <value>Phiên Bản Mới Nhất</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
     <value>Cài đặt màu Windows</value>
