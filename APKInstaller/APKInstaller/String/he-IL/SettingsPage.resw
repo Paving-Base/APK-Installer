@@ -121,55 +121,55 @@
     <value>אודות</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>נתיב ADB</value>
+    <value>נתיב ADB </value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
     <value>גרסת ADB</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>הורדה אוטומטית כאשר החבילה מגיעה מכתובת URL.</value>
+    <value>הורדה אוטומטית כאשר החבילה מגיעה מכתובת URL. </value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Auto Download Online Packages?</value>
+    <value>emglis</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>בחר סוג רקע עבור Windows 11</value>
+    <value>בחר סוג רקע עבור Windows 10</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>רקע</value>
+    <value>רקע </value>
   </data>
   <data name="Change.Content" xml:space="preserve">
-    <value>שנה</value>
+    <value>שנה </value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>צק אין נכשל</value>
+    <value>צק אין נכשל </value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>בודק עדכונים...</value>
+    <value>בודק עדכונים... </value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
-    <value>בדוק עדכונים</value>
+    <value>בדוק עדכונים </value>
   </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
     <value>נקה מטמון</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
+    <value>englis</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Terminate ADB when Exit Installer?</value>
+    <value>englis</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Exit Installer after installation is complete.</value>
+    <value>englis</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Exit Installer when APP is Ready?</value>
+    <value>englis</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>הגדר</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value>englis</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>חבר התקן</value>
@@ -178,7 +178,7 @@
     <value>צור קשר</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
+    <value>englis</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>תוכן</value>
@@ -193,7 +193,7 @@
     <value>תמיכה</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
+    <value>englis</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>תנאי שימוש</value>
@@ -235,7 +235,7 @@
     <value>יומן רישום</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
+    <value>englis</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>אתה משתמש בגרסה ששונתה!
@@ -245,7 +245,7 @@
     <value>השבת אותו כדי להתחבר להתקנים אחרים.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>For WSA only?</value>
+    <value>englis</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>ארכיטקטורת מערכת הפעלה</value>
@@ -257,10 +257,10 @@
     <value>אחר</value>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
-    <value>Pair device through network.</value>
+    <value>englis</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>Pair Device</value>
+    <value>englis</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>חשוך</value>
@@ -299,19 +299,19 @@
     <value>הצג עוזרים כאשר אין מכשיר מחובר.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Whether to Show Helps?</value>
+    <value>englis</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Display announcements at the top of Settings.</value>
+    <value>englis</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Whether to Show Announcements?</value>
+    <value>englis</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>היישום עלול להשאיר קבצים זמניים כאשר מתרחשת הפרעה בלתי צפויה.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Whether to Show Installation Progress?</value>
+    <value>englis</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>ערכת נושא של אפליקציה</value>
