@@ -168,7 +168,7 @@
     <value>Target SDK</value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
-    <value>englis</value>
+    <value>About {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Version.Text" xml:space="preserve">
