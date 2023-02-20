@@ -121,7 +121,7 @@
     <value>Kiểm tra Android</value>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
-    <value>Manage the applications of connected devices</value>
+    <value>Quản lý các ứng dụng của thiết bị được kết nối</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>Các ứng dụng</value>
@@ -151,7 +151,7 @@
     <value>Thoát</value>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
-    <value>Manage the processes of connected devices</value>
+    <value>Quản lý quy trình của các thiết bị được kết nối</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
     <value>Quá trình</value>

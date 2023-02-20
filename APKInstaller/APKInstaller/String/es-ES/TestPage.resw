@@ -121,7 +121,7 @@
     <value>Prueba de Android</value>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
-    <value>Manage the applications of connected devices</value>
+    <value>Administrar las aplicaciones de los dispositivos conectados</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>Aplicaciones</value>
@@ -152,7 +152,7 @@ Descarga la versión de publicación en la tienda de Microsoft.</value>
     <value>Salir</value>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
-    <value>Manage the processes of connected devices</value>
+    <value>Administrar los procesos de los dispositivos conectados</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
     <value>Procesos</value>

@@ -298,19 +298,19 @@
     <value>Hiển thị người trợ giúp khi không có thiết bị nào được kết nối.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Whether to Show Helps?</value>
+    <value>Có hiển thị trợ giúp không?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
     <value>Hiển thị Thông báo ở đầu Cài đặt.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Whether to Show Announcements?</value>
+    <value>Có hiển thị thông báo không?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>Nó có thể để lại các tệp tạm thời khi xảy ra gián đoạn không mong muốn.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Whether to Show Installation Progress?</value>
+    <value>Có hiển thị quá trình cài đặt không?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Chủ đề Ứng dụng</value>
@@ -328,7 +328,7 @@
     <value>Phiên bản</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Đến nay</value>
+    <value>Phiên Bản Mới Nhất</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
     <value>Cài đặt màu Windows</value>
