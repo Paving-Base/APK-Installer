@@ -121,10 +121,10 @@
     <value>ADB, the Android Debug Bridge, is needed for APK Installer to work. Click "Download" to download it. By downloading, you accept the Google Terms and Conditions for ADB. If you have already downloaded ADB, click "Select" to select it.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Exists</value>
+    <value>ADB bar</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>ADB is missing</value>
+    <value>ADB joq</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
     <value>APK fayl</value>
@@ -240,7 +240,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
-    <value>Install {0}?</value>
+    <value>{0} ornatılsın ba?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
@@ -251,7 +251,7 @@
     <comment>{0} - Progress.</comment>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
-    <value>Reason: </value>
+    <value>Sebep: </value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
     <value>Install WSA</value>
@@ -263,10 +263,10 @@
     <value>The URL is either Incomplete or invalid.</value>
   </data>
   <data name="Launch" xml:space="preserve">
-    <value>Launch</value>
+    <value>Iske túsiriw</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
-    <value>Launching WSA...</value>
+    <value>WSA iske túsirilmekte...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
     <value>Launch when ready</value>
@@ -278,10 +278,10 @@
     <value>More Info</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
-    <value>Cannot find Android Device</value>
+    <value>Android qurılma tabılmadı</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>How to connect device</value>
+    <value>Qurılmanı qalay jalǵaymız</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
     <value>If you want to install app into Windows Subsystem for Android™, you need to install it first. If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
@@ -370,7 +370,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
-    <value>Version Code</value>
+    <value>Kod versiyası</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
     <value>Versiya: {0}</value>
