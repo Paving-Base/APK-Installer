@@ -130,7 +130,7 @@
     <value>APK Installer</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
-    <value>There was an error with the program…</value>
+    <value>Baǵdarlama jumısında qátelik júz berdi…</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
     <value>There are some problems with the network...</value>
@@ -142,7 +142,7 @@
     <value>Install this Package</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>Split APK File</value>
+    <value>Split APK faylı</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Awa</value>
