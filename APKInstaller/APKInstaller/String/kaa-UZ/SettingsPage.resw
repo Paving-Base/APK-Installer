@@ -121,10 +121,10 @@
     <value>Baǵdarlama haqqında</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>ADB Path</value>
+    <value>ADB jolı</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>ADB Version</value>
+    <value>ADB versiyası</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>Auto download when package is from URL.</value>
@@ -136,13 +136,13 @@
     <value>Select Backdrop Type for Windows 11</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>Backdrop</value>
+    <value>Xabarnamanıń artqı fonı</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
     <value>Ózgertiw</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>Check Failed</value>
+    <value>Tekseriw ámelge aspadı</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
     <value>Checking For Updates...</value>
@@ -187,7 +187,7 @@
     <value>Qurılma</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
-    <value>Display</value>
+    <value>Kórsetiw</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
     <value>Qollap-quwatlaw</value>
@@ -199,10 +199,10 @@
     <value>EULA</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
-    <value>Feedback</value>
+    <value>Pikir qaldırıń</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
-    <value>Find Update</value>
+    <value>Jańalanıwdı izlew</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
     <value>Information about the frameworks of this app.</value>
@@ -220,7 +220,7 @@
     <value>Go to TestPage</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
-    <value>Go to Update</value>
+    <value>Jańalanıwǵa ótiw</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
     <value>Join Our Chat</value>
@@ -229,7 +229,7 @@
     <value>Last Checked: </value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
-    <value>Learn More</value>
+    <value>Tolıǵıraq úyreniw</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
     <value>Logs</value>
@@ -253,16 +253,16 @@
     <value>OS Platform</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
-    <value>Others</value>
+    <value>Basqa</value>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
-    <value>Pair device through network.</value>
+    <value>Qurılmanı tarmaq arqalı jalǵaw.</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>Pair Device</value>
+    <value>Qurılmanı jalǵaw</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>Dark</value>
+    <value>Qaranǵı</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
     <value>Windows Default</value>
@@ -331,6 +331,6 @@
     <value>Sońǵı versiya</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Window reńlerin sazlaw</value>
+    <value>Windows reńlerin sazlaw</value>
   </data>
 </root>
