@@ -140,10 +140,10 @@
     <value>ביטול</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
-    <value>כן </value>
+    <value>כן</value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
-    <value>לא </value>
+    <value>לא</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>אין אפשרות להתחבר אל WSA</value>
