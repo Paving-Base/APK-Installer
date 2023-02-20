@@ -148,7 +148,7 @@
     <value>Checking For Updates...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
-    <value>Check For Updates</value>
+    <value>Jańalanıwlardı tekseriw</value>
   </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
     <value>Clear cache</value>
@@ -169,7 +169,7 @@
     <value>Sazlawlar</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value>Qurılmanı tarmaq arqalı jalǵaw.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Qurılmanı jalǵaw</value>
@@ -292,7 +292,7 @@
     <value>Are you sure you want to reset the app?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
-    <value>Select Device</value>
+    <value>Qurılmanı tańlaw</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
     <value>Show helpers when no device is connected.</value>
