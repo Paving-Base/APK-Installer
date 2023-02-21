@@ -145,7 +145,7 @@
     <value>Tekseriw ámelge aspadı</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>Checking For Updates...</value>
+    <value>Jańalanıwlar tekserilmekte...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
     <value>Jańalanıwlardı tekseriw</value>
@@ -181,7 +181,7 @@
     <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
-    <value>Content</value>
+    <value>Mazmun</value>
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
     <value>Qurılma</value>
@@ -226,7 +226,7 @@
     <value>Join Our Chat</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Last Checked: </value>
+    <value>Eń sońǵı tekseriw: </value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
     <value>Tolıǵıraq úyreniw</value>
@@ -247,10 +247,10 @@
     <value>For WSA only?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>OS Architecture</value>
+    <value>OS qurılısı</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
-    <value>OS Platform</value>
+    <value>OS platforması</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Basqa</value>
