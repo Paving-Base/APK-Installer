@@ -148,7 +148,7 @@
     <value>Til</value>
   </data>
   <data name="OutPIP.Content" xml:space="preserve">
-    <value>Exit</value>
+    <value>Óshiriw</value>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
     <value>Manage the processes of connected devices</value>
@@ -181,7 +181,7 @@
     <value>Extends Content Into TitleBar</value>
   </data>
   <data name="TitleBarSettings.Header" xml:space="preserve">
-    <value>Title Bar</value>
+    <value>Ayna baslaması</value>
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
     <value>UI Test</value>
