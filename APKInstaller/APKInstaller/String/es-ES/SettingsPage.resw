@@ -145,7 +145,7 @@
     <value>Comprobación fallida</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>Buscando Actualizaciones...</value>
+    <value>Buscando actualizaciones...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
     <value>Comprobar si hay actualizaciones</value>
