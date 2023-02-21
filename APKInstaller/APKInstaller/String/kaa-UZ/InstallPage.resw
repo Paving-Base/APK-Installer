@@ -130,7 +130,7 @@
     <value>APK fayl</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Capabilities: </value>
+    <value>Imkaniyatlar: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
     <value>Baǵdarlama ataması</value>
@@ -196,17 +196,17 @@
     <value>WSA Found</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>Go to Setting</value>
+    <value>Sazlawlarǵa ótiw</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>A newer version is already installed</value>
+    <value>Jańa versiya álleqashan ornatılǵan</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>You already have installed a new version {0} of this app. Are you sure to reinstall version {1}?</value>
+    <value>Bul baǵdarlamanıń jańa versiyası {0} álleqashan ornatılǵan. {1} versiyasın qayta ornatıwdı qáleysiz be?</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>How to connect WSA</value>
+    <value>WSAǵa qurılmanı qalay jalǵaymız</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
     <value>1. Please make sure APK Installer has been updated to the latest version
@@ -302,10 +302,10 @@
 [Learn More]({0})</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
-    <value>Cannot connect Internet</value>
+    <value>Internetge jalǵanıw múmkinshiligi joq</value>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
-    <value>Please connect to the internet before opening the app.</value>
+    <value>Ótinish, baǵdarlamanı ashıwdan aldın internetke jalǵanıń.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
     <value>For proper functioning of the app, try to launch an Android app package.</value>
@@ -344,13 +344,13 @@
     <value>Bólisiw</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
-    <value>Starting ADB Server...</value>
+    <value>ADB server iske túspekte...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
     <value>Start WSA</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
-    <value>Store Links</value>
+    <value>Dúkánǵa silteme</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
     <value>Unzip ADB...</value>
