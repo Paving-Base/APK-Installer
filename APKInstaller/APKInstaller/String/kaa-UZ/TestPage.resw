@@ -121,13 +121,13 @@
     <value>Android Test</value>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
-    <value>Manage the applications of connected devices</value>
+    <value>Qosılǵan qurılmalardaǵı baǵdarlamalardı basqarıw</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>Baǵdarlamalar</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
-    <value>Enter or Exit Compact Overlay</value>
+    <value>Jıynaqlı kórinisti qosıw yamasa óshiriw</value>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
     <value>Jıynaqlı kórinis</value>
