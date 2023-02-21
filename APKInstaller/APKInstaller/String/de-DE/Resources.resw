@@ -142,7 +142,7 @@
     <value>Dieses Paket installieren</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>APK Datei aufteilen</value>
+    <value>Split APK-Datei</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Ja</value>
