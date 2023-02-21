@@ -127,7 +127,7 @@
     <value>Ein Android App Installer. Geschrieben von @wherewhere und @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>APK Installer</value>
+    <value>APK-Installer</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>😞 Ein Fehler ist aufgetreten… </value>
