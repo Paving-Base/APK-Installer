@@ -151,7 +151,7 @@
     <value>Jańalanıwlardı tekseriw</value>
   </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
-    <value>Clear cache</value>
+    <value>Keshdi óshiriw</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
     <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
