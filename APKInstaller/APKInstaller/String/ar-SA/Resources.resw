@@ -130,7 +130,7 @@
     <value>مثبت APK</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
-    <value>حدث خطأ في البرنامج</value>
+    <value>حدث خطأ في البرنامج…</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
     <value>كانت هناك بعض المشاكل في هذه الملفات:</value>
