@@ -230,7 +230,7 @@
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
-    <value>Infos</value>
+    <value>Maǵlıwmat</value>
   </data>
   <data name="Install" xml:space="preserve">
     <value>Ornatıw</value>
@@ -266,7 +266,7 @@
     <value>Iske túsiriw</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
-    <value>WSA iske túsirilmekte...</value>
+    <value>Iske túsirilmekte...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
     <value>Launch when ready</value>
