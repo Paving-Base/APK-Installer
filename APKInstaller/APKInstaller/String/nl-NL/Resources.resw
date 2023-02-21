@@ -127,7 +127,7 @@
     <value>Een Android App Installer. Geschreven door @wherewhere en @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>APK Installer</value>
+    <value>APK Installatieprogramma</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>Er is een fout opgetreden bij het programma…</value>
