@@ -127,7 +127,7 @@
     <value>APK Installer. 제작자: @wherewhere 와 @Tangent-90 </value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>APK 설치되었습니다</value>
+    <value>APK 설치 관리자</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>There was an error with the file upload.</value>
