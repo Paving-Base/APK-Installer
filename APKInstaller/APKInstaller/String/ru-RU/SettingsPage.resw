@@ -130,7 +130,7 @@
     <value>Автоматически загружать пакеты из URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Auto Download Online Packages?</value>
+    <value>Автоматическая загрузка онлайн пакетов?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Выберите тип фона для Windows 11</value>
