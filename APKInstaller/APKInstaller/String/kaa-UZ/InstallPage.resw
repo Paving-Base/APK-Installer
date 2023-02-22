@@ -275,7 +275,7 @@
     <value>Júklenbekte...</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
-    <value>More Info</value>
+    <value>Tolıǵıraq</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
     <value>Android qurılma tabılmadı</value>
@@ -331,7 +331,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
-    <value>A newer version of {0} is already installed.</value>
+    <value>Jańa versiya {0} álle qashan ornatılǵan.</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
