@@ -241,7 +241,7 @@
     <value>Siz ózgertilgen versiyasınan qollanbaqtasız!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Disable it to connect to other devices.</value>
+    <value>Basqa qurılmalarǵa jalǵanıw ushın, bunı óshiriń.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
     <value>For WSA only?</value>
