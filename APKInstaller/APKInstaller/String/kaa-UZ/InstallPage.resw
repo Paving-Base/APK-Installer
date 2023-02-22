@@ -199,10 +199,10 @@
     <value>Sazlawlarǵa ótiw</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>Jańa versiya álleqashan ornatılǵan</value>
+    <value>Jańa versiya álle qashan ornatılǵan</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>Bul baǵdarlamanıń jańa versiyası {0} álleqashan ornatılǵan. {1} versiyasın qayta ornatıwdı qáleysiz be?</value>
+    <value>Bul baǵdarlamanıń jańa versiyası {0} álle qashan ornatılǵan. {1} versiyasın qayta ornatıwdı qáleysiz be?</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
@@ -327,7 +327,7 @@
     <value>Qayta ornatıw</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>{0} baǵdarlaması álleqashan ornatılǵan</value>
+    <value>{0} baǵdarlaması álle qashan ornatılǵan</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
