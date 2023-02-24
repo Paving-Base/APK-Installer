@@ -154,7 +154,7 @@
     <value>Очистить кэш</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
+    <value>Сервер ADB должен быть перезапущен при следующей установке, если вы его прервали.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
     <value>Terminate ADB when Exit Installer?</value>
