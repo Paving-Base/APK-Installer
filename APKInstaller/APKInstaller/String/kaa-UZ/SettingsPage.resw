@@ -127,7 +127,7 @@
     <value>ADB versiyası</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>Auto download when package is from URL.</value>
+    <value>Baǵdarlamalar jıyındısın URLdan avtomatikalıq júklew.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
     <value>Auto Download Online Packages?</value>
@@ -223,7 +223,7 @@
     <value>Jańalanıwǵa ótiw</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
-    <value>Join Our Chat</value>
+    <value>Biziń chatqa qosılıń</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
     <value>Eń sońǵı tekseriw: </value>
