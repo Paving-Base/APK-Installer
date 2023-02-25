@@ -151,7 +151,7 @@
     <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>Cannot open app package</value>
+    <value>Baǵdarlamalar jıyındısın ashıw ámelge aspadı</value>
   </data>
   <data name="Checking" xml:space="preserve">
     <value>Tekserilmekte...</value>
@@ -257,7 +257,7 @@
     <value>Install WSA</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
-    <value>The package is either corrupted or invalid.</value>
+    <value>Baǵdarlamalar jıyındısı zıyan kórgen yamasa nadurıs.</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
     <value>The URL is either Incomplete or invalid.</value>
@@ -314,13 +314,13 @@
     <value>MAQUL</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
-    <value>Online Package</value>
+    <value>Onlayn baǵdarlamalar jıyındısı</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
-    <value>Package Name</value>
+    <value>Baǵdarlamalar jıyındısınıń ataması</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>Package Name: {0}</value>
+    <value>Baǵdarlamalar jıyındısınıń ataması: {0}</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
@@ -377,7 +377,7 @@
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>Waiting for download...</value>
+    <value>Júkleniwdi kútpekte...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
     <value>Waiting for Device...</value>
