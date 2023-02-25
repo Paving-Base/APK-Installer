@@ -172,7 +172,7 @@
     <value>Conectar el dispositivo a través de la red.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
-    <value>Conectar dispositivo</value>
+    <value>Conectar Dispositivos</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
     <value>Contactarme</value>
