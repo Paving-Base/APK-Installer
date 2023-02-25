@@ -130,7 +130,7 @@
     <value>Baǵdarlamalar jıyındısın URLdan avtomatikalıq júklew.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Auto Download Online Packages?</value>
+    <value>Onlayn baǵdarlamalar jıyındısı avtomatikalıq júklensin be?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Select Backdrop Type for Windows 11</value>
@@ -217,7 +217,7 @@
     <value>Tekseriw betine ótiw.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>Go to TestPage</value>
+    <value>Tekseriw betine ótiw</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
     <value>Jańalanıwǵa ótiw</value>
@@ -247,7 +247,7 @@
     <value>For WSA only?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>OS qurılısı</value>
+    <value>OS arxitekturası</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
     <value>OS platforması</value>
@@ -265,7 +265,7 @@
     <value>Qaranǵı</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>Windows Default</value>
+    <value>Aldınnan ornatılǵan</value>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
     <value>Jaqtı</value>
@@ -274,31 +274,31 @@
     <value>Baǵdarlamalar dúkanında baha beriw</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
-    <value>Release notes</value>
+    <value>Ózgerisler jurnalı</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
-    <value>Reset settings of this application.</value>
+    <value>Bul baǵdarlamanıń sazlawların qayta ornatıw.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
-    <value>Reset application</value>
+    <value>Baǵdarlamanı qayta ornatıw</value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
-    <value>Reset</value>
+    <value>Qayta ornatıw</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
     <value>Awa</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
-    <value>Are you sure you want to reset the app?</value>
+    <value>Baǵdarlamanı qayta ornatıwǵa isenimińiz kámil me?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Qurılmanı tańlaw</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
-    <value>Show helpers when no device is connected.</value>
+    <value>Qurılma jalǵanbaǵanda jol-joba kórsetiw.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Whether to Show Helps?</value>
+    <value>Jol-job kórsetilsin be?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
     <value>Display announcements at the top of Settings.</value>
