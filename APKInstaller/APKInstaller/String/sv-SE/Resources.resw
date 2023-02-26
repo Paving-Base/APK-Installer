@@ -139,7 +139,7 @@
     <value>Nej</value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
-    <value>Install this Package</value>
+    <value>Installera paket</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
     <value>Dela upp fil</value>
