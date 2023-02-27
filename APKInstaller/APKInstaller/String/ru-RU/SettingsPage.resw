@@ -157,7 +157,7 @@
     <value>Сервер ADB должен быть перезапущен при следующей установке, если вы его прервали.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Terminate ADB when Exit Installer?</value>
+    <value>Завершить ADB при выходе из программы установки?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
     <value>Выйти из программы установки после завершения установки.</value>
@@ -169,7 +169,7 @@
     <value>Настройки</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value>Подключение устройства через сеть.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Подключить устройство</value>
