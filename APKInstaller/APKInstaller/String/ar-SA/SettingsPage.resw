@@ -154,7 +154,7 @@
     <value>مسح ذاكرة التخزين المؤقت</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>يجب إعادة تشغيل خادم ADB في التثبيت التالي إذا الفعل من (إنهاء) ذلك.</value>
+    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
     <value>Terminate ADB when Exit Installer?</value>
