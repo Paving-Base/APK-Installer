@@ -121,9 +121,9 @@
     <value>Setări</value>
   </data>
   <data name="BackButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Back</value>
+    <value>Înapoi</value>
   </data>
   <data name="RefreshButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Refresh</value>
+    <value>Reîmprospătare</value>
   </data>
 </root>
