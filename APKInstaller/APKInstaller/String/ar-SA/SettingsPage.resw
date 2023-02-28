@@ -157,7 +157,7 @@
     <value>يحتاج خادم ADB إلى إعادة تشغيل في التثبيت التالي إذا قمت بإنهاء ذلك.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Terminate ADB when Exit Installer?</value>
+    <value>إنهاء ADB عند الخروج من التثبيت؟</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
     <value>Exit Installer after installation is complete.</value>
