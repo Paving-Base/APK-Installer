@@ -145,7 +145,7 @@
     <value>Comprobación fallida</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>Buscando Actualizaciones...</value>
+    <value>Buscando actualizaciones...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
     <value>Comprobar si hay actualizaciones</value>
@@ -172,7 +172,7 @@
     <value>Conectar el dispositivo a través de la red.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
-    <value>Conectar dispositivo</value>
+    <value>Conectar Dispositivos</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
     <value>Contactarme</value>

@@ -121,13 +121,13 @@
     <value>Android Test</value>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
-    <value>Manage the applications of connected devices</value>
+    <value>Qosılǵan qurılmalardaǵı baǵdarlamalardı basqarıw</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>Baǵdarlamalar</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
-    <value>Enter or Exit Compact Overlay</value>
+    <value>Jıynaqlı kórinisti qosıw yamasa óshiriw</value>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
     <value>Jıynaqlı kórinis</value>
@@ -148,7 +148,7 @@
     <value>Til</value>
   </data>
   <data name="OutPIP.Content" xml:space="preserve">
-    <value>Exit</value>
+    <value>Óshiriw</value>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
     <value>Manage the processes of connected devices</value>
@@ -175,13 +175,13 @@
     <value>"Jańalaw" túymesi</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Testing</value>
+    <value>Tekseriw</value>
   </data>
   <data name="TitleBarSettings.Description" xml:space="preserve">
     <value>Extends Content Into TitleBar</value>
   </data>
   <data name="TitleBarSettings.Header" xml:space="preserve">
-    <value>Title Bar</value>
+    <value>Ayna baslaması</value>
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
     <value>UI Test</value>

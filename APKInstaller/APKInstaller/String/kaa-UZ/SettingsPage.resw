@@ -121,37 +121,37 @@
     <value>Baǵdarlama haqqında</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>ADB Path</value>
+    <value>ADB jolı</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>ADB Version</value>
+    <value>ADB versiyası</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>Auto download when package is from URL.</value>
+    <value>Baǵdarlamalar jıyındısın URLdan avtomatikalıq júklew.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Auto Download Online Packages?</value>
+    <value>Onlayn baǵdarlamalar jıyındısı avtomatikalıq júklensin be?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Select Backdrop Type for Windows 11</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>Backdrop</value>
+    <value>Xabarnamanıń artqı fonı</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
     <value>Ózgertiw</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>Check Failed</value>
+    <value>Tekseriw ámelge aspadı</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>Checking For Updates...</value>
+    <value>Jańalanıwlar tekserilmekte...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
-    <value>Check For Updates</value>
+    <value>Jańalanıwlardı tekseriw</value>
   </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
-    <value>Clear cache</value>
+    <value>Keshdi óshiriw</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
     <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
@@ -160,7 +160,7 @@
     <value>Terminate ADB when Exit Installer?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Exit Installer after installation is complete.</value>
+    <value>Ornatıw ámelge asqannan keyin ornatıwshıdan shıǵıw.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
     <value>Exit Installer when APP is Ready?</value>
@@ -169,7 +169,7 @@
     <value>Sazlawlar</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value>Qurılmanı tarmaq arqalı jalǵaw.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Qurılmanı jalǵaw</value>
@@ -181,13 +181,13 @@
     <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
-    <value>Content</value>
+    <value>Mazmun</value>
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
     <value>Qurılma</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
-    <value>Display</value>
+    <value>Kórsetiw</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
     <value>Qollap-quwatlaw</value>
@@ -199,10 +199,10 @@
     <value>EULA</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
-    <value>Feedback</value>
+    <value>Pikir qaldırıń</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
-    <value>Find Update</value>
+    <value>Jańalanıwdı izlew</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
     <value>Information about the frameworks of this app.</value>
@@ -214,22 +214,22 @@
     <value>Framework</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>Go to the page of test.</value>
+    <value>Tekseriw betine ótiw.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>Go to TestPage</value>
+    <value>Tekseriw betine ótiw</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
-    <value>Go to Update</value>
+    <value>Jańalanıwǵa ótiw</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
-    <value>Join Our Chat</value>
+    <value>Biziń chatqa qosılıń</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Last Checked: </value>
+    <value>Eń sońǵı tekseriw: </value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
-    <value>Learn More</value>
+    <value>Tolıǵıraq úyreniw</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
     <value>Logs</value>
@@ -238,34 +238,34 @@
     <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>You are using a modified version!</value>
+    <value>Siz ózgertilgen versiyasınan qollanbaqtasız!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Disable it to connect to other devices.</value>
+    <value>Basqa qurılmalarǵa jalǵanıw ushın, bunı óshiriń.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
     <value>For WSA only?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>OS Architecture</value>
+    <value>OS arxitekturası</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
-    <value>OS Platform</value>
+    <value>OS platforması</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
-    <value>Others</value>
+    <value>Basqa</value>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
-    <value>Pair device through network.</value>
+    <value>Qurılmanı tarmaq arqalı jalǵaw.</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>Pair Device</value>
+    <value>Qurılmanı jalǵaw</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>Dark</value>
+    <value>Qaranǵı</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>Windows Default</value>
+    <value>Aldınnan ornatılǵan</value>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
     <value>Jaqtı</value>
@@ -274,31 +274,31 @@
     <value>Baǵdarlamalar dúkanında baha beriw</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
-    <value>Release notes</value>
+    <value>Ózgerisler jurnalı</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
-    <value>Reset settings of this application.</value>
+    <value>Bul baǵdarlamanıń sazlawların qayta ornatıw.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
-    <value>Reset application</value>
+    <value>Baǵdarlamanı qayta ornatıw</value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
-    <value>Reset</value>
+    <value>Qayta ornatıw</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
     <value>Awa</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
-    <value>Are you sure you want to reset the app?</value>
+    <value>Baǵdarlamanı qayta ornatıwǵa isenimińiz kámil me?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
-    <value>Select Device</value>
+    <value>Qurılmanı tańlaw</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
-    <value>Show helpers when no device is connected.</value>
+    <value>Qurılma jalǵanbaǵanda jol-joba kórsetiw.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Whether to Show Helps?</value>
+    <value>Jol-job kórsetilsin be?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
     <value>Display announcements at the top of Settings.</value>
@@ -307,7 +307,7 @@
     <value>Whether to Show Announcements?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
-    <value>It may leave temp files when an unexpected interruption occurs.</value>
+    <value>Kútilmegende toqtatılǵanda waqtınshalıq fayllar qalıwı múmkin.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
     <value>Whether to Show Installation Progress?</value>
@@ -331,6 +331,6 @@
     <value>Sońǵı versiya</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Window reńlerin sazlaw</value>
+    <value>Windows reńlerin sazlaw</value>
   </data>
 </root>

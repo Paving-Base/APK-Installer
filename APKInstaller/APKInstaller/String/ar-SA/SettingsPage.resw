@@ -130,7 +130,7 @@
     <value>تحميل تلقائي عندما تكون الحزمة من عنوان URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Auto Download Online Packages?</value>
+    <value>هل التنزيل التلقائي للحزم عبر الإنترنت؟</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>حدد نوع الخلفية للويندوز 11</value>
@@ -154,10 +154,10 @@
     <value>مسح ذاكرة التخزين المؤقت</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
+    <value>يحتاج خادم ADB إلى إعادة تشغيل في التثبيت التالي إذا قمت بإنهاء ذلك.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Terminate ADB when Exit Installer?</value>
+    <value>إنهاء ADB عند الخروج من التثبيت؟</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
     <value>Exit Installer after installation is complete.</value>

@@ -391,7 +391,7 @@
 Cela peut prendre un long moment. Asseyez-vous et détendez-vous.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome!</value>
+    <value>Bienvenue!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA est en cours d'exécution</value>

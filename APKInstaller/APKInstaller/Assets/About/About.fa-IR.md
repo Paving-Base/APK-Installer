@@ -1,22 +1,22 @@
-#### Welcome to the APK Installer!
+#### به نصب‌کننده‌ی APK خوش آمدید!
 
-##### Declaration
-1. Please comply with the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. This program is open source software, so please make sure the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) to ensure your data security.
-3. If the source of the program is not abnormal, all your data will be used only for the running of the program or stored locally during the running, and the developer will not steal any of your data. Still, please pay attention to the security of the environment.
-4. The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.
+##### اعلامیه
+1. لطفا با [توافق‌نامه کاربر نهایی و خط مشی نصب‌کننده‌ی APK](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md) موافقت کنید.
+2. این برنامه یک نرم‌افزار منبع‌باز است؛ پس لطفاً به جهت اطمینان از حفظ امنیت داده‌های خود، مطمئن شوید که برنامه از [این مخزن گیت‌هاب](https://github.com/Paving-Base/APK-Installer) یا [ فروشگاه مایکروسافت](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) دانلود شده است.
+3. اگر منبع برنامه رفتار غیرعادی نداشته نباشد، تمامی داده‌های شما تنها برای اجرای برنامه یا ذخیره به صورت محلی، و تنها در هنگام اجرای برنامه، استفاده میشود و توسعه‌دهندگان هیچکدام از داده‌های شما را به سرقت نمی‌برند. با این وجود، لطفاً به امنیت محیط اجرا توجه فرمایید.
+4. ترجمه این برنامه توسط انجمن [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") انجام شده است، و تمامی متون الزاماً دیدگاه مولفین را بیان نمیکنند. {هر چندکه من سعی میکنم از خودم چیزی ننویسم و صرفا ترجمه‌ای وفادار به متن اصلی ارائه بدم (:}
 
-##### Translate
-Thanks to [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") translators for their support. If there are any problems with the translation, please feel free to correct us. And please translate seriously. Everything you write will be read all over the world.
+##### ترجمه
+ممنون از حمایت مترجمین [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin"). در صورت وجود اشکال در ترجمه، میتوانید این ترجمه را اصلاح کنید. و لطفا ترجمه‌ای موقرانه انجام دهید. هرچیزی که بنویسید در سر تا سر دنیا خوانده خواهد شد.
 
-##### Contributors
+##### مشارکت‌کنندگان
 - [wherewhere](https://github.com/wherewhere)
 - [Void48](https://github.com/Void48)
 - [EP012014](https://github.com/EP012014)
 - [A Big Salty Fish](https://github.com/bigsaltyfishes)
 - [sam1357](https://github.com/sam1357)
 
-##### Citations and References
+##### نقل‌قول‌ها و منابع
 - [MetroLog](https://github.com/roubachof/MetroLog "MetroLog")
 - [Windows UI](https://github.com/microsoft/microsoft-ui-xaml "Windows UI")
 - [Downloader](https://github.com/bezzad/Downloader "Downloader")

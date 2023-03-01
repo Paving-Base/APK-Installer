@@ -121,7 +121,7 @@
     <value>Tolıq maǵlıwmat</value>
   </data>
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
-    <value>Waiting for Device...</value>
+    <value>Qurılmanı kútpekte...</value>
   </data>
   <data name="Name.Header" xml:space="preserve">
     <value>Ataması</value>
@@ -130,7 +130,7 @@
     <value>Process ID</value>
   </data>
   <data name="ResidentSetSize.Header" xml:space="preserve">
-    <value>Resident Set Size</value>
+    <value>Yad</value>
   </data>
   <data name="State.Header" xml:space="preserve">
     <value>Jaǵday</value>

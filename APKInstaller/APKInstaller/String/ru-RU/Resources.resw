@@ -128,7 +128,7 @@
     <value>Установщик APK. Написано @wherewhere и @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>Установка APK</value>
+    <value>Установщик APK</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>В работе программы произошёл сбой…</value>
@@ -140,7 +140,7 @@
     <value>Нет</value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
-    <value>Install this Package</value>
+    <value>Установить пакет</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
     <value>Файл Split APK</value>

@@ -130,7 +130,7 @@
     <value>Auto download when package is from URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Auto Download Online Packages?</value>
+    <value>Téléchargement automatique des paquets en ligne ?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Sélectionner le type d'arrière-plan pour Windows 11</value>
@@ -154,10 +154,10 @@
     <value>Effacer le cache</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
+    <value>Le serveur ADB doit être redémarré à la prochaine installation si vous le fermez.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Terminate ADB when Exit Installer?</value>
+    <value>Fermer ADB à la fermeture de l'installateur ?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
     <value>Exit Installer after installation is complete.</value>
