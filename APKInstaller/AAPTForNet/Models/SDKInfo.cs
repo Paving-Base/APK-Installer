@@ -10,16 +10,16 @@ namespace AAPTForNet.Models
         // https://source.android.com/setup/start/build-numbers
         private static readonly string[] AndroidCodeNames = {
             "Unknown",
-            "Unnamed",  // API level 1
-            "Unnamed",
+            "Unnamed",          // API level 1
+            "Petit Four",
             "Cupcake",
             "Donut",
-            "Eclair",
-            "Eclair",
-            "Eclair",
+            "Éclair",
+            "Éclair",
+            "Éclair",
             "Froyo",
             "Gingerbread",
-            "Gingerbread", // API level 10
+            "Gingerbread",      // API level 10
             "Honeycomb",
             "Honeycomb",
             "Honeycomb",
@@ -29,7 +29,7 @@ namespace AAPTForNet.Models
             "Jelly Bean",
             "Jelly Bean",
             "KitKat",
-            "KitKat",  // API level 20
+            "KitKat",           // API level 20
             "Lollipop",
             "Lollipop",
             "Marshmallow",
@@ -54,7 +54,7 @@ namespace AAPTForNet.Models
 
         private static readonly string[] AndroidVersionCodes = {
             "Unknown",
-            "1.0",  // API level 1
+            "1.0",      // API level 1
             "1.1",
             "1.5",
             "1.6",
@@ -63,7 +63,7 @@ namespace AAPTForNet.Models
             "2.1",
             "2.2",
             "2.3",
-            "2.3.3", // API level 10
+            "2.3.3",    // API level 10
             "3.0",
             "3.1",
             "3.2",
@@ -73,7 +73,7 @@ namespace AAPTForNet.Models
             "4.2",
             "4.3",
             "4.4",
-            "4.4W", // API level 20
+            "4.4W",     // API level 20
             "5.0",
             "5.1",
             "6.0",
@@ -83,7 +83,7 @@ namespace AAPTForNet.Models
             "8.1",
             "9.0",
             "10",
-            "11",   // API level 30
+            "11",       // API level 30
             "12",
             "12.1",
             "13",
@@ -93,7 +93,7 @@ namespace AAPTForNet.Models
             "17",
             "18",
             "19",
-            "20"    // API level 40
+            "20"        // API level 40
         };
 
         public string APILevel { get; }

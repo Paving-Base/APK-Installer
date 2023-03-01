@@ -20,7 +20,7 @@
     <TargetPlatformMaxVersion>10.0.22621.0</TargetPlatformMaxVersion>
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <UseWinUI>True</UseWinUI>
-    <VersionPrefix>0.1.21</VersionPrefix>
+    <VersionPrefix>0.1.22</VersionPrefix>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -33,7 +33,6 @@
     <GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
     <GenerateTestArtifacts>False</GenerateTestArtifacts>
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
   <ItemGroup>
@@ -55,7 +54,7 @@
     <PackageReference Include="MetroLog.Net6" Version="2.1.0" />
     <PackageReference Include="Microsoft.Windows.CsWin32" Version="0.2.188-beta" PrivateAssets="all" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.755" />
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.2.230118.102" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.2.230217.4" />
     <PackageReference Include="SharpCompress" Version="0.32.2" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
@@ -83,8 +82,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Controls\SettingExpander\SettingExpander.ThemeResources.xaml" />
-    <None Remove="Controls\Setting\Setting.ThemeResources.xaml" />
     <None Remove="favicon.ico" />
   </ItemGroup>
 
@@ -107,18 +104,6 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\AdvancedSharpAdbClient\AdvancedSharpAdbClient\AdvancedSharpAdbClient.csproj" />
     <ProjectReference Include="..\AAPTForNet\AAPTForNet.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Update="Controls\Setting\Setting.ThemeResources.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Update="Controls\SettingExpander\SettingExpander.ThemeResources.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
 
 </Project>
