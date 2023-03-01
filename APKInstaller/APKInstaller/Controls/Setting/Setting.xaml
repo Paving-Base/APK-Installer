@@ -102,7 +102,7 @@
                                                 <Setter Property="TextWrapping" Value="Wrap" />
                                             </Style.Setters>
                                         </Style>
-                                        <Style BasedOn="{StaticResource DefaultHyperlinkButtonStyle}" TargetType="HyperlinkButton">
+                                        <Style BasedOn="{StaticResource TextButtonStyle}" TargetType="HyperlinkButton">
                                             <Style.Setters>
                                                 <Setter Property="FontSize" Value="{ThemeResource SettingCardDescriptionFontSize}" />
                                                 <Setter Property="Padding" Value="0,0,0,-1" />

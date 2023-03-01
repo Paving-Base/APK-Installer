@@ -419,13 +419,14 @@
                             </StackPanel>
                         </controls:SettingExpander.Description>
                         <controls:SettingExpander.ActionContent>
-                            <StackPanel
+                            <controls:StackPanel
                                 VerticalAlignment="Center"
                                 Orientation="Horizontal"
                                 Spacing="18">
                                 <ProgressRing
                                     Width="24"
                                     Height="24"
+                                    IsActive="{Binding CheckingUpdate}"
                                     Visibility="{Binding CheckingUpdate, Converter={StaticResource BoolToVisibilityConverter}}" />
                                 <TextBlock
                                     x:Uid="/SettingsPage/CheckingUpdates"
@@ -440,7 +441,7 @@
                                     Click="Button_Click"
                                     Tag="CheckUpdate"
                                     Visibility="{Binding CheckingUpdate, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='true'}" />
-                            </StackPanel>
+                            </controls:StackPanel>
                         </controls:SettingExpander.ActionContent>
                         <Grid Style="{StaticResource SettingExpanderContentGridStyle}">
                             <cwuc:MarkdownTextBlock

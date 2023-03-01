@@ -25,10 +25,7 @@ namespace APKInstaller
             InitializeComponent();
             UnhandledException += Application_UnhandledException;
             AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
-            if (ApiInformation.IsEnumNamedValuePresent("Microsoft.UI.Xaml.FocusVisualKind", "Reveal"))
-            {
-                FocusVisualKind = AnalyticsInfo.VersionInfo.DeviceFamily == "Windows.Xbox" ? FocusVisualKind.Reveal : FocusVisualKind.HighVisibility;
-            }
+            FocusVisualKind = AnalyticsInfo.VersionInfo.DeviceFamily == "Windows.Xbox" ? FocusVisualKind.Reveal : FocusVisualKind.HighVisibility;
         }
 
         /// <summary>

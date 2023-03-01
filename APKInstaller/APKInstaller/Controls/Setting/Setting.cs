@@ -21,6 +21,7 @@ namespace APKInstaller.Controls
         internal const string PressedState = "Pressed";
         internal const string DisabledState = "Disabled";
 
+        internal const string ContentPresenter = "PART_ContentPresenter";
         internal const string HeaderIconPresenterHolder = "PART_HeaderIconPresenterHolder";
 
         /// <summary>
@@ -40,8 +41,9 @@ namespace APKInstaller.Controls
             OnHeaderChanged();
             OnHeaderIconChanged();
             OnDescriptionChanged();
+            OnContentChanged();
             OnIsClickEnabledChanged();
-            VisualStateManager.GoToState(this, IsEnabled ? NormalState : DisabledState, true);
+            _ = VisualStateManager.GoToState(this, IsEnabled ? NormalState : DisabledState, true);
             RegisterAutomation();
             IsEnabledChanged += OnIsEnabledChanged;
         }
@@ -67,6 +69,8 @@ namespace APKInstaller.Controls
 
             PointerEntered += Control_PointerEntered;
             PointerExited += Control_PointerExited;
+            PointerCaptureLost += Control_PointerCaptureLost;
+            PointerCanceled += Control_PointerCanceled;
             PreviewKeyDown += Control_PreviewKeyDown;
             PreviewKeyUp += Control_PreviewKeyUp;
         }
@@ -75,6 +79,8 @@ namespace APKInstaller.Controls
         {
             PointerEntered -= Control_PointerEntered;
             PointerExited -= Control_PointerExited;
+            PointerCaptureLost -= Control_PointerCaptureLost;
+            PointerCanceled -= Control_PointerCanceled;
             PreviewKeyDown -= Control_PreviewKeyDown;
             PreviewKeyUp -= Control_PreviewKeyUp;
         }
@@ -83,7 +89,7 @@ namespace APKInstaller.Controls
         {
             if (e.Key == Windows.System.VirtualKey.Enter || e.Key == Windows.System.VirtualKey.Space || e.Key == Windows.System.VirtualKey.GamepadA)
             {
-                VisualStateManager.GoToState(this, NormalState, true);
+                _ = VisualStateManager.GoToState(this, NormalState, true);
             }
         }
 
@@ -91,37 +97,56 @@ namespace APKInstaller.Controls
         {
             if (e.Key == Windows.System.VirtualKey.Enter || e.Key == Windows.System.VirtualKey.Space || e.Key == Windows.System.VirtualKey.GamepadA)
             {
-                VisualStateManager.GoToState(this, PressedState, true);
+                _ = VisualStateManager.GoToState(this, PressedState, true);
             }
-        }
-
-        public void Control_PointerExited(object sender, PointerRoutedEventArgs e)
-        {
-            base.OnPointerExited(e);
-            VisualStateManager.GoToState(this, NormalState, true);
         }
 
         public void Control_PointerEntered(object sender, PointerRoutedEventArgs e)
         {
             base.OnPointerEntered(e);
-            VisualStateManager.GoToState(this, PointerOverState, true);
+            _ = VisualStateManager.GoToState(this, PointerOverState, true);
         }
+
+        public void Control_PointerExited(object sender, PointerRoutedEventArgs e)
+        {
+            base.OnPointerExited(e);
+            _ = VisualStateManager.GoToState(this, NormalState, true);
+        }
+
+        private void Control_PointerCaptureLost(object sender, PointerRoutedEventArgs e)
+        {
+            base.OnPointerCaptureLost(e);
+            _ = VisualStateManager.GoToState(this, NormalState, true);
+        }
+        private void Control_PointerCanceled(object sender, PointerRoutedEventArgs e)
+        {
+            base.OnPointerCanceled(e);
+            _ = VisualStateManager.GoToState(this, NormalState, true);
+        }
+
         protected override void OnPointerPressed(PointerRoutedEventArgs e)
         {
             //  e.Handled = true;
             if (IsClickEnabled)
             {
                 base.OnPointerPressed(e);
-                VisualStateManager.GoToState(this, PressedState, true);
+                _ = VisualStateManager.GoToState(this, PressedState, true);
             }
         }
+
         protected override void OnPointerReleased(PointerRoutedEventArgs e)
         {
             if (IsClickEnabled)
             {
                 base.OnPointerReleased(e);
-                VisualStateManager.GoToState(this, NormalState, true);
+                _ = VisualStateManager.GoToState(this, NormalState, true);
             }
+        }
+
+        protected override void OnContentChanged(object oldContent, object newContent)
+        {
+            base.OnContentChanged(oldContent, newContent);
+            OnContentChanged();
         }
 
         /// <summary>
@@ -148,7 +173,7 @@ namespace APKInstaller.Controls
 
         private void OnIsEnabledChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
-            VisualStateManager.GoToState(this, IsEnabled ? NormalState : DisabledState, true);
+            _ = VisualStateManager.GoToState(this, IsEnabled ? NormalState : DisabledState, true);
         }
 
 
@@ -162,6 +187,16 @@ namespace APKInstaller.Controls
             if (GetTemplateChild(HeaderIconPresenterHolder) is FrameworkElement headerIconPresenter)
             {
                 headerIconPresenter.Visibility = Icon != null
+                    ? Visibility.Visible
+                    : Visibility.Collapsed;
+            }
+        }
+
+        public void OnContentChanged()
+        {
+            if (GetTemplateChild(ContentPresenter) is FrameworkElement contentPresenter)
+            {
+                contentPresenter.Visibility = Content != null
                     ? Visibility.Visible
                     : Visibility.Collapsed;
             }
