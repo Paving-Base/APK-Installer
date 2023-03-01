@@ -8,7 +8,7 @@ namespace APKInstaller.ViewModels.AboutPages
 {
     public class InfosViewModel : INotifyPropertyChanged
     {
-        private InfosPage _page;
+        private readonly InfosPage _page;
         private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("InfosPage");
 
         public string TitleFormat => _loader.GetString("TitleFormat");

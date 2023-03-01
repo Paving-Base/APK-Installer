@@ -3,7 +3,6 @@ using APKInstaller.Helpers.Exceptions;
 using Microsoft.UI.Xaml;
 using System;
 using Windows.ApplicationModel;
-using Windows.Foundation.Metadata;
 using Windows.System.Profile;
 
 // To learn more about WinUI, the WinUI project structure,

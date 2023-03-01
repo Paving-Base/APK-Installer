@@ -133,7 +133,7 @@ namespace APKInstaller.Controls
                 nameof(ItemsHeader),
                 typeof(UIElement),
                 typeof(SettingExpander),
-                new PropertyMetadata( null));
+                new PropertyMetadata(null));
 
         /// <summary>
         /// Gets or sets the ItemsFooter.

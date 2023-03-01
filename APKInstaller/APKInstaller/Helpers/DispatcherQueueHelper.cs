@@ -15,9 +15,9 @@ namespace APKInstaller.Helpers
         }
 
         [DllImport("CoreMessaging.dll")]
-        private static unsafe extern int CreateDispatcherQueueController(DispatcherQueueOptions options, IntPtr* instance);
+        private static extern unsafe int CreateDispatcherQueueController(DispatcherQueueOptions options, IntPtr* instance);
 
-        IntPtr m_dispatcherQueueController = IntPtr.Zero;
+        private IntPtr m_dispatcherQueueController = IntPtr.Zero;
         public void EnsureWindowsSystemDispatcherQueueController()
         {
             if (DispatcherQueue.GetForCurrentThread() != null)

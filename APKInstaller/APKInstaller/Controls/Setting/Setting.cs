@@ -87,7 +87,7 @@ namespace APKInstaller.Controls
 
         private void Control_PreviewKeyUp(object sender, KeyRoutedEventArgs e)
         {
-            if (e.Key == Windows.System.VirtualKey.Enter || e.Key == Windows.System.VirtualKey.Space || e.Key == Windows.System.VirtualKey.GamepadA)
+            if (e.Key is Windows.System.VirtualKey.Enter or Windows.System.VirtualKey.Space or Windows.System.VirtualKey.GamepadA)
             {
                 _ = VisualStateManager.GoToState(this, NormalState, true);
             }
@@ -95,7 +95,7 @@ namespace APKInstaller.Controls
 
         private void Control_PreviewKeyDown(object sender, KeyRoutedEventArgs e)
         {
-            if (e.Key == Windows.System.VirtualKey.Enter || e.Key == Windows.System.VirtualKey.Space || e.Key == Windows.System.VirtualKey.GamepadA)
+            if (e.Key is Windows.System.VirtualKey.Enter or Windows.System.VirtualKey.Space or Windows.System.VirtualKey.GamepadA)
             {
                 _ = VisualStateManager.GoToState(this, PressedState, true);
             }
