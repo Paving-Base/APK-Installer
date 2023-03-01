@@ -127,7 +127,7 @@
     <value>ADB está faltando</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>Arquivo APK</value>
+    <value>APK File</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>
