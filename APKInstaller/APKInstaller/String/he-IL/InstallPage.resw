@@ -174,6 +174,9 @@
   <data name="ConfirmationText.Text" xml:space="preserve">
     <value>האם אתה בטוח לבטל את ההתקנה?</value>
   </data>
+  <data name="ConnectPairedDevices" xml:space="preserve">
+    <value>Connecting Paired Devices...</value>
+  </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>עותק</value>
   </data>
