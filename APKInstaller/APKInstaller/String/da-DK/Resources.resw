@@ -139,7 +139,7 @@
     <value>Ingen</value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
-    <value>Install this Package</value>
+    <value>Installerede Pakker</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
     <value>Opdel APK fil</value>
