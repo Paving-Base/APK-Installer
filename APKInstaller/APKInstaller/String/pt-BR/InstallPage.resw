@@ -173,7 +173,7 @@ Capacidades:</value>
     <value>Deseja cancelar a cura?</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Connecting Paired Devices...</value>
+    <value>Conectando dispositivos emparelhados...</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Copiar</value>
