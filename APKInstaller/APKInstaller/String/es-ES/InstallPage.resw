@@ -172,7 +172,7 @@
     <value>¿Estás seguro de cancelar la instalación?</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Connecting Paired Devices...</value>
+    <value>Conectando dispositivos emparejados...</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Copiar</value>
