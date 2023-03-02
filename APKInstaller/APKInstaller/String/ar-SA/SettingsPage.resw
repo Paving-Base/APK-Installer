@@ -163,13 +163,13 @@
     <value>Exit Installer after installation is complete.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Exit Installer when APP is Ready?</value>
+    <value>Arabic</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>التهيئة</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value>FRITZ!Box 7520 DM.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>توصيل الجهاز</value>
@@ -178,7 +178,7 @@
     <value>الاتصال بي</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
+    <value>تابعني على التطبيقات الاجتماعية لأحدث التطورات. إذا وجدت أي خطأ، يرجى إبلاغي بذلك في الرسائل الخاصة. سأحاول أفضل ما في وسعي لحل المشكلة. إذا كان لديك حساب تيليجرام، مرحبا بك في الدردشة في مجموعة القاعدة المطلية 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>المحتوى</value>
@@ -259,7 +259,7 @@
     <value>Pair device through network.</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>Pair Device</value>
+    <value>جهاز الاقتران</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>مظلم</value>
