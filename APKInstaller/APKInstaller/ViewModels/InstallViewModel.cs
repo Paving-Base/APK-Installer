@@ -986,20 +986,26 @@ namespace APKInstaller.ViewModels
                 WaitProgressText = _loader.GetString("Loading");
                 if (!await CheckDevice())
                 {
+                    WaitProgressText = _loader.GetString("ConnectPairedDevices");
                     if (NetworkHelper.Instance.ConnectionInformation.IsInternetAvailable)
                     {
-                        await AddressHelper.ConnectHyperV();
+                        await AddressHelper.ConnectPairedDevice();
                         if (!await CheckDevice())
                         {
-                            _ = new AdbClient().ConnectAsync(new DnsEndPoint("127.0.0.1", 58526));
+                            await AddressHelper.ConnectHyperV();
+                            if (!await CheckDevice())
+                            {
+                                _ = new AdbClient().ConnectAsync(new DnsEndPoint("127.0.0.1", 58526));
+                            }
                         }
                     }
                     else
                     {
                         _ = new AdbClient().ConnectAsync(new DnsEndPoint("127.0.0.1", 58526));
                     }
+                    WaitProgressText = _loader.GetString("Loading");
                 }
-                ADBHelper.Monitor.DeviceChanged += OnDeviceChanged;
+                MonitorHelper.Monitor.DeviceChanged += OnDeviceChanged;
             }
         }
 
@@ -1228,13 +1234,24 @@ namespace APKInstaller.ViewModels
                 {
                     if (ApkInfo == null)
                     {
-                        CheckAPK();
+                        await InitilizeUI();
                     }
-                    if (ShowDialogs)
+                    else
                     {
-                        if (await ShowDeviceDialog())
+                        ResetUI();
+                        ActionButtonEnable = false;
+                        ActionButtonText = _loader.GetString("Install");
+                        InfoMessage = _loader.GetString("WaitingDevice");
+                        DeviceSelectButtonText = _loader.GetString("Devices");
+                        AppName = string.Format(_loader.GetString("WaitingForInstallFormat"), AppLocaleName);
+                        ActionVisibility = DeviceSelectVisibility = MessagesToUserVisibility = Visibility.Visible;
+
+                        if (ShowDialogs)
                         {
-                            goto checkdevice;
+                            if (await ShowDeviceDialog())
+                            {
+                                goto checkdevice;
+                            }
                         }
                     }
                 }
@@ -1244,49 +1261,66 @@ namespace APKInstaller.ViewModels
         private void CheckAPK()
         {
             ResetUI();
-            AdbClient client = new();
-            VersionInfo info = null;
-            if (ApkInfo != null && !ApkInfo.IsEmpty)
+            if (_device != null)
             {
-                info = client.GetPackageVersion(_device, ApkInfo?.PackageName);
-            }
-            if (info == null)
-            {
-                ActionButtonText = _loader.GetString("Install");
-                AppName = string.Format(_loader.GetString("InstallFormat"), AppLocaleName);
-                ActionVisibility = Visibility.Visible;
-                LaunchWhenReadyVisibility = string.IsNullOrWhiteSpace(ApkInfo?.LaunchableActivity) ? Visibility.Collapsed : Visibility.Visible;
-            }
-            else if (info.VersionCode < int.Parse(ApkInfo?.VersionCode))
-            {
-                ActionButtonText = _loader.GetString("Update");
-                AppName = string.Format(_loader.GetString("UpdateFormat"), AppLocaleName);
-                ActionVisibility = Visibility.Visible;
-                LaunchWhenReadyVisibility = string.IsNullOrWhiteSpace(ApkInfo?.LaunchableActivity) ? Visibility.Collapsed : Visibility.Visible;
-            }
-            else
-            {
-                ActionButtonText = _loader.GetString("Reinstall");
-                SecondaryActionButtonText = _loader.GetString("Launch");
-                AppName = string.Format(_loader.GetString("ReinstallFormat"), AppLocaleName);
-                TextOutput = string.Format(_loader.GetString("ReinstallOutput"), AppLocaleName);
-                ActionVisibility = TextOutputVisibility = Visibility.Visible;
-                SecondaryActionVisibility = string.IsNullOrWhiteSpace(ApkInfo?.LaunchableActivity) ? Visibility.Collapsed : Visibility.Visible;
-            }
-            SDKInfo sdk = SDKInfo.GetInfo(client.GetProperty(_device, "ro.build.version.sdk"));
-            if (sdk < ApkInfo.MinSDK)
-            {
-                ActionButtonEnable = false;
-                ContentDialog dialog = new()
+                try
                 {
-                    XamlRoot = _page?.XamlRoot,
-                    Content = string.Format(_loader.GetString("IncompatibleAppInfo"), ApkInfo?.MinSDK.ToString(), sdk.ToString()),
-                    Title = _loader.GetString("IncompatibleApp"),
-                    CloseButtonText = _loader.GetString("IKnow"),
-                    DefaultButton = ContentDialogButton.Close
-                };
-                _ = dialog.ShowAsync();
+                    AdbClient client = new();
+                    VersionInfo info = null;
+                    if (ApkInfo != null && !ApkInfo.IsEmpty)
+                    {
+                        info = client.GetPackageVersion(_device, ApkInfo?.PackageName);
+                    }
+                    if (info == null)
+                    {
+                        ActionButtonText = _loader.GetString("Install");
+                        AppName = string.Format(_loader.GetString("InstallFormat"), AppLocaleName);
+                        ActionVisibility = Visibility.Visible;
+                        LaunchWhenReadyVisibility = string.IsNullOrWhiteSpace(ApkInfo?.LaunchableActivity) ? Visibility.Collapsed : Visibility.Visible;
+                    }
+                    else if (info.VersionCode < int.Parse(ApkInfo?.VersionCode))
+                    {
+                        ActionButtonText = _loader.GetString("Update");
+                        AppName = string.Format(_loader.GetString("UpdateFormat"), AppLocaleName);
+                        ActionVisibility = Visibility.Visible;
+                        LaunchWhenReadyVisibility = string.IsNullOrWhiteSpace(ApkInfo?.LaunchableActivity) ? Visibility.Collapsed : Visibility.Visible;
+                    }
+                    else
+                    {
+                        ActionButtonText = _loader.GetString("Reinstall");
+                        SecondaryActionButtonText = _loader.GetString("Launch");
+                        AppName = string.Format(_loader.GetString("ReinstallFormat"), AppLocaleName);
+                        TextOutput = string.Format(_loader.GetString("ReinstallOutput"), AppLocaleName);
+                        ActionVisibility = TextOutputVisibility = Visibility.Visible;
+                        SecondaryActionVisibility = string.IsNullOrWhiteSpace(ApkInfo?.LaunchableActivity) ? Visibility.Collapsed : Visibility.Visible;
+                    }
+                    SDKInfo sdk = SDKInfo.GetInfo(client.GetProperty(_device, "ro.build.version.sdk"));
+                    if (sdk < ApkInfo.MinSDK)
+                    {
+                        ActionButtonEnable = false;
+                        ContentDialog dialog = new()
+                        {
+                            XamlRoot = _page?.XamlRoot,
+                            Content = string.Format(_loader.GetString("IncompatibleAppInfo"), ApkInfo?.MinSDK.ToString(), sdk.ToString()),
+                            Title = _loader.GetString("IncompatibleApp"),
+                            CloseButtonText = _loader.GetString("IKnow"),
+                            DefaultButton = ContentDialogButton.Close
+                        };
+                        _ = dialog.ShowAsync();
+                    }
+                    return;
+                }
+                catch (Exception ex)
+                {
+                    SettingsHelper.LogManager.GetLogger(nameof(InstallViewModel)).Error(ex.ExceptionToMessage(), ex);
+                }
             }
+            ActionButtonEnable = false;
+            ActionButtonText = _loader.GetString("Install");
+            InfoMessage = _loader.GetString("WaitingDevice");
+            DeviceSelectButtonText = _loader.GetString("Devices");
+            AppName = string.Format(_loader.GetString("WaitingForInstallFormat"), AppLocaleName);
+            ActionVisibility = DeviceSelectVisibility = MessagesToUserVisibility = Visibility.Visible;
         }
 
         private void CheckOnlinePackage()
@@ -1518,7 +1552,7 @@ namespace APKInstaller.ViewModels
                     await client.ExecuteRemoteCommandAsync("getprop ro.boot.hardware", device, receiver);
                     if (receiver.ToString().Contains("windows"))
                     {
-                        _device = device ?? _device;
+                        _device = device;
                         return true;
                     }
                 }
@@ -1527,11 +1561,13 @@ namespace APKInstaller.ViewModels
                     DeviceData data = SettingsHelper.Get<DeviceData>(SettingsHelper.DefaultDevice);
                     if (data != null && data.Name == device.Name && data.Model == device.Model && data.Product == device.Product)
                     {
-                        _device = data;
+                        SettingsHelper.Set(SettingsHelper.DefaultDevice, device);
+                        _device = device;
                         return true;
                     }
                 }
             }
+            _device = null;
             return false;
         }
 

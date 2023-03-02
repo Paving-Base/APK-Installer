@@ -17,16 +17,6 @@ using WinRT.Interop;
 
 namespace APKInstaller.Helpers
 {
-    public static class ADBHelper
-    {
-        public static DeviceMonitor Monitor = new(new AdbSocket(new IPEndPoint(IPAddress.Loopback, AdbClient.AdbServerPort)));
-
-        static ADBHelper()
-        {
-            Monitor.Start();
-        }
-    }
-
     public static partial class UIHelper
     {
         public static bool HasTitleBar = !AppWindowTitleBar.IsCustomizationSupported();

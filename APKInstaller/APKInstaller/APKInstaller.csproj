@@ -56,6 +56,7 @@
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.755" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.2.230217.4" />
     <PackageReference Include="SharpCompress" Version="0.32.2" />
+    <PackageReference Include="Zeroconf" Version="3.6.11" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
 

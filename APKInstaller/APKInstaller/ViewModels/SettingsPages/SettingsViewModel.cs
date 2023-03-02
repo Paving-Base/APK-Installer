@@ -520,7 +520,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                 try
                 {
                     _ = await Task.Run(() => ADBServer.StartServer(ADBPath, restartServerIfNewer: false));
-                    ADBHelper.Monitor.DeviceChanged += OnDeviceChanged;
+                    MonitorHelper.Monitor.DeviceChanged += OnDeviceChanged;
                 }
                 catch (Exception ex)
                 {
@@ -573,7 +573,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                 try
                 {
                     _ = await Task.Run(() => ADBServer.StartServer(ADBPath, restartServerIfNewer: false));
-                    ADBHelper.Monitor.DeviceChanged += OnDeviceChanged;
+                    MonitorHelper.Monitor.DeviceChanged += OnDeviceChanged;
                 }
                 catch (Exception ex)
                 {

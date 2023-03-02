@@ -1,7 +1,9 @@
 ﻿using AdvancedSharpAdbClient;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using Zeroconf;
 
 namespace APKInstaller.Helpers
 {
@@ -42,6 +44,19 @@ namespace APKInstaller.Helpers
                 results.Add(await AdbClient.ConnectAsync(address));
             }
             return results;
+        }
+
+        public static async Task ConnectPairedDevice()
+        {
+            IReadOnlyList<IZeroconfHost> hosts = await ZeroconfResolver.ResolveAsync("_adb-tls-connect._tcp.local.");
+            if (hosts.Any())
+            {
+                AdbClient AdbClient = new();
+                foreach (IZeroconfHost host in hosts)
+                {
+                    await AdbClient.ConnectAsync(host.IPAddress, host.Services.FirstOrDefault().Value.Port);
+                }
+            }
         }
     }
 }

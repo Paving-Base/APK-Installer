@@ -27,13 +27,13 @@ namespace APKInstaller.Pages.ToolsPages
             Provider = new ProcessesViewModel(this);
             DataContext = Provider;
             Provider.TitleBar = TitleBar;
-            ADBHelper.Monitor.DeviceChanged += OnDeviceChanged;
+            MonitorHelper.Monitor.DeviceChanged += OnDeviceChanged;
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             base.OnNavigatedFrom(e);
-            ADBHelper.Monitor.DeviceChanged -= OnDeviceChanged;
+            MonitorHelper.Monitor.DeviceChanged -= OnDeviceChanged;
         }
 
         private void OnDeviceChanged(object sender, DeviceDataEventArgs e) => _ = DispatcherQueue.EnqueueAsync(Provider.GetDevices);

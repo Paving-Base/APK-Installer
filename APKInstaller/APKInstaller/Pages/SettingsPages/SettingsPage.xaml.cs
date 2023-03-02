@@ -41,7 +41,7 @@ namespace APKInstaller.Pages.SettingsPages
             }
             if (AdbServer.Instance.GetStatus().IsRunning)
             {
-                ADBHelper.Monitor.DeviceChanged += Provider.OnDeviceChanged;
+                MonitorHelper.Monitor.DeviceChanged += Provider.OnDeviceChanged;
                 Provider.DeviceList = new AdbClient().GetDevices().Where(x => x.State == DeviceState.Online);
             }
             DataContext = Provider;
@@ -55,7 +55,7 @@ namespace APKInstaller.Pages.SettingsPages
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             base.OnNavigatedFrom(e);
-            if (AdbServer.Instance.GetStatus().IsRunning) { ADBHelper.Monitor.DeviceChanged -= Provider.OnDeviceChanged; }
+            if (AdbServer.Instance.GetStatus().IsRunning) { MonitorHelper.Monitor.DeviceChanged -= Provider.OnDeviceChanged; }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
