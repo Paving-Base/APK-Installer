@@ -172,6 +172,9 @@ Capacidades:</value>
   <data name="ConfirmationText.Text" xml:space="preserve">
     <value>Deseja cancelar a cura?</value>
   </data>
+  <data name="ConnectPairedDevices" xml:space="preserve">
+    <value>Connecting Paired Devices...</value>
+  </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Copiar</value>
   </data>
