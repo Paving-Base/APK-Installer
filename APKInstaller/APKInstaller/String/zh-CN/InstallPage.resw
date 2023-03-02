@@ -171,6 +171,9 @@
   <data name="ConfirmationText.Text" xml:space="preserve">
     <value>确定要取消安装吗？</value>
   </data>
+  <data name="ConnectPairedDevices" xml:space="preserve">
+    <value>Connecting Paired Devices...</value>
+  </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>复制</value>
   </data>
