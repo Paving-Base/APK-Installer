@@ -171,6 +171,9 @@
   <data name="ConfirmationText.Text" xml:space="preserve">
     <value>Sunteți sigur că doriți să anulați instalarea?</value>
   </data>
+  <data name="ConnectPairedDevices" xml:space="preserve">
+    <value>Connecting Paired Devices...</value>
+  </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Copiere</value>
   </data>
