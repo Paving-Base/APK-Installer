@@ -18,6 +18,7 @@ Terima kasih kepada penerjemah [Crowdin](https://crowdin.com/project/APKInstalle
 
 ##### Kutipan dan Referensi
 - [MetroLog](https://github.com/roubachof/MetroLog "MetroLog")
+- [Zeroconf](https://github.com/novotnyllc/Zeroconf "Zeroconf")
 - [Windows UI](https://github.com/microsoft/microsoft-ui-xaml "Windows UI")
 - [Downloader](https://github.com/bezzad/Downloader "Downloader")
 - [AAPTForNet](https://github.com/canheo136/QuickLook.Plugin.ApkViewer "AAPTForNet")
