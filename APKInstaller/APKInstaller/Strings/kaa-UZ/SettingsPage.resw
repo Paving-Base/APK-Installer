@@ -291,6 +291,12 @@
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
     <value>Baǵdarlamanı qayta ornatıwǵa isenimińiz kámil me?</value>
   </data>
+  <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
+    <value>Scan and auto connect paired devices.</value>
+  </data>
+  <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
+    <value>Scan Paired Devices?</value>
+  </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Qurılmanı tańlaw</value>
   </data>
