@@ -18,6 +18,7 @@ Thanks to [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") translat
 
 ##### Citations and References
 - [MetroLog](https://github.com/roubachof/MetroLog "MetroLog")
+- [Zeroconf](https://github.com/novotnyllc/Zeroconf "Zeroconf")
 - [Windows UI](https://github.com/microsoft/microsoft-ui-xaml "Windows UI")
 - [Downloader](https://github.com/bezzad/Downloader "Downloader")
 - [AAPTForNet](https://github.com/canheo136/QuickLook.Plugin.ApkViewer "AAPTForNet")
