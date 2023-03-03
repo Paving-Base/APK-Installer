@@ -292,10 +292,10 @@
     <value>¿Estás seguro de que quieres reiniciar la aplicación?</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value>Scan and auto connect paired devices.</value>
+    <value>Escanear y conectar automáticamente dispositivos emparejados.</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Scan Paired Devices?</value>
+    <value>¿Escanear dispositivos emparejados?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Seleccionar dispositivo</value>
