@@ -7,25 +7,38 @@ namespace APKInstaller.Helpers
 {
     public static class MonitorHelper
     {
-        private static DeviceMonitor monitor;
+        private static DeviceMonitor _monitor;
         public static DeviceMonitor Monitor
         {
             get
             {
-                if (monitor == null && AdbServer.Instance.GetStatus().IsRunning)
+                if (_monitor == null && AdbServer.Instance.GetStatus().IsRunning)
                 {
-                    monitor = new(new AdbSocket(new IPEndPoint(IPAddress.Loopback, AdbClient.AdbServerPort)));
-                    monitor.Start();
+                    _monitor = new(new AdbSocket(new IPEndPoint(IPAddress.Loopback, AdbClient.AdbServerPort)));
+                    _monitor.Start();
                 }
-                return monitor;
+                return _monitor;
             }
         }
 
-        public static ZeroconfResolver.ResolverListener ADBConnectListener { get; } = ZeroconfResolver.CreateListener("_adb-tls-connect._tcp.local.");
+        public static ZeroconfResolver.ResolverListener ConnectListener { get; private set; }
 
-        static MonitorHelper()
+        public static void InitializeConnectListener()
         {
-            ADBConnectListener.ServiceFound += ADBConnectListener_ServiceFound;
+            if (ConnectListener == null)
+            {
+                ConnectListener = ZeroconfResolver.CreateListener("_adb-tls-connect._tcp.local.");
+                ConnectListener.ServiceFound += ADBConnectListener_ServiceFound;
+            }
+        }
+
+        public static void DisposeConnectListener()
+        {
+            if (ConnectListener != null)
+            {
+                ConnectListener.ServiceFound -= ADBConnectListener_ServiceFound;
+                ConnectListener.Dispose();
+            }
         }
 
         private static async void ADBConnectListener_ServiceFound(object sender, IZeroconfHost e)

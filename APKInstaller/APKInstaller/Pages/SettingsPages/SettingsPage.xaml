@@ -187,6 +187,9 @@
                         IsOpen="{Binding ConnectInfoIsOpen}"
                         Loaded="InfoBar_Loaded"
                         Severity="{Binding ConnectInfoSeverity}" />
+                    <controls:Setting x:Uid="/SettingsPage/ScanPairedDeviceSettings" Icon="&#xE70C;">
+                        <ToggleSwitch IsOn="{Binding ScanPairedDevice, Mode=TwoWay}" Style="{StaticResource ToggleSwitchSettingStyle}" />
+                    </controls:Setting>
                 </controls:SettingsGroup>
                 <controls:SettingsGroup x:Uid="/SettingsPage/DisplaySettingsHeader">
                     <controls:Setting x:Uid="/SettingsPage/ShowDialogsSettings" Icon="&#xE82F;">

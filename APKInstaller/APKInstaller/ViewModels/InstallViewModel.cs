@@ -989,7 +989,11 @@ namespace APKInstaller.ViewModels
                     WaitProgressText = _loader.GetString("ConnectPairedDevices");
                     if (NetworkHelper.Instance.ConnectionInformation.IsInternetAvailable)
                     {
-                        await AddressHelper.ConnectPairedDevice();
+                        if (SettingsHelper.Get<bool>(SettingsHelper.ScanPairedDevice))
+                        {
+                            await AddressHelper.ConnectPairedDevice();
+                            MonitorHelper.InitializeConnectListener();
+                        }
                         if (!await CheckDevice())
                         {
                             await AddressHelper.ConnectHyperV();

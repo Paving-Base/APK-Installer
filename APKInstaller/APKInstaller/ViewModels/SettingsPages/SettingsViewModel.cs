@@ -69,6 +69,27 @@ namespace APKInstaller.ViewModels.SettingsPages
             }
         }
 
+        public static bool ScanPairedDevice
+        {
+            get => SettingsHelper.Get<bool>(SettingsHelper.ScanPairedDevice);
+            set
+            {
+                if (ScanPairedDevice != value)
+                {
+                    if (value)
+                    {
+                        _ = AddressHelper.ConnectPairedDevice();
+                        MonitorHelper.InitializeConnectListener();
+                    }
+                    else
+                    {
+                        MonitorHelper.DisposeConnectListener();
+                    }
+                    SettingsHelper.Set(SettingsHelper.ScanPairedDevice, value);
+                }
+            }
+        }
+
         public static bool IsCloseADB
         {
             get => SettingsHelper.Get<bool>(SettingsHelper.IsCloseADB);
