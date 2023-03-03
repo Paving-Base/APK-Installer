@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutADB" xml:space="preserve">
+    <value>ADB, Android Debug Bridge, необходим для работы программы APK Installer. Нажмите "Загрузить" для загрузки. Загружая, вы принимаете Условия и Положения Google для ADB. Если вы уже скачали ADB, нажмите "Выбрать", чтобы выбрать его.</value>
+  </data>
+  <data name="ADBExist" xml:space="preserve">
+    <value>ADB существует</value>
+  </data>
+  <data name="ADBMissing" xml:space="preserve">
+    <value>АБР отсутствует</value>
+  </data>
+  <data name="APKFileFlyoutItem.Text" xml:space="preserve">
+    <value>APK-файл
+</value>
+  </data>
+  <data name="AppCapabilities.HeadText" xml:space="preserve">
+    <value>Возможности:</value>
+  </data>
+  <data name="AppNameFlyoutItem.Text" xml:space="preserve">
+    <value>Название приложения</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="CancelConfirmButton.Content" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="CancelContinueButton.Content" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="CannotConnectWSA" xml:space="preserve">
+    <value>Не удаётся подключиться к WSA</value>
+  </data>
+  <data name="CannotConnectWSAInfo" xml:space="preserve">
+    <value>WSA запустилась некорректно или возникли проблемы с ADB. Пожалуйста, перезагрузите APK Installer. Если это не поможет, попробуйте перезагрузить компьютер.</value>
+  </data>
+  <data name="CannotOpenPackage" xml:space="preserve">
+    <value>Не удалось открыть пакет</value>
+  </data>
+  <data name="Checking" xml:space="preserve">
+    <value>Проверка...</value>
+  </data>
+  <data name="CheckingADB" xml:space="preserve">
+    <value>Проверка ADB...</value>
+  </data>
+  <data name="CheckingPath" xml:space="preserve">
+    <value>Проверка пути...</value>
+  </data>
+  <data name="ClickToRead" xml:space="preserve">
+    <value>Нажмите здесь, чтобы узнать</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="ConfirmationText.Text" xml:space="preserve">
+    <value>Вы уверены, что хотите отменить установку?</value>
+  </data>
+  <data name="ConnectPairedDevices" xml:space="preserve">
+    <value>Connecting Paired Devices...</value>
+  </data>
+  <data name="CopyFlyoutItem.Text" xml:space="preserve">
+    <value>Копировать</value>
+  </data>
+  <data name="Devices" xml:space="preserve">
+    <value>Устройства</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Скачать</value>
+  </data>
+  <data name="DownloadFailed" xml:space="preserve">
+    <value>Сбой загрузки</value>
+  </data>
+  <data name="DownloadFailedInfo" xml:space="preserve">
+    <value>Пожалуйста, проверьте подключение к интернету или URL и повторите попытку.</value>
+  </data>
+  <data name="FindingWSA" xml:space="preserve">
+    <value>Поиск Подсистемы Windows для Android...</value>
+  </data>
+  <data name="Finished" xml:space="preserve">
+    <value>Готово</value>
+  </data>
+  <data name="FoundWSA" xml:space="preserve">
+    <value>Подсистема Windows для Android найдена</value>
+  </data>
+  <data name="GoToSetting" xml:space="preserve">
+    <value>Параметры</value>
+  </data>
+  <data name="HasNewerVersion" xml:space="preserve">
+    <value>Новая версия уже установлена</value>
+  </data>
+  <data name="HasNewerVersionInfo" xml:space="preserve">
+    <value>У вас уже установлена новая версия {0} этого приложения. Вы уверены, что хотите переустановить версию {1}?</value>
+    <comment>{0} - Installed Version. {1} - Install Version.</comment>
+  </data>
+  <data name="HowToConnect" xml:space="preserve">
+    <value>Как подключиться к WSA</value>
+  </data>
+  <data name="HowToConnectInfo" xml:space="preserve">
+    <value>1. Пожалуйста, убедитесь, что программа APK Installer была обновлена до последней версии
+2. Убедитесь, что у вас установлена и запущена подсистема Windows для Android
+3. Включите режим разработчика и убедитесь, что IP-адрес отображается корректно
+4. Перезапустить установщик APK и продолжить установку
+
+[Подробнее]({0})</value>
+  </data>
+  <data name="IconFlyoutItem.Text" xml:space="preserve">
+    <value>Иконка</value>
+  </data>
+  <data name="IKnow" xml:space="preserve">
+    <value>Ок</value>
+  </data>
+  <data name="IncompatibleApp" xml:space="preserve">
+    <value>Несовместимое приложение</value>
+  </data>
+  <data name="IncompatibleAppInfo" xml:space="preserve">
+    <value>Для этого приложения требуется минимум {0}. Ваше устройство поддерживает {1}. Пожалуйста, обновите ваше устройство или выберите другой пакет.</value>
+    <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
+  </data>
+  <data name="InfosFlyoutItem.Text" xml:space="preserve">
+    <value>Информация</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Установить</value>
+  </data>
+  <data name="InstalledFormat" xml:space="preserve">
+    <value>{0} установлено!</value>
+    <comment>{0} - AppName.</comment>
+  </data>
+  <data name="InstallFormat" xml:space="preserve">
+    <value>Установить {0}?</value>
+    <comment>{0} - AppName.</comment>
+  </data>
+  <data name="Installing" xml:space="preserve">
+    <value>Установка...</value>
+  </data>
+  <data name="InstallingPercent" xml:space="preserve">
+    <value>Установить {0}...</value>
+    <comment>{0} - Progress.</comment>
+  </data>
+  <data name="InstallOutputTextBlock.Text" xml:space="preserve">
+    <value>Причина: </value>
+  </data>
+  <data name="InstallWSA" xml:space="preserve">
+    <value>Установить Подсистему Windows для Android</value>
+  </data>
+  <data name="InvalidPackage" xml:space="preserve">
+    <value>Пакет повреждён или недействителен.</value>
+  </data>
+  <data name="InvalidURL" xml:space="preserve">
+    <value>Неправильный или недействительный URL-адрес.</value>
+  </data>
+  <data name="Launch" xml:space="preserve">
+    <value>Запустить</value>
+  </data>
+  <data name="LaunchingWSA" xml:space="preserve">
+    <value>Запуск...</value>
+  </data>
+  <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
+    <value>Запустить по мере готовности</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Загрузка...</value>
+  </data>
+  <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
+    <value>Подробнее</value>
+  </data>
+  <data name="NoDevice" xml:space="preserve">
+    <value>Устройство Android не найдено</value>
+  </data>
+  <data name="NoDevice10" xml:space="preserve">
+    <value>Как подключить устройство</value>
+  </data>
+  <data name="NoDeviceInfo" xml:space="preserve">
+    <value>Если вы хотите установить приложение в подсистему Windows для Android™, то сначала её нужно установить. Если вы хотите установить приложение на другие устройства, то перейдите в Настройки программы, включите "Только для WSA" и подключите ваше устройство.</value>
+  </data>
+  <data name="NoDeviceInfo10" xml:space="preserve">
+    <value>#### С помощью USB
+1. Убедитесь, что программа установки APK обновлена до [последней версии](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Включите режим разработчика, откройте отладку по USB
+3. Перейдите на страницу настроек программы APK Installer, выберите ваше устройство
+4. Вернитесь назад, возобновите установку
+#### С помощью Wi-Fi
+1. Пожалуйста, убедитесь, что программа APK Installer обновлена до [последней версии](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Включите режим разработчика, откройте беспроводную отладку
+3. Запомните IP-адрес вашего устройства
+4. Перейдите на страницу настроек программы APK Installer, подключитесь и выберите устройство
+5. Вернитесь, продолжите установку
+
+[Подробнее]({0})</value>
+  </data>
+  <data name="NoInternet" xml:space="preserve">
+    <value>Невозможно подключиться к Интернету</value>
+  </data>
+  <data name="NoInternetInfo" xml:space="preserve">
+    <value>Пожалуйста, подключитесь к Интернету перед открытием приложения.</value>
+  </data>
+  <data name="NoPackageWranning" xml:space="preserve">
+    <value>Для правильной работы приложения попробуйте запустить пакет приложений Android.</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="OnlinePackage" xml:space="preserve">
+    <value>Онлайн-пакет</value>
+  </data>
+  <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
+    <value>Имя пакета</value>
+  </data>
+  <data name="PackageNameFormat" xml:space="preserve">
+    <value>Имя пакета: {0}</value>
+    <comment>{0} - Package Name.</comment>
+  </data>
+  <data name="Reinstall" xml:space="preserve">
+    <value>Переустановить</value>
+  </data>
+  <data name="ReinstallFormat" xml:space="preserve">
+    <value>Программа {0} уже установлена</value>
+    <comment>{0} - AppName.</comment>
+  </data>
+  <data name="ReinstallOutput" xml:space="preserve">
+    <value>Более новая версия {0} уже установлена.</value>
+    <comment>{0} - AppName.</comment>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Повторить</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Выбрать</value>
+  </data>
+  <data name="ShareFlyoutItem.Text" xml:space="preserve">
+    <value>Поделиться</value>
+  </data>
+  <data name="StartingADB" xml:space="preserve">
+    <value>Запуск сервера ADB...</value>
+  </data>
+  <data name="StartWSA" xml:space="preserve">
+    <value>Запустить Подсистему Windows для Android</value>
+  </data>
+  <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
+    <value>Ссылка на Магазин</value>
+  </data>
+  <data name="UnzipADB" xml:space="preserve">
+    <value>Распаковка ADB...</value>
+  </data>
+  <data name="UnzipComplete" xml:space="preserve">
+    <value>Распаковка завершена</value>
+  </data>
+  <data name="UnzippingFormat" xml:space="preserve">
+    <value>Распаковка {0}/{1}...</value>
+    <comment>{0} - Have done num. {1} - All num.</comment>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="UpdateFormat" xml:space="preserve">
+    <value>Обновить {0}?</value>
+    <comment>{0} - AppName.</comment>
+  </data>
+  <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
+    <value>Версия кода</value>
+  </data>
+  <data name="VersionFormat" xml:space="preserve">
+    <value>Версия: {0}</value>
+    <comment>{0} - AppVersion.</comment>
+  </data>
+  <data name="WaitDownload" xml:space="preserve">
+    <value>Ожидание загрузки...</value>
+  </data>
+  <data name="WaitingDevice" xml:space="preserve">
+    <value>Ожидание устройства...</value>
+  </data>
+  <data name="WaitingForInstallFormat" xml:space="preserve">
+    <value>Ожидание установки {0}</value>
+    <comment>{0} - AppName.</comment>
+  </data>
+  <data name="WaitingWSAStart" xml:space="preserve">
+    <value>Ожидание запуска Подсистемы Windows для Android...
+Это может занять много времени.</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Добро пожаловать!</value>
+  </data>
+  <data name="WSARunning" xml:space="preserve">
+    <value>WSA работает</value>
+  </data>
+</root>
