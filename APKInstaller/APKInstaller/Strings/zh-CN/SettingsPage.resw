@@ -292,10 +292,10 @@
     <value>您确定要重置应用吗？</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value>Scan and auto connect paired devices.</value>
+    <value>扫描并自动连接已配对的设备。</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Scan Paired Devices?</value>
+    <value>是否扫描已配对的设备？</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>选择设备</value>
