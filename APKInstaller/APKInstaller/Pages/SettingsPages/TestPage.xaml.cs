@@ -1,4 +1,5 @@
 ﻿using APKInstaller.Controls;
+using APKInstaller.Controls.Dialogs;
 using APKInstaller.Helpers;
 using APKInstaller.Pages.ToolsPages;
 using Microsoft.UI.Xaml;
@@ -87,7 +88,16 @@ namespace APKInstaller.Pages.SettingsPages
             if (name != null) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
         }
 
-        public TestPage() => InitializeComponent();
+        public TestPage()
+        {
+            InitializeComponent();
+        }
+
+        void Test()
+        {
+            PairDeviceDialog dialog = new PairDeviceDialog { XamlRoot = XamlRoot };
+            _ = dialog.ShowAsync();
+        }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -133,6 +143,7 @@ namespace APKInstaller.Pages.SettingsPages
                     ComboBox.SelectedItem = culture;
                     break;
             }
+            Test();
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)

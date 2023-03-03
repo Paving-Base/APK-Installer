@@ -56,7 +56,6 @@
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.755" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.2.230217.4" />
     <PackageReference Include="SharpCompress" Version="0.32.2" />
-    <PackageReference Include="Zeroconf" Version="3.6.11" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
 
@@ -83,6 +82,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Controls\Dialogs\PairDeviceDialog.xaml" />
     <None Remove="favicon.ico" />
   </ItemGroup>
 
@@ -105,6 +105,13 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\AdvancedSharpAdbClient\AdvancedSharpAdbClient\AdvancedSharpAdbClient.csproj" />
     <ProjectReference Include="..\AAPTForNet\AAPTForNet.csproj" />
+    <ProjectReference Include="..\Zeroconf\Zeroconf.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Controls\Dialogs\PairDeviceDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 
 </Project>

@@ -1,7 +1,8 @@
 ﻿using AdvancedSharpAdbClient;
+using Zeroconf;
+using Zeroconf.Interfaces;
 using System.Linq;
 using System.Net;
-using Zeroconf;
 
 namespace APKInstaller.Helpers
 {
@@ -21,7 +22,7 @@ namespace APKInstaller.Helpers
             }
         }
 
-        public static ZeroconfResolver.ResolverListener ConnectListener { get; private set; }
+        public static ResolverListener ConnectListener { get; private set; }
 
         public static void InitializeConnectListener()
         {

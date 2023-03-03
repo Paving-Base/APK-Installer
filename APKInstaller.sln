@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{D4544E50-F
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdvancedSharpAdbClient", "..\AdvancedSharpAdbClient\AdvancedSharpAdbClient\AdvancedSharpAdbClient.csproj", "{ACD2CC04-7C62-4056-8523-633FB69552C5}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zeroconf", "APKInstaller\Zeroconf\Zeroconf.csproj", "{C36B83A5-BE24-44E5-A88A-8F824735A1E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,12 +81,29 @@ Global
 		{ACD2CC04-7C62-4056-8523-633FB69552C5}.Release|x64.Build.0 = Release|Any CPU
 		{ACD2CC04-7C62-4056-8523-633FB69552C5}.Release|x86.ActiveCfg = Release|Any CPU
 		{ACD2CC04-7C62-4056-8523-633FB69552C5}.Release|x86.Build.0 = Release|Any CPU
+		{C36B83A5-BE24-44E5-A88A-8F824735A1E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C36B83A5-BE24-44E5-A88A-8F824735A1E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C36B83A5-BE24-44E5-A88A-8F824735A1E5}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{C36B83A5-BE24-44E5-A88A-8F824735A1E5}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{C36B83A5-BE24-44E5-A88A-8F824735A1E5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C36B83A5-BE24-44E5-A88A-8F824735A1E5}.Debug|x64.Build.0 = Debug|Any CPU
+		{C36B83A5-BE24-44E5-A88A-8F824735A1E5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C36B83A5-BE24-44E5-A88A-8F824735A1E5}.Debug|x86.Build.0 = Debug|Any CPU
+		{C36B83A5-BE24-44E5-A88A-8F824735A1E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C36B83A5-BE24-44E5-A88A-8F824735A1E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C36B83A5-BE24-44E5-A88A-8F824735A1E5}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{C36B83A5-BE24-44E5-A88A-8F824735A1E5}.Release|ARM64.Build.0 = Release|Any CPU
+		{C36B83A5-BE24-44E5-A88A-8F824735A1E5}.Release|x64.ActiveCfg = Release|Any CPU
+		{C36B83A5-BE24-44E5-A88A-8F824735A1E5}.Release|x64.Build.0 = Release|Any CPU
+		{C36B83A5-BE24-44E5-A88A-8F824735A1E5}.Release|x86.ActiveCfg = Release|Any CPU
+		{C36B83A5-BE24-44E5-A88A-8F824735A1E5}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{ACD2CC04-7C62-4056-8523-633FB69552C5} = {D4544E50-F0F2-467B-90FF-40FF30ABF0A7}
+		{C36B83A5-BE24-44E5-A88A-8F824735A1E5} = {D4544E50-F0F2-467B-90FF-40FF30ABF0A7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F05D290C-342E-4C0B-B2E5-B0FCA8D24096}
