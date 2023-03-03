@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutADB" xml:space="preserve">
+    <value>APK 安装程序需要 ADB 即 Android 调试桥才能工作。单击“下载”进行下载。下载即表示您接受  Google 为 ADB 制定的条款和条件。如果您已经下载了 ADB，请点击“选择”来选择它。</value>
+  </data>
+  <data name="ADBExist" xml:space="preserve">
+    <value>ADB 已存在</value>
+  </data>
+  <data name="ADBMissing" xml:space="preserve">
+    <value>找不到 ADB</value>
+  </data>
+  <data name="APKFileFlyoutItem.Text" xml:space="preserve">
+    <value>APK 文件</value>
+  </data>
+  <data name="AppCapabilities.HeadText" xml:space="preserve">
+    <value>功能: </value>
+  </data>
+  <data name="AppNameFlyoutItem.Text" xml:space="preserve">
+    <value>应用名称</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="CancelConfirmButton.Content" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="CancelContinueButton.Content" xml:space="preserve">
+    <value>否</value>
+  </data>
+  <data name="CannotConnectWSA" xml:space="preserve">
+    <value>无法连接到 WSA</value>
+  </data>
+  <data name="CannotConnectWSAInfo" xml:space="preserve">
+    <value>WSA 可能没有正常启动，或者 ADB 出了问题。这种情况可能非常难解决。请重新启动安装程序。如果仍然无法使用，尝试重启电脑。</value>
+  </data>
+  <data name="CannotOpenPackage" xml:space="preserve">
+    <value>无法打开应用程序包</value>
+  </data>
+  <data name="Checking" xml:space="preserve">
+    <value>检查中……</value>
+  </data>
+  <data name="CheckingADB" xml:space="preserve">
+    <value>检查 ADB ……</value>
+  </data>
+  <data name="CheckingPath" xml:space="preserve">
+    <value>检查路径……</value>
+  </data>
+  <data name="ClickToRead" xml:space="preserve">
+    <value>点击阅读</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ConfirmationText.Text" xml:space="preserve">
+    <value>确定要取消安装吗？</value>
+  </data>
+  <data name="ConnectPairedDevices" xml:space="preserve">
+    <value>连接已匹配的设备……</value>
+  </data>
+  <data name="CopyFlyoutItem.Text" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="Devices" xml:space="preserve">
+    <value>设备</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>下载</value>
+  </data>
+  <data name="DownloadFailed" xml:space="preserve">
+    <value>下载失败</value>
+  </data>
+  <data name="DownloadFailedInfo" xml:space="preserve">
+    <value>请检查您的网络连接或 URL 链接并重试。</value>
+  </data>
+  <data name="FindingWSA" xml:space="preserve">
+    <value>正在寻找 WSA ……</value>
+  </data>
+  <data name="Finished" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="FoundWSA" xml:space="preserve">
+    <value>找到 WSA</value>
+  </data>
+  <data name="GoToSetting" xml:space="preserve">
+    <value>前往设置页面</value>
+  </data>
+  <data name="HasNewerVersion" xml:space="preserve">
+    <value>已安装新版本</value>
+  </data>
+  <data name="HasNewerVersionInfo" xml:space="preserve">
+    <value>您已经安装了此应用的新版本 {0}。是否确实要重新安装版本 {1}？</value>
+    <comment>{0} - Installed Version. {1} - Install Version.</comment>
+  </data>
+  <data name="HowToConnect" xml:space="preserve">
+    <value>如何连接 Android 子系统</value>
+  </data>
+  <data name="HowToConnectInfo" xml:space="preserve">
+    <value>1. 请确保 APK Installer 已经更新到了最新版本
+2. 请确保您已经安装并运行了 Android 子系统
+3. 打开开发人员模式，并确保成功显示了 IP 地址
+4. 重新打开 APK Installer，继续您的安装
+
+[了解更多]({0})</value>
+  </data>
+  <data name="IconFlyoutItem.Text" xml:space="preserve">
+    <value>图标</value>
+  </data>
+  <data name="IKnow" xml:space="preserve">
+    <value>知道了</value>
+  </data>
+  <data name="IncompatibleApp" xml:space="preserve">
+    <value>不兼容的应用</value>
+  </data>
+  <data name="IncompatibleAppInfo" xml:space="preserve">
+    <value>此应用最低要求 {0}，您的设备支持 {1}。请更新您的设备或选择旧版本安装包。</value>
+    <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
+  </data>
+  <data name="InfosFlyoutItem.Text" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>安装</value>
+  </data>
+  <data name="InstalledFormat" xml:space="preserve">
+    <value>{0} 已准备就绪!</value>
+    <comment>{0} - AppName.</comment>
+  </data>
+  <data name="InstallFormat" xml:space="preserve">
+    <value>安装 {0}?</value>
+    <comment>{0} - AppName.</comment>
+  </data>
+  <data name="Installing" xml:space="preserve">
+    <value>正在安装……</value>
+  </data>
+  <data name="InstallingPercent" xml:space="preserve">
+    <value>正在安装 {0}……</value>
+    <comment>{0} - Progress.</comment>
+  </data>
+  <data name="InstallOutputTextBlock.Text" xml:space="preserve">
+    <value>原因: </value>
+  </data>
+  <data name="InstallWSA" xml:space="preserve">
+    <value>安装 WSA</value>
+  </data>
+  <data name="InvalidPackage" xml:space="preserve">
+    <value>安装包已损坏或无效。</value>
+  </data>
+  <data name="InvalidURL" xml:space="preserve">
+    <value>URL 链接不完整或无效。</value>
+  </data>
+  <data name="Launch" xml:space="preserve">
+    <value>启动</value>
+  </data>
+  <data name="LaunchingWSA" xml:space="preserve">
+    <value>正在启动 WSA ……</value>
+  </data>
+  <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
+    <value>当准备就绪时启动</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>加载中……</value>
+  </data>
+  <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
+    <value>详细信息</value>
+  </data>
+  <data name="NoDevice" xml:space="preserve">
+    <value>找不到 Android 设备</value>
+  </data>
+  <data name="NoDevice10" xml:space="preserve">
+    <value>如何连接设备</value>
+  </data>
+  <data name="NoDeviceInfo" xml:space="preserve">
+    <value>如果您想要将应用程序安装到适用于 Windows 的 Android™ 子系统，您需要先安装它。 如果您想要安装到其他设备，请进入设置页面，关闭“仅适用于 WSA”，并连接您的设备。</value>
+  </data>
+  <data name="NoDeviceInfo10" xml:space="preserve">
+    <value>#### 使用 USB
+1. 请确保 APK Installer 已经更新到了[最新版本](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. 打开开发者模式，打开 USB 调试
+3. 前往 APK Installer 的设置页面，选择您的设备
+4. 返回，继续安装
+#### 使用 Wifi
+1. 请确保 APK Installer 已经更新到了[最新版本](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. 打开开发者模式，打开远程调试
+3. 记住您设备的 IP 地址
+4. 前往 APK Installer 的设置页面，连接并选择您的设备
+5. 返回，继续安装
+
+[了解更多]({0})</value>
+  </data>
+  <data name="NoInternet" xml:space="preserve">
+    <value>无法连接到网络</value>
+  </data>
+  <data name="NoInternetInfo" xml:space="preserve">
+    <value>请连接网络后再打开应用。</value>
+  </data>
+  <data name="NoPackageWranning" xml:space="preserve">
+    <value>为了使应用程序正常运行，请尝试打开 Android 应用程序包。</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="OnlinePackage" xml:space="preserve">
+    <value>在线安装包</value>
+  </data>
+  <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
+    <value>程序包名称</value>
+  </data>
+  <data name="PackageNameFormat" xml:space="preserve">
+    <value>包名称: {0}</value>
+    <comment>{0} - Package Name.</comment>
+  </data>
+  <data name="Reinstall" xml:space="preserve">
+    <value>重新安装</value>
+  </data>
+  <data name="ReinstallFormat" xml:space="preserve">
+    <value>{0} 已安装</value>
+    <comment>{0} - AppName.</comment>
+  </data>
+  <data name="ReinstallOutput" xml:space="preserve">
+    <value>已安装较新版本的 {0}。</value>
+    <comment>{0} - AppName.</comment>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>重试</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>选取</value>
+  </data>
+  <data name="ShareFlyoutItem.Text" xml:space="preserve">
+    <value>分享</value>
+  </data>
+  <data name="StartingADB" xml:space="preserve">
+    <value>启动 ADB 服务……</value>
+  </data>
+  <data name="StartWSA" xml:space="preserve">
+    <value>启动 WSA</value>
+  </data>
+  <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
+    <value>商店链接</value>
+  </data>
+  <data name="UnzipADB" xml:space="preserve">
+    <value>解压 ADB ……</value>
+  </data>
+  <data name="UnzipComplete" xml:space="preserve">
+    <value>解压完成</value>
+  </data>
+  <data name="UnzippingFormat" xml:space="preserve">
+    <value>解压中 {0}/{1} ……</value>
+    <comment>{0} - Have done num. {1} - All num.</comment>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="UpdateFormat" xml:space="preserve">
+    <value>更新 {0}?</value>
+    <comment>{0} - AppName.</comment>
+  </data>
+  <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
+    <value>版本代码</value>
+  </data>
+  <data name="VersionFormat" xml:space="preserve">
+    <value>版本: {0}</value>
+    <comment>{0} - AppVersion.</comment>
+  </data>
+  <data name="WaitDownload" xml:space="preserve">
+    <value>等待下载中……</value>
+  </data>
+  <data name="WaitingDevice" xml:space="preserve">
+    <value>等待设备连接……</value>
+  </data>
+  <data name="WaitingForInstallFormat" xml:space="preserve">
+    <value>等待安装 {0}</value>
+    <comment>{0} - AppName.</comment>
+  </data>
+  <data name="WaitingWSAStart" xml:space="preserve">
+    <value>正在等待 WSA 启动……
+这通常需要很长时间。请坐和放宽。</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>欢迎！</value>
+  </data>
+  <data name="WSARunning" xml:space="preserve">
+    <value>WSA 正在运行</value>
+  </data>
+</root>
