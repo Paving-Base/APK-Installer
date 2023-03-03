@@ -172,7 +172,7 @@
     <value>確定要取消安裝嗎？</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Connecting Paired Devices...</value>
+    <value>連接已匹配的設備......</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>複製</value>
