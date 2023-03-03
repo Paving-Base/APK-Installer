@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutSettingsHeader.Header" xml:space="preserve">
+    <value>حول</value>
+  </data>
+  <data name="ADBPathSettings.Header" xml:space="preserve">
+    <value>ADB المسار</value>
+  </data>
+  <data name="ADBVersionTextBlock.Text" xml:space="preserve">
+    <value>صلاحية ال ADB</value>
+  </data>
+  <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
+    <value>تحميل تلقائي عندما تكون الحزمة من عنوان URL.</value>
+  </data>
+  <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
+    <value>هل التنزيل التلقائي للحزم عبر الإنترنت؟</value>
+  </data>
+  <data name="BackdropSettings.Description" xml:space="preserve">
+    <value>حدد نوع الخلفية للويندوز 11</value>
+  </data>
+  <data name="BackdropSettings.Header" xml:space="preserve">
+    <value>Backdrop</value>
+  </data>
+  <data name="Change.Content" xml:space="preserve">
+    <value>تغيير</value>
+  </data>
+  <data name="CheckFailed" xml:space="preserve">
+    <value>فشل التحقق</value>
+  </data>
+  <data name="CheckingUpdates.Text" xml:space="preserve">
+    <value>التحقق من وجود تحديث...</value>
+  </data>
+  <data name="CheckUpdates.Content" xml:space="preserve">
+    <value>التحقق من وجود تحديثات</value>
+  </data>
+  <data name="CleanCacheButton.Content" xml:space="preserve">
+    <value>مسح ذاكرة التخزين المؤقت</value>
+  </data>
+  <data name="CloseADBSettings.Description" xml:space="preserve">
+    <value>يحتاج خادم ADB إلى إعادة تشغيل في التثبيت التالي إذا قمت بإنهاء ذلك.</value>
+  </data>
+  <data name="CloseADBSettings.Header" xml:space="preserve">
+    <value>إنهاء ADB عند الخروج من التثبيت؟</value>
+  </data>
+  <data name="CloseAPPSettings.Description" xml:space="preserve">
+    <value>Exit Installer after installation is complete.</value>
+  </data>
+  <data name="CloseAPPSettings.Header" xml:space="preserve">
+    <value>Exit Installer when APP is Ready?</value>
+  </data>
+  <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
+    <value>التهيئة</value>
+  </data>
+  <data name="ConnectDevice.Description" xml:space="preserve">
+    <value>Connect device through network.</value>
+  </data>
+  <data name="ConnectDevice.Header" xml:space="preserve">
+    <value>توصيل الجهاز</value>
+  </data>
+  <data name="ContactMeSettings.Header" xml:space="preserve">
+    <value>الاتصال بي</value>
+  </data>
+  <data name="ContactMeTextBlock.Text" xml:space="preserve">
+    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
+  </data>
+  <data name="ContentSettingsHeader.Header" xml:space="preserve">
+    <value>المحتوى</value>
+  </data>
+  <data name="DeviceSettingsHeader.Header" xml:space="preserve">
+    <value>الجهاز</value>
+  </data>
+  <data name="DisplaySettingsHeader.Header" xml:space="preserve">
+    <value>عرض</value>
+  </data>
+  <data name="DonateSettings.Header" xml:space="preserve">
+    <value>الدعم</value>
+  </data>
+  <data name="DonateTextBlock.Text" xml:space="preserve">
+    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
+  </data>
+  <data name="EULA.Content" xml:space="preserve">
+    <value>EULA</value>
+  </data>
+  <data name="FeedbackLink.Content" xml:space="preserve">
+    <value>ردود الفعل</value>
+  </data>
+  <data name="FindUpdate" xml:space="preserve">
+    <value>البحث عن تحديث</value>
+  </data>
+  <data name="FrameworkSettings.Description" xml:space="preserve">
+    <value>معلومات عن أطر هذا التطبيق.</value>
+  </data>
+  <data name="FrameworkSettings.Header" xml:space="preserve">
+    <value>وصف الإطار</value>
+  </data>
+  <data name="FrameworkTextBlock.Text" xml:space="preserve">
+    <value>الإطار البرمجي</value>
+  </data>
+  <data name="GoToTestPage.Description" xml:space="preserve">
+    <value>انتقل إلى صفحة الاختبار.</value>
+  </data>
+  <data name="GoToTestPage.Header" xml:space="preserve">
+    <value>انتقل إلى TestPpage</value>
+  </data>
+  <data name="GoToUpdate.Content" xml:space="preserve">
+    <value>انتقل إلى التحديث</value>
+  </data>
+  <data name="Group.Content" xml:space="preserve">
+    <value>انضم إلى فريقنا</value>
+  </data>
+  <data name="LastChecked.Text" xml:space="preserve">
+    <value>آخر للتأكد:</value>
+  </data>
+  <data name="LearnMoreLink.Content" xml:space="preserve">
+    <value>معرفة المزيد</value>
+  </data>
+  <data name="LogFolderLink.Content" xml:space="preserve">
+    <value>سجلات</value>
+  </data>
+  <data name="ModifiedInfoBar.Message" xml:space="preserve">
+    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
+  </data>
+  <data name="ModifiedInfoBar.Title" xml:space="preserve">
+    <value>أنت تستخدم نسخة معدلة!</value>
+  </data>
+  <data name="OnlyWSASettings.Description" xml:space="preserve">
+    <value>تعطيله للاتصال بجهاز آخر.</value>
+  </data>
+  <data name="OnlyWSASettings.Header" xml:space="preserve">
+    <value>For WSA only?</value>
+  </data>
+  <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
+    <value>بنية نظام التشغيل</value>
+  </data>
+  <data name="OSPlatformTextBlock.Text" xml:space="preserve">
+    <value>منصة نظام التشغيل</value>
+  </data>
+  <data name="OthersSettingsHeader.Header" xml:space="preserve">
+    <value>أخرى</value>
+  </data>
+  <data name="PairDevice.Description" xml:space="preserve">
+    <value>Pair device through network.</value>
+  </data>
+  <data name="PairDevice.Header" xml:space="preserve">
+    <value>Pair Device</value>
+  </data>
+  <data name="RadioThemeDark.Content" xml:space="preserve">
+    <value>مظلم</value>
+  </data>
+  <data name="RadioThemeDefault.Content" xml:space="preserve">
+    <value>الافتراضي للويندوز</value>
+  </data>
+  <data name="RadioThemeLight.Content" xml:space="preserve">
+    <value>فاتح</value>
+  </data>
+  <data name="Rate.Content" xml:space="preserve">
+    <value>قيمنا في المتجر</value>
+  </data>
+  <data name="ReleaseNotes.Content" xml:space="preserve">
+    <value>سجل التغيير</value>
+  </data>
+  <data name="ResetSettings.Description" xml:space="preserve">
+    <value>إعادة تعيين إعدادات هذا التطبيق.</value>
+  </data>
+  <data name="ResetSettings.Header" xml:space="preserve">
+    <value>إعادة تعيين بيانات التطبيق</value>
+  </data>
+  <data name="ResetSettingsButton.Content" xml:space="preserve">
+    <value>12345</value>
+  </data>
+  <data name="ResetSettingsConfirm.Content" xml:space="preserve">
+    <value>123</value>
+  </data>
+  <data name="ResetSettingsTitle.Text" xml:space="preserve">
+    <value>هل أنت متحقِّق من أنك تريد إعادة ضبط التطبيق؟</value>
+  </data>
+  <data name="SelectDeviceBox.Header" xml:space="preserve">
+    <value>اختار جهاز</value>
+  </data>
+  <data name="ShowDialogsSettings.Description" xml:space="preserve">
+    <value>إظهار المساعدين عند عدم توصيل أي جهاز.</value>
+  </data>
+  <data name="ShowDialogsSettings.Header" xml:space="preserve">
+    <value>Whether to Show Helps?</value>
+  </data>
+  <data name="ShowMessagesSettings.Description" xml:space="preserve">
+    <value>Display announcements at the top of Settings.</value>
+  </data>
+  <data name="ShowMessagesSettings.Header" xml:space="preserve">
+    <value>Whether to Show Announcements?</value>
+  </data>
+  <data name="ShowProgressSettings.Description" xml:space="preserve">
+    <value>قد تترك ملفات مؤقته عند حدوث انقطاع غير متوقع.</value>
+  </data>
+  <data name="ShowProgressSettings.Header" xml:space="preserve">
+    <value>Whether to Show Installation Progress?</value>
+  </data>
+  <data name="ThemeSettings.Header" xml:space="preserve">
+    <value>مظهر التطبيق</value>
+  </data>
+  <data name="ThemesSettingsHeader.Header" xml:space="preserve">
+    <value>سمة البرنامج</value>
+  </data>
+  <data name="TitleBar.Title" xml:space="preserve">
+    <value>إعدادات</value>
+  </data>
+  <data name="TranslateLink.Content" xml:space="preserve">
+    <value>ترجم</value>
+  </data>
+  <data name="UpdateSettingsHeader.Header" xml:space="preserve">
+    <value>الإصدار</value>
+  </data>
+  <data name="UpToDate" xml:space="preserve">
+    <value>تم تحديثه</value>
+  </data>
+  <data name="WindowsColorButton.Content" xml:space="preserve">
+    <value>إعدادات ألوان ويندوز</value>
+  </data>
+</root>
