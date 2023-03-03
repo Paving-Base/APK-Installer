@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutSettingsHeader.Header" xml:space="preserve">
+    <value>Acerca de</value>
+  </data>
+  <data name="ADBPathSettings.Header" xml:space="preserve">
+    <value>Ruta ADB</value>
+  </data>
+  <data name="ADBVersionTextBlock.Text" xml:space="preserve">
+    <value>Versión ADB</value>
+  </data>
+  <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
+    <value>Autodescargar cuando el paquete viene de URL.</value>
+  </data>
+  <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
+    <value>¿Quiere que se descarguen automáticamente los paquetes en línea?</value>
+  </data>
+  <data name="BackdropSettings.Description" xml:space="preserve">
+    <value>Seleccionar el tipo de fondo para Windows 11</value>
+  </data>
+  <data name="BackdropSettings.Header" xml:space="preserve">
+    <value>Fondo</value>
+  </data>
+  <data name="Change.Content" xml:space="preserve">
+    <value>Cambiar</value>
+  </data>
+  <data name="CheckFailed" xml:space="preserve">
+    <value>Comprobación fallida</value>
+  </data>
+  <data name="CheckingUpdates.Text" xml:space="preserve">
+    <value>Buscando actualizaciones...</value>
+  </data>
+  <data name="CheckUpdates.Content" xml:space="preserve">
+    <value>Comprobar si hay actualizaciones</value>
+  </data>
+  <data name="CleanCacheButton.Content" xml:space="preserve">
+    <value>Limpiar caché</value>
+  </data>
+  <data name="CloseADBSettings.Description" xml:space="preserve">
+    <value>El servidor ADB necesita reiniciarse en la próxima instalación si la finaliza.</value>
+  </data>
+  <data name="CloseADBSettings.Header" xml:space="preserve">
+    <value>¿Quiere finalizar ADB al salir del instalador?</value>
+  </data>
+  <data name="CloseAPPSettings.Description" xml:space="preserve">
+    <value>Salir del instalador cuando finalice la instalación.</value>
+  </data>
+  <data name="CloseAPPSettings.Header" xml:space="preserve">
+    <value>¿Quiere salir del instalador cuando la aplicación esté preparada?</value>
+  </data>
+  <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
+    <value>Configuraciones</value>
+  </data>
+  <data name="ConnectDevice.Description" xml:space="preserve">
+    <value>Conectar el dispositivo a través de la red.</value>
+  </data>
+  <data name="ConnectDevice.Header" xml:space="preserve">
+    <value>Conectar Dispositivos</value>
+  </data>
+  <data name="ContactMeSettings.Header" xml:space="preserve">
+    <value>Contactarme</value>
+  </data>
+  <data name="ContactMeTextBlock.Text" xml:space="preserve">
+    <value>Sígueme en las redes sociales para los últimos desarrollos. Si encuentras algún error, por favor, repórtamelo por PM. Intentaré todo lo que pueda para solucionar el problema. Si tienes una cuenta de Telegram, ¡siéntete libre para chatear en Paving Base Group 😊!</value>
+  </data>
+  <data name="ContentSettingsHeader.Header" xml:space="preserve">
+    <value>Contenido</value>
+  </data>
+  <data name="DeviceSettingsHeader.Header" xml:space="preserve">
+    <value>Dispositivo</value>
+  </data>
+  <data name="DisplaySettingsHeader.Header" xml:space="preserve">
+    <value>Mostrar</value>
+  </data>
+  <data name="DonateSettings.Header" xml:space="preserve">
+    <value>Soportes</value>
+  </data>
+  <data name="DonateTextBlock.Text" xml:space="preserve">
+    <value>APK Installer es una aplicación de código abierto la cual no añade ningún anuncio para su beneficio. Si te gusta esta aplicación, no te olvides de calificarla en la tienda. Por supuesto, sería mejor si pudieses donar un poco. Gracias por tu apoyo.💕</value>
+  </data>
+  <data name="EULA.Content" xml:space="preserve">
+    <value>EULA</value>
+  </data>
+  <data name="FeedbackLink.Content" xml:space="preserve">
+    <value>Comentarios</value>
+  </data>
+  <data name="FindUpdate" xml:space="preserve">
+    <value>Encontrar actualización</value>
+  </data>
+  <data name="FrameworkSettings.Description" xml:space="preserve">
+    <value>Información acerca de los frameworks de esta aplicación.</value>
+  </data>
+  <data name="FrameworkSettings.Header" xml:space="preserve">
+    <value>Descripción del marco</value>
+  </data>
+  <data name="FrameworkTextBlock.Text" xml:space="preserve">
+    <value>Framework</value>
+  </data>
+  <data name="GoToTestPage.Description" xml:space="preserve">
+    <value>Ir a la página de prueba.</value>
+  </data>
+  <data name="GoToTestPage.Header" xml:space="preserve">
+    <value>Ir a la Página de prueba</value>
+  </data>
+  <data name="GoToUpdate.Content" xml:space="preserve">
+    <value>Ir a Actualizar</value>
+  </data>
+  <data name="Group.Content" xml:space="preserve">
+    <value>Únete a Nuestro Chat</value>
+  </data>
+  <data name="LastChecked.Text" xml:space="preserve">
+    <value>Última Revisión: </value>
+  </data>
+  <data name="LearnMoreLink.Content" xml:space="preserve">
+    <value>Aprender más</value>
+  </data>
+  <data name="LogFolderLink.Content" xml:space="preserve">
+    <value>Registros</value>
+  </data>
+  <data name="ModifiedInfoBar.Message" xml:space="preserve">
+    <value>Una versión modificada puede contener algunas cosas desagradables como anuncios, características rotas o incluso virus. Por favor, ve a la tienda de Microsoft para descargar la versión original. Por favor, mira nuestro repositorio de GitHub para más información.</value>
+  </data>
+  <data name="ModifiedInfoBar.Title" xml:space="preserve">
+    <value>¡Estás usando una versión modificada!</value>
+  </data>
+  <data name="OnlyWSASettings.Description" xml:space="preserve">
+    <value>Desactívalo para conectarlo a otros dispositivos.</value>
+  </data>
+  <data name="OnlyWSASettings.Header" xml:space="preserve">
+    <value>¿Solo para WSA?</value>
+  </data>
+  <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
+    <value>Arquitectura OS</value>
+  </data>
+  <data name="OSPlatformTextBlock.Text" xml:space="preserve">
+    <value>Plataforma OS</value>
+  </data>
+  <data name="OthersSettingsHeader.Header" xml:space="preserve">
+    <value>Otros</value>
+  </data>
+  <data name="PairDevice.Description" xml:space="preserve">
+    <value>Emparejar el dispositivo a través de la red.</value>
+  </data>
+  <data name="PairDevice.Header" xml:space="preserve">
+    <value>Emparejar dispositivo</value>
+  </data>
+  <data name="RadioThemeDark.Content" xml:space="preserve">
+    <value>Oscuro</value>
+  </data>
+  <data name="RadioThemeDefault.Content" xml:space="preserve">
+    <value>Por defecto de Windows</value>
+  </data>
+  <data name="RadioThemeLight.Content" xml:space="preserve">
+    <value>Claro</value>
+  </data>
+  <data name="Rate.Content" xml:space="preserve">
+    <value>Valorar en la tienda</value>
+  </data>
+  <data name="ReleaseNotes.Content" xml:space="preserve">
+    <value>Notas de la versión</value>
+  </data>
+  <data name="ResetSettings.Description" xml:space="preserve">
+    <value>Reiniciar ajustes de esta aplicación.</value>
+  </data>
+  <data name="ResetSettings.Header" xml:space="preserve">
+    <value>Reiniciar aplicación</value>
+  </data>
+  <data name="ResetSettingsButton.Content" xml:space="preserve">
+    <value>Reiniciar</value>
+  </data>
+  <data name="ResetSettingsConfirm.Content" xml:space="preserve">
+    <value>Sí</value>
+  </data>
+  <data name="ResetSettingsTitle.Text" xml:space="preserve">
+    <value>¿Estás seguro de que quieres reiniciar la aplicación?</value>
+  </data>
+  <data name="SelectDeviceBox.Header" xml:space="preserve">
+    <value>Seleccionar dispositivo</value>
+  </data>
+  <data name="ShowDialogsSettings.Description" xml:space="preserve">
+    <value>Mostrar ayudantes cuando ningún dispositivo está conectado.</value>
+  </data>
+  <data name="ShowDialogsSettings.Header" xml:space="preserve">
+    <value>¿Mostrar ayudas?</value>
+  </data>
+  <data name="ShowMessagesSettings.Description" xml:space="preserve">
+    <value>Mostrar anuncios en la parte superior de los ajustes.</value>
+  </data>
+  <data name="ShowMessagesSettings.Header" xml:space="preserve">
+    <value>¿Mostrar anuncios?</value>
+  </data>
+  <data name="ShowProgressSettings.Description" xml:space="preserve">
+    <value>Puede que deje archivos temporales cuando una interrupción inesperada ocurra.</value>
+  </data>
+  <data name="ShowProgressSettings.Header" xml:space="preserve">
+    <value>¿Mostrar el proceso de instalación?</value>
+  </data>
+  <data name="ThemeSettings.Header" xml:space="preserve">
+    <value>Tema de la aplicación</value>
+  </data>
+  <data name="ThemesSettingsHeader.Header" xml:space="preserve">
+    <value>Temas</value>
+  </data>
+  <data name="TitleBar.Title" xml:space="preserve">
+    <value>Ajustes</value>
+  </data>
+  <data name="TranslateLink.Content" xml:space="preserve">
+    <value>Traducir</value>
+  </data>
+  <data name="UpdateSettingsHeader.Header" xml:space="preserve">
+    <value>Versión</value>
+  </data>
+  <data name="UpToDate" xml:space="preserve">
+    <value>Hasta la fecha</value>
+  </data>
+  <data name="WindowsColorButton.Content" xml:space="preserve">
+    <value>Ajustes de color de Windows</value>
+  </data>
+</root>
