@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutADB" xml:space="preserve">
+    <value>APK ānzhuāngchéngxù xūyào ADB jí Android tiáoshì qiáo cái'néng gōngzuò. Dānjī "xiàzǎi" jìnxíng xiàzǎi. Xiàzǎi jí biǎoshì nín jiēshòu  Google wéi ADB zhìdìng de tiáokuǎn hé tiáojiàn. Rúguǒ nín yǐjīng xiàzǎi le ADB, qǐng diǎnjī "xuǎnzé" lái xuǎnzé tā. </value>
+  </data>
+  <data name="ADBExist" xml:space="preserve">
+    <value>ADB yǐ cúnzài</value>
+  </data>
+  <data name="ADBMissing" xml:space="preserve">
+    <value>Zhǎo búdào ADB</value>
+  </data>
+  <data name="APKFileFlyoutItem.Text" xml:space="preserve">
+    <value>APK wénjiàn</value>
+  </data>
+  <data name="AppCapabilities.HeadText" xml:space="preserve">
+    <value>Gōngnéng: </value>
+  </data>
+  <data name="AppNameFlyoutItem.Text" xml:space="preserve">
+    <value>Yìngyòng míngchēng</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Qǔxiāo</value>
+  </data>
+  <data name="CancelConfirmButton.Content" xml:space="preserve">
+    <value>Shì</value>
+  </data>
+  <data name="CancelContinueButton.Content" xml:space="preserve">
+    <value>Fǒu</value>
+  </data>
+  <data name="CannotConnectWSA" xml:space="preserve">
+    <value>Wúfǎ liánjiē dào WSA</value>
+  </data>
+  <data name="CannotConnectWSAInfo" xml:space="preserve">
+    <value>WSA kě'néng méiyǒu zhèngcháng qǐdòng, huòzhě ADB chū le wèntí. Zhèzhǒng qíngkuàng kě'néng fēicháng nán jiějué. Qǐng chóngxīnqǐdòng ānzhuāngchéngxù. Rúguǒ réngrán wúfǎ shǐyòng, chángshì chóngqǐ diànnǎo. </value>
+  </data>
+  <data name="CannotOpenPackage" xml:space="preserve">
+    <value>Wúfǎ dǎkāi yìngyòng chéngxùbāo</value>
+  </data>
+  <data name="Checking" xml:space="preserve">
+    <value>Jiǎnchá zhōng……</value>
+  </data>
+  <data name="CheckingADB" xml:space="preserve">
+    <value>Jiǎnchá ADB ……</value>
+  </data>
+  <data name="CheckingPath" xml:space="preserve">
+    <value>Jiǎnchá lùjìng……</value>
+  </data>
+  <data name="ClickToRead" xml:space="preserve">
+    <value>Diǎnjī yuèdú</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Guānbì</value>
+  </data>
+  <data name="ConfirmationText.Text" xml:space="preserve">
+    <value>Quèdìng yào qǔxiāo ānzhuāng ma? </value>
+  </data>
+  <data name="ConnectPairedDevices" xml:space="preserve">
+    <value>连接已匹配的设备……</value>
+  </data>
+  <data name="CopyFlyoutItem.Text" xml:space="preserve">
+    <value>Fùzhì</value>
+  </data>
+  <data name="Devices" xml:space="preserve">
+    <value>Shèbèi</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Xiàzǎi</value>
+  </data>
+  <data name="DownloadFailed" xml:space="preserve">
+    <value>Xiàzǎi shībài</value>
+  </data>
+  <data name="DownloadFailedInfo" xml:space="preserve">
+    <value>Qǐng jiǎnchá nín de wǎngluòliánjiē huò URL liànjiē bìngzhòng shì. </value>
+  </data>
+  <data name="FindingWSA" xml:space="preserve">
+    <value>Zhèngzài xúnzhǎo WSA ……</value>
+  </data>
+  <data name="Finished" xml:space="preserve">
+    <value>Wánchéng</value>
+  </data>
+  <data name="FoundWSA" xml:space="preserve">
+    <value>Zhǎodào WSA</value>
+  </data>
+  <data name="GoToSetting" xml:space="preserve">
+    <value>Qiánwǎng shèzhì yèmiàn</value>
+  </data>
+  <data name="HasNewerVersion" xml:space="preserve">
+    <value>Yǐ ānzhuāng xīn bǎnběn</value>
+  </data>
+  <data name="HasNewerVersionInfo" xml:space="preserve">
+    <value>Nín yǐjīng ānzhuāng le cǐ yìngyòng de xīn bǎnběn {0}. Shìfǒu quèshí yào chóngxīnānzhuāng bǎnběn {1}? </value>
+    <comment>{0} - Installed Version. {1} - Install Version.</comment>
+  </data>
+  <data name="HowToConnect" xml:space="preserve">
+    <value>Rúhé liánjiē Android zǐxìtǒng</value>
+  </data>
+  <data name="HowToConnectInfo" xml:space="preserve">
+    <value>1. Qǐng quèbǎo APK Installer yǐjīng gēngxīn dào le zuìxīn bǎnběn
+2. Qǐng quèbǎo'nín yǐjīng ānzhuāng bìng yùnxíng le Android zǐxìtǒng
+3. Dǎkāi kāifā'rényuán móshì, bìng quèbǎo chénggōng xiǎnshì le IP dìzhǐ
+4. Chóngxīn dǎkāi APK Installer, jìxù nín de ānzhuāng
+
+ [Liǎojiě gèngduō]({0}) </value>
+  </data>
+  <data name="IconFlyoutItem.Text" xml:space="preserve">
+    <value>Túbiāo</value>
+  </data>
+  <data name="IKnow" xml:space="preserve">
+    <value>Zhīdào le</value>
+  </data>
+  <data name="IncompatibleApp" xml:space="preserve">
+    <value>Bù jiānróng de yìngyòng</value>
+  </data>
+  <data name="IncompatibleAppInfo" xml:space="preserve">
+    <value>Cǐ yìngyòng zuìdī yāoqíu {0}, nín de shèbèi zhīchí {1}. Qǐng gēngxīn nín de shèbèi huò xuǎnzé jiùbǎnběn ānzhuāngbāo. </value>
+    <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
+  </data>
+  <data name="InfosFlyoutItem.Text" xml:space="preserve">
+    <value>Xìnxī</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Ānzhuāng</value>
+  </data>
+  <data name="InstalledFormat" xml:space="preserve">
+    <value>{0} yǐ zhǔnbèijiùxù!</value>
+    <comment>{0} - AppName.</comment>
+  </data>
+  <data name="InstallFormat" xml:space="preserve">
+    <value>Ānzhuāng {0}?</value>
+    <comment>{0} - AppName.</comment>
+  </data>
+  <data name="Installing" xml:space="preserve">
+    <value>Zhèngzài ānzhuāng……</value>
+  </data>
+  <data name="InstallingPercent" xml:space="preserve">
+    <value>Zhèngzài ānzhuāng {0}……</value>
+    <comment>{0} - Progress.</comment>
+  </data>
+  <data name="InstallOutputTextBlock.Text" xml:space="preserve">
+    <value>Yuányīn: </value>
+  </data>
+  <data name="InstallWSA" xml:space="preserve">
+    <value>Ānzhuāng WSA</value>
+  </data>
+  <data name="InvalidPackage" xml:space="preserve">
+    <value>Ānzhuāngbāo yǐsǔnhuài huò wúxiào. </value>
+  </data>
+  <data name="InvalidURL" xml:space="preserve">
+    <value>URL liànjiē bù wánzhěng huò wúxiào. </value>
+  </data>
+  <data name="Launch" xml:space="preserve">
+    <value>Qǐdòng</value>
+  </data>
+  <data name="LaunchingWSA" xml:space="preserve">
+    <value>Zhèngzài qǐdòng WSA ……</value>
+  </data>
+  <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
+    <value>Dāng zhǔnbèijiùxù shí qǐdòng</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Jiāzài zhōng……</value>
+  </data>
+  <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
+    <value>Xiángxìxìnxī</value>
+  </data>
+  <data name="NoDevice" xml:space="preserve">
+    <value>Zhǎo búdào Android shèbèi</value>
+  </data>
+  <data name="NoDevice10" xml:space="preserve">
+    <value>Rúhé liánjiē shèbèi</value>
+  </data>
+  <data name="NoDeviceInfo" xml:space="preserve">
+    <value>Rúguǒ nín xiǎngyào jiāng yìngyòng chéngxùānzhuāng dào shìyòng yú Windows de Android™ zǐxìtǒng, nín xūyào xiān ānzhuāng tā.  Rúguǒ nín xiǎngyào ānzhuāng dào qítā shèbèi, qǐng jìnrù shèzhì yèmiàn, guānbì "jǐn shìyòng yú WSA" , bìng liánjiē nín de shèbèi. </value>
+  </data>
+  <data name="NoDeviceInfo10" xml:space="preserve">
+    <value>#### Shǐyòng USB
+1. Qǐng quèbǎo APK Installer yǐjīng gēngxīn dào le [Zuìxīn bǎnběn](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer") 
+2. Dǎkāi kāifāzhě móshì, dǎkāi USB tiáoshì
+3. Qiánwǎng APK Installer de shèzhì yèmiàn, xuǎnzé nín de shèbèi
+4. Fǎnhuí, jìxù ānzhuāng
+#### Shǐyòng Wifi
+1. Qǐng quèbǎo APK Installer yǐjīng gēngxīn dào le [Zuìxīn bǎnběn](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer") 
+2. Dǎkāi kāifāzhě móshì, dǎkāi yuǎnchéng tiáoshì
+3. Jìzhù nín shèbèi de IP dìzhǐ
+4. Qiánwǎng APK Installer de shèzhì yèmiàn, liánjiē bìng xuǎnzé nín de shèbèi
+5. Fǎnhuí, jìxù ānzhuāng
+
+ [Liǎojiě gèngduō]({0}) </value>
+  </data>
+  <data name="NoInternet" xml:space="preserve">
+    <value>Wúfǎ liánjiē dào wǎngluò</value>
+  </data>
+  <data name="NoInternetInfo" xml:space="preserve">
+    <value>Qǐng liánjiē wǎngluò hòu zài dǎkāi yìngyòng. </value>
+  </data>
+  <data name="NoPackageWranning" xml:space="preserve">
+    <value>Wèile shǐ yìngyòngchéngxù zhèngcháng yùnxíng, qǐng chángshì dǎkāi Android yìngyòng chéngxùbāo. </value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>Quèdìng</value>
+  </data>
+  <data name="OnlinePackage" xml:space="preserve">
+    <value>Zàixiàn ānzhuāngbāo</value>
+  </data>
+  <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
+    <value>Chéngxùbāo míngchēng</value>
+  </data>
+  <data name="PackageNameFormat" xml:space="preserve">
+    <value>Bāo míngchēng: {0}</value>
+    <comment>{0} - Package Name.</comment>
+  </data>
+  <data name="Reinstall" xml:space="preserve">
+    <value>Chóngxīnānzhuāng</value>
+  </data>
+  <data name="ReinstallFormat" xml:space="preserve">
+    <value>{0} yǐ ānzhuāng</value>
+    <comment>{0} - AppName.</comment>
+  </data>
+  <data name="ReinstallOutput" xml:space="preserve">
+    <value>Yǐ ānzhuāng jiào xīn bǎnběn de {0}. </value>
+    <comment>{0} - AppName.</comment>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Zhòngshì</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Xuǎnqǔ</value>
+  </data>
+  <data name="ShareFlyoutItem.Text" xml:space="preserve">
+    <value>Fēnxiǎng</value>
+  </data>
+  <data name="StartingADB" xml:space="preserve">
+    <value>Qǐdòng ADB fúwù……</value>
+  </data>
+  <data name="StartWSA" xml:space="preserve">
+    <value>Qǐdòng WSA</value>
+  </data>
+  <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
+    <value>Shāngdiàn liànjiē</value>
+  </data>
+  <data name="UnzipADB" xml:space="preserve">
+    <value>Jiěyā ADB ……</value>
+  </data>
+  <data name="UnzipComplete" xml:space="preserve">
+    <value>Jiěyā wánchéng</value>
+  </data>
+  <data name="UnzippingFormat" xml:space="preserve">
+    <value>Jiěyā zhōng {0}/{1} ……</value>
+    <comment>{0} - Have done num. {1} - All num.</comment>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Gēngxīn</value>
+  </data>
+  <data name="UpdateFormat" xml:space="preserve">
+    <value>Gēngxīn {0}?</value>
+    <comment>{0} - AppName.</comment>
+  </data>
+  <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
+    <value>Bǎnběn dàimǎ</value>
+  </data>
+  <data name="VersionFormat" xml:space="preserve">
+    <value>Bǎnběn: {0}</value>
+    <comment>{0} - AppVersion.</comment>
+  </data>
+  <data name="WaitDownload" xml:space="preserve">
+    <value>Děngdài xiàzǎi zhōng……</value>
+  </data>
+  <data name="WaitingDevice" xml:space="preserve">
+    <value>Děngdài shèbèi liánjiē……</value>
+  </data>
+  <data name="WaitingForInstallFormat" xml:space="preserve">
+    <value>Děngdài ānzhuāng {0}</value>
+    <comment>{0} - AppName.</comment>
+  </data>
+  <data name="WaitingWSAStart" xml:space="preserve">
+    <value>Zhèngzài děngdài WSA qǐdòng……
+zhè tōngcháng xūyào hěn chángshíjiān. Qǐng zuò hé fàngkuān. </value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Huānyíng! </value>
+  </data>
+  <data name="WSARunning" xml:space="preserve">
+    <value>WSA zhèngzài yùnxíng</value>
+  </data>
+</root>
