@@ -292,6 +292,12 @@
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
     <value>האם אתה בטוח שברצונך לטעון מחדש את האפליקציה?</value>
   </data>
+  <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
+    <value>Scan and auto connect paired devices.</value>
+  </data>
+  <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
+    <value>Scan Paired Devices?</value>
+  </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>בחירת מכשיר</value>
   </data>
