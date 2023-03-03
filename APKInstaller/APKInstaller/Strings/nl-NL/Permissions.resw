@@ -1,0 +1,717 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="android.permission.ACCEPT_HANDOVER" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.ACCESS_BACKGROUND_LOCATION" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.ACCESS_BLOBS_ACROSS_USERS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.ACCESS_CHECKIN_PROPERTIES" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.ACCESS_COARSE_LOCATION" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.ACCESS_FINE_LOCATION" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.ACCESS_MEDIA_LOCATION" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.ACCESS_NETWORK_STATE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.ACCESS_NOTIFICATION_POLICY" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.ACCESS_WIFI_STATE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.ACCOUNT_MANAGER" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.ACTIVITY_RECOGNITION" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.ANSWER_PHONE_CALLS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BATTERY_STATS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_ACCESSIBILITY_SERVICE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_APPWIDGET" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_AUTOFILL_SERVICE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_CALL_REDIRECTION_SERVICE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_CARRIER_MESSAGING_CLIENT_SERVICE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_CARRIER_MESSAGING_SERVICE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_CARRIER_SERVICES" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_CHOOSER_TARGET_SERVICE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_COMPANION_DEVICE_SERVICE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_CONDITION_PROVIDER_SERVICE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_CONTROLS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_DEVICE_ADMIN" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_DREAM_SERVICE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_INCALL_SERVICE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_INPUT_METHOD" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_MIDI_DEVICE_SERVICE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_NFC_SERVICE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_PRINT_SERVICE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_QUICK_ACCESS_WALLET_SERVICE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_QUICK_SETTINGS_TILE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_REMOTEVIEWS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_SCREENING_SERVICE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_TELECOM_CONNECTION_SERVICE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_TEXT_SERVICE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_TV_INPUT" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_VISUAL_VOICEMAIL_SERVICE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_VOICE_INTERACTION" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_VPN_SERVICE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_VR_LISTENER_SERVICE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BIND_WALLPAPER" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BLUETOOTH" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BLUETOOTH_ADMIN" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BLUETOOTH_ADVERTISE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BLUETOOTH_CONNECT" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BLUETOOTH_PRIVILEGED" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BLUETOOTH_SCAN" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BODY_SENSORS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BROADCAST_PACKAGE_REMOVED" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BROADCAST_SMS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BROADCAST_STICKY" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.BROADCAST_WAP_PUSH" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.CALL_COMPANION_APP" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.CALL_PHONE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.CALL_PRIVILEGED" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.CAMERA" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.CAPTURE_AUDIO_OUTPUT" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.CHANGE_CONFIGURATION" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.CHANGE_NETWORK_STATE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.CHANGE_WIFI_MULTICAST_STATE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.CHANGE_WIFI_STATE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.CLEAR_APP_CACHE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.CONTROL_LOCATION_UPDATES" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.DELETE_CACHE_FILES" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.DELETE_PACKAGES" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.DIAGNOSTIC" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.DISABLE_KEYGUARD" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.DUMP" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.EXPAND_STATUS_BAR" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.FACTORY_TEST" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.FOREGROUND_SERVICE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.GET_ACCOUNTS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.GET_ACCOUNTS_PRIVILEGED" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.GET_PACKAGE_SIZE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.GET_TASKS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.GLOBAL_SEARCH" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.HIDE_OVERLAY_WINDOWS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.HIGH_SAMPLING_RATE_SENSORS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.INSTALL_LOCATION_PROVIDER" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.INSTALL_PACKAGES" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.INSTANT_APP_FOREGROUND_SERVICE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.INTERACT_ACROSS_PROFILES" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.INTERNET" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.KILL_BACKGROUND_PROCESSES" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.LAUNCH_MULTI_PANE_SETTINGS_DEEP_LINK" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.LOADER_USAGE_STATS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.LOCATION_HARDWARE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.MANAGE_DOCUMENTS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.MANAGE_EXTERNAL_STORAGE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.MANAGE_MEDIA" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.MANAGE_ONGOING_CALLS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.MANAGE_OWN_CALLS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.MASTER_CLEAR" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.MEDIA_CONTENT_CONTROL" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.MODIFY_AUDIO_SETTINGS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.MODIFY_PHONE_STATE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.MOUNT_FORMAT_FILESYSTEMS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.NFC" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.NFC_PREFERRED_PAYMENT_INFO" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.NFC_TRANSACTION_EVENT" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.PACKAGE_USAGE_STATS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.PERSISTENT_ACTIVITY" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.PROCESS_OUTGOING_CALLS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.QUERY_ALL_PACKAGES" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.READ_CALENDAR" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.READ_CALL_LOG" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.READ_CONTACTS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.READ_EXTERNAL_STORAGE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.READ_INPUT_STATE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.READ_LOGS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.READ_PHONE_NUMBERS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.READ_PHONE_STATE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.READ_PRECISE_PHONE_STATE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.READ_SMS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.READ_SYNC_SETTINGS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.READ_SYNC_STATS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.REBOOT" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.RECEIVE_BOOT_COMPLETED" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.RECEIVE_MMS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.RECEIVE_SMS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.RECEIVE_WAP_PUSH" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.RECORD_AUDIO" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.REORDER_TASKS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.REQUEST_COMPANION_PROFILE_WATCH" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.REQUEST_COMPANION_START_FOREGROUND_SERVICES_FROM_BACKGROUND" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.REQUEST_DELETE_PACKAGES" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.REQUEST_INSTALL_PACKAGES" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.REQUEST_OBSERVE_COMPANION_DEVICE_PRESENCE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.REQUEST_PASSWORD_COMPLEXITY" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.RESTART_PACKAGES" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.SCHEDULE_EXACT_ALARM" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.SEND_RESPOND_VIA_MESSAGE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.SEND_SMS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.SET_ALWAYS_FINISH" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.SET_ANIMATION_SCALE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.SET_DEBUG_APP" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.SET_PREFERRED_APPLICATIONS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.SET_PROCESS_LIMIT" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.SET_TIME" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.SET_TIME_ZONE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.SET_WALLPAPER" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.SET_WALLPAPER_HINTS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.SIGNAL_PERSISTENT_PROCESSES" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.SMS_FINANCIAL_TRANSACTIONS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.START_VIEW_PERMISSION_USAGE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.STATUS_BAR" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.SYSTEM_ALERT_WINDOW" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.TRANSMIT_IR" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.UPDATE_DEVICE_STATS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.UPDATE_PACKAGES_WITHOUT_USER_ACTION" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.USE_BIOMETRIC" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.USE_FINGERPRINT" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.USE_FULL_SCREEN_INTENT" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.USE_ICC_AUTH_WITH_DEVICE_IDENTIFIER" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.USE_SIP" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.UWB_RANGING" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.VIBRATE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.WAKE_LOCK" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.WRITE_APN_SETTINGS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.WRITE_CALENDAR" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.WRITE_CALL_LOG" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.WRITE_CONTACTS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.WRITE_EXTERNAL_STORAGE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.WRITE_GSERVICES" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.WRITE_SECURE_SETTINGS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.WRITE_SETTINGS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="android.permission.WRITE_SYNC_SETTINGS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="com.android.alarm.permission.SET_ALARM" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="com.android.launcher.permission.INSTALL_SHORTCUT" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="com.android.launcher.permission.UNINSTALL_SHORTCUT" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="com.android.vending.BILLING" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="com.android.vending.CHECK_LICENSE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="com.android.voicemail.permission.ADD_VOICEMAIL" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="com.android.voicemail.permission.READ_VOICEMAIL" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="com.android.voicemail.permission.WRITE_VOICEMAIL" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="com.asus.msa.SupplementaryDID.ACCESS" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="com.codeweavers.cxoffice.action.CHECK_PREFIX" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="com.codeweavers.cxoffice.permission.C2D_MESSAGE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="com.coolapk.market.openadsdk.permission.TT_PANGOLIN" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="com.coolapk.market.permission.MIPUSH_RECEIVE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="com.coolapk.market.permission.PROCESS_PUSH_MSG" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="com.coolapk.market.permission.PUSH_PROVIDER" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="com.coolapk.market.permission.XGPUSH_RECEIVE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="com.google.android.c2dm.permission.RECEIVE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" xml:space="preserve">
+    <value/>
+  </data>
+</root>
