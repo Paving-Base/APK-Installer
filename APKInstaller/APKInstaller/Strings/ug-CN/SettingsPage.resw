@@ -322,10 +322,10 @@
     <value>Settings</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>Translate</value>
+    <value>تەرجىمە قىلىش</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
-    <value>Version</value>
+    <value>نەشرى</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
     <value>Up To Date</value>
