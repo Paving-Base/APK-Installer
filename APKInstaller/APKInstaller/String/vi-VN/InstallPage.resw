@@ -173,6 +173,9 @@
   <data name="ConfirmationText.Text" xml:space="preserve">
     <value>Bạn có chắc chắn hủy bỏ cài đặt?</value>
   </data>
+  <data name="ConnectPairedDevices" xml:space="preserve">
+    <value>Connecting Paired Devices...</value>
+  </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Sao chép</value>
   </data>

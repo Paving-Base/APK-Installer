@@ -171,6 +171,9 @@
   <data name="ConfirmationText.Text" xml:space="preserve">
     <value>Quèdìng yào qǔxiāo ānzhuāng ma? </value>
   </data>
+  <data name="ConnectPairedDevices" xml:space="preserve">
+    <value>连接已匹配的设备……</value>
+  </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Fùzhì</value>
   </data>

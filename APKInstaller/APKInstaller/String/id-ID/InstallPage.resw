@@ -173,6 +173,9 @@
   <data name="ConfirmationText.Text" xml:space="preserve">
     <value>Apakah Anda yakin ingin membatalkan penginstalan?</value>
   </data>
+  <data name="ConnectPairedDevices" xml:space="preserve">
+    <value>Connecting Paired Devices...</value>
+  </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Salin</value>
   </data>
