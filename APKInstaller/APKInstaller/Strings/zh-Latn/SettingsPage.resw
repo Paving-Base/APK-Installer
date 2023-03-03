@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutSettingsHeader.Header" xml:space="preserve">
+    <value>Guānyú</value>
+  </data>
+  <data name="ADBPathSettings.Header" xml:space="preserve">
+    <value>ADB lùjìng</value>
+  </data>
+  <data name="ADBVersionTextBlock.Text" xml:space="preserve">
+    <value>ADB bǎnběn</value>
+  </data>
+  <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
+    <value>Dāng ānzhuāngbāo láizì URL liànjiē shí zìdòng xiàzǎi. </value>
+  </data>
+  <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
+    <value>是否自动下载在线安装包？</value>
+  </data>
+  <data name="BackdropSettings.Description" xml:space="preserve">
+    <value>Xuǎnzé shìyòng yú Windows 11 de bèijǐngsè lèixíng</value>
+  </data>
+  <data name="BackdropSettings.Header" xml:space="preserve">
+    <value>Bèijǐngsè</value>
+  </data>
+  <data name="Change.Content" xml:space="preserve">
+    <value>Gēnggǎi</value>
+  </data>
+  <data name="CheckFailed" xml:space="preserve">
+    <value>Jiǎnchá shībài</value>
+  </data>
+  <data name="CheckingUpdates.Text" xml:space="preserve">
+    <value>Zhèngzài jiǎnchá gēngxīn……</value>
+  </data>
+  <data name="CheckUpdates.Content" xml:space="preserve">
+    <value>Jiǎnchá gēngxīn</value>
+  </data>
+  <data name="CleanCacheButton.Content" xml:space="preserve">
+    <value>Qīngchú huǎncún</value>
+  </data>
+  <data name="CloseADBSettings.Description" xml:space="preserve">
+    <value>如果您终止 ADB 服务器，需要在下次安装时重启。</value>
+  </data>
+  <data name="CloseADBSettings.Header" xml:space="preserve">
+    <value>退出安装程序时终止 ADB ？</value>
+  </data>
+  <data name="CloseAPPSettings.Description" xml:space="preserve">
+    <value>安装完成后退出安装程序。</value>
+  </data>
+  <data name="CloseAPPSettings.Header" xml:space="preserve">
+    <value>当应用程序准备就绪后是否关闭安装程序？</value>
+  </data>
+  <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
+    <value>Pèizhì</value>
+  </data>
+  <data name="ConnectDevice.Description" xml:space="preserve">
+    <value>通过网络连接设备。</value>
+  </data>
+  <data name="ConnectDevice.Header" xml:space="preserve">
+    <value>Liánjiē shèbèi</value>
+  </data>
+  <data name="ContactMeSettings.Header" xml:space="preserve">
+    <value>Yǔ wǒ liánxì</value>
+  </data>
+  <data name="ContactMeTextBlock.Text" xml:space="preserve">
+    <value>在社交软件上关注我来获取最新开发动向。如果你发现了什么 Bug，请通过私信告诉我。我会尽最大可能来解决这些问题。如果你有电报账号，欢迎来铺路根据地群组聊天😊!</value>
+  </data>
+  <data name="ContentSettingsHeader.Header" xml:space="preserve">
+    <value>Nèi'róng</value>
+  </data>
+  <data name="DeviceSettingsHeader.Header" xml:space="preserve">
+    <value>Shèbèi</value>
+  </data>
+  <data name="DisplaySettingsHeader.Header" xml:space="preserve">
+    <value>Xiǎnshì</value>
+  </data>
+  <data name="DonateSettings.Header" xml:space="preserve">
+    <value>Zhīchí</value>
+  </data>
+  <data name="DonateTextBlock.Text" xml:space="preserve">
+    <value>APK 安装程序是一个开源软件，它不会内置任何广告来盈利。如果你喜欢这个应用，不要忘了在商店里打上好评哦，当然如果可以捐赠一点点就更好了。感谢大家的支持💕！</value>
+  </data>
+  <data name="EULA.Content" xml:space="preserve">
+    <value>Yònghù xiéyì</value>
+  </data>
+  <data name="FeedbackLink.Content" xml:space="preserve">
+    <value>Fǎnkuì</value>
+  </data>
+  <data name="FindUpdate" xml:space="preserve">
+    <value>Zhǎodào xīn de gēngxīn</value>
+  </data>
+  <data name="FrameworkSettings.Description" xml:space="preserve">
+    <value>Guānyú cǐ yìngyòngchéngxù kuāngjià de xìnxī. </value>
+  </data>
+  <data name="FrameworkSettings.Header" xml:space="preserve">
+    <value>Kuāngjià xìnxī</value>
+  </data>
+  <data name="FrameworkTextBlock.Text" xml:space="preserve">
+    <value>Kuāngjià</value>
+  </data>
+  <data name="GoToTestPage.Description" xml:space="preserve">
+    <value>Qiánwǎng yòngyú cèshì de yèmiàn. </value>
+  </data>
+  <data name="GoToTestPage.Header" xml:space="preserve">
+    <value>Qiánwǎng cèshì yèmiàn</value>
+  </data>
+  <data name="GoToUpdate.Content" xml:space="preserve">
+    <value>Qiánwǎng gēngxīn</value>
+  </data>
+  <data name="Group.Content" xml:space="preserve">
+    <value>Jiā'rù diànbào liáotiān</value>
+  </data>
+  <data name="LastChecked.Text" xml:space="preserve">
+    <value>Shàngcì jiǎnchá shíjiān: </value>
+  </data>
+  <data name="LearnMoreLink.Content" xml:space="preserve">
+    <value>Liǎojiě gèngduō</value>
+  </data>
+  <data name="LogFolderLink.Content" xml:space="preserve">
+    <value>Rìzhì</value>
+  </data>
+  <data name="ModifiedInfoBar.Message" xml:space="preserve">
+    <value>修改版可能会包含一些不好的东西，包括但不限于广告、损坏的特性，甚至是病毒。请前往 Microsoft Store 安装原版。请参阅我们的 Github 仓库了解更多信息。</value>
+  </data>
+  <data name="ModifiedInfoBar.Title" xml:space="preserve">
+    <value>Nín zhèngzài shǐyòng xiūgǎibǎn! </value>
+  </data>
+  <data name="OnlyWSASettings.Description" xml:space="preserve">
+    <value>Guānbì tā yǐ liánjiē dào qítā shèbèi. </value>
+  </data>
+  <data name="OnlyWSASettings.Header" xml:space="preserve">
+    <value>是否仅用于 WSA ？</value>
+  </data>
+  <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
+    <value>Cāozuòxìtǒng jiàgòu</value>
+  </data>
+  <data name="OSPlatformTextBlock.Text" xml:space="preserve">
+    <value>Cāozuòxìtǒng píngtái</value>
+  </data>
+  <data name="OthersSettingsHeader.Header" xml:space="preserve">
+    <value>Qítā</value>
+  </data>
+  <data name="PairDevice.Description" xml:space="preserve">
+    <value>通过网络配对设备。</value>
+  </data>
+  <data name="PairDevice.Header" xml:space="preserve">
+    <value>配对设备</value>
+  </data>
+  <data name="RadioThemeDark.Content" xml:space="preserve">
+    <value>Shēnsè</value>
+  </data>
+  <data name="RadioThemeDefault.Content" xml:space="preserve">
+    <value>Windows mò'rèn</value>
+  </data>
+  <data name="RadioThemeLight.Content" xml:space="preserve">
+    <value>Qiǎnsè</value>
+  </data>
+  <data name="Rate.Content" xml:space="preserve">
+    <value>Qiánwǎng shāngdiàn hǎopíng</value>
+  </data>
+  <data name="ReleaseNotes.Content" xml:space="preserve">
+    <value>Fāxíng shuōmíng</value>
+  </data>
+  <data name="ResetSettings.Description" xml:space="preserve">
+    <value>Chóngzhì cǐ yìngyòngchéngxù de shèzhì. </value>
+  </data>
+  <data name="ResetSettings.Header" xml:space="preserve">
+    <value>Chóngzhì yìngyòng</value>
+  </data>
+  <data name="ResetSettingsButton.Content" xml:space="preserve">
+    <value>Chóngzhì</value>
+  </data>
+  <data name="ResetSettingsConfirm.Content" xml:space="preserve">
+    <value>Shì</value>
+  </data>
+  <data name="ResetSettingsTitle.Text" xml:space="preserve">
+    <value>Nín quèdìng yào chóngzhì yìngyòng ma? </value>
+  </data>
+  <data name="SelectDeviceBox.Header" xml:space="preserve">
+    <value>Xuǎnzé shèbèi</value>
+  </data>
+  <data name="ShowDialogsSettings.Description" xml:space="preserve">
+    <value>Dāng méiyǒu liánjiē dào shèbèi shí xiǎnshì bāngzhù. </value>
+  </data>
+  <data name="ShowDialogsSettings.Header" xml:space="preserve">
+    <value>是否显示帮助？</value>
+  </data>
+  <data name="ShowMessagesSettings.Description" xml:space="preserve">
+    <value>在设置顶部显示公告。</value>
+  </data>
+  <data name="ShowMessagesSettings.Header" xml:space="preserve">
+    <value>是否显示公告？</value>
+  </data>
+  <data name="ShowProgressSettings.Description" xml:space="preserve">
+    <value>Rúguǒ ānzhuāng shí chūxiàn le yìwài qíngkuàng, zé kě'néng huì zài nǐ de shèbèi lǐ líuxia yīxiē línshíwénjiàn. </value>
+  </data>
+  <data name="ShowProgressSettings.Header" xml:space="preserve">
+    <value>是否显示安装进度？</value>
+  </data>
+  <data name="ThemeSettings.Header" xml:space="preserve">
+    <value>Yìngyòng zhǔtí</value>
+  </data>
+  <data name="ThemesSettingsHeader.Header" xml:space="preserve">
+    <value>Zhǔtí</value>
+  </data>
+  <data name="TitleBar.Title" xml:space="preserve">
+    <value>Shèzhì</value>
+  </data>
+  <data name="TranslateLink.Content" xml:space="preserve">
+    <value>Fānyì</value>
+  </data>
+  <data name="UpdateSettingsHeader.Header" xml:space="preserve">
+    <value>Bǎnběn</value>
+  </data>
+  <data name="UpToDate" xml:space="preserve">
+    <value>Zuìxīn</value>
+  </data>
+  <data name="WindowsColorButton.Content" xml:space="preserve">
+    <value>Windows yánsè shèzhì</value>
+  </data>
+</root>
