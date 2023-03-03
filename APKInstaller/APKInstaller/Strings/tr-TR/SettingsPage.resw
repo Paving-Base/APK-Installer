@@ -292,10 +292,10 @@
     <value>Uygulamayı sıfırlamak istediğinizden emin misiniz?</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value>Scan and auto connect paired devices.</value>
+    <value>Eşleştirilmiş cihazları tarayın ve otomatik olarak bağlayın.</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Scan Paired Devices?</value>
+    <value>Eşleştirilmiş Cihazlar Taransın mı?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Cihaz Seç</value>
