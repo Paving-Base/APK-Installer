@@ -177,6 +177,9 @@
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>复制</value>
   </data>
+  <data name="Decompiling" xml:space="preserve">
+    <value>Decompiling...</value>
+  </data>
   <data name="Devices" xml:space="preserve">
     <value>设备</value>
   </data>
