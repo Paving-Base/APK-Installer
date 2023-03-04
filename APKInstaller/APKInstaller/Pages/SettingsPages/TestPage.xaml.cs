@@ -95,8 +95,8 @@ namespace APKInstaller.Pages.SettingsPages
 
         void Test()
         {
-            PairDeviceDialog dialog = new PairDeviceDialog { XamlRoot = XamlRoot };
-            _ = dialog.ShowAsync();
+            //PairDeviceDialog dialog = new PairDeviceDialog { XamlRoot = XamlRoot };
+            //_ = dialog.ShowAsync();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -114,6 +114,9 @@ namespace APKInstaller.Pages.SettingsPages
                     break;
                 case "Processes":
                     _ = Frame.Navigate(typeof(ProcessesPage));
+                    break;
+                case "PairDevice":
+                    _ = Frame.Navigate(typeof(PairDevicePage));
                     break;
                 case "Applications":
                     _ = Frame.Navigate(typeof(ApplicationsPage));

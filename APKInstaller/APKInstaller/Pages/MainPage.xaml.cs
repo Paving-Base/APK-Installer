@@ -7,6 +7,7 @@ using Microsoft.UI.Xaml.Controls;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Resources;
 using Windows.Graphics;
+using Windows.UI.Core;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.

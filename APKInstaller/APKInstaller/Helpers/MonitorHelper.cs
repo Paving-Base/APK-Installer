@@ -31,7 +31,7 @@ namespace APKInstaller.Helpers
             if (ConnectListener == null)
             {
                 ConnectListener = ZeroconfResolver.CreateListener("_adb-tls-connect._tcp.local.");
-                ConnectListener.ServiceFound += ADBConnectListener_ServiceFound;
+                ConnectListener.ServiceFound += ConnectListener_ServiceFound;
             }
         }
 
@@ -39,12 +39,12 @@ namespace APKInstaller.Helpers
         {
             if (ConnectListener != null)
             {
-                ConnectListener.ServiceFound -= ADBConnectListener_ServiceFound;
+                ConnectListener.ServiceFound -= ConnectListener_ServiceFound;
                 ConnectListener.Dispose();
             }
         }
 
-        private static async void ADBConnectListener_ServiceFound(object sender, IZeroconfHost e)
+        private static async void ConnectListener_ServiceFound(object sender, IZeroconfHost e)
         {
             if (AdbServer.Instance.GetStatus().IsRunning)
             {

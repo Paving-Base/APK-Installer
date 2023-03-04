@@ -118,10 +118,12 @@ namespace APKInstaller.ViewModels.ToolsPages
             {
                 ProgressHelper.SetState(ProgressState.Indeterminate, true);
                 _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.ShowProgressRing));
+                _ = (_page?.DispatcherQueue.EnqueueAsync(() => TitleBar.IsRefreshButtonVisible = false));
                 AdbClient client = new();
                 DeviceData device = await _page?.DispatcherQueue.EnqueueAsync(() => { return devices[DeviceComboBox.SelectedIndex]; });
                 IEnumerable<AndroidProcess> list = DeviceExtensions.ListProcesses(client, device);
                 await _page?.DispatcherQueue.EnqueueAsync(() => Processes = list);
+                _ = (_page?.DispatcherQueue.EnqueueAsync(() => TitleBar.IsRefreshButtonVisible = true));
                 _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.HideProgressRing));
                 ProgressHelper.SetState(ProgressState.None, true);
             });

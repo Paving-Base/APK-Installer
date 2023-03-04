@@ -196,12 +196,14 @@ namespace APKInstaller.ViewModels.ToolsPages
             await Task.Run(async () =>
             {
                 ProgressHelper.SetState(ProgressState.Indeterminate, true);
+                _ = (_page?.DispatcherQueue.EnqueueAsync(() => TitleBar.IsRefreshButtonVisible = false));
                 _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.ShowProgressRing));
                 AdbClient client = new();
                 int index = await _page?.DispatcherQueue.EnqueueAsync(() => { return DeviceComboBox.SelectedIndex; });
                 PackageManager manager = new(new AdbClient(), devices[index]);
                 List<APKInfo> list = await CheckAPP(manager.Packages, index);
                 await _page?.DispatcherQueue.EnqueueAsync(() => Applications = list);
+                _ = (_page?.DispatcherQueue.EnqueueAsync(() => TitleBar.IsRefreshButtonVisible = true));
                 _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.HideProgressRing));
                 ProgressHelper.SetState(ProgressState.None, true);
             });

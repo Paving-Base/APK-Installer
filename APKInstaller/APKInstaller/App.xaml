@@ -14,6 +14,7 @@
             <converters:BoolNegationConverter x:Name="BoolNegationConverter" />
             <converters:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
             <converters:StringVisibilityConverter x:Key="StringVisibilityConverter" />
+            <converters:CollectionVisibilityConverter x:Key="CollectionVisibilityConverter" />
             <converters:DoubleToVisibilityConverter x:Key="DoubleToVisibilityConverter" GreaterThan="0" />
             <SolidColorBrush x:Key="WindowCaptionBackground" Color="{ThemeResource ControlFillColorTransparent}" />
             <SolidColorBrush x:Key="WindowCaptionBackgroundDisabled" Color="{ThemeResource ControlFillColorTransparent}" />
