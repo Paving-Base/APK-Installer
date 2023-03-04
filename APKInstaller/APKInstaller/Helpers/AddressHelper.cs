@@ -46,33 +46,5 @@ namespace APKInstaller.Helpers
             }
             return results;
         }
-
-        public static async Task ConnectPairedDevice()
-        {
-            IReadOnlyList<IZeroconfHost> hosts = await ZeroconfResolver.ResolveAsync("_adb-tls-connect._tcp.local.");
-            if (hosts.Any())
-            {
-                AdbClient AdbClient = new();
-                foreach (IZeroconfHost host in hosts)
-                {
-                    _ = AdbClient.ConnectAsync(host.IPAddress, host.Services.FirstOrDefault().Value.Port);
-                }
-            }
-        }
-
-        public static async Task<List<string>> ConnectPairedDeviceAsync()
-        {
-            List<string> results = new();
-            IReadOnlyList<IZeroconfHost> hosts = await ZeroconfResolver.ResolveAsync("_adb-tls-connect._tcp.local.");
-            if (hosts.Any())
-            {
-                AdbClient AdbClient = new();
-                foreach (IZeroconfHost host in hosts)
-                {
-                    results.Add(await AdbClient.ConnectAsync(host.IPAddress, host.Services.FirstOrDefault().Value.Port));
-                }
-            }
-            return results;
-        }
     }
 }

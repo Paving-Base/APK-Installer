@@ -62,8 +62,10 @@ namespace Zeroconf.Common
             // http://stackoverflow.com/questions/2192548/specifying-what-network-interface-an-udp-multicast-should-go-to-in-net
 
             // Xamarin doesn't support this
-            //if (!adapter.GetIPProperties().MulticastAddresses.Any())
-            //    return; // most of VPN adapters will be skipped
+            if (!adapter.GetIPProperties().MulticastAddresses.Any())
+            {
+                return; // most of VPN adapters will be skipped
+            }
 
             if (!adapter.SupportsMulticast)
             {
@@ -138,20 +140,20 @@ namespace Zeroconf.Common
                     logger.LogDebug("Bound to multicast address");
 
                     // Start a receive loop
-                    CancellationTokenSource tokenSource = new();
+                    using CancellationTokenSource tokenSource = new();
                     Task recTask = Task.Run(async () =>
                     {
                         CancellationToken token = tokenSource.Token;
                         try
                         {
-                            token.Register(() => client.Dispose());
-                            while (token.IsCancellationRequested)
+                            _ = token.Register(() => ((IDisposable)client).Dispose());
+                            while (!token.IsCancellationRequested)
                             {
                                 UdpReceiveResult res = await client.ReceiveAsync(tokenSource.Token).ConfigureAwait(false);
                                 onResponse(res.RemoteEndPoint.Address, res.Buffer);
                             }
                         }
-                        catch when (!token.IsCancellationRequested)
+                        catch when (token.IsCancellationRequested)
                         {
                             // If we're canceling, eat any exceptions that come from here   
                         }
@@ -194,13 +196,13 @@ namespace Zeroconf.Common
         {
             return Task.WhenAll(
                 System.Net.NetworkInformation.NetworkInterface.GetAllNetworkInterfaces()
-                 // .Where(a => a.GetIPProperties().MulticastAddresses.Any()) // Xamarin doesn't support this
-                 .Where(a => a.SupportsMulticast)
-                 .Where(a => a.OperationalStatus == OperationalStatus.Up)
-                 .Where(a => a.NetworkInterfaceType != NetworkInterfaceType.Loopback)
-                 .Where(a => a.GetIPProperties().GetIPv4Properties() != null)
-                 .Where(a => a.GetIPProperties().UnicastAddresses.Any(ua => ua.Address.AddressFamily == AddressFamily.InterNetwork))
-                 .Select(inter => ListenForAnnouncementsAsync(inter, callback, cancellationToken)));
+                    .Where(a => a.GetIPProperties().MulticastAddresses.Any()) // Xamarin doesn't support this
+                    .Where(a => a.SupportsMulticast)
+                    .Where(a => a.OperationalStatus == OperationalStatus.Up)
+                    .Where(a => a.NetworkInterfaceType != NetworkInterfaceType.Loopback)
+                    .Where(a => a.GetIPProperties().GetIPv4Properties() != null)
+                    .Where(a => a.GetIPProperties().UnicastAddresses.Any(ua => ua.Address.AddressFamily == AddressFamily.InterNetwork))
+                    .Select(inter => ListenForAnnouncementsAsync(inter, callback, cancellationToken)));
         }
 
         private Task ListenForAnnouncementsAsync(System.Net.NetworkInformation.NetworkInterface adapter, Action<AdapterInformation, string, byte[]> callback, CancellationToken cancellationToken)
@@ -244,9 +246,7 @@ namespace Zeroconf.Common
                 MulticastOption multOpt = new(multicastAddress, ifaceIndex.Value);
                 socket.SetSocketOption(SocketOptionLevel.IP, SocketOptionName.AddMembership, multOpt);
 
-
-                _ = cancellationToken.Register(() => client.Dispose());
-
+                _ = cancellationToken.Register(() => ((IDisposable)client).Dispose());
 
                 while (!cancellationToken.IsCancellationRequested)
                 {

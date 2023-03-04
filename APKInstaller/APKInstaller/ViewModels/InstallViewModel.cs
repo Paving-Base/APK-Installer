@@ -68,6 +68,7 @@ namespace APKInstaller.ViewModels
         private static bool ShowDialogs => SettingsHelper.Get<bool>(SettingsHelper.ShowDialogs);
         private static bool ShowProgress => SettingsHelper.Get<bool>(SettingsHelper.ShowProgress);
         private static bool AutoGetNetAPK => SettingsHelper.Get<bool>(SettingsHelper.AutoGetNetAPK);
+        private static bool ScanPairedDevice => SettingsHelper.Get<bool>(SettingsHelper.ScanPairedDevice);
 
         private ApkInfo _apkInfo = null;
         public ApkInfo ApkInfo
@@ -989,18 +990,19 @@ namespace APKInstaller.ViewModels
                     WaitProgressText = _loader.GetString("ConnectPairedDevices");
                     if (NetworkHelper.Instance.ConnectionInformation.IsInternetAvailable)
                     {
-                        if (SettingsHelper.Get<bool>(SettingsHelper.ScanPairedDevice))
+                        if (ScanPairedDevice)
                         {
-                            await AddressHelper.ConnectPairedDevice();
                             MonitorHelper.InitializeConnectListener();
                         }
-                        if (!await CheckDevice())
+
+                        if (IsOnlyWSA)
                         {
                             await AddressHelper.ConnectHyperV();
-                            if (!await CheckDevice())
-                            {
-                                _ = new AdbClient().ConnectAsync(new DnsEndPoint("127.0.0.1", 58526));
-                            }
+                        }
+
+                        if (!await CheckDevice())
+                        {
+                            _ = new AdbClient().ConnectAsync(new DnsEndPoint("127.0.0.1", 58526));
                         }
                     }
                     else
@@ -1017,7 +1019,7 @@ namespace APKInstaller.ViewModels
         {
             if (!string.IsNullOrWhiteSpace(_path) || _url != null)
             {
-                WaitProgressText = _loader.GetString("Loading");
+                WaitProgressText = _loader.GetString("Decompiling");
                 if (NetAPKExist)
                 {
                     try

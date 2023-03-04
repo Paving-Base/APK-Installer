@@ -78,8 +78,8 @@ namespace APKInstaller.ViewModels.SettingsPages
                 {
                     if (value)
                     {
-                        _ = AddressHelper.ConnectPairedDevice();
                         MonitorHelper.InitializeConnectListener();
+                        _ = MonitorHelper.ConnectPairedDevice();
                     }
                     else
                     {
