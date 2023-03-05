@@ -196,7 +196,7 @@
     <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
-    <value>EULA</value>
+    <value>Licenziyalıq kelisim</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
     <value>Pikir qaldırıń</value>
@@ -205,7 +205,7 @@
     <value>Jańalanıwdı izlew</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>Information about the frameworks of this app.</value>
+    <value>Bul baǵdarlamanıń quram-bólekleri haqqında maǵlıwmat.</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
     <value>Framework Information</value>
