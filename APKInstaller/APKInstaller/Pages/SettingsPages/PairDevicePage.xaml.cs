@@ -5,6 +5,7 @@ using APKInstaller.Models;
 using APKInstaller.ViewModels.SettingsPages;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Controls.Primitives;
 using Microsoft.UI.Xaml.Navigation;
 using System.Linq;
 
@@ -63,5 +64,11 @@ namespace APKInstaller.Pages.SettingsPages
             TitleBar.HideProgressRing();
             TitleBar.IsRefreshButtonVisible = true;
         }
+
+        private void Flyout_Opening(object sender, object e) => _ = Provider.InitializeQRScan();
+
+        private void Flyout_Closed(object sender, object e) => Provider.DisposeQRScan();
+
+        public void HideQRScanFlyout() => QRScanButton.Flyout?.Hide();
     }
 }

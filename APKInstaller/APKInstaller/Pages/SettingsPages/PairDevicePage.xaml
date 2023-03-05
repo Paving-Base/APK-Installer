@@ -24,11 +24,78 @@
             IsRefreshButtonVisible="True"
             IsRefreshEnabled="True"
             RefreshRequested="TitleBar_RefreshRequested">
-            <Button
-                Grid.Column="2"
-                Content="&#xE710;"
-                Style="{StaticResource TitleBarIconButtonStyle}"
-                ToolTipService.ToolTip="手动连接" />
+            <StackPanel Orientation="Horizontal">
+                <Button
+                    x:Name="QRScanButton"
+                    Content="&#xED14;"
+                    Style="{StaticResource TitleBarIconButtonStyle}"
+                    ToolTipService.ToolTip="二维码配对">
+                    <Button.Flyout>
+                        <Flyout Closed="Flyout_Closed" Opening="Flyout_Opening">
+                            <Flyout.FlyoutPresenterStyle>
+                                <Style BasedOn="{StaticResource DefaultFlyoutPresenterStyle}" TargetType="FlyoutPresenter">
+                                    <Setter Property="Padding" Value="0" />
+                                    <Setter Property="ScrollViewer.VerticalScrollMode" Value="Disabled" />
+                                    <Setter Property="ScrollViewer.HorizontalScrollMode" Value="Disabled" />
+                                    <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Disabled" />
+                                    <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled" />
+                                </Style>
+                            </Flyout.FlyoutPresenterStyle>
+                            <Grid Margin="4,0,4,4">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid
+                                    Grid.Row="0"
+                                    MaxWidth="200"
+                                    Margin="8,12"
+                                    HorizontalAlignment="Center">
+                                    <TextBlock
+                                        HorizontalAlignment="Center"
+                                        Text="扫描二维码配对设备"
+                                        TextWrapping="Wrap"
+                                        Visibility="{Binding ConnectingDevice, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='true'}" />
+                                    <TextBlock
+                                        HorizontalAlignment="Center"
+                                        Text="{Binding ConnectLogText}"
+                                        TextWrapping="Wrap"
+                                        Visibility="{Binding ConnectingDevice, Converter={StaticResource BoolToVisibilityConverter}}" />
+                                </Grid>
+                                <Grid
+                                    Grid.Row="1"
+                                    Width="200"
+                                    Height="200"
+                                    CornerRadius="{StaticResource OverlayCornerRadius}">
+                                    <Border CornerRadius="{StaticResource OverlayCornerRadius}">
+                                        <Border.Background>
+                                            <ImageBrush ImageSource="{Binding QRCodeImage}" Stretch="UniformToFill" />
+                                        </Border.Background>
+                                    </Border>
+                                    <Border CornerRadius="{StaticResource OverlayCornerRadius}" Visibility="{Binding ConnectingDevice, Converter={StaticResource BoolToVisibilityConverter}}">
+                                        <Border.Background>
+                                            <AcrylicBrush
+                                                FallbackColor="{ThemeResource SystemChromeMediumHighColor}"
+                                                TintColor="{ThemeResource SystemChromeMediumHighColor}"
+                                                TintOpacity="0" />
+                                        </Border.Background>
+                                        <ProgressRing
+                                            Width="50"
+                                            Height="50"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            IsActive="{Binding ConnectingDevice}" />
+                                    </Border>
+                                </Grid>
+                            </Grid>
+                        </Flyout>
+                    </Button.Flyout>
+                </Button>
+                <Button
+                    Content="&#xE710;"
+                    Style="{StaticResource TitleBarIconButtonStyle}"
+                    ToolTipService.ToolTip="手动连接" />
+            </StackPanel>
         </controls:TitleBar>
         <Grid Grid.Row="1">
             <Grid.Resources>

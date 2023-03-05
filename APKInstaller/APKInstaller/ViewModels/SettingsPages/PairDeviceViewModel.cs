@@ -1,20 +1,21 @@
 ﻿using AdvancedSharpAdbClient;
-using APKInstaller.Controls.Dialogs;
 using APKInstaller.Helpers;
 using APKInstaller.Models;
 using APKInstaller.Pages.SettingsPages;
 using CommunityToolkit.WinUI;
 using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Media;
+using Microsoft.UI.Xaml.Media.Imaging;
+using QRCoder;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Diagnostics;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Windows.ApplicationModel.Contacts;
 using Windows.ApplicationModel.Resources;
+using Windows.Storage.Streams;
 using Zeroconf;
 using Zeroconf.Interfaces;
 
@@ -22,6 +23,8 @@ namespace APKInstaller.ViewModels.SettingsPages
 {
     public class PairDeviceViewModel : INotifyPropertyChanged, IDisposable
     {
+        private string ssid;
+        private string password;
         private readonly PairDevicePage _page;
         //private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("PairDeviceDialog");
 
@@ -89,6 +92,56 @@ namespace APKInstaller.ViewModels.SettingsPages
             }
         }
 
+        private bool _connectingDevice;
+        public bool ConnectingDevice
+        {
+            get => _connectingDevice;
+            set
+            {
+                if (_connectingDevice != value)
+                {
+                    _connectingDevice = value;
+                    if (value)
+                    {
+                        ProgressHelper.SetState(ProgressState.Indeterminate, true);
+                    }
+                    else
+                    {
+                        ProgressHelper.SetState(ProgressState.None, true);
+                    }
+                    RaisePropertyChangedEvent();
+                }
+            }
+        }
+
+        private string _connectLogText;
+        public string ConnectLogText
+        {
+            get => _connectLogText;
+            set
+            {
+                if (_connectLogText != value)
+                {
+                    _connectLogText = value;
+                    RaisePropertyChangedEvent();
+                }
+            }
+        }
+
+        private ImageSource _QRCodeImage;
+        public ImageSource QRCodeImage
+        {
+            get => _QRCodeImage;
+            set
+            {
+                if (_QRCodeImage != value)
+                {
+                    _QRCodeImage = value;
+                    RaisePropertyChangedEvent();
+                }
+            }
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void RaisePropertyChangedEvent([System.Runtime.CompilerServices.CallerMemberName] string name = null)
@@ -118,7 +171,9 @@ namespace APKInstaller.ViewModels.SettingsPages
             }
         }
 
-        public async Task ConnectWithPairingCode(MDNSDeviceData deviceData)
+        public Task ConnectWithPairingCode(MDNSDeviceData deviceData) => ConnectWithPairingCode(deviceData, Code);
+
+        public async Task ConnectWithPairingCode(MDNSDeviceData deviceData, string code)
         {
             deviceData.ConnectingDevice = true;
             IAdbServer ADBServer = AdbServer.Instance;
@@ -139,11 +194,11 @@ namespace APKInstaller.ViewModels.SettingsPages
                     return;
                 }
             }
-            string code = Code;
             if (!string.IsNullOrWhiteSpace(code) && deviceData != null)
             {
                 try
                 {
+                    ConnectLogText = "正在配对，请不要关闭窗口";
                     AdbClient client = new();
                     string pair = await client.PairAsync(deviceData.Address, deviceData.Port, code);
                     if (pair.ToLowerInvariant().StartsWith("successfully"))
@@ -151,6 +206,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                         ConnectInfoSeverity = InfoBarSeverity.Success;
                         ConnectInfoTitle = pair;
                         ConnectInfoIsOpen = true;
+                        ConnectLogText = "配对成功，正在连接，请不要关闭窗口";
                         string connect = await Task.Run(async () =>
                         {
                             using CancellationTokenSource tokenSource = new(TimeSpan.FromSeconds(10));
@@ -171,6 +227,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                             ConnectInfoSeverity = InfoBarSeverity.Success;
                             ConnectInfoTitle = pair;
                             ConnectInfoIsOpen = true;
+                            ConnectLogText = "连接成功";
                         }
                     }
                     else if (pair.ToLowerInvariant().StartsWith("failed:"))
@@ -197,6 +254,61 @@ namespace APKInstaller.ViewModels.SettingsPages
             deviceData.ConnectingDevice = false;
         }
 
+        public async Task InitializeQRScan()
+        {
+            ssid = $"APKInstaller-{new Random().NextInt64(9999999999)}-4v4sx1";
+            password = new Random().Next(999999).ToString();
+            await CreateQRCoder(ssid, password);
+            ConnectListener.ServiceFound += OnServiceFound;
+        }
+
+        public void DisposeQRScan()
+        {
+            QRCodeImage = null;
+            ConnectListener.ServiceFound -= OnServiceFound;
+        }
+
+        private void OnServiceFound(object sender, IZeroconfHost e)
+        {
+            _ = _page.DispatcherQueue.EnqueueAsync(async () =>
+            {
+                MDNSDeviceData deviceData = new(e);
+                if (e.DisplayName == ssid)
+                {
+                    ConnectListener.ServiceFound -= OnServiceFound;
+                    ConnectingDevice = true;
+                    await ConnectWithPairingCode(deviceData, password);
+                    ConnectingDevice = false;
+                    _page.HideQRScanFlyout();
+                }
+            });
+        }
+
+        public async Task CreateQRCoder(string ssid, string password)
+        {
+            string payload = $"WIFI:T:ADB;S:{ssid};P:{password};;";
+
+            using QRCodeGenerator qrGenerator = new QRCodeGenerator();
+            QRCodeData qrCodeData = qrGenerator.CreateQrCode(payload, QRCodeGenerator.ECCLevel.Q);
+
+            using PngByteQRCode qrCodeBmp = new PngByteQRCode(qrCodeData);
+            byte[] qrCodeImageBmp = qrCodeBmp.GetGraphic(
+                20,
+                new byte[] { 0, 0, 0, 0xFF },
+                new byte[] { 0xFF, 0xFF, 0xFF, 0xFF });
+
+            using InMemoryRandomAccessStream stream = new InMemoryRandomAccessStream();
+            using (DataWriter writer = new DataWriter(stream.GetOutputStreamAt(0)))
+            {
+                writer.WriteBytes(qrCodeImageBmp);
+                await writer.StoreAsync();
+            }
+            BitmapImage image = new BitmapImage();
+            await image.SetSourceAsync(stream);
+
+            QRCodeImage = image;
+        }
+
         private void ConnectListener_ServiceFound(object sender, IZeroconfHost e)
         {
             _ = _page.DispatcherQueue.EnqueueAsync(() =>
@@ -207,14 +319,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                 {
                     if (data.Address == deviceData.Address)
                     {
-                        if (data.Port == deviceData.Port)
-                        {
-                            add = false;
-                        }
-                        else
-                        {
-                            _ = DeviceList.Remove(data);
-                        }
+                        _ = DeviceList.Remove(data);
                     }
                 }
                 if (add) { DeviceList.Add(deviceData); }
