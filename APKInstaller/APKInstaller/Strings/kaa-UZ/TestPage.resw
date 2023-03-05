@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AndroidTestSettingsHeader.Header" xml:space="preserve">
-    <value>Android Test</value>
+    <value>Android tekseriw</value>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
     <value>Qosılǵan qurılmalardaǵı baǵdarlamalardı basqarıw</value>
@@ -133,10 +133,10 @@
     <value>Jıynaqlı kórinis</value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
-    <value>A development version app may not stable. Download release version on Microsoft Store.</value>
+    <value>Baǵdarlamashılar ushın arnalǵan versiyası turaqlı islemewi múmkin. Baǵdarlamanı Microsoft dúkáninan júklep alıń.</value>
   </data>
   <data name="DevelopmentInfoBar.Title" xml:space="preserve">
-    <value>You are using a development version app.</value>
+    <value>Siz baǵdarlamashılar ushın arnalǵan versiyasın qollanbaqtasız.</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
     <value>Jıynaqlı kórinisti qosıw</value>
