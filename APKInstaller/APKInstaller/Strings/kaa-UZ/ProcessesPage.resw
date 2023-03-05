@@ -127,7 +127,7 @@
     <value>Ataması</value>
   </data>
   <data name="ProcessId.Header" xml:space="preserve">
-    <value>Process ID</value>
+    <value>Iskerlik barısınıń IDi</value>
   </data>
   <data name="ResidentSetSize.Header" xml:space="preserve">
     <value>Yad</value>
@@ -136,6 +136,6 @@
     <value>Jaǵday</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Processes</value>
+    <value>Iskerlik barısı</value>
   </data>
 </root>
