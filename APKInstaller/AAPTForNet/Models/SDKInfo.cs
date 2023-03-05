@@ -44,7 +44,7 @@ namespace AAPTForNet.Models
             "Snow Cone",
             "Tiramisu",
             "Upside Down Cake",
-            "V",
+            "Vanilla Ice Cream",
             "W",
             "X",
             "Y",

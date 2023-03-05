@@ -9,8 +9,11 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
+using Windows.ApplicationModel.Contacts;
 using Windows.ApplicationModel.Resources;
 using Zeroconf;
 using Zeroconf.Interfaces;
@@ -97,11 +100,21 @@ namespace APKInstaller.ViewModels.SettingsPages
 
         public void InitializeConnectListener()
         {
+            if (!SettingsHelper.Get<bool>(SettingsHelper.ScanPairedDevice))
+            {
+                MonitorHelper.InitializeConnectListener();
+                _ = MonitorHelper.ConnectPairedDevice();
+            }
             if (ConnectListener == null)
             {
                 ConnectListener = ZeroconfResolver.CreateListener("_adb-tls-pairing._tcp.local.");
                 ConnectListener.ServiceFound += ConnectListener_ServiceFound;
                 ConnectListener.ServiceLost += ConnectListener_ServiceLost;
+            }
+            if (AdbServer.Instance.GetStatus().IsRunning)
+            {
+                MonitorHelper.Monitor.DeviceChanged += OnDeviceChanged;
+                ConnectedList = new AdbClient().GetDevices().Where(x => x.State == DeviceState.Online).ToList();
             }
         }
 
@@ -135,27 +148,30 @@ namespace APKInstaller.ViewModels.SettingsPages
                     string pair = await client.PairAsync(deviceData.Address, deviceData.Port, code);
                     if (pair.ToLowerInvariant().StartsWith("successfully"))
                     {
-                        //IReadOnlyList<IZeroconfHost> hosts = await ZeroconfResolver.ResolveAsync("_adb-tls-connect._tcp.local.");
-                        //IZeroconfHost host = hosts.FirstOrDefault((x) => x.IPAddress == deviceData.Address);
-                        //string connect = await client.ConnectAsync(host.IPAddress, host.Services.FirstOrDefault().Value.Port);
-                        //if (connect.ToLowerInvariant().StartsWith("connected to"))
-                        //{
                         ConnectInfoSeverity = InfoBarSeverity.Success;
                         ConnectInfoTitle = pair;
                         ConnectInfoIsOpen = true;
-                        //}
-                        //else if (connect.ToLowerInvariant().StartsWith("cannot connect to"))
-                        //{
-                        //    ConnectInfoSeverity = InfoBarSeverity.Error;
-                        //    ConnectInfoTitle = connect;
-                        //    ConnectInfoIsOpen = true;
-                        //}
-                        //else if (!string.IsNullOrWhiteSpace(connect))
-                        //{
-                        //    ConnectInfoSeverity = InfoBarSeverity.Warning;
-                        //    ConnectInfoTitle = connect;
-                        //    ConnectInfoIsOpen = true;
-                        //}
+                        string connect = await Task.Run(async () =>
+                        {
+                            using CancellationTokenSource tokenSource = new(TimeSpan.FromSeconds(10));
+                            while (!tokenSource.Token.IsCancellationRequested)
+                            {
+                                IReadOnlyList<IZeroconfHost> hosts = await ZeroconfResolver.ResolveAsync("_adb-tls-connect._tcp.local.");
+                                IZeroconfHost host = hosts.FirstOrDefault((x) => x.IPAddress == deviceData.Address);
+                                if (host != null)
+                                {
+                                    string connect = await client.ConnectAsync(host.IPAddress, host.Services.FirstOrDefault().Value.Port);
+                                    return connect;
+                                }
+                            }
+                            return string.Empty;
+                        });
+                        if (connect.ToLowerInvariant().StartsWith("connected to"))
+                        {
+                            ConnectInfoSeverity = InfoBarSeverity.Success;
+                            ConnectInfoTitle = pair;
+                            ConnectInfoIsOpen = true;
+                        }
                     }
                     else if (pair.ToLowerInvariant().StartsWith("failed:"))
                     {
@@ -241,6 +257,10 @@ namespace APKInstaller.ViewModels.SettingsPages
                 if (AdbServer.Instance.GetStatus().IsRunning)
                 {
                     MonitorHelper.Monitor.DeviceChanged -= OnDeviceChanged;
+                }
+                if (!SettingsHelper.Get<bool>(SettingsHelper.ScanPairedDevice))
+                {
+                    MonitorHelper.DisposeConnectListener();
                 }
             }
         }

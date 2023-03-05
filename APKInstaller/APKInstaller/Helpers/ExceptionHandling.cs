@@ -43,13 +43,8 @@ namespace APKInstaller.Helpers.Exceptions
         /// <returns></returns>
         public static ExceptionHandlingSynchronizationContext Register()
         {
-            SynchronizationContext syncContext = Current;
-            if (syncContext == null)
-            {
-                throw new InvalidOperationException("Ensure a synchronization context exists before calling this method.");
-            }
-
-
+            SynchronizationContext syncContext = Current ?? throw new InvalidOperationException("Ensure a synchronization context exists before calling this method.");
+            
             if (syncContext is not ExceptionHandlingSynchronizationContext customSynchronizationContext)
             {
                 customSynchronizationContext = new ExceptionHandlingSynchronizationContext(syncContext);
@@ -82,45 +77,37 @@ namespace APKInstaller.Helpers.Exceptions
             if (Current != context) { SetSynchronizationContext(context); }
         }
 
-
         private readonly SynchronizationContext _syncContext;
-
 
         public ExceptionHandlingSynchronizationContext(SynchronizationContext syncContext)
         {
             _syncContext = syncContext;
         }
 
-
         public override SynchronizationContext CreateCopy()
         {
             return new ExceptionHandlingSynchronizationContext(_syncContext.CreateCopy());
         }
-
 
         public override void OperationCompleted()
         {
             _syncContext.OperationCompleted();
         }
 
-
         public override void OperationStarted()
         {
             _syncContext.OperationStarted();
         }
-
 
         public override void Post(SendOrPostCallback d, object state)
         {
             _syncContext.Post(WrapCallback(d), state);
         }
 
-
         public override void Send(SendOrPostCallback d, object state)
         {
             _syncContext.Send(d, state);
         }
-
 
         private SendOrPostCallback WrapCallback(SendOrPostCallback sendOrPostCallback)
         {
@@ -154,7 +141,6 @@ namespace APKInstaller.Helpers.Exceptions
 
             return exWrapper.Handled;
         }
-
 
         /// <summary>
         /// Listen to this event to catch any unhandled exceptions and allow for handling them

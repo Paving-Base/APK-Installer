@@ -34,7 +34,6 @@
                     <ControlTemplate TargetType="controls:SettingExpander">
                         <Expander
                             MaxWidth="{TemplateBinding MaxWidth}"
-                            Margin="0,0,0,-2"
                             HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
                             HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
                             AutomationProperties.HelpText="{TemplateBinding AutomationProperties.HelpText}"

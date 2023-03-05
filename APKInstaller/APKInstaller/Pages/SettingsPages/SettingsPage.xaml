@@ -36,7 +36,10 @@
                         <ReorderThemeTransition />
                     </TransitionCollection>
                 </StackPanel.ChildrenTransitions>
-                <controls:SettingsGroup Margin="0">
+                <controls:SettingsGroup
+                    x:Name="ModifiedSettingsHeader"
+                    Margin="0"
+                    x:Load="{x:Bind settingspages:SettingsViewModel.IsModified}">
                     <InfoBar
                         x:Uid="/SettingsPage/ModifiedInfoBar"
                         IsClosable="False"
@@ -184,9 +187,10 @@
                     <InfoBar
                         x:Name="ConnectInfo"
                         Title="{Binding ConnectInfoTitle}"
-                        IsOpen="{Binding ConnectInfoIsOpen}"
+                        IsOpen="{Binding ConnectInfoIsOpen, Mode=TwoWay}"
                         Loaded="InfoBar_Loaded"
-                        Severity="{Binding ConnectInfoSeverity}" />
+                        Severity="{Binding ConnectInfoSeverity}"
+                        Visibility="{Binding ConnectInfoIsOpen, Converter={StaticResource BoolToVisibilityConverter}}" />
                     <controls:Setting x:Uid="/SettingsPage/ScanPairedDeviceSettings" Icon="&#xE70C;">
                         <ToggleSwitch IsOn="{Binding ScanPairedDevice, Mode=TwoWay}" Style="{StaticResource ToggleSwitchSettingStyle}" />
                     </controls:Setting>
@@ -438,7 +442,6 @@
                                     Foreground="{ThemeResource TextFillColorSecondaryBrush}"
                                     Visibility="{Binding CheckingUpdate, Converter={StaticResource BoolToVisibilityConverter}}" />
                                 <Button
-                                    x:Name="Update"
                                     x:Uid="/SettingsPage/CheckUpdates"
                                     HorizontalAlignment="Right"
                                     Click="Button_Click"
@@ -458,10 +461,11 @@
                         x:Name="UpdateState"
                         Title="{Binding UpdateStateTitle}"
                         IsClosable="True"
-                        IsOpen="{Binding UpdateStateIsOpen}"
+                        IsOpen="{Binding UpdateStateIsOpen, Mode=TwoWay}"
                         Loaded="InfoBar_Loaded"
                         Message="{Binding UpdateStateMessage}"
-                        Severity="{Binding UpdateStateSeverity}">
+                        Severity="{Binding UpdateStateSeverity}"
+                        Visibility="{Binding UpdateStateIsOpen, Converter={StaticResource BoolToVisibilityConverter}}">
                         <InfoBar.ActionButton>
                             <Button
                                 x:Name="GotoUpdate"

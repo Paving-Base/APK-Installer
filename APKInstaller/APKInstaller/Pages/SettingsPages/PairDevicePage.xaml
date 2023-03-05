@@ -69,7 +69,7 @@
                             </DataTemplate>
                         </controls:SettingsGroup.ItemTemplate>
                     </controls:SettingsGroup>
-                    <controls:SettingsGroup Margin="0">
+                    <controls:SettingsGroup Margin="0,2,0,0" Visibility="{Binding ConnectInfoIsOpen, Converter={StaticResource BoolToVisibilityConverter}}">
                         <InfoBar
                             x:Name="ConnectInfo"
                             Title="{Binding ConnectInfoTitle, Mode=OneWay}"
@@ -95,16 +95,24 @@
                                             <Run Text="{x:Bind Port}" />
                                         </TextBlock>
                                     </controls:Setting.Description>
-                                    <Button
-                                        x:Name="PairButton"
-                                        Width="40"
-                                        Height="36"
-                                        HorizontalAlignment="Center"
-                                        VerticalAlignment="Center"
-                                        Click="Button_Click"
-                                        Content="&#xE71B;"
-                                        FontFamily="{StaticResource SymbolThemeFontFamily}"
-                                        Tag="{x:Bind}" />
+                                    <Grid>
+                                        <ProgressRing
+                                            Width="24"
+                                            Height="24"
+                                            IsActive="{x:Bind ConnectingDevice, Mode=OneWay}"
+                                            Visibility="{x:Bind ConnectingDevice, Converter={StaticResource BoolToVisibilityConverter}, Mode=OneWay}" />
+                                        <Button
+                                            x:Name="PairButton"
+                                            Width="40"
+                                            Height="36"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Click="Button_Click"
+                                            Content="&#xE71B;"
+                                            FontFamily="{StaticResource SymbolThemeFontFamily}"
+                                            Tag="{x:Bind}"
+                                            Visibility="{x:Bind ConnectingDevice, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='true', Mode=OneWay}" />
+                                    </Grid>
                                 </controls:Setting>
                             </DataTemplate>
                         </controls:SettingsGroup.ItemTemplate>

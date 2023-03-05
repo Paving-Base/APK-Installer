@@ -24,11 +24,6 @@ namespace APKInstaller.Pages.SettingsPages
         {
             base.OnNavigatedTo(e);
             Provider = new PairDeviceViewModel(this);
-            if (AdbServer.Instance.GetStatus().IsRunning)
-            {
-                MonitorHelper.Monitor.DeviceChanged += Provider.OnDeviceChanged;
-                Provider.ConnectedList = new AdbClient().GetDevices().Where(x => x.State == DeviceState.Online).ToList();
-            }
             DataContext = Provider;
             Provider.InitializeConnectListener();
         }
