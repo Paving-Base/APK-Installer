@@ -172,7 +172,7 @@
     <value>Ornatıwdı biykarlawǵa isenimińiz kámil me?</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Connecting Paired Devices...</value>
+    <value>Qosılǵan qurılmalarǵa jalǵanbaqta...</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Kóshirip alıw</value>
@@ -232,7 +232,7 @@
     <value>Sáykes emes baǵdarlama</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
-    <value>The minimum required for this app is {0}. Your device supports {1}. Please update your device or choose order package.</value>
+    <value>Bul baǵdarlama ushın eń az talap etiletuǵını {0}. Siziń qurılmańız {1} qollap-quwatlaydı. Ótinish, qurılmańızdı jańalań yamasa basqa baǵdarlamalar jıyındısın tańlań.</value>
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
@@ -266,7 +266,7 @@
     <value>Baǵdarlamalar jıyındısı zıyan kórgen yamasa nadurıs.</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
-    <value>The URL is either Incomplete or invalid.</value>
+    <value>Nadurıs yamasa jaramsız mánzil.</value>
   </data>
   <data name="Launch" xml:space="preserve">
     <value>Iske túsiriw</value>
@@ -314,7 +314,7 @@
     <value>Ótinish, baǵdarlamanı ashıwdan aldın internetke jalǵanıń.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>For proper functioning of the app, try to launch an Android app package.</value>
+    <value>Baǵdarlamanıń durıs islewi ushın Android baǵdarlamasınıń baǵdarlamalar jıyındısın iske túsirip kóriń.</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>MAQUL</value>
