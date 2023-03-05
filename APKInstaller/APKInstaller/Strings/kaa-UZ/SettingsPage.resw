@@ -244,7 +244,7 @@
     <value>Basqa qurılmalarǵa jalǵanıw ushın, bunı óshiriń.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>For WSA only?</value>
+    <value>Tek "Android ushın Windows tómengi sisteması"</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>OS arxitekturası</value>
