@@ -151,10 +151,10 @@
     <value>Óshiriw</value>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
-    <value>Manage the processes of connected devices</value>
+    <value>Jalǵanǵan qurılmalardıń iskerlik barısın basqarıw</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
-    <value>Processes</value>
+    <value>Iskerlik barısı</value>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
     <value>Ósiw kórsetkishin joqarıda tekseriw</value>
