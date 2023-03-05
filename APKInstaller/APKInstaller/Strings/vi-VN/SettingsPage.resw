@@ -292,10 +292,10 @@
     <value>Bạn có chắc chắn muốn đặt lại ứng dụng không?</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value>Scan and auto connect paired devices.</value>
+    <value>Quét và tự động kết nối các thiết bị đã ghép nối.</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Scan Paired Devices?</value>
+    <value>Quét Các Thiết Bị Đã Ghép Nối?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Chọn thiết bị</value>
