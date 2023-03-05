@@ -27,6 +27,7 @@
             <StackPanel Orientation="Horizontal">
                 <Button
                     x:Name="QRScanButton"
+                    Margin="0,0,-8,0"
                     Content="&#xED14;"
                     Style="{StaticResource TitleBarIconButtonStyle}"
                     ToolTipService.ToolTip="二维码配对">
@@ -92,6 +93,7 @@
                     </Button.Flyout>
                 </Button>
                 <Button
+                    Margin="0,0,-8,0"
                     Content="&#xE710;"
                     Style="{StaticResource TitleBarIconButtonStyle}"
                     ToolTipService.ToolTip="手动连接" />

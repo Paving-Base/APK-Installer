@@ -161,7 +161,7 @@
                     <TextBlock
                         x:Name="AppName"
                         Grid.Row="0"
-                        FontSize="24"
+                        FontSize="{ThemeResource PivotHeaderItemFontSize}"
                         FontWeight="SemiLight"
                         OpticalMarginAlignment="TrimSideBearings"
                         Text="{Binding AppName}"
@@ -231,7 +231,7 @@
                     x:Name="AppBigPictureMainContentText"
                     Grid.Row="0"
                     HorizontalAlignment="Center"
-                    FontSize="24"
+                    FontSize="{ThemeResource PivotHeaderItemFontSize}"
                     FontWeight="SemiBold"
                     MaxLines="2"
                     OpticalMarginAlignment="TrimSideBearings"

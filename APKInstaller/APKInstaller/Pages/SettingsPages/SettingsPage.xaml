@@ -156,7 +156,7 @@
                                 </Style>
                                 <Style BasedOn="{StaticResource TextButtonStyle}" TargetType="HyperlinkButton">
                                     <Style.Setters>
-                                        <Setter Property="FontSize" Value="12" />
+                                        <Setter Property="FontSize" Value="{ThemeResource SettingCardDescriptionFontSize}" />
                                         <Setter Property="Padding" Value="0,0,0,0" />
                                     </Style.Setters>
                                 </Style>

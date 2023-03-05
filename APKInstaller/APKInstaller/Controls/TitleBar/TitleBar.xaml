@@ -72,7 +72,7 @@
                                     Margin="0,0,16,2"
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Center"
-                                    FontSize="16"
+                                    FontSize="{ThemeResource ControlContentThemeFontSize}"
                                     Foreground="{ThemeResource TitleBarForegroundBrush}"
                                     Style="{StaticResource CaptionTextBlockStyle}"
                                     Text="{TemplateBinding Title}"
@@ -109,7 +109,7 @@
                                         Grid.Column="1"
                                         Width="20"
                                         Height="20"
-                                        Margin="16,0,4,0"
+                                        Margin="14,0,6,0"
                                         VerticalAlignment="Center"
                                         IsActive="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.IsProgressActive}"
                                         IsIndeterminate="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.IsProgressIndeterminate}"
@@ -152,7 +152,7 @@
                                 <VisualState x:Name="RefreshButtonCollapsed">
                                     <VisualState.Setters>
                                         <Setter Target="RefreshButton.Visibility" Value="Collapsed" />
-                                        <Setter Target="ProgressRing.Margin" Value="16,0" />
+                                        <Setter Target="ProgressRing.Margin" Value="14,0" />
                                     </VisualState.Setters>
                                 </VisualState>
                             </VisualStateGroup>
