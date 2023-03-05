@@ -1,7 +1,7 @@
 #### APK ornatıwshısına xosh kelibsiz!
 
 ##### Deklaraciya
-1. Please comply with the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+1. Ótinish, [APK Installer paydalanıwshısınıń licenziya shártnamasına hám qupiyalıq siyasatına](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md) ámel qılıń.
 2. This program is open source software, so please make sure the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) to ensure your data security.
 3. Eger baǵdarlamanıń deregi ózgeshe bolmasa, siziń bárshe dereklerińiz tek baǵdarlamanı iske túsiriw ushın qollanıladı yamasa jumıs barısında ishki yadqa saqlanadı hám baǵdarlamashı siziń maǵlıwmatlarıńızdı urlay almaydı. Ótinish, sonda da ortalıq qáwipsizligine itibar qaratıń.
 4. Baǵdarlamanıń awdarması [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") birlespesinen alınǵan hám barlıq tekstler avtordıń kózqarasın sáwlelendirmeydi.
