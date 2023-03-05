@@ -178,7 +178,7 @@
     <value>Qayta baylanıs</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
+    <value>Aqırǵı islep shıǵarıwlardan xabardar bolıw ushın, meni social tarmaqlarda baqlap barıń. Eger siz qanday da bir qátelik tapsańız, meniń jekeme jazıń. Men qolımnan kelgenshe mashqalalardı saplastırıwǵa háreket etemen. Eger sizde Telegram akkaunt bolsa, Paving Base Group toparında jazıwǵa tartınbań 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Mazmun</value>
@@ -193,7 +193,7 @@
     <value>Qollap-quwatlaw</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Ornatıwshı - bul ashıq kodlı baǵdarlama bolıp, payda alıw ushın heshqanday reklama qospaydı. Eger sizge bul baǵdarlama unaǵan bolsa, dúkánda onı bahalawdı umıtpań. Eger azǵana aqshalay qollap-quwatlasańız, álbette, jaqsı bolar edi.. Qollap-quwatlaǵanıńız ushın raxmet. 💕</value>
+    <value>APK Ornatıwshı - bul ashıq kodlı baǵdarlama bolıp, payda alıw ushın heshqanday reklama qospaydı. Eger sizge bul baǵdarlama unaǵan bolsa, dúkánda onı bahalawdı umıtpań. Eger azǵana materiallıq járdem kórsetseńiz, álbette, jaqsı bolar edi. Qollap-quwatlaǵanıńız ushın raxmet. 💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>Licenziyalıq kelisim</value>
@@ -235,7 +235,7 @@
     <value>Jurnal</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>Ózgertilgen versiyasında unamsız nárseler bolıwı múmkin. Mısalı, reklama, buzılǵan funciyalar, hátteki, viruslar. Dáslepki versiyasın júklep alıw ushın Microsoft dúkánina ótiń. Ótinish, tolıq maǵlıwmat alıw ushın biziń GitHub repozitorıymızdı kóriń.</value>
+    <value>Ózgertilgen versiyasında unamsız nárseler bolıwı múmkin. Mısalı: reklama, buzılǵan funciyalar, hátteki, viruslar. Dáslepki versiyasın júklep alıw ushın Microsoft dúkánina ótiń. Ótinish, tolıq maǵlıwmat alıw ushın biziń GitHub repozitorıymızdı kóriń.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>Siz ózgertilgen versiyasın qollanbaqtasız!</value>
