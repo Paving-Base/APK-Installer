@@ -193,13 +193,13 @@
     <value>Ótinish, internet jalǵanıwın yamasa URLdı tekserıń hám qayta urınıp kóriń.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>Finding WSA...</value>
+    <value>Android ushın Windows tómengi sisteması izlenbekte...</value>
   </data>
   <data name="Finished" xml:space="preserve">
     <value>Tayar</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>WSA Found</value>
+    <value>Android ushın Windows tómengi sisteması tabıldı</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
     <value>Sazlawlarǵa ótiw</value>
@@ -260,7 +260,7 @@
     <value>Sebep: </value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
-    <value>Install WSA</value>
+    <value>Android ushın Windows tómengi sistemasın ornatıw</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
     <value>Baǵdarlamalar jıyındısı zıyan kórgen yamasa nadurıs.</value>
@@ -353,7 +353,7 @@
     <value>ADB server iske túspekte...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>Start WSA</value>
+    <value>Android ushın Windows tómengi sistemasın iske túsiriw</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
     <value>Dúkánǵa silteme</value>
@@ -393,13 +393,13 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
-    <value>Waiting WSA Start...
-This may take long time. Sit back and relax.</value>
+    <value>Android ushın Windows tómengi sistemasınıń iske túsiriliwin kútpekte...
+Bul kóp waqıt alıwı múmkin. Otırıp dem alıń.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Xosh kelibsiz!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>WSA is Running</value>
+    <value>Android ushın Windows tómengi sisteması iske túspekte</value>
   </data>
 </root>
