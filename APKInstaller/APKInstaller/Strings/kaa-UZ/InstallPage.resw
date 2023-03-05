@@ -223,7 +223,7 @@
 [Learn More]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
-    <value>Icon</value>
+    <value>Belgi</value>
   </data>
   <data name="IKnow" xml:space="preserve">
     <value>Maqul</value>
@@ -275,7 +275,7 @@
     <value>Iske túsirilmekte...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>Launch when ready</value>
+    <value>Tayın bolǵanda iske túsiriw</value>
   </data>
   <data name="Loading" xml:space="preserve">
     <value>Júklenbekte...</value>
@@ -389,7 +389,7 @@
     <value>Qurılmanı kútpekte...</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
-    <value>Waiting for install {0}</value>
+    <value>{0} ornatılwı kútilmekte</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
