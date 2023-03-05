@@ -133,7 +133,7 @@
     <value>Onlayn baǵdarlamalar jıyındısı avtomatikalıq júklensin be?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>Select Backdrop Type for Windows 11</value>
+    <value>Windows 11 ushın fon túrin tańlań</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
     <value>Xabarlamanıń artqı fonı</value>
@@ -154,16 +154,16 @@
     <value>Keshdi óshiriw</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
+    <value>Eger ADB server iskerligin toqtatqan bolsańız, keyingi ret ornatqanda qayta iske túsiriw talap etiledi.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Terminate ADB when Exit Installer?</value>
+    <value>Ornatıw baǵdarlamasınan shıqqanda, ADB iskerligi toqtatılsın ba?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
     <value>Ornatıw ámelge asqannan keyin ornatıwshıdan shıǵıw.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Exit Installer when APP is Ready?</value>
+    <value>Baǵdarlama tayar bolǵanda, ornatıw baǵdarlaması jabılsın ba?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Sazlawlar</value>
@@ -193,7 +193,7 @@
     <value>Qollap-quwatlaw</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
+    <value>APK Ornatıwshı - bul ashıq kodlı baǵdarlama bolıp, payda alıw ushın heshqanday reklama qospaydı. Eger sizge bul baǵdarlama unaǵan bolsa, dúkánda onı bahalawdı umıtpań. Eger azǵana aqshalay qollap-quwatlasańız, álbette, jaqsı bolar edi.. Qollap-quwatlaǵanıńız ushın raxmet. 💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>Licenziyalıq kelisim</value>
