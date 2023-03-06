@@ -262,10 +262,10 @@
     <value>配對設備</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
-    <value>Pair and connect devices.</value>
+    <value>配對並連接設備。</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
-    <value>Pair &amp; Connect</value>
+    <value>配對與連接</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>深色</value>
@@ -298,10 +298,10 @@
     <value>你確定要重置應用嗎？</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value>Scan and auto connect paired devices.</value>
+    <value>掃描並自動連接已配對的設備。</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Scan Paired Devices?</value>
+    <value>是否掃描已配對的設備？</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>選擇設備</value>
