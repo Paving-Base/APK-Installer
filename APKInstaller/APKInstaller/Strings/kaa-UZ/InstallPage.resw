@@ -145,7 +145,7 @@
     <value>Yaq</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>WSAǵa jalǵanıw ámelge aspadı</value>
+    <value>Android ushın Windows tómengi sistemasına jalǵanıw ámelge aspadı</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
     <value>Eger Android ushın Windows tómengi sisteması nadurıs iske tússe yamasa ADB menen mashqala payda bolsa, bul mashqalanı saplastırıw qıyın bolıwı múmkin. Ótinish, ornatıwshını qayta iske túsiriń. Eger bul járdem bermese, kompyuterińizdi qayta iske túsiriń.</value>
@@ -212,7 +212,7 @@
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>WSAǵa qurılmanı qalay jalǵaymız</value>
+    <value>Android ushın Windows tómengi sistemasına qurılmanı qalay jalǵaymız</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
     <value>1. APK ornatıwshısı sońǵı versiyasına jańalanǵanına isenim kámil etiń
@@ -397,7 +397,7 @@
 Bul kóp waqıt alıwı múmkin. Otırıp dem alıń.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Xosh kelibsiz!</value>
+    <value>Xosh keldińiz!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>Android ushın Windows tómengi sisteması iske túspekte</value>
