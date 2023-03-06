@@ -26,11 +26,14 @@ namespace APKInstaller.ViewModels.SettingsPages
         private string ssid;
         private string password;
         private readonly PairDevicePage _page;
-        //private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("PairDeviceDialog");
+        private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("PairDevicePage");
 
         private static string ADBPath => SettingsHelper.Get<string>(SettingsHelper.ADBPath);
 
         public ResolverListener ConnectListener;
+
+        public string DeviceListFormat => _loader.GetString("DeviceListFormat");
+        public string ConnectedListFormat => _loader.GetString("ConnectedListFormat");
 
         public readonly ObservableCollection<MDNSDeviceData> DeviceList = new();
 
@@ -224,7 +227,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                 }
                 try
                 {
-                    ConnectLogText = "正在配对，请不要关闭窗口";
+                    ConnectLogText = _loader.GetString("PairingLogText");
                     AdbClient client = new();
                     string pair = await client.PairAsync(deviceData.Address, deviceData.Port, code);
                     if (pair.ToLowerInvariant().StartsWith("successfully"))
@@ -232,7 +235,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                         ConnectInfoSeverity = InfoBarSeverity.Success;
                         ConnectInfoTitle = pair;
                         ConnectInfoIsOpen = true;
-                        ConnectLogText = "配对成功，正在连接，请不要关闭窗口";
+                        ConnectLogText = _loader.GetString("ConnectingLogText");
                         string connect = await Task.Run(async () =>
                         {
                             using CancellationTokenSource tokenSource = new(TimeSpan.FromSeconds(10));
@@ -253,7 +256,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                             ConnectInfoSeverity = InfoBarSeverity.Success;
                             ConnectInfoTitle = pair;
                             ConnectInfoIsOpen = true;
-                            ConnectLogText = "连接成功";
+                            ConnectLogText = _loader.GetString("ConnectedLogText");
                         }
                     }
                     else if (pair.ToLowerInvariant().StartsWith("failed:"))
@@ -305,7 +308,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                 }
                 try
                 {
-                    ConnectLogText = "正在配对，请不要关闭窗口";
+                    ConnectLogText = _loader.GetString("PairingLogText");
                     AdbClient client = new();
                     string pair = await client.PairAsync(host, code);
                     if (pair.ToLowerInvariant().StartsWith("successfully"))
@@ -313,7 +316,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                         ConnectInfoSeverity = InfoBarSeverity.Success;
                         ConnectInfoTitle = pair;
                         ConnectInfoIsOpen = true;
-                        ConnectLogText = "配对成功，正在连接，请不要关闭窗口";
+                        ConnectLogText = _loader.GetString("ConnectingLogText");
                         string connect = await Task.Run(async () =>
                         {
                             using CancellationTokenSource tokenSource = new(TimeSpan.FromSeconds(10));
@@ -334,7 +337,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                             ConnectInfoSeverity = InfoBarSeverity.Success;
                             ConnectInfoTitle = pair;
                             ConnectInfoIsOpen = true;
-                            ConnectLogText = "连接成功";
+                            ConnectLogText = _loader.GetString("ConnectedLogText");
                         }
                     }
                     else if (pair.ToLowerInvariant().StartsWith("failed:"))
@@ -416,6 +419,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                 ConnectingDevice = false;
             }
         }
+
         public async Task InitializeQRScan()
         {
             ssid = $"APKInstaller-{new Random().NextInt64(9999999999)}-4v4sx1";

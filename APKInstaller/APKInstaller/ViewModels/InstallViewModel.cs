@@ -1019,9 +1019,10 @@ namespace APKInstaller.ViewModels
         {
             if (!string.IsNullOrWhiteSpace(_path) || _url != null)
             {
-                WaitProgressText = _loader.GetString("Decompiling");
+                WaitProgressText = _loader.GetString("Loading");
                 if (NetAPKExist)
                 {
+                    WaitProgressText = _loader.GetString("Decompiling");
                     try
                     {
                         ApkInfo = await Task.Run(() => { return AAPTool.Decompile(_path); });
@@ -1034,6 +1035,7 @@ namespace APKInstaller.ViewModels
                         IsInitialized = true;
                         return;
                     }
+                    WaitProgressText = _loader.GetString("Loading");
                 }
                 else
                 {

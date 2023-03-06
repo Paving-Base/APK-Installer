@@ -191,6 +191,12 @@
                         Loaded="InfoBar_Loaded"
                         Severity="{Binding ConnectInfoSeverity}"
                         Visibility="{Binding ConnectInfoIsOpen, Converter={StaticResource BoolToVisibilityConverter}}" />
+                    <controls:Setting
+                        x:Uid="/SettingsPage/PairDeviceSettings"
+                        Click="Button_Click"
+                        Icon="&#xE836;"
+                        IsClickEnabled="True"
+                        Tag="PairDevice" />
                     <controls:Setting x:Uid="/SettingsPage/ScanPairedDeviceSettings" Icon="&#xE70C;">
                         <ToggleSwitch IsOn="{Binding ScanPairedDevice, Mode=TwoWay}" Style="{StaticResource ToggleSwitchSettingStyle}" />
                     </controls:Setting>

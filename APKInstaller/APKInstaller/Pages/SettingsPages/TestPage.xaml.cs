@@ -115,9 +115,6 @@ namespace APKInstaller.Pages.SettingsPages
                 case "Processes":
                     _ = Frame.Navigate(typeof(ProcessesPage));
                     break;
-                case "PairDevice":
-                    _ = Frame.Navigate(typeof(PairDevicePage));
-                    break;
                 case "Applications":
                     _ = Frame.Navigate(typeof(ApplicationsPage));
                     break;

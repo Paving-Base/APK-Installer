@@ -87,6 +87,9 @@ namespace APKInstaller.Pages.SettingsPages
                 case "TestPage":
                     _ = Frame.Navigate(typeof(TestPage));
                     break;
+                case "PairDevice":
+                    _ = Frame.Navigate(typeof(PairDevicePage));
+                    break;
                 case "CheckUpdate":
                     Provider.CheckUpdate();
                     break;

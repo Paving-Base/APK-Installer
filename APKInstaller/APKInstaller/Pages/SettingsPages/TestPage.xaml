@@ -100,13 +100,6 @@
                 </controls:SettingsGroup>
                 <controls:SettingsGroup x:Uid="/TestPage/AndroidTestSettingsHeader">
                     <controls:Setting
-                        Click="Button_Click"
-                        Description="配对并连接设备"
-                        Header="配对设备"
-                        Icon="&#xE71B;"
-                        IsClickEnabled="True"
-                        Tag="PairDevice" />
-                    <controls:Setting
                         x:Uid="/TestPage/ApplicationsSettings"
                         Click="Button_Click"
                         Icon="&#xE7B8;"

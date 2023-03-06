@@ -9,8 +9,9 @@
     xmlns:models="using:APKInstaller.Models"
     xmlns:settingspages="using:APKInstaller.ViewModels.SettingsPages"
     xmlns:sharpadbclient="using:AdvancedSharpAdbClient"
-    xmlns:ui="using:CommunityToolkit.WinUI.UI"
+    xmlns:sys="using:System"
     d:DataContext="{d:DesignInstance Type=settingspages:PairDeviceViewModel}"
+    NavigationCacheMode="Enabled"
     mc:Ignorable="d">
     <Page.Resources>
         <ResourceDictionary>
@@ -24,7 +25,7 @@
         </Grid.RowDefinitions>
         <controls:TitleBar
             x:Name="TitleBar"
-            x:Uid="/SettingsPage/TitleBar"
+            x:Uid="/PairDevicePage/TitleBar"
             BackRequested="TitleBar_BackRequested"
             IsBackButtonVisible="True"
             IsBackEnabled="{x:Bind Frame.CanGoBack}"
@@ -34,10 +35,10 @@
             <StackPanel Orientation="Horizontal">
                 <Button
                     x:Name="QRScanButton"
+                    x:Uid="/PairDevicePage/QRScanButton"
                     Margin="0,0,-8,0"
                     Content="&#xED14;"
-                    Style="{StaticResource TitleBarIconButtonStyle}"
-                    ToolTipService.ToolTip="二维码配对">
+                    Style="{StaticResource TitleBarIconButtonStyle}">
                     <Button.Flyout>
                         <Flyout Closed="Flyout_Closed" Opening="Flyout_Opening">
                             <Flyout.FlyoutPresenterStyle>
@@ -60,8 +61,8 @@
                                     Margin="8,12"
                                     HorizontalAlignment="Center">
                                     <TextBlock
+                                        x:Uid="/PairDevicePage/QRScanTextBlock"
                                         HorizontalAlignment="Center"
-                                        Text="扫描二维码配对设备"
                                         TextWrapping="Wrap"
                                         Visibility="{Binding ConnectingDevice, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='true'}" />
                                     <TextBlock
@@ -101,10 +102,10 @@
                     </Button.Flyout>
                 </Button>
                 <Button
+                    x:Uid="/PairDevicePage/ManualPairButton"
                     Margin="0,0,-8,0"
                     Content="&#xE710;"
-                    Style="{StaticResource TitleBarIconButtonStyle}"
-                    ToolTipService.ToolTip="手动连接">
+                    Style="{StaticResource TitleBarIconButtonStyle}">
                     <Button.Flyout>
                         <Flyout>
                             <Flyout.FlyoutPresenterStyle>
@@ -127,26 +128,26 @@
                                         <ColumnDefinition Width="Auto" />
                                     </Grid.ColumnDefinitions>
                                     <TextBlock
+                                        x:Uid="/PairDevicePage/ManualPairTextBlock"
                                         VerticalAlignment="Center"
-                                        Style="{ThemeResource BaseTextBlockStyle}"
-                                        Text="手动连接" />
+                                        Style="{ThemeResource BaseTextBlockStyle}" />
                                     <StackPanel
                                         Grid.Column="1"
                                         VerticalAlignment="Center"
                                         Orientation="Horizontal">
                                         <ToggleButton
                                             x:Name="PairToggleButton"
+                                            x:Uid="/PairDevicePage/PairToggleButton"
                                             Padding="4,2"
                                             BorderThickness="1,1,0,1"
-                                            Content="配对"
                                             CornerRadius="{Binding Source={StaticResource ControlCornerRadius}, Converter={StaticResource LeftCornerRadiusFilterConverter}}"
                                             FontSize="12"
                                             IsChecked="True" />
                                         <ToggleButton
                                             x:Name="ConnectToggleButton"
+                                            x:Uid="/PairDevicePage/ConnectToggleButton"
                                             Padding="4,2"
                                             BorderThickness="0,1,1,1"
-                                            Content="连接"
                                             CornerRadius="{Binding Source={StaticResource ControlCornerRadius}, Converter={StaticResource RightCornerRadiusFilterConverter}}"
                                             FontSize="12"
                                             IsChecked="{Binding IsChecked, ElementName=PairToggleButton, Converter={StaticResource BoolNegationConverter}, Mode=TwoWay}" />
@@ -169,14 +170,14 @@
                                             <RowDefinition Height="Auto" />
                                         </Grid.RowDefinitions>
                                         <TextBox
+                                            x:Uid="/PairDevicePage/IPAddressBox"
                                             Grid.Row="0"
-                                            Header="IP 地址和端口"
                                             PlaceholderText="127.0.0.1:58526"
                                             Text="{Binding IPAddress, Mode=TwoWay}"
                                             TextChanged="IPAddressBox_TextChanged" />
                                         <TextBox
+                                            x:Uid="/PairDevicePage/PairCodeBox"
                                             Grid.Row="1"
-                                            Header="WLAN 配对码"
                                             PlaceholderText="888888"
                                             Text="{Binding Code, Mode=TwoWay}" />
                                     </Grid>
@@ -185,8 +186,7 @@
                                         RowSpacing="8"
                                         Visibility="{Binding IsChecked, ElementName=ConnectToggleButton, Converter={StaticResource BoolToVisibilityConverter}}">
                                         <TextBox
-                                            x:Name="IPAddressBox"
-                                            Header="IP 地址和端口"
+                                            x:Uid="/PairDevicePage/IPAddressBox"
                                             PlaceholderText="127.0.0.1:58526"
                                             Text="{Binding IPAddress, Mode=TwoWay}"
                                             TextChanged="IPAddressBox_TextChanged" />
@@ -200,8 +200,8 @@
                                             Visibility="{Binding ConnectingDevice, Converter={StaticResource BoolToVisibilityConverter}}" />
                                         <Button
                                             x:Name="ConnectButton"
+                                            x:Uid="/PairDevicePage/ConnectButton"
                                             Click="Button_Click"
-                                            Content="连接"
                                             IsEnabled="{Binding IPAddress, Converter={StaticResource StringRegexToBoolConverter}, ConverterParameter={StaticResource IPAddressRegexPattern}}"
                                             Visibility="{Binding ConnectingDevice, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='true'}" />
                                     </Grid>
@@ -234,14 +234,10 @@
                             <ReorderThemeTransition />
                         </TransitionCollection>
                     </StackPanel.ChildrenTransitions>
-                    <controls:SettingsGroup ItemsSource="{x:Bind Provider.ConnectedList, Mode=OneWay}" Visibility="{x:Bind Provider.ConnectedList, Converter={StaticResource CollectionVisibilityConverter}, Mode=OneWay}">
-                        <controls:SettingsGroup.Header>
-                            <TextBlock>
-                                <Run Text="已连接" />
-                                <Run Text="{x:Bind Provider.ConnectedList.Count, Mode=OneWay}" />
-                                <Run Text="个设备" />
-                            </TextBlock>
-                        </controls:SettingsGroup.Header>
+                    <controls:SettingsGroup
+                        Header="{x:Bind sys:String.Format(Provider.ConnectedListFormat, Provider.ConnectedList.Count), Mode=OneWay}"
+                        ItemsSource="{x:Bind Provider.ConnectedList, Mode=OneWay}"
+                        Visibility="{x:Bind Provider.ConnectedList, Converter={StaticResource CollectionVisibilityConverter}, Mode=OneWay}">
                         <controls:SettingsGroup.ItemTemplate>
                             <DataTemplate x:DataType="sharpadbclient:DeviceData">
                                 <controls:Setting
@@ -258,22 +254,15 @@
                             IsOpen="{Binding ConnectInfoIsOpen, Mode=TwoWay}"
                             Severity="{Binding ConnectInfoSeverity, Mode=OneWay}" />
                     </controls:SettingsGroup>
-                    <controls:SettingsGroup ItemsSource="{x:Bind Provider.DeviceList, Mode=OneWay}">
-                        <controls:SettingsGroup.Header>
-                            <TextBlock>
-                                <Run Text="已发现" />
-                                <Run Text="{x:Bind Provider.DeviceList.Count, Mode=OneWay}" />
-                                <Run Text="个设备" />
-                            </TextBlock>
-                        </controls:SettingsGroup.Header>
+                    <controls:SettingsGroup Header="{x:Bind sys:String.Format(Provider.DeviceListFormat, Provider.DeviceList.Count), Mode=OneWay}" ItemsSource="{x:Bind Provider.DeviceList, Mode=OneWay}">
                         <controls:SettingsGroup.ItemTemplate>
                             <DataTemplate x:DataType="models:MDNSDeviceData">
                                 <controls:Setting Header="{x:Bind Name}" Icon="&#xE8EA;">
                                     <controls:Setting.Description>
                                         <TextBlock IsTextSelectionEnabled="True">
-                                            <Run Text="地址" />
+                                            <Run x:Uid="/PairDevicePage/AddressRun" />
                                             <Run Text="{x:Bind Address}" />
-                                            <Run Text="端口" />
+                                            <Run x:Uid="/PairDevicePage/PortRun" />
                                             <Run Text="{x:Bind Port}" />
                                         </TextBlock>
                                     </controls:Setting.Description>
@@ -305,12 +294,13 @@
                 Grid.Row="2"
                 MinWidth="{StaticResource SettingCardContentMinWidth}"
                 Padding="16,8"
-                HorizontalAlignment="Right">
+                HorizontalAlignment="Right"
+                ColumnSpacing="12">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <TextBlock VerticalAlignment="Center" Text="Wifi 配对码：" />
+                <TextBlock x:Uid="/PairDevicePage/PairCodeTextBlock" VerticalAlignment="Center" />
                 <TextBox
                     x:Name="CodeTextBox"
                     Grid.Column="1"
