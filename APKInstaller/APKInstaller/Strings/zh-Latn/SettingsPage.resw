@@ -261,6 +261,12 @@
   <data name="PairDevice.Header" xml:space="preserve">
     <value>配对设备</value>
   </data>
+  <data name="PairDeviceSettings.Description" xml:space="preserve">
+    <value>配对并连接设备。</value>
+  </data>
+  <data name="PairDeviceSettings.Header" xml:space="preserve">
+    <value>配对与连接</value>
+  </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Shēnsè</value>
   </data>
@@ -290,6 +296,12 @@
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
     <value>Nín quèdìng yào chóngzhì yìngyòng ma? </value>
+  </data>
+  <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
+    <value>扫描并自动连接已配对的设备。</value>
+  </data>
+  <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
+    <value>是否扫描已配对的设备？</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Xuǎnzé shèbèi</value>

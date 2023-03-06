@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AndroidTestSettingsHeader.Header" xml:space="preserve">
-    <value>Android Test</value>
+    <value>Android tekseriw</value>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
     <value>Qosılǵan qurılmalardaǵı baǵdarlamalardı basqarıw</value>
@@ -133,10 +133,10 @@
     <value>Jıynaqlı kórinis</value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
-    <value>A development version app may not stable. Download release version on Microsoft Store.</value>
+    <value>Baǵdarlamashılar ushın arnalǵan versiyası turaqlı islemewi múmkin. Baǵdarlamanı Microsoft dúkáninan júklep alıń.</value>
   </data>
   <data name="DevelopmentInfoBar.Title" xml:space="preserve">
-    <value>You are using a development version app.</value>
+    <value>Siz baǵdarlamashılar ushın arnalǵan versiyasın qollanbaqtasız.</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
     <value>Jıynaqlı kórinisti qosıw</value>
@@ -151,25 +151,25 @@
     <value>Óshiriw</value>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
-    <value>Manage the processes of connected devices</value>
+    <value>Jalǵanǵan qurılmalardıń iskerlik barısın basqarıw</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
-    <value>Processes</value>
+    <value>Iskerlik barısı</value>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
-    <value>Test Progress Ring on the Title Bar</value>
+    <value>Ósiw kórsetkishin joqarıda tekseriw</value>
   </data>
   <data name="ProgressSettings.Header" xml:space="preserve">
-    <value>Progress</value>
+    <value>Ósiw kórsetkishi</value>
   </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
-    <value>Set the value of Progress Ring</value>
+    <value>Ósiw kórsetkishi dóngelegine mánis beriw</value>
   </data>
   <data name="SetProgressValue.Header" xml:space="preserve">
-    <value>Progress Value</value>
+    <value>Ósiw kórsetkishiniń mánisi</value>
   </data>
   <data name="ShowRefreshButton.Description" xml:space="preserve">
-    <value>Show Refresh Button on the Title Bar</value>
+    <value>Jańalaw túymesin joqarıda kórsetiw</value>
   </data>
   <data name="ShowRefreshButton.Header" xml:space="preserve">
     <value>"Jańalaw" túymesi</value>
@@ -178,12 +178,12 @@
     <value>Tekseriw</value>
   </data>
   <data name="TitleBarSettings.Description" xml:space="preserve">
-    <value>Extends Content Into TitleBar</value>
+    <value>Baǵdarlama aynasınıń bas qatarın kórsetiw</value>
   </data>
   <data name="TitleBarSettings.Header" xml:space="preserve">
     <value>Ayna baslaması</value>
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
-    <value>UI Test</value>
+    <value>Paydalanıwshı interfeysin tekseriw</value>
   </data>
 </root>

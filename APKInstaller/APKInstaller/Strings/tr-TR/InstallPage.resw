@@ -177,6 +177,9 @@
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Kopyala</value>
   </data>
+  <data name="Decompiling" xml:space="preserve">
+    <value>Derleme çözülüyor...</value>
+  </data>
   <data name="Devices" xml:space="preserve">
     <value>Aygıtlar</value>
   </data>

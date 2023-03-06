@@ -261,6 +261,12 @@
   <data name="PairDevice.Header" xml:space="preserve">
     <value>Pair Device</value>
   </data>
+  <data name="PairDeviceSettings.Description" xml:space="preserve">
+    <value>Pair and connect devices.</value>
+  </data>
+  <data name="PairDeviceSettings.Header" xml:space="preserve">
+    <value>Pair &amp; Connect</value>
+  </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Dark</value>
   </data>
@@ -290,6 +296,12 @@
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
     <value>Are you sure you want to reset the app?</value>
+  </data>
+  <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
+    <value>Scan and auto connect paired devices.</value>
+  </data>
+  <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
+    <value>Scan Paired Devices?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Select Device</value>
@@ -322,7 +334,7 @@
     <value>Settings</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>Translate</value>
+    <value>ترجمه</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
     <value>Version</value>

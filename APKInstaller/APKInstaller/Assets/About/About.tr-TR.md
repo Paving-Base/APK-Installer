@@ -1,8 +1,8 @@
 #### APK Installer'a Hoş Geldin!
 
 ##### Açıklama
-1. Lütfen [APK Yükleyici Son Kullanıcı Lisans Sözleşmesi ve Gizlilik Politikası](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md)'na uyun.
-2. Bu program açık kaynaklı bir yazılımdır, bu nedenle veri güvenliğinizi sağlamak için lütfen programın [bu Github deposundan](https://github.com/Paving-Base/APK-Installer) veya [bu uygulamadan](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) olduğundan emin olun.
+1. Lütfen [ APK Installer Son Kullanıcı Lisans Sözleşmesini ve Gizlilik Politikasını ](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md) takip edin.
+2. Bu program açık kaynaklı bir yazılımdır, bu nedenle verilerinizi güvende tutmak için lütfen programın [ bu Github deposundan ](https://github.com/Paving-Base/APK-Installer) veya [ bu uygulamadan ](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) olduğundan emin olun.
 3. Programın kaynağı anormal değilse, tüm verileriniz yalnızca programın çalışması için kullanılacak veya çalışma sırasında yerel olarak depolanacak ve geliştirici verilerinizin hiçbirini çalmayacaktır. Ancak yine de, lütfen kullanım ortamının güvenliğine dikkat edin.
 4. Bu uygulamanın çevirisi [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") topluluğundan gelmektedir ve tüm metinler yazarın görüşlerini temsil etmemektedir.
 
@@ -18,6 +18,7 @@
 
 ##### Atıflar ve Referanslar
 - [MetroLog](https://github.com/roubachof/MetroLog "MetroLog")
+- [Zeroconf](https://github.com/novotnyllc/Zeroconf "Zeroconf")
 - [Windows UI](https://github.com/microsoft/microsoft-ui-xaml "Windows UI")
 - [Downloader](https://github.com/bezzad/Downloader "Downloader")
 - [AAPTForNet](https://github.com/canheo136/QuickLook.Plugin.ApkViewer "AAPTForNet")

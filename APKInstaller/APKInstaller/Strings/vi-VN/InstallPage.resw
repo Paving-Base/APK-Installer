@@ -174,10 +174,13 @@
     <value>Bạn có chắc chắn hủy bỏ cài đặt?</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Connecting Paired Devices...</value>
+    <value>Đang Kết Nối Các Thiết Bị Đã Ghép Nối...</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Sao chép</value>
+  </data>
+  <data name="Decompiling" xml:space="preserve">
+    <value>Đang dịch ngược...</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Thiết bị</value>

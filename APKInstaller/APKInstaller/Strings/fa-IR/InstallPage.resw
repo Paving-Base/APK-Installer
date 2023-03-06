@@ -177,6 +177,9 @@
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Copy</value>
   </data>
+  <data name="Decompiling" xml:space="preserve">
+    <value>Decompiling...</value>
+  </data>
   <data name="Devices" xml:space="preserve">
     <value>Devices</value>
   </data>
@@ -383,7 +386,7 @@
     <value>Waiting for download...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>Waiting for Device...</value>
+    <value>منتظر دستگاه...</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
     <value>Waiting for install {0}</value>

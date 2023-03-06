@@ -261,6 +261,12 @@
   <data name="PairDevice.Header" xml:space="preserve">
     <value>Emparejar dispositivo</value>
   </data>
+  <data name="PairDeviceSettings.Description" xml:space="preserve">
+    <value>Emparejar y conectar dispositivos.</value>
+  </data>
+  <data name="PairDeviceSettings.Header" xml:space="preserve">
+    <value>Emparejar y conectar</value>
+  </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Oscuro</value>
   </data>
@@ -290,6 +296,12 @@
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
     <value>¿Estás seguro de que quieres reiniciar la aplicación?</value>
+  </data>
+  <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
+    <value>Escanear y conectar automáticamente dispositivos emparejados.</value>
+  </data>
+  <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
+    <value>¿Escanear dispositivos emparejados?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Seleccionar dispositivo</value>

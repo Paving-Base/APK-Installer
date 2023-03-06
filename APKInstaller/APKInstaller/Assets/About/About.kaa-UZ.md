@@ -1,13 +1,13 @@
-#### APK ornatıwshısına xosh kelibsiz!
+#### APK ornatıwshısına xosh keldińiz!
 
-##### Declaration
-1. Please comply with the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. This program is open source software, so please make sure the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) to ensure your data security.
-3. If the source of the program is not abnormal, all your data will be used only for the running of the program or stored locally during the running, and the developer will not steal any of your data. Still, please pay attention to the security of the environment.
-4. The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.
+##### Deklaraciya
+1. Ótinish, [APK Installer paydalanıwshısınıń licenziya shártnamasına hám qupiyalıq siyasatına](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md) ámel qılıń.
+2. Bul ashıq kodlı baǵdarlama, sonlıqtan maǵlıwmatlarıńızdıń qáwipsizligin támiyinlew ushın onıń [Github repozitoriyasınan](https://github.com/Paving-Base/APK-Installer) yamasa [usı baǵdarlamadan](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) ekenligine isenim kámil etiń.
+3. Eger baǵdarlamanıń deregi ózgeshe bolmasa, siziń bárshe dereklerińiz tek baǵdarlamanı iske túsiriw ushın qollanıladı yamasa jumıs barısında ishki yadqa saqlanadı hám baǵdarlamashı siziń maǵlıwmatlarıńızdı urlay almaydı. Ótinish, sonda da ortalıq qáwipsizligine itibar qaratıń.
+4. Baǵdarlamanıń awdarması [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") birlespesinen alınǵan hám barlıq tekstler avtordıń kózqarasın sáwlelendirmeydi.
 
 ##### Awdarıw
-Thanks to [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") translators for their support. If there are any problems with the translation, please feel free to correct us. And please translate seriously. Everything you write will be read all over the world.
+[Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") awdarmashılarına qollap-quwatlawı ushın raxmet. Eger awdarmada qanday da mashqala bolsa, ótinish, bizlerdiń qátelerimizdi durıslawǵa tartınbań. Ótinish, shıntlap awdarmalań. Siziń barlıq jazǵanıńızdı dúnya júzi oqıydı.
 
 ##### Avtorlar
 - [wherewhere](https://github.com/wherewhere)
@@ -16,8 +16,9 @@ Thanks to [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") translat
 - [A Big Salty Fish](https://github.com/bigsaltyfishes)
 - [sam1357](https://github.com/sam1357)
 
-##### Citations and References
+##### Paydalanatuǵın kitapxanalar
 - [MetroLog](https://github.com/roubachof/MetroLog "MetroLog")
+- [Zeroconf](https://github.com/novotnyllc/Zeroconf "Zeroconf")
 - [Windows UI](https://github.com/microsoft/microsoft-ui-xaml "Windows UI")
 - [Downloader](https://github.com/bezzad/Downloader "Downloader")
 - [AAPTForNet](https://github.com/canheo136/QuickLook.Plugin.ApkViewer "AAPTForNet")

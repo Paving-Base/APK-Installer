@@ -133,10 +133,10 @@
     <value>Onlayn baǵdarlamalar jıyındısı avtomatikalıq júklensin be?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>Select Backdrop Type for Windows 11</value>
+    <value>Windows 11 ushın fon túrin tańlań</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>Xabarnamanıń artqı fonı</value>
+    <value>Xabarlamanıń artqı fonı</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
     <value>Ózgertiw</value>
@@ -154,16 +154,16 @@
     <value>Keshdi óshiriw</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
+    <value>Eger ADB server iskerligin toqtatqan bolsańız, keyingi ret ornatqanda qayta iske túsiriw talap etiledi.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Terminate ADB when Exit Installer?</value>
+    <value>Ornatıw baǵdarlamasınan shıqqanda, ADB iskerligi toqtatılsın ba?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
     <value>Ornatıw ámelge asqannan keyin ornatıwshıdan shıǵıw.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Exit Installer when APP is Ready?</value>
+    <value>Baǵdarlama tayar bolǵanda, ornatıw baǵdarlaması jabılsın ba?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Sazlawlar</value>
@@ -178,7 +178,7 @@
     <value>Qayta baylanıs</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
+    <value>Aqırǵı islep shıǵarıwlardan xabardar bolıw ushın, meni social tarmaqlarda baqlap barıń. Eger siz qanday da bir qátelik tapsańız, meniń jekeme jazıń. Men qolımnan kelgenshe mashqalalardı saplastırıwǵa háreket etemen. Eger sizde Telegram akkaunt bolsa, Paving Base Group toparında jazıwǵa tartınbań 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Mazmun</value>
@@ -193,10 +193,10 @@
     <value>Qollap-quwatlaw</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
+    <value>APK Ornatıwshı - bul ashıq kodlı baǵdarlama bolıp, payda alıw ushın heshqanday reklama qospaydı. Eger sizge bul baǵdarlama unaǵan bolsa, dúkánda onı bahalawdı umıtpań. Eger azǵana materiallıq járdem kórsetseńiz, álbette, jaqsı bolar edi. Qollap-quwatlaǵanıńız ushın raxmet. 💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
-    <value>EULA</value>
+    <value>Licenziyalıq kelisim</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
     <value>Pikir qaldırıń</value>
@@ -205,13 +205,13 @@
     <value>Jańalanıwdı izlew</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>Information about the frameworks of this app.</value>
+    <value>Bul baǵdarlamanıń quram-bólekleri haqqında maǵlıwmat.</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
-    <value>Framework Information</value>
+    <value>Quram-bólekler haqqında maǵlıwmat</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
-    <value>Framework</value>
+    <value>Quram-bólekler</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>Tekseriw betine ótiw.</value>
@@ -232,19 +232,19 @@
     <value>Tolıǵıraq úyreniw</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
-    <value>Logs</value>
+    <value>Jurnal</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
+    <value>Ózgertilgen versiyasında unamsız nárseler bolıwı múmkin. Mısalı: reklama, buzılǵan funciyalar, hátteki, viruslar. Dáslepki versiyasın júklep alıw ushın Microsoft dúkánina ótiń. Ótinish, tolıq maǵlıwmat alıw ushın biziń GitHub repozitorıymızdı kóriń.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>Siz ózgertilgen versiyasınan qollanbaqtasız!</value>
+    <value>Siz ózgertilgen versiyasın qollanbaqtasız!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>Basqa qurılmalarǵa jalǵanıw ushın, bunı óshiriń.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>For WSA only?</value>
+    <value>Tek "Android ushın Windows tómengi sisteması"</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>OS arxitekturası</value>
@@ -261,6 +261,12 @@
   <data name="PairDevice.Header" xml:space="preserve">
     <value>Qurılmanı jalǵaw</value>
   </data>
+  <data name="PairDeviceSettings.Description" xml:space="preserve">
+    <value>Pair and connect devices.</value>
+  </data>
+  <data name="PairDeviceSettings.Header" xml:space="preserve">
+    <value>Pair &amp; Connect</value>
+  </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Qaranǵı</value>
   </data>
@@ -271,7 +277,7 @@
     <value>Jaqtı</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value>Baǵdarlamalar dúkanında baha beriw</value>
+    <value>Baǵdarlamalar dúkánında baha beriw</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
     <value>Ózgerisler jurnalı</value>
@@ -291,6 +297,12 @@
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
     <value>Baǵdarlamanı qayta ornatıwǵa isenimińiz kámil me?</value>
   </data>
+  <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
+    <value>Jalǵanǵan qurılmalardı tekseriw hám avtomatikalıq qosıw.</value>
+  </data>
+  <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
+    <value>Qosılǵan qurılmalar tekserilsin be?</value>
+  </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Qurılmanı tańlaw</value>
   </data>
@@ -301,16 +313,16 @@
     <value>Jol-job kórsetilsin be?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Display announcements at the top of Settings.</value>
+    <value>Xabarlamalardı sazlawlar joqarısında kórsetiw.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Whether to Show Announcements?</value>
+    <value>Xabarlamalar kórsetilsin be?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>Kútilmegende toqtatılǵanda waqtınshalıq fayllar qalıwı múmkin.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Whether to Show Installation Progress?</value>
+    <value>Ornatıw barısınıń ósiw kórsetkishi kórsetilsin be?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Baǵdarlama teması</value>

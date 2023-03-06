@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, the Android Debug Bridge, is needed for APK Installer to work. Click "Download" to download it. By downloading, you accept the Google Terms and Conditions for ADB. If you have already downloaded ADB, click "Select" to select it.</value>
+    <value>APK ornatıwshı islewi ushın ADB (Android Debug Bridge) kerek. Júklep alıw ushın "Júklew" túymesin basıń. Júklew arqalı siz ADB ushın Google shártleri hám talapların qabıllaysız. Eger siz álleqashan ADBnı júklep alǵan bolsańız, tańlaw ushın "Tańlaw" túymesin basıń.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>ADB bar</value>
@@ -145,10 +145,10 @@
     <value>Yaq</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>WSAǵa jalǵanıw ámelge aspadı</value>
+    <value>Android ushın Windows tómengi sistemasına jalǵanıw ámelge aspadı</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
+    <value>Eger Android ushın Windows tómengi sisteması nadurıs iske tússe yamasa ADB menen mashqala payda bolsa, bul mashqalanı saplastırıw qıyın bolıwı múmkin. Ótinish, ornatıwshını qayta iske túsiriń. Eger bul járdem bermese, kompyuterińizdi qayta iske túsiriń.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>Baǵdarlamalar jıyındısın ashıw ámelge aspadı</value>
@@ -172,10 +172,13 @@
     <value>Ornatıwdı biykarlawǵa isenimińiz kámil me?</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Connecting Paired Devices...</value>
+    <value>Qosılǵan qurılmalarǵa jalǵanbaqta...</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Kóshirip alıw</value>
+  </data>
+  <data name="Decompiling" xml:space="preserve">
+    <value>Decompiling...</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Qurılmalar</value>
@@ -190,13 +193,13 @@
     <value>Ótinish, internet jalǵanıwın yamasa URLdı tekserıń hám qayta urınıp kóriń.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>Finding WSA...</value>
+    <value>Android ushın Windows tómengi sisteması izlenbekte...</value>
   </data>
   <data name="Finished" xml:space="preserve">
     <value>Tayar</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>WSA Found</value>
+    <value>Android ushın Windows tómengi sisteması tabıldı</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
     <value>Sazlawlarǵa ótiw</value>
@@ -209,27 +212,27 @@
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>WSAǵa qurılmanı qalay jalǵaymız</value>
+    <value>Android ushın Windows tómengi sistemasına qurılmanı qalay jalǵaymız</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Please make sure APK Installer has been updated to the latest version
-2. Make sure you have the Android Subsystem installed and running
-3. Turn on developer mode and make sure the IP address is displayed successfully
-4. Reopen APK Installer and continue your installation
+    <value>1. APK ornatıwshısı sońǵı versiyasına jańalanǵanına isenim kámil etiń
+2. Android ushın Windows tómengi sisteması ornatılǵanına hám iske túsirilgenine isenim kámil etiń
+3. Baǵdarlamashı rejimin qosıń hám IP mánzil durıs kórinip turǵanına isenim kámil etiń
+4. APK ornatıwshısın qayta iske túsiriń hám ornatıwdı dawam etiń
 
-[Learn More]({0})</value>
+[Tolıǵıraq úyreniw]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
-    <value>Icon</value>
+    <value>Belgi</value>
   </data>
   <data name="IKnow" xml:space="preserve">
     <value>Maqul</value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
-    <value>Mas emes baǵdarlama</value>
+    <value>Sáykes emes baǵdarlama</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
-    <value>The minimum required for this app is {0}. Your device supports {1}. Please update your device or choose order package.</value>
+    <value>Bul baǵdarlama ushın eń az talap etiletuǵını {0}. Siziń qurılmańız {1} qollap-quwatlaydı. Ótinish, qurılmańızdı jańalań yamasa basqa baǵdarlamalar jıyındısın tańlań.</value>
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
@@ -257,13 +260,13 @@
     <value>Sebep: </value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
-    <value>Install WSA</value>
+    <value>Android ushın Windows tómengi sistemasın ornatıw</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
     <value>Baǵdarlamalar jıyındısı zıyan kórgen yamasa nadurıs.</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
-    <value>The URL is either Incomplete or invalid.</value>
+    <value>Nadurıs yamasa jaramsız mánzil.</value>
   </data>
   <data name="Launch" xml:space="preserve">
     <value>Iske túsiriw</value>
@@ -272,7 +275,7 @@
     <value>Iske túsirilmekte...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>Launch when ready</value>
+    <value>Tayın bolǵanda iske túsiriw</value>
   </data>
   <data name="Loading" xml:space="preserve">
     <value>Júklenbekte...</value>
@@ -287,22 +290,22 @@
     <value>Qurılmanı qalay jalǵaymız</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>If you want to install app into Windows Subsystem for Android™, you need to install it first. If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
+    <value>Eger siz baǵdarlamanı Android ushın Windows tómengi sistemasına ornatıwdı qáleseńiz, birinshi náwbette onıń ózin ornatıń. Eger basqa qurılmalarǵa ornatıwdı qáleseńiz, sazlawlar betine ótiń, "Tek Android ushın Windows tómengi sisteması"n óshiriń hám qurılmańızdı qosıń.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>#### Using USB
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open USB Debug
-3. Go to the Settings Page of APK Installer, select your device
-4. Go back, resume installation
-#### Using Wifi
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open Remote Debug
-3. Remember the IP address of your device
-4. Go to the Settings Page of APK Installer, connect and select your device
-5. Go back, resume installation
+    <value>#### USB járdeminde
+1. APK ornatıwshısı [sońǵı versiyasına](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Ornatıwshı") jańalanǵanına isenim kámil etiń
+2. Baǵdarlamashı rejimin qosıń, USB arqalı nasazlıqtı sazlawdı ashıń
+3. APK ornatıwshınıń sazlawlar betine ótiń, qurılmańızdı tańlań
+4. Artqa qaytıń, ornatıwdı dawam etiń
+#### Wi-Fi járdeminde
+1. APK ornatıwshısı [sońǵı versiyasına](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Ornatıwshı") jańalanǵanına isenim kámil etiń
+2. Baǵdarlamashı rejimin qosıń, aralıqtan nasazlıqtı sazlawdı ashıń
+3. Qurılmańızdıń IP mánzilin yadıńızda saqlań
+4. APK ornatıwshınıń sazlawlar betine ótiń, jalǵanıń hám qurılmańızdı tańlań
+5. Artqa qaytıń, ornatıwdı dawam etiń
 
-[Learn More]({0})</value>
+[Tolıǵıraq úyreniw]({0})</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
     <value>Internetge jalǵanıw múmkinshiligi joq</value>
@@ -311,7 +314,7 @@
     <value>Ótinish, baǵdarlamanı ashıwdan aldın internetke jalǵanıń.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>For proper functioning of the app, try to launch an Android app package.</value>
+    <value>Baǵdarlamanıń durıs islewi ushın Android baǵdarlamasınıń baǵdarlamalar jıyındısın iske túsirip kóriń.</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>MAQUL</value>
@@ -350,19 +353,19 @@
     <value>ADB server iske túspekte...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>Start WSA</value>
+    <value>Android ushın Windows tómengi sistemasın iske túsiriw</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
     <value>Dúkánǵa silteme</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
-    <value>Unzip ADB...</value>
+    <value>ADB shıǵarılmaqta...</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
-    <value>Unzip completed</value>
+    <value>Shıǵarıw juwmaqlandı</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
-    <value>Unzipping {0}/{1} ...</value>
+    <value>Shıǵarılmaqta {0}/{1}...</value>
     <comment>{0} - Have done num. {1} - All num.</comment>
   </data>
   <data name="Update" xml:space="preserve">
@@ -383,20 +386,20 @@
     <value>Júkleniwdi kútpekte...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>Waiting for Device...</value>
+    <value>Qurılmanı kútpekte...</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
-    <value>Waiting for install {0}</value>
+    <value>{0} ornatılwı kútilmekte</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
-    <value>Waiting WSA Start...
-This may take long time. Sit back and relax.</value>
+    <value>Android ushın Windows tómengi sistemasınıń iske túsiriliwin kútpekte...
+Bul kóp waqıt alıwı múmkin. Otırıp dem alıń.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Xosh kelibsiz!</value>
+    <value>Xosh keldińiz!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>WSA is Running</value>
+    <value>Android ushın Windows tómengi sisteması iske túspekte</value>
   </data>
 </root>
