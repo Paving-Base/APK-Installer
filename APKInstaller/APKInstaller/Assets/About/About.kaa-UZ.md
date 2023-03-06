@@ -1,4 +1,4 @@
-#### APK ornatıwshısına xosh kelibsiz!
+#### APK ornatıwshısına xosh keldińiz!
 
 ##### Deklaraciya
 1. Ótinish, [APK Installer paydalanıwshısınıń licenziya shártnamasına hám qupiyalıq siyasatına](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md) ámel qılıń.
