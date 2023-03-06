@@ -9,4 +9,5 @@
         <ResourceDictionary Source="ms-appx:///Controls/SettingExpander/SettingExpander.ThemeResources.xaml" />
     </ResourceDictionary.MergedDictionaries>
     <x:Double x:Key="SettingActionControlMinWidth">240</x:Double>
+    <x:String x:Key="IPAddressRegexPattern">^(\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])(\.(\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])){3}(:([0-9]|[1-9]\d|[1-9]\d{2}|[1-9]\d{3}|[1-5]\d{4}|6[0-4]\d{3}|65[0-4]\d{2}|655[0-2]\d|6553[0-5]))?$</x:String>
 </ResourceDictionary>

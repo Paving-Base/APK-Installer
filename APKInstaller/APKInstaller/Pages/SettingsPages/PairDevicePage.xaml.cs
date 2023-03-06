@@ -43,6 +43,11 @@ namespace APKInstaller.Pages.SettingsPages
                 case "PairButton":
                     _ = Provider.ConnectWithPairingCode(element.Tag as MDNSDeviceData);
                     break;
+                case "ConnectButton":
+                    _ = PairToggleButton.IsChecked == true && !string.IsNullOrWhiteSpace(Provider.Code)
+                        ? Provider.ConnectWithPairingCode(Provider.IPAddress, Provider.Code)
+                        : Provider.ConnectWithPairingCode(Provider.IPAddress);
+                    break;
                 default:
                     break;
             }
@@ -64,6 +69,8 @@ namespace APKInstaller.Pages.SettingsPages
             TitleBar.HideProgressRing();
             TitleBar.IsRefreshButtonVisible = true;
         }
+
+        private void IPAddressBox_TextChanged(object sender, TextChangedEventArgs e) => Provider.IPAddress = (sender as TextBox).Text;
 
         private void Flyout_Opening(object sender, object e) => _ = Provider.InitializeQRScan();
 

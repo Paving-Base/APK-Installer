@@ -30,11 +30,37 @@ namespace APKInstaller.ViewModels.SettingsPages
 
         private static string ADBPath => SettingsHelper.Get<string>(SettingsHelper.ADBPath);
 
-        public string Code { get; set; } = string.Empty;
-
         public ResolverListener ConnectListener;
 
         public readonly ObservableCollection<MDNSDeviceData> DeviceList = new();
+
+        private string _code = string.Empty;
+        public string Code
+        {
+            get => _code;
+            set
+            {
+                if (_code != value)
+                {
+                    _code = value;
+                    RaisePropertyChangedEvent();
+                }
+            }
+        }
+
+        private string _IPAddress = string.Empty;
+        public string IPAddress
+        {
+            get => _IPAddress;
+            set
+            {
+                if (_IPAddress != value)
+                {
+                    _IPAddress = value;
+                    RaisePropertyChangedEvent();
+                }
+            }
+        }
 
         private List<DeviceData> _connectedList;
         public List<DeviceData> ConnectedList
@@ -175,27 +201,27 @@ namespace APKInstaller.ViewModels.SettingsPages
 
         public async Task ConnectWithPairingCode(MDNSDeviceData deviceData, string code)
         {
-            deviceData.ConnectingDevice = true;
-            IAdbServer ADBServer = AdbServer.Instance;
-            if (!ADBServer.GetStatus().IsRunning)
-            {
-                try
-                {
-                    _ = await Task.Run(() => ADBServer.StartServer(ADBPath, restartServerIfNewer: false));
-                    MonitorHelper.Monitor.DeviceChanged += OnDeviceChanged;
-                }
-                catch (Exception ex)
-                {
-                    SettingsHelper.LogManager.GetLogger(nameof(PairDeviceViewModel)).Warn(ex.ExceptionToMessage(), ex);
-                    ConnectInfoSeverity = InfoBarSeverity.Warning;
-                    ConnectInfoTitle = ResourceLoader.GetForViewIndependentUse("InstallPage").GetString("ADBMissing");
-                    ConnectInfoIsOpen = true;
-                    deviceData.ConnectingDevice = false;
-                    return;
-                }
-            }
             if (!string.IsNullOrWhiteSpace(code) && deviceData != null)
             {
+                deviceData.ConnectingDevice = true;
+                IAdbServer ADBServer = AdbServer.Instance;
+                if (!ADBServer.GetStatus().IsRunning)
+                {
+                    try
+                    {
+                        _ = await Task.Run(() => ADBServer.StartServer(ADBPath, restartServerIfNewer: false));
+                        MonitorHelper.Monitor.DeviceChanged += OnDeviceChanged;
+                    }
+                    catch (Exception ex)
+                    {
+                        SettingsHelper.LogManager.GetLogger(nameof(PairDeviceViewModel)).Warn(ex.ExceptionToMessage(), ex);
+                        ConnectInfoSeverity = InfoBarSeverity.Warning;
+                        ConnectInfoTitle = ResourceLoader.GetForViewIndependentUse("InstallPage").GetString("ADBMissing");
+                        ConnectInfoIsOpen = true;
+                        deviceData.ConnectingDevice = false;
+                        return;
+                    }
+                }
                 try
                 {
                     ConnectLogText = "正在配对，请不要关闭窗口";
@@ -250,10 +276,146 @@ namespace APKInstaller.ViewModels.SettingsPages
                     ConnectInfoTitle = ex.Message;
                     ConnectInfoIsOpen = true;
                 }
+                deviceData.ConnectingDevice = false;
             }
-            deviceData.ConnectingDevice = false;
         }
 
+        public async Task ConnectWithPairingCode(string host, string code)
+        {
+            if (!string.IsNullOrWhiteSpace(host) && !string.IsNullOrWhiteSpace(code))
+            {
+                ConnectingDevice = true;
+                IAdbServer ADBServer = AdbServer.Instance;
+                if (!ADBServer.GetStatus().IsRunning)
+                {
+                    try
+                    {
+                        _ = await Task.Run(() => ADBServer.StartServer(ADBPath, restartServerIfNewer: false));
+                        MonitorHelper.Monitor.DeviceChanged += OnDeviceChanged;
+                    }
+                    catch (Exception ex)
+                    {
+                        SettingsHelper.LogManager.GetLogger(nameof(PairDeviceViewModel)).Warn(ex.ExceptionToMessage(), ex);
+                        ConnectInfoSeverity = InfoBarSeverity.Warning;
+                        ConnectInfoTitle = ResourceLoader.GetForViewIndependentUse("InstallPage").GetString("ADBMissing");
+                        ConnectInfoIsOpen = true;
+                        ConnectingDevice = false;
+                        return;
+                    }
+                }
+                try
+                {
+                    ConnectLogText = "正在配对，请不要关闭窗口";
+                    AdbClient client = new();
+                    string pair = await client.PairAsync(host, code);
+                    if (pair.ToLowerInvariant().StartsWith("successfully"))
+                    {
+                        ConnectInfoSeverity = InfoBarSeverity.Success;
+                        ConnectInfoTitle = pair;
+                        ConnectInfoIsOpen = true;
+                        ConnectLogText = "配对成功，正在连接，请不要关闭窗口";
+                        string connect = await Task.Run(async () =>
+                        {
+                            using CancellationTokenSource tokenSource = new(TimeSpan.FromSeconds(10));
+                            while (!tokenSource.Token.IsCancellationRequested)
+                            {
+                                IReadOnlyList<IZeroconfHost> hosts = await ZeroconfResolver.ResolveAsync("_adb-tls-connect._tcp.local.");
+                                IZeroconfHost _host = hosts.FirstOrDefault((x) => host.StartsWith(x.IPAddress));
+                                if (_host != null)
+                                {
+                                    string connect = await client.ConnectAsync(_host.IPAddress, _host.Services.FirstOrDefault().Value.Port);
+                                    return connect;
+                                }
+                            }
+                            return string.Empty;
+                        });
+                        if (connect.ToLowerInvariant().StartsWith("connected to"))
+                        {
+                            ConnectInfoSeverity = InfoBarSeverity.Success;
+                            ConnectInfoTitle = pair;
+                            ConnectInfoIsOpen = true;
+                            ConnectLogText = "连接成功";
+                        }
+                    }
+                    else if (pair.ToLowerInvariant().StartsWith("failed:"))
+                    {
+                        ConnectInfoSeverity = InfoBarSeverity.Error;
+                        ConnectInfoTitle = pair[8..];
+                        ConnectInfoIsOpen = true;
+                    }
+                    else if (!string.IsNullOrWhiteSpace(pair))
+                    {
+                        ConnectInfoSeverity = InfoBarSeverity.Warning;
+                        ConnectInfoTitle = pair;
+                        ConnectInfoIsOpen = true;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    SettingsHelper.LogManager.GetLogger(nameof(PairDeviceViewModel)).Warn(ex.ExceptionToMessage(), ex);
+                    ConnectInfoSeverity = InfoBarSeverity.Error;
+                    ConnectInfoTitle = ex.Message;
+                    ConnectInfoIsOpen = true;
+                }
+                ConnectingDevice = false;
+            }
+        }
+
+        public async Task ConnectWithPairingCode(string host)
+        {
+            if (!string.IsNullOrWhiteSpace(host))
+            {
+                ConnectingDevice = true;
+                IAdbServer ADBServer = AdbServer.Instance;
+                if (!ADBServer.GetStatus().IsRunning)
+                {
+                    try
+                    {
+                        _ = await Task.Run(() => ADBServer.StartServer(ADBPath, restartServerIfNewer: false));
+                        MonitorHelper.Monitor.DeviceChanged += OnDeviceChanged;
+                    }
+                    catch (Exception ex)
+                    {
+                        SettingsHelper.LogManager.GetLogger(nameof(PairDeviceViewModel)).Warn(ex.ExceptionToMessage(), ex);
+                        ConnectInfoSeverity = InfoBarSeverity.Warning;
+                        ConnectInfoTitle = ResourceLoader.GetForViewIndependentUse("InstallPage").GetString("ADBMissing");
+                        ConnectInfoIsOpen = true;
+                        ConnectingDevice = false;
+                        return;
+                    }
+                }
+                try
+                {
+                    string results = (await new AdbClient().ConnectAsync(host)).TrimStart();
+                    if (results.ToLowerInvariant().StartsWith("connected to"))
+                    {
+                        ConnectInfoSeverity = InfoBarSeverity.Success;
+                        ConnectInfoTitle = results;
+                        ConnectInfoIsOpen = true;
+                    }
+                    else if (results.ToLowerInvariant().StartsWith("cannot connect to"))
+                    {
+                        ConnectInfoSeverity = InfoBarSeverity.Error;
+                        ConnectInfoTitle = results;
+                        ConnectInfoIsOpen = true;
+                    }
+                    else if (!string.IsNullOrWhiteSpace(results))
+                    {
+                        ConnectInfoSeverity = InfoBarSeverity.Warning;
+                        ConnectInfoTitle = results;
+                        ConnectInfoIsOpen = true;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    SettingsHelper.LogManager.GetLogger(nameof(PairDeviceViewModel)).Warn(ex.ExceptionToMessage(), ex);
+                    ConnectInfoSeverity = InfoBarSeverity.Error;
+                    ConnectInfoTitle = ex.Message;
+                    ConnectInfoIsOpen = true;
+                }
+                ConnectingDevice = false;
+            }
+        }
         public async Task InitializeQRScan()
         {
             ssid = $"APKInstaller-{new Random().NextInt64(9999999999)}-4v4sx1";
