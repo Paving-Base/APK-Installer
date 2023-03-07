@@ -115,11 +115,10 @@
                 <controls:QRCode
                     Width="200"
                     Height="200"
-                    Padding="8"
                     BorderBrush="White"
                     BorderThickness="1"
-                    Foreground="{ThemeResource AccentTextFillColorPrimaryBrush}"
-                    Text="https://github.com/wherewhere" />
+                    Content="1"
+                    Foreground="{ThemeResource AccentTextFillColorPrimaryBrush}" />
                 <StackPanel Orientation="Horizontal" Spacing="5">
                     <Path Fill="Wheat">
                         <Path.Data>

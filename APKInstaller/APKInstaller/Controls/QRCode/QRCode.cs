@@ -1,49 +1,16 @@
-﻿using Microsoft.UI;
-using Microsoft.UI.Xaml;
-using Microsoft.UI.Xaml.Controls;
+﻿using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Markup;
 using Microsoft.UI.Xaml.Media;
-using Microsoft.UI.Xaml.Shapes;
 using QRCoder;
-using System;
-using System.ComponentModel;
+using System.Collections.Generic;
+using System.Linq;
 using Windows.Foundation;
 
 namespace APKInstaller.Controls
 {
-    public class QRCode : Control
+    [ContentProperty(Name = "Content")]
+    public partial class QRCode : Control
     {
-        #region Text
-
-        /// <summary>
-        /// Identifies the <see cref="Text"/> dependency property.
-        /// </summary>
-        public static readonly DependencyProperty TextProperty =
-            DependencyProperty.Register(
-                nameof(Text),
-                typeof(string),
-                typeof(Setting),
-                new PropertyMetadata(null, OnTextPropertyChanged));
-
-        /// <summary>
-        /// Gets or sets the Text.
-        /// </summary>
-        [Localizable(true)]
-        public string Text
-        {
-            get => (string)GetValue(TextProperty);
-            set => SetValue(TextProperty, value);
-        }
-
-        private static void OnTextPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-        {
-            if (e.NewValue != e.OldValue)
-            {
-                ((QRCode)d).OnTextChanged();
-            }
-        }
-
-        #endregion
-
         /// <summary>
         /// Creates a new instance of the <see cref="QRCode"/> class.
         /// </summary>
@@ -58,25 +25,40 @@ namespace APKInstaller.Controls
             CreateQRCode();
         }
 
-        private void OnTextChanged()
+        private void OnContentChanged()
         {
             CreateQRCode();
         }
 
         private void CreateQRCode()
         {
-            string payload = Text;
+            QRCodeTemplateSettings templateSettings = TemplateSettings;
 
-            using QRCodeGenerator qrGenerator = new QRCodeGenerator();
-            QRCodeData qrCodeData = qrGenerator.CreateQrCode(payload, QRCodeGenerator.ECCLevel.Q);
+            if (Content == null)
+            {
+                templateSettings.GeometryGroup = null;
+                return;
+            }
 
-            using XamlQRCode qrCodeBmp = new XamlQRCode(qrCodeData);
+            QRCodeData qrCodeData;
+
+            if (Content is IEnumerable<byte> array)
+            {
+                byte[] payload = array.ToArray();
+                using QRCodeGenerator qrGenerator = new();
+                qrCodeData = qrGenerator.CreateQrCode(payload, ECCLevel);
+            }
+            else
+            {
+                string payload = Content.ToString();
+                using QRCodeGenerator qrGenerator = new();
+                qrCodeData = qrGenerator.CreateQrCode(payload, ECCLevel, IsForceUTF8, IsUTF8BOM, EciMode, RequestedVersion);
+            }
+
+            using XamlQRCode qrCodeBmp = new(qrCodeData);
             GeometryGroup qrCodeImageBmp = qrCodeBmp.GetGraphic(new Size(100, 100));
 
-            if (GetTemplateChild("QRCodePath") is Path path)
-            {
-                path.Data = qrCodeImageBmp;
-            }
+            templateSettings.GeometryGroup = qrCodeImageBmp;
         }
     }
 }

@@ -50,7 +50,7 @@
                                     <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled" />
                                 </Style>
                             </Flyout.FlyoutPresenterStyle>
-                            <Grid Margin="4,0,4,4">
+                            <Grid Margin="4">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="Auto" />
                                     <RowDefinition Height="Auto" />
@@ -58,7 +58,7 @@
                                 <Grid
                                     Grid.Row="0"
                                     MaxWidth="200"
-                                    Margin="8,12"
+                                    Margin="0,12"
                                     HorizontalAlignment="Center">
                                     <TextBlock
                                         x:Uid="/PairDevicePage/QRScanTextBlock"
@@ -75,12 +75,15 @@
                                     Grid.Row="1"
                                     Width="200"
                                     Height="200"
+                                    Margin="4"
+                                    HorizontalAlignment="Center"
                                     CornerRadius="{StaticResource OverlayCornerRadius}">
-                                    <Border CornerRadius="{StaticResource OverlayCornerRadius}">
-                                        <Border.Background>
-                                            <ImageBrush ImageSource="{Binding QRCodeImage}" Stretch="UniformToFill" />
-                                        </Border.Background>
-                                    </Border>
+                                    <controls:QRCode
+                                        Padding="8"
+                                        Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+                                        Content="{Binding QRCodeText}"
+                                        Foreground="{ThemeResource ApplicationForegroundThemeBrush}"
+                                        RequestedTheme="Light" />
                                     <Border CornerRadius="{StaticResource OverlayCornerRadius}" Visibility="{Binding ConnectingDevice, Converter={StaticResource BoolToVisibilityConverter}}">
                                         <Border.Background>
                                             <AcrylicBrush

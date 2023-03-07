@@ -157,15 +157,15 @@ namespace APKInstaller.ViewModels.SettingsPages
             }
         }
 
-        private ImageSource _QRCodeImage;
-        public ImageSource QRCodeImage
+        private string _QRCodeText;
+        public string QRCodeText
         {
-            get => _QRCodeImage;
+            get => _QRCodeText;
             set
             {
-                if (_QRCodeImage != value)
+                if (_QRCodeText != value)
                 {
-                    _QRCodeImage = value;
+                    _QRCodeText = value;
                     RaisePropertyChangedEvent();
                 }
             }
@@ -424,13 +424,13 @@ namespace APKInstaller.ViewModels.SettingsPages
         {
             ssid = $"APKInstaller-{new Random().NextInt64(9999999999)}-4v4sx1";
             password = new Random().Next(999999).ToString();
-            await CreateQRCoder(ssid, password);
+            QRCodeText = $"WIFI:T:ADB;S:{ssid};P:{password};;";
             ConnectListener.ServiceFound += OnServiceFound;
         }
 
         public void DisposeQRScan()
         {
-            QRCodeImage = null;
+            QRCodeText = null;
             ConnectListener.ServiceFound -= OnServiceFound;
         }
 
@@ -448,31 +448,6 @@ namespace APKInstaller.ViewModels.SettingsPages
                     _page.HideQRScanFlyout();
                 }
             });
-        }
-
-        public async Task CreateQRCoder(string ssid, string password)
-        {
-            string payload = $"WIFI:T:ADB;S:{ssid};P:{password};;";
-
-            using QRCodeGenerator qrGenerator = new QRCodeGenerator();
-            QRCodeData qrCodeData = qrGenerator.CreateQrCode(payload, QRCodeGenerator.ECCLevel.Q);
-
-            using PngByteQRCode qrCodeBmp = new PngByteQRCode(qrCodeData);
-            byte[] qrCodeImageBmp = qrCodeBmp.GetGraphic(
-                20,
-                new byte[] { 0, 0, 0, 0xFF },
-                new byte[] { 0xFF, 0xFF, 0xFF, 0xFF });
-
-            using InMemoryRandomAccessStream stream = new InMemoryRandomAccessStream();
-            using (DataWriter writer = new DataWriter(stream.GetOutputStreamAt(0)))
-            {
-                writer.WriteBytes(qrCodeImageBmp);
-                await writer.StoreAsync();
-            }
-            BitmapImage image = new BitmapImage();
-            await image.SetSourceAsync(stream);
-
-            QRCodeImage = image;
         }
 
         private void ConnectListener_ServiceFound(object sender, IZeroconfHost e)
