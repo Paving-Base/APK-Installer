@@ -1022,7 +1022,7 @@ namespace APKInstaller.ViewModels
                 WaitProgressText = _loader.GetString("Loading");
                 if (NetAPKExist)
                 {
-                    WaitProgressText = _loader.GetString("Decompiling");
+                    WaitProgressText = _loader.GetString("Analysis");
                     try
                     {
                         ApkInfo = await Task.Run(() => { return AAPTool.Decompile(_path); });

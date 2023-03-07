@@ -6,65 +6,75 @@ namespace APKInstaller.Controls
 {
     public partial class TitleBar
     {
-        public static readonly DependencyProperty CustomContentProperty = DependencyProperty.Register(
-           "CustomContent",
-           typeof(object),
-           typeof(TitleBar),
-           new PropertyMetadata(default, OnCustomContentPropertyChanged));
+        public static readonly DependencyProperty CustomContentProperty =
+            DependencyProperty.Register(
+                "CustomContent",
+                typeof(object),
+                typeof(TitleBar),
+                new PropertyMetadata(default, OnCustomContentPropertyChanged));
 
-        public static readonly DependencyProperty AutoSuggestBoxProperty = DependencyProperty.Register(
-           "AutoSuggestBox",
-           typeof(AutoSuggestBox),
-           typeof(TitleBar),
-           new PropertyMetadata(default, OnCustomContentPropertyChanged));
+        public static readonly DependencyProperty AutoSuggestBoxProperty =
+            DependencyProperty.Register(
+                "AutoSuggestBox",
+                typeof(AutoSuggestBox),
+                typeof(TitleBar),
+                new PropertyMetadata(default, OnCustomContentPropertyChanged));
 
-        public static readonly DependencyProperty PaneFooterProperty = DependencyProperty.Register(
-           "PaneFooter",
-           typeof(object),
-           typeof(TitleBar),
-           new PropertyMetadata(default, OnCustomContentPropertyChanged));
+        public static readonly DependencyProperty PaneFooterProperty =
+            DependencyProperty.Register(
+                "PaneFooter",
+                typeof(object),
+                typeof(TitleBar),
+                new PropertyMetadata(default, OnCustomContentPropertyChanged));
 
-        public static readonly DependencyProperty IconSourceProperty = DependencyProperty.Register(
-           "IconSource",
-           typeof(UIElement),
-           typeof(TitleBar),
-           new PropertyMetadata(default(UIElement), OnIconSourcePropertyChanged));
+        public static readonly DependencyProperty IconSourceProperty =
+            DependencyProperty.Register(
+                "IconSource",
+                typeof(UIElement),
+                typeof(TitleBar),
+                new PropertyMetadata(default(UIElement), OnIconSourcePropertyChanged));
 
-        public static readonly DependencyProperty IsBackButtonVisibleProperty = DependencyProperty.Register(
-           "IsBackButtonVisible",
-           typeof(bool),
-           typeof(TitleBar),
-           new PropertyMetadata(default(bool), OnIsBackButtonVisiblePropertyChanged));
+        public static readonly DependencyProperty IsBackButtonVisibleProperty =
+            DependencyProperty.Register(
+                "IsBackButtonVisible",
+                typeof(bool),
+                typeof(TitleBar),
+                new PropertyMetadata(default(bool), OnIsBackButtonVisiblePropertyChanged));
 
-        public static readonly DependencyProperty IsBackEnabledProperty = DependencyProperty.Register(
-           "IsBackEnabled",
-           typeof(bool),
-           typeof(TitleBar),
-           new PropertyMetadata(default(bool)));
+        public static readonly DependencyProperty IsBackEnabledProperty =
+            DependencyProperty.Register(
+                "IsBackEnabled",
+                typeof(bool),
+                typeof(TitleBar),
+                new PropertyMetadata(default(bool)));
 
-        public static readonly DependencyProperty IsRefreshButtonVisibleProperty = DependencyProperty.Register(
-           "IsRefreshButtonVisible",
-           typeof(bool),
-           typeof(TitleBar),
-           new PropertyMetadata(default(bool), OnIsRefreshButtonVisiblePropertyChanged));
+        public static readonly DependencyProperty IsRefreshButtonVisibleProperty =
+            DependencyProperty.Register(
+                "IsRefreshButtonVisible",
+                typeof(bool),
+                typeof(TitleBar),
+                new PropertyMetadata(default(bool), OnIsRefreshButtonVisiblePropertyChanged));
 
-        public static readonly DependencyProperty IsRefreshEnabledProperty = DependencyProperty.Register(
-           "IsRefreshEnabled",
-           typeof(bool),
-           typeof(TitleBar),
-           new PropertyMetadata(default(bool)));
+        public static readonly DependencyProperty IsRefreshEnabledProperty =
+            DependencyProperty.Register(
+                "IsRefreshEnabled",
+                typeof(bool),
+                typeof(TitleBar),
+                new PropertyMetadata(default(bool)));
 
-        public static readonly DependencyProperty TemplateSettingsProperty = DependencyProperty.Register(
-           "TemplateSettings",
-           typeof(TitleBarTemplateSettings),
-           typeof(TitleBar),
-           new PropertyMetadata(new TitleBarTemplateSettings()));
+        public static readonly DependencyProperty TemplateSettingsProperty =
+            DependencyProperty.Register(
+                "TemplateSettings",
+                typeof(TitleBarTemplateSettings),
+                typeof(TitleBar),
+                new PropertyMetadata(new TitleBarTemplateSettings()));
 
-        public static readonly DependencyProperty TitleProperty = DependencyProperty.Register(
-           "Title",
-           typeof(string),
-           typeof(TitleBar),
-           new PropertyMetadata(default(string), OnTitlePropertyChanged));
+        public static readonly DependencyProperty TitleProperty =
+            DependencyProperty.Register(
+                "Title",
+                typeof(string),
+                typeof(TitleBar),
+                new PropertyMetadata(default(string), OnTitlePropertyChanged));
 
         public object CustomContent
         {

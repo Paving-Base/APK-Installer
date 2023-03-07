@@ -84,6 +84,7 @@
 
   <ItemGroup>
     <None Remove="Controls\Dialogs\PairDeviceDialog.xaml" />
+    <None Remove="Controls\QRCode\QRCode.xaml" />
     <None Remove="favicon.ico" />
   </ItemGroup>
 
@@ -107,6 +108,12 @@
     <ProjectReference Include="..\..\..\AdvancedSharpAdbClient\AdvancedSharpAdbClient\AdvancedSharpAdbClient.csproj" />
     <ProjectReference Include="..\AAPTForNet\AAPTForNet.csproj" />
     <ProjectReference Include="..\Zeroconf\Zeroconf.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Controls\QRCode\QRCode.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 
   <ItemGroup>

@@ -1,0 +1,32 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="using:APKInstaller.Controls">
+
+    <Style BasedOn="{StaticResource DefaultQRCodeStyle}" TargetType="controls:QRCode" />
+
+    <Style x:Key="DefaultQRCodeStyle" TargetType="controls:QRCode">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="controls:QRCode">
+                    <Border
+                        Padding="{TemplateBinding Padding}"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="{TemplateBinding CornerRadius}">
+                        <Viewbox>
+                            <Path
+                                x:Name="QRCodePath"
+                                Width="100"
+                                Height="100"
+                                Fill="{TemplateBinding Foreground}"
+                                StrokeThickness="0" />
+                        </Viewbox>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

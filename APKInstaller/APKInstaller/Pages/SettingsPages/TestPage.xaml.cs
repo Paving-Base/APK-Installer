@@ -166,5 +166,10 @@ namespace APKInstaller.Pages.SettingsPages
                     break;
             }
         }
+
+        private void Path_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
