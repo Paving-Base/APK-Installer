@@ -1,4 +1,4 @@
-#### Bienvenue dans l'installateur d'APK!
+#### Bienvenue dans l'installateur de Chamilo
 
 ##### Declaration
 1. Please comply with the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
