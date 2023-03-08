@@ -155,7 +155,7 @@ namespace APKInstaller.Controls
                 nameof(TemplateSettings),
                 typeof(QRCodeTemplateSettings),
                 typeof(QRCode),
-                new PropertyMetadata(new QRCodeTemplateSettings()));
+                new PropertyMetadata(null));
 
         /// <summary>
         /// Gets or sets the TemplateSettings.

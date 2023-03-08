@@ -67,7 +67,7 @@ namespace APKInstaller.Controls
                 "TemplateSettings",
                 typeof(TitleBarTemplateSettings),
                 typeof(TitleBar),
-                new PropertyMetadata(new TitleBarTemplateSettings()));
+                new PropertyMetadata(null));
 
         public static readonly DependencyProperty TitleProperty =
             DependencyProperty.Register(

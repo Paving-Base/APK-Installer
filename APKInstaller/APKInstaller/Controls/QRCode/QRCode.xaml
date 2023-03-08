@@ -24,7 +24,7 @@
 
     <Style x:Key="DefaultQRCodeStyle" TargetType="controls:QRCode">
         <Setter Property="Foreground" Value="{ThemeResource QRCodeForeground}" />
-        <Setter Property="CornerRadius" Value="{ThemeResource ControlCornerRadius}" />
+        <Setter Property="CornerRadius" Value="{ThemeResource OverlayCornerRadius}" />
         <Setter Property="MinHeight" Value="{ThemeResource QRCodeMinHeight}" />
         <Setter Property="MinWidth" Value="{ThemeResource QRCodeMinWidth}" />
         <Setter Property="Padding" Value="{ThemeResource QRCodePadding}" />
@@ -42,15 +42,11 @@
                         BorderBrush="{TemplateBinding BorderBrush}"
                         BorderThickness="{TemplateBinding BorderThickness}"
                         CornerRadius="{TemplateBinding CornerRadius}">
-                        <Viewbox>
-                            <Path
-                                x:Name="QRCodePath"
-                                HorizontalAlignment="Center"
-                                VerticalAlignment="Center"
-                                Data="{Binding TemplateSettings.GeometryGroup, RelativeSource={RelativeSource Mode=TemplatedParent}}"
-                                Fill="{TemplateBinding Foreground}"
-                                StrokeThickness="0" />
-                        </Viewbox>
+                        <Path
+                            x:Name="PART_QRCodePath"
+                            Data="{Binding TemplateSettings.GeometryGroup, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                            Fill="{TemplateBinding Foreground}"
+                            StrokeThickness="0" />
                     </Border>
                 </ControlTemplate>
             </Setter.Value>

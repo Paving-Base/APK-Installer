@@ -7,12 +7,14 @@ namespace APKInstaller.Controls
 {
     public class XamlQRCode : AbstractQRCode, IDisposable
     {
+        private readonly bool _disposed;
+
         /// <summary>
         /// Constructor without params to be used in COM Objects connections
         /// </summary>
-        public XamlQRCode() { }
+        public XamlQRCode(bool dispose = true) { _disposed = dispose; }
 
-        public XamlQRCode(QRCodeData data) : base(data) { }
+        public XamlQRCode(QRCodeData data, bool dispose = true) : base(data) { _disposed = dispose; }
 
         public GeometryGroup GetGraphic(Size viewBox)
         {
@@ -450,6 +452,21 @@ namespace APKInstaller.Controls
                 }
             }
             return radiusFilterKind;
+        }
+
+        public new void Dispose()
+        {
+            Dispose(_disposed);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                QrCodeData?.Dispose();
+            }
+            QrCodeData = null;
         }
     }
 

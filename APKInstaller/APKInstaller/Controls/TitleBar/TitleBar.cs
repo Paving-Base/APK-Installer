@@ -30,6 +30,7 @@ namespace APKInstaller.Controls
         public TitleBar()
         {
             DefaultStyleKey = typeof(TitleBar);
+            SetValue(TemplateSettingsProperty, new TitleBarTemplateSettings());
 
             Window window = Window.Current;
             if (window != null)

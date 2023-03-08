@@ -112,57 +112,6 @@
                         IsClickEnabled="True"
                         Tag="Processes" />
                 </controls:SettingsGroup>
-                <controls:QRCode
-                    Width="200"
-                    Height="200"
-                    BorderBrush="White"
-                    BorderThickness="1"
-                    Content="1"
-                    Foreground="{ThemeResource AccentTextFillColorPrimaryBrush}" />
-                <StackPanel Orientation="Horizontal" Spacing="5">
-                    <Path Fill="Wheat">
-                        <Path.Data>
-                            <GeometryGroup>
-                                <PathGeometry>
-                                    <PathFigure IsClosed="True" StartPoint="5,0">
-                                        <ArcSegment Point="0,5" Size="5,5" />
-                                        <ArcSegment Point="5,10" Size="5,5" />
-                                        <ArcSegment Point="10,5" Size="5,5" />
-                                        <ArcSegment Point="5,0" Size="5,5" />
-                                    </PathFigure>
-                                </PathGeometry>
-                            </GeometryGroup>
-                        </Path.Data>
-                    </Path>
-                    <Path Fill="Wheat">
-                        <Path.Data>
-                            <GeometryGroup>
-                                <PathGeometry>
-                                    <PathFigure IsClosed="True" StartPoint="5,0">
-                                        <ArcSegment Point="0,5" Size="5,5" />
-                                        <LineSegment Point="0,0" />
-                                        <LineSegment Point="5,0" />
-                                    </PathFigure>
-                                    <PathFigure IsClosed="True" StartPoint="0,5">
-                                        <ArcSegment Point="5,10" Size="5,5" />
-                                        <LineSegment Point="0,10" />
-                                        <LineSegment Point="0,5" />
-                                    </PathFigure>
-                                    <PathFigure IsClosed="True" StartPoint="5,10">
-                                        <ArcSegment Point="10,5" Size="5,5" />
-                                        <LineSegment Point="10,10" />
-                                        <LineSegment Point="5,10" />
-                                    </PathFigure>
-                                    <PathFigure IsClosed="True" StartPoint="10,5">
-                                        <ArcSegment Point="5,0" Size="5,5" />
-                                        <LineSegment Point="10,0" />
-                                        <LineSegment Point="10,5" />
-                                    </PathFigure>
-                                </PathGeometry>
-                            </GeometryGroup>
-                        </Path.Data>
-                    </Path>
-                </StackPanel>
             </StackPanel>
         </ScrollViewer>
     </Grid>
