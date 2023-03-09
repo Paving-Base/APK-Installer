@@ -127,7 +127,7 @@
     <value>ADB hiányzik</value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>In Analysis...</value>
+    <value>Elemzés...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
     <value>APK fájl</value>
@@ -163,7 +163,7 @@
     <value>ADB ellenőrzése...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Checking Path...</value>
+    <value>Útvonal ellenőrzése...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>Kattintson ide az olvasáshoz</value>
@@ -172,10 +172,10 @@
     <value>Bezárás</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>Are you sure to cancel the installation?</value>
+    <value>Biztos, hogy le akarja mondani a telepítést?</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Connecting Paired Devices...</value>
+    <value>Párosított eszközök csatlakoztatása...</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Másolás</value>
@@ -205,14 +205,14 @@
     <value>Beállítások megnyitása</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>A newer version is already installed</value>
+    <value>Egy újabb verzió már telepítve van</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>You already have installed a new version {0} of this app. Are you sure to reinstall version {1}?</value>
+    <value>Ön már telepítette az alkalmazás új {0} verzióját. Biztos, hogy újra akarja telepíteni a(z) {1} verziót?</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>How to connect WSA</value>
+    <value>A WSA csatlakoztatása</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
     <value>1. Please make sure APK Installer has been updated to the latest version
