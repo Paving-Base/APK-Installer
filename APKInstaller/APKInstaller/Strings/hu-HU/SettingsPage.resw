@@ -266,7 +266,7 @@
     <value>Pair and connect devices.</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
-    <value>Pair &amp; Connect</value>
+    <value>Párosítás és csatlakoztatás</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Sötét</value>
