@@ -133,7 +133,7 @@
     <value>Hiba történt a programmal…</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>There are some problems with the network...</value>
+    <value>Van néhány probléma a hálózattal...</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>Nem</value>
