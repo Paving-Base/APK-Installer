@@ -139,7 +139,7 @@
     <value>Nem</value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
-    <value>Install this Package</value>
+    <value>Telepítse ezt a csomagot</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
     <value>APK szétdarabolása</value>
