@@ -215,12 +215,12 @@
     <value>A WSA csatlakoztatása</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Please make sure APK Installer has been updated to the latest version
-2. Make sure you have the Android Subsystem installed and running
-3. Turn on developer mode and make sure the IP address is displayed successfully
-4. Reopen APK Installer and continue your installation
+    <value>1. Kérjük, győződjön meg róla, hogy az APK Installer a legújabb verzióra frissült.
+2. Győződjön meg róla, hogy az Android alrendszer telepítve van és fut.
+3. Kapcsolja be a fejlesztői módot, és győződjön meg róla, hogy az IP-cím sikeresen megjelenik.
+4. Nyissa meg újra az APK Installert, és folytassa a telepítést
 
-[Learn More]({0})</value>
+[Bővebben]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
     <value>Ikon</value>
@@ -229,10 +229,10 @@
     <value>Tudom</value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
-    <value>Incompatible App</value>
+    <value>Inkompatibilis alkalmazás</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
-    <value>The minimum required for this app is {0}. Your device supports {1}. Please update your device or choose order package.</value>
+    <value>Az alkalmazáshoz szükséges minimálisan szükséges {0}. Az Ön készüléke támogatja {1}. Kérjük, frissítse készülékét, vagy válasszon rendelési csomagot.</value>
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
@@ -253,7 +253,7 @@
     <value>Telepítés...</value>
   </data>
   <data name="InstallingPercent" xml:space="preserve">
-    <value>Installing {0}...</value>
+    <value>{0} telepítése...</value>
     <comment>{0} - Progress.</comment>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
@@ -287,25 +287,25 @@
     <value>Nem találja az Android eszközt</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>How to connect device</value>
+    <value>A készülék csatlakoztatása</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>If you want to install app into Windows Subsystem for Android™, you need to install it first. If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
+    <value>Ha alkalmazást szeretne telepíteni a Windows Subsystem for Android™ rendszerbe, először telepítenie kell azt. Ha más eszközökre szeretné telepíteni, kérjük, lépjen a Beállítások oldalra, kapcsolja ki a "Csak WSA számára" opciót, és csatlakoztassa a készülékét.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>#### Using USB
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open USB Debug
-3. Go to the Settings Page of APK Installer, select your device
-4. Go back, resume installation
-#### Using Wifi
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open Remote Debug
-3. Remember the IP address of your device
-4. Go to the Settings Page of APK Installer, connect and select your device
-5. Go back, resume installation
+    <value>#### USB használatával
+1. Kérjük, győződjön meg róla, hogy az APK Installer frissítve van [a legújabb verzióra](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Kapcsolja be a fejlesztői módot, nyissa meg az USB hibakeresést.
+3. Menjen az APK Installer beállítások oldalára, válassza ki a készülékét.
+4. Menjen vissza, folytassa a telepítést
+#### Wifi használatával
+1. Kérjük, győződjön meg róla, hogy az APK Installer frissítve van [a legújabb verzióra](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Kapcsolja be a fejlesztői módot, nyissa meg a távoli hibakeresést.
+3. Emlékezzen a készülék IP-címére
+4. Lépjen az APK Installer beállítások oldalára, csatlakozzon és válassza ki a készülékét.
+5. Menjen vissza, folytassa a telepítést
 
-[Learn More]({0})</value>
+[Bővebben]({0})</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
     <value>Nem tud csatlakozni az internethez</value>
@@ -397,7 +397,7 @@
 Ez sokáig tarthat. Dőljön hátra és pihenjen.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome!</value>
+    <value>Üdvözöljük!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA fut</value>
