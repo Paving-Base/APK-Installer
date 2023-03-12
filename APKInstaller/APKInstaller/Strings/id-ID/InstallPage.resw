@@ -127,7 +127,7 @@
     <value>ADB hilang</value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>In Analysis...</value>
+    <value>Dalam Tahap Analisis...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
     <value>berkas APK</value>
@@ -177,7 +177,7 @@
     <value>Apakah Anda yakin ingin membatalkan penginstalan?</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Connecting Paired Devices...</value>
+    <value>Menghubungkan Perangkat yang Disandingkan...</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Salin</value>
