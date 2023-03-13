@@ -139,7 +139,7 @@
     <value>Found {0} devices</value>
   </data>
   <data name="IPAddressBox.Header" xml:space="preserve">
-    <value>IP Address</value>
+    <value>IP Адрес</value>
   </data>
   <data name="ManualPairButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
     <value>Connecting devices manually</value>
@@ -148,25 +148,25 @@
     <value>Manual Connection</value>
   </data>
   <data name="PairCodeBox.Header" xml:space="preserve">
-    <value>WLAN Pairing Code</value>
+    <value>Код сопряжения WLAN</value>
   </data>
   <data name="PairCodeTextBlock.Text" xml:space="preserve">
-    <value>WLAN Pairing Code</value>
+    <value>Код сопряжения WLAN</value>
   </data>
   <data name="PairingLogText" xml:space="preserve">
-    <value>Pairing, please don't close the window.</value>
+    <value>Сопряжение, пожалуйста, не закрывайте окно.</value>
   </data>
   <data name="PairToggleButton.Content" xml:space="preserve">
     <value>Pair</value>
   </data>
   <data name="PortRun.Text" xml:space="preserve">
-    <value>Port</value>
+    <value>Порт</value>
   </data>
   <data name="QRScanButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Pair with QR code</value>
+    <value>Сопряжение с QR-кодом</value>
   </data>
   <data name="QRScanTextBlock.Text" xml:space="preserve">
-    <value>Scan QR code to pair devices.</value>
+    <value>Сканируйте QR-код для сопряжения устройств.</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Pair &amp; Connect</value>
