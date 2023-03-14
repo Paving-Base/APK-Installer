@@ -130,7 +130,7 @@
     <value>Automatisch downloaden wanneer een pakket van een URL is.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Auto Download Online Packages?</value>
+    <value>Online-pakketten automatisch downloaden?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Selecteer Achtergrondtype voor Windows 11</value>
