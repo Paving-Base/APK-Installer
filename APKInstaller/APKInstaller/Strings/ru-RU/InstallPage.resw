@@ -152,10 +152,10 @@
     <value>Не удаётся подключиться к WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>WSA запустилась некорректно или возникли проблемы с ADB. Пожалуйста, перезагрузите APK Installer. Если это не поможет, попробуйте перезагрузить компьютер.</value>
+    <value>Либо WSA не запустился должным образом, либо возникла проблема с ADB. Эту проблему может быть очень трудно решить. Пожалуйста, перезапустите программу установки. Если это не поможет, попробуйте перезагрузить компьютер.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>Не удалось открыть пакет</value>
+    <value>Не удалось открыть пакет приложения</value>
   </data>
   <data name="Checking" xml:space="preserve">
     <value>Проверка...</value>
@@ -167,7 +167,7 @@
     <value>Проверка пути...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Нажмите здесь, чтобы узнать</value>
+    <value>Нажмите здесь, чтобы прочитать</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Закрыть</value>
@@ -188,28 +188,28 @@
     <value>Скачать</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>Сбой загрузки</value>
+    <value>Ошибка загрузки</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>Пожалуйста, проверьте подключение к интернету или URL и повторите попытку.</value>
+    <value>Пожалуйста, проверьте ваше подключение к интернету или ссылку и повторите попытку.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>Поиск Подсистемы Windows для Android...</value>
+    <value>Поиск WSA...</value>
   </data>
   <data name="Finished" xml:space="preserve">
-    <value>Готово</value>
+    <value>Завершено</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>Подсистема Windows для Android найдена</value>
+    <value>WSA найдена</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
     <value>Параметры</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>Новая версия уже установлена</value>
+    <value>Новейшая версия уже установлена</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>У вас уже установлена новая версия {0} этого приложения. Вы уверены, что хотите переустановить версию {1}?</value>
+    <value>У вас уже установлена новая версия {0} этого приложения. Вы хотите переустановить версию {1}?</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
@@ -217,9 +217,9 @@
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
     <value>1. Пожалуйста, убедитесь, что программа APK Installer была обновлена до последней версии
-2. Убедитесь, что у вас установлена и запущена подсистема Windows для Android
+2. Убедитесь, что у вас установлена и запущена Подсистема Windows для Android
 3. Включите режим разработчика и убедитесь, что IP-адрес отображается корректно
-4. Перезапустить установщик APK и продолжить установку
+4. Перезапустите APK Installer и продолжите установку
 
 [Подробнее]({0})</value>
   </data>
@@ -227,7 +227,7 @@
     <value>Иконка</value>
   </data>
   <data name="IKnow" xml:space="preserve">
-    <value>Ок</value>
+    <value>Я знаю</value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
     <value>Несовместимое приложение</value>
