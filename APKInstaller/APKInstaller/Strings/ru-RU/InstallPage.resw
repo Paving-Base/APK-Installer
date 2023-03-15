@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, Android Debug Bridge, необходим для работы программы APK Installer. Нажмите "Загрузить" для загрузки. Загружая, вы принимаете Условия и Положения Google для ADB. Если вы уже скачали ADB, нажмите "Выбрать", чтобы выбрать его.</value>
+    <value>ADB (Android Debug Bridge) необходим для работы программы APK Installer. Нажмите "Скачать", для загрузки. Загружая, вы принимаете Условия и Положения Google для ADB. Если вы уже скачали ADB, нажмите "Выбрать", чтобы выбрать его.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB существует</value>
+    <value>ADB уже существует</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>АБР отсутствует</value>
+    <value>ADB отсутствует</value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>In Analysis...</value>
+    <value>Анализ...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
     <value>APK-файл
@@ -176,7 +176,7 @@
     <value>Вы уверены, что хотите отменить установку?</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Connecting Paired Devices...</value>
+    <value>Подключение сопряженных устройств...</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Копировать</value>
