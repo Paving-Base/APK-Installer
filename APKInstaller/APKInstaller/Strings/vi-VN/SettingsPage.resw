@@ -265,7 +265,7 @@
     <value>Pair and connect devices.</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
-    <value>Pair &amp; Connect</value>
+    <value>Ghép nối &amp; Kết nối</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Tối</value>
