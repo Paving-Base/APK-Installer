@@ -130,7 +130,7 @@
     <value>Download automatico quando il pacchetto proviene da un URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Auto Download Online Packages?</value>
+    <value>Scaricare Automaticamente i Pacchetti Online?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Scegli il Contesto per Windows 11</value>
@@ -244,7 +244,7 @@
     <value>Disabilitalo per connetterti ad altri dispositivi.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>For WSA only?</value>
+    <value>Solo per WSA?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>Architettura OS</value>
@@ -259,13 +259,13 @@
     <value>Pair device through network.</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>Pair Device</value>
+    <value>Accoppia Dispositivo</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
-    <value>Pair and connect devices.</value>
+    <value>Accoppia e collega dispositivi.</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
-    <value>Pair &amp; Connect</value>
+    <value>Accoppia E Connetti</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Scuro</value>
@@ -298,10 +298,10 @@
     <value>Sei sicuro di voler ripristinare l'app?</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value>Scan and auto connect paired devices.</value>
+    <value>Scansiona e collega automaticamente i dispositivi accoppiati.</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Scan Paired Devices?</value>
+    <value>Scansiona I Dispositivi Accoppiati?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Seleziona dispositivo</value>
