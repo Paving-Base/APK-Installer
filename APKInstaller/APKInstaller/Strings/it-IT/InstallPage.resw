@@ -175,7 +175,7 @@
     <value>Sei sicuro di voler annullare l'installazione?</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Connecting Paired Devices...</value>
+    <value>Connessione Dispositivi Accoppiati...</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Copia</value>
