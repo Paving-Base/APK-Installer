@@ -256,10 +256,10 @@
     <value>Basqa</value>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
-    <value>Qurılmanı tarmaq arqalı jalǵaw.</value>
+    <value>Qurılmanı tarmaq arqalı baylanıstırıw.</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>Qurılmanı jalǵaw</value>
+    <value>Qurılmanı baylanıstırıw</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
     <value>Quwılmalardı baylanıstırıw hám jalǵaw.</value>
@@ -301,7 +301,7 @@
     <value>Jalǵanǵan qurılmalardı tekseriw hám avtomatikalıq qosıw.</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Qosılǵan qurılmalar tekserilsin be?</value>
+    <value>Baylanıstırılǵan qurılmalar tekserilsin be?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Qurılmanı tańlaw</value>
