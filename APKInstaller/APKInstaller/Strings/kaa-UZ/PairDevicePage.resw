@@ -130,7 +130,7 @@
     <value>Tabıslı jalǵandı.</value>
   </data>
   <data name="ConnectingLogText" xml:space="preserve">
-    <value>Pairing successfully. Connecting, please don't close the window.</value>
+    <value>Tabıslı baylanıstı. Jalǵanbaqta, ótinish, aynanı jawmań.</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
     <value>Jalǵaw</value>
@@ -148,27 +148,27 @@
     <value>Qolda jalǵanıw</value>
   </data>
   <data name="PairCodeBox.Header" xml:space="preserve">
-    <value>WLAN Pairing Code</value>
+    <value>WLAN baylanısıw kodı</value>
   </data>
   <data name="PairCodeTextBlock.Text" xml:space="preserve">
-    <value>WLAN Pairing Code</value>
+    <value>WLAN baylanısıw kodı</value>
   </data>
   <data name="PairingLogText" xml:space="preserve">
-    <value>Pairing, please don't close the window.</value>
+    <value>Baylanıspaqta, ótinish, aynanı jawmań.</value>
   </data>
   <data name="PairToggleButton.Content" xml:space="preserve">
-    <value>Pair</value>
+    <value>Baylanısıw</value>
   </data>
   <data name="PortRun.Text" xml:space="preserve">
     <value>Port</value>
   </data>
   <data name="QRScanButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Pair with QR code</value>
+    <value>QR kod arqalı baylanısıw</value>
   </data>
   <data name="QRScanTextBlock.Text" xml:space="preserve">
-    <value>Scan QR code to pair devices.</value>
+    <value>Qurılmalardı baylanıstırıw ushın QR kodti tekseriń.</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Pair &amp; Connect</value>
+    <value>Baylanıstırıw &amp; jalǵanıw</value>
   </data>
 </root>
