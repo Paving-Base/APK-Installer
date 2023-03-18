@@ -127,7 +127,7 @@
     <value>Jalǵanǵan qurılmalar {0}</value>
   </data>
   <data name="ConnectedLogText" xml:space="preserve">
-    <value>Connecting successfully.</value>
+    <value>Tabıslı jalǵandı.</value>
   </data>
   <data name="ConnectingLogText" xml:space="preserve">
     <value>Pairing successfully. Connecting, please don't close the window.</value>
@@ -142,10 +142,10 @@
     <value>IP mánzil</value>
   </data>
   <data name="ManualPairButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Connecting devices manually</value>
+    <value>Qurılmalardı qolda jalǵaw</value>
   </data>
   <data name="ManualPairTextBlock.Text" xml:space="preserve">
-    <value>Manual Connection</value>
+    <value>Qolda jalǵanıw</value>
   </data>
   <data name="PairCodeBox.Header" xml:space="preserve">
     <value>WLAN Pairing Code</value>
