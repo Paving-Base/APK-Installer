@@ -262,10 +262,10 @@
     <value>Gerät koppeln</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
-    <value>Pair and connect devices.</value>
+    <value>Geräte koppeln und verbinden.</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
-    <value>Pair &amp; Connect</value>
+    <value>Koppeln &amp; Verbinden</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Dunkel</value>
@@ -298,10 +298,10 @@
     <value>Sind Sie sicher, dass Sie die App zurücksetzen wollen?</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value>Scan and auto connect paired devices.</value>
+    <value>Scannen und automatisch mit gekoppelten Geräten verbinden.</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Scan Paired Devices?</value>
+    <value>Gekoppelte Geräte scannen?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Gerät auswählen</value>
