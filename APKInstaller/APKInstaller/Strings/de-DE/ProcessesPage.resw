@@ -130,7 +130,7 @@
     <value>Prozess ID</value>
   </data>
   <data name="ResidentSetSize.Header" xml:space="preserve">
-    <value>Residenter Satz Größe</value>
+    <value>Arbeitsspeicher-Größe festlegen</value>
   </data>
   <data name="State.Header" xml:space="preserve">
     <value>Zustand</value>
