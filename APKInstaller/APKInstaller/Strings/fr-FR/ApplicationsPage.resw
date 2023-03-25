@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
-    <value>En attente de l'appareil...&lt;? xml version="1.0" encoding="utf-8"?&gt; &lt;root&gt; &lt;!-- Microsoft ResX Schema Version 2.0 Les principaux objectifs de ce format sont de permettre un format Xml simple qui est principalement lisible par l'homme. La génération et l'analyse des différents types de données sont effectuées via les classes TypeConverter associées aux types de données. Exemple : ... ado. net...</value>
+    <value>En attente de l'appareil...</value>
   </data>
   <data name="Start.Text" xml:space="preserve">
     <value>Démarrer</value>
