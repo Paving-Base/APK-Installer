@@ -127,7 +127,7 @@
     <value>Zhǎo búdào ADB</value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>In Analysis...</value>
+    <value>解析中……</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
     <value>APK wénjiàn</value>
