@@ -126,6 +126,9 @@
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB eksik</value>
   </data>
+  <data name="Analysis" xml:space="preserve">
+    <value>Analizde...</value>
+  </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
     <value>APK Dosyası</value>
   </data>
@@ -176,9 +179,6 @@
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Kopyala</value>
-  </data>
-  <data name="Decompiling" xml:space="preserve">
-    <value>Derleme çözülüyor...</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Aygıtlar</value>

@@ -151,7 +151,7 @@
     <value>Выключить</value>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
-    <value>Manage the processes of connected devices</value>
+    <value>Управление процессами подключенных устройств</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
     <value>Процессы</value>

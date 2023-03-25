@@ -121,14 +121,14 @@
     <value>Nom de l'application</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
-    <value>Basic Information</value>
+    <value>Renseignements de base</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
-    <value>Dependencies - {0} in total</value>
+    <value>Dépendances - {0} au total</value>
     <comment>{0} - Dependencies Count.</comment>
   </data>
   <data name="FeaturesHeaderFormat" xml:space="preserve">
-    <value>Features - {0} in total</value>
+    <value>Caractéristiques - {0} au total</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
     <value>Languages</value>
@@ -149,26 +149,26 @@
     <value>Permissions Count</value>
   </data>
   <data name="PermissionsHeaderFormat" xml:space="preserve">
-    <value>Permissions - {0} in total</value>
+    <value>Permissions - {0} au total</value>
     <comment>{0} - Permissions Count.</comment>
   </data>
   <data name="SharePackage.Content" xml:space="preserve">
-    <value>Share Package</value>
+    <value>Forfait de partage</value>
   </data>
   <data name="SupportedArchitectures.Text" xml:space="preserve">
     <value>Support Architectures</value>
   </data>
   <data name="SupportResolutions.Text" xml:space="preserve">
-    <value>Support Resolutions</value>
+    <value>Résolutions de support </value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
-    <value>Support Screen Sizes</value>
+    <value>Prise en charge des tailles d'écran</value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
-    <value>Target SDK</value>
+    <value>Kit de développement logiciel SDK cible</value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
-    <value>About {0}</value>
+    <value>{0} Au propos</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Version.Text" xml:space="preserve">

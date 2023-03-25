@@ -1,13 +1,13 @@
 #### Добро пожаловать в установщик APK!
 
 ##### Декларация
-1. Please comply with the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. This program is open source software, so please make sure the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG) to ensure your data security.
-3. If the source of the program is not abnormal, all your data will be used only for the running of the program or stored locally during the running, and the developer will not steal any of your data. Тем не менее обращайте внимание на безопасность окружения.
-4. The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.
+1. Пожалуйста, следуйте [Лицензионному соглашению и политике конфиденциальности программы APK Installer](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+2. Эта программа является программным обеспечением с открытым исходным кодом, поэтому, пожалуйста, убедитесь, что программа взята из [этого репозитория Github](https://github.com/Paving-Base/APK-Installer) или [этого приложения](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG), чтобы обеспечить безопасность ваших данных.
+3. Если источник программы не является опасным, все ваши данные будут использоваться только для запуска программы или храниться локально во время ее работы, и разработчик не украдет никаких ваших данных. Тем не менее обращайте внимание на безопасность окружения.
+4. Перевод этого приложения взят из сообщества [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin"), и все тексты не отражают точку зрения автора.
 
 ##### Перевод
-Спасибо переводчикам [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") за их помощь. If there are any problems with the translation, please feel free to correct us. And please translate seriously. Everything you write will be read all over the world.
+Спасибо переводчикам [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") за их помощь. Если возникнут какие-либо проблемы с переводом, пожалуйста, не стесняйтесь исправлять нас. И, пожалуйста, отнеситесь к переводу серьезно. Все, что вы пишете, будет прочитано людьми во всем мире.
 
 ##### Авторы
 - [wherewhere](https://github.com/wherewhere)

@@ -126,6 +126,9 @@
   <data name="ADBMissing" xml:space="preserve">
     <value>Falta ADB</value>
   </data>
+  <data name="Analysis" xml:space="preserve">
+    <value>En análisis...</value>
+  </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
     <value>Archivo APK</value>
   </data>
@@ -176,9 +179,6 @@
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Copiar</value>
-  </data>
-  <data name="Decompiling" xml:space="preserve">
-    <value>Descompilando...</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Dispositivos</value>

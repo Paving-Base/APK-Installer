@@ -121,7 +121,7 @@
     <value>Android teszt</value>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
-    <value>Manage the applications of connected devices</value>
+    <value>A csatlakoztatott eszközök alkalmazásainak kezelése</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>Alkalmazások</value>
@@ -133,10 +133,10 @@
     <value>Kompakt felület</value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
-    <value>A development version app may not stable. Download release version on Microsoft Store.</value>
+    <value>A fejlesztési verzió alkalmazás nem biztos, hogy stabil. Töltse le a kiadási verziót a Microsoft Store áruházból.</value>
   </data>
   <data name="DevelopmentInfoBar.Title" xml:space="preserve">
-    <value>You are using a development version app.</value>
+    <value>Ön egy fejlesztői verziójú alkalmazást használ.</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
     <value>Belépés a kompakt felületre</value>
@@ -151,7 +151,7 @@
     <value>Kilépés</value>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
-    <value>Manage the processes of connected devices</value>
+    <value>A csatlakoztatott eszközök folyamatainak kezelése</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
     <value>Folyamatok</value>

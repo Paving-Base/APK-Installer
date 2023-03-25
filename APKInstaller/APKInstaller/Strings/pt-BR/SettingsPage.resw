@@ -130,7 +130,7 @@
     <value>Baixar automaticamente quando o pacote vier de um URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Download automático de pacotes online?</value>
+    <value>Baixar automático de pacotes online?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Selecione o tipo de fundo para windows 11</value>

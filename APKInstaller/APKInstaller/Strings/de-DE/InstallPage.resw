@@ -126,6 +126,9 @@
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB fehlt</value>
   </data>
+  <data name="Analysis" xml:space="preserve">
+    <value>Analysiert...</value>
+  </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
     <value>APK Datei</value>
   </data>
@@ -172,13 +175,10 @@
     <value>Sind Sie sicher, dass Sie die Installation abbrechen möchten?</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Connecting Paired Devices...</value>
+    <value>Verbinde gekoppelte Geräte...</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Kopieren</value>
-  </data>
-  <data name="Decompiling" xml:space="preserve">
-    <value>Decompiling...</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Geräte</value>

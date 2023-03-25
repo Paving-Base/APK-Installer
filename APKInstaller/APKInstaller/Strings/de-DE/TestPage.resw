@@ -121,7 +121,7 @@
     <value>Android Test</value>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
-    <value>Manage the applications of connected devices</value>
+    <value>Anwendungen von verbundenen Geräten verwalten</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>Anwendungen</value>
@@ -151,7 +151,7 @@
     <value>Beenden</value>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
-    <value>Manage the processes of connected devices</value>
+    <value>Verwalte die Prozesse der verbundenen Geräte</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
     <value>Prozesse</value>

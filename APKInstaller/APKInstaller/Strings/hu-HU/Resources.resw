@@ -133,13 +133,13 @@
     <value>Hiba történt a programmal…</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>There are some problems with the network...</value>
+    <value>Van néhány probléma a hálózattal...</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>Nem</value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
-    <value>Install this Package</value>
+    <value>Telepítse ezt a csomagot</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
     <value>APK szétdarabolása</value>
