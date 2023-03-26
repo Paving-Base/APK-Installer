@@ -124,7 +124,7 @@
     <value>앱 설치 파일</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>APK Installer. 제작자: @wherewhere 와 @Tangent-90 </value>
+    <value>APK Installer. 제작자: @wherewhere 와 @Tangent-90</value>
   </data>
   <data name="AppName" xml:space="preserve">
     <value>APK 설치 관리자</value>
