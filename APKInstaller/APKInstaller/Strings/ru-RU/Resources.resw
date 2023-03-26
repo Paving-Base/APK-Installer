@@ -121,8 +121,7 @@
     <value>Пакет приложения Android</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>APK-файл
-</value>
+    <value>APK-файл</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>Установщик APK. Написано @wherewhere и @Tangent-90.</value>
