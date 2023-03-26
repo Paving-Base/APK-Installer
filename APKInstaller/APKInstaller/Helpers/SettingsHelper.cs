@@ -108,13 +108,6 @@ namespace APKInstaller.Helpers
         }
     }
 
-    public enum UISettingChangedType
-    {
-        LightMode,
-        DarkMode,
-        NoPicChanged,
-    }
-
     public static partial class SettingsHelper
     {
         public static readonly UISettings UISettings = new();

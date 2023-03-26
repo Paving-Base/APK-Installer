@@ -118,6 +118,7 @@ namespace APKInstaller.Controls
             base.OnPointerCaptureLost(e);
             _ = VisualStateManager.GoToState(this, NormalState, true);
         }
+
         private void Control_PointerCanceled(object sender, PointerRoutedEventArgs e)
         {
             base.OnPointerCanceled(e);

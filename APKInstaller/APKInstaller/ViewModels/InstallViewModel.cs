@@ -730,7 +730,7 @@ namespace APKInstaller.ViewModels
                     PrimaryButtonText = _loader.GetString("Download"),
                     SecondaryButtonText = _loader.GetString("Select"),
                     CloseButtonText = _loader.GetString("Cancel"),
-                    Content = new ScrollViewer()
+                    Content = new ScrollViewer
                     {
                         Content = StackPanel
                     },
