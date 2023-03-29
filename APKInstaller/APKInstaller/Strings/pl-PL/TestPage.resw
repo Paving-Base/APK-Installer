@@ -121,7 +121,7 @@
     <value>Test Android</value>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
-    <value>Manage the applications of connected devices</value>
+    <value>Zarządzaj aplikacjami podłączonych urządzeń</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>Aplikacje</value>
@@ -136,7 +136,7 @@
     <value>A development version app may not stable. Download release version on Microsoft Store.</value>
   </data>
   <data name="DevelopmentInfoBar.Title" xml:space="preserve">
-    <value>You are using a development version app.</value>
+    <value>Używasz aplikacji programistycznej.</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
     <value>Wprowadź nakładkę kompaktową</value>
@@ -151,7 +151,7 @@
     <value>Wyjście</value>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
-    <value>Manage the processes of connected devices</value>
+    <value>Zarządzaj aplikacjami podłączonych urządzeń</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
     <value>Procesy</value>
@@ -184,6 +184,6 @@
     <value>Pasek tytułu </value>
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
-    <value>Test interfejsu użytkownika</value>
+    <value>Testy UI</value>
   </data>
 </root>
