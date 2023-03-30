@@ -2,7 +2,7 @@
 
 ##### Deklaraciya
 1. Ótinish, [APK Installer paydalanıwshısınıń licenziya shártnamasına hám qupiyalıq siyasatına](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md) ámel qılıń.
-2. This program is open source software, so please make sure the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) to ensure your data security.
+2. Bul ashıq kodlı baǵdarlama, sonlıqtan maǵlıwmatlarıńızdıń qáwipsizligin támiyinlew ushın onıń [Github repozitoriyasınan](https://github.com/Paving-Base/APK-Installer) yamasa [usı baǵdarlamadan](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) ekenligine isenim kámil etiń.
 3. Eger baǵdarlamanıń deregi ózgeshe bolmasa, siziń bárshe dereklerińiz tek baǵdarlamanı iske túsiriw ushın qollanıladı yamasa jumıs barısında ishki yadqa saqlanadı hám baǵdarlamashı siziń maǵlıwmatlarıńızdı urlay almaydı. Ótinish, sonda da ortalıq qáwipsizligine itibar qaratıń.
 4. Baǵdarlamanıń awdarması [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") birlespesinen alınǵan hám barlıq tekstler avtordıń kózqarasın sáwlelendirmeydi.
 
