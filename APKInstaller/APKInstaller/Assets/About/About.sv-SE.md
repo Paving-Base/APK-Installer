@@ -1,4 +1,4 @@
-#### Välkommen till APK Installera!
+#### Välkommen till ARK-installationsprogram!
 
 ##### Declaration
 1. Please comply with the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
