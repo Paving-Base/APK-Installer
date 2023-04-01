@@ -1,8 +1,8 @@
 # Jak připojit zařízení
 #### Použitie USB
 1. Uistite sa, že inštalátor APK bol aktualizovaný na[najnovšia verzia](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Zapnite režim vývojára, otvorte ladenie USB![Režim vývojára](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Screenshot_20221002-172252.jpg)
-3. Go to the Settings Page of APK Installer, select your device ![Stránka nastavenia](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Snipaste_2022-10-02_17-37-30.png)
+2. Zapněte vývojářský režim, otevřete Ladění USB ![Režim vývojára](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Screenshot_20221002-172252.jpg)
+3. Přejděte na stránku nastavení APK instalace, vyberte vaše zařízení ![Stránka nastavenia](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Snipaste_2022-10-02_17-37-30.png)
 4. Go back, resume installation ![Obnoviť inštaláciu](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Snipaste_2022-10-02_17-34-04.png)
 #### Using Wifi
 1. Ujistěte se prosím, že APK Instalátor byl aktualizován na [nejnovější verzi](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
