@@ -121,7 +121,7 @@
     <value>ADB, le Pont de Débogage Android (Android Debug Bridge), est requis pour qu'APK Installer fonctionne. Cliquez sur "Télécharger" pour le télécharger. En le téléchargeant, vous acceptez les Conditions d'Utilisation de Google pour l'ADB. Si vous avez déjà téléchargé ADB, cliquez sur "Sélectionneré pour le sélectionner.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Exists</value>
+    <value>ADB Existe</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB est manquant</value>
