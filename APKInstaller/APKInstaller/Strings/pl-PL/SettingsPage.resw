@@ -160,16 +160,16 @@
     <value>Terminate ADB when Exit Installer?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Exit Installer after installation is complete.</value>
+    <value>Wyjdź z Instalatora po zakończeniu instalacji.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Exit Installer when APP is Ready?</value>
+    <value>Czy zamknąć instalator, gdy aplikacja będzie gotowa?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Konfiguracja</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value>Podłącz urządzenie przez sieć.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Podłącz urządzenie</value>
