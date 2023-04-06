@@ -7,7 +7,7 @@
 4. terraria 1.4
 
 ##### Traduza
-Obrigado a [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") tradutores por seu apoio. If there are any problems with the translation, please feel free to correct us. And please translate seriously. Everything you write will be read all over the world.
+Obrigado a [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") tradutores por seu apoio. Se houver algum problema com a tradução, por favor, sinta-se livre para nos corrigir. And please translate seriously. Everything you write will be read all over the world.
 
 ##### Colaboradores
 - [wherewhere](https://github.com/wherewhere)
