@@ -1,22 +1,22 @@
 #### APKインストーラーへようこそ！
 
-##### 規約
+##### はじめに
 1. [APKインストーラのエンドユーザーライセンス契約とプライバシーポリシー](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md) をお読みください。
-2. This program is open source software, so please make sure the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) to ensure your data security.
-3. If the source of the program is not abnormal, all your data will be used only for the running of the program or stored locally during the running, and the developer will not steal any of your data. それでも、あなたの環境のセキュリティには注意してください。
-4. The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.
+2. このプログラムはオープンソースソフトウェアです。データの安全を守るため、 [GitHubリポジトリ](https://github.com/Paving-Base/APK-Installer) または、  [Microsoft Store](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) からダウンロードされたものであることを確認してください。
+3. 改造されたアプリケーションでない場合、すべてのデータはこのプログラムを実行するために、ローカル上に保存されます。開発者はこれらのデータにアクセスすることはありません。 このアプリケーションはウイルスを含みませんが、このデバイスのセキュリティには注意するようにしてください。
+4. このアプリケーションの翻訳は [Clowdin](https://crowdin.com/project/APKInstaller "Crowdin") コミュニティによるものであり、すべてのテキストが開発者の意図を的確に表していない可能性があります。
 
-##### 翻訳する
-[Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") の翻訳者のサポートに感謝します。 If there are any problems with the translation, please feel free to correct us. And please translate seriously. Everything you write will be read all over the world.
+##### 翻訳について
+[Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") の翻訳にご協力いただいた皆様に感謝いたします。 誤翻訳が見られた場合、ぜひ誤翻訳の修正にご協力ください。 そして、それらを真剣に翻訳してください。 あなたが翻訳して書いた文章は世界中で読まれるものとなります、
 
-##### 貢献者
+##### 貢献していただいた方々
 - [wherewhere](https://github.com/wherewhere)
 - [Void48](https://github.com/Void48)
 - [EP012014](https://github.com/EP012014)
 - [A Big Salty Fish](https://github.com/bigsaltyfishes)
 - [sam1357](https://github.com/sam1357)
 
-##### 文献と参照
+##### 参照文献
 - [MetroLog](https://github.com/roubachof/MetroLog "MetroLog")
 - [Zeroconf](https://github.com/novotnyllc/Zeroconf "Zeroconf")
 - [Windows UI](https://github.com/microsoft/microsoft-ui-xaml "Windows UI")
