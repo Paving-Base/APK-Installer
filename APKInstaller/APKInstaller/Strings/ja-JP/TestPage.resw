@@ -121,7 +121,7 @@
     <value>Androidのテスト</value>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
-    <value>Manage the applications of connected devices</value>
+    <value>接続されたデバイスのアプリケーションを管理</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>アプリ</value>
@@ -151,7 +151,7 @@
     <value>終了</value>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
-    <value>Manage the processes of connected devices</value>
+    <value>接続済みのデバイスのプロセスを管理</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
     <value>プロセス</value>
