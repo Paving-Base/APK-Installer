@@ -166,13 +166,13 @@
     <value>パスを確認しています...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>ここをクリックして読みます。</value>
+    <value>ここをクリックして読む</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>閉じる</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>インストール解消しますか？</value>
+    <value>インストールを取り消しますか？</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
     <value>ペアリングされたデバイスに接続しています。</value>
