@@ -121,9 +121,9 @@
     <value>設定</value>
   </data>
   <data name="BackButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Back</value>
+    <value>戻る</value>
   </data>
   <data name="RefreshButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Refresh</value>
+    <value>更新</value>
   </data>
 </root>
