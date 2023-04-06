@@ -118,34 +118,34 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AddressRun.Text" xml:space="preserve">
-    <value>Address</value>
+    <value>アドレス</value>
   </data>
   <data name="ConnectButton.Content" xml:space="preserve">
-    <value>Connect</value>
+    <value>接続</value>
   </data>
   <data name="ConnectedListFormat" xml:space="preserve">
-    <value>Connected {0} devices</value>
+    <value>接続された {0} 個のデバイス</value>
   </data>
   <data name="ConnectedLogText" xml:space="preserve">
-    <value>Connecting successfully.</value>
+    <value>接続しました。</value>
   </data>
   <data name="ConnectingLogText" xml:space="preserve">
-    <value>Pairing successfully. Connecting, please don't close the window.</value>
+    <value>ペアリングに成功しました。このウィンドウを閉じないでください。</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
-    <value>Connect</value>
+    <value>接続</value>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
-    <value>Found {0} devices</value>
+    <value>{0} 個のデバイスが見つかりました</value>
   </data>
   <data name="IPAddressBox.Header" xml:space="preserve">
-    <value>IP Address</value>
+    <value>IPアドレス</value>
   </data>
   <data name="ManualPairButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Connecting devices manually</value>
+    <value>手動でデバイスを接続</value>
   </data>
   <data name="ManualPairTextBlock.Text" xml:space="preserve">
-    <value>Manual Connection</value>
+    <value>手動接続</value>
   </data>
   <data name="PairCodeBox.Header" xml:space="preserve">
     <value>WLAN Pairing Code</value>
