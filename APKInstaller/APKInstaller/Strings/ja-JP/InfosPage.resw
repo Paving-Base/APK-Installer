@@ -143,7 +143,7 @@
     <value>パッケージ名</value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
-    <value>パッケージサイズ</value>
+    <value>パッケージの大きさ</value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
     <value>権限の数</value>
