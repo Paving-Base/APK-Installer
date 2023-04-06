@@ -148,27 +148,27 @@
     <value>手動接続</value>
   </data>
   <data name="PairCodeBox.Header" xml:space="preserve">
-    <value>WLAN Pairing Code</value>
+    <value>ペア設定コード</value>
   </data>
   <data name="PairCodeTextBlock.Text" xml:space="preserve">
-    <value>WLAN Pairing Code</value>
+    <value>ペア設定コード</value>
   </data>
   <data name="PairingLogText" xml:space="preserve">
-    <value>Pairing, please don't close the window.</value>
+    <value>接続しています。このウィンドウを閉じないでください。</value>
   </data>
   <data name="PairToggleButton.Content" xml:space="preserve">
-    <value>Pair</value>
+    <value>接続</value>
   </data>
   <data name="PortRun.Text" xml:space="preserve">
-    <value>Port</value>
+    <value>ポート</value>
   </data>
   <data name="QRScanButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Pair with QR code</value>
+    <value>QRコードで接続</value>
   </data>
   <data name="QRScanTextBlock.Text" xml:space="preserve">
-    <value>Scan QR code to pair devices.</value>
+    <value>QRコードをスキャンしてデバイスを追加</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Pair &amp; Connect</value>
+    <value>ペアリングと接続</value>
   </data>
 </root>
