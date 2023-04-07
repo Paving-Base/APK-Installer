@@ -2,7 +2,7 @@
 
 ##### تصريح
 1. الرجاء اتباع [اتفاق ترخيص المستخدم النهائي وسياسة الخصوصية لـ APK](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. This program is open source software, so please make sure the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) to ensure your data security.
+2. هذا البرنامج برنامج مفتوح المصدر، لذا يرجى التأكد من أن البرنامج من [مستودع Github](https://github.com/Paving-Base/APK-Installer) أو [هذا التطبيق](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) لضمان أمان بياناتك.
 3. غرف حل ومع ذلك، يرجى الاهتمام في الناحية الأمنية إلى بيئة البرنامَج.
 4. The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.
 
