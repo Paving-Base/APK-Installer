@@ -1,13 +1,13 @@
 #### Ласкаво просимо до Інсталятора APK!
 
 ##### Декларація
-1. Please comply with the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. This program is open source software, so please make sure the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) to ensure your data security.
-3. If the source of the program is not abnormal, all your data will be used only for the running of the program or stored locally during the running, and the developer will not steal any of your data. Проте зверніть увагу на безпеку навколишнього середовища.
-4. The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.
+1. Будь ласка, дотримуйтеся [Ліцензійної угоди кінцевого користувача та Політики конфіденційності Інсталятора APK](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+2. Ця програма є програмним забезпеченням з відкритим вихідним кодом, тому переконайтеся, що програма з [цього сховища Github](https://github.com/Paving-Base/APK-Installer) або [цієї програми](https://www.microsoft.com/store/apps/9P2JFQ43FPPG), щоб гарантувати безпеку ваших даних.
+3. Якщо джерело програми не є незвичайним, усі ваші дані використовуватимуться лише для запуску програми або зберігатимуться локально під час роботи, і розробник не викраде жодних ваших даних. Проте зверніть увагу на безпеку навколишнього середовища.
+4. Переклад цієї програми зроблено спільнотою [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin"), і всі тексти не відображають погляди автора.
 
 ##### Переклад
-Дякую перекладачам з [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") за підтримку. If there are any problems with the translation, please feel free to correct us. And please translate seriously. Everything you write will be read all over the world.
+Дякую перекладачам з [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") за їхню підтримку. Якщо виникнуть проблеми з перекладом, виправте нас. І перекладіть, будь ласка, серйозно. Усе, що ви напишете, прочитають у всьому світі.
 
 ##### Розробники
 - [wherewhere](https://github.com/wherewhere)
