@@ -1,13 +1,13 @@
 #### Welkom by die APK-installeerder!
 
 ##### Verklaring
-1. Please comply with the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. This program is open source software, so please make sure the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) to ensure your data security.
-3. If the source of the program is not abnormal, all your data will be used only for the running of the program or stored locally during the running, and the developer will not steal any of your data. Gee tog asseblief aandag aan die veiligheid van die omgewing.
-4. The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.
+1. Voldoen asseblief aan die [APK Installeerder Eind Gebruikers Lisensie Ooreenkoms en Privaatheidsbeleid](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+2. Hierdie program is oop bron sagteware,  maak dus asseblief seker dat die program vanaf [hierdie Github-bewaarplek](https://github.com/Paving-Base/APK-Installer) of [hierdie toepassing](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) is om u data sekuriteit te verseker.
+3. As die bron van die program nie abnormaal is nie, sal al u data slegs gebruik word vir die uitvoering van die program  of plaaslik gestoor word tydens die uitvoering van die program, en die ontwikkelaar sal nie enige van u data steel nie. Gee tog asseblief aandag aan die veiligheid van die omgewing.
+4. Die vertaling van hierdie  toepassing kom van die [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin")-gemeenskap, en alle tekste verteenwoordig nie die skrywer se sienings nie.
 
 ##### Vertaal
-Dankie aan [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin")-vertalers vir hul ondersteuning. If there are any problems with the translation, please feel free to correct us. And please translate seriously. Everything you write will be read all over the world.
+Dankie aan [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin")-vertalers vir hul ondersteuning. As daar enige probleem met die vertaling is, voel asseblief vry om ons te korrigeer. En vertaal asseblief ernstig. Alles wat u skryf, sal oor die hele wêreld gelees word.
 
 ##### Bydraers
 - [wherewhere](https://github.com/wherewhere)
