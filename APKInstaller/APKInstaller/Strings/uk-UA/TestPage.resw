@@ -121,7 +121,7 @@
     <value>Тест Android</value>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
-    <value>Manage the applications of connected devices</value>
+    <value>Керування програмами під’єднаних пристроїв</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>Додатки</value>
@@ -151,7 +151,7 @@
     <value>Вимкнути</value>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
-    <value>Manage the processes of connected devices</value>
+    <value>Керування процесами під’єднаних пристроїв</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
     <value>Процеси</value>
