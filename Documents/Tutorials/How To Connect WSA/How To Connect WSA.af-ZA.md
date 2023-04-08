@@ -5,4 +5,4 @@ Windows-substelsel vir Android™</0 geïnstalleer het en lopend is ></li>
    
    3 Skakel ontwikkelaarmodus aan, maak seker dat die IP-adres vertoon word![Ontwikkelaar mode](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/Images/Snipaste_2022-10-02_19-02-09.png)
 
-4 Reopen APK Installer, resume installation ![Resume Installation](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/Images/Snipaste_2022-10-02_17-34-04.png)</ol>
+4 Heropen APK  Installeerder, hervat installasie![Hervat installasie](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/Images/Snipaste_2022-10-02_17-34-04.png)</ol>
