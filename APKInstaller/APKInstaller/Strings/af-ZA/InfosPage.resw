@@ -162,16 +162,16 @@
     <value>Ondersteun resolusies</value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
-    <value>Support Screen Sizes</value>
+    <value>Ondersteun Skerm Grootte </value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
-    <value>Target SDK</value>
+    <value>Bestemming SDK</value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
-    <value>About {0}</value>
+    <value>Oor {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Version.Text" xml:space="preserve">
-    <value>Version</value>
+    <value>Weergawe</value>
   </data>
 </root>
