@@ -1,5 +1,4 @@
-﻿using AdvancedSharpAdbClient;
-using APKInstaller.Pages;
+﻿using APKInstaller.Pages;
 using CommunityToolkit.WinUI;
 using Microsoft.UI.Dispatching;
 using Microsoft.UI.Windowing;
@@ -7,7 +6,6 @@ using Microsoft.UI.Xaml.Media.Animation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
 using System.Text;
 using Windows.ApplicationModel.Resources;
 using Windows.UI;
@@ -19,8 +17,8 @@ namespace APKInstaller.Helpers
 {
     public static partial class UIHelper
     {
-        public static bool HasTitleBar = !AppWindowTitleBar.IsCustomizationSupported();
-        public static bool TitleBarExtended => HasTitleBar ? MainWindow.ExtendsContentIntoTitleBar : WindowHelper.GetAppWindowForCurrentWindow().TitleBar.ExtendsContentIntoTitleBar;
+        public static bool HasTitleBar { get; } = !AppWindowTitleBar.IsCustomizationSupported();
+        public static bool TitleBarExtended => HasTitleBar ? MainWindow.ExtendsContentIntoTitleBar : MainWindow.AppWindow.TitleBar.ExtendsContentIntoTitleBar;
         public static double TitleBarHeight => TitleBarExtended ? HasTitleBar ? 28 : 32 : 0;
 
         private static DispatcherQueue _dispatcherQueue;

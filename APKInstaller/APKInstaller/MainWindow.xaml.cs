@@ -24,10 +24,10 @@ namespace APKInstaller
         public MainWindow()
         {
             InitializeComponent();
-            this.GetAppWindowForCurrentWindow().SetIcon("favicon.ico");
             IntPtr hwnd = WindowNative.GetWindowHandle(this);
             SetWindowSize(new HWND(hwnd), 652, 414);
             Backdrop = new BackdropHelper(this);
+            AppWindow.SetIcon("favicon.ico");
             UIHelper.MainWindow = this;
             MainPage MainPage = new();
             Content = MainPage;
@@ -59,7 +59,7 @@ namespace APKInstaller
             float scalingFactor = (float)dpi / 96;
             width = (int)(width * scalingFactor);
             height = (int)(height * scalingFactor);
-            this.GetAppWindowForCurrentWindow().Resize(new SizeInt32(width, height));
+            AppWindow.Resize(new SizeInt32(width, height));
         }
 
         private void SetBackdrop()

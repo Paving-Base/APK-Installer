@@ -5,6 +5,5 @@
         <ResourceDictionary Source="ms-appx:///Controls/TitleBar/TitleBar.xaml" />
         <ResourceDictionary Source="ms-appx:///Controls/SettingsGroup/SettingsGroup.xaml" />
         <ResourceDictionary Source="ms-appx:///Controls/SettingExpander/SettingExpander.xaml" />
-        <ResourceDictionary Source="ms-appx:///Controls/IsEnabledTextBlock/IsEnabledTextBlock.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

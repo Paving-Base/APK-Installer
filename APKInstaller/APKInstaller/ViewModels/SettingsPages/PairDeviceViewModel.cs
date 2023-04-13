@@ -420,7 +420,7 @@ namespace APKInstaller.ViewModels.SettingsPages
             }
         }
 
-        public async Task InitializeQRScan()
+        public void InitializeQRScan()
         {
             ssid = $"APKInstaller-{new Random().NextInt64(9999999999)}-4v4sx1";
             password = new Random().Next(999999).ToString();

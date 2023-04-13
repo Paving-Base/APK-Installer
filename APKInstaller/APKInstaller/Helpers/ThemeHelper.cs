@@ -94,7 +94,7 @@ namespace APKInstaller.Helpers
             if (!UIHelper.HasTitleBar)
             {
                 bool IsHighContrast = new AccessibilitySettings().HighContrast;
-                AppWindowTitleBar TitleBar = WindowHelper.GetAppWindowForCurrentWindow().TitleBar;
+                AppWindowTitleBar TitleBar = UIHelper.MainWindow.AppWindow.TitleBar;
 
                 Color ForegroundColor = IsDarkTheme() || IsHighContrast ? Colors.White : Colors.Black;
                 Color BackgroundColor = IsHighContrast ? Color.FromArgb(255, 0, 0, 0) : IsDarkTheme() ? Color.FromArgb(255, 32, 32, 32) : Color.FromArgb(255, 243, 243, 243);

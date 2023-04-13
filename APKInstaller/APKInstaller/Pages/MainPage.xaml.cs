@@ -7,7 +7,6 @@ using Microsoft.UI.Xaml.Controls;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Resources;
 using Windows.Graphics;
-using Windows.UI.Core;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -19,8 +18,6 @@ namespace APKInstaller.Pages
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        private readonly AppWindow AppWindow = WindowHelper.GetAppWindowForCurrentWindow();
-
         public readonly string GetAppTitleFromSystem = ResourceLoader.GetForViewIndependentUse()?.GetString("AppName") ?? Package.Current.DisplayName;
 
         public MainPage()
@@ -35,7 +32,7 @@ namespace APKInstaller.Pages
             }
             else
             {
-                AppWindow.TitleBar.ExtendsContentIntoTitleBar = true;
+                UIHelper.MainWindow.AppWindow.TitleBar.ExtendsContentIntoTitleBar = true;
                 ActualThemeChanged += (sender, arg) => ThemeHelper.UpdateSystemCaptionButtonColors();
             }
             UIHelper.MainWindow.SetTitleBar(CustomTitleBar);
@@ -61,7 +58,7 @@ namespace APKInstaller.Pages
             if (!UIHelper.HasTitleBar)
             {
                 RectInt32 Rect = new((ActualWidth - CustomTitleBar.ActualWidth).GetActualPixel(), 0, CustomTitleBar.ActualWidth.GetActualPixel(), CustomTitleBar.ActualHeight.GetActualPixel());
-                AppWindow.TitleBar.SetDragRectangles(new RectInt32[] { Rect });
+                UIHelper.MainWindow.AppWindow.TitleBar.SetDragRectangles(new RectInt32[] { Rect });
             }
         }
 

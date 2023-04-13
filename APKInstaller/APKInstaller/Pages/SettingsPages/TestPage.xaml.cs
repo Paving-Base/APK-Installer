@@ -23,7 +23,7 @@ namespace APKInstaller.Pages.SettingsPages
     {
         internal bool IsExtendsTitleBar
         {
-            get => UIHelper.HasTitleBar ? UIHelper.MainWindow.ExtendsContentIntoTitleBar : WindowHelper.GetAppWindowForCurrentWindow().TitleBar.ExtendsContentIntoTitleBar;
+            get => UIHelper.HasTitleBar ? UIHelper.MainWindow.ExtendsContentIntoTitleBar : UIHelper.MainWindow.AppWindow.TitleBar.ExtendsContentIntoTitleBar;
             set
             {
                 if (IsExtendsTitleBar != value)
@@ -34,7 +34,7 @@ namespace APKInstaller.Pages.SettingsPages
                     }
                     else
                     {
-                        WindowHelper.GetAppWindowForCurrentWindow().TitleBar.ExtendsContentIntoTitleBar = value;
+                        UIHelper.MainWindow.AppWindow.TitleBar.ExtendsContentIntoTitleBar = value;
                     }
                     UIHelper.MainPage?.UpdateTitleBarHeight();
                     ThemeHelper.UpdateSystemCaptionButtonColors();
@@ -88,16 +88,7 @@ namespace APKInstaller.Pages.SettingsPages
             if (name != null) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
         }
 
-        public TestPage()
-        {
-            InitializeComponent();
-        }
-
-        void Test()
-        {
-            //PairDeviceDialog dialog = new PairDeviceDialog { XamlRoot = XamlRoot };
-            //_ = dialog.ShowAsync();
-        }
+        public TestPage() => InitializeComponent();
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -107,10 +98,10 @@ namespace APKInstaller.Pages.SettingsPages
                     _ = Launcher.LaunchUriAsync(new Uri("ms-windows-store://pdp/?ProductId=9P2JFQ43FPPG&mode=mini"));
                     break;
                 case "OutPIP":
-                    WindowHelper.GetAppWindowForCurrentWindow().SetPresenter(Microsoft.UI.Windowing.AppWindowPresenterKind.Default);
+                    UIHelper.MainWindow.AppWindow.SetPresenter(Microsoft.UI.Windowing.AppWindowPresenterKind.Default);
                     break;
                 case "EnterPIP":
-                    WindowHelper.GetAppWindowForCurrentWindow().SetPresenter(Microsoft.UI.Windowing.AppWindowPresenterKind.CompactOverlay);
+                    UIHelper.MainWindow.AppWindow.SetPresenter(Microsoft.UI.Windowing.AppWindowPresenterKind.CompactOverlay);
                     break;
                 case "Processes":
                     _ = Frame.Navigate(typeof(ProcessesPage));
@@ -143,7 +134,6 @@ namespace APKInstaller.Pages.SettingsPages
                     ComboBox.SelectedItem = culture;
                     break;
             }
-            Test();
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -165,11 +155,6 @@ namespace APKInstaller.Pages.SettingsPages
                     }
                     break;
             }
-        }
-
-        private void Path_Loaded(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

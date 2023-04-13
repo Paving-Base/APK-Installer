@@ -1,6 +1,4 @@
-﻿using Microsoft.UI;
-using Microsoft.UI.Windowing;
-using Microsoft.UI.Xaml;
+﻿using Microsoft.UI.Xaml;
 using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
@@ -48,15 +46,6 @@ namespace APKInstaller.Helpers
             }
             return null;
         }
-
-        public static AppWindow GetAppWindowForCurrentWindow(this Window window)
-        {
-            IntPtr hWnd = WindowNative.GetWindowHandle(window);
-            WindowId myWndId = Win32Interop.GetWindowIdFromWindow(hWnd);
-            return AppWindow.GetFromWindowId(myWndId);
-        }
-
-        public static AppWindow GetAppWindowForCurrentWindow() => UIHelper.MainWindow.GetAppWindowForCurrentWindow();
 
         #region Window Immersive Dark Mode
 

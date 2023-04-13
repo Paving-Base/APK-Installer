@@ -32,11 +32,11 @@ namespace APKInstaller.Controls
             DefaultStyleKey = typeof(TitleBar);
             SetValue(TemplateSettingsProperty, new TitleBarTemplateSettings());
 
-            Window window = Window.Current;
-            if (window != null)
-            {
-                window.Activated += OnWindowActivated;
-            }
+            //Window window = Window.Current;
+            //if (window != null)
+            //{
+            //    window.Activated += OnWindowActivated;
+            //}
         }
 
         protected override void OnApplyTemplate()
@@ -47,19 +47,19 @@ namespace APKInstaller.Controls
             //m_titleTextBlock = (TextBlock)GetTemplateChild("TitleText");
             //m_customArea = (FrameworkElement)GetTemplateChild("CustomContentPresenter");
 
-            Window window = Window.Current;
-            if (window != null)
-            {
-                Grid dragRegion = (Grid)GetTemplateChild("DragRegion");
-                if (dragRegion != null)
-                {
-                    window.SetTitleBar(dragRegion);
-                }
-                else
-                {
-                    window.SetTitleBar(null);
-                }
-            }
+            //Window window = Window.Current;
+            //if (window != null)
+            //{
+            //    Grid dragRegion = (Grid)GetTemplateChild("DragRegion");
+            //    if (dragRegion != null)
+            //    {
+            //        window.SetTitleBar(dragRegion);
+            //    }
+            //    else
+            //    {
+            //        window.SetTitleBar(null);
+            //    }
+            //}
 
             Button backButton = (Button)GetTemplateChild("BackButton");
             if (backButton != null)

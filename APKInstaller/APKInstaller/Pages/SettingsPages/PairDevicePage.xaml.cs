@@ -72,7 +72,7 @@ namespace APKInstaller.Pages.SettingsPages
 
         private void IPAddressBox_TextChanged(object sender, TextChangedEventArgs e) => Provider.IPAddress = (sender as TextBox).Text;
 
-        private void Flyout_Opening(object sender, object e) => _ = Provider.InitializeQRScan();
+        private void Flyout_Opening(object sender, object e) => Provider.InitializeQRScan();
 
         private void Flyout_Closed(object sender, object e) => Provider.DisposeQRScan();
 
