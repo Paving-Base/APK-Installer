@@ -130,7 +130,7 @@
     <value>パッケージがURLからの場合、自動的にダウンロードします。</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Auto Download Online Packages?</value>
+    <value>自動でオンラインパッケージをダウンロードする</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Windows 11用の背景の種類を選択</value>
@@ -154,22 +154,22 @@
     <value>キャッシュを削除</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
+    <value>ADBサーバーを終了した場合、次回のインストール時にADBサーバーを再起動する必要があります。</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Terminate ADB when Exit Installer?</value>
+    <value>インストーラを閉じるとADBを終了する</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Exit Installer after installation is complete.</value>
+    <value>インストール後にAPKインストーラを閉じます。</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Exit Installer when APP is Ready?</value>
+    <value>アプリの準備ができたらインストーラを終了する</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>設定</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value>ネットワークでデバイスを接続します。</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>端末と接続</value>
@@ -178,7 +178,7 @@
     <value>問い合わせ</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
+    <value>ぜひ、最新の開発のために私のSNSをフォローしてください。もし、バグを見つけた場合は、PMに教えてください。問題の解決に最善を尽くします。もしあなたが、Telegramアカウントを持っているのであれば、Paving Base Groupでのチャットに招待します！😊</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>内容</value>
@@ -193,7 +193,7 @@
     <value>サポート</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
+    <value>APKインストーラはオープンソースのアプリケーションであり、広告を表示しない非利益のアプリケーションです。もし、このアプリケーションを気に入っていただけましたら、ストアにて評価していただけると嬉しいです！寄付もお待ちしております。皆様のご支援に感謝します。💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>エンドユーザー向け使用許諾契約</value>
@@ -205,7 +205,7 @@
     <value>更新を検索</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>Information about the frameworks of this app.</value>
+    <value>このアプリケーションのフレームワークに関する情報。</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
     <value>フレームワーク情報</value>
@@ -235,7 +235,7 @@
     <value>ログ</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
+    <value>改変されたバージョンはウイルスや広告、不具合などの問題を引き起こすことがあります。Microsoft Storeで、本来のバージョンをダウンロードしてください。詳細を確認するには、GitHubレポジトリをご覧ください。</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>変更されたバージョンを使用しています！</value>
@@ -244,28 +244,28 @@
     <value>他の端末に接続するには無効にしてください。</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>For WSA only?</value>
+    <value>WSAのみ</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>OS Architecture</value>
+    <value>アーキテクチャ</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
-    <value>OS Platform</value>
+    <value>OS環境</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>その他</value>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
-    <value>Pair device through network.</value>
+    <value>ネットワークでデバイスをペアリングする。</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>Pair Device</value>
+    <value>デバイスのペアリング</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
-    <value>Pair and connect devices.</value>
+    <value>デバイスをペアリングして接続。</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
-    <value>Pair &amp; Connect</value>
+    <value>ペアリングと接続</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>ダーク</value>
@@ -298,10 +298,10 @@
     <value>データをリセットしてもよろしいですか。</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value>Scan and auto connect paired devices.</value>
+    <value>ペアリングされたデバイスをスキャンして自動的に接続します。</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Scan Paired Devices?</value>
+    <value>ペアリングされたデバイススキャンする</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>端末を選択</value>
@@ -310,19 +310,19 @@
     <value>端末が接続されていないときにヘルパーを表示する</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Whether to Show Helps?</value>
+    <value>ヘルプの表示</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Display announcements at the top of Settings.</value>
+    <value>設定の上部にお知らせを表示します。</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Whether to Show Announcements?</value>
+    <value>お知らせを表示する</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
-    <value>It may leave temp files when an unexpected interruption occurs.</value>
+    <value>予期せず中断された場合、一時ファイルが残る可能性があります。</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Whether to Show Installation Progress?</value>
+    <value>インストールの進行状況を表示</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>アプリのテーマ</value>

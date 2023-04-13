@@ -130,7 +130,7 @@
     <value>Автоматичне завантаження пакета з URL-адреси.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Auto Download Online Packages?</value>
+    <value>Завантажити автоматично онлайн пакети?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Вибрати тип фону для Windows 11</value>
@@ -154,22 +154,22 @@
     <value>Очистити кеш</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
+    <value>Сервер ADB потрібно перезапустити під час наступної інсталяції, якщо ви припините його роботу.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Terminate ADB when Exit Installer?</value>
+    <value>Припинити ADB під час виходу з інсталятора?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Exit Installer after installation is complete.</value>
+    <value>Вийти з інсталятора після завершення встановлення.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Exit Installer when APP is Ready?</value>
+    <value>Вийти з інсталятора, коли APP готовий?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Налаштування</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value>Під’єднати пристрій через мережу.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Підключити пристрій</value>
@@ -244,7 +244,7 @@
     <value>Вимкнути це для підключення до інших пристроїв.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>For WSA only?</value>
+    <value>Лише для WSA?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>Архітектура ОС</value>
@@ -265,7 +265,7 @@
     <value>Pair and connect devices.</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
-    <value>Pair &amp; Connect</value>
+    <value>Пов’язати й під’єднати</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Темна</value>
@@ -313,16 +313,16 @@
     <value>Whether to Show Helps?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Display announcements at the top of Settings.</value>
+    <value>Відображати оголошення угорі налаштувань.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Whether to Show Announcements?</value>
+    <value>Чи показувати оголошення?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>Він може залишати тимчасові файли, коли виникає несподівана перерва.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Whether to Show Installation Progress?</value>
+    <value>Чи показувати прогрес встановлення?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Тема програми</value>

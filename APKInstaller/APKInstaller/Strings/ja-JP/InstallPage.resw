@@ -127,7 +127,7 @@
     <value>ADBが見つかりません</value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>In Analysis...</value>
+    <value>解析しています...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
     <value>APKファイル</value>
@@ -166,16 +166,16 @@
     <value>パスを確認しています...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>ここをクリックして読みます。</value>
+    <value>ここをクリックして読む</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>閉じる</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>インストール解消しますか？</value>
+    <value>インストールを取り消しますか？</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Connecting Paired Devices...</value>
+    <value>ペアリングされたデバイスに接続しています。</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>コピー</value>
@@ -215,12 +215,12 @@
     <value>WSAを接続する方法</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Please make sure APK Installer has been updated to the latest version
-2. Make sure you have the Android Subsystem installed and running
-3. Turn on developer mode and make sure the IP address is displayed successfully
-4. Reopen APK Installer and continue your installation
+    <value>1. APKインストーラが最新のバージョンに更新されているか確認します。
+2. Android用Windowsサブシステムがインストールされており、実行さていることを確認します。
+3. 開発者モードを有効にし、IPアドレスが表示されていることを確認します。
+4. APKインストーラを再起動し、インストールを続行します。
 
-[Learn More]({0})</value>
+[詳細を見る]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
     <value>アイコン</value>
@@ -229,10 +229,10 @@
     <value>分かりました</value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
-    <value>Incompatible App</value>
+    <value>互換性のないアプリ</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
-    <value>The minimum required for this app is {0}. Your device supports {1}. Please update your device or choose order package.</value>
+    <value>お使いのデバイスはSDKバージョン {1} を使用していますが、このアプリを実行するために必要な最小SDKバージョンは {0} です。お使いのデバイスを更新するか、このバージョンより古いパッケージを使用してください。</value>
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
@@ -290,22 +290,22 @@
     <value>デバイスを接続する方法</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>If you want to install app into Windows Subsystem for Android™, you need to install it first. If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
+    <value>Andorid用Windowsサブシステムにアプリをインストールする場合、先にAndroid用Windowsサブシステムをダウンロードする必要があります。ほかのデバイスにインストールする場合は、設定から「WSAにのみインストールする」を無効にし、デバイスを接続します。</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
     <value>#### Using USB
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open USB Debug
-3. Go to the Settings Page of APK Installer, select your device
-4. Go back, resume installation
+1. APKインストーラを [最新のバージョン](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer") に更新します。
+2. 開発者モードを有効にし、USBデバッグを開きます。
+3. APKインストーラの設定画面を開き、お使いのデバイスを選択します。
+4. 作業に戻り、インストールを再開します。
 #### Using Wifi
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open Remote Debug
-3. Remember the IP address of your device
-4. Go to the Settings Page of APK Installer, connect and select your device
-5. Go back, resume installation
+1. APKインストーラを [最新のバージョン](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer") に更新します。
+2. 開発者モードを有効にし、ワイヤレスデバッグを開きます。
+3. お使いのデバイスのIPアドレスをメモします。
+4.  APKインストーラの設定画面を開き、お使いのデバイスを選択します。
+5. 作業に戻り、インストールを再開します。
 
-[Learn More]({0})</value>
+[詳細を見る]({0})</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
     <value>インターネットに接続できません</value>

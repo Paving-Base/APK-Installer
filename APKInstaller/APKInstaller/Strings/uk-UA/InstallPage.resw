@@ -127,7 +127,7 @@
     <value>ADB відсутній</value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>In Analysis...</value>
+    <value>У Аналізі...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
     <value>Файл APK</value>
@@ -175,7 +175,7 @@
     <value>Ви впевнені, що хочете скасувати встановлення?</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Connecting Paired Devices...</value>
+    <value>Підключення приєднаних пристроїв...</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Копіювати</value>
@@ -305,13 +305,14 @@
 4. Перейдіть на сторінку налаштувань Інсталятора APK, підключіться та виберіть свій пристрій
 5. Поверніться, відновіть встановлення
 
-[Докладніше]({0})</value>
+[Докладніше]({0})
+  </value>
   </data>
   <data name="NoInternet" xml:space="preserve">
-    <value>Не вдалося підключитися до Інтернету</value>
+    <value>Не вдалося під'єднатися до Інтернету</value>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
-    <value>Перш ніж відкривати програму, підключіться до Інтернету.</value>
+    <value>Перш ніж відкривати програму, увімкнутися до Інтернету.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
     <value>Для належної роботи програми спробуйте запустити пакет програм для Android.</value>

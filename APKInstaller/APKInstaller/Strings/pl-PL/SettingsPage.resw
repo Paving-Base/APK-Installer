@@ -130,7 +130,7 @@
     <value>Automatyczne pobieranie, gdy pakiet jest z adresu URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Auto Download Online Packages?</value>
+    <value>Czy automatycznie pobierać pakiety z sieci?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Select Backdrop Type for Windows 11</value>
@@ -160,16 +160,16 @@
     <value>Terminate ADB when Exit Installer?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Exit Installer after installation is complete.</value>
+    <value>Wyjdź z Instalatora po zakończeniu instalacji.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Exit Installer when APP is Ready?</value>
+    <value>Czy zamknąć instalator, gdy aplikacja będzie gotowa?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Konfiguracja</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value>Podłącz urządzenie przez sieć.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Podłącz urządzenie</value>
@@ -229,10 +229,10 @@
     <value>Ostatnio sprawdzano:</value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
-    <value>Learn More</value>
+    <value>Dowiedz się więcej</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
-    <value>Logs</value>
+    <value>Rejestry zdarzeń (ang. logs)</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
     <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
@@ -259,13 +259,13 @@
     <value>Pair device through network.</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>Pair Device</value>
+    <value>Sparuj urządzenie</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
-    <value>Pair and connect devices.</value>
+    <value>Sparuj i podłącz urządzenie.</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
-    <value>Pair &amp; Connect</value>
+    <value>Sparuj i połącz</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Ciemny</value>
@@ -301,7 +301,7 @@
     <value>Scan and auto connect paired devices.</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Scan Paired Devices?</value>
+    <value>Skanuj sparowane urządzenia?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Wybierz urządzenie</value>
@@ -313,22 +313,22 @@
     <value>Whether to Show Helps?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Display announcements at the top of Settings.</value>
+    <value>Pokazuj ogłoszenia na górze panelu ustawień.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Whether to Show Announcements?</value>
+    <value>Czy pokazywać ogłoszenia?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
-    <value>It may leave temp files when an unexpected interruption occurs.</value>
+    <value>Może to pozostawić pliki tymczasowe w przypadku wystąpienia nieoczekiwanych zakłóceń.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Whether to Show Installation Progress?</value>
+    <value>Czy pokazywać postęp instalacji?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Motyw aplikacji</value>
   </data>
   <data name="ThemesSettingsHeader.Header" xml:space="preserve">
-    <value>Themes</value>
+    <value>Motywy</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Ustawienia</value>

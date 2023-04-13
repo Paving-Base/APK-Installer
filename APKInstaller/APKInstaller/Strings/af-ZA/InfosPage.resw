@@ -124,54 +124,54 @@
     <value>Basiese inligting</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
-    <value>Dependencies - {0} in total</value>
+    <value>Afhanklikhede - {0} in totaal</value>
     <comment>{0} - Dependencies Count.</comment>
   </data>
   <data name="FeaturesHeaderFormat" xml:space="preserve">
-    <value>Features - {0} in total</value>
+    <value>Kenmerke - {0} in totaal</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
-    <value>Languages</value>
+    <value>Tale</value>
   </data>
   <data name="MinSDK.Text" xml:space="preserve">
     <value>Min SDK</value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
-    <value>Open Package Folder</value>
+    <value>Open Pakket Lêergids</value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
-    <value>Package Name</value>
+    <value>Pakket naam</value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
-    <value>Package Size</value>
+    <value>Pakket grootte</value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
-    <value>Permissions Count</value>
+    <value>Toestemmings telling</value>
   </data>
   <data name="PermissionsHeaderFormat" xml:space="preserve">
-    <value>Permissions - {0} in total</value>
+    <value>Toestemmings - {0} in totaal</value>
     <comment>{0} - Permissions Count.</comment>
   </data>
   <data name="SharePackage.Content" xml:space="preserve">
-    <value>Share Package</value>
+    <value>Deel pakket</value>
   </data>
   <data name="SupportedArchitectures.Text" xml:space="preserve">
-    <value>Support Architectures</value>
+    <value>Ondersteun argitekture</value>
   </data>
   <data name="SupportResolutions.Text" xml:space="preserve">
-    <value>Support Resolutions</value>
+    <value>Ondersteun resolusies</value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
-    <value>Support Screen Sizes</value>
+    <value>Ondersteun Skerm Grootte </value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
-    <value>Target SDK</value>
+    <value>Bestemming SDK</value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
-    <value>About {0}</value>
+    <value>Oor {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Version.Text" xml:space="preserve">
-    <value>Version</value>
+    <value>Weergawe</value>
   </data>
 </root>

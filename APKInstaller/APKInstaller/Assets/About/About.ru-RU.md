@@ -1,8 +1,8 @@
-#### Добро пожаловать в установщик APK!
+#### Добро пожаловать в APK Installer!
 
 ##### Декларация
 1. Пожалуйста, следуйте [Лицензионному соглашению и политике конфиденциальности программы APK Installer](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. Эта программа является программным обеспечением с открытым исходным кодом, поэтому, пожалуйста, убедитесь, что программа взята из [этого репозитория Github](https://github.com/Paving-Base/APK-Installer) или [этого приложения](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG), чтобы обеспечить безопасность ваших данных.
+2. This program is open source software, so please make sure the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) to ensure your data security.
 3. Если источник программы не является опасным, все ваши данные будут использоваться только для запуска программы или храниться локально во время ее работы, и разработчик не украдет никаких ваших данных. Тем не менее обращайте внимание на безопасность окружения.
 4. Перевод этого приложения взят из сообщества [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin"), и все тексты не отражают точку зрения автора.
 
