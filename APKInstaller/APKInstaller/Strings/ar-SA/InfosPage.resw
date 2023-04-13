@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppName.Text" xml:space="preserve">
-    <value>Gmail</value>
+    <value>اسم التطبيق</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
     <value>المعلومات الأساسية </value>
