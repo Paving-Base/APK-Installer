@@ -7,93 +7,86 @@ namespace AAPTForNet.Models
     {
         internal static readonly SDKInfo Unknown = new("0", "0", "0");
 
-        // https://source.android.com/setup/start/build-numbers
+        // Don't trust Wiki Pedia, trust AOSP source code
+        // https://developer.android.com/reference/android/os/Build.VERSION_CODES
+        // IU => Increament Update
+        // MR => Maintenance Release
         private static readonly string[] AndroidCodeNames = {
-            "Unknown",
-            "Unnamed",          // API level 1
-            "Petit Four",
-            "Cupcake",
-            "Donut",
-            "Éclair",
-            "Éclair",
-            "Éclair",
-            "Froyo",
-            "Gingerbread",
-            "Gingerbread",      // API level 10
-            "Honeycomb",
-            "Honeycomb",
-            "Honeycomb",
-            "Ice Cream Sandwich",
-            "Ice Cream Sandwich",
-            "Jelly Bean",
-            "Jelly Bean",
-            "Jelly Bean",
-            "KitKat",
-            "KitKat",           // API level 20
-            "Lollipop",
-            "Lollipop",
-            "Marshmallow",
-            "Nougat",
-            "Nougat",
-            "Oreo",
-            "Oreo",
-            "Pie",
-            "Q",
-            "Red Velvet Cake",  // API level 30
-            "Snow Cone",
-            "Snow Cone",
-            "Tiramisu",
-            "Upside Down Cake",
-            "Vanilla Ice Cream",
-            "W",
-            "X",
-            "Y",
-            "Z",
-            "Hello from 2022!"  // API level 40
+            "Unknown",                  // Under Alpha and Beta development or just known
+            "Base",                     // API 1
+            "Base Update 1",            // API 2
+            "Cupcake",                  // API 3
+            "Donut",                    // API 4
+            "Éclair",                   // API 5
+            "Éclair IU1",               // API 6
+            "Éclair MR1",               // API 7
+            "Froyo",                    // API 8
+            "Gingerbread",              // API 9
+            "Gingerbread MR1",          // API 10
+            "Honeycomb",                // API 11
+            "Honeycomb MR1",            // API 12
+            "Honeycomb MR2",            // API 13
+            "Ice Cream Sandwich",       // API 14
+            "Ice Cream Sandwich MR1",   // API 15
+            "Jelly Bean",               // API 16
+            "Jelly Bean MR1",           // API 17
+            "Jelly Bean MR2",           // API 18
+            "KitKat",                   // API 19
+            "KitKat Watch",             // API 20
+            "Lollipop",                 // API 21
+            "Lollipop MR1",             // API 22
+            "Marshmallow",              // API 23
+            "Nougat",                   // API 24
+            "Nougat MR1",               // API 25
+            "Oreo",                     // API 26
+            "Oreo MR1",                 // API 27
+            "Pie",                      // API 28
+            "Q",                        // API 29
+            "R",                        // API 30
+            "S",                        // API 31
+            "S V2",                     // API 32
+            "Tiramisu",                 // API 33
+            "Upside Down Cake",         // API 34
+            "?!"                        // Who knows? But it is not yet released in April 2023!
         };
 
         private static readonly string[] AndroidVersionCodes = {
-            "Unknown",
-            "1.0",      // API level 1
-            "1.1",
-            "1.5",
-            "1.6",
-            "2.0",
-            "2.0.1",
-            "2.1",
-            "2.2",
-            "2.3",
-            "2.3.3",    // API level 10
-            "3.0",
-            "3.1",
-            "3.2",
-            "4.0",
-            "4.0.3",
-            "4.1",
-            "4.2",
-            "4.3",
-            "4.4",
-            "4.4W",     // API level 20
-            "5.0",
-            "5.1",
-            "6.0",
-            "7.0",
-            "7.1",
-            "8.0",
-            "8.1",
-            "9.0",
-            "10",
-            "11",       // API level 30
-            "12",
-            "12.1",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"        // API level 40
+            "Unknown",  // Under Alpha and Beta development or just known
+            "1.0",      // API 1
+            "1.1",      // API 2
+            "1.5",      // API 3
+            "1.6",      // API 4
+            "2.0",      // API 5
+            "2.0.1",    // API 6
+            "2.1",      // API 7
+            "2.2",      // API 8
+            "2.3",      // API 9
+            "2.3.3",    // API 10
+            "3.0",      // API 11
+            "3.1",      // API 12
+            "3.2",      // API 13
+            "4.0",      // API 14
+            "4.0.3",    // API 15
+            "4.1",      // API 16
+            "4.2",      // API 17
+            "4.3",      // API 18
+            "4.4",      // API 19
+            "4.4W",     // API 20
+            "5.0",      // API 21
+            "5.1",      // API 22
+            "6.0",      // API 23
+            "7.0",      // API 24
+            "7.1",      // API 25
+            "8.0",      // API 26
+            "8.1",      // API 27
+            "9.0",      // API 28
+            "10",       // API 29
+            "11",       // API 30
+            "12",       // API 31
+            "12.1",     // API 32
+            "13",       // API 33
+            "14",       // API 34
+            "?!",       // Who knows? But it is not yet released in April 2023!
         };
 
         public string APILevel { get; }
