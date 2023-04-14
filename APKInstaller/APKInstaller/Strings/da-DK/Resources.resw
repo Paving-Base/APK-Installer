@@ -133,7 +133,7 @@
     <value>Der opstod en fejl med programmet…</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>There are some problems with the network...</value>
+    <value>Der er nogle problemer med netværket...</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>Ingen</value>
