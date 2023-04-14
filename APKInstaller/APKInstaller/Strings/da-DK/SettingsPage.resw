@@ -148,10 +148,10 @@
     <value>Søger efter opdateringer...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
-    <value>Check For Updates</value>
+    <value>Søg Efter Opdateringer</value>
   </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
-    <value>Clear cache</value>
+    <value>Ryd cache</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
     <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
@@ -172,19 +172,19 @@
     <value>Connect device through network.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
-    <value>Connect Device</value>
+    <value>Forbind Enhed</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
-    <value>Contact Me</value>
+    <value>Kontakt Mig</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
     <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
-    <value>Content</value>
+    <value>Indhold</value>
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
-    <value>Device</value>
+    <value>Enhed</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
     <value>Display</value>
