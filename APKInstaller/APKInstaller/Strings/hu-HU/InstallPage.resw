@@ -169,10 +169,10 @@
     <value>Kattintson ide az olvasáshoz</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Bezárás</value>
+    <value>Bezár</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>Biztos, hogy le akarja mondani a telepítést?</value>
+    <value>Biztosan megszakítod a telepítést?</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
     <value>Párosított eszközök csatlakoztatása...</value>
@@ -181,7 +181,7 @@
     <value>Másolás</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>Készülékek</value>
+    <value>Eszközök</value>
   </data>
   <data name="Download" xml:space="preserve">
     <value>Letöltés</value>
@@ -236,17 +236,17 @@
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
-    <value>Információk</value>
+    <value>Infók</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>Telepítés</value>
+    <value>Telepít</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
     <value>{0} készen áll!</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
-    <value>Telepítsük ezt: {0}?</value>
+    <value>{0} települjön?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
@@ -266,10 +266,10 @@
     <value>A csomag sérült vagy érvénytelen.</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
-    <value>Az URL vagy nem teljes vagy érvénytelen.</value>
+    <value>Az URL hiányos vagy érvénytelen.</value>
   </data>
   <data name="Launch" xml:space="preserve">
-    <value>Indítás</value>
+    <value>Indít</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
     <value>A WSA elindítása...</value>
@@ -284,7 +284,7 @@
     <value>További információ</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
-    <value>Nem találja az Android eszközt</value>
+    <value>Android eszköz nem található</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
     <value>A készülék csatlakoztatása</value>
@@ -337,7 +337,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
-    <value>A {0} egy újabb verziója már telepítve van.</value>
+    <value>Az újabb kiadású {0} már telepítve van.</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
@@ -356,7 +356,7 @@
     <value>WSA indítása</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
-    <value>Áruházi linkek</value>
+    <value>Linkek tárolása</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
     <value>ADB kicsomagolása...</value>
@@ -369,10 +369,10 @@
     <comment>{0} - Have done num. {1} - All num.</comment>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>Frissítés</value>
+    <value>Frissít</value>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
-    <value>Frissítés {0}?</value>
+    <value>{0} frissítése?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
