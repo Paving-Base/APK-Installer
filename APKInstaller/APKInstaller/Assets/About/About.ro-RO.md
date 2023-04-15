@@ -3,7 +3,7 @@
 ##### Declarație
 1. Vă rugăm să urmați [APK Installer End User License Acord și Politica de Confidențialitate](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
 2. Acest program este software open source, vă rugăm să vă asigurați că programul este din [acest depozit Github](https://github.com/Paving-Base/APK-Installer) sau [această aplicație](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) pentru a asigura securitatea datelor.
-3. If the source of the program is not abnormal, all your data will be used only for the running of the program or stored locally during the running, and the developer will not steal any of your data. Totuşi, vă rog să acordaţi atenţie securităţii mediului.
+3. ok bye bye Totuşi, vă rog să acordaţi atenţie securităţii mediului.
 4. The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.
 
 ##### Traducere
