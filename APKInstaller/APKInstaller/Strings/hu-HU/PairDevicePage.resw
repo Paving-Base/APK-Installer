@@ -121,7 +121,7 @@
     <value>Cím</value>
   </data>
   <data name="ConnectButton.Content" xml:space="preserve">
-    <value>Csatlakoztatás</value>
+    <value>Csatlakozás</value>
   </data>
   <data name="ConnectedListFormat" xml:space="preserve">
     <value>{0} eszközök csatlakoztatva</value>
@@ -133,7 +133,7 @@
     <value>Sikeres párosítás. Csatlakoztatás, kérjük, ne zárja be ezt az ablakot.</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
-    <value>Csatlakoztatás</value>
+    <value>Csatlakozás</value>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
     <value>{0} eszköz találva</value>
@@ -142,7 +142,7 @@
     <value>IP-cím</value>
   </data>
   <data name="ManualPairButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Eszközök csatlakoztatása manuálisan</value>
+    <value>Eszközök kézi csatlakoztatása</value>
   </data>
   <data name="ManualPairTextBlock.Text" xml:space="preserve">
     <value>Manuális csatlakoztatás</value>
@@ -154,10 +154,10 @@
     <value>WLAN párosítási kód</value>
   </data>
   <data name="PairingLogText" xml:space="preserve">
-    <value>Párosítás, kérjük, ne zárja be ezt az ablakot.</value>
+    <value>Párosítás, kérünk, hogy ne zárd be ezt az ablakot.</value>
   </data>
   <data name="PairToggleButton.Content" xml:space="preserve">
-    <value>Párosítás</value>
+    <value>Párosít</value>
   </data>
   <data name="PortRun.Text" xml:space="preserve">
     <value>Port</value>
