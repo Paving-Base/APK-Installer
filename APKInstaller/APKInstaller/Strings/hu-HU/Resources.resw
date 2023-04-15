@@ -142,7 +142,7 @@
     <value>Telepítse ezt a csomagot</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>APK szétdarabolása</value>
+    <value>APK darabolása</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Igen</value>
