@@ -133,7 +133,7 @@
     <value>Rezidens készlet mérete</value>
   </data>
   <data name="State.Header" xml:space="preserve">
-    <value>Státusz</value>
+    <value>Állapot</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Folyamatok</value>
