@@ -124,6 +124,6 @@
     <value>Vissza</value>
   </data>
   <data name="RefreshButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Frissítés</value>
+    <value>Frissít</value>
   </data>
 </root>
