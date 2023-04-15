@@ -142,7 +142,7 @@
     <value>Zmiana</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>Sprawdzanie nie powiodło się</value>
+    <value>Błąd sprawdzania</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
     <value>Sprawdzanie aktualizacji...</value>
@@ -340,9 +340,9 @@
     <value>Wersja</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Aktualna na dzień</value>
+    <value>Dotychczasowy</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Ustawienia kolorów Windows</value>
+    <value>Pengaturan Warna Windows</value>
   </data>
 </root>
