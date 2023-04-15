@@ -1,4 +1,4 @@
-#### Üdvözöljük az APK telepítőben!
+#### Üdvözlünk az APK telepítőben!
 
 ##### Nyilatkozat
 1. Kérjük, tartsa be az [APK telepítő végfelhasználói licencszerződést és adatvédelmi szabályzatot](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
@@ -9,7 +9,7 @@
 ##### Fordítás
 Köszönet a [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") fordítóknak a támogatásért. Ha bármilyen probléma van a fordítással, kérjük, bátran javítson ki minket. És kérjük, fordítson komolyan. Mindent, amit ír, az egész világon el fogják olvasni.
 
-##### Hozzájárulók
+##### Közreműködők
 - [wherewhere](https://github.com/wherewhere)
 - [Void48](https://github.com/Void48)
 - [EP012014](https://github.com/EP012014)
