@@ -124,7 +124,7 @@
     <value>Csatlakozás</value>
   </data>
   <data name="ConnectedListFormat" xml:space="preserve">
-    <value>{0} eszközök csatlakoztatva</value>
+    <value>{0} eszköz csatlakoztatva</value>
   </data>
   <data name="ConnectedLogText" xml:space="preserve">
     <value>Sikeres csatlakoztatás.</value>
@@ -136,7 +136,7 @@
     <value>Csatlakozás</value>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
-    <value>{0} eszköz találva</value>
+    <value>{0} megtalált eszköz</value>
   </data>
   <data name="IPAddressBox.Header" xml:space="preserve">
     <value>IP-cím</value>
