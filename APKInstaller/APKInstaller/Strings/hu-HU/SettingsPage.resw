@@ -121,8 +121,7 @@
     <value>Névjegy</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>ADB útvonal
-</value>
+    <value>ADB útvonal</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
     <value>ADB verzió</value>
@@ -170,7 +169,7 @@
     <value>Konfigurációk</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Csatlakoztasd a készüléket a hálózaton keresztül.</value>
+    <value>Csatlakoztasd az eszközt a hálózaton keresztül.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Eszköz csatlakoztatása</value>
@@ -212,7 +211,7 @@
     <value>Keretinformációk</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
-    <value>Keret</value>
+    <value>Keretrendszer</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>Lépj a teszt oldalára.</value>
@@ -257,7 +256,7 @@
     <value>Egyebek</value>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
-    <value>A készülék párosítása a hálózaton keresztül.</value>
+    <value>Az eszköz párosítása a hálózaton keresztül.</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
     <value>Eszköz párosítása</value>
@@ -275,7 +274,7 @@
     <value>Windows alapértelmezett</value>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
-    <value>Fény</value>
+    <value>Világos</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
     <value>Értékelés az Áruházban</value>
@@ -302,7 +301,7 @@
     <value>Párosított eszközök keresése és automatikus csatlakoztatása.</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Párosított eszközök ellenőrzése?</value>
+    <value>Párosított eszközök keresése?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Eszköz kiválasztása</value>
@@ -311,7 +310,7 @@
     <value>Segédprogramok megjelenítése, ha nincs csatlakoztatott eszköz.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Segít-e megmutatni?</value>
+    <value>Megjelenjen a súgó?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
     <value>Bejelentések megjelenítése a Beállítások tetején.</value>
