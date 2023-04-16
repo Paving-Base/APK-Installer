@@ -148,13 +148,13 @@
     <value>Nem</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Nem tud csatlakozni a WSA-hoz</value>
+    <value>Nem lehet csatlakozni a WSA-hoz</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
     <value>Előfordulhat, hogy a WSA nem indul el megfelelően, vagy az ADB-vel van probléma. Ezt néha nehéz megoldani. Indítsd újra a telepítőt. Ha így sem nem működik, indítsd újra a számítógépet.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>Nem lehet megnyitni az alkalmazáscsomagot</value>
+    <value>Nem lehet megnyitni az app-csomagot</value>
   </data>
   <data name="Checking" xml:space="preserve">
     <value>Ellenőrzés...</value>
@@ -166,7 +166,7 @@
     <value>Útvonal ellenőrzése...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Kattintson ide az olvasáshoz</value>
+    <value>Kattints ide az olvasáshoz</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Bezár</value>
@@ -199,7 +199,7 @@
     <value>Befejezve</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>WSA Megtalálva</value>
+    <value>WSA megtalálva</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
     <value>Beállítások megnyitása</value>
@@ -272,7 +272,7 @@
     <value>Indít</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
-    <value>A WSA elindítása...</value>
+    <value>A WSA indítása...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
     <value>Indítás, ha kész</value>
@@ -287,28 +287,28 @@
     <value>Android eszköz nem található</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>A készülék csatlakoztatása</value>
+    <value>Eszköz csatlakoztatása</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
     <value>Ha appot telepítenél a Windows Subsystem for Android™ rendszerbe, először azt kell telepítened. Ha más eszközökre telepítenél, lépj a Beállítások oldalra, kapcsold ki a "Csak WSA számára" opciót és csatlakoztasd a készülékedet.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
     <value>#### USB használatával
-1. Győződj meg arról, hogy az APK Installer frissítve van [a legújabb verzióra](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+1. Győződj meg arról, hogy az APK Telepítő frissítve van [a legújabb verzióra](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
 2. Kapcsold be a fejlesztői módot és az USB hibakeresést.
-3. Menj az APK telepítő beállításainak oldalára, válaszd ki az eszközödet.
+3. Menj az APK Telepítő beállításainak oldalára, válaszd ki az eszközödet.
 4. Lépj vissza, folytasd a telepítést
 #### Wifi használatával
-1. Győződjön meg arról, hogy az APK Installer frissítve van [a legújabb verzióra](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+1. Győződjön meg arról, hogy az APK Telepítő frissítve van [a legújabb verzióra](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
 2. Kapcsold be a fejlesztői módot és a távoli hibakeresést.
 3. Jegyezd meg a készülék IP-címét
-4. Lépj az APK Telepítő beállításainak oldalára, csatlakozztasd és válaszd ki a készülékedet.
-5. Lépj vissza, folytassa a telepítést
+4. Lépj az APK Telepítő beállításainak oldalára, csatlakoztasd és válaszd ki az eszközödet.
+5. Lépj vissza, folytasd a telepítést
 
 [Bővebben]({0})</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
-    <value>Nem tud csatlakozni az internethez</value>
+    <value>Nincs internetkapcsolat</value>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
     <value>Az app megnyitása előtt csatlakozz az internethez.</value>
@@ -326,7 +326,7 @@
     <value>Csomag neve</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>Csomag neve:  {0}</value>
+    <value>Csomagnév:  {0}</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
@@ -365,7 +365,7 @@
     <value>Kibontás befejezve</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
-    <value>Kicsomagolás {0}/{1} ...</value>
+    <value>{0}/{1} kicsomagolása…</value>
     <comment>{0} - Have done num. {1} - All num.</comment>
   </data>
   <data name="Update" xml:space="preserve">
@@ -386,7 +386,7 @@
     <value>Letöltésre vár...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>A készülékre várva...</value>
+    <value>Várakozás az eszközre…</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
     <value>Várakozás {0} telepítésére</value>
@@ -397,7 +397,7 @@
 Ez eltarthat egy ideig. Dőlj hátra és pihizz.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Üdvözöljük!</value>
+    <value>Üdvözlünk!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA fut</value>
