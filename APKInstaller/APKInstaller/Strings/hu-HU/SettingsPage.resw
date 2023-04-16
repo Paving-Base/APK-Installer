@@ -161,7 +161,7 @@
     <value>Az ADB lezárása a telepítőből kilépéskor?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>A telepítés befejezése után lépjen ki a telepítőből.</value>
+    <value>A telepítés befejezése után lépj ki a Telepítőből.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
     <value>Kilépés a telepítőből, amikor az APP készen áll?</value>
@@ -206,7 +206,7 @@
     <value>Frissítés keresése</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>Információk az alkalmazás kereteiről.</value>
+    <value>Információk az alkalmazás keretrendszereiről.</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
     <value>Keretinformációk</value>
