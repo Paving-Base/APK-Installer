@@ -294,16 +294,16 @@
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
     <value>#### USB használatával
-1. Kérjük, győződjön meg róla, hogy az APK Installer frissítve van [a legújabb verzióra](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Kapcsolja be a fejlesztői módot, nyissa meg az USB hibakeresést.
-3. Menjen az APK Installer beállítások oldalára, válassza ki a készülékét.
-4. Menjen vissza, folytassa a telepítést
+1. Győződj meg arról, hogy az APK Installer frissítve van [a legújabb verzióra](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Kapcsold be a fejlesztői módot és az USB hibakeresést.
+3. Menj az APK telepítő beállításainak oldalára, válaszd ki az eszközödet.
+4. Lépj vissza, folytasd a telepítést
 #### Wifi használatával
-1. Kérjük, győződjön meg róla, hogy az APK Installer frissítve van [a legújabb verzióra](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Kapcsolja be a fejlesztői módot, nyissa meg a távoli hibakeresést.
-3. Emlékezzen a készülék IP-címére
-4. Lépjen az APK Installer beállítások oldalára, csatlakozzon és válassza ki a készülékét.
-5. Menjen vissza, folytassa a telepítést
+1. Győződjön meg arról, hogy az APK Installer frissítve van [a legújabb verzióra](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Kapcsold be a fejlesztői módot és a távoli hibakeresést.
+3. Jegyezd meg a készülék IP-címét
+4. Lépj az APK Telepítő beállításainak oldalára, csatlakozztasd és válaszd ki a készülékedet.
+5. Lépj vissza, folytassa a telepítést
 
 [Bővebben]({0})</value>
   </data>
