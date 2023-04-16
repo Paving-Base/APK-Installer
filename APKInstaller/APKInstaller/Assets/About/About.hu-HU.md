@@ -7,7 +7,7 @@
 4. Az alkalmazás fordítása a [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") közösségtől származik, és a szövegek nem a fejlesztő nézeteit képviselik.
 
 ##### Fordítás
-Köszönet a [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") fordítóknak a támogatásért! Ha bármilyen probléma van a fordítással, nyugodtan javíts ki minket. És kérjük, fordítson komolyan. Mindent, amit írsz, az egész világ olvashatja.
+Köszönet a [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") fordítóknak a támogatásért! Ha bármilyen probléma van a fordítással, nyugodtan javíts ki minket. Kérünk, hogy professzionális stílusban fordíts! Mindent, amit írsz, az egész világ olvashatja.
 
 ##### Közreműködők
 - [wherewhere](https://github.com/wherewhere)
