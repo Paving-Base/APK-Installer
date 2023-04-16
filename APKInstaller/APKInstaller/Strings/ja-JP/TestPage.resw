@@ -160,13 +160,13 @@
     <value>タイトルバーで進捗状況をテストする</value>
   </data>
   <data name="ProgressSettings.Header" xml:space="preserve">
-    <value>進行状況</value>
+    <value>進捗</value>
   </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
     <value>進行状況リングの値を設定する</value>
   </data>
   <data name="SetProgressValue.Header" xml:space="preserve">
-    <value>進捗値</value>
+    <value>進捗</value>
   </data>
   <data name="ShowRefreshButton.Description" xml:space="preserve">
     <value>タイトルバーに更新ボタンを表示する</value>
