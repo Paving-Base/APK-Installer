@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>Az APK Installer működéséhez az ADB, azaz az Android Debug Bridge szükséges. Kattintson a "Letöltés" gombra a letöltéshez. A letöltéssel elfogadja a Google ADB-re vonatkozó általános szerződési feltételeit. Ha már letöltötte az ADB-t, kattintson a "Kiválasztás" gombra a kiválasztáshoz.</value>
+    <value>Az APK Telepítő működéséhez az ADB, azaz az Android Debug Bridge szükséges. Kattints a "Letöltés" gombra a letöltéshez. A letöltéssel elfogadod a Google ADB-re vonatkozó általános szerződési feltételeit. Ha már letöltötted az ADB-t, kattints a "Kiválasztás" gombra a kiválasztáshoz.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>Az ADB létezik</value>
@@ -215,10 +215,10 @@
     <value>A WSA csatlakoztatása</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Kérjük, győződjön meg róla, hogy az APK Installer a legújabb verzióra frissült.
-2. Győződjön meg róla, hogy az Android alrendszer telepítve van és fut.
-3. Kapcsolja be a fejlesztői módot, és győződjön meg róla, hogy az IP-cím sikeresen megjelenik.
-4. Nyissa meg újra az APK Installert, és folytassa a telepítést
+    <value>1. Győződj meg arról, hogy az APK Telepítő a legújabb verzióra frissült.
+2. Győződj meg arról, hogy az Android Subsystem telepítve van és fut.
+3. Kapcsold be a fejlesztői módot, és ellenőrizd, hogy az IP-cím sikeresen megjelenik-e.
+4. Nyisd meg újra az APK Telepítőt és folytasd a telepítést
 
 [Bővebben]({0})</value>
   </data>
@@ -290,7 +290,7 @@
     <value>A készülék csatlakoztatása</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>Ha alkalmazást szeretne telepíteni a Windows Subsystem for Android™ rendszerbe, először telepítenie kell azt. Ha más eszközökre szeretné telepíteni, kérjük, lépjen a Beállítások oldalra, kapcsolja ki a "Csak WSA számára" opciót, és csatlakoztassa a készülékét.</value>
+    <value>Ha appot telepítenél a Windows Subsystem for Android™ rendszerbe, először azt kell telepítened. Ha más eszközökre telepítenél, lépj a Beállítások oldalra, kapcsold ki a "Csak WSA számára" opciót és csatlakoztasd a készülékedet.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
     <value>#### USB használatával
