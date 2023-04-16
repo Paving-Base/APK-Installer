@@ -151,7 +151,7 @@
     <value>Nem tud csatlakozni a WSA-hoz</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Előfordulhat, hogy a WSA nem indul el megfelelően, vagy az ADB-vel van probléma. Ezt a helyzetet nagyon nehéz lehet megoldani. Kérjük, indítsa újra a telepítőt. Ha még mindig nem működik, próbálja meg újraindítani a számítógépet.</value>
+    <value>Előfordulhat, hogy a WSA nem indul el megfelelően, vagy az ADB-vel van probléma. Ezt néha nehéz megoldani. Indítsd újra a telepítőt. Ha így sem nem működik, indítsd újra a számítógépet.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>Nem lehet megnyitni az alkalmazáscsomagot</value>
@@ -190,7 +190,7 @@
     <value>Letöltés sikertelen</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>Kérjük, ellenőrizze a hálózati kapcsolatot vagy az URL-címet, és próbálja meg újra.</value>
+    <value>Ellenőrizd a hálózati kapcsolatot vagy az URL-címet, és próbáld újra.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
     <value>WSA megtalálása...</value>
@@ -208,7 +208,7 @@
     <value>Egy újabb verzió már telepítve van</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>Ön már telepítette az alkalmazás új {0} verzióját. Biztos, hogy újra akarja telepíteni a(z) {1} verziót?</value>
+    <value>Már telepítetted az app új, {0} verzióját. Biztos, hogy újra akarod telepíteni a(z) {1} verziót?</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
@@ -232,7 +232,7 @@
     <value>Inkompatibilis alkalmazás</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
-    <value>Az alkalmazáshoz szükséges minimálisan szükséges {0}. Az Ön készüléke támogatja {1}. Kérjük, frissítse készülékét, vagy válasszon rendelési csomagot.</value>
+    <value>Az apphoz legalább {0} szükséges. Az eszközöd {1}-t támogatja. Frissítsd az eszközödet, vagy válassz megfelelő csomagot.</value>
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
@@ -311,10 +311,10 @@
     <value>Nem tud csatlakozni az internethez</value>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
-    <value>Kérjük, az alkalmazás megnyitása előtt csatlakozzon az internethez.</value>
+    <value>Az app megnyitása előtt csatlakozz az internethez.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>Az alkalmazás megfelelő működéséhez próbáljon meg elindítani egy Android alkalmazáscsomagot.</value>
+    <value>Az alkalmazás megfelelő működéséhez próbálj meg elindítani egy Android app csomagot.</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
@@ -394,7 +394,7 @@
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
     <value>Várakozás WSA indítására...
-Ez sokáig tarthat. Dőljön hátra és pihenjen.</value>
+Ez eltarthat egy ideig. Dőlj hátra és pihizz.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Üdvözöljük!</value>
