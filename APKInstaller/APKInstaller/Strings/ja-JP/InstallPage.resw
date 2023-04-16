@@ -133,7 +133,7 @@
     <value>APKファイル</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>対応機能: </value>
+    <value>権限: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
     <value>アプリ名</value>
@@ -202,7 +202,7 @@
     <value>WSAが見つかりました</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>設定に移動する</value>
+    <value>設定に移動</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
     <value>新しいバージョンはすでにインストールされています</value>
@@ -356,7 +356,7 @@
     <value>WSAを起動</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
-    <value>ストアリンク</value>
+    <value>ストアのリンク</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
     <value>ADBを解凍しています...</value>
