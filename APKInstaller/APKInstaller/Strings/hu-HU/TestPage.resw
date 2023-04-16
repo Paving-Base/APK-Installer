@@ -142,7 +142,7 @@
     <value>Belépés a kompakt felületre</value>
   </data>
   <data name="LanguageSettings.Description" xml:space="preserve">
-    <value>Válassza ki a nyelvet és indítsa újra a nyelvváltáshoz</value>
+    <value>Válaszd ki a nyelvet és indítsd újra a nyelvváltáshoz</value>
   </data>
   <data name="LanguageSettings.Header" xml:space="preserve">
     <value>Nyelv</value>
