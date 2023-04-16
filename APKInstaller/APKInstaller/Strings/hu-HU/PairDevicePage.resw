@@ -130,7 +130,7 @@
     <value>Sikeres csatlakoztatás.</value>
   </data>
   <data name="ConnectingLogText" xml:space="preserve">
-    <value>Sikeres párosítás. Csatlakoztatás, kérjük, ne zárja be ezt az ablakot.</value>
+    <value>Sikeres párosítás. Csatlakoztatás — ne zárd be ezt az ablakot.</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
     <value>Csatlakozás</value>
@@ -154,7 +154,7 @@
     <value>WLAN párosítási kód</value>
   </data>
   <data name="PairingLogText" xml:space="preserve">
-    <value>Párosítás, kérünk, hogy ne zárd be ezt az ablakot.</value>
+    <value>Párosítás — ne zárd be ezt az ablakot.</value>
   </data>
   <data name="PairToggleButton.Content" xml:space="preserve">
     <value>Párosít</value>
