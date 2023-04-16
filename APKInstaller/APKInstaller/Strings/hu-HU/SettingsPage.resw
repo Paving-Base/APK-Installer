@@ -155,7 +155,7 @@
     <value>Gyorsítótár törlése</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Az ADB-kiszolgálót a következő telepítéskor újra kell indítani, ha megszünteti.</value>
+    <value>Az ADB-kiszolgálót a következő telepítéskor újra kell indítani, ha leállítottad.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
     <value>Az ADB lezárása a telepítőből kilépéskor?</value>
@@ -179,7 +179,7 @@
     <value>Kapcsolatfelvétel</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Kövess engem a közösségi alkalmazásokon a legfrissebb fejleményekért. Ha bármilyen hibát találsz, kérlek jelezd nekem PM-ben. Igyekszem mindent megtenni, hogy megoldjam. Ha van Telegram fiókod, nyugodtan csevegj a Paving Base csoportban 😊!</value>
+    <value>Kövess be a közösségi oldalakon a legfrissebb hírekért. Ha bármilyen hibát találnál, jelezheted egy PM-ben. Igyekszem mindent megtenni, hogy megoldjam. Ha van Telegram fiókod, csevegjünk a Paving Base csoportban 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Tartalom</value>
@@ -236,7 +236,7 @@
     <value>Naplók</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A módosított változat lehet néhány kellemetlen dolog. Például hirdetések, törött funkciók vagy akár vírusok.  Kérjük, az eredeti verzió letöltéséhez látogasson el a Microsoft Store áruházba. További információkért tekintse meg a GitHub Repository-t.</value>
+    <value>A módosított változatokban lehet pár kellemetlen dolog, pl. hirdetések, hibás funkciók, vagy akár vírusok.  Az eredeti kiadásért látogass el a Microsoft Store áruházba. További információkért nézd meg a GitHub Repót.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>Egy módosított változatot használsz!</value>
@@ -320,7 +320,7 @@
     <value>Megjelenjenek a bejelentések?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
-    <value>Váratlan megszakítás esetén ideiglenes fájlokat hagyhat.</value>
+    <value>Váratlan megszakítás esetén az ideiglenes fájlok megmaradhatnak.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
     <value>Megjelenjen a telepítés előrehaladása?</value>
