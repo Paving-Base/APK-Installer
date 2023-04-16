@@ -389,7 +389,7 @@
     <value>A készülékre várva...</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
-    <value>Telepítésre vár {0}</value>
+    <value>Várakozás {0} telepítésére</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
