@@ -160,7 +160,7 @@
     <value>إنهاء ADB عند الخروج من التثبيت؟</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>الخروج من المثبت بعد اكتمال التثبيت.</value>
+    <value>Exit Installer after installation is complete.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
     <value>Exit Installer when APP is Ready?</value>
