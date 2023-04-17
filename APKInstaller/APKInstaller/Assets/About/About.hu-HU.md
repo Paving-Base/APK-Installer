@@ -1,4 +1,4 @@
-#### Üdvözlünk az APK telepítőben!
+#### Üdvözlünk az APK Telepítőben!
 
 ##### Nyilatkozat
 1. Kérünk, hogy tartsd be az [APK Telepítő végfelhasználói licencszerződését és adatvédelmi szabályzatát](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
