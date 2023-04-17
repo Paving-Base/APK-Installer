@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>Az APK Installer működéséhez az ADB, azaz az Android Debug Bridge szükséges. Kattintson a "Letöltés" gombra a letöltéshez. A letöltéssel elfogadja a Google ADB-re vonatkozó általános szerződési feltételeit. Ha már letöltötte az ADB-t, kattintson a "Kiválasztás" gombra a kiválasztáshoz.</value>
+    <value>Az APK Telepítő működéséhez az ADB, azaz az Android Debug Bridge szükséges. Kattints a "Letöltés" gombra a letöltéshez. A letöltéssel elfogadod a Google ADB-re vonatkozó általános szerződési feltételeit. Ha már letöltötted az ADB-t, kattints a "Kiválasztás" gombra a kiválasztáshoz.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>Az ADB létezik</value>
@@ -148,13 +148,13 @@
     <value>Nem</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Nem tud csatlakozni a WSA-hoz</value>
+    <value>Nem lehet csatlakozni a WSA-hoz</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Előfordulhat, hogy a WSA nem indul el megfelelően, vagy az ADB-vel van probléma. Ezt a helyzetet nagyon nehéz lehet megoldani. Kérjük, indítsa újra a telepítőt. Ha még mindig nem működik, próbálja meg újraindítani a számítógépet.</value>
+    <value>Előfordulhat, hogy a WSA nem indul el megfelelően, vagy az ADB-vel van probléma. Ezt néha nehéz megoldani. Indítsd újra a telepítőt. Ha így sem nem működik, indítsd újra a számítógépet.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>Nem lehet megnyitni az alkalmazáscsomagot</value>
+    <value>Nem lehet megnyitni az app-csomagot</value>
   </data>
   <data name="Checking" xml:space="preserve">
     <value>Ellenőrzés...</value>
@@ -166,13 +166,13 @@
     <value>Útvonal ellenőrzése...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Kattintson ide az olvasáshoz</value>
+    <value>Kattints ide az olvasáshoz</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Bezárás</value>
+    <value>Bezár</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>Biztos, hogy le akarja mondani a telepítést?</value>
+    <value>Biztosan megszakítod a telepítést?</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
     <value>Párosított eszközök csatlakoztatása...</value>
@@ -181,7 +181,7 @@
     <value>Másolás</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>Készülékek</value>
+    <value>Eszközök</value>
   </data>
   <data name="Download" xml:space="preserve">
     <value>Letöltés</value>
@@ -190,7 +190,7 @@
     <value>Letöltés sikertelen</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>Kérjük, ellenőrizze a hálózati kapcsolatot vagy az URL-címet, és próbálja meg újra.</value>
+    <value>Ellenőrizd a hálózati kapcsolatot vagy az URL-címet, és próbáld újra.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
     <value>WSA megtalálása...</value>
@@ -199,7 +199,7 @@
     <value>Befejezve</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>WSA Megtalálva</value>
+    <value>WSA megtalálva</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
     <value>Beállítások megnyitása</value>
@@ -208,17 +208,17 @@
     <value>Egy újabb verzió már telepítve van</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>Ön már telepítette az alkalmazás új {0} verzióját. Biztos, hogy újra akarja telepíteni a(z) {1} verziót?</value>
+    <value>Már telepítetted az app új, {0} verzióját. Biztos, hogy újra akarod telepíteni a(z) {1} verziót?</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
     <value>A WSA csatlakoztatása</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Kérjük, győződjön meg róla, hogy az APK Installer a legújabb verzióra frissült.
-2. Győződjön meg róla, hogy az Android alrendszer telepítve van és fut.
-3. Kapcsolja be a fejlesztői módot, és győződjön meg róla, hogy az IP-cím sikeresen megjelenik.
-4. Nyissa meg újra az APK Installert, és folytassa a telepítést
+    <value>1. Győződj meg arról, hogy az APK Telepítő a legújabb verzióra frissült.
+2. Győződj meg arról, hogy az Android Subsystem telepítve van és fut.
+3. Kapcsold be a fejlesztői módot, és ellenőrizd, hogy az IP-cím sikeresen megjelenik-e.
+4. Nyisd meg újra az APK Telepítőt és folytasd a telepítést
 
 [Bővebben]({0})</value>
   </data>
@@ -232,21 +232,21 @@
     <value>Inkompatibilis alkalmazás</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
-    <value>Az alkalmazáshoz szükséges minimálisan szükséges {0}. Az Ön készüléke támogatja {1}. Kérjük, frissítse készülékét, vagy válasszon rendelési csomagot.</value>
+    <value>Az apphoz legalább {0} szükséges. Az eszközöd {1}-t támogatja. Frissítsd az eszközödet, vagy válassz megfelelő csomagot.</value>
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
-    <value>Információk</value>
+    <value>Infók</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>Telepítés</value>
+    <value>Telepít</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
     <value>{0} készen áll!</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
-    <value>Telepítsük ezt: {0}?</value>
+    <value>{0} települjön?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
@@ -266,13 +266,13 @@
     <value>A csomag sérült vagy érvénytelen.</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
-    <value>Az URL vagy nem teljes vagy érvénytelen.</value>
+    <value>Az URL hiányos vagy érvénytelen.</value>
   </data>
   <data name="Launch" xml:space="preserve">
-    <value>Indítás</value>
+    <value>Indít</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
-    <value>A WSA elindítása...</value>
+    <value>A WSA indítása...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
     <value>Indítás, ha kész</value>
@@ -284,37 +284,37 @@
     <value>További információ</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
-    <value>Nem találja az Android eszközt</value>
+    <value>Android eszköz nem található</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>A készülék csatlakoztatása</value>
+    <value>Eszköz csatlakoztatása</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>Ha alkalmazást szeretne telepíteni a Windows Subsystem for Android™ rendszerbe, először telepítenie kell azt. Ha más eszközökre szeretné telepíteni, kérjük, lépjen a Beállítások oldalra, kapcsolja ki a "Csak WSA számára" opciót, és csatlakoztassa a készülékét.</value>
+    <value>Ha appot telepítenél a Windows Subsystem for Android™ rendszerbe, először azt kell telepítened. Ha más eszközökre telepítenél, lépj a Beállítások oldalra, kapcsold ki a "Csak WSA számára" opciót és csatlakoztasd a készülékedet.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
     <value>#### USB használatával
-1. Kérjük, győződjön meg róla, hogy az APK Installer frissítve van [a legújabb verzióra](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Kapcsolja be a fejlesztői módot, nyissa meg az USB hibakeresést.
-3. Menjen az APK Installer beállítások oldalára, válassza ki a készülékét.
-4. Menjen vissza, folytassa a telepítést
+1. Győződj meg arról, hogy az APK Telepítő frissítve van [a legújabb verzióra](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Kapcsold be a fejlesztői módot és az USB hibakeresést.
+3. Menj az APK Telepítő beállításainak oldalára, válaszd ki az eszközödet.
+4. Lépj vissza, folytasd a telepítést
 #### Wifi használatával
-1. Kérjük, győződjön meg róla, hogy az APK Installer frissítve van [a legújabb verzióra](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Kapcsolja be a fejlesztői módot, nyissa meg a távoli hibakeresést.
-3. Emlékezzen a készülék IP-címére
-4. Lépjen az APK Installer beállítások oldalára, csatlakozzon és válassza ki a készülékét.
-5. Menjen vissza, folytassa a telepítést
+1. Győződjön meg arról, hogy az APK Telepítő frissítve van [a legújabb verzióra](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Kapcsold be a fejlesztői módot és a távoli hibakeresést.
+3. Jegyezd meg a készülék IP-címét
+4. Lépj az APK Telepítő beállításainak oldalára, csatlakoztasd és válaszd ki az eszközödet.
+5. Lépj vissza, folytasd a telepítést
 
 [Bővebben]({0})</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
-    <value>Nem tud csatlakozni az internethez</value>
+    <value>Nincs internetkapcsolat</value>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
-    <value>Kérjük, az alkalmazás megnyitása előtt csatlakozzon az internethez.</value>
+    <value>Az app megnyitása előtt csatlakozz az internethez.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>Az alkalmazás megfelelő működéséhez próbáljon meg elindítani egy Android alkalmazáscsomagot.</value>
+    <value>Az alkalmazás megfelelő működéséhez próbálj meg elindítani egy Android app csomagot.</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
@@ -326,7 +326,7 @@
     <value>Csomag neve</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>Csomag neve:  {0}</value>
+    <value>Csomagnév:  {0}</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
@@ -337,7 +337,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
-    <value>A {0} egy újabb verziója már telepítve van.</value>
+    <value>Az újabb kiadású {0} már telepítve van.</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
@@ -356,7 +356,7 @@
     <value>WSA indítása</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
-    <value>Áruházi linkek</value>
+    <value>Linkek tárolása</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
     <value>ADB kicsomagolása...</value>
@@ -365,14 +365,14 @@
     <value>Kibontás befejezve</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
-    <value>Kicsomagolás {0}/{1} ...</value>
+    <value>{0}/{1} kicsomagolása…</value>
     <comment>{0} - Have done num. {1} - All num.</comment>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>Frissítés</value>
+    <value>Frissít</value>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
-    <value>Frissítés {0}?</value>
+    <value>{0} frissítése?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
@@ -386,18 +386,18 @@
     <value>Letöltésre vár...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>A készülékre várva...</value>
+    <value>Várakozás az eszközre…</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
-    <value>Telepítésre vár {0}</value>
+    <value>Várakozás {0} telepítésére</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
     <value>Várakozás WSA indítására...
-Ez sokáig tarthat. Dőljön hátra és pihenjen.</value>
+Ez eltarthat egy ideig. Dőlj hátra és pihizz.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Üdvözöljük!</value>
+    <value>Üdvözlünk!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA fut</value>

@@ -121,14 +121,13 @@
     <value>Névjegy</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>ADB útvonal
-</value>
+    <value>ADB útvonal</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
     <value>ADB verzió</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>Automatikus letöltés, ha a csomag URL-címről származik.</value>
+    <value>Automatikus letöltés, ha a csomag URL-ről származik.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
     <value>Online csomagok automatikus letöltése?</value>
@@ -155,13 +154,13 @@
     <value>Gyorsítótár törlése</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>Az ADB-kiszolgálót a következő telepítéskor újra kell indítani, ha megszünteti.</value>
+    <value>Az ADB-kiszolgálót a következő telepítéskor újra kell indítani, ha leállítottad.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>ADB megszüntetése a telepítő kilépésekor?</value>
+    <value>Az ADB lezárása a telepítőből kilépéskor?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>A telepítés befejezése után lépjen ki a telepítőből.</value>
+    <value>A telepítés befejezése után lépj ki a Telepítőből.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
     <value>Kilépés a telepítőből, amikor az APP készen áll?</value>
@@ -170,7 +169,7 @@
     <value>Konfigurációk</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Csatlakoztassa a készüléket a hálózaton keresztül.</value>
+    <value>Csatlakoztasd az eszközt a hálózaton keresztül.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Eszköz csatlakoztatása</value>
@@ -179,7 +178,7 @@
     <value>Kapcsolatfelvétel</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Kövess engem a közösségi alkalmazásokon a legfrissebb fejleményekért. Ha bármilyen hibát találsz, kérlek jelezd nekem PM-ben. Igyekszem mindent megtenni, hogy megoldjam. Ha van Telegram fiókod, nyugodtan csevegj a Paving Base csoportban 😊!</value>
+    <value>Kövess be a közösségi oldalakon a legfrissebb hírekért. Ha bármilyen hibát találnál, jelezheted egy PM-ben. Igyekszem mindent megtenni, hogy megoldjam. Ha van Telegram fiókod, csevegjünk a Paving Base csoportban 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Tartalom</value>
@@ -194,7 +193,7 @@
     <value>Támogatás</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>Az APK Installer egy nyílt forráskódú alkalmazás, amely nem ad hozzá reklámokat a profit érdekében. Ha tetszik ez az alkalmazás, ne felejtsd el értékelni az áruházban. Természetesen nagyszerű lenne, ha adományoznál egy kicsit. Köszönjük a támogatást.💕</value>
+    <value>Az APK Telepítő nyílt forráskódú alkalmazás, amely nem mutat reklámokat a profit érdekében. Ha tetszik ez az alkalmazás, ne felejtsd el értékelni az Áruházban. Örömmel fogadnánk, ha adományoznál egy kis összeget. Köszönjük a támogatást!💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>Végfelhasználói licencszerződés</value>
@@ -206,28 +205,28 @@
     <value>Frissítés keresése</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>Információk az alkalmazás kereteiről.</value>
+    <value>Információk az alkalmazás keretrendszereiről.</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
     <value>Keretinformációk</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
-    <value>Keret</value>
+    <value>Keretrendszer</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>Lépjen a teszt oldalára.</value>
+    <value>Lépj a teszt oldalára.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
     <value>Menj a TestPage oldalra</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
-    <value>Menjen a frissítéshez</value>
+    <value>Ugrás a frissítéshez</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
     <value>Csatlakozz a csevegéshez</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Utoljára ellenőrizve: </value>
+    <value>Legutóbb ellenőrizve: </value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
     <value>Bővebben</value>
@@ -236,13 +235,13 @@
     <value>Naplók</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A módosított változat lehet néhány kellemetlen dolog. Például hirdetések, törött funkciók vagy akár vírusok.  Kérjük, az eredeti verzió letöltéséhez látogasson el a Microsoft Store áruházba. További információkért tekintse meg a GitHub Repository-t.</value>
+    <value>A módosított változatokban lehet pár kellemetlen dolog, pl. hirdetések, hibás funkciók, vagy akár vírusok.  Az eredeti kiadásért látogass el a Microsoft Store áruházba. További információkért nézd meg a GitHub Repót.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>Ön egy módosított változatot használ!</value>
+    <value>Egy módosított változatot használsz!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Más eszközhöz való csatlakozáshoz tiltsa le.</value>
+    <value>Más eszközhöz való csatlakozáshoz tiltsd le.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
     <value>Csak a WSA számára?</value>
@@ -254,10 +253,10 @@
     <value>OS Platform</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
-    <value>Egyéb</value>
+    <value>Egyebek</value>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
-    <value>A készülék párosítása a hálózaton keresztül.</value>
+    <value>Az eszköz párosítása a hálózaton keresztül.</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
     <value>Eszköz párosítása</value>
@@ -275,13 +274,13 @@
     <value>Windows alapértelmezett</value>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
-    <value>Fény</value>
+    <value>Világos</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value>Értékelés az áruházban</value>
+    <value>Értékelés az Áruházban</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
-    <value>Újdonságok</value>
+    <value>Kiadási megjegyzések</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
     <value>Az alkalmazás beállításainak visszaállítása.</value>
@@ -290,19 +289,19 @@
     <value>Alkalmazás visszaállítása</value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
-    <value>Visszaállítás</value>
+    <value>Alaphelyzet</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
     <value>Igen</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
-    <value>Biztosan alaphelyzetbe állítja az alkalmazást?</value>
+    <value>Biztosan alaphelyzetbe állítod az alkalmazást?</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value>Párosított eszközök ellenőrzése és automatikus csatlakoztatása.</value>
+    <value>Párosított eszközök keresése és automatikus csatlakoztatása.</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Párosított eszközök ellenőrzése?</value>
+    <value>Párosított eszközök keresése?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Eszköz kiválasztása</value>
@@ -311,19 +310,19 @@
     <value>Segédprogramok megjelenítése, ha nincs csatlakoztatott eszköz.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Segít-e megmutatni?</value>
+    <value>Megjelenjen a súgó?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
     <value>Bejelentések megjelenítése a Beállítások tetején.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Meg kell-e jeleníteni a bejelentéseket?</value>
+    <value>Megjelenjenek a bejelentések?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
-    <value>Váratlan megszakítás esetén ideiglenes fájlokat hagyhat.</value>
+    <value>Váratlan megszakítás esetén az ideiglenes fájlok megmaradhatnak.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Meg kell-e mutatni a telepítés előrehaladását?</value>
+    <value>Megjelenjen a telepítés előrehaladása?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>App téma</value>

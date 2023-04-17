@@ -136,7 +136,7 @@
     <value>Capabilities: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>App Name</value>
+    <value>App Navn</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancel</value>
@@ -169,7 +169,7 @@
     <value>Click here to read them</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Close</value>
+    <value>Luk</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
     <value>Are you sure to cancel the installation?</value>
@@ -178,16 +178,16 @@
     <value>Connecting Paired Devices...</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
-    <value>Copy</value>
+    <value>Kopiér</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>Devices</value>
+    <value>Enheder</value>
   </data>
   <data name="Download" xml:space="preserve">
     <value>Download</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>Download Failed</value>
+    <value>Download mislykkedes</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
     <value>Please check your network connection or the URL and try again.</value>
@@ -196,13 +196,13 @@
     <value>Finding WSA...</value>
   </data>
   <data name="Finished" xml:space="preserve">
-    <value>Finished</value>
+    <value>Færdig</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
     <value>WSA Found</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>Go to Setting</value>
+    <value>Gå til Indstillinger</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
     <value>A newer version is already installed</value>
@@ -223,7 +223,7 @@
 [Learn More]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
-    <value>Icon</value>
+    <value>Ikon</value>
   </data>
   <data name="IKnow" xml:space="preserve">
     <value>I Know</value>
@@ -239,28 +239,28 @@
     <value>Infos</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>Install</value>
+    <value>Installér</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
-    <value>{0} is ready!</value>
+    <value>{0} er klar!</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
-    <value>Install {0}?</value>
+    <value>Installér {0}?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
-    <value>Installing...</value>
+    <value>Installerer...</value>
   </data>
   <data name="InstallingPercent" xml:space="preserve">
-    <value>Installing {0}...</value>
+    <value>Installerer {0}...</value>
     <comment>{0} - Progress.</comment>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
-    <value>Reason: </value>
+    <value>Årsag: </value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
-    <value>Install WSA</value>
+    <value>Installer WSA</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
     <value>The package is either corrupted or invalid.</value>
@@ -269,19 +269,19 @@
     <value>The URL is either Incomplete or invalid.</value>
   </data>
   <data name="Launch" xml:space="preserve">
-    <value>Launch</value>
+    <value>Start</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
-    <value>Launching WSA...</value>
+    <value>Starter WSA...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
     <value>Launch when ready</value>
   </data>
   <data name="Loading" xml:space="preserve">
-    <value>Loading...</value>
+    <value>Indlæser...</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
-    <value>More Info</value>
+    <value>Mere Info</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
     <value>Cannot find Android Device</value>
@@ -386,7 +386,7 @@
     <value>Waiting for download...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>Waiting for Device...</value>
+    <value>Venter på Enhed...</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
     <value>Waiting for install {0}</value>
@@ -397,9 +397,9 @@
 This may take long time. Sit back and relax.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome!</value>
+    <value>Velkommen!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>WSA is Running</value>
+    <value>WSA kører</value>
   </data>
 </root>

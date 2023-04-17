@@ -121,19 +121,19 @@
     <value>Részletek</value>
   </data>
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
-    <value>A készülékre várva...</value>
+    <value>Várakozás az eszközre…</value>
   </data>
   <data name="Name.Header" xml:space="preserve">
     <value>Név</value>
   </data>
   <data name="ProcessId.Header" xml:space="preserve">
-    <value>Folyamatok</value>
+    <value>Folyamat azonosító</value>
   </data>
   <data name="ResidentSetSize.Header" xml:space="preserve">
     <value>Rezidens készlet mérete</value>
   </data>
   <data name="State.Header" xml:space="preserve">
-    <value>Státusz</value>
+    <value>Állapot</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Folyamatok</value>

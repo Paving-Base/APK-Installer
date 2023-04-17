@@ -127,22 +127,22 @@
     <value>Alkalmazások</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
-    <value>Belépés vagy kilépés a kompakt felületen</value>
+    <value>Be- vagy kilépés a kompakt felületen</value>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
     <value>Kompakt felület</value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
-    <value>A fejlesztési verzió alkalmazás nem biztos, hogy stabil. Töltse le a kiadási verziót a Microsoft Store áruházból.</value>
+    <value>Az app fejlesztési verziója nem biztos, hogy stabil. Töltsd le a kiadási verziót a Microsoft Store áruházból.</value>
   </data>
   <data name="DevelopmentInfoBar.Title" xml:space="preserve">
-    <value>Ön egy fejlesztői verziójú alkalmazást használ.</value>
+    <value>Egy fejlesztői verziójú alkalmazást használsz.</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
     <value>Belépés a kompakt felületre</value>
   </data>
   <data name="LanguageSettings.Description" xml:space="preserve">
-    <value>Válassza ki a nyelvet és indítsa újra a nyelvváltáshoz</value>
+    <value>Válaszd ki a nyelvet és indítsd újra a nyelvváltáshoz</value>
   </data>
   <data name="LanguageSettings.Header" xml:space="preserve">
     <value>Nyelv</value>
@@ -157,7 +157,7 @@
     <value>Folyamatok</value>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
-    <value>A teszt előrehaladási gyűrűje a címsoron</value>
+    <value>Az előrehaladási gyűrű tesztje a címsoron</value>
   </data>
   <data name="ProgressSettings.Header" xml:space="preserve">
     <value>Előrehaladás</value>
@@ -166,7 +166,7 @@
     <value>A előrehaladási gyűrű értékének beállítása</value>
   </data>
   <data name="SetProgressValue.Header" xml:space="preserve">
-    <value>Előrehaladási érték</value>
+    <value>Folyamatérték</value>
   </data>
   <data name="ShowRefreshButton.Description" xml:space="preserve">
     <value>Frissítés gomb megjelenítése a címsoron</value>

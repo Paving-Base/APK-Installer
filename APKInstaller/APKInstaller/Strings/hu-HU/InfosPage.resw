@@ -124,11 +124,11 @@
     <value>Általános információk</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
-    <value>Függőségek - {0} összesen</value>
+    <value>Függőségek - összesen {0}</value>
     <comment>{0} - Dependencies Count.</comment>
   </data>
   <data name="FeaturesHeaderFormat" xml:space="preserve">
-    <value>Funkciók - {0} összesen</value>
+    <value>Funkciók - összesen {0}</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
     <value>Nyelvek</value>
@@ -140,16 +140,16 @@
     <value>Csomag mappa megnyitása</value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
-    <value>Csomag neve</value>
+    <value>Csomagnév</value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
-    <value>Csomag mérete</value>
+    <value>Csomagméret</value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
     <value>Engedélyek száma</value>
   </data>
   <data name="PermissionsHeaderFormat" xml:space="preserve">
-    <value>Engedélyek - {0} összesen</value>
+    <value>Engedélyek - összesen {0}</value>
     <comment>{0} - Permissions Count.</comment>
   </data>
   <data name="SharePackage.Content" xml:space="preserve">
@@ -159,7 +159,7 @@
     <value>Támogatási architektúrák</value>
   </data>
   <data name="SupportResolutions.Text" xml:space="preserve">
-    <value>Támogatás felbontások</value>
+    <value>Támogatott felbontások</value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
     <value>Támogatott képernyőméretek</value>
@@ -168,7 +168,7 @@
     <value>Cél SDK</value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
-    <value>Információk {0}</value>
+    <value>{0} bemutatása</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Version.Text" xml:space="preserve">

@@ -121,10 +121,10 @@
     <value>Detail</value>
   </data>
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
-    <value>Waiting for Device...</value>
+    <value>Venter på Enhed...</value>
   </data>
   <data name="Name.Header" xml:space="preserve">
-    <value>Name</value>
+    <value>Navn</value>
   </data>
   <data name="ProcessId.Header" xml:space="preserve">
     <value>Process ID</value>

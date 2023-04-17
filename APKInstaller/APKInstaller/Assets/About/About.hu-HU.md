@@ -1,15 +1,15 @@
-#### Üdvözöljük az APK telepítőben!
+#### Üdvözlünk az APK Telepítőben!
 
 ##### Nyilatkozat
-1. Kérjük, tartsa be az [APK telepítő végfelhasználói licencszerződést és adatvédelmi szabályzatot](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. This program is open source software, so please make sure the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) to ensure your data security.
-3. Ha a program forrása nem abnormális, akkor az összes adatodat csak a program futtatásához használják, vagy a futás során helyben tárolják, és a fejlesztő nem lopja el az adataidat. Ennek ellenére kérjük, ügyeljen a környezet biztonságára.
-4. Az alkalmazás fordítása a [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") közösségtől származik, és minden szöveg nem a szerző nézeteit képviseli.
+1. Kérünk, hogy tartsd be az [APK Telepítő végfelhasználói licencszerződését és adatvédelmi szabályzatát](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+2. Ez egy nyílt forráskódú szoftver, ezért az adataid biztonsága érdekében [ebből a Github repóból](https://github.com/Paving-Base/APK-Installer) vagy [ebből az appból](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) szerezd be a példányodat.
+3. Ha a program forrása terv szerinti, akkor az adataidat csak a program futtatásához használjuk, vagy a futás során helyben tároljuk, és a fejlesztő nem lopja el azokat. Ennek ellenére kérünk, hogy ügyelj a környezet biztonságára.
+4. Az alkalmazás fordítása a [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") közösségtől származik, és a szövegek nem a fejlesztő nézeteit képviselik.
 
 ##### Fordítás
-Köszönet a [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") fordítóknak a támogatásért. Ha bármilyen probléma van a fordítással, kérjük, bátran javítson ki minket. És kérjük, fordítson komolyan. Mindent, amit ír, az egész világon el fogják olvasni.
+Köszönet a [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") fordítóknak a támogatásért! Ha bármilyen probléma van a fordítással, nyugodtan javíts ki minket. Kérünk, hogy professzionális stílusban fordíts! Mindent, amit írsz, az egész világ olvashatja.
 
-##### Hozzájárulók
+##### Közreműködők
 - [wherewhere](https://github.com/wherewhere)
 - [Void48](https://github.com/Void48)
 - [EP012014](https://github.com/EP012014)
