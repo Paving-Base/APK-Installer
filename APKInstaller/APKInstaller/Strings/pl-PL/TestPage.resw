@@ -121,7 +121,7 @@
     <value>Test Android</value>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
-    <value>Zarządzanie aplikacjami podłączonych urządzeń</value>
+    <value>Zarządzaj aplikacjami podłączonych urządzeń</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>Aplikacje</value>
