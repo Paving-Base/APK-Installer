@@ -169,7 +169,7 @@
     <value>ここをクリックして読む</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>閉じる</value>
+    <value>終了</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
     <value>インストールを取り消しますか？</value>
@@ -290,7 +290,7 @@
     <value>デバイスを接続する方法</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>Andorid用Windowsサブシステムにアプリをインストールする場合、先にAndroid用Windowsサブシステムをダウンロードする必要があります。ほかのデバイスにインストールする場合は、設定から「WSAにのみインストールする」を無効にし、デバイスを接続します。</value>
+    <value>Android用Windowsサブシステムにアプリをインストールする場合、先にAndroid用Windowsサブシステムをダウンロードする必要があります。ほかのデバイスにインストールする場合は、設定から「WSAにのみインストールする」を無効にし、デバイスを接続します。</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
     <value>#### Using USB
@@ -314,7 +314,7 @@
     <value>アプリを開く前にインターネットに接続してください。</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>アプリが正しく機能するために、Androidアプリパッケージを起動してみてください。</value>
+    <value>アプリをインストールするには、Androidアプリパッケージを開きます。</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
@@ -344,7 +344,7 @@
     <value>再試行</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>選択</value>
+    <value>開く</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
     <value>共有</value>
