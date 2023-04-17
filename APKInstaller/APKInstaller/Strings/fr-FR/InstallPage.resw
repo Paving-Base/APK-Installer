@@ -208,7 +208,7 @@
     <value>A newer version is already installed</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>HD box</value>
+    <value>You already have installed a new version {0} of this app. Are you sure to reinstall version {1}?</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
