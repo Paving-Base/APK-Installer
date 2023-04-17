@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppName.Text" xml:space="preserve">
-    <value>sus</value>
+    <value>Tên ứng dụng</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
-    <value>su</value>
+    <value>Thông tin cơ bản</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
     <value>Phần phụ thuộc - tổng cộng {0}</value>
