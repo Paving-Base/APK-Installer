@@ -163,7 +163,7 @@
     <value>Progres</value>
   </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
-    <value>Setaţi valoarea Inelului de Progres</value>
+    <value>Setați valoarea Inelului de Progres</value>
   </data>
   <data name="SetProgressValue.Header" xml:space="preserve">
     <value>Valoare progres</value>
