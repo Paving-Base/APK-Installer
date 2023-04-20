@@ -175,7 +175,7 @@
     <value>هل تريد بالتأكيد إلغاء التثبيت؟</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Connecting Paired Devices...</value>
+    <value>جاري توصيل الأجهزة المقترنة...</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Copy</value>
