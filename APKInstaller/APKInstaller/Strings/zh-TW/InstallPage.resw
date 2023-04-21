@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>APK 安裝程式需要 ADB 即 Android 調試橋才能工作。 按兩下下載下載進行下載。 下載即表示您接受 Google 為 ADB 制定的條款和條件。 如果您已經下載了 ADB，請點擊"選擇"來選擇它。</value>
+    <value>APK 安裝程式需要 ADB 即 Android 偵錯橋接器才能工作。 按下「下載」即可下載。 下載即表示您接受 Google 為 ADB 制定的條款及條件。 如果您已經下載了 ADB，請按下「選取」以選取它。</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>ADB 已存在</value>
@@ -127,7 +127,7 @@
     <value>找不到 ADB</value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>解析中......</value>
+    <value>分析中…</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
     <value>APK 檔案</value>
@@ -136,7 +136,7 @@
     <value>功能: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>應用名稱</value>
+    <value>應用程式名稱</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>取消</value>
@@ -148,40 +148,40 @@
     <value>否</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>無法連接到 WSA</value>
+    <value>無法連線至 WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>WSA 可能沒有正常啟動，或者 ADB 出了問題。 這種情況可能非常難解決。 請重新啟動安裝程式。 如果仍然無法使用，嘗試重啟電腦。</value>
+    <value>WSA 可能沒有正常啟動，或者 ADB 出了問題。這種狀況可能非常難解決。請重新啟動安裝程式。如果仍然無法使用，嘗試重新啟動電腦。</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>無法打開應用程式包</value>
+    <value>無法開啟應用程式套件</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>檢查中……</value>
+    <value>正在檢查…</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>檢查 ADB ……</value>
+    <value>正在檢查 ADB…</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>檢查路徑……</value>
+    <value>正在檢查路徑…</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>點擊閱讀</value>
+    <value>按下這裡即可閱讀</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>关闭</value>
+    <value>關閉</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>確定要取消安裝嗎？</value>
+    <value>您確定要取消安裝嗎？</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>連接已匹配的設備......</value>
+    <value>正在連線至已配對的裝置…</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>複製</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>設備</value>
+    <value>裝置</value>
   </data>
   <data name="Download" xml:space="preserve">
     <value>下載</value>
@@ -190,49 +190,49 @@
     <value>下載失敗</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>請檢查您的網路連接或 URL 連結並重試。</value>
+    <value>請檢查您的網際網路連線或 URL 並再試一次。</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>正在尋找 WSA ……</value>
+    <value>正在尋找 WSA…</value>
   </data>
   <data name="Finished" xml:space="preserve">
     <value>完成</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>找到 WSA</value>
+    <value>WSA 已找到</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>前往設定頁面</value>
+    <value>前往設定</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
     <value>已安裝新版本</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>您已經安裝了此應用的新版本 {0}。 是否確實要重新安裝版本 {1}？</value>
+    <value>您已經安裝了此應用程式的新版本 {0}。您確定要重新安裝版本 {1} 嗎？</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>如何連接 Android 子系統</value>
+    <value>如何連線至 WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. 請確保 APK Installer 已經更新到了最新版本
+    <value>1. 請確保 APK Installer 已經更新至最新版本
 2. 請確保您已經安裝並執行了 Android 子系統
-3. 打開開發人員模式，並確保成功顯示了IP位址
-4. 重新打開 APK Installer，繼續您的安裝
+3. 開啟開發人員模式，並確保成功顯示了 IP 位址
+4. 重新開啟 APK Installer，繼續您的安裝
 
 [瞭解更多]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
-    <value>圖標</value>
+    <value>圖示</value>
   </data>
   <data name="IKnow" xml:space="preserve">
-    <value>知道了</value>
+    <value>瞭解了</value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
-    <value>不相容的應用</value>
+    <value>不相容的應用程式</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
-    <value>此應用最低要求 {0}，您的設備支援 {1}。 請更新您的設備或選擇舊版本安裝包。</value>
+    <value>此應用程式的最低要求 {0}，您的裝置支援 {1}。請更新您的裝置或選擇舊版本套件。</value>
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
@@ -242,18 +242,18 @@
     <value>安裝</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
-    <value>{0} 已準備就緒!</value>
+    <value>{0} 已就緒！</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
-    <value>安裝 {0}?</value>
+    <value>安裝 {0}？</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
-    <value>正在安裝……</value>
+    <value>正在安裝…</value>
   </data>
   <data name="InstallingPercent" xml:space="preserve">
-    <value>正在安裝 {0}……</value>
+    <value>正在安裝 {0}…</value>
     <comment>{0} - Progress.</comment>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
@@ -263,7 +263,7 @@
     <value>安裝 WSA</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
-    <value>安裝包已損壞或無效。</value>
+    <value>套件已損毀或無效。</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
     <value>URL 連結不完整或無效。</value>
@@ -272,61 +272,61 @@
     <value>啟動</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
-    <value>正在啓動 WSA ……</value>
+    <value>正在啟動 WSA…</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>當準備就緒時啟動</value>
+    <value>就緒時啟動</value>
   </data>
   <data name="Loading" xml:space="preserve">
-    <value>加載中……</value>
+    <value>正在載入…</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
-    <value>詳細資訊</value>
+    <value>更多資訊</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
-    <value>找不到 Android 設備</value>
+    <value>找不到 Android 裝置</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>如何連接設備</value>
+    <value>如何連線至裝置</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>如果您想要將應用程式安裝到適用於 Windows 的 Android™ 子系統，您需要先安裝它。 如果您想要安裝到其他設備，請進入設置頁面，關閉「僅適用於 WSA」 ，並連接您的設備。</value>
+    <value>如果您想要將應用程式安裝至 Windows 子系統 Android 版 ™️，您需要先將其安裝。如果您想要安裝至其他裝置，請進入設定頁面，關閉「僅適用於 WSA」，並連線至您的裝置。</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
     <value>#### 使用 USB
 1. 請確保 APK Installer 已經更新到了[最新版本](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. 打開開發者模式，打開 USB 調試
-3. 前往 APK Installer 的設置頁面，選擇您的設備
+2. 開啟開發人員模式，開啟 USB 偵錯
+3. 前往 APK Installer 的設定頁面，選取您的裝置
 4. 返回，繼續安裝
-#### 使用 Wifi
+#### 使用 Wi-Fi
 1. 請確保 APK Installer 已經更新到了[最新版本](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. 打開開發者模式，打開遠端調試
-3. 記住您設備的 IP 位址
-4. 前往 APK Installer 的設定頁面，連接並選擇您的設備
+2. 開啟開發人員模式，打開遠端偵錯
+3. 記住您裝置的 IP 位址
+4. 前往 APK Installer 的設定頁面，連線並選取您的裝置
 5. 返回，繼續安裝
 
 [瞭解更多]({0})</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
-    <value>無法連接到網路</value>
+    <value>無法連線至網際網路</value>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
-    <value>請連接網路後再打開應用。</value>
+    <value>請連線至網際網路後再開啟此應用程式。</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>為了使應用程式正常運行，請嘗試打開 Android 應用程式包。</value>
+    <value>為了使應用程式正常運作，請嘗試啟動 Android 應用程式套件。</value>
   </data>
   <data name="OK" xml:space="preserve">
-    <value>好的</value>
+    <value>確定</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
-    <value>在線安裝包</value>
+    <value>線上套件</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
-    <value>套裝名稱</value>
+    <value>套件名稱</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>包名稱: {0}</value>
+    <value>套件名稱: {0}</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
@@ -350,29 +350,29 @@
     <value>分享</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
-    <value>啟動 ADB 服務……</value>
+    <value>正在啟動 ADB 服務…</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>啓動 WSA</value>
+    <value>啟動 WSA</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
-    <value>商店鏈接</value>
+    <value>市集連結</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
-    <value>解壓 ADB ……</value>
+    <value>解壓縮 ADB…</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
-    <value>解壓完成</value>
+    <value>解壓縮完成</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
-    <value>解壓中 {0}/{1} ……</value>
+    <value>正在解壓縮 {0}/{1}…</value>
     <comment>{0} - Have done num. {1} - All num.</comment>
   </data>
   <data name="Update" xml:space="preserve">
     <value>更新</value>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
-    <value>更新 {0}?</value>
+    <value>更新 {0}？</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
@@ -383,23 +383,23 @@
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>等待下載中……</value>
+    <value>正在等候下載…</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>等待設備連接……</value>
+    <value>正在等候裝置…</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
-    <value>等待安裝 {0}</value>
+    <value>正在等候安裝 {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
-    <value>等待 WSA 啟動......
-這通常需要很長時間。 請坐和放寬。</value>
+    <value>正在等候 WSA 啟動…
+這可能要花較長時間，請耐心等候。</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>歡迎！</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>WSA 正在運行</value>
+    <value>WSA 正在執行</value>
   </data>
 </root>
