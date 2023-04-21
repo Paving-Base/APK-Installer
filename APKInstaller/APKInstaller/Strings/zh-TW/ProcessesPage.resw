@@ -118,24 +118,24 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Detail.Header" xml:space="preserve">
-    <value>详情</value>
+    <value>詳細資料</value>
   </data>
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
-    <value>等待設備連接……</value>
+    <value>正在等候裝置…</value>
   </data>
   <data name="Name.Header" xml:space="preserve">
     <value>名稱</value>
   </data>
   <data name="ProcessId.Header" xml:space="preserve">
-    <value>進程ID</value>
+    <value>處理程序 ID</value>
   </data>
   <data name="ResidentSetSize.Header" xml:space="preserve">
-    <value>駐地集大小</value>
+    <value>常駐集大小</value>
   </data>
   <data name="State.Header" xml:space="preserve">
     <value>狀態</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>進程</value>
+    <value>處理程序</value>
   </data>
 </root>
