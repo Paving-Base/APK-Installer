@@ -162,7 +162,7 @@
     <value>支援的解析度</value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
-    <value>支援螢幕大小</value>
+    <value>支援的螢幕大小</value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
     <value>目標 SDK</value>
