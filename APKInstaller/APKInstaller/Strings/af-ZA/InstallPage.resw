@@ -132,7 +132,7 @@
     <value>In Analise...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>APK File</value>
+    <value>APK-lêer</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>Vermoëns:</value>
@@ -366,7 +366,7 @@
     <value>Unzip ADB...</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
-    <value>Yes</value>
+    <value>Unzip completed</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
     <value>Unzipping {0}/{1} ...</value>
