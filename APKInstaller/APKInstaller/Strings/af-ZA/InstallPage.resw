@@ -317,13 +317,13 @@
 </value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>For proper functioning of the app, try to launch an Android app package.</value>
+    <value>Vir die behoorlike funksionering van die toep, probeer om 'n Android-toepassingspakket te begin.</value>
   </data>
   <data name="OK" xml:space="preserve">
-    <value>OK</value>
+    <value>Aanvaarbaar </value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
-    <value>Online Package</value>
+    <value>Aanlyn pakket</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
     <value>Pakket naam</value>
