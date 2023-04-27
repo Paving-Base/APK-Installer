@@ -136,7 +136,7 @@
     <value>Capabilities: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>bus simiulator</value>
+    <value>App Name</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancel</value>
