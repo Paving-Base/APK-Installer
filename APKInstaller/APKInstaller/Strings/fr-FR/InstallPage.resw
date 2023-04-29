@@ -151,7 +151,7 @@
     <value>Connexion impossible au WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
+    <value>Soit WSA n'a pas démarré correctement, soit il y a un problème avec ADB. Ce problème peut être très difficile à résoudre. Veuillez redémarrer l'installateur. Si cela ne fonctionne toujours pas, essayez de redémarrer l'ordinateur.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>Impossible d'ouvrir le paquet de l'application</value>
@@ -172,7 +172,7 @@
     <value>Fermer</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>Are you sure to cancel the installation?</value>
+    <value>Êtes-vous sûr de vouloir annuler l'installation ?</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
     <value>Connecting Paired Devices...</value>
@@ -205,7 +205,7 @@
     <value>Accéder aux Paramètres</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>A newer version is already installed</value>
+    <value>Une version plus récente est déjà installée</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
     <value>You already have installed a new version {0} of this app. Are you sure to reinstall version {1}?</value>
