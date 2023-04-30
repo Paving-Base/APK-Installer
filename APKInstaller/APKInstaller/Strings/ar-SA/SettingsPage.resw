@@ -298,10 +298,10 @@
     <value>هل أنت متحقِّق من أنك تريد إعادة ضبط التطبيق؟</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value>Scan and auto connect paired devices.</value>
+    <value>ومسح وتوصيل تلقائي بالأجهزة المقترنة</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Scan Paired Devices?</value>
+    <value>مسح الأجهزة المقترنة</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>اختار جهاز</value>
@@ -310,10 +310,10 @@
     <value>إظهار المساعدين عند عدم توصيل أي جهاز.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Whether to Show Helps?</value>
+    <value>هل تريد طلب مساعدة؟</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Display announcements at the top of Settings.</value>
+    <value>عرض الإعلانات في الجزء العلوي من الإعدادات.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
     <value>Whether to Show Announcements?</value>
