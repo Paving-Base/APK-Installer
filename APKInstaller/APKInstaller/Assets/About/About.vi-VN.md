@@ -1,6 +1,6 @@
 #### Chào mừng đến APK Cài đặt!
 
-##### Tuyên bố
+##### Tuyên bố yui hack
 1. Vui lòng tuân thủ Thỏa thuận cấp phép người dùng cuối của APK Installer [ và Chính sách quyền riêng tư ](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
 2. All.
 3. Nếu nguồn của chương trình không có gì bất thường, tất cả dữ liệu của bạn sẽ chỉ được sử dụng để chạy với chương trình hoặc được lưu trữ cục bộ trong quá trình chạy chương trình và nhà phát triển sẽ không đánh cắp bất kỳ dữ liệu nào của bạn. Tuy nhiên, hãy chú ý đến an ninh của môi trường.
