@@ -316,13 +316,14 @@
     <value>عرض الإعلانات في الجزء العلوي من الإعدادات.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Whether to Show Announcements?</value>
+    <value>هل تريد إظهار الإعلانات؟
+</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>قد تترك ملفات مؤقته عند حدوث انقطاع غير متوقع.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Whether to Show Installation Progress?</value>
+    <value>هل تريد إظهار عملية التثبيت؟</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>مظهر التطبيق</value>
