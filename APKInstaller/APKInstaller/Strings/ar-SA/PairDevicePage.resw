@@ -118,43 +118,44 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AddressRun.Text" xml:space="preserve">
-    <value>Address</value>
+    <value>العناوين</value>
   </data>
   <data name="ConnectButton.Content" xml:space="preserve">
-    <value>Connect</value>
+    <value>إتصال
+</value>
   </data>
   <data name="ConnectedListFormat" xml:space="preserve">
-    <value>Connected {0} devices</value>
+    <value>الأجهزة{0}المتصلة.</value>
   </data>
   <data name="ConnectedLogText" xml:space="preserve">
-    <value>Connecting successfully.</value>
+    <value>تم الإتصال بنجاح.</value>
   </data>
   <data name="ConnectingLogText" xml:space="preserve">
-    <value>Pairing successfully. Connecting, please don't close the window.</value>
+    <value>تم الاقتران بنجاح.جاري الاتصال، من فضلك لا تغلق النافذة.</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
-    <value>Connect</value>
+    <value>اتصال</value>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
-    <value>Found {0} devices</value>
+    <value> العثور على {0} اجهزه</value>
   </data>
   <data name="IPAddressBox.Header" xml:space="preserve">
-    <value>IP Address</value>
+    <value>عنوان الIP</value>
   </data>
   <data name="ManualPairButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Connecting devices manually</value>
+    <value>توصيل الاجهزه يدويا.</value>
   </data>
   <data name="ManualPairTextBlock.Text" xml:space="preserve">
-    <value>Manual Connection</value>
+    <value>اتصال يدوي</value>
   </data>
   <data name="PairCodeBox.Header" xml:space="preserve">
-    <value>WLAN Pairing Code</value>
+    <value>رمز الاقترانWLAN</value>
   </data>
   <data name="PairCodeTextBlock.Text" xml:space="preserve">
-    <value>WLAN Pairing Code</value>
+    <value>رمز الاقترانWLAN</value>
   </data>
   <data name="PairingLogText" xml:space="preserve">
-    <value>Pairing, please don't close the window.</value>
+    <value>جاري الاقتران،الرجاء عدم إغلاق النافذة.</value>
   </data>
   <data name="PairToggleButton.Content" xml:space="preserve">
     <value>Pair</value>
