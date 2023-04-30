@@ -7,7 +7,7 @@
 4. تَرْجَمَة نصوص هذا التطبيق تأتي من مجتمع [كراودِن](https://crowdin.com/project/APKInstaller "Crowdin") وجميع النصوص لا تمثل وجهات نظر المؤلف.
 
 ##### ترجم
-شكرا لمترجمي [كراودين](https://crowdin.com/project/APKInstaller "Crowdin") على دعمهم. إذا كانت هناك أية مشاكل في الترجمة، لا تتردد في تصحيحنا. ومن فضلك ترجمته بجدية. Everything you write will be read all over the world.
+شكرا لمترجمي [كراودين](https://crowdin.com/project/APKInstaller "Crowdin") على دعمهم. إذا كانت هناك أية مشاكل في الترجمة، لا تتردد في تصحيحنا. ومن فضلك ترجمته بجدية. كل ما تكتبه سيتم قرأته في جميع أنحاء العالم
 
 ##### المساهمون
 - [wherewhere](https://github.com/wherewhere)
