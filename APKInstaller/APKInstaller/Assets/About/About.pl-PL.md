@@ -7,7 +7,7 @@
 4. The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.
 
 ##### Tłumaczenie
-Dziękujemy tłumaczom [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") za ich wsparcie. If there are any problems with the translation, please feel free to correct us. And please translate seriously. Everything you write will be read all over the world.
+Dziękujemy tłumaczom [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") za ich wsparcie. If there are any problems with the translation, please feel free to correct us. And please translate seriously. Wszystko, co piszesz, będzie czytane na całym świecie.
 
 ##### Współtwórcy
 - [wherewhere](https://github.com/wherewhere)
