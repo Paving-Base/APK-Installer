@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AddressRun.Text" xml:space="preserve">
-    <value>Address</value>
+    <value>Adresa</value>
   </data>
   <data name="ConnectButton.Content" xml:space="preserve">
-    <value>Connect</value>
+    <value>Připojit</value>
   </data>
   <data name="ConnectedListFormat" xml:space="preserve">
-    <value>Connected {0} devices</value>
+    <value>Připojená zařízení</value>
   </data>
   <data name="ConnectedLogText" xml:space="preserve">
     <value>Connecting successfully.</value>
@@ -133,7 +133,7 @@
     <value>Pairing successfully. Connecting, please don't close the window.</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
-    <value>Connect</value>
+    <value>Připojit</value>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
     <value>Found {0} devices</value>
