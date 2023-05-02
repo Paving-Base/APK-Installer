@@ -347,7 +347,7 @@
     <value>Wybierz</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>Share</value>
+    <value>Udostępnij</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
     <value>Uruchamianie serwera ADB...</value>
@@ -397,7 +397,7 @@
 Może to zająć dużo czasu. Usiądź i zrelaksuj się.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome!</value>
+    <value>Witaj!</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA jest uruchomiona</value>
