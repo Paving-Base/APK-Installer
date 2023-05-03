@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, le Pont de Débogage Android (Android Debug Bridge), est requis pour qu'APK Installer fonctionne. Cliquez sur "Télécharger" pour le télécharger. En le téléchargeant, vous acceptez les Conditions d'Utilisation de Google pour l'ADB. Si vous avez déjà téléchargé ADB, cliquez sur "Sélectionneré pour le sélectionner.</value>
+    <value>ADB, le mode de débogage Android (Android Debug Bridge), est requis pour qu'APK Installer fonctionne. Cliquez sur "Télécharger" pour le télécharger. En le téléchargeant, vous acceptez les Conditions d'Utilisation de Google pour ADB. Si vous avez déjà téléchargé ADB, cliquez sur "Sélectionner" pour le sélectionner.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>ADB Existe</value>
@@ -127,7 +127,7 @@
     <value>ADB est manquant</value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>In Analysis...</value>
+    <value>En cours d'analyse...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
     <value>Fichier de l'APK</value>
@@ -163,7 +163,7 @@
     <value>Vérification de l'ADB...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Checking Path...</value>
+    <value>Vérification du chemin d'accès...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>Cliquez ici pour les lire</value>
@@ -175,7 +175,7 @@
     <value>Êtes-vous sûr de vouloir annuler l'installation ?</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Connecting Paired Devices...</value>
+    <value>Connexion aux appareils jumelés...</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Copier</value>
@@ -208,19 +208,19 @@
     <value>Une version plus récente est déjà installée</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>You already have installed a new version {0} of this app. Are you sure to reinstall version {1}?</value>
+    <value>Vous avez déjà installé une nouvelle version {0} de cette application. Êtes-vous sûr de vouloir réinstaller la version {1} ?</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
     <value>Comment se connecter à WSA </value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Please make sure APK Installer has been updated to the latest version
-2. Make sure you have the Android Subsystem installed and running
-3. Turn on developer mode and make sure the IP address is displayed successfully
-4. Reopen APK Installer and continue your installation
+    <value>1. Assurez-vous que l'installateur APK a été mis à jour avec la dernière version
+2. Assurez-vous que le sous-système Android est installé et fonctionne
+3. Activez le mode développeur et assurez-vous que l'adresse IP s'affiche correctement.
+4. Rouvrez APK Installer et poursuivez votre installation.
 
-[Learn More]({0})</value>
+[En savoir plus]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
     <value>Icône</value>
@@ -229,10 +229,10 @@
     <value>Je sais</value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
-    <value>Incompatible App</value>
+    <value>Application incompatible</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
-    <value>The minimum required for this app is {0}. Your device supports {1}. Please update your device or choose order package.</value>
+    <value>Le minimum requis pour cette application est {0}. Votre appareil prend en charge {1}. Veuillez mettre à jour votre appareil ou choisir la formule de commande.</value>
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
@@ -253,7 +253,7 @@
     <value>Installation...</value>
   </data>
   <data name="InstallingPercent" xml:space="preserve">
-    <value>Installing {0}...</value>
+    <value>Installation de {0}...</value>
     <comment>{0} - Progress.</comment>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
@@ -287,10 +287,10 @@
     <value>Impossible de trouver le périphérique Android</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>How to connect device</value>
+    <value>Comment connecter l'appareil</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>If you want to install app into Windows Subsystem for Android™, you need to install it first. If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
+    <value>Si vous souhaitez installer l'application dans Windows Subsystem for Android™, vous devez d'abord l'installer. Si vous voulez l'installer sur d'autres appareils, allez sur la page des paramètres, désactivez "Uniquement pour WSA", et connectez votre appareil.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
     <value>#### Using USB
@@ -314,13 +314,13 @@
     <value>Veuillez vous connecter à internet avant d'ouvrir l'application.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>For proper functioning of the app, try to launch an Android app package.</value>
+    <value>Pour que l'application fonctionne correctement, essayez de lancer un paquet d'applications Android (.apk).</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
-    <value>Online Package</value>
+    <value>Paquet en ligne</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
     <value>Nom du paquet</value>
@@ -356,7 +356,7 @@
     <value>Démarrer WSA</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
-    <value>Store Links</value>
+    <value>Liens vers le magasin</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
     <value>Dézippage d'ADB...</value>
