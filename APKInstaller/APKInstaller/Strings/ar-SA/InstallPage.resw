@@ -136,77 +136,78 @@
     <value>القدرات :</value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>اسماء التطبيق</value>
+    <value>اسماء التطبيقات</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>إلغاء</value>
+    <value>إلغاء الأمر</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
-    <value>  تأكيد</value>
+    <value>  تأكيد </value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
-    <value>لا</value>
+    <value>كلا</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>لا يمكن الاتصال بالمضيف</value>
+    <value>لا يمكن الاتصال بالWSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>وقد لا تبدأ إدارة شؤون المرأة على نحو سليم، أو قد تكون هناك مشكلة مع مصرف التنمية الآسيوي. الرجاء إعادة تشغيل المثبت. إذا كان لا يزال لا يعمل، حاول إعادة تشغيل الكمبيوتر.</value>
+    <value>إما أن وكالة WSA لم تبدأ بشكل صحيح ،أو  أن هناك مشكلة مع  أل ADB.قد يكون من الصعب إيجاد حل لهذه المشكلة.من فضلك إعادة تشغيل المثبت. إذا كان لا يزال ل لا يعمل، حاول إعادة تشغيل الكومبيوتر.
+</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>لا يمكن فتح حزمة التطبيقات</value>
+    <value>لا يمكن فتح حزمة التطبيق</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>جارٍ التحقق...</value>
+    <value>جارٍ البحث...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>التحقق من ADB...</value>
+    <value>التحقق  من ADB...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>التحقق من Adb...</value>
+    <value>التحقق من المسار...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>قم بالنقر هنا من أجل التسجيل</value>
+    <value>قم بالنقر هنا لقراءتهم</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>إغلاق</value>
+    <value>إقفال</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>هل تريد بالتأكيد إلغاء التثبيت؟</value>
+    <value>هل تريد بالتأكيد إلغاء عمليةالتثبيت؟</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>جاري توصيل الأجهزة المقترنة...</value>
+    <value>جاري  توصيل الأجهزة المقترنة...</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
-    <value>Copy</value>
+    <value>نسخ</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>الأجهزة</value>
+    <value>أجهزة</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>تحميل</value>
+    <value>تنزيل</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>فشل التنزيل</value>
+    <value>فشل التحميل</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>الاتصال بالإنترنت غير متوفر.
-حاول مرة أخرى لاحقاً.</value>
+    <value>الرجاء التحقق من اتصالك بالشبكة أو أل URL
+حاول  الاتصال مرة أخرى .</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>العثور على WSA...</value>
+    <value>العثور  على WSA...</value>
   </data>
   <data name="Finished" xml:space="preserve">
-    <value>انتهت</value>
+    <value>انتهت العملية</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>تم العثور على WSA</value>
+    <value>تم العثور  على WSA</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>اذهب للإعدادات</value>
+    <value>اذهب  للإعدادات</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>تم تثبيت نسخة أحدث بالفعل</value>
+    <value>تم تثبيت نسخة حديثة</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
     <value>لقد قمت بالفعل بتثبيت إصدار جديد {0} من هذا التطبيق. هل أنت متأكد من إعادة تثبيت الإصدار {1}؟</value>
