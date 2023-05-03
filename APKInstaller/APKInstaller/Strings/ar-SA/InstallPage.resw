@@ -118,22 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB، جسر تصحيح أخطاء أندرويد، مطلوب لتثبيت APK للعمل. انقر فوق "تنزيل" لتحميله. من خلال التنزيل، أنت تقبل شروط وأحكام Google لـ ADB. إذا كنت قد قمت بتنزيل ADB بالفعل، انقر فوق "إختار" لتحديد ذلك.</value>
+    <value>ADB ، جسر تصحيح أخطاء أندرويد ، مطلوب لتثبيت APK للعمل. انقر فوق "تنزيل" لتحميله. من  خلال التنزيل، أنت تقبل شروط وأحكام Google لـ ADB. إذا كنت قد قمت  بتنزيل ADB بالفعل ، انقر فوق "إختار" لتحديد ذلك.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB موجودة</value>
+    <value>ADB  موجودة</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>ADB مفقود</value>
+    <value>ADB  مفقود</value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>في التحليل...</value>
+    <value>في  التحليل...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>ملفات APK</value>
+    <value>ملفات  APK</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>القدرات:</value>
+    <value>القدرات :</value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
     <value>اسماء التطبيق</value>
