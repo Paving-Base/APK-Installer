@@ -121,13 +121,13 @@
     <value>À propos</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>Chemin ADB</value>
+    <value>Chemin vers ADB</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>Version de l'ADB</value>
+    <value>Version de ADB</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>Auto download when package is from URL.</value>
+    <value>Téléchargement automatique lorsque le paquet provient d'une URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
     <value>Téléchargement automatique des paquets en ligne ?</value>
@@ -136,7 +136,7 @@
     <value>Sélectionner le type d'arrière-plan pour Windows 11</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>Arrière-plan</value>
+    <value>Image de fond</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
     <value>Modifier</value>
@@ -160,16 +160,16 @@
     <value>Fermer ADB à la fermeture de l'installateur ?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Exit Installer after installation is complete.</value>
+    <value>Quitter l'installateur une fois l'installation terminée.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Exit Installer when APP is Ready?</value>
+    <value>Quitter l'installateur lorsque l'application est prête ?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Configurations</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value>Connecter l'appareil au réseau.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Connecter l'appareil</value>
@@ -190,7 +190,7 @@
     <value>Affichage</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
-    <value>Supports</value>
+    <value>Assistance</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
     <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
@@ -202,31 +202,31 @@
     <value>Commentaire</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
-    <value>Find Update</value>
+    <value>Trouver une mise à jour</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
     <value>Informations sur les frameworks de cette application.</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
-    <value>Informations sur le cadre</value>
+    <value>Informations sur le framework</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
-    <value>Structure</value>
+    <value>Framework</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>Aller à la page de test.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>Go to TestPage</value>
+    <value>Aller à la PageTest</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
-    <value>Go to Update</value>
+    <value>Aller à la mise à jour</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
-    <value>Rejoignez notre chat</value>
+    <value>Rejoignez notre discussion</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Dernier vérifié : </value>
+    <value>Dernière vérification : </value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
     <value>En savoir plus</value>
@@ -238,37 +238,37 @@
     <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>Vous utilisez une version modifiée!</value>
+    <value>Vous utilisez une version modifiée !</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>Désactivez-le pour vous connecter à d'autres appareils.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>For WSA only?</value>
+    <value>Pour WSA uniquement ?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>L'architecture</value>
+    <value>Architecture système</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
-    <value>Plateforme OS</value>
+    <value>Plateforme du système</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>D'autres</value>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
-    <value>Pair device through network.</value>
+    <value>Appairer l'appareil au réseau.</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>Pair Device</value>
+    <value>Appairer l'appareil</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
-    <value>Pair and connect devices.</value>
+    <value>Appairer et connecter des appareils.</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
-    <value>Pair &amp; Connect</value>
+    <value>Appairer et connecter</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>Fonce</value>
+    <value>Sombre</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
     <value>Par défaut de Windows</value>
@@ -322,16 +322,16 @@
     <value>It may leave temp files when an unexpected interruption occurs.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Whether to Show Installation Progress?</value>
+    <value>Afficher la progression de l'installation ?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
-    <value>App Theme</value>
+    <value>Thème de l'appli</value>
   </data>
   <data name="ThemesSettingsHeader.Header" xml:space="preserve">
-    <value>Themes</value>
+    <value>Thèmes</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Settings</value>
+    <value>Paramètres</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
     <value>Traduire</value>
@@ -340,7 +340,7 @@
     <value>Version</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Up To Date</value>
+    <value>À jour</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
     <value>Paramètres de couleur Windows</value>
