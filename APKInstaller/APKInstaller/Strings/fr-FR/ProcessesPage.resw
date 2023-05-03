@@ -118,24 +118,24 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Detail.Header" xml:space="preserve">
-    <value>Detail</value>
+    <value>Détail</value>
   </data>
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
     <value>En attente de l'appareil...</value>
   </data>
   <data name="Name.Header" xml:space="preserve">
-    <value>Name</value>
+    <value>Nom</value>
   </data>
   <data name="ProcessId.Header" xml:space="preserve">
-    <value>Process ID</value>
+    <value>ID du processus</value>
   </data>
   <data name="ResidentSetSize.Header" xml:space="preserve">
-    <value>Resident Set Size</value>
+    <value>Taille de l'ensemble des résidents</value>
   </data>
   <data name="State.Header" xml:space="preserve">
-    <value>State</value>
+    <value>État</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Processes</value>
+    <value>Processus</value>
   </data>
 </root>
