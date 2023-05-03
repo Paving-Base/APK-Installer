@@ -121,7 +121,7 @@
     <value>ADB, le mode de débogage Android (Android Debug Bridge), est requis pour qu'APK Installer fonctionne. Cliquez sur "Télécharger" pour le télécharger. En le téléchargeant, vous acceptez les Conditions d'Utilisation de Google pour ADB. Si vous avez déjà téléchargé ADB, cliquez sur "Sélectionner" pour le sélectionner.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Existe</value>
+    <value>ADB existe</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB est manquant</value>
@@ -148,7 +148,7 @@
     <value>Non</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Connexion impossible au WSA</value>
+    <value>Impossible de se connecter à WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
     <value>Soit WSA n'a pas démarré correctement, soit il y a un problème avec ADB. Ce problème peut être très difficile à résoudre. Veuillez redémarrer l'installateur. Si cela ne fonctionne toujours pas, essayez de redémarrer l'ordinateur.</value>
@@ -160,10 +160,10 @@
     <value>Vérification...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Vérification de l'ADB...</value>
+    <value>Vérification de ADB...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Vérification du chemin d'accès...</value>
+    <value>Vérification du chemin...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>Cliquez ici pour les lire</value>
@@ -175,7 +175,7 @@
     <value>Êtes-vous sûr de vouloir annuler l'installation ?</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Connexion aux appareils jumelés...</value>
+    <value>Connexion aux appareils appairés...</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Copier</value>
@@ -199,10 +199,10 @@
     <value>Terminé</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>WSA Trouvé</value>
+    <value>WSA trouvé</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>Accéder aux Paramètres</value>
+    <value>Accéder aux paramètres</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
     <value>Une version plus récente est déjà installée</value>
@@ -215,7 +215,7 @@
     <value>Comment se connecter à WSA </value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Assurez-vous que l'installateur APK a été mis à jour avec la dernière version
+    <value>1. Assurez-vous que APK Installer a été mis à jour avec la dernière version
 2. Assurez-vous que le sous-système Android est installé et fonctionne
 3. Activez le mode développeur et assurez-vous que l'adresse IP s'affiche correctement.
 4. Rouvrez APK Installer et poursuivez votre installation.
@@ -239,7 +239,7 @@
     <value>Infos</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>Install</value>
+    <value>Installer</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
     <value>{0} est prêt !</value>
@@ -272,7 +272,7 @@
     <value>Démarrer</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
-    <value>Démarrage du WSA...</value>
+    <value>Démarrage de WSA...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
     <value>Démarrer une fois prêt</value>
@@ -293,19 +293,19 @@
     <value>Si vous souhaitez installer l'application dans Windows Subsystem for Android™, vous devez d'abord l'installer. Si vous voulez l'installer sur d'autres appareils, allez sur la page des paramètres, désactivez "Uniquement pour WSA", et connectez votre appareil.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>#### Using USB
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open USB Debug
-3. Go to the Settings Page of APK Installer, select your device
-4. Go back, resume installation
-#### Using Wifi
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open Remote Debug
-3. Remember the IP address of your device
-4. Go to the Settings Page of APK Installer, connect and select your device
-5. Go back, resume installation
+    <value>#### Utilisation de l'USB
+1. Assurez-vous que APK Installer a été mis à jour vers [la dernière version] (https://apps.microsoft.com/store/detail/apk-installers/9P2JFQ43FPPG "APK Installer")
+2. Activez le mode développeur, ouvrez USB Debug
+3. Allez à la page des paramètres d'APK Installer, sélectionnez votre appareil
+4. Revenez en arrière, reprenez l'installation
+#### Utilisation du Wifi
+1. Assurez-vous que APK Installer a été mis à jour vers [la dernière version] (https://apps.microsoft.com/store/detail/apk-installers/9P2JFQ43FPPG "APK Installer")
+2. Activez le mode développeur, ouvrez le débogage à distance
+3. Mémorisez l'adresse IP de votre appareil
+4. Allez sur la page des paramètres d'APK Installer, connectez-vous et sélectionnez votre appareil
+5. Revenez en arrière, reprenez l'installation
 
-[Learn More]({0})</value>
+[En savoir plus]({0})</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
     <value>La connexion à Internet a échouée</value>
@@ -356,7 +356,7 @@
     <value>Démarrer WSA</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
-    <value>Liens vers le magasin</value>
+    <value>Liens vers le Store</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
     <value>Dézippage d'ADB...</value>
@@ -376,7 +376,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
-    <value>Version Code</value>
+    <value>Numéro de la version</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
     <value>Version : {0}</value>
