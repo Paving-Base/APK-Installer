@@ -333,7 +333,7 @@
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
-    <value>Reinstall</value>
+    <value>Installeer</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
     <value>{0} is already installed</value>
