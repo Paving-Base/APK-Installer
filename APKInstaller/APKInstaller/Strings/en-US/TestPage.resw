@@ -124,7 +124,7 @@
     <value>Manage the applications of connected devices</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
-    <value>Applications</value>
+    <value>shttps://crowdin.com/translate/APKInstaller/all/en-en?filter=basic&amp;value=0</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
     <value>Enter or Exit Compact Overlay</value>
