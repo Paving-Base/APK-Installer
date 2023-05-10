@@ -133,7 +133,7 @@
     <value>Téléchargement automatique des paquets en ligne ?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>Sélectionner le type d'arrière-plan pour Windows 11</value>
+    <value>Sélectionnez le type de fond pour Windows 11</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
     <value>Image de fond</value>
@@ -298,10 +298,10 @@
     <value>Êtes-vous sûr de vouloir réinitialiser l'interface graphique ?</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value>Scan and auto connect paired devices.</value>
+    <value>Scanner et connecter automatiquement les appareils appairés.</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Scan Paired Devices?</value>
+    <value>Scanner les appareils appairés ?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Sélectionner l’appareil</value>
@@ -310,16 +310,16 @@
     <value>Afficher les aides quand aucun périphérique n'est connecté.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Whether to Show Helps?</value>
+    <value>Afficher ou non l'aide ?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Display announcements at the top of Settings.</value>
+    <value>Afficher les annonces en haut de la page Réglages.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Whether to Show Announcements?</value>
+    <value>Afficher ou non les annonces ?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
-    <value>It may leave temp files when an unexpected interruption occurs.</value>
+    <value>Cela peut laisser des fichiers temporaires en cas d'interruption inattendue.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
     <value>Afficher la progression de l'installation ?</value>
