@@ -178,7 +178,7 @@
     <value>Me contacter</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
+    <value>Suivez-moi sur les applications sociales pour connaître les derniers développements. Si vous trouvez des bugs, merci de me les signaler par MP. Je ferai de mon mieux pour les résoudre. Si vous avez un compte Telegram, n'hésitez pas à discuter dans le groupe Paving Base 😊 !</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Contenu</value>
@@ -193,7 +193,7 @@
     <value>Assistance</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
+    <value>APK Installer est une application open-source qui n'ajoute aucune publicité à des fins lucratives. Si vous aimez cette application, n'oubliez pas de la noter dans le store. Bien sûr, ce serait génial si vous pouviez faire un petit don. Merci pour votre soutien. 💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
@@ -235,7 +235,7 @@
     <value>Logs</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
+    <value>Une version modifiée peut présenter des inconvénients. Comme des publicités, des fonctionnalités défectueuses ou même des virus. Veuillez vous rendre sur le Microsoft Store pour télécharger la version originale. Veuillez consulter notre dépôt GitHub pour plus d'informations.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>Vous utilisez une version modifiée !</value>
