@@ -3,7 +3,7 @@
 # APK Installer
 An Android Application Installer for Windows
 
-[![Build Status](https://dev.azure.com/wherewhere/APK-Installer/_apis/build/status/Paving-Base.APK-Installer?branchName=main)](https://dev.azure.com/wherewhere/APK-Installer/_build/latest?definitionId=7&branchName=main)
+[![Build Status](https://dev.azure.com/wherewhere/APK-Installer/_apis/build/status/Paving-Base.APK-Installer?branchName=main)](https://dev.azure.com/wherewhere/APK-Installer/_build/latest?definitionId=7&branchName=main "Build Status")
 [![Crowdin](https://badges.crowdin.net/APKInstaller/localized.svg)](https://crowdin.com/project/APKInstaller "Crowdin")
 
 [![LICENSE](https://img.shields.io/github/license/Paving-Base/APK-Installer.svg?label=License&style=flat-square)](https://github.com/Paving-Base/APK-Installer/blob/master/LICENSE "LICENSE")
