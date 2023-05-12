@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <controls:SettingsGroup xmlns:controls="using:APKInstaller.Controls" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Header="إشعار" Margin="0,-28,0,0">
-    <InfoBar Title="هذا هو الإعلان (لا تسألني لماذا لا تحتوي هذه الرسالة على زر الإغلاق)" IsClosable="False" IsOpen="True" Message="يمكنك رؤية جميع أنواع الإشعارات هنا في المستقبل. إذا كنت لا تريد رؤيتهم، يمكنك إيقافهم في الإعدادات أدناه." Severity="Informational"/>
-    <InfoBar Title="ترجمات" IsClosable="True" IsOpen="True" Message="وبما أن صاحب البلاغ لا يعرف سوى اللغتين الصينية والإنكليزية، فإن جميع الترجمات متروكة للمجتمع المحلي. إذا كنت لا تريد رؤية لغة غير مألوفة، مرحبا بك في كراودِن للترجمة!" Severity="Informational">
+    <InfoBar Title="هذا هو الإعلان (لا تسألني لماذا لا تحتوي هذه الرسالة على زر الإغلاق)" IsClosable="False" IsOpen="True" Message="يمكنك  رؤية جميع أنواع الإشعارات هنا في المستقبل. إذا كنت لا  تريد رؤيتهم، يمكنك إيقافهم في الإعدادات أدناه." Severity="Informational"/>
+    <InfoBar Title="المزيد من الترجمات" IsClosable="True" IsOpen="True" Message="وبما أن صاحب البلاغ لا يعرف سوى اللغتين الصينية والإنكليزية، فإن جميع الترجمات متروكة للمجتمع. إذا كنت لا ترغب في رؤية لغة غير مألوفة، مرحبا بك في كراودِن للترجمة!" Severity="Informational">
         <InfoBar.ActionButton>
-            <HyperlinkButton HorizontalAlignment="Right" Content="انقرني" NavigateUri="https://crowdin.com/project/APKInstaller"/>
+            <HyperlinkButton HorizontalAlignment="Right" Content="اضغط علي" NavigateUri="https://crowdin.com/project/APKInstaller"/>
         </InfoBar.ActionButton>
     </InfoBar>
 </controls:SettingsGroup>
