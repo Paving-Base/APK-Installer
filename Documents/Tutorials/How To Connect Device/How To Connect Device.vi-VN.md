@@ -9,4 +9,4 @@
 2. Bật Chế độ nhà phát triển, mở gỡ lỗi từ xa![Chế độ Nhà Phát Triển](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Screenshot_20221002-174001.jpg)
 3. Ghi nhớ địa chỉ IP của thiết bị của bạn![Địa chỉ IP](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Screenshot_20221002-174200.jpg)
 3. Truy cập trang Cài đặt của Trình cài đặt APK, kết nối và chọn thiết bị của bạn![Trang Cài đặt](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Snipaste_2022-10-02_17-46-28.png)
-4. Quay lại, tiếp tục cài đặt![Tiếp tục Cài đặt](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Snipaste_2022-10-02_17-34-04.png)
+4. Quay lại, tiếp tục cài đặt![Resume Installation](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Snipaste_2022-10-02_17-34-04.png)
