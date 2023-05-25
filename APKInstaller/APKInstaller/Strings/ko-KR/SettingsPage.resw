@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
-    <value>정보</value>
+    <value>버전정보</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
     <value>ADB Path</value>
@@ -139,7 +139,7 @@
     <value>Backdrop</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
-    <value>바꾸기</value>
+    <value>변경</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
     <value>Check Failed</value>
@@ -286,13 +286,13 @@
     <value>Reset settings of this application.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
-    <value>애플리케이션 초기화</value>
+    <value>앱 데이터 재설정</value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
-    <value>초기화</value>
+    <value>재설정</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
-    <value>예</value>
+    <value>네</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
     <value>Are you sure you want to reset the app?</value>
@@ -334,7 +334,7 @@
     <value>Settings</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>번역하십시요</value>
+    <value>번역하기</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
     <value>Version</value>
