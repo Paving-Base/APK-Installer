@@ -157,16 +157,16 @@
     <value>Cannot open app package</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>Checking...</value>
+    <value>확인 중...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Checking ADB...</value>
+    <value>확인 중...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Checking Path...</value>
+    <value>확인 중...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Click here to read them</value>
+    <value>로드하려면 여기를 클릭하세요</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Close</value>
@@ -344,7 +344,7 @@
     <value>Retry</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>Select</value>
+    <value>오디오 언어</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
     <value>Share</value>
