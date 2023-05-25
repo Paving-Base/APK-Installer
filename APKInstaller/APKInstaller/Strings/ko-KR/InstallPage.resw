@@ -130,7 +130,7 @@
     <value>In Analysis...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>앱 설치 파일</value>
+    <value>앱 설치 파일o</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>Capabilities: </value>
@@ -142,10 +142,10 @@
     <value>Cancel</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
-    <value>예</value>
+    <value>네</value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
-    <value>비활성화</value>
+    <value>아니오</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>Cannot Connect to WSA</value>
@@ -157,16 +157,16 @@
     <value>Cannot open app package</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>확인 중...</value>
+    <value>조사 중</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>확인 중...</value>
+    <value>확인 중... o</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>확인 중...</value>
+    <value>확인 중... o</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>로드하려면 여기를 클릭하세요</value>
+    <value>자세한 내용을 보려면 여기를 클릭하십시오.</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Close</value>
@@ -344,7 +344,7 @@
     <value>Retry</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>오디오 언어</value>
+    <value>선택</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
     <value>Share</value>
