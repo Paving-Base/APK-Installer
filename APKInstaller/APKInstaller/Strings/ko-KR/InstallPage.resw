@@ -118,55 +118,83 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, the Android Debug Bridge, is needed for APK Installer to work. Click "Download" to download it. By downloading, you accept the Google Terms and Conditions for ADB. If you have already downloaded ADB, click "Select" to select it.</value>
+    <value>
+
+</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Exists</value>
+    <value>
+
+</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>ADB is missing</value>
+    <value>
+
+</value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>In Analysis...</value>
+    <value>
+
+</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>앱 설치 파일o</value>
+    <value>앱 설치 파일o
+</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Capabilities: </value>
+    <value>
+
+</value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>App Name</value>
+    <value>
+
+
+</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>
+
+</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
-    <value>네</value>
+    <value>네
+</value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
-    <value>아니오</value>
+    <value>아니오
+</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Cannot Connect to WSA</value>
+    <value>
+
+</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
+    <value>
+
+</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>Cannot open app package</value>
+    <value>
+
+</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>조사 중</value>
+    <value>조사 중
+</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>확인 중... o</value>
+    <value>확인 중... o
+</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>확인 중... o</value>
+    <value>확인 중... o
+</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>자세한 내용을 보려면 여기를 클릭하십시오.</value>
+    <value>자세한 내용을 보려면 여기를 클릭하십시오.
+</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Close</value>
@@ -323,7 +351,10 @@
     <value>Online Package</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
-    <value>Package Name</value>
+    <value>
+
+
+</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
     <value>Package Name: {0}</value>
@@ -344,62 +375,94 @@
     <value>Retry</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>선택</value>
+    <value>선택
+</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
     <value>Share</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
-    <value>Starting ADB Server...</value>
+    <value>
+
+</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>Start WSA</value>
+    <value>
+
+</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
-    <value>Store Links</value>
+    <value>
+
+</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
-    <value>Unzip ADB...</value>
+    <value>
+
+</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
-    <value>Unzip completed</value>
+    <value>
+
+</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
-    <value>Unzipping {0}/{1} ...</value>
+    <value>
+
+</value>
     <comment>{0} - Have done num. {1} - All num.</comment>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>Update</value>
+    <value>
+
+</value>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
-    <value>Update {0}?</value>
+    <value>
+
+</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
-    <value>Version Code</value>
+    <value>
+
+</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>Version: {0}</value>
+    <value>
+
+</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>Waiting for download...</value>
+    <value>
+
+</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>Waiting for Device...</value>
+    <value>
+
+</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
-    <value>Waiting for install {0}</value>
+    <value>
+
+</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
-    <value>Waiting WSA Start...
-This may take long time. Sit back and relax.</value>
+    <value>
+
+</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome!</value>
+    <value>
+
+</value>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>WSA is Running</value>
+    <value>
+
+</value>
   </data>
 </root>
