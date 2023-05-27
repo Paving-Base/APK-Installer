@@ -7,16 +7,15 @@
 4.
 
 ##### 번역하기o
-Thanks to [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") translators for their support. If there are any problems with the translation, please feel free to correct us. And please translate seriously. Everything you write will be read all over the world.
 
-##### Contributors
+#####
 - [wherewhere](https://github.com/wherewhere)
 - [Void48](https://github.com/Void48)
 - [EP012014](https://github.com/EP012014)
 - [A Big Salty Fish](https://github.com/bigsaltyfishes)
 - [sam1357](https://github.com/sam1357)
 
-##### Citations and References
+#####
 - [MetroLog](https://github.com/roubachof/MetroLog "MetroLog")
 - [Zeroconf](https://github.com/novotnyllc/Zeroconf "Zeroconf")
 - [Windows UI](https://github.com/microsoft/microsoft-ui-xaml "Windows UI")
