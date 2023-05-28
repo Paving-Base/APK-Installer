@@ -120,55 +120,66 @@
   <data name="AddressRun.Text" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="ConnectButton.Content" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="ConnectedListFormat" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="ConnectedLogText" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="ConnectingLogText" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="IPAddressBox.Header" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="ManualPairButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="ManualPairTextBlock.Text" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="PairCodeBox.Header" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
@@ -176,35 +187,42 @@
     <value>
 
 
+
 </value>
   </data>
   <data name="PairingLogText" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="PairToggleButton.Content" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="PortRun.Text" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="QRScanButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="QRScanTextBlock.Text" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
