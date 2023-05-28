@@ -121,16 +121,19 @@
     <value>
 
 
+
 </value>
   </data>
   <data name="BackButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
     <value>
 
 
+
 </value>
   </data>
   <data name="RefreshButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
     <value>
+
 
 
 </value>
