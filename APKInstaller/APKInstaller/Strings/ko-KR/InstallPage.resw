@@ -120,29 +120,35 @@
   <data name="AboutADB" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="Analysis" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
     <value>앱 설치 파일o
+
 </value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
@@ -150,298 +156,368 @@
     <value>
 
 
+
 </value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
     <value>네
+
 </value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
     <value>아니오
+
 </value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="Checking" xml:space="preserve">
     <value>조사 중
+
 </value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
     <value>확인 중... o
+
 </value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
     <value>확인 중... o
+
 </value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>자세한 내용을 보려면 여기를 클릭하십시오.
+
 </value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="Download" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
     <value>
+
+
 </value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="Finished" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
     <value>
+
 </value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="IKnow" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
     <value>
+
 </value>
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="Install" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
     <value>
+
 </value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
     <value>
+
 </value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="InstallingPercent" xml:space="preserve">
     <value>
+
 </value>
     <comment>{0} - Progress.</comment>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="Launch" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="Loading" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="NoDevice" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="NoInternet" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
     <value>
 
 
+
 </value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
     <value>
+
 </value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
     <value>
+
 </value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
     <value>
 
+
 </value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="Select" xml:space="preserve">
     <value>선택
+
 </value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="StartingADB" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="StartWSA" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
     <value>
+
 
 </value>
     <comment>{0} - Have done num. {1} - All num.</comment>
@@ -449,10 +525,12 @@
   <data name="Update" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
     <value>
+
 
 </value>
     <comment>{0} - AppName.</comment>
@@ -460,10 +538,12 @@
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
     <value>
+
 
 </value>
     <comment>{0} - AppVersion.</comment>
@@ -471,15 +551,18 @@
   <data name="WaitDownload" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
     <value>
+
 
 </value>
     <comment>{0} - AppName.</comment>
@@ -487,15 +570,18 @@
   <data name="WaitingWSAStart" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
