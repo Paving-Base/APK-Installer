@@ -121,10 +121,12 @@
     <value>
 
 
+
 </value>
   </data>
   <data name="ConnectButton.Content" xml:space="preserve">
     <value>
+
 
 
 </value>
@@ -133,10 +135,12 @@
     <value>
 
 
+
 </value>
   </data>
   <data name="ConnectedLogText" xml:space="preserve">
     <value>
+
 
 
 </value>
@@ -145,10 +149,12 @@
     <value>
 
 
+
 </value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
     <value>
+
 
 
 </value>
@@ -157,10 +163,12 @@
     <value>
 
 
+
 </value>
   </data>
   <data name="IPAddressBox.Header" xml:space="preserve">
     <value>
+
 
 
 </value>
@@ -169,16 +177,19 @@
     <value>
 
 
+
 </value>
   </data>
   <data name="ManualPairTextBlock.Text" xml:space="preserve">
     <value>
 
 
+
 </value>
   </data>
   <data name="PairCodeBox.Header" xml:space="preserve">
     <value>
+
 
 
 </value>
@@ -188,10 +199,12 @@
 
 
 
+
 </value>
   </data>
   <data name="PairingLogText" xml:space="preserve">
     <value>
+
 
 
 </value>
@@ -200,10 +213,12 @@
     <value>
 
 
+
 </value>
   </data>
   <data name="PortRun.Text" xml:space="preserve">
     <value>
+
 
 
 </value>
@@ -212,16 +227,19 @@
     <value>
 
 
+
 </value>
   </data>
   <data name="QRScanTextBlock.Text" xml:space="preserve">
     <value>
 
 
+
 </value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>
+
 
 
 </value>
