@@ -120,42 +120,51 @@
   <data name="APKDescription" xml:space="preserve">
     <value>Android Application Package
 
+
 </value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>앱 설치 파일o
+    <value>앱 설치 파일
 </value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>Apk Installer. 제작자: @wherewhere 와 @Tangent-90 
+
 </value>
   </data>
   <data name="AppName" xml:space="preserve">
     <value>APK 설치
+
 </value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>There was an error with the file upload. o
+
 </value>
   </data>
   <data name="NetworkError" xml:space="preserve">
     <value>데이터 오류o
+
 </value>
   </data>
   <data name="No" xml:space="preserve">
     <value>아니오
+
 </value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
     <value>설치된 패키지
+
 </value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
     <value>Dividir Fitxer APK
+
 </value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>네
+
 </value>
   </data>
 </root>
