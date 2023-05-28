@@ -119,54 +119,65 @@
   </resheader>
   <data name="AndroidTestSettingsHeader.Header" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>Applications
+
 
 </value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="DevelopmentInfoBar.Title" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="LanguageSettings.Description" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="LanguageSettings.Header" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="OutPIP.Content" xml:space="preserve">
     <value>
+
 
 
 
@@ -176,10 +187,12 @@
     <value>
 
 
+
 </value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
     <value>
+
 
 
 
@@ -189,10 +202,12 @@
     <value>
 
 
+
 </value>
   </data>
   <data name="ProgressSettings.Header" xml:space="preserve">
     <value>
+
 
 
 </value>
@@ -201,10 +216,12 @@
     <value>
 
 
+
 </value>
   </data>
   <data name="SetProgressValue.Header" xml:space="preserve">
     <value>
+
 
 
 </value>
@@ -213,10 +230,12 @@
     <value>
 
 
+
 </value>
   </data>
   <data name="ShowRefreshButton.Header" xml:space="preserve">
     <value>
+
 
 
 </value>
@@ -225,10 +244,12 @@
     <value>
 
 
+
 </value>
   </data>
   <data name="TitleBarSettings.Description" xml:space="preserve">
     <value>
+
 
 
 </value>
@@ -237,10 +258,12 @@
     <value>
 
 
+
 </value>
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
     <value>
+
 
 
 </value>
