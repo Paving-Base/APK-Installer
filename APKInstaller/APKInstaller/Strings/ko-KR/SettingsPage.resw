@@ -120,10 +120,12 @@
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
     <value>버전정보
 
+
 </value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
     <value>
+
 
 
 </value>
@@ -132,327 +134,401 @@
     <value>
 
 
+
 </value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="Change.Content" xml:space="preserve">
     <value>변경
+
 </value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="Group.Content" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
     <value>앱 데이터 재설정
+
 </value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
     <value>재설정
+
 </value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
     <value>네
+
 </value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="ThemesSettingsHeader.Header" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
     <value>번역하기
+
 </value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
     <value>
 
 
+
 </value>
   </data>
   <data name="UpToDate" xml:space="preserve">
     <value>
+
 </value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
     <value>
+
 </value>
   </data>
 </root>
