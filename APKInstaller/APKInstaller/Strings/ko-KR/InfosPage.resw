@@ -120,15 +120,18 @@
   <data name="AppName.Text" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
     <value>
+
 
 </value>
     <comment>{0} - Dependencies Count.</comment>
@@ -136,40 +139,48 @@
   <data name="FeaturesHeaderFormat" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="MinSDK.Text" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="PermissionsHeaderFormat" xml:space="preserve">
     <value>
+
 
 </value>
     <comment>{0} - Permissions Count.</comment>
@@ -177,36 +188,43 @@
   <data name="SharePackage.Content" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="SupportedArchitectures.Text" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="SupportResolutions.Text" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
     <value>
+
 
 </value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Version.Text" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
