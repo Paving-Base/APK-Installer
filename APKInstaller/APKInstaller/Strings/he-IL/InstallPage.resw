@@ -128,7 +128,7 @@
 </value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>In Analysis...</value>
+    <value>מנתח...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
     <value>קובץ APK</value>
@@ -178,7 +178,7 @@
     <value>האם אתה בטוח לבטל את ההתקנה?</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Connecting Paired Devices...</value>
+    <value>חיבור התקנים משויכים...</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>עותק</value>
