@@ -1,6 +1,6 @@
-#### Bienvenido al instalador
+#### Welcome to the APK Installer!
 
-##### Declaración
+##### Declaracin
 1. Por favor, cumple con el [Acuerdo de licencia de usuario final y la Política de privacidad de APK Instalar](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
 2. Este programa es un software de código abierto, así que por favor, asegúrate de que este programa es de [este repositorio de GitHub](https://github.com/Paving-Base/APK-Installer) o [esta aplicación](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) para asegurar tus datos de seguridad.
 3. Si el origen del programa no es anormal, todos sus datos se usarán únicamente para la ejecución del programa o almacenarse localmente durante la ejecución. Aún así, por favor, presta atención a la seguridad del medio ambiente.
