@@ -4,10 +4,10 @@
 1. Vă rugăm să urmați [APK Installer End User License Acord și Politica de Confidențialitate](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
 2. Acest program este software open source, vă rugăm să vă asigurați că programul este din [acest depozit Github](https://github.com/Paving-Base/APK-Installer) sau [această aplicație](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) pentru a asigura securitatea datelor.
 3. If the source of the program is not abnormal, all your data will be used only for the running of the program or stored locally during the running, and the developer will not steal any of your data. Totuşi, vă rog să acordaţi atenţie securităţii mediului.
-4. The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.
+4. Dacă sursa programului nu este anormală, toate datele dumneavoastră vor fi folosite numai pentru rularea programului sau stocate local în timpul rulării, iar dezvoltatorul nu vă va fura niciuna dintre datele dumneavoastră.
 
 ##### Traducere
-Mulţumim traducătorilor [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") pentru sprijinul lor. If there are any problems with the translation, please feel free to correct us. And please translate seriously. Everything you write will be read all over the world.
+Mulţumim traducătorilor [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") pentru sprijinul lor. Dacă există probleme cu traducerea, nu ezitați să ne corectați. Și vă rog să traduceți serios. Tot ce scrieți va fi citit în toată lumea.
 
 ##### Contribuitori
 - [wherewhere](https://github.com/wherewhere)
