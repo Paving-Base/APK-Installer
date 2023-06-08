@@ -124,9 +124,7 @@
     <value>Manage the applications of connected devices</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
-    <value>Test pages
-
-</value>
+    <value>Applications</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
     <value>Enter or Exit Compact Overlay</value>
@@ -156,9 +154,7 @@
     <value>Manage the processes of connected devices</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
-    <value>ProcessesSettings
-
-</value>
+    <value>Processes</value>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
     <value>Test Progress Ring on the Title Bar</value>
