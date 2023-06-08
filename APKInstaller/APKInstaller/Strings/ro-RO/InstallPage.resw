@@ -127,7 +127,8 @@
     <value>ADB lipsește</value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>In Analysis...</value>
+    <value>
+În analiză...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
     <value>Fișier APK</value>
@@ -175,7 +176,7 @@
     <value>Sunteți sigur că doriți să anulați instalarea?</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Connecting Paired Devices...</value>
+    <value>Se conectează dispozitive asociate...</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Copiere</value>
