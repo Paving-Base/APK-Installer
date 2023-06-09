@@ -359,13 +359,13 @@
     <value>Starting ADB Server...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>bokamoson</value>
+    <value>Start WSA</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
-    <value>lebohangkub</value>
+    <value>Store Links</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
-    <value>lebohangkubu</value>
+    <value>Unzip ADB...</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
     <value>Unzip completed</value>
