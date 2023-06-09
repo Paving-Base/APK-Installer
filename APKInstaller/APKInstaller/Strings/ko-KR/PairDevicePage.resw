@@ -118,130 +118,57 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AddressRun.Text" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Address</value>
   </data>
   <data name="ConnectButton.Content" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Connect</value>
   </data>
   <data name="ConnectedListFormat" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Connected {0} devices</value>
   </data>
   <data name="ConnectedLogText" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Connecting successfully.</value>
   </data>
   <data name="ConnectingLogText" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Pairing successfully. Connecting, please don't close the window.</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Connect</value>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Found {0} devices</value>
   </data>
   <data name="IPAddressBox.Header" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>IP Address</value>
   </data>
   <data name="ManualPairButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Connecting devices manually</value>
   </data>
   <data name="ManualPairTextBlock.Text" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Manual Connection</value>
   </data>
   <data name="PairCodeBox.Header" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>WLAN Pairing Code</value>
   </data>
   <data name="PairCodeTextBlock.Text" xml:space="preserve">
-    <value>
-
-
-
-
-</value>
+    <value>WLAN Pairing Code</value>
   </data>
   <data name="PairingLogText" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Pairing, please don't close the window.</value>
   </data>
   <data name="PairToggleButton.Content" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Pair</value>
   </data>
   <data name="PortRun.Text" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Port</value>
   </data>
   <data name="QRScanButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Pair with QR code</value>
   </data>
   <data name="QRScanTextBlock.Text" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Scan QR code to pair devices.</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Pair &amp; Connect</value>
   </data>
 </root>
