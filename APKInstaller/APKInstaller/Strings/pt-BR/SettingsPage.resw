@@ -121,7 +121,8 @@
     <value>Sobre</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>Caminho do ADB</value>
+    <value>Caminho do ADB
+</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
     <value>Permissões do ADB</value>
