@@ -262,7 +262,7 @@
     <value>Ghép nối thiết bị</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
-    <value>hi</value>
+    <value>Pair and connect devices.</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
     <value>Ghép nối &amp; Kết nối</value>
