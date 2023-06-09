@@ -118,417 +118,231 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
-    <value>버전정보
-
-
-</value>
+    <value>정보</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>ADB Path</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>ADB Version</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Auto download when package is from URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Auto Download Online Packages?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Select Backdrop Type for Windows 11</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Backdrop</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
-    <value>변경
-
-</value>
+    <value>바꾸기</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Check Failed</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Checking For Updates...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Check For Updates</value>
   </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Clear cache</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Terminate ADB when Exit Installer?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Exit Installer after installation is complete.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Exit Installer when APP is Ready?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Configs</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Connect device through network.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Connect Device</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Contact Me</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Content</value>
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Device</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Display</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Supports</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>EULA</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Feedback</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Find Update</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Information about the frameworks of this app.</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Framework Information</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Framework</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Go to the page of test.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Go to TestPage</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Go to Update</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Join Our Chat</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Last Checked: </value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Learn More</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Logs</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>
-
-</value>
+    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>
-
-</value>
+    <value>You are using a modified version!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Disable it to connect to other devices.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>
-
-</value>
+    <value>For WSA only?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>
-
-</value>
+    <value>OS Architecture</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
-    <value>
-
-</value>
+    <value>OS Platform</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Others</value>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Pair device through network.</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Pair Device</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Pair and connect devices.</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Pair &amp; Connect</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Dark</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Windows Default</value>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Light</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Rate On Store</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Release notes</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Reset settings of this application.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
-    <value>앱 데이터 재설정
-
-</value>
+    <value>애플리케이션 초기화</value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
-    <value>재설정
-
-</value>
+    <value>초기화</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
-    <value>네
-
-</value>
+    <value>예</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Are you sure you want to reset the app?</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Scan and auto connect paired devices.</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Scan Paired Devices?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Select Device</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Show helpers when no device is connected.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Whether to Show Helps?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Display announcements at the top of Settings.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Whether to Show Announcements?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
-    <value>
-
-</value>
+    <value>It may leave temp files when an unexpected interruption occurs.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Whether to Show Installation Progress?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
-    <value>
-
-</value>
+    <value>App Theme</value>
   </data>
   <data name="ThemesSettingsHeader.Header" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Themes</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Settings</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>번역하기
-
-</value>
+    <value>Translate</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Version</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Up To Date</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>
-
-</value>
+    <value>Windows Color Settings</value>
   </data>
 </root>
