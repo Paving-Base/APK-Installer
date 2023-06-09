@@ -121,16 +121,19 @@
     <value>
 
 
+
 </value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
     <value>
 
 
+
 </value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
     <value>
+
 
 
 </value>
@@ -140,10 +143,12 @@
     <value>
 
 
+
 </value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
     <value>
+
 
 
 </value>
@@ -152,10 +157,12 @@
     <value>
 
 
+
 </value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
     <value>
+
 
 
 </value>
@@ -164,10 +171,12 @@
     <value>
 
 
+
 </value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
     <value>
+
 
 
 </value>
@@ -176,10 +185,12 @@
     <value>
 
 
+
 </value>
   </data>
   <data name="PermissionsHeaderFormat" xml:space="preserve">
     <value>
+
 
 
 </value>
@@ -189,10 +200,12 @@
     <value>
 
 
+
 </value>
   </data>
   <data name="SupportedArchitectures.Text" xml:space="preserve">
     <value>
+
 
 
 </value>
@@ -201,10 +214,12 @@
     <value>
 
 
+
 </value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
     <value>
+
 
 
 </value>
@@ -213,10 +228,12 @@
     <value>
 
 
+
 </value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
     <value>
+
 
 
 </value>
@@ -224,6 +241,7 @@
   </data>
   <data name="Version.Text" xml:space="preserve">
     <value>
+
 
 
 </value>
