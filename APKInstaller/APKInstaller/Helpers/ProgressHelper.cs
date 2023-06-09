@@ -82,9 +82,9 @@ namespace APKInstaller.Helpers
         private static void SetProgressValue(int current, int max)
         {
             _taskbarList?.SetProgressValue(
-                     GetHandle(),
-                     Convert.ToUInt64(current),
-                     Convert.ToUInt64(max));
+                GetHandle(),
+                Convert.ToUInt64(current),
+                Convert.ToUInt64(max));
         }
 
         private static HWND GetHandle() =>

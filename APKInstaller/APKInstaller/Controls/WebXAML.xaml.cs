@@ -16,11 +16,12 @@ namespace APKInstaller.Controls
 {
     public sealed partial class WebXAML : UserControl
     {
-        public static readonly DependencyProperty ContentInfoProperty = DependencyProperty.Register(
-           "ContentInfo",
-           typeof(GitInfo),
-           typeof(WebXAML),
-           new PropertyMetadata(default(GitInfo), OnContentChanged));
+        public static readonly DependencyProperty ContentInfoProperty =
+            DependencyProperty.Register(
+                nameof(ContentInfo),
+                typeof(GitInfo),
+                typeof(WebXAML),
+                new PropertyMetadata(default(GitInfo), OnContentChanged));
 
         public GitInfo ContentInfo
         {
@@ -28,11 +29,12 @@ namespace APKInstaller.Controls
             set => SetValue(ContentInfoProperty, value);
         }
 
-        public static readonly DependencyProperty ContentUrlProperty = DependencyProperty.Register(
-           "ContentUrl",
-           typeof(Uri),
-           typeof(WebXAML),
-           new PropertyMetadata(default(Uri), OnContentChanged));
+        public static readonly DependencyProperty ContentUrlProperty =
+            DependencyProperty.Register(
+                nameof(ContentUrl),
+                typeof(Uri),
+                typeof(WebXAML),
+                new PropertyMetadata(default(Uri), OnContentChanged));
 
         public Uri ContentUrl
         {
@@ -40,11 +42,12 @@ namespace APKInstaller.Controls
             set => SetValue(ContentUrlProperty, value);
         }
 
-        public static readonly DependencyProperty ContentXAMLProperty = DependencyProperty.Register(
-           "ContentXAML",
-           typeof(string),
-           typeof(WebXAML),
-           new PropertyMetadata(default(string), OnContentChanged));
+        public static readonly DependencyProperty ContentXAMLProperty =
+            DependencyProperty.Register(
+                nameof(ContentXAML),
+                typeof(string),
+                typeof(WebXAML),
+                new PropertyMetadata(default(string), OnContentChanged));
 
         public string ContentXAML
         {

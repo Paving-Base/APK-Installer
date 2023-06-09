@@ -22,6 +22,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Runtime.CompilerServices;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
@@ -32,6 +33,8 @@ using Windows.Storage;
 using Windows.Storage.Pickers;
 using Windows.System;
 using Windows.Win32;
+using Windows.Win32.Foundation;
+using Windows.Win32.UI.Shell;
 using WinRT;
 using DownloadProgressChangedEventArgs = Downloader.DownloadProgressChangedEventArgs;
 
@@ -625,9 +628,16 @@ namespace APKInstaller.ViewModels
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private void RaisePropertyChangedEvent([System.Runtime.CompilerServices.CallerMemberName] string name = null)
+        private async void RaisePropertyChangedEvent([CallerMemberName] string name = null)
         {
-            if (name != null) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
+            if (name != null)
+            {
+                if (_page?.DispatcherQueue.HasThreadAccess == false)
+                {
+                    await _page.DispatcherQueue.ResumeForegroundAsync();
+                }
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+            }
         }
 
         public InstallViewModel(Uri Url, InstallPage Page, ProtocolForResultsOperation Operation = null)
@@ -811,7 +821,7 @@ namespace APKInstaller.ViewModels
                     if (Window.Current == null)
                     {
                         IInitializeWithWindow initializeWithWindowWrapper = FileOpen.As<IInitializeWithWindow>();
-                        IntPtr hwnd = PInvoke.GetActiveWindow();
+                        HWND hwnd = PInvoke.GetActiveWindow();
                         initializeWithWindowWrapper.Initialize(hwnd);
                     }
 
@@ -967,7 +977,7 @@ namespace APKInstaller.ViewModels
                     WaitProgressText = _loader.GetString("StartingADB");
                     try
                     {
-                        await Task.Run(() => ADBServer.StartServer((processes != null && processes.Any()) ? processes.FirstOrDefault().MainModule?.FileName : ADBPath, restartServerIfNewer: false));
+                        await ADBServer.StartServerAsync((processes != null && processes.Any()) ? processes.FirstOrDefault().MainModule?.FileName : ADBPath, restartServerIfNewer: false, CancellationToken.None);
                     }
                     catch (Exception ex)
                     {
@@ -1053,7 +1063,7 @@ namespace APKInstaller.ViewModels
                     {
                         if (NetAPKExist)
                         {
-                            CheckAPK();
+                            await CheckAPK();
                         }
                         else
                         {
@@ -1236,7 +1246,7 @@ namespace APKInstaller.ViewModels
                 checkdevice:
                 if (await CheckDevice() && _device != null)
                 {
-                    CheckAPK();
+                    await CheckAPK();
                 }
                 else
                 {
@@ -1266,7 +1276,7 @@ namespace APKInstaller.ViewModels
             }
         }
 
-        private void CheckAPK()
+        private async Task CheckAPK()
         {
             ResetUI();
             if (_device != null)
@@ -1302,7 +1312,7 @@ namespace APKInstaller.ViewModels
                         ActionVisibility = TextOutputVisibility = Visibility.Visible;
                         SecondaryActionVisibility = string.IsNullOrWhiteSpace(ApkInfo?.LaunchableActivity) ? Visibility.Collapsed : Visibility.Visible;
                     }
-                    SDKInfo sdk = SDKInfo.GetInfo(client.GetProperty(_device, "ro.build.version.sdk"));
+                    SDKInfo sdk = SDKInfo.GetInfo(await client.GetPropertyAsync(_device, "ro.build.version.sdk"));
                     if (sdk < ApkInfo.MinSDK)
                     {
                         ActionButtonEnable = false;
@@ -1391,7 +1401,7 @@ namespace APKInstaller.ViewModels
             {
                 if (await CheckDevice() && _device != null)
                 {
-                    CheckAPK();
+                    await CheckAPK();
                 }
                 else
                 {
@@ -1540,7 +1550,7 @@ namespace APKInstaller.ViewModels
                 {
                     if (await CheckDevice() && _device != null)
                     {
-                        CheckAPK();
+                        await CheckAPK();
                     }
                 });
             }
@@ -1549,7 +1559,7 @@ namespace APKInstaller.ViewModels
         private async Task<bool> CheckDevice()
         {
             AdbClient client = new();
-            IEnumerable<DeviceData> devices = client.GetDevices().Where(x => x.State == DeviceState.Online);
+            IEnumerable<DeviceData> devices = (await client.GetDevicesAsync()).Where(x => x.State == DeviceState.Online);
             ConsoleOutputReceiver receiver = new();
             if (!devices.Any()) { return false; }
             foreach (DeviceData device in devices)
@@ -1579,7 +1589,7 @@ namespace APKInstaller.ViewModels
             return false;
         }
 
-        public void OpenAPP() => new AdbClient().StartApp(_device, ApkInfo?.PackageName);
+        public void OpenAPP() => _ = new AdbClient().StartAppAsync(_device, ApkInfo?.PackageName);
 
         public async void InstallAPP()
         {
@@ -1589,7 +1599,7 @@ namespace APKInstaller.ViewModels
                 VersionInfo info = null;
                 if (ApkInfo != null && !ApkInfo.IsEmpty)
                 {
-                    info = client.GetPackageVersion(_device, ApkInfo?.PackageName);
+                    info = await client.GetPackageVersionAsync(_device, ApkInfo?.PackageName);
                 }
                 if (info != null && info.VersionCode >= int.Parse(ApkInfo?.VersionCode))
                 {
@@ -1599,7 +1609,8 @@ namespace APKInstaller.ViewModels
                         Content = string.Format(_loader.GetString("HasNewerVersionInfo"), info.VersionName, ApkInfo?.VersionName),
                         Title = _loader.GetString("HasNewerVersion"),
                         PrimaryButtonText = _loader.GetString("Reinstall"),
-                        CloseButtonText = _loader.GetString("Cancel")
+                        CloseButtonText = _loader.GetString("Cancel"),
+                        DefaultButton = ContentDialogButton.Close
                     };
                     ContentDialogResult result = await dialog.ShowAsync();
                     if (result != ContentDialogResult.Primary) { return; }
@@ -1616,17 +1627,16 @@ namespace APKInstaller.ViewModels
                     if (ShowProgress)
                     {
                         AppxInstallBarIndeterminate = false;
-                        await Task.Run(() =>
-                        {
-                            PackageManager manager = new(new AdbClient(), _device);
-                            manager.InstallProgressChanged += OnInstallProgressChanged;
-                            manager.InstallMultiplePackage(new string[] { ApkInfo?.FullPath }, ApkInfo?.PackageName, true);
-                        });
+                        PackageManager manager = new(client, _device);
+                        manager.InstallProgressChanged += OnInstallProgressChanged;
+                        await manager.InstallMultiplePackageAsync(new string[] { ApkInfo?.FullPath }, ApkInfo?.PackageName, true);
                         AppxInstallBarValue = 100;
                     }
                     else
                     {
-                        await Task.Run(() => { new AdbClient().InstallMultiple(_device, new Stream[] { File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read) }, ApkInfo.PackageName); });
+                        FileStream apk = File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read);
+                        await client.InstallMultipleAsync(_device, new Stream[] { apk }, ApkInfo.PackageName);
+                        await apk.DisposeAsync();
                     }
                 }
                 else if ((ApkInfo?.IsBundle).GetValueOrDefault(false))
@@ -1634,22 +1644,19 @@ namespace APKInstaller.ViewModels
                     if (ShowProgress)
                     {
                         AppxInstallBarIndeterminate = false;
-                        await Task.Run(() =>
-                        {
-                            PackageManager manager = new(new AdbClient(), _device);
-                            manager.InstallProgressChanged += OnInstallProgressChanged;
-                            string[] strings = ApkInfo?.SplitApks?.Select(x => x.FullPath).ToArray();
-                            manager.InstallMultiplePackage(ApkInfo?.FullPath, strings, true);
-                        });
+                        PackageManager manager = new(client, _device);
+                        manager.InstallProgressChanged += OnInstallProgressChanged;
+                        string[] strings = ApkInfo?.SplitApks?.Select(x => x.FullPath).ToArray();
+                        await manager.InstallMultiplePackageAsync(ApkInfo?.FullPath, strings, true);
                         AppxInstallBarValue = 100;
                     }
                     else
                     {
-                        await Task.Run(() =>
-                        {
-                            Stream[] streams = ApkInfo.SplitApks.Select(x => File.Open(x.FullPath, FileMode.Open, FileAccess.Read)).ToArray();
-                            new AdbClient().InstallMultiple(_device, File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read), streams);
-                        });
+                        FileStream apk = File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read);
+                        List<FileStream> splits = ApkInfo.SplitApks.Select(x => File.Open(x.FullPath, FileMode.Open, FileAccess.Read)).ToList();
+                        await client.InstallMultipleAsync(_device, apk, splits);
+                        splits.ForEach(async (x) => await x.DisposeAsync());
+                        await apk.DisposeAsync();
                     }
                 }
                 else
@@ -1657,17 +1664,16 @@ namespace APKInstaller.ViewModels
                     if (ShowProgress)
                     {
                         AppxInstallBarIndeterminate = false;
-                        await Task.Run(() =>
-                        {
-                            PackageManager manager = new(new AdbClient(), _device);
-                            manager.InstallProgressChanged += OnInstallProgressChanged;
-                            manager.InstallPackage(ApkInfo?.FullPath, true);
-                        });
+                        PackageManager manager = new(client, _device);
+                        manager.InstallProgressChanged += OnInstallProgressChanged;
+                        await manager.InstallPackageAsync(ApkInfo?.FullPath, true);
                         AppxInstallBarValue = 100;
                     }
                     else
                     {
-                        await Task.Run(() => { new AdbClient().Install(_device, File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read)); });
+                        FileStream apk = File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read);
+                        await client.InstallAsync(_device, apk);
+                        await apk.DisposeAsync();
                     }
                 }
                 AppName = string.Format(_loader.GetString("InstalledFormat"), AppLocaleName);
@@ -1706,14 +1712,53 @@ namespace APKInstaller.ViewModels
 
             _page.CancelFlyout.Hide();
 
-            void OnInstallProgressChanged(object sender, double e)
+            void OnInstallProgressChanged(object sender, InstallProgressEventArgs e)
             {
-                ProgressHelper.SetValue(Convert.ToInt32(e), 100, true);
-                _page?.DispatcherQueue.TryEnqueue(() =>
+                switch (e.State)
                 {
-                    AppxInstallBarValue = e;
-                    ProgressText = string.Format(_loader.GetString("InstallingPercent"), $"{e:N0}%");
-                });
+                    case PackageInstallProgressState.Uploading:
+                        AppxInstallBarIndeterminate = false;
+                        AppxInstallBarValue = e.UploadProgress;
+                        ProgressHelper.SetState(ProgressState.Normal, true);
+                        ProgressHelper.SetValue(Convert.ToInt32(e.UploadProgress), 100, true);
+                        ProgressText = string.Format(_loader.GetString("UploadingFormat"), $"{e.UploadProgress:N0}%", e.PackageFinished, e.PackageRequired);
+                        break;
+                    case PackageInstallProgressState.CreateSession:
+                        AppxInstallBarIndeterminate = true;
+                        ProgressHelper.SetState(ProgressState.Indeterminate, true);
+                        ProgressText = _loader.GetString("CreateSession");
+                        break;
+                    case PackageInstallProgressState.WriteSession:
+                        double value = e.PackageFinished * 100 / Math.Max(e.PackageRequired, 1);
+                        AppxInstallBarValue = value;
+                        AppxInstallBarIndeterminate = false;
+                        ProgressHelper.SetState(ProgressState.Normal, true);
+                        ProgressHelper.SetValue(Convert.ToInt32(value), 100, true);
+                        ProgressText = string.Format(_loader.GetString("WriteSessionFormat"), e.PackageFinished, e.PackageRequired);
+                        break;
+                    case PackageInstallProgressState.Installing:
+                        AppxInstallBarIndeterminate = true;
+                        ProgressHelper.SetState(ProgressState.Indeterminate, true);
+                        ProgressText = _loader.GetString("Installing");
+                        break;
+                    case PackageInstallProgressState.PostInstall:
+                        value = e.PackageFinished * 100 / Math.Max(e.PackageRequired, 1);
+                        AppxInstallBarValue = value;
+                        AppxInstallBarIndeterminate = false;
+                        ProgressHelper.SetState(ProgressState.Normal, true);
+                        ProgressHelper.SetValue(Convert.ToInt32(value), 100, true);
+                        ProgressText = string.Format(_loader.GetString("PostInstallFormat"), e.PackageFinished, e.PackageRequired);
+                        break;
+                    case PackageInstallProgressState.Finished:
+                        AppxInstallBarValue = 100;
+                        AppxInstallBarIndeterminate = false;
+                        ProgressHelper.SetState(ProgressState.Normal, true);
+                        ProgressHelper.SetValue(100, 100, true);
+                        ProgressText = _loader.GetString("Finished");
+                        break;
+                    default:
+                        break;
+                }
             }
         }
 
@@ -1739,7 +1784,7 @@ namespace APKInstaller.ViewModels
             if (Window.Current == null)
             {
                 IInitializeWithWindow initializeWithWindowWrapper = FileOpen.As<IInitializeWithWindow>();
-                IntPtr hwnd = PInvoke.GetActiveWindow();
+                HWND hwnd = PInvoke.GetActiveWindow();
                 initializeWithWindowWrapper.Initialize(hwnd);
             }
 
@@ -1805,7 +1850,7 @@ namespace APKInstaller.ViewModels
                         return;
                     }
                 }
-                await (_page?.DispatcherQueue.EnqueueAsync(() => { IsInitialized = true; }));
+                IsInitialized = true;
             });
 
             async Task OpenPath(IStorageItem storageItem)
@@ -1838,16 +1883,17 @@ namespace APKInstaller.ViewModels
                                     }
                                 }
                             }
-                            await (_page?.DispatcherQueue.EnqueueAsync(() => { IsInitialized = true; }));
+                            IsInitialized = true;
                         }
                         catch (Exception ex) { SettingsHelper.LogManager.GetLogger(nameof(InstallViewModel)).Warn(ex.ExceptionToMessage(), ex); }
                     }
                 }
-                await (_page?.DispatcherQueue.EnqueueAsync(() => { IsInitialized = true; }));
+                IsInitialized = true;
             }
 
             async Task CreateAPKS(IReadOnlyList<IStorageItem> items)
             {
+                await ThreadSwitcher.ResumeBackgroundAsync();
                 List<string> apks = new();
                 foreach (IStorageItem item in items)
                 {
@@ -1931,7 +1977,7 @@ namespace APKInstaller.ViewModels
                     }
                 }
 
-                await (_page?.DispatcherQueue.EnqueueAsync(() => { IsInitialized = true; }));
+                IsInitialized = true;
             }
         }
 

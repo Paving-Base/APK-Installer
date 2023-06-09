@@ -1,6 +1,8 @@
 ﻿ITaskbarList4
 TaskbarList
 
+IInitializeWithWindow
+
 HTCAPTION
 
 WA_ACTIVE

@@ -12,6 +12,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
 using Windows.ApplicationModel.Resources;
@@ -173,14 +174,21 @@ namespace APKInstaller.ViewModels.SettingsPages
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private void RaisePropertyChangedEvent([System.Runtime.CompilerServices.CallerMemberName] string name = null)
+        private async void RaisePropertyChangedEvent([CallerMemberName] string name = null)
         {
-            if (name != null) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
+            if (name != null)
+            {
+                if (_page?.DispatcherQueue.HasThreadAccess == false)
+                {
+                    await _page.DispatcherQueue.ResumeForegroundAsync();
+                }
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+            }
         }
 
         public PairDeviceViewModel(PairDevicePage Page) => _page = Page;
 
-        public void InitializeConnectListener()
+        public async void InitializeConnectListener()
         {
             if (!SettingsHelper.Get<bool>(SettingsHelper.ScanPairedDevice))
             {
@@ -196,7 +204,7 @@ namespace APKInstaller.ViewModels.SettingsPages
             if (AdbServer.Instance.GetStatus().IsRunning)
             {
                 MonitorHelper.Monitor.DeviceChanged += OnDeviceChanged;
-                ConnectedList = new AdbClient().GetDevices().Where(x => x.State == DeviceState.Online).ToList();
+                ConnectedList = (await new AdbClient().GetDevicesAsync()).Where(x => x.State == DeviceState.Online).ToList();
             }
         }
 
@@ -208,11 +216,11 @@ namespace APKInstaller.ViewModels.SettingsPages
             {
                 deviceData.ConnectingDevice = true;
                 IAdbServer ADBServer = AdbServer.Instance;
-                if (!ADBServer.GetStatus().IsRunning)
+                if (!(await ADBServer.GetStatusAsync(CancellationToken.None)).IsRunning)
                 {
                     try
                     {
-                        _ = await Task.Run(() => ADBServer.StartServer(ADBPath, restartServerIfNewer: false));
+                        await ADBServer.StartServerAsync(ADBPath, restartServerIfNewer: false, CancellationToken.None);
                         MonitorHelper.Monitor.DeviceChanged += OnDeviceChanged;
                     }
                     catch (Exception ex)
@@ -289,11 +297,11 @@ namespace APKInstaller.ViewModels.SettingsPages
             {
                 ConnectingDevice = true;
                 IAdbServer ADBServer = AdbServer.Instance;
-                if (!ADBServer.GetStatus().IsRunning)
+                if (!(await ADBServer.GetStatusAsync(CancellationToken.None)).IsRunning)
                 {
                     try
                     {
-                        _ = await Task.Run(() => ADBServer.StartServer(ADBPath, restartServerIfNewer: false));
+                        await ADBServer.StartServerAsync(ADBPath, restartServerIfNewer: false, CancellationToken.None);
                         MonitorHelper.Monitor.DeviceChanged += OnDeviceChanged;
                     }
                     catch (Exception ex)
@@ -370,11 +378,11 @@ namespace APKInstaller.ViewModels.SettingsPages
             {
                 ConnectingDevice = true;
                 IAdbServer ADBServer = AdbServer.Instance;
-                if (!ADBServer.GetStatus().IsRunning)
+                if (!(await ADBServer.GetStatusAsync(CancellationToken.None)).IsRunning)
                 {
                     try
                     {
-                        _ = await Task.Run(() => ADBServer.StartServer(ADBPath, restartServerIfNewer: false));
+                        await ADBServer.StartServerAsync(ADBPath, restartServerIfNewer: false, CancellationToken.None);
                         MonitorHelper.Monitor.DeviceChanged += OnDeviceChanged;
                     }
                     catch (Exception ex)
@@ -434,54 +442,45 @@ namespace APKInstaller.ViewModels.SettingsPages
             ConnectListener.ServiceFound -= OnServiceFound;
         }
 
-        private void OnServiceFound(object sender, IZeroconfHost e)
+        private async void OnServiceFound(object sender, IZeroconfHost e)
         {
-            _ = _page.DispatcherQueue.EnqueueAsync(async () =>
+            MDNSDeviceData deviceData = new(e);
+            if (e.DisplayName == ssid)
             {
-                MDNSDeviceData deviceData = new(e);
-                if (e.DisplayName == ssid)
-                {
-                    ConnectListener.ServiceFound -= OnServiceFound;
-                    ConnectingDevice = true;
-                    await ConnectWithPairingCode(deviceData, password);
-                    ConnectingDevice = false;
-                    _page.HideQRScanFlyout();
-                }
-            });
+                ConnectListener.ServiceFound -= OnServiceFound;
+                ConnectingDevice = true;
+                await ConnectWithPairingCode(deviceData, password);
+                ConnectingDevice = false;
+                _page.HideQRScanFlyout();
+            }
         }
 
         private void ConnectListener_ServiceFound(object sender, IZeroconfHost e)
         {
-            _ = _page.DispatcherQueue.EnqueueAsync(() =>
+            bool add = true;
+            MDNSDeviceData deviceData = new(e);
+            foreach (MDNSDeviceData data in DeviceList)
             {
-                bool add = true;
-                MDNSDeviceData deviceData = new(e);
-                foreach (MDNSDeviceData data in DeviceList)
+                if (data.Address == deviceData.Address)
                 {
-                    if (data.Address == deviceData.Address)
-                    {
-                        _ = DeviceList.Remove(data);
-                    }
+                    _ = _page.DispatcherQueue.EnqueueAsync(() => DeviceList.Remove(data));
                 }
-                if (add) { DeviceList.Add(deviceData); }
-            });
+            }
+            if (add) { _page.DispatcherQueue.EnqueueAsync(() => DeviceList.Add(deviceData)); }
         }
 
         private void ConnectListener_ServiceLost(object sender, IZeroconfHost e)
         {
-            _ = _page.DispatcherQueue.EnqueueAsync(() =>
+            foreach (MDNSDeviceData data in DeviceList)
             {
-                foreach (MDNSDeviceData data in DeviceList)
+                if (data.Name == e.DisplayName)
                 {
-                    if (data.Name == e.DisplayName)
-                    {
-                        _ = DeviceList.Remove(data);
-                    }
+                    _ = _page.DispatcherQueue.EnqueueAsync(() => DeviceList.Remove(data));
                 }
-            });
+            }
         }
 
-        public void OnDeviceChanged(object sender, DeviceDataEventArgs e) => _ = (_page?.DispatcherQueue.EnqueueAsync(() => ConnectedList = new AdbClient().GetDevices().Where(x => x.State == DeviceState.Online).ToList()));
+        public async void OnDeviceChanged(object sender, DeviceDataEventArgs e) => ConnectedList = (await new AdbClient().GetDevicesAsync()).Where(x => x.State == DeviceState.Online).ToList();
 
         public void Dispose()
         {
@@ -489,7 +488,7 @@ namespace APKInstaller.ViewModels.SettingsPages
             GC.SuppressFinalize(this);
         }
 
-        protected virtual void Dispose(bool disposing)
+        protected virtual async void Dispose(bool disposing)
         {
             if (disposing)
             {
@@ -500,7 +499,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                     ConnectListener.Dispose();
                 }
                 DeviceList.Clear();
-                if (AdbServer.Instance.GetStatus().IsRunning)
+                if ((await AdbServer.Instance.GetStatusAsync(CancellationToken.None)).IsRunning)
                 {
                     MonitorHelper.Monitor.DeviceChanged -= OnDeviceChanged;
                 }

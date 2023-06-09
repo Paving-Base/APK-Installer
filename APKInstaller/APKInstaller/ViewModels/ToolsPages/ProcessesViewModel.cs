@@ -67,7 +67,7 @@ namespace APKInstaller.ViewModels.ToolsPages
             {
                 ProgressHelper.SetState(ProgressState.Indeterminate, true);
                 _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.ShowProgressRing));
-                devices = new AdbClient().GetDevices().Where(x => x.State == DeviceState.Online).ToList();
+                devices = (await new AdbClient().GetDevicesAsync()).Where(x => x.State == DeviceState.Online).ToList();
                 await _page?.DispatcherQueue.EnqueueAsync(DeviceList.Clear);
                 if (devices.Count > 0)
                 {
@@ -121,7 +121,7 @@ namespace APKInstaller.ViewModels.ToolsPages
                 _ = (_page?.DispatcherQueue.EnqueueAsync(() => TitleBar.IsRefreshButtonVisible = false));
                 AdbClient client = new();
                 DeviceData device = await _page?.DispatcherQueue.EnqueueAsync(() => { return devices[DeviceComboBox.SelectedIndex]; });
-                IEnumerable<AndroidProcess> list = DeviceExtensions.ListProcesses(client, device);
+                IEnumerable<AndroidProcess> list = await client.ListProcessesAsync(device);
                 await _page?.DispatcherQueue.EnqueueAsync(() => Processes = list);
                 _ = (_page?.DispatcherQueue.EnqueueAsync(() => TitleBar.IsRefreshButtonVisible = true));
                 _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.HideProgressRing));

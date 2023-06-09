@@ -2,7 +2,6 @@
 using APKInstaller.Helpers;
 using APKInstaller.Models;
 using APKInstaller.Pages.SettingsPages;
-using CommunityToolkit.WinUI;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.Windows.AppLifecycle;
@@ -12,12 +11,16 @@ using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Threading;
 using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Resources;
 using Windows.Storage;
 using Windows.Storage.Pickers;
 using Windows.Win32;
+using Windows.Win32.Foundation;
+using Windows.Win32.UI.Shell;
 using WinRT;
 
 namespace APKInstaller.ViewModels.SettingsPages
@@ -407,9 +410,16 @@ namespace APKInstaller.ViewModels.SettingsPages
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private void RaisePropertyChangedEvent([System.Runtime.CompilerServices.CallerMemberName] string name = null)
+        private async void RaisePropertyChangedEvent([CallerMemberName] string name = null)
         {
-            if (name != null) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
+            if (name != null)
+            {
+                if (_page?.DispatcherQueue.HasThreadAccess == false)
+                {
+                    await _page.DispatcherQueue.ResumeForegroundAsync();
+                }
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+            }
         }
 
         public string VersionTextBlockText
@@ -451,7 +461,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                         version = info.Version.ToString(3);
                     }
                 }
-                _ = _page?.DispatcherQueue.EnqueueAsync(() => ADBVersion = version);
+                ADBVersion = version;
             });
         }
 
@@ -465,7 +475,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                 if (file != null)
                 {
                     string markdown = await FileIO.ReadTextAsync(file);
-                    _ = _page?.DispatcherQueue.EnqueueAsync(() => AboutTextBlockText = markdown);
+                    AboutTextBlockText = markdown;
                 }
             });
         }
@@ -476,7 +486,7 @@ namespace APKInstaller.ViewModels.SettingsPages
             Caches = this;
         }
 
-        public void OnDeviceChanged(object sender, DeviceDataEventArgs e) => _ = (_page?.DispatcherQueue.EnqueueAsync(() => DeviceList = new AdbClient().GetDevices().Where(x => x.State == DeviceState.Online)));
+        public void OnDeviceChanged(object sender, DeviceDataEventArgs e) => DeviceList = new AdbClient().GetDevices().Where(x => x.State == DeviceState.Online);
 
         public async void CheckUpdate()
         {
@@ -536,11 +546,11 @@ namespace APKInstaller.ViewModels.SettingsPages
         {
             ConnectingDevice = true;
             IAdbServer ADBServer = AdbServer.Instance;
-            if (!ADBServer.GetStatus().IsRunning)
+            if (!(await ADBServer.GetStatusAsync(CancellationToken.None)).IsRunning)
             {
                 try
                 {
-                    _ = await Task.Run(() => ADBServer.StartServer(ADBPath, restartServerIfNewer: false));
+                    await ADBServer.StartServerAsync(ADBPath, restartServerIfNewer: false, CancellationToken.None);
                     MonitorHelper.Monitor.DeviceChanged += OnDeviceChanged;
                 }
                 catch (Exception ex)
@@ -589,11 +599,11 @@ namespace APKInstaller.ViewModels.SettingsPages
         {
             PairingDevice = true;
             IAdbServer ADBServer = AdbServer.Instance;
-            if (!ADBServer.GetStatus().IsRunning)
+            if (!(await ADBServer.GetStatusAsync(CancellationToken.None)).IsRunning)
             {
                 try
                 {
-                    _ = await Task.Run(() => ADBServer.StartServer(ADBPath, restartServerIfNewer: false));
+                    await ADBServer.StartServerAsync(ADBPath, restartServerIfNewer: false, CancellationToken.None);
                     MonitorHelper.Monitor.DeviceChanged += OnDeviceChanged;
                 }
                 catch (Exception ex)
@@ -648,7 +658,7 @@ namespace APKInstaller.ViewModels.SettingsPages
             if (Window.Current == null)
             {
                 IInitializeWithWindow initializeWithWindowWrapper = FileOpen.As<IInitializeWithWindow>();
-                IntPtr hwnd = PInvoke.GetActiveWindow();
+                HWND hwnd = PInvoke.GetActiveWindow();
                 initializeWithWindowWrapper.Initialize(hwnd);
             }
 

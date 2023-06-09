@@ -98,7 +98,7 @@ namespace APKInstaller.ViewModels.ToolsPages
             {
                 ProgressHelper.SetState(ProgressState.Indeterminate, true);
                 _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.ShowProgressRing));
-                devices = new AdbClient().GetDevices().Where(x => x.State == DeviceState.Online).ToList();
+                devices = (await new AdbClient().GetDevicesAsync()).Where(x => x.State == DeviceState.Online).ToList();
                 await _page?.DispatcherQueue.EnqueueAsync(DeviceList.Clear);
                 if (devices.Count > 0)
                 {
@@ -159,7 +159,7 @@ namespace APKInstaller.ViewModels.ToolsPages
                     if (!string.IsNullOrEmpty(app.Key))
                     {
                         ConsoleOutputReceiver receiver = new();
-                        client.ExecuteRemoteCommand($"pidof {app.Key}", devices[index], receiver);
+                        await client.ExecuteRemoteCommandAsync($"pidof {app.Key}", devices[index], receiver);
                         bool isactive = !string.IsNullOrEmpty(receiver.ToString());
                         if (PackageInfos.ContainsKey(app.Key))
                         {
@@ -171,7 +171,7 @@ namespace APKInstaller.ViewModels.ToolsPages
                                 Icon = source,
                                 PackageName = app.Key,
                                 IsActive = isactive,
-                                VersionInfo = manager.GetVersionInfo(app.Key),
+                                VersionInfo = await manager.GetVersionInfoAsync(app.Key),
                             });
                         }
                         else
@@ -182,7 +182,7 @@ namespace APKInstaller.ViewModels.ToolsPages
                                 Name = app.Key,
                                 Icon = source,
                                 IsActive = isactive,
-                                VersionInfo = manager.GetVersionInfo(app.Key),
+                                VersionInfo = await manager.GetVersionInfoAsync(app.Key),
                             });
                         }
                     }
@@ -200,7 +200,7 @@ namespace APKInstaller.ViewModels.ToolsPages
                 _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.ShowProgressRing));
                 AdbClient client = new();
                 int index = await _page?.DispatcherQueue.EnqueueAsync(() => { return DeviceComboBox.SelectedIndex; });
-                PackageManager manager = new(new AdbClient(), devices[index]);
+                PackageManager manager = new(client, devices[index]);
                 List<APKInfo> list = await CheckAPP(manager.Packages, index);
                 await _page?.DispatcherQueue.EnqueueAsync(() => Applications = list);
                 _ = (_page?.DispatcherQueue.EnqueueAsync(() => TitleBar.IsRefreshButtonVisible = true));
