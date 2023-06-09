@@ -118,31 +118,31 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="APKDescription" xml:space="preserve">
-    <value>Android 應用程式包</value>
+    <value>Android 應用程式套件</value>
   </data>
   <data name="APKFile" xml:space="preserve">
     <value>APK 檔案</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>一個 Android 應用安裝器。作者：@wherewhere 和 @Tangent-90。</value>
+    <value>一個 Android 應用程式安裝程式。作者為 @wherewhere 和 @Tangent-90。</value>
   </data>
   <data name="AppName" xml:space="preserve">
     <value>APK 安裝程式</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
-    <value>程式出現了錯誤……</value>
+    <value>程式發生錯誤…</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>網路出現了一些問題……</value>
+    <value>網路出現了一些問題…</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>否</value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
-    <value>安裝此軟體包</value>
+    <value>安裝此套件</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>Split APK 文件</value>
+    <value>分割 APK 檔案</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>是</value>

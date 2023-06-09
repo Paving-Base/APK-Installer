@@ -265,7 +265,7 @@
     <value>Pair and connect devices.</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
-    <value>Pair &amp; Connect</value>
+    <value>Párovat a připojit</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Tmavý</value>
@@ -337,7 +337,7 @@
     <value>Translate</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
-    <value>Version</value>
+    <value>Verze</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
     <value>Up To Date</value>

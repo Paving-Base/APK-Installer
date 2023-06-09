@@ -154,22 +154,22 @@
     <value>Svuota Cache</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
+    <value>ADB Server dev'essere riavviato alla prossima installazione, se viene interrrotto.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Terminate ADB when Exit Installer?</value>
+    <value>Interrompere ADB all'Uscita dall'Installatore?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Exit Installer after installation is complete.</value>
+    <value>Esci dall'Installatore al completamento dell'installazione.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Exit Installer when APP is Ready?</value>
+    <value>Uscire dall'Installatore quando l'APP è Pronta?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Configurazioni</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value>Connetti il dispositivo attraverso la rete.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Connetti Dispositivo</value>
@@ -178,7 +178,7 @@
     <value>Contattami</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
+    <value>Seguimi sulle app social per gli ultimi sviluppi. Se trovi qualsiasi bug, sei pregato di segnalarmelo tramite PM. Farò del mio meglio per risolverlo. Se hai un profilo Telegram, sentiti libero di conversare su Paving Base Group 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Contenuto</value>
@@ -193,7 +193,7 @@
     <value>Supportaci</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
+    <value>APK Installer è un'applicazione open source che non aggiunge alcun annuncio per profitto. Se quest'app ti piace, non dimenticarti di valutarla nello store. Ovviamente, sarebbe fantastico se potessi donare. Grazie per il tuo supporto.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>ELUA</value>
@@ -235,7 +235,7 @@
     <value>Registri</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
+    <value>Una versione modificata potrebbe risultare in spiacevoli sorprese. Quali annunci, funzionalità corrotte o persino virus. Sei pregato di andare al Microsoft Store per scaricare la versione originale. Sei pregato di consultare la nostra Repository di GitHub per ulteriori informazioni.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>Stai utilizzando una versione modificata!</value>
@@ -256,7 +256,7 @@
     <value>Altri</value>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
-    <value>Pair device through network.</value>
+    <value>Associa dispositivo tramite rete.</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
     <value>Accoppia Dispositivo</value>
@@ -310,19 +310,19 @@
     <value>Mostra gli aiuti disponibili quando nessun dispositivo è collegato.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Whether to Show Helps?</value>
+    <value>Mostrare gli Aiuti?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Display announcements at the top of Settings.</value>
+    <value>Mostra annunci in cima alle Impostazioni.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Whether to Show Announcements?</value>
+    <value>Mostrare Annunci?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>Potrebbe generare dei file temporanei, quando si verificano delle interruzioni impreviste.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Whether to Show Installation Progress?</value>
+    <value>Mostrare l'Avanzamento dell'Installazione?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Tema Applicazione</value>

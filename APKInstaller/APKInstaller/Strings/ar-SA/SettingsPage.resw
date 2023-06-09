@@ -163,13 +163,13 @@
     <value>Exit Installer after installation is complete.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Exit Installer when APP is Ready?</value>
+    <value>هل إغلاق المثبت عندما يكون التطبيق جاهزاً؟</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>التهيئة</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value>ربط الجهاز على الشبكة.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>توصيل الجهاز</value>
@@ -178,7 +178,7 @@
     <value>الاتصال بي</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
+    <value>تابعني على التطبيقات الاجتماعية لأحدث التطورات. إذا وجدت أي خطأ، يرجى إبلاغي بذلك في الرسائل الخاصة. سأحاول أفضل ما في وسعي لحل المشكلة. إذا كان لديك حساب تيليجرام، مرحبا بك في الدردشة في مجموعة القاعدة المطلية 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>المحتوى</value>
@@ -193,7 +193,7 @@
     <value>الدعم</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
+    <value>مثبت APK هو تطبيق مفتوح المصدر، ولن يتم إدخال أي إعلانات للربح. إذا أعجبك هذا التطبيق، لا تنسى تقييمه في المتجر. بالطبع، سيكون من الأفضل أن تتبرع قليلاً. شكرًا على دعمك.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
@@ -235,7 +235,7 @@
     <value>سجلات</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
+    <value>نسخة معدلة قد تكون بعض الأشياء غير سارة. مثل الإعلانات، المميزات المكسورة أو حتى الفيروسات. يرجى الذهاب إلى متجر مايكروسوفت لتحميل الإصدار الأصلي. يرجى الاطلاع على مستودع GitHub الخاص بنا للحصول على مزيد من المعلومات.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>أنت تستخدم نسخة معدلة!</value>
@@ -244,7 +244,7 @@
     <value>تعطيله للاتصال بجهاز آخر.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>For WSA only?</value>
+    <value>ل WSA فقط؟</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>بنية نظام التشغيل</value>
@@ -256,16 +256,16 @@
     <value>أخرى</value>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
-    <value>Pair device through network.</value>
+    <value>ربط الجهاز على الشبكة.</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>Pair Device</value>
+    <value>جهاز اقتران</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
-    <value>Pair and connect devices.</value>
+    <value>الاقتران بين الأجهزة وتوصيلها.</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
-    <value>Pair &amp; Connect</value>
+    <value>الإقران و الاتصال</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>مظلم</value>
@@ -298,10 +298,10 @@
     <value>هل أنت متحقِّق من أنك تريد إعادة ضبط التطبيق؟</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value>Scan and auto connect paired devices.</value>
+    <value>ومسح وتوصيل تلقائي بالأجهزة المقترنة</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Scan Paired Devices?</value>
+    <value>مسح الأجهزة المقترنة</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>اختار جهاز</value>
@@ -310,19 +310,20 @@
     <value>إظهار المساعدين عند عدم توصيل أي جهاز.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Whether to Show Helps?</value>
+    <value>هل تريد طلب مساعدة؟</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Display announcements at the top of Settings.</value>
+    <value>عرض الإعلانات في الجزء العلوي من الإعدادات.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Whether to Show Announcements?</value>
+    <value>هل تريد إظهار الإعلانات؟
+</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>قد تترك ملفات مؤقته عند حدوث انقطاع غير متوقع.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Whether to Show Installation Progress?</value>
+    <value>هل تريد إظهار عملية التثبيت؟</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>مظهر التطبيق</value>

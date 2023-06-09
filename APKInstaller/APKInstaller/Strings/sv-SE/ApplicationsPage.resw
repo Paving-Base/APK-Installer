@@ -121,10 +121,10 @@
     <value>Waiting for Device...</value>
   </data>
   <data name="Start.Text" xml:space="preserve">
-    <value>Start</value>
+    <value>Bygg</value>
   </data>
   <data name="Stop.Text" xml:space="preserve">
-    <value>Stop</value>
+    <value>Stanna</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Applications</value>

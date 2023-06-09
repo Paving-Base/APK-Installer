@@ -127,7 +127,7 @@
     <value>ADB está faltando</value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>In Analysis...</value>
+    <value>Em Análise...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
     <value>Arquivo APK</value>
@@ -180,6 +180,9 @@ Capacidades:</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Copiar</value>
+  </data>
+  <data name="CreateSession" xml:space="preserve">
+    <value>Creating install session...</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Dispositivos</value>
@@ -252,10 +255,6 @@ Capacidades:</value>
   </data>
   <data name="Installing" xml:space="preserve">
     <value>Instalando...</value>
-  </data>
-  <data name="InstallingPercent" xml:space="preserve">
-    <value>Instalando {0}...</value>
-    <comment>{0} - Progress.</comment>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
     <value>Reação:</value>
@@ -330,6 +329,10 @@ Capacidades:</value>
     <value>Nome do Pacote</value>
     <comment>{0} - Package Name.</comment>
   </data>
+  <data name="PostInstallFormat" xml:space="preserve">
+    <value>Cleaning cache ({0}/{1})...</value>
+    <comment>{0} - Finnished count. {1} - Total count.</comment>
+  </data>
   <data name="Reinstall" xml:space="preserve">
     <value>Reinstalar</value>
   </data>
@@ -367,7 +370,7 @@ Capacidades:</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
     <value>Descompactando {0}/{1}...</value>
-    <comment>{0} - Have done num. {1} - All num.</comment>
+    <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Update" xml:space="preserve">
     <value>Atualização</value>
@@ -375,6 +378,10 @@ Capacidades:</value>
   <data name="UpdateFormat" xml:space="preserve">
     <value>Atualizar {0}?</value>
     <comment>{0} - AppName.</comment>
+  </data>
+  <data name="UploadingFormat" xml:space="preserve">
+    <value>Uploading {0} ({1}/{2})...</value>
+    <comment>{0} - Progress. {1} - Finnished count. {2} - Total count.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
     <value>Código da Versão</value>
@@ -400,6 +407,10 @@ Isto pode levar muito tempo. Sente-se e relaxe.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Bem vindo(a)!</value>
+  </data>
+  <data name="WriteSessionFormat" xml:space="preserve">
+    <value>Writing install session ({0}/{1})...</value>
+    <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>DSU está em execução</value>

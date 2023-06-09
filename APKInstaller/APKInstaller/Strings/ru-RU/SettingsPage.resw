@@ -202,7 +202,7 @@
     <value>Оставьте отзыв</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
-    <value>Найти обновление</value>
+    <value>Найти обновления</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
     <value>Информация о компонентах этого приложения.</value>

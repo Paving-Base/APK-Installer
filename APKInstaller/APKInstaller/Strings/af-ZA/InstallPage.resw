@@ -184,6 +184,9 @@
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Kopieer</value>
   </data>
+  <data name="CreateSession" xml:space="preserve">
+    <value>Creating install session...</value>
+  </data>
   <data name="Devices" xml:space="preserve">
     <value>Toestelle</value>
   </data>
@@ -194,137 +197,132 @@
     <value>Aflaai het misluk</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>Please check your network connection or the URL and try again.</value>
+    <value>Gaan asseblief u netwerkverbinding of die URL na en probeer weer.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>Finding WSA...</value>
+    <value>Vind WSA...</value>
   </data>
   <data name="Finished" xml:space="preserve">
-    <value>Finished</value>
+    <value>Afgehandel</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>WSA Found</value>
+    <value>WSA gevind</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>Go to Setting</value>
+    <value>Gaan na instellings</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>A newer version is already installed</value>
+    <value>'N nuwer weergawe is alreeds geïnstalleer</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>You already have installed a new version {0} of this app. Are you sure to reinstall version {1}?</value>
+    <value>U het alreeds 'n nuwe weergawe {0} van hierdie toep geïnstalleer. Is u seker dat u weergawe {1} weer wil installeer?</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>How to connect WSA</value>
+    <value>Hoe om WSA aan te sluit</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Please make sure APK Installer has been updated to the latest version
-2. Make sure you have the Android Subsystem installed and running
-3. Turn on developer mode and make sure the IP address is displayed successfully
-4. Reopen APK Installer and continue your installation
-
-[Learn More]({0})</value>
+    <value>1. Maak asseblief seker dat APK Installer opgedateer is na die nuutste weergawe
+2. Maak seker dat u die Android-substelsel geïnstalleer het en lopende
+3. Skakel ontwikkelaarmodus aan en maak seker dat die IP-adres suksesvol vertoon word
+4. Heropen APK Installer en gaan voort met u installasie</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
-    <value>Icon</value>
+    <value>Ikoon</value>
   </data>
   <data name="IKnow" xml:space="preserve">
-    <value>I Know</value>
+    <value>Ek weet</value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
-    <value>Incompatible App</value>
+    <value>Onversoenbare toepassing</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
-    <value>The minimum required for this app is {0}. Your device supports {1}. Please update your device or choose order package.</value>
+    <value>Die minimum wat vir hierdie toepassing benodig word, is {0}. U toestel ondersteun {1}. Dateer asseblief u toestel op of kies bestelpakket.</value>
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
-    <value>Infos</value>
+    <value>Inligting</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>Install</value>
+    <value>Installeer</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
-    <value>{0} is ready!</value>
+    <value>{0} is gereed!</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
-    <value>Install {0}?</value>
+    <value>Installeer {0}?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
-    <value>Installing...</value>
-  </data>
-  <data name="InstallingPercent" xml:space="preserve">
-    <value>Installing {0}...</value>
-    <comment>{0} - Progress.</comment>
+    <value>Installeer...</value>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
-    <value>Reason: </value>
+    <value>Rede: </value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
-    <value>Install WSA</value>
+    <value>Installeer WSA</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
-    <value>The package is either corrupted or invalid.</value>
+    <value>Die pakket is óf korrup óf ongeldig.</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
-    <value>The URL is either Incomplete or invalid.</value>
+    <value>Die URL is hetsy onvolledig óf ongeldig.</value>
   </data>
   <data name="Launch" xml:space="preserve">
-    <value>Launch</value>
+    <value>Bekendstelling</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
-    <value>Launching WSA...</value>
+    <value>Die bekendstelling van WSA...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>Launch when ready</value>
+    <value>Begin wanneer gereed </value>
   </data>
   <data name="Loading" xml:space="preserve">
-    <value>Loading...</value>
+    <value>Laai tans...</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
-    <value>More Info</value>
+    <value>Meer Inligting</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
-    <value>Cannot find Android Device</value>
+    <value>Kan nie Android-toestel vind nie</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>How to connect device</value>
+    <value>Hoe om  toestel aan te sluit</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>If you want to install app into Windows Subsystem for Android™, you need to install it first. If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
+    <value>As u die toepassing in die Windows-substelsel vir Android™ wil installeer, moet u dit eers installeer. As u op ander toestelle wil installeer, gaan asseblief na Instellingsbladsy, skakel "Is Net vir WSA" af en koppel jou toestel.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>#### Using USB
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open USB Debug
-3. Go to the Settings Page of APK Installer, select your device
-4. Go back, resume installation
-#### Using Wifi
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open Remote Debug
-3. Remember the IP address of your device
-4. Go to the Settings Page of APK Installer, connect and select your device
-5. Go back, resume installation
-
-[Learn More]({0})</value>
+    <value>#### Gebruik USB 
+1. Maak asseblief seker dat APK Instaleerder opgedateer is na [die nuutste weergawe](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Instaleerder") 
+2. Skakel ontwikkelaarmodus aan, maak USB-afstand-ontfouting oop. 
+3. Onthou die IP addres van u toestel 
+4. Gaan na die Instellingsbladsy van APK-installeerder, koppel en kies u toestel 
+5. Gaan terug, hervat installasie 
+#### Gebruik van  Wifi
+1. Maak asseblief seker dat APK Instaleerder opgedateer is na [die nuutste weergawe](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Instaleerder")
+2. Skakel ontwikkelaarmodus aan, maak afstand-ontfouting oop
+3. Onthou die IP-adres van u toestel
+4. Gaan na die Instellingsbladsy van APK-installeerder, koppel en kies u toestel
+5. Gaan terug, hervat installasie
+</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
-    <value>Cannot connect Internet</value>
+    <value>Kan nie internet koppel nie</value>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
-    <value>Please connect to the internet before opening the app.</value>
+    <value>Koppel asseblief aan die internet voordat u die toep oopmaak.
+</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>For proper functioning of the app, try to launch an Android app package.</value>
+    <value>Vir die behoorlike funksionering van die toep, probeer om 'n Android-toepassingspakket te begin.</value>
   </data>
   <data name="OK" xml:space="preserve">
-    <value>OK</value>
+    <value>Aanvaarbaar </value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
-    <value>Online Package</value>
+    <value>Aanlyn pakket</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
     <value>Pakket naam</value>
@@ -333,8 +331,12 @@
     <value>Package Name: {0}</value>
     <comment>{0} - Package Name.</comment>
   </data>
+  <data name="PostInstallFormat" xml:space="preserve">
+    <value>Cleaning cache ({0}/{1})...</value>
+    <comment>{0} - Finnished count. {1} - Total count.</comment>
+  </data>
   <data name="Reinstall" xml:space="preserve">
-    <value>Reinstall</value>
+    <value>Installeer</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
     <value>{0} is already installed</value>
@@ -370,7 +372,7 @@
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
     <value>Unzipping {0}/{1} ...</value>
-    <comment>{0} - Have done num. {1} - All num.</comment>
+    <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Update" xml:space="preserve">
     <value>Update</value>
@@ -378,6 +380,10 @@
   <data name="UpdateFormat" xml:space="preserve">
     <value>Update {0}?</value>
     <comment>{0} - AppName.</comment>
+  </data>
+  <data name="UploadingFormat" xml:space="preserve">
+    <value>Uploading {0} ({1}/{2})...</value>
+    <comment>{0} - Progress. {1} - Finnished count. {2} - Total count.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
     <value>Version Code</value>
@@ -402,6 +408,10 @@ This may take long time. Sit back and relax.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Welcome!</value>
+  </data>
+  <data name="WriteSessionFormat" xml:space="preserve">
+    <value>Writing install session ({0}/{1})...</value>
+    <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA is Running</value>

@@ -121,7 +121,7 @@
     <value>Nom de l'application</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
-    <value>Renseignements de base</value>
+    <value>Informations de base</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
     <value>Dépendances - {0} au total</value>
@@ -131,44 +131,44 @@
     <value>Caractéristiques - {0} au total</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
-    <value>Languages</value>
+    <value>Langues</value>
   </data>
   <data name="MinSDK.Text" xml:space="preserve">
-    <value>Min SDK</value>
+    <value>SDK minimum</value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
-    <value>Open Package Folder</value>
+    <value>Ouvrir le dossier des paquets</value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
     <value>Nom du paquet</value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
-    <value>Package Size</value>
+    <value>Taille de paquet</value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
-    <value>Permissions Count</value>
+    <value>Nombre d'autorisations</value>
   </data>
   <data name="PermissionsHeaderFormat" xml:space="preserve">
     <value>Permissions - {0} au total</value>
     <comment>{0} - Permissions Count.</comment>
   </data>
   <data name="SharePackage.Content" xml:space="preserve">
-    <value>Forfait de partage</value>
+    <value>Partager le paquet</value>
   </data>
   <data name="SupportedArchitectures.Text" xml:space="preserve">
-    <value>Support Architectures</value>
+    <value>Architectures supportées</value>
   </data>
   <data name="SupportResolutions.Text" xml:space="preserve">
     <value>Résolutions de support </value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
-    <value>Prise en charge des tailles d'écran</value>
+    <value>Taille d'écran prise en charge</value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
-    <value>Kit de développement logiciel SDK cible</value>
+    <value>Kit de développement logiciel (SDK) cible</value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
-    <value>{0} Au propos</value>
+    <value>À propos de {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Version.Text" xml:space="preserve">

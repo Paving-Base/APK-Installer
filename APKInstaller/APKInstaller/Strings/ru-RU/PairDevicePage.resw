@@ -124,7 +124,7 @@
     <value>Подключить</value>
   </data>
   <data name="ConnectedListFormat" xml:space="preserve">
-    <value>Подключено устройств: {0}</value>
+    <value>Подключено устройств: {1</value>
   </data>
   <data name="ConnectedLogText" xml:space="preserve">
     <value>Подключено успешно.</value>

@@ -118,17 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppName.Text" xml:space="preserve">
-    <value>應用名稱</value>
+    <value>應用程式名稱</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
     <value>基本資訊</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
-    <value>依賴 - 共 {0} 個</value>
+    <value>相依性 - 總計 {0} 個</value>
     <comment>{0} - Dependencies Count.</comment>
   </data>
   <data name="FeaturesHeaderFormat" xml:space="preserve">
-    <value>特性 - 共 {0} 個</value>
+    <value>功能 - 總計 {0} 個</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
     <value>語言</value>
@@ -137,19 +137,19 @@
     <value>最低 SDK</value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
-    <value>打開套件資料夾</value>
+    <value>開啟套件資料夾</value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
-    <value>套裝名稱</value>
+    <value>套件名稱</value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
-    <value>安裝包大小</value>
+    <value>套件大小</value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
-    <value>權限數量</value>
+    <value>權限計數</value>
   </data>
   <data name="PermissionsHeaderFormat" xml:space="preserve">
-    <value>權限 - 共 {0} 個</value>
+    <value>權限 - 總計 {0} 個</value>
     <comment>{0} - Permissions Count.</comment>
   </data>
   <data name="SharePackage.Content" xml:space="preserve">
@@ -162,7 +162,7 @@
     <value>支援的解析度</value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
-    <value>支援螢幕大小</value>
+    <value>支援的螢幕大小</value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
     <value>目標 SDK</value>

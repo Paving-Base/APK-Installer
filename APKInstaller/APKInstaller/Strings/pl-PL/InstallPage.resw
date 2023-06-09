@@ -180,6 +180,9 @@
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Kopiuj</value>
   </data>
+  <data name="CreateSession" xml:space="preserve">
+    <value>Creating install session...</value>
+  </data>
   <data name="Devices" xml:space="preserve">
     <value>Urządzenia</value>
   </data>
@@ -251,10 +254,6 @@
   </data>
   <data name="Installing" xml:space="preserve">
     <value>Instalowanie...</value>
-  </data>
-  <data name="InstallingPercent" xml:space="preserve">
-    <value>Installing {0}...</value>
-    <comment>{0} - Progress.</comment>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
     <value>Powód: </value>
@@ -329,6 +328,10 @@
     <value>Nazwa pakietu: {0}</value>
     <comment>{0} - Package Name.</comment>
   </data>
+  <data name="PostInstallFormat" xml:space="preserve">
+    <value>Cleaning cache ({0}/{1})...</value>
+    <comment>{0} - Finnished count. {1} - Total count.</comment>
+  </data>
   <data name="Reinstall" xml:space="preserve">
     <value>Reinstalacja</value>
   </data>
@@ -347,7 +350,7 @@
     <value>Wybierz</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>Share</value>
+    <value>Udostępnij</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
     <value>Uruchamianie serwera ADB...</value>
@@ -366,7 +369,7 @@
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
     <value>Wypakowywanie {0}/{1} ...</value>
-    <comment>{0} - Have done num. {1} - All num.</comment>
+    <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Update" xml:space="preserve">
     <value>Aktualizacja</value>
@@ -374,6 +377,10 @@
   <data name="UpdateFormat" xml:space="preserve">
     <value>Zaktualizować {0}?</value>
     <comment>{0} - AppName.</comment>
+  </data>
+  <data name="UploadingFormat" xml:space="preserve">
+    <value>Uploading {0} ({1}/{2})...</value>
+    <comment>{0} - Progress. {1} - Finnished count. {2} - Total count.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
     <value>Kod wersji</value>
@@ -397,7 +404,11 @@
 Może to zająć dużo czasu. Usiądź i zrelaksuj się.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome!</value>
+    <value>Witaj!</value>
+  </data>
+  <data name="WriteSessionFormat" xml:space="preserve">
+    <value>Writing install session ({0}/{1})...</value>
+    <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA jest uruchomiona</value>

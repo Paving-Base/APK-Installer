@@ -118,95 +118,99 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB، جسر تصحيح أخطاء أندرويد، مطلوب لتثبيت APK للعمل. انقر فوق "تنزيل" لتحميله. من خلال التنزيل، أنت تقبل شروط وأحكام Google لـ ADB. إذا كنت قد قمت بتنزيل ADB بالفعل، انقر فوق "إختار" لتحديد ذلك.</value>
+    <value>ADB ، جسر تصحيح أخطاء أندرويد ، مطلوب لتثبيت APK للعمل. انقر فوق "تنزيل" لتحميله. من  خلال التنزيل، أنت تقبل شروط وأحكام Google لـ ADB. إذا كنت قد قمت  بتنزيل ADB بالفعل ، انقر فوق "إختار" لتحديد ذلك.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB موجودة</value>
+    <value>ADB  موجودة</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>ADB مفقود</value>
+    <value>ADB  مفقود</value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>In Analysis...</value>
+    <value>في  التحليل...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>ملفات APK</value>
+    <value>ملفات  APK</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>القدرات:</value>
+    <value>القدرات :</value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>اسماء التطبيق</value>
+    <value>اسماء التطبيقات</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>إلغاء</value>
+    <value>إلغاء الأمر</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
-    <value>  تأكيد</value>
+    <value>  تأكيد </value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
-    <value>لا</value>
+    <value>كلا</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>لا يمكن الاتصال بالمضيف</value>
+    <value>لا يمكن الاتصال بالWSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>وقد لا تبدأ إدارة شؤون المرأة على نحو سليم، أو قد تكون هناك مشكلة مع مصرف التنمية الآسيوي. الرجاء إعادة تشغيل المثبت. إذا كان لا يزال لا يعمل، حاول إعادة تشغيل الكمبيوتر.</value>
+    <value>إما أن وكالة WSA لم تبدأ بشكل صحيح ،أو  أن هناك مشكلة مع  أل ADB.قد يكون من الصعب إيجاد حل لهذه المشكلة.من فضلك إعادة تشغيل المثبت. إذا كان لا يزال ل لا يعمل، حاول إعادة تشغيل الكومبيوتر.
+</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>لا يمكن فتح حزمة التطبيقات</value>
+    <value>لا يمكن فتح حزمة التطبيق</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>جارٍ التحقق...</value>
+    <value>جارٍ البحث...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>التحقق من ADB...</value>
+    <value>التحقق  من ADB...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>التحقق من Adb...</value>
+    <value>التحقق من المسار...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>قم بالنقر هنا من أجل التسجيل</value>
+    <value>قم بالنقر هنا لقراءتهم</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>إغلاق</value>
+    <value>إقفال</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>هل تريد بالتأكيد إلغاء التثبيت؟</value>
+    <value>هل تريد بالتأكيد إلغاء عمليةالتثبيت؟</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Connecting Paired Devices...</value>
+    <value>جاري  توصيل الأجهزة المقترنة...</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
-    <value>Copy</value>
+    <value>نسخ</value>
+  </data>
+  <data name="CreateSession" xml:space="preserve">
+    <value>Creating install session...</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>الأجهزة</value>
+    <value>أجهزة</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>تحميل</value>
+    <value>تنزيل</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>فشل التنزيل</value>
+    <value>فشل التحميل</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>الاتصال بالإنترنت غير متوفر.
-حاول مرة أخرى لاحقاً.</value>
+    <value>الرجاء التحقق من اتصالك بالشبكة أو أل URL
+حاول  الاتصال مرة أخرى .</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>العثور على WSA...</value>
+    <value>العثور  على WSA...</value>
   </data>
   <data name="Finished" xml:space="preserve">
-    <value>انتهت</value>
+    <value>انتهت العملية</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>تم العثور على WSA</value>
+    <value>تم العثور  على WSA</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>اذهب للإعدادات</value>
+    <value>اذهب  للإعدادات</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>تم تثبيت نسخة أحدث بالفعل</value>
+    <value>تم تثبيت نسخة حديثة</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
     <value>لقد قمت بالفعل بتثبيت إصدار جديد {0} من هذا التطبيق. هل أنت متأكد من إعادة تثبيت الإصدار {1}؟</value>
@@ -252,10 +256,6 @@
   </data>
   <data name="Installing" xml:space="preserve">
     <value>جاري التثبيت... </value>
-  </data>
-  <data name="InstallingPercent" xml:space="preserve">
-    <value>جاري التثبيت... </value>
-    <comment>{0} - Progress.</comment>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
     <value>السبب:</value>
@@ -330,6 +330,10 @@
     <value>اسم الحزمة   </value>
     <comment>{0} - Package Name.</comment>
   </data>
+  <data name="PostInstallFormat" xml:space="preserve">
+    <value>Cleaning cache ({0}/{1})...</value>
+    <comment>{0} - Finnished count. {1} - Total count.</comment>
+  </data>
   <data name="Reinstall" xml:space="preserve">
     <value>إعادة التثبيت</value>
   </data>
@@ -367,7 +371,7 @@
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
     <value>فك ضغط {0}/{1}...</value>
-    <comment>{0} - Have done num. {1} - All num.</comment>
+    <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Update" xml:space="preserve">
     <value>تحديث</value>
@@ -375,6 +379,10 @@
   <data name="UpdateFormat" xml:space="preserve">
     <value>تحديث{0}؟</value>
     <comment>{0} - AppName.</comment>
+  </data>
+  <data name="UploadingFormat" xml:space="preserve">
+    <value>Uploading {0} ({1}/{2})...</value>
+    <comment>{0} - Progress. {1} - Finnished count. {2} - Total count.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
     <value>إصدار التعليمات البرمجية</value>
@@ -399,6 +407,10 @@
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>مرحبا!</value>
+  </data>
+  <data name="WriteSessionFormat" xml:space="preserve">
+    <value>Writing install session ({0}/{1})...</value>
+    <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>تعمل وكالة WSA</value>

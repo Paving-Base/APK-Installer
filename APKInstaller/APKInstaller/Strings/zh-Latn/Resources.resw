@@ -121,7 +121,7 @@
     <value>Android yìngyòng ānzhuāngbāo</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>APK wénjiàn</value>
+    <value>APK 文件</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>Yígè Android yìngyòng ānzhuāng qì. Zuòzhě: @wherewhere hé @Tangent-90.</value>

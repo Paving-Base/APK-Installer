@@ -118,231 +118,231 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
-    <value>About</value>
+    <value>Σχετικά με</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>ADB Path</value>
+    <value>Διαδρομή ADB</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>ADB Version</value>
+    <value>Έκδοση ADB</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>Auto download when package is from URL.</value>
+    <value>Αυτόματη λήψη όταν το πακέτο είναι από URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Auto Download Online Packages?</value>
+    <value>Αυτόματη Λήψη Online Πακέτων;</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>Select Backdrop Type for Windows 11</value>
+    <value>Επιλέξτε τύπο φόντου για τα Windows 11</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>Backdrop</value>
+    <value>Φόντο</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
-    <value>Change</value>
+    <value>Αλλαγή</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>Check Failed</value>
+    <value>Ο Έλεγχος Απέτυχε</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>Checking For Updates...</value>
+    <value>Έλεγχος Για Ενημερώσεις...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
-    <value>Check For Updates</value>
+    <value>Έλεγχος Για Ενημερώσεις</value>
   </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
-    <value>Clear cache</value>
+    <value>Εκκαθάριση προσωρινής μνήμης</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
+    <value>Ο ADB Server πρέπει να επανεκκινηθεί στην επόμενη εγκατάσταση αν τον τερματίσετε.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Terminate ADB when Exit Installer?</value>
+    <value>Τερματισμός ADB κατά την έξοδο από τον εγκαταστάτη;</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Exit Installer after installation is complete.</value>
+    <value>Έξοδος εγκαταστάτη μετά την ολοκλήρωση της εγκατάστασης.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Exit Installer when APP is Ready?</value>
+    <value>Έξοδος από τον εγκαταστάτη όταν το APP είναι έτοιμο;</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
-    <value>Configs</value>
+    <value>Ρυθμίσεις</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value>Σύνδεση συσκευής μέσω δικτύου.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
-    <value>Connect Device</value>
+    <value>Σύνδεση Συσκευής</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
-    <value>Contact Me</value>
+    <value>Επικοινωνήστε Μαζί Μου</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
+    <value>Ακολουθήστε με στις κοινωνικές εφαρμογές για τις τελευταίες εξελίξεις. Αν βρείτε τυχόν σφάλματα, παρακαλώ να τα αναφέρετε σε μένα από την PM. Αν έχετε λογαριασμό Telegram, μη διστάσετε να συνομιλήσετε στο Paving Base Group 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
-    <value>Content</value>
+    <value>Περιεχόμενο</value>
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
-    <value>Device</value>
+    <value>Συσκευή</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
-    <value>Display</value>
+    <value>Οθόνη</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
-    <value>Supports</value>
+    <value>Υποστηρίζεται</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
+    <value>Ο APK Installer είναι μια εφαρμογή ανοιχτού κώδικα που δεν προσθέτει διαφημίσεις για κέρδος. Αν σας αρέσει αυτή η εφαρμογή, μην ξεχάσετε να την αξιολογήσετε στο κατάστημα. Φυσικά, θα ήταν μεγάλη αν μπορούσατε να δωρίσετε λίγο. Σας ευχαριστώ για την υποστήριξή σας.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
-    <value>Feedback</value>
+    <value>Σχόλια</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
-    <value>Find Update</value>
+    <value>Εύρεση Ενημερώσεων</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>Information about the frameworks of this app.</value>
+    <value>Πληροφορίες για τα πλαίσια αυτής της εφαρμογής.</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
-    <value>Framework Information</value>
+    <value>Πληροφορίες Πλαισίου</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
     <value>Framework</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>Go to the page of test.</value>
+    <value>Πηγαίνετε στη σελίδα του τεστ.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>Go to TestPage</value>
+    <value>Μετάβαση στη δοκιμαστική σελίδα</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
-    <value>Go to Update</value>
+    <value>Μετάβαση στην ενημέρωση</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
-    <value>Join Our Chat</value>
+    <value>Γίνετε Μέλος Της Συνομιλίας Μας</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Last Checked: </value>
+    <value>Τελευταίος Ελέγχου: </value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
-    <value>Learn More</value>
+    <value>Μάθετε Περισσότερα</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
-    <value>Logs</value>
+    <value>Καταγραφή</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
+    <value>Μια τροποποιημένη έκδοση μπορεί να είναι κάποια δυσάρεστα πράγματα. Όπως διαφημίσεις, σπασμένα χαρακτηριστικά ή ακόμη και ιούς. Μεταβείτε στο Microsoft Store για να κατεβάσετε την αρχική έκδοση. Παρακαλώ δείτε το GitHub Repository για περισσότερες πληροφορίες.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>You are using a modified version!</value>
+    <value>Χρησιμοποιείτε μια τροποποιημένη έκδοση!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Disable it to connect to other devices.</value>
+    <value>Απενεργοποιήστε το για να συνδεθείτε σε άλλες συσκευές.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>For WSA only?</value>
+    <value>Μόνο για WSA;</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>OS Architecture</value>
+    <value>Αρχιτεκτονική Λειτουργικού Συστήματος</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
-    <value>OS Platform</value>
+    <value>Πλατφόρμα Λειτουργικού Συστήματος</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
-    <value>Others</value>
+    <value>Άλλα</value>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
-    <value>Pair device through network.</value>
+    <value>Σύζευξη της συσκευής μέσω δικτύου.</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>Pair Device</value>
+    <value>Συσκευή Ζεύγους</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
-    <value>Pair and connect devices.</value>
+    <value>Σύζευξη και σύνδεση συσκευών.</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
-    <value>Pair &amp; Connect</value>
+    <value>Σύζευξη &amp; Σύνδεση</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>Dark</value>
+    <value>Σκούρο</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>Windows Default</value>
+    <value>Προεπιλογή Windows</value>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
-    <value>Light</value>
+    <value>Ανοιχτό</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value>Rate On Store</value>
+    <value>Αξιολόγηση Στο Κατάστημα</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
-    <value>Release notes</value>
+    <value>Σημειώσεις έκδοσης</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
-    <value>Reset settings of this application.</value>
+    <value>Επαναφορά ρυθμίσεων αυτής της εφαρμογής.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
-    <value>Reset application</value>
+    <value>Επαναφορά εφαρμογής</value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
-    <value>Reset</value>
+    <value>Επαναφορά</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
-    <value>Yes</value>
+    <value>Ναι</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
-    <value>Are you sure you want to reset the app?</value>
+    <value>Είστε βέβαιοι ότι θέλετε να επαναφέρετε την εφαρμογή;</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value>Scan and auto connect paired devices.</value>
+    <value>Ανίχνευση και αυτόματη σύνδεση συζευγμένων συσκευών.</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Scan Paired Devices?</value>
+    <value>Σάρωση Συζευγμένων Συσκευών;</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
-    <value>Select Device</value>
+    <value>Επιλογή Συσκευής</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
-    <value>Show helpers when no device is connected.</value>
+    <value>Εμφάνιση βοηθών όταν δεν υπάρχει συνδεδεμένη συσκευή.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Whether to Show Helps?</value>
+    <value>Αν θα εμφανίζονται οι βοήθειες;</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Display announcements at the top of Settings.</value>
+    <value>Εμφάνιση ανακοινώσεων στην κορυφή των Ρυθμίσεων.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Whether to Show Announcements?</value>
+    <value>Αν θα εμφανίζονται οι Ανακοινώσεις;</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
-    <value>It may leave temp files when an unexpected interruption occurs.</value>
+    <value>Μπορεί να αφήσει προσωρινά αρχεία όταν συμβεί μια απρόσμενη διακοπή.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Whether to Show Installation Progress?</value>
+    <value>Αν θα εμφανιστεί η Εξέλιξη Εγκατάστασης;</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
-    <value>App Theme</value>
+    <value>Θέμα Εφαρμογής</value>
   </data>
   <data name="ThemesSettingsHeader.Header" xml:space="preserve">
-    <value>Themes</value>
+    <value>Θέματα</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Settings</value>
+    <value>Ρυθμίσεις</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>Translate</value>
+    <value>Μετάφραση</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
-    <value>Version</value>
+    <value>Έκδοση</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Up To Date</value>
+    <value>Ενημερωμένο</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Windows Color Settings</value>
+    <value>Ρυθμίσεις Χρώματος Των Windows</value>
   </data>
 </root>

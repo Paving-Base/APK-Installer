@@ -145,7 +145,7 @@
     <value>Conectando los dispositivos manualmente</value>
   </data>
   <data name="ManualPairTextBlock.Text" xml:space="preserve">
-    <value>Conexión manual</value>
+    <value>Conexión Manual</value>
   </data>
   <data name="PairCodeBox.Header" xml:space="preserve">
     <value>Código de emparejamiento WLAN</value>

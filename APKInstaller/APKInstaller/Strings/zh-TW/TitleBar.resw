@@ -124,6 +124,6 @@
     <value>返回</value>
   </data>
   <data name="RefreshButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>刷新</value>
+    <value>重新整理</value>
   </data>
 </root>

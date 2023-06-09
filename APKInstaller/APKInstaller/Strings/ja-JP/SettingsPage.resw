@@ -127,7 +127,7 @@
     <value>ADBのバージョン</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>パッケージがURLからの場合、自動的にダウンロードします。</value>
+    <value>URLで指定された場合、自動的にパッケージをダウンロードする</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
     <value>自動でオンラインパッケージをダウンロードする</value>
@@ -154,13 +154,13 @@
     <value>キャッシュを削除</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>ADBサーバーを終了した場合、次回のインストール時にADBサーバーを再起動する必要があります。</value>
+    <value>このオプションを有効にした場合、次回の起動時にADBを起動する必要があります</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
     <value>インストーラを閉じるとADBを終了する</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>インストール後にAPKインストーラを閉じます。</value>
+    <value>インストール完了後、自動的にインストーラーを閉じる</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
     <value>アプリの準備ができたらインストーラを終了する</value>
@@ -169,10 +169,10 @@
     <value>設定</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>ネットワークでデバイスを接続します。</value>
+    <value>デバイスのIPアドレスとポートを入力</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
-    <value>端末と接続</value>
+    <value>ワイヤレスで接続</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
     <value>問い合わせ</value>
@@ -205,7 +205,7 @@
     <value>更新を検索</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>このアプリケーションのフレームワークに関する情報。</value>
+    <value>このアプリケーションのフレームワークに関する詳細情報</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
     <value>フレームワーク情報</value>
@@ -214,7 +214,7 @@
     <value>フレームワーク</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>テストページに移動します。</value>
+    <value>開発ページに移動する</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
     <value>テストページへ移動</value>
@@ -241,10 +241,10 @@
     <value>変更されたバージョンを使用しています！</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>他の端末に接続するには無効にしてください。</value>
+    <value>他のデバイスにインストールするには、このオプションを無効化します</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>WSAのみ</value>
+    <value>WSAのみにインストールする</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>アーキテクチャ</value>
@@ -256,16 +256,16 @@
     <value>その他</value>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
-    <value>ネットワークでデバイスをペアリングする。</value>
+    <value>デバイスのペアリングキーを入力</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>デバイスのペアリング</value>
+    <value>ペアリングキー</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
-    <value>デバイスをペアリングして接続。</value>
+    <value>さらに多くのデバイスとペアリング</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
-    <value>ペアリングと接続</value>
+    <value>ペアリング設定</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>ダーク</value>
@@ -295,13 +295,13 @@
     <value>はい</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
-    <value>データをリセットしてもよろしいですか。</value>
+    <value>アプリをリセットします。よろしいですか？</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value>ペアリングされたデバイスをスキャンして自動的に接続します。</value>
+    <value>自動的にペアリングされたデバイスに接続</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>ペアリングされたデバイススキャンする</value>
+    <value>自動接続</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>端末を選択</value>
@@ -313,7 +313,7 @@
     <value>ヘルプの表示</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>設定の上部にお知らせを表示します。</value>
+    <value>設定の上部にお知らせを表示</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
     <value>お知らせを表示する</value>

@@ -1,8 +1,8 @@
-#### Willkommen zum Chamilo-Installer
+#### Willkommen zum APK Installationsprogramm!
 
 ##### Erklärungen
 1. Bitte halten Sie sich an die [APK Installer Endbenutzer-Lizenzvereinbarung und Datenschutzerklärung](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. This program is open source software, so please make sure the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) to ensure your data security.
+2. Dieses Programm ist Open Source Software, stelle also sicher, dass das Programm von [dieser Git-Repository](https://github.com/Paving-Base/APK-Installer) oder [dieser Anwendung](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) stammt, um deine Datensicherheit zu gewährleisten.
 3. Wenn die Quelle des Programms nicht abnorm ist, werden Ihre Daten ausschließlich für die Ausführung des Programms verwendet oder lokal während der Ausführung gespeichert, und der Entwickler wird keine Ihrer Daten stehlen. Achten Sie aber trotzdem auf die Sicherheit der Nutzungsumgebung.
 4. Die Übersetzung dieser Anwendung stammt von der [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") Community und alle Texte repräsentieren nicht die Ansichten des Autors.
 

@@ -262,7 +262,7 @@
     <value>Emparelhar dispositivo</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
-    <value>Pair and connect devices.</value>
+    <value>Parear e conectar dispositivos.</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
     <value>Parear e conectar</value>
@@ -298,10 +298,10 @@
     <value>Tem certeza que deseja redefinir o aplicativo?</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value>Scan and auto connect paired devices.</value>
+    <value>Procurar e conectar automaticamente dispositivos pareados.</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Scan Paired Devices?</value>
+    <value>Escanear Dispositivos Pareados?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Selecione dispositivos</value>

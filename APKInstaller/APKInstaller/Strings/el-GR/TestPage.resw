@@ -118,72 +118,72 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AndroidTestSettingsHeader.Header" xml:space="preserve">
-    <value>Android Test</value>
+    <value>Δοκιμή Android</value>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
-    <value>Manage the applications of connected devices</value>
+    <value>Διαχείριση των εφαρμογών των συνδεδεμένων συσκευών</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
-    <value>Applications</value>
+    <value>Εφαρμογές</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
-    <value>Enter or Exit Compact Overlay</value>
+    <value>Εισαγωγή ή Έξοδος από Συμπαγή Επικάλυψη</value>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
-    <value>Compact Overlay</value>
+    <value>Συμπαγής Επικάλυψη</value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
-    <value>A development version app may not stable. Download release version on Microsoft Store.</value>
+    <value>Μια εφαρμογή για προγραμματιστές ενδέχεται να μην είναι σταθερή. Κατεβάστε την έκδοση στο Microsoft Store.</value>
   </data>
   <data name="DevelopmentInfoBar.Title" xml:space="preserve">
-    <value>You are using a development version app.</value>
+    <value>Χρησιμοποιείτε μια εφαρμογή έκδοσης για προγραμματιστές.</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
-    <value>Enter Compact Overlay</value>
+    <value>Εισαγωγή Συμπαγούς Επικάλυψης</value>
   </data>
   <data name="LanguageSettings.Description" xml:space="preserve">
-    <value>Select language and restart to change language</value>
+    <value>Επιλέξτε γλώσσα και κάντε επανεκκίνηση για να αλλάξετε τη γλώσσα</value>
   </data>
   <data name="LanguageSettings.Header" xml:space="preserve">
     <value>Γλώσσα</value>
   </data>
   <data name="OutPIP.Content" xml:space="preserve">
-    <value>Exit</value>
+    <value>Έξοδος</value>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
-    <value>Manage the processes of connected devices</value>
+    <value>Διαχείριση των διαδικασιών των συνδεδεμένων συσκευών</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
-    <value>Processes</value>
+    <value>Διεργασίες</value>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
-    <value>Test Progress Ring on the Title Bar</value>
+    <value>Δοκιμή κλήσης προόδου στη γραμμή τίτλου</value>
   </data>
   <data name="ProgressSettings.Header" xml:space="preserve">
-    <value>Progress</value>
+    <value>Πρόοδος</value>
   </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
-    <value>Set the value of Progress Ring</value>
+    <value>Ορίστε την τιμή του δακτυλίου προόδου</value>
   </data>
   <data name="SetProgressValue.Header" xml:space="preserve">
-    <value>Progress Value</value>
+    <value>Αξία Προόδου</value>
   </data>
   <data name="ShowRefreshButton.Description" xml:space="preserve">
-    <value>Show Refresh Button on the Title Bar</value>
+    <value>Εμφάνιση κουμπιού Ανανέωσης στη γραμμή τίτλου</value>
   </data>
   <data name="ShowRefreshButton.Header" xml:space="preserve">
-    <value>Refresh Button</value>
+    <value>Κουμπί Ανανέωσης</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Testing</value>
+    <value>Δοκιμές</value>
   </data>
   <data name="TitleBarSettings.Description" xml:space="preserve">
-    <value>Extends Content Into TitleBar</value>
+    <value>Επέκταση Περιεχομένου Σε Γραμμή Τίτλου</value>
   </data>
   <data name="TitleBarSettings.Header" xml:space="preserve">
-    <value>Title Bar</value>
+    <value>Γραμμή Τίτλου</value>
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
-    <value>UI Test</value>
+    <value>Δοκιμή UI</value>
   </data>
 </root>

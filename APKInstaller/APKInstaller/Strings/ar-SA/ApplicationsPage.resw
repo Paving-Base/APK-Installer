@@ -118,18 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
-    <value>بانتظار الجهاز...</value>
+    <value>في انتظار للجهاز
+</value>
   </data>
   <data name="Start.Text" xml:space="preserve">
-    <value>إبدأ</value>
+    <value>ابدأ</value>
   </data>
   <data name="Stop.Text" xml:space="preserve">
-    <value>توقف</value>
+    <value>التوقف</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>التطبيقات</value>
+    <value>التطبيقات او الطلبات</value>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
-    <value>ملكة اموضة</value>
+    <value>إلغاء التثبيت</value>
   </data>
 </root>

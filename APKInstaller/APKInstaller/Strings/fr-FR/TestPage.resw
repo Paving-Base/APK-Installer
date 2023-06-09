@@ -118,67 +118,67 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AndroidTestSettingsHeader.Header" xml:space="preserve">
-    <value>Android Test</value>
+    <value>Test d'Android</value>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
-    <value>Manage the applications of connected devices</value>
+    <value>Gérer les applications des appareils connectés</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>Applications</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
-    <value>Enter or Exit Compact Overlay</value>
+    <value>Activer ou désactiver le mode Picture-In-Picture</value>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
-    <value>Compact Overlay</value>
+    <value>Picture-In-Picture</value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
-    <value>A development version app may not stable. Download release version on Microsoft Store.</value>
+    <value>Une application en version de développement peut ne pas être stable. Téléchargez la version stable sur le Microsoft Store.</value>
   </data>
   <data name="DevelopmentInfoBar.Title" xml:space="preserve">
-    <value>You are using a development version app.</value>
+    <value>Vous utilisez une version de développement de l'application.</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
-    <value>Enter Compact Overlay</value>
+    <value>Activer le mode Picture-In-Picture</value>
   </data>
   <data name="LanguageSettings.Description" xml:space="preserve">
-    <value>Select language and restart to change language</value>
+    <value>Sélectionner la langue et redémarrer l'appli pour changer de langue</value>
   </data>
   <data name="LanguageSettings.Header" xml:space="preserve">
-    <value>Language</value>
+    <value>Langue</value>
   </data>
   <data name="OutPIP.Content" xml:space="preserve">
     <value>Exit</value>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
-    <value>Manage the processes of connected devices</value>
+    <value>Gérer les processus des appareils connectés</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
-    <value>Processes</value>
+    <value>Processus</value>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
-    <value>Test Progress Ring on the Title Bar</value>
+    <value>Testez l'Anneau de progression sur la barre de titre</value>
   </data>
   <data name="ProgressSettings.Header" xml:space="preserve">
-    <value>Progress</value>
+    <value>Progression</value>
   </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
-    <value>Set the value of Progress Ring</value>
+    <value>Définissez la valeur de l'Anneau de progression</value>
   </data>
   <data name="SetProgressValue.Header" xml:space="preserve">
-    <value>Progress Value</value>
+    <value>Valeur de la progression</value>
   </data>
   <data name="ShowRefreshButton.Description" xml:space="preserve">
-    <value>Show Refresh Button on the Title Bar</value>
+    <value>Afficher le bouton Actualiser dans la barre de titre</value>
   </data>
   <data name="ShowRefreshButton.Header" xml:space="preserve">
-    <value>Refresh Button</value>
+    <value>Bouton Actualiser</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Testing</value>
+    <value>Test en cours</value>
   </data>
   <data name="TitleBarSettings.Description" xml:space="preserve">
-    <value>Extends Content Into TitleBar</value>
+    <value>Étendre le contenu dans la barre de titre</value>
   </data>
   <data name="TitleBarSettings.Header" xml:space="preserve">
     <value>Title Bar</value>

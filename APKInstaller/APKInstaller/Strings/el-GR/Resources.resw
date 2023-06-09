@@ -124,27 +124,27 @@
     <value>Αρχείο APK</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>An Android App Installer. Written by @wherewhere and @Tangent-90.</value>
+    <value>Ένας Android App Installer. Γράφτηκε από @wherewhere και @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
     <value>Πρόγραμμα Εγκατάστασης APK</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
-    <value>There was an error with the program…</value>
+    <value>Παρουσιάστηκε σφάλμα με το πρόγραμμα…</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>There are some problems with the network...</value>
+    <value>Υπάρχουν κάποια προβλήματα με το δίκτυο...</value>
   </data>
   <data name="No" xml:space="preserve">
-    <value>No</value>
+    <value>Όχι</value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
-    <value>Install this Package</value>
+    <value>Εγκατάσταση αυτού του πακέτου</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>Split APK File</value>
+    <value>Διαχωρισμός Αρχείου APK</value>
   </data>
   <data name="Yes" xml:space="preserve">
-    <value>Yes</value>
+    <value>Ναι</value>
   </data>
 </root>

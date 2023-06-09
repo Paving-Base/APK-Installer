@@ -127,7 +127,7 @@
     <value>Connessi {0} dispositivi</value>
   </data>
   <data name="ConnectedLogText" xml:space="preserve">
-    <value>Connecting successfully.</value>
+    <value>Connessione riuscita.</value>
   </data>
   <data name="ConnectingLogText" xml:space="preserve">
     <value>Collegamento con successo. Connessione, per favore non chiudere la finestra.</value>

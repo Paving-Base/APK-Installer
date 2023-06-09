@@ -121,40 +121,40 @@
     <value>Android 測試</value>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
-    <value>管理已連接設備的應用程式</value>
+    <value>管理已連線裝置的應用程式</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>應用程式</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
-    <value>進入或退出畫中畫模式</value>
+    <value>進入或離開精簡重迭模式</value>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
-    <value>畫中畫模式</value>
+    <value>精簡重迭</value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
-    <value>開發版應用可能會不穩定。 請前往 Microsoft Store 下載發佈版本。</value>
+    <value>開發版應用程式可能會不穩定，請前往 Microsoft 市集下載發行版本。</value>
   </data>
   <data name="DevelopmentInfoBar.Title" xml:space="preserve">
-    <value>您正在使用開發版應用。</value>
+    <value>您正在使用開發版應用程式。</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
-    <value>進入畫中畫模式</value>
+    <value>進入精簡重迭模式</value>
   </data>
   <data name="LanguageSettings.Description" xml:space="preserve">
-    <value>選擇語言並重啟應用來更改語言</value>
+    <value>選取語言並重新啟動應用程式以套用變更</value>
   </data>
   <data name="LanguageSettings.Header" xml:space="preserve">
     <value>語言</value>
   </data>
   <data name="OutPIP.Content" xml:space="preserve">
-    <value>退出</value>
+    <value>離開</value>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
-    <value>管理已連接設備的進程</value>
+    <value>管理已連線裝置的處理程序</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
-    <value>進程</value>
+    <value>處理程序</value>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
     <value>測試標題列上的進度環</value>
@@ -163,27 +163,27 @@
     <value>進度</value>
   </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
-    <value>設置進度環的值</value>
+    <value>設定進度環的值</value>
   </data>
   <data name="SetProgressValue.Header" xml:space="preserve">
     <value>進度值</value>
   </data>
   <data name="ShowRefreshButton.Description" xml:space="preserve">
-    <value>顯示標題列上的刷新按鈕</value>
+    <value>顯示標題列上的重新整理按鈕</value>
   </data>
   <data name="ShowRefreshButton.Header" xml:space="preserve">
-    <value>刷新按鈕</value>
+    <value>重新整理按鈕</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>測試</value>
   </data>
   <data name="TitleBarSettings.Description" xml:space="preserve">
-    <value>將內容擴展到標題列</value>
+    <value>將內容擴充至標題列</value>
   </data>
   <data name="TitleBarSettings.Header" xml:space="preserve">
     <value>標題列</value>
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
-    <value>介面測試</value>
+    <value>UI 測試</value>
   </data>
 </root>

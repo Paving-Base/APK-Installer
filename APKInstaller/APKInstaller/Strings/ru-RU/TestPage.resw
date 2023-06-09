@@ -127,7 +127,7 @@
     <value>Приложения</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
-    <value>Включить или выключить компактное отображение</value>
+    <value>Включить компактное отображение</value>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
     <value>Компактное отображение</value>

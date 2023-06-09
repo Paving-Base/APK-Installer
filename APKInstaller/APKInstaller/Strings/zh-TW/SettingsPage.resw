@@ -127,25 +127,25 @@
     <value>ADB 版本</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>當安裝包來自 URL 連結時自動下載。</value>
+    <value>在套件來自 URL 連結時自動下載。</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>是否自動下載在線安裝包？</value>
+    <value>是否自動下載線上套件？</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>選擇適用於 Windows 11 的背景色類型</value>
+    <value>選取適用於 Windows 11 的底圖類型</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>背景色</value>
+    <value>底圖</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
-    <value>更改</value>
+    <value>變更</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
     <value>檢查失敗</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>正在檢查更新……</value>
+    <value>正在檢查更新…</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
     <value>檢查更新</value>
@@ -154,64 +154,64 @@
     <value>清除快取</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>如果您終止 ADB 伺服器，需要在下次安裝時重啟。</value>
+    <value>如果您終止 ADB 服務，需要在下次安裝時重新啟動。</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>離開安裝程式時終止 ADB ？</value>
+    <value>離開安裝程式時終止 ADB？</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>安裝完成後退出安裝程式。</value>
+    <value>安裝完成後離開安裝程式。</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>當應用程式準備就緒後是否關閉安裝程式？</value>
+    <value>應用程式就緒時離開安裝程式？</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
-    <value>配置</value>
+    <value>組態</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>通過網路連接設備。</value>
+    <value>透過網路連線至裝置。</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
-    <value>連接設備</value>
+    <value>連線至裝置</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
-    <value>與我聯繫</value>
+    <value>與我聯絡</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>在社交軟體上關注我來獲取最新地開發動向。 如果你發現了什麼 Bug，請通過私信告訴我。 我會盡最大可能來解決這些問題。 如果你有電報賬號，歡迎來鋪路根據地群組聊天😊！</value>
+    <value>在社交軟體上跟隨我以取得最新開發動向。 如果你發現了什麼錯誤，請透過私訊告訴我。我會盡最大可能來解決這些問題。如果你有 Telegram 帳戶，歡迎來鋪路根據地群組聊天😊！</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>內容</value>
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
-    <value>設備</value>
+    <value>裝置</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
     <value>顯示</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
-    <value>支持</value>
+    <value>支援</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK 安裝程式是一個開源軟體，它不會內置任何廣告來盈利。 如果你喜歡這個應用，不要忘了在商店裡打上好評哦，當然如果可以捐贈一點點就更好了。 感謝大家的支援💕！</value>
+    <value>APK 安裝程式是一個開放原始碼軟體，它不會加入任何廣告來盈利。如果你喜歡這個應用程式，不要忘了在商店裡打上好評哦，當然如果可以捐贈一點點就更好了。感謝大家的支持💕！</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
-    <value>用戶協定</value>
+    <value>使用者授權合約</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
-    <value>反饋</value>
+    <value>意見回饋</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
     <value>找到新的更新</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>關於此應用程式框架的資訊。</value>
+    <value>關於此應用程式架構的資訊。</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
-    <value>框架資訊</value>
+    <value>架構資訊</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
-    <value>框架</value>
+    <value>架構</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>前往用於測試的頁面。</value>
@@ -223,28 +223,28 @@
     <value>前往更新</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
-    <value>加入電報聊天</value>
+    <value>加入我們的聊天</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>上次檢查時間: </value>
+    <value>上次檢查: </value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
     <value>瞭解更多</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
-    <value>日誌</value>
+    <value>記錄</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>修改版可能會包含一些不好的東西，包括但不限於廣告、損壞的特性，甚至是病毒。 請前往 Microsoft Store 安裝原版。 請參閱我們的 Github 倉庫瞭解更多資訊。</value>
+    <value>修改版可能會包含一些不好的東西，包括但不限於廣告、損毀的特性，甚至是病毒。請前往 Microsoft 市集安裝原始版本。請參閱我們的 Github 存放庫以瞭解更多資訊。</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>您正在使用修改版！</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>關閉它以連接到其他設備。</value>
+    <value>停用它以連線至其他裝置。</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>是否僅用於 WSA ？</value>
+    <value>是否僅用於 WSA？</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>作業系統架構</value>
@@ -256,16 +256,16 @@
     <value>其他</value>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
-    <value>通過網路配對設備。</value>
+    <value>透過網路與裝置配對。</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>配對設備</value>
+    <value>配對裝置</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
-    <value>配對並連接設備。</value>
+    <value>配對並連線至裝置。</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
-    <value>配對與連接</value>
+    <value>配對與連線</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>深色</value>
@@ -277,55 +277,55 @@
     <value>淺色</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value>前往商店好評</value>
+    <value>前往市集評分</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
-    <value>發布說明</value>
+    <value>版本資訊</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
-    <value>重置此應用程式的設置。</value>
+    <value>重設此應用程式的設定。</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
-    <value>重置應用</value>
+    <value>重設應用程式</value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
-    <value>重置</value>
+    <value>重設</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
     <value>是</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
-    <value>你確定要重置應用嗎？</value>
+    <value>你確定要重設應用程式嗎？</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value>掃描並自動連接已配對的設備。</value>
+    <value>掃描並自動連線至已配對的裝置。</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>是否掃描已配對的設備？</value>
+    <value>掃描已配對的裝置？</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
-    <value>選擇設備</value>
+    <value>選取裝置</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
-    <value>當沒有連接到設備時顯示説明。</value>
+    <value>在未連線至裝置時顯示說明。</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
     <value>是否顯示説明？</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>在設置頂部顯示公告。</value>
+    <value>在設定頂部顯示宣告。</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>是否顯示公告？</value>
+    <value>是否顯示宣告？</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
-    <value>它可能會在發生意外中斷後留下臨時檔。</value>
+    <value>它可能會在發生意外中斷後留下暫存檔。</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
     <value>是否顯示安裝進度？</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
-    <value>應用主題</value>
+    <value>應用程式主題</value>
   </data>
   <data name="ThemesSettingsHeader.Header" xml:space="preserve">
     <value>主題</value>
@@ -343,6 +343,6 @@
     <value>最新</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Windows 顏色設定</value>
+    <value>Windows 色彩設定</value>
   </data>
 </root>

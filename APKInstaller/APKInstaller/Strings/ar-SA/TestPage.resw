@@ -121,7 +121,7 @@
     <value>اختبار أندرويد</value>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
-    <value>Manage the applications of connected devices</value>
+    <value>إدارة تطبيقات الأجهزة المتصلة.</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>التطبيقات</value>
@@ -151,7 +151,7 @@
     <value>خروج</value>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
-    <value>Manage the processes of connected devices</value>
+    <value>إدارة عمليات الأجهزة المتصلة.</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
     <value>العمليات</value>

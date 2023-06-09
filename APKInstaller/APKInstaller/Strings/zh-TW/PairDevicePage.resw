@@ -121,31 +121,31 @@
     <value>位址</value>
   </data>
   <data name="ConnectButton.Content" xml:space="preserve">
-    <value>連接</value>
+    <value>連線</value>
   </data>
   <data name="ConnectedListFormat" xml:space="preserve">
-    <value>已連接 {0} 個設備</value>
+    <value>已連線至 {0} 部裝置</value>
   </data>
   <data name="ConnectedLogText" xml:space="preserve">
-    <value>連接成功。</value>
+    <value>連線成功。</value>
   </data>
   <data name="ConnectingLogText" xml:space="preserve">
-    <value>配對成功，正在連接，請不要關閉視窗。</value>
+    <value>配對成功，正在連線，請不要關閉視窗。</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
-    <value>連接</value>
+    <value>連線</value>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
-    <value>已發現 {0} 個設備</value>
+    <value>已找到 {0} 部裝置</value>
   </data>
   <data name="IPAddressBox.Header" xml:space="preserve">
     <value>IP 位址</value>
   </data>
   <data name="ManualPairButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>手動連接設備</value>
+    <value>手動連線至裝置</value>
   </data>
   <data name="ManualPairTextBlock.Text" xml:space="preserve">
-    <value>手動連接</value>
+    <value>手動連線</value>
   </data>
   <data name="PairCodeBox.Header" xml:space="preserve">
     <value>WLAN 配對碼</value>
@@ -160,15 +160,15 @@
     <value>配對</value>
   </data>
   <data name="PortRun.Text" xml:space="preserve">
-    <value>埠</value>
+    <value>連接埠</value>
   </data>
   <data name="QRScanButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>用二維碼配對</value>
+    <value>使用 QR 圖碼配對</value>
   </data>
   <data name="QRScanTextBlock.Text" xml:space="preserve">
-    <value>掃描二維碼以配對設備。</value>
+    <value>掃描 QR 圖碼以配對裝置。</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>配對與連接</value>
+    <value>配對與連線</value>
   </data>
 </root>
