@@ -180,6 +180,9 @@
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>复制</value>
   </data>
+  <data name="CreateSession" xml:space="preserve">
+    <value>正在创建安装会话……</value>
+  </data>
   <data name="Devices" xml:space="preserve">
     <value>设备</value>
   </data>
@@ -251,10 +254,6 @@
   </data>
   <data name="Installing" xml:space="preserve">
     <value>正在安装……</value>
-  </data>
-  <data name="InstallingPercent" xml:space="preserve">
-    <value>正在安装 {0}……</value>
-    <comment>{0} - Progress.</comment>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
     <value>原因: </value>
@@ -329,6 +328,10 @@
     <value>包名称: {0}</value>
     <comment>{0} - Package Name.</comment>
   </data>
+  <data name="PostInstallFormat" xml:space="preserve">
+    <value>正在清理缓存 ({0}/{1})……</value>
+    <comment>{0} - Finnished count. {1} - Total count.</comment>
+  </data>
   <data name="Reinstall" xml:space="preserve">
     <value>重新安装</value>
   </data>
@@ -366,7 +369,7 @@
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
     <value>解压中 {0}/{1} ……</value>
-    <comment>{0} - Have done num. {1} - All num.</comment>
+    <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Update" xml:space="preserve">
     <value>更新</value>
@@ -374,6 +377,10 @@
   <data name="UpdateFormat" xml:space="preserve">
     <value>更新 {0}?</value>
     <comment>{0} - AppName.</comment>
+  </data>
+  <data name="UploadingFormat" xml:space="preserve">
+    <value>正在上传 {0} ({1}/{2})……</value>
+    <comment>{0} - Progress. {1} - Finnished count. {2} - Total count.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
     <value>版本代码</value>
@@ -398,6 +405,10 @@
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>欢迎！</value>
+  </data>
+  <data name="WriteSessionFormat" xml:space="preserve">
+    <value>Writing install session ({0}/{1})...</value>
+    <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">
     <value>WSA 正在运行</value>
