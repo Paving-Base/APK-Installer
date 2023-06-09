@@ -119,16 +119,16 @@
   </resheader>
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
     <value>في انتظار للجهاز
-k.k...</value>
+</value>
   </data>
   <data name="Start.Text" xml:space="preserve">
-    <value>Start</value>
+    <value>ابدأ</value>
   </data>
   <data name="Stop.Text" xml:space="preserve">
     <value>التوقف</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>التطبيق</value>
+    <value>التطبيقات او الطلبات</value>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
     <value>إلغاء التثبيت</value>
