@@ -130,13 +130,13 @@
     <value>Analysiert...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>APK-Datei</value>
+    <value>APK Datei</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>TV-Funktionen</value>
+    <value>Berechtigungen: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>merlin</value>
+    <value>App Name</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Abbrechen</value>
@@ -242,7 +242,7 @@
     <value>Informationen</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>studio</value>
+    <value>Installieren</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
     <value>{0} ist bereit!</value>
@@ -360,7 +360,7 @@
     <value>Starte WSA</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
-    <value>Shop Links</value>
+    <value>Store-Links</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
     <value>ADB wird entpackt...</value>
