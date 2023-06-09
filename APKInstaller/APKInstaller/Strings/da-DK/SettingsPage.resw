@@ -268,13 +268,13 @@
     <value>Pair &amp; Connect</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>Dark</value>
+    <value>Mørk</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
     <value>Windows Default</value>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
-    <value>Light</value>
+    <value>Lys</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
     <value>Rate On Store</value>
@@ -286,10 +286,10 @@
     <value>Reset settings of this application.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
-    <value>Reset application</value>
+    <value>Nulstil applikation</value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
-    <value>Reset</value>
+    <value>Nulstil</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
     <value>Ja</value>
@@ -331,10 +331,10 @@
     <value>Themes</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Settings</value>
+    <value>Indstillinger</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>Translate</value>
+    <value>Oversæt</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
     <value>Version</value>
