@@ -44,6 +44,7 @@ steps:
   inputs:
     packageType: sdk
     version: 6.0.x
+    includePreviewVersions: true
 
 - task: VSBuild@1
   displayName: 'Restore Solution'
@@ -51,7 +52,8 @@ steps:
     platform: 'x64'
     solution: '$(solution)'
     configuration: '$(buildConfiguration)'
-    msbuildArgs: '/t:restore'
+    msbuildArgs: '/t:restore
+                  /p:GITHUB_ACTIONS=true'
     msbuildArchitecture: 'x64'
     maximumCpuCount: true
 
@@ -61,7 +63,8 @@ steps:
     platform: 'x64'
     solution: '$(solution)'
     configuration: '$(buildConfiguration)'
-    msbuildArgs: '/p:AppxBundlePlatforms="$(buildPlatform)"
+    msbuildArgs: '/p:GITHUB_ACTIONS=true
+                  /p:AppxBundlePlatforms="$(buildPlatform)"
                   /p:AppxPackageDir="$(appxPackageDir)"
                   /p:AppxBundle=Always
                   /p:UapAppxPackageBuildMode=SideloadOnly
