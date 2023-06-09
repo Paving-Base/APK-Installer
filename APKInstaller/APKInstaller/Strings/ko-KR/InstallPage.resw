@@ -118,386 +118,214 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>ADB, the Android Debug Bridge, is needed for APK Installer to work. Click "Download" to download it. By downloading, you accept the Google Terms and Conditions for ADB. If you have already downloaded ADB, click "Select" to select it.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>ADB Exists</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>ADB is missing</value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>In Analysis...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>앱 설치 파일o
-
-
-</value>
+    <value>앱 설치 파일</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Capabilities: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>
-
-
-
-
-</value>
+    <value>App Name</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Cancel</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
-    <value>네
-
-
-</value>
+    <value>예</value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
-    <value>아니오
-
-
-</value>
+    <value>비활성화</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Cannot Connect to WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Cannot open app package</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>조사 중
-
-
-</value>
+    <value>Checking...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>확인 중... o
-
-
-</value>
+    <value>Checking ADB...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>확인 중... o
-
-
-</value>
+    <value>Checking Path...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>자세한 내용을 보려면 여기를 클릭하십시오.
-
-
-</value>
+    <value>Click here to read them</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Close</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Are you sure to cancel the installation?</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Connecting Paired Devices...</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Copy</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
     <value>Creating install session...</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Devices</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Download</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Download Failed</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Please check your network connection or the URL and try again.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Finding WSA...</value>
   </data>
   <data name="Finished" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Finished</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>WSA Found</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Go to Setting</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>A newer version is already installed</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>You already have installed a new version {0} of this app. Are you sure to reinstall version {1}?</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>How to connect WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>
+    <value>1. Please make sure APK Installer has been updated to the latest version
+2. Make sure you have the Android Subsystem installed and running
+3. Turn on developer mode and make sure the IP address is displayed successfully
+4. Reopen APK Installer and continue your installation
 
-
-</value>
+[Learn More]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Icon</value>
   </data>
   <data name="IKnow" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>I Know</value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Incompatible App</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>The minimum required for this app is {0}. Your device supports {1}. Please update your device or choose order package.</value>
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Infos</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Install</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>{0} is ready!</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Install {0}?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Installing...</value>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Reason: </value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Install WSA</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>The package is either corrupted or invalid.</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>The URL is either Incomplete or invalid.</value>
   </data>
   <data name="Launch" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Launch</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Launching WSA...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Launch when ready</value>
   </data>
   <data name="Loading" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Loading...</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>More Info</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Cannot find Android Device</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>How to connect device</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>If you want to install app into Windows Subsystem for Android™, you need to install it first. If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>
+    <value>#### Using USB
+1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Turn on Developer Mode, open USB Debug
+3. Go to the Settings Page of APK Installer, select your device
+4. Go back, resume installation
+#### Using Wifi
+1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Turn on Developer Mode, open Remote Debug
+3. Remember the IP address of your device
+4. Go to the Settings Page of APK Installer, connect and select your device
+5. Go back, resume installation
 
-
-</value>
+[Learn More]({0})</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Cannot connect Internet</value>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
-    <value>계속하기 전에 인터넷에 연결해 주세요.</value>
+    <value>Please connect to the internet before opening the app.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>For proper functioning of the app, try to launch an Android app package.</value>
   </data>
   <data name="OK" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>OK</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Online Package</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
-    <value>패키지 이름</value>
+    <value>Package Name</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>패키지 이름</value>
+    <value>Package Name: {0}</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="PostInstallFormat" xml:space="preserve">
@@ -505,97 +333,49 @@
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
-    <value>재설치</value>
+    <value>Reinstall</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>{0} is already installed</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>A newer version of {0} is already installed.</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Retry</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>선택
-
-
-</value>
+    <value>Select</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Share</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Starting ADB Server...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Start WSA</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Store Links</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Unzip ADB...</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Unzip completed</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Unzipping {0}/{1} ...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Update</value>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Update {0}?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="UploadingFormat" xml:space="preserve">
@@ -603,61 +383,34 @@
     <comment>{0} - Progress. {1} - Finnished count. {2} - Total count.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Version Code</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Version: {0}</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Waiting for download...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>
-
-
-
-</value>
+    <value>Waiting for Device...</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Waiting for install {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Waiting WSA Start...
+This may take long time. Sit back and relax.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>Welcome!</value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
     <value>Writing install session ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>
-
-
-</value>
+    <value>WSA is Running</value>
   </data>
 </root>
