@@ -120,22 +120,27 @@
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
     <value>
 
+
 </value>
   </data>
   <data name="Start.Text" xml:space="preserve">
     <value>시작o
+
 </value>
   </data>
   <data name="Stop.Text" xml:space="preserve">
     <value>정류장o
+
 </value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>애플리케이션o
+
 </value>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
     <value>
+
 
 </value>
   </data>
