@@ -130,8 +130,7 @@
     <value>Анализ...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>APK-файл
-</value>
+    <value>APK файл</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>Возможности:</value>
