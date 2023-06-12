@@ -139,7 +139,7 @@
     <value>App Navn</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Annuller</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
     <value>Ja</value>
@@ -333,7 +333,7 @@
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
-    <value>Reinstall</value>
+    <value>Geninstallér</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
     <value>{0} is already installed</value>
@@ -344,13 +344,13 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>Retry</value>
+    <value>Prøv igen</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>Select</value>
+    <value>Vælg</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>Share</value>
+    <value>Del</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
     <value>Starting ADB Server...</value>
@@ -372,7 +372,7 @@
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>Update</value>
+    <value>Opdater</value>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
     <value>Update {0}?</value>
