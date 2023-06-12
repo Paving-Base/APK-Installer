@@ -37,19 +37,13 @@ namespace APKInstaller.Helpers
         /// </summary>
         /// <param name="state">State of the progress indicator.</param>
         /// <param name="dispatchInvoke">Run with the main <see cref="Application"/> thread.</param>
-        public static void SetState(ProgressState state, bool dispatchInvoke = false)
+        public static async void SetState(ProgressState state, bool dispatchInvoke = false)
         {
-            if (!dispatchInvoke)
+            if (!(dispatchInvoke || CurrentApplicationWindow.DispatcherQueue.HasThreadAccess))
             {
-                SetProgressState(state);
-
-                return;
+                await CurrentApplicationWindow.DispatcherQueue.ResumeForegroundAsync();
             }
-
-            _ = CurrentApplicationWindow.DispatcherQueue.EnqueueAsync(() =>
-            {
-                SetProgressState(state);
-            });
+            SetProgressState(state);
         }
 
         /// <summary>
@@ -58,20 +52,13 @@ namespace APKInstaller.Helpers
         /// <param name="current">Current value to display</param>
         /// <param name="max">Maximum number for division.</param>
         /// <param name="dispatchInvoke">Run with the main <see cref="Application"/> thread.</param>
-        public static void SetValue(int current, int max, bool dispatchInvoke = false)
+        public static async void SetValue(int current, int max, bool dispatchInvoke = false)
         {
-            if (!dispatchInvoke)
+            if (!(dispatchInvoke || CurrentApplicationWindow.DispatcherQueue.HasThreadAccess))
             {
-                SetProgressValue(current, max);
-
-                return;
+                await CurrentApplicationWindow.DispatcherQueue.ResumeForegroundAsync();
             }
-
-            // using System.Windows.Interop
-            _ = CurrentApplicationWindow.DispatcherQueue.EnqueueAsync(() =>
-            {
-                SetProgressValue(current, max);
-            });
+            SetProgressValue(current, max);
         }
 
         private static void SetProgressState(ProgressState state)

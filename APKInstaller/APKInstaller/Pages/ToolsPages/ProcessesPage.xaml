@@ -5,6 +5,7 @@
     xmlns:controls="using:APKInstaller.Controls"
     xmlns:cwuc="using:CommunityToolkit.WinUI.UI.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:devicecommands="using:AdvancedSharpAdbClient.DeviceCommands"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:toolspages="using:APKInstaller.ViewModels.ToolsPages"
     d:DataContext="{d:DesignInstance Type=toolspages:ProcessesViewModel}"
@@ -31,17 +32,21 @@
                 x:Name="DeviceComboBox"
                 x:Uid="/ProcessesPage/DeviceComboBox"
                 VerticalAlignment="Center"
+                ItemsSource="{x:Bind Provider.DeviceList, Mode=OneWay}"
                 Loaded="ComboBox_Loaded"
                 SelectionChanged="ComboBox_SelectionChanged" />
         </controls:TitleBar>
         <cwuc:DataGrid
+            x:Name="DataGrid"
             Grid.Row="1"
+            d:DataContext="{d:DesignInstance Type=devicecommands:AndroidProcess}"
             AutoGenerateColumns="False"
             CanUserReorderColumns="True"
             CanUserResizeColumns="True"
             CanUserSortColumns="True"
             IsReadOnly="True"
-            ItemsSource="{Binding Processes, Mode=OneWay}">
+            ItemsSource="{x:Bind Provider.Processes, Mode=OneWay}"
+            Sorting="DataGrid_Sorting">
             <cwuc:DataGrid.Columns>
                 <cwuc:DataGridTextColumn
                     x:Uid="/ProcessesPage/Name"
@@ -58,7 +63,7 @@
                 <cwuc:DataGridTextColumn
                     x:Uid="/ProcessesPage/ResidentSetSize"
                     Binding="{Binding ResidentSetSize, Converter={StaticResource TextConverter}, ConverterParameter='Size'}"
-                    Tag="Resident Set Size" />
+                    Tag="ResidentSetSize" />
                 <cwuc:DataGridTextColumn
                     x:Uid="/ProcessesPage/Detail"
                     Binding="{Binding Name}"

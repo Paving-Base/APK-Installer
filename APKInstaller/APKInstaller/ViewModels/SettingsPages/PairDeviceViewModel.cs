@@ -451,7 +451,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                 ConnectingDevice = true;
                 await ConnectWithPairingCode(deviceData, password);
                 ConnectingDevice = false;
-                _page.HideQRScanFlyout();
+                _ = _page.DispatcherQueue.EnqueueAsync(_page.HideQRScanFlyout);
             }
         }
 

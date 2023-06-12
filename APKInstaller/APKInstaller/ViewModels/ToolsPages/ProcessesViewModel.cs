@@ -4,12 +4,15 @@ using APKInstaller.Controls;
 using APKInstaller.Helpers;
 using APKInstaller.Pages.ToolsPages;
 using CommunityToolkit.WinUI;
+using CommunityToolkit.WinUI.UI.Controls.TextToolbarSymbols;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Data;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
 namespace APKInstaller.ViewModels.ToolsPages
@@ -21,8 +24,10 @@ namespace APKInstaller.ViewModels.ToolsPages
         public List<DeviceData> devices;
         private readonly ProcessesPage _page;
 
-        private List<string> deviceList = new();
-        public List<string> DeviceList
+        public string CachedSortedColumn { get; set; }
+
+        private ObservableCollection<string> deviceList = new();
+        public ObservableCollection<string> DeviceList
         {
             get => deviceList;
             set
@@ -35,8 +40,8 @@ namespace APKInstaller.ViewModels.ToolsPages
             }
         }
 
-        private IEnumerable<AndroidProcess> processes;
-        public IEnumerable<AndroidProcess> Processes
+        private ObservableCollection<AndroidProcess> processes = new();
+        public ObservableCollection<AndroidProcess> Processes
         {
             get => processes;
             set
@@ -51,22 +56,25 @@ namespace APKInstaller.ViewModels.ToolsPages
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private void RaisePropertyChangedEvent([System.Runtime.CompilerServices.CallerMemberName] string name = null)
+        private async void RaisePropertyChangedEvent([CallerMemberName] string name = null)
         {
-            if (name != null) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
+            if (name != null)
+            {
+                if (_page?.DispatcherQueue.HasThreadAccess == false)
+                {
+                    await _page.DispatcherQueue.ResumeForegroundAsync();
+                }
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+            }
         }
 
-        public ProcessesViewModel(ProcessesPage page)
-        {
-            _page = page;
-        }
+        public ProcessesViewModel(ProcessesPage page) => _page = page;
 
         public async Task GetDevices()
         {
-            await Task.Run(async () =>
+            try
             {
-                ProgressHelper.SetState(ProgressState.Indeterminate, true);
-                _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.ShowProgressRing));
+                await ThreadSwitcher.ResumeBackgroundAsync();
                 devices = (await new AdbClient().GetDevicesAsync()).Where(x => x.State == DeviceState.Online).ToList();
                 await _page?.DispatcherQueue.EnqueueAsync(DeviceList.Clear);
                 if (devices.Count > 0)
@@ -96,37 +104,105 @@ namespace APKInstaller.ViewModels.ToolsPages
                     }
                     await _page?.DispatcherQueue.EnqueueAsync(() =>
                     {
-                        DeviceComboBox.ItemsSource = DeviceList;
                         if (DeviceComboBox.SelectedIndex == -1)
                         {
                             DeviceComboBox.SelectedIndex = 0;
                         }
                     });
                 }
-                else if (Processes != null)
+                else
                 {
-                    await _page?.DispatcherQueue.EnqueueAsync(() => Processes = null);
+                    await _page?.DispatcherQueue.EnqueueAsync(() =>
+                    {
+                        DeviceComboBox.SelectedIndex = -1;
+                        Processes.Clear();
+                    });
                 }
-                _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.HideProgressRing));
-                ProgressHelper.SetState(ProgressState.None, true);
-            });
+            }
+            catch (Exception ex)
+            {
+                SettingsHelper.LogManager.GetLogger(nameof(ProcessesViewModel)).Error(ex.ExceptionToMessage());
+            }
+        }
+
+        public async Task SortData(string sortBy, bool ascending)
+        {
+            try
+            {
+                await ThreadSwitcher.ResumeBackgroundAsync();
+                CachedSortedColumn = sortBy;
+                switch (sortBy)
+                {
+                    case "Name":
+                        Processes = ascending
+                            ? new(Processes.OrderBy(item => item.Name.Split('/').Last().Split(':').FirstOrDefault().Split('@').FirstOrDefault()))
+                            : new(Processes.OrderByDescending(item => item.Name.Split('/').Last().Split(':').FirstOrDefault().Split('@').FirstOrDefault()));
+                        break;
+                    case "ProcessId":
+                        Processes = ascending
+                            ? new(Processes.OrderBy(item => item.ProcessId))
+                            : new(Processes.OrderByDescending(item => item.ProcessId));
+                        break;
+                    case "State":
+                        Processes = ascending
+                            ? new(Processes.OrderBy(item => item.State))
+                            : new(Processes.OrderByDescending(item => item.State));
+                        break;
+                    case "ResidentSetSize":
+                        Processes = ascending
+                            ? new(Processes.OrderBy(item => item.ResidentSetSize))
+                            : new(Processes.OrderByDescending(item => item.ResidentSetSize));
+                        break;
+                    case "Detail":
+                        Processes = ascending
+                            ? new(Processes.OrderBy(item => item.Name))
+                            : new(Processes.OrderByDescending(item => item.Name));
+                        break;
+                    default:
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+                SettingsHelper.LogManager.GetLogger(nameof(ProcessesViewModel)).Error(ex.ExceptionToMessage());
+            }
         }
 
         public async Task GetProcess()
         {
-            await Task.Run(async () =>
+            try
             {
-                ProgressHelper.SetState(ProgressState.Indeterminate, true);
-                _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.ShowProgressRing));
-                _ = (_page?.DispatcherQueue.EnqueueAsync(() => TitleBar.IsRefreshButtonVisible = false));
-                AdbClient client = new();
-                DeviceData device = await _page?.DispatcherQueue.EnqueueAsync(() => { return devices[DeviceComboBox.SelectedIndex]; });
-                IEnumerable<AndroidProcess> list = await client.ListProcessesAsync(device);
-                await _page?.DispatcherQueue.EnqueueAsync(() => Processes = list);
-                _ = (_page?.DispatcherQueue.EnqueueAsync(() => TitleBar.IsRefreshButtonVisible = true));
-                _ = (_page?.DispatcherQueue.EnqueueAsync(TitleBar.HideProgressRing));
-                ProgressHelper.SetState(ProgressState.None, true);
-            });
+                await ThreadSwitcher.ResumeBackgroundAsync();
+                if (devices != null && devices.Any())
+                {
+                    _page?.DispatcherQueue.EnqueueAsync(() =>
+                    {
+                        TitleBar.ShowProgressRing();
+                        TitleBar.IsRefreshButtonVisible = false;
+                        ProgressHelper.SetState(ProgressState.Indeterminate, true);
+                    });
+                    AdbClient client = new();
+                    int index = await _page?.DispatcherQueue.EnqueueAsync(() => { return DeviceComboBox.SelectedIndex; });
+                    IEnumerable<AndroidProcess> list = await client.ListProcessesAsync(devices[index]);
+                    Processes = new(list);
+                    _page?.DispatcherQueue.EnqueueAsync(() =>
+                    {
+                        ProgressHelper.SetState(ProgressState.None, true);
+                        TitleBar.IsRefreshButtonVisible = true;
+                        TitleBar.HideProgressRing();
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                SettingsHelper.LogManager.GetLogger(nameof(ProcessesViewModel)).Error(ex.ExceptionToMessage());
+                _page?.DispatcherQueue.EnqueueAsync(() =>
+                {
+                    ProgressHelper.SetState(ProgressState.None, true);
+                    TitleBar.IsRefreshButtonVisible = true;
+                    TitleBar.HideProgressRing();
+                });
+            }
         }
     }
 

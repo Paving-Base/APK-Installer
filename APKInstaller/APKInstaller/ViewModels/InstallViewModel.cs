@@ -1287,7 +1287,7 @@ namespace APKInstaller.ViewModels
                     VersionInfo info = null;
                     if (ApkInfo != null && !ApkInfo.IsEmpty)
                     {
-                        info = client.GetPackageVersion(_device, ApkInfo?.PackageName);
+                        info = await client.GetPackageVersionAsync(_device, ApkInfo?.PackageName);
                     }
                     if (info == null)
                     {

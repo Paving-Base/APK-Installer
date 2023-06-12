@@ -32,6 +32,7 @@
                 x:Name="DeviceComboBox"
                 x:Uid="/ApplicationsPage/DeviceComboBox"
                 VerticalAlignment="Center"
+                ItemsSource="{x:Bind Provider.DeviceList, Mode=OneWay}"
                 Loaded="ComboBox_Loaded"
                 SelectionChanged="ComboBox_SelectionChanged" />
         </controls:TitleBar>
@@ -87,6 +88,7 @@
                             <Button
                                 Width="{ThemeResource SettingCardActionButtonWidth}"
                                 Height="{ThemeResource SettingCardActionButtonHeight}"
+                                Padding="0"
                                 Flyout="{StaticResource MenuFlyout}"
                                 Style="{StaticResource TitleBarSettingsButtonStyle}" />
                         </controls:Setting>

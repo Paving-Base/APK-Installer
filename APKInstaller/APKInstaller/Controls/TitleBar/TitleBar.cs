@@ -1,4 +1,5 @@
-﻿using Microsoft.UI.Xaml;
+﻿using APKInstaller.Helpers;
+using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Markup;
 
@@ -82,23 +83,35 @@ namespace APKInstaller.Controls
             base.OnApplyTemplate();
         }
 
-        public void SetProgressValue(double value)
+        public async void SetProgressValue(double value)
         {
+            if (!DispatcherQueue.HasThreadAccess)
+            {
+                await DispatcherQueue.ResumeForegroundAsync();
+            }
             TitleBarTemplateSettings templateSettings = TemplateSettings;
             templateSettings.ProgressValue = value;
             templateSettings.IsProgressIndeterminate = false;
         }
 
-        public void ShowProgressRing()
+        public async void ShowProgressRing()
         {
+            if (!DispatcherQueue.HasThreadAccess)
+            {
+                await DispatcherQueue.ResumeForegroundAsync();
+            }
             TitleBarTemplateSettings templateSettings = TemplateSettings;
             templateSettings.IsProgressActive = true;
             templateSettings.IsProgressIndeterminate = true;
             VisualStateManager.GoToState(this, "ProgressVisible", false);
         }
 
-        public void HideProgressRing()
+        public async void HideProgressRing()
         {
+            if (!DispatcherQueue.HasThreadAccess)
+            {
+                await DispatcherQueue.ResumeForegroundAsync();
+            }
             TitleBarTemplateSettings templateSettings = TemplateSettings;
             VisualStateManager.GoToState(this, "ProgressCollapsed", false);
             templateSettings.IsProgressActive = false;

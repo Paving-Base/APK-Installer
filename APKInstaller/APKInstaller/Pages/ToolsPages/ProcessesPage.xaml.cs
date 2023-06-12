@@ -3,6 +3,7 @@ using APKInstaller.Controls;
 using APKInstaller.Helpers;
 using APKInstaller.ViewModels.ToolsPages;
 using CommunityToolkit.WinUI;
+using CommunityToolkit.WinUI.UI.Controls;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
@@ -36,7 +37,7 @@ namespace APKInstaller.Pages.ToolsPages
             MonitorHelper.Monitor.DeviceChanged -= OnDeviceChanged;
         }
 
-        private void OnDeviceChanged(object sender, DeviceDataEventArgs e) => _ = DispatcherQueue.EnqueueAsync(Provider.GetDevices);
+        private void OnDeviceChanged(object sender, DeviceDataEventArgs e) => _ = Provider.GetDevices();
 
         private void TitleBar_BackRequested(TitleBar sender, object e)
         {
@@ -48,11 +49,13 @@ namespace APKInstaller.Pages.ToolsPages
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            ClearSort();
             _ = Provider.GetProcess();
         }
 
         private void TitleBar_RefreshEvent(TitleBar sender, object e)
         {
+            ClearSort();
             _ = Provider.GetDevices().ContinueWith((Task) => _ = Provider.GetProcess());
         }
 
@@ -60,6 +63,59 @@ namespace APKInstaller.Pages.ToolsPages
         {
             Provider.DeviceComboBox = sender as ComboBox;
             _ = Provider.GetDevices();
+        }
+
+        private void DataGrid_Sorting(object sender, DataGridColumnEventArgs e)
+        {
+            if (!TitleBar.IsRefreshButtonVisible) { return; }
+
+            DataGrid dataGrid = sender as DataGrid;
+            // Clear previous sorted column if we start sorting a different column
+            string previousSortedColumn = Provider.CachedSortedColumn;
+            if (previousSortedColumn != string.Empty)
+            {
+                foreach (DataGridColumn dataGridColumn in dataGrid.Columns)
+                {
+                    if (dataGridColumn.Tag != null && dataGridColumn.Tag.ToString() == previousSortedColumn &&
+                        (e.Column.Tag == null || previousSortedColumn != e.Column.Tag.ToString()))
+                    {
+                        dataGridColumn.SortDirection = null;
+                    }
+                }
+            }
+
+            // Toggle clicked column's sorting method
+            if (e.Column.Tag != null)
+            {
+                if (e.Column.SortDirection == null)
+                {
+                    _ = Provider.SortData(e.Column.Tag.ToString(), true);
+                    e.Column.SortDirection = DataGridSortDirection.Ascending;
+                }
+                else if (e.Column.SortDirection == DataGridSortDirection.Ascending)
+                {
+                    _ = Provider.SortData(e.Column.Tag.ToString(), false);
+                    e.Column.SortDirection = DataGridSortDirection.Descending;
+                }
+                else
+                {
+                    _ = Provider.SortData(e.Column.Tag.ToString(), true);
+                    e.Column.SortDirection = DataGridSortDirection.Ascending;
+                }
+            }
+        }
+
+        private void ClearSort()
+        {
+            // Clear previous sorted column if we start sorting a different column
+            string previousSortedColumn = Provider.CachedSortedColumn;
+            if (previousSortedColumn != string.Empty)
+            {
+                foreach (DataGridColumn dataGridColumn in DataGrid.Columns)
+                {
+                    dataGridColumn.SortDirection = null;
+                }
+            }
         }
     }
 }

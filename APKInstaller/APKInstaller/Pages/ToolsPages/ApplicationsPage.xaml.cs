@@ -37,7 +37,7 @@ namespace APKInstaller.Pages.ToolsPages
             MonitorHelper.Monitor.DeviceChanged -= OnDeviceChanged;
         }
 
-        private void OnDeviceChanged(object sender, DeviceDataEventArgs e) => _ = DispatcherQueue.EnqueueAsync(Provider.GetDevices);
+        private void OnDeviceChanged(object sender, DeviceDataEventArgs e) => _ = Provider.GetDevices();
 
         private void TitleBar_BackRequested(TitleBar sender, object e)
         {
