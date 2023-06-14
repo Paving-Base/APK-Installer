@@ -42,7 +42,7 @@ namespace APKInstaller.Pages.SettingsPages
             if (AdbServer.Instance.GetStatus().IsRunning)
             {
                 MonitorHelper.Monitor.DeviceChanged += Provider.OnDeviceChanged;
-                Provider.DeviceList = new AdbClient().GetDevices().Where(x => x.State == DeviceState.Online);
+                Provider.DeviceList = new AdbClient().GetDevices().Where(x => x.State != DeviceState.Offline);
             }
             DataContext = Provider;
             Provider.GetADBVersion();

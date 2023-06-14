@@ -486,7 +486,7 @@ namespace APKInstaller.ViewModels.SettingsPages
             Caches = this;
         }
 
-        public void OnDeviceChanged(object sender, DeviceDataEventArgs e) => DeviceList = new AdbClient().GetDevices().Where(x => x.State == DeviceState.Online);
+        public void OnDeviceChanged(object sender, DeviceDataEventArgs e) => DeviceList = new AdbClient().GetDevices().Where(x => x.State != DeviceState.Offline);
 
         public async void CheckUpdate()
         {

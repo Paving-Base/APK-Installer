@@ -204,7 +204,7 @@ namespace APKInstaller.ViewModels.SettingsPages
             if (AdbServer.Instance.GetStatus().IsRunning)
             {
                 MonitorHelper.Monitor.DeviceChanged += OnDeviceChanged;
-                ConnectedList = (await new AdbClient().GetDevicesAsync()).Where(x => x.State == DeviceState.Online).ToList();
+                ConnectedList = (await new AdbClient().GetDevicesAsync()).Where(x => x.State != DeviceState.Offline).ToList();
             }
         }
 
@@ -480,7 +480,7 @@ namespace APKInstaller.ViewModels.SettingsPages
             }
         }
 
-        public async void OnDeviceChanged(object sender, DeviceDataEventArgs e) => ConnectedList = (await new AdbClient().GetDevicesAsync()).Where(x => x.State == DeviceState.Online).ToList();
+        public async void OnDeviceChanged(object sender, DeviceDataEventArgs e) => ConnectedList = (await new AdbClient().GetDevicesAsync()).Where(x => x.State != DeviceState.Offline).ToList();
 
         public void Dispose()
         {

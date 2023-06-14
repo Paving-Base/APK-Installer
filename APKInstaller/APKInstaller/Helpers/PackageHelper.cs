@@ -10,21 +10,35 @@ namespace APKInstaller.Helpers
 {
     public static partial class PackageHelper
     {
-        public static async Task<(bool isfound, IEnumerable<Package> info)> FindPackagesByName(string PackageFamilyName)
+        public static async Task<IEnumerable<Package>> FindPackagesByName(string PackageName)
         {
+            await ThreadSwitcher.ResumeBackgroundAsync();
             PackageManager manager = new();
-            IEnumerable<Package> WSAList = await Task.Run(() => { return manager.FindPackagesForUser("", PackageFamilyName); });
-            return (WSAList != null && WSAList.Any(), WSAList);
+            try
+            {
+                IEnumerable<Package> packages = manager.FindPackagesForUser("");
+                IEnumerable<Package> results = packages?.Where((x) => x.Id.FamilyName.StartsWith(PackageName));
+                return results ?? Array.Empty<Package>();
+            }
+            catch (Exception ex)
+            {
+                SettingsHelper.LogManager.GetLogger(nameof(PackageHelper)).Warn(ex.ExceptionToMessage());
+                return Array.Empty<Package>();
+            }
         }
 
-        public static async void LaunchPackage(string packagefamilyname, string appname = "App") => await CommandHelper.ExecuteShellCommandAsync($@"explorer.exe shell:appsFolder\{packagefamilyname}!{appname}");
-
-        public static async void LaunchWSAPackage(string packagename = "")
+        public static async Task<Package> FindPackagesByFamilyName(string PackageFamilyName)
         {
-            (bool isfound, IEnumerable<Package> info) = await FindPackagesByName("MicrosoftCorporationII.WindowsSubsystemForAndroid_8wekyb3d8bbwe");
-            if (isfound)
+            await ThreadSwitcher.ResumeBackgroundAsync();
+            PackageManager manager = new();
+            try
             {
-                _ = await Launcher.LaunchUriAsync(new Uri($"wsa://{packagename}"));
+                return manager.FindPackageForUser("", PackageFamilyName);
+            }
+            catch (Exception ex)
+            {
+                SettingsHelper.LogManager.GetLogger(nameof(PackageHelper)).Warn(ex.ExceptionToMessage());
+                return null;
             }
         }
     }

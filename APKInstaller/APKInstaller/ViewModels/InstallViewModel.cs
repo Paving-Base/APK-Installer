@@ -684,6 +684,7 @@ namespace APKInstaller.ViewModels
                 PackageError(ex.Message);
                 IsInstalling = false;
             }
+            IsInitialized = true;
         }
 
         private async Task OnFirstRun()
@@ -1005,11 +1006,6 @@ namespace APKInstaller.ViewModels
                             MonitorHelper.InitializeConnectListener();
                         }
 
-                        if (IsOnlyWSA)
-                        {
-                            await AddressHelper.ConnectHyperV();
-                        }
-
                         if (!await CheckDevice())
                         {
                             _ = new AdbClient().ConnectAsync(new DnsEndPoint("127.0.0.1", 58526));
@@ -1113,7 +1109,7 @@ namespace APKInstaller.ViewModels
             if (IsOnlyWSA)
             {
                 WaitProgressText = _loader.GetString("FindingWSA");
-                if ((await PackageHelper.FindPackagesByName("MicrosoftCorporationII.WindowsSubsystemForAndroid_8wekyb3d8bbwe")).isfound)
+                if ((await Launcher.FindUriSchemeHandlersAsync("wsa"))?.Any() == true)
                 {
                     WaitProgressText = _loader.GetString("FoundWSA");
                     ContentDialog dialog = new MarkdownDialog
@@ -1148,27 +1144,16 @@ namespace APKInstaller.ViewModels
                                 });
                             }
                             WaitProgressText = _loader.GetString("WaitingWSAStart");
-                            while (!await CheckDevice())
+                            while (!await CheckDevice(true))
                             {
                                 TokenSource.Token.ThrowIfCancellationRequested();
-                                if (NetworkHelper.Instance.ConnectionInformation.IsInternetAvailable)
-                                {
-                                    _ = await AddressHelper.ConnectHyperVAsync();
-                                    if (!await CheckDevice())
-                                    {
-                                        _ = new AdbClient().ConnectAsync(new DnsEndPoint("127.0.0.1", 58526));
-                                    }
-                                }
-                                else
-                                {
-                                    _ = new AdbClient().ConnectAsync(new DnsEndPoint("127.0.0.1", 58526));
-                                }
+                                await new AdbClient().ConnectAsync(new DnsEndPoint("127.0.0.1", 58526));
                                 await Task.Delay(100);
                             }
                             WaitProgressText = _loader.GetString("WSARunning");
                             return true;
                         }
-                        catch (Exception ex)
+                        catch (OperationCanceledException ex)
                         {
                             SettingsHelper.LogManager.GetLogger(nameof(InstallViewModel)).Error(ex.ExceptionToMessage(), ex);
                             ContentDialog dialogs = new()
@@ -1179,6 +1164,30 @@ namespace APKInstaller.ViewModels
                                 CloseButtonText = _loader.GetString("IKnow"),
                                 PrimaryButtonText = _loader.GetString("Retry"),
                                 Content = _loader.GetString("CannotConnectWSAInfo"),
+                            };
+                            ProgressHelper.SetState(ProgressState.None, true);
+                            ContentDialogResult results = await dialogs.ShowAsync();
+                            ProgressHelper.SetState(ProgressState.Indeterminate, true);
+                            if (results == ContentDialogResult.Primary)
+                            {
+                                goto startwsa;
+                            }
+                        }
+                        catch (Exception e)
+                        {
+                            SettingsHelper.LogManager.GetLogger(nameof(InstallViewModel)).Warn(e.ExceptionToMessage(), e);
+                            ContentDialog dialogs = new()
+                            {
+                                XamlRoot = _page?.XamlRoot,
+                                Title = _loader.GetString("CannotConnectWSA"),
+                                DefaultButton = ContentDialogButton.Close,
+                                CloseButtonText = _loader.GetString("IKnow"),
+                                PrimaryButtonText = _loader.GetString("Retry"),
+                                Content = new TextBlock
+                                {
+                                    Text = e.Message,
+                                    IsTextSelectionEnabled = true
+                                },
                             };
                             ProgressHelper.SetState(ProgressState.None, true);
                             ContentDialogResult results = await dialogs.ShowAsync();
@@ -1556,15 +1565,15 @@ namespace APKInstaller.ViewModels
             }
         }
 
-        private async Task<bool> CheckDevice()
+        private async Task<bool> CheckDevice(bool forces = false)
         {
             AdbClient client = new();
-            IEnumerable<DeviceData> devices = (await client.GetDevicesAsync()).Where(x => x.State == DeviceState.Online);
+            IEnumerable<DeviceData> devices = (await client.GetDevicesAsync());
             ConsoleOutputReceiver receiver = new();
             if (!devices.Any()) { return false; }
             foreach (DeviceData device in devices)
             {
-                if (device == null || device.State != DeviceState.Online) { continue; }
+                if (device == null || forces ? device.State == DeviceState.Offline : device.State != DeviceState.Online) { continue; }
                 if (IsOnlyWSA)
                 {
                     await client.ExecuteRemoteCommandAsync("getprop ro.boot.hardware", device, receiver);
