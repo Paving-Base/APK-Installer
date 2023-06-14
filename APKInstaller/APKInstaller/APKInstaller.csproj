@@ -20,7 +20,7 @@
     <TargetPlatformMaxVersion>10.0.22621.0</TargetPlatformMaxVersion>
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <UseWinUI>True</UseWinUI>
-    <VersionPrefix>0.1.24</VersionPrefix>
+    <VersionPrefix>0.1.25</VersionPrefix>
   </PropertyGroup>
 
   <PropertyGroup>
