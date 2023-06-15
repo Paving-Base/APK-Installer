@@ -182,7 +182,7 @@
     <value>نسخ</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Creating install session...</value>
+    <value>إنشاء جلسة التثبيت...</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>أجهزة</value>
