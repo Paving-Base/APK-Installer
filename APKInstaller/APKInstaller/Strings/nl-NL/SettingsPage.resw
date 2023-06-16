@@ -154,22 +154,22 @@
     <value>Cache wissen</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
+    <value>ADB Server moet worden herstart bij volgende installatie als je deze beëindigt.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Terminate ADB when Exit Installer?</value>
+    <value>ADB beëindigen bij Verlaten Installer?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Exit Installer after installation is complete.</value>
+    <value>Verlaat Installer nadat de installatie is voltooid.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Exit Installer when APP is Ready?</value>
+    <value>Verlaat Installer nadat de applicatie gereed is?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Configuratie</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value>Verbind apparaat via netwerk.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Apparaat verbinden</value>
@@ -178,7 +178,7 @@
     <value>Neem contact met mij op</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
+    <value>Volg me op sociale apps voor de laatste ontwikkelingen. Als je bugs vindt, meld ze me dan per PM. Ik zal mijn best doen om ze op te lossen. Als je een Telegram-account hebt, voel je dan vrij om te chatten in de Paving Base Group 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Inhoud</value>
@@ -244,7 +244,7 @@
     <value>Schakel uit om verbinding te maken met andere apparaten.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>For WSA only?</value>
+    <value>Alleen voor WSA?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>OS architectuur</value>
@@ -262,10 +262,10 @@
     <value>Toestel koppelen</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
-    <value>Pair and connect devices.</value>
+    <value>Koppel en verbind apparaten.</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
-    <value>Pair &amp; Connect</value>
+    <value>Koppel &amp; Verbind</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Donker</value>
