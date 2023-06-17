@@ -169,7 +169,7 @@
     <value>Valeur de la progression</value>
   </data>
   <data name="ShowRefreshButton.Description" xml:space="preserve">
-    <value>Afficher le bouton Actualiser dans la barre de titre</value>
+    <value>Afficher le bouton d'actualisation dans la barre de titre</value>
   </data>
   <data name="ShowRefreshButton.Header" xml:space="preserve">
     <value>Bouton Actualiser</value>
