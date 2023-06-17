@@ -182,7 +182,7 @@ Capacidades:</value>
     <value>Copiar</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Creating install session...</value>
+    <value>Criando sessão de instalação...</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Dispositivos</value>
