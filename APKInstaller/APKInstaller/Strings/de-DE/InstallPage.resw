@@ -121,19 +121,19 @@
     <value>ADB, die Android Debug Bridge, wird für den APK Installer benötigt. Klicken Sie auf "Download", um sie herunterzuladen. Mit dem Download akzeptieren Sie die AGB von Google für ADB.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB ist vorhanden</value>
+    <value>ADB existiert</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>ADB fehlt</value>
+    <value>ADB fehlt,</value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>Analysiert...</value>
+    <value>Wird analysiert...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>APK Datei</value>
+    <value>APK-Datei</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Berechtigungen: </value>
+    <value>Kapazitäten: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
     <value>App Name</value>
@@ -181,7 +181,7 @@
     <value>Kopieren</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Creating install session...</value>
+    <value>Installationssession erstellen...</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Geräte</value>
@@ -330,7 +330,7 @@
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="PostInstallFormat" xml:space="preserve">
-    <value>Cleaning cache ({0}/{1})...</value>
+    <value>Säubere Cache ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
@@ -380,7 +380,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="UploadingFormat" xml:space="preserve">
-    <value>Uploading {0} ({1}/{2})...</value>
+    <value>{0} Hochladen ({1}/{2})...</value>
     <comment>{0} - Progress. {1} - Finnished count. {2} - Total count.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
@@ -408,7 +408,7 @@ Dies kann lange dauern. Setze dich zurück und entspannen.</value>
     <value>Willkommen!</value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
-    <value>Writing install session ({0}/{1})...</value>
+    <value>Schreibe Installationssitzung ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">
