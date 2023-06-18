@@ -271,7 +271,7 @@
     <value>Tmavý</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>Výchozí Windows</value>
+    <value>Výchozí okna</value>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
     <value>Světlý</value>
