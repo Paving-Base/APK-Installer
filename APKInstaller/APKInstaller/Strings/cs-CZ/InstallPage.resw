@@ -353,7 +353,7 @@
     <value>Share</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
-    <value>Starting ADB Server...</value>
+    <value>...                    </value>
   </data>
   <data name="StartWSA" xml:space="preserve">
     <value>Spustit WSA</value>
