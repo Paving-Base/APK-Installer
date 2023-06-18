@@ -5,4 +5,4 @@ Subsistema Windows para AndroidTM11</li>
    
    3 Ative o Modo de Desenvolvedor e certifique-se de que o endereço IP seja exibido![Modo de Desenvolvedor](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/Images/Snipaste_2022-10-02_19-02-09.png)
 
-4 Abra novamente o Instalador APK e continue a instalação ![Continuar a instalação](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/Images/Snipaste_2022-10-02_17-34-04.png)</ol>
+4 Abra novamente o Instalador APK e continue a instalação ![Continuar Instalação](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/Images/Snipaste_2022-10-02_17-34-04.png)</ol>
