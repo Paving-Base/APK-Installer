@@ -183,7 +183,7 @@
     <value>Salin</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Creating install session...</value>
+    <value>baca sesi pemasangan</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Perangkat</value>
@@ -270,13 +270,14 @@
     <value>URL tidak lengkap atau tidak valid.</value>
   </data>
   <data name="Launch" xml:space="preserve">
-    <value>Luncurkan</value>
+    <value>Meluncurkan</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
     <value>Meluncurkan WSA...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>Luncurkan ketika sudah siap</value>
+    <value>Luncurkan ketika su
+dah siap</value>
   </data>
   <data name="Loading" xml:space="preserve">
     <value>Memuat...</value>
@@ -331,7 +332,8 @@
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="PostInstallFormat" xml:space="preserve">
-    <value>Cleaning cache ({0}/{1})...</value>
+    <value>...
+</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
