@@ -118,41 +118,41 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, O Android Debugar Brídege, é necessário para Instalador de APK FUNCIONAR. Clique "Baixar" para baixá-lo. Por baixar você aceita os Termos e Condições do Google para ADB. Se Você já baixou ADB, clique "Selecionar" para selecionar.</value>
+    <value>ADB, O Android Debugar Brídege, é necessário para Instalador de APK FUNCIONAR. Clique "Baixar" para baixá-lo. Por baixar você aceita os Termos e Condições do Google para ADB. Se Você já baixou ADB, clique "Selecionar" para selecionar.1</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Existe</value>
+    <value>ADB Existe1</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>ADB está faltando</value>
+    <value>ADB está faltando1</value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>Em Análise...</value>
+    <value>Em Análise...1</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>Arquivo APK</value>
+    <value>Arquivo APK1</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>
-Capacidades:</value>
+Capacidades:1</value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>Nome Do App</value>
+    <value>Nome Do App1</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancelar</value>
+    <value>Cancelar1</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
-    <value>Sim</value>
+    <value>Sim1</value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
-    <value>Não</value>
+    <value>Não1</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Não foi possível conectar ao WSA</value>
+    <value>Não foi possível conectar ao WSA1</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>O WSA não foi iniciado corretamente ou há um problema com o ADB. Este problema pode ser muito difícil de resolver. Por favor, reinicie o instalador. Se ainda não funcionar, tente reiniciar o computador.</value>
+    <value>O WSA não foi iniciado corretamente ou há um problema com o ADB. Este problema pode ser muito difícil de resolver. Por favor, reinicie o instalador. Se ainda não funcionar, tente reiniciar o computador.1</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>Não Foi Possível abrir o pacote do aplicativo</value>
