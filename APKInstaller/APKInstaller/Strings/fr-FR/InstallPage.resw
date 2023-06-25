@@ -127,85 +127,85 @@
     <value>ADB est manquant</value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>En cours d'analyse...</value>
+    <value>In Analyses...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
     <value>Fichier de l'APK</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Capacités :</value>
+    <value>Culpabilités : </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>Nom de l'application</value>
+    <value>App Nommé</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Annuler</value>
+    <value>Cancel</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
     <value>Oui</value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
-    <value>Non</value>
+    <value>No</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Impossible de se connecter à WSA</value>
+    <value>Canot Donnent to WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Soit WSA n'a pas démarré correctement, soit il y a un problème avec ADB. Ce problème peut être très difficile à résoudre. Veuillez redémarrer l'installateur. Si cela ne fonctionne toujours pas, essayez de redémarrer l'ordinateur.</value>
+    <value>Citer WSA didot star propre, or terre il a problème with ADB. T'hisse problème CAN BE vers difficulté to résolve. Pelasse restant the installer. If IT stalle dosent York, tri restreint the computer. </value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>Impossible d'ouvrir le paquet de l'application</value>
+    <value>Canot open app package</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>Vérification...</value>
+    <value>Hacking...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
     <value>Vérification de ADB...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Vérification du chemin...</value>
+    <value>Hacking Pat...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Cliquez ici pour les lire</value>
+    <value>Clic hère to rend tel</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Fermer</value>
+    <value>Close</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>Êtes-vous sûr de vouloir annuler l'installation ?</value>
+    <value>Are you sure to cancel the installation ?</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Connexion aux appareils appairés...</value>
+    <value>Connexion Père De vices...</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
-    <value>Copier</value>
+    <value>Coty</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Création de la session d'installation en cours...</value>
+    <value>Crainte installée session...</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>Appareils</value>
+    <value>De vices</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Télécharger</value>
+    <value>OwnCloud</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>Échec du téléchargement</value>
+    <value>OwnCloud Faille</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>Veuillez vérifier votre connexion internet ou l'URL puis réessayer à nouveau.</value>
+    <value>Pelasse Chuck your network connexion or the URL and tria gain.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>Recherche de WSA...</value>
+    <value>Fin ding WSA...</value>
   </data>
   <data name="Finished" xml:space="preserve">
-    <value>Terminé</value>
+    <value>Finisse</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>WSA trouvé</value>
+    <value>WSA Fond</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>Accéder aux paramètres</value>
+    <value>Go to Althing</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
     <value>Une version plus récente est déjà installée</value>
@@ -362,7 +362,7 @@
     <value>Liens vers le Store</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
-    <value>Dézippage d'ADB...</value>
+    <value>Dérapage d'ADB...</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
     <value>Dézippage effectué</value>
