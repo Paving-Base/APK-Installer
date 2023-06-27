@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <controls:SettingsGroup xmlns:controls="using:APKInstaller.Controls" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Header="通知" Margin="0,-28,0,0">
     <InfoBar Title="通知 (閉じるボタンがないのは気にしたら負けです。)" IsClosable="False" IsOpen="True" Message="今後、あらゆる種類の通知が表示されます。表示したくない場合は、以下の設定でオフにできます。" Severity="Informational"/>
-    <InfoBar Title="その他の翻訳" IsClosable="True" IsOpen="True" Message="作者は中国語と英語しか知らないので、すべての翻訳はコミュニティに残されています。 よく知らない言語を見たくない場合は、Crowdin で翻訳してください！" Severity="Informational">
+    <InfoBar Title="その他の翻訳" IsClosable="True" IsOpen="True" Message="作者は中国語と英語しか知らないので、すべての翻訳はコミュニティにて行なわれています。 他の言語を見たくない場合は、Crowdin で翻訳してください！" Severity="Informational">
         <InfoBar.ActionButton>
             <HyperlinkButton HorizontalAlignment="Right" Content="ここをクリック" NavigateUri="https://crowdin.com/project/APKInstaller"/>
         </InfoBar.ActionButton>
