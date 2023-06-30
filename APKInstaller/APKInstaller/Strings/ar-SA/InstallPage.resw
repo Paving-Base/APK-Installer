@@ -331,7 +331,7 @@
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="PostInstallFormat" xml:space="preserve">
-    <value>تنظيف ذاكرة التخزين المؤقت ({0}/{1})...</value>
+    <value>تنظيف  ذاكرة  التخزين  المؤقت ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
@@ -381,7 +381,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="UploadingFormat" xml:space="preserve">
-    <value>تحميل {0} ({1}/{2})...</value>
+    <value>تحميل  {0} ({1}/{2})...</value>
     <comment>{0} - Progress. {1} - Finnished count. {2} - Total count.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
@@ -409,7 +409,7 @@
     <value>مرحبا!</value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
-    <value>كتابة جلسة التثبيت ({0}/{1})...</value>
+    <value>كتابة جَلسة التثبيت ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">
