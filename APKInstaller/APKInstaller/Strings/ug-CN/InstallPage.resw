@@ -344,10 +344,10 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>Retry</value>
+    <value>قايتا سىناش</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>Select</value>
+    <value>تاللاش</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
     <value>Share</value>
