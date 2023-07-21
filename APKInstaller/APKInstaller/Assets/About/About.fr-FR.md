@@ -1,4 +1,4 @@
-#### Bienvenue dans l'installateur d'APK !
+#### Bienvenue dans l'installateur d'APK!
 
 ##### Déclaration
 1. Veuillez vous conformer au [Contrat de licence et à la politique de confidentialité de l'Utilisateur final APK](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
@@ -7,7 +7,7 @@
 4. La traduction de cette application provient de la communauté [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") et tous les textes ne représentent pas les opinions de l'auteur.
 
 ##### Traduire
-Merci aux traducteurs de [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") pour leur soutien. En cas de problème avec la traduction, n'hésitez pas à nous corriger. Et s'il vous plaît, traduisez sérieusement. Tout ce que vous écrivez sera lu partout dans le monde.
+Merci aux traducteurs de [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") pour leur soutien. En cas de problème avec la traduction, n'hésitez pas à nous corriger. Et s'il vous plaît, traduisez sérieusement. compte panama disponible 6458
 
 ##### Les contributeurs
 - [wherewhere](https://github.com/wherewhere)
