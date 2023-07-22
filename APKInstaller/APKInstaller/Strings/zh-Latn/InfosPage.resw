@@ -131,7 +131,7 @@
     <value>Tèxìng - gòng {0} gè</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
-    <value>Yǔyán</value>
+    <value>语言</value>
   </data>
   <data name="MinSDK.Text" xml:space="preserve">
     <value>Zuìdī SDK</value>
@@ -146,7 +146,7 @@
     <value>Ānzhuāngbāo dàxiǎo</value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
-    <value>Quánxiàn shùliàng</value>
+    <value>权限计数</value>
   </data>
   <data name="PermissionsHeaderFormat" xml:space="preserve">
     <value>Quánxiàn - gòng {0} gè</value>
