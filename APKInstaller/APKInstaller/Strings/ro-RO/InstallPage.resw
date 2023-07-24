@@ -182,7 +182,7 @@
     <value>Copiere</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Creating install session...</value>
+    <value>d</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Dispozitive</value>
