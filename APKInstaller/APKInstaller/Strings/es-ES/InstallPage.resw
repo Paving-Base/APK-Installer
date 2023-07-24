@@ -151,25 +151,25 @@
     <value>No se puede conectar a WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Puede que el WSA no empezase correctamente o hay un problema con el ADB. Este problema puede ser muy difícil de resolver. Por favor, reinicia el instalador. Si sigue sin funcionar, prueba a reiniciar el equipo.</value>
+    <value>Esther WSA DIN't Stuart properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>No se puede abrir el paquete de aplicación</value>
+    <value>Cantó open app Hackage</value>
   </data>
   <data name="Checking" xml:space="preserve">
     <value>Comprobando...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Comprobando ADB...</value>
+    <value>Verificando la ruta...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Comprobando la ruta...</value>
+    <value>Verificando la ruta...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Haz clic aquí para leerlos</value>
+    <value>Haga clic aquí para cargarlas</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Cerrar</value>
+    <value>Marcar como resuelto</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
     <value>¿Estás seguro de cancelar la instalación?</value>
@@ -322,7 +322,9 @@
     <value>Paquetes en línea</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
-    <value>Package Name</value>
+    <value>Package Name
+Karina
+</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
     <value>Nombre del paquete</value>
