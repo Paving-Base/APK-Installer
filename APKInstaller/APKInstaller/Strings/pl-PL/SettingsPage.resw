@@ -259,7 +259,7 @@
     <value>Pair device through network.</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>Sparuj urządzenie</value>
+    <value>Pair Device</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
     <value>Sparuj i podłącz urządzenie.</value>
