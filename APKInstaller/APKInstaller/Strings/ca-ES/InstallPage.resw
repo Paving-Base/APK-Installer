@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, the Android Debug Bridge, is needed for APK Installer to work. Click "Download" to download it. By downloading, you accept the Google Terms and Conditions for ADB. If you have already downloaded ADB, click "Select" to select it.</value>
+    <value>ADB, t'he Android Debut Bridge, is nada for APK Instal·lar to York. Click "Donald" to Donald Ir. By Downloader, you accepto t'he Google Terms and Conditions for ADB. If you have already downloaded ADB, click "Select" to select Ir.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>ADB Exists</value>
@@ -133,7 +133,7 @@
     <value>Fitxer APK</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Capabilities: </value>
+    <value>Captabilitats: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
     <value>Nom de l’aplicació</value>
@@ -148,7 +148,7 @@
     <value>No</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Cannot Connect to WSA</value>
+    <value>No es pot connectar amb </value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
     <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
