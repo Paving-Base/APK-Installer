@@ -187,7 +187,7 @@
     <value>Dispositiu</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
-    <value>Display</value>
+    <value>Mostrar</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
     <value>Suports</value>
@@ -292,7 +292,7 @@
     <value>Reiniciar</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
-    <value>Sí</value>
+    <value>Yes</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
     <value>Segur que voleu reiniciar l’aplicació?</value>
