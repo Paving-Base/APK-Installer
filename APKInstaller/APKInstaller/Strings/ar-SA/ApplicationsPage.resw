@@ -119,10 +119,10 @@
   </resheader>
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
     <value>في انتظار للجهاز
-</value>
+pc</value>
   </data>
   <data name="Start.Text" xml:space="preserve">
-    <value>ابدأ</value>
+    <value>ابدأ andrwid</value>
   </data>
   <data name="Stop.Text" xml:space="preserve">
     <value>التوقف</value>
