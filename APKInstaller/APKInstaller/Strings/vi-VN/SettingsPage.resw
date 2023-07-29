@@ -127,7 +127,7 @@
     <value>Phiên bản ADB</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>Tự động tải xuống khi gói từ URL.</value>
+    <value>Tự động tải xuống khi gói đến từ URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
     <value>Tự Động Tải Xuống Các Gói Trực Tuyến?</value>
@@ -151,7 +151,7 @@
     <value>Kiểm tra bản cập nhật</value>
   </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
-    <value>Làm sạch bộ nhớ nhớ</value>
+    <value>Làm sạch bộ nhớ</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
     <value>Máy chủ ADB cần được khởi động lại trong lần cài đặt tiếp theo nếu bạn chấm dứt nó.</value>
@@ -187,7 +187,7 @@
     <value>Thiết bị</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
-    <value>Trưng bày</value>
+    <value>Hiển thị</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
     <value>Hỗ trợ</value>
@@ -262,7 +262,7 @@
     <value>Ghép nối thiết bị</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
-    <value>Pair and connect devices.</value>
+    <value>Ghép đôi và kết nối thiết bị.</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
     <value>Ghép nối &amp; Kết nối</value>
