@@ -205,19 +205,19 @@
     <value>Tìm bản cập nhật</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>Thông tin về các khuôn khổ của ứng dụng này.</value>
+    <value>Thông tin về các khung của ứng dụng này.</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
     <value>Thông tin khung</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
-    <value>Khuôn khổ</value>
+    <value>Khung</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>Chuyển đến trang thử nghiệm.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>Truy cập TestPage</value>
+    <value>Truy cập Trang Thử nghiệm</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
     <value>Đi tới Cập nhật</value>
@@ -235,13 +235,13 @@
     <value>nhật ký</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>Một phiên bản sửa đổi có thể có một số điều khó chịu. Chẳng hạn như quảng cáo, tính năng bị hỏng hoặc thậm chí là vi-rút. Vui lòng truy cập Microsoft Store để tải xuống phiên bản gốc. Vui lòng xem Kho lưu trữ GitHub của chúng tôi để biết thêm thông tin.</value>
+    <value>Một phiên bản bị sửa đổi có thể có một số điều khó chịu. Chẳng hạn như quảng cáo, tính năng bị hỏng hoặc thậm chí là vi-rút. Vui lòng truy cập cửa hàng Microsoft để tải xuống phiên bản gốc. Vui lòng xem Kho lưu trữ GitHub của chúng tôi để biết thêm thông tin.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>Bạn đang sử dụng một phiên bản sửa đổi!</value>
+    <value>Bạn đang sử dụng một phiên bản bị sửa đổi!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Vô hiệu hóa nó để kết nối với các thiết bị khác.</value>
+    <value>Tắt nó để kết nối với các thiết bị khác.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
     <value>Chỉ dành cho WSA?</value>
@@ -277,7 +277,7 @@
     <value>Sáng</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value>Giá trên cửa hàng</value>
+    <value>Đánh giá trên cửa hàng</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
     <value>Ghi chú phát hành</value>
@@ -301,7 +301,7 @@
     <value>Quét và tự động kết nối các thiết bị đã ghép nối.</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Quét Các Thiết Bị Đã Ghép Nối?</value>
+    <value>Quét các thiết bị đã ghép nối?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Chọn thiết bị</value>
