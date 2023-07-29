@@ -123,17 +123,15 @@
   </data>
   <data name="Start.Text" xml:space="preserve">
     <value>Bắt đầu
-Hihihihi</value>
+</value>
   </data>
   <data name="Stop.Text" xml:space="preserve">
     <value>Dừng</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Các ứng dụng
-BLÒỦT</value>
+    <value>Các ứng dụng</value>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
-    <value>Gỡ cài đặt
- no</value>
+    <value>Gỡ cài đặt</value>
   </data>
 </root>
