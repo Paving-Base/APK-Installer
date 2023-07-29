@@ -3,7 +3,7 @@
     <InfoBar Title="Đây là thông báo (Đừng hỏi tôi tại sao thông báo này không có nút đóng) " IsClosable="False" IsOpen="True" Message="Bạn có thể xem tất cả các loại thông báo tại đây trong tương lai. Nếu bạn không muốn nhìn thấy chúng, bạn có thể tắt chúng trong phần cài đặt bên dưới. " Severity="Informational"/>
     <InfoBar Title="Các bản dịch khác " IsClosable="True" IsOpen="True" Message="Vì tác giả chỉ biết tiếng Trung và tiếng Anh nên tất cả các bản dịch đều để lại cho cộng đồng. Nếu bạn không muốn thấy một ngôn ngữ lạ, chào mừng bạn đến với Crowdin để dịch! " Severity="Informational">
         <InfoBar.ActionButton>
-            <HyperlinkButton HorizontalAlignment="Right" Content="Nhấp vào tôi  " NavigateUri="https://crowdin.com/project/APKInstaller"/>
+            <HyperlinkButton HorizontalAlignment="Right" Content="Bấm vào tôi" NavigateUri="https://crowdin.com/project/APKInstaller"/>
         </InfoBar.ActionButton>
     </InfoBar>
 </controls:SettingsGroup>
