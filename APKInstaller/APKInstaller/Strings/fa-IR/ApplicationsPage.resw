@@ -121,7 +121,7 @@
     <value>منتظر دستگاه...</value>
   </data>
   <data name="Start.Text" xml:space="preserve">
-    <value>شروع شد</value>
+    <value>شروع</value>
   </data>
   <data name="Stop.Text" xml:space="preserve">
     <value>توقف</value>
@@ -130,6 +130,6 @@
     <value>برنامه‌ها</value>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
-    <value>Uninstall</value>
+    <value>پاک کردن</value>
   </data>
 </root>
