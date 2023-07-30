@@ -136,19 +136,19 @@
     <value>Capabilities: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>App Name</value>
+    <value>نام برنامه</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancel</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
-    <value>Yes</value>
+    <value>بله</value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
-    <value>No</value>
+    <value>خیر</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Cannot Connect to WSA</value>
+    <value>اتصال به WSA امکان پذیر نیست</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
     <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
@@ -157,58 +157,58 @@
     <value>Cannot open app package</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>Checking...</value>
+    <value>در حال بررسی...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Checking ADB...</value>
+    <value>در حال بررسی ADB...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
     <value>Checking Path...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Click here to read them</value>
+    <value>برای خواندن آنها اینجا کلیک کنید</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Close</value>
+    <value>بستن</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>Are you sure to cancel the installation?</value>
+    <value>مطمئنید که می خواهید نصب را لغو کنید؟</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Connecting Paired Devices...</value>
+    <value>در حال اتصال به دستگاه های جفت شده...</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
-    <value>Copy</value>
+    <value>کپی</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
     <value>Creating install session...</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>Devices</value>
+    <value>دستگاه ها</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Download</value>
+    <value>بارگیری</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>Download Failed</value>
+    <value>بارگیری ناموفق بود</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
     <value>Please check your network connection or the URL and try again.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>Finding WSA...</value>
+    <value>در حال پیدا کردن WSA...</value>
   </data>
   <data name="Finished" xml:space="preserve">
-    <value>Finished</value>
+    <value>پایان یافت</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>WSA Found</value>
+    <value>WSA پیدا شد</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>Go to Setting</value>
+    <value>رفتن به تنظیمات</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>A newer version is already installed</value>
+    <value>در حال حاضر جدیدترین نسخه نصب شده است</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
     <value>You already have installed a new version {0} of this app. Are you sure to reinstall version {1}?</value>
@@ -226,10 +226,10 @@
 [Learn More]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
-    <value>Icon</value>
+    <value>نماد</value>
   </data>
   <data name="IKnow" xml:space="preserve">
-    <value>I Know</value>
+    <value>می دانم</value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
     <value>Incompatible App</value>
@@ -242,7 +242,7 @@
     <value>Infos</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>Install</value>
+    <value>نصب</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
     <value>{0} is ready!</value>
@@ -253,13 +253,13 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
-    <value>Installing...</value>
+    <value>در حال نصب...</value>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
-    <value>Reason: </value>
+    <value>دلیل:</value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
-    <value>Install WSA</value>
+    <value>نصب WSA</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
     <value>The package is either corrupted or invalid.</value>
@@ -268,16 +268,16 @@
     <value>The URL is either Incomplete or invalid.</value>
   </data>
   <data name="Launch" xml:space="preserve">
-    <value>Launch</value>
+    <value>اجرا</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
-    <value>Launching WSA...</value>
+    <value>در حال اجرای WSA...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
     <value>Launch when ready</value>
   </data>
   <data name="Loading" xml:space="preserve">
-    <value>Loading...</value>
+    <value>درحال بارگذاری...</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
     <value>More Info</value>
@@ -383,20 +383,20 @@
     <comment>{0} - Progress. {1} - Finnished count. {2} - Total count.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
-    <value>Version Code</value>
+    <value>کد نسخه</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>Version: {0}</value>
+    <value>نسخه: {0}</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>Waiting for download...</value>
+    <value>در انتظار بارگیری...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
     <value>منتظر دستگاه...</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
-    <value>Waiting for install {0}</value>
+    <value>در انتظار نصب {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
@@ -404,13 +404,13 @@
 This may take long time. Sit back and relax.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome!</value>
+    <value>خوش آمدید!</value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
     <value>Writing install session ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>WSA is Running</value>
+    <value>WSA در حال اجراست</value>
   </data>
 </root>
