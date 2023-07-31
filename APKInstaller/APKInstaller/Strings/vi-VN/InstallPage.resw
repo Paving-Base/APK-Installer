@@ -210,7 +210,7 @@
     <value>Đến Cài đặt</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>Phiên bản mới hơn đã được cài đặt</value>
+    <value>Phiên bản mới nhất đã được cài đặt</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
     <value>Bạn đã cài đặt phiên bản mới {0} của ứng dụng này. Bạn có chắc chắn cài đặt lại phiên bản {1} không?</value>
