@@ -1,4 +1,4 @@
-#### Καλώς ήλθατε στο APK Installer!
+#### Καλώς ήλθατε στο APK!
 
 ##### Δήλωση
 1. Παρακαλούμε να συμμορφώνεστε με το [APK Installer End User License Agreement και Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
