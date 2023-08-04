@@ -121,8 +121,7 @@
     <value>Android Application Package</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>APK file
-</value>
+    <value>APK File</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>An Android App Installer. Written by @wherewhere and @Tangent-90.</value>
@@ -137,8 +136,7 @@
     <value>There are some problems with the network...</value>
   </data>
   <data name="No" xml:space="preserve">
-    <value>Noo
-nooo</value>
+    <value>No</value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
     <value>Install this Package</value>
@@ -147,7 +145,6 @@ nooo</value>
     <value>Split APK File</value>
   </data>
   <data name="Yes" xml:space="preserve">
-    <value>Ye
-ye</value>
+    <value>Yes</value>
   </data>
 </root>
