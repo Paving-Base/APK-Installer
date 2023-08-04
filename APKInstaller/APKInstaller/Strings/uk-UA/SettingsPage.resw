@@ -259,10 +259,10 @@
     <value>Створення пари через мережу.</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>Pair Device</value>
+    <value>Приєднати пристрій</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
-    <value>Pair and connect devices.</value>
+    <value>Підключайте та приєднуйте пристрої.</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
     <value>Пов’язати й під’єднати</value>
