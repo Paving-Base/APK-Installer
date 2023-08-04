@@ -298,10 +298,10 @@
     <value>Ви впевнені, що бажаєте скинути застосунок?</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value>Scan and auto connect paired devices.</value>
+    <value>Сканування та автоматичне підключення до приєднаних пристроїв.</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Scan Paired Devices?</value>
+    <value>Сканувати приєднані пристрої?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Вибрати пристрій</value>
@@ -310,7 +310,7 @@
     <value>Показати підказки, коли жоден пристрій не підключено.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Whether to Show Helps?</value>
+    <value>Показувати підказки?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
     <value>Відображати оголошення угорі налаштувань.</value>
