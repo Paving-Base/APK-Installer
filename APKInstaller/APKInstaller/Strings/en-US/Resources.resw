@@ -121,7 +121,8 @@
     <value>Android Application Package</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>APK File</value>
+    <value>APK file
+file:///C:/Users/Ahopk/Downloads/com.gameloft.android.ANMP.GloftPEHM_2.3.3d-23323_minAPI9(armeabi,armeabi-v7a)(nodpi)_apkmirror.com.apk</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>An Android App Installer. Written by @wherewhere and @Tangent-90.</value>
@@ -136,7 +137,8 @@
     <value>There are some problems with the network...</value>
   </data>
   <data name="No" xml:space="preserve">
-    <value>No</value>
+    <value>Yes
+Yes</value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
     <value>Install this Package</value>
@@ -145,6 +147,7 @@
     <value>Split APK File</value>
   </data>
   <data name="Yes" xml:space="preserve">
-    <value>Yes</value>
+    <value>Yes
+yes</value>
   </data>
 </root>
