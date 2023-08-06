@@ -1,6 +1,6 @@
 #### APKインストーラーへようこそ！
 
-##### はじめに
+##### はじめにl;,/huklgyjuyjfgh
 1. [APKインストーラのエンドユーザーライセンス契約とプライバシーポリシー](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md) をお読みください。
 2. このプログラムはオープンソースソフトウェアです。データの安全を守るため、 [GitHubリポジトリ](https://github.com/Paving-Base/APK-Installer) または、  [Microsoft Store](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) からダウンロードされたものであることを確認してください。
 3. 改造されたアプリケーションでない場合、すべてのデータはこのプログラムを実行するために、ローカル上に保存されます。開発者はこれらのデータにアクセスすることはありません。 このアプリケーションはウイルスを含みませんが、このデバイスのセキュリティには注意するようにしてください。
