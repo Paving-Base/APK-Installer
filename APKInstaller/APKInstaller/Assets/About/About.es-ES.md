@@ -1,4 +1,4 @@
-#### ¡Malcome lo te APK Instalar!
+#### Welcome to the APK Installer!
 
 ##### Declaración
 1. Por favor, cumple con el [Acuerdo de licencia de usuario final y la Política de privacidad de APK Instalar](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
