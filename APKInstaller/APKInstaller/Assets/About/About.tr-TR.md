@@ -1,4 +1,4 @@
-#### APK Installer'a Hoş Geldin! kozmo
+#### Welcome to the APK Installer!
 
 ##### start kozmo
 1. Lütfen [ APK Installer Son Kullanıcı Lisans Sözleşmesini ve Gizlilik Politikasını ](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md) takip edin.
