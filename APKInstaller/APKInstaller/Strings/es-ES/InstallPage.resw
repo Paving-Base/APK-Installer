@@ -148,7 +148,7 @@
     <value>No</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>No se puede conectar a WSA</value>
+    <value>No se puede conectar a %1</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
     <value>Esther WSA DIN't Stuart properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
