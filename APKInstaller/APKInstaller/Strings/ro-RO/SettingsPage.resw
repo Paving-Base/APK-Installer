@@ -169,7 +169,7 @@
     <value>Configurări</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value>Conectați dispozitivul în rețea.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Conectare dispozitiv</value>
@@ -265,7 +265,7 @@
     <value>Pair and connect devices.</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
-    <value>Pair &amp; Connect</value>
+    <value>Asociază și conectează</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Întunecat</value>
