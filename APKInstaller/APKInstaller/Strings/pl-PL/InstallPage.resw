@@ -121,7 +121,7 @@
     <value>ADB, czyli Android Debug Bridge, jest wymagane do działania APK Installer. Naciśnij na "Pobierz", aby pobrać ADB. Pobierając, wyrażasz zgodę na Warunki użytkowania Google odnośnie ADB. Jeśli już pobrano ADB, naciśnij na "Wybierz", aby wybrać.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Exists</value>
+    <value>ADB Ekstremalny</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>Brakuje ADB</value>
