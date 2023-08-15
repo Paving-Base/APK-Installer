@@ -1,13 +1,13 @@
 #### ברוכים הבאים למתקין ה- APK!
 
-##### הצהרת
-1. Please comply with the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. This program is open source software, so please make sure the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) to ensure your data security.
-3. If the source of the program is not abnormal, all your data will be used only for the running of the program or stored locally during the running, and the developer will not steal any of your data. ובכל זאת, אנא שימו לב לביטחון הסביבה.
-4. The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.
+##### הצהרה
+1. בבקשה תאשר את [הסכם רישיון המשתמש וקצה המדיניות הפרטית של מתקין ה-APK](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+2. התוכנה הזאת היא תוכנת קוד פתוח, אז תוודאו שהתוכנה היא [מהתיקייה הרשמית של Github](https://github.com/Paving-Base/APK-Installer) או [מהאפליקציה הזאת](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) על מנת לוודא שהפרטים שלכם בידיים בטוחות.
+3. אם מקור התוכנה אינו חריג, כל הנתונים שלך ישמשו רק להפעלת התוכנה או יאוחסנו באופן מקומי במהלך ההרצה של התוכנה, והמפתח של התוכנה לא יגנוב שום פרט מן הנתונים שלך. ובכל זאת, אנא שמרו על ביטחון המחשב.
+4. התרגום של אפליקציה זו מגיע מקהילת המתרגמים [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") וכל הטקסטים אינם מייצגים את השקפותיו של מחבר התוכנה, אלא מהווים תרגום של הטקסט המקורי.
 
-##### תרגם
-תודה למתרגמים [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") על תמיכתם. If there are any problems with the translation, please feel free to correct us. And please translate seriously. Everything you write will be read all over the world.
+##### תרגום
+תודה למתרגמים [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") על תמיכתם. אם יש בעיה בתרגום, בבקשה תרגישו בטוחים לתקן אותנו. ובבקשה תתרגמו באופן רציני. כל מה שאתם מתרגמים יקרא בכל העולם.
 
 ##### תורמים
 - [wherewhere](https://github.com/wherewhere)
