@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <controls:SettingsGroup xmlns:controls="using:APKInstaller.Controls" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Header="Comunicados" Margin="0,-28,0,0">
-    <InfoBar Title="Aqui está o comunicado (Não me pergunte o porquê desta mensagem não ter um botão de fechar)" IsClosable="False" IsOpen="True" Message="You can see all kinds of notifications here in the future. If you don't want to see them, you can turn them off in the settings below." Severity="Informational"/>
+    <InfoBar Title="Aqui está o comunicado (Não me pergunte o porquê desta mensagem não ter um botão de fechar)" IsClosable="False" IsOpen="True" Message="Poderá ver todo o tipo de notificações aqui no futuro. Se não quiser vê-las, pode desativá-las nas configurações abaixo." Severity="Informational"/>
     <InfoBar Title="Mais traduções" IsClosable="True" IsOpen="True" Message="Visto que o autor apenas sabe chinês e inglês, todas as traduções são deixadas a responsabilidade da comunidade. Se não quer ver um idioma desconhecido, é bem-vindo(a) no Crowdin para ajudar nas traduções!" Severity="Informational">
         <InfoBar.ActionButton>
-            <HyperlinkButton HorizontalAlignment="Right" Content="Click Me" NavigateUri="https://crowdin.com/project/APKInstaller"/>
+            <HyperlinkButton HorizontalAlignment="Right" Content="Clique em mim" NavigateUri="https://crowdin.com/project/APKInstaller"/>
         </InfoBar.ActionButton>
     </InfoBar>
 </controls:SettingsGroup>
