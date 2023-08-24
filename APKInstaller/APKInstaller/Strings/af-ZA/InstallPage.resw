@@ -353,7 +353,7 @@
     <value>Kies</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>Share</value>
+    <value>EN </value>
   </data>
   <data name="StartingADB" xml:space="preserve">
     <value>Starting ADB Server...</value>
