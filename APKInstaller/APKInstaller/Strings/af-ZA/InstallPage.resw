@@ -132,7 +132,7 @@
     <value>In Analise...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>APK-lêer</value>
+    <value>APK File</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>Vermoëns:</value>
@@ -144,10 +144,10 @@
     <value>Kanselleer</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
-    <value>Ja</value>
+    <value>Yes</value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
-    <value>Nee</value>
+    <value>No</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>Kan nie aan WSA koppel nie</value>
@@ -159,13 +159,13 @@
     <value>Kan nie programpakket oopmaak nie</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>Kontroleer...</value>
+    <value>Kontroleer tans…</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Kontroleer ADB...</value>
+    <value>Kontroleer tans…</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Kontrolering Roete...</value>
+    <value>Kontroleer tans…</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>Klik hier om dit te lees</value>
@@ -188,13 +188,13 @@
     <value>https://crowdin.com/translate/APKInstaller/327/en-af</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>Toestelle</value>
+    <value>Device</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Aflaai</value>
+    <value>Download</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>Aflaai het misluk</value>
+    <value>Aflaai misluk</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
     <value>Gaan asseblief u netwerkverbinding of die URL na en probeer weer.</value>
@@ -212,7 +212,7 @@
     <value>Gaan na instellings</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>'N nuwer weergawe is alreeds geïnstalleer</value>
+    <value>apk app </value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
     <value>U het alreeds 'n nuwe weergawe {0} van hierdie toep geïnstalleer. Is u seker dat u weergawe {1} weer wil installeer?</value>
