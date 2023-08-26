@@ -148,7 +148,7 @@
     <value>كلا</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>لا يمكن الاتصال بالWSA</value>
+    <value>Cannot الاتصال  to WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
     <value>إما أن وكالة WSA لم تبدأ بشكل صحيح ،أو  أن هناك مشكلة مع  أل ADB.قد يكون من الصعب إيجاد حل لهذه المشكلة.من فضلك إعادة تشغيل المثبت. إذا كان لا يزال ل لا يعمل، حاول إعادة تشغيل الكومبيوتر.
