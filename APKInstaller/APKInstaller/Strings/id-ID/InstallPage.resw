@@ -255,7 +255,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
-    <value>Menginstal...</value>
+    <value>Instal...</value>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
     <value>Alasan:</value>
