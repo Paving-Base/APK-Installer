@@ -6,7 +6,7 @@
 3. Si la source du programme n'est pas anormale, toutes vos données ne seront utilisées que pour l'exécution du programme ou stockées localement pendant l'exécution, et le développeur ne volera aucune de vos données. Toutefois, il convient de veiller à la sécurité de l'environnement.
 4. La traduction de cette application provient de la communauté [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") et tous les textes ne représentent pas les opinions de l'auteur.
 
-##### Traduire
+##### Translate
 Merci aux traducteurs de [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") pour leur soutien. En cas de problème avec la traduction, n'hésitez pas à nous corriger. Et s'il vous plaît, traduisez sérieusement. compte panama disponible 6458
 
 ##### Les contributeurs
