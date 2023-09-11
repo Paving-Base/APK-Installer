@@ -9,7 +9,7 @@
 ##### Translate
 Thanks to [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") translators for their support. If there are any problems with the translation, please feel free to correct us. And please translate seriously. Everything you write will be read all over the world.
 
-##### Contributors
+##### Bidragsgivare
 - [wherewhere](https://github.com/wherewhere)
 - [Void48](https://github.com/Void48)
 - [EP012014](https://github.com/EP012014)
