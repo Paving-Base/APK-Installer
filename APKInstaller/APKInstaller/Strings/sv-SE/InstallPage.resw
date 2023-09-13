@@ -396,21 +396,21 @@
     <value>Väntar på enheten...</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
-    <value>Waiting for install {0}</value>
+    <value>Väntar på installationen {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
     <value>Väntar WSA Start...
-Detta kan ta lång tid. Luta dig tillbaka och slappna av.</value>
+Det kan ta lång tid. Luta dig tillbaka och slappna av.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>!</value>
+    <value>Välkommen!</value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
     <value>Writing install session ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>WSA är igång</value>
+    <value>WSA körs</value>
   </data>
 </root>
