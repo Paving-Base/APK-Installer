@@ -1,4 +1,4 @@
-# Bagaimana cara menghubungkan perangkat
+# How To Connect Device
 #### Menggunakan USB
 1. Pastikan Penginstal APK telah diperbarui ke [versi terbaru](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
 2. Aktifkan Mode Pengembang, buka USB Debug![Mode Pengembang](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Screenshot_20221002-172252.jpg)
