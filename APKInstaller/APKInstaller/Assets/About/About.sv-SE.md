@@ -1,7 +1,7 @@
-#### Välkommen till PK-installationsprogram!
+#### Welcome to the APK Installer!
 
 ##### Deklarativt
-1. Vänligen följ licensavtalet för [APK Installer License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+1. Please comply with the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
 2. Detta program är öppen källkod, så se till att programmet är från [denna Github repository](https://github.com/Paving-Base/APK-Installer) eller [denna applikation](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) för att säkerställa din datasäkerhet.
 3. Om källan till programmet inte är avvikande, alla dina data kommer endast att användas för att köra programmet eller lagras lokalt under körning, och utvecklaren kommer inte att stjäla någon av dina uppgifter. Var dock uppmärksam på miljöns säkerhet.
 4. Översättningen av denna ansökan kommer från gemenskapen [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") och alla texter representerar inte författarens åsikter.
