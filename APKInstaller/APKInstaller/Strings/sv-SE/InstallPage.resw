@@ -313,13 +313,13 @@
     <value>Please connect to the internet before opening the app.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>For proper functioning of the app, try to launch an Android app package.</value>
+    <value>För att appen ska fungera korrekt, försök att starta ett Android-apppaket.</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
-    <value>Online Package</value>
+    <value>Paket online</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
     <value>Package Name</value>
@@ -390,7 +390,7 @@
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>Waiting for download...</value>
+    <value>Väntar på nedladdning...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
     <value>Väntar på enheten...</value>
@@ -400,17 +400,17 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
-    <value>Waiting WSA Start...
-This may take long time. Sit back and relax.</value>
+    <value>Väntar WSA Start...
+Detta kan ta lång tid. Luta dig tillbaka och slappna av.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome!</value>
+    <value>!</value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
     <value>Writing install session ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>WSA is Running</value>
+    <value>WSA är igång</value>
   </data>
 </root>
