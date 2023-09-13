@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppName.Text" xml:space="preserve">
-    <value>App Name</value>
+    <value/>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
     <value>Basic Information</value>
@@ -137,7 +137,7 @@
     <value>Min SDK</value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
-    <value>Open Package Folder</value>
+    <value/>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
     <value>Package Name</value>
@@ -153,7 +153,7 @@
     <comment>{0} - Permissions Count.</comment>
   </data>
   <data name="SharePackage.Content" xml:space="preserve">
-    <value>Share Package</value>
+    <value>Dela paket</value>
   </data>
   <data name="SupportedArchitectures.Text" xml:space="preserve">
     <value>Support Architectures</value>
