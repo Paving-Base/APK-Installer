@@ -322,7 +322,7 @@
     <value>Paket online</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
-    <value>Package Name</value>
+    <value>Paketnamn</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
     <value>Package Name: {0}</value>
