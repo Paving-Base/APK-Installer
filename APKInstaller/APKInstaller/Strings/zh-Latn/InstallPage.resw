@@ -181,7 +181,7 @@
     <value>Fùzhì</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>正在创建安装会话……</value>
+    <value/>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Shèbèi</value>
@@ -379,7 +379,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="UploadingFormat" xml:space="preserve">
-    <value>正在上传 {0} ({1}/{2})……</value>
+    <value>正在上传 {0} ({1}/{2})...</value>
     <comment>{0} - Progress. {1} - Finnished count. {2} - Total count.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
