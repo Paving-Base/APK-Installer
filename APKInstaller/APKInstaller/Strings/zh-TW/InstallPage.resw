@@ -133,8 +133,7 @@
     <value>APK 檔案</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Install_FAILED_CONFLICTING_PROVIDER: Scanning Failed.: Can't install because provider name com. facebook. app. FacebookContentProvider5467826609957522 (in package itopvpn. free. vpn. proxy) is already used by com. itop. vpn
-</value>
+    <value>功能: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
     <value>iTop-VPN-v3.0.0-MOD-GMA-(Getmodsapk.com)</value>
