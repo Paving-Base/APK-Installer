@@ -199,7 +199,7 @@
     <value>EULA</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
-    <value>Commentaire</value>
+    <value>Vos commentaires</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
     <value>Trouver une mise à jour</value>
@@ -334,7 +334,7 @@
     <value>Paramètres</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>Traduire</value>
+    <value>Translate</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
     <value>Version</value>
