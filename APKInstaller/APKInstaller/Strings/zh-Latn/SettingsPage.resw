@@ -265,7 +265,7 @@
     <value>配对并连接设备。</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
-    <value>配对与连接</value>
+    <value/>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Shēnsè</value>
