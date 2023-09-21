@@ -118,19 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, le mode de débogage Android (Android Debug Bridge), est requis pour qu'APK Installer fonctionne. Cliquez sur "Télécharger" pour le télécharger. En le téléchargeant, vous acceptez les Conditions d'Utilisation de Google pour ADB. Si vous avez déjà téléchargé ADB, cliquez sur "Sélectionner" pour le sélectionner.</value>
+    <value>ADB, le mode de débogage Android (Android Debug Bridge), est requis pour qu'APK Installer fonctionne. Cliquez sur "Télécharger" pour le télécharger sur votre PC. En le téléchargeant, vous acceptez les Conditions Générales d'Utilisation (CGU) de Google pour ADB. Si vous avez déjà téléchargé ADB, cliquez sur "Sélectionner" pour le sélectionner.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB existe</value>
+    <value>ADB existe.</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB est manquant</value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>In Analyses...</value>
+    <value>En cours d'analyse. Veuillez patienter...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>Fichier de l'APK</value>
+    <value>Fichier APK</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>Culpabilités : </value>
