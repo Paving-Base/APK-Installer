@@ -407,7 +407,7 @@ zhè tōngcháng xūyào hěn chángshíjiān. Qǐng zuò hé fàngkuān. </valu
     <value>Huānyíng! </value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
-    <value>正在写入安装会话 ({0}/{1})……</value>
+    <value/>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">
