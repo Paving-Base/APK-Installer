@@ -133,61 +133,61 @@
     <value>Fichier APK</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Culpabilités : </value>
+    <value>Capacités : </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>App Nommé</value>
+    <value>Nom de l'appli</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Annuler l'opération</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
-    <value>Oui</value>
+    <value>Oui.</value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
-    <value>No</value>
+    <value>Non.</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Canot Donnent to WSA</value>
+    <value>Connexion au WSA impossible</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Citer WSA didot star propre, or terre il a problème with ADB. T'hisse problème CAN BE vers difficulté to résolve. Pelasse restant the installer. If IT stalle dosent York, tri restreint the computer. </value>
+    <value>Soit WSA n'a pas démarré correctement, soit il y a un problème avec ADB. Ce problème peut être très difficile à résoudre. Veuillez redémarrer l'installateur. Si cela ne fonctionne toujours pas, essayez de redémarrer l'ordinateur, puis de lancer le sous-système Windows pour Android.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>Canot open app package</value>
+    <value>Impossible d'ouvrir le paquet de l'appli</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>Hacking...</value>
+    <value>Vérification en cours...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Vérification de ADB...</value>
+    <value>Vérification de l'ADB en cours...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Hacking Pat...</value>
+    <value>Vérification du chemin d'accès en cours...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Clic hère to rend tel</value>
+    <value>Cliquez ici pour lire à voix haute</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Close</value>
+    <value>Fermer la fenêtre</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>Are you sure to cancel the installation ?</value>
+    <value>Voulez-vous vraiment annuler l'installation ?</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Connexion Père De vices...</value>
+    <value>Connexion des appareils appairés...</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
-    <value>Coty</value>
+    <value>Copier (Ctrl+C)</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Crainte installée session...</value>
+    <value>Création de la session d'installation...</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>De vices</value>
+    <value>Appareils appairés</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>OwnCloud</value>
+    <value>Télécharger le fichier</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
     <value>OwnCloud Faille</value>
