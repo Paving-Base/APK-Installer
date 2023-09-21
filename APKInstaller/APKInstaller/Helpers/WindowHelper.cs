@@ -9,11 +9,13 @@ using WinRT.Interop;
 
 namespace APKInstaller.Helpers
 {
-    // Helpers class to allow the app to find the Window that contains an
-    // arbitrary UIElement (GetWindowForElement).  To do this, we keep track
-    // of all active Windows.  The app code must call WindowHelper.CreateWindow
-    // rather than "new Window" so we can keep track of all the relevant
-    // windows.  In the future, we would like to support this in platform APIs.
+    /// <summary>
+    /// Helpers class to allow the app to find the Window that contains an
+    /// arbitrary <see cref="UIElement"/> (<see cref="GetWindowForElement(UIElement)"/>).
+    /// To do this, we keep track of all active Windows. The app code must call
+    /// <see cref="CreateWindow()"/> rather than "new <see cref="Window"/>()"
+    /// so we can keep track of all the relevant windows.
+    /// </summary>
     public static class WindowHelper
     {
         public static Window CreateWindow()
@@ -120,16 +122,13 @@ namespace APKInstaller.Helpers
         /// <summary>
         /// Tries to get the pointer to the window handle.
         /// </summary>
-        /// <param name="window"></param>
-        /// <param name="windowHandle"></param>
         /// <returns><see langword="true"/> if the handle is not <see cref="IntPtr.Zero"/>.</returns>
         public static bool GetHandle(Window window, out IntPtr windowHandle)
         {
             windowHandle = WindowNative.GetWindowHandle(window);
-
             return windowHandle != IntPtr.Zero;
         }
 
-        public static List<Window> ActiveWindows { get; } = new List<Window>();
+        public static HashSet<Window> ActiveWindows { get; } = new HashSet<Window>();
     }
 }

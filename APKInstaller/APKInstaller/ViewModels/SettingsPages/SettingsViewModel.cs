@@ -2,6 +2,7 @@
 using APKInstaller.Helpers;
 using APKInstaller.Models;
 using APKInstaller.Pages.SettingsPages;
+using CommunityToolkit.WinUI.Helpers;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.Windows.AppLifecycle;
@@ -426,58 +427,54 @@ namespace APKInstaller.ViewModels.SettingsPages
         {
             get
             {
-                string ver = $"{Package.Current.Id.Version.Major}.{Package.Current.Id.Version.Minor}.{Package.Current.Id.Version.Build}";
+                string ver = Package.Current.Id.Version.ToFormattedString(3);
                 string name = Package.Current.DisplayName;
                 GetAboutTextBlockText();
                 return $"{name} v{ver}";
             }
         }
 
-        public static List<HyperlinkContent> ConnectHelpers
+        public static HyperlinkContent[] ConnectHelpers
         {
             get
             {
-                string langcode = LanguageHelper.GetPrimaryLanguage();
+                string langCode = LanguageHelper.GetPrimaryLanguage();
                 ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("InstallPage");
-                List<HyperlinkContent> values = new()
-                {
-                    new(_loader.GetString("NoDevice10"),new Uri($"https://github.com/Paving-Base/APK-Installer/blob/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/How%20To%20Connect%20Device.{langcode}.md")),
-                    new(_loader.GetString("HowToConnect"),new Uri($"https://github.com/Paving-Base/APK-Installer/blob/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/How%20To%20Connect%20WSA.{langcode}.md"))
-                };
+                HyperlinkContent[] values =
+                [
+                    new(_loader.GetString("NoDevice10"),new Uri($"https://github.com/Paving-Base/APK-Installer/blob/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/How%20To%20Connect%20Device.{langCode}.md")),
+                    new(_loader.GetString("HowToConnect"),new Uri($"https://github.com/Paving-Base/APK-Installer/blob/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/How%20To%20Connect%20WSA.{langCode}.md"))
+                ];
                 return values;
             }
         }
 
         public async void GetADBVersion()
         {
-            await Task.Run(() =>
+            await ThreadSwitcher.ResumeBackgroundAsync();
+            string version = "Unknown";
+            if (File.Exists(ADBPath))
             {
-                string version = "Unknown";
-                if (File.Exists(ADBPath))
+                AdbServerStatus info = AdbServer.Instance.GetStatus();
+                if (info.IsRunning)
                 {
-                    AdbServerStatus info = AdbServer.Instance.GetStatus();
-                    if (info.IsRunning)
-                    {
-                        version = info.Version.ToString(3);
-                    }
+                    version = info.Version.ToString(3);
                 }
-                ADBVersion = version;
-            });
+            }
+            ADBVersion = version;
         }
 
         private async void GetAboutTextBlockText()
         {
-            await Task.Run(async () =>
+            await ThreadSwitcher.ResumeBackgroundAsync();
+            string langCode = LanguageHelper.GetPrimaryLanguage();
+            Uri dataUri = new($"ms-appx:///Assets/About/About.{langCode}.md");
+            StorageFile file = await StorageFile.GetFileFromApplicationUriAsync(dataUri);
+            if (file != null)
             {
-                string langcode = LanguageHelper.GetPrimaryLanguage();
-                Uri dataUri = new($"ms-appx:///Assets/About/About.{langcode}.md");
-                StorageFile file = await StorageFile.GetFileFromApplicationUriAsync(dataUri);
-                if (file != null)
-                {
-                    string markdown = await FileIO.ReadTextAsync(file);
-                    AboutTextBlockText = markdown;
-                }
-            });
+                string markdown = await FileIO.ReadTextAsync(file);
+                AboutTextBlockText = markdown;
+            }
         }
 
         public SettingsViewModel(SettingsPage Page)
@@ -494,7 +491,7 @@ namespace APKInstaller.ViewModels.SettingsPages
             UpdateInfo info = null;
             try
             {
-                info = await UpdateHelper.CheckUpdateAsync("Paving-Base", "APK-Installer");
+                info = await UpdateHelper.CheckUpdateAsync("Paving-Base", "APK-Installer").ConfigureAwait(false);
             }
             catch (Exception ex)
             {

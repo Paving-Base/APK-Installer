@@ -1,5 +1,7 @@
 ﻿using AAPTForNet.Models;
+using System;
 using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Globalization;
 using System.Linq;
 using Windows.Globalization;
@@ -12,8 +14,8 @@ namespace APKInstaller.Helpers
         public const string AutoLanguageCode = "auto";
         public const string FallbackLanguageCode = "en-US";
 
-        public static readonly List<string> SupportLanguages = new()
-        {
+        public static string[] SupportLanguages { get; } =
+        [
             "af-ZA",
             "ar-SA",
             "ca-ES",
@@ -48,10 +50,10 @@ namespace APKInstaller.Helpers
             "zh-CN",
             "zh-Latn",
             "zh-TW"
-        };
+        ];
 
-        private static readonly List<string> SupportLanguageCodes = new()
-        {
+        private static string[] SupportLanguageCodes { get; } =
+        [
             "af, af-za",
             "ar, ar-sa, ar-ae, ar-bh, ar-dz, ar-eg, ar-iq, ar-jo, ar-kw, ar-lb, ar-ly, ar-ma, ar-om, ar-qa, ar-sy, ar-tn, ar-ye",
             "ca, ca-es, ca-es-valencia",
@@ -86,11 +88,11 @@ namespace APKInstaller.Helpers
             "zh-Hans, zh-cn, zh-hans-cn, zh-sg, zh-hans-sg",
             "zh-Latn, zh-latn-pinyin, zh-latn-cn, zh-latn-sg",
             "zh-Hant, zh-hk, zh-mo, zh-tw, zh-hant-hk, zh-hant-mo, zh-hant-tw"
-        };
+        ];
 
-        public static readonly List<CultureInfo> SupportCultures = SupportLanguages.Select(x => new CultureInfo(x)).ToList();
+        public static ImmutableArray<CultureInfo> SupportCultures { get; } = SupportLanguages.Select(x => new CultureInfo(x)).ToImmutableArray();
 
-        public static int FindIndexFromSupportLanguageCodes(string language) => SupportLanguageCodes.FindIndex(code => code.ToLowerInvariant().Split(", ").Contains(language.ToLowerInvariant()));
+        public static int FindIndexFromSupportLanguageCodes(string language) => Array.FindIndex(SupportLanguageCodes, code => code.Split(',', ' ').Any(x => x.Equals(language, StringComparison.OrdinalIgnoreCase)));
 
         public static string GetCurrentLanguage()
         {
