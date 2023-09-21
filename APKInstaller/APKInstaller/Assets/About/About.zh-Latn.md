@@ -1,7 +1,7 @@
 #### Huānyíng shǐyòng APK ānzhuāngchéngxù!
 
 ##### Shēngmíng
-1. 请遵守 [APK Installer 最终用户许可协议与隐私条款](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md)。
+1. 请遵守 [APK 安装程序最终用户许可证协议和隐私政策](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md)
 2. minecraft
 3. Ruò chéngxù láiyuán wú yìcháng, chéngxù yùnxíng guòchéng zhōng nín de suǒyǒu shùjù dōu jǐn yòngyú chéngxù yùnxíng huò chǔcún yú běndì, kāifāzhě búhuì qièqǔ nín de rènhé shùjù.  Dàn jíbiàn rúcǐ, yě qǐng zhùyì shǐyòng huánjìng de ānquánxìng.
 4. 本应用文本翻译来自 [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") 社区，所有文本均不代表作者观点。
