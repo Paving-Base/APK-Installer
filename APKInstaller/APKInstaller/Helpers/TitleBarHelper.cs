@@ -10,10 +10,10 @@ namespace APKInstaller.Helpers
 {
     public static class TitleBarHelper
     {
-        public static void TriggerTitleBarRepaint()
+        public static void TriggerTitleBarRepaint(Window window)
         {
             // to trigger repaint tracking task id 38044406
-            HWND hwnd = new(WindowNative.GetWindowHandle(UIHelper.MainWindow));
+            HWND hwnd = new(WindowNative.GetWindowHandle(window));
             IntPtr activeWindow = PInvoke.GetActiveWindow();
             if (hwnd == activeWindow)
             {

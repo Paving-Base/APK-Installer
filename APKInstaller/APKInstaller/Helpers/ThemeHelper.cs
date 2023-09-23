@@ -91,10 +91,21 @@ namespace APKInstaller.Helpers
 
         public static void UpdateSystemCaptionButtonColors()
         {
+            ResourceDictionary resources = Application.Current.Resources;
+            resources["WindowCaptionForeground"] = IsDarkTheme() ? Colors.White : Colors.Black;
+
+            foreach (Window window in WindowHelper.ActiveWindows)
+            {
+                UpdateSystemCaptionButtonColors(window);
+            }
+        }
+
+        private static void UpdateSystemCaptionButtonColors(Window window)
+        {
             if (!UIHelper.HasTitleBar)
             {
                 bool IsHighContrast = new AccessibilitySettings().HighContrast;
-                AppWindowTitleBar TitleBar = UIHelper.MainWindow.AppWindow.TitleBar;
+                AppWindowTitleBar TitleBar = window.AppWindow.TitleBar;
 
                 Color ForegroundColor = IsDarkTheme() || IsHighContrast ? Colors.White : Colors.Black;
                 Color BackgroundColor = IsHighContrast ? Color.FromArgb(255, 0, 0, 0) : IsDarkTheme() ? Color.FromArgb(255, 32, 32, 32) : Color.FromArgb(255, 243, 243, 243);
@@ -104,27 +115,9 @@ namespace APKInstaller.Helpers
                 TitleBar.ButtonBackgroundColor = TitleBar.ButtonInactiveBackgroundColor = UIHelper.TitleBarExtended ? Colors.Transparent : BackgroundColor;
             }
 
-            ResourceDictionary resources = Application.Current.Resources;
-            resources["WindowCaptionForeground"] = IsDarkTheme() ? Colors.White : Colors.Black;
-
-            if (UIHelper.HasTitleBar && (UIHelper.MainPage?.IsLoaded).Equals(true))
+            if (UIHelper.HasTitleBar && window.Content is FrameworkElement { IsLoaded: true })
             {
-                TitleBarHelper.TriggerTitleBarRepaint();
-            }
-
-            if (IsDarkTheme())
-            {
-                foreach (Window window in WindowHelper.ActiveWindows)
-                {
-                    window?.ApplyWindowDarkMode();
-                }
-            }
-            else
-            {
-                foreach (Window window in WindowHelper.ActiveWindows)
-                {
-                    window?.RemoveWindowDarkMode();
-                }
+                TitleBarHelper.TriggerTitleBarRepaint(window);
             }
         }
     }
