@@ -134,6 +134,6 @@
     <value>Applications</value>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
-    <value>언인스톨</value>
+    <value>삭제</value>
   </data>
 </root>
