@@ -121,18 +121,19 @@
     <value>
 
 
+
 </value>
   </data>
   <data name="Start.Text" xml:space="preserve">
-    <value>Start</value>
+    <value>Iske túsiriw</value>
   </data>
   <data name="Stop.Text" xml:space="preserve">
-    <value>정류장</value>
+    <value>정지</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Applications</value>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
-    <value>Uninstall</value>
+    <value>언인스톨</value>
   </data>
 </root>
