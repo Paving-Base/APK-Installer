@@ -7,7 +7,7 @@
 4. Překlad této aplikace pochází z [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin")komunity a všechny texty nereprezentují názory autora.
 
 ##### Přeložit
-Díky [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") překladatelům za jejich podporu. Pokud se vyskytnou nějaké problémy s překladem, neváhejte nás opravit. And please translate seriously. Everything you write will be read all over the world.
+Díky [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") překladatelům za jejich podporu. Pokud se vyskytnou nějaké problémy s překladem, neváhejte nás opravit. Přeložte prosím vážně. Everything you write will be read all over the world.
 
 ##### Contributors
 - [wherewhere](https://github.com/wherewhere)
