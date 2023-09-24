@@ -225,7 +225,7 @@
     <value>1. Maak asseblief seker dat APK Installer opgedateer is na die nuutste weergawe
 2. Maak seker dat u die Android-substelsel geïnstalleer het en lopende
 3. Skakel ontwikkelaarmodus aan en maak seker dat die IP-adres suksesvol vertoon word
-4. Heropen APK Installer en gaan voort met u installasie</value>
+4. Heropen APK Installer en gaan voort met u installasie{0}</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
     <value>Ikoon</value>
