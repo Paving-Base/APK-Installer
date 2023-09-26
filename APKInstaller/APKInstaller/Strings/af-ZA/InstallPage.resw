@@ -371,7 +371,7 @@
     <value/>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
-    <value>Unzipping {0}/{1} ...</value>
+    <value/>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Update" xml:space="preserve">
