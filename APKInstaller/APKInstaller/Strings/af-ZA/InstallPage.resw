@@ -375,7 +375,7 @@
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>Update</value>
+    <value/>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
     <value>Update {0}?</value>
