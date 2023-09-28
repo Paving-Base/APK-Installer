@@ -3,8 +3,8 @@
 ##### Shēngmíng
 1. 请遵守 [APK 安装程序最终用户许可证协议和隐私政策](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md)
 2. minecraft
-3. Ruò chéngxù láiyuán wú yìcháng, chéngxù yùnxíng guòchéng zhōng nín de suǒyǒu shùjù dōu jǐn yòngyú chéngxù yùnxíng huò chǔcún yú běndì, kāifāzhě búhuì qièqǔ nín de rènhé shùjù.  Dàn jíbiàn rúcǐ, yě qǐng zhùyì shǐyòng huánjìng de ānquánxìng.
-4. 本应用文本翻译来自 [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") 社区，所有文本均不代表作者观点。
+3. 若程序来源无异常，程序运行过程中您的所有数据都仅用于程序运行或储存于本地，开发者不会窃取您的任何数据。 Dàn jíbiàn rúcǐ, yě qǐng zhùyì shǐyòng huánjìng de ānquánxìng.
+4. 这个应用程序的翻译来自 [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") 社区，所有文本都不代表作者的观点。
 
 ##### Fānyì
 Gǎnxiè [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") fānyìzhě de zhīchí.  如果翻译出现了什么问题，欢迎前来纠正。 并且请认真对待翻译。 您所写的一切将会被全世界阅读。
