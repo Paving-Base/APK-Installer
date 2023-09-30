@@ -307,10 +307,10 @@
 [Dozvědět se více]({0})</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
-    <value>Cannot connect Internet</value>
+    <value/>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
-    <value>Please connect to the internet before opening the app.</value>
+    <value/>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
     <value>For proper functioning of the app, try to launch an Android app package.</value>
