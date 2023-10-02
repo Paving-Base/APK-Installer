@@ -160,7 +160,7 @@
     <value>Terminați ADB când ieșiți din programul de instalare?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Exit Installer after installation is complete.</value>
+    <value/>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
     <value>Exit Installer when APP is Ready?</value>
