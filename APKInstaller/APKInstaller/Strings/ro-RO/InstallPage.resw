@@ -408,7 +408,7 @@ Această operațiune ar putea dura mult timp. Stați înapoi și relaxați-vă.<
     <value>Bun venit!</value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
-    <value>Writing install session ({0}/{1})...</value>
+    <value>...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">
