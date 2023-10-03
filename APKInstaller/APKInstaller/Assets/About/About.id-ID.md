@@ -1,4 +1,4 @@
-#### Selamat datang di Penginstal APK!
+#### Welcome to the APK Installer!
 
 ##### Pernyataan
 1. Harap patuhi [Perjanjian Lisensi Pengguna Akhir APK Installer dan Kebijakan Privasi](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
