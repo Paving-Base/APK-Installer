@@ -1,9 +1,9 @@
-#### Witaj w Instalatorze APK!
+#### Witaj w instalatorze APK!
 
 ##### Deklaracja
-1. Postępuj zgodnie z [Umową licencyjną użytkownika Apk Installer](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. This program is open source software, so please make sure the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) to ensure your data security.
-3. If the source of the program is not abnormal, all your data will be used only for the running of the program or stored locally during the running, and the developer will not steal any of your data. Still, please pay attention to the security of the environment.
+1. Proszę przestrzegać [Umowy licencyjnej użytkownika końcowego instalacji APK oraz polityki prywatności](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+2. .
+3. Still, please pay attention to the security of the environment.
 4. The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.
 
 ##### Tłumaczenie
