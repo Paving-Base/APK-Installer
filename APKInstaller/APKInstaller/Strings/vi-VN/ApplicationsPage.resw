@@ -129,7 +129,8 @@
     <value>Dừng</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Các ứng dụng</value>
+    <value>Các ứng dụng
+BLÒỦT</value>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
     <value>Gỡ cài đặt</value>
