@@ -7,16 +7,16 @@
 4. Překlad této aplikace pochází z [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin")komunity a všechny texty nereprezentují názory autora.
 
 ##### Přeložit
-Díky [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") překladatelům za jejich podporu. Pokud se vyskytnou nějaké problémy s překladem, neváhejte nás opravit. Přeložte prosím vážně. Everything you write will be read all over the world.
+Díky [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") překladatelům za jejich podporu. Pokud se vyskytnou nějaké problémy s překladem, neváhejte nás opravit. Přeložte prosím vážně.
 
-##### Contributors
+#####
 - [wherewhere](https://github.com/wherewhere)
 - [Void48](https://github.com/Void48)
 - [EP012014](https://github.com/EP012014)
 - [A Big Salty Fish](https://github.com/bigsaltyfishes)
 - [sam1357](https://github.com/sam1357)
 
-##### Citations and References
+#####
 - [MetroLog](https://github.com/roubachof/MetroLog "MetroLog")
 - [Zeroconf](https://github.com/novotnyllc/Zeroconf "Zeroconf")
 - [Windows UI](https://github.com/microsoft/microsoft-ui-xaml "Windows UI")
