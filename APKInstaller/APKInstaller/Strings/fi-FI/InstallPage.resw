@@ -393,7 +393,7 @@
     <value>Waiting for download...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>Waiting for Device...</value>
+    <value>Odotetaan laitetta...</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
     <value>Waiting for install {0}</value>
