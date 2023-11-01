@@ -190,7 +190,7 @@
     <value>عرض</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
-    <value>الدعم</value>
+    <value>دعم</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
     <value>مثبت APK هو تطبيق مفتوح المصدر، ولن يتم إدخال أي إعلانات للربح. إذا أعجبك هذا التطبيق، لا تنسى تقييمه في المتجر. بالطبع، سيكون من الأفضل أن تتبرع قليلاً. شكرًا على دعمك.💕</value>
@@ -341,7 +341,7 @@
     <value>الإصدار</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>محدث</value>
+    <value>حتى الآن</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
     <value>إعدادات ألوان ويندو</value>
