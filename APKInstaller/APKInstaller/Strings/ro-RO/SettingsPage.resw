@@ -193,7 +193,7 @@
     <value>Suport</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
+    <value/>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>ALUF</value>
