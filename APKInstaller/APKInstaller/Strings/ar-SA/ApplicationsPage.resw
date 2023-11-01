@@ -128,7 +128,7 @@ pc</value>
     <value>التوقف</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>التطبيقات او الطلبات</value>
+    <value>تطبيق </value>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
     <value>إلغاء التثبيت</value>
