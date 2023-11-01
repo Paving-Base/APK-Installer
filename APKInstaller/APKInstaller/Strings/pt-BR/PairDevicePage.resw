@@ -154,7 +154,7 @@
     <value>Código de Pareamento WLAN</value>
   </data>
   <data name="PairingLogText" xml:space="preserve">
-    <value>Pareando, por favor, não feche a janela.</value>
+    <value>Pairing, please don't close the window.</value>
   </data>
   <data name="PairToggleButton.Content" xml:space="preserve">
     <value>Parear</value>
