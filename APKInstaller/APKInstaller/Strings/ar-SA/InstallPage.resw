@@ -207,7 +207,7 @@
     <value>تم العثور  على WSA</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>اذهب  للإعدادات</value>
+    <value>اذهب الى الاعداد</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
     <value>تم تثبيت نسخة حديثة</value>
@@ -385,14 +385,14 @@
     <comment>{0} - Progress. {1} - Finnished count. {2} - Total count.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
-    <value>إصدار التعليمات البرمجية</value>
+    <value>Version Code</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>الإصدار: {0}</value>
+    <value>النسخة: {0}</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>بانتظار انتهاء التحميل...</value>
+    <value>في انتظار التحميل</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
     <value>في انتظار الشبكة...</value>
