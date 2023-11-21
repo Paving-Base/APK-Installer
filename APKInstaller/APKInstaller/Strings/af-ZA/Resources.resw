@@ -124,16 +124,16 @@
     <value>APK File</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>An Android App Installer. Written by @wherewhere and @Tangent-90.</value>
+    <value/>
   </data>
   <data name="AppName" xml:space="preserve">
     <value>APKinstalleerder</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
-    <value>There was an error with the program…</value>
+    <value>by by</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>There are some problems with the network...</value>
+    <value>can you do it at the end of translation</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>No</value>
@@ -142,7 +142,7 @@
     <value>hello sir my app install problem</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>Split APK File</value>
+    <value/>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Yes</value>
