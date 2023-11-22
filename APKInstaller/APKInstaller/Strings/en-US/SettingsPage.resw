@@ -292,9 +292,7 @@
     <value>Reset</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
-    <value>Yes
-added
-no</value>
+    <value>Yes</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
     <value>Are you sure you want to reset the app?</value>
@@ -336,11 +334,10 @@ no</value>
     <value>Settings</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>BULBUL
-  </value>
+    <value>Translate</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
-    <value>Version </value>
+    <value>Version</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
     <value>Up To Date</value>
