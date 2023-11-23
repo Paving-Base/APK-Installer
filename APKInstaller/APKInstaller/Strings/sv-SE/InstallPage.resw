@@ -139,10 +139,10 @@
     <value>App namn:</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Avbryt</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
-    <value>Yes</value>
+    <value>Ja</value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
     <value>Nej</value>
@@ -169,7 +169,7 @@
     <value>Click here to read them</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Close</value>
+    <value>Stäng</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
     <value>Are you sure to cancel the installation?</value>
@@ -205,7 +205,7 @@
     <value>WSA Found</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>Go to Setting</value>
+    <value>Gå till inställning</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
     <value>A newer version is already installed</value>
@@ -226,13 +226,13 @@
 [Läs mer]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
-    <value>Icon</value>
+    <value>Ikon</value>
   </data>
   <data name="IKnow" xml:space="preserve">
-    <value>I Know</value>
+    <value>Jag vet</value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
-    <value>Incompatible App</value>
+    <value>Inkompatibel app</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
     <value>The minimum required for this app is {0}. Your device supports {1}. Please update your device or choose order package.</value>
@@ -242,21 +242,21 @@
     <value>Infos</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>Install</value>
+    <value>Installera</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
     <value>{0} is ready!</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
-    <value>Install {0}?</value>
+    <value>Installera {0}?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
-    <value>Installing...</value>
+    <value>Installerar...</value>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
-    <value>Reason: </value>
+    <value>Orsak: </value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
     <value>Installera WSA</value>
@@ -277,10 +277,10 @@
     <value>Starta när redo</value>
   </data>
   <data name="Loading" xml:space="preserve">
-    <value>Loading...</value>
+    <value>Laddar...</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
-    <value>More Info</value>
+    <value>Mer info</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
     <value>Kan inte hitta Android-enhet</value>
@@ -333,10 +333,10 @@
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
-    <value>Reinstall</value>
+    <value>Ominstallera</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>{0} is already installed</value>
+    <value>{0} är redan installerad</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
@@ -344,13 +344,13 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>Retry</value>
+    <value>Försök igen</value>
   </data>
   <data name="Select" xml:space="preserve">
     <value>Select</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>Share</value>
+    <value>Dela</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
     <value>Starting ADB Server...</value>
@@ -375,7 +375,7 @@
     <value>Uppdatera</value>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
-    <value>Update {0}?</value>
+    <value>Uppdatera {0}?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="UploadingFormat" xml:space="preserve">
