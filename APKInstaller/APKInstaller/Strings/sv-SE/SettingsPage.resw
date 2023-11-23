@@ -148,7 +148,7 @@
     <value>Söker efter uppdateringar...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
-    <value>Check For Updates</value>
+    <value>Leta efter uppdateringar</value>
   </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
     <value>Rensa cache</value>
