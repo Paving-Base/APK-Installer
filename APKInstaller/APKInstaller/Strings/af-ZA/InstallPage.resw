@@ -396,8 +396,7 @@
     <value/>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>Wag ris liv toeslet"..."
-a...</value>
+    <value>Wag vir die toestel... wsa apk app</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
     <value/>
@@ -408,7 +407,7 @@ a...</value>
 This may take long time. Sit back and relax.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome!</value>
+    <value>!</value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
     <value>...</value>
