@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
-    <value>En attente de l'appareil...</value>
+    <value>En attente de l'appareil. Veuillez patienter...</value>
   </data>
   <data name="Start.Text" xml:space="preserve">
     <value>Commencer le service</value>
@@ -127,9 +127,7 @@
     <value>Arrêter</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Applications
-
-</value>
+    <value>Application:</value>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
     <value>Désinstaller le service</value>
