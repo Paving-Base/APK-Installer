@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <controls:SettingsGroup xmlns:controls="using:APKInstaller.Controls" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Header="Ankündigungen" Margin="0,-28,0,0">
     <InfoBar Title="Hier ist die Ankündigung (Fragen Sie mich nicht, warum diese Nachricht keine Schaltfläche zum Schließen hat)" IsClosable="False" IsOpen="True" Message="In Zukunft können Sie hier alle Arten von Benachrichtigungen sehen. Wenn Sie diese nicht sehen möchten, können Sie sie in den Einstellungen unten deaktivieren." Severity="Informational"/>
-    <InfoBar Title="Weitere Übersetzungen" IsClosable="True" IsOpen="True" Message="Da der Autor nur Chinesisch und Englisch kann, werden alle Übersetzungen der Community überlassen. Wenn Sie eine unbekannte Sprache nicht sehen wollen, können Sie gerne bei Crowdin übersetzen!" Severity="Informational">
+    <InfoBar Title="Weitere Übersetzungen" IsClosable="True" IsOpen="True" Message="Da der Autor nur Chinesisch und Englisch kann, werden alle Übersetzungen der Community überlassen. Wenn sie keine unbekannten Sprachen sehen wollen, können Sie gerne bei Crowdin übersetzen!" Severity="Informational">
         <InfoBar.ActionButton>
-            <HyperlinkButton HorizontalAlignment="Right" Content="Klick mich" NavigateUri="https://crowdin.com/project/APKInstaller"/>
+            <HyperlinkButton HorizontalAlignment="Right" Content="Klick mich an" NavigateUri="https://crowdin.com/project/APKInstaller"/>
         </InfoBar.ActionButton>
     </InfoBar>
 </controls:SettingsGroup>
