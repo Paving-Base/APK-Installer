@@ -121,7 +121,7 @@
     <value>App Name</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
-    <value>Basisdaten</value>
+    <value>Grundlegende Informationen</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
     <value>Abhängigkeiten - {0} insgesamt</value>
