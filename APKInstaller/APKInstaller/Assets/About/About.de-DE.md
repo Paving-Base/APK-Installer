@@ -2,12 +2,12 @@
 
 ##### Erklärungen
 1. Bitte halten Sie sich an die [APK Installer Endbenutzer-Lizenzvereinbarung und Datenschutzerklärung](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. Dieses Programm ist Open Source Software, stelle also sicher, dass das Programm von [dieser Git-Repository](https://github.com/Paving-Base/APK-Installer) oder [dieser Anwendung](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) stammt, um deine Datensicherheit zu gewährleisten.
-3. Wenn die Quelle des Programms nicht abnorm ist, werden Ihre Daten ausschließlich für die Ausführung des Programms verwendet oder lokal während der Ausführung gespeichert, und der Entwickler wird keine Ihrer Daten stehlen. Achten Sie aber trotzdem auf die Sicherheit der Nutzungsumgebung.
+2. Dieses Programm ist Open Source Software, stellen Sie also sicher, dass das Programm von [dieser Github Repository](https://github.com/Paving-Base/APK-Installer) oder [dieser Anwendung](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) stammt, um deine Datensicherheit zu gewährleisten.
+3. Wenn die Quelle des Programms nicht abnormal ist, werden Ihre Daten ausschließlich für die Ausführung des Programms verwendet oder lokal während der Ausführung gespeichert. Der Entwickler wird keine Ihrer Daten stehlen. Achten Sie aber trotzdem auf die Sicherheit der Nutzungsumgebung.
 4. Die Übersetzung dieser Anwendung stammt von der [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") Community und alle Texte repräsentieren nicht die Ansichten des Autors.
 
 ##### Übersetzen
-Dank an die [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin")-Übersetzer für ihre Unterstützung. Sollte es jegliche Probleme mit der Übersetzung geben, können Sie diese gerne korrigieren. Bitte übersetzen Sie ernsthaft. Alles, was Sie schreiben, wird auf der ganzen Welt lesbar sein.
+Dank an die [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin")-Übersetzer für ihre Unterstützung. Sollte es jegliche Probleme mit der Übersetzung geben, können Sie uns gerne korrigieren. Bitte übersetzen Sie ernsthaft. Alles, was Sie schreiben, wird auf der ganzen Welt lesbar sein.
 
 ##### Mitwirkende
 - [wherewhere](https://github.com/wherewhere)
