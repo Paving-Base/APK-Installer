@@ -313,7 +313,7 @@
     <value>Please connect to the internet before opening the app.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>For proper functioning of the app, try to launch an Android app package.</value>
+    <value>This program is open source software, so please make sure the program is.</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
