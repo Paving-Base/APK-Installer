@@ -121,7 +121,7 @@
     <value>ADB, t'he Android Debut Bridge, is nada for APK Instal·lar to York. Click "Donald" to Donald Ir. By Downloader, you accepto t'he Google Terms and Conditions for ADB. If you have already downloaded ADB, click "Select" to select Ir.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Exists</value>
+    <value>ADB 已存在</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB is missing</value>
