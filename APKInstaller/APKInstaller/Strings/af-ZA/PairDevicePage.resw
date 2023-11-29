@@ -127,7 +127,7 @@
     <value>Connected {0} devices</value>
   </data>
   <data name="ConnectedLogText" xml:space="preserve">
-    <value>Connecting successfully.</value>
+    <value/>
   </data>
   <data name="ConnectingLogText" xml:space="preserve">
     <value>Pairing successfully. Connecting, please don't close the window.</value>
