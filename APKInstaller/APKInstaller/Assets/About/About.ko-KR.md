@@ -1,4 +1,4 @@
-#### Welcome to the APK Installer!
+#### APK 설치 관리자에 오신 것을 환영합니다!
 
 ##### 선언
 1. [APK 설치 관리자 최종 사용자 라이선스 계약 및 개인정보처리방침](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md)을 준수해 주세요.
