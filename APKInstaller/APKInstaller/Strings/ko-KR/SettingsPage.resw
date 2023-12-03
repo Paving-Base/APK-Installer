@@ -238,52 +238,52 @@
     <value>수정된 버전에서는 불쾌한 일이 발생할 수 있습니다. 광고, 손상된 기능 또는 바이러스 등이 있을 수 있습니다.  원본 버전을 다운로드하려면 Microsoft Store로 이동하세요. 자세한 내용은 GitHub 리포지토리를 참조하세요.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value/>
+    <value>수정된 버전을 사용 중입니다!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value/>
+    <value>다른 장치에 연결하려면 비활성화하세요.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value/>
+    <value>WSA 전용인가요?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value/>
+    <value>OS 아키텍처</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
-    <value/>
+    <value>OS 플랫폼</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
-    <value/>
+    <value>기타</value>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value>네트워크를 통해 장치를 페어링합니다.</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>장치 연결</value>
+    <value>장치 페어링</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
-    <value/>
+    <value>장치를 페어링하고 연결합니다.</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
-    <value/>
+    <value>페어링 및 연결</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value/>
+    <value>다크</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value/>
+    <value>Windows 기본값</value>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
-    <value/>
+    <value>라이트</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value/>
+    <value>스토어에서 평가하기</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
-    <value/>
+    <value>릴리스 노트</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
-    <value/>
+    <value>이 애플리케이션의 설정을 초기화합니다.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
     <value>애플리케이션 초기화</value>
@@ -295,43 +295,43 @@
     <value>예</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
-    <value/>
+    <value>앱을 초기화하시겠습니까?</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value/>
+    <value>페어링된 장치를 스캔하고 자동으로 연결합니다.</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value/>
+    <value>페어링된 장치를 스캔하시겠습니까?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
-    <value/>
+    <value>장치 선택</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
-    <value/>
+    <value>연결된 장치가 없을 때 도우미를 표시합니다.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value/>
+    <value>도움말을 표시하시겠습니까?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value/>
+    <value>설정 상단에 공지사항을 표시합니다.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value/>
+    <value>공지 사항 표시하시겠습니까?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
-    <value/>
+    <value>예기치 않은 중단이 발생하면 임시 파일이 남을 수 있습니다.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value/>
+    <value>설치 진행률 표시하시겠습니까?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
-    <value/>
+    <value>앱 테마</value>
   </data>
   <data name="ThemesSettingsHeader.Header" xml:space="preserve">
-    <value/>
+    <value>테마</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value/>
+    <value>설정</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
     <value>번역</value>
@@ -340,9 +340,9 @@
     <value>버전</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value/>
+    <value>최신 정보</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value/>
+    <value>Windows 색상 설정</value>
   </data>
 </root>
