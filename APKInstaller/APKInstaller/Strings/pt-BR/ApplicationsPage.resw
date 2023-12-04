@@ -121,7 +121,7 @@
     <value>Esperando pelo dispositivo...</value>
   </data>
   <data name="Start.Text" xml:space="preserve">
-    <value>Iniciarsim</value>
+    <value>Iniciar sim</value>
   </data>
   <data name="Stop.Text" xml:space="preserve">
     <value>Pare nao
