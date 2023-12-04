@@ -136,7 +136,7 @@
     <value>القدرات :</value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>اسماء التطبيقات</value>
+    <value>اسم التطبيق</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>إلغاء الأمر</value>
@@ -251,7 +251,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
-    <value>Install {0}?</value>
+    <value>تنصيب {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
