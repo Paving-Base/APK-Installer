@@ -133,7 +133,7 @@
     <value>Pareado com sucesso. Conectando, por favor, não feche a janela.</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
-    <value>Ligar</value>
+    <value>conectar</value>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
     <value>{0} dispositivos encontrados</value>
