@@ -140,7 +140,7 @@
     <value>Open Package Folder</value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
-    <value>Package Name</value>
+    <value>اسم الحزمة   </value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
     <value>حجم الحزمة</value>
