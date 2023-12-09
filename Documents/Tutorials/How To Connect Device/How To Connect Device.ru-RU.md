@@ -1,4 +1,4 @@
-# Как подключить устройства
+# How To Connect Device
 #### С помощью USB
 1. Пожалуйста, убедитесь, что APK Installer обновлен до [последней версии](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
 2. Включите Режим разработчика и Отладку по USB![Режим разработчика](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Screenshot_20221002-172252.jpg)
