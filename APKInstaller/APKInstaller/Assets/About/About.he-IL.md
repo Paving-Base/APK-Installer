@@ -1,13 +1,13 @@
 #### ברוכים הבאים למתקין ה- APK!
 
 ##### הצהרה
-1. בבקשה תאשר את [הסכם רישיון המשתמש וקצה המדיניות הפרטית של מתקין ה-APK](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. התוכנה הזאת היא תוכנת קוד פתוח, אז תוודאו שהתוכנה היא [מהתיקייה הרשמית של Github](https://github.com/Paving-Base/APK-Installer) או [מהאפליקציה הזאת](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) על מנת לוודא שהפרטים שלכם בידיים בטוחות.
+1. נא לאשר את [הסכם רישיון המשתמש וקצה המדיניות הפרטית של מתקין ה-APK](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+2. התוכנה הזאת היא תוכנת קוד פתוח, אנא וודאו שהתוכנה היא [מהתיקייה הרשמית של Github](https://github.com/Paving-Base/APK-Installer) או [מהאפליקציה הזאת](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) על מנת לוודא שהפרטים שלכם בידיים בטוחות.
 3. אם מקור התוכנה אינו חריג, כל הנתונים שלך ישמשו רק להפעלת התוכנה או יאוחסנו באופן מקומי במהלך ההרצה של התוכנה, והמפתח של התוכנה לא יגנוב שום פרט מן הנתונים שלך. ובכל זאת, אנא שמרו על ביטחון המחשב.
 4. התרגום של אפליקציה זו מגיע מקהילת המתרגמים [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") וכל הטקסטים אינם מייצגים את השקפותיו של מחבר התוכנה, אלא מהווים תרגום של הטקסט המקורי.
 
 ##### תרגום
-תודה למתרגמים [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") על תמיכתם. אם יש בעיה בתרגום, בבקשה תרגישו בטוחים לתקן אותנו. ובבקשה תתרגמו באופן רציני. כל מה שאתם מתרגמים יקרא בכל העולם.
+תודה למתרגמי [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") על תמיכתם. אם יש בעיה בתרגום, אתה יכולים בהחלט לתקן אותנו. נודה לתרגום רציני. דעו, מה שאתם מתרגמים כל העולם יקרא.
 
 ##### תורמים
 - [wherewhere](https://github.com/wherewhere)
