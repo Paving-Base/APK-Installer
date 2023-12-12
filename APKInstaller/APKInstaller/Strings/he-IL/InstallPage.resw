@@ -258,7 +258,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
-    <value>התקן...</value>
+    <value>מתקין...</value>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
     <value>
@@ -289,7 +289,7 @@
     <value>מידע נוסף</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
-    <value>לא ניתן למצוא מכשיר אנדרואיד</value>
+    <value>לא נמצא מכשיר אנדרואיד</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
     <value>כיצד לחבר התקן</value>
