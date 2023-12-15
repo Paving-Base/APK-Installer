@@ -388,7 +388,7 @@
     <value>Version Code</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>النسخة: {0}</value>
+    <value>Version: {0}</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
