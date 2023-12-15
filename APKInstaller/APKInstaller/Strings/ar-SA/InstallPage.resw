@@ -392,7 +392,7 @@
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>في انتظار التحميل</value>
+    <value>انتظار تنزيل...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
     <value>في انتظار الشبكة...</value>
