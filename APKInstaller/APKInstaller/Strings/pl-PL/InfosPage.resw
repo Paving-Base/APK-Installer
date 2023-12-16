@@ -137,13 +137,13 @@
     <value>Min SDK</value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
-    <value>Open Package Folder</value>
+    <value>Otwórz folder pakietów</value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
     <value>Nazwa pakietu</value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
-    <value>Package Size</value>
+    <value>Rozmiar pakietu</value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
     <value>Liczba uprawnień</value>
