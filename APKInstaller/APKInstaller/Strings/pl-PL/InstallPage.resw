@@ -127,7 +127,7 @@
     <value>Brakuje ADB</value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>W analizach...</value>
+    <value>W analizie...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
     <value>Plik APK</value>
