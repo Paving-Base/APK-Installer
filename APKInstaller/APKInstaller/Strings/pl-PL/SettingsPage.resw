@@ -133,7 +133,7 @@
     <value>Czy automatycznie pobierać pakiety z sieci?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>Wybierz typ tła dla systemu Windows 11</value>
+    <value>Wybierz tło dla systemu Windows 11</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
     <value>Backdrop</value>
