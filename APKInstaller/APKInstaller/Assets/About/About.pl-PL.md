@@ -3,7 +3,7 @@
 ##### Deklaracja
 1. Proszę przestrzegać [Umowy licencyjnej użytkownika końcowego instalacji APK oraz polityki prywatności](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
 2. .
-3. Proszę jednak zwracać uwagę na bezpieczeństwo środowiska.
+3. Dalej proszę jednak zwrócić uwagę na bezpieczeństwo środowiska.
 4. Tłumaczenie tej aplikacji pochodzi ze społeczności [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") i wszystkie teksty nie reprezentują poglądów autora.
 
 ##### Tłumaczenie
