@@ -3,11 +3,11 @@
 ##### Deklaracja
 1. Proszę przestrzegać [Umowy licencyjnej użytkownika końcowego instalacji APK oraz polityki prywatności](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
 2. .
-3. Still, please pay attention to the security of the environment.
-4. The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.
+3. Proszę jednak zwracać uwagę na bezpieczeństwo środowiska.
+4. Tłumaczenie tej aplikacji pochodzi ze społeczności [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") i wszystkie teksty nie reprezentują poglądów autora.
 
 ##### Tłumaczenie
-Dziękujemy tłumaczom [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") za ich wsparcie. If there are any problems with the translation, please feel free to correct us. And please translate seriously. Wszystko, co piszesz, będzie czytane na całym świecie.
+Dziękujemy tłumaczom [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") za ich wsparcie. Jeśli wystąpią jakiekolwiek problemy z tłumaczeniem, prosimy o ich poprawienie. I proszę tłumaczyć je na poważnie. Wszystko, co piszesz, będzie czytane na całym świecie.
 
 ##### Współtwórcy
 - [wherewhere](https://github.com/wherewhere)
