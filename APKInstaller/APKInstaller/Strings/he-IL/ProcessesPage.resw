@@ -127,10 +127,10 @@
     <value>שם</value>
   </data>
   <data name="ProcessId.Header" xml:space="preserve">
-    <value>תהליך</value>
+    <value>מזהה תהליך</value>
   </data>
   <data name="ResidentSetSize.Header" xml:space="preserve">
-    <value>גודל סט תושב</value>
+    <value>עריכת גודל Resident</value>
   </data>
   <data name="State.Header" xml:space="preserve">
     <value>מצב</value>
