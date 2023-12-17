@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, גשר אנדרואיד באגים, דרוש כדי שמתקין APK יעבוד. לחץ על "הורד" כדי להוריד אותו. בהורדה אתה מקבל את התנאים וההגבלות של גוגל עבור ADB. אם כבר הורדת את ADB, לחץ על "בחר" כדי לבחור בו.</value>
+    <value>ADB, הAndroid Debug Bridge דרוש כדי שמתקין APK יעבוד. לחץ על "הורד" כדי להוריד אותו. בהורדה אתה מקבל את התנאים וההגבלות של גוגל עבור ADB. אם כבר הורדת את ADB, לחץ על "בחר" כדי לבחור בו.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>ADB פועל</value>
@@ -169,7 +169,7 @@
     <value>בודק נתיב...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>לחץ כאן כדי לשחזר אותם</value>
+    <value>לחץ כאן כדי לקרוא אותם</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>סגור</value>
