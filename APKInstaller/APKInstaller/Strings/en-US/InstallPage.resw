@@ -136,8 +136,7 @@
     <value>Capabilities: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>App names happy moo
-deram11 termux</value>
+    <value>App Name</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancel</value>
@@ -323,8 +322,7 @@ deram11 termux</value>
     <value>Online Package</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
-    <value>Package Nam
-</value>
+    <value>Package Name</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
     <value>Package Name: {0}</value>
