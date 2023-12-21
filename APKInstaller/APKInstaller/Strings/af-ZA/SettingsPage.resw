@@ -127,7 +127,7 @@
     <value/>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>Auto download when package is from URL.</value>
+    <value>.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
     <value>Auto Download Online Packages?</value>
@@ -286,7 +286,7 @@
     <value>Reset settings of this application.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
-    <value>Reset application</value>
+    <value/>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
     <value>Reset</value>
