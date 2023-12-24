@@ -121,10 +121,10 @@
     <value/>
   </data>
   <data name="ConnectButton.Content" xml:space="preserve">
-    <value>Connect</value>
+    <value/>
   </data>
   <data name="ConnectedListFormat" xml:space="preserve">
-    <value>Connected {0} devices</value>
+    <value>Hello</value>
   </data>
   <data name="ConnectedLogText" xml:space="preserve">
     <value/>
@@ -133,13 +133,13 @@
     <value>Pairing successfully. Connecting, please don't close the window.</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
-    <value>Connect</value>
+    <value/>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
     <value>Found {0} devices</value>
   </data>
   <data name="IPAddressBox.Header" xml:space="preserve">
-    <value>IP Address</value>
+    <value>IP-adres</value>
   </data>
   <data name="ManualPairButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
     <value>Connecting devices manually</value>
