@@ -143,7 +143,7 @@
     <value>عنوان الIP</value>
   </data>
   <data name="ManualPairButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>توصيل الأجهزة يدويا.</value>
+    <value/>
   </data>
   <data name="ManualPairTextBlock.Text" xml:space="preserve">
     <value>اتصال يدوي</value>
