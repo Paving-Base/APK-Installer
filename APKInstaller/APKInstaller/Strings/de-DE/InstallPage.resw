@@ -160,7 +160,7 @@
     <value>Überprüfen...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>ADB wird geprüft...</value>
+    <value>Überprüfe Pfad...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
     <value>Überprüfe Pfad...</value>
