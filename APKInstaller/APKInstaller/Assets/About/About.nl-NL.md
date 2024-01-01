@@ -1,6 +1,6 @@
 #### Welcome to the APK Installer!
 
-##### Disclaimer
+##### Declaration
 1. Volg de [APK Installer End User License Agreement en Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
 2. Dit programma is open source software, dus zorg ervoor dat het programma afkomstig is van [deze Github repository](https://github.com/Paving-Base/APK-Installer) of [deze applicatie](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) om je gegevens veilig te houden.
 3. Als de bron van het programma betrouwbaar is, zullen al uw gegevens alleen worden gebruikt voor het uitvoeren van het programma of lokaal worden opgeslagen wanneer het programma draait, en de ontwikkelaar zal je gegevens niet stelen. Houd alsjeblieft nog steeds rekening met de veiligheid van de omgeving.
