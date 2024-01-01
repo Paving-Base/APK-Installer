@@ -121,13 +121,13 @@
     <value>Wachten op apparaat...</value>
   </data>
   <data name="Start.Text" xml:space="preserve">
-    <value>Start</value>
+    <value>Beginnen</value>
   </data>
   <data name="Stop.Text" xml:space="preserve">
     <value>Stop</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Applicaties</value>
+    <value>Applications</value>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
     <value>Verwijderen</value>
