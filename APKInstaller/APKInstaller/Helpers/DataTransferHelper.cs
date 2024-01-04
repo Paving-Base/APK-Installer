@@ -30,8 +30,8 @@ namespace APKInstaller.Helpers
         {
             DataPackage dataPackage = new();
             dataPackage.SetText(text);
-            dataPackage.Properties.Title = title;
-            dataPackage.Properties.Description = description;
+            if (title != null) { dataPackage.Properties.Title = title; }
+            if (description != null) { dataPackage.Properties.Description = description; }
             return dataPackage;
         }
 
@@ -43,8 +43,8 @@ namespace APKInstaller.Helpers
 
             DataPackage dataPackage = new();
             dataPackage.SetStorageItems(files);
-            dataPackage.Properties.Title = fileName;
-            dataPackage.Properties.Description = description;
+            if (fileName != null) { dataPackage.Properties.Title = fileName; }
+            if (description != null) { dataPackage.Properties.Description = description; }
 
             return dataPackage;
         }
@@ -57,8 +57,8 @@ namespace APKInstaller.Helpers
             dataPackage.SetWebLink(uri);
             dataPackage.SetText(uri.ToString());
             dataPackage.SetHtmlFormat(htmlFormat);
-            dataPackage.Properties.Title = displayName;
-            dataPackage.Properties.Description = description;
+            if (displayName != null) { dataPackage.Properties.Title = displayName; }
+            if (description != null) { dataPackage.Properties.Description = description; }
 
             return dataPackage;
         }
@@ -71,8 +71,8 @@ namespace APKInstaller.Helpers
 
             DataPackage dataPackage = new();
             dataPackage.SetBitmap(bitmap);
-            dataPackage.Properties.Title = bitmapName;
-            dataPackage.Properties.Description = description;
+            if (bitmapName != null) { dataPackage.Properties.Title = bitmapName; }
+            if (description != null) { dataPackage.Properties.Description = description; }
 
             return dataPackage;
         }

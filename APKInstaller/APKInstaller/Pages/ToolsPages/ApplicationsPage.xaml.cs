@@ -1,4 +1,6 @@
 ﻿using AdvancedSharpAdbClient;
+using AdvancedSharpAdbClient.DeviceCommands;
+using AdvancedSharpAdbClient.Models;
 using APKInstaller.Controls;
 using APKInstaller.Helpers;
 using APKInstaller.ViewModels.ToolsPages;
@@ -28,16 +30,16 @@ namespace APKInstaller.Pages.ToolsPages
             Provider = new ApplicationsViewModel(this);
             DataContext = Provider;
             Provider.TitleBar = TitleBar;
-            MonitorHelper.Monitor.DeviceChanged += OnDeviceChanged;
+            MonitorHelper.Monitor.DeviceListChanged += OnDeviceListChanged;
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             base.OnNavigatedFrom(e);
-            MonitorHelper.Monitor.DeviceChanged -= OnDeviceChanged;
+            MonitorHelper.Monitor.DeviceListChanged -= OnDeviceListChanged;
         }
 
-        private void OnDeviceChanged(object sender, DeviceDataEventArgs e) => _ = Provider.GetDevices();
+        private void OnDeviceListChanged(object sender, DeviceDataNotifyEventArgs e) => _ = Provider.GetDevices();
 
         private void TitleBar_BackRequested(TitleBar sender, object e)
         {

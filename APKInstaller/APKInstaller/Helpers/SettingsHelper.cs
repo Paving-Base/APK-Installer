@@ -1,4 +1,5 @@
 ﻿using AdvancedSharpAdbClient;
+using AdvancedSharpAdbClient.Models;
 using CommunityToolkit.WinUI.Helpers;
 using MetroLog;
 using MetroLog.Targets;
@@ -26,7 +27,7 @@ namespace APKInstaller.Helpers
         public const string IsCloseAPP = nameof(IsCloseAPP);
         public const string ShowDialogs = nameof(ShowDialogs);
         public const string ShowMessages = nameof(ShowMessages);
-        public const string ShowProgress = nameof(ShowProgress);
+        public const string IsUploadAPK = nameof(IsUploadAPK);
         public const string AutoGetNetAPK = nameof(AutoGetNetAPK);
         public const string DefaultDevice = nameof(DefaultDevice);
         public const string CurrentLanguage = nameof(CurrentLanguage);
@@ -77,9 +78,9 @@ namespace APKInstaller.Helpers
             {
                 LocalObject.Save(ShowMessages, true);
             }
-            if (!LocalObject.KeyExists(ShowProgress))
+            if (!LocalObject.KeyExists(IsUploadAPK))
             {
-                LocalObject.Save(ShowProgress, true);
+                LocalObject.Save(IsUploadAPK, true);
             }
             if (!LocalObject.KeyExists(AutoGetNetAPK))
             {

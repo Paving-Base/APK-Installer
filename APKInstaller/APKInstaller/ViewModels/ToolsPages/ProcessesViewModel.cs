@@ -1,5 +1,7 @@
 ﻿using AdvancedSharpAdbClient;
 using AdvancedSharpAdbClient.DeviceCommands;
+using AdvancedSharpAdbClient.DeviceCommands.Models;
+using AdvancedSharpAdbClient.Models;
 using APKInstaller.Controls;
 using APKInstaller.Helpers;
 using APKInstaller.Pages.ToolsPages;

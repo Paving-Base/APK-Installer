@@ -40,10 +40,11 @@
     <EmbeddedResource Remove="AppPackages\**" />
     <None Remove="AppPackages\**" />
     <Page Remove="AppPackages\**" />
+    <PRIResource Remove="AppPackages\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AdvancedSharpAdbClient" Version="2.5.7" />
+    <PackageReference Include="AdvancedSharpAdbClient" Version="3.0.9" />
     <PackageReference Include="ColorCode.WinUI" Version="2.0.15" />
     <PackageReference Include="CommunityToolkit.WinUI" Version="7.1.2" />
     <PackageReference Include="CommunityToolkit.WinUI.Connectivity" Version="7.1.2" />
@@ -54,10 +55,10 @@
     <PackageReference Include="Downloader" Version="3.0.6" />
     <PackageReference Include="MetroLog.Net6" Version="2.1.0" />
     <PackageReference Include="Microsoft.Windows.CsWin32" Version="0.3.46-beta" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.756" />
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.4.230913002" />
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.2428" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.4.231115000" />
     <PackageReference Include="QRCoder" Version="1.4.3" />
-    <PackageReference Include="SharpCompress" Version="0.34.0" />
+    <PackageReference Include="SharpCompress" Version="0.35.0" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
 
@@ -78,10 +79,6 @@
   <PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PRIResource Remove="AppPackages\**" />
-  </ItemGroup>
 
   <ItemGroup>
     <None Remove="favicon.ico" />

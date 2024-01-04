@@ -1,4 +1,5 @@
 ﻿using AdvancedSharpAdbClient;
+using AdvancedSharpAdbClient.Models;
 using APKInstaller.Helpers;
 using APKInstaller.Models;
 using APKInstaller.Pages.SettingsPages;
@@ -203,7 +204,7 @@ namespace APKInstaller.ViewModels.SettingsPages
             }
             if (AdbServer.Instance.GetStatus().IsRunning)
             {
-                MonitorHelper.Monitor.DeviceChanged += OnDeviceChanged;
+                MonitorHelper.Monitor.DeviceListChanged += OnDeviceListChanged;
                 ConnectedList = (await new AdbClient().GetDevicesAsync()).Where(x => x.State != DeviceState.Offline).ToList();
             }
         }
@@ -221,7 +222,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                     try
                     {
                         await ADBServer.StartServerAsync(ADBPath, restartServerIfNewer: false, CancellationToken.None);
-                        MonitorHelper.Monitor.DeviceChanged += OnDeviceChanged;
+                        MonitorHelper.Monitor.DeviceListChanged += OnDeviceListChanged;
                     }
                     catch (Exception ex)
                     {
@@ -302,7 +303,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                     try
                     {
                         await ADBServer.StartServerAsync(ADBPath, restartServerIfNewer: false, CancellationToken.None);
-                        MonitorHelper.Monitor.DeviceChanged += OnDeviceChanged;
+                        MonitorHelper.Monitor.DeviceListChanged += OnDeviceListChanged;
                     }
                     catch (Exception ex)
                     {
@@ -383,7 +384,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                     try
                     {
                         await ADBServer.StartServerAsync(ADBPath, restartServerIfNewer: false, CancellationToken.None);
-                        MonitorHelper.Monitor.DeviceChanged += OnDeviceChanged;
+                        MonitorHelper.Monitor.DeviceListChanged += OnDeviceListChanged;
                     }
                     catch (Exception ex)
                     {
@@ -480,7 +481,7 @@ namespace APKInstaller.ViewModels.SettingsPages
             }
         }
 
-        public async void OnDeviceChanged(object sender, DeviceDataEventArgs e) => ConnectedList = (await new AdbClient().GetDevicesAsync()).Where(x => x.State != DeviceState.Offline).ToList();
+        public async void OnDeviceListChanged(object sender, DeviceDataNotifyEventArgs e) => ConnectedList = (await new AdbClient().GetDevicesAsync()).Where(x => x.State != DeviceState.Offline).ToList();
 
         public void Dispose()
         {
@@ -501,7 +502,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                 DeviceList.Clear();
                 if ((await AdbServer.Instance.GetStatusAsync(CancellationToken.None)).IsRunning)
                 {
-                    MonitorHelper.Monitor.DeviceChanged -= OnDeviceChanged;
+                    MonitorHelper.Monitor.DeviceListChanged -= OnDeviceListChanged;
                 }
                 if (!SettingsHelper.Get<bool>(SettingsHelper.ScanPairedDevice))
                 {

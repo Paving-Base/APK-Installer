@@ -2,6 +2,9 @@
 using AAPTForNet.Models;
 using AdvancedSharpAdbClient;
 using AdvancedSharpAdbClient.DeviceCommands;
+using AdvancedSharpAdbClient.DeviceCommands.Models;
+using AdvancedSharpAdbClient.Models;
+using AdvancedSharpAdbClient.Receivers;
 using APKInstaller.Controls.Dialogs;
 using APKInstaller.Helpers;
 using APKInstaller.Models;
@@ -31,6 +34,7 @@ using Windows.ApplicationModel.Resources;
 using Windows.Foundation.Collections;
 using Windows.Storage;
 using Windows.Storage.Pickers;
+using Windows.Storage.Streams;
 using Windows.System;
 using Windows.Win32;
 using Windows.Win32.Foundation;
@@ -68,8 +72,8 @@ namespace APKInstaller.ViewModels
 
         private static bool IsOnlyWSA => SettingsHelper.Get<bool>(SettingsHelper.IsOnlyWSA);
         private static bool IsCloseAPP => SettingsHelper.Get<bool>(SettingsHelper.IsCloseAPP);
+        private static bool IsUploadAPK => SettingsHelper.Get<bool>(SettingsHelper.IsUploadAPK);
         private static bool ShowDialogs => SettingsHelper.Get<bool>(SettingsHelper.ShowDialogs);
-        private static bool ShowProgress => SettingsHelper.Get<bool>(SettingsHelper.ShowProgress);
         private static bool AutoGetNetAPK => SettingsHelper.Get<bool>(SettingsHelper.AutoGetNetAPK);
         private static bool ScanPairedDevice => SettingsHelper.Get<bool>(SettingsHelper.ScanPairedDevice);
 
@@ -1017,7 +1021,7 @@ namespace APKInstaller.ViewModels
                     }
                     WaitProgressText = _loader.GetString("Loading");
                 }
-                MonitorHelper.Monitor.DeviceChanged += OnDeviceChanged;
+                MonitorHelper.Monitor.DeviceListChanged += OnDeviceListChanged;
             }
         }
 
@@ -1293,12 +1297,12 @@ namespace APKInstaller.ViewModels
                 try
                 {
                     AdbClient client = new();
-                    VersionInfo info = null;
+                    VersionInfo info = default;
                     if (ApkInfo != null && !ApkInfo.IsEmpty)
                     {
                         info = await client.GetPackageVersionAsync(_device, ApkInfo?.PackageName);
                     }
-                    if (info == null)
+                    if (info == default)
                     {
                         ActionButtonText = _loader.GetString("Install");
                         AppName = string.Format(_loader.GetString("InstallFormat"), AppLocaleName);
@@ -1551,7 +1555,7 @@ namespace APKInstaller.ViewModels
             AppVersionVisibility = AppPublisherVisibility = AppCapabilitiesVisibility = Visibility.Collapsed;
         }
 
-        private void OnDeviceChanged(object sender, DeviceDataEventArgs e)
+        private void OnDeviceListChanged(object sender, DeviceDataNotifyEventArgs e)
         {
             if (IsInitialized && !IsInstalling)
             {
@@ -1605,12 +1609,12 @@ namespace APKInstaller.ViewModels
             try
             {
                 AdbClient client = new();
-                VersionInfo info = null;
+                VersionInfo info = default;
                 if (ApkInfo != null && !ApkInfo.IsEmpty)
                 {
                     info = await client.GetPackageVersionAsync(_device, ApkInfo?.PackageName);
                 }
-                if (info != null && info.VersionCode >= int.Parse(ApkInfo?.VersionCode))
+                if (info != default && info.VersionCode >= int.Parse(ApkInfo?.VersionCode))
                 {
                     ContentDialog dialog = new()
                     {
@@ -1631,59 +1635,38 @@ namespace APKInstaller.ViewModels
                 CancelOperationVisibility = Visibility.Visible;
                 ActionVisibility = SecondaryActionVisibility = TextOutputVisibility = InstallOutputVisibility = Visibility.Collapsed;
                 LaunchWhenReadyVisibility = string.IsNullOrWhiteSpace(ApkInfo?.LaunchableActivity) ? Visibility.Collapsed : Visibility.Visible;
-                if ((ApkInfo?.IsSplit).GetValueOrDefault(false))
+                switch (ApkInfo)
                 {
-                    if (ShowProgress)
-                    {
-                        AppxInstallBarIndeterminate = false;
-                        PackageManager manager = new(client, _device);
-                        manager.InstallProgressChanged += OnInstallProgressChanged;
-                        await manager.InstallMultiplePackageAsync(new string[] { ApkInfo?.FullPath }, ApkInfo?.PackageName, true);
-                        AppxInstallBarValue = 100;
-                    }
-                    else
-                    {
-                        FileStream apk = File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read);
-                        await client.InstallMultipleAsync(_device, new Stream[] { apk }, ApkInfo.PackageName);
-                        await apk.DisposeAsync();
-                    }
-                }
-                else if ((ApkInfo?.IsBundle).GetValueOrDefault(false))
-                {
-                    if (ShowProgress)
-                    {
-                        AppxInstallBarIndeterminate = false;
-                        PackageManager manager = new(client, _device);
-                        manager.InstallProgressChanged += OnInstallProgressChanged;
-                        string[] strings = ApkInfo?.SplitApks?.Select(x => x.FullPath).ToArray();
-                        await manager.InstallMultiplePackageAsync(ApkInfo?.FullPath, strings, true);
-                        AppxInstallBarValue = 100;
-                    }
-                    else
-                    {
-                        FileStream apk = File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read);
-                        List<FileStream> splits = ApkInfo.SplitApks.Select(x => File.Open(x.FullPath, FileMode.Open, FileAccess.Read)).ToList();
-                        await client.InstallMultipleAsync(_device, apk, splits);
-                        splits.ForEach(async (x) => await x.DisposeAsync());
-                        await apk.DisposeAsync();
-                    }
-                }
-                else
-                {
-                    if (ShowProgress)
-                    {
-                        AppxInstallBarIndeterminate = false;
-                        PackageManager manager = new(client, _device);
-                        manager.InstallProgressChanged += OnInstallProgressChanged;
-                        await manager.InstallPackageAsync(ApkInfo?.FullPath, true);
-                        AppxInstallBarValue = 100;
-                    }
-                    else
-                    {
-                        FileStream apk = File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read);
-                        await client.InstallAsync(_device, apk);
-                        await apk.DisposeAsync();
-                    }
+                    case { IsSplit: true } when IsUploadAPK:
+                        await client.InstallMultiplePackageAsync(_device, [ApkInfo.FullPath], ApkInfo.PackageName, OnInstallProgressChanged, default, "-r", "-t");
+                        break;
+                    case { IsSplit: true }:
+                        await using (FileStream apk = File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read))
+                        {
+                            await client.InstallMultipleAsync(_device, [apk], ApkInfo.PackageName, OnInstallProgressChanged, default, "-r", "-t");
+                        }
+                        break;
+                    case { IsBundle: true } when IsUploadAPK:
+                        IEnumerable<string> strings = ApkInfo.SplitApks?.Select(x => x.FullPath);
+                        await client.InstallMultiplePackageAsync(_device, ApkInfo.FullPath, strings, OnInstallProgressChanged, default, "-r", "-t");
+                        break;
+                    case { IsBundle: true }:
+                        await using (FileStream apk = File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read))
+                        {
+                            FileStream[] splits = ApkInfo.SplitApks.Select(x => File.Open(x.FullPath, FileMode.Open, FileAccess.Read)).ToArray();
+                            await client.InstallMultipleAsync(_device, apk, splits, OnInstallProgressChanged, default, "-r", "-t");
+                            await Task.WhenAll(splits.Select(x => x.DisposeAsync().AsTask()));
+                        }
+                        break;
+                    case not null when IsUploadAPK:
+                        await client.InstallPackageAsync(_device, ApkInfo.FullPath, OnInstallProgressChanged, default, "-r", "-t");
+                        break;
+                    case not null:
+                        await using (FileStream apk = File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read))
+                        {
+                            await client.InstallAsync(_device, apk, OnInstallProgressChanged, default, "-r", "-t");
+                        }
+                        break;
                 }
                 AppName = string.Format(_loader.GetString("InstalledFormat"), AppLocaleName);
                 if (IsOpenApp && !string.IsNullOrWhiteSpace(ApkInfo?.LaunchableActivity))
@@ -1721,7 +1704,7 @@ namespace APKInstaller.ViewModels
 
             _page.CancelFlyout.Hide();
 
-            void OnInstallProgressChanged(object sender, InstallProgressEventArgs e)
+            void OnInstallProgressChanged(InstallProgressEventArgs e)
             {
                 switch (e.State)
                 {

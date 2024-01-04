@@ -7,8 +7,8 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:models="using:APKInstaller.Models"
+    xmlns:sacm="using:AdvancedSharpAdbClient.Models"
     xmlns:settingspages="using:APKInstaller.ViewModels.SettingsPages"
-    xmlns:sharpadbclient="using:AdvancedSharpAdbClient"
     xmlns:sys="using:System"
     d:DataContext="{d:DesignInstance Type=settingspages:PairDeviceViewModel}"
     NavigationCacheMode="Enabled"
@@ -242,7 +242,7 @@
                         ItemsSource="{x:Bind Provider.ConnectedList, Mode=OneWay}"
                         Visibility="{x:Bind Provider.ConnectedList, Converter={StaticResource CollectionVisibilityConverter}, Mode=OneWay}">
                         <controls:SettingsGroup.ItemTemplate>
-                            <DataTemplate x:DataType="sharpadbclient:DeviceData">
+                            <DataTemplate x:DataType="sacm:DeviceData">
                                 <controls:Setting
                                     Description="{x:Bind State}"
                                     Header="{x:Bind Name}"

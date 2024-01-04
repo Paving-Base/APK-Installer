@@ -7,8 +7,8 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:interopservices="using:System.Runtime.InteropServices"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="using:AdvancedSharpAdbClient.Models"
     xmlns:settingspages="using:APKInstaller.ViewModels.SettingsPages"
-    xmlns:sharpadbclient="using:AdvancedSharpAdbClient"
     xmlns:ui="using:CommunityToolkit.WinUI.UI"
     d:DataContext="{d:DesignInstance Type=settingspages:SettingsViewModel}"
     NavigationCacheMode="Enabled"
@@ -66,7 +66,7 @@
                         ItemsSource="{Binding DeviceList, Mode=OneWay}"
                         SelectionChanged="SelectDeviceBox_SelectionChanged">
                         <ListView.ItemTemplate>
-                            <DataTemplate x:DataType="sharpadbclient:DeviceData">
+                            <DataTemplate x:DataType="models:DeviceData">
                                 <ListViewItem Margin="0,1" Background="Transparent">
                                     <controls:Setting
                                         Description="{x:Bind State}"

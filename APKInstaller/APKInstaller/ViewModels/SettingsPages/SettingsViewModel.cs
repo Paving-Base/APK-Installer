@@ -1,4 +1,5 @@
 ﻿using AdvancedSharpAdbClient;
+using AdvancedSharpAdbClient.Models;
 using APKInstaller.Helpers;
 using APKInstaller.Models;
 using APKInstaller.Pages.SettingsPages;
@@ -44,8 +45,8 @@ namespace APKInstaller.ViewModels.SettingsPages
 
         public static string WinRTVersion => Assembly.GetAssembly(typeof(TrustLevel)).GetName().Version.ToString(3);
 
-        private IEnumerable<DeviceData> _deviceList;
-        public IEnumerable<DeviceData> DeviceList
+        private DeviceData[] _deviceList;
+        public DeviceData[] DeviceList
         {
             get => _deviceList;
             set
@@ -114,8 +115,8 @@ namespace APKInstaller.ViewModels.SettingsPages
 
         public static bool ShowProgress
         {
-            get => SettingsHelper.Get<bool>(SettingsHelper.ShowProgress);
-            set => SettingsHelper.Set(SettingsHelper.ShowProgress, value);
+            get => SettingsHelper.Get<bool>(SettingsHelper.IsUploadAPK);
+            set => SettingsHelper.Set(SettingsHelper.IsUploadAPK, value);
         }
 
         public static bool AutoGetNetAPK
@@ -483,7 +484,7 @@ namespace APKInstaller.ViewModels.SettingsPages
             Caches = this;
         }
 
-        public void OnDeviceChanged(object sender, DeviceDataEventArgs e) => DeviceList = new AdbClient().GetDevices().Where(x => x.State != DeviceState.Offline);
+        public void OnDeviceListChanged(object sender, DeviceDataNotifyEventArgs e) => DeviceList = new AdbClient().GetDevices().Where(x => x.State != DeviceState.Offline).ToArray();
 
         public async void CheckUpdate()
         {
@@ -548,7 +549,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                 try
                 {
                     await ADBServer.StartServerAsync(ADBPath, restartServerIfNewer: false, CancellationToken.None);
-                    MonitorHelper.Monitor.DeviceChanged += OnDeviceChanged;
+                    MonitorHelper.Monitor.DeviceListChanged += OnDeviceListChanged;
                 }
                 catch (Exception ex)
                 {
@@ -601,7 +602,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                 try
                 {
                     await ADBServer.StartServerAsync(ADBPath, restartServerIfNewer: false, CancellationToken.None);
-                    MonitorHelper.Monitor.DeviceChanged += OnDeviceChanged;
+                    MonitorHelper.Monitor.DeviceListChanged += OnDeviceListChanged;
                 }
                 catch (Exception ex)
                 {
