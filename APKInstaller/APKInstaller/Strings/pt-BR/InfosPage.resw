@@ -146,11 +146,10 @@
     <value>Tamanho do pacote1</value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
-    <value>Contagem de Permissões1
-</value>
+    <value>Permissionário Cunto</value>
   </data>
   <data name="PermissionsHeaderFormat" xml:space="preserve">
-    <value>Permissões - {0} no total1</value>
+    <value>Permissões — {0} no total1</value>
     <comment>{0} - Permissions Count.</comment>
   </data>
   <data name="SharePackage.Content" xml:space="preserve">
@@ -173,6 +172,6 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Version.Text" xml:space="preserve">
-    <value>Versão1</value>
+    <value>Version</value>
   </data>
 </root>
