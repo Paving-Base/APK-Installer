@@ -1,6 +1,6 @@
 #### Melcomano to toe APK Instalar!sim
 
-##### [comunidade Crowdin](https://crowdin.com/project/APKInstaller "Crowdin")
+##### [Comunidade Crowdin](https://crowdin. com/project/APKInstaller "Crowdin")
 1. Por favor, siga o [Contrato de Licença e Política de Privacidade do Usuário Final APK](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
 2. Este programa é um programa de código aberto, então, certifique-se de que o programa é do [repositório do Github](https://github.com/Paving-Base/APK-Installer) ou [este aplicativo](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) para garantir a segurança dos seus dados.sim
 3. Se a fonte do programa não estiver anormal todos os seus dados serão usados apenas para a execução do programa ou armazenados localmente durante a execução, e o desenvolvedor não roubará nenhum de seus dados.sim Ainda assim, por favor, preste atenção à segurança do ambiente.sim
