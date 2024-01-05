@@ -242,7 +242,7 @@
     <value>Infos</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>Εγκατάσταση</value>
+    <value>Install</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
     <value>{0} είναι έτοιμο!</value>
