@@ -343,6 +343,6 @@
     <value>Mới nhất</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Cài đặt màu Windows</value>
+    <value>Cài đặt màu cho Windows</value>
   </data>
 </root>
