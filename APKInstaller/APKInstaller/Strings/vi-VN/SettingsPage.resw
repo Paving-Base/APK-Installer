@@ -265,7 +265,7 @@
     <value>Ghép đôi và kết nối thiết bị.</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
-    <value>Ghép nối &amp; Kết nối</value>
+    <value>Pair &amp; Connect</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Tối</value>
@@ -340,7 +340,7 @@
     <value>Phiên bản</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Phiên Bản Mới Nhất</value>
+    <value>Mới nhất</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
     <value>Cài đặt màu Windows</value>
