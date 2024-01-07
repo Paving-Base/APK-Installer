@@ -277,7 +277,7 @@
     <value>Démarrer une fois prêt</value>
   </data>
   <data name="Loading" xml:space="preserve">
-    <value>Chargement...</value>
+    <value>Chargement en cours...</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
     <value>Plus d'infos</value>
