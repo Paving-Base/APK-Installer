@@ -1,4 +1,4 @@
-# كيف يمكن ربط Wsa
+# Q
 #### باستخدام USB
 1. الرجاء التأكد من أن مثبت APK قد تم تحديثه إلى [أحدث إصدار](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
 2. شغل وضع المطورين، ثم افتح تصحيح أخطاء USB ![وضع المطور](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Screenshot_20221002-172252.jpg)
