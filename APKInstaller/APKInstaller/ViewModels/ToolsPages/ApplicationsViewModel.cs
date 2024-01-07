@@ -31,7 +31,7 @@ namespace APKInstaller.ViewModels.ToolsPages
         private readonly ApplicationsPage _page;
         private Dictionary<string, (string Name, BitmapImage Icon)> PackageInfos;
 
-        private ObservableCollection<string> deviceList = new();
+        private ObservableCollection<string> deviceList = [];
         public ObservableCollection<string> DeviceList
         {
             get => deviceList;
@@ -45,7 +45,7 @@ namespace APKInstaller.ViewModels.ToolsPages
             }
         }
 
-        private ObservableCollection<APKInfo> applications = new();
+        private ObservableCollection<APKInfo> applications = [];
         public ObservableCollection<APKInfo> Applications
         {
             get => applications;
@@ -82,7 +82,7 @@ namespace APKInstaller.ViewModels.ToolsPages
                 await ThreadSwitcher.ResumeBackgroundAsync();
                 string ProgramFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.StartMenu), "Programs");
                 string[] InkInfos = Directory.GetFiles(ProgramFolder, "*.lnk");
-                PackageInfos = new Dictionary<string, (string Name, BitmapImage Icon)>();
+                PackageInfos = [];
                 foreach (string file in InkInfos)
                 {
                     WshShell shell = new();

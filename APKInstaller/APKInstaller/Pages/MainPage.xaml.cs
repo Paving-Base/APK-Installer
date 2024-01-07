@@ -1,7 +1,6 @@
 ﻿using APKInstaller.Helpers;
 using APKInstaller.Pages.SettingsPages;
 using Microsoft.UI.Dispatching;
-using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Windows.ApplicationModel;

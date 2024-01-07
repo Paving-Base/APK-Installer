@@ -22,18 +22,18 @@ namespace AAPTForNet.Models
         public Icon Icon { get; set; } = Icon.Default;
         public SDKInfo MinSDK { get; set; } = SDKInfo.Unknown;
         public SDKInfo TargetSDK { get; set; } = SDKInfo.Unknown;
-        public List<ApkInfo> SplitApks { get; set; } = new();
-        public List<string> Features { get; set; } = new();
-        public List<string> Permissions { get; set; } = new();
+        public List<ApkInfo> SplitApks { get; set; } = [];
+        public List<string> Features { get; set; } = [];
+        public List<string> Permissions { get; set; } = [];
 
         /// <summary>
         /// Supported application binary interfaces
         /// </summary>
-        public List<string> SupportedABIs { get; set; } = new();
-        public List<string> SupportLocales { get; set; } = new();
-        public List<string> SupportScreens { get; set; } = new();
-        public List<string> SupportDensities { get; set; } = new();
-        public Dictionary<string, string> LocaleLabels { get; set; } = new();
+        public List<string> SupportedABIs { get; set; } = [];
+        public List<string> SupportLocales { get; set; } = [];
+        public List<string> SupportScreens { get; set; } = [];
+        public List<string> SupportDensities { get; set; } = [];
+        public Dictionary<string, string> LocaleLabels { get; set; } = [];
 
         /// <summary>
         /// Size of package, in bytes

@@ -34,7 +34,6 @@ using Windows.ApplicationModel.Resources;
 using Windows.Foundation.Collections;
 using Windows.Storage;
 using Windows.Storage.Pickers;
-using Windows.Storage.Streams;
 using Windows.System;
 using Windows.Win32;
 using Windows.Win32.Foundation;
@@ -1356,7 +1355,7 @@ namespace APKInstaller.ViewModels
 
         private void CheckOnlinePackage()
         {
-            Regex[] UriRegex = new Regex[] { new Regex(@":\?source=(.*)"), new Regex(@"://(.*)") };
+            Regex[] UriRegex = new Regex[] { new(@":\?source=(.*)"), new(@"://(.*)") };
             string Uri = UriRegex[0].IsMatch(_url.ToString()) ? UriRegex[0].Match(_url.ToString()).Groups[1].Value : UriRegex[1].Match(_url.ToString()).Groups[1].Value;
             Uri Url = Uri.ValidateAndGetUri();
             if (Url != null)
@@ -1572,7 +1571,7 @@ namespace APKInstaller.ViewModels
         private async Task<bool> CheckDevice(bool forces = false)
         {
             AdbClient client = new();
-            IEnumerable<DeviceData> devices = (await client.GetDevicesAsync());
+            IEnumerable<DeviceData> devices = await client.GetDevicesAsync();
             ConsoleOutputReceiver receiver = new();
             if (!devices.Any()) { return false; }
             foreach (DeviceData device in devices)
@@ -1886,7 +1885,7 @@ namespace APKInstaller.ViewModels
             async Task CreateAPKS(IReadOnlyList<IStorageItem> items)
             {
                 await ThreadSwitcher.ResumeBackgroundAsync();
-                List<string> apks = new();
+                List<string> apks = [];
                 foreach (IStorageItem item in items)
                 {
                     if (item != null)

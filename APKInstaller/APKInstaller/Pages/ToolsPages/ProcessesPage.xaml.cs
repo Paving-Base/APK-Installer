@@ -1,9 +1,7 @@
-﻿using AdvancedSharpAdbClient;
-using AdvancedSharpAdbClient.Models;
+﻿using AdvancedSharpAdbClient.Models;
 using APKInstaller.Controls;
 using APKInstaller.Helpers;
 using APKInstaller.ViewModels.ToolsPages;
-using CommunityToolkit.WinUI;
 using CommunityToolkit.WinUI.UI.Controls;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;

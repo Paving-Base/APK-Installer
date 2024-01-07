@@ -44,7 +44,7 @@ namespace APKInstaller.Helpers.Exceptions
         public static ExceptionHandlingSynchronizationContext Register()
         {
             SynchronizationContext syncContext = Current ?? throw new InvalidOperationException("Ensure a synchronization context exists before calling this method.");
-            
+
             if (syncContext is not ExceptionHandlingSynchronizationContext customSynchronizationContext)
             {
                 customSynchronizationContext = new ExceptionHandlingSynchronizationContext(syncContext);

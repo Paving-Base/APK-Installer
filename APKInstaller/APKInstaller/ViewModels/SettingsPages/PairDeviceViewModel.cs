@@ -5,9 +5,6 @@ using APKInstaller.Models;
 using APKInstaller.Pages.SettingsPages;
 using CommunityToolkit.WinUI;
 using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Media;
-using Microsoft.UI.Xaml.Media.Imaging;
-using QRCoder;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -17,7 +14,6 @@ using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
 using Windows.ApplicationModel.Resources;
-using Windows.Storage.Streams;
 using Zeroconf;
 using Zeroconf.Interfaces;
 
@@ -37,7 +33,7 @@ namespace APKInstaller.ViewModels.SettingsPages
         public string DeviceListFormat => _loader.GetString("DeviceListFormat");
         public string ConnectedListFormat => _loader.GetString("ConnectedListFormat");
 
-        public readonly ObservableCollection<MDNSDeviceData> DeviceList = new();
+        public readonly ObservableCollection<MDNSDeviceData> DeviceList = [];
 
         private string _code = string.Empty;
         public string Code

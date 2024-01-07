@@ -55,7 +55,7 @@ namespace AAPTForNet
             int index = 0;
             bool terminated = false;
             AAPTool aapt = new();
-            List<string> output = new();    // Messages from output stream
+            List<string> output = [];    // Messages from output stream
 
             switch (type)
             {
@@ -139,7 +139,7 @@ namespace AAPTForNet
         /// <returns>Filled apk if dump process is not failed</returns>
         public static ApkInfo Decompile(string path)
         {
-            List<string> apks = new();
+            List<string> apks = [];
 
             if (path.EndsWith(".apk"))
             {
@@ -169,7 +169,7 @@ namespace AAPTForNet
                 }
             }
 
-            List<ApkInfo> apkInfos = new();
+            List<ApkInfo> apkInfos = [];
             foreach (string apkpath in apks)
             {
                 DumpModel manifest = ApkExtractor.ExtractManifest(apkpath);
@@ -205,7 +205,7 @@ namespace AAPTForNet
 
             if (packages.Count > 1) { throw new Exception("This is a Multiple Package."); }
 
-            List<ApkInfo> infos = new();
+            List<ApkInfo> infos = [];
             foreach (ApkInfos package in packages)
             {
                 foreach (ApkInfo baseapk in package.Apks.Where(x => !x.IsSplit))

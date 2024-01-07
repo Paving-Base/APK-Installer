@@ -47,7 +47,7 @@ namespace Zeroconf.DNS
 
         public string ReadDomainName()
         {
-            List<byte> bytes = new();
+            List<byte> bytes = [];
             int length;
 
             // get  the length of the first label
@@ -77,7 +77,7 @@ namespace Zeroconf.DNS
         public string ReadString()
         {
             short length = ReadByte();
-            List<byte> bytes = new();
+            List<byte> bytes = [];
             for (int i = 0; i < length; i++)
             {
                 bytes.Add(ReadByte());

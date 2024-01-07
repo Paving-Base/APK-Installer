@@ -75,7 +75,7 @@ namespace AAPTForNet
             DumpModel tree = AAPTool.DumpXmlTree(path, asset);
             if (!tree.IsSuccess)
             {
-                return new Dictionary<string, Icon>();
+                return [];
             }
 
             string msg = string.Empty;
@@ -92,7 +92,7 @@ namespace AAPTForNet
                 }
             }
 
-            return new Dictionary<string, Icon>();
+            return [];
         }
 
         private static Dictionary<string, Icon> ExtractIconTable(string path)
@@ -140,11 +140,11 @@ namespace AAPTForNet
         {
             if (string.IsNullOrEmpty(iconID))
             {
-                return new Dictionary<string, Icon>();
+                return [];
             }
 
             bool matchedEntry = false;
-            List<int> indexes = new();  // Get position of icon in resource list
+            List<int> indexes = [];  // Get position of icon in resource list
             DumpModel resTable = AAPTool.DumpResources(path, (m, i) =>
             {
                 // Dump resources and get icons,
@@ -183,7 +183,7 @@ namespace AAPTForNet
         {
             if (positions.Count == 0 || messages.Count <= 2)    // If dump failed
             {
-                return new Dictionary<string, Icon>();
+                return [];
             }
 
             const char seperator = '\"';
@@ -191,7 +191,7 @@ namespace AAPTForNet
             // because comparison statement with 'hdpi' in config's values,
             // reverse list and get first elem with LINQ
             IEnumerable<string> configNames = Enum.GetNames(typeof(Configs)).Reverse();
-            Dictionary<string, Icon> iconTable = new();
+            Dictionary<string, Icon> iconTable = [];
             void AddIcon2Table(string cfg, string iconName)
             {
                 if (!iconTable.ContainsKey(cfg))

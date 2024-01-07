@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.Management.Deployment;
-using Windows.System;
 
 namespace APKInstaller.Helpers
 {

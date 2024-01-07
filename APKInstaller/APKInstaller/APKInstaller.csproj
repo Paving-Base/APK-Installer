@@ -15,10 +15,11 @@
     <PublishProfile>win10-$(Platform).pubxml</PublishProfile>
     <RepositoryUrl>https://github.com/Paving-Base/APK-Installer</RepositoryUrl>
     <RootNamespace>APKInstaller</RootNamespace>
-    <RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
-    <TargetFramework>net6.0-windows10.0.22621.0</TargetFramework>
+    <RuntimeIdentifiers>win-x86;win-x64;win-arm64</RuntimeIdentifiers>
+    <TargetFramework>net8.0-windows10.0.22621.0</TargetFramework>
     <TargetPlatformMaxVersion>10.0.22621.0</TargetPlatformMaxVersion>
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <TrimMode>partial</TrimMode>
     <UseWinUI>True</UseWinUI>
     <VersionPrefix>0.1.25</VersionPrefix>
   </PropertyGroup>
@@ -54,7 +55,7 @@
     <PackageReference Include="CommunityToolkit.WinUI.UI.Controls.Markdown" Version="7.1.2" />
     <PackageReference Include="Downloader" Version="3.0.6" />
     <PackageReference Include="MetroLog.Net6" Version="2.1.0" />
-    <PackageReference Include="Microsoft.Windows.CsWin32" Version="0.3.46-beta" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Windows.CsWin32" Version="0.3.49-beta" PrivateAssets="all" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.2428" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.4.231115000" />
     <PackageReference Include="QRCoder" Version="1.4.3" />

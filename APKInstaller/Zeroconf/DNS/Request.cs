@@ -15,7 +15,7 @@ namespace Zeroconf.DNS
                 QDCOUNT = 0
             };
 
-            questions = new List<Question>();
+            questions = [];
         }
 
         public void AddQuestion(Question question)
@@ -27,7 +27,7 @@ namespace Zeroconf.DNS
         {
             get
             {
-                List<byte> data = new();
+                List<byte> data = [];
                 header.QDCOUNT = (ushort)questions.Count;
                 data.AddRange(header.Data);
                 foreach (Question q in questions)

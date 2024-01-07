@@ -46,12 +46,12 @@ namespace Zeroconf.DNS
 
         public Response()
         {
-            Questions = new List<Question>();
-            Answers = new List<AnswerRR>();
-            Authorities = new List<AuthorityRR>();
-            Additionals = new List<AdditionalRR>();
+            Questions = [];
+            Answers = [];
+            Authorities = [];
+            Additionals = [];
 
-            //	Server = new IPEndPoint(0,0);
+            //    Server = new IPEndPoint(0,0);
             Error = "";
             MessageSize = 0;
             TimeStamp = DateTime.Now;
@@ -66,15 +66,15 @@ namespace Zeroconf.DNS
             MessageSize = data.Length;
             RecordReader rr = new(data);
 
-            Questions = new List<Question>();
-            Answers = new List<AnswerRR>();
-            Authorities = new List<AuthorityRR>();
-            Additionals = new List<AdditionalRR>();
+            Questions = [];
+            Answers = [];
+            Authorities = [];
+            Additionals = [];
 
             header = new Header(rr);
 
             //if (header.RCODE != RCode.NoError)
-            //	Error = header.RCODE.ToString();
+            //    Error = header.RCODE.ToString();
 
             for (int intI = 0; intI < header.QDCOUNT; intI++)
             {
@@ -122,7 +122,7 @@ namespace Zeroconf.DNS
         {
             get
             {
-                List<RecordTXT> list = new();
+                List<RecordTXT> list = [];
                 foreach (AnswerRR answerRR in this.Answers)
                 {
                     if (answerRR.RECORD is RecordTXT record)
@@ -141,7 +141,7 @@ namespace Zeroconf.DNS
         {
             get
             {
-                List<RecordA> list = new();
+                List<RecordA> list = [];
                 foreach (AnswerRR answerRR in this.Answers)
                 {
                     if (answerRR.RECORD is RecordA record)
@@ -160,7 +160,7 @@ namespace Zeroconf.DNS
         {
             get
             {
-                List<RecordPTR> list = new();
+                List<RecordPTR> list = [];
                 foreach (AnswerRR answerRR in this.Answers)
                 {
                     if (answerRR.RECORD is RecordPTR record)
@@ -197,7 +197,7 @@ namespace Zeroconf.DNS
         {
             get
             {
-                List<RecordAAAA> list = new();
+                List<RecordAAAA> list = [];
                 foreach (AnswerRR answerRR in this.Answers)
                 {
                     if (answerRR.RECORD is RecordAAAA record)
@@ -249,19 +249,7 @@ namespace Zeroconf.DNS
         {
             get
             {
-                List<RR> list = new();
-                foreach (RR rr in this.Answers)
-                {
-                    list.Add(rr);
-                }
-                foreach (RR rr in this.Authorities)
-                {
-                    list.Add(rr);
-                }
-                foreach (RR rr in this.Additionals)
-                {
-                    list.Add(rr);
-                }
+                List<RR> list = [.. this.Answers, .. this.Authorities, .. this.Additionals];
                 return list.ToArray();
             }
         }

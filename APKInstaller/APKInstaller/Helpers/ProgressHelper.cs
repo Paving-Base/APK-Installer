@@ -1,5 +1,4 @@
-﻿using CommunityToolkit.WinUI;
-using Microsoft.UI.Xaml;
+﻿using Microsoft.UI.Xaml;
 using System;
 using Windows.Win32.Foundation;
 using Windows.Win32.UI.Shell;

@@ -11,7 +11,7 @@ namespace Zeroconf.Models
     /// </summary>
     internal class ZeroconfHost : IZeroconfHost, IEquatable<ZeroconfHost>, IEquatable<IZeroconfHost>
     {
-        private readonly Dictionary<string, IService> services = new();
+        private readonly Dictionary<string, IService> services = [];
 
         /// <summary>
         /// Id, possibly different than the display name

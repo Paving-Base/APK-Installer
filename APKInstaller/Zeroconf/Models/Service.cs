@@ -8,7 +8,7 @@ namespace Zeroconf.Models
 {
     internal class Service : IService
     {
-        private readonly List<IReadOnlyDictionary<string, string>> properties = new();
+        private readonly List<IReadOnlyDictionary<string, string>> properties = [];
 
         public string Name { get; set; }
         public string ServiceName { get; set; }

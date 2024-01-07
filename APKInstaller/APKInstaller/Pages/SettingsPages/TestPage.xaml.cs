@@ -1,5 +1,4 @@
 ﻿using APKInstaller.Controls;
-using APKInstaller.Controls.Dialogs;
 using APKInstaller.Helpers;
 using APKInstaller.Pages.ToolsPages;
 using Microsoft.UI.Xaml;

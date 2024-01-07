@@ -6,7 +6,6 @@ using APKInstaller.Controls;
 using APKInstaller.Helpers;
 using APKInstaller.Pages.ToolsPages;
 using CommunityToolkit.WinUI;
-using CommunityToolkit.WinUI.UI.Controls.TextToolbarSymbols;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Data;
 using System;
@@ -28,7 +27,7 @@ namespace APKInstaller.ViewModels.ToolsPages
 
         public string CachedSortedColumn { get; set; }
 
-        private ObservableCollection<string> deviceList = new();
+        private ObservableCollection<string> deviceList = [];
         public ObservableCollection<string> DeviceList
         {
             get => deviceList;
@@ -42,7 +41,7 @@ namespace APKInstaller.ViewModels.ToolsPages
             }
         }
 
-        private ObservableCollection<AndroidProcess> processes = new();
+        private ObservableCollection<AndroidProcess> processes = [];
         public ObservableCollection<AndroidProcess> Processes
         {
             get => processes;

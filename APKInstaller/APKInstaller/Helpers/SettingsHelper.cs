@@ -1,5 +1,5 @@
-﻿using AdvancedSharpAdbClient;
-using AdvancedSharpAdbClient.Models;
+﻿using AdvancedSharpAdbClient.Models;
+using APKInstaller.Models;
 using CommunityToolkit.WinUI.Helpers;
 using MetroLog;
 using MetroLog.Targets;
@@ -8,6 +8,7 @@ using System;
 using System.IO;
 using System.Reflection;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.Storage;
@@ -138,8 +139,43 @@ namespace APKInstaller.Helpers
 
     public class SystemTextJsonObjectSerializer : IObjectSerializer
     {
-        string IObjectSerializer.Serialize<T>(T value) => JsonSerializer.Serialize(value);
+        public string Serialize<T>(T value) => value switch
+        {
+            bool => JsonSerializer.Serialize(value, SourceGenerationContext.Default.Boolean),
+            string => JsonSerializer.Serialize(value, SourceGenerationContext.Default.String),
+            DateTime => JsonSerializer.Serialize(value, SourceGenerationContext.Default.DateTime),
+            DeviceData => JsonSerializer.Serialize(value, SourceGenerationContext.Default.DeviceData),
+            ElementTheme => JsonSerializer.Serialize(value, SourceGenerationContext.Default.ElementTheme),
+            BackdropType => JsonSerializer.Serialize(value, SourceGenerationContext.Default.BackdropType),
+            _ => value?.ToString(),
+        };
 
-        public T Deserialize<T>(string value) => JsonSerializer.Deserialize<T>(value);
+        public T Deserialize<T>(string value)
+        {
+            if (string.IsNullOrEmpty(value)) { return default; }
+            Type type = typeof(T);
+            return type == typeof(bool) && JsonSerializer.Deserialize(value, SourceGenerationContext.Default.Boolean) is T @bool
+                ? @bool
+                : type == typeof(string) && JsonSerializer.Deserialize(value, SourceGenerationContext.Default.String) is T @string
+                    ? @string
+                    : type == typeof(DateTime) && JsonSerializer.Deserialize(value, SourceGenerationContext.Default.DateTime) is T DateTime
+                        ? DateTime
+                        : type == typeof(DeviceData) && JsonSerializer.Deserialize(value, SourceGenerationContext.Default.DeviceData) is T DeviceData
+                            ? DeviceData
+                            : type == typeof(ElementTheme) && JsonSerializer.Deserialize(value, SourceGenerationContext.Default.ElementTheme) is T ElementTheme
+                                ? ElementTheme
+                                : type == typeof(BackdropType) && JsonSerializer.Deserialize(value, SourceGenerationContext.Default.BackdropType) is T BackdropType
+                                    ? BackdropType
+                                    : default;
+        }
     }
+
+    [JsonSerializable(typeof(bool))]
+    [JsonSerializable(typeof(string))]
+    [JsonSerializable(typeof(DateTime))]
+    [JsonSerializable(typeof(DeviceData))]
+    [JsonSerializable(typeof(UpdateInfo))]
+    [JsonSerializable(typeof(ElementTheme))]
+    [JsonSerializable(typeof(BackdropType))]
+    public partial class SourceGenerationContext : JsonSerializerContext;
 }

@@ -38,7 +38,7 @@ namespace APKInstaller.Helpers
 
             process.EnableRaisingEvents = true;
 
-            List<string> lines = new();
+            List<string> lines = [];
 
             try
             {

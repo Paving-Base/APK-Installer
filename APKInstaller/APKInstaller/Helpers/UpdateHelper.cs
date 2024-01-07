@@ -39,7 +39,7 @@ namespace APKInstaller.Helpers
             HttpResponseMessage response = await client.GetAsync(url);
             response.EnsureSuccessStatusCode();
             string responseBody = await response.Content.ReadAsStringAsync();
-            UpdateInfo result = JsonSerializer.Deserialize<UpdateInfo>(responseBody);
+            UpdateInfo result = JsonSerializer.Deserialize<UpdateInfo>(responseBody, SourceGenerationContext.Default.UpdateInfo);
 
             if (result != null)
             {

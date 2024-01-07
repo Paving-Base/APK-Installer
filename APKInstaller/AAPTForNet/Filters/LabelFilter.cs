@@ -5,7 +5,7 @@ namespace AAPTForNet.Filters
 {
     internal class LabelFilter : BaseFilter
     {
-        private readonly List<string> Msessges = new();
+        private readonly List<string> Msessges = [];
         private string[] Segments => string.Join(string.Empty, Msessges).Split(Seperator);
 
         public override bool CanHandle(string msg) => msg.StartsWith("application-label-");
@@ -24,7 +24,7 @@ namespace AAPTForNet.Filters
 
         private Dictionary<string, string> GetApplicationLabels()
         {
-            Dictionary<string, string> labels = new();
+            Dictionary<string, string> labels = [];
             for (int i = 0; i < Segments.Length; i++)
             {
                 if (Segments[i].StartsWith("application-label-"))

@@ -17,7 +17,7 @@ namespace AAPTForNet
                 return new ApkInfo();
             }
 
-            List<BaseFilter> filters = new() {
+            List<BaseFilter> filters = [
                 new PermissionFilter(),
                 new LabelFilter(),
                 new FeatureFilter(),
@@ -29,7 +29,7 @@ namespace AAPTForNet
                 new DensityFilter(),
                 new ABIFilter(),
                 new LaunchableFilter()
-            };
+            ];
 
             foreach (string msg in model.Messages)
             {

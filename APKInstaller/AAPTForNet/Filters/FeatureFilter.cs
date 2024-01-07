@@ -5,7 +5,7 @@ namespace AAPTForNet.Filters
 {
     internal class FeatureFilter : BaseFilter
     {
-        private readonly List<string> Features = new();
+        private readonly List<string> Features = [];
 
         public override bool CanHandle(string msg) => msg.StartsWith("  uses-feature");
 

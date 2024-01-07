@@ -55,6 +55,6 @@ namespace APKInstaller.Helpers
             return windowHandle != IntPtr.Zero;
         }
 
-        public static HashSet<Window> ActiveWindows { get; } = new HashSet<Window>();
+        public static HashSet<Window> ActiveWindows { get; } = [];
     }
 }

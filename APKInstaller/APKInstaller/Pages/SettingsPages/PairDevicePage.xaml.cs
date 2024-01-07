@@ -1,13 +1,10 @@
-﻿using AdvancedSharpAdbClient;
-using APKInstaller.Controls;
+﻿using APKInstaller.Controls;
 using APKInstaller.Helpers;
 using APKInstaller.Models;
 using APKInstaller.ViewModels.SettingsPages;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Controls.Primitives;
 using Microsoft.UI.Xaml.Navigation;
-using System.Linq;
 
 namespace APKInstaller.Pages.SettingsPages
 {

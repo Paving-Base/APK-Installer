@@ -4,13 +4,13 @@ namespace Zeroconf.DNS
 {
     #region TYPE values
     /*
-	 * 3.2.2. TYPE values
-	 *
-	 * TYPE fields are used in resource records.
-	 * Note that these types are a subset of QTYPEs.
-	 *
-	 *		TYPE		value			meaning
-	 */
+     * 3.2.2. TYPE values
+     *
+     * TYPE fields are used in resource records.
+     * Note that these types are a subset of QTYPEs.
+     *
+     *        TYPE        value            meaning
+     */
     #endregion
 
     internal enum Type : ushort
@@ -105,14 +105,14 @@ namespace Zeroconf.DNS
 
     #region QTYPE values
     /*
-	 * 3.2.3. QTYPE values
-	 *
-	 * QTYPE fields appear in the question part of a query.  QTYPES are a
-	 * superset of TYPEs, hence all TYPEs are valid QTYPEs.  In addition, the
-	 * following QTYPEs are defined:
-	 *
-	 *		QTYPE		value			meaning
-	 */
+     * 3.2.3. QTYPE values
+     *
+     * QTYPE fields appear in the question part of a query.  QTYPES are a
+     * superset of TYPEs, hence all TYPEs are valid QTYPEs.  In addition, the
+     * following QTYPEs are defined:
+     *
+     *        QTYPE        value            meaning
+     */
     #endregion
 
     internal enum QType : ushort
@@ -212,13 +212,13 @@ namespace Zeroconf.DNS
 
     #region CLASS values
     /*
-	 * 3.2.4. CLASS values
-	 *
-	 * CLASS fields appear in resource records.  The following CLASS mnemonics
-	 *and values are defined:
-	 *
-	 *		CLASS		value			meaning
-	 */
+     * 3.2.4. CLASS values
+     *
+     * CLASS fields appear in resource records.  The following CLASS mnemonics
+     *and values are defined:
+     *
+     *        CLASS        value            meaning
+     */
     #endregion
 
     internal enum Class : ushort
@@ -231,14 +231,14 @@ namespace Zeroconf.DNS
 
     #region QCLASS values
     /*
-	 * 3.2.5. QCLASS values
-	 *
-	 * QCLASS fields appear in the question section of a query.  QCLASS values
-	 * are a superset of CLASS values; every CLASS is a valid QCLASS.  In
-	 * addition to CLASS values, the following QCLASSes are defined:
-	 *
-	 *		QCLASS		value			meaning
-	 */
+     * 3.2.5. QCLASS values
+     *
+     * QCLASS fields appear in the question section of a query.  QCLASS values
+     * are a superset of CLASS values; every CLASS is a valid QCLASS.  In
+     * addition to CLASS values, the following QCLASSes are defined:
+     *
+     *        QCLASS        value            meaning
+     */
     #endregion
 
     internal enum QClass : ushort
@@ -256,7 +256,7 @@ namespace Zeroconf.DNS
 RCODE           Response code - this 4 bit field is set as part of
                 responses.  The values have the following
                 interpretation:
-	 */
+     */
     #endregion
 
     internal enum RCode
@@ -288,13 +288,13 @@ RCODE           Response code - this 4 bit field is set as part of
         BADALG = 21,        // Algorithm not supported            [RFC2930]
         BADTRUNC = 22       // Bad Truncation                     [RFC4635]
         /*
-			23-3840              available for assignment
-				0x0016-0x0F00
-			3841-4095            Private Use
-				0x0F01-0x0FFF
-			4096-65535           available for assignment
-				0x1000-0xFFFF
-		*/
+            23-3840              available for assignment
+                0x0016-0x0F00
+            3841-4095            Private Use
+                0x0F01-0x0FFF
+            4096-65535           available for assignment
+                0x1000-0xFFFF
+        */
 
     }
 
@@ -311,7 +311,7 @@ OPCODE          A four bit field that specifies kind of query in this
                 2               a server status request (STATUS)
 
                 3-15            reserved for future use
-	 */
+     */
     #endregion
 
     internal enum OPCode

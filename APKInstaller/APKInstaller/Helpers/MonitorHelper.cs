@@ -1,11 +1,11 @@
 ﻿using AdvancedSharpAdbClient;
-using Zeroconf;
-using Zeroconf.Interfaces;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using System.Threading;
+using System.Threading.Tasks;
+using Zeroconf;
+using Zeroconf.Interfaces;
 
 namespace APKInstaller.Helpers
 {
@@ -70,7 +70,7 @@ namespace APKInstaller.Helpers
 
         public static async Task<List<string>> ConnectPairedDeviceAsync()
         {
-            List<string> results = new();
+            List<string> results = [];
             IReadOnlyList<IZeroconfHost> hosts = ConnectListener != null
                 ? ConnectListener.Hosts
                 : await ZeroconfResolver.ResolveAsync("_adb-tls-connect._tcp.local.");

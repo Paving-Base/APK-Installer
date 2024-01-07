@@ -5,7 +5,7 @@ namespace AAPTForNet.Filters
 {
     internal class PermissionFilter : BaseFilter
     {
-        private readonly List<string> Permissions = new();
+        private readonly List<string> Permissions = [];
 
         public override bool CanHandle(string msg) => msg.StartsWith("uses-permission:");
 

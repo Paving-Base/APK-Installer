@@ -28,7 +28,7 @@ namespace Zeroconf.DNS
         public RecordTXT(RecordReader rr, int Length)
         {
             int pos = rr.Position;
-            TXT = new List<string>();
+            TXT = [];
             while (
                 ((rr.Position - pos) < Length) &&
                 (rr.Position < rr.Length)

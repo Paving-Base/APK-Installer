@@ -14,7 +14,7 @@ namespace Zeroconf
         private readonly int retryDelayMilliseconds;
         private readonly Timer timer;
         private readonly int pingsUntilRemove;
-        private HashSet<(string, string)> discoveredHosts = new();
+        private HashSet<(string, string)> discoveredHosts = [];
         private readonly IDictionary<(string, string), int> toRemove = new Dictionary<(string, string), int>();
 
         public IReadOnlyList<IZeroconfHost> Hosts { get; private set; }

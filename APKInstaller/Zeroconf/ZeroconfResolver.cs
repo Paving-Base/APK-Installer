@@ -44,7 +44,7 @@ namespace Zeroconf
                 : await ResolverLock.LockAsync();
 
             cancellationToken.ThrowIfCancellationRequested();
-            Dictionary<string, Response> dict = new();
+            Dictionary<string, Response> dict = [];
 
             void Converter(IPAddress address, byte[] buffer)
             {
@@ -164,7 +164,7 @@ namespace Zeroconf
                 // There may be 0 or more text records - property sets
                 foreach (RecordTXT txtRec in responseRecords.OfType<RecordTXT>())
                 {
-                    Dictionary<string, string> set = new();
+                    Dictionary<string, string> set = [];
                     foreach (string txt in txtRec.TXT)
                     {
                         string[] split = txt.Split(new[] { '=' }, 2);

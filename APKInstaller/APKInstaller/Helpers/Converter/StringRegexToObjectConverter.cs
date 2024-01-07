@@ -43,7 +43,7 @@ namespace APKInstaller.Helpers.Converter
         {
             string text = parameter.ToString();
             bool isMatch = !string.IsNullOrWhiteSpace(text) && Regex.IsMatch(value.ToString(), text);
-            var result = isMatch ? MatchValue : NotMatchValue;
+            object result = isMatch ? MatchValue : NotMatchValue;
             return targetType.IsInstanceOfType(result) ? result : XamlBindingHelper.ConvertValue(targetType, result);
         }
 

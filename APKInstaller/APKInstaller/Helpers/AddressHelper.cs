@@ -1,8 +1,5 @@
 ﻿using AdvancedSharpAdbClient;
-using Zeroconf;
-using Zeroconf.Interfaces;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
@@ -12,7 +9,7 @@ namespace APKInstaller.Helpers
     {
         public static async Task<List<string>> GetAddressID(string mac)
         {
-            List<string> addresses = new();
+            List<string> addresses = [];
             Regex Regex = new($@"\s*(\d+.\d+.\d+.\d+)\s*{mac}\S*\s*\w+");
             List<string> lines = await CommandHelper.ExecuteShellCommandAsync($"arp -a|findstr {mac}");
             foreach (string line in lines)
@@ -39,7 +36,7 @@ namespace APKInstaller.Helpers
         {
             AdbClient AdbClient = new();
             List<string> addresses = await GetAddressID("00-15-5d");
-            List<string> results = new();
+            List<string> results = [];
             foreach (string address in addresses)
             {
                 results.Add(await AdbClient.ConnectAsync(address));
