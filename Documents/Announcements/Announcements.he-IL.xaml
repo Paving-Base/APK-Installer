@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<controls:SettingsGroup xmlns:controls="using:APKInstaller.Controls" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Header="הכרזות" Margin="0,-28,0,0">
-    <InfoBar Title="הנה ההודעה (אל תשאלו אותי למה להודעה הזו אין כפתור סגירה)" IsClosable="False" IsOpen="True" Message="תוכל לראות כאן כל מיני התראות בעתיד. אם אתה לא רוצה לראות אותם, אתה יכול לכבות אותם בהגדרות למטה." Severity="Informational"/>
-    <InfoBar Title="תרגומים" IsClosable="True" IsOpen="True" Message="מכיוון שהכותב יודע רק סינית ואנגלית, כל התרגומים נותרים בידי הקהילה. אם אתה לא רוצה לראות שפה לא מוכרת, ברוך הבא ל-Crowdin כדי לתרגם!" Severity="Informational">
-        <InfoBar.ActionButton>
-            <HyperlinkButton HorizontalAlignment="Right" Content="לחץ על אני" NavigateUri="https://crowdin.com/project/APKInstaller"/>
-        </InfoBar.ActionButton>
-    </InfoBar>
+<controls:SettingsGroup xmlns:controls="using:APKInstaller.Controls" xmlns:muxc="using:Microsoft.UI.Xaml.Controls" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Header="הכרזות" Margin="0,-28,0,0">
+    <muxc:InfoBar Title="Here is the announcement (Don't ask me why this message doesn't have a close button)" IsClosable="False" IsOpen="True" Message="You can see all kinds of notifications here in the future. If you don't want to see them, you can turn them off in the settings below." Severity="Informational"/>
+    <muxc:InfoBar Title="More Translations" IsClosable="True" IsOpen="True" Message="Since the author only knows Chinese and English, all translations are left to the community. If you don't want to see an unfamiliar language, welcome to Crowdin to translate!" Severity="Informational">
+        <muxc:InfoBar.ActionButton>
+            <HyperlinkButton HorizontalAlignment="Right" Content="Click Me" NavigateUri="https://crowdin.com/project/APKInstaller"/>
+        </muxc:InfoBar.ActionButton>
+    </muxc:InfoBar>
 </controls:SettingsGroup>
