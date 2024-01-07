@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<controls:SettingsGroup xmlns:controls="using:APKInstaller.Controls" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Header="Anunțuri" Margin="0,-28,0,0">
-    <InfoBar Title="Aici este anunțul (Nu mă întrebați de ce acest mesaj nu are un buton de închidere)" IsClosable="False" IsOpen="True" Message="Poți să vezi tot felul de notificări aici în viitor. Dacă nu vrei să le vezi, poți să le oprești în setări mai jos." Severity="Informational"/>
-    <InfoBar Title="Mai multe traduceri" IsClosable="True" IsOpen="True" Message="Deoarece autorul ştie doar chineză şi engleză, toate traducerile sunt lăsate comunităţii. Dacă nu doriţi să vedeţi un limbaj nefamiliar, bine aţi venit în Crowdin pentru a traduce!" Severity="Informational">
-        <InfoBar.ActionButton>
+<controls:SettingsGroup xmlns:controls="using:APKInstaller.Controls" xmlns:muxc="using:Microsoft.UI.Xaml.Controls" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Header="Anunțuri" Margin="0,-28,0,0">
+    <muxc:InfoBar Title="Aici este anunțul (Nu mă întrebați de ce acest mesaj nu are un buton de închidere)" IsClosable="False" IsOpen="True" Message="Poți să vezi tot felul de notificări aici în viitor. Dacă nu vrei să le vezi, poți să le oprești în setări mai jos." Severity="Informational"/>
+    <muxc:InfoBar Title="Mai multe traduceri" IsClosable="True" IsOpen="True" Message="Deoarece autorul ştie doar chineză şi engleză, toate traducerile sunt lăsate comunităţii. Dacă nu doriţi să vedeţi un limbaj nefamiliar, bine aţi venit în Crowdin pentru a traduce!" Severity="Informational">
+        <muxc:InfoBar.ActionButton>
             <HyperlinkButton HorizontalAlignment="Right" Content="Dă click pe mine" NavigateUri="https://crowdin.com/project/APKInstaller"/>
-        </InfoBar.ActionButton>
-    </InfoBar>
+        </muxc:InfoBar.ActionButton>
+    </muxc:InfoBar>
 </controls:SettingsGroup>
