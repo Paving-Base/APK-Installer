@@ -124,7 +124,7 @@
     <value>Gérer les applications des appareils connectés</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
-    <value>Les applications</value>
+    <value>Application :</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
     <value>Activer ou désactiver le mode Picture-In-Picture</value>
