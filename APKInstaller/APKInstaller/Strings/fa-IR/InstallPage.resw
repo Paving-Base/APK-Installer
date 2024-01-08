@@ -121,7 +121,7 @@
     <value>.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Exists</value>
+    <value>privacy</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB is missing</value>
