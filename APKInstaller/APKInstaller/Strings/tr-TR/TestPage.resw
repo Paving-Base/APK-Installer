@@ -124,7 +124,7 @@
     <value>Bağlı cihazların uygulamalarını yönetin</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
-    <value>Uygulamalar</value>
+    <value>Uygulama</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
     <value>Kompakt Yerleşime Girin veya Çıkın</value>
