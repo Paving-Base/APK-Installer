@@ -136,7 +136,8 @@
     <value>Capabilities: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>App Name</value>
+    <value>
+sovellus nimi</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancel</value>
