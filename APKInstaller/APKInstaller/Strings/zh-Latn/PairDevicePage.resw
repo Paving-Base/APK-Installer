@@ -118,25 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AddressRun.Text" xml:space="preserve">
-    <value>地址地址</value>
+    <value>地址</value>
   </data>
   <data name="ConnectButton.Content" xml:space="preserve">
-    <value/>
+    <value>连接到</value>
   </data>
   <data name="ConnectedListFormat" xml:space="preserve">
-    <value/>
+    <value>已连接 {0} 个设备</value>
   </data>
   <data name="ConnectedLogText" xml:space="preserve">
-    <value/>
+    <value>连接成功。</value>
   </data>
   <data name="ConnectingLogText" xml:space="preserve">
-    <value/>
+    <value>配对成功，正在连接，请不要关闭窗口。</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
-    <value/>
+    <value>连接到</value>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
-    <value/>
+    <value>Found {0} devices</value>
   </data>
   <data name="IPAddressBox.Header" xml:space="preserve">
     <value/>
