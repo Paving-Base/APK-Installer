@@ -145,7 +145,7 @@
     <value>Подключить устройство вручную</value>
   </data>
   <data name="ManualPairTextBlock.Text" xml:space="preserve">
-    <value>Ручное подключение</value>
+    <value>Ручная связь</value>
   </data>
   <data name="PairCodeBox.Header" xml:space="preserve">
     <value>Код сопряжения WLAN</value>
