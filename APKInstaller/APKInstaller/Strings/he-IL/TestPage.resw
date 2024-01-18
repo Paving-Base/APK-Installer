@@ -121,7 +121,7 @@
     <value>צוות Android</value>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
-    <value>Manage the applications of connected devices</value>
+    <value>נהל את האפליקציות של מכשירים מחוברים</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>אפליקציות</value>
@@ -151,7 +151,7 @@
     <value>יציאה</value>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
-    <value>Manage the processes of connected devices</value>
+    <value>נהל תהליכים של מכשירים מחוברים</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
     <value>תהליכים</value>
