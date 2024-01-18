@@ -136,7 +136,7 @@
     <value>Connect</value>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
-    <value>Found {0} devices</value>
+    <value/>
   </data>
   <data name="IPAddressBox.Header" xml:space="preserve">
     <value>IP Address</value>
