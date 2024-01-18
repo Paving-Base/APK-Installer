@@ -130,7 +130,7 @@
     <value>הורדה אוטומטית כאשר החבילה מגיעה מכתובת URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Auto Download Online Packages?</value>
+    <value>להוריד אוטומטית חבילות מקוונות?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>בחר סוג רקע עבור Windows 11</value>
@@ -154,22 +154,22 @@
     <value>נקה מטמון</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
+    <value>יש להפעיל מחדש את שרת ADB בהתקנה הבאה אם ​​תבטל אותה.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Terminate ADB when Exit Installer?</value>
+    <value>לבטל את ADB כאשר יוצאים מהמתקין?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Exit Installer after installation is complete.</value>
+    <value>צא מתוכנית ההתקנה לאחר סיום ההתקנה.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Exit Installer when APP is Ready?</value>
+    <value>לצאת מהמתקין כשהאפליקציה מוכנה?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>הגדר</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value>חבר את המכשיר לרשת.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>חבר התקן</value>
@@ -178,7 +178,7 @@
     <value>צור קשר</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
+    <value>עקבו אחרי באפליקציות חברתיות לקבלת העידכונים האחרונים. אם אתה מוצא באגים, אנא דווח לי עליהם ב-PM. אנסה כמיטב יכולתי לפתור את זה. אם יש לך חשבון טלגרם, אל תהסס לשוחח בצ'אט בקבוצת Paving Base 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>תוכן</value>
@@ -193,7 +193,7 @@
     <value>תמיכה</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
+    <value>מתקין APK הוא יישום קוד פתוח, ולא יתווספו מודעות למטרות רווח. אם אתה אוהב את האפליקציה הזו, אל תשכח לדרג אותה בחנות. כמובן, זה יהיה טוב יותר אם תוכל לתרום קצת. תודה על תמיכתך. 💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>תנאי שימוש</value>
