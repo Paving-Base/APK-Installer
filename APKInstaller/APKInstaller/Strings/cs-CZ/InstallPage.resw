@@ -268,7 +268,7 @@
     <value>Adresa URL je buď neúplná, nebo neplatná.</value>
   </data>
   <data name="Launch" xml:space="preserve">
-    <value>Spustit</value>
+    <value>Zahájení</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
     <value>Spouštím WSA...</value>
@@ -350,7 +350,7 @@
     <value>Zvolit</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>Share</value>
+    <value>Sdílet</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
     <value>...                    </value>
