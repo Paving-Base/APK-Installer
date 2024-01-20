@@ -142,13 +142,13 @@
     <value>Enter Compact Overlay</value>
   </data>
   <data name="LanguageSettings.Description" xml:space="preserve">
-    <value>Select language and restart to change language</value>
+    <value>Vyberte jazyk a restartujte pro změnu jazyka</value>
   </data>
   <data name="LanguageSettings.Header" xml:space="preserve">
-    <value>Language</value>
+    <value>Jazyk</value>
   </data>
   <data name="OutPIP.Content" xml:space="preserve">
-    <value>Exit</value>
+    <value/>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
     <value>Správa procesů připojených zařízení</value>
