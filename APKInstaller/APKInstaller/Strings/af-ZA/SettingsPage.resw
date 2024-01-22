@@ -142,7 +142,7 @@
     <value/>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>Check Failed</value>
+    <value/>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
     <value>Checking For Updates...</value>
