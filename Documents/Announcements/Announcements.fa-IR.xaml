@@ -3,7 +3,7 @@
     <muxc:InfoBar Title="اطلاعیه ها اینجاست! (از من نپرسید چرا این پیام دکمه بستن ندارد)" IsClosable="False" IsOpen="True" Message="در آینده می‌توانید انواع اعلان‌ها را اینجا ببینید. اگر نمی خواهید آنها را ببینید، می توانید آنها را از تنظیمات زیر خاموش کنید." Severity="Informational"/>
     <muxc:InfoBar Title="" IsClosable="True" IsOpen="True" Message="" Severity="Informational">
         <muxc:InfoBar.ActionButton>
-            <HyperlinkButton HorizontalAlignment="Right" Content="Click Me" NavigateUri="https://crowdin.com/project/APKInstaller"/>
+            <HyperlinkButton HorizontalAlignment="Right" Content="" NavigateUri="https://crowdin.com/project/APKInstaller"/>
         </muxc:InfoBar.ActionButton>
     </muxc:InfoBar>
 </controls:SettingsGroup>
