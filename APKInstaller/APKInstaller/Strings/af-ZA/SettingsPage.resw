@@ -145,7 +145,7 @@
     <value/>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>Checking For Updates...</value>
+    <value/>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
     <value>Check For Updates</value>
