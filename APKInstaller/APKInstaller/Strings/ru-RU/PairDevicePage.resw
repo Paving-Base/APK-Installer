@@ -166,9 +166,9 @@
     <value>Сопряжение с QR-кодом</value>
   </data>
   <data name="QRScanTextBlock.Text" xml:space="preserve">
-    <value>Сканируйте QR-код для сопряжения устройств.</value>
+    <value>Сканирование QR-кода для сопряжения устройств.</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Сопряжение и подключение</value>
+    <value>Пара и подключение</value>
   </data>
 </root>
