@@ -152,7 +152,7 @@
     <value>رمز الاقترانWLAN</value>
   </data>
   <data name="PairCodeTextBlock.Text" xml:space="preserve">
-    <value>رمز الاقترانWLAN</value>
+    <value>WLAN Pairing Code</value>
   </data>
   <data name="PairingLogText" xml:space="preserve">
     <value>جاري الاقتران،الرجاء عدم إغلاق النافذة.</value>
