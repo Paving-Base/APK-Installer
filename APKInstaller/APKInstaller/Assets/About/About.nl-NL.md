@@ -1,4 +1,4 @@
-#### Welcome to the APK Installer!
+#### Welcome to the APK Installer! thanx
 
 ##### Declaration
 1. Volg de [APK Installer End User License Agreement en Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
