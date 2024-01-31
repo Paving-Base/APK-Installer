@@ -143,7 +143,7 @@
     <value>Paketname</value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
-    <value>Packet Größe</value>
+    <value>Paketgröße</value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
     <value>Berechtigungsanzahl</value>
