@@ -259,10 +259,10 @@
     <value/>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>Pair Device</value>
+    <value>Dispozitiv conectat</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
-    <value>Pair and connect devices.</value>
+    <value/>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
     <value>Asociază și conectează</value>
@@ -298,10 +298,10 @@
     <value>Ești sigur că vrei să resetezi aplicația?</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value>Scan and auto connect paired devices.</value>
+    <value/>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Scan Paired Devices?</value>
+    <value>Scanare dispozitive împerecheate?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Selectează Dispozitivul</value>
@@ -310,13 +310,13 @@
     <value>Arată ajutoarele atunci când nu este conectat niciun dispozitiv.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Whether to Show Helps?</value>
+    <value>romanian</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Display announcements at the top of Settings.</value>
+    <value>Arată anunțurile în partea de sus a setărilor.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Whether to Show Announcements?</value>
+    <value/>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>Poate lăsa fişiere temporare atunci când are loc o întrerupere neaşteptată.</value>
