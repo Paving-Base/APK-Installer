@@ -148,19 +148,19 @@
     <value>Язык</value>
   </data>
   <data name="OutPIP.Content" xml:space="preserve">
-    <value>Выключить</value>
+    <value>Выйти</value>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
-    <value>Управление процессами подключенных устройств</value>
+    <value>Управление процессами подключения устройств</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
-    <value>Процессы</value>
+    <value>Обрабатывается</value>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
-    <value>Тестировать кольцо прогресса в заголовке</value>
+    <value>Тестовое кольцо прогресса на титульной строке</value>
   </data>
   <data name="ProgressSettings.Header" xml:space="preserve">
-    <value>Прогресс</value>
+    <value>Выполнение</value>
   </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
     <value>Установить значение кольца прогресса</value>
