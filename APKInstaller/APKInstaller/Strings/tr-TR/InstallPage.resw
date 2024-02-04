@@ -121,7 +121,8 @@
     <value>APK Yükleyicisinin çalışması için Android Hata Ayıklama Köprüsü olan ADB gereklidir. İndirmek için "İndir"e tıklayın. İndirerek ADB için Google Hüküm ve Koşullarını kabul etmiş olursunuz. ADB'yi daha önce indirdiyseniz seçmek için "Seç"e tıklayın.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Var</value>
+    <value>ADB Var
+</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB eksik</value>
