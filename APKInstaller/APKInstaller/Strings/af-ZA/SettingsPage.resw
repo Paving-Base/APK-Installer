@@ -166,7 +166,7 @@
     <value>?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
-    <value>Configs</value>
+    <value/>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
     <value>Connect device through network.</value>
