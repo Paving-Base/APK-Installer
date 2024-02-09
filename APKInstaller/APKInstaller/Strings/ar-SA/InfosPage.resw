@@ -121,7 +121,7 @@
     <value>App Name</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
-    <value>المعلومات الأساسية</value>
+    <value>الملف الشخصي</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
     <value>التبعيات - {0} بالإجمال</value>
