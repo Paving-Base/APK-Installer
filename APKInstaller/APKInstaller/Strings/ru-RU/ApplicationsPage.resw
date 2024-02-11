@@ -127,9 +127,9 @@
     <value>Остановитьsfbsbsf</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Приложенияfbbs</value>
+    <value/>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
-    <value>Удалитьbsdfbbb2wg</value>
+    <value>Uninstall</value>
   </data>
 </root>
