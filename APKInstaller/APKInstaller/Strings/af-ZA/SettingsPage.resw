@@ -169,10 +169,10 @@
     <value/>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value/>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
-    <value>Connect Device</value>
+    <value/>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
     <value>Contact Me</value>
