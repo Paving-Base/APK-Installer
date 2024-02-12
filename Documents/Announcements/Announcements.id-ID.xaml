@@ -3,7 +3,7 @@
     <muxc:InfoBar Title="Ini pengumumannya (Jangan tanya kenapa pesan ini tidak ada tombol tutup)" IsClosable="False" IsOpen="True" Message="Anda dapat melihat semua jenis notifikasi di sini di masa mendatang. Jika Anda tidak ingin melihatnya, Anda dapat menonaktifkannya di setelan di bawah." Severity="Informational"/>
     <muxc:InfoBar Title="Lebih Banyak Terjemahan" IsClosable="True" IsOpen="True" Message="Karena penulis hanya tahu bahasa China dan Inggris, semua terjemahan diserahkan kepada komunitas. Jika Anda tidak ingin melihat bahasa asing, selamat datang di Crowdin untuk menerjemahkan!" Severity="Informational">
         <muxc:InfoBar.ActionButton>
-            <HyperlinkButton HorizontalAlignment="Right" Content="Klik Saya" NavigateUri="https://crowdin.com/project/APKInstaller"/>
+            <HyperlinkButton HorizontalAlignment="Right" Content="Klik Saya Untuk" NavigateUri="https://crowdin.com/project/APKInstaller"/>
         </muxc:InfoBar.ActionButton>
     </muxc:InfoBar>
 </controls:SettingsGroup>
