@@ -124,7 +124,7 @@
     <value>Подключить</value>
   </data>
   <data name="ConnectedListFormat" xml:space="preserve">
-    <value>Подключено устройств: {1</value>
+    <value>Подключено устрой</value>
   </data>
   <data name="ConnectedLogText" xml:space="preserve">
     <value>Подключено успешно.</value>
@@ -163,7 +163,7 @@
     <value>Порт</value>
   </data>
   <data name="QRScanButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Сопряжение с QR-кодом</value>
+    <value/>
   </data>
   <data name="QRScanTextBlock.Text" xml:space="preserve">
     <value>Сканирование QR-кода для сопряжения устройств.</value>
