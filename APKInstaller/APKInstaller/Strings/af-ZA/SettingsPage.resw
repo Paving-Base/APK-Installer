@@ -181,7 +181,7 @@
     <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
-    <value>Content</value>
+    <value/>
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
     <value>Device</value>
