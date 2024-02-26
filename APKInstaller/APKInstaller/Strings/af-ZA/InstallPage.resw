@@ -132,7 +132,7 @@
     <value>In Analise...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>APK File</value>
+    <value>install</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>Vermoëns:</value>
@@ -396,7 +396,8 @@
     <value/>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>Wag vir die toestel... wsa apk app</value>
+    <value>Wag ris liv toeslet"..."
+a...</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
     <value/>
