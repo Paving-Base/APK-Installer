@@ -118,29 +118,30 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppName.Text" xml:space="preserve">
-    <value>Nazwa aplikacji</value>
+    <value>Nazwa aplikacji m</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
-    <value>Podstawowe informacje</value>
+    <value>Podstawowe informacje ok</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
-    <value>Zależności - łącznie {0}</value>
+    <value>Zależności - łącznie {0} 0</value>
     <comment>{0} - Dependencies Count.</comment>
   </data>
   <data name="FeaturesHeaderFormat" xml:space="preserve">
-    <value>Funkcje - łącznie {0}</value>
+    <value>Funkcje - łącznie ok{0} 0</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
-    <value>Języki</value>
+    <value>Języki polski</value>
   </data>
   <data name="MinSDK.Text" xml:space="preserve">
-    <value>Min SDK</value>
+    <value>Min SDK ok</value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
-    <value>Otwórz folder pakietów</value>
+    <value>Otwórz folder pakietów tak</value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
-    <value>Nazwa pakietu</value>
+    <value>Nazwa pakietu normas
+</value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
     <value>Rozmiar pakietu</value>
