@@ -393,7 +393,7 @@
     <value>Oczekiwanie na pobranie...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>Oczekiwanie na urządzenie...</value>
+    <value>Waiting for Device...</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
     <value>Oczekiwanie na instalację {0}</value>
