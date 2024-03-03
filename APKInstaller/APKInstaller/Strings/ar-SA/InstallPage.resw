@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB ، جسر تصحيح أخطاء أندرويد ، مطلوب لتثبيت APK للعمل. انقر فوق "تنزيل" لتحميله. ب التنزيل، أنت تقبل شروط وأحكام Google لـ ADB. إذا كنت قد تنزيل ADB فعلًا ، انقر فوق "أحتار" لتحديد ذلك.</value>
+    <value>ADB, the Android Debug Bridge, is needed for APK Installer to work. Click "Download" to download it. By downloading, you accept the Google Terms and Conditions for ADB. If you have already downloaded ADB, click "Select" to select it.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB  موجودة</value>
+    <value>ADB Exists</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB  مفقود</value>
