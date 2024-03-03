@@ -322,7 +322,7 @@
     <value>Poate lăsa fişiere temporare atunci când are loc o întrerupere neaşteptată.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Whether to Show Installation Progress?</value>
+    <value>Dacă se afișează progresul instalării?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Tema aplicației</value>
