@@ -130,7 +130,7 @@
     <value>Dalam Tahap Analisis...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>berkas APK</value>
+    <value>File APK</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>Kemampuan:</value>
