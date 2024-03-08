@@ -184,13 +184,13 @@
     <value/>
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
-    <value>Device</value>
+    <value/>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
     <value>Display</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
-    <value>Supports</value>
+    <value/>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
     <value/>
