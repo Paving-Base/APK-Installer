@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppName.Text" xml:space="preserve">
-    <value>Nom de l'appli</value>
+    <value>Nom de l'app</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
-    <value>Informations courantes</value>
+    <value>Information courante</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
     <value>Dépendances - {0} au total</value>
