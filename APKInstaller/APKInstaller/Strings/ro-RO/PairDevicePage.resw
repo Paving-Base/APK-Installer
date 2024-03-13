@@ -148,10 +148,10 @@
     <value>Conexiune manuală</value>
   </data>
   <data name="PairCodeBox.Header" xml:space="preserve">
-    <value>WLAN Pairing Code</value>
+    <value>Cod împerechere WLAN</value>
   </data>
   <data name="PairCodeTextBlock.Text" xml:space="preserve">
-    <value>WLAN Pairing Code</value>
+    <value>Cod împerechere WLAN</value>
   </data>
   <data name="PairingLogText" xml:space="preserve">
     <value>Se adaugă dispozitivul, vă rugăm nu închideți fereastra.</value>
@@ -163,7 +163,7 @@
     <value>Port</value>
   </data>
   <data name="QRScanButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Pair with QR code</value>
+    <value>Adăugați cu cod QR</value>
   </data>
   <data name="QRScanTextBlock.Text" xml:space="preserve">
     <value>Scanați codul QR pentru a adăuga dispozitivele.</value>
