@@ -118,8 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
-    <value>Wag ris liv toeslet"..."
-a...</value>
+    <value>في انتظار الجهاز...</value>
   </data>
   <data name="Start.Text" xml:space="preserve">
     <value>أبدا</value>
@@ -128,7 +127,7 @@ a...</value>
     <value>التوقف</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Applications</value>
+    <value/>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
     <value>Uninstall</value>
