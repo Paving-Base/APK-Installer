@@ -238,10 +238,10 @@
     <value/>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>You are using a modified version!</value>
+    <value/>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Disable it to connect to other devices.</value>
+    <value>.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
     <value>For WSA only?</value>
