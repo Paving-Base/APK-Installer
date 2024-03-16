@@ -130,7 +130,7 @@
     <value>Dalam Tahap Analisis...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>File APK</value>
+    <value>File APK Filefiles</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>Kemampuan:</value>
@@ -139,8 +139,7 @@
     <value>Nama Aplikasi</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Batal
-</value>
+    <value>Batalbatal</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
     <value>Ya</value>
