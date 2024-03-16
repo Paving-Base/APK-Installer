@@ -121,10 +121,10 @@
     <value>ADB, Android Debug Bridge, diperlukan agar Penginstal APK berfungsi. Klik "Unduh" untuk mengunduhnya. Dengan mengunduh, Anda menerima Persyaratan dan Ketentuan Google untuk ADB. Jika Anda sudah mengunduh ADB, klik "Pilih" untuk memilihnya.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>Ada ADB</value>
+    <value>Ada ADB Exists</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>ADB hilang</value>
+    <value>ADB is missing</value>
   </data>
   <data name="Analysis" xml:space="preserve">
     <value>Dalam Tahap Analisis...</value>
