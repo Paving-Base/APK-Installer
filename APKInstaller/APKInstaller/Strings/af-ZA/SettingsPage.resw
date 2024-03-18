@@ -268,10 +268,10 @@
     <value>Pair &amp; Connect</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>Dark</value>
+    <value/>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>Windows Default</value>
+    <value>Windows-verstek</value>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
     <value>Light</value>
