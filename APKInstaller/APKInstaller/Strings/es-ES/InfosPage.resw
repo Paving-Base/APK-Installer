@@ -118,74 +118,72 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppName.Text" xml:space="preserve">
-    <value>Nombre de la aplicación
-Musica</value>
+    <value>Nombre de la aplicacion brawl stars</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
     <value>Información básica
-musica variadas </value>
+brawl stars variadas </value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
     <value>Dependencies - {0} in total
-1 año</value>
+2 año</value>
     <comment>{0} - Dependencies Count.</comment>
   </data>
   <data name="FeaturesHeaderFormat" xml:space="preserve">
     <value>Características - {0} en total
-agil</value>
+agile</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
     <value>Idiomas
-español
+españols
 </value>
   </data>
   <data name="MinSDK.Text" xml:space="preserve">
     <value>SDK mín.
-6 meses </value>
+7 meses </value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
     <value>Abrir carpeta de paquete
-si
-</value>
+yes</value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
     <value>Package Name
-Karina
+matador
 </value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
     <value>Tamaño del paquete
-6 megas</value>
+1 megas</value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
     <value>Número de permisos
-todos
+nadie
 </value>
   </data>
   <data name="PermissionsHeaderFormat" xml:space="preserve">
     <value>Permisos - {0} en total
-todos</value>
+ninguno</value>
     <comment>{0} - Permissions Count.</comment>
   </data>
   <data name="SharePackage.Content" xml:space="preserve">
     <value>Compartir paquete
-todos
+nadie
 </value>
   </data>
   <data name="SupportedArchitectures.Text" xml:space="preserve">
     <value>Arquitecturas soportadas
-todas</value>
+toda</value>
   </data>
   <data name="SupportResolutions.Text" xml:space="preserve">
     <value>Resoluciones soportadas
-todas</value>
+todos</value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
     <value>Tamaños de pantalla soportados
-todas</value>
+grnde</value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
-    <value>Conseguir el SDK</value>
+    <value>Conseguir el </value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
     <value>Acerca de {0}</value>
