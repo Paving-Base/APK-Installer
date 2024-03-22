@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AndroidTestSettingsHeader.Header" xml:space="preserve">
-    <value>Teste de Android</value>
+    <value>Android Test</value>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
-    <value>Gerencie as aplicações dos dispositivos conectados</value>
+    <value>Gerir as aplicações dos dispositivos conectados</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
-    <value>Aplicações</value>
+    <value>Приложения</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
     <value>Entre ou Saia de Sobreposição Compacta</value>
