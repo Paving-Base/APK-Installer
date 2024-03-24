@@ -142,7 +142,7 @@
     <value>Включить компактное отображение</value>
   </data>
   <data name="LanguageSettings.Description" xml:space="preserve">
-    <value>Выберите язык и перезапустите для изменения языка</value>
+    <value>Выберите язык и перезапустите его</value>
   </data>
   <data name="LanguageSettings.Header" xml:space="preserve">
     <value>Язык</value>
