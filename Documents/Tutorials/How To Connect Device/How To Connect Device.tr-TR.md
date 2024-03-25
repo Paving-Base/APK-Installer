@@ -1,4 +1,4 @@
-# Cihaz Nasıl Bağlanır
+# Cihaz nasıl bağlanır
 #### USB'yi kullanarak
 1. Lütfen APK Installer'ın [en yeni sürüme](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer") güncellendiğinden emin olun
 2. Geliştirici Modunu açın, USB Hata Ayıklamayı açın![Geliştirici modu usb](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Screenshot_20221002-172252.jpg)

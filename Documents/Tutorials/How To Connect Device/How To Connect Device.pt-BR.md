@@ -10,4 +10,4 @@
 3. Remember the IP address of your device ![Endereço IPsu](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Screenshot_20221002-174200.jpg)
 3. Go to the Settings Page of APK Installer, connect and select your device ![Página de configurações1
 ](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Snipaste_2022-10-02_17-46-28.png)
-4. Go back, resume installation ![Continuar a instalação1](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Snipaste_2022-10-02_17-34-04.png)
+4. Qual o passo a passo?![Não consigo instalar](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Snipaste_2022-10-02_17-34-04.png)
