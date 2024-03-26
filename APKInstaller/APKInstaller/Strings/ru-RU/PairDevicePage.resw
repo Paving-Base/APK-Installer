@@ -151,7 +151,7 @@
     <value>Код сопряжения WLAN</value>
   </data>
   <data name="PairCodeTextBlock.Text" xml:space="preserve">
-    <value>Код сопряжения WLAN</value>
+    <value>WLAN Pairing CodeССССС</value>
   </data>
   <data name="PairingLogText" xml:space="preserve">
     <value>Сопряжение, пожалуйста, не закрывайте окно.</value>
