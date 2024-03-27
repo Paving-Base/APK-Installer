@@ -133,7 +133,7 @@
     <value>配对成功，正在连接，请不要关闭窗口。</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
-    <value>连接</value>
+    <value>连接到</value>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
     <value>已发现 {0} 个设备</value>

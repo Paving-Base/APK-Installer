@@ -130,7 +130,7 @@
     <value>ID do processo</value>
   </data>
   <data name="ResidentSetSize.Header" xml:space="preserve">
-    <value>Resident Set Size</value>
+    <value>Tamanho do conjunto residencial</value>
   </data>
   <data name="State.Header" xml:space="preserve">
     <value>Estado</value>

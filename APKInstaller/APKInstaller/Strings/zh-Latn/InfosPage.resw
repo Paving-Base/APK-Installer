@@ -118,20 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppName.Text" xml:space="preserve">
-    <value>Yìngyòng míngchēng</value>
+    <value>Yìngyòng míngchēngd</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
-    <value>Jīběn xìnxī</value>
+    <value>Jīběn xìnxīd</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
-    <value>Yīlài - gòng {0} gè</value>
+    <value>Yīlài - gòng {0} gèd</value>
     <comment>{0} - Dependencies Count.</comment>
   </data>
   <data name="FeaturesHeaderFormat" xml:space="preserve">
-    <value>Tèxìng - gòng {0} gè</value>
+    <value>Tèxìng - gòng {0} gèd</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
-    <value>Yǔyán</value>
+    <value>语言d</value>
   </data>
   <data name="MinSDK.Text" xml:space="preserve">
     <value>Zuìdī SDK</value>
@@ -146,7 +146,7 @@
     <value>Ānzhuāngbāo dàxiǎo</value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
-    <value>Quánxiàn shùliàng</value>
+    <value>权限计数</value>
   </data>
   <data name="PermissionsHeaderFormat" xml:space="preserve">
     <value>Quánxiàn - gòng {0} gè</value>

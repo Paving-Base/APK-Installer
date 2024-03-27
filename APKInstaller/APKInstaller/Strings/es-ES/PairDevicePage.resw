@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AddressRun.Text" xml:space="preserve">
-    <value>Dirección</value>
+    <value>Descargas</value>
   </data>
   <data name="ConnectButton.Content" xml:space="preserve">
-    <value>Conectar</value>
+    <value>APK installer</value>
   </data>
   <data name="ConnectedListFormat" xml:space="preserve">
     <value>{0} dispositivos conectados</value>
@@ -133,7 +133,7 @@
     <value>Emparejando con éxito. Conectando, por favor, no cierres la ventana.</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
-    <value>Conectar</value>
+    <value>APK installer</value>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
     <value>{0} dispositivos encontrados</value>

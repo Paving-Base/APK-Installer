@@ -143,7 +143,7 @@
     <value>عنوان الIP</value>
   </data>
   <data name="ManualPairButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>توصيل الاجهزه يدويا.</value>
+    <value/>
   </data>
   <data name="ManualPairTextBlock.Text" xml:space="preserve">
     <value>اتصال يدوي</value>
@@ -152,7 +152,7 @@
     <value>رمز الاقترانWLAN</value>
   </data>
   <data name="PairCodeTextBlock.Text" xml:space="preserve">
-    <value>رمز الاقترانWLAN</value>
+    <value>WLAN Pairing Code</value>
   </data>
   <data name="PairingLogText" xml:space="preserve">
     <value>جاري الاقتران،الرجاء عدم إغلاق النافذة.</value>

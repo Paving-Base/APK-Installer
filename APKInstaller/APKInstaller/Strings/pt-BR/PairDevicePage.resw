@@ -133,7 +133,7 @@
     <value>Pareado com sucesso. Conectando, por favor, não feche a janela.</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
-    <value>Conectar</value>
+    <value>conectar</value>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
     <value>{0} dispositivos encontrados</value>
@@ -154,7 +154,7 @@
     <value>Código de Pareamento WLAN</value>
   </data>
   <data name="PairingLogText" xml:space="preserve">
-    <value>Pareando, por favor, não feche a janela.</value>
+    <value>Pairing, please don't close the window.</value>
   </data>
   <data name="PairToggleButton.Content" xml:space="preserve">
     <value>Parear</value>

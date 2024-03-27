@@ -121,16 +121,16 @@
     <value>ADB, Android Debug Bridge, diperlukan agar Penginstal APK berfungsi. Klik "Unduh" untuk mengunduhnya. Dengan mengunduh, Anda menerima Persyaratan dan Ketentuan Google untuk ADB. Jika Anda sudah mengunduh ADB, klik "Pilih" untuk memilihnya.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>Ada ADB</value>
+    <value>Ada ADB Exists</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>ADB hilang</value>
+    <value>ADB is missing</value>
   </data>
   <data name="Analysis" xml:space="preserve">
     <value>Dalam Tahap Analisis...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>berkas APK</value>
+    <value>File APK Filefiles</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>Kemampuan:</value>
@@ -139,8 +139,7 @@
     <value>Nama Aplikasi</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Batal
-</value>
+    <value>Batalbatal</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
     <value>Ya</value>
@@ -183,7 +182,7 @@
     <value>Salin</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Creating install session...</value>
+    <value>baca sesi pemasangan</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Perangkat</value>
@@ -255,7 +254,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
-    <value>Menginstal...</value>
+    <value>Instal...</value>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
     <value>Alasan:</value>
@@ -270,13 +269,14 @@
     <value>URL tidak lengkap atau tidak valid.</value>
   </data>
   <data name="Launch" xml:space="preserve">
-    <value>Luncurkan</value>
+    <value>Meluncurkan</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
     <value>Meluncurkan WSA...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>Luncurkan ketika sudah siap</value>
+    <value>Luncurkan ketika su
+dah siap</value>
   </data>
   <data name="Loading" xml:space="preserve">
     <value>Memuat...</value>
@@ -331,7 +331,8 @@
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="PostInstallFormat" xml:space="preserve">
-    <value>Cleaning cache ({0}/{1})...</value>
+    <value>...
+</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
@@ -381,7 +382,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="UploadingFormat" xml:space="preserve">
-    <value>Uploading {0} ({1}/{2})...</value>
+    <value>{0}{1}...</value>
     <comment>{0} - Progress. {1} - Finnished count. {2} - Total count.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
@@ -409,7 +410,7 @@ Ini mungkin memakan waktu lama. Duduk dan rileks.</value>
     <value>Selamat datang!</value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
-    <value>Writing install session ({0}/{1})...</value>
+    <value>Ret...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">
