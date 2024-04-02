@@ -130,6 +130,6 @@
     <value>Aplicacions braw stars</value>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
-    <value>Instalar</value>
+    <value>Uninstall</value>
   </data>
 </root>
