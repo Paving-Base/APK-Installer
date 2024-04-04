@@ -124,7 +124,7 @@
     <value>Administrar las aplicaciones de los dispositivos conectados</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
-    <value>Aplicaciones</value>
+    <value>Aplicación</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
     <value>Introducir o salir de superposición compacta</value>
