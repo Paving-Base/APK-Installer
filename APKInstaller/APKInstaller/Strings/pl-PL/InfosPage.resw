@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppName.Text" xml:space="preserve">
-    <value>Nazwa aplikacji m</value>
+    <value>Nazwa aplikacji mm</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
     <value>Podstawowe informacje ok</value>
@@ -145,35 +145,45 @@
 Michał</value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
-    <value>Rozmiar pakietu</value>
+    <value>Rozmiar pakietu
+
+średni
+
+</value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
-    <value>Liczba uprawnień</value>
+    <value>Liczba uprawnień 
+1</value>
   </data>
   <data name="PermissionsHeaderFormat" xml:space="preserve">
-    <value>Uprawnienia - łącznie {0}</value>
+    <value>Total</value>
     <comment>{0} - Permissions Count.</comment>
   </data>
   <data name="SharePackage.Content" xml:space="preserve">
-    <value>Udostępnij paczkę</value>
+    <value>Udostępnij paczkę
+ASZYK6@GMAIL.COM
+</value>
   </data>
   <data name="SupportedArchitectures.Text" xml:space="preserve">
-    <value>Obsługa architektur</value>
+    <value>Obsługa architektur </value>
   </data>
   <data name="SupportResolutions.Text" xml:space="preserve">
-    <value>Wsparcie rezolucji</value>
+    <value>Wsparcie rezolucji </value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
-    <value>Obsługa rozmiarów ekranu</value>
+    <value>Obsługa rozmiarów ekranu tak</value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
-    <value>Docelowe SDK</value>
+    <value>Docelowe SDK
+NIE MAM</value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
-    <value>Informacje o {0}</value>
+    <value>Informacje o {0}
+0</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Version.Text" xml:space="preserve">
-    <value>Wersja</value>
+    <value>Wersja
+11</value>
   </data>
 </root>
