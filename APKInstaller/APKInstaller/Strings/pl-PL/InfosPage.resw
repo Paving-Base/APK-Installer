@@ -124,7 +124,7 @@
     <value>Podstawowe informacje ok</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
-    <value>Zależności - łącznie {0} 0</value>
+    <value>Zależności — łącznie {0} 0</value>
     <comment>{0} - Dependencies Count.</comment>
   </data>
   <data name="FeaturesHeaderFormat" xml:space="preserve">
@@ -137,11 +137,12 @@
     <value>Min SDK ok</value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
-    <value>Otwórz folder pakietów tak</value>
+    <value>Otwórz folder pakietów tak
+</value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
-    <value>Nazwa pakietu normas
-</value>
+    <value>Nazwa pakietu Norman
+Michał</value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
     <value>Rozmiar pakietu</value>
