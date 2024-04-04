@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, czyli Android Debug Bridge, jest wymagane do działania APK Installer. Naciśnij na "Pobierz", aby pobrać ADB. Pobierając, wyrażasz zgodę na Warunki użytkowania Google odnośnie ADB. Jeśli już pobrano ADB, naciśnij na "Wybierz", aby wybrać.</value>
+    <value>ADB, czyli Android Dębu Bridge, jest wymagane do działania APK Installer  Naciśnij na "Pobierz", aby pobrać ADB. Pobierając, wyrażasz zgodę na Warunki użytkowania Google odnośnie do ADB. Jeśli już pobrano ADB, naciśnij na "Wybierz", aby wybrać.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Ekstremalny</value>
+    <value>TAK </value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>Brakuje ADB</value>
+    <value>Coco to jest ADB</value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>W analizie...</value>
+    <value>W analizie... nie wiem o co chodzi</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
     <value>Plik APK</value>
