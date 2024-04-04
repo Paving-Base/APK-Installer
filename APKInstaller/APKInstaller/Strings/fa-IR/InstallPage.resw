@@ -127,13 +127,13 @@
     <value/>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>In Analysis...</value>
+    <value/>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
     <value>فایل APK</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Capabilities: </value>
+    <value/>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
     <value>نام برنامه</value>
