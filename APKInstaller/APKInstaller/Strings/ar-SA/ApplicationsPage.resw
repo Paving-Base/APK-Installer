@@ -118,7 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
-    <value>في انتظار الجهاز...</value>
+    <value>Wag ris liv toeslet"..."
+a...</value>
   </data>
   <data name="Start.Text" xml:space="preserve">
     <value>أبدا</value>
