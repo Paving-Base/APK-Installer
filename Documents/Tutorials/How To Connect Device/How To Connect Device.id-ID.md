@@ -6,7 +6,7 @@
 4. Kembali, lanjutkan instalasi![Resume Installation](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Snipaste_2022-10-02_17-34-04.png)
 #### Menggunakan Wi-Fi
 1. Pastikan Penginstal APK telah diperbarui ke [versi terbaru](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Aktifkan Mode Pengembang, buka Debug Jarak Jauh![Mode Pengembang](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Screenshot_20221002-174001.jpg)
+2. Aktifkan Mode Pengembang, buka Debug Jarak Jauh![Mode Developer](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Screenshot_20221002-174001.jpg)
 3. Ingat alamat IP perangkat Anda![Alamat IP](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Screenshot_20221002-174200.jpg)
 3. Buka Halaman Pengaturan Penginstal APK, sambungkan dan pilih perangkatmu![Halaman Pengaturan](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Snipaste_2022-10-02_17-46-28.png)
 4. Kembali, lanjutkan instalasi![Resume Installation](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Snipaste_2022-10-02_17-34-04.png)
