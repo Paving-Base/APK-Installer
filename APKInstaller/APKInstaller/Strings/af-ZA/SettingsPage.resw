@@ -283,7 +283,7 @@
     <value>Yes</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
-    <value>Reset settings of this application.</value>
+    <value/>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
     <value/>
