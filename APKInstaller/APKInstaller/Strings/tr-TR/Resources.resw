@@ -121,7 +121,7 @@
     <value>Android Uygulama Paketi</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>APK Dosyası</value>
+    <value>APK File</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>Bir Android Uygulama Yükleyicisi. @wherewhere ve @Tangent-90 tarafından yazıldı.</value>
