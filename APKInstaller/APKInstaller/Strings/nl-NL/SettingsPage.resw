@@ -133,7 +133,7 @@
     <value>Online-pakketten automatisch downloaden?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>Selecteer Achtergrondtype voor Windows 11</value>
+    <value>Selecteer Achtergrond type voor Windows 11</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
     <value>Achtergrond</value>
