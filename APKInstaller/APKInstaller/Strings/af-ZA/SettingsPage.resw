@@ -289,13 +289,13 @@
     <value/>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
-    <value>Reset</value>
+    <value/>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
     <value>Yes</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
-    <value>Are you sure you want to reset the app?</value>
+    <value>Is jy seker jy wil al die data herstel?</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
     <value>Scan and auto connect paired devices.</value>
