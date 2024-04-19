@@ -232,7 +232,7 @@
     <value>Entendido</value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
-    <value>App incompatible</value>
+    <value>kb,Entendido</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
     <value>El mínimo requerido para esta aplicación es {0}. Tu dispositivo soporta {1}. Por favor actualiza tu dispositivo o elige ordenar paquete.</value>
