@@ -127,7 +127,7 @@
     <value/>
   </data>
   <data name="ConnectedLogText" xml:space="preserve">
-    <value>Подключено успешно </value>
+    <value>Успешное подключение.</value>
   </data>
   <data name="ConnectingLogText" xml:space="preserve">
     <value>Сопряжение успешно. Идёт подключение, пожалуйста, не закрывайте окно.</value>
