@@ -336,7 +336,7 @@
     <value>Réinstaller</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>{0} est déjà installé</value>
+    <value>{0} Est déjà installé</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
