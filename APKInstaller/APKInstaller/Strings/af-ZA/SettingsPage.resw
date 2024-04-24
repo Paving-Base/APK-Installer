@@ -298,7 +298,7 @@
     <value>Is jy seker jy wil al die data herstel?</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value>Scan and auto connect paired devices.</value>
+    <value/>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
     <value>Scan Paired Devices?</value>
