@@ -121,17 +121,15 @@
     <value>Menunggu perangkat...</value>
   </data>
   <data name="Start.Text" xml:space="preserve">
-    <value>Diaktifkan</value>
+    <value>Aktif</value>
   </data>
   <data name="Stop.Text" xml:space="preserve">
     <value>Jeda</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Applications</value>
+    <value>Aplikasi</value>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
-    <value>Hapus
-
-</value>
+    <value>Copot</value>
   </data>
 </root>
