@@ -1,13 +1,13 @@
-#### Selamat datang di Penginstal APK!
+#### Selamat datang di APK Installer!
 
 ##### Pernyataan
-1. Harap ikuti [Perjanjian Lisensi Pengguna Akhir Penginstal APK dan Kebijakan Privasi](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. Program ini adalah perangkat lunak open source, jadi pastikan program tersebut berasal dari [repositori Github ini](https://github.com/Paving-Base/APK-Installer) atau [aplikasi ini](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) untuk memastikan keamanan data anda.
-3. Jika sumber program tidak abnormal, semua data anda hanya akan digunakan untuk menjalankan program atau disimpan secara lokal selama berjalan, dan pengembang tidak akan mencuri data anda. Tetap saja, harap perhatikan keamanan lingkungan.
-4. Terjemahan aplikasi ini berasal dari komunitas [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin"), dan semua teks tidak mewakili pandangan penulis.
+1. Mohon ikuti [Perjanjian Lisensi Pengguna Akhir APK Installer dan Kebijakan Privasi](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+2. Program ini adalah peranti lunak sumber terbuka, jadi pastikan program ini dari [repositori Github ini](https://github.com/Paving-Base/APK-Installer) atau [aplikasi ini](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) demi kepastian keamanan data Anda.
+3. Jika sumber program ini tidak abnormal, semua data Anda akan digunakan hanya untuk membuka program atau disimpan lokal saat dijalakan, dan pengembang tidak akan mencuri data Anda. Tetap saja, mohon perhatikan keamanan perangkat.
+4. Terjemahan aplikasi ini dari komunitas [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin"), dan semua teks tidak mewakili pandangan penulis.
 
-##### Terjemahkan
-Terima kasih kepada penerjemah [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") atas dukungan mereka. Jika ada masalah dengan terjemahan, jangan ragu untuk mengoreksi kami. Dan tolong terjemahkan dengan serius. Semua yang Anda tulis akan dibaca di seluruh dunia.
+##### Penerjemahan
+Terima kasih kepada penerjemah [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") atas dukungan mereka. Jika ada terjemahan yang keliru, jangan ragu untuk membetulkan kami. Dan tolong terjemahkan dengan serius. Semua yang Anda tulis akan dibaca semua orang.
 
 ##### Kontributor
 - [wherewhere](https://github.com/wherewhere)
@@ -16,7 +16,7 @@ Terima kasih kepada penerjemah [Crowdin](https://crowdin.com/project/APKInstalle
 - [A Big Salty Fish](https://github.com/bigsaltyfishes)
 - [sam1357](https://github.com/sam1357)
 
-##### Kutipan dan Referensi
+##### Kutipan dan Rujukan
 - [MetroLog](https://github.com/roubachof/MetroLog "MetroLog")
 - [Zeroconf](https://github.com/novotnyllc/Zeroconf "Zeroconf")
 - [Windows UI](https://github.com/microsoft/microsoft-ui-xaml "Windows UI")
