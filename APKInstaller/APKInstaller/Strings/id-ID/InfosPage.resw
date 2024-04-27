@@ -134,7 +134,7 @@
     <value>Bahasa</value>
   </data>
   <data name="MinSDK.Text" xml:space="preserve">
-    <value>Min SDK</value>
+    <value>Min. SDK</value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
     <value>Buka Folder Paket</value>
@@ -156,22 +156,22 @@
     <value>Bagikan Paket</value>
   </data>
   <data name="SupportedArchitectures.Text" xml:space="preserve">
-    <value>Mendukung Arsitektur</value>
+    <value>Arsitektur Terdukung</value>
   </data>
   <data name="SupportResolutions.Text" xml:space="preserve">
-    <value>Resolusi yang Didukung</value>
+    <value>Resolusi Terdukung</value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
-    <value>Mendukung Ukuran Layar</value>
+    <value>Ukuran Layar Terdukung</value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
-    <value>Target SDK</value>
+    <value>SDK Sasaran</value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
     <value>Tentang {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Version.Text" xml:space="preserve">
-    <value>VersiVersions</value>
+    <value>Versi</value>
   </data>
 </root>
