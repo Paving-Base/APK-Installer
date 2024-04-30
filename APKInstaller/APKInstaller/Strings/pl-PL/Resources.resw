@@ -139,12 +139,12 @@
     <value>Nie</value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
-    <value>Zainstaluj pakiet</value>
+    <value>Zainstaluj ten pakiet</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>Podziel plik APK</value>
+    <value>Podziel plik APKpod 'TrustWeb3Provider', :git =&gt; 'https://github.com/trustwallet/trust-web3-provider', :branch =&gt; 'master'</value>
   </data>
   <data name="Yes" xml:space="preserve">
-    <value>Tak</value>
+    <value>Igen</value>
   </data>
 </root>
