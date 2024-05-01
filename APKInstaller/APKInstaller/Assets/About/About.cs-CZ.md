@@ -1,4 +1,4 @@
-#### Vítejte v instalaci APK!
+#### Vítejte v APK instalaci!
 
 ##### Declaration
 1. Dodržte prosím licenční smlouvu [APK End User License a Zásady ochrany osobních údajů](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
