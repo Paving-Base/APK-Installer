@@ -1,4 +1,4 @@
-#### Bem-vindo ao Instalador APK!
+#### Bem-vindo ao instalador de APK!
 
 ##### Contradeclarar
 1. Por favor, siga a [Licença do Utilizador do Instalador de APK e os Termos de Privacidade](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
