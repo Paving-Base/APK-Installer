@@ -148,7 +148,7 @@
     <value>Нетj</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Не удаётся подключиться к WSA</value>
+    <value>Не удаётся подключиться WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
     <value>Либо WSA не запустился должным образом, либо возникла проблема с ADB. Эту проблему может быть очень трудно решить. Пожалуйста, перезапустите программу установки. Если это не поможет, попробуйте перезагрузить компьютерbhbh.</value>
