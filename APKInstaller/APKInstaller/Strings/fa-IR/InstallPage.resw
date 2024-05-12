@@ -139,7 +139,7 @@
     <value>نام برنامه</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value/>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
     <value>بله</value>
