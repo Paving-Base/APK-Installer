@@ -3,7 +3,7 @@
     <muxc:InfoBar Title="Her er kunngjøringen (Spør meg om hvorfor denne meldingen ikke har noen lukke-knapp)" IsClosable="False" IsOpen="True" Message="Du kan se alle typer varsler her i fremtiden. Hvis du ikke vil se dem, kan du skru dem av i innstillingene nedenfor." Severity="Informational"/>
     <muxc:InfoBar Title="Flere oversettelser" IsClosable="True" IsOpen="True" Message="Since the author only knows Chinese and English, all translations are left to the community. If you don't want to see an unfamiliar language, welcome to Crowdin to translate!" Severity="Informational">
         <muxc:InfoBar.ActionButton>
-            <HyperlinkButton HorizontalAlignment="Right" Content="Click Me" NavigateUri="https://crowdin.com/project/APKInstaller"/>
+            <HyperlinkButton HorizontalAlignment="Right" Content="" NavigateUri="https://crowdin.com/project/APKInstaller"/>
         </muxc:InfoBar.ActionButton>
     </muxc:InfoBar>
 </controls:SettingsGroup>
