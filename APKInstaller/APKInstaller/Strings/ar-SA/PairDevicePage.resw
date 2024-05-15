@@ -164,7 +164,7 @@
     <value>المنفذ</value>
   </data>
   <data name="QRScanButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>إقران مع رمز QR</value>
+    <value>الاقتران برمز QR</value>
   </data>
   <data name="QRScanTextBlock.Text" xml:space="preserve">
     <value>مسح جهاز الكوي أر للاقتران.</value>
