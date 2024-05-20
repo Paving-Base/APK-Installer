@@ -301,7 +301,7 @@
     <value/>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Scan Paired Devices?</value>
+    <value/>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Select Device</value>
