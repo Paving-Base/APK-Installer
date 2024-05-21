@@ -130,7 +130,7 @@
     <value>Em Análise...1</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>Arquivo APK1</value>
+    <value>Arquivo APK</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>
@@ -409,7 +409,7 @@ Isto pode levar muito tempo. Sente-se e relaxe.</value>
     <value>Bem vindo(a)!</value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
-    <value>正在写入安装会话 ({0}/{1})……</value>
+    <value>Gravando sessão de instalação ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">
