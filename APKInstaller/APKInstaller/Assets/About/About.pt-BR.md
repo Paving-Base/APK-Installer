@@ -1,4 +1,4 @@
-#### Melcomano to toe APK Instalar!sim
+#### Bem-vindo ao instalador de APK!
 
 ##### [Comunidade Crowdin](https://crowdin. com/project/APKInstaller "Crowdin")
 1. Por favor, siga o [Contrato de Licença e Política de Privacidade do Usuário Final APK](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
