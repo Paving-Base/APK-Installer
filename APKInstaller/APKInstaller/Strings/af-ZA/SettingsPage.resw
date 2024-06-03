@@ -304,7 +304,8 @@
     <value/>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
-    <value>Select Device</value>
+    <value>free fire
+</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
     <value>Show helpers when no device is connected.</value>
