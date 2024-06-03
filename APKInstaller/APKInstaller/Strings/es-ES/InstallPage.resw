@@ -142,10 +142,10 @@
     <value>Cancelar</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
-    <value>Sí</value>
+    <value>Bajista</value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
-    <value>No</value>
+    <value>magis4</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>No se puede conectar a %1</value>
