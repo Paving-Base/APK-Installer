@@ -288,28 +288,28 @@
     <value>لا يمكن العثور على جهاز أندرويد</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>كيف يمكن ربط Wsa</value>
+    <value>How to connect device</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>إذا كنت ترغب في تثبيت التطبيق في نظام ويندوز الفرعي لنظام AndroidTM، تحتاج إلى تثبيته أولاً. إذا كنت ترغب في التثبيت في أجهزة أخرى، يرجى الذهاب إلى صفحة الإعدادات، وقم بإيقاف تشغيل "فقط لWSA"، وتوصيل جهازك.</value>
+    <value>If you want to install app into Windows Subsystem for Android™, you need to install it first. If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>#### استخدام USB
-1. الرجاء التأكد من تحديث APK Installer إلى [أحدث إصدار](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. تشغيل وضع المطور، فتح تصحيح أخطاء USB
-3. انتقل إلى صفحة إعدادات تثبيت APK ، حدد جهازك
-4. العودة ، استئناف التثبيت
-#### باستخدام Wifi
-1. الرجاء التأكد من أن مثبت APK قد تم تحديثه إلى [أحدث إصدار](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. تشغيل وضع المطور، فتح التصحيح عن بعد
-3. تذكر عنوان IP لجهازك
-4. انتقل إلى صفحة إعدادات تثبيت APK ، واتصل وحدد جهازك
-5. العودة، استئناف التثبيت
+    <value>#### Using USB
+1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Turn on Developer Mode, open USB Debug
+3. Go to the Settings Page of APK Installer, select your device
+4. Go back, resume installation
+#### Using Wifi
+1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Turn on Developer Mode, open Remote Debug
+3. Remember the IP address of your device
+4. Go to the Settings Page of APK Installer, connect and select your device
+5. Go back, resume installation
 
-[اعرف المزيد]({0})</value>
+[Learn More]({0})</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
-    <value>لا يمكن الاتصال بالإنترنت</value>
+    <value>Cannot connect Internet</value>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
     <value>الرجاء الاتصال بالإنترنت قبل فتح التطبيق.</value>
@@ -336,33 +336,33 @@
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
-    <value>إعادة التثبيت</value>
+    <value>Reinstall</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>% مُثبتٌ بالفعل</value>
+    <value>{0} is already installed</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
-    <value>نسخة أحدث من {0} مثبتة مسبقاً.</value>
+    <value>A newer version of {0} is already installed.</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>أعد المحاولة</value>
+    <value>Retry</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>حدّد</value>
+    <value>Select</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>مشاركة</value>
+    <value>Share</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
-    <value>جارٍ بدء الخادم...</value>
+    <value>Starting ADB Server...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>ابدأ WSA</value>
+    <value>Start WSA</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
-    <value>رابط المتجر</value>
+    <value>Store Links</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
     <value>Unzip ADB...</value>
