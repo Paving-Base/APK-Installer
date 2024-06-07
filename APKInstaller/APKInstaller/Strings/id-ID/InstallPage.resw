@@ -121,83 +121,83 @@
     <value>ADB, Android Debug Bridge, diperlukan agar Penginstal APK berfungsi. Klik "Unduh" untuk mengunduhnya. Dengan mengunduh, Anda menerima Persyaratan dan Ketentuan Google untuk ADB. Jika Anda sudah mengunduh ADB, klik "Pilih" untuk memilihnya.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>Ada ADB Exists</value>
+    <value>Ada ADB Exists </value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>ADB is missing</value>
+    <value>ADB is missing </value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>Dalam Tahap Analisis...</value>
+    <value>Dalam Tahap Analisis... </value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>File APK Filefiles</value>
+    <value>File APK Filefiles </value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Kemampuan:</value>
+    <value>Kemampuan: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>Nama Aplikasi</value>
+    <value>Nama Aplikasi </value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Batalbatal</value>
+    <value>Batalbatal </value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
-    <value>Ya</value>
+    <value>Ya </value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
-    <value>Tidak</value>
+    <value>Tidak </value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Tidak Dapat Terhubung ke WSA</value>
+    <value>Tidak Dapat Terhubung ke WSA </value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Entah WSA tidak memulai dengan benar, atau ada masalah dengan ADB. Masalah ini bisa sangat sulit untuk diselesaikan. Silakan mulai ulang penginstal. Jika masih tidak bisa, coba memulai ulang komputer.</value>
+    <value>Entah WSA tidak memulai dengan benar, atau ada masalah dengan ADB. Masalah ini bisa sangat sulit untuk diselesaikan. Silakan mulai ulang penginstal. Jika masih tidak bisa, coba memulai ulang komputer. </value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>Tidak dapat membuka paket aplikasi</value>
+    <value>Tidak dapat membuka paket aplikasi </value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>Memeriksa...
+    <value>Memeriksa... 
 </value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Memeriksa ADB...</value>
+    <value>Memeriksa ADB... </value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Memeriksa Jalur...</value>
+    <value>Memeriksa Jalur... </value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Klik di sini untuk membacanya</value>
+    <value>Klik di sini untuk membacanya </value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Tutup</value>
+    <value>Tutup </value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>Apakah Anda yakin ingin membatalkan penginstalan?</value>
+    <value>Apakah Anda yakin ingin membatalkan penginstalan? </value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Menghubungkan Perangkat yang Disandingkan...</value>
+    <value>Menghubungkan Perangkat yang Disandingkan... </value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
-    <value>Salin</value>
+    <value>Salin </value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>baca sesi pemasangan</value>
+    <value>baca sesi pemasangan </value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>Perangkat</value>
+    <value>Perangkat </value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Unduh</value>
+    <value>Unduh </value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>Gagal Mengunduh</value>
+    <value>Gagal Mengunduh </value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>Mohon cek koneksi internet anda atau URL dan coba lagi.</value>
+    <value>Mohon cek koneksi internet anda atau URL dan coba lagi. </value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>Mencari WSA...</value>
+    <value>Mencari WSA... </value>
   </data>
   <data name="Finished" xml:space="preserve">
     <value>Selesai</value>
