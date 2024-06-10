@@ -151,7 +151,7 @@
     <value>اتصال به WSA امکان پذیر نیست</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
+    <value>.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value/>
@@ -163,7 +163,8 @@
     <value>در حال بررسی ADB...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Checking Path...</value>
+    <value>Voloco...
+</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>برای خواندن آنها اینجا کلیک کنید</value>
