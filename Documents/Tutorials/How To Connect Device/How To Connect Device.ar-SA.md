@@ -1,7 +1,7 @@
 # كيفية ربط الجهاز
 #### باستخدام USB
 1. الرجاء التأكد من أن مثبت APK قد تم تحديثه إلى [أحدث إصدار](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. تشغيل وضع المطور، فتح تصحيح أخطاء USB ![وضع المطور](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Screenshot_20221002-172252.jpg)
+2. تشغيل وضع المطور، فتح تصحيح أخطاء USB ![نمط المطور ](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Screenshot_20221002-172252.jpg)
 3. Go to the Settings Page of APK Installer, select your device![صفحة الإعدادات](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Snipaste_2022-10-02_17-37-30.png)
 4. عد، ثم أستأنف التثبيت ![استأنف التثبيت](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Snipaste_2022-10-02_17-34-04.png)
 #### استخدام Wi-Fi
