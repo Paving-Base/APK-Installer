@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, czyli Android Dębu Bridge, jest wymagane do działania APK Installer  Naciśnij na "Pobierz", aby pobrać ADB. Pobierając, wyrażasz zgodę na Warunki użytkowania Google odnośnie do ADB. Jeśli już pobrano ADB, naciśnij na "Wybierz", aby wybrać.</value>
+    <value>ADB, the Android Debug Bridge, is needed for APK Installer to work. Click "Download" to download it. By downloading, you accept the Google Terms and Conditions for ADB. If you have already downloaded ADB, click "Select" to select it.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>TAK </value>
@@ -283,7 +283,7 @@
     <value>Więcej informacji</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
-    <value>Nie znaleziono urządzenia z Androidem</value>
+    <value>Cannot find Android Device</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
     <value>Jak połączyć urządzenie</value>
