@@ -1,5 +1,5 @@
 # Hoe om  toestel aan te sluit
-1. Maak asseblief seker dat APK Installer opgedateer is na [die nuutste weergawe](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
 2. Maak asseblief seker dat u
 Windows-substelsel vir Android™</0 geïnstalleer het en lopend is ></li> 
    
