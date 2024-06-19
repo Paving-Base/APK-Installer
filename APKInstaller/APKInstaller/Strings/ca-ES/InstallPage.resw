@@ -124,10 +124,10 @@
     <value>ADB 已存在</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>ADB is missing</value>
+    <value/>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>In Analysis...</value>
+    <value>...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
     <value>Fitxer APK</value>
@@ -151,7 +151,7 @@
     <value>No es pot connectar amb </value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
+    <value>.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>No s’ha pogut obrir el paquet d'aplicació</value>
@@ -163,7 +163,7 @@
     <value>Comprovant ADB...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Checking Path...</value>
+    <value>...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>Fes clic aquí per llegir-los</value>
@@ -172,16 +172,16 @@
     <value>Tancar</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>Are you sure to cancel the installation?</value>
+    <value>?</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Connecting Paired Devices...</value>
+    <value>...</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Copia</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Creating install session...</value>
+    <value>...</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Dispositius</value>
@@ -193,13 +193,13 @@
     <value>Descàrrega Fallida</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>Please check your network connection or the URL and try again.</value>
+    <value>.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>Finding WSA...</value>
+    <value>...</value>
   </data>
   <data name="Finished" xml:space="preserve">
-    <value>Finished</value>
+    <value/>
   </data>
   <data name="FoundWSA" xml:space="preserve">
     <value>WSA Trobat</value>
@@ -208,22 +208,17 @@
     <value>Anar a Ajustaments</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>A newer version is already installed</value>
+    <value/>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>You already have installed a new version {0} of this app. Are you sure to reinstall version {1}?</value>
+    <value>?</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>How to connect WSA</value>
+    <value/>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Please make sure APK Installer has been updated to the latest version
-2. Make sure you have the Android Subsystem installed and running
-3. Turn on developer mode and make sure the IP address is displayed successfully
-4. Reopen APK Installer and continue your installation
-
-[Learn More]({0})</value>
+    <value/>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
     <value>Icona</value>
@@ -232,10 +227,10 @@
     <value>Ho Sé</value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
-    <value>Incompatible App</value>
+    <value/>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
-    <value>The minimum required for this app is {0}. Your device supports {1}. Please update your device or choose order package.</value>
+    <value>.</value>
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
@@ -286,7 +281,7 @@
     <value>No es pot trobar el Dispositiu Android</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>How to connect device</value>
+    <value/>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
     <value>If you want to install app into Windows Subsystem for Android™, you need to install it first. If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
