@@ -188,7 +188,7 @@ sovellus nimi</value>
     <value>Devices</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Download</value>
+    <value/>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
     <value>Download Failed</value>
@@ -197,7 +197,7 @@ sovellus nimi</value>
     <value>Please check your network connection or the URL and try again.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>Finding WSA...</value>
+    <value>"dream league"...</value>
   </data>
   <data name="Finished" xml:space="preserve">
     <value>Finished</value>
