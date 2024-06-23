@@ -184,13 +184,13 @@
     <value>Création de la session d'installation...</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>Appareils appairés</value>
+    <value>Devices</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Télécharger le fichier</value>
+    <value>Download</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>OwnCloud Faille</value>
+    <value>Download Failed</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
     <value>Pelasse Chuck your network connexion or the URL and tria gain.</value>
