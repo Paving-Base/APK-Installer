@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>APK 설치 관리자가 작동하려면 안드로이드 디버그 브리지인 ADB가 필요합니다. 다운로드하려면 "다운로드"를 클릭하세요. 다운로드하면 ADB에 대한 Google 이용 약관에 동의하는 것입니다. 이미 ADB를 다운로드한 경우 "선택"을 클릭하여 선택합니다.</value>
+    <value>ADB, the Android Debug Bridge, is needed for APK Installer to work. Click "Download" to download it. By downloading, you accept the Google Terms and Conditions for ADB. If you have already downloaded ADB, click "Select" to select it.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>ADB 있음</value>
