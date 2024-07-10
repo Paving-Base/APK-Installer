@@ -119,11 +119,11 @@
   </resheader>
   <data name="AppName.Text" xml:space="preserve">
     <value>Uygulama Adı iokul
-</value>
+svs</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
     <value>Temel Bilgiler ödev
-</value>
+001</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
     <value>Bağımlılıklar - toplamda {0} 95
