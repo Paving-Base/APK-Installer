@@ -157,7 +157,7 @@
     <value/>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
-    <value>Test Progress Ring on the Title Bar</value>
+    <value/>
   </data>
   <data name="ProgressSettings.Header" xml:space="preserve">
     <value>Progress</value>
