@@ -326,13 +326,13 @@
     <value>Whether to Show Installation Progress?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
-    <value>App Theme</value>
+    <value/>
   </data>
   <data name="ThemesSettingsHeader.Header" xml:space="preserve">
     <value>Themes</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Settings</value>
+    <value>Instellings</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
     <value>Vertaal</value>
