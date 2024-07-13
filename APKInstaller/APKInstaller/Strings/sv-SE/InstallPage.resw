@@ -163,10 +163,10 @@
     <value>Kontrollerar ADB...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Checking Path...</value>
+    <value>...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Click here to read them</value>
+    <value/>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Stäng</value>
@@ -190,10 +190,10 @@
     <value>Ladda ner</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>Download Failed</value>
+    <value/>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>Please check your network connection or the URL and try again.</value>
+    <value>.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
     <value>Söker ÖSA.</value>
