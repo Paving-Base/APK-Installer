@@ -130,19 +130,19 @@
     <value>Hämta automatiskt när paketet är från URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Auto Download Online Packages?</value>
+    <value>?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Välj Typ av bakgrund för Windows 11</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>Backdrop</value>
+    <value/>
   </data>
   <data name="Change.Content" xml:space="preserve">
     <value>Ändringar</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>Check Failed</value>
+    <value/>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
     <value>Söker efter uppdateringar...</value>
@@ -154,22 +154,22 @@
     <value>Rensa cache</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
+    <value>.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Terminate ADB when Exit Installer?</value>
+    <value>?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Exit Installer after installation is complete.</value>
+    <value>.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Exit Installer when APP is Ready?</value>
+    <value>?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
-    <value>Configs</value>
+    <value/>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value>.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Anslut enhet</value>
@@ -178,7 +178,7 @@
     <value>Kontakta mig</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
+    <value>!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>innehåll</value>
@@ -187,16 +187,16 @@
     <value>Enhet</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
-    <value>Display</value>
+    <value/>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
-    <value>Supports</value>
+    <value/>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
+    <value/>
   </data>
   <data name="EULA.Content" xml:space="preserve">
-    <value>EULA</value>
+    <value/>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
     <value>Feedback</value>
@@ -205,46 +205,46 @@
     <value>Hitta uppdatering</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>Information about the frameworks of this app.</value>
+    <value>.</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
-    <value>Framework Information</value>
+    <value/>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
-    <value>Framework</value>
+    <value/>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>Go to the page of test.</value>
+    <value>.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>Go to TestPage</value>
+    <value/>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
-    <value>Go to Update</value>
+    <value/>
   </data>
   <data name="Group.Content" xml:space="preserve">
-    <value>Join Our Chat</value>
+    <value/>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Last Checked: </value>
+    <value>:</value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
-    <value>Learn More</value>
+    <value/>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
     <value>Loggar</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
+    <value>.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>You are using a modified version!</value>
+    <value>!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Disable it to connect to other devices.</value>
+    <value>.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>For WSA only?</value>
+    <value>?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>OS-arkitektur</value>
