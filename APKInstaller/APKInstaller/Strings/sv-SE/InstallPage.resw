@@ -199,16 +199,16 @@
     <value>Söker ÖSA.</value>
   </data>
   <data name="Finished" xml:space="preserve">
-    <value>Finished</value>
+    <value/>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>WSA Found</value>
+    <value/>
   </data>
   <data name="GoToSetting" xml:space="preserve">
     <value>Gå till inställning</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>A newer version is already installed</value>
+    <value/>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
     <value>Du har redan installerat en ny version {0} av denna app. Är du säker på att installera om version {1}?</value>
@@ -265,7 +265,7 @@
     <value>Paketet är antingen skadat eller ogiltigt.</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
-    <value>The URL is either Incomplete or invalid.</value>
+    <value>.</value>
   </data>
   <data name="Launch" xml:space="preserve">
     <value>Kör</value>
@@ -286,7 +286,7 @@
     <value>Kan inte hitta Android-enhet</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>How to connect device</value>
+    <value/>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
     <value>Om du vill installera appen i Windows Subsystem för AndroidTM, måste du installera den först. Om du vill installera på andra enheter, gå till sidan Inställningar, stäng av "Is Only for WSA" och anslut enheten.</value>
@@ -307,10 +307,10 @@
 [Läs mer]({0})</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
-    <value>Cannot connect Internet</value>
+    <value/>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
-    <value>Please connect to the internet before opening the app.</value>
+    <value>.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
     <value>För att appen ska fungera korrekt, försök att starta ett Android-apppaket.</value>
@@ -347,7 +347,7 @@
     <value>Försök igen</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>Select</value>
+    <value/>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
     <value>Dela</value>
@@ -359,7 +359,7 @@
     <value/>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
-    <value>Store Links</value>
+    <value/>
   </data>
   <data name="UnzipADB" xml:space="preserve">
     <value>Unzip ADB...</value>
