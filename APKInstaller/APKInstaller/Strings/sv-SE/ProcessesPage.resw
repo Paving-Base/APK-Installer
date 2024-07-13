@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Detail.Header" xml:space="preserve">
-    <value>Detail</value>
+    <value/>
   </data>
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
     <value>Väntar på enheten...</value>
@@ -127,13 +127,13 @@
     <value>Namn</value>
   </data>
   <data name="ProcessId.Header" xml:space="preserve">
-    <value>Process ID</value>
+    <value/>
   </data>
   <data name="ResidentSetSize.Header" xml:space="preserve">
-    <value>Resident Set Size</value>
+    <value/>
   </data>
   <data name="State.Header" xml:space="preserve">
-    <value>State</value>
+    <value/>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Processer</value>
