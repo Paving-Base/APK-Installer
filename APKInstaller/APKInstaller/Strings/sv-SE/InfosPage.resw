@@ -162,7 +162,7 @@
     <value/>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
-    <value>Support Screen Sizes</value>
+    <value/>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
     <value>Target SDK</value>
