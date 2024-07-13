@@ -160,7 +160,7 @@
     <value>配对</value>
   </data>
   <data name="PortRun.Text" xml:space="preserve">
-    <value>端口</value>
+    <value>Port</value>
   </data>
   <data name="QRScanButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
     <value>Сопряжение с QR-кодом</value>
