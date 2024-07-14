@@ -308,10 +308,10 @@
 </value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
-    <value>Show helpers when no device is connected.</value>
+    <value/>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Whether to Show Helps?</value>
+    <value>?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
     <value>Display announcements at the top of Settings.</value>
