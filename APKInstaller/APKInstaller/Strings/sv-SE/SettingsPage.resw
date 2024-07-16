@@ -268,10 +268,10 @@
     <value>Para ihop &amp; ansluta</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>Dark</value>
+    <value>Mörk</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>Windows Default</value>
+    <value/>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
     <value>Light</value>
