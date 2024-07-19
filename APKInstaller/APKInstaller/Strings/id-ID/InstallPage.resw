@@ -194,7 +194,7 @@
     <value>Gagal Mengunduh </value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>Mohon cek koneksi internet anda atau URL dan coba lagi. </value>
+    <value>Please check your network connection or the URL and try again.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
     <value>Mencari WSA... </value>
@@ -321,7 +321,7 @@ dah siap</value>
     <value>Oke</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
-    <value>Paket Online</value>
+    <value>Online Package</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
     <value>Nama Paket</value>
@@ -375,7 +375,7 @@ dah siap</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>Perbarui</value>
+    <value>Pembaruan</value>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
     <value>Perbarui {0}?</value>
@@ -410,7 +410,7 @@ Ini mungkin memakan waktu lama. Duduk dan rileks.</value>
     <value>Selamat datang!</value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
-    <value>Ret...</value>
+    <value>Writing install session ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">
