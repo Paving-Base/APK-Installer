@@ -130,7 +130,7 @@
     <value>Đang trong phân tích...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>Tệp APK</value>
+    <value>Tap APK</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>Các Khả năng: </value>
@@ -139,13 +139,13 @@
     <value>Tên ứng dụng</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Hủy</value>
+    <value>Huy</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
-    <value>Có </value>
+    <value>Co </value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
-    <value>Không </value>
+    <value>Khong </value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>Không thể kết nối đến WSA</value>
