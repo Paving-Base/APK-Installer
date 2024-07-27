@@ -46,7 +46,7 @@ namespace APKInstaller.ViewModels
     public class InstallViewModel : INotifyPropertyChanged
     {
         private InstallPage _page;
-        private DeviceData _device;
+        private DeviceData? _device;
         private readonly ProtocolForResultsOperation _operation;
         private static readonly string APKTemp = Path.Combine(CachesHelper.TempPath, "NetAPKTemp.apk");
         private static readonly string ADBTemp = Path.Combine(CachesHelper.TempPath, "platform-tools.zip");
@@ -1058,7 +1058,7 @@ namespace APKInstaller.ViewModels
                 {
                     checkdevice:
                     WaitProgressText = _loader.GetString("Checking");
-                    if (await CheckDevice() && _device != null)
+                    if (await CheckDevice() && _device.HasValue)
                     {
                         if (NetAPKExist)
                         {
@@ -1256,7 +1256,7 @@ namespace APKInstaller.ViewModels
             if ((!string.IsNullOrWhiteSpace(_path) || _url != null) && NetAPKExist)
             {
                 checkdevice:
-                if (await CheckDevice() && _device != null)
+                if (await CheckDevice() && _device.HasValue)
                 {
                     await CheckAPK();
                 }
@@ -1291,7 +1291,7 @@ namespace APKInstaller.ViewModels
         private async Task CheckAPK()
         {
             ResetUI();
-            if (_device != null)
+            if (_device.HasValue)
             {
                 try
                 {
@@ -1299,7 +1299,7 @@ namespace APKInstaller.ViewModels
                     VersionInfo info = default;
                     if (ApkInfo != null && !ApkInfo.IsEmpty)
                     {
-                        info = await client.GetPackageVersionAsync(_device, ApkInfo?.PackageName);
+                        info = await client.GetPackageVersionAsync(_device.Value, ApkInfo?.PackageName);
                     }
                     if (info == default)
                     {
@@ -1324,7 +1324,7 @@ namespace APKInstaller.ViewModels
                         ActionVisibility = TextOutputVisibility = Visibility.Visible;
                         SecondaryActionVisibility = string.IsNullOrWhiteSpace(ApkInfo?.LaunchableActivity) ? Visibility.Collapsed : Visibility.Visible;
                     }
-                    SDKInfo sdk = SDKInfo.GetInfo(await client.GetPropertyAsync(_device, "ro.build.version.sdk"));
+                    SDKInfo sdk = SDKInfo.GetInfo(await client.GetPropertyAsync(_device.Value, "ro.build.version.sdk"));
                     if (sdk < ApkInfo.MinSDK)
                     {
                         ActionButtonEnable = false;
@@ -1411,7 +1411,7 @@ namespace APKInstaller.ViewModels
             }
             else
             {
-                if (await CheckDevice() && _device != null)
+                if (await CheckDevice() && _device.HasValue)
                 {
                     await CheckAPK();
                 }
@@ -1560,7 +1560,7 @@ namespace APKInstaller.ViewModels
             {
                 _page?.DispatcherQueue.EnqueueAsync(async () =>
                 {
-                    if (await CheckDevice() && _device != null)
+                    if (await CheckDevice() && _device.HasValue)
                     {
                         await CheckAPK();
                     }
@@ -1597,11 +1597,11 @@ namespace APKInstaller.ViewModels
                     }
                 }
             }
-            _device = null;
+            _device = null; 
             return false;
         }
 
-        public void OpenAPP() => _ = new AdbClient().StartAppAsync(_device, ApkInfo?.PackageName);
+        public void OpenAPP() => _ = new AdbClient().StartAppAsync(_device.Value, ApkInfo?.PackageName);
 
         public async void InstallAPP()
         {
@@ -1611,7 +1611,7 @@ namespace APKInstaller.ViewModels
                 VersionInfo info = default;
                 if (ApkInfo != null && !ApkInfo.IsEmpty)
                 {
-                    info = await client.GetPackageVersionAsync(_device, ApkInfo?.PackageName);
+                    info = await client.GetPackageVersionAsync(_device.Value, ApkInfo?.PackageName);
                 }
                 if (info != default && info.VersionCode >= int.Parse(ApkInfo?.VersionCode))
                 {
@@ -1637,33 +1637,33 @@ namespace APKInstaller.ViewModels
                 switch (ApkInfo)
                 {
                     case { IsSplit: true } when IsUploadAPK:
-                        await client.InstallMultiplePackageAsync(_device, [ApkInfo.FullPath], ApkInfo.PackageName, OnInstallProgressChanged, default, "-r", "-t");
+                        await client.InstallMultiplePackageAsync(_device.Value, [ApkInfo.FullPath], ApkInfo.PackageName, OnInstallProgressChanged, default, "-r", "-t");
                         break;
                     case { IsSplit: true }:
                         await using (FileStream apk = File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read))
                         {
-                            await client.InstallMultipleAsync(_device, [apk], ApkInfo.PackageName, OnInstallProgressChanged, default, "-r", "-t");
+                            await client.InstallMultipleAsync(_device.Value, [apk], ApkInfo.PackageName, OnInstallProgressChanged, default, "-r", "-t");
                         }
                         break;
                     case { IsBundle: true } when IsUploadAPK:
                         IEnumerable<string> strings = ApkInfo.SplitApks?.Select(x => x.FullPath);
-                        await client.InstallMultiplePackageAsync(_device, ApkInfo.FullPath, strings, OnInstallProgressChanged, default, "-r", "-t");
+                        await client.InstallMultiplePackageAsync(_device.Value, ApkInfo.FullPath, strings, OnInstallProgressChanged, default, "-r", "-t");
                         break;
                     case { IsBundle: true }:
                         await using (FileStream apk = File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read))
                         {
                             FileStream[] splits = ApkInfo.SplitApks.Select(x => File.Open(x.FullPath, FileMode.Open, FileAccess.Read)).ToArray();
-                            await client.InstallMultipleAsync(_device, apk, splits, OnInstallProgressChanged, default, "-r", "-t");
+                            await client.InstallMultipleAsync(_device.Value, apk, splits, OnInstallProgressChanged, default, "-r", "-t");
                             await Task.WhenAll(splits.Select(x => x.DisposeAsync().AsTask()));
                         }
                         break;
                     case not null when IsUploadAPK:
-                        await client.InstallPackageAsync(_device, ApkInfo.FullPath, OnInstallProgressChanged, default, "-r", "-t");
+                        await client.InstallPackageAsync(_device.Value, ApkInfo.FullPath, OnInstallProgressChanged, default, "-r", "-t");
                         break;
                     case not null:
                         await using (FileStream apk = File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read))
                         {
-                            await client.InstallAsync(_device, apk, OnInstallProgressChanged, default, "-r", "-t");
+                            await client.InstallAsync(_device.Value, apk, OnInstallProgressChanged, default, "-r", "-t");
                         }
                         break;
                 }
@@ -1701,7 +1701,7 @@ namespace APKInstaller.ViewModels
                 ActionVisibility = SecondaryActionVisibility = CancelOperationVisibility = LaunchWhenReadyVisibility = Visibility.Collapsed;
             }
 
-            _page.CancelFlyout.Hide();
+            _page.CancelFlyout.Hide(); 
 
             void OnInstallProgressChanged(InstallProgressEventArgs e)
             {
