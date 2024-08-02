@@ -309,7 +309,7 @@
     <value>نمی توان اینترنت را وصل کرد</value>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
-    <value>Please connect to the internet before opening the app.</value>
+    <value>لطفا قبل از باز کردن برنامه از وصل بودن اینترنت مطمئن شوید.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
     <value>For proper functioning of the app, try to launch an Android app package.</value>
