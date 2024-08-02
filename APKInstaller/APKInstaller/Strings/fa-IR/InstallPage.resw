@@ -182,7 +182,7 @@
     <value>کپی</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Creating install session...</value>
+    <value>در حال ایجاد فایل های نصب...</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>دستگاه ها</value>
@@ -194,7 +194,7 @@
     <value>بارگیری ناموفق بود</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>Please check your network connection or the URL and try again.</value>
+    <value>لطفا از صحیح بودن اتصال اینترنت خود مطمئن شوید و دوباره سعی کنید.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
     <value>در حال پیدا کردن WSA...</value>
@@ -216,15 +216,13 @@
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>How to connect WSA</value>
+    <value>نحوه اتصال WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Please make sure APK Installer has been updated to the latest version
-2. Make sure you have the Android Subsystem installed and running
-3. Turn on developer mode and make sure the IP address is displayed successfully
-4. Reopen APK Installer and continue your installation
-
-[Learn More]({0})</value>
+    <value>1. لطفا مطمئن شوید که APK Installer به آخرین نسخه به روز شده است
+2. مطمئن شوید که زیرسیستم اندروید را نصب و اجرا کرده اید
+3. حالت توسعه دهنده را روشن کنید و مطمئن شوید که آدرس IP با موفقیت نمایش داده شده است
+4. APK Installer را دوباره باز کنید و نصب خود را ادامه دهید</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
     <value>نماد</value>
@@ -233,24 +231,24 @@
     <value>می دانم</value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
-    <value>Incompatible App</value>
+    <value>برنامه ناسازگار</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
-    <value>The minimum required for this app is {0}. Your device supports {1}. Please update your device or choose order package.</value>
+    <value>حداقل مورد نیاز برای این برنامه {0} است. دستگاه شما از {1} پشتیبانی می کند. لطفاً دستگاه خود را به روز کنید یا بسته سفارش را انتخاب کنید.</value>
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
-    <value>Infos</value>
+    <value>اطلاعات</value>
   </data>
   <data name="Install" xml:space="preserve">
     <value>نصب</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
-    <value>{0} is ready!</value>
+    <value>{0} آماده است!</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
-    <value>Install {0}?</value>
+    <value>نصب {0}؟</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
@@ -263,10 +261,10 @@
     <value>نصب WSA</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
-    <value>The package is either corrupted or invalid.</value>
+    <value>بسته یا خراب است یا نامعتبر.</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
-    <value>The URL is either Incomplete or invalid.</value>
+    <value>URL یا ناقص است یا نامعتبر.</value>
   </data>
   <data name="Launch" xml:space="preserve">
     <value>اجرا</value>
@@ -275,37 +273,37 @@
     <value>در حال اجرای WSA...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>Launch when ready</value>
+    <value>وقتی آماده شد راه اندازی شود</value>
   </data>
   <data name="Loading" xml:space="preserve">
     <value>درحال بارگذاری...</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
-    <value>More Info</value>
+    <value>اطلاعات بیشتر</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
-    <value>Cannot find Android Device</value>
+    <value>نمی توان دستگاه Android را پیدا کرد</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>How to connect device</value>
+    <value>چگونه دستگاهی را متصل کنیم</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>If you want to install app into Windows Subsystem for Android™, you need to install it first. If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
+    <value>اگر می‌خواهید برنامه را در زیرسیستم Windows برای Android™ نصب کنید، ابتدا باید آن را نصب کنید. اگر می‌خواهید در دستگاه‌های دیگر نصب کنید، لطفاً به صفحه تنظیمات بروید، «فقط برای WSA» را خاموش کنید و دستگاه خود را وصل کنید.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>#### Using USB
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open USB Debug
-3. Go to the Settings Page of APK Installer, select your device
-4. Go back, resume installation
-#### Using Wifi
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open Remote Debug
-3. Remember the IP address of your device
-4. Go to the Settings Page of APK Installer, connect and select your device
-5. Go back, resume installation
+    <value>#### با استفاده از USB
+1. لطفاً مطمئن شوید که APK Installer به [آخرین نسخه] به‌روزرسانی شده است (https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Developer Mode را روشن کنید، USB Debug را باز کنید
+3. به صفحه تنظیمات APK Installer بروید، دستگاه خود را انتخاب کنید
+4. به عقب برگردید، نصب را از سر بگیرید
+#### با استفاده از Wifi - اینترنت
+1. لطفاً مطمئن شوید که APK Installer به [آخرین نسخه] به‌روزرسانی شده است (https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Developer Mode را روشن کنید، Remote Debug را باز کنید
+3. آدرس IP دستگاه خود را به خاطر بسپارید
+4. به صفحه تنظیمات APK Installer بروید، متصل شوید و دستگاه خود را انتخاب کنید
+5. برگردید، نصب را از سر بگیرید
 
-[Learn More]({0})</value>
+[بیشتر بیاموزید]({0})</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
     <value>Cannot connect Internet</value>
