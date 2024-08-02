@@ -312,7 +312,7 @@
     <value>لطفا قبل از باز کردن برنامه از وصل بودن اینترنت مطمئن شوید.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>For proper functioning of the app, try to launch an Android app package.</value>
+    <value/>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
