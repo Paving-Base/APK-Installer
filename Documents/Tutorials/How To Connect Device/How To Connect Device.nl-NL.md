@@ -1,4 +1,4 @@
-# Toestel verbinden
+# Hoe verbind je een apparaat
 #### Gebruik van USB
 1. Zorg ervoor dat de APK Installer is bijgewerkt naar [de laatste versie](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
 2. Ontwikkelaarsmodus inschakelen, Open externe foutopsporing ![Ontwikkelaarsmodus](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Screenshot_20221002-172252.jpg)
