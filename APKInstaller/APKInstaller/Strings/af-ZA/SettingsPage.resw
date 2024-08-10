@@ -314,7 +314,7 @@
     <value>?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Display announcements at the top of Settings.</value>
+    <value/>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
     <value>Whether to Show Announcements?</value>
