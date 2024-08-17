@@ -124,7 +124,7 @@
     <value>ADB Exists</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>ADB is missing</value>
+    <value/>
   </data>
   <data name="Analysis" xml:space="preserve">
     <value>In Analysis...</value>
