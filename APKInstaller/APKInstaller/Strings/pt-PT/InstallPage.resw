@@ -208,7 +208,7 @@
     <value>Ir para Definições</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>Uma versão mais recente ja está instalada</value>
+    <value>Uma versão mais recente ia está instalada</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
     <value>Você já instalou uma nova versão {0} deste aplicativo. Tem certeza que deseja reinstalar a versão {1}?</value>
