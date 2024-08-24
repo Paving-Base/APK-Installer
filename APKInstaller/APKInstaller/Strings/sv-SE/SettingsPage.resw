@@ -253,10 +253,10 @@
     <value>OS Plattform</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
-    <value>Others</value>
+    <value/>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
-    <value>Pair device through network.</value>
+    <value/>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
     <value>Pair Device</value>
