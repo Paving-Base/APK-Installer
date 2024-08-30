@@ -290,7 +290,7 @@
     <value/>
   </data>
   <data name="NoInternet" xml:space="preserve">
-    <value>Cannot connect Internet</value>
+    <value/>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
     <value>Please connect to the internet before opening the app.</value>
