@@ -157,7 +157,7 @@
     <value>Koppelen, a.u.b. het venster niet sluiten.</value>
   </data>
   <data name="PairToggleButton.Content" xml:space="preserve">
-    <value>Koppel</value>
+    <value>Verbind</value>
   </data>
   <data name="PortRun.Text" xml:space="preserve">
     <value>Poort</value>
