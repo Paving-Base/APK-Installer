@@ -125,7 +125,7 @@
 </value>
   </data>
   <data name="ConnectedListFormat" xml:space="preserve">
-    <value>الأجهزة{0}المتصلة.</value>
+    <value>Connected {0} devices</value>
   </data>
   <data name="ConnectedLogText" xml:space="preserve">
     <value>تم ألاتصال بنجاح.</value>
@@ -146,7 +146,7 @@
     <value/>
   </data>
   <data name="ManualPairTextBlock.Text" xml:space="preserve">
-    <value>اتصال يدوي</value>
+    <value>اتصال يدوي76</value>
   </data>
   <data name="PairCodeBox.Header" xml:space="preserve">
     <value>رمز الاقترانWLAN</value>
