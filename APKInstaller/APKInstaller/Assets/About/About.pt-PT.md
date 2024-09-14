@@ -1,7 +1,7 @@
 #### Bem-vindo ao instalador de APK! ok!
 
 ##### Contradeclarar
-1. Por favor, siga a <1>Licença do Utilizador do Instalador de APK e os Termos de Privacidade</1>.ola obrigado por term aceite o meu pedido para faxer parte da vossa equipa
+1. Please comply with the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
 2. Este programa é de um "Software" de fonte aberta, então por favor tenha a certeza que o Programa é a forma [ este Repositório do GitHub](https://github.com/Paving-Base/APK-Installer) ou </a> para manter os seus dados seguros.
 3. Se a fonte do Programa não estiver anormal, todos os seus dados serão apenas usados para executar ou para armazenar localmente durante a execução do Programa, e o programador não ira roubar os seus arquivos/dados.  Ainda assim, por favor, preste atenção à sua segurança.
 4. A tradução desta aplicação é de responsabilidade da [comunidade Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") e nenhuma parte do texto representa a opinião do seu autor.
