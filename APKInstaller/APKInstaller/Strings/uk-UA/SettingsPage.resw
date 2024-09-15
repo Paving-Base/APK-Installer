@@ -172,7 +172,7 @@
     <value>Під’єднати пристрій через мережу.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
-    <value>Підключити пристрій</value>
+    <value>Під’єднати пристрій</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
     <value>Звʼязатися зі мною</value>
@@ -313,7 +313,7 @@
     <value>Показувати підказки?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Відображати оголошення угорі налаштувань.</value>
+    <value>Показувати оголошення угорі налаштувань.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
     <value>Чи показувати оголошення?</value>
