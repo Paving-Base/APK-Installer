@@ -133,10 +133,10 @@
     <value>Pareado com sucesso. Conectando, por favor, não feche a janela.</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
-    <value>conectar</value>
+    <value>Conectar-se</value>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
-    <value>{0} dispositivos encontrados</value>
+    <value>{0} Dispositivos encontrados</value>
   </data>
   <data name="IPAddressBox.Header" xml:space="preserve">
     <value>Endereço de IP</value>
@@ -154,7 +154,7 @@
     <value>Código de Pareamento WLAN</value>
   </data>
   <data name="PairingLogText" xml:space="preserve">
-    <value>Pairing, please don't close the window.</value>
+    <value>Pairari, pleas Don't cose toe dindo.</value>
   </data>
   <data name="PairToggleButton.Content" xml:space="preserve">
     <value>Parear</value>
@@ -163,7 +163,7 @@
     <value>Porta</value>
   </data>
   <data name="QRScanButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Parear com código QR</value>
+    <value>Parear com o código QR</value>
   </data>
   <data name="QRScanTextBlock.Text" xml:space="preserve">
     <value>Leia o código QR para parear dispositivos.</value>
