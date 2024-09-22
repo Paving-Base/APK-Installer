@@ -3,7 +3,7 @@
     <muxc:InfoBar Title="Aqui está o anúncio (Não me pergunte por que dessa mensagem não ter um botão de fechar)" IsClosable="False" IsOpen="True" Message="Você pode ver todos os tipos de notificações aqui no futuro. Se não quiser vê-las, você pode desligá-las nas configurações abaixo." Severity="Informational"/>
     <muxc:InfoBar Title="Mais Traduções" IsClosable="True" IsOpen="True" Message="Como o autor só sabe chinês e inglês, todas as traduções são deixadas à comunidade. Se você não quer ver um idioma não familiar, bem-vindo ao Crowdin para traduzir!" Severity="Informational">
         <muxc:InfoBar.ActionButton>
-            <HyperlinkButton HorizontalAlignment="Right" Content="Me Clique" NavigateUri="https://crowdin.com/project/APKInstaller"/>
+            <HyperlinkButton HorizontalAlignment="Right" Content="Clique em mim" NavigateUri="https://crowdin.com/project/APKInstaller"/>
         </muxc:InfoBar.ActionButton>
     </muxc:InfoBar>
 </controls:SettingsGroup>
