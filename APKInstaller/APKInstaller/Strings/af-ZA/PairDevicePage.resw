@@ -136,7 +136,7 @@
     <value/>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
-    <value>Found {0} devices</value>
+    <value/>
   </data>
   <data name="IPAddressBox.Header" xml:space="preserve">
     <value>IP-adres</value>
@@ -151,7 +151,7 @@
     <value>WLAN Pairing Code</value>
   </data>
   <data name="PairCodeTextBlock.Text" xml:space="preserve">
-    <value>WLAN Pairing Code</value>
+    <value/>
   </data>
   <data name="PairingLogText" xml:space="preserve">
     <value>Pairing, please don't close the window.</value>
@@ -160,15 +160,15 @@
     <value>Pair</value>
   </data>
   <data name="PortRun.Text" xml:space="preserve">
-    <value>Port</value>
+    <value/>
   </data>
   <data name="QRScanButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Pair with QR code</value>
+    <value/>
   </data>
   <data name="QRScanTextBlock.Text" xml:space="preserve">
     <value>Scan QR code to pair devices.</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Pair &amp; Connect</value>
+    <value/>
   </data>
 </root>
