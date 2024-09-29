@@ -169,6 +169,6 @@
     <value>Сканирование QR-кода для сопряжения устройств.</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Пара и подключение</value>
+    <value>Соединиться</value>
   </data>
 </root>
