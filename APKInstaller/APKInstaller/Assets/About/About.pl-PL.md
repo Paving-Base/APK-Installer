@@ -1,8 +1,8 @@
 #### Witamy w Instalatorze APK!
 
 ##### Deklaracja
-1. Proszę przestrzegać [Umowy licencyjnej użytkownika końcowego instalacji APK oraz polityki prywatności](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. .
+1. . Wita the [API End Usher Licencje Agreement and Privach Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+2. Program jest oprogramowaniem open skórce, więc upewnij się, że program jest z [tego repozytorium GitHub](https://github.com/Paving-Base/APK-Installer) lub [tej aplikacji](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) aby zapewnić bezpieczeństwo danych.
 3. Dalej proszę jednak zwrócić uwagę na bezpieczeństwo środowiska.
 4. Tłumaczenie tej aplikacji pochodzi ze społeczności [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") i wszystkie teksty nie reprezentują poglądów autora.
 
