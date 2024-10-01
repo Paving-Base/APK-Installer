@@ -317,7 +317,7 @@
     <value>Display announcements at the top of Settings.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Whether to Show Announcements?</value>
+    <value/>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>It may leave temp files when an unexpected interruption occurs.</value>
