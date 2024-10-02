@@ -139,7 +139,7 @@
     <value>Vous utilisez une version de développement de l'application.</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
-    <value>Activer le mode Picture-In-Picture</value>
+    <value>Activer le mode photo-en-photo</value>
   </data>
   <data name="LanguageSettings.Description" xml:space="preserve">
     <value>Sélectionner la langue et redémarrer l'appli pour changer de langue</value>
@@ -184,6 +184,6 @@
     <value>Title Bar</value>
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
-    <value>Test Interface Utilisateur</value>
+    <value>Teste Interface Utilisateur</value>
   </data>
 </root>
