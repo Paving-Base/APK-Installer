@@ -130,7 +130,7 @@
     <value>Activer ou désactiver le mode Picture-In-Picture</value>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
-    <value>Picture-In-Picture</value>
+    <value>Activer le mode photo-en-photo</value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
     <value>Une application en version de développement peut ne pas être stable. Téléchargez la version stable sur le Microsoft Store.</value>
