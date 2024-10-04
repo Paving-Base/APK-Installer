@@ -320,7 +320,7 @@
     <value/>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
-    <value>It may leave temp files when an unexpected interruption occurs.</value>
+    <value/>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
     <value>Whether to Show Installation Progress?</value>
