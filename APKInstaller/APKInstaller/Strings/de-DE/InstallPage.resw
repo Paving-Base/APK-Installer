@@ -154,7 +154,7 @@
     <value>Entweder wurde WSA nicht ordnungsgemäß gestartet, oder es liegt ein Problem mit der ADB vor. Dieses Problem kann sehr schwer zu beheben sein. Bitte starten Sie den Installer neu. Wenn es dann immer noch nicht funktioniert, versuchen Sie, den Computer neu zu starten.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>App Paket kann nicht geöffnet werden</value>
+    <value>Kann App Paket nicht öffnen</value>
   </data>
   <data name="Checking" xml:space="preserve">
     <value>Überprüfen...</value>
