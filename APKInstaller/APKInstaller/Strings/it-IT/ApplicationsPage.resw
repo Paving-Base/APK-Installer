@@ -121,7 +121,7 @@
     <value>In attesa del Dispositivo...</value>
   </data>
   <data name="Start.Text" xml:space="preserve">
-    <value>Avvia</value>
+    <value>Iniziare</value>
   </data>
   <data name="Stop.Text" xml:space="preserve">
     <value>Arresta</value>
