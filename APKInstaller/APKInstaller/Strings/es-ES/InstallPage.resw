@@ -142,7 +142,7 @@
     <value>Cancelar</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
-    <value>Bajista</value>
+    <value>si</value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
     <value>magis4</value>
