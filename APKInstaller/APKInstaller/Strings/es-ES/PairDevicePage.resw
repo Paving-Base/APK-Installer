@@ -133,7 +133,7 @@
     <value>Emparejando con éxito. Conectando, por favor, no cierres la ventana.</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
-    <value>APK installer</value>
+    <value>Conectado</value>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
     <value>{0} dispositivos encontrados</value>
