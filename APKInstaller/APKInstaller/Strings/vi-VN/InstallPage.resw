@@ -207,7 +207,7 @@
     <value>Đã tìm thấy WSA</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>Đến Cài đặt</value>
+    <value>Vào cài đặt</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
     <value>Phiên bản mới nhất đã được cài đặt</value>
