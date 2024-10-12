@@ -6,7 +6,7 @@ APK Installer End User L'acense Gréement and.</li>
    
    2 Ce programme est un logiciel open source, donc assurez-vous que le programme provient de [ce dépôt GitHub](https://github.com/Paving-Base/APK-Installer) ou [cette application](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) pour assurer la sécurité de vos données.
 3 If the source of the program is not abnormal, all your data will only be used to run with the program or stored locally during the program running, and the developer will not steal any of your data. But even so, please pay attention to the security of the use environment.
-4 The translation of the text of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts do not represent the author's views.</ol> 
+4 The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.</ol> 
 
 
 
