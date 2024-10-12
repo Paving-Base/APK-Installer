@@ -121,10 +121,10 @@
     <value>Prueba de Android</value>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
-    <value>Administrar las aplicaciones de los dispositivos conectados</value>
+    <value>Administrar los procesos de los dispositivos conectados</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
-    <value>Aplicación</value>
+    <value>Applications</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
     <value>Introducir o salir de superposición compacta</value>
