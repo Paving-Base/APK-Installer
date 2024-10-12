@@ -374,7 +374,8 @@ matador
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>Actualización</value>
+    <value>Actualización
+</value>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
     <value>Actualizar {0}?</value>
