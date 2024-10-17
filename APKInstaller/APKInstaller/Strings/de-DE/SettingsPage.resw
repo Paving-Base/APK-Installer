@@ -142,7 +142,7 @@
     <value>Ändern</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>Überprüfung fehlgeschlagen</value>
+    <value>Check Failed</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
     <value>Nach Updates suchen...</value>

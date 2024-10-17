@@ -133,42 +133,42 @@
     <value>Pareado com sucesso. Conectando, por favor, não feche a janela.</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
-    <value>Conectar</value>
+    <value>Conectar-se</value>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
-    <value>{0} dispositivos encontrados</value>
+    <value>{0} Dispositivos encontrados</value>
   </data>
   <data name="IPAddressBox.Header" xml:space="preserve">
-    <value>Endereço de IP</value>
+    <value>Endereço IP</value>
   </data>
   <data name="ManualPairButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Conectar dispositivos manualmente</value>
+    <value>Conectando manualmente dispositivos</value>
   </data>
   <data name="ManualPairTextBlock.Text" xml:space="preserve">
-    <value>Conexão manual</value>
+    <value>Conexão Manual</value>
   </data>
   <data name="PairCodeBox.Header" xml:space="preserve">
-    <value>Código de Pareamento WLAN</value>
+    <value>WLAN Pairitiri Codé</value>
   </data>
   <data name="PairCodeTextBlock.Text" xml:space="preserve">
-    <value>Código de Pareamento WLAN</value>
+    <value>WLAN Pairari Codé</value>
   </data>
   <data name="PairingLogText" xml:space="preserve">
-    <value>Pareando, por favor, não feche a janela.</value>
+    <value>Pareando, por favor não feche a janela.</value>
   </data>
   <data name="PairToggleButton.Content" xml:space="preserve">
     <value>Parear</value>
   </data>
   <data name="PortRun.Text" xml:space="preserve">
-    <value>Porta</value>
+    <value>porta</value>
   </data>
   <data name="QRScanButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Parear com código QR</value>
+    <value>Emparelhar com código QR</value>
   </data>
   <data name="QRScanTextBlock.Text" xml:space="preserve">
     <value>Leia o código QR para parear dispositivos.</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Parear e Conectar</value>
+    <value>Emparelhar e conectar</value>
   </data>
 </root>
