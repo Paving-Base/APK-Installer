@@ -199,19 +199,19 @@
     <value>EULA</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
-    <value>Feedback</value>
+    <value>ﺑﺎﺯﺧﻮﺭﺩ</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
-    <value>Find Update</value>
+    <value>یافتن بروزرسانی</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>Information about the frameworks of this app.</value>
+    <value>اطلاعاتی در مورد چارچوب های این برنامه.</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
-    <value>Framework Information</value>
+    <value>اطلاعات چارچوب</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
-    <value>Framework</value>
+    <value>چارچوب</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>Go to the page of test.</value>
