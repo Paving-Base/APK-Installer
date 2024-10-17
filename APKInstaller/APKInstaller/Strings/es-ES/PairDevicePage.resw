@@ -130,10 +130,13 @@
     <value>Conectando con éxito.</value>
   </data>
   <data name="ConnectingLogText" xml:space="preserve">
-    <value>Emparejando con éxito. Conectando, por favor, no cierres la ventana.</value>
+    <value>Emparejando con éxito. Conectando, por favor, no cierres la ventana</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
-    <value>Conectado</value>
+    <value>Conectado, please add
+
+
+</value>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
     <value>{0} dispositivos encontrados</value>
