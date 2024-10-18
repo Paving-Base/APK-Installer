@@ -136,7 +136,7 @@
     <value>Verbinden</value>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
-    <value>{0} apparaten gevonden</value>
+    <value>{0} Apparaten gevonden</value>
   </data>
   <data name="IPAddressBox.Header" xml:space="preserve">
     <value>IP Adres</value>
