@@ -217,7 +217,7 @@
     <value>.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>Go to TestPage</value>
+    <value/>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
     <value/>
@@ -226,7 +226,7 @@
     <value/>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Last Checked: </value>
+    <value>::</value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
     <value>Learn More</value>
