@@ -7,16 +7,16 @@
 4. Перевод текста этого приложения происходит от сообщества [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin"), и все тексты не отражают мнения автора.
 
 ##### Перевод
-Спасибо переводчикам [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") за их помощь. Если возникнут какие-либо проблемы с переводом, пожалуйста, не стесняйтесь исправлять нас. И, пожалуйста, отнеситесь к переводу серьезно. Все, что вы пишете, будет прочитано людьми во всем мире.
+Спасибо переводчикам <7<>Crowdin</7> за их помощь. Если возникнут какие-либо проблемы с переводом, пожалуйста, не стесняйтесь исправлять нас.hghubhb И, пожалуйста, отнеситесь к переводу серьезно.vsf Все, что вы пишете, будет прочитано людьми во всем мире.x z
 
-##### Авторы
+##### Авторыytdgd
 - [wherewhere](https://github.com/wherewhere)
 - [Void48](https://github.com/Void48)
 - [EP012014](https://github.com/EP012014)
 - [A Big Salty Fish](https://github.com/bigsaltyfishes)
 - [sam1357](https://github.com/sam1357)
 
-##### Используемые библиотеки
+##### Используемые библиотекиbdfsb
 - [MetroLog](https://github.com/roubachof/MetroLog "MetroLog")
 - [Zeroconf](https://github.com/novotnyllc/Zeroconf "Zeroconf")
 - [Windows UI](https://github.com/microsoft/microsoft-ui-xaml "Windows UI")
