@@ -1,5 +1,5 @@
-# Cách kết nối WSA oki bfffvhnxnsfx.
-1. Hãy đảm bảo rằng Trình Cài Đặt APK đã được cập nhật lên [phiên bản mới nhất](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")txhcxdgvxgfdesdcASXCVYGVASXCY.
+# How To Connect WSA
+1. Hãy đảm bảo rằng Trình Cài Đặt APK đã được cập nhật lên [phiên bản mới nhất](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")txhcxdgvxgfdesdcASXCVYGVASXCY
 2. Hãy chắc chắn rằng bạn đã cài đặt và chạy <a href="https:
 [//www.microsoft.com/store/productId/9P3395VX91NR">Hệ thống phụ Windows cho Android™](https://www.microsoft.com/store/productId/9P3395VX91NR) uycfxvyfxeghbdtcxxqcfvxdfwhxdfgcxvdhdfdwshz.</li> 
    
