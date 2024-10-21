@@ -159,16 +159,16 @@
     <value>対応したアーキテクチャ</value>
   </data>
   <data name="SupportResolutions.Text" xml:space="preserve">
-    <value>解像度の対応</value>
+    <value>対応した解像度</value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
-    <value>画面サイズの対応</value>
+    <value>対応した画面サイズ</value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
     <value>対象のSDKバージョン</value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
-    <value>{0} バージョン情報</value>
+    <value>{0} について</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Version.Text" xml:space="preserve">

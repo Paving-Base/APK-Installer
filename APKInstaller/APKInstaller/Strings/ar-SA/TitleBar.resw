@@ -124,6 +124,6 @@
     <value>رجوع</value>
   </data>
   <data name="RefreshButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>تنشيط</value>
+    <value>Refresh</value>
   </data>
 </root>

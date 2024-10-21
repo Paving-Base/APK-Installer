@@ -1,22 +1,22 @@
-#### Välkommen till ARK-installationsprogram!
+#### Välkommen till APK-installerare!
 
-##### Declaration
+##### Försäkran
 1. Please comply with the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. This program is open source software, so please make sure the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) to ensure your data security.
-3. If the source of the program is not abnormal, all your data will be used only for the running of the program or stored locally during the running, and the developer will not steal any of your data. Still, please pay attention to the security of the environment.
-4. The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.
+2. Detta program är öppen källkod, så se till att programmet är från [denna Github repository](https://github.com/Paving-Base/APK-Installer) eller [denna applikation](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) för att säkerställa din datasäkerhet.
+3. Om källan till programmet inte är avvikande, alla dina data kommer endast att användas för att köra programmet eller lagras lokalt under körning, och utvecklaren kommer inte att stjäla någon av dina uppgifter. Var dock uppmärksam på miljöns säkerhet.
+4. Översättningen av denna ansökan kommer från gemenskapen [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") och alla texter representerar inte författarens åsikter.
 
-##### Translate
-Thanks to [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") translators for their support. If there are any problems with the translation, please feel free to correct us. And please translate seriously. Everything you write will be read all over the world.
+##### Översätt
+Tack till [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") översättare för deras stöd. Om det finns några problem med översättningen, tveka inte att korrigera oss. And please translate seriously. Everything you write will be read all over the world.
 
-##### Contributors
+##### Bidragsgivare
 - [wherewhere](https://github.com/wherewhere)
 - [Void48](https://github.com/Void48)
 - [EP012014](https://github.com/EP012014)
 - [A Big Salty Fish](https://github.com/bigsaltyfishes)
 - [sam1357](https://github.com/sam1357)
 
-##### Citations and References
+#####
 - [MetroLog](https://github.com/roubachof/MetroLog "MetroLog")
 - [Zeroconf](https://github.com/novotnyllc/Zeroconf "Zeroconf")
 - [Windows UI](https://github.com/microsoft/microsoft-ui-xaml "Windows UI")
