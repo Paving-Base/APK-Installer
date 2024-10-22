@@ -391,7 +391,7 @@
     <value>Phiên bản mã</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>Phiên bản: {0}</value>
+    <value>Phiên bản {0}</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
