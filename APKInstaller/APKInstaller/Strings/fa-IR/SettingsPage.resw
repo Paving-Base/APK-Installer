@@ -229,7 +229,7 @@
     <value>::</value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
-    <value>Learn More</value>
+    <value/>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
     <value>Logs</value>
