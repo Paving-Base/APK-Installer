@@ -203,7 +203,7 @@ Capacidades:1</value>
     <value>Finalizado</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>WSA Encontrado</value>
+    <value>WSA encontrado</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
     <value>Vá para configurações</value>
