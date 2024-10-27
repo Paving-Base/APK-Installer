@@ -296,13 +296,13 @@
     <value/>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>For proper functioning of the app, try to launch an Android app package.</value>
+    <value>.</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
-    <value>Online Package</value>
+    <value/>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
     <value>Nom del paquet</value>
@@ -312,7 +312,7 @@
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="PostInstallFormat" xml:space="preserve">
-    <value>Cleaning cache ({0}/{1})...</value>
+    <value>...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
