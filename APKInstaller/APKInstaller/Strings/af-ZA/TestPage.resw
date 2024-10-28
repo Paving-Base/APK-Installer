@@ -121,7 +121,7 @@
     <value/>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
-    <value>Manage the applications of connected devices</value>
+    <value/>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>Aansoeke</value>
