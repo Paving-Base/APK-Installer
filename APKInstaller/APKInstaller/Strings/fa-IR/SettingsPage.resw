@@ -235,7 +235,7 @@
     <value/>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
+    <value/>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>You are using a modified version!</value>
