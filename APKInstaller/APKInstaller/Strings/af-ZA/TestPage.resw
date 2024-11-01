@@ -130,7 +130,7 @@
     <value/>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
-    <value>Compact Overlay</value>
+    <value/>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
     <value>A development version app may not stable. Download release version on Microsoft Store.</value>
