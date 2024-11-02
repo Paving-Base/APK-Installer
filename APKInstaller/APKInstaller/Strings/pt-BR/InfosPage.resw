@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppName.Text" xml:space="preserve">
-    <value>App Name</value>
+    <value>Nome do aplicativo</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
     <value>Informaçõeapks básicas</value>
@@ -128,19 +128,19 @@
     <comment>{0} - Dependencies Count.</comment>
   </data>
   <data name="FeaturesHeaderFormat" xml:space="preserve">
-    <value>Recursos - {0} no total1</value>
+    <value>Recursos-{0} no total</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
-    <value>Idiomasportugues</value>
+    <value>Idioma</value>
   </data>
   <data name="MinSDK.Text" xml:space="preserve">
-    <value>Min SDKmim</value>
+    <value>Min SDK mim</value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
-    <value>Abrir a Pasta da Base de Dadossim</value>
+    <value>Abrir a Pasta da Base de Dados sim</value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
-    <value>Nome do Pacotesim</value>
+    <value>Nome do Pacote sim</value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
     <value>Tamanho do pacote1</value>
@@ -168,7 +168,7 @@
     <value>Alvo SDK1</value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
-    <value>Sobre {0}1</value>
+    <value>Sobre {0} 1</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Version.Text" xml:space="preserve">
