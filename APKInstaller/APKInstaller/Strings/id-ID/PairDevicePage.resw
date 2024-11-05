@@ -148,7 +148,7 @@
     <value>Koneksi Manual</value>
   </data>
   <data name="PairCodeBox.Header" xml:space="preserve">
-    <value>Kode Pemasangan WLAN</value>
+    <value>WLAN Pairing Code</value>
   </data>
   <data name="PairCodeTextBlock.Text" xml:space="preserve">
     <value>Kode Pemasangan WLAN</value>
