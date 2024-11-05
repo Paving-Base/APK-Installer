@@ -244,10 +244,10 @@
     <value>Disable it to connect to other devices.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>For WSA only?</value>
+    <value>?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>OS Architecture</value>
+    <value/>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
     <value>OS Platform</value>
