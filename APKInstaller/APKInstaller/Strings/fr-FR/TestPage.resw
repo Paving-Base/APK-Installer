@@ -127,7 +127,7 @@
     <value>Demandes</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
-    <value>Enter or Exit Compact Overlay</value>
+    <value>Entrer or Sortie Compact Velay</value>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
     <value>Activer le mode photo-en-photo</value>
