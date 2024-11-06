@@ -136,13 +136,13 @@
     <value>.</value>
   </data>
   <data name="DevelopmentInfoBar.Title" xml:space="preserve">
-    <value>You are using a development version app.</value>
+    <value/>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
     <value/>
   </data>
   <data name="LanguageSettings.Description" xml:space="preserve">
-    <value>Select language and restart to change language</value>
+    <value/>
   </data>
   <data name="LanguageSettings.Header" xml:space="preserve">
     <value/>
