@@ -343,6 +343,6 @@
     <value>Terkini</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Pengaturan Warna Windows</value>
+    <value>Windows Color Settings</value>
   </data>
 </root>
