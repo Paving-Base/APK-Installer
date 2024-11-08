@@ -118,12 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, die Android Ontvou Brug, is nodig vir APK Installer om te werk. Klik op "Aflaai" om dit af te laai. Deur af te laai, aanvaar jy die Google-bepalings en -voorwaardes vir ADB. Indien u reeds ADB afgelaai het, klik dan op "Kies" om dit te kies.
-
-</value>
+    <value>ADB, die Android Ontvou Brug, is nodig vir APK Installer om te werk. Klik op "Aflaai" om dit af te laai. Deur af te laai, aanvaar jy die Google-bepalings en -voorwaardes vir ADB. Indien u reeds ADB afgelaai het, klik dan op "Kies" om dit te ki</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Bestaan</value>
+    <value>At</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB ontbreek</value>
@@ -396,8 +394,7 @@
     <value/>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>Wag ris liv toeslet"..."
-a...</value>
+    <value>Wag vir die toestel... wsa apk app</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
     <value/>
