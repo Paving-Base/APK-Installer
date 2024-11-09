@@ -130,7 +130,7 @@
     <value/>
   </data>
   <data name="ConnectingLogText" xml:space="preserve">
-    <value>Pairing successfully. Connecting, please don't close the window.</value>
+    <value/>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
     <value/>
