@@ -160,7 +160,7 @@
     <value/>
   </data>
   <data name="ProgressSettings.Header" xml:space="preserve">
-    <value>Progress</value>
+    <value/>
   </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
     <value/>
@@ -169,7 +169,7 @@
     <value/>
   </data>
   <data name="ShowRefreshButton.Description" xml:space="preserve">
-    <value>Show Refresh Button on the Title Bar</value>
+    <value/>
   </data>
   <data name="ShowRefreshButton.Header" xml:space="preserve">
     <value/>
@@ -178,7 +178,7 @@
     <value/>
   </data>
   <data name="TitleBarSettings.Description" xml:space="preserve">
-    <value>Extends Content Into TitleBar</value>
+    <value/>
   </data>
   <data name="TitleBarSettings.Header" xml:space="preserve">
     <value/>
