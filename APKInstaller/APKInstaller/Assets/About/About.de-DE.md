@@ -7,7 +7,7 @@
 4. Die Übersetzung dieser Anwendung stammt von der [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") Community und alle Texte repräsentieren nicht die Ansichten des Autors.
 
 ##### Übersetzen
-Dank an die [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin")-Übersetzer für ihre Unterstützung. Sollte es jegliche Probleme mit der Übersetzung geben, können Sie uns gerne korrigieren. Bitte übersetzen Sie ernsthaft. Alles, was Sie schreiben, wird auf der ganzen Welt lesbar sein.
+Dank an die [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin")-Übersetzer für ihre Unterstützung. Sollte es jegliche Probleme mit der Übersetzung geben, können sie uns gerne korrigieren. Sollte es jegliche Probleme mit der Übersetzung geben, können Sie uns gerne korrigieren. Bitte übersetzen Sie ernsthaft. Bitte übersetzen Sie ernsthaft. Alles, was Sie schreiben, wird auf der ganzen Welt lesbar sein. Alles, was Sie schreiben, wird auf der ganzen Welt lesbar sein.
 
 ##### Mitwirkende
 - [wherewhere](https://github.com/wherewhere)
@@ -16,7 +16,7 @@ Dank an die [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin")-Übers
 - [A Big Salty Fish](https://github.com/bigsaltyfishes)
 - [sam1357](https://github.com/sam1357)
 
-##### Zitate und Referenzen
+##### Zitate und Referenzen Zitate und Referenzen
 - [MetroLog](https://github.com/roubachof/MetroLog "MetroLog")
 - [Zeroconf](https://github.com/novotnyllc/Zeroconf "Zeroconf")
 - [Windows UI](https://github.com/microsoft/microsoft-ui-xaml "Windows UI")
