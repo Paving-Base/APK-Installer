@@ -154,7 +154,7 @@
     <value/>
   </data>
   <data name="PairingLogText" xml:space="preserve">
-    <value>Pairing, please don't close the window.</value>
+    <value/>
   </data>
   <data name="PairToggleButton.Content" xml:space="preserve">
     <value>Pair</value>
