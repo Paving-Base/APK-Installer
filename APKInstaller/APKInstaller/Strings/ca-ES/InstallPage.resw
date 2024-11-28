@@ -333,7 +333,7 @@
     <value>Seleccionar</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>Share</value>
+    <value/>
   </data>
   <data name="StartingADB" xml:space="preserve">
     <value>Iniciant el Servidor ADB...</value>
