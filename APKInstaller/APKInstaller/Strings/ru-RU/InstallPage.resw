@@ -187,7 +187,7 @@
     <value>Устройстваerge</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Скачатьwsgws</value>
+    <value>Сзкачатьwsgws</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
     <value>Ошибка загрузкиtews</value>
@@ -215,7 +215,7 @@
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>Как подключиться к WSA</value>
+    <value>Как подключиться WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
     <value>1. Пожалуйста, убедитесь, что программа APK Installer была обновлена до последней версии
@@ -245,7 +245,7 @@
     <value>Установить</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
-    <value>{0} установлено!</value>
+    <value>{0} Установлено!</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
@@ -259,7 +259,7 @@
     <value>Причина: </value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
-    <value>Установить Подсистему Windows для Android</value>
+    <value>Установить Подсистему Windows Android</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
     <value>Пакет повреждён или недействителен.</value>
@@ -319,7 +319,7 @@
     <value>ОК</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
-    <value>Онлайн-пакет</value>
+    <value>Онлайн пакет</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
     <value>Имя пакета</value>
@@ -356,7 +356,7 @@
     <value>Запуск сервера ADB...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>Запустить Подсистему Windows для Android</value>
+    <value>Запустить Подсистему Windows Android</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
     <value>Ссылка на Магазин</value>
