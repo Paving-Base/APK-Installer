@@ -128,7 +128,7 @@
     <comment>{0} - Dependencies Count.</comment>
   </data>
   <data name="FeaturesHeaderFormat" xml:space="preserve">
-    <value>Возможности - {0} всегоdgbb</value>
+    <value>Возможности - {0} все</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
     <value>Языкиdbgd</value>
@@ -162,7 +162,7 @@
     <value>Поддерживаемые разрешенияzdbzvbzfzgcvbdxb</value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
-    <value>Поддерживаемые размеры экранаudfhdjrhv
+    <value>Поддерживаемые размеры экрана
 </value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
