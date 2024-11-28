@@ -169,6 +169,6 @@
     <value>Pindai kode QR untuk memasangkan perangkat.</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Pair &amp; Connect</value>
+    <value>配对与连接</value>
   </data>
 </root>
