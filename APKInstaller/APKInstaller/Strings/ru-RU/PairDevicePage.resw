@@ -163,7 +163,7 @@
     <value>Порт</value>
   </data>
   <data name="QRScanButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value/>
+    <value>[empty translation] </value>
   </data>
   <data name="QRScanTextBlock.Text" xml:space="preserve">
     <value>Сканирование QR-кода для сопряжения устройств.</value>
