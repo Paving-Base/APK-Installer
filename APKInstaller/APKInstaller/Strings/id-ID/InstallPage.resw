@@ -210,22 +210,22 @@ File APK Filefiles </value>
     <value>Pergi ke Pengaturan</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>Versi yang lebih baru sudah diinstal</value>
+    <value>A newer version is already installed</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>Anda sudah memiliki versi baru {0} yang diinstal di aplikasi ini. Apakah anda yakin ingin menginstal ulang versi {1}?</value>
+    <value>You already have installed a new version {0} of this app. Are you sure to reinstall version {1}?</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>Bagaimana cara menghubungkan WSA</value>
+    <value>How to connect WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Pastikan Penginstal APK telah diperbarui ke versi terbaru
-2. Pastikan Anda telah menginstal dan menjalankan Subsistem Android
-3. Aktifkan mode pengembang dan pastikan alamat IP berhasil ditampilkan
-4. Buka kembali Penginstal APK dan lanjutkan penginstalan Anda
+    <value>1. Please make sure APK Installer has been updated to the latest version
+2. Make sure you have the Android Subsystem installed and running
+3. Turn on developer mode and make sure the IP address is displayed successfully
+4. Reopen APK Installer and continue your installation
 
-[Pelajari Lebih Lanjut]({0})</value>
+[Learn More]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
     <value>Ikon</value>
@@ -390,11 +390,11 @@ dah siap</value>
     <value>Kode Versi</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>Versi: {0}</value>
+    <value>Version: {0}</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>Menunggu untuk mengunduh...</value>
+    <value>Waiting for download...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
     <value>Menunggu Perangkat...</value>
