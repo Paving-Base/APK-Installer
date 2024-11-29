@@ -166,7 +166,7 @@
     <value>当应用程序准备就绪后是否关闭安装程序？</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
-    <value>Pèizhì</value>
+    <value>Configs</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
     <value>通过网络连接设备。</value>
