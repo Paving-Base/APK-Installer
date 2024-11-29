@@ -160,13 +160,13 @@
     <value>Jiǎnchá zhōng……</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Jiǎnchá ADB ……</value>
+    <value>检查路径……</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Jiǎnchá lùjìng……</value>
+    <value>检查路径……</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Diǎnjī yuèdú</value>
+    <value>单击此处以读取它</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Guānbì</value>
