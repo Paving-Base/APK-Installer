@@ -346,6 +346,6 @@
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
     <value>
-Windows Color Settings</value>
+WindowsColor</value>
   </data>
 </root>
