@@ -124,7 +124,8 @@
     <value>Подключить</value>
   </data>
   <data name="ConnectedListFormat" xml:space="preserve">
-    <value>df</value>
+    <value>save_diviyse
+</value>
   </data>
   <data name="ConnectedLogText" xml:space="preserve">
     <value>Успешное подключение.</value>
