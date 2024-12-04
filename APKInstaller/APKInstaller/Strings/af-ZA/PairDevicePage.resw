@@ -166,7 +166,7 @@
     <value/>
   </data>
   <data name="QRScanTextBlock.Text" xml:space="preserve">
-    <value>Scan QR code to pair devices.</value>
+    <value>.</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value/>
