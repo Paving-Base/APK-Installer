@@ -122,11 +122,11 @@
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
     <value>Información básica
-brawl stars variadas </value>
+Brasil Sars variado </value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
     <value>Dependencias - {0} en total
-2 año</value>
+2 años</value>
     <comment>{0} - Dependencies Count.</comment>
   </data>
   <data name="FeaturesHeaderFormat" xml:space="preserve">
