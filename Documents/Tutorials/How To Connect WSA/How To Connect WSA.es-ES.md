@@ -1,5 +1,5 @@
 # Cómo conectar WSA
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+1. Léase maque sur APK Instalar has bien úpate lo [te lates versión](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
 2. Asegúrese de que ha instalado y ejecutado un subsistema [de Windows para Android](https://www.microsoft.com/store/productId/9P3395VX91NR)ejecutar
 3. Active el modo desarrollador, asegúrese de que se muestre la dirección IP ![
 Modo Desarrollador activar
