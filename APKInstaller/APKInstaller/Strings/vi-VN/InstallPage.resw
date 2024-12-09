@@ -237,7 +237,7 @@
     <value>Ứng dụng không tương thích</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
-    <value>Yêu cầu tối thiểu cho ứng dụng này là {0}. Thiết bị của bạn hỗ trợ {1}. Vui lòng cập nhật thiết bị của bạn hoặc chọn gói yêu cầu.
+    <value>Yêu cầu tối thiểu cho ứng dụng này là {0}. Thiết bị của bạn hỗ trợ Vui lòng cập nhật thiết bị của bạn hoặc chọn gói yêu cầu.
 </value>
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
@@ -317,7 +317,7 @@
     <value>Hãy kết nối tới Internet trước khi mở ứng dụng.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>Để ứng dụng hoạt động bình thường, hãy thử chạy một Gói ứng dụng Android.</value>
+    <value>Để ứng dụng hoạt động bình thường, hãy thử chạy một Gói ứng dụng.</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
