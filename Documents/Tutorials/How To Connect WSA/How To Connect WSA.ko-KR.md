@@ -1,5 +1,5 @@
 # 장치 연결 방법
-1. APK 설치 관리자가 [최신 버전](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")으로 업데이트되었는지 확인하세요.
+1. APK 설치 관리자가 [최신 버전](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")'으로' 업데이트되었는지 확인하세요.
 2. Maak asseblief seker dat u
 Windows-substelsel vir Android™</0 geïnstalleer het en lopend is ></li> 
    
