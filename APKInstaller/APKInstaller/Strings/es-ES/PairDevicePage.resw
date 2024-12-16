@@ -133,13 +133,10 @@
     <value>Emparejando con éxito. Conectando, por favor, no cierres la ventana</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
-    <value>Conectado, please add
-
-
-</value>
+    <value>Conectar</value>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
-    <value>{0} dispositivos encontrados</value>
+    <value>Fueron encontrados {0} dispositivos</value>
   </data>
   <data name="IPAddressBox.Header" xml:space="preserve">
     <value>Dirección IP</value>
