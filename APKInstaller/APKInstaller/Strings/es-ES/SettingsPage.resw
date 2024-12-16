@@ -205,13 +205,13 @@
     <value>Encontrar actualización</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>Información acerca de los frameworks de esta aplicación.</value>
+    <value>Descripción del marco de referencia de esta aplicación</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
     <value>Descripción del marco</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
-    <value>Framework</value>
+    <value>Marco de referencia</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>Ir a la página de prueba.</value>
