@@ -173,7 +173,7 @@ Descarga la versión de publicación en la tienda de Microsoft.</value>
     <value>Mostrar el botón de refrescar en la barra de título</value>
   </data>
   <data name="ShowRefreshButton.Header" xml:space="preserve">
-    <value>Botón de refrescar</value>
+    <value>Actualizar</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Probando</value>
