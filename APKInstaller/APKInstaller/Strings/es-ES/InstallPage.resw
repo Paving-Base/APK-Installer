@@ -145,7 +145,7 @@
     <value>si</value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
-    <value>magis4</value>
+    <value>No</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>No se puede conectar a %1</value>
@@ -187,7 +187,7 @@
     <value>Dispositivos,</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Descargar</value>
+    <value>Descargue</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
     <value>Descarga fallida</value>
