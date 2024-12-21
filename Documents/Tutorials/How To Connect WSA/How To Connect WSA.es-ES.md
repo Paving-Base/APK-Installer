@@ -1,6 +1,6 @@
 # Cómo conectar WSA
 1. Léase maque sur APK Instalar has bien úpate lo [te lates versión](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Asegúrese de que ha instalado y ejecutado un subsistema [de Windows para Android](https://www.microsoft.com/store/productId/9P3395VX91NR)ejecutar
+2. Please make sure you have installed and running [Windows Subsystem for Android™](https://www.microsoft.com/store/productId/9P3395VX91NR)
 3. Active el modo desarrollador, asegúrese de que se muestre la dirección IP ![
 Modo Desarrollador activar
 ](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20WSA/Images/Snipaste_2022-10-02_19-02-09.png)
