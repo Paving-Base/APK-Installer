@@ -373,7 +373,7 @@
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>Waiting for download...</value>
+    <value>Esperant per a descarregar...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
     <value/>
