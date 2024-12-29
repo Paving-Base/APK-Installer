@@ -125,7 +125,7 @@
 </value>
   </data>
   <data name="Stop.Text" xml:space="preserve">
-    <value>Dừng</value>
+    <value>Dừng lại</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Ứng dụng</value>
