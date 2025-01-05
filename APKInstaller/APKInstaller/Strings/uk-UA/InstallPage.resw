@@ -136,7 +136,7 @@
     <value>Можливості: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>Назва додатку</value>
+    <value>Назва застосунку</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Скасувати</value>
