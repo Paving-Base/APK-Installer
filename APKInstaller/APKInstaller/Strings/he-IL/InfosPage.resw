@@ -131,7 +131,7 @@
     <value>תכונות - {0} בסך הכל</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
-    <value>שפה</value>
+    <value>שפות</value>
   </data>
   <data name="MinSDK.Text" xml:space="preserve">
     <value>מינימום SDK</value>
@@ -163,17 +163,16 @@
 </value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
-    <value>תמיכת גודל מסך</value>
+    <value>תמיכה בגדלי מסך</value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
-    <value>יעד SDK
-</value>
+    <value>יעד SDK</value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
     <value>אודות {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Version.Text" xml:space="preserve">
-    <value>גירסה</value>
+    <value>גרסה</value>
   </data>
 </root>
