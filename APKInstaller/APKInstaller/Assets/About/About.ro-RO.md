@@ -1,4 +1,4 @@
-#### Bun venit la instalatorul APK!
+#### Bine ați venit la instalatorul APK!
 
 ##### Declarație
 1. Vă rugăm să urmați [APK Installer End User License Acord și Politica de Confidențialitate](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
