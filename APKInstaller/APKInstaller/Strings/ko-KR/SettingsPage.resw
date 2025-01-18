@@ -139,7 +139,7 @@
     <value>배경</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
-    <value>변경</value>
+    <value>바꾸기</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
     <value>확인 실패</value>
@@ -157,7 +157,7 @@
     <value>ADB 서버를 종료한 경우 다음 설치 시 다시 시작해야 합니다.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>설치 설치 관리자을 종료할 때 ADB를 종료하시겠습니까?</value>
+    <value>설치 설치 관리자를 종료할 때 ADB를 종료하시겠습니까?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
     <value>설치가 완료되면 설치 관리자를 종료합니다.</value>
@@ -241,7 +241,7 @@
     <value>수정된 버전을 사용 중입니다!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>다른 장치에 연결하려면 비활성화하세요.</value>
+    <value>다른 장치에 연결하려면 사용 안 함으로 하세요.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
     <value>WSA 전용인가요?</value>
