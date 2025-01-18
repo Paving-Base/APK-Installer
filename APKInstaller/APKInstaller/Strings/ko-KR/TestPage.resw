@@ -118,19 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AndroidTestSettingsHeader.Header" xml:space="preserve">
-    <value>안드로이드 테스트</value>
+    <value>Android 테스트</value>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
-    <value>연결된 디바이스의 애플리케이션 관리</value>
+    <value>연결된 장치의 애플리케이션 관리</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>애플리케이션</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
-    <value>작은 오버레이 시작 또는 종료</value>
+    <value>컴팩트 오버레이 시작 또는 종료</value>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
-    <value>작은 오버레이</value>
+    <value>컴팩트 오버레이</value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
     <value>개발 버전 앱은 안정적이지 않을 수 있습니다. Microsoft 스토어에서 릴리스 버전을 다운로드하세요.</value>
@@ -139,7 +139,7 @@
     <value>개발 버전 앱을 사용 중입니다.</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
-    <value>작은 오버레이 진입</value>
+    <value>컴팩트 오버레이 진입</value>
   </data>
   <data name="LanguageSettings.Description" xml:space="preserve">
     <value>언어를 선택하고 다시 시작하면 언어가 변경됩니다.</value>
