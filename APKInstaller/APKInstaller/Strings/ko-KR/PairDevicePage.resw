@@ -136,7 +136,7 @@
     <value>연결</value>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
-    <value>{0} 개의 장치를 찾았습니다.</value>
+    <value>{0} 개의 장치를 찾음</value>
   </data>
   <data name="IPAddressBox.Header" xml:space="preserve">
     <value>IP 주소</value>
@@ -157,7 +157,7 @@
     <value>페어링 중, 창을 닫지 마세요.</value>
   </data>
   <data name="PairToggleButton.Content" xml:space="preserve">
-    <value>페어</value>
+    <value>페어링</value>
   </data>
   <data name="PortRun.Text" xml:space="preserve">
     <value>포트</value>
