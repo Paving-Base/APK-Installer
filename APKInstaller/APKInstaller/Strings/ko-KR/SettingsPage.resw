@@ -157,7 +157,7 @@
     <value>ADB 서버를 종료한 경우 다음 설치 시 다시 시작해야 합니다.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>설치 설치 관리자를 종료할 때 ADB를 종료하시겠습니까?</value>
+    <value>설치 설치 관리자를 나갈 때 ADB를 종료하시겠습니까?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
     <value>설치가 완료되면 설치 관리자를 종료합니다.</value>
