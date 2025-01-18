@@ -159,13 +159,13 @@
     <value>지원 아키텍처</value>
   </data>
   <data name="SupportResolutions.Text" xml:space="preserve">
-    <value>지원 해결 방법</value>
+    <value>지원 해상도</value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
     <value>지원 화면 크기</value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
-    <value>타겟 SDK</value>
+    <value>대상 SDK</value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
     <value>{0} 정보</value>
