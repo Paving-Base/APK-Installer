@@ -159,8 +159,7 @@
     <value>תמיכה בארכיטקטורות</value>
   </data>
   <data name="SupportResolutions.Text" xml:space="preserve">
-    <value>תמיכה ברזולוציות
-</value>
+    <value>תמיכה ברזולוציות</value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
     <value>תמיכה בגדלי מסך</value>
