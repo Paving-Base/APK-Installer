@@ -151,13 +151,13 @@
     <value>나가기</value>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
-    <value>연결된 디바이스의 프로세스 관리</value>
+    <value>연결된 장치의 프로세스 관리</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
     <value>프로세스</value>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
-    <value>제목 표시줄의 테스트 진행률 표시</value>
+    <value>제목 표시줄의 진행률 테스트</value>
   </data>
   <data name="ProgressSettings.Header" xml:space="preserve">
     <value>진행률</value>
