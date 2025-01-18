@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, הAndroid Debug Bridge דרוש כדי שמתקין APK יעבוד. לחץ על "הורד" כדי להוריד אותו. בהורדה אתה מקבל את התנאים וההגבלות של גוגל עבור ADB. אם כבר הורדת את ADB, לחץ על "בחר" כדי לבחור בו.</value>
+    <value>כדי ש-APK Installer יפעל, נדרש ADB, הגשר לניפוי באגים באנדרואיד. לחץ "הורד" כדי להוריד אותו. על ידי ההורדה, אתה מסכים לתנאי השימוש של Google עבור ADB. אם כבר הורדת את ADB, לחץ "בחר" כדי לבחור את מיקומו.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB פועל</value>
+    <value>ADB קיים</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB חסר
@@ -152,12 +152,10 @@
     <value>אין אפשרות להתחבר אל WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>או ש-WSA לא התחיל כמו שצריך, או שיש בעיה עם ADB. בעיה זו יכולה להיות קשה מאוד לפתרון. הפעל מחדש את תוכנית ההתקנה. אם זה עדיין לא עובד, נסה להפעיל מחדש את המחשב.
-</value>
+    <value>או ש-WSA לא הופעל כראוי, או שיש בעיה עם ADB. בעיה זו עלולה להיות קשה מאוד לפתרון. נא להפעיל מחדש את המתקין. אם זה עדיין לא עובד, נסה להפעיל מחדש את המחשב.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>לא ניתן לפתוח את חבילת האפליקציה
-</value>
+    <value>לא ניתן לפתוח את חבילת האפליקציה</value>
   </data>
   <data name="Checking" xml:space="preserve">
     <value>בודק...</value>
