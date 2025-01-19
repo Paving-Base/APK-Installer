@@ -383,8 +383,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
-    <value>Waiting WSA Start...
-This may take long time. Sit back and relax.</value>
+    <value/>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Welcome!</value>
