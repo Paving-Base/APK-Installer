@@ -181,7 +181,7 @@
     <value>Étendre le contenu dans la barre de titre</value>
   </data>
   <data name="TitleBarSettings.Header" xml:space="preserve">
-    <value>Title Bar</value>
+    <value>Barre de titre</value>
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
     <value>Teste Interface Utilisateur</value>
