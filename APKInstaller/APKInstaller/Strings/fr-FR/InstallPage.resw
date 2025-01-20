@@ -235,7 +235,8 @@
     <value>Application incompatible</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
-    <value>Le minimum requis pour cette application est {0}. Votre appareil prend en charge {1}. Veuillez mettre à jour votre appareil ou choisir la formule de commande.</value>
+    <value>Le minimum requis pour cette application est {0}. Votre appareil prend en charge
+ {1}. Veuillez mettre à jour votre appareil ou choisir la formule de commande.</value>
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
