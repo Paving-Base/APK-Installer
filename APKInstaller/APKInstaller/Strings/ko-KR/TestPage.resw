@@ -172,7 +172,7 @@
     <value>제목 표시줄에 새로 고침 버튼 표시</value>
   </data>
   <data name="ShowRefreshButton.Header" xml:space="preserve">
-    <value>새로 고침 버튼</value>
+    <value>새로고침 버튼</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>테스트</value>
