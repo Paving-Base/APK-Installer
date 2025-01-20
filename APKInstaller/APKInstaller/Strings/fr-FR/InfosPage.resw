@@ -129,7 +129,7 @@
     <comment>{0} - Dependencies Count.</comment>
   </data>
   <data name="FeaturesHeaderFormat" xml:space="preserve">
-    <value>Caractéristiques - Il y en a {0}.</value>
+    <value>Caractéristiques - Il y en a {0}</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
     <value>Langues de l'interface</value>
@@ -157,7 +157,7 @@
     <value>Partager le paquet d'installation</value>
   </data>
   <data name="SupportedArchitectures.Text" xml:space="preserve">
-    <value>Architectures supportées : </value>
+    <value>Architectures supportées </value>
   </data>
   <data name="SupportResolutions.Text" xml:space="preserve">
     <value>Résolutions du support </value>
@@ -166,7 +166,7 @@
     <value>Taille de l'écran prise en charge</value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
-    <value>Service du développement du kit (SDK) cible</value>
+    <value>Service du développement du kit SDK cible</value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
     <value>À propos du paquet {0}</value>
