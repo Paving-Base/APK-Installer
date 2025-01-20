@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, le mode de débogage Android (Android Debug Bridge), est requis pour qu'APK Installer fonctionne. Cliquez sur "Télécharger" pour le télécharger sur votre PC. En le téléchargeant, vous acceptez les Conditions Générales d'Utilisation (CGU) de Google pour ADB. Si vous avez déjà téléchargé ADB, cliquez sur "Sélectionner" pour le sélectionner.</value>
+    <value>ADB, le mode de débogage Android ,Android Debug Bridge, est requis pour qu'APK Installer fonctionne. Cliquez sur "Télécharger" pour le télécharger sur votre PC. En le téléchargeant, vous acceptez les Conditions Générales d'Utilisation (CGU) de Google pour ADB. Si vous avez déjà téléchargé ADB, cliquez sur "Sélectionner" pour le sélectionner.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>ADB existe.</value>
@@ -160,7 +160,7 @@
     <value>Vérification en cours...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Vérification de l'ADB en cours...</value>
+    <value>Vérification de l'ADB est en cours...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
     <value>Vérification du chemin d'accès en cours...</value>
@@ -178,7 +178,7 @@
     <value>Connexion des appareils appairés...</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
-    <value>Copier (Ctrl+C)</value>
+    <value>Copier Ctrl+C</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
     <value>Création de la session d'installation...</value>
@@ -187,10 +187,10 @@
     <value>Devices</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Download</value>
+    <value>Enregistrer</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>Download Failed</value>
+    <value>Échec du téléchargement </value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
     <value>Pelasse Chuck your network connexion or the URL and tria gain.</value>
@@ -208,7 +208,7 @@
     <value>Go to Althing</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>Une version plus récente est déjà installée</value>
+    <value>Une nouvelle version est déjà installée</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
     <value>Vous avez déjà installé une nouvelle version {0} de cette application. Êtes-vous sûr de vouloir réinstaller la version {1} ?</value>
@@ -223,7 +223,7 @@
 3. Activez le mode développeur et assurez-vous que l'adresse IP s'affiche correctement.
 4. Rouvrez APK Installer et poursuivez votre installation.
 
-[En savoir plus]({0})</value>
+[En savoir plus]({Android})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
     <value>Icône</value>
@@ -246,7 +246,7 @@
     <value>Installer</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
-    <value>{0} est prêt !</value>
+    <value>{0} Est prêt !</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
@@ -290,7 +290,7 @@
     <value>Comment connecter l'appareil</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>Si vous souhaitez installer l'application dans Windows Subsystem for Android™, vous devez d'abord l'installer. Si vous voulez l'installer sur d'autres appareils, allez sur la page des paramètres, désactivez "Uniquement pour WSA", et connectez votre appareil.</value>
+    <value>Si vous souhaitez installer l'application dans Windows for Android™, vous devez d'abord l'installer. Si vous voulez l'installer sur d'autres appareils, allez sur la page des paramètres, désactivez "Uniquement pour WSA", et connectez votre appareil.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
     <value>#### Utilisation de l'USB
@@ -305,7 +305,7 @@
 4. Allez sur la page des paramètres d'APK Installer, connectez-vous et sélectionnez votre appareil
 5. Revenez en arrière, reprenez l'installation
 
-[En savoir plus]({0})</value>
+[En savoir plus]({d'APK})</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
     <value>La connexion à Internet a échouée</value>
@@ -314,7 +314,7 @@
     <value>Veuillez vous connecter à internet avant d'ouvrir l'application.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>Pour que l'application fonctionne correctement, essayez de lancer un paquet d'applications Android (.apk).</value>
+    <value>Pour que l'application fonctionne correctement, essayez de lancer un paquet d'applications Android ({d'APK}).</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
@@ -326,7 +326,7 @@
     <value>Nom du paquet</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>Nom du paquet: {0}</value>
+    <value>Nom du paquet</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="PostInstallFormat" xml:space="preserve">
@@ -341,7 +341,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
-    <value>Une nouvelle version de {0} est déjà installée.</value>
+    <value>Une version plus récente est déjà installée.</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
@@ -366,10 +366,10 @@
     <value>Dérapage d'ADB...</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
-    <value>Dézippage effectué</value>
+    <value>Décompression effectuée</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
-    <value>Dézippage {0}/{1} ...</value>
+    <value>Décompression {0}/{1} ...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Update" xml:space="preserve">
