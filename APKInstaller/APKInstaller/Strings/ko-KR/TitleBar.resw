@@ -124,6 +124,6 @@
     <value>뒤로</value>
   </data>
   <data name="RefreshButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>새로 고침</value>
+    <value>새로고침</value>
   </data>
 </root>
