@@ -127,7 +127,7 @@
     <value>Parar não</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Aplicações</value>
+    <value>Applications</value>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
     <value>Desinstalar</value>
