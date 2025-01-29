@@ -3,7 +3,7 @@
 ##### Ilmoitus
 1. Ole hyvä ja noudata [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
 2.
-3. Still, please pay attention to the security of the environment.
+3.
 4. The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.
 
 ##### Translate
