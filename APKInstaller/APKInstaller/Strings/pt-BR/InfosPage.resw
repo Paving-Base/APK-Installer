@@ -146,7 +146,8 @@
     <value>Tamanho do pacote1</value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
-    <value>Permissionário Cunto</value>
+    <value>Contagem de Permissões1
+</value>
   </data>
   <data name="PermissionsHeaderFormat" xml:space="preserve">
     <value>Permissões — {0} no total1</value>
