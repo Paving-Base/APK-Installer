@@ -9,7 +9,7 @@
 ##### Penerjemahan
 Terima kasih kepada penerjemah [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") atas dukungan mereka.  Jika ada terjemahan yang keliru, jangan ragu untuk membetulkan kami.  Dan tolong terjemahkan dengan serius. Semua yang Anda tulis akan dibaca semua orang.
 
-##### Kontributor
+##### Contributors
 - [wherewhere](https://github.com/wherewhere)
 - [Void48](https://github.com/Void48)
 - [EP012014](https://github.com/EP012014)
