@@ -155,7 +155,7 @@ File APK Filefiles </value>
     <value>Entah WSA tidak memulai dengan benar, atau ada masalah dengan ADB. Masalah ini bisa sangat sulit untuk diselesaikan. Silakan mulai ulang penginstal. Jika masih tidak bisa, coba memulai ulang komputer. </value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>Tidak dapat membuka paket aplikasi </value>
+    <value>Tidak dapat membuka paket aplikasi</value>
   </data>
   <data name="Checking" xml:space="preserve">
     <value>Memeriksa... 
@@ -165,7 +165,7 @@ File APK Filefiles </value>
     <value>Memeriksa ADB... </value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Memeriksa Jalur... </value>
+    <value>Memeriksa ADB... </value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>Klik di sini untuk membacanya </value>
