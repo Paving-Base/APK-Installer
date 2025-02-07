@@ -328,19 +328,19 @@
     <value>Тема приложения</value>
   </data>
   <data name="ThemesSettingsHeader.Header" xml:space="preserve">
-    <value>Темы</value>
+    <value>Тема</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Параметры</value>
+    <value>Параметры EarTrumpet / О приложении</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>Перевод</value>
+    <value>Переведите</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
-    <value>Версия</value>
+    <value>Версия приложения</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Up To Date</value>
+    <value>Все свежие обновления установлены</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
     <value>Настройки цветов Windows</value>
