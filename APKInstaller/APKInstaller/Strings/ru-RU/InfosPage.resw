@@ -118,23 +118,23 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppName.Text" xml:space="preserve">
-    <value>Название приложенияdgbgddbd</value>
+    <value>Название приложенияzdgv</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
-    <value>72Основная информацияdb72</value>
+    <value>Общая информация</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
-    <value>Зависимости - всего {0} dbddgbdg</value>
+    <value>Зависимости - {0} в общей сложности</value>
     <comment>{0} - Dependencies Count.</comment>
   </data>
   <data name="FeaturesHeaderFormat" xml:space="preserve">
-    <value>Возможности - {0} все</value>
+    <value>Возможности - {0} в общей сложности</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
-    <value>Языкиdbgd</value>
+    <value>Языки страницы</value>
   </data>
   <data name="MinSDK.Text" xml:space="preserve">
-    <value>Мин. SDKgdb</value>
+    <value>Минимум SDK</value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
     <value>Открыть папку Пакета</value>
