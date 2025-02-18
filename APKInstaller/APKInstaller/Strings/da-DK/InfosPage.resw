@@ -140,7 +140,7 @@
     <value>Åbn Pakkemappe</value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
-    <value>Package Name</value>
+    <value/>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
     <value>Package Size</value>
