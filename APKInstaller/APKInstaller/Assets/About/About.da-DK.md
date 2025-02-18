@@ -7,7 +7,7 @@
 4.
 
 ##### Oversæt
-Tak til [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") oversættere for deres support. . And please translate seriously. Everything you write will be read all over the world.
+Tak til [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") oversættere for deres support. .
 
 ##### Bidragsydere
 - [wherewhere](https://github.com/wherewhere)
