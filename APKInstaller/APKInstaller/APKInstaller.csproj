@@ -5,7 +5,7 @@
     <ApplicationIcon>favicon.ico</ApplicationIcon>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <BuiltInComInteropSupport>True</BuiltInComInteropSupport>
-    <Copyright>Copyright © 2017 - 2022 PavingBase. All Rights Reserved.</Copyright>
+    <Copyright>Copyright © 2017 - 2025 PavingBase. All Rights Reserved.</Copyright>
     <Description>An Android Application Installer for Windows</Description>
     <EnableMsixTooling>True</EnableMsixTooling>
     <LangVersion>preview</LangVersion>

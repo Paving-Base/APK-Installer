@@ -535,7 +535,7 @@
                                     <StackPanel Orientation="Horizontal" Spacing="4">
                                         <HyperlinkButton
                                             Content="爱发电"
-                                            NavigateUri="http://afdian.net/@wherewhere"
+                                            NavigateUri="http://afdian.com/@wherewhere"
                                             ToolTipService.ToolTip="{Binding NavigateUri, RelativeSource={RelativeSource Mode=Self}}" />
                                         <HyperlinkButton
                                             Content="Patreon"

@@ -147,7 +147,11 @@ namespace APKInstaller.Helpers
             DeviceData => JsonSerializer.Serialize(value, SourceGenerationContext.Default.DeviceData),
             ElementTheme => JsonSerializer.Serialize(value, SourceGenerationContext.Default.ElementTheme),
             BackdropType => JsonSerializer.Serialize(value, SourceGenerationContext.Default.BackdropType),
+#if DEBUG
+            _ => JsonSerializer.Serialize(value)
+#else
             _ => value?.ToString(),
+#endif
         };
 
         public T Deserialize<T>(string value)
@@ -166,7 +170,11 @@ namespace APKInstaller.Helpers
                                 ? ElementTheme
                                 : type == typeof(BackdropType) && JsonSerializer.Deserialize(value, SourceGenerationContext.Default.BackdropType) is T BackdropType
                                     ? BackdropType
+#if DEBUG
+                                    : JsonSerializer.Deserialize<T>(value);
+#else
                                     : default;
+#endif
         }
     }
 

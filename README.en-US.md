@@ -3,13 +3,14 @@
 # APK Installer
 An Android Application Installer for Windows
 
+[![Build Status](https://dev.azure.com/wherewhere/APK-Installer/_apis/build/status/Paving-Base.APK-Installer?branchName=main)](https://dev.azure.com/wherewhere/APK-Installer/_build/latest?definitionId=7&branchName=main "Build Status")
 [![Crowdin](https://badges.crowdin.net/APKInstaller/localized.svg)](https://crowdin.com/project/APKInstaller "Crowdin")
 
 [![LICENSE](https://img.shields.io/github/license/Paving-Base/APK-Installer.svg?label=License&style=flat-square)](https://github.com/Paving-Base/APK-Installer/blob/master/LICENSE "LICENSE")
 [![Issues](https://img.shields.io/github/issues/Paving-Base/APK-Installer.svg?label=Issues&style=flat-square)](https://github.com/Paving-Base/APK-Installer/issues "Issues")
 [![Stargazers](https://img.shields.io/github/stars/Paving-Base/APK-Installer.svg?label=Stars&style=flat-square)](https://github.com/Paving-Base/APK-Installer/stargazers "Stargazers")
 
-[![Microsoft Store](https://img.shields.io/badge/download-%e4%b8%8b%e8%bd%bd-magenta.svg?label=Microsoft%20Store&logo=Microsoft&style=for-the-badge&color=11a2f8)](https://apps.microsoft.com/store/detail/9P2JFQ43FPPG "Microsoft Store")
+[![Microsoft Store](https://img.shields.io/badge/download-%e4%b8%8b%e8%bd%bd-magenta.svg?label=Microsoft%20Store&logo=Microsoft&style=for-the-badge&color=11a2f8)](https://www.microsoft.com/store/apps/9P2JFQ43FPPG "Microsoft Store")
 [![GitHub All Releases](https://img.shields.io/github/downloads/Paving-Base/APK-Installer/total.svg?label=DOWNLOAD&logo=github&style=for-the-badge)](https://github.com/Paving-Base/APK-Installer/releases/latest "GitHub All Releases")
 
 ## Language
@@ -81,4 +82,4 @@ An Android Application Installer for Windows
 - **Paving the road has not been successful, comrades still need to work hard!**
 
 ## GitHub repo stars statistics
-[![Star statistics](https://starchart.cc/Paving-Base/APK-Installer.svg)](https://starchart.cc/Paving-Base/APK-Installer "Star statistics")
+[![Star statistics](https://starchart.cc/Paving-Base/APK-Installer.svg?variant=adaptive)](https://github.com/Paving-Base/APK-Installer/stargazers "Star statistics")
