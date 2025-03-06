@@ -59,7 +59,9 @@
                                     Click="MenuFlyoutItem_Click"
                                     Tag="{x:Bind Name}" />
                                 <MenuFlyoutItem
+                                    x:Name="Uninstall"
                                     x:Uid="/ApplicationsPage/Uninstall"
+                                    x:Load="False"
                                     Click="MenuFlyoutItem_Click"
                                     Tag="{x:Bind Name}" />
                             </MenuFlyout>

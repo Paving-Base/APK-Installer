@@ -60,7 +60,7 @@ namespace AAPTForNet.Models
 
         public bool IsSplit => SplitName != "Unknown";
 
-        public bool IsBundle => SplitApks != null && SplitApks.Any();
+        public bool IsBundle => SplitApks != null && SplitApks.Count != 0;
 
         public void AddSplit(ApkInfo info) => SplitApks.Add(info);
 

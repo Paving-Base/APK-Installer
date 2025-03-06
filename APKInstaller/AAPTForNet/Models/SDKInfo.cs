@@ -8,7 +8,7 @@ namespace AAPTForNet.Models
         internal static readonly SDKInfo Unknown = new("0", "0", "0");
 
         // https://source.android.com/setup/start/build-numbers
-        private static readonly string[] AndroidCodeNames = {
+        private static readonly string[] AndroidCodeNames = [
             "Unknown",
             "Unnamed",          // API level 1
             "Petit Four",
@@ -50,9 +50,9 @@ namespace AAPTForNet.Models
             "Y",
             "Z",
             "Hello from 2022!"  // API level 40
-        };
+        ];
 
-        private static readonly string[] AndroidVersionCodes = {
+        private static readonly string[] AndroidVersionCodes = [
             "Unknown",
             "1.0",      // API level 1
             "1.1",
@@ -94,7 +94,7 @@ namespace AAPTForNet.Models
             "18",
             "19",
             "20"        // API level 40
-        };
+        ];
 
         public string APILevel { get; }
         public string Version { get; }

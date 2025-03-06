@@ -78,12 +78,11 @@ namespace AAPTForNet
                 return [];
             }
 
-            string msg = string.Empty;
             start = start >= 0 && start < tree.Messages.Count ? start : 0;
             for (int i = start; i < tree.Messages.Count; i++)
             {
                 lastTryIndex = i;
-                msg = tree.Messages[i];
+                string msg = tree.Messages[i];
 
                 if (Detector.IsBitmapElement(msg))
                 {
@@ -186,11 +185,12 @@ namespace AAPTForNet
                 return [];
             }
 
-            const char seperator = '\"';
+            const char separator = '\"';
             // Prevent duplicate key when add to Dictionary,
             // because comparison statement with 'hdpi' in config's values,
             // reverse list and get first elem with LINQ
-            IEnumerable<string> configNames = Enum.GetNames(typeof(Configs)).Reverse();
+            string[] configNames = Enum.GetNames(typeof(Configs));
+            configNames.Reverse();
             Dictionary<string, Icon> iconTable = [];
             void AddIcon2Table(string cfg, string iconName)
             {
@@ -224,7 +224,7 @@ namespace AAPTForNet
                         if (Detector.IsResourceValue(resValue))
                         {
                             // Resource value is icon url
-                            string iconName = resValue.Split(seperator)
+                            string iconName = resValue.Split(separator)
                                 .FirstOrDefault(n => n.Contains('/'));
                             AddIcon2Table(config, iconName);
                             break;
@@ -314,7 +314,7 @@ namespace AAPTForNet
             }
 
             Icon icon = Icon.Default;
-            List<string> configNames = Enum.GetNames(typeof(Configs)).ToList();
+            List<string> configNames = [.. Enum.GetNames(typeof(Configs))];
             configNames.Sort(new ConfigComparer());
 
             foreach (string cfg in configNames)

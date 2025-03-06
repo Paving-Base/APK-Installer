@@ -8,7 +8,7 @@
     <Copyright>Copyright © 2017 - 2025 PavingBase. All Rights Reserved.</Copyright>
     <Description>An Android Application Installer for Windows</Description>
     <EnableMsixTooling>True</EnableMsixTooling>
-    <LangVersion>preview</LangVersion>
+    <LangVersion>latest</LangVersion>
     <OutputType>WinExe</OutputType>
     <PackageProjectUrl>https://github.com/Paving-Base/APK-Installer</PackageProjectUrl>
     <Platforms>x86;x64;ARM64</Platforms>
@@ -16,8 +16,8 @@
     <RepositoryUrl>https://github.com/Paving-Base/APK-Installer</RepositoryUrl>
     <RootNamespace>APKInstaller</RootNamespace>
     <RuntimeIdentifiers>win-x86;win-x64;win-arm64</RuntimeIdentifiers>
-    <TargetFramework>net8.0-windows10.0.22621.0</TargetFramework>
-    <TargetPlatformMaxVersion>10.0.22621.0</TargetPlatformMaxVersion>
+    <TargetFramework>net8.0-windows10.0.26100.0</TargetFramework>
+    <TargetPlatformMaxVersion>10.0.26100.0</TargetPlatformMaxVersion>
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <TrimMode>partial</TrimMode>
     <UseWinUI>True</UseWinUI>
@@ -53,13 +53,13 @@
     <PackageReference Include="CommunityToolkit.WinUI.UI.Controls.DataGrid" Version="7.1.2" />
     <PackageReference Include="CommunityToolkit.WinUI.UI.Controls.Layout" Version="7.1.2" />
     <PackageReference Include="CommunityToolkit.WinUI.UI.Controls.Markdown" Version="7.1.2" />
-    <PackageReference Include="Downloader" Version="3.0.6" />
+    <PackageReference Include="Downloader" Version="3.3.3" />
     <PackageReference Include="MetroLog.Net6" Version="2.1.0" />
-    <PackageReference Include="Microsoft.Windows.CsWin32" Version="0.3.49-beta" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.2428" />
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.4.231115000" />
-    <PackageReference Include="QRCoder" Version="1.4.3" />
-    <PackageReference Include="SharpCompress" Version="0.35.0" />
+    <PackageReference Include="Microsoft.Windows.CsWin32" Version="0.3.183" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.1742" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.6.250205002" />
+    <PackageReference Include="QRCoder" Version="1.6.0" />
+    <PackageReference Include="SharpCompress" Version="0.39.0" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
 

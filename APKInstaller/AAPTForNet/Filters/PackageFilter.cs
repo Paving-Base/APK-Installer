@@ -5,7 +5,7 @@ namespace AAPTForNet.Filters
 {
     internal class PackageFilter : BaseFilter
     {
-        private string[] Segments = Array.Empty<string>();
+        private string[] Segments = [];
 
         public override bool CanHandle(string msg) => msg.StartsWith("package:");
 
@@ -22,7 +22,7 @@ namespace AAPTForNet.Filters
             };
         }
 
-        public override void Clear() => Segments = Array.Empty<string>();
+        public override void Clear() => Segments = [];
 
         private string GetValueOrDefault(string key)
         {

@@ -153,7 +153,7 @@ namespace AAPTForNet
                     Directory.CreateDirectory(TempPath);
                 }
 
-                foreach (ZipArchiveEntry entry in archive.Entries.Where(x => !x.FullName.Contains("/")))
+                foreach (ZipArchiveEntry entry in archive.Entries.Where(x => !x.FullName.Contains('/')))
                 {
                     if (entry.Name.ToLower().EndsWith(".apk"))
                     {
@@ -163,7 +163,7 @@ namespace AAPTForNet
                     }
                 }
 
-                if (!apks.Any())
+                if (apks.Count == 0)
                 {
                     apks.Add(path);
                 }
@@ -197,11 +197,11 @@ namespace AAPTForNet
                 apkInfos.Add(apk);
             }
 
-            if (!apkInfos.Any()) { return new ApkInfo(); }
+            if (apkInfos.Count == 0) { return new ApkInfo(); }
 
             if (apkInfos.Count <= 1) { return apkInfos.FirstOrDefault(); }
 
-            List<ApkInfos> packages = apkInfos.GroupBy(x => x.PackageName).Select(x => new ApkInfos { PackageName = x.Key, Apks = x.ToList() }).ToList();
+            List<ApkInfos> packages = [.. apkInfos.GroupBy(x => x.PackageName).Select(x => new ApkInfos { PackageName = x.Key, Apks = [.. x] })];
 
             if (packages.Count > 1) { throw new Exception("This is a Multiple Package."); }
 
@@ -210,14 +210,14 @@ namespace AAPTForNet
             {
                 foreach (ApkInfo baseapk in package.Apks.Where(x => !x.IsSplit))
                 {
-                    baseapk.SplitApks = package.Apks.Where(x => x.IsSplit).Where(x => x.VersionCode == baseapk.VersionCode).ToList();
+                    baseapk.SplitApks = [.. package.Apks.Where(x => x.IsSplit).Where(x => x.VersionCode == baseapk.VersionCode)];
                     infos.Add(baseapk);
                 }
             }
 
             if (infos.Count > 1) { throw new Exception("There are more than one base APK in this Package."); }
 
-            if (!infos.Any()) { throw new Exception("There are all dependents in this Package."); }
+            if (infos.Count == 0) { throw new Exception("There are all dependents in this Package."); }
 
             ApkInfo info = infos.FirstOrDefault();
 
