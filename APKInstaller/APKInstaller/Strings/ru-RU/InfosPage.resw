@@ -118,60 +118,61 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppName.Text" xml:space="preserve">
-    <value>Название приложения</value>
+    <value>Название приложенияzdgv</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
-    <value>Основная информация</value>
+    <value>Общая информация</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
-    <value>Зависимости - всего {0}</value>
+    <value>Зависимости - {0} в общей сложности</value>
     <comment>{0} - Dependencies Count.</comment>
   </data>
   <data name="FeaturesHeaderFormat" xml:space="preserve">
-    <value>Возможности - {0} всего</value>
+    <value>Возможности - {0} в общей сложности</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
-    <value>Языки</value>
+    <value>Языки страницы</value>
   </data>
   <data name="MinSDK.Text" xml:space="preserve">
-    <value>Мин. SDK</value>
+    <value>Минимум SDK</value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
-    <value>Открыть расположение пакета</value>
+    <value>Открыть папку Пакета</value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
-    <value>Имя пакета</value>
+    <value>Размер пакетаzfzfzxvzv</value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
-    <value>Размер пакета</value>
+    <value>Размер пакетаzfzfzxvzv</value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
-    <value>Количество разрешений</value>
+    <value>Количество разрешенийzbfzdbf</value>
   </data>
   <data name="PermissionsHeaderFormat" xml:space="preserve">
-    <value>Всего разрешений - {0}</value>
+    <value>Всего разрешений - {0}bSVszfvz</value>
     <comment>{0} - Permissions Count.</comment>
   </data>
   <data name="SharePackage.Content" xml:space="preserve">
-    <value>Поделиться пакетом</value>
+    <value>Поделиться пакетомfzdbzs</value>
   </data>
   <data name="SupportedArchitectures.Text" xml:space="preserve">
-    <value>Поддерживаемые архитектуры</value>
+    <value>Поддерживаемые архитектурыfbsvfsb</value>
   </data>
   <data name="SupportResolutions.Text" xml:space="preserve">
-    <value>Поддерживаемые разрешения</value>
+    <value>Поддерживаемые разрешенияzdbzvbzfzgcvbdxb</value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
-    <value>Поддерживаемые размеры экрана</value>
+    <value>Поддерживаемые размеры экрана
+</value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
-    <value>Target SDK</value>
+    <value>Target SDKdhzbjznfvnzvn hzdf</value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
-    <value>О программе {0}</value>
+    <value>О программе {0}jfhjhzvhvjh</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Version.Text" xml:space="preserve">
-    <value>Версия</value>
+    <value>Версияfvdv</value>
   </data>
 </root>

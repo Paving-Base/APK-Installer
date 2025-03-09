@@ -130,7 +130,7 @@
     <value>En análisis...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>Archivo APK</value>
+    <value/>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>Capacidades: </value>
@@ -142,37 +142,37 @@
     <value>Cancelar</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
-    <value>Sí</value>
+    <value>si</value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
     <value>No</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>No se puede conectar a WSA</value>
+    <value>No se puede conectar a %1</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Puede que el WSA no empezase correctamente o hay un problema con el ADB. Este problema puede ser muy difícil de resolver. Por favor, reinicia el instalador. Si sigue sin funcionar, prueba a reiniciar el equipo.</value>
+    <value>O bien el WSA no se inició correctamente, o hay un problema con el ADB. Este problema puede ser muy difícil de resolver. Por favor, reinicie el instalador. Si todavía no funciona, intente reiniciar el equipo.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>No se puede abrir el paquete de aplicación</value>
+    <value>No se puede abrir el paquete app</value>
   </data>
   <data name="Checking" xml:space="preserve">
     <value>Comprobando...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Comprobando ADB...</value>
+    <value>Comprobando BAD...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Comprobando la ruta...</value>
+    <value>Verificando la ruta...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Haz clic aquí para leerlos</value>
+    <value>Haga clic aquí para cargarlas</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Cerrar</value>
+    <value>Cierre</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>¿Estás seguro de cancelar la instalación?</value>
+    <value>¿Seguro que desea cancelar la instalación?</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
     <value>Conectando dispositivos emparejados...</value>
@@ -181,13 +181,13 @@
     <value>Copiar</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Creating install session...</value>
+    <value>Crear sesión de instalación...</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>Dispositivos</value>
+    <value>Dispositivos,</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Descargar</value>
+    <value>Descargue</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
     <value>Descarga fallida</value>
@@ -211,11 +211,11 @@
     <value>Una versión más nueva ya está instalada</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>Ya has instalado una versión {0} más nueva de esta aplicación. ¿Estás seguro de que quieres reinstalar la versión {1}?</value>
+    <value>Ya ha instalado una nueva versión {0} de esta aplicación. ¿Está seguro que desea reinstalar la versión {1}?</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>Cómo conectar WSA</value>
+    <value>Cómo conectar el WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
     <value>1. Por favor, asegúrate de que APK Installer ha sido actualizado a la última versión
@@ -226,13 +226,13 @@
 [Saber más]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
-    <value>Icono</value>
+    <value>Icon</value>
   </data>
   <data name="IKnow" xml:space="preserve">
-    <value>Lo sé</value>
+    <value>Entendido</value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
-    <value>Aplicación incompatible</value>
+    <value>kb,Entendido</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
     <value>El mínimo requerido para esta aplicación es {0}. Tu dispositivo soporta {1}. Por favor actualiza tu dispositivo o elige ordenar paquete.</value>
@@ -322,14 +322,16 @@
     <value>Paquetes en línea</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
-    <value>Package Name</value>
+    <value>Package Name
+matador
+</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
     <value>Nombre del paquete</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="PostInstallFormat" xml:space="preserve">
-    <value>Cleaning cache ({0}/{1})...</value>
+    <value>Limpiando caché ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
@@ -340,7 +342,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
-    <value>Una nueva versión de {0} está disponible.</value>
+    <value>Una versión más nueva de {0} ya está instalada.</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
@@ -356,13 +358,13 @@
     <value>Iniciando el servidor web...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>Inicia WSA</value>
+    <value>Iniciar WSA</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
-    <value>Tienda Enlaces</value>
+    <value>Enlaces</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
-    <value>Descomprimiendo ADB...</value>
+    <value>Unzip ADB...</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
     <value>Descompresión completada</value>
@@ -372,14 +374,15 @@
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>Actualización</value>
+    <value>Actualización
+</value>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
-    <value>¿Actualizar {0}?</value>
+    <value>Actualizar {0}?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="UploadingFormat" xml:space="preserve">
-    <value>Uploading {0} ({1}/{2})...</value>
+    <value>Subiendo {0} ({1}/{2})...</value>
     <comment>{0} - Progress. {1} - Finnished count. {2} - Total count.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
@@ -407,7 +410,7 @@ Puede que esto tome un largo tiempo. Siéntate y relájate.</value>
     <value>¡Bienvenido!</value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
-    <value>Writing install session ({0}/{1})...</value>
+    <value>Escribiendo sesión de instalación ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">

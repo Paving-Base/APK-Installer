@@ -118,18 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
-    <value>Waiting for Device...</value>
+    <value>장치를 기다리는 중...</value>
   </data>
   <data name="Start.Text" xml:space="preserve">
-    <value>Start</value>
+    <value>시작</value>
   </data>
   <data name="Stop.Text" xml:space="preserve">
-    <value>정류장</value>
+    <value>정지</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Applications</value>
+    <value>애플리케이션</value>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
-    <value>Uninstall</value>
+    <value>제거</value>
   </data>
 </root>

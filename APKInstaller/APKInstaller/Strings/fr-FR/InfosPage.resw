@@ -118,57 +118,58 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppName.Text" xml:space="preserve">
-    <value>Nom de l'application</value>
+    <value>Roblox
+</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
-    <value>Informations de base</value>
+    <value>Information courante</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
     <value>Dépendances - {0} au total</value>
     <comment>{0} - Dependencies Count.</comment>
   </data>
   <data name="FeaturesHeaderFormat" xml:space="preserve">
-    <value>Caractéristiques - {0} au total</value>
+    <value>Caractéristiques - Il y en a {0}</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
-    <value>Langues</value>
+    <value>Langues de l'interface</value>
   </data>
   <data name="MinSDK.Text" xml:space="preserve">
-    <value>SDK minimum</value>
+    <value>SDK minimum requis</value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
-    <value>Ouvrir le dossier des paquets</value>
+    <value>Ouvrir le dossier des paquets d'installation</value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
-    <value>Nom du paquet</value>
+    <value>Nom du paquet d'installation</value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
-    <value>Taille de paquet</value>
+    <value>Taille du paquet d'installation</value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
-    <value>Nombre d'autorisations</value>
+    <value>Nombre d'autorisations : </value>
   </data>
   <data name="PermissionsHeaderFormat" xml:space="preserve">
     <value>Permissions - {0} au total</value>
     <comment>{0} - Permissions Count.</comment>
   </data>
   <data name="SharePackage.Content" xml:space="preserve">
-    <value>Partager le paquet</value>
+    <value>Partager le paquet d'installation</value>
   </data>
   <data name="SupportedArchitectures.Text" xml:space="preserve">
-    <value>Architectures supportées</value>
+    <value>Architectures supportées </value>
   </data>
   <data name="SupportResolutions.Text" xml:space="preserve">
-    <value>Résolutions de support </value>
+    <value>Résolutions du support </value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
-    <value>Taille d'écran prise en charge</value>
+    <value>Taille de l'écran prise en charge</value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
-    <value>Kit de développement logiciel (SDK) cible</value>
+    <value>Service du développement du kit SDK cible</value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
-    <value>À propos de {0}</value>
+    <value>À propos du paquet {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Version.Text" xml:space="preserve">

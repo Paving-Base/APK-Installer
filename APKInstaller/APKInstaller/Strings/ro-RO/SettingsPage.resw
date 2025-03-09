@@ -160,16 +160,16 @@
     <value>Terminați ADB când ieșiți din programul de instalare?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Exit Installer after installation is complete.</value>
+    <value/>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Exit Installer when APP is Ready?</value>
+    <value/>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Configurări</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value>Conectați dispozitivul în rețea.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Conectare dispozitiv</value>
@@ -178,7 +178,7 @@
     <value>Contactați-mă</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
+    <value>!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Conținut</value>
@@ -193,7 +193,7 @@
     <value>Suport</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
+    <value/>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>ALUF</value>
@@ -235,7 +235,7 @@
     <value>Log-uri</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
+    <value>.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>Folosiți o versiune modificată!</value>
@@ -244,7 +244,7 @@
     <value>Dezactivați-l pentru a vă conecta la alte dispozitive.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>For WSA only?</value>
+    <value/>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>Arhitectură SO</value>
@@ -256,16 +256,16 @@
     <value>Altele</value>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
-    <value>Pair device through network.</value>
+    <value/>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>Pair Device</value>
+    <value>Dispozitiv conectat</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
-    <value>Pair and connect devices.</value>
+    <value/>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
-    <value>Pair &amp; Connect</value>
+    <value>Asociază și conectează</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Întunecat</value>
@@ -298,10 +298,10 @@
     <value>Ești sigur că vrei să resetezi aplicația?</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value>Scan and auto connect paired devices.</value>
+    <value/>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Scan Paired Devices?</value>
+    <value>Scanare dispozitive împerecheate?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Selectează Dispozitivul</value>
@@ -310,19 +310,19 @@
     <value>Arată ajutoarele atunci când nu este conectat niciun dispozitiv.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Whether to Show Helps?</value>
+    <value>romanian</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Display announcements at the top of Settings.</value>
+    <value>Arată anunțurile în partea de sus a setărilor.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Whether to Show Announcements?</value>
+    <value/>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>Poate lăsa fişiere temporare atunci când are loc o întrerupere neaşteptată.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Whether to Show Installation Progress?</value>
+    <value>Dacă se afișează progresul instalării?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Tema aplicației</value>

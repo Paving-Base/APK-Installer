@@ -118,23 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
-    <value>Đang đợi thiết bị...
-</value>
+    <value>Waiting for Device...</value>
   </data>
   <data name="Start.Text" xml:space="preserve">
     <value>Bắt đầu
 </value>
   </data>
   <data name="Stop.Text" xml:space="preserve">
-    <value>Dừng lại
-</value>
+    <value>Dừng lại</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Các ứng dụng
-</value>
+    <value>Ứng dụng</value>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
-    <value>Gỡ cài đặt
- no</value>
+    <value>Uninstall</value>
   </data>
 </root>

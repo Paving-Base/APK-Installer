@@ -118,104 +118,104 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB (Android Debug Bridge) необходим для работы программы APK Installer. Нажмите "Скачать", для загрузки. Загружая, вы принимаете Условия и Положения Google для ADB. Если вы уже скачали ADB, нажмите "Выбрать", чтобы выбрать его.</value>
+    <value>ADB (Android Debug Bridge) необходим для работы программы APK Installer. Нажмите "Скачать", для загрузки. Загружая, вы принимаете Условия и Положения Google для ADB. Если вы уже скачали ADB, нажмите "Выбрать", чтобы выбрать его.fvzvvszbvzzcvfvf</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB уже существует</value>
+    <value>ADB уже существуетdfa</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>ADB отсутствует</value>
+    <value>ADB отсутствуетfvaafv</value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>Анализ...</value>
+    <value>Анализ...awrvaw</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>APK файл</value>
+    <value>APK файлrafcfr</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Возможности:</value>
+    <value>Возможности:arfav</value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>Название приложения</value>
+    <value>Название приложенияzdgv</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Отмена</value>
+    <value>Отменаdv</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
-    <value>Да</value>
+    <value>Даafva</value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
-    <value>Нет</value>
+    <value>Нетj</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Не удаётся подключиться к WSA</value>
+    <value>Не удаётся подключиться WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Либо WSA не запустился должным образом, либо возникла проблема с ADB. Эту проблему может быть очень трудно решить. Пожалуйста, перезапустите программу установки. Если это не поможет, попробуйте перезагрузить компьютер.</value>
+    <value>Либо WSA не запустился должным образом, либо возникла проблема с ADB. Эту проблему может быть очень трудно решить. Пожалуйста, перезапустите программу установки. Если это не поможет, попробуйте перезагрузить компьютерbhbh.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>Не удалось открыть пакет приложения</value>
+    <value>Не удалось открыть пакет приложенияdfvd</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>Проверка...</value>
+    <value>Проверка...d dfvdf</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Проверка ADB...</value>
+    <value>Проверка ADB...dfcefc</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Проверка пути...</value>
+    <value>Проверка пути...wvcw</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Нажмите здесь, чтобы прочитать</value>
+    <value>Нажмите здесь, чтобы прочитатьwecw</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Закрыть</value>
+    <value>Закрытьwcw</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>Вы уверены, что хотите отменить установку?</value>
+    <value>Вы уверены, что хотите отменить установку?cvwvwvwfdscxzcfd</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Подключение сопряженных устройств...</value>
+    <value>Подключение сопряженных устройств...cdw</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
-    <value>Копировать</value>
+    <value>Копироватьwcwcwc</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Creating install session...</value>
+    <value>... vwdawRagthsr</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>Устройства</value>
+    <value>Устройстваerge</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Скачать</value>
+    <value>Сзкачатьwsgws</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>Ошибка загрузки</value>
+    <value>Ошибка загрузкиtews</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>Пожалуйста, проверьте ваше подключение к интернету или ссылку и повторите попытку.</value>
+    <value>Пожалуйста, проверьте ваше подключение к интернету или ссылку и повторите попытку.wgrw</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>Поиск WSA...</value>
+    <value>Поиск WSA...ewrfs</value>
   </data>
   <data name="Finished" xml:space="preserve">
-    <value>Завершено</value>
+    <value>Завершено tocaboka</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>WSA найдена</value>
+    <value>WSA найдена toca</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>Параметры</value>
+    <value>Параметрыevafs</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>Новейшая версия уже установлена</value>
+    <value>Новейшая версия уже установленаearf</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>У вас уже установлена новая версия {0} этого приложения. Вы хотите переустановить версию {1}?</value>
+    <value>У вас уже установлена новая версия {0} этого приложения. Вы хотите переустановить версию {1}?evserf</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>Как подключиться к WSA</value>
+    <value>Как подключиться WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
     <value>1. Пожалуйста, убедитесь, что программа APK Installer была обновлена до последней версии
@@ -245,7 +245,7 @@
     <value>Установить</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
-    <value>{0} установлено!</value>
+    <value>{0} Установлено!</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
@@ -259,7 +259,7 @@
     <value>Причина: </value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
-    <value>Установить Подсистему Windows для Android</value>
+    <value>Установить Подсистему Windows Android</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
     <value>Пакет повреждён или недействителен.</value>
@@ -277,7 +277,7 @@
     <value>Запустить по мере готовности</value>
   </data>
   <data name="Loading" xml:space="preserve">
-    <value>Загрузка...</value>
+    <value>Loading...</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
     <value>Подробнее</value>
@@ -286,7 +286,7 @@
     <value>Устройство Android не найдено</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>Как подключить устройство</value>
+    <value>Как подключить устройства:</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
     <value>Если вы хотите установить приложение в подсистему Windows для Android™, то сначала её нужно установить. Если вы хотите установить приложение на другие устройства, то перейдите в Настройки программы, включите "Только для WSA" и подключите ваше устройство.</value>
@@ -319,7 +319,7 @@
     <value>ОК</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
-    <value>Онлайн-пакет</value>
+    <value>Онлайн пакет</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
     <value>Имя пакета</value>
@@ -329,7 +329,7 @@
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="PostInstallFormat" xml:space="preserve">
-    <value>Cleaning cache ({0}/{1})...</value>
+    <value>Очистка кэша ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
@@ -356,7 +356,7 @@
     <value>Запуск сервера ADB...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>Запустить Подсистему Windows для Android</value>
+    <value>Запустить Подсистему Windows Android</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
     <value>Ссылка на Магазин</value>
@@ -379,7 +379,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="UploadingFormat" xml:space="preserve">
-    <value>Uploading {0} ({1}/{2})...</value>
+    <value>Загрузка {0} ({1}/{2})...{2}</value>
     <comment>{0} - Progress. {1} - Finnished count. {2} - Total count.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
@@ -407,7 +407,7 @@
     <value>Добро пожаловать!</value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
-    <value>Writing install session ({0}/{1})...</value>
+    <value>Запись сеанса установки ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">

@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, Android Debug Bridge, потрібен для роботи Інсталятора APK. Натисніть «Завантажити», щоб завантажити його. Завантажуючи, ви приймаєте загальні положення та умови Google для ADB. Якщо ви вже завантажили ADB, натисніть «Вибрати», щоб вибрати його.</value>
+    <value>ADB, Android Debug Bridge, потрібен для встановлення APK для роботи. Натисніть "Завантажити" для його завантаження. Завантажуючи, ви приймаєте Правила та умови Google для ADB. Якщо ви вже завантажили ADB, натисніть "вибрати" для вибору цього.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>ADB існує</value>
@@ -136,7 +136,7 @@
     <value>Можливості: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>Назва додатку</value>
+    <value>Назва застосунку</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Скасувати</value>
@@ -181,7 +181,7 @@
     <value>Копіювати</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Creating install session...</value>
+    <value>Написання сеансу встановлення...</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Пристрої</value>
@@ -289,7 +289,7 @@
     <value>Як підключити пристрій</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>Якщо ви хочете інсталювати додаток в підсистему Windows для Android™, спершу її потрібно інсталювати. Якщо ви хочете інсталювати на інших пристроях, перейдіть на сторінку налаштувань, вимкніть параметр «Тільки для WSA» та підключіть свій пристрій.</value>
+    <value>Якщо ви хочете інсталювати додаток в підсистему Windows для Android™, спершу її потрібно інсталювати. Якщо ви хочете інсталювати на інших пристроях, перейдіть на сторінку налаштувань, вимкніть параметр «Тільки для WSA» та під'єднайте свій пристрій.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
     <value>#### За допомогою USB
@@ -330,7 +330,7 @@
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="PostInstallFormat" xml:space="preserve">
-    <value>Cleaning cache ({0}/{1})...</value>
+    <value>Очищення кешу ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
@@ -380,7 +380,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="UploadingFormat" xml:space="preserve">
-    <value>Uploading {0} ({1}/{2})...</value>
+    <value>Вивантаження {0} ({1}/{2})...</value>
     <comment>{0} - Progress. {1} - Finnished count. {2} - Total count.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
@@ -408,7 +408,7 @@
     <value>Вітання!</value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
-    <value>Writing install session ({0}/{1})...</value>
+    <value>Написання сеансу встановлення ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">

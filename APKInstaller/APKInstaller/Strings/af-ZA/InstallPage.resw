@@ -118,12 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, die Android Ontvou Brug, is nodig vir APK Installer om te werk. Klik op "Aflaai" om dit af te laai. Deur af te laai, aanvaar jy die Google-bepalings en -voorwaardes vir ADB. Indien u reeds ADB afgelaai het, klik dan op "Kies" om dit te kies.
-
-</value>
+    <value>ADB, die Android Ontvou Brug, is nodig vir APK Installer om te werk. Klik op "Aflaai" om dit af te laai. Deur af te laai, aanvaar jy die Google-bepalings en -voorwaardes vir ADB. Indien u reeds ADB afgelaai het, klik dan op "Kies" om dit te ki</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Bestaan</value>
+    <value>At</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB ontbreek</value>
@@ -132,7 +130,7 @@
     <value>In Analise...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>APK-lêer</value>
+    <value>install</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>Vermoëns:</value>
@@ -144,10 +142,10 @@
     <value>Kanselleer</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
-    <value>Ja</value>
+    <value>Yes</value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
-    <value>Nee</value>
+    <value>No</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>Kan nie aan WSA koppel nie</value>
@@ -159,13 +157,13 @@
     <value>Kan nie programpakket oopmaak nie</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>Kontroleer...</value>
+    <value>Kontroleer tans…</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Kontroleer ADB...</value>
+    <value>Kontroleer tans…</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Kontrolering Roete...</value>
+    <value>Kontroleer tans…</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>Klik hier om dit te lees</value>
@@ -185,16 +183,16 @@
     <value>Kopieer</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Creating install session...</value>
+    <value>https://crowdin.com/translate/APKInstaller/327/en-af</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>Toestelle</value>
+    <value>Device</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Aflaai</value>
+    <value>Download</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>Aflaai het misluk</value>
+    <value>Aflaai misluk</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
     <value>Gaan asseblief u netwerkverbinding of die URL na en probeer weer.</value>
@@ -212,7 +210,7 @@
     <value>Gaan na instellings</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>'N nuwer weergawe is alreeds geïnstalleer</value>
+    <value>apk app </value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
     <value>U het alreeds 'n nuwe weergawe {0} van hierdie toep geïnstalleer. Is u seker dat u weergawe {1} weer wil installeer?</value>
@@ -225,7 +223,7 @@
     <value>1. Maak asseblief seker dat APK Installer opgedateer is na die nuutste weergawe
 2. Maak seker dat u die Android-substelsel geïnstalleer het en lopende
 3. Skakel ontwikkelaarmodus aan en maak seker dat die IP-adres suksesvol vertoon word
-4. Heropen APK Installer en gaan voort met u installasie</value>
+4. Heropen APK Installer en gaan voort met u installasie{0}</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
     <value>Ikoon</value>
@@ -328,78 +326,78 @@
     <value>Pakket naam</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>Package Name: {0}</value>
+    <value>r9teet</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="PostInstallFormat" xml:space="preserve">
-    <value>Cleaning cache ({0}/{1})...</value>
+    <value>haha</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
     <value>Installeer</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>{0} is already installed</value>
+    <value>tyr</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
-    <value>A newer version of {0} is already installed.</value>
+    <value>apk app </value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>Retry</value>
+    <value>kjhjgftjhyuy </value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>Select</value>
+    <value>Kies</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>Share</value>
+    <value>EN </value>
   </data>
   <data name="StartingADB" xml:space="preserve">
-    <value>Starting ADB Server...</value>
+    <value>Brawlhala</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>Start WSA</value>
+    <value/>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
-    <value>Store Links</value>
+    <value>afrikaans</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
-    <value>Unzip ADB...</value>
+    <value/>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
-    <value>Unzip completed</value>
+    <value/>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
-    <value>Unzipping {0}/{1} ...</value>
+    <value/>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>Update</value>
+    <value/>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
-    <value>Update {0}?</value>
+    <value>?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="UploadingFormat" xml:space="preserve">
-    <value>Uploading {0} ({1}/{2})...</value>
+    <value>...</value>
     <comment>{0} - Progress. {1} - Finnished count. {2} - Total count.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
-    <value>Version Code</value>
+    <value/>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>Version: {0}</value>
+    <value/>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>Waiting for download...</value>
+    <value/>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>Wag vir die toestel...</value>
+    <value>Wag vir die toestel... wsa apk app</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
-    <value>Waiting for install {0}</value>
+    <value/>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
@@ -407,13 +405,13 @@
 This may take long time. Sit back and relax.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome!</value>
+    <value>!</value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
-    <value>Writing install session ({0}/{1})...</value>
+    <value>...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>WSA is Running</value>
+    <value/>
   </data>
 </root>

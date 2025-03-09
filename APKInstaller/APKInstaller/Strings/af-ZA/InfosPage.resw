@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppName.Text" xml:space="preserve">
-    <value>Program Naam</value>
+    <value>2533314 tayel88</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
     <value>Basiese inligting</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
-    <value>Afhanklikhede - {0} in totaal</value>
+    <value>Afhanklikes - {0} in totaal</value>
     <comment>{0} - Dependencies Count.</comment>
   </data>
   <data name="FeaturesHeaderFormat" xml:space="preserve">

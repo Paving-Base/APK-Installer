@@ -127,13 +127,13 @@
     <value>Nom</value>
   </data>
   <data name="ProcessId.Header" xml:space="preserve">
-    <value>ID du processus</value>
+    <value>ID du processus merci pour votre réponse </value>
   </data>
   <data name="ResidentSetSize.Header" xml:space="preserve">
-    <value>Taille de l'ensemble des résidents</value>
+    <value>Taille du set résident</value>
   </data>
   <data name="State.Header" xml:space="preserve">
-    <value>État</value>
+    <value>État ✖ de temps à nous de nous faire </value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Processus</value>

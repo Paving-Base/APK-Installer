@@ -127,7 +127,7 @@
     <value>الاسم</value>
   </data>
   <data name="ProcessId.Header" xml:space="preserve">
-    <value>يجري المعالجة</value>
+    <value>1111111111111111</value>
   </data>
   <data name="ResidentSetSize.Header" xml:space="preserve">
     <value>حجم مجموعة المقيمين</value>
