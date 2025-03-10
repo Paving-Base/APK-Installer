@@ -187,7 +187,7 @@
     <value>Urządzenie</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
-    <value>Wyświetl</value>
+    <value>Display</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
     <value>Wsparcie</value>
