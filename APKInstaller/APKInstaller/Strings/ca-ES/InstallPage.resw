@@ -386,7 +386,7 @@
     <value/>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome!</value>
+    <value/>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
     <value>Writing install session ({0}/{1})...</value>
