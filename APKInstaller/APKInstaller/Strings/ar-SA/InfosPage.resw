@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppName.Text" xml:space="preserve">
-    <value>اسماء التطبيقات</value>
+    <value>اسم التطبيق</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
-    <value>المعلومات الأساسية</value>
+    <value>الملف الشخصي</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
     <value>التبعيات - {0} بالإجمال</value>
@@ -131,16 +131,16 @@
     <value>السمات - {0} إجمالا</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
-    <value>اللغات</value>
+    <value>Languages</value>
   </data>
   <data name="MinSDK.Text" xml:space="preserve">
-    <value>الحد الادنى ل SDK</value>
+    <value>Min SDK</value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
-    <value>فتح مِجلد الحُزْمَة</value>
+    <value>Open Package Folder</value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
-    <value>إسم الحزمة</value>
+    <value>اسم الحزمة   </value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
     <value>حجم الحزمة</value>
@@ -149,29 +149,29 @@
     <value>عدد الصلاحيات</value>
   </data>
   <data name="PermissionsHeaderFormat" xml:space="preserve">
-    <value>الأُذونات- {0} إجمالا</value>
+    <value>Permissions - {0} in total</value>
     <comment>{0} - Permissions Count.</comment>
   </data>
   <data name="SharePackage.Content" xml:space="preserve">
-    <value>مشاركة  الحُزْمَة</value>
+    <value>Share Package</value>
   </data>
   <data name="SupportedArchitectures.Text" xml:space="preserve">
-    <value>تعزيز البنى الفنية</value>
+    <value>Support Architectures</value>
   </data>
   <data name="SupportResolutions.Text" xml:space="preserve">
-    <value>الحلول المعززة</value>
+    <value>Support Resolutions</value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
-    <value>احجام شاشة الدعم</value>
+    <value>Support Screen Sizes</value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
-    <value>الهدف  SDK</value>
+    <value>Target SDK</value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
-    <value>عن  {0}</value>
+    <value>About {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Version.Text" xml:space="preserve">
-    <value>النسخه</value>
+    <value>Version</value>
   </data>
 </root>

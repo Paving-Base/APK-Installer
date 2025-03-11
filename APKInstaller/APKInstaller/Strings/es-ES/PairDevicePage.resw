@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AddressRun.Text" xml:space="preserve">
-    <value>Dirección</value>
+    <value>Descargas</value>
   </data>
   <data name="ConnectButton.Content" xml:space="preserve">
-    <value>Conectar</value>
+    <value>APK installer</value>
   </data>
   <data name="ConnectedListFormat" xml:space="preserve">
     <value>{0} dispositivos conectados</value>
@@ -130,13 +130,13 @@
     <value>Conectando con éxito.</value>
   </data>
   <data name="ConnectingLogText" xml:space="preserve">
-    <value>Emparejando con éxito. Conectando, por favor, no cierres la ventana.</value>
+    <value>Emparejando con éxito. Conectando, por favor, no cierres la ventana</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
     <value>Conectar</value>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
-    <value>{0} dispositivos encontrados</value>
+    <value>Fueron encontrados {0} dispositivos</value>
   </data>
   <data name="IPAddressBox.Header" xml:space="preserve">
     <value>Dirección IP</value>
@@ -151,7 +151,7 @@
     <value>Código de emparejamiento WLAN</value>
   </data>
   <data name="PairCodeTextBlock.Text" xml:space="preserve">
-    <value>Código de emparejamiento WLAN</value>
+    <value>WLAN Pairing Code</value>
   </data>
   <data name="PairingLogText" xml:space="preserve">
     <value>Emparejando, por favor, no cierres la ventana.</value>

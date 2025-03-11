@@ -121,7 +121,7 @@
     <value>Adresse</value>
   </data>
   <data name="ConnectButton.Content" xml:space="preserve">
-    <value>Connecter</value>
+    <value>Se connecter au réseau Wi-Fi</value>
   </data>
   <data name="ConnectedListFormat" xml:space="preserve">
     <value>Appareils connectés {0}</value>
@@ -133,7 +133,7 @@
     <value>Appairage réussi. Connexion en cours, ne fermez pas la fenêtre.</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
-    <value>Connecter</value>
+    <value>Se connecter au réseau Wi-Fi</value>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
     <value>{0} appareils trouvés</value>

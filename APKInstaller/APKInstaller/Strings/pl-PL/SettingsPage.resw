@@ -133,10 +133,10 @@
     <value>Czy automatycznie pobierać pakiety z sieci?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>Select Backdrop Type for Windows 11</value>
+    <value>Wybierz tło dla systemu Windows 11</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>Backdrop</value>
+    <value>Tło</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
     <value>Zmiana</value>
@@ -154,10 +154,10 @@
     <value>Wyczyść pamięć podręczną</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
+    <value>Serwer ADB musi zostać ponownie uruchomiony przy następnej instalacji, jeśli zakończysz instalację.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Terminate ADB when Exit Installer?</value>
+    <value>Wyłączyć ADB po wyjściu z instalatora?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
     <value>Wyjdź z Instalatora po zakończeniu instalacji.</value>
@@ -178,7 +178,7 @@
     <value>Kontakt ze mną</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
+    <value>Obserwuj mnie social mediach po najnowsze aktualizacje. Jeśli znajdziesz jakikolwiek błąd, zgłoś go w prywatnej wiadomości. Dołożę wszelkich starań, aby rozwiązać ten problem. Jeśli masz konto Telegram, zapraszam Cię do grupy Paving Base😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Zawartość</value>
@@ -187,13 +187,13 @@
     <value>Urządzenie</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
-    <value>Wyświetl</value>
+    <value>Display</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
     <value>Wsparcie</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
+    <value>Instalator APK jest aplikacją otwarto-źródłową, która nie dodaje żadnych reklam dla zysku. Jeśli podoba Ci się ta aplikacja, nie zapomnij ocenić jej w sklepie. Oczywiście miło by było, gdybyś mógł przekazać trochę dotacji. Dziękujemy za wsparcie.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>Licencja dla użytkownika końcowego</value>
@@ -205,13 +205,13 @@
     <value>Znajdź aktualizację</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>Information about the frameworks of this app.</value>
+    <value>Informacje o strukturze tej aplikacji.</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
-    <value>Framework Information</value>
+    <value>Informacje o strukturze</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
-    <value>Framework</value>
+    <value>Struktura</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>Idź do strony testowej.</value>
@@ -235,31 +235,31 @@
     <value>Rejestry zdarzeń (ang. logs)</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
+    <value>Używanie modyfikowanej wersji może prowadzić do nieprzyjemnych konsekwencji, takich jak reklamy, uszkodzone funkcje, a nawet wirusy. Aby pobrać oryginalną wersję, odwiedź Sklep Microsoft. Więcej szczegółowych informacji można znaleźć w naszym repozytorium GitHub.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>You are using a modified version!</value>
+    <value>Używasz zmodyfikowanej wersji!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Disable it to connect to other devices.</value>
+    <value>Wyłącz to, aby połączyć się z innymi urządzeniami.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>For WSA only?</value>
+    <value>Ogranicz połączenia tylko do WSA</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>OS Architecture</value>
+    <value>Architektura systemu</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
-    <value>OS Platform</value>
+    <value>Platforma systemu</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Inne</value>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
-    <value>Pair device through network.</value>
+    <value>Sparuj urządzenie za pośrednictwem sieci.</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>Sparuj urządzenie</value>
+    <value>Pair Device</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
     <value>Sparuj i podłącz urządzenie.</value>
@@ -298,7 +298,7 @@
     <value>Czy na pewno chcesz zresetować aplikację?</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value>Scan and auto connect paired devices.</value>
+    <value>Skanuj i automatycznie podłącz sparowane urządzenia.</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
     <value>Skanuj sparowane urządzenia?</value>
@@ -310,7 +310,7 @@
     <value>Pokaż podpowiedzi, gdy brak podłączonych urządzeń.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Whether to Show Helps?</value>
+    <value>Czy pokazać Pomoc?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
     <value>Pokazuj ogłoszenia na górze panelu ustawień.</value>
@@ -331,7 +331,7 @@
     <value>Motywy</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Ustawienia</value>
+    <value>Ustawienie</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
     <value>Tłumaczenie</value>

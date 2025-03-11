@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppName.Text" xml:space="preserve">
-    <value>App Name</value>
+    <value>App Name. Text</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
-    <value>Basisdaten</value>
+    <value>Grundlegende Informationen</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
     <value>Abhängigkeiten - {0} insgesamt</value>
@@ -143,7 +143,7 @@
     <value>Paketname</value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
-    <value>Packet Größe</value>
+    <value>Paketgröße</value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
     <value>Berechtigungsanzahl</value>

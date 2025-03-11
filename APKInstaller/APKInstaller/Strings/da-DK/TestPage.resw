@@ -145,10 +145,10 @@
     <value>Select language and restart to change language</value>
   </data>
   <data name="LanguageSettings.Header" xml:space="preserve">
-    <value>Sprog</value>
+    <value>SprogLanguage</value>
   </data>
   <data name="OutPIP.Content" xml:space="preserve">
-    <value>Luk</value>
+    <value>Lukkang</value>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
     <value>Manage the processes of connected devices</value>
@@ -175,7 +175,7 @@
     <value>Refresh Button</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Afprøver</value>
+    <value>Afprøve</value>
   </data>
   <data name="TitleBarSettings.Description" xml:space="preserve">
     <value>Udvider Indhold I Titellinjen</value>

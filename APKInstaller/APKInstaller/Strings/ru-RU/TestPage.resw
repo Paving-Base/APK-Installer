@@ -118,72 +118,72 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AndroidTestSettingsHeader.Header" xml:space="preserve">
-    <value>Тест Android</value>
+    <value>Проверка Android</value>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
-    <value>Управление приложениями подключенных устройств</value>
+    <value>Управление приложениями подключённых устройств</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
-    <value>Приложения</value>
+    <value>Применения</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
-    <value>Включить компактное отображение</value>
+    <value>Ввод или выход компактного оверлея</value>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
-    <value>Компактное отображение</value>
+    <value>Компактный оверлей</value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
-    <value>Версия для разработчиков может не стабильно работать. Загрузите приложение в Microsoft Store.</value>
+    <value>Приложение для разработчиков может не стабильно работать. Загрузите версию в Microsoft Stores.</value>
   </data>
   <data name="DevelopmentInfoBar.Title" xml:space="preserve">
-    <value>Вы используете версию для разработчиков.</value>
+    <value>Вы используете приложение для разработчика.</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
-    <value>Включить компактное отображение</value>
+    <value>Компактный оверлей</value>
   </data>
   <data name="LanguageSettings.Description" xml:space="preserve">
-    <value>Выберите язык и перезапустите для изменения языка</value>
+    <value>Выберите язык и перезапустите язык</value>
   </data>
   <data name="LanguageSettings.Header" xml:space="preserve">
     <value>Язык</value>
   </data>
   <data name="OutPIP.Content" xml:space="preserve">
-    <value>Выключить</value>
+    <value>Закрыть приложение</value>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
-    <value>Управление процессами подключенных устройств</value>
+    <value>Управление процессов подключённых устройств</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
-    <value>Процессы</value>
+    <value>Обрабатывается</value>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
-    <value>Тестировать кольцо прогресса в заголовке</value>
+    <value>Тестовое кольцо прогресса на титульной строке</value>
   </data>
   <data name="ProgressSettings.Header" xml:space="preserve">
-    <value>Прогресс</value>
+    <value>Выполнение</value>
   </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
-    <value>Установить значение кольца прогресса</value>
+    <value>Установите значение кольца прогресса</value>
   </data>
   <data name="SetProgressValue.Header" xml:space="preserve">
-    <value>Значение прогресса</value>
+    <value>Значение</value>
   </data>
   <data name="ShowRefreshButton.Description" xml:space="preserve">
-    <value>Показывать кнопку обновления на заголовке</value>
+    <value>Показать кнопку Обновления на заголовке</value>
   </data>
   <data name="ShowRefreshButton.Header" xml:space="preserve">
-    <value>Кнопка "Обновить"</value>
+    <value>Кнопка обновления</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Тестирование</value>
+    <value>Тестовая</value>
   </data>
   <data name="TitleBarSettings.Description" xml:space="preserve">
-    <value>Отображать заголовок окна программы</value>
+    <value>Расширяет контент в заголовке</value>
   </data>
   <data name="TitleBarSettings.Header" xml:space="preserve">
-    <value>Заголовок окна</value>
+    <value>Панель заголовка</value>
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
-    <value>Тест интерфейса</value>
+    <value>Тесты интерфейса</value>
   </data>
 </root>

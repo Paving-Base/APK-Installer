@@ -1,22 +1,33 @@
-#### Bienvenue dans l'installateur d'APK !
+#### Bienvenue dans l'installateur d'APK!
 
-##### Déclaration
-1. Veuillez vous conformer au [Contrat de licence et à la politique de confidentialité de l'Utilisateur final APK](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. Ce programme est un logiciel open source, donc assurez-vous que le programme provient de [ce dépôt GitHub](https://github.com/Paving-Base/APK-Installer) ou [cette application](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) pour assurer la sécurité de vos données.
-3. Si la source du programme n'est pas anormale, toutes vos données ne seront utilisées que pour l'exécution du programme ou stockées localement pendant l'exécution, et le développeur ne volera aucune de vos données. Toutefois, il convient de veiller à la sécurité de l'environnement.
-4. La traduction de cette application provient de la communauté [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") et tous les textes ne représentent pas les opinions de l'auteur.
+##### Explication Ils Fanny
+1. Pelasse Fallon the
+APK Installer End User L'acense Gréement and.</li> 
+   
+   2 Ce programme est un logiciel open source, donc assurez-vous que le programme provient de [ce dépôt GitHub](https://github.com/Paving-Base/APK-Installer) ou [cette application](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) pour assurer la sécurité de vos données.
+3 If the source of the program is not abnormal, all your data will only be used to run with the program or stored locally during the program running, and the developer will not steal any of your data. But even so, please pay attention to the security of the use environment.
+4 The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.</ol> 
 
-##### Traduire
-Merci aux traducteurs de [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") pour leur soutien. En cas de problème avec la traduction, n'hésitez pas à nous corriger. Et s'il vous plaît, traduisez sérieusement. Tout ce que vous écrivez sera lu partout dans le monde.
+
+
+##### Translate
+
+Merci aux traducteurs de [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") pour leur soutien. En cas de problème avec la traduction, n'hésitez pas à nous corriger. Et s'il vous plaît, traduisez sérieusement. compte panama disponible 6458
+
+
 
 ##### Les contributeurs
+
 - [wherewhere](https://github.com/wherewhere)
 - [Void48](https://github.com/Void48)
 - [EP012014](https://github.com/EP012014)
 - [A Big Salty Fish](https://github.com/bigsaltyfishes)
 - [sam1357](https://github.com/sam1357)
 
+
+
 ##### Citations et références
+
 - [MetroLog](https://github.com/roubachof/MetroLog "MetroLog")
 - [Zeroconf](https://github.com/novotnyllc/Zeroconf "Zeroconf")
 - [Windows UI](https://github.com/microsoft/microsoft-ui-xaml "Windows UI")
