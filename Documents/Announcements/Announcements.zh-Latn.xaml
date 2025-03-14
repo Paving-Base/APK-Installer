@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <controls:SettingsGroup xmlns:controls="using:APKInstaller.Controls" xmlns:muxc="using:Microsoft.UI.Xaml.Controls" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Header="Gōnggào" Margin="0,-28,0,0">
-    <muxc:InfoBar Title="Zhèlǐ shì gōnggào (Búyào wèn wǒ wèishénme zhège tōngzhī wèishénme méiyǒu guānbì jiàn) " IsClosable="False" IsOpen="True" Message="Yǐhòu nǐ kěyǐ zài zhèlǐ kàndào gèzhǒnggèyàng de tōngzhī, rúguǒ nǐ bùxiǎng kàndào, kěyǐ zài xiàfāng shèzhì lǐ guānbì. " Severity="Informational"/>
-    <muxc:InfoBar Title="Gèngduō fānyì" IsClosable="True" IsOpen="True" Message="Yóuyú zuòzhě zhǐhuì zhōngwén hé yīngwén, suǒyǐ fānyì quánbù dōu jiāogěi le shèqū. Rúguǒ nǐ xiǎng ràng ruǎnjiàn bùzài shì mòshēng de yǔyán, huānyíng qiánlái Crowdin fānyì! " Severity="Informational">
+    <muxc:InfoBar Title="Here is the announcement (Don't ask me why this message doesn't have a close button)" IsClosable="False" IsOpen="True" Message="以后你可以在这里看到各种各样的通知，如果你不想看到，可以在下方设置里关闭。" Severity="Informational"/>
+    <muxc:InfoBar Title="更多翻译" IsClosable="True" IsOpen="True" Message="由于作者只会中文和英文，所以翻译全部都交给了社区。如果你想让软件不再是陌生的语言，欢迎前来 Crowdin 翻译！" Severity="Informational">
         <muxc:InfoBar.ActionButton>
             <HyperlinkButton HorizontalAlignment="Right" Content="Diǎn wǒ qiánwǎng" NavigateUri="https://crowdin.com/project/APKInstaller"/>
         </muxc:InfoBar.ActionButton>

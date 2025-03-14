@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <controls:SettingsGroup xmlns:controls="using:APKInstaller.Controls" xmlns:muxc="using:Microsoft.UI.Xaml.Controls" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Header="Anúncio0" Margin="0,-28,0,0">
-    <muxc:InfoBar Title="Aqui está o anúncio (Não me pergunte por que essa mensagem não tem um botão de fechar)" IsClosable="False" IsOpen="True" Message="Você poderá ver todo tipo de notificações aqui no futuro. Se você não quiser vê-los, você pode desativá-los nas configurações abaixo." Severity="Informational"/>
-    <muxc:InfoBar Title="More Translations" IsClosable="True" IsOpen="True" Message="Como o autor só sabe chinês e inglês, todas as traduções são deixadas à comunidade. Se você não quer ver um idioma não familiar, bem-vindo ao Crowdin para traduzir!" Severity="Informational">
+    <muxc:InfoBar Title="Aqui está o anúncio (Não me pergunte por que dessa mensagem não ter um botão de fechar)" IsClosable="False" IsOpen="True" Message="Você pode ver todos os tipos de notificações aqui no futuro. Se não quiser vê-las, você pode desligá-las nas configurações abaixo." Severity="Informational"/>
+    <muxc:InfoBar Title="Mais Traduções" IsClosable="True" IsOpen="True" Message="Como o autor só sabe chinês e inglês, todas as traduções são deixadas à comunidade. Se você não quer ver um idioma não familiar, bem-vindo ao Crowdin para traduzir!" Severity="Informational">
         <muxc:InfoBar.ActionButton>
-            <HyperlinkButton HorizontalAlignment="Right" Content="Click Me" NavigateUri="https://crowdin.com/project/APKInstaller"/>
+            <HyperlinkButton HorizontalAlignment="Right" Content="Clique em mim" NavigateUri="https://crowdin.com/project/APKInstaller"/>
         </muxc:InfoBar.ActionButton>
     </muxc:InfoBar>
 </controls:SettingsGroup>

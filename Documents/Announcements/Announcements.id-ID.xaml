@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<controls:SettingsGroup xmlns:controls="using:APKInstaller.Controls" xmlns:muxc="using:Microsoft.UI.Xaml.Controls" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Header="Pengumuman" Margin="0,-28,0,0">
+<controls:SettingsGroup xmlns:controls="using:APKInstaller.Controls" xmlns:muxc="using:Microsoft.UI.Xaml.Controls" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Header="Announcements" Margin="0,-28,0,0">
     <muxc:InfoBar Title="Ini pengumumannya (Jangan tanya kenapa pesan ini tidak ada tombol tutup)" IsClosable="False" IsOpen="True" Message="Anda dapat melihat semua jenis notifikasi di sini di masa mendatang. Jika Anda tidak ingin melihatnya, Anda dapat menonaktifkannya di setelan di bawah." Severity="Informational"/>
     <muxc:InfoBar Title="Lebih Banyak Terjemahan" IsClosable="True" IsOpen="True" Message="Karena penulis hanya tahu bahasa China dan Inggris, semua terjemahan diserahkan kepada komunitas. Jika Anda tidak ingin melihat bahasa asing, selamat datang di Crowdin untuk menerjemahkan!" Severity="Informational">
         <muxc:InfoBar.ActionButton>
-            <HyperlinkButton HorizontalAlignment="Right" Content="Klik Saya" NavigateUri="https://crowdin.com/project/APKInstaller"/>
+            <HyperlinkButton HorizontalAlignment="Right" Content="Klik Saya Untuk" NavigateUri="https://crowdin.com/project/APKInstaller"/>
         </muxc:InfoBar.ActionButton>
     </muxc:InfoBar>
 </controls:SettingsGroup>
