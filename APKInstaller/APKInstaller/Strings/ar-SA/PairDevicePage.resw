@@ -118,14 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AddressRun.Text" xml:space="preserve">
-    <value>العناوين</value>
+    <value>عنوان الIP</value>
   </data>
   <data name="ConnectButton.Content" xml:space="preserve">
-    <value>إتصال
-</value>
+    <value>اتصال</value>
   </data>
   <data name="ConnectedListFormat" xml:space="preserve">
-    <value>Connected {0} devices</value>
+    <value>Connected {0} deviceer</value>
   </data>
   <data name="ConnectedLogText" xml:space="preserve">
     <value>تم ألاتصال بنجاح.</value>
