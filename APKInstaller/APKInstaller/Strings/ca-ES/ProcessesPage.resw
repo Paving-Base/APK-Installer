@@ -127,7 +127,7 @@
     <value>Nom</value>
   </data>
   <data name="ProcessId.Header" xml:space="preserve">
-    <value>Process ID</value>
+    <value>进程 ID</value>
   </data>
   <data name="ResidentSetSize.Header" xml:space="preserve">
     <value/>
