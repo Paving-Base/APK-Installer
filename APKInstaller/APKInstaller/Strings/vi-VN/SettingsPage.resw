@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
-    <value>Về</value>
+    <value>Thông tin</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
     <value>Đường dẫn ADB</value>
@@ -178,7 +178,7 @@
     <value>Liên hệ với tôi</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Theo dõi tôi trên các ứng dụng xã hội để biết những phát triển mới nhất. Nếu bạn tìm thấy bất kỳ lỗi nào, vui lòng báo cáo cho tôi bằng PM. Tôi sẽ cố gắng hết sức để giải quyết nó. Nếu bạn có tài khoản Telegram, vui lòng trò chuyện trong Paving Base Group 😊!</value>
+    <value>Theo dõi mình trên các ứ/dụng mạng xã hội để biết những phát triển mới nhất. Nếu bạn tìm thấy bất kỳ lỗi/bug nào, vui lòng báo cáo cho tôi bằng PM. Tôi sẽ cố gắng hết sức để giải quyết nó. Nếu bạn có tài khoản Telegram, bạn có thể nhắn tin/giao lưu trong nhóm Paving Base 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Nội dung</value>
