@@ -4,7 +4,7 @@
 1. Léase compi bits te [APK Instalar En Ser Lucense Agreguen año ePrivacy Pólice](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
 2. Este programa es software de código abierto, así que asegúrese de que el programa es de [este repositorio de GitHub](https://github.com/Paving-Base/APK-Installer) o [esta aplicación](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) para garantizar la seguridad de sus datos.
 3. Si el origen del programa no es anormal, todos sus datos se usarán únicamente para la ejecución del programa o almacenarse localmente durante la ejecución. De todas formas, por favor preste atención a la seguridad del medio ambiente.
-4. La traducción de esta aplicación proviene de la comunidad [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") y todos los textos no representan las vistas del autor.</0>
+4. La traducción del texto de esta aplicación proviene de la comunidad [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") y todos los textos no representan las vistas del autor.
 
 ##### Sugestión %d sur seleccione: %s
 [ ](https://crowdin.com/project/APKInstaller "Crowdin") Si hay algún problema con la traducción, no dude en corregirnos. Y por favor, tome la traducción en serio. Cualquier cosa que escribas será leído en todo el mundo.
