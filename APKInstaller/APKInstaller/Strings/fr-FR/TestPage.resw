@@ -124,7 +124,8 @@
     <value>Gérer les applications des appareils connectés</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
-    <value>Demandes</value>
+    <value>Demandes
+</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
     <value>Entrer or Sortie Compact Velay</value>
