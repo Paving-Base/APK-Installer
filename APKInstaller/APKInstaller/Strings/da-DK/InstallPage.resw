@@ -160,7 +160,7 @@
     <value>Checking...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Checking ADB...</value>
+    <value>Tjekker ADB...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
     <value>Checking Path...</value>
