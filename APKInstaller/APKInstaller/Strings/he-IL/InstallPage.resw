@@ -370,7 +370,7 @@
     <value>פתח את ADB...</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
-    <value>פריצת הרוכסן הושלמה</value>
+    <value>פתיחת הקובץ הדחוס הושלמה</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
     <value>פתיחת {0}/{1} ...</value>
