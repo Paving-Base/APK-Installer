@@ -130,7 +130,7 @@
     <value>تم ألاتصال بنجاح.</value>
   </data>
   <data name="ConnectingLogText" xml:space="preserve">
-    <value>تم الاقتران بنجاح.جاري الاتصال، من فضلك لا تغلق النافذة.</value>
+    <value>الإقران بنجاح. الاتصال، الرجاء عدم إغلاق النافذة.</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
     <value>اتصال</value>
