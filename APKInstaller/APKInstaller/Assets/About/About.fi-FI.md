@@ -7,7 +7,7 @@
 4.
 
 #####
-. . And please translate seriously. Everything you write will be read all over the world.
+. . .
 
 ##### Contributors
 - [wherewhere](https://github.com/wherewhere)
