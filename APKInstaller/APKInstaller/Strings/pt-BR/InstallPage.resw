@@ -260,7 +260,7 @@ Capacidades:1.</value>
     <value>Reação:</value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
-    <value>Instale WSA</value>
+    <value>Instalar a WSA</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
     <value>O pacote está corrompido ou é inválido.</value>
