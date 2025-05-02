@@ -153,10 +153,10 @@
     <comment>{0} - Permissions Count.</comment>
   </data>
   <data name="SharePackage.Content" xml:space="preserve">
-    <value>Share Package</value>
+    <value/>
   </data>
   <data name="SupportedArchitectures.Text" xml:space="preserve">
-    <value>Support Architectures</value>
+    <value/>
   </data>
   <data name="SupportResolutions.Text" xml:space="preserve">
     <value>Support Resolutions</value>
