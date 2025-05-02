@@ -1,4 +1,4 @@
-# كيفية توصيل WSA
+# كيفية توصيل WSA0
 1. </a>
 Please make sure APK Installer has been updated to <0>the latest version</0></li> 
    
