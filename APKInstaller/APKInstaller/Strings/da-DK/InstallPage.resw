@@ -151,7 +151,7 @@
     <value>Cannot Connect to WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
+    <value/>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>Cannot open app package</value>
