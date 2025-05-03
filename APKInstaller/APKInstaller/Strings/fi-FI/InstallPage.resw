@@ -185,7 +185,7 @@ sovellus nimi</value>
     <value>Creating install session...</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>Devices</value>
+    <value>Laitteet</value>
   </data>
   <data name="Download" xml:space="preserve">
     <value/>
