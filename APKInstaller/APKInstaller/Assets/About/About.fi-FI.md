@@ -9,7 +9,7 @@
 #####
 . . .
 
-##### Contributors
+#####
 - [wherewhere](https://github.com/wherewhere)
 - [Void48](https://github.com/Void48)
 - [EP012014](https://github.com/EP012014)
