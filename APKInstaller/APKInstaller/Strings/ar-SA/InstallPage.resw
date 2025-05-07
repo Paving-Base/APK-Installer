@@ -167,7 +167,7 @@
     <value>التحقق من المسار...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>قم بالنقر هنا لقراءتهم</value>
+    <value>الفعل من (النقر) هنا لقراءتهم</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>إقفال</value>
