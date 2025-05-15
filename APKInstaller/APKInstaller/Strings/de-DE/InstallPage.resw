@@ -391,10 +391,25 @@
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>Warten auf Download ...</value>
+    <value>Warten au"C:\Users\hare1\Downloads\Phone Link\XiaomiEUModule_2025.04.18. apk"f Download ...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>Warte auf Netzwerk...</value>
+    <value>Warte auf Netzwerk... SSID:	HARIS 1
+Protocol:	Wi-Fi 4 (802.11n)
+Security type:	WPA2-Personal
+Manufacturer:	Intel Corporation
+Description:	Intel(R) Centrino(R) Wireless-N 1030
+Driver version:	15.11.0.9
+Network band (channel):	2.4 GHz (1)
+Aggregated link speed (Receive/Transmit):	87/87 (Mbps)
+Link-local IPv6 address:	fe80:: dac9: 44c4: 49f4: 2b8d%12
+IPv6 DNS servers:	fe80:: 1%12 (Unencrypted)
+fe80:: 1%12 (Unencrypted)
+IPv4 address:	192.168.1.7
+IPv4 default gateway:	192.168.1.1
+IPv4 DNS servers:	192.168.1.1 (Unencrypted)
+Physical address (MAC):	BC-77-37-23-FB-09
+...</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
     <value>Warte auf die Installation von {0}</value>
