@@ -387,7 +387,7 @@
     <value>Versionsnummer</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>  Ausführung {0}</value>
+    <value>  Ausführung {0} Apk File (. apk)</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
