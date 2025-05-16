@@ -389,7 +389,7 @@ matador
     <value>Código de versión</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>Versión: {0}</value>
+    <value>Version: {0}</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
