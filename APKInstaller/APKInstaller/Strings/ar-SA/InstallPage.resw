@@ -213,19 +213,19 @@
     <value>تم تثبيت نسخة حديثة</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>لقد قمت بالفعل بتثبيت إصدار جديد {0} من هذا التطبيق. هل أنت متأكد من إعادة تثبيت الإصدار {1}؟</value>
+    <value>You already have installed a new version {0} of this app. Are you sure to reinstall version {1}?</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
     <value>كيف يمكن ربط WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. الرجاء التأكد من أن تثبيت APK قد تم تحديثه إلى أحدث إصدار
-2. تأكد من أن لديك نظام أندرويد الفرعي مثبت وتشغل
-3. قم بتشغيل وضع المطور وتأكد من عرض عنوان IP بنجاح
-4. إعادة فتح ملف تثبيت APK ومواصلة التثبيت
+    <value>1. Please make sure APK Installer has been updated to the latest version
+2. Make sure you have the Android Subsystem installed and running
+3. Turn on developer mode and make sure the IP address is displayed successfully
+4. Reopen APK Installer and continue your installation
 
-[معرفة المزيد]({0})</value>
+[Learn More]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
     <value>الصورة الرمزية</value>
