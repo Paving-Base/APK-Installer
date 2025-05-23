@@ -124,7 +124,7 @@
     <value>Fitxer APK</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>An Android App Installer. Written by @wherewhere and @Tangent-90.</value>
+    <value/>
   </data>
   <data name="AppName" xml:space="preserve">
     <value>Instal·lador d’APK</value>
@@ -133,7 +133,7 @@
     <value>S’ha produït un error en el programa…</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>There are some problems with the network...</value>
+    <value>...</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>No</value>
