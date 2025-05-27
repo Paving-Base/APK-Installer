@@ -130,7 +130,7 @@
     <value>Em Análise...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>Arquivo APk</value>
+    <value>Arquivo</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>Características: </value>
