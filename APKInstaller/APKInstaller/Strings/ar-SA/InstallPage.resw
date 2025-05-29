@@ -155,7 +155,9 @@
 </value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>لا يمكن فتح حزمة التطبيق</value>
+    <value>لا يمكن فتح حزمة التطبيق
+
+</value>
   </data>
   <data name="Checking" xml:space="preserve">
     <value>جارٍ البحث...</value>
