@@ -122,7 +122,7 @@
 sovellus nimi</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
-    <value>Basic Information</value>
+    <value/>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
     <value>{0}</value>
