@@ -121,10 +121,10 @@
     <value>ADB, Android Debug Bridge, er nødvendig for APK Installer til at arbejde. Klik på "Download" for at hente det. Ved at downloade accepterer du Google Vilkår og betingelser for ADB. Hvis du allerede har downloadet ADB, skal du klikke på "Vælg" for at vælge det.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Exists</value>
+    <value/>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>ADB is missing</value>
+    <value/>
   </data>
   <data name="Analysis" xml:space="preserve">
     <value>In Analysis...</value>
