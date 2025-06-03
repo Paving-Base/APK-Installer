@@ -343,6 +343,6 @@
     <value>Aktualna na dzień</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Ustawienia kolorów Windows</value>
+    <value>Windows Color Settings</value>
   </data>
 </root>
