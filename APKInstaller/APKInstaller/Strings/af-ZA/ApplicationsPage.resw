@@ -121,7 +121,7 @@
     <value>Wag vir die toestel... wsa apk app</value>
   </data>
   <data name="Start.Text" xml:space="preserve">
-    <value>Start</value>
+    <value>START</value>
   </data>
   <data name="Stop.Text" xml:space="preserve">
     <value>Halte</value>
