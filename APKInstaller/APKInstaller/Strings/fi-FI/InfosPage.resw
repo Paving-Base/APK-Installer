@@ -132,7 +132,7 @@ sovellus nimi</value>
     <value/>
   </data>
   <data name="Languages.Text" xml:space="preserve">
-    <value>Languages</value>
+    <value>español</value>
   </data>
   <data name="MinSDK.Text" xml:space="preserve">
     <value>Min SDK</value>
@@ -144,7 +144,7 @@ sovellus nimi</value>
     <value>Package Name</value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
-    <value>Package Size</value>
+    <value/>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
     <value>Permissions Count</value>
