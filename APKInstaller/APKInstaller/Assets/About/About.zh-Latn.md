@@ -7,7 +7,7 @@
 4. 这个应用程序的翻译来自 [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") 社区，所有文本都不代表提交人的观点。hayu
 
 ##### Fānyì
-Gǎnxiè [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") fānyìzhě de zhīchí.  如果翻譯出現了什麼問題，歡迎前來糾正。 rame 而且请认真地翻译。uze 您写的所有内容都将在全世界阅读。s
+Gǎnxiè [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") fānyìzhě de zhīchí.  如果翻譯出現了什麼問題，歡迎前來糾正。  而且请认真地翻译。uze 您写的所有内容都将在全世界阅读。s
 
 ##### Cānyù rényuán
 - [wherewhere](https://github.com/wherewhere)
