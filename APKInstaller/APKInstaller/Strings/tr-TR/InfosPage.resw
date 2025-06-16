@@ -118,8 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppName.Text" xml:space="preserve">
-    <value>Uygulama Adı iokul
-e</value>
+    <value>Uygulama Adı ilkolul</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
     <value>Temel Bilgiler ödev
@@ -159,7 +158,7 @@ e</value>
 </value>
   </data>
   <data name="PermissionsHeaderFormat" xml:space="preserve">
-    <value>izinler</value>
+    <value>İzinler toplamda{0}</value>
     <comment>{0} - Permissions Count.</comment>
   </data>
   <data name="SharePackage.Content" xml:space="preserve">
