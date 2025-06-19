@@ -142,7 +142,7 @@
     <value>Adres IP</value>
   </data>
   <data name="ManualPairButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Connecting devices manually</value>
+    <value>Connecting devices manualny</value>
   </data>
   <data name="ManualPairTextBlock.Text" xml:space="preserve">
     <value>Połącz ręcznie</value>
