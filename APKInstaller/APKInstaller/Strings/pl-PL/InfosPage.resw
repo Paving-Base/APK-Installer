@@ -128,7 +128,7 @@
     <comment>{0} - Dependencies Count.</comment>
   </data>
   <data name="FeaturesHeaderFormat" xml:space="preserve">
-    <value>Funkcje - łącznie ok{0} 0</value>
+    <value>Funkcje-łącznie ok.</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
     <value>Języki polski</value>
