@@ -1,6 +1,6 @@
 #### Selamat datang di Penginstal APK
 
-##### Pernyataan
+##### semoga kebuka
 1. Please comply with the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
 2. Program ini adalah peranti lunak sumber terbuka, jadi pastikan program ini dari [repositori Github ini](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) atau <1>aplikasi ini</1> demi kepastian keamanan data Anda
 3. Jika sumber program ini tidak abnormal, semua data Anda akan digunakan hanya untuk membuka program atau disimpan lokal saat dijalakan, dan pengembang tidak akan mencuri data Anda. Tetap saja, mohon perhatikan keamanan perangkat.
