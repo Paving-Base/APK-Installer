@@ -133,7 +133,7 @@
     <value>APK-fil</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Capabilities: </value>
+    <value/>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
     <value>App Navn</value>
