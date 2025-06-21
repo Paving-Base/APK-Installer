@@ -151,7 +151,7 @@
     <value>Código de emparejamiento WLAN</value>
   </data>
   <data name="PairCodeTextBlock.Text" xml:space="preserve">
-    <value>WLAN Pairing Code</value>
+    <value>WLAN Padrino</value>
   </data>
   <data name="PairingLogText" xml:space="preserve">
     <value>Emparejando, por favor, no cierres la ventana.</value>
