@@ -130,7 +130,9 @@
     <value>En análisis...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value/>
+    <value>https://apks.55c8fc18511f43b4a8fa7b4011e06de5.r2.cloudflarestorage.com/com.dts.freefireth/1.101.1/2019116679.da0832ee9b186ff94fdc570a53b126e5bb73f32f.zip?response-content-disposition=attachment%3B%20filename%3D%22Garena%20Free%20Fire_1.101.1_apkcombo.com.xapk%22&amp;response-content-type=application%2Fxapk-package-archive&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20231022T002912Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=7200&amp;X-Amz-Credential=3cb727b4cd4780c410b780ac7caa4da3%2F20231022%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Signature=9cb19ad579e151b97444893b948a66e8d4fcee593e7fc425a4504bae7d985cdd
+
+español</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>Capacidades: </value>
