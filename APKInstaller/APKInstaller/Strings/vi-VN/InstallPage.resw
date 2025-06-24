@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>Trình cài đặt APK cần ADB hay Android Debug Bridge để hoạt động được. Bấm "Tải" để tải về. Khi tải về, bạn đồng ý với điều khoản và điều kiện của Google về ADB. Nếu bạn đã tải sẵn ADB, bấm "Chọn" để chọn nó.</value>
+    <value>ADB, the Android Debug Bridge, is needed for APK Installer to work. Click "Download" to download it. By downloading, you accept the Google Terms and Conditions for ADB. If you have already downloaded ADB, click "Select" to select it.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>ADB tồn tại</value>
