@@ -205,7 +205,7 @@
     <value>Encontrar actualización</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>Descripción del marco de referencia de esta aplicación</value>
+    <value>Information about the frameworks of this app.</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
     <value>Descripción del marco</value>
