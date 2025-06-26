@@ -148,16 +148,16 @@
     <value>Ingen</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Cannot Connect to WSA</value>
+    <value>Kan ikke oprette forbindelse til WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
     <value/>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>Cannot open app package</value>
+    <value/>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>Checking...</value>
+    <value>...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
     <value>Tjekker ADB...</value>
