@@ -127,7 +127,7 @@
     <value>Un Android App Installer. Scris de @wherewhere and @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>App Installer for Mobile</value>
+    <value/>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>A apărut o eroare cu acest program de card.</value>
