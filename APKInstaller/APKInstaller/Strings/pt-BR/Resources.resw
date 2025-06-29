@@ -127,7 +127,7 @@
     <value>Um instalador de aplicativos Android. Escrito por @where e @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>Instalação de APK</value>
+    <value>App Installer for Mobile</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>Houve um erro com o programa…</value>
