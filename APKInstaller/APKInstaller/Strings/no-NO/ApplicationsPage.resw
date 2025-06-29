@@ -121,7 +121,7 @@
     <value/>
   </data>
   <data name="Start.Text" xml:space="preserve">
-    <value>Start</value>
+    <value/>
   </data>
   <data name="Stop.Text" xml:space="preserve">
     <value>Stop norsk</value>
@@ -130,6 +130,6 @@
     <value>Applikasjoner</value>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
-    <value>Uninstall</value>
+    <value/>
   </data>
 </root>
