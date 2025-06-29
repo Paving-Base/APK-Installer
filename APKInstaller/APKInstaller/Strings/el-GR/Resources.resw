@@ -127,7 +127,7 @@
     <value>Ένας Android App Installer. Γράφτηκε από @wherewhere και @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>Πρόγραμμα Εγκατάστασης APK</value>
+    <value>App Installer for Mobile</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>Παρουσιάστηκε σφάλμα με το πρόγραμμα…</value>
