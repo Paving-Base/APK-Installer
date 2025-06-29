@@ -127,7 +127,7 @@
     <value>Android-sovelluksen asentaja. Kirjoittanut @wherewhere ja @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>APK Asennusohjelma</value>
+    <value>App Installer for Mobile</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>Ohjelman kanssa tapahtui virhe…</value>
