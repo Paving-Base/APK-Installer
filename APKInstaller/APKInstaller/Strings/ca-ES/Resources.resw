@@ -127,7 +127,7 @@
     <value/>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>Instal·lador d’APK</value>
+    <value>App Installer for Mobile</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>S’ha produït un error en el programa…</value>
