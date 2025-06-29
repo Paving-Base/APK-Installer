@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 
 namespace APKInstaller.Helpers.Converter
 {
-    public class StringRegexToObjectConverter : DependencyObject, IValueConverter
+    public partial class StringRegexToObjectConverter : DependencyObject, IValueConverter
     {
         /// <summary>
         /// Identifies the <see cref="MatchValue"/> property.

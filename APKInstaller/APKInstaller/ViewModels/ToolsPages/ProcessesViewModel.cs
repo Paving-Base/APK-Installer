@@ -18,7 +18,7 @@ using System.Threading.Tasks;
 
 namespace APKInstaller.ViewModels.ToolsPages
 {
-    public class ProcessesViewModel : INotifyPropertyChanged
+    public partial class ProcessesViewModel : INotifyPropertyChanged
     {
         public TitleBar TitleBar;
         public ComboBox DeviceComboBox;
@@ -76,7 +76,7 @@ namespace APKInstaller.ViewModels.ToolsPages
             try
             {
                 await ThreadSwitcher.ResumeBackgroundAsync();
-                devices = (await new AdbClient().GetDevicesAsync()).Where(x => x.State == DeviceState.Online).ToList();
+                devices = [.. (await new AdbClient().GetDevicesAsync()).Where(x => x.State == DeviceState.Online)];
                 await _page?.DispatcherQueue.EnqueueAsync(DeviceList.Clear);
                 if (devices.Count > 0)
                 {
@@ -174,7 +174,7 @@ namespace APKInstaller.ViewModels.ToolsPages
             try
             {
                 await ThreadSwitcher.ResumeBackgroundAsync();
-                if (devices != null && devices.Any())
+                if (devices != null && devices.Count != 0)
                 {
                     _page?.DispatcherQueue.EnqueueAsync(() =>
                     {

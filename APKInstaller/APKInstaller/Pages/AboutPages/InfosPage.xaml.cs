@@ -41,7 +41,7 @@ namespace APKInstaller.Pages.AboutPages
                     DataTransferHelper.ShareFile(Provider.ApkInfo.PackagePath, Provider.ApkInfo.AppName);
                     break;
                 case "OpenPackageFolder":
-                    _ = await Launcher.LaunchFolderAsync(await StorageFolder.GetFolderFromPathAsync(Provider.ApkInfo.PackagePath[..Provider.ApkInfo.PackagePath.LastIndexOf(@"\")]));
+                    _ = await Launcher.LaunchFolderAsync(await StorageFolder.GetFolderFromPathAsync(Provider.ApkInfo.PackagePath[..Provider.ApkInfo.PackagePath.LastIndexOf('\\')]));
                     break;
                 default:
                     break;

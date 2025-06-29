@@ -70,7 +70,7 @@ namespace APKInstaller.Controls
 
             if (Content is IEnumerable<byte> array)
             {
-                byte[] payload = array.ToArray();
+                byte[] payload = [.. array];
                 using QRCodeGenerator qrGenerator = new();
                 QRCodeData = qrGenerator.CreateQrCode(payload, ECCLevel);
             }

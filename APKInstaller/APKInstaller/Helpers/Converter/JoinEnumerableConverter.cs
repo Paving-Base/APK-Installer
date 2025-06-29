@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace APKInstaller.Helpers.Converter
 {
-    public class JoinEnumerableConverter : IValueConverter
+    public partial class JoinEnumerableConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, string language)
         {

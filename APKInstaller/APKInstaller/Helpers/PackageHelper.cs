@@ -17,12 +17,12 @@ namespace APKInstaller.Helpers
             {
                 IEnumerable<Package> packages = manager.FindPackagesForUser("");
                 IEnumerable<Package> results = packages?.Where((x) => x.Id.FamilyName.StartsWith(PackageName));
-                return results ?? Array.Empty<Package>();
+                return results ?? [];
             }
             catch (Exception ex)
             {
                 SettingsHelper.LogManager.GetLogger(nameof(PackageHelper)).Warn(ex.ExceptionToMessage());
-                return Array.Empty<Package>();
+                return [];
             }
         }
 

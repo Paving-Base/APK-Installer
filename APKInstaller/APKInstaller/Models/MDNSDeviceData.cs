@@ -5,7 +5,7 @@ using Zeroconf.Interfaces;
 
 namespace APKInstaller.Models
 {
-    public class MDNSDeviceData : INotifyPropertyChanged
+    public partial class MDNSDeviceData : INotifyPropertyChanged
     {
         public string Name { get; private set; }
         public string Address { get; private set; }

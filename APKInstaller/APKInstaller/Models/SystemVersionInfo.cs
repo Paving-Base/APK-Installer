@@ -41,7 +41,7 @@ namespace APKInstaller.Models
 
         public int CompareTo(object obj)
         {
-            return obj is not SystemVersionInfo other ? throw new ArgumentException() : CompareTo(other);
+            return obj is not SystemVersionInfo other ? throw new ArgumentException("obj is not SystemVersionInfo", nameof(obj)) : CompareTo(other);
         }
 
         public static bool operator <(SystemVersionInfo left, SystemVersionInfo right) => left.CompareTo(right) < 0;

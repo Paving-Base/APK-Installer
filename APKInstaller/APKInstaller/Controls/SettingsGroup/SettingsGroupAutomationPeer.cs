@@ -2,7 +2,7 @@
 
 namespace APKInstaller.Controls
 {
-    public class SettingsGroupAutomationPeer : ItemsControlAutomationPeer
+    public partial class SettingsGroupAutomationPeer : ItemsControlAutomationPeer
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="SettingsGroup"/> class.

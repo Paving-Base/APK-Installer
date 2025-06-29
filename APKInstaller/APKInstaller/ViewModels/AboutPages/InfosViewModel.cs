@@ -6,7 +6,7 @@ using Windows.ApplicationModel.Resources;
 
 namespace APKInstaller.ViewModels.AboutPages
 {
-    public class InfosViewModel : INotifyPropertyChanged
+    public partial class InfosViewModel : INotifyPropertyChanged
     {
         private readonly InfosPage _page;
         private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("InfosPage");

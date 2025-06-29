@@ -19,7 +19,7 @@ using Zeroconf.Interfaces;
 
 namespace APKInstaller.ViewModels.SettingsPages
 {
-    public class PairDeviceViewModel : INotifyPropertyChanged, IDisposable
+    public partial class PairDeviceViewModel : INotifyPropertyChanged, IDisposable
     {
         private string ssid;
         private string password;
@@ -201,7 +201,7 @@ namespace APKInstaller.ViewModels.SettingsPages
             if (AdbServer.Instance.GetStatus().IsRunning)
             {
                 MonitorHelper.Monitor.DeviceListChanged += OnDeviceListChanged;
-                ConnectedList = (await new AdbClient().GetDevicesAsync()).Where(x => x.State != DeviceState.Offline).ToList();
+                ConnectedList = [.. (await new AdbClient().GetDevicesAsync()).Where(x => x.State != DeviceState.Offline)];
             }
         }
 
@@ -235,7 +235,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                     ConnectLogText = _loader.GetString("PairingLogText");
                     AdbClient client = new();
                     string pair = await client.PairAsync(deviceData.Address, deviceData.Port, code);
-                    if (pair.ToLowerInvariant().StartsWith("successfully"))
+                    if (pair.StartsWith("successfully", StringComparison.InvariantCultureIgnoreCase))
                     {
                         ConnectInfoSeverity = InfoBarSeverity.Success;
                         ConnectInfoTitle = pair;
@@ -256,7 +256,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                             }
                             return string.Empty;
                         });
-                        if (connect.ToLowerInvariant().StartsWith("connected to"))
+                        if (connect.StartsWith("connected to", StringComparison.InvariantCultureIgnoreCase))
                         {
                             ConnectInfoSeverity = InfoBarSeverity.Success;
                             ConnectInfoTitle = pair;
@@ -264,7 +264,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                             ConnectLogText = _loader.GetString("ConnectedLogText");
                         }
                     }
-                    else if (pair.ToLowerInvariant().StartsWith("failed:"))
+                    else if (pair.StartsWith("failed:", StringComparison.InvariantCultureIgnoreCase))
                     {
                         ConnectInfoSeverity = InfoBarSeverity.Error;
                         ConnectInfoTitle = pair[8..];
@@ -316,7 +316,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                     ConnectLogText = _loader.GetString("PairingLogText");
                     AdbClient client = new();
                     string pair = await client.PairAsync(host, code);
-                    if (pair.ToLowerInvariant().StartsWith("successfully"))
+                    if (pair.StartsWith("successfully", StringComparison.InvariantCultureIgnoreCase))
                     {
                         ConnectInfoSeverity = InfoBarSeverity.Success;
                         ConnectInfoTitle = pair;
@@ -337,7 +337,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                             }
                             return string.Empty;
                         });
-                        if (connect.ToLowerInvariant().StartsWith("connected to"))
+                        if (connect.StartsWith("connected to", StringComparison.InvariantCultureIgnoreCase))
                         {
                             ConnectInfoSeverity = InfoBarSeverity.Success;
                             ConnectInfoTitle = pair;
@@ -345,7 +345,7 @@ namespace APKInstaller.ViewModels.SettingsPages
                             ConnectLogText = _loader.GetString("ConnectedLogText");
                         }
                     }
-                    else if (pair.ToLowerInvariant().StartsWith("failed:"))
+                    else if (pair.StartsWith("failed:", StringComparison.InvariantCultureIgnoreCase))
                     {
                         ConnectInfoSeverity = InfoBarSeverity.Error;
                         ConnectInfoTitle = pair[8..];
@@ -395,13 +395,13 @@ namespace APKInstaller.ViewModels.SettingsPages
                 try
                 {
                     string results = (await new AdbClient().ConnectAsync(host)).TrimStart();
-                    if (results.ToLowerInvariant().StartsWith("connected to"))
+                    if (results.StartsWith("connected to", StringComparison.InvariantCultureIgnoreCase))
                     {
                         ConnectInfoSeverity = InfoBarSeverity.Success;
                         ConnectInfoTitle = results;
                         ConnectInfoIsOpen = true;
                     }
-                    else if (results.ToLowerInvariant().StartsWith("cannot connect to"))
+                    else if (results.StartsWith("cannot connect to", StringComparison.InvariantCultureIgnoreCase))
                     {
                         ConnectInfoSeverity = InfoBarSeverity.Error;
                         ConnectInfoTitle = results;
@@ -477,7 +477,7 @@ namespace APKInstaller.ViewModels.SettingsPages
             }
         }
 
-        public async void OnDeviceListChanged(object sender, DeviceDataNotifyEventArgs e) => ConnectedList = (await new AdbClient().GetDevicesAsync()).Where(x => x.State != DeviceState.Offline).ToList();
+        public async void OnDeviceListChanged(object sender, DeviceDataNotifyEventArgs e) => ConnectedList = [.. (await new AdbClient().GetDevicesAsync()).Where(x => x.State != DeviceState.Offline)];
 
         public void Dispose()
         {

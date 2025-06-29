@@ -43,7 +43,7 @@ namespace APKInstaller.Pages.SettingsPages
             if (AdbServer.Instance.GetStatus().IsRunning)
             {
                 MonitorHelper.Monitor.DeviceListChanged += Provider.OnDeviceListChanged;
-                Provider.DeviceList = new AdbClient().GetDevices().Where(x => x.State != DeviceState.Offline).ToArray();
+                Provider.DeviceList = [.. new AdbClient().GetDevices().Where(x => x.State != DeviceState.Offline)];
             }
             DataContext = Provider;
             Provider.GetADBVersion();
@@ -110,7 +110,7 @@ namespace APKInstaller.Pages.SettingsPages
             switch ((sender as FrameworkElement).Tag as string)
             {
                 case "ADBPath":
-                    _ = await Launcher.LaunchFolderAsync(await StorageFolder.GetFolderFromPathAsync(Provider.ADBPath[..Provider.ADBPath.LastIndexOf(@"\")]));
+                    _ = await Launcher.LaunchFolderAsync(await StorageFolder.GetFolderFromPathAsync(Provider.ADBPath[..Provider.ADBPath.LastIndexOf('\\')]));
                     break;
                 case "LogFolder":
                     _ = await Launcher.LaunchFolderAsync(await ApplicationData.Current.LocalFolder.CreateFolderAsync("MetroLogs", CreationCollisionOption.OpenIfExists));

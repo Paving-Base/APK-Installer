@@ -122,7 +122,7 @@ namespace APKInstaller.Controls.Dialogs
                 try
                 {
                     string text = await client.GetStringAsync(value);
-                    if (string.IsNullOrWhiteSpace(text)) { throw new ArgumentNullException(nameof(text), $"The text fetched from {value} is empty."); }
+                    if (string.IsNullOrWhiteSpace(text)) { throw new ArgumentNullException(nameof(Content), $"The text fetched from {value} is empty."); }
                     MarkdownText.Text = text;
                     Title = null;
                 }
@@ -132,7 +132,7 @@ namespace APKInstaller.Controls.Dialogs
                     try
                     {
                         string text = await client.GetStringAsync(ContentInfo.FormatURL(GitInfo.JSDELIVR_API));
-                        if (string.IsNullOrWhiteSpace(text)) { throw new ArgumentNullException(nameof(text), $"The text fetched from the {ContentInfo.FormatURL(GitInfo.JSDELIVR_API)} is empty."); }
+                        if (string.IsNullOrWhiteSpace(text)) { throw new ArgumentNullException(nameof(Content), $"The text fetched from the {ContentInfo.FormatURL(GitInfo.JSDELIVR_API)} is empty."); }
                         MarkdownText.Text = text;
                         Title = null;
                     }
@@ -149,7 +149,7 @@ namespace APKInstaller.Controls.Dialogs
                 try
                 {
                     string text = await ContentTask();
-                    if (string.IsNullOrWhiteSpace(text)) { throw new ArgumentNullException(nameof(text), "The text fetched from Task is empty."); }
+                    if (string.IsNullOrWhiteSpace(text)) { throw new ArgumentNullException(nameof(Content), "The text fetched from Task is empty."); }
                     MarkdownText.Text = text;
                     Title = null;
                 }
@@ -177,7 +177,7 @@ namespace APKInstaller.Controls.Dialogs
                 try
                 {
                     string text = await client.GetStringAsync(ContentUri);
-                    if (string.IsNullOrWhiteSpace(text)) { throw new ArgumentNullException(nameof(text), $"The text fetched from {ContentUri} is empty."); }
+                    if (string.IsNullOrWhiteSpace(text)) { throw new ArgumentNullException(nameof(Content), $"The text fetched from {ContentUri} is empty."); }
                     MarkdownText.Text = text;
                     Title = null;
                 }

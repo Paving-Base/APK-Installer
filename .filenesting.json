@@ -1,0 +1,22 @@
+{
+  "help": "https://go.microsoft.com/fwlink/?linkid=866610",
+  "dependentFileProviders": {
+    "add": {
+      "extensionToExtension": {
+        "add": {
+          ".cs": [
+            ".xaml"
+          ]
+        }
+      },
+      "pathSegment": {
+        "add": {
+          ".*": [
+            ".cs",
+            ".xaml"
+          ]
+        }
+      }
+    }
+  }
+}

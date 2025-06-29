@@ -43,7 +43,7 @@ using DownloadProgressChangedEventArgs = Downloader.DownloadProgressChangedEvent
 
 namespace APKInstaller.ViewModels
 {
-    public class InstallViewModel : INotifyPropertyChanged
+    public partial class InstallViewModel : INotifyPropertyChanged
     {
         private InstallPage _page;
         private DeviceData _device;
@@ -56,7 +56,7 @@ namespace APKInstaller.ViewModels
         private string _path = string.Empty;
 #else
         private Uri _url = new("apkinstaller:?source=https://dl.coolapk.com/down?pn=com.coolapk.market&id=NDU5OQ&h=46bb9d98&from=from-web");
-        private string _path = @"C:\Users\qq251\Downloads\Programs\weixin8030android2260_arm64.apk";
+        private string _path = @"C:\Users\qq251\Downloads\Programs\weixin8060android2860_0x28003c39_arm64.apk";
 #endif
         private bool NetAPKExist => _path != APKTemp || File.Exists(_path);
 
@@ -75,6 +75,8 @@ namespace APKInstaller.ViewModels
         private static bool ShowDialogs => SettingsHelper.Get<bool>(SettingsHelper.ShowDialogs);
         private static bool AutoGetNetAPK => SettingsHelper.Get<bool>(SettingsHelper.AutoGetNetAPK);
         private static bool ScanPairedDevice => SettingsHelper.Get<bool>(SettingsHelper.ScanPairedDevice);
+
+        public bool IsADBReady { get; private set; }
 
         private ApkInfo _apkInfo = null;
         public ApkInfo ApkInfo
@@ -672,12 +674,12 @@ namespace APKInstaller.ViewModels
                 if (force)
                 {
                     ProgressHelper.SetState(ProgressState.Indeterminate, true);
-                    await InitilizeADB();
-                    await InitilizeUI();
+                    await InitializeADB();
+                    await InitializeUI();
                 }
                 else
                 {
-                    await ReinitilizeUI();
+                    await ReinitializeUI();
                     IsInitialized = true;
                 }
             }
@@ -714,64 +716,97 @@ namespace APKInstaller.ViewModels
             }
         }
 
-        private async Task CheckADB(bool force = false)
+        private bool CheckADB()
         {
             if (!File.Exists(ADBPath))
             {
                 ADBPath = @"C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe";
+                return File.Exists(ADBPath);
             }
+            return true;
+        }
 
-            checkadb:
-            if (force || !File.Exists(ADBPath))
+        public async Task InitADBFile()
+        {
+            IsInitialized = false;
+            WaitProgressText = _loader.GetString("Loading");
+            try
             {
-                StackPanel StackPanel = new();
-                StackPanel.Children.Add(
-                    new TextBlock
-                    {
-                        TextWrapping = TextWrapping.Wrap,
-                        Text = _loader.GetString("AboutADB")
-                    });
-                StackPanel.Children.Add(
-                    new HyperlinkButton
-                    {
-                        Content = _loader.GetString("ClickToRead"),
-                        NavigateUri = new Uri("https://developer.android.google.cn/studio/releases/platform-tools")
-                    });
-                ContentDialog dialog = new()
+            checkadb:
+                if (!File.Exists(ADBPath))
                 {
-                    XamlRoot = _page?.XamlRoot,
-                    Title = _loader.GetString("ADBMissing"),
-                    PrimaryButtonText = _loader.GetString("Download"),
-                    SecondaryButtonText = _loader.GetString("Select"),
-                    CloseButtonText = _loader.GetString("Cancel"),
-                    Content = new ScrollViewer
+                    StackPanel StackPanel = new();
+                    StackPanel.Children.Add(
+                        new TextBlock
+                        {
+                            TextWrapping = TextWrapping.Wrap,
+                            Text = _loader.GetString("AboutADB")
+                        });
+                    StackPanel.Children.Add(
+                        new HyperlinkButton
+                        {
+                            Content = _loader.GetString("ClickToRead"),
+                            NavigateUri = new Uri("https://developer.android.google.cn/studio/releases/platform-tools")
+                        });
+                    ContentDialog dialog = new()
                     {
-                        Content = StackPanel
-                    },
-                    DefaultButton = ContentDialogButton.Primary
-                };
-                ProgressHelper.SetState(ProgressState.None, true);
-                ContentDialogResult result = await dialog.ShowAsync();
-                ProgressHelper.SetState(ProgressState.Indeterminate, true);
-                if (result == ContentDialogResult.Primary)
-                {
+                        XamlRoot = _page?.XamlRoot,
+                        Title = _loader.GetString("ADBMissing"),
+                        PrimaryButtonText = _loader.GetString("Download"),
+                        SecondaryButtonText = _loader.GetString("Select"),
+                        CloseButtonText = _loader.GetString("Cancel"),
+                        Content = new ScrollViewer
+                        {
+                            Content = StackPanel
+                        },
+                        DefaultButton = ContentDialogButton.Primary
+                    };
+                    ProgressHelper.SetState(ProgressState.None, true);
+                    ContentDialogResult result = await dialog.ShowAsync();
+                    ProgressHelper.SetState(ProgressState.Indeterminate, true);
+                    if (result == ContentDialogResult.Primary)
+                    {
                     downloadadb:
-                    if (NetworkHelper.Instance.ConnectionInformation.IsInternetAvailable)
-                    {
-                        try
+                        if (NetworkHelper.Instance.ConnectionInformation.IsInternetAvailable)
                         {
-                            await DownloadADB();
+                            try
+                            {
+                                await DownloadADB();
+                            }
+                            catch (Exception ex)
+                            {
+                                SettingsHelper.LogManager.GetLogger(nameof(InstallViewModel)).Error(ex.ExceptionToMessage(), ex);
+                                ContentDialog dialogs = new()
+                                {
+                                    XamlRoot = _page?.XamlRoot,
+                                    Title = _loader.GetString("DownloadFailed"),
+                                    PrimaryButtonText = _loader.GetString("Retry"),
+                                    CloseButtonText = _loader.GetString("Cancel"),
+                                    Content = new TextBlock { Text = ex.Message },
+                                    DefaultButton = ContentDialogButton.Primary
+                                };
+                                ProgressHelper.SetState(ProgressState.None, true);
+                                ContentDialogResult results = await dialogs.ShowAsync();
+                                ProgressHelper.SetState(ProgressState.Indeterminate, true);
+                                if (results == ContentDialogResult.Primary)
+                                {
+                                    goto downloadadb;
+                                }
+                                else
+                                {
+                                    return;
+                                }
+                            }
                         }
-                        catch (Exception ex)
+                        else
                         {
-                            SettingsHelper.LogManager.GetLogger(nameof(InstallViewModel)).Error(ex.ExceptionToMessage(), ex);
                             ContentDialog dialogs = new()
                             {
                                 XamlRoot = _page?.XamlRoot,
-                                Title = _loader.GetString("DownloadFailed"),
+                                Title = _loader.GetString("NoInternet"),
                                 PrimaryButtonText = _loader.GetString("Retry"),
                                 CloseButtonText = _loader.GetString("Cancel"),
-                                Content = new TextBlock { Text = ex.Message },
+                                Content = new TextBlock { Text = _loader.GetString("NoInternetInfo") },
                                 DefaultButton = ContentDialogButton.Primary
                             };
                             ProgressHelper.SetState(ProgressState.None, true);
@@ -779,76 +814,56 @@ namespace APKInstaller.ViewModels
                             ProgressHelper.SetState(ProgressState.Indeterminate, true);
                             if (results == ContentDialogResult.Primary)
                             {
-                                goto downloadadb;
+                                goto checkadb;
                             }
                             else
                             {
-                                SendResults(new Exception($"ADB {_loader.GetString("DownloadFailed")}"));
-                                Application.Current.Exit();
                                 return;
                             }
                         }
                     }
+                    else if (result == ContentDialogResult.Secondary)
+                    {
+                        FileOpenPicker FileOpen = new();
+                        FileOpen.FileTypeFilter.Add(".exe");
+                        FileOpen.SuggestedStartLocation = PickerLocationId.ComputerFolder;
+
+                        // When running on win32, FileSavePicker needs to know the top-level hwnd via IInitializeWithWindow::Initialize.
+                        if (Window.Current == null)
+                        {
+                            IInitializeWithWindow initializeWithWindowWrapper = FileOpen.As<IInitializeWithWindow>();
+                            HWND hwnd = PInvoke.GetActiveWindow();
+                            initializeWithWindowWrapper.Initialize(hwnd);
+                        }
+
+                        StorageFile file = await FileOpen.PickSingleFileAsync();
+                        if (file != null)
+                        {
+                            ADBPath = file.Path;
+                        }
+                    }
                     else
                     {
-                        ContentDialog dialogs = new()
-                        {
-                            XamlRoot = _page?.XamlRoot,
-                            Title = _loader.GetString("NoInternet"),
-                            PrimaryButtonText = _loader.GetString("Retry"),
-                            CloseButtonText = _loader.GetString("Cancel"),
-                            Content = new TextBlock { Text = _loader.GetString("NoInternetInfo") },
-                            DefaultButton = ContentDialogButton.Primary
-                        };
-                        ProgressHelper.SetState(ProgressState.None, true);
-                        ContentDialogResult results = await dialogs.ShowAsync();
-                        ProgressHelper.SetState(ProgressState.Indeterminate, true);
-                        if (results == ContentDialogResult.Primary)
-                        {
-                            goto checkadb;
-                        }
-                        else
-                        {
-                            SendResults(new Exception($"{_loader.GetString("NoInternet")}, ADB {_loader.GetString("DownloadFailed")}"));
-                            Application.Current.Exit();
-                            return;
-                        }
+                        SendResults(new Exception(_loader.GetString("ADBMissing")));
+                        Application.Current.Exit();
+                        return;
                     }
                 }
-                else if (result == ContentDialogResult.Secondary)
-                {
-                    FileOpenPicker FileOpen = new();
-                    FileOpen.FileTypeFilter.Add(".exe");
-                    FileOpen.SuggestedStartLocation = PickerLocationId.ComputerFolder;
-
-                    // When running on win32, FileSavePicker needs to know the top-level hwnd via IInitializeWithWindow::Initialize.
-                    if (Window.Current == null)
-                    {
-                        IInitializeWithWindow initializeWithWindowWrapper = FileOpen.As<IInitializeWithWindow>();
-                        HWND hwnd = PInvoke.GetActiveWindow();
-                        initializeWithWindowWrapper.Initialize(hwnd);
-                    }
-
-                    StorageFile file = await FileOpen.PickSingleFileAsync();
-                    if (file != null)
-                    {
-                        ADBPath = file.Path;
-                    }
-                }
-                else
-                {
-                    SendResults(new Exception(_loader.GetString("ADBMissing")));
-                    Application.Current.Exit();
-                    return;
-                }
+                await ThreadSwitcher.ResumeBackgroundAsync();
+                await InitializeADB();
+                await ReinitializeUI();
+            }
+            finally
+            {
+                IsInitialized = true;
             }
         }
 
         private async Task DownloadADB()
         {
-            if (!Directory.Exists(ADBTemp[..ADBTemp.LastIndexOf(@"\")]))
+            if (!Directory.Exists(ADBTemp[..ADBTemp.LastIndexOf('\\')]))
             {
-                _ = Directory.CreateDirectory(ADBTemp[..ADBTemp.LastIndexOf(@"\")]);
+                _ = Directory.CreateDirectory(ADBTemp[..ADBTemp.LastIndexOf('\\')]);
             }
             else if (Directory.Exists(ADBTemp))
             {
@@ -966,7 +981,7 @@ namespace APKInstaller.ViewModels
             ADBPath = Path.Combine(ApplicationData.Current.LocalFolder.Path, @"platform-tools\adb.exe");
         }
 
-        private async Task InitilizeADB()
+        private async Task InitializeADB()
         {
             WaitProgressText = _loader.GetString("Loading");
             if (!string.IsNullOrWhiteSpace(_path) || _url != null)
@@ -975,27 +990,34 @@ namespace APKInstaller.ViewModels
                 if (!ADBServer.GetStatus().IsRunning)
                 {
                     WaitProgressText = _loader.GetString("CheckingADB");
-                    await CheckADB();
-                    Process[] processes = Process.GetProcessesByName("adb");
-                    startadb:
-                    WaitProgressText = _loader.GetString("StartingADB");
-                    try
+                    if (CheckADB())
                     {
-                        await ADBServer.StartServerAsync((processes != null && processes.Any()) ? processes.FirstOrDefault().MainModule?.FileName : ADBPath, restartServerIfNewer: false, CancellationToken.None);
-                    }
-                    catch (Exception ex)
-                    {
-                        SettingsHelper.LogManager.GetLogger(nameof(InstallViewModel)).Warn(ex.ExceptionToMessage(), ex);
-                        if (processes != null && processes.Any())
+                        Process[] processes = Process.GetProcessesByName("adb");
+                        WaitProgressText = _loader.GetString("StartingADB");
+                        try
                         {
-                            foreach (Process process in processes)
-                            {
-                                process.Kill();
-                            }
-                            processes = null;
+                            await ADBServer.StartServerAsync(processes is [{ MainModule.FileName: string file }, ..] ? file : ADBPath, restartServerIfNewer: false, CancellationToken.None);
                         }
-                        await CheckADB(true);
-                        goto startadb;
+                        catch (Exception ex)
+                        {
+                            SettingsHelper.LogManager.GetLogger(nameof(InstallViewModel)).Warn(ex.ExceptionToMessage(), ex);
+                            if (processes != null && processes.Length != 0)
+                            {
+                                foreach (Process process in processes)
+                                {
+                                    process.Kill();
+                                }
+                                processes = null;
+                            }
+                            IsADBReady = false;
+                            return;
+                        }
+                        IsADBReady = true;
+                    }
+                    else
+                    {
+                        IsADBReady = false;
+                        return;
                     }
                 }
                 WaitProgressText = _loader.GetString("Loading");
@@ -1024,7 +1046,7 @@ namespace APKInstaller.ViewModels
             }
         }
 
-        private async Task InitilizeUI()
+        private async Task InitializeUI()
         {
             if (!string.IsNullOrWhiteSpace(_path) || _url != null)
             {
@@ -1086,9 +1108,17 @@ namespace APKInstaller.ViewModels
                         {
                             CheckOnlinePackage();
                         }
-                        if (ShowDialogs && await ShowDeviceDialog())
+                        if (IsADBReady)
                         {
-                            goto checkdevice;
+                            if (ShowDialogs && await ShowDeviceDialog())
+                            {
+                                goto checkdevice;
+                            }
+                        }
+                        else
+                        {
+                            ActionButtonEnable = true;
+                            ActionButtonText = _loader.GetString("ADBMissing");
                         }
                     }
                 }
@@ -1250,11 +1280,16 @@ namespace APKInstaller.ViewModels
             return false;
         }
 
-        private async Task ReinitilizeUI()
+        private async Task ReinitializeUI()
         {
             WaitProgressText = _loader.GetString("Loading");
             if ((!string.IsNullOrWhiteSpace(_path) || _url != null) && NetAPKExist)
             {
+                if (!IsADBReady)
+                {
+                    ResetUI();
+                    return;
+                }
                 checkdevice:
                 if (await CheckDevice() && _device != null)
                 {
@@ -1264,7 +1299,7 @@ namespace APKInstaller.ViewModels
                 {
                     if (ApkInfo == null)
                     {
-                        await InitilizeUI();
+                        await InitializeUI();
                     }
                     else
                     {
@@ -1276,12 +1311,17 @@ namespace APKInstaller.ViewModels
                         AppName = string.Format(_loader.GetString("WaitingForInstallFormat"), AppLocaleName);
                         ActionVisibility = DeviceSelectVisibility = MessagesToUserVisibility = Visibility.Visible;
 
-                        if (ShowDialogs)
+                        if (IsADBReady)
                         {
-                            if (await ShowDeviceDialog())
+                            if (ShowDialogs && await ShowDeviceDialog())
                             {
                                 goto checkdevice;
                             }
+                        }
+                        else
+                        {
+                            ActionButtonEnable = true;
+                            ActionButtonText = _loader.GetString("ADBMissing");
                         }
                     }
                 }
@@ -1355,7 +1395,7 @@ namespace APKInstaller.ViewModels
 
         private void CheckOnlinePackage()
         {
-            Regex[] UriRegex = new Regex[] { new(@":\?source=(.*)"), new(@"://(.*)") };
+            Regex[] UriRegex = [new(@":\?source=(.*)"), new(@"://(.*)")];
             string Uri = UriRegex[0].IsMatch(_url.ToString()) ? UriRegex[0].Match(_url.ToString()).Groups[1].Value : UriRegex[1].Match(_url.ToString()).Groups[1].Value;
             Uri Url = Uri.ValidateAndGetUri();
             if (Url != null)
@@ -1433,9 +1473,9 @@ namespace APKInstaller.ViewModels
         {
             if (_url != null)
             {
-                if (!Directory.Exists(APKTemp[..APKTemp.LastIndexOf(@"\")]))
+                if (!Directory.Exists(APKTemp[..APKTemp.LastIndexOf('\\')]))
                 {
-                    _ = Directory.CreateDirectory(APKTemp[..APKTemp.LastIndexOf(@"\")]);
+                    _ = Directory.CreateDirectory(APKTemp[..APKTemp.LastIndexOf('\\')]);
                 }
                 else if (Directory.Exists(APKTemp))
                 {
@@ -1570,6 +1610,7 @@ namespace APKInstaller.ViewModels
 
         private async Task<bool> CheckDevice(bool forces = false)
         {
+            if (!IsADBReady) { return false; }
             AdbClient client = new();
             IEnumerable<DeviceData> devices = await client.GetDevicesAsync();
             ConsoleOutputReceiver receiver = new();
@@ -1652,7 +1693,7 @@ namespace APKInstaller.ViewModels
                     case { IsBundle: true }:
                         await using (FileStream apk = File.Open(ApkInfo.FullPath, FileMode.Open, FileAccess.Read))
                         {
-                            FileStream[] splits = ApkInfo.SplitApks.Select(x => File.Open(x.FullPath, FileMode.Open, FileAccess.Read)).ToArray();
+                            FileStream[] splits = [.. ApkInfo.SplitApks.Select(x => File.Open(x.FullPath, FileMode.Open, FileAccess.Read))];
                             await client.InstallMultipleAsync(_device, apk, splits, OnInstallProgressChanged, default, "-r", "-t");
                             await Task.WhenAll(splits.Select(x => x.DisposeAsync().AsTask()));
                         }
@@ -1931,9 +1972,9 @@ namespace APKInstaller.ViewModels
                     {
                         string temp = Path.Combine(CachesHelper.TempPath, $"TempSplitAPK.apks");
 
-                        if (!Directory.Exists(temp[..temp.LastIndexOf(@"\")]))
+                        if (!Directory.Exists(temp[..temp.LastIndexOf('\\')]))
                         {
-                            _ = Directory.CreateDirectory(temp[..temp.LastIndexOf(@"\")]);
+                            _ = Directory.CreateDirectory(temp[..temp.LastIndexOf('\\')]);
                         }
                         else if (Directory.Exists(temp))
                         {

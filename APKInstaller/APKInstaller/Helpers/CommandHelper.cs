@@ -49,7 +49,7 @@ namespace APKInstaller.Helpers
                 // -- one of the integration test fetches output 1000 times and found no truncations.
                 while (!cancellationToken.IsCancellationRequested)
                 {
-                    string line = await reader.ReadLineAsync().ConfigureAwait(false);
+                    string line = await reader.ReadLineAsync(cancellationToken).ConfigureAwait(false);
 
                     if (line == null)
                     {

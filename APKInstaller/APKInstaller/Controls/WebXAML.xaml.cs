@@ -76,7 +76,7 @@ namespace APKInstaller.Controls
                     try
                     {
                         string xaml = await client.GetStringAsync(value);
-                        if (string.IsNullOrWhiteSpace(xaml)) { throw new ArgumentNullException(nameof(xaml), $"The text fetched from {value} is empty."); }
+                        if (string.IsNullOrWhiteSpace(xaml)) { throw new ArgumentNullException(nameof(Content), $"The text fetched from {value} is empty."); }
                         UIElement = await DispatcherQueue.EnqueueAsync(() => { return (UIElement)XamlReader.Load(xaml); });
                     }
                     catch (Exception e)
@@ -85,7 +85,7 @@ namespace APKInstaller.Controls
                         try
                         {
                             string xaml = await client.GetStringAsync(ContentInfo.FormatURL(GitInfo.JSDELIVR_API));
-                            if (string.IsNullOrWhiteSpace(xaml)) { throw new ArgumentNullException(nameof(xaml), $"The text fetched from {ContentInfo.FormatURL(GitInfo.JSDELIVR_API)} is empty."); }
+                            if (string.IsNullOrWhiteSpace(xaml)) { throw new ArgumentNullException(nameof(Content), $"The text fetched from {ContentInfo.FormatURL(GitInfo.JSDELIVR_API)} is empty."); }
                             UIElement = await DispatcherQueue.EnqueueAsync(() => { return (UIElement)XamlReader.Load(xaml); });
                         }
                         catch (Exception ex)
@@ -130,7 +130,7 @@ namespace APKInstaller.Controls
                     try
                     {
                         string xaml = await client.GetStringAsync(ContentUri);
-                        if (string.IsNullOrWhiteSpace(xaml)) { throw new ArgumentNullException(nameof(xaml), $"The text fetched from {ContentUri} is empty."); }
+                        if (string.IsNullOrWhiteSpace(xaml)) { throw new ArgumentNullException(nameof(Content), $"The text fetched from {ContentUri} is empty."); }
                         UIElement = await DispatcherQueue.EnqueueAsync(() => { return (UIElement)XamlReader.Load(xaml); });
                     }
                     catch (Exception e)

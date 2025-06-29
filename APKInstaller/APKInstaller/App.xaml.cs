@@ -1,3 +1,4 @@
+global using TitleBar = APKInstaller.Controls.TitleBar;
 using APKInstaller.Helpers;
 using APKInstaller.Helpers.Exceptions;
 using Microsoft.UI.Xaml;

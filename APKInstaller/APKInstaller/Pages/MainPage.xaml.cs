@@ -57,7 +57,7 @@ namespace APKInstaller.Pages
             if (!UIHelper.HasTitleBar)
             {
                 RectInt32 Rect = new((ActualWidth - CustomTitleBar.ActualWidth).GetActualPixel(), 0, CustomTitleBar.ActualWidth.GetActualPixel(), CustomTitleBar.ActualHeight.GetActualPixel());
-                UIHelper.MainWindow.AppWindow.TitleBar.SetDragRectangles(new RectInt32[] { Rect });
+                UIHelper.MainWindow.AppWindow.TitleBar.SetDragRectangles([Rect]);
             }
         }
 

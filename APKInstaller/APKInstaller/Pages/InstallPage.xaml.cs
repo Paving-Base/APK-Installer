@@ -55,7 +55,7 @@ namespace APKInstaller.Pages
                     case ExtendedActivationKind.Protocol:
                         ProtocolActivatedEventArgs ProtocolArgs = args.Data as ProtocolActivatedEventArgs;
                         ValueSet ProtocolData = ProtocolArgs.Data;
-                        if (ProtocolData == null || !ProtocolData.Any())
+                        if (ProtocolData == null || ProtocolData.Count == 0)
                         {
                             Provider = new InstallViewModel(ProtocolArgs.Uri, this);
                         }
@@ -74,7 +74,7 @@ namespace APKInstaller.Pages
                     case ExtendedActivationKind.ProtocolForResults:
                         ProtocolForResultsActivatedEventArgs ProtocolForResultsArgs = args.Data as ProtocolForResultsActivatedEventArgs;
                         ValueSet ProtocolForResultsData = ProtocolForResultsArgs.Data;
-                        if (ProtocolForResultsData == null || !ProtocolForResultsData.Any())
+                        if (ProtocolForResultsData == null || ProtocolForResultsData.Count == 0)
                         {
                             Provider = new InstallViewModel(ProtocolForResultsArgs.Uri, this, ProtocolForResultsArgs.ProtocolForResultsOperation);
                         }
@@ -102,8 +102,11 @@ namespace APKInstaller.Pages
         {
             switch ((sender as FrameworkElement).Name)
             {
-                case "ActionButton":
+                case "ActionButton" when Provider.IsADBReady:
                     Provider.InstallAPP();
+                    break;
+                case "ActionButton":
+                    _ = Provider.InitADBFile();
                     break;
                 case "DownloadButton":
                     Provider.LoadNetAPK();

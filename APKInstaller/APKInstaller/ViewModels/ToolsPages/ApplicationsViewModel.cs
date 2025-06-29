@@ -23,7 +23,7 @@ using File = System.IO.File;
 
 namespace APKInstaller.ViewModels.ToolsPages
 {
-    public class ApplicationsViewModel : INotifyPropertyChanged
+    public partial class ApplicationsViewModel : INotifyPropertyChanged
     {
         public TitleBar TitleBar;
         public ComboBox DeviceComboBox;
@@ -111,7 +111,7 @@ namespace APKInstaller.ViewModels.ToolsPages
             try
             {
                 await ThreadSwitcher.ResumeBackgroundAsync();
-                devices = (await new AdbClient().GetDevicesAsync()).Where(x => x.State == DeviceState.Online).ToList();
+                devices = [.. (await new AdbClient().GetDevicesAsync()).Where(x => x.State == DeviceState.Online)];
                 await _page?.DispatcherQueue.EnqueueAsync(DeviceList.Clear);
                 if (devices.Count > 0)
                 {
@@ -180,9 +180,9 @@ namespace APKInstaller.ViewModels.ToolsPages
                         ConsoleOutputReceiver receiver = new();
                         await client.ExecuteRemoteCommandAsync($"pidof {app.Key}", devices[index], receiver);
                         bool isActive = !string.IsNullOrEmpty(receiver.ToString());
-                        if (PackageInfos.ContainsKey(app.Key))
+                        if (PackageInfos.TryGetValue(app.Key, out (string Name, BitmapImage Icon) value))
                         {
-                            (string Name, BitmapImage Icon) = PackageInfos[app.Key];
+                            (string Name, BitmapImage Icon) = value;
                             await UIHelper.DispatcherQueue.EnqueueAsync(async () =>
                             {
                                 ImageIcon source = new() { Source = Icon, Width = 20, Height = 20 };
@@ -224,7 +224,7 @@ namespace APKInstaller.ViewModels.ToolsPages
             try
             {
                 await ThreadSwitcher.ResumeBackgroundAsync();
-                if (devices != null && devices.Any())
+                if (devices != null && devices.Count != 0)
                 {
                     _page?.DispatcherQueue.EnqueueAsync(() =>
                     {
@@ -257,7 +257,7 @@ namespace APKInstaller.ViewModels.ToolsPages
         }
     }
 
-    internal class ApplicationConverter : IValueConverter
+    internal partial class ApplicationConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, string language)
         {

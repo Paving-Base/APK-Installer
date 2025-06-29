@@ -90,7 +90,7 @@ namespace APKInstaller.Helpers
             "zh-Hant, zh-hk, zh-mo, zh-tw, zh-hant-hk, zh-hant-mo, zh-hant-tw"
         ];
 
-        public static ImmutableArray<CultureInfo> SupportCultures { get; } = SupportLanguages.Select(x => new CultureInfo(x)).ToImmutableArray();
+        public static ImmutableArray<CultureInfo> SupportCultures { get; } = [.. SupportLanguages.Select(x => new CultureInfo(x))];
 
         public static int FindIndexFromSupportLanguageCodes(string language) => Array.FindIndex(SupportLanguageCodes, code => code.Split(',', ' ').Any(x => x.Equals(language, StringComparison.OrdinalIgnoreCase)));
 
@@ -118,7 +118,7 @@ namespace APKInstaller.Helpers
 
         public static string GetLocaleLabel(this ApkInfo info)
         {
-            if (info.LocaleLabels.Any())
+            if (info.LocaleLabels.Count != 0)
             {
                 int index = -1;
                 string language = ApplicationLanguages.PrimaryLanguageOverride;
@@ -140,7 +140,7 @@ namespace APKInstaller.Helpers
                     string code = SupportLanguageCodes[index].ToLowerInvariant();
                     foreach (KeyValuePair<string, string> label in info.LocaleLabels)
                     {
-                        if (code.ToLowerInvariant().Contains(label.Key.ToLowerInvariant()))
+                        if (code.Contains(label.Key, StringComparison.InvariantCultureIgnoreCase))
                         {
                             return label.Value;
                         }

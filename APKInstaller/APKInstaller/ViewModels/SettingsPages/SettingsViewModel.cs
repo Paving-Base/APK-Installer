@@ -25,7 +25,7 @@ using WinRT;
 
 namespace APKInstaller.ViewModels.SettingsPages
 {
-    public class SettingsViewModel : INotifyPropertyChanged
+    public partial class SettingsViewModel : INotifyPropertyChanged
     {
         private readonly SettingsPage _page;
         private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("SettingsPage");
@@ -482,7 +482,7 @@ namespace APKInstaller.ViewModels.SettingsPages
             Caches = this;
         }
 
-        public void OnDeviceListChanged(object sender, DeviceDataNotifyEventArgs e) => DeviceList = new AdbClient().GetDevices().Where(x => x.State != DeviceState.Offline).ToArray();
+        public void OnDeviceListChanged(object sender, DeviceDataNotifyEventArgs e) => DeviceList = [.. new AdbClient().GetDevices().Where(x => x.State != DeviceState.Offline)];
 
         public async void CheckUpdate()
         {
@@ -562,13 +562,13 @@ namespace APKInstaller.ViewModels.SettingsPages
             try
             {
                 string results = (await new AdbClient().ConnectAsync(ip)).TrimStart();
-                if (results.ToLowerInvariant().StartsWith("connected to"))
+                if (results.StartsWith("connected to", StringComparison.InvariantCultureIgnoreCase))
                 {
                     ConnectInfoSeverity = InfoBarSeverity.Success;
                     ConnectInfoTitle = results;
                     ConnectInfoIsOpen = true;
                 }
-                else if (results.ToLowerInvariant().StartsWith("cannot connect to"))
+                else if (results.StartsWith("cannot connect to", StringComparison.InvariantCultureIgnoreCase))
                 {
                     ConnectInfoSeverity = InfoBarSeverity.Error;
                     ConnectInfoTitle = results;
@@ -615,13 +615,13 @@ namespace APKInstaller.ViewModels.SettingsPages
             try
             {
                 string results = (await new AdbClient().PairAsync(ip, code)).TrimStart();
-                if (results.ToLowerInvariant().StartsWith("successfully"))
+                if (results.StartsWith("successfully", StringComparison.InvariantCultureIgnoreCase))
                 {
                     ConnectInfoSeverity = InfoBarSeverity.Success;
                     ConnectInfoTitle = results;
                     ConnectInfoIsOpen = true;
                 }
-                else if (results.ToLowerInvariant().StartsWith("failed:"))
+                else if (results.StartsWith("failed:", StringComparison.InvariantCultureIgnoreCase))
                 {
                     ConnectInfoSeverity = InfoBarSeverity.Error;
                     ConnectInfoTitle = results[8..];
