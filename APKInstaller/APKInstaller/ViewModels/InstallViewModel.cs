@@ -752,14 +752,14 @@ namespace APKInstaller.ViewModels
                     {
                         XamlRoot = _page?.XamlRoot,
                         Title = _loader.GetString("ADBMissing"),
-                        PrimaryButtonText = _loader.GetString("Download"),
+                        //PrimaryButtonText = _loader.GetString("Download"),
                         SecondaryButtonText = _loader.GetString("Select"),
                         CloseButtonText = _loader.GetString("Cancel"),
                         Content = new ScrollViewer
                         {
                             Content = StackPanel
                         },
-                        DefaultButton = ContentDialogButton.Primary
+                        DefaultButton = ContentDialogButton.Secondary
                     };
                     ProgressHelper.SetState(ProgressState.None, true);
                     ContentDialogResult result = await dialog.ShowAsync();
@@ -794,6 +794,7 @@ namespace APKInstaller.ViewModels
                                 }
                                 else
                                 {
+                                    await ReinitializeUI();
                                     return;
                                 }
                             }
@@ -818,6 +819,7 @@ namespace APKInstaller.ViewModels
                             }
                             else
                             {
+                                await ReinitializeUI();
                                 return;
                             }
                         }
@@ -837,7 +839,11 @@ namespace APKInstaller.ViewModels
                         }
 
                         StorageFile file = await FileOpen.PickSingleFileAsync();
-                        if (file != null)
+                        if (file == null)
+                        {
+                            goto checkadb;
+                        }
+                        else
                         {
                             ADBPath = file.Path;
                         }
@@ -845,7 +851,7 @@ namespace APKInstaller.ViewModels
                     else
                     {
                         SendResults(new Exception(_loader.GetString("ADBMissing")));
-                        Application.Current.Exit();
+                        await ReinitializeUI();
                         return;
                     }
                 }
@@ -1285,11 +1291,6 @@ namespace APKInstaller.ViewModels
             WaitProgressText = _loader.GetString("Loading");
             if ((!string.IsNullOrWhiteSpace(_path) || _url != null) && NetAPKExist)
             {
-                if (!IsADBReady)
-                {
-                    ResetUI();
-                    return;
-                }
                 checkdevice:
                 if (await CheckDevice() && _device != null)
                 {
