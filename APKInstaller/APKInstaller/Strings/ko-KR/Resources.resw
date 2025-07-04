@@ -127,7 +127,7 @@
     <value>안드로이드 앱 설치 관리자. @wherewhere 과 @Tangent-90에 의해 제작되었습니다.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>App Installer for Mobile</value>
+    <value>App Installer (Mobile)</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>프로그램에 오류가 발생했습니다...</value>
