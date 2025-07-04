@@ -127,7 +127,7 @@
     <value>Bir Android Uygulama Yükleyicisi. @wherewhere ve @Tangent-90 tarafından yazıldı.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>App Installer for Mobile</value>
+    <value>App Installer (Mobile)</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>Programla ilgili bir hata oluştu…</value>
