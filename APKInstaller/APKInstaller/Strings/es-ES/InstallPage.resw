@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, el Puente de Depuración de Android, es necesario para que el Instalador de APK funcione. Clica "Descargar" para descargarlo. Al descargar, aceptas los Términos y Condiciones de Google para ADB. Si ya has descargado ADB, clica "Seleccionar" para seleccionarlo.</value>
+    <value>ADB, el puente de depuración de Android, es necesario para que funcione APK Instalador. Haga clic en "Descargar" para descargarlo. Al descargar, aceptas los Términos y Condiciones de Google para el ADB. Si ya has descargado el ADB, haz clic en "Seleccionar" para seleccionarlo.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>ADB Existe</value>
