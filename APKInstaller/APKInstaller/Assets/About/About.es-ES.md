@@ -6,7 +6,7 @@
 3. Si el origen del programa no es anormal, todos sus datos se usarán únicamente para la ejecución del programa o almacenarse localmente durante la ejecución. De todas formas, por favor preste atención a la seguridad del medio ambiente.
 4. La traducción del texto de esta aplicación proviene de la comunidad [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") y todos los textos no representan las vistas del autor.
 
-##### Sugestión %d sur seleccione: %s
+##### Traducción
 [ ](https://crowdin.com/project/APKInstaller "Crowdin") Si hay algún problema con la traducción, no dude en corregirnos. Y por favor, tome la traducción en serio. Cualquier cosa que escribas será leído en todo el mundo.
 
 ##### Contribuidores
