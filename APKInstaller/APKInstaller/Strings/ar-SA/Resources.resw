@@ -127,7 +127,7 @@
     <value>تثبيت تطبيق أندرويدمكتوب بواسطة@wherewhere و @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>App Installer (Mobile)</value>
+    <value/>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>حدث خطأ في البرنامج…</value>
