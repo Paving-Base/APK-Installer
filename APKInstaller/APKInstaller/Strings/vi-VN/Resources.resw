@@ -127,7 +127,7 @@
     <value>Một bộ cài ứng dụng Android được viết bởi @wherewhere và @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>App Installer (Mobile)</value>
+    <value/>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>đã xảy ra lỗi với chương trình…</value>
