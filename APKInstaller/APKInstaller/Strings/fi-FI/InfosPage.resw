@@ -147,7 +147,7 @@ sovellus nimi</value>
     <value/>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
-    <value>Permissions Count</value>
+    <value/>
   </data>
   <data name="PermissionsHeaderFormat" xml:space="preserve">
     <value>{0}</value>
