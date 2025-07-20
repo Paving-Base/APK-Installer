@@ -340,7 +340,8 @@
     <value>Versi</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Up To Date</value>
+    <value>Up To Date
+</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
     <value>Windows Color Settings</value>
