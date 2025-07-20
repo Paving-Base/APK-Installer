@@ -132,6 +132,6 @@
     <value>Aplikace</value>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
-    <value/>
+    <value>Odinstalovat</value>
   </data>
 </root>
