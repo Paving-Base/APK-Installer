@@ -131,7 +131,7 @@
     <value>Recursos-{0} no total</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
-    <value>Idioma</value>
+    <value>Idioma português</value>
   </data>
   <data name="MinSDK.Text" xml:space="preserve">
     <value>Min SDK mim</value>
