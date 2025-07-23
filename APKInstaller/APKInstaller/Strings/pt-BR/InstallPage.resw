@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, O Android Debugar Brídege, é necessário para Instalador de APK FUNCIONAR. Clique "Baixar" para baixá-lo. Por baixar você aceita os Termos e Condições do Google para ADB. Se Você já baixou ADB, clique "Selecionar" para selecionar.1.</value>
+    <value>ADB, O Android Debugar Brídege, é necessário para Instalador de APK FUNCIONAR. Clique "Baixar" para baixá-lo. Por baixar você aceita os Termos e Condições do Google para ADB. Se Você já baixou ADB, clique "Selecionar" para selecionar.1</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>ADB Existe1</value>
@@ -191,7 +191,7 @@ Capacidades:1.</value>
     <value>Baixar</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>A Transferência Falhou</value>
+    <value>O baixar Falhou</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
     <value>Por Favor, cheque sua conexão com a ‘internet’ ou com o URL e tente novamente.</value>
