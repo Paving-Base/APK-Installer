@@ -157,10 +157,10 @@
     <value/>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Terminate ADB when Exit Installer?</value>
+    <value>?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Exit Installer after installation is complete.</value>
+    <value/>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
     <value>Exit Installer when APP is Ready?</value>
