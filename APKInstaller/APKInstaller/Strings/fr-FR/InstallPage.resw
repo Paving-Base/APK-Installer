@@ -208,7 +208,7 @@
     <value>Go to Althing</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>Une nouvelle version est déjà installée</value>
+    <value>Une nouvelle version est déjà installée.</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
     <value>Vous avez déjà installé une nouvelle version {0} de cette application. Êtes-vous sûr de vouloir réinstaller la version {1} ?</value>
