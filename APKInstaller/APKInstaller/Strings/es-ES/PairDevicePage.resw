@@ -127,7 +127,7 @@
     <value>{0} dispositivos conectados</value>
   </data>
   <data name="ConnectedLogText" xml:space="preserve">
-    <value>Conectando con éxito.</value>
+    <value>Conexión establecida</value>
   </data>
   <data name="ConnectingLogText" xml:space="preserve">
     <value>Emparejando con éxito. Conectando, por favor, no cierres la ventana</value>
@@ -136,13 +136,13 @@
     <value>Conectar</value>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
-    <value>Fueron encontrados {0} dispositivos</value>
+    <value>Se encontraron {0} dispositivos</value>
   </data>
   <data name="IPAddressBox.Header" xml:space="preserve">
     <value>Dirección IP</value>
   </data>
   <data name="ManualPairButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Conectando los dispositivos manualmente</value>
+    <value>Conectar el dispositivo manualmente</value>
   </data>
   <data name="ManualPairTextBlock.Text" xml:space="preserve">
     <value>Conexión Manual</value>
@@ -154,7 +154,7 @@
     <value>WLAN Padrino</value>
   </data>
   <data name="PairingLogText" xml:space="preserve">
-    <value>Emparejando, por favor, no cierres la ventana.</value>
+    <value>Emparejando, por favor, no cierre la ventana.</value>
   </data>
   <data name="PairToggleButton.Content" xml:space="preserve">
     <value>Emparejar</value>
@@ -163,10 +163,10 @@
     <value>Puerto</value>
   </data>
   <data name="QRScanButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Emparejar con código QR</value>
+    <value>Emparejar mediante código QR</value>
   </data>
   <data name="QRScanTextBlock.Text" xml:space="preserve">
-    <value>Escanea el código QR para emparejar los dispositivos.</value>
+    <value>Escanee el código QR para emparejar el dispositivo.</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Emparejar y conectar</value>
