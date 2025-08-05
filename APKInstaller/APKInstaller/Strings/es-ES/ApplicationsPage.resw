@@ -124,7 +124,7 @@
     <value>Start</value>
   </data>
   <data name="Stop.Text" xml:space="preserve">
-    <value>Alto</value>
+    <value>Detener</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Applications</value>
