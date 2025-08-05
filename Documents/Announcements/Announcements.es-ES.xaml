@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <controls:SettingsGroup xmlns:controls="using:APKInstaller.Controls" xmlns:muxc="using:Microsoft.UI.Xaml.Controls" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Header="Announcementshttps://crowdin. com/editor/Apkinstaller/178/en-es?&#10;bien=genial&#10;&#10;" Margin="0,-28,0,0">
-    <muxc:InfoBar Title="Aquí está el anuncio (no me pregunten  por qué este mensaje no tiene botón de cerrar)" IsClosable="False" IsOpen="True" Message="Puedes ver todo tipo de notificaciones aquí en el futuro. Si no quieres verlos, puedes desactivarlos en los ajustes de abajo." Severity="Informational"/>
+    <muxc:InfoBar Title="Aquí está el anuncio (no me pregunten por qué este mensaje no tiene un botón para cerrar)" IsClosable="False" IsOpen="True" Message="En el futuro, podrás ver aquí todo tipo de notificaciones. Si no deseas verlas, puedes desactivarlas en la configuración que aparece a continuación." Severity="Informational"/>
     <muxc:InfoBar Title="Más traducciones" IsClosable="True" IsOpen="True" Message="Ya  que el autor solo sabe chino e inglés, todas las traducciones se dejan en manos de la comunidad. Si no quieres ver un idioma desconocido, ¡bienvenidos a Crowdin para traducir!" Severity="Informational">
         <muxc:InfoBar.ActionButton>
-            <HyperlinkButton HorizontalAlignment="Right" Content="Hazme clic&#10;" NavigateUri="https://crowdin.com/project/APKInstaller"/>
+            <HyperlinkButton HorizontalAlignment="Right" Content="Haga clic aquí para ir." NavigateUri="https://crowdin.com/project/APKInstaller"/>
         </muxc:InfoBar.ActionButton>
     </muxc:InfoBar>
 </controls:SettingsGroup>
