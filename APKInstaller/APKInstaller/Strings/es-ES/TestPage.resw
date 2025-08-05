@@ -127,23 +127,22 @@
     <value>Applications</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
-    <value>Introducir o salir de superposición compacta</value>
+    <value>Entrar o salir de vista compacta</value>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
-    <value>Compactar superposición</value>
+    <value>Vista compacta</value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
-    <value>Una aplicación en versión de desarrollo puede no ser estable.
-Descarga la versión de publicación en la tienda de Microsoft.</value>
+    <value>Las versiones de desarrollo pueden ser inestables. Por favor, descargue la versión publicada en Microsoft Store.</value>
   </data>
   <data name="DevelopmentInfoBar.Title" xml:space="preserve">
-    <value>Estás usando una aplicación en versión de desarrollo.</value>
+    <value>Estás usando la versión de desarrollo.</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
     <value>Introducir superposición compacta</value>
   </data>
   <data name="LanguageSettings.Description" xml:space="preserve">
-    <value>Selecciona idioma y reinicia para cambiar el idioma</value>
+    <value>Selecciona el idioma (reinicia la aplicación para aplicar los cambios)</value>
   </data>
   <data name="LanguageSettings.Header" xml:space="preserve">
     <value>Idioma</value>
@@ -152,13 +151,13 @@ Descarga la versión de publicación en la tienda de Microsoft.</value>
     <value>Salir</value>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
-    <value>Administrar los procesos de los dispositivos conectados</value>
+    <value>Administrar los procesos de los dispositivos conectados.</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
     <value>Procesos</value>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
-    <value>Probar anillo de progreso en la barra de título</value>
+    <value>Mostrar anillo de progreso en la barra de título</value>
   </data>
   <data name="ProgressSettings.Header" xml:space="preserve">
     <value>Progreso</value>
@@ -170,21 +169,21 @@ Descarga la versión de publicación en la tienda de Microsoft.</value>
     <value>Valor del progreso</value>
   </data>
   <data name="ShowRefreshButton.Description" xml:space="preserve">
-    <value>Mostrar el botón de refrescar en la barra de título</value>
+    <value>Mostrar el botón de actualizar en la barra de título</value>
   </data>
   <data name="ShowRefreshButton.Header" xml:space="preserve">
     <value>Actualizar</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Probando</value>
+    <value>Pruebas</value>
   </data>
   <data name="TitleBarSettings.Description" xml:space="preserve">
-    <value>Extiende el contenido en la barra de títulos</value>
+    <value>Extender el contenido a la barra de título</value>
   </data>
   <data name="TitleBarSettings.Header" xml:space="preserve">
     <value>Barra de título</value>
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
-    <value>Test UI</value>
+    <value>Prueba de interfaz</value>
   </data>
 </root>
