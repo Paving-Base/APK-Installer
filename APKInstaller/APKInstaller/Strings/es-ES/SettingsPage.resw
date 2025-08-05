@@ -121,19 +121,19 @@
     <value>Acerca de</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>Ruta ADB</value>
+    <value>Ruta del ADB</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>Versión ADB</value>
+    <value>Versión del ADB</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>Autodescargar cuando el paquete viene de URL.</value>
+    <value>Autodescargar cuando el paquete viene de una URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
     <value>¿Quiere que se descarguen automáticamente los paquetes en línea?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>Seleccionar el tipo de fondo para Windows 11</value>
+    <value>Seleccionar el tipo de color de fondo para la aplicación</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
     <value>Fondo</value>
@@ -154,10 +154,10 @@
     <value>Limpiar caché</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>El servidor ADB necesita reiniciarse en la próxima instalación si la finaliza.</value>
+    <value>El servidor ADB necesita reiniciarse en la próxima instalación si lo finaliza.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>¿Quiere finalizar ADB al salir del instalador?</value>
+    <value>¿Quiere finalizar el servicio ADB al salir del instalador?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
     <value>Salir del instalador cuando finalice la instalación.</value>
@@ -175,10 +175,10 @@
     <value>Conectar Dispositivos</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
-    <value>Contactarme</value>
+    <value>Contáctame</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Sígueme en las redes sociales para los últimos desarrollos. Si encuentras algún error, por favor, repórtamelo por PM. Intentaré todo lo que pueda para solucionar el problema. Si tienes una cuenta de Telegram, ¡siéntete libre para chatear en Paving Base Group 😊!</value>
+    <value>Sígueme en las redes sociales para estar al tanto de las últimas novedades sobre el desarrollo. Si encuentras algún error, avísame por mensaje privado. Haré todo lo posible por solucionarlo. Si tienes una cuenta de Telegram, ¡te invito a unirte al grupo de chat Paving Base! 😊</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Contenido</value>
@@ -190,7 +190,7 @@
     <value>Mostrar</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
-    <value>Soportes</value>
+    <value>Apóyame</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
     <value>APK Installer es una aplicación de código abierto la cual no añade ningún anuncio para su beneficio. Si te gusta esta aplicación, no te olvides de calificarla en la tienda. Por supuesto, sería mejor si pudieses donar un poco. Gracias por tu apoyo.💕</value>
@@ -205,28 +205,28 @@
     <value>Encontrar actualización</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>Information about the frameworks of this app.</value>
+    <value>Información sobre el framework de esta aplicación</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
-    <value>Descripción del marco</value>
+    <value>Información del framework</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
     <value>Marco de referencia</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>Ir a la página de prueba.</value>
+    <value>Ir a la página de pruebas.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>Ir a la Página de prueba</value>
+    <value>Ir a la página de prueba</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
-    <value>Ir a Actualizar</value>
+    <value>Ir a actualizar</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
-    <value>Únete a Nuestro Chat</value>
+    <value>Únete a nuestro chat</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Última Revisión: </value>
+    <value>Última revisión: </value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
     <value>Aprender más</value>
@@ -235,22 +235,22 @@
     <value>Registros</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>Una versión modificada puede contener algunas cosas desagradables como anuncios, características rotas o incluso virus. Por favor, ve a la tienda de Microsoft para descargar la versión original. Por favor, mira nuestro repositorio de GitHub para más información.</value>
+    <value>Una versión modificada puede contener algunas cosas desagradables como anuncios, características rotas o incluso virus. Por favor, ve a la tienda de Microsoft para descargar la versión original. Para obtener más información, consulte nuestro repositorio de GitHub.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>¡Estás usando una versión modificada!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Desactívalo para conectarlo a otros dispositivos.</value>
+    <value>Desactívalo para conectarte a otros dispositivos.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>¿Solo para WSA?</value>
+    <value>Solo para WSA</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>Arquitectura OS</value>
+    <value>Arquitectura del sistema operativo</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
-    <value>Plataforma OS</value>
+    <value>Plataforma del sistema operativo</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Otros</value>
@@ -283,19 +283,19 @@
     <value>Notas de la versión</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
-    <value>Reiniciar ajustes de esta aplicación.</value>
+    <value>Restablecer la configuración de esta aplicación.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
     <value>Reiniciar aplicación</value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
-    <value>Reiniciar</value>
+    <value>Restablecer</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
     <value>Sí</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
-    <value>¿Estás seguro de que quieres reiniciar la aplicación?</value>
+    <value>¿Estás seguro de que quieres restablecer la aplicación?</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
     <value>Escanear y conectar automáticamente dispositivos emparejados.</value>
@@ -307,22 +307,22 @@
     <value>Seleccionar dispositivo</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
-    <value>Mostrar ayudantes cuando ningún dispositivo está conectado.</value>
+    <value>Mostrar ayudas cuando no hay ningún dispositivo conectado.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>¿Mostrar ayudas?</value>
+    <value>¿Quieres mostrar ayudas?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
     <value>Mostrar anuncios en la parte superior de los ajustes.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>¿Mostrar anuncios?</value>
+    <value>¿Quieres mostrar anuncios?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
-    <value>Puede que deje archivos temporales cuando una interrupción inesperada ocurra.</value>
+    <value>Es posible que deje archivos temporales después de una interrupción inesperada.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>¿Mostrar el proceso de instalación?</value>
+    <value>¿Mostrar el progreso de instalación?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Tema de la aplicación</value>
