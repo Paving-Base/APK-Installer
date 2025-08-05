@@ -139,12 +139,10 @@ españols
 </value>
   </data>
   <data name="MinSDK.Text" xml:space="preserve">
-    <value>SDK mín.
-7 meses </value>
+    <value>SDK mínimo</value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
-    <value>Abrir carpeta de paquete
-yes</value>
+    <value>Abrir carpeta del paquete</value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
     <value>Package Name
@@ -179,11 +177,10 @@ toda</value>
 todos</value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
-    <value>Tamaños de pantalla sokugfk kaki de,
-u o</value>
+    <value>Tamaños de pantalla</value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
-    <value>Conseguir él </value>
+    <value>SDK de destino</value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
     <value>Acerca de {0}</value>
