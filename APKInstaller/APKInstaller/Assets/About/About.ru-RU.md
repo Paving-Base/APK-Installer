@@ -7,9 +7,9 @@
 4. The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the authors views.
 
 ##### Перевод
-</0>Спасибо переводчикам <7<>Crowdin</7> за их помощь. Вы также можете помочь с переводом. И, пожалуйста, отнеситесь к переводу серьезно.vsf Все, что вы пишете, будет прочитано людьми во всем мире.x z
+</a>Спасибо переводчикам <0<>Crowdin</0> за их помощь. Вы также можете помочь с переводом. И, пожалуйста, отнеситесь к переводу серьезно.vsf Все, что вы пишете, будет прочитано людьми во всем мире.x z
 
-##### Авторыytdgd
+##### Участники
 - [wherewhere](https://github.com/wherewhere)
 - [Void48](https://github.com/Void48)
 - [EP012014](https://github.com/EP012014)
