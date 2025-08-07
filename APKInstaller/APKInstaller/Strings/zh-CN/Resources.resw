@@ -127,8 +127,7 @@
     <value>一个 Android 应用安装器。作者：@wherewhere 和 @Tangent-90。</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>应用程序安装程序（移动版）
-</value>
+    <value>应用程序安装程序（移动版）</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>程序出现了错误……</value>
