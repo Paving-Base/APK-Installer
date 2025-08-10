@@ -752,14 +752,19 @@ namespace APKInstaller.ViewModels
                     {
                         XamlRoot = _page?.XamlRoot,
                         Title = _loader.GetString("ADBMissing"),
-                        //PrimaryButtonText = _loader.GetString("Download"),
                         SecondaryButtonText = _loader.GetString("Select"),
                         CloseButtonText = _loader.GetString("Cancel"),
                         Content = new ScrollViewer
                         {
                             Content = StackPanel
                         },
-                        DefaultButton = ContentDialogButton.Secondary
+                        DefaultButton = ContentDialogButton.Secondary,
+                        IsDoubleTapEnabled = true
+                    };
+                    dialog.DoubleTapped += (s, e) =>
+                    {
+                        dialog.PrimaryButtonText = _loader.GetString("Download");
+                        dialog.DefaultButton = ContentDialogButton.Primary;
                     };
                     ProgressHelper.SetState(ProgressState.None, true);
                     ContentDialogResult result = await dialog.ShowAsync();
@@ -1018,7 +1023,6 @@ namespace APKInstaller.ViewModels
                             IsADBReady = false;
                             return;
                         }
-                        IsADBReady = true;
                     }
                     else
                     {
@@ -1026,6 +1030,7 @@ namespace APKInstaller.ViewModels
                         return;
                     }
                 }
+                IsADBReady = true;
                 WaitProgressText = _loader.GetString("Loading");
                 if (!await CheckDevice())
                 {
