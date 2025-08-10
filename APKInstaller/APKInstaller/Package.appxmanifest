@@ -11,7 +11,7 @@
   <Identity
     Name="18184wherewhere.AndroidAppInstaller"
     Publisher="CN=2C3A37C0-35FC-4839-B08C-751C1C1AFBF5"
-    Version="0.1.27.0" />
+    Version="0.1.28.0" />
 
   <Properties>
     <DisplayName>APK 安装程序</DisplayName>

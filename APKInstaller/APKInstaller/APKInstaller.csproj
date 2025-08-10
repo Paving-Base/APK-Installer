@@ -21,7 +21,7 @@
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <TrimMode>partial</TrimMode>
     <UseWinUI>True</UseWinUI>
-    <VersionPrefix>0.1.27</VersionPrefix>
+    <VersionPrefix>0.1.28</VersionPrefix>
   </PropertyGroup>
 
   <PropertyGroup>

@@ -33,6 +33,7 @@ body:
       label: App version
       description: Specify the version of APK Installer you're using.
       options:
+        - "0.1.28"
         - "0.1.27"
         - "0.1.26"
         - "0.1.25"
