@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <controls:SettingsGroup xmlns:controls="using:APKInstaller.Controls" xmlns:muxc="using:Microsoft.UI.Xaml.Controls" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Header="공지사항" Margin="0,-28,0,0">
-    <muxc:InfoBar Title="Here is the announcement (Don't ask me why this message doesn't have a close button)" IsClosable="False" IsOpen="True" Message="You can see all kinds of notifications here in the future. If you don't want to see them, you can turn them off in the settings below." Severity="Informational"/>
-    <muxc:InfoBar Title="More Translations" IsClosable="True" IsOpen="True" Message="Since the author only knows Chinese and English, all translations are left to the community. If you don't want to see an unfamiliar language, welcome to Crowdin to translate!" Severity="Informational">
+    <muxc:InfoBar Title="다음은 공지 사항입니다. (이 메시지에 닫기 버튼이 없는 이유는 묻지 마세요)" IsClosable="False" IsOpen="True" Message="앞으로는 여기에서 모든 종류의 알림을 볼 수 있습니다. 보고 싶지 않다면 아래 설정에서 알림을 끄면 됩니다." Severity="Informational"/>
+    <muxc:InfoBar Title="더 많은 번역" IsClosable="True" IsOpen="True" Message="작성자는 중국어와 영어만 할 줄 알기 때문에 모든 번역은 커뮤니티에 맡깁니다. 낯선 언어를 보고 싶지 않으시다면 Crowdin에서 번역에 참여해 보세요!" Severity="Informational">
         <muxc:InfoBar.ActionButton>
-            <HyperlinkButton HorizontalAlignment="Right" Content="Click Me" NavigateUri="https://crowdin.com/project/APKInstaller"/>
+            <HyperlinkButton HorizontalAlignment="Right" Content="여기를 클릭하세요" NavigateUri="https://crowdin.com/project/APKInstaller"/>
         </muxc:InfoBar.ActionButton>
     </muxc:InfoBar>
 </controls:SettingsGroup>

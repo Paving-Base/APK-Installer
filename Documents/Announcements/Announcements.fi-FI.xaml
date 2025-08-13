@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <controls:SettingsGroup xmlns:controls="using:APKInstaller.Controls" xmlns:muxc="using:Microsoft.UI.Xaml.Controls" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Header="Ilmoitukset" Margin="0,-28,0,0">
-    <muxc:InfoBar Title="Here is the announcement (Don't ask me why this message doesn't have a close button)" IsClosable="False" IsOpen="True" Message="Täällä voit nähdä kaikenlaisia ilmoituksia tulevaisuudessa. Jos et halua nähdä niitä, voit ottaa ne pois käytöstä alla olevissa asetuksissa." Severity="Informational"/>
+    <muxc:InfoBar Title="" IsClosable="False" IsOpen="True" Message="Täällä voit nähdä kaikenlaisia ilmoituksia tulevaisuudessa. Jos et halua nähdä niitä, voit ottaa ne pois käytöstä alla olevissa asetuksissa." Severity="Informational"/>
     <muxc:InfoBar Title="Käännökset" IsClosable="True" IsOpen="True" Message="Koska kirjailija tuntee vain kiinan ja englannin, kaikki käännökset jätetään yhteisölle. Jos et halua nähdä vierasta kieltä, tervetuloa kääntämään Crowdiniin!" Severity="Informational">
         <muxc:InfoBar.ActionButton>
             <HyperlinkButton HorizontalAlignment="Right" Content="Napsauta minua" NavigateUri="https://crowdin.com/project/APKInstaller"/>

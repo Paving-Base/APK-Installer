@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<controls:SettingsGroup xmlns:controls="using:APKInstaller.Controls" xmlns:muxc="using:Microsoft.UI.Xaml.Controls" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Header="Komunikaty" Margin="0,-28,0,0">
-    <muxc:InfoBar Title="Oto ogłoszenia (nie pytaj mnie, dlaczego ta wiadomość nie ma przycisku zamknięcia)" IsClosable="False" IsOpen="True" Message="W przyszłości możesz zobaczyć wszystkie rodzaje powiadomień. Jeśli nie chcesz ich oglądać, możesz je wyłączyć w ustawieniach poniżej." Severity="Informational"/>
+<controls:SettingsGroup xmlns:controls="using:APKInstaller.Controls" xmlns:muxc="using:Microsoft.UI.Xaml.Controls" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Header="Komunikaty&#10;chrom&#10;" Margin="0,-28,0,0">
+    <muxc:InfoBar Title="Oto ogłoszenia (nie pytaj mnie, dlaczego ta wiadomość nie ma przycisku zamknięcia)" IsClosable="False" IsOpen="True" Message="Wół an Lee all kids of notifications herb in the future. Io pół." Severity="Informational"/>
     <muxc:InfoBar Title="Więcej tłumaczeń" IsClosable="True" IsOpen="True" Message="Ponieważ autor zna tylko języki chiński i angielski, wszystkie tłumaczenia pozostawia społeczności. Jeśli chcesz widzieć rodzinny język, wejdź na Crowdin, aby przetłumaczyć!" Severity="Informational">
         <muxc:InfoBar.ActionButton>
-            <HyperlinkButton HorizontalAlignment="Right" Content="Click Me" NavigateUri="https://crowdin.com/project/APKInstaller"/>
+            <HyperlinkButton HorizontalAlignment="Right" Content="" NavigateUri="https://crowdin.com/project/APKInstaller"/>
         </muxc:InfoBar.ActionButton>
     </muxc:InfoBar>
 </controls:SettingsGroup>
