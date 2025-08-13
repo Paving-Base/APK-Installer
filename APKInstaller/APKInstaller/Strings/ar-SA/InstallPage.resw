@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB ، جسر تصحيح أخطاء أندرويد ، مطلوب لتثبيت APK للعمل. انقر فوق "تنزيل" لتحميله. من  خلال التنزيل، أنت تقبل شروط وأحكام Google لـ ADB. إذا كنت قد قمت  بتنزيل ADB بالفعل ، انقر فوق "إختار" لتحديد ذلك.</value>
+    <value>ADB, the Android Debug Bridge, is needed for APK Installer to work. Click "Download" to download it. By downloading, you accept the Google Terms and Conditions for ADB. If you have already downloaded ADB, click "Select" to select it.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB  موجودة</value>
+    <value>ADB Exists</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>ADB  مفقود</value>
@@ -136,7 +136,7 @@
     <value>القدرات :</value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>اسماء التطبيقات</value>
+    <value>اسم التطبيق</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>إلغاء الأمر</value>
@@ -148,14 +148,16 @@
     <value>كلا</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>لا يمكن الاتصال بالWSA</value>
+    <value>Cannot الاتصال  to WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
     <value>إما أن وكالة WSA لم تبدأ بشكل صحيح ،أو  أن هناك مشكلة مع  أل ADB.قد يكون من الصعب إيجاد حل لهذه المشكلة.من فضلك إعادة تشغيل المثبت. إذا كان لا يزال ل لا يعمل، حاول إعادة تشغيل الكومبيوتر.
 </value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>لا يمكن فتح حزمة التطبيق</value>
+    <value>لا يمكن فتح حزمة التطبيق
+
+</value>
   </data>
   <data name="Checking" xml:space="preserve">
     <value>جارٍ البحث...</value>
@@ -167,7 +169,7 @@
     <value>التحقق من المسار...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>قم بالنقر هنا لقراءتهم</value>
+    <value>الفعل من (النقر) هنا لقراءتهم</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>إقفال</value>
@@ -182,7 +184,7 @@
     <value>نسخ</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Creating install session...</value>
+    <value>إنشاء جَلسة تثبيت...</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>أجهزة</value>
@@ -207,25 +209,25 @@
     <value>تم العثور  على WSA</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>اذهب  للإعدادات</value>
+    <value>اذهب الى الاعداد</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
     <value>تم تثبيت نسخة حديثة</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>لقد قمت بالفعل بتثبيت إصدار جديد {0} من هذا التطبيق. هل أنت متأكد من إعادة تثبيت الإصدار {1}؟</value>
+    <value>You already have installed a new version {0} of this app. Are you sure to reinstall version {1}?</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
     <value>كيف يمكن ربط WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. الرجاء التأكد من أن تثبيت APK قد تم تحديثه إلى أحدث إصدار
-2. تأكد من أن لديك نظام أندرويد الفرعي مثبت وتشغل
-3. قم بتشغيل وضع المطور وتأكد من عرض عنوان IP بنجاح
-4. إعادة فتح تثبيت APK ومواصلة التثبيت الخاص بك
+    <value>1. Please make sure APK Installer has been updated to the latest version
+2. Make sure you have the Android Subsystem installed and running
+3. Turn on developer mode and make sure the IP address is displayed successfully
+4. Reopen APK Installer and continue your installation
 
-[معرفة المزيد]({0})</value>
+[Learn More]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
     <value>الصورة الرمزية</value>
@@ -251,7 +253,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
-    <value>تثبيت {0}؟</value>
+    <value>تنصيب {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
@@ -288,28 +290,28 @@
     <value>لا يمكن العثور على جهاز أندرويد</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>كيف يمكن ربط Wsa</value>
+    <value>How to connect device</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>إذا كنت ترغب في تثبيت التطبيق في نظام ويندوز الفرعي لنظام AndroidTM، تحتاج إلى تثبيته أولاً. إذا كنت ترغب في التثبيت في أجهزة أخرى، يرجى الذهاب إلى صفحة الإعدادات، وقم بإيقاف تشغيل "فقط لWSA"، وتوصيل جهازك.</value>
+    <value>If you want to install app into Windows Subsystem for Android™, you need to install it first. If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>#### استخدام USB
-1. الرجاء التأكد من تحديث APK Installer إلى [أحدث إصدار](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. تشغيل وضع المطور، فتح تصحيح أخطاء USB
-3. انتقل إلى صفحة إعدادات تثبيت APK ، حدد جهازك
-4. العودة ، استئناف التثبيت
-#### باستخدام Wifi
-1. الرجاء التأكد من أن مثبت APK قد تم تحديثه إلى [أحدث إصدار](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. تشغيل وضع المطور، فتح التصحيح عن بعد
-3. تذكر عنوان IP لجهازك
-4. انتقل إلى صفحة إعدادات تثبيت APK ، واتصل وحدد جهازك
-5. العودة، استئناف التثبيت
+    <value>#### Using USB
+1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Turn on Developer Mode, open USB Debug
+3. Go to the Settings Page of APK Installer, select your device
+4. Go back, resume installation
+#### Using Wifi
+1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Turn on Developer Mode, open Remote Debug
+3. Remember the IP address of your device
+4. Go to the Settings Page of APK Installer, connect and select your device
+5. Go back, resume installation
 
-[اعرف المزيد]({0})</value>
+[Learn More]({0})</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
-    <value>لا يمكن الاتصال بالإنترنت</value>
+    <value>Cannot connect Internet</value>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
     <value>الرجاء الاتصال بالإنترنت قبل فتح التطبيق.</value>
@@ -324,44 +326,45 @@
     <value>حزمة عبر الإنترنت</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
-    <value>اسم الباقة</value>
+    <value>Minecraft8
+</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
     <value>اسم الحزمة   </value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="PostInstallFormat" xml:space="preserve">
-    <value>Cleaning cache ({0}/{1})...</value>
+    <value>تنظيف  ذاكرة  التخزين  المؤقت ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
-    <value>إعادة التثبيت</value>
+    <value>Reinstall</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>% مُثبتٌ بالفعل</value>
+    <value>{0} is already installed</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
-    <value>نسخة أحدث من {0} مثبتة مسبقاً.</value>
+    <value>A newer version of {0} is already installed.</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>أعد المحاولة</value>
+    <value>Retry</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>حدّد</value>
+    <value>Select</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>مشاركة</value>
+    <value>Share</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
-    <value>جارٍ بدء الخادم...</value>
+    <value>Starting ADB Server...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>ابدأ WSA</value>
+    <value>Start WSA</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
-    <value>رابط المتجر</value>
+    <value>Store Links</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
     <value>Unzip ADB...</value>
@@ -381,18 +384,18 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="UploadingFormat" xml:space="preserve">
-    <value>Uploading {0} ({1}/{2})...</value>
+    <value>تحميل  {0} ({1}/{2})...</value>
     <comment>{0} - Progress. {1} - Finnished count. {2} - Total count.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
-    <value>إصدار التعليمات البرمجية</value>
+    <value>Version Code</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>الإصدار: {0}</value>
+    <value>Version: {0}</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>بانتظار انتهاء التحميل...</value>
+    <value>انتظار تنزيل...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
     <value>في انتظار الشبكة...</value>
@@ -409,7 +412,7 @@
     <value>مرحبا!</value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
-    <value>Writing install session ({0}/{1})...</value>
+    <value>كتابة جَلسة التثبيت ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">

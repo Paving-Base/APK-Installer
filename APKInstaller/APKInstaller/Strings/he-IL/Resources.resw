@@ -124,10 +124,10 @@
     <value>קובץ APK</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>מתקין אפליקציית אנדרואיד. נכתב על ידי @wherewhere ו-@Tangent-90.</value>
+    <value>מתקין אפליקציית אנדרואיד, נכתב ונבנה על ידי @wherewhere ו-@Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>מתקין APK</value>
+    <value>App Installer (Mobile)</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>היתה שגיאה בתוכנה...</value>
@@ -139,7 +139,7 @@
     <value>לא</value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
-    <value>Install this Package</value>
+    <value>התקן חבילה זו</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
     <value>פיצול קובץ APK</value>

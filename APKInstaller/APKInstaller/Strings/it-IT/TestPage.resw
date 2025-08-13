@@ -172,13 +172,13 @@
     <value>Mostra Pulsante Aggiornamento sulla Barra del Titolo</value>
   </data>
   <data name="ShowRefreshButton.Header" xml:space="preserve">
-    <value>Pulsante Aggiornamento</value>
+    <value>Tasto Aggiorna</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Testing</value>
+    <value>Test</value>
   </data>
   <data name="TitleBarSettings.Description" xml:space="preserve">
-    <value>Estende Il Contenuto Nella Barra Del Titolo</value>
+    <value>Extends Content Into TitleBar</value>
   </data>
   <data name="TitleBarSettings.Header" xml:space="preserve">
     <value>Barra Del Titolo</value>

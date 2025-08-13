@@ -118,18 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
-    <value>Esperando el dispositivo...</value>
+    <value>Esperando un dispositivo... has...</value>
   </data>
   <data name="Start.Text" xml:space="preserve">
-    <value>Comenzar bus simulador Indonesia</value>
+    <value>Start</value>
   </data>
   <data name="Stop.Text" xml:space="preserve">
-    <value>Parar AVILA</value>
+    <value>Detener</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Aplicaciones FREE FIRE</value>
+    <value>Applications</value>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
-    <value>Desinstalar</value>
+    <value>Instalar</value>
   </data>
 </root>

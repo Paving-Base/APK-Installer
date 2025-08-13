@@ -127,7 +127,7 @@
     <value>Android alkalmazás telepítő. Írta @wherewhere és @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>APK Telepítő</value>
+    <value/>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>Hiba történt a programmal…</value>

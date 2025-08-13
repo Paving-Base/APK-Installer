@@ -121,14 +121,13 @@
     <value>Tes Android</value>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
-    <value>
-</value>
+    <value>Manage the applications of connected devices</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
-    <value>Aplikasi</value>
+    <value>Applications</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
-    <value>Masuk atau Keluar dari Hamparan Ringkas</value>
+    <value>Enter or Exit Compact Overlay</value>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
     <value>Hamparan Ringkas</value>

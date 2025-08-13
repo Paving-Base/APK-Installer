@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
-    <value>ממתין לחיבור אינטרנטי...</value>
+    <value>ממתין למכשיר...</value>
   </data>
   <data name="Start.Text" xml:space="preserve">
     <value>התחל</value>
@@ -127,7 +127,7 @@
     <value>עצור</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>אפליקציות</value>
+    <value>יישומים</value>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
     <value>הסר התקנה</value>

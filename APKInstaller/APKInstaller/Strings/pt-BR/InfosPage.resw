@@ -118,60 +118,61 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppName.Text" xml:space="preserve">
-    <value>Nome Do App</value>
+    <value>Nome do aplicativo</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
-    <value>Informações básicas</value>
+    <value>Informaçõeapks básicas</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
-    <value>Dependências - {0} no total</value>
+    <value>Dependências - {0} no total0</value>
     <comment>{0} - Dependencies Count.</comment>
   </data>
   <data name="FeaturesHeaderFormat" xml:space="preserve">
-    <value>Recursos - {0} no total</value>
+    <value>Recursos-{0} no total</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
-    <value>Idiomas</value>
+    <value>Idioma português</value>
   </data>
   <data name="MinSDK.Text" xml:space="preserve">
-    <value>Min SDK</value>
+    <value>Min SDK mim</value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
-    <value>Abrir a Pasta da Base de Dados</value>
+    <value>Abrir a Pasta da Base de Dados sim</value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
-    <value>Nome do Pacote</value>
+    <value>Nome do Pacote sim</value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
-    <value>Tamanho do pacote</value>
+    <value>Tamanho do pacote1</value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
-    <value>Contagem de Permissões</value>
+    <value>Contagem de Permissões1
+</value>
   </data>
   <data name="PermissionsHeaderFormat" xml:space="preserve">
-    <value>Permissões - {0} no total</value>
+    <value>Permissões — {0} no total1</value>
     <comment>{0} - Permissions Count.</comment>
   </data>
   <data name="SharePackage.Content" xml:space="preserve">
-    <value>Compartilhar Pacote</value>
+    <value>Compartilhar Pacote1</value>
   </data>
   <data name="SupportedArchitectures.Text" xml:space="preserve">
-    <value>Arquiteturas de suporte</value>
+    <value>Arquiteturas de suporte1</value>
   </data>
   <data name="SupportResolutions.Text" xml:space="preserve">
-    <value>Super resolução</value>
+    <value>Super resolução1</value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
-    <value>Tamanhos de Tela de Suporte</value>
+    <value>Tamanhos de Tela de Suporte1</value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
-    <value>Alvo SDK</value>
+    <value>Alvo SDK1</value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
-    <value>Sobre {0}</value>
+    <value>Sobre {0} 1</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Version.Text" xml:space="preserve">
-    <value>Versão</value>
+    <value>Version</value>
   </data>
 </root>

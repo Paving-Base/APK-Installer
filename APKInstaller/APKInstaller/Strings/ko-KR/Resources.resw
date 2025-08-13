@@ -118,31 +118,31 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="APKDescription" xml:space="preserve">
-    <value>Android Application Package</value>
+    <value>Android 애플리케이션 패키지</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>앱 설치 파일</value>
+    <value>APK 파일</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>APK Installer. 제작자: @wherewhere 와 @Tangent-90</value>
+    <value>안드로이드 앱 설치 관리자. @wherewhere 과 @Tangent-90에 의해 제작되었습니다.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>APK 설치 관리자</value>
+    <value>App Installer (Mobile)</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
-    <value>There was an error with the file upload.</value>
+    <value>프로그램에 오류가 발생했습니다...</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>There are some problems with the network...</value>
+    <value>네트워크에 몇 가지 문제가 있습니다...</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>비활성화</value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
-    <value>설치 패키지</value>
+    <value>이 패키지 설치</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>파일 분할하기</value>
+    <value>APK 파일 분할</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>예</value>

@@ -118,54 +118,69 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppName.Text" xml:space="preserve">
-    <value>Nombre de la aplicación</value>
+    <value>Nombre de la aplicacion brawl stars</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
-    <value>Información básica</value>
+    <value>Información básica
+Brasil Sars variado </value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
-    <value>Dependencias - {0} en total</value>
+    <value>Dependencias - {0} en total
+2 años</value>
     <comment>{0} - Dependencies Count.</comment>
   </data>
   <data name="FeaturesHeaderFormat" xml:space="preserve">
-    <value>Características - {0} en total</value>
+    <value>Características - {0} en total
+agile</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
-    <value>Idiomas</value>
+    <value>Idiomas
+españols
+</value>
   </data>
   <data name="MinSDK.Text" xml:space="preserve">
-    <value>SDK mín</value>
+    <value>SDK mínimo</value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
-    <value>Abrir carpeta de paquete</value>
+    <value>Abrir carpeta del paquete</value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
-    <value>Package Name</value>
+    <value>Package Name
+matador
+</value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
-    <value>Tamaño del paquete</value>
+    <value>Tamaño del paquete
+1 megas</value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
-    <value>Número de permisos</value>
+    <value>Número de permisos
+nadie
+</value>
   </data>
   <data name="PermissionsHeaderFormat" xml:space="preserve">
-    <value>Permisos - {0} en total</value>
+    <value>Permisos - {0} en total
+ninguno</value>
     <comment>{0} - Permissions Count.</comment>
   </data>
   <data name="SharePackage.Content" xml:space="preserve">
-    <value>Compartir paquete</value>
+    <value>Compartir paquete
+nadie
+</value>
   </data>
   <data name="SupportedArchitectures.Text" xml:space="preserve">
-    <value>Arquitecturas soportadas</value>
+    <value>Arquitecturas soportadas
+toda</value>
   </data>
   <data name="SupportResolutions.Text" xml:space="preserve">
-    <value>Resoluciones soportadas</value>
+    <value>Resoluciones soportadas
+todos</value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
-    <value>Tamaños de pantalla soportados</value>
+    <value>Tamaños de pantalla</value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
-    <value>SDK objetivo</value>
+    <value>SDK de destino</value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
     <value>Acerca de {0}</value>

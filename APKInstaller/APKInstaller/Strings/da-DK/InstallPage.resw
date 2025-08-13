@@ -121,19 +121,19 @@
     <value>ADB, Android Debug Bridge, er nødvendig for APK Installer til at arbejde. Klik på "Download" for at hente det. Ved at downloade accepterer du Google Vilkår og betingelser for ADB. Hvis du allerede har downloadet ADB, skal du klikke på "Vælg" for at vælge det.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Exists</value>
+    <value/>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>ADB is missing</value>
+    <value/>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>In Analysis...</value>
+    <value>...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
     <value>APK-fil</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Capabilities: </value>
+    <value/>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
     <value>App Navn</value>
@@ -148,19 +148,19 @@
     <value>Ingen</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Cannot Connect to WSA</value>
+    <value>Kan ikke oprette forbindelse til WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Either WSA didn't start properly, or there is a problem with ADB. This problem can be very difficult to resolve. Please restart the installer. If it still doesn't work, try restarting the computer.</value>
+    <value/>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>Cannot open app package</value>
+    <value/>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>Checking...</value>
+    <value>...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Checking ADB...</value>
+    <value>Tjekker ADB...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
     <value>Checking Path...</value>
@@ -313,7 +313,7 @@
     <value>Please connect to the internet before opening the app.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>For proper functioning of the app, try to launch an Android app package.</value>
+    <value>This program is open source software, so please make sure the program is.</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
@@ -322,7 +322,7 @@
     <value>Online Package</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
-    <value>Package Name</value>
+    <value>Minecraft5</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
     <value>Package Name: {0}</value>

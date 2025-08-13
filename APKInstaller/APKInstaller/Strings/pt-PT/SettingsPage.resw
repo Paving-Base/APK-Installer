@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
-    <value>Acerca de</value>
+    <value>Sobre o programa</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
     <value>Localização do ADB</value>
@@ -130,13 +130,13 @@
     <value>Transferir automaticamente quando um pacote for proveniente de uma URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Auto Download Online Packages?</value>
+    <value>Descarregar Pacotes Online Automaticamente?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>samuel</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>Backdrop</value>
+    <value>Cenário</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
     <value>Alterar</value>
@@ -154,31 +154,31 @@
     <value>Limpar cache</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
+    <value>O Servidor ADB precisa ser reiniciado na próxima instalação se você terminá-lo.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Terminate ADB when Exit Installer?</value>
+    <value>Terminar ADB quando sair do instalador?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Exit Installer after installation is complete.</value>
+    <value>Sair do instalador após a instalação ser concluída.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Exit Installer when APP is Ready?</value>
+    <value>Sair do instalador quando a aplicação estiver pronta?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Definições</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value>Ligar o dispositivo através da rede.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
-    <value>Ligar dispositivo</value>
+    <value>asd fgvh w6atrbfhc2wstr</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
-    <value>Contact Me</value>
+    <value>Entre em contacto comigo</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
+    <value>Siga-me nas redes sociais para os últimos desenvolvimentos. Se você encontrar algum erro, por favor reporte-os para mim por mensagem privada. Eu vou tentar o meu melhor para resolvê-los. Se tiver uma conta do Telegram, sinta-se à vontade para conversar em Paving Base Group 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Conteúdo</value>
@@ -187,13 +187,13 @@
     <value>Dispositivo</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
-    <value>Display</value>
+    <value>Exibição</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
     <value>Apoie-nos</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
+    <value>O instalador de APK é um aplicativo de código aberto que não adiciona anúncios para lucro. Se gosta deste aplicativo, não se esqueça de classificá-lo na loja. Claro, seria ótimo se pudesse doar um pouco. Obrigado pelo seu apoio.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
@@ -205,10 +205,10 @@
     <value>Procurar atualização</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>Information about the frameworks of this app.</value>
+    <value>Informações sobre os frameworks desta aplicação.</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
-    <value>Framework Information</value>
+    <value>Informação do Framework</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
     <value>Framework</value>
@@ -223,7 +223,7 @@
     <value>Ir para Atualizar</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
-    <value>Join Our Chat</value>
+    <value>Junte-se ao nosso Chat</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
     <value>Última verificação: </value>
@@ -235,37 +235,37 @@
     <value>Registos</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
+    <value>Uma versão modificada pode trazer coisas desagradáveis. Como anúncios, recursos partidos ou até mesmo vírus. Acesse a Microsoft Store para descarregar a versão original. Consulte o nosso repositório GitHub para obter mais informações.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>You are using a modified version!</value>
+    <value>Você está a usar uma versão modificada!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Disable it to connect to other devices.</value>
+    <value>Desative para ligar a outro dispositivo.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>For WSA only?</value>
+    <value>Apenas para WSA?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>OS Architecture</value>
+    <value>Arquitetura do sistema operativo</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
-    <value>OS Platform</value>
+    <value>Plataforma do sistema operativo</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Outras</value>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
-    <value>Pair device through network.</value>
+    <value>Emparelhar dispositivo através da rede.</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>Pair Device</value>
+    <value>Emparelhar dispositivo</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
-    <value>Pair and connect devices.</value>
+    <value>Emparelhar e conectar dispositivos.</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
-    <value>Pair &amp; Connect</value>
+    <value>Emparelhar e Conectar</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Escuro</value>
@@ -298,10 +298,10 @@
     <value>Tem certeza de que deseja repor todos os dados da aplicação?</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value>Scan and auto connect paired devices.</value>
+    <value>Procurar e conectar automaticamente dispositivos emparelhados.</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Scan Paired Devices?</value>
+    <value>Procurar dispositivos emparelhados?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Selecionar dispositivo</value>
@@ -310,19 +310,19 @@
     <value>Mostrar auxiliares quando nenhum dispositivo estiver ligado.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Whether to Show Helps?</value>
+    <value>Mostrar Ajudas?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Display announcements at the top of Settings.</value>
+    <value>Exibir avisos no topo das configurações.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Whether to Show Announcements?</value>
+    <value>Exibir Avisos?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
-    <value>It may leave temp files when an unexpected interruption occurs.</value>
+    <value>Pode deixar arquivos temporários quando uma interrupção inesperada ocorrer.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Whether to Show Installation Progress?</value>
+    <value>Mostrar o Progresso de Instalação?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Tema da aplicação</value>

@@ -199,7 +199,7 @@
     <value>EULA</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
-    <value>Commentaire</value>
+    <value>Vos commentaires</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
     <value>Trouver une mise à jour</value>
@@ -334,15 +334,17 @@
     <value>Paramètres</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>Traduire</value>
+    <value>Translate</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
     <value>Version</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>À jour</value>
+    <value>Up To Date
+800</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Paramètres de couleur Windows</value>
+    <value>Bleu et blanc 
+WindowsColor</value>
   </data>
 </root>

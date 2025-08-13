@@ -127,7 +127,7 @@
     <value>一個 Android 應用程式安裝程式。作者為 @wherewhere 和 @Tangent-90。</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>APK 安裝程式</value>
+    <value/>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>程式發生錯誤…</value>

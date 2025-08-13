@@ -118,22 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, die Android Debug Bridge, wird für den APK Installer benötigt. Klicken Sie auf "Download", um sie herunterzuladen. Mit dem Download akzeptieren Sie die AGB von Google für ADB.</value>
+    <value>ADB, die Android Debug Bridge, wird benötigt, damit APK Installer funktioniert. Klicken Sie auf "Download", um sie herunterzuladen. Mit dem Download akzeptieren Sie die AGB von Google. Wenn Sie ADB bereits heruntergeladen haben, klicken Sie auf "Auswählen", um diese auszuwählen.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB ist vorhanden</value>
+    <value>ADB existiert</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>ADB fehlt</value>
+    <value>ADB fehlt,</value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>Analysiert...</value>
+    <value>Wird analysiert...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>APK Datei</value>
+    <value>APK-Datei</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Berechtigungen: </value>
+    <value>Kapazitäten: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
     <value>App Name</value>
@@ -154,13 +154,13 @@
     <value>Entweder wurde WSA nicht ordnungsgemäß gestartet, oder es liegt ein Problem mit der ADB vor. Dieses Problem kann sehr schwer zu beheben sein. Bitte starten Sie den Installer neu. Wenn es dann immer noch nicht funktioniert, versuchen Sie, den Computer neu zu starten.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>App Paket kann nicht geöffnet werden</value>
+    <value>Kann App Paket nicht öffnen</value>
   </data>
   <data name="Checking" xml:space="preserve">
     <value>Überprüfen...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>ADB wird geprüft...</value>
+    <value>Überprüfe Pfad...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
     <value>Überprüfe Pfad...</value>
@@ -181,7 +181,7 @@
     <value>Kopieren</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Creating install session...</value>
+    <value>Installationssession erstellen...</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Geräte</value>
@@ -330,7 +330,7 @@
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="PostInstallFormat" xml:space="preserve">
-    <value>Cleaning cache ({0}/{1})...</value>
+    <value>Säubere Cache ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
@@ -380,21 +380,36 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="UploadingFormat" xml:space="preserve">
-    <value>Uploading {0} ({1}/{2})...</value>
+    <value>{0} Hochladen ({1}/{2})...</value>
     <comment>{0} - Progress. {1} - Finnished count. {2} - Total count.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
     <value>Versionsnummer</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>  Ausführung {0}</value>
+    <value>  Ausführung {0} Apk File (. apk)</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>Warten auf Download ...</value>
+    <value>Warten au"C:\Users\hare1\Downloads\Phone Link\XiaomiEUModule_2025.04.18. apk"f Download ...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>Warte auf Netzwerk...</value>
+    <value>Warte auf Netzwerk... SSID:	HARIS 1
+Protocol:	Wi-Fi 4 (802.11n)
+Security type:	WPA2-Personal
+Manufacturer:	Intel Corporation
+Description:	Intel(R) Centrino(R) Wireless-N 1030
+Driver version:	15.11.0.9
+Network band (channel):	2.4 GHz (1)
+Aggregated link speed (Receive/Transmit):	87/87 (Mbps)
+Link-local IPv6 address:	fe80:: dac9: 44c4: 49f4: 2b8d%12
+IPv6 DNS servers:	fe80:: 1%12 (Unencrypted)
+fe80:: 1%12 (Unencrypted)
+IPv4 address:	192.168.1.7
+IPv4 default gateway:	192.168.1.1
+IPv4 DNS servers:	192.168.1.1 (Unencrypted)
+Physical address (MAC):	BC-77-37-23-FB-09
+...</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
     <value>Warte auf die Installation von {0}</value>
@@ -408,7 +423,7 @@ Dies kann lange dauern. Setze dich zurück und entspannen.</value>
     <value>Willkommen!</value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
-    <value>Writing install session ({0}/{1})...</value>
+    <value>Schreibe Installationssitzung ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">

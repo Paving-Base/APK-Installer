@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
-    <value>Ожидание устройства...</value>
+    <value>Ожидание устройства...sfbsf</value>
   </data>
   <data name="Start.Text" xml:space="preserve">
     <value>Запустить</value>
@@ -127,9 +127,9 @@
     <value>Остановить</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Приложения</value>
+    <value>Применения</value>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
-    <value>Удалить</value>
+    <value>Uninstall</value>
   </data>
 </root>

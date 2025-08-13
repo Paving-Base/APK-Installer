@@ -118,19 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, the Android Debug Bridge, is needed for APK Installer to work. Click "Download" to download it. By downloading, you accept the Google Terms and Conditions for ADB. If you have already downloaded ADB, click "Select" to select it.</value>
+    <value>ADB, Android Debug Bridge, er nødvendig for at APK skal fungere. Klikk "Download" for å laste den ned. Ved å laste ned, godtar du Google Vilkår og Betingelser for ADB. Hvis du allerede har lastet ned ADB, klikk på "Select" for å velge den.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>ADB Exists</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>ADB is missing</value>
+    <value/>
   </data>
   <data name="Analysis" xml:space="preserve">
     <value>In Analysis...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>APK File</value>
+    <value>APK fil</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>Capabilities: </value>
@@ -181,7 +181,7 @@
     <value>Copy</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Creating install session...</value>
+    <value/>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Devices</value>
@@ -333,7 +333,7 @@
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
-    <value>Reinstall</value>
+    <value>Ominstaller</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
     <value>{0} is already installed</value>
@@ -393,7 +393,7 @@
     <value>Waiting for download...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>Waiting for Device...</value>
+    <value/>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
     <value>Waiting for install {0}</value>

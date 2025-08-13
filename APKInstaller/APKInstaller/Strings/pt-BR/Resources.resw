@@ -118,33 +118,33 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="APKDescription" xml:space="preserve">
-    <value>Pacote de Aplicação Android</value>
+    <value>Pacote de aplicativos Android</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>Arquivo APK</value>
+    <value>Arquivo AP</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>Um instalador de aplicativos Android. Desenvolvido por @wherewhere e @Tangent-90.</value>
+    <value>Um instalador de aplicativos Android. Escrito por @where e @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>Instalador de APK</value>
+    <value/>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
-    <value>Ocorreu um erro com o programa…</value>
+    <value>Houve um erro com o programa…</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>Houve alguns problemas com a rede...</value>
+    <value>Há alguns problemas na rede...</value>
   </data>
   <data name="No" xml:space="preserve">
-    <value>Não</value>
+    <value>Nenhum</value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
-    <value>Instalar este pacote</value>
+    <value>Install this Package"C:\Users\luisa\Downloads\TVExpress BR_3.1.0_20221012_stb. apk""C:\Users\luisa\Downloads\TVExpress BR_3.1.0_20221012_stb. apk"</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>Dividir arquivo APK</value>
+    <value>Divisão de Arquivo APK</value>
   </data>
   <data name="Yes" xml:space="preserve">
-    <value>Sim</value>
+    <value>Sim!</value>
   </data>
 </root>

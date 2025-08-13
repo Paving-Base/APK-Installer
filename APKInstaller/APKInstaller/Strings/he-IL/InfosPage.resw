@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppName.Text" xml:space="preserve">
-    <value>שם האפליקציה</value>
+    <value>App Name</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
     <value>Basic Information</value>
@@ -140,10 +140,10 @@
     <value>Open Package Folder</value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
-    <value>שם החבילה</value>
+    <value>Package Name</value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
-    <value>Package Size</value>
+    <value>שם החבילה</value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
     <value>Permissions Count</value>
@@ -165,10 +165,10 @@
     <value>Support Screen Sizes</value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
-    <value>Target SDK</value>
+    <value>היעד SDK</value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
-    <value>About {0}</value>
+    <value>על {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Version.Text" xml:space="preserve">

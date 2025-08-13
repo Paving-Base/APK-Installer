@@ -124,6 +124,6 @@
     <value>Retour</value>
   </data>
   <data name="RefreshButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Rafraîchir</value>
+    <value>Actualiser</value>
   </data>
 </root>

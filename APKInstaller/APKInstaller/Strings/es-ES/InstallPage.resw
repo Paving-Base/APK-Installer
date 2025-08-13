@@ -118,19 +118,21 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, el Puente de Depuración de Android, es necesario para que el Instalador de APK funcione. Clica "Descargar" para descargarlo. Al descargar, aceptas los Términos y Condiciones de Google para ADB. Si ya has descargado ADB, clica "Seleccionar" para seleccionarlo.</value>
+    <value>El "Instalador de APK (Móvil)" necesita ADB (Android Debug Bridge) para funcionar. Haga clic en "Descargar" para descargarlo. Al descargar, usted acepta los términos y condiciones establecidos por Google para el ADB. Si ya ha descargado el ADB, haga clic en "Seleccionar" para elegirlo.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Existe</value>
+    <value>El ADB ya existe.</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>Falta ADB</value>
+    <value>No se encuentra el ADB</value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>En análisis...</value>
+    <value>Analizando...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>Archivo APK</value>
+    <value>https://apks.55c8fc18511f43b4a8fa7b4011e06de5.r2.cloudflarestorage.com/com.dts.freefireth/1.101.1/2019116679.da0832ee9b186ff94fdc570a53b126e5bb73f32f.zip?response-content-disposition=attachment%3B%20filename%3D%22Garena%20Free%20Fire_1.101.1_apkcombo.com.xapk%22&amp;response-content-type=application%2Fxapk-package-archive&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20231022T002912Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=7200&amp;X-Amz-Credential=3cb727b4cd4780c410b780ac7caa4da3%2F20231022%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Signature=9cb19ad579e151b97444893b948a66e8d4fcee593e7fc425a4504bae7d985cdd
+
+español</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>Capacidades: </value>
@@ -142,37 +144,37 @@
     <value>Cancelar</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
-    <value>Sí</value>
+    <value>si</value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
     <value>No</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>No se puede conectar a WSA</value>
+    <value>No se puede conectar a %1</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Puede que el WSA no empezase correctamente o hay un problema con el ADB. Este problema puede ser muy difícil de resolver. Por favor, reinicia el instalador. Si sigue sin funcionar, prueba a reiniciar el equipo.</value>
+    <value>Es posible que WSA no se haya iniciado correctamente o que haya un problema con ADB. Esta situación puede ser muy difícil de resolver. Reinicie el programa de instalación. Si sigue sin funcionar, intente reiniciar el ordenador.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>No se puede abrir el paquete de aplicación</value>
+    <value>No se puede abrir el paquete de la aplicación.</value>
   </data>
   <data name="Checking" xml:space="preserve">
     <value>Comprobando...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Comprobando ADB...</value>
+    <value>Comprobando BAD...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Comprobando la ruta...</value>
+    <value>Verificando la ruta...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Haz clic aquí para leerlos</value>
+    <value>Haga clic para leer</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Cerrar</value>
+    <value>Cierre</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>¿Estás seguro de cancelar la instalación?</value>
+    <value>¿Está seguro de que desea cancelar la instalación?</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
     <value>Conectando dispositivos emparejados...</value>
@@ -181,19 +183,19 @@
     <value>Copiar</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Creating install session...</value>
+    <value>Se está creando la sesión de instalación...</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>Dispositivos</value>
+    <value>Dispositivos,</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Descargar</value>
+    <value>Descargue</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
     <value>Descarga fallida</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>Por favor, comprueba tu conexión a la red o el URL e intenta otra vez.</value>
+    <value>Por favor, compruebe su conexión a Internet o el enlace URL y vuelva a intentarlo.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
     <value>Buscando WSA...</value>
@@ -211,11 +213,11 @@
     <value>Una versión más nueva ya está instalada</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>Ya has instalado una versión {0} más nueva de esta aplicación. ¿Estás seguro de que quieres reinstalar la versión {1}?</value>
+    <value>Ya ha instalado una nueva versión {0} de esta aplicación. ¿Está seguro que desea reinstalar la versión {1}?</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>Cómo conectar WSA</value>
+    <value>Cómo conectar el WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
     <value>1. Por favor, asegúrate de que APK Installer ha sido actualizado a la última versión
@@ -226,16 +228,16 @@
 [Saber más]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
-    <value>Icono</value>
+    <value>Icon</value>
   </data>
   <data name="IKnow" xml:space="preserve">
-    <value>Lo sé</value>
+    <value>Entendido</value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
-    <value>Aplicación incompatible</value>
+    <value>kb,Entendido</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
-    <value>El mínimo requerido para esta aplicación es {0}. Tu dispositivo soporta {1}. Por favor actualiza tu dispositivo o elige ordenar paquete.</value>
+    <value>Esta aplicación requiere como mínimo {0}, y su dispositivo es compatible con {1}. Actualice su dispositivo o seleccione un paquete de instalación de una versión anterior.</value>
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
@@ -256,16 +258,16 @@
     <value>Instalando...</value>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
-    <value>Causa: </value>
+    <value>Razón: </value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
     <value>Instalar WSA</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
-    <value>El paquete está corrupto o es inválido.</value>
+    <value>El paquete está dañado o no es válido.</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
-    <value>La URL es incompleta o inválida.</value>
+    <value>La URL está incompleta o no es válida.</value>
   </data>
   <data name="Launch" xml:space="preserve">
     <value>Ejecutar</value>
@@ -274,7 +276,7 @@
     <value>Ejecutando WSA...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>Ejecuta cuando esté listo</value>
+    <value>Ejecutar cuando esté listo</value>
   </data>
   <data name="Loading" xml:space="preserve">
     <value>Cargando...</value>
@@ -289,22 +291,22 @@
     <value>Cómo conectar dispositivos</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>Si desea instalar una aplicación en el Subsistema de Windows para AndroidTM, necesita instalarla primero. Si desea instalar en otros dispositivos, por favor vaya a la Página de configuración, desactive "Sólo está para WSA" y conecte su dispositivo.</value>
+    <value>Si desea instalar la aplicación en el subsistema de Android™ para Windows, primero debe instalarlo. Si desea instalarla en otro dispositivo, vaya a la página de configuración, desactive la opción "Solo para WSA" y conecte su dispositivo.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>#### Usando USB
-1. Por favor, asegúrate de que APK Installer ha sido actualizado a [la última versión](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Activa el modo de desarrollador, abre la depuración USB
-3. Ve a la página de ajustes de APK Installer, selecciona tu dispositivo
-4. Vuelve, resume la instalación
-#### Usando Wifi
-1. Por favor, asegúrate de que APK Installer ha sido actualizado a [la última versión](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Activa el modo de desarrollador, abre la depuración remota
-3. Recuerda la dirección IP de tu dispositivo
-4. Ve a la página de ajustes de APK Installer, conecta y selecciona tu dispositivo
-5. Vuelve, resume la instalación 
+    <value>#### Mediante USB
+1. Asegúrese de que Instalador APK (Móvil) esté actualizado a la [última versión](https://www.microsoft.com/store/productId/9P2JFQ43FPPG).
+2. Active el modo desarrollador y habilite la depuración USB.
+3. Vaya a la página de configuración de Instalador APK (Móvil) y seleccione su dispositivo.
+4. Regrese y continúe con la instalación.
+#### Mediante wifi
+1. Asegúrese de que Instalador APK (Móvil) esté actualizado a la [última versión](https://www.microsoft.com/store/productId/9P2JFQ43FPPG).
+2. Active el modo desarrollador y habilite la depuración inalámbrica.
+3. Anote la dirección IP de su dispositivo.
+4. Vaya a la página de configuración de Instalador APK (Móvil), conéctese y seleccione su dispositivo.
+5. Vuelva atrás y continúe con la instalación.
 
-[Saber más]({0})1</value>
+[Más información]({0})</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
     <value>No se pudo conectar a Internet</value>
@@ -313,7 +315,7 @@
     <value>Por favor, conéctate a Internet antes de continuar.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>Para el correcto funcionamiento de la aplicación, intente lanzar un paquete de aplicaciones Android.</value>
+    <value>Para el correcto funcionamiento de la aplicación, Abra la aplicación con un paquete de instalación de Android (APK).</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>Ok</value>
@@ -322,47 +324,47 @@
     <value>Paquetes en línea</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
-    <value>Package Name</value>
+    <value>Nombre del paquete</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>Nombre del paquete</value>
+    <value>Nombre del paquete: {0}</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="PostInstallFormat" xml:space="preserve">
-    <value>Cleaning cache ({0}/{1})...</value>
+    <value>Limpiando caché ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
-    <value>Reinstalar %@</value>
+    <value>Reinstalar</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>Plugin ya está instalado</value>
+    <value>{0} ya está instalado</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
-    <value>Una nueva versión de {0} está disponible.</value>
+    <value>Una versión más nueva de {0} ya está instalada.</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>Volver a intentarlo</value>
+    <value>Reintentar</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>Elegir</value>
+    <value>Seleccionar</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>Compartido</value>
+    <value>Compartir</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
-    <value>Iniciando el servidor web...</value>
+    <value>Iniciando el servicio ADB...</value>
   </data>
   <data name="StartWSA" xml:space="preserve">
-    <value>Inicia WSA</value>
+    <value>Iniciar WSA</value>
   </data>
   <data name="StoreLinkFlyoutItem.Text" xml:space="preserve">
-    <value>Tienda Enlaces</value>
+    <value>Enlace a la tienda</value>
   </data>
   <data name="UnzipADB" xml:space="preserve">
-    <value>Descomprimiendo ADB...</value>
+    <value>Descomprimir ADB...</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
     <value>Descompresión completada</value>
@@ -372,25 +374,25 @@
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>Actualización</value>
+    <value>Actualizar</value>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
-    <value>¿Actualizar {0}?</value>
+    <value>Actualizar {0}?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="UploadingFormat" xml:space="preserve">
-    <value>Uploading {0} ({1}/{2})...</value>
+    <value>Subiendo {0} ({1}/{2})...</value>
     <comment>{0} - Progress. {1} - Finnished count. {2} - Total count.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
     <value>Código de versión</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>Versión: {0}</value>
+    <value>Version: {0}</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>Esperando la descarga...</value>
+    <value>Esperando descarga...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
     <value>Esperando un dispositivo...</value>
@@ -400,14 +402,14 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
-    <value>Esperando a que WSA empiece...
-Puede que esto tome un largo tiempo. Siéntate y relájate.</value>
+    <value>Esperando que se inicie WSA...
+Esto suele tardar bastante tiempo. Por favor, siéntese y relájese.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>¡Bienvenido!</value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
-    <value>Writing install session ({0}/{1})...</value>
+    <value>Escribiendo sesión de instalación ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">

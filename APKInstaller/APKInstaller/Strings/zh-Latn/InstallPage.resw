@@ -160,13 +160,13 @@
     <value>Jiǎnchá zhōng……</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Jiǎnchá ADB ……</value>
+    <value>检查路径……</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Jiǎnchá lùjìng……</value>
+    <value>检查路径……</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Diǎnjī yuèdú</value>
+    <value>单击此处以读取它</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Guānbì</value>
@@ -181,7 +181,7 @@
     <value>Fùzhì</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>正在创建安装会话……</value>
+    <value/>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Shèbèi</value>
@@ -277,7 +277,7 @@
     <value>Dāng zhǔnbèijiùxù shí qǐdòng</value>
   </data>
   <data name="Loading" xml:space="preserve">
-    <value>Jiāzài zhōng……</value>
+    <value>Jiāzài zhōng</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
     <value>Xiángxìxìnxī</value>
@@ -329,11 +329,11 @@
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="PostInstallFormat" xml:space="preserve">
-    <value>正在清理缓存 ({0}/{1})……</value>
+    <value>5ytere</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
-    <value>Chóngxīnānzhuāng</value>
+    <value>Reinstall</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
     <value>{0} yǐ ānzhuāng</value>
@@ -379,7 +379,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="UploadingFormat" xml:space="preserve">
-    <value>正在上传 {0} ({1}/{2})……</value>
+    <value>正在上传 {0} ({1}/{2})...</value>
     <comment>{0} - Progress. {1} - Finnished count. {2} - Total count.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
@@ -407,7 +407,7 @@ zhè tōngcháng xūyào hěn chángshíjiān. Qǐng zuò hé fàngkuān. </valu
     <value>Huānyíng! </value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
-    <value>正在写入安装会话 ({0}/{1})……</value>
+    <value/>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">
