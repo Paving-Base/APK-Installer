@@ -343,6 +343,6 @@
     <value>Actueel</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Windows Kleurinstellingen</value>
+    <value>Windows Color Settings</value>
   </data>
 </root>
