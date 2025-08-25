@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>APK インストーラーが機能するには、ADB（Android Debug Bridge） が必要です。 「ダウンロード」をクリックしてダウンロードしてください。 ダウンロードすると、 Google の ADB利用規約に同意したことになります。 既にADBをダウンロードしている場合は、「選択」をクリックして選択します。</value>
+    <value>APK インストーラーが機能するには、ADB（Android Debug Bridge） が必要です。 「ダウンロード」をクリックしてダウンロードしてください。 ダウンロードすると、 Google の ADB利用規約に同意したことになります。 既にADBをダウンロードしている場合は、「選択」をクリックしてADBのファイルの場所を選択します。</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>ADBが見つかりました</value>
@@ -151,7 +151,7 @@
     <value>WSAに接続できません</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>WSA が正常に起動しなかったか、ADB に問題があります。 この問題は解決が非常に難しい場合があります。インストーラーを再起動してください。 それでも問題が解決しない場合は、コンピューターを再起動してみてください。</value>
+    <value>WSA が正常に起動しなかったか、ADB に問題があります。 この問題は解決が非常に難しい場合があります。インストーラーを再起動してみてください。 それでも問題が解決しない場合は、コンピューターを再起動してみてください。</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>アプリパッケージを開けません</value>
@@ -181,7 +181,7 @@
     <value>コピー</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Creating install session...</value>
+    <value>インストールセッションを作成しています</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>デバイス</value>
@@ -229,7 +229,7 @@
     <value>アイコン</value>
   </data>
   <data name="IKnow" xml:space="preserve">
-    <value>分かりました</value>
+    <value>はい</value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
     <value>互換性のないアプリ</value>
@@ -256,19 +256,19 @@
     <value>インストール中...</value>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
-    <value>原因: </value>
+    <value>理由: </value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
     <value>WSAをインストール</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
-    <value>パッケージ無効、破損してしまっているかもしれません。</value>
+    <value>このパッケージが無効、もしくは破損している可能性があります。</value>
   </data>
   <data name="InvalidURL" xml:space="preserve">
     <value>URLが不完全または無効です。</value>
   </data>
   <data name="Launch" xml:space="preserve">
-    <value>開く</value>
+    <value>起動</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
     <value>WSAを起動中...</value>
@@ -280,7 +280,7 @@
     <value>読み込み中…</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
-    <value>詳しい情報</value>
+    <value>詳細</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
     <value>Android端末が見つかりません</value>
@@ -329,7 +329,7 @@
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="PostInstallFormat" xml:space="preserve">
-    <value>Cleaning cache ({0}/{1})...</value>
+    <value>キャッシュを削除しています ({0}/{1})</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
@@ -379,11 +379,11 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="UploadingFormat" xml:space="preserve">
-    <value>Uploading {0} ({1}/{2})...</value>
+    <value>{0} 件のファイルをアップロードしています。({1}/{2})</value>
     <comment>{0} - Progress. {1} - Finnished count. {2} - Total count.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
-    <value>バージョンコード</value>
+    <value>バージョン</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
     <value>バージョン: {0}</value>
@@ -407,7 +407,7 @@
     <value>ようこそ！</value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
-    <value>Writing install session ({0}/{1})...</value>
+    <value>インストールセッションを書き込んでいます ({0}/{1})</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">

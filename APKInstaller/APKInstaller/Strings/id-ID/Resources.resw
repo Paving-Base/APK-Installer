@@ -127,7 +127,7 @@
     <value>Penginstal Aplikasi Android. Ditulis oleh @wherewhere dan @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>Penginstal APK</value>
+    <value/>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>Terjadi kesalahan pada program…</value>

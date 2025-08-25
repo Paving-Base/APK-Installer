@@ -127,10 +127,10 @@
     <value>ADB em falta</value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>In Analysis...</value>
+    <value>Em Análise...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>Ficheiro APK</value>
+    <value>Arquivo</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>Características: </value>
@@ -175,13 +175,13 @@
     <value>Você tem certeza que deseja cancelar a instalação?</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Connecting Paired Devices...</value>
+    <value>Conectando Dispositivos Emparelhados...</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Copiar</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Creating install session...</value>
+    <value>Criando sessão de instalação...</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Dispositivos</value>
@@ -208,7 +208,7 @@
     <value>Ir para Definições</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>Uma versão mais recente ja está instalada</value>
+    <value>Uma versão mais recente ia está instalada</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
     <value>Você já instalou uma nova versão {0} deste aplicativo. Tem certeza que deseja reinstalar a versão {1}?</value>
@@ -329,7 +329,7 @@
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="PostInstallFormat" xml:space="preserve">
-    <value>Cleaning cache ({0}/{1})...</value>
+    <value>Limpando cache ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
@@ -379,7 +379,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="UploadingFormat" xml:space="preserve">
-    <value>Uploading {0} ({1}/{2})...</value>
+    <value>Enviando {0} ({1}/{2})...</value>
     <comment>{0} - Progress. {1} - Finnished count. {2} - Total count.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
@@ -407,7 +407,7 @@ Isto pode levar muito tempo. Sente-se e relaxe.</value>
     <value>Bem-vindo!</value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
-    <value>Writing install session ({0}/{1})...</value>
+    <value>Escrevendo sessão de instalação ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">

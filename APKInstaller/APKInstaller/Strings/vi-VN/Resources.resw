@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="APKDescription" xml:space="preserve">
-    <value>Biểu tượng ứng dụng Android</value>
+    <value>Gói ứng dụng Android</value>
   </data>
   <data name="APKFile" xml:space="preserve">
     <value>Tệp APK</value>
@@ -127,7 +127,7 @@
     <value>Một bộ cài ứng dụng Android được viết bởi @wherewhere và @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>Trình Cài Đặt APK</value>
+    <value/>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>đã xảy ra lỗi với chương trình…</value>
@@ -139,10 +139,10 @@
     <value>Không</value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
-    <value>Cài đặt gói phần mềm</value>
+    <value>Cài đặt gói phần mềm này</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>Chia nhỏ APK Tập tin</value>
+    <value>Chia nhỏ Tập tin APK </value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Có</value>

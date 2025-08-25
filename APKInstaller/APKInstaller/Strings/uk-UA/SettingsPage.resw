@@ -172,13 +172,13 @@
     <value>Під’єднати пристрій через мережу.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
-    <value>Підключити пристрій</value>
+    <value>Під’єднати пристрій</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
     <value>Звʼязатися зі мною</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
+    <value>Слідкуйте за мною в соціальних мережах, щоб бути в курсі останніх подій. Якщо ви знайдете якісь помилки, будь ласка, повідомте мені про них в PM. Я постараюся зробити все можливе, щоб вирішити їх. Якщо у вас є Telegram-аккаунт, не соромтеся спілкуватися в групі Paving Base 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Вміст</value>
@@ -193,7 +193,7 @@
     <value>Підтримати</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
+    <value>APK Installer - це програма з відкритим вихідним кодом, яка не додає жодної реклами з метою отримання прибутку. Якщо вам подобається цей додаток, не забудьте оцінити його в магазині. Звичайно, було б чудово, якби ви могли трохи пожертвувати. Дякуємо за вашу підтримку.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>Ліцензійна угода</value>
@@ -235,7 +235,7 @@
     <value>Журнали</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
+    <value>Модифікована версія може мати деякі неприємні речі. Наприклад, реклама, непрацюючі функції або навіть віруси.  Будь ласка, перейдіть до Microsoft Store, щоб завантажити оригінальну версію. Для отримання додаткової інформації див. наш репозиторій GitHub.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>Ви використовуєте модифіковану версію!</value>
@@ -256,13 +256,13 @@
     <value>Різне</value>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
-    <value>Pair device through network.</value>
+    <value>Створення пари через мережу.</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>Pair Device</value>
+    <value>Приєднати пристрій</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
-    <value>Pair and connect devices.</value>
+    <value>Підключайте та приєднуйте пристрої.</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
     <value>Пов’язати й під’єднати</value>
@@ -298,10 +298,10 @@
     <value>Ви впевнені, що бажаєте скинути застосунок?</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value>Scan and auto connect paired devices.</value>
+    <value>Сканування та автоматичне підключення до приєднаних пристроїв.</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Scan Paired Devices?</value>
+    <value>Сканувати приєднані пристрої?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Вибрати пристрій</value>
@@ -310,10 +310,10 @@
     <value>Показати підказки, коли жоден пристрій не підключено.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Whether to Show Helps?</value>
+    <value>Показувати підказки?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Відображати оголошення угорі налаштувань.</value>
+    <value>Показувати оголошення угорі налаштувань.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
     <value>Чи показувати оголошення?</value>

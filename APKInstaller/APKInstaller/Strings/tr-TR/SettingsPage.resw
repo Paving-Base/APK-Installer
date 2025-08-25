@@ -124,7 +124,7 @@
     <value>ADB Yolu</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>ADB Sürümü</value>
+    <value>ADB Version</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>Paket URL'den olduğunda otomatik indir.</value>
@@ -184,7 +184,7 @@
     <value>İçerik</value>
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
-    <value>Cihaz</value>
+    <value>Turkish</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
     <value>Ekran</value>
@@ -202,10 +202,12 @@
     <value>Geri bildirim</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
-    <value>Güncellemeleri ara</value>
+    <value>
+Güncellemeleri ara</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>Bu uygulamanın çerçeveleri hakkında bilgi.</value>
+    <value>Bu uygulamanın çerçeveleri hakkında bilgi.
+</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
     <value>Çerçeve Bilgileri</value>

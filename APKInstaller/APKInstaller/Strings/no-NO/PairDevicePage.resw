@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AddressRun.Text" xml:space="preserve">
-    <value>Address</value>
+    <value/>
   </data>
   <data name="ConnectButton.Content" xml:space="preserve">
     <value>Connect</value>
@@ -142,10 +142,10 @@
     <value>IP Address</value>
   </data>
   <data name="ManualPairButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Connecting devices manually</value>
+    <value>Kobler enheter manuelt</value>
   </data>
   <data name="ManualPairTextBlock.Text" xml:space="preserve">
-    <value>Manual Connection</value>
+    <value/>
   </data>
   <data name="PairCodeBox.Header" xml:space="preserve">
     <value>WLAN Pairing Code</value>

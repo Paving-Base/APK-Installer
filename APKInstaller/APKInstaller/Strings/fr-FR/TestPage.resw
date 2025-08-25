@@ -118,19 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AndroidTestSettingsHeader.Header" xml:space="preserve">
-    <value>Test d'Android</value>
+    <value>Android Test</value>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
     <value>Gérer les applications des appareils connectés</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
-    <value>Applications</value>
+    <value>Demandes
+</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
-    <value>Activer ou désactiver le mode Picture-In-Picture</value>
+    <value>Entrer or Sortie Compact Velay</value>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
-    <value>Picture-In-Picture</value>
+    <value>Activer le mode photo-en-photo</value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
     <value>Une application en version de développement peut ne pas être stable. Téléchargez la version stable sur le Microsoft Store.</value>
@@ -139,7 +140,7 @@
     <value>Vous utilisez une version de développement de l'application.</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
-    <value>Activer le mode Picture-In-Picture</value>
+    <value>Activer le mode photo-en-photo</value>
   </data>
   <data name="LanguageSettings.Description" xml:space="preserve">
     <value>Sélectionner la langue et redémarrer l'appli pour changer de langue</value>
@@ -169,7 +170,7 @@
     <value>Valeur de la progression</value>
   </data>
   <data name="ShowRefreshButton.Description" xml:space="preserve">
-    <value>Afficher le bouton Actualiser dans la barre de titre</value>
+    <value>Afficher le bouton d'actualisation dans la barre de titre</value>
   </data>
   <data name="ShowRefreshButton.Header" xml:space="preserve">
     <value>Bouton Actualiser</value>
@@ -181,9 +182,9 @@
     <value>Étendre le contenu dans la barre de titre</value>
   </data>
   <data name="TitleBarSettings.Header" xml:space="preserve">
-    <value>Title Bar</value>
+    <value>Barre de titre</value>
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
-    <value>Test Interface Utilisateur</value>
+    <value>Teste Interface Utilisateur</value>
   </data>
 </root>

@@ -118,57 +118,57 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppName.Text" xml:space="preserve">
-    <value>Nama Aplikasi</value>
+    <value>App Name</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
-    <value>Informasi Dasar</value>
+    <value>Basic Information</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
-    <value>Ketergantungan - total {0}</value>
+    <value>Ketergantungan - total {0} </value>
     <comment>{0} - Dependencies Count.</comment>
   </data>
   <data name="FeaturesHeaderFormat" xml:space="preserve">
-    <value>Fitur - total {0}</value>
+    <value>Fitur - total {0} </value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
-    <value>Bahasa</value>
+    <value>Bahasa </value>
   </data>
   <data name="MinSDK.Text" xml:space="preserve">
-    <value>Min SDK</value>
+    <value>Min. SDK </value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
-    <value>Buka Folder Paket</value>
+    <value>Buka Folder Paket </value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
-    <value>Nama Paket</value>
+    <value>Nama Paket </value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
-    <value>Ukuran Paket</value>
+    <value>Ukuran Paket </value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
-    <value>Jumlah Izin</value>
+    <value>Jumlah Izin </value>
   </data>
   <data name="PermissionsHeaderFormat" xml:space="preserve">
-    <value>Izin - total {0}</value>
+    <value>Izin - total {0} </value>
     <comment>{0} - Permissions Count.</comment>
   </data>
   <data name="SharePackage.Content" xml:space="preserve">
-    <value>Bagikan Paket</value>
+    <value>Bagikan Paket </value>
   </data>
   <data name="SupportedArchitectures.Text" xml:space="preserve">
-    <value>Mendukung Arsitektur</value>
+    <value>Arsitektur Terdukung </value>
   </data>
   <data name="SupportResolutions.Text" xml:space="preserve">
-    <value>Resolusi yang Didukung</value>
+    <value>Resolusi Terdukung </value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
-    <value>Mendukung Ukuran Layar</value>
+    <value>Ukuran Layar Terdukung </value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
-    <value>Target SDK</value>
+    <value>SDK Sasaran </value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
-    <value>Tentang {0}</value>
+    <value>Tentang {0}  </value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Version.Text" xml:space="preserve">

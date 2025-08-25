@@ -1,13 +1,13 @@
-#### Bem-vindo ao instalador APK!
+#### Bem-vindo ao instalador de APK! Ok!
 
-##### Manifesto
+##### Contradeclarar
 1. Please comply with the [APK Installer End User License Agreement and Privacy Policy](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. This program is open source software, so please make sure the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) to ensure your data security.
-3. If the source of the program is not abnormal, all your data will be used only for the running of the program or stored locally during the running, and the developer will not steal any of your data. Still, please pay attention to the security of the environment.
-4. The translation of this application comes from the [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") community, and all texts does not represent the author's views.
+2. Este programa é de um "Software" de fonte aberta, então por favor tenha a certeza que o Programa é a forma [ este Repositório do GitHub](https://github.com/Paving-Base/APK-Installer) ou </a> para manter os seus dados seguros.
+3. Se a fonte do Programa não estiver anormal, todos os seus dados serão apenas usados para executar ou para armazenar localmente durante a execução do Programa, e o programador não ira roubar os seus arquivos/dados.  Ainda assim, por favor, preste atenção à sua segurança.
+4. A tradução desta aplicação é de responsabilidade da [comunidade Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") e nenhuma parte do texto representa a opinião do seu autor.
 
 ##### Traduzir
-Obrigado aos tradutores do [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") pelo seu apoio. If there are any problems with the translation, please feel free to correct us. And please translate seriously. Everything you write will be read all over the world.
+Obrigado aos tradutores do [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") pelo seu apoio. Se houver algum problema com a tradução, por favor corrija-a. E, por favor, leve a sério a tradução. Tudo o que escreve será lido no mundo inteiro.
 
 ##### Contribuidores
 - [wherewhere](https://github.com/wherewhere)

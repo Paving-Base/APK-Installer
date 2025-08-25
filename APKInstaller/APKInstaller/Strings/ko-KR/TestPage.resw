@@ -118,72 +118,72 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AndroidTestSettingsHeader.Header" xml:space="preserve">
-    <value>Android Test</value>
+    <value>Android 테스트</value>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
-    <value>Manage the applications of connected devices</value>
+    <value>연결된 장치의 애플리케이션 관리</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
-    <value>Applications</value>
+    <value>애플리케이션</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
-    <value>Enter or Exit Compact Overlay</value>
+    <value>컴팩트 오버레이 시작 또는 종료</value>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
-    <value>Compact Overlay</value>
+    <value>컴팩트 오버레이</value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
-    <value>A development version app may not stable. Download release version on Microsoft Store.</value>
+    <value>개발 버전 앱은 안정적이지 않을 수 있습니다. Microsoft 스토어에서 릴리스 버전을 다운로드하세요.</value>
   </data>
   <data name="DevelopmentInfoBar.Title" xml:space="preserve">
-    <value>You are using a development version app.</value>
+    <value>개발 버전 앱을 사용 중입니다.</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
-    <value>Enter Compact Overlay</value>
+    <value>컴팩트 오버레이 진입</value>
   </data>
   <data name="LanguageSettings.Description" xml:space="preserve">
-    <value>Select language and restart to change language</value>
+    <value>언어를 선택하고 다시 시작하면 언어가 변경됩니다.</value>
   </data>
   <data name="LanguageSettings.Header" xml:space="preserve">
-    <value>Language</value>
+    <value>언어</value>
   </data>
   <data name="OutPIP.Content" xml:space="preserve">
-    <value>Exit</value>
+    <value>나가기</value>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
-    <value>Manage the processes of connected devices</value>
+    <value>연결된 장치의 프로세스 관리</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
-    <value>Processes</value>
+    <value>프로세스</value>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
-    <value>Test Progress Ring on the Title Bar</value>
+    <value>제목 표시줄의 진행률 테스트</value>
   </data>
   <data name="ProgressSettings.Header" xml:space="preserve">
-    <value>Progress</value>
+    <value>진행률</value>
   </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
-    <value>Set the value of Progress Ring</value>
+    <value>진행률 값 설정</value>
   </data>
   <data name="SetProgressValue.Header" xml:space="preserve">
-    <value>Progress Value</value>
+    <value>진행률 값</value>
   </data>
   <data name="ShowRefreshButton.Description" xml:space="preserve">
-    <value>Show Refresh Button on the Title Bar</value>
+    <value>제목 표시줄에 새로 고침 버튼 표시</value>
   </data>
   <data name="ShowRefreshButton.Header" xml:space="preserve">
-    <value>Refresh Button</value>
+    <value>새로고침 버튼</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Testing</value>
+    <value>테스트</value>
   </data>
   <data name="TitleBarSettings.Description" xml:space="preserve">
-    <value>Extends Content Into TitleBar</value>
+    <value>콘텐츠를 제목 표시줄로 확장</value>
   </data>
   <data name="TitleBarSettings.Header" xml:space="preserve">
-    <value>Title Bar</value>
+    <value>제목 표시줄</value>
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
-    <value>UI Test</value>
+    <value>UI 테스트</value>
   </data>
 </root>

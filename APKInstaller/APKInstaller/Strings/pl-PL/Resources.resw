@@ -127,7 +127,7 @@
     <value>Instalator aplikacji Android. Napisany przez @wherewhere i @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>Instalator APK</value>
+    <value> (Mobile)</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>Wystąpił błąd w programie…</value>
@@ -139,12 +139,12 @@
     <value>Nie</value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
-    <value>Install this Package</value>
+    <value>Zainstaluj ten pakiet</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>Podziel plik APK</value>
+    <value>Podziel plik APKpod 'TrustWeb3Provider', :git =&gt; 'https://github.com/trustwallet/trust-web3-provider', :branch =&gt; 'master'</value>
   </data>
   <data name="Yes" xml:space="preserve">
-    <value>Tak</value>
+    <value>Igen</value>
   </data>
 </root>

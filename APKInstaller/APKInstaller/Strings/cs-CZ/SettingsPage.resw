@@ -130,7 +130,7 @@
     <value>Automatické stahování, pokud je balíček z adresy URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Auto Download Online Packages?</value>
+    <value>Stahuje se automaticky online balíčky?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Vyberte typ pozadí pro Windows 11</value>
@@ -154,22 +154,22 @@
     <value>Vymazat mezipaměť</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
+    <value>ADB Server musí být restartován při další instalaci, pokud jej ukončíte.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Terminate ADB when Exit Installer?</value>
+    <value>Ukončit ADB při ukončení instalace?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Exit Installer after installation is complete.</value>
+    <value/>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Exit Installer when APP is Ready?</value>
+    <value>Zavře instalační program, když je aplikace APP připravena?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Konfigurace</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value>Připojte zařízení k síti.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Připojit zařízení</value>
@@ -178,7 +178,7 @@
     <value>Kontaktujte mě</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
+    <value>Sledujte mě na sociálních aplikacích pro nejnovější vývoj. Pokud najdete nějakou chybu, nahlaste mi ji prosím v PM. Pokusím se problém vyřešit. Pokud máte účet Telegram, vítejte na chatu na Paving Base Group 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Obsah</value>
@@ -193,7 +193,8 @@
     <value>Podporuje</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
+    <value>APK Installer je open-source aplikace a žádné reklamy nebudou přidány za účelem zisku. Pokud se vám tato aplikace líbí, nezapomeňte ji ohodnotit v obchodě. Samozřejmě by bylo lepší, kdybyste mohli trochu darovat. Děkujeme za podporu. 💕
+</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
@@ -235,7 +236,7 @@
     <value>Polena</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
+    <value>Upravená verze může mít nepříjemné věci. Například reklamy, porušené funkce nebo dokonce viry. Přejděte do Microsoft Store a stáhněte si původní verzi. Pro více informací si prosím přečtěte náš GitHub repositář.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>Používáte upravenou verzi!</value>
@@ -244,7 +245,7 @@
     <value>Deaktivujte jej, abyste se připojili k jiným zařízením.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>For WSA only?</value>
+    <value>Pouze pro WSA?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>Architektura operačního systému</value>
@@ -256,13 +257,13 @@
     <value>Jiní</value>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
-    <value>Pair device through network.</value>
+    <value>Připojte zařízení k síti.</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>Pair Device</value>
+    <value>Párovat zařízení</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
-    <value>Pair and connect devices.</value>
+    <value>Párovat a připojit zařízení.</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
     <value>Párovat a připojit</value>
@@ -271,7 +272,7 @@
     <value>Tmavý</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>Výchozí Windows</value>
+    <value>Výchozí okna</value>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
     <value>Světlý</value>
@@ -298,10 +299,10 @@
     <value>Jste si jisti, že chcete aplikaci obnovit?</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value>Scan and auto connect paired devices.</value>
+    <value>Skenovat a automaticky připojit spárovaná zařízení.</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Scan Paired Devices?</value>
+    <value>Skenovat spárovaná zařízení?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Vyberte zařízení</value>
@@ -310,39 +311,39 @@
     <value>Zobrazit pomocníky, pokud není připojeno žádné zařízení.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Whether to Show Helps?</value>
+    <value>Zda zobrazit nápovědu?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Display announcements at the top of Settings.</value>
+    <value>Zobrazit oznámení v horní části nastavení.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Whether to Show Announcements?</value>
+    <value>Zda zobrazit oznámení?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>It may leave temp files when an unexpected interruption occurs.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Whether to Show Installation Progress?</value>
+    <value>Zda se zobrazí průběh instalace?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>App Theme</value>
   </data>
   <data name="ThemesSettingsHeader.Header" xml:space="preserve">
-    <value>Themes</value>
+    <value>Motivy</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Settings</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>Translate</value>
+    <value>Přeložit</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
     <value>Verze</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Up To Date</value>
+    <value>Aktuální</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Windows Color Settings</value>
+    <value>Nastavení barvy Windows</value>
   </data>
 </root>

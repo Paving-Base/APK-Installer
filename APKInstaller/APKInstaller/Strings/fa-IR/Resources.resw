@@ -118,33 +118,33 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="APKDescription" xml:space="preserve">
-    <value>Android Application Package</value>
+    <value/>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>APK File</value>
+    <value>فایل APK</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>An Android App Installer. Written by @wherewhere and @Tangent-90.</value>
+    <value>یک نصب کننده برنامه اندروید. نوشته شده توسط @wherewhere و @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>damet</value>
+    <value/>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
-    <value>There was an error with the program…</value>
+    <value>برنامه خطایی داشت…</value>
   </data>
   <data name="NetworkError" xml:space="preserve">
-    <value>There are some problems with the network...</value>
+    <value>مشکلاتی در شبکه وجود دارد...</value>
   </data>
   <data name="No" xml:space="preserve">
-    <value>No</value>
+    <value>خیر</value>
   </data>
   <data name="ShareDescription" xml:space="preserve">
-    <value>Install this Package</value>
+    <value>نصب این پکیج</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>Split APK File</value>
+    <value>تقسیم فایل APK</value>
   </data>
   <data name="Yes" xml:space="preserve">
-    <value>Yes</value>
+    <value>بله</value>
   </data>
 </root>

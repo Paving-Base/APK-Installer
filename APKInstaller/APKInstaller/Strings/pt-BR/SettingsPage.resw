@@ -277,10 +277,11 @@
     <value>Luz</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value>Avalie este applicativo</value>
+    <value>
+</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
-    <value>Notas de lançamento</value>
+    <value>Sim</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
     <value>Redefinir configurações deste aplicativo.</value>
@@ -337,7 +338,7 @@
     <value>Traduza</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
-    <value>Versão</value>
+    <value>Версія</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
     <value>Atualizado</value>

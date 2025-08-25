@@ -118,57 +118,57 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AddressRun.Text" xml:space="preserve">
-    <value>Адрес</value>
+    <value>Адреса</value>
   </data>
   <data name="ConnectButton.Content" xml:space="preserve">
-    <value>Подключить</value>
+    <value>Подключаться</value>
   </data>
   <data name="ConnectedListFormat" xml:space="preserve">
-    <value>Подключено устройств: {1</value>
+    <value>Подключенные {0} устройства</value>
   </data>
   <data name="ConnectedLogText" xml:space="preserve">
-    <value>Подключено успешно.</value>
+    <value>Erfolgreich verbunden.</value>
   </data>
   <data name="ConnectingLogText" xml:space="preserve">
-    <value>Сопряжение успешно. Идёт подключение, пожалуйста, не закрывайте окно.</value>
+    <value>Επιτυχής σύζευξη. Συνδεθείτε, παρακαλώ μην κλείσετε το παράθυρο.</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
-    <value>Подключить</value>
+    <value>Під’єднатися</value>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
     <value>Найдено устройств: {0}</value>
   </data>
   <data name="IPAddressBox.Header" xml:space="preserve">
-    <value>IP Адрес</value>
+    <value>IP Address</value>
   </data>
   <data name="ManualPairButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Подключить устройство вручную</value>
+    <value>Connecter des appareils manuellement</value>
   </data>
   <data name="ManualPairTextBlock.Text" xml:space="preserve">
-    <value>Ручное подключение</value>
+    <value>Handmatige Verbinding</value>
   </data>
   <data name="PairCodeBox.Header" xml:space="preserve">
-    <value>Код сопряжения WLAN</value>
+    <value>WLAN Κωδικός Σύζευξης</value>
   </data>
   <data name="PairCodeTextBlock.Text" xml:space="preserve">
-    <value>Код сопряжения WLAN</value>
+    <value>WLAN Pairing CodeССССС</value>
   </data>
   <data name="PairingLogText" xml:space="preserve">
-    <value>Сопряжение, пожалуйста, не закрывайте окно.</value>
+    <value>Appairage, ne fermez pas la fenêtre, s'il vous plaît.</value>
   </data>
   <data name="PairToggleButton.Content" xml:space="preserve">
-    <value>Сопряжение</value>
+    <value>Sandingkan</value>
   </data>
   <data name="PortRun.Text" xml:space="preserve">
-    <value>Порт</value>
+    <value>Porta</value>
   </data>
   <data name="QRScanButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Сопряжение с QR-кодом</value>
+    <value>Sandingkan dengan kode QR</value>
   </data>
   <data name="QRScanTextBlock.Text" xml:space="preserve">
-    <value>Сканируйте QR-код для сопряжения устройств.</value>
+    <value>Pindai kode QR untuk memasangkan perangkat.</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Сопряжение и подключение</value>
+    <value>Accoppia E Connetti</value>
   </data>
 </root>

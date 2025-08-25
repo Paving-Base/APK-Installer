@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AndroidTestSettingsHeader.Header" xml:space="preserve">
-    <value>Android Test</value>
+    <value>Android-testi</value>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
-    <value>Manage the applications of connected devices</value>
+    <value>Hallinnoi liitettyjen laitteiden sovelluksia</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
-    <value>Applications</value>
+    <value>Sovellukset</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
     <value>Enter or Exit Compact Overlay</value>
@@ -133,16 +133,16 @@
     <value>Compact Overlay</value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
-    <value>A development version app may not stable. Download release version on Microsoft Store.</value>
+    <value>Kehitysversio sovelluksesta ei välttämättä ole vakaa. Lataa julkaisuversio Microsoft Storesta.</value>
   </data>
   <data name="DevelopmentInfoBar.Title" xml:space="preserve">
-    <value>You are using a development version app.</value>
+    <value>Käytät sovelluksesta kehitysversiota.</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
     <value>Enter Compact Overlay</value>
   </data>
   <data name="LanguageSettings.Description" xml:space="preserve">
-    <value>Select language and restart to change language</value>
+    <value>Valitse kieli ja käynnistä uudelleen kielen vaihtamiseksi</value>
   </data>
   <data name="LanguageSettings.Header" xml:space="preserve">
     <value>Kieli</value>
@@ -151,7 +151,7 @@
     <value>Sulje</value>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
-    <value>Manage the processes of connected devices</value>
+    <value>Hallinnoi liitettyjen laitteiden prosesseja</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
     <value>Käsitellään</value>

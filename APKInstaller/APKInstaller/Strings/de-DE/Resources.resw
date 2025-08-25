@@ -124,10 +124,10 @@
     <value>APK-Datei</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>Ein Android App Installer. Geschrieben von @wherewhere und @Tangent-90.</value>
+    <value>An Android App Installer. Written by @wherewhere and @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>APK-Installer</value>
+    <value>App-Installer (Mobil)</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>😞 Ein Fehler ist aufgetreten… </value>

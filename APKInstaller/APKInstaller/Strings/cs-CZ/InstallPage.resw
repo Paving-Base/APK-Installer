@@ -181,41 +181,41 @@
     <value>Kopírovat</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Creating install session...</value>
+    <value>Vytváření instalační relace...</value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>Devices</value>
+    <value>Zařízení</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Download</value>
+    <value>Stáhnout</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>Download Failed</value>
+    <value>Stahování selhalo</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>Please check your network connection or the URL and try again.</value>
+    <value>Zkontrolujte připojení k síti nebo adresu URL a zkuste to znovu.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>Finding WSA...</value>
+    <value>Zjišťování WSA...</value>
   </data>
   <data name="Finished" xml:space="preserve">
-    <value>Finished</value>
+    <value>Dokončeno</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>WSA Found</value>
+    <value>Nalezeno WSA</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>Go to Setting</value>
+    <value>Přejít do nastavení</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>A newer version is already installed</value>
+    <value>Novější verze je již nainstalována</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>You already have installed a new version {0} of this app. Are you sure to reinstall version {1}?</value>
+    <value>Již máte nainstalovanou novou verzi {0} této aplikace. Opravdu chcete přeinstalovat verzi {1}?</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>How to connect WSA</value>
+    <value>Jak se připojit k WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
     <value>1. Ujistěte se, že instalační program APK byl aktualizován na nejnovější verzi
@@ -268,92 +268,92 @@
     <value>Adresa URL je buď neúplná, nebo neplatná.</value>
   </data>
   <data name="Launch" xml:space="preserve">
-    <value>Spustit</value>
+    <value>Zahájení</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
-    <value>Launching WSA...</value>
+    <value>Spouštění WSA...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>Launch when ready</value>
+    <value>Spustit když je připraveno</value>
   </data>
   <data name="Loading" xml:space="preserve">
-    <value>Loading...</value>
+    <value>Nahrávání...</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
-    <value>More Info</value>
+    <value>Více informací</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
-    <value>Cannot find Android Device</value>
+    <value>Nelze najít zařízení Android</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>How to connect device</value>
+    <value>Jak propojit zařízení</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>If you want to install app into Windows Subsystem for Android™, you need to install it first. If you want to install into other devices, please go to Settings Page, turn "Is Only for WSA" off, and connect your device.</value>
+    <value>Pokud chcete aplikaci nainstalovat do systému Windows Subsystem pro AndroidTM, musíte ji nejprve nainstalovat. Pokud chcete nainstalovat do jiných zařízení, přejděte do nastavení stránky, vypněte "Je pouze pro WSA" a připojte zařízení.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
-    <value>#### Using USB
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open USB Debug
-3. Go to the Settings Page of APK Installer, select your device
-4. Go back, resume installation
-#### Using Wifi
-1. Please make sure APK Installer has been updated to [the latest version](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
-2. Turn on Developer Mode, open Remote Debug
-3. Remember the IP address of your device
-4. Go to the Settings Page of APK Installer, connect and select your device
-5. Go back, resume installation
+    <value>#### Použití USB
+1. Ujistěte se, že APK Instalátor byl aktualizován na [nejnovější verzi](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Zapněte vývojářský režim, otevřete USB ladění
+3. Přejděte na stránku nastavení APK instalace, vyberte vaše zařízení
+4. Vraťte se, pokračujte v instalaci
+#### Pomocí Wifi
+1. Ujistěte se, že APK Instalátor byl aktualizován na [nejnovější verzi](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "APK Installer")
+2. Zapněte vývojářský režim, otevřete vzdálenou ladění
+3. Pamatujte si IP adresu vašeho zařízení
+4. Přejděte na stránku nastavení APK instalace, připojte se a vyberte vaše zařízení
+5. Jděte zpět, pokračujte instalací
 
-[Learn More]({0})</value>
+[Dozvědět se více]({0})</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
-    <value>Cannot connect Internet</value>
+    <value/>
   </data>
   <data name="NoInternetInfo" xml:space="preserve">
-    <value>Please connect to the internet before opening the app.</value>
+    <value/>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>For proper functioning of the app, try to launch an Android app package.</value>
+    <value/>
   </data>
   <data name="OK" xml:space="preserve">
-    <value>OK</value>
+    <value/>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
-    <value>Online Package</value>
+    <value/>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
-    <value>Název balíčku</value>
+    <value>munees</value>
   </data>
   <data name="PackageNameFormat" xml:space="preserve">
-    <value>Package Name: {0}</value>
+    <value/>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="PostInstallFormat" xml:space="preserve">
-    <value>Cleaning cache ({0}/{1})...</value>
+    <value/>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
-    <value>Reinstall</value>
+    <value/>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>{0} is already installed</value>
+    <value>{0} je již nainstalován</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
-    <value>A newer version of {0} is already installed.</value>
+    <value>Novější verze je již nainstalována.</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>Retry</value>
+    <value/>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>Select</value>
+    <value>Zvolit</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>Share</value>
+    <value>Sdílet</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
-    <value>Starting ADB Server...</value>
+    <value>...                    </value>
   </data>
   <data name="StartWSA" xml:space="preserve">
     <value>Spustit WSA</value>
@@ -379,7 +379,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="UploadingFormat" xml:space="preserve">
-    <value>Uploading {0} ({1}/{2})...</value>
+    <value>Nahrávám {0} ({1}/{2})...</value>
     <comment>{0} - Progress. {1} - Finnished count. {2} - Total count.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
@@ -393,24 +393,24 @@
     <value>Čeká se na stažení…</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>Waiting for Device...</value>
+    <value>...</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
-    <value>Waiting for install {0}</value>
+    <value>Čekám na instalaci {0}</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="WaitingWSAStart" xml:space="preserve">
-    <value>Waiting WSA Start...
-This may take long time. Sit back and relax.</value>
+    <value>Čekání na spuštění WSA...
+Může to trvat dlouho. Sepněte se zpět a relaxujte.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome!</value>
+    <value>Vítejte!</value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
-    <value>Writing install session ({0}/{1})...</value>
+    <value>Zapisování relace instalace ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">
-    <value>WSA is Running</value>
+    <value>Wi-Fi je aktivní</value>
   </data>
 </root>

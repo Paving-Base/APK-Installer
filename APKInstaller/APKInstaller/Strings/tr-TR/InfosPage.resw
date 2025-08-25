@@ -118,38 +118,47 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppName.Text" xml:space="preserve">
-    <value>Uygulama Adı</value>
+    <value>Uygulama Adı ilkolul</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
-    <value>Temel Bilgiler</value>
+    <value>Temel Bilgiler ödev
+001e</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
-    <value>Bağımlılıklar - toplamda {0}</value>
+    <value>Bağımlılıklar - toplamda {0} 95
+b</value>
     <comment>{0} - Dependencies Count.</comment>
   </data>
   <data name="FeaturesHeaderFormat" xml:space="preserve">
-    <value>Özellikler - toplamda {0}</value>
+    <value>Özellikler - toplamda {0}79
+e</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
-    <value>Diller</value>
+    <value>Dillertürkçe
+
+e</value>
   </data>
   <data name="MinSDK.Text" xml:space="preserve">
-    <value>Min SDK</value>
+    <value>Min SDKwhş</value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
-    <value>Paket Klasörünü Aç</value>
+    <value>min
+</value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
-    <value>Paket İsmi</value>
+    <value>Aciok
+</value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
-    <value>Paket Boyutu</value>
+    <value>Paket Boyutu 12
+</value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
-    <value>İzin Sayısı</value>
+    <value>İzin Sayısı88
+</value>
   </data>
   <data name="PermissionsHeaderFormat" xml:space="preserve">
-    <value>İzinler - toplamda {0}</value>
+    <value>İzinler toplamda{0}</value>
     <comment>{0} - Permissions Count.</comment>
   </data>
   <data name="SharePackage.Content" xml:space="preserve">

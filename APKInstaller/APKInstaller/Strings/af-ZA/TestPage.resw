@@ -118,72 +118,73 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AndroidTestSettingsHeader.Header" xml:space="preserve">
-    <value>Android Test</value>
+    <value/>
   </data>
   <data name="ApplicationsSettings.Description" xml:space="preserve">
-    <value>Manage the applications of connected devices</value>
+    <value/>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
     <value>Aansoeke</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
-    <value>Enter or Exit Compact Overlay</value>
+    <value/>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
-    <value>Compact Overlay</value>
+    <value/>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
-    <value>A development version app may not stable. Download release version on Microsoft Store.</value>
+    <value>.</value>
   </data>
   <data name="DevelopmentInfoBar.Title" xml:space="preserve">
-    <value>You are using a development version app.</value>
+    <value/>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
-    <value>Enter Compact Overlay</value>
+    <value/>
   </data>
   <data name="LanguageSettings.Description" xml:space="preserve">
-    <value>Select language and restart to change language</value>
+    <value/>
   </data>
   <data name="LanguageSettings.Header" xml:space="preserve">
-    <value>Language</value>
+    <value/>
   </data>
   <data name="OutPIP.Content" xml:space="preserve">
-    <value>Exit</value>
+    <value/>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
-    <value>Manage the processes of connected devices</value>
+    <value/>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
-    <value>Processes</value>
+    <value/>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
-    <value>Test Progress Ring on the Title Bar</value>
+    <value/>
   </data>
   <data name="ProgressSettings.Header" xml:space="preserve">
-    <value>Progress</value>
+    <value/>
   </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
-    <value>Set the value of Progress Ring</value>
+    <value/>
   </data>
   <data name="SetProgressValue.Header" xml:space="preserve">
-    <value>Progress Value</value>
+    <value/>
   </data>
   <data name="ShowRefreshButton.Description" xml:space="preserve">
-    <value>Show Refresh Button on the Title Bar</value>
+    <value/>
   </data>
   <data name="ShowRefreshButton.Header" xml:space="preserve">
-    <value>Refresh Button</value>
+    <value/>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Testing</value>
+    <value/>
   </data>
   <data name="TitleBarSettings.Description" xml:space="preserve">
-    <value>Extends Content Into TitleBar</value>
+    <value/>
   </data>
   <data name="TitleBarSettings.Header" xml:space="preserve">
-    <value>Title Bar</value>
+    <value/>
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
-    <value>UI Test</value>
+    <value>Рчнраипмп ич траррмм смыршощш0зчысо
+</value>
   </data>
 </root>

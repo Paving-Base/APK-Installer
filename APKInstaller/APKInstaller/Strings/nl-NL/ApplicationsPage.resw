@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
-    <value>Wachten op apparaat...</value>
+    <value>Waiting for Device...</value>
   </data>
   <data name="Start.Text" xml:space="preserve">
-    <value>Start</value>
+    <value>Onherkenbare onderdelen worden behandeld als</value>
   </data>
   <data name="Stop.Text" xml:space="preserve">
     <value>Stop</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Applicaties</value>
+    <value>Applications</value>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
     <value>Verwijderen</value>

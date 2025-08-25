@@ -118,20 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AddressRun.Text" xml:space="preserve">
-    <value>العناوين</value>
+    <value>عنوان الIP</value>
   </data>
   <data name="ConnectButton.Content" xml:space="preserve">
-    <value>إتصال
-</value>
+    <value>اتصال</value>
   </data>
   <data name="ConnectedListFormat" xml:space="preserve">
-    <value>الأجهزة{0}المتصلة.</value>
+    <value>Connected {0} deviceer</value>
   </data>
   <data name="ConnectedLogText" xml:space="preserve">
-    <value>تم الإتصال بنجاح.</value>
+    <value>تم ألاتصال بنجاح.</value>
   </data>
   <data name="ConnectingLogText" xml:space="preserve">
-    <value>تم الاقتران بنجاح.جاري الاتصال، من فضلك لا تغلق النافذة.</value>
+    <value>الإقران بنجاح. الاتصال، الرجاء عدم إغلاق النافذة.</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
     <value>اتصال</value>
@@ -143,16 +142,16 @@
     <value>عنوان الIP</value>
   </data>
   <data name="ManualPairButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>توصيل الاجهزه يدويا.</value>
+    <value/>
   </data>
   <data name="ManualPairTextBlock.Text" xml:space="preserve">
-    <value>اتصال يدوي</value>
+    <value>اتصال يدوي76</value>
   </data>
   <data name="PairCodeBox.Header" xml:space="preserve">
     <value>رمز الاقترانWLAN</value>
   </data>
   <data name="PairCodeTextBlock.Text" xml:space="preserve">
-    <value>رمز الاقترانWLAN</value>
+    <value>WLAN Pairing Code</value>
   </data>
   <data name="PairingLogText" xml:space="preserve">
     <value>جاري الاقتران،الرجاء عدم إغلاق النافذة.</value>
@@ -164,10 +163,10 @@
     <value>المنفذ</value>
   </data>
   <data name="QRScanButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>الاقتران برمز الكيو أر</value>
+    <value>الاقتران برمز QR</value>
   </data>
   <data name="QRScanTextBlock.Text" xml:space="preserve">
-    <value>مسح جهاز الكيو أر للاقتران .</value>
+    <value>مسح جهاز الكوي أر للاقتران.</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>الاقتران والاتصال</value>

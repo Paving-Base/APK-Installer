@@ -118,57 +118,57 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AddressRun.Text" xml:space="preserve">
-    <value>Địa chỉ</value>
+    <value>Địa chỉ:</value>
   </data>
   <data name="ConnectButton.Content" xml:space="preserve">
-    <value>Kết nối</value>
+    <value>kết nối</value>
   </data>
   <data name="ConnectedListFormat" xml:space="preserve">
-    <value>Các thiết bị{0} đã kết nối</value>
+    <value>Các thiết bị đã được kết nối</value>
   </data>
   <data name="ConnectedLogText" xml:space="preserve">
-    <value>Kết nối thành công.</value>
+    <value>Kết nối thành công</value>
   </data>
   <data name="ConnectingLogText" xml:space="preserve">
-    <value>Ghép nối thành công. Đang kết nối, vui lòng đừng đóng cửa sổ.</value>
+    <value>Pairing successfully. Connecting, please don't close the window.</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
-    <value>Kết nối</value>
+    <value>Connect</value>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
-    <value>Đã tìm thấy{0} thiết bị</value>
+    <value>Found {0} devices</value>
   </data>
   <data name="IPAddressBox.Header" xml:space="preserve">
-    <value>Địa chỉ IP</value>
+    <value>IP Address</value>
   </data>
   <data name="ManualPairButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Kết nối thiết bị thủ công</value>
+    <value>Connecting devices manually</value>
   </data>
   <data name="ManualPairTextBlock.Text" xml:space="preserve">
-    <value>Kết nối thủ công</value>
+    <value>Manual Connection</value>
   </data>
   <data name="PairCodeBox.Header" xml:space="preserve">
-    <value>Mã ghép nối mạng WLAN</value>
+    <value>WLAN Pairing Code</value>
   </data>
   <data name="PairCodeTextBlock.Text" xml:space="preserve">
-    <value>Mã ghép nối mạng WLAN</value>
+    <value>رمز الاقترانWLAN</value>
   </data>
   <data name="PairingLogText" xml:space="preserve">
-    <value>Ghép nối, xin vui long không đóng cửa sổ.</value>
+    <value>جاري الاقتران،الرجاء عدم إغلاق النافذة.</value>
   </data>
   <data name="PairToggleButton.Content" xml:space="preserve">
-    <value>Ghép đôi</value>
+    <value>Pair</value>
   </data>
   <data name="PortRun.Text" xml:space="preserve">
-    <value>Cổng</value>
+    <value>Port</value>
   </data>
   <data name="QRScanButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Ghép nối với mã QR</value>
+    <value>Pair with QR code</value>
   </data>
   <data name="QRScanTextBlock.Text" xml:space="preserve">
-    <value>Quét mã QR để ghép nối thiết bị.</value>
+    <value>Scan QR code to pair devices.</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Ghép nối &amp; Kết nối</value>
+    <value>Pair &amp; Connect</value>
   </data>
 </root>

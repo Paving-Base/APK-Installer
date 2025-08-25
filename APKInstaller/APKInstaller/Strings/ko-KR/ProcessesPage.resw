@@ -118,24 +118,24 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Detail.Header" xml:space="preserve">
-    <value>Detail</value>
+    <value>세부 정보</value>
   </data>
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
-    <value>Waiting for Device...</value>
+    <value>장치를 기다리는 중...</value>
   </data>
   <data name="Name.Header" xml:space="preserve">
-    <value>Name</value>
+    <value>이름</value>
   </data>
   <data name="ProcessId.Header" xml:space="preserve">
-    <value>Process ID</value>
+    <value>프로세스 ID</value>
   </data>
   <data name="ResidentSetSize.Header" xml:space="preserve">
-    <value>Resident Set Size</value>
+    <value>상주 집합 크기</value>
   </data>
   <data name="State.Header" xml:space="preserve">
-    <value>State</value>
+    <value>상태</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Processes</value>
+    <value>프로세스</value>
   </data>
 </root>

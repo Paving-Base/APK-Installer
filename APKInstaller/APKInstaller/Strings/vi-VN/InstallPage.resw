@@ -118,34 +118,34 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>APK Installer cần ADB (Android Debug Bridge) để hoạt động được. Bấm "Tải" để tải về. Khi tải về, bạn đồng ý với điều khoản và điều kiện của Google về ADB. Nếu bạn đã tải sẵn ADB, bấm "Chọn" để chọn nó.</value>
+    <value>ADB, the Android Debug Bridge, is needed for APK Installer to work. Click "Download" to download it. By downloading, you accept the Google Terms and Conditions for ADB. If you have already downloaded ADB, click "Select" to select it.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB đã tồn tại</value>
+    <value>ADB tồn tại</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value>Thiếu ADB</value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>In Analysis...</value>
+    <value>Đang trong phân tích...</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>Tệp APK</value>
+    <value>Tap APK</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Khả năng:</value>
+    <value>Các Khả năng: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
     <value>Tên ứng dụng</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Hủy</value>
+    <value>Huy</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
-    <value>Có </value>
+    <value>Co </value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
-    <value>Không </value>
+    <value>No</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
     <value>Không thể kết nối đến WSA</value>
@@ -164,17 +164,17 @@
     <value>Đang kiểm tra ADB...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Đường dẫn kiểm tra...</value>
+    <value>Đang kiểm tra đường dẫn...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Nhấp vào đây để đọc</value>
+    <value>Nhấp vào đây để đọc chúng </value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Đóng
 </value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>Bạn có chắc chắn hủy bỏ cài đặt?</value>
+    <value>Bạn có chắc chắn muốn hủy bỏ cài đặt?</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
     <value>Đang Kết Nối Các Thiết Bị Đã Ghép Nối...</value>
@@ -183,7 +183,7 @@
     <value>Sao chép</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Creating install session...</value>
+    <value>Đang tạo phiên cài đặt...</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Thiết bị</value>
@@ -195,22 +195,22 @@
     <value>Tải xuống thất bại</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>Vui lòng kiểm tra kết nối mạng của bạn và thử lại.</value>
+    <value>Vui lòng kiểm tra kết nối mạng của bạn hoặc đường URL và thử lại.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
     <value>Đang tìm WSA...</value>
   </data>
   <data name="Finished" xml:space="preserve">
-    <value>Hoàn thành</value>
+    <value>Đã hoàn thành</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
     <value>Đã tìm thấy WSA</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>Đến Cài đặt</value>
+    <value>Vào cài đặt</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>Phiên bản mới hơn đã được cài đặt</value>
+    <value>Phiên bản mới nhất đã được cài đặt</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
     <value>Bạn đã cài đặt phiên bản mới {0} của ứng dụng này. Bạn có chắc chắn cài đặt lại phiên bản {1} không?</value>
@@ -220,10 +220,12 @@
     <value>Cách kết nối WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Hãy đảm bảo rằng APK Installer đã được cập nhật lên phiên bản 
+    <value>1. Hãy đảm bảo rằng Trình cài đặt APK đã được cập nhật lên phiên bản 
 2 mới nhất. Đảm bảo rằng bạn đã cài đặt và chạy Hệ thống con Android 
 3. Bật chế độ nhà phát triển và đảm bảo địa chỉ IP được hiển thị thành công 
-4. Mở lại Trình cài đặt APK và tiếp tục cài đặt</value>
+4. Mở lại Trình cài đặt APK và tiếp tục cài đặt
+
+[Tìm hiểu thêm]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
     <value>Biểu tượng</value>
@@ -235,7 +237,7 @@
     <value>Ứng dụng không tương thích</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
-    <value>Yêu cầu tối thiểu cho ứng dụng này là {0}. Thiết bị của bạn hỗ trợ {1}. Vui lòng cập nhật thiết bị của bạn hoặc chọn gói đặt hàng.
+    <value>Yêu cầu tối thiểu cho ứng dụng này là {0}. Thiết bị của bạn hỗ trợ Vui lòng cập nhật thiết bị của bạn hoặc chọn gói yêu cầu.
 </value>
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
@@ -290,20 +292,20 @@
     <value>Cách kết nối thiết bị</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>Nếu bạn muốn cài đặt ứng dụng vào Windows Subsystem cho Android, trước tiên bạn cần cài đặt nó. Nếu bạn muốn cài đặt vào các thiết bị khác, vui lòng truy cập Trang cài đặt, tắt "Chỉ dành cho WSA" và kết nối thiết bị của bạn.
+    <value>Nếu bạn muốn cài đặt ứng dụng vào Hệ thống phụ Windows cho Android, trước tiên bạn cần cài đặt nó. Nếu bạn muốn cài đặt vào các thiết bị khác, vui lòng truy cập Trang cài đặt, tắt "Chỉ dành cho WSA" và kết nối thiết bị của bạn.
 </value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
     <value>#### Sử dụng USB
 1. Vui lòng đảm bảo rằng Trình cài đặt APK đã được cập nhật lên [phiên bản mới nhất](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "Trình cài đặt APK")
-2. Bật Chế độ nhà phát triển, mở USB Debug
-3. Vào trang Cài đặt của APK Installer, chọn thiết bị của bạn
+2. Bật Chế độ nhà phát triển, mở Gỡ lỗi USB
+3. Vào trang Cài đặt của Trình cài đặt APK, chọn thiết bị của bạn
 4. Quay lại, tiếp tục cài đặt
 #### Sử dụng Wifi
 1. Vui lòng đảm bảo rằng Trình cài đặt APK đã được cập nhật lên [phiên bản mới nhất](https://www.microsoft.com/store/productId/9P2JFQ43FPPG "Trình cài đặt APK")
 2. Bật Chế độ nhà phát triển, mở gỡ lỗi từ xa
 3. Ghi nhớ địa chỉ IP của thiết bị của bạn
-4. Vào trang Cài đặt của APK Installer, kết nối và chọn thiết bị của bạn
+4. Vào trang Cài đặt của Trình cài đặt APK, kết nối và chọn thiết bị của bạn
 5. Quay lại, tiếp tục cài đặt
 
 [Tìm hiểu thêm] ({0})</value>
@@ -315,7 +317,7 @@
     <value>Hãy kết nối tới Internet trước khi mở ứng dụng.</value>
   </data>
   <data name="NoPackageWranning" xml:space="preserve">
-    <value>Để ứng dụng hoạt động bình thường, hãy thử chạy một Gói ứng dụng Android.</value>
+    <value>Để ứng dụng hoạt động bình thường, hãy thử chạy một Gói ứng dụng.</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
@@ -331,7 +333,7 @@
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="PostInstallFormat" xml:space="preserve">
-    <value>Cleaning cache ({0}/{1})...</value>
+    <value>Đang dọn bộ nhớ đệm ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
@@ -349,10 +351,10 @@
     <value>Thử lại</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>Chọn</value>
+    <value>[Chọn]</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
-    <value>Chia sẻ</value>
+    <value>Đăng lại</value>
   </data>
   <data name="StartingADB" xml:space="preserve">
     <value>Đang khởi động máy chủ ADB...</value>
@@ -382,14 +384,14 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="UploadingFormat" xml:space="preserve">
-    <value>Uploading {0} ({1}/{2})...</value>
+    <value>Đang tải lên {0} ({1}/{2})...</value>
     <comment>{0} - Progress. {1} - Finnished count. {2} - Total count.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
     <value>Phiên bản mã</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>Phiên bản: {0}</value>
+    <value>Phiên bản {0}</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
@@ -411,7 +413,7 @@
     <value>Chào mừng!</value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
-    <value>Writing install session ({0}/{1})...</value>
+    <value>Đang viết phiên cài đặt ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">

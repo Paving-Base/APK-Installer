@@ -190,7 +190,7 @@
     <value>Tampilan</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
-    <value>Dukungan</value>
+    <value>Supports</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
     <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
@@ -340,9 +340,10 @@
     <value>Versi</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Terkini</value>
+    <value>Up To Date
+</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Pengaturan Warna Windows</value>
+    <value>Windows Color Settings</value>
   </data>
 </root>

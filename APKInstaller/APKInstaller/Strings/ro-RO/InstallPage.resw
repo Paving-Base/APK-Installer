@@ -182,7 +182,7 @@
     <value>Copiere</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Creating install session...</value>
+    <value>d</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Dispozitive</value>
@@ -380,7 +380,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="UploadingFormat" xml:space="preserve">
-    <value>Uploading {0} ({1}/{2})...</value>
+    <value>vxcg...</value>
     <comment>{0} - Progress. {1} - Finnished count. {2} - Total count.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
@@ -408,7 +408,7 @@ Această operațiune ar putea dura mult timp. Stați înapoi și relaxați-vă.<
     <value>Bun venit!</value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
-    <value>Writing install session ({0}/{1})...</value>
+    <value>...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">

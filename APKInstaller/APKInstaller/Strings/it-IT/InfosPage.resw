@@ -124,11 +124,11 @@
     <value>Informazioni di Base</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
-    <value>Dipendenze - {0} in totale</value>
+    <value>Dipendenze - {1} in totale</value>
     <comment>{0} - Dependencies Count.</comment>
   </data>
   <data name="FeaturesHeaderFormat" xml:space="preserve">
-    <value>Funzionalità - {0} in totale</value>
+    <value>Funzionalità - 1} totale</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
     <value>Lingue</value>

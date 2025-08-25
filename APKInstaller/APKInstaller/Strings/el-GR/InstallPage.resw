@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, η γέφυρα αποσφαλμάτωσης Android, είναι απαραίτητη για να λειτουργήσει ο εγκαταστάτης APK. Κάντε κλικ στο κουμπί "Λήψη" για να το κατεβάσετε. Με τη λήψη, αποδέχεστε τους Όρους και Προϋποθέσεις της Google για ADB. Αν έχετε ήδη κατεβάσει ADB, κάντε κλικ στο κουμπί "Επιλογή" για να το επιλέξετε.</value>
+    <value>ADB, η γέφυρα αποσφαλμάτωσης AndroidX, είναι απαραίτητη για να λειτουργήσει ο εγκατάστασής APK. Κάντε κλικ στο κουμπί "Λήψη" για να το κατεβάσετε. Με τη λήψη, αποδέχεστε τους Όρους και Προϋποθέσεις της Google για ADB. Αν έχετε ήδη κατεβάσει ADB, κάντε κλικ στο κουμπί "Επιλογή" για να το επιλέξετε.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>Το ADB Υπάρχει</value>
@@ -127,7 +127,7 @@
     <value>Λείπει το ADB</value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>Στην Ανάλυση...</value>
+    <value>Στην Ανάλυση…</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
     <value>Αρχείο APK</value>
@@ -151,19 +151,19 @@
     <value>Αδυναμία σύνδεσης με WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Είτε η WSA δεν ξεκίνησε σωστά, είτε υπάρχει πρόβλημα με το ADB. Αυτό το πρόβλημα μπορεί να είναι πολύ δύσκολο να επιλυθεί. Παρακαλώ επανεκκινήστε το πρόγραμμα εγκατάστασης. Αν εξακολουθεί να μην λειτουργεί, δοκιμάστε να επανεκκινήσετε τον υπολογιστή.</value>
+    <value>Είτε η WSA δεν ξεκίνησε σωστά, είτε υπάρχει πρόβλημα με το ADB. Αυτό το πρόβλημα μπορεί να είναι πολύ δύσκολο να επιλυθεί. Παρακαλώ επανεκκίνησή το πρόγραμμα εγκατάστασης. Αν εξακολουθεί να μη λειτουργεί, δοκιμάστε να επανεκκινήσεις τον υπολογιστή.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>Αδυναμία ανοίγματος πακέτου εφαρμογών</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>Γίνεται έλεγχος...</value>
+    <value>Γίνεται έλεγχος…</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Γίνεται έλεγχος ADB...</value>
+    <value>Γίνεται έλεγχος ADB…</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Έλεγχος Διαδρομής...</value>
+    <value>Έλεγχος Διαδρομής…</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>Κάντε κλικ εδώ για να τα διαβάσετε</value>
@@ -175,13 +175,13 @@
     <value>Είστε βέβαιοι να ακυρώσετε την εγκατάσταση;</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Σύνδεση Συζευγμένων Συσκευών...</value>
+    <value>Σύνδεση Συζευγμένων Συσκευών…</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Αντιγραφή</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Creating install session...</value>
+    <value>Εγγραφή συνεδρίας εγκατάστασης…</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Συσκευές</value>
@@ -196,7 +196,7 @@
     <value>Παρακαλούμε ελέγξτε τη σύνδεσή σας στο δίκτυο ή το URL και προσπαθήστε ξανά.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>Αναζήτηση WSA...</value>
+    <value>Αναζήτηση WSA…</value>
   </data>
   <data name="Finished" xml:space="preserve">
     <value>Ολοκληρώθηκε</value>
@@ -211,7 +211,7 @@
     <value>Μια νεότερη έκδοση είναι ήδη εγκατεστημένη</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>Έχετε ήδη εγκαταστήσει μια νέα έκδοση {0} αυτής της εφαρμογής. Είστε βέβαιοι ότι θα επανεγκαταστήσετε την έκδοση {1};</value>
+    <value>Έχετε ήδη εγκαταστήσει μια νέα έκδοση {0} αυτής της εφαρμογής. Είστε βέβαιοι ότι θα απεγκαταστήσετε την έκδοση {1};</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
@@ -239,10 +239,10 @@
     <comment>{0} - Package Mini SDK. {1} - Device SDK.</comment>
   </data>
   <data name="InfosFlyoutItem.Text" xml:space="preserve">
-    <value>Infos</value>
+    <value>iOS</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>Εγκατάσταση</value>
+    <value>Intel</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
     <value>{0} είναι έτοιμο!</value>
@@ -253,7 +253,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
-    <value>Εγκατάσταση...</value>
+    <value>Εγκατάσταση…</value>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
     <value>Αιτία: </value>
@@ -271,25 +271,25 @@
     <value>Εκκίνηση</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
-    <value>Εκκίνηση WSA...</value>
+    <value>Εκκίνηση WSA…</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
     <value>Εκκίνηση όταν είστε έτοιμοι</value>
   </data>
   <data name="Loading" xml:space="preserve">
-    <value>Φόρτωση...</value>
+    <value>Φόρτωση…</value>
   </data>
   <data name="MoreInfoFlyoutItem.Text" xml:space="preserve">
     <value>Περισσότερες πληροφορίες</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
-    <value>Αδυναμία εύρεσης συσκευής Android</value>
+    <value>Αδυναμία εύρεσης συσκευής AndroidX</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
     <value>Πώς να συνδέσετε τη συσκευή</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
-    <value>Αν θέλετε να εγκαταστήσετε την εφαρμογή στο Υποσύστημα Windows για το AndroidTM, πρέπει πρώτα να το εγκαταστήσετε. Αν θέλετε να εγκαταστήσετε σε άλλες συσκευές, παρακαλώ μεταβείτε στη σελίδα ρυθμίσεων, απενεργοποιήστε το "Is Only for WSA" και συνδέστε τη συσκευή σας.</value>
+    <value>Αν θέλετε να εγκαταστήσετε την εφαρμογή στο Υποσύστημα Windows για το AndroidTM, πρέπει πρώτα να το εγκαταστήσετε. Αν θέλετε να εγκαταστήσετε σε άλλες συσκευές, παρακαλώ μεταβείτε στη σελίδα ρυθμίσεων, απενεργοποιήστε το "IG Sony Ford WSA" και συνδέστε τη συσκευή σας.</value>
   </data>
   <data name="NoDeviceInfo10" xml:space="preserve">
     <value>#### Χρησιμοποιώντας USB
@@ -329,7 +329,7 @@
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="PostInstallFormat" xml:space="preserve">
-    <value>Cleaning cache ({0}/{1})...</value>
+    <value>Καθαρισμός κρύπτης ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
@@ -379,7 +379,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="UploadingFormat" xml:space="preserve">
-    <value>Uploading {0} ({1}/{2})...</value>
+    <value>Αποστολή {0} ({1}/{2})...</value>
     <comment>{0} - Progress. {1} - Finnished count. {2} - Total count.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
@@ -393,7 +393,7 @@
     <value>Αναμονή για λήψη...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value>Αναμονή για συσκευή...</value>
+    <value>Αναμονή για συσκευή…</value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
     <value>Αναμονή για εγκατάσταση {0}</value>
@@ -407,7 +407,7 @@
     <value>Καλώς ήρθατε!</value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
-    <value>Writing install session ({0}/{1})...</value>
+    <value>Εγγραφή συνεδρίας εγκατάστασης ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">

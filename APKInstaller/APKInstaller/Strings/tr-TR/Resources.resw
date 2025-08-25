@@ -121,13 +121,13 @@
     <value>Android Uygulama Paketi</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>APK Dosyası</value>
+    <value>APK File</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>Bir Android Uygulama Yükleyicisi. @wherewhere ve @Tangent-90 tarafından yazıldı.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>APK Yükleyicisi</value>
+    <value/>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>Programla ilgili bir hata oluştu…</value>

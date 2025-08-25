@@ -133,7 +133,7 @@
     <value>Online-pakketten automatisch downloaden?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>Selecteer Achtergrondtype voor Windows 11</value>
+    <value>Selecteer Achtergrond type voor Windows 11</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
     <value>Achtergrond</value>
@@ -154,22 +154,22 @@
     <value>Cache wissen</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
+    <value>ADB Server moet worden herstart bij volgende installatie als je deze beëindigt.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Terminate ADB when Exit Installer?</value>
+    <value>ADB beëindigen bij Verlaten Installer?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Exit Installer after installation is complete.</value>
+    <value>Verlaat Installer nadat de installatie is voltooid.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Exit Installer when APP is Ready?</value>
+    <value>Verlaat Installer nadat de applicatie gereed is?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Configuratie</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value>Verbind apparaat via netwerk.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>Apparaat verbinden</value>
@@ -178,7 +178,7 @@
     <value>Neem contact met mij op</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
+    <value>Volg me op sociale apps voor de laatste ontwikkelingen. Als je bugs vindt, meld ze me dan per PM. Ik zal mijn best doen om ze op te lossen. Als je een Telegram-account hebt, voel je dan vrij om te chatten in de Paving Base Group 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Inhoud</value>
@@ -193,7 +193,7 @@
     <value>Ondersteuning</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
+    <value>APK Installer is een open-source applicatie die geen advertenties voor winst toevoegt. Als je deze app leuk vindt, vergeet hem dan niet te waarderen in de store. Natuurlijk zou het geweldig zijn als je een beetje zou kunnen doneren. Bedankt voor je steun.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>Gebruikersovereenkomst</value>
@@ -235,7 +235,7 @@
     <value>Logboeken</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
+    <value>Een aangepaste versie kan vervelende dingen bevatten. Zoals advertenties, kapotte functies of zelfs virussen. Ga naar de Microsoft Store om de originele versie te downloaden. Zie onze GitHub Repository voor meer informatie.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>U gebruikt een aangepaste versie!</value>
@@ -244,7 +244,7 @@
     <value>Schakel uit om verbinding te maken met andere apparaten.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>For WSA only?</value>
+    <value>Alleen voor WSA?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>OS architectuur</value>
@@ -256,16 +256,16 @@
     <value>Overige</value>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
-    <value>Pair device through network.</value>
+    <value>Koppel apparaat via netwerk.</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
     <value>Toestel koppelen</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
-    <value>Pair and connect devices.</value>
+    <value>Koppel en verbind apparaten.</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
-    <value>Pair &amp; Connect</value>
+    <value>Koppel &amp; Verbind</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Donker</value>
@@ -298,10 +298,10 @@
     <value>Weet u zeker dat u de app wilt resetten?</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value>Scan and auto connect paired devices.</value>
+    <value>Scan en verbind gekoppelde apparaten automatisch.</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Scan Paired Devices?</value>
+    <value>Scan Gekoppelde Apparaten?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Selecteer apparaat</value>
@@ -310,19 +310,19 @@
     <value>Toon helpers wanneer er geen apparaat is aangesloten.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Whether to Show Helps?</value>
+    <value>Wil je Help tonen?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Display announcements at the top of Settings.</value>
+    <value>Aankondigingen tonen bovenaan Instellingen.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Whether to Show Announcements?</value>
+    <value>Wil je Aankondigingen tonen?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>Het kan tijdelijke bestanden achterlaten als er een onverwachte onderbreking optreedt.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Whether to Show Installation Progress?</value>
+    <value>Wil je de Installatievoortgang tonen?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>Appthema</value>
@@ -343,6 +343,6 @@
     <value>Actueel</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Windows Kleurinstellingen</value>
+    <value>Windows Color Settings</value>
   </data>
 </root>

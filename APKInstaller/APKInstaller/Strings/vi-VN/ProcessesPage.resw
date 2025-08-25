@@ -118,24 +118,24 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Detail.Header" xml:space="preserve">
-    <value>Chi tiết</value>
+    <value>Detail</value>
   </data>
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
-    <value>Đang chờ thiết bị...</value>
+    <value>Waiting for device...Meta quest 2...  </value>
   </data>
   <data name="Name.Header" xml:space="preserve">
-    <value>Tên</value>
+    <value>Name</value>
   </data>
   <data name="ProcessId.Header" xml:space="preserve">
-    <value>ID Quá trình</value>
+    <value>Process ID</value>
   </data>
   <data name="ResidentSetSize.Header" xml:space="preserve">
-    <value>Kích thước bộ cư dân</value>
+    <value>Resident Set Size</value>
   </data>
   <data name="State.Header" xml:space="preserve">
-    <value>Trạng thái</value>
+    <value>State</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Quá trình</value>
+    <value>Processes</value>
   </data>
 </root>

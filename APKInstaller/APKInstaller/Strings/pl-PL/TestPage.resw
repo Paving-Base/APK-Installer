@@ -127,13 +127,13 @@
     <value>Aplikacje</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
-    <value>Wprowadź lub wyjdź z kompaktowej nakładki</value>
+    <value>Wprowadź nakładkę kompaktową</value>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
     <value>Kompaktowa nakładka</value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
-    <value>A development version app may not stable. Download release version on Microsoft Store.</value>
+    <value>Aplikacja wersji deweloperskiej może nie być stabilna. Pobierz najnowszą stabilną wersję w sklepie Microsoft.</value>
   </data>
   <data name="DevelopmentInfoBar.Title" xml:space="preserve">
     <value>Używasz aplikacji programistycznej.</value>
@@ -184,6 +184,6 @@
     <value>Pasek tytułu </value>
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
-    <value>Testy UI</value>
+    <value>Test UI</value>
   </data>
 </root>

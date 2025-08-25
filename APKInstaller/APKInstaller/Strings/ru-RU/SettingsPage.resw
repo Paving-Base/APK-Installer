@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
-    <value>О программе</value>
+    <value>О системе</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>Путь ADB</value>
+    <value>ADB путь</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
     <value>Версия ADB</value>
@@ -130,7 +130,7 @@
     <value>Автоматически загружать пакеты из URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Автоматическая загрузка онлайн пакетов?</value>
+    <value>Автоматическая загрузка онлайн пакетов</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Выберите тип фона для Windows 11</value>
@@ -328,19 +328,19 @@
     <value>Тема приложения</value>
   </data>
   <data name="ThemesSettingsHeader.Header" xml:space="preserve">
-    <value>Темы</value>
+    <value>Тема</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Параметры</value>
+    <value>Параметры EarTrumpet / О приложении</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>Перевод</value>
+    <value>Переведите</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
-    <value>Версия</value>
+    <value>Версия приложения</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Последняя версия</value>
+    <value>Все свежие обновления установлены</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
     <value>Настройки цветов Windows</value>

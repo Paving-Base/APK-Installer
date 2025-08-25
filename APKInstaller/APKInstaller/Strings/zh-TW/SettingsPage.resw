@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
-    <value>關於</value>
+    <value>About</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
     <value>ADB 路徑</value>
@@ -340,7 +340,7 @@
     <value>版本</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>最新</value>
+    <value>Up To Date</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
     <value>Windows 色彩設定</value>

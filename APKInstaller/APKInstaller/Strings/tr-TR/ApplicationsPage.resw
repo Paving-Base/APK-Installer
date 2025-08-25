@@ -118,13 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
-    <value>Cihaz Bekleniyor...</value>
+    <value>Waiting for Device...
+
+</value>
   </data>
   <data name="Start.Text" xml:space="preserve">
     <value>Başla</value>
   </data>
   <data name="Stop.Text" xml:space="preserve">
-    <value>Durdur</value>
+    <value>Dur
+</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Uygulamalar</value>

@@ -121,169 +121,169 @@
     <value>정보</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>ADB Path</value>
+    <value>ADB 경로</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>ADB Version</value>
+    <value>ADB 버전</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>Auto download when package is from URL.</value>
+    <value>패키지가 URL에서 온 경우 자동 다운로드.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Auto Download Online Packages?</value>
+    <value>온라인 패키지 자동 다운로드?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
-    <value>Select Backdrop Type for Windows 11</value>
+    <value>Windows 11용 배경 유형 선택</value>
   </data>
   <data name="BackdropSettings.Header" xml:space="preserve">
-    <value>Backdrop</value>
+    <value>배경</value>
   </data>
   <data name="Change.Content" xml:space="preserve">
     <value>바꾸기</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>Check Failed</value>
+    <value>확인 실패</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
-    <value>Checking For Updates...</value>
+    <value>업데이트 확인 중...</value>
   </data>
   <data name="CheckUpdates.Content" xml:space="preserve">
-    <value>Check For Updates</value>
+    <value>업데이트 확인</value>
   </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
-    <value>Clear cache</value>
+    <value>캐시 지우기</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
+    <value>ADB 서버를 종료한 경우 다음 설치 시 다시 시작해야 합니다.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Terminate ADB when Exit Installer?</value>
+    <value>설치 설치 관리자를 나갈 때 ADB를 종료하시겠습니까?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Exit Installer after installation is complete.</value>
+    <value>설치가 완료되면 설치 관리자를 종료합니다.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Exit Installer when APP is Ready?</value>
+    <value>앱이 준비되면 설치 관리자를 종료하시겠습니까?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
-    <value>Configs</value>
+    <value>구성</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value>네트워크를 통해 장치를 연결합니다.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
-    <value>Connect Device</value>
+    <value>장치 연결</value>
   </data>
   <data name="ContactMeSettings.Header" xml:space="preserve">
-    <value>Contact Me</value>
+    <value>문의하기</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
+    <value>소셜 앱에서 저를 팔로우하여 최신 개발 소식을 확인하세요. 버그를 발견하면 오후까지 저에게 보고해 주세요. 최선을 다해 해결해 드리겠습니다. 텔레그램 계정이 있으시다면, Paving Base Group 😊에서 자유롭게 채팅하세요!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
-    <value>Content</value>
+    <value>콘텐츠</value>
   </data>
   <data name="DeviceSettingsHeader.Header" xml:space="preserve">
-    <value>Device</value>
+    <value>장치</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
-    <value>Display</value>
+    <value>디스플레이</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
-    <value>Supports</value>
+    <value>지원</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
+    <value>APK 설치 관리자은 영리 목적으로 광고를 추가하지 않는 오픈 소스 애플리케이션입니다. 이 앱이 마음에 드신다면 스토어에서 평가하는 것을 잊지 마세요. 물론 조금만 기부해 주시면 감사하겠습니다. 여러분의 성원에 감사드립니다 💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>EULA</value>
   </data>
   <data name="FeedbackLink.Content" xml:space="preserve">
-    <value>Feedback</value>
+    <value>피드백</value>
   </data>
   <data name="FindUpdate" xml:space="preserve">
-    <value>Find Update</value>
+    <value>업데이트 찾기</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>Information about the frameworks of this app.</value>
+    <value>이 앱의 프레임워크에 대한 정보입니다.</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
-    <value>Framework Information</value>
+    <value>프레임워크 정보</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
-    <value>Framework</value>
+    <value>프레임워크</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
-    <value>Go to the page of test.</value>
+    <value>테스트 페이지로 이동합니다.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>Go to TestPage</value>
+    <value>테스트 페이지로 이동</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
-    <value>Go to Update</value>
+    <value>업데이트로 이동</value>
   </data>
   <data name="Group.Content" xml:space="preserve">
-    <value>Join Our Chat</value>
+    <value>채팅 참여하기</value>
   </data>
   <data name="LastChecked.Text" xml:space="preserve">
-    <value>Last Checked: </value>
+    <value>마지막 확인: </value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
-    <value>Learn More</value>
+    <value>자세히 알아보기</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
-    <value>Logs</value>
+    <value>로그</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
+    <value>수정된 버전에서는 불쾌한 일이 발생할 수 있습니다. 광고, 손상된 기능 또는 바이러스 등이 있을 수 있습니다.  원본 버전을 다운로드하려면 Microsoft Store로 이동하세요. 자세한 내용은 GitHub 리포지토리를 참조하세요.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>You are using a modified version!</value>
+    <value>수정된 버전을 사용 중입니다!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Disable it to connect to other devices.</value>
+    <value>다른 장치에 연결하려면 사용 안 함으로 하세요.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>For WSA only?</value>
+    <value>WSA 전용인가요?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>OS Architecture</value>
+    <value>OS 아키텍처</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
-    <value>OS Platform</value>
+    <value>OS 플랫폼</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
-    <value>Others</value>
+    <value>기타</value>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
-    <value>Pair device through network.</value>
+    <value>네트워크를 통해 장치를 페어링합니다.</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>Pair Device</value>
+    <value>장치 페어링</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
-    <value>Pair and connect devices.</value>
+    <value>장치를 페어링하고 연결합니다.</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
-    <value>Pair &amp; Connect</value>
+    <value>페어링 및 연결</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
-    <value>Dark</value>
+    <value>다크</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>Windows Default</value>
+    <value>Windows 기본값</value>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
-    <value>Light</value>
+    <value>라이트</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value>Rate On Store</value>
+    <value>스토어에서 평가하기</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
-    <value>Release notes</value>
+    <value>릴리스 노트</value>
   </data>
   <data name="ResetSettings.Description" xml:space="preserve">
-    <value>Reset settings of this application.</value>
+    <value>이 애플리케이션의 설정을 초기화합니다.</value>
   </data>
   <data name="ResetSettings.Header" xml:space="preserve">
     <value>애플리케이션 초기화</value>
@@ -295,54 +295,54 @@
     <value>예</value>
   </data>
   <data name="ResetSettingsTitle.Text" xml:space="preserve">
-    <value>Are you sure you want to reset the app?</value>
+    <value>앱을 초기화하시겠습니까?</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value>Scan and auto connect paired devices.</value>
+    <value>페어링된 장치를 스캔하고 자동으로 연결합니다.</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Scan Paired Devices?</value>
+    <value>페어링된 장치를 스캔하시겠습니까?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
-    <value>Select Device</value>
+    <value>장치 선택</value>
   </data>
   <data name="ShowDialogsSettings.Description" xml:space="preserve">
-    <value>Show helpers when no device is connected.</value>
+    <value>연결된 장치가 없을 때 도우미를 표시합니다.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Whether to Show Helps?</value>
+    <value>도움말을 표시하시겠습니까?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Display announcements at the top of Settings.</value>
+    <value>설정 상단에 공지사항을 표시합니다.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Whether to Show Announcements?</value>
+    <value>공지 사항 표시하시겠습니까?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
-    <value>It may leave temp files when an unexpected interruption occurs.</value>
+    <value>예기치 않은 중단이 발생하면 임시 파일이 남을 수 있습니다.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Whether to Show Installation Progress?</value>
+    <value>설치 진행률 표시하시겠습니까?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
-    <value>App Theme</value>
+    <value>앱 테마</value>
   </data>
   <data name="ThemesSettingsHeader.Header" xml:space="preserve">
-    <value>Themes</value>
+    <value>테마</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Settings</value>
+    <value>설정</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>Translate</value>
+    <value>번역</value>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
-    <value>Version</value>
+    <value>버전</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Up To Date</value>
+    <value>최신 정보</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Windows Color Settings</value>
+    <value>Windows 색상 설정</value>
   </data>
 </root>

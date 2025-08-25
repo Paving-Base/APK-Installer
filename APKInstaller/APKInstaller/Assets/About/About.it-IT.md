@@ -1,7 +1,7 @@
-#### Benvenuto su APK Installer!
+#### Benvenuto nell'installatore di APK!
 
 ##### Dichiarazione
-1. Sei pregato di rispettare l'[Accordo di Licenza dell'Utente Finale e la Politica sulla Privacy di APK Installer](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
+1. Sei pregato di rispettare l'[Accordo di Licenza dell'Utente Finale e la Politica sulla Privacy dell'installatore di APK ](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
 2. Questo programma è un software open source, sei quindi pregato di assicurarti che il programma provenga [dalla repository di GitHub](https://github.com/Paving-Base/APK-Installer) o da [questa applicazione](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) per garantire la sicurezza dei tuoi dati.
 3. Se la fonte del programma è conforme, tutti i tuoi dati saranno utilizzati esclusivamente per eseguire il programma, o archiviati localmente durante l'esecuzione e lo sviluppatore non se ne impossesserà. Tuttavia, presta attenzione alla sicurezza dell'ambiente.
 4. La traduzione di questa applicazione proviene dalla comunità [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") e tutti i testi non rappresentano le opinioni dell'autore.

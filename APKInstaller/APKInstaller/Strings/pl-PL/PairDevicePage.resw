@@ -127,10 +127,10 @@
     <value>Połączono {0} urządzeń</value>
   </data>
   <data name="ConnectedLogText" xml:space="preserve">
-    <value>Połączono pomyślnie.</value>
+    <value>Połączenie udane.</value>
   </data>
   <data name="ConnectingLogText" xml:space="preserve">
-    <value>Parowanie pomyślne. Łączenie, proszę nie zamykać okna.</value>
+    <value>Sparowano pomyślnie. Łączenie... Proszę nie zamykać okna.</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
     <value>Połącz</value>
@@ -142,16 +142,16 @@
     <value>Adres IP</value>
   </data>
   <data name="ManualPairButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Podłącz urządzenia ręcznie</value>
+    <value>Connecting devices manualny</value>
   </data>
   <data name="ManualPairTextBlock.Text" xml:space="preserve">
-    <value>Połączenie ręczne</value>
+    <value>Połącz ręcznie</value>
   </data>
   <data name="PairCodeBox.Header" xml:space="preserve">
-    <value>WLAN Pairing Code</value>
+    <value>Kod parujący WLAN</value>
   </data>
   <data name="PairCodeTextBlock.Text" xml:space="preserve">
-    <value>WLAN Pairing Code</value>
+    <value>Kod parujący WLAN</value>
   </data>
   <data name="PairingLogText" xml:space="preserve">
     <value>Parowanie, proszę nie zamykać okna.</value>
@@ -163,7 +163,7 @@
     <value>Port</value>
   </data>
   <data name="QRScanButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Zaloguj kodem QR</value>
+    <value>Sparuj kodem QR</value>
   </data>
   <data name="QRScanTextBlock.Text" xml:space="preserve">
     <value>Zeskanuj kod QR, aby dodać urządzenie.</value>

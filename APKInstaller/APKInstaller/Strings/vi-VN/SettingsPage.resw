@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutSettingsHeader.Header" xml:space="preserve">
-    <value>Về</value>
+    <value>Thông tin</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
     <value>Đường dẫn ADB</value>
@@ -127,7 +127,7 @@
     <value>Phiên bản ADB</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
-    <value>Tự động tải xuống khi gói từ URL.</value>
+    <value>Tự động tải xuống khi gói đến từ URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
     <value>Tự Động Tải Xuống Các Gói Trực Tuyến?</value>
@@ -151,7 +151,7 @@
     <value>Kiểm tra bản cập nhật</value>
   </data>
   <data name="CleanCacheButton.Content" xml:space="preserve">
-    <value>Làm sạch bộ nhớ nhớ</value>
+    <value>Làm sạch bộ nhớ</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
     <value>Máy chủ ADB cần được khởi động lại trong lần cài đặt tiếp theo nếu bạn chấm dứt nó.</value>
@@ -178,7 +178,7 @@
     <value>Liên hệ với tôi</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Theo dõi tôi trên các ứng dụng xã hội để biết những phát triển mới nhất. Nếu bạn tìm thấy bất kỳ lỗi nào, vui lòng báo cáo cho tôi bằng PM. Tôi sẽ cố gắng hết sức để giải quyết nó. Nếu bạn có tài khoản Telegram, vui lòng trò chuyện trong Paving Base Group 😊!</value>
+    <value>Theo dõi mình trên các ứ/dụng mạng xã hội để biết những phát triển mới nhất. Nếu bạn tìm thấy bất kỳ lỗi/bug nào, vui lòng báo cáo cho tôi bằng PM. Tôi sẽ cố gắng hết sức để giải quyết nó. Nếu bạn có tài khoản Telegram, bạn có thể nhắn tin/giao lưu trong nhóm Paving Base 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Nội dung</value>
@@ -187,7 +187,7 @@
     <value>Thiết bị</value>
   </data>
   <data name="DisplaySettingsHeader.Header" xml:space="preserve">
-    <value>Trưng bày</value>
+    <value>Hiển thị</value>
   </data>
   <data name="DonateSettings.Header" xml:space="preserve">
     <value>Hỗ trợ</value>
@@ -205,19 +205,19 @@
     <value>Tìm bản cập nhật</value>
   </data>
   <data name="FrameworkSettings.Description" xml:space="preserve">
-    <value>Thông tin về các khuôn khổ của ứng dụng này.</value>
+    <value>Thông tin về các khung của ứng dụng này.</value>
   </data>
   <data name="FrameworkSettings.Header" xml:space="preserve">
     <value>Thông tin khung</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
-    <value>Khuôn khổ</value>
+    <value>Khung</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>Chuyển đến trang thử nghiệm.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>Truy cập TestPage</value>
+    <value>Truy cập Trang Thử nghiệm</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
     <value>Đi tới Cập nhật</value>
@@ -235,13 +235,13 @@
     <value>nhật ký</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>Một phiên bản sửa đổi có thể có một số điều khó chịu. Chẳng hạn như quảng cáo, tính năng bị hỏng hoặc thậm chí là vi-rút. Vui lòng truy cập Microsoft Store để tải xuống phiên bản gốc. Vui lòng xem Kho lưu trữ GitHub của chúng tôi để biết thêm thông tin.</value>
+    <value>Một phiên bản bị sửa đổi có thể có một số điều khó chịu. Chẳng hạn như quảng cáo, tính năng bị hỏng hoặc thậm chí là vi-rút. Vui lòng truy cập cửa hàng Microsoft để tải xuống phiên bản gốc. Vui lòng xem Kho lưu trữ GitHub của chúng tôi để biết thêm thông tin.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>Bạn đang sử dụng một phiên bản sửa đổi!</value>
+    <value>Bạn đang sử dụng một phiên bản bị sửa đổi!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
-    <value>Vô hiệu hóa nó để kết nối với các thiết bị khác.</value>
+    <value>Tắt nó để kết nối với các thiết bị khác.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
     <value>Chỉ dành cho WSA?</value>
@@ -262,10 +262,10 @@
     <value>Ghép nối thiết bị</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
-    <value>Pair and connect devices.</value>
+    <value>Ghép đôi và kết nối thiết bị.</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
-    <value>Ghép nối &amp; Kết nối</value>
+    <value>Pair &amp; Connect</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>Tối</value>
@@ -277,7 +277,7 @@
     <value>Sáng</value>
   </data>
   <data name="Rate.Content" xml:space="preserve">
-    <value>Giá trên cửa hàng</value>
+    <value>Đánh giá trên cửa hàng</value>
   </data>
   <data name="ReleaseNotes.Content" xml:space="preserve">
     <value>Ghi chú phát hành</value>
@@ -301,7 +301,7 @@
     <value>Quét và tự động kết nối các thiết bị đã ghép nối.</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Quét Các Thiết Bị Đã Ghép Nối?</value>
+    <value>Quét các thiết bị đã ghép nối?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>Chọn thiết bị</value>
@@ -340,9 +340,9 @@
     <value>Phiên bản</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Phiên Bản Mới Nhất</value>
+    <value>Mới nhất</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
-    <value>Cài đặt màu Windows</value>
+    <value>Cài đặt màu cho Windows</value>
   </data>
 </root>

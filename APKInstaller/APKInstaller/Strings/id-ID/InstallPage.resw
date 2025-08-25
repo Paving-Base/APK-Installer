@@ -121,84 +121,84 @@
     <value>ADB, Android Debug Bridge, diperlukan agar Penginstal APK berfungsi. Klik "Unduh" untuk mengunduhnya. Dengan mengunduh, Anda menerima Persyaratan dan Ketentuan Google untuk ADB. Jika Anda sudah mengunduh ADB, klik "Pilih" untuk memilihnya.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>Ada ADB</value>
+    <value>Ada ADB Exists </value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>ADB hilang</value>
+    <value>ADB is missing </value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>Dalam Tahap Analisis...</value>
+    <value>Dalam Tahap Analisis... </value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
-    <value>berkas APK</value>
+    <value>
+File APK Filefiles </value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
-    <value>Kemampuan:</value>
+    <value>Kemampuan: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>Nama Aplikasi</value>
+    <value>Nama Aplikasi yandere chan simulator  </value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Batal
-</value>
+    <value>Batalbatal </value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
-    <value>Ya</value>
+    <value>Ya </value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
-    <value>Tidak</value>
+    <value>Tidak </value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Tidak Dapat Terhubung ke WSA</value>
+    <value>Tidak Dapat Terhubung ke WSA </value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>Entah WSA tidak memulai dengan benar, atau ada masalah dengan ADB. Masalah ini bisa sangat sulit untuk diselesaikan. Silakan mulai ulang penginstal. Jika masih tidak bisa, coba memulai ulang komputer.</value>
+    <value>Entah WSA tidak memulai dengan benar, atau ada masalah dengan ADB. Masalah ini bisa sangat sulit untuk diselesaikan. Silakan mulai ulang penginstal. Jika masih tidak bisa, coba memulai ulang komputer. </value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>Tidak dapat membuka paket aplikasi</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>Memeriksa...
+    <value>Memeriksa... 
 </value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>Memeriksa ADB...</value>
+    <value>Memeriksa ADB... </value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Memeriksa Jalur...</value>
+    <value>Memeriksa ADB... </value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Klik di sini untuk membacanya</value>
+    <value>Klik di sini untuk membacanya </value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Tutup</value>
+    <value>Tutup </value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>Apakah Anda yakin ingin membatalkan penginstalan?</value>
+    <value>Apakah Anda yakin ingin membatalkan penginstalan? </value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Menghubungkan Perangkat yang Disandingkan...</value>
+    <value>Menghubungkan Perangkat yang Disandingkan... </value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
-    <value>Salin</value>
+    <value>Salin </value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Creating install session...</value>
+    <value>baca sesi pemasangan </value>
   </data>
   <data name="Devices" xml:space="preserve">
-    <value>Perangkat</value>
+    <value>Perangkat </value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Unduh</value>
+    <value>Unduh </value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>Gagal Mengunduh</value>
+    <value>Gagal Mengunduh </value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>Mohon cek koneksi internet anda atau URL dan coba lagi.</value>
+    <value>Please check your network connection or the URL and try again.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>Mencari WSA...</value>
+    <value>Mencari WSA... </value>
   </data>
   <data name="Finished" xml:space="preserve">
     <value>Selesai</value>
@@ -210,22 +210,22 @@
     <value>Pergi ke Pengaturan</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>Versi yang lebih baru sudah diinstal</value>
+    <value>A newer version is already installed</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>Anda sudah memiliki versi baru {0} yang diinstal di aplikasi ini. Apakah anda yakin ingin menginstal ulang versi {1}?</value>
+    <value>You already have installed a new version {0} of this app. Are you sure to reinstall version {1}?</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>Bagaimana cara menghubungkan WSA</value>
+    <value>How to connect WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Pastikan Penginstal APK telah diperbarui ke versi terbaru
-2. Pastikan Anda telah menginstal dan menjalankan Subsistem Android
-3. Aktifkan mode pengembang dan pastikan alamat IP berhasil ditampilkan
-4. Buka kembali Penginstal APK dan lanjutkan penginstalan Anda
+    <value>1. Please make sure APK Installer has been updated to the latest version
+2. Make sure you have the Android Subsystem installed and running
+3. Turn on developer mode and make sure the IP address is displayed successfully
+4. Reopen APK Installer and continue your installation
 
-[Pelajari Lebih Lanjut]({0})</value>
+[Learn More]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
     <value>Ikon</value>
@@ -255,7 +255,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
-    <value>Menginstal...</value>
+    <value>Instal...</value>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
     <value>Alasan:</value>
@@ -270,13 +270,14 @@
     <value>URL tidak lengkap atau tidak valid.</value>
   </data>
   <data name="Launch" xml:space="preserve">
-    <value>Luncurkan</value>
+    <value>Meluncurkan</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
     <value>Meluncurkan WSA...</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
-    <value>Luncurkan ketika sudah siap</value>
+    <value>Luncurkan ketika su
+dah siap</value>
   </data>
   <data name="Loading" xml:space="preserve">
     <value>Memuat...</value>
@@ -321,7 +322,7 @@
     <value>Oke</value>
   </data>
   <data name="OnlinePackage" xml:space="preserve">
-    <value>Paket Online</value>
+    <value>Online Package</value>
   </data>
   <data name="PackageNameFlyoutItem.Text" xml:space="preserve">
     <value>Nama Paket</value>
@@ -331,11 +332,12 @@
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="PostInstallFormat" xml:space="preserve">
-    <value>Cleaning cache ({0}/{1})...</value>
+    <value>...
+</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
-    <value>Instal Ulang</value>
+    <value>Pasang Ulang</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
     <value>{0} sudah terinstal</value>
@@ -374,7 +376,7 @@
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>Perbarui</value>
+    <value>Pembaruan</value>
   </data>
   <data name="UpdateFormat" xml:space="preserve">
     <value>Perbarui {0}?</value>
@@ -388,11 +390,11 @@
     <value>Kode Versi</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>Versi: {0}</value>
+    <value>Version: {0}</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
-    <value>Menunggu untuk mengunduh...</value>
+    <value>Waiting for download...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
     <value>Menunggu Perangkat...</value>

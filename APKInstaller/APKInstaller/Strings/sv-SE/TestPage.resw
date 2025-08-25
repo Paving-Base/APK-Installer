@@ -124,7 +124,7 @@
     <value>Manage the applications of connected devices</value>
   </data>
   <data name="ApplicationsSettings.Header" xml:space="preserve">
-    <value>Applications</value>
+    <value>Appar</value>
   </data>
   <data name="CompactOverlaySettings.Description" xml:space="preserve">
     <value>Enter or Exit Compact Overlay</value>
@@ -145,16 +145,16 @@
     <value>Select language and restart to change language</value>
   </data>
   <data name="LanguageSettings.Header" xml:space="preserve">
-    <value>Language</value>
+    <value>Språk</value>
   </data>
   <data name="OutPIP.Content" xml:space="preserve">
-    <value>Exit</value>
+    <value>Avsluta</value>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
     <value>Manage the processes of connected devices</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
-    <value>Processes</value>
+    <value>Processer</value>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
     <value>Test Progress Ring on the Title Bar</value>

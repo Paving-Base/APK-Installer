@@ -136,7 +136,7 @@
     <value>功能: </value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>應用程式名稱</value>
+    <value>iTop-VPN-v3.0.0-MOD-GMA-(Getmodsapk.com)</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>取消</value>
@@ -286,7 +286,7 @@
     <value>找不到 Android 裝置</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
-    <value>如何連線至裝置</value>
+    <value>如何連接設備</value>
   </data>
   <data name="NoDeviceInfo" xml:space="preserve">
     <value>如果您想要將應用程式安裝至 Windows 子系統 Android 版 ™️，您需要先將其安裝。如果您想要安裝至其他裝置，請進入設定頁面，關閉「僅適用於 WSA」，並連線至您的裝置。</value>
