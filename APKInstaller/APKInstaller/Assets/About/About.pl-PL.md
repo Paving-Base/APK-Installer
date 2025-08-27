@@ -2,12 +2,12 @@
 
 ##### Deklaracja
 1. من فضلك الامتثال [ل اتفاق ترخيص المستخدم النهائي وسياسة الخصوصية لـ APK](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
-2. Ten program jest otwartym oprogramowaniem, więc upewnij się, że program jest z [tego repozytorium na Github](https://github.com/Paving-Base/APK-Installer) lub [tej aplikacji](https://www.microsoft.com/store/apps/9P2JFQ43FPPG), aby zapewnić bezpieczeństwo danych.
-3. If the source of the program is not abnormal, all your data will be used only for the running of the program or stored locally during the running, and the developer will not steal any of your data. Stil, please Pay attention to the security of the environment.
-4. Tłumaczenie tej aplikacji pochodzi ze społeczności [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") i wszystkie teksty nie reprezentują poglądów autora.
+2. Ten program jest otwartym oprogramowaniem, więc upewnij się, że program jest z [tego repozytorium na GitHub](https://github.com/Paving-Base/APK-Installer) lub [tej aplikacji](https://www.microsoft.com/store/apps/9P2JFQ43FPPG), aby zapewnić bezpieczeństwo danych.
+3. Jeśli źródło programu nie jest nieprawidłowe, wszystkie Twoje dane będą używane tylko do uruchamiania z programem lub przechowywane lokalnie podczas uruchamiania programu, a deweloper nie będzie kradł żadnych twoich danych. Proszę jednak zwrócić uwagę na bezpieczeństwo środowiska.
+4. Tłumaczenie tekstu tej aplikacji pochodzi ze społeczności [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") i wszystkie teksty nie reprezentują poglądów autora.
 
-##### Tłumaczenie
-Dziękujemy tłumaczom [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") za ich wsparcie. Jeśli wystąpią jakiekolwiek problemy z tłumaczeniem, prosimy o ich poprawienie. I proszę tłumaczyć je na poważnie. Wszystko, co piszesz, będzie czytane na całym świecie.
+##### Przetłumacz witrynę
+Dziękujemy tłumaczom [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin") za ich wsparcie. Jeśli wystąpił jakiś problem z tłumaczeniem, przyjdź i popraw to. I proszę przetłumaczyć poważnie. Everything you write will be read all over the world.
 
 ##### Współtwórcy
 - [wherewhere](https://github.com/wherewhere)
