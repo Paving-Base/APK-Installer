@@ -121,10 +121,10 @@
     <value>Over</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>ADB pad</value>
+    <value>ADB Pat </value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>ADB versie</value>
+    <value>AD-versie</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>Automatisch downloaden wanneer een pakket van een URL is.</value>
@@ -178,7 +178,7 @@
     <value>Neem contact met mij op</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Volg me op sociale apps voor de laatste ontwikkelingen. Als je bugs vindt, meld ze me dan per PM. Ik zal mijn best doen om ze op te lossen. Als je een Telegram-account hebt, voel je dan vrij om te chatten in de Paving Base Group 😊!</value>
+    <value>Volg me op sociale apps voor de laatste ontwikkelingen. Als je bugs vindt, meld ze me dan per PM. Ik zal mijn best doen om ze op te lossen. Als je een Telegram account hebt, voel je dan vrij om te chatten in de Paring Base Group 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Inhoud</value>
@@ -193,7 +193,7 @@
     <value>Ondersteuning</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is een open-source applicatie die geen advertenties voor winst toevoegt. Als je deze app leuk vindt, vergeet hem dan niet te waarderen in de store. Natuurlijk zou het geweldig zijn als je een beetje zou kunnen doneren. Bedankt voor je steun.💕</value>
+    <value>APK Installer is een open bron applicatie die geen advertenties voor winst toevoegt. Als je deze app leuk vindt, vergeet hem dan niet te waarderen in de store. Natuurlijk zou het geweldig zijn als je een beetje zou kunnen doneren. Bedankt voor je steun.💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>Gebruikersovereenkomst</value>
@@ -235,7 +235,7 @@
     <value>Logboeken</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>Een aangepaste versie kan vervelende dingen bevatten. Zoals advertenties, kapotte functies of zelfs virussen. Ga naar de Microsoft Store om de originele versie te downloaden. Zie onze GitHub Repository voor meer informatie.</value>
+    <value>Een aangepaste versie kan vervelende dingen bevatten. Zoals advertenties, kapotte functies of zelfs virussen. Ga naar de Microsoft Store om de originele versie te downloaden. Zie onze GitHub A repository is a storage location where data, files, or code are organized and maintained, often used for software development or version control.voor meer informatie.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>U gebruikt een aangepaste versie!</value>
@@ -247,10 +247,10 @@
     <value>Alleen voor WSA?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
-    <value>OS architectuur</value>
+    <value>OS Architectuur</value>
   </data>
   <data name="OSPlatformTextBlock.Text" xml:space="preserve">
-    <value>OS platform</value>
+    <value>OS Platform</value>
   </data>
   <data name="OthersSettingsHeader.Header" xml:space="preserve">
     <value>Overige</value>
@@ -271,7 +271,7 @@
     <value>Donker</value>
   </data>
   <data name="RadioThemeDefault.Content" xml:space="preserve">
-    <value>Windows standaard</value>
+    <value>Windows-standaard</value>
   </data>
   <data name="RadioThemeLight.Content" xml:space="preserve">
     <value>Licht</value>
@@ -322,10 +322,10 @@
     <value>Het kan tijdelijke bestanden achterlaten als er een onverwachte onderbreking optreedt.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Wil je de Installatievoortgang tonen?</value>
+    <value>Wil je de Installatie voortgang tonen?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
-    <value>Appthema</value>
+    <value>App thema</value>
   </data>
   <data name="ThemesSettingsHeader.Header" xml:space="preserve">
     <value>Thema's</value>
