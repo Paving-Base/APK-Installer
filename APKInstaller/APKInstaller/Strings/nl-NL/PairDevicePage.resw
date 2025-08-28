@@ -139,7 +139,7 @@
     <value>{0} Apparaten gevonden</value>
   </data>
   <data name="IPAddressBox.Header" xml:space="preserve">
-    <value>IP Adres</value>
+    <value>IP Adress</value>
   </data>
   <data name="ManualPairButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
     <value>Apparaten handmatig verbinden</value>
@@ -163,10 +163,10 @@
     <value>Poort</value>
   </data>
   <data name="QRScanButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Koppel met QR code</value>
+    <value>Koppel met QR-code</value>
   </data>
   <data name="QRScanTextBlock.Text" xml:space="preserve">
-    <value>Scan QR code om apparaten te koppelen.</value>
+    <value>Scan QR-code om apparaten te koppelen.</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Koppel &amp; Verbind</value>
