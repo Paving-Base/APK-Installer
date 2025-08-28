@@ -121,13 +121,13 @@
     <value>Android Applicatie Pakket</value>
   </data>
   <data name="APKFile" xml:space="preserve">
-    <value>APK bestand</value>
+    <value>Apk-bestanden</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>Een Android App Installer. Geschreven door @wherewhere en @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>App Installer (Mobile)</value>
+    <value/>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>Er is een fout opgetreden bij het programma…</value>
@@ -142,7 +142,7 @@
     <value>Installeer dit pakket</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>Splits APK-bestand</value>
+    <value>Splits Apk-bestanden</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Ja</value>
