@@ -157,13 +157,13 @@
     <value>Processen</value>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
-    <value>Test Voortgangs Ring op de titelbalk</value>
+    <value>Test Voortgang Ring op de titelbalk</value>
   </data>
   <data name="ProgressSettings.Header" xml:space="preserve">
     <value>Voortgang</value>
   </data>
   <data name="SetProgressValue.Description" xml:space="preserve">
-    <value>Stel de waarde van de voortgangsring in</value>
+    <value>Stel de waarde in van een voortgangsmeting</value>
   </data>
   <data name="SetProgressValue.Header" xml:space="preserve">
     <value>Waarde voortgang</value>
