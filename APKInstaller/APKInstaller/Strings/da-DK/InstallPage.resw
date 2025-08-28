@@ -163,7 +163,7 @@
     <value>Tjekker ADB...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
-    <value>Checking Path...</value>
+    <value>...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
     <value>Click here to read them</value>
