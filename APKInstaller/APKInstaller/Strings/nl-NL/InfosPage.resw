@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppName.Text" xml:space="preserve">
-    <value>App Name</value>
+    <value>App Nam</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
-    <value>Basic Information</value>
+    <value>Basic Informatie</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
     <value>Afhankelijkheden - {0} in totaal</value>
@@ -137,7 +137,7 @@
     <value>Min SDK</value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
-    <value>Open pakketmap</value>
+    <value>Open pakketmaat</value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
     <value>Pakketnaam</value>
