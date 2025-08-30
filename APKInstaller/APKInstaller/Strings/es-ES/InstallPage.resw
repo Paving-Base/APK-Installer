@@ -168,7 +168,7 @@ español</value>
     <value>Verificando la ruta...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Haga clic para leer</value>
+    <value>Haga clic aquí para leerlos</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Cierre</value>
