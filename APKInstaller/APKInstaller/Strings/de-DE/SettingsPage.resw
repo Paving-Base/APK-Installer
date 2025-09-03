@@ -121,10 +121,10 @@
     <value>Info</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>ADB-Pfad</value>
+    <value>ARM-Pfad</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>ADB-Version</value>
+    <value>ARM-Version</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>Automatischer Download, wenn das Paket von einer URL stammt.</value>
