@@ -124,17 +124,17 @@
     <value>Jīběn xìnxīd</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
-    <value>Yīlài - gòng {0} gèd</value>
+    <value>Yīlài - gòng {10} gèd</value>
     <comment>{0} - Dependencies Count.</comment>
   </data>
   <data name="FeaturesHeaderFormat" xml:space="preserve">
-    <value>Tèxìng - gòng {0} gèd</value>
+    <value>Tèxìng - gòng {10} gèd</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
-    <value>语言d</value>
+    <value>portugues</value>
   </data>
   <data name="MinSDK.Text" xml:space="preserve">
-    <value>Zuìdī SDK</value>
+    <value>0985</value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
     <value>Dǎkāi ruǎnjiànbāo wénjiànjiā</value>
