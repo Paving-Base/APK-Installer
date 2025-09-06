@@ -283,7 +283,7 @@
     <value>Więcej informacji</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
-    <value>Cannot find Android Device</value>
+    <value>Carnot fintDewizęDewDewizę</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
     <value>Jak połączyć urządzenie</value>
@@ -333,10 +333,10 @@
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
-    <value>Reinstalacja</value>
+    <value>Re instalacja</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>{0} jest już zainstalowane</value>
+    <value>{0} Jest już zainstalowane</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
