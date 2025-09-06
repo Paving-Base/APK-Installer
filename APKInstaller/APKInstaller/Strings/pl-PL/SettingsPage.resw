@@ -232,7 +232,7 @@
     <value>Dowiedz się więcej</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
-    <value>Rejestry zdarzeń (ang. logs)</value>
+    <value>Rejestry zdarzeń (ang. log)</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
     <value>Używanie modyfikowanej wersji może prowadzić do nieprzyjemnych konsekwencji, takich jak reklamy, uszkodzone funkcje, a nawet wirusy. Aby pobrać oryginalną wersję, odwiedź Sklep Microsoft. Więcej szczegółowych informacji można znaleźć w naszym repozytorium GitHub.</value>
