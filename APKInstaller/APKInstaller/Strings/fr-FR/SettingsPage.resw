@@ -178,7 +178,7 @@
     <value>Me contacter</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Suivez-moi sur les applications sociales pour connaître les derniers développements. Si vous trouvez des bugs, merci de me les signaler par MP. Je ferai de mon mieux pour les résoudre. Si vous avez un compte Telegram, n'hésitez pas à discuter dans le groupe Paving Base 😊 !</value>
+    <value>Suivez-moi sur les applications sociales pour connaître les derniers développements. Si vous trouvez des bugs, merci de me les signaler par MP. Je ferai de mon mieux pour les résoudre. Si vous avez un compte Telegram, n'hésitez pas à discuter dans le groupe Pain Base 😊 !</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Contenu</value>
@@ -217,7 +217,7 @@
     <value>Aller à la page de test.</value>
   </data>
   <data name="GoToTestPage.Header" xml:space="preserve">
-    <value>Aller à la PageTest</value>
+    <value>Aller aux Tagètes</value>
   </data>
   <data name="GoToUpdate.Content" xml:space="preserve">
     <value>Aller à la mise à jour</value>
