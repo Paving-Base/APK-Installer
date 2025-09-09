@@ -166,7 +166,7 @@
     <value>...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>Click here to read them</value>
+    <value/>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Luk</value>
