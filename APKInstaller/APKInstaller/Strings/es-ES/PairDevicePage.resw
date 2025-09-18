@@ -124,7 +124,7 @@
     <value>APK installer</value>
   </data>
   <data name="ConnectedListFormat" xml:space="preserve">
-    <value>{0} dispositivos conectados</value>
+    <value>{0} Dispositivos</value>
   </data>
   <data name="ConnectedLogText" xml:space="preserve">
     <value>Conexión establecida</value>
