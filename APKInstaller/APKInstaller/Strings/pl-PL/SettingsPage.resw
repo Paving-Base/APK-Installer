@@ -178,7 +178,7 @@
     <value>Kontakt ze mną</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Obserwuj mnie social mediach po najnowsze aktualizacje. Jeśli znajdziesz jakikolwiek błąd, zgłoś go w prywatnej wiadomości. Dołożę wszelkich starań, aby rozwiązać ten problem. Jeśli masz konto Telegram, zapraszam Cię do grupy Paving Base😊!</value>
+    <value>Obserwuj mnie social mediach po najnowsze aktualizacje. Jeśli znajdziesz jakikolwiek błąd, zgłoś go w prywatnej wiadomości. Dołożę wszelkich starań, aby rozwiązać ten problem. Jeśli masz konto Telegram, zapraszam Cię do grupy paving Base😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Zawartość</value>
@@ -211,7 +211,7 @@
     <value>Informacje o strukturze</value>
   </data>
   <data name="FrameworkTextBlock.Text" xml:space="preserve">
-    <value>Struktura</value>
+    <value>Frameworki</value>
   </data>
   <data name="GoToTestPage.Description" xml:space="preserve">
     <value>Idź do strony testowej.</value>
@@ -259,7 +259,7 @@
     <value>Sparuj urządzenie za pośrednictwem sieci.</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>Pair Device</value>
+    <value>Pair Dewizę</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
     <value>Sparuj i podłącz urządzenie.</value>
