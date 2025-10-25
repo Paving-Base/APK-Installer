@@ -130,7 +130,7 @@
     <value>Wprowadź nakładkę kompaktową</value>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
-    <value>Kompaktowa nakładka</value>
+    <value>Wprowadź nakładkę kompaktową</value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
     <value>Aplikacja wersji deweloperskiej może nie być stabilna. Pobierz najnowszą stabilną wersję w sklepie Microsoft.</value>
