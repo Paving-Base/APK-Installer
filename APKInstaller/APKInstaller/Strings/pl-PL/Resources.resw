@@ -124,7 +124,7 @@
     <value>Plik APK</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>Instalator aplikacji Android. Napisany przez @wherewhere i @Tangent-90.</value>
+    <value>Instalator aplikacji Android. Napisany przez @wherewhere i tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
     <value> (Mobile)</value>
@@ -142,9 +142,9 @@
     <value>Zainstaluj ten pakiet</value>
   </data>
   <data name="SplitAPKFile" xml:space="preserve">
-    <value>Podziel plik APKpod 'TrustWeb3Provider', :git =&gt; 'https://github.com/trustwallet/trust-web3-provider', :branch =&gt; 'master'</value>
+    <value>Podziel plik APK-pod 'TrustWeb3Provider', :git  = &gt; 'https://github.com/trustwallet/trust-web3-provider', :branch  = &gt; 'master'</value>
   </data>
   <data name="Yes" xml:space="preserve">
-    <value>Igen</value>
+    <value>Igę</value>
   </data>
 </root>
