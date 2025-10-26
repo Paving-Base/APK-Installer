@@ -187,7 +187,7 @@
     <value>Urządzenia</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Pobierz</value>
+    <value>Download</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
     <value>Pobieranie nie powiodło się</value>
