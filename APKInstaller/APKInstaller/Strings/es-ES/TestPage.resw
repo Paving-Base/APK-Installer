@@ -151,7 +151,7 @@
     <value>Salir</value>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
-    <value>Administrar los procesos de los dispositivos conectados.</value>
+    <value> Administrar los procesos de los dispositivos conectados</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
     <value>Procesos</value>
