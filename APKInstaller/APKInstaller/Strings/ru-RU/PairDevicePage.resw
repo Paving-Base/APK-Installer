@@ -148,7 +148,7 @@
     <value>Handmatige Verbinding</value>
   </data>
   <data name="PairCodeBox.Header" xml:space="preserve">
-    <value>WLAN Κωδικός Σύζευξης</value>
+    <value>WLAN Pairing Code</value>
   </data>
   <data name="PairCodeTextBlock.Text" xml:space="preserve">
     <value>WLAN Pairing CodeССССС</value>
