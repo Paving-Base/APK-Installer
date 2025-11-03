@@ -143,23 +143,23 @@
     <value>Размер пакетаzfzfzxvzv</value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
-    <value>Размер пакетаzfzfzxvzv</value>
+    <value>Размер пакетов</value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
-    <value>Количество разрешенийzbfzdbf</value>
+    <value>Количество прав</value>
   </data>
   <data name="PermissionsHeaderFormat" xml:space="preserve">
-    <value>Всего разрешений - {0}bSVszfvz</value>
+    <value>Разрешения - {0} в общем</value>
     <comment>{0} - Permissions Count.</comment>
   </data>
   <data name="SharePackage.Content" xml:space="preserve">
-    <value>Поделиться пакетомfzdbzs</value>
+    <value>Рассказать о пакете</value>
   </data>
   <data name="SupportedArchitectures.Text" xml:space="preserve">
-    <value>Поддерживаемые архитектурыfbsvfsb</value>
+    <value>Поддержка Архитектур</value>
   </data>
   <data name="SupportResolutions.Text" xml:space="preserve">
-    <value>Поддерживаемые разрешенияzdbzvbzfzgcvbdxb</value>
+    <value>Резолюции Совета Безопасности</value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
     <value>Поддерживаемые размеры экрана
