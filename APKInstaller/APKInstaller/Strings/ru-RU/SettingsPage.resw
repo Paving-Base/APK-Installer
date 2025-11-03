@@ -130,7 +130,7 @@
     <value>Автоматически загружать пакеты из URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Автоматическая загрузка онлайн пакетов</value>
+    <value>Автоматическое скачивание Онлайн Пакетов?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Выберите тип фона для Windows 11</value>
@@ -178,7 +178,7 @@
     <value>Обратная связь</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Подпишитесь на меня в социальных сетях, чтобы быть в курсе последних событий. Если вы обнаружили какие-либо ошибки, пожалуйста, сообщите мне об этом в личном сообщении. Я постараюсь сделать все возможное, чтобы решить их. Если у вас есть аккаунт в Telegram, не стесняйтесь общаться в Paving Base Group 😊!</value>
+    <value>Подпишитесь на социальные приложения для последних разработок. Если вы нашли какие-либо ошибки, пожалуйста, сообщите о них мне по PM. Я постараюсь решить эту проблему. Если у вас есть аккаунт Telegram, вы можете пообщаться в Paving Base Group 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>Содержание</value>
@@ -235,10 +235,10 @@
     <value>Логи</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>Модифицированная версия может содержать некоторые неприятные вещи. Например, реклама, неработающие функции или даже вирусы.  Пожалуйста, перейдите в Microsoft Store, чтобы загрузить оригинальную версию. Для получения дополнительной информации смотрите наш репозиторий GitHub.</value>
+    <value>Измененная версия может быть неприятной. Например, реклама, неисправные функции или даже вирусы. Пожалуйста, перейдите в магазин Microsoft для загрузки оригинальной версии. Пожалуйста, ознакомьтесь с репозиторием GitHub для дополнительной информации.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
-    <value>Вы используете измененную версию</value>
+    <value>Вы используете модифицированную версию!</value>
   </data>
   <data name="OnlyWSASettings.Description" xml:space="preserve">
     <value>Отключите его, чтобы подключаться к другим устройствами.</value>
