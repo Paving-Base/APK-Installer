@@ -131,6 +131,6 @@
     <value>Ứng dụng</value>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
-    <value>Uninstall</value>
+    <value>Gỡ cài đặt</value>
   </data>
 </root>
