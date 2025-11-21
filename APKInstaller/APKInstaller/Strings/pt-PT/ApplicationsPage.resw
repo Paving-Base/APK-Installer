@@ -130,6 +130,7 @@
     <value>Applications</value>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
-    <value>Desinstalar</value>
+    <value>Desinstalar
+informação</value>
   </data>
 </root>
