@@ -121,7 +121,7 @@
     <value>Nome do aplicativo</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
-    <value>Informaçõeapks básicas</value>
+    <value>Informações APK básicas</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
     <value>Dependências - {0} no total0</value>
