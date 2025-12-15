@@ -3,7 +3,7 @@
 ##### Aclaración
 1. Por favor, respete el [Acuerdo de licencia de usuario final y política de privacidad de Instalador de APK (Móvil)](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
 2. Este programa es software de código abierto, por lo que, al utilizarlo, asegúrese de que proviene de [este repositorio de GitHub](https://github.com/Paving-Base/APK-Installer) o de [esta aplicación](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) en la tienda de aplicaciones, para garantizar la seguridad de sus datos.
-3. Si el origen del programa no presenta anomalías, todos sus datos durante la ejecución del programa se utilizarán únicamente para el funcionamiento del programa o se almacenarán localmente. Los desarrolladores no robarán ninguno de sus datos. No obstante, tenga en cuenta la seguridad del entorno de uso.
+3. Si el origen del programa no es anormal, todos sus datos se usarán únicamente para la ejecución del programa o almacenarse localmente durante la ejecución. El desarrollador no robará ninguno de tus datos. No obstante, tenga en cuenta la seguridad del entorno de uso.
 4. El texto de esta aplicación ha sido traducido por la comunidad de [Crowdin](https://crowdin.com/project/APKInstaller "Crowdin"). Ningún texto representa la opinión del autor.
 
 ##### Traducción
