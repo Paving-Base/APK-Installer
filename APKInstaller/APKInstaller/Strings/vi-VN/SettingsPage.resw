@@ -340,7 +340,7 @@
     <value>Phiên bản</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Mới nhất</value>
+    <value>Đã mới nhất</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
     <value>Cài đặt màu cho Windows</value>
