@@ -172,10 +172,10 @@
     <value>Luk</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>Are you sure to cancel the installation?</value>
+    <value/>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
-    <value>Connecting Paired Devices...</value>
+    <value>...</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
     <value>Kopiér</value>
