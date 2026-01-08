@@ -118,11 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppName.Text" xml:space="preserve">
-    <value>Uygulama Adı ilkolul</value>
+    <value>Uygulama Adı</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
-    <value>Temel Bilgiler ödev
-001e</value>
+    <value>Temel Bilgiler</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
     <value>Bağımlılıklar - toplamda {0} 95
@@ -134,9 +133,7 @@ b</value>
 e</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
-    <value>Dillertürkçe
-
-e</value>
+    <value>Diller</value>
   </data>
   <data name="MinSDK.Text" xml:space="preserve">
     <value>Min SDKwhş</value>
