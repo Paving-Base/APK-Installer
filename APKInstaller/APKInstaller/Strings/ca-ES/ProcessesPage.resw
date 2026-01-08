@@ -121,7 +121,7 @@
     <value/>
   </data>
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
-    <value/>
+    <value>s'està esperant per un dispositiu...fbgvsd </value>
   </data>
   <data name="Name.Header" xml:space="preserve">
     <value>Nom</value>
