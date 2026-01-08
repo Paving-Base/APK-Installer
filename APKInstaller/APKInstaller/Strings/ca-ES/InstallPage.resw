@@ -376,7 +376,7 @@
     <value>Esperant per a descarregar...</value>
   </data>
   <data name="WaitingDevice" xml:space="preserve">
-    <value/>
+    <value>s'està esperant per un dispositiu...fbgvsd </value>
   </data>
   <data name="WaitingForInstallFormat" xml:space="preserve">
     <value/>
