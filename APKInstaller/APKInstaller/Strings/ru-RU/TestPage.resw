@@ -130,25 +130,25 @@
     <value>Ввод или выход компактного оверлея</value>
   </data>
   <data name="CompactOverlaySettings.Header" xml:space="preserve">
-    <value>Компактный оверлей</value>
+    <value>Компактная накладка</value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
     <value>Приложение для разработчиков может не стабильно работать. Загрузите версию в Microsoft Stores.</value>
   </data>
   <data name="DevelopmentInfoBar.Title" xml:space="preserve">
-    <value>Вы используете приложение для разработчика.</value>
+    <value>"Вы используете приложение с версией разработки".</value>
   </data>
   <data name="EnterPIP.Content" xml:space="preserve">
     <value>Компактный оверлей</value>
   </data>
   <data name="LanguageSettings.Description" xml:space="preserve">
-    <value>Выберите язык и перезапустите язык</value>
+    <value>Выберите язык и перезагрузите компьютер, чтобы изменить язык</value>
   </data>
   <data name="LanguageSettings.Header" xml:space="preserve">
     <value>Язык</value>
   </data>
   <data name="OutPIP.Content" xml:space="preserve">
-    <value>Закрыть приложение</value>
+    <value>Закрыть</value>
   </data>
   <data name="ProcessesSettings.Description" xml:space="preserve">
     <value>Управление процессов подключённых устройств</value>
@@ -178,7 +178,7 @@
     <value>Тестовая</value>
   </data>
   <data name="TitleBarSettings.Description" xml:space="preserve">
-    <value>Расширяет контент в заголовке</value>
+    <value>Расширяет контент в заголовке </value>
   </data>
   <data name="TitleBarSettings.Header" xml:space="preserve">
     <value>Панель заголовка</value>
