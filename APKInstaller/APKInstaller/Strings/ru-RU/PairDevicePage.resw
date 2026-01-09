@@ -130,7 +130,7 @@
     <value>Erfolgreich verbunden.</value>
   </data>
   <data name="ConnectingLogText" xml:space="preserve">
-    <value>Επιτυχής σύζευξη. Συνδεθείτε, παρακαλώ μην κλείσετε το παράθυρο.</value>
+    <value>Сопряжение выполнено успешно. При подключении, пожалуйста, не закрывайте окно.</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
     <value>Під’єднатися</value>
@@ -163,10 +163,10 @@
     <value>Porta</value>
   </data>
   <data name="QRScanButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Sandingkan dengan kode QR</value>
+    <value>Сопряжение с помощью QR-кода</value>
   </data>
   <data name="QRScanTextBlock.Text" xml:space="preserve">
-    <value>Pindai kode QR untuk memasangkan perangkat.</value>
+    <value>Сканируйте QR-код для сопряжения устройств</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
     <value>Accoppia E Connetti</value>
