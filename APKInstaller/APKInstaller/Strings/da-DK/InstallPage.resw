@@ -196,13 +196,13 @@
     <value>Please check your network connection or the URL and try again.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>Finding WSA...</value>
+    <value>...</value>
   </data>
   <data name="Finished" xml:space="preserve">
     <value>Færdig</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>WSA Found</value>
+    <value/>
   </data>
   <data name="GoToSetting" xml:space="preserve">
     <value>Gå til Indstillinger</value>
