@@ -121,7 +121,7 @@
     <value>ADB, Android Debut Bridge, er nødvendig for APK Installer til at arbejde. Klik på "Download" for at hente det. Ved at downloade accepterer du Google Vilkår og betingelser for ADB. Hvis du allerede har downloadet ADB, skal du klikke på "Vælg" for at vælge det.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value/>
+    <value>ADB Findes</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
     <value/>
