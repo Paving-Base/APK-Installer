@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, Android Debug Bridge, er nødvendig for APK Installer til at arbejde. Klik på "Download" for at hente det. Ved at downloade accepterer du Google Vilkår og betingelser for ADB. Hvis du allerede har downloadet ADB, skal du klikke på "Vælg" for at vælge det.</value>
+    <value>ADB, Android Debut Bridge, er nødvendig for APK Installer til at arbejde. Klik på "Download" for at hente det. Ved at downloade accepterer du Google Vilkår og betingelser for ADB. Hvis du allerede har downloadet ADB, skal du klikke på "Vælg" for at vælge det.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value/>
@@ -208,10 +208,10 @@
     <value>Gå til Indstillinger</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
-    <value>A newer version is already installed</value>
+    <value/>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>You already have installed a new version {0} of this app. Are you sure to reinstall version {1}?</value>
+    <value/>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
@@ -242,14 +242,14 @@
     <value>Infos</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>Installér</value>
+    <value>Installer</value>
   </data>
   <data name="InstalledFormat" xml:space="preserve">
-    <value>{0} er klar!</value>
+    <value>{0} Er klar!</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="InstallFormat" xml:space="preserve">
-    <value>Installér {0}?</value>
+    <value>Installer {0}?</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
@@ -271,7 +271,7 @@
     <value>Start</value>
   </data>
   <data name="LaunchingWSA" xml:space="preserve">
-    <value>Starter WSA...</value>
+    <value>Starter ASA.</value>
   </data>
   <data name="LaunchWhenReadyCheckbox.Content" xml:space="preserve">
     <value>Launch when ready</value>
