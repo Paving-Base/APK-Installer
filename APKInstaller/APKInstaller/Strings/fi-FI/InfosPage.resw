@@ -166,7 +166,7 @@ sovellus nimi</value>
     <value/>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
-    <value>Target SDK</value>
+    <value/>
   </data>
   <data name="TitleFormat" xml:space="preserve">
     <value>About {0}</value>
