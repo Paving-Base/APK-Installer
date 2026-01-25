@@ -1,7 +1,7 @@
 #### Welcome to the APK Installer!
 
 ##### apk installer
-1. apk installer.
+1. apa instal·lar.
 2. aThis program is open source software, so please make sure the program is from [this Github repository](https://github.com/Paving-Base/APK-Installer) or [this application](https://www.microsoft.com/store/apps/9P2JFQ43FPPG) to ensure your data security.
 3. r. g.
 4. .h
