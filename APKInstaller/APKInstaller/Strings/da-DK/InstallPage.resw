@@ -181,7 +181,7 @@
     <value>Kopiér</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Creating install session...</value>
+    <value/>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Enheder</value>
@@ -193,7 +193,7 @@
     <value>Download mislykkedes</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
-    <value>Please check your network connection or the URL and try again.</value>
+    <value>Tjek venligst din netværksforbindelse eller URL og prøv igen.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
     <value>...</value>
@@ -215,15 +215,15 @@
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
-    <value>How to connect WSA</value>
+    <value>Sådan Forbinder Du WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Please make sure APK Installer has been updated to the latest version
-2. Make sure you have the Android Subsystem installed and running
-3. Turn on developer mode and make sure the IP address is displayed successfully
-4. Reopen APK Installer and continue your installation
+    <value>1. Sørg venligst for, at APK Installer er blevet opdateret til den seneste version
+2. Sørg for, at du har Android Delsystem installeret og kører
+3. Slå udviklertilstand til og sørg for at IP-adressen vises succesfuldt
+4. Genåbne APK Installer og fortsætte din installation
 
-[Learn More]({0})</value>
+[Lær mere]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
     <value>Ikon</value>
