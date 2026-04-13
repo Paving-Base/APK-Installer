@@ -158,7 +158,7 @@
     <value>Eşleştiriliyor, lütfen pencereyi kapatmayın.</value>
   </data>
   <data name="PairToggleButton.Content" xml:space="preserve">
-    <value>Eşleştir</value>
+    <value/>
   </data>
   <data name="PortRun.Text" xml:space="preserve">
     <value>Bağlantı noktası</value>
