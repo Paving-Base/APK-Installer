@@ -219,12 +219,12 @@
     <value>WSA'ya nasıl bağlanılır</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Lütfen APK Installer'ın en son sürüme güncellendiğinden emin olun
-2. Android Alt Sisteminin kurulu ve çalışır durumda olduğundan emin olun
-3. Geliştirici modunu açın ve IP adresinin başarıyla görüntülendiğinden emin olun
-4. APK Installer'ı yeniden açın ve kurulumunuza devam edin
+    <value>1. Please make sure APK Installer has been updated to the latest version
+2. Make sure you have the Android Subsystem installed and running
+3. Turn on developer mode and make sure the IP address is displayed successfully
+4. Reopen APK Installer and continue your installation
 
-[Daha Fazla Bilgi]({0})</value>
+[Learn More]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
     <value>Simge</value>
