@@ -1,6 +1,6 @@
 #### Witamy w Instalatorze APK!
 
-##### Deklaracja
+##### Oświadczenie
 1. من فضلك الامتثال [ل اتفاق ترخيص المستخدم النهائي وسياسة الخصوصية لـ APK](https://github.com/Paving-Base/APK-Installer/blob/main/Privacy.md).
 2. Ten program jest otwartym oprogramowaniem, więc upewnij się, że program jest z [tego repozytorium na GitHub](https://github.com/Paving-Base/APK-Installer) lub [tej aplikacji](https://www.microsoft.com/store/apps/9P2JFQ43FPPG), aby zapewnić bezpieczeństwo danych.
 3. Jeśli źródło programu nie jest nieprawidłowe, wszystkie Twoje dane będą używane tylko do uruchamiania z programem lub przechowywane lokalnie podczas uruchamiania programu, a deweloper nie będzie kradł żadnych twoich danych. Proszę jednak zwrócić uwagę na bezpieczeństwo środowiska.
