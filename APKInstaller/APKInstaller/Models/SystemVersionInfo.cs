@@ -1,24 +1,17 @@
 ﻿using System;
+using System.Numerics;
 
 namespace APKInstaller.Models
 {
-    public readonly struct SystemVersionInfo
+    public readonly struct SystemVersionInfo(int major, int minor, int build, int revision = 0) : IComparable, IComparable<SystemVersionInfo>, IComparisonOperators<SystemVersionInfo, SystemVersionInfo, bool>
     {
-        public SystemVersionInfo(int major, int minor, int build, int revision = 0)
-        {
-            Major = major;
-            Minor = minor;
-            Build = build;
-            Revision = revision;
-        }
+        public int Major { get; } = major;
 
-        public int Major { get; }
+        public int Minor { get; } = minor;
 
-        public int Minor { get; }
+        public int Build { get; } = build;
 
-        public int Build { get; }
-
-        public int Revision { get; }
+        public int Revision { get; } = revision;
 
         public bool Equals(SystemVersionInfo other) => Major == other.Major && Minor == other.Minor && Build == other.Build && Revision == other.Revision;
 

@@ -1,0 +1,17 @@
+<Solution>
+  <Configurations>
+    <Platform Name="ARM64" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Libs/">
+    <Project Path="APKInstaller/AAPTForNet/AAPTForNet.csproj" />
+    <Project Path="APKInstaller/Zeroconf/Zeroconf.csproj" />
+  </Folder>
+  <Project Path="APKInstaller/APKInstaller/APKInstaller.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+    <Deploy />
+  </Project>
+</Solution>

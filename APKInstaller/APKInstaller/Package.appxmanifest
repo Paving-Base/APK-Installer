@@ -44,7 +44,7 @@
             <uap:ShowOn Tile="wide310x150Logo"/>
             <uap:ShowOn Tile="square310x310Logo"/>
           </uap:ShowNameOnTiles>
-        </uap:DefaultTile >
+        </uap:DefaultTile>
         <uap:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="transparent" uap5:Optional="true" />
         <uap:InitialRotationPreference>
           <uap:Rotation Preference="portrait"/>

@@ -22,49 +22,48 @@ pr:
       - APKInstaller/**
 
 pool:
-  vmImage: 'windows-latest'
+  vmImage: windows-2025-vs2026
 
 variables:
-  solution: '*.sln'
-  buildPlatform: 'x86|x64|ARM64'
-  buildConfiguration: 'Release'
-  appxPackageDir: '$(build.artifactStagingDirectory)\AppxPackages\\'
+  solution: "*.slnx"
+  buildPlatform: x86|x64|ARM64
+  buildConfiguration: Release
+  appxPackageDir: $(build.artifactStagingDirectory)\AppxPackages\\
 
 steps:
-- task: UseDotNet@2
-  displayName: 'Setup .NET Core'
-  inputs:
-    packageType: sdk
-    version: 8.0.x
-    includePreviewVersions: true
+  - task: UseDotNet@2
+    displayName: Setup .NET Core App
+    inputs:
+      packageType: sdk
+      version: 10.0.x
 
-- task: VSBuild@1
-  displayName: 'Restore Solution'
-  inputs:
-    platform: 'x64'
-    solution: '$(solution)'
-    configuration: '$(buildConfiguration)'
-    msbuildArgs: '/t:restore'
-    msbuildArchitecture: 'x64'
-    maximumCpuCount: true
+  - task: VSBuild@1
+    displayName: Restore Solution
+    inputs:
+      platform: x64
+      solution: $(solution)
+      configuration: $(buildConfiguration)
+      msbuildArgs: /t:restore
+      msbuildArchitecture: x64
+      maximumCpuCount: true
 
-- task: VSBuild@1
-  displayName: 'Build Solution'
-  inputs:
-    platform: 'x64'
-    solution: '$(solution)'
-    configuration: '$(buildConfiguration)'
-    msbuildArgs: '/p:AppxBundlePlatforms="$(buildPlatform)"
-                  /p:AppxPackageDir="$(appxPackageDir)"
-                  /p:AppxBundle=Always
-                  /p:UapAppxPackageBuildMode=SideloadOnly
-                  /p:GenerateAppxPackageOnBuild=true
-                  /p:AppxPackageSigningEnabled=false'
-    msbuildArchitecture: 'x64'
-    maximumCpuCount: true
+  - task: VSBuild@1
+    displayName: Build Solution
+    inputs:
+      platform: x64
+      solution: $(solution)
+      configuration: $(buildConfiguration)
+      msbuildArgs: /p:AppxBundlePlatforms=$(buildPlatform)
+        /p:AppxPackageDir=$(appxPackageDir)
+        /p:AppxBundle=Always
+        /p:UapAppxPackageBuildMode=SideloadOnly
+        /p:GenerateAppxPackageOnBuild=true
+        /p:AppxPackageSigningEnabled=false
+      msbuildArchitecture: x64
+      maximumCpuCount: true
 
-- task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact'
-  inputs:
-    ArtifactName: 'MSIX Package'
-    PathtoPublish: '$(build.artifactstagingdirectory)'
+  - task: PublishBuildArtifacts@1
+    displayName: Publish Artifact
+    inputs:
+      ArtifactName: MSIX Package
+      PathtoPublish: $(build.artifactstagingdirectory)

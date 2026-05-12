@@ -51,13 +51,8 @@ namespace APKInstaller.ViewModels
         private static readonly string APKTemp = Path.Combine(CachesHelper.TempPath, "NetAPKTemp.apk");
         private static readonly string ADBTemp = Path.Combine(CachesHelper.TempPath, "platform-tools.zip");
 
-#if !DEBUG
         private Uri _url;
         private string _path = string.Empty;
-#else
-        private Uri _url = new("apkinstaller:?source=https://dl.coolapk.com/down?pn=com.coolapk.market&id=NDU5OQ&h=46bb9d98&from=from-web");
-        private string _path = @"C:\Users\qq251\Downloads\Programs\weixin8060android2860_0x28003c39_arm64.apk";
-#endif
         private bool NetAPKExist => _path != APKTemp || File.Exists(_path);
 
         private readonly ResourceLoader _loader = ResourceLoader.GetForViewIndependentUse("InstallPage");
@@ -956,7 +951,7 @@ namespace APKInstaller.ViewModels
             }
             WaitProgressText = _loader.GetString("UnzipADB");
             await Task.Delay(1);
-            using (IArchive archive = ArchiveFactory.Open(ADBTemp))
+            using (IArchive archive = ArchiveFactory.OpenArchive(ADBTemp))
             {
                 ProgressHelper.SetState(ProgressState.Normal, true);
                 WaitProgressIndeterminate = false;
@@ -1910,7 +1905,7 @@ namespace APKInstaller.ViewModels
                         }
                         try
                         {
-                            using (IArchive archive = ArchiveFactory.Open(storageItem.Path))
+                            using (IArchive archive = ArchiveFactory.OpenArchive(storageItem.Path))
                             {
                                 foreach (IArchiveEntry entry in archive.Entries.Where(x => !x.Key.Contains('/')))
                                 {
@@ -1944,7 +1939,7 @@ namespace APKInstaller.ViewModels
                         }
                         try
                         {
-                            using (IArchive archive = ArchiveFactory.Open(item.Path))
+                            using (IArchive archive = ArchiveFactory.OpenArchive(item.Path))
                             {
                                 foreach (IArchiveEntry entry in archive.Entries.Where(x => !x.Key.Contains('/')))
                                 {
@@ -1994,7 +1989,7 @@ namespace APKInstaller.ViewModels
 
                         using (FileStream zip = File.OpenWrite(temp))
                         {
-                            using IWriter zipWriter = WriterFactory.Open(zip, ArchiveType.Zip, CompressionType.Deflate);
+                            using IWriter zipWriter = WriterFactory.OpenWriter(zip, ArchiveType.Zip, WriterOptions.ForZip());
                             foreach (string apk in apks.Where(x => x.EndsWith(".apk")))
                             {
                                 zipWriter.Write(Path.GetFileName(apk), apk);

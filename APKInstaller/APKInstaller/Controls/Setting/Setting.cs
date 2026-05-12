@@ -56,7 +56,7 @@ namespace APKInstaller.Controls
                 // We don't want to override an AutomationProperties.Name that is manually set, or if the Content basetype is of type ButtonBase (the ButtonBase.Content will be used then)
                 if (Content is UIElement element
                     && string.IsNullOrEmpty(AutomationProperties.GetName(element))
-                    && element is not ButtonBase or TextBlock)
+                    && element is not (ButtonBase or TextBlock))
                 {
                     AutomationProperties.SetName(element, headerString);
                 }
