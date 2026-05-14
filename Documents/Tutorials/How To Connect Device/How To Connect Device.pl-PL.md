@@ -9,4 +9,4 @@
 2. Włącz tryb dewelopera, otwórz zdalne debugowanie ![Tryb programistów](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Screenshot_20221002-174001.jpg)
 3. Zapamiętaj adres IP urządzenia ![Adres IP](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Screenshot_20221002-174200.jpg)
 3. Przejdź do strony Ustawienia Instalatora APK, połącz i wybierz swoje urządzenie ![Strona Ustawień](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Snipaste_2022-10-02_17-46-28.png)
-4. Gå tilbake, gjenoppta installasjon ![Wznowić instalację](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Snipaste_2022-10-02_17-34-04.png)
+4. Ga tilakę, gjenoppta installasjon ![Wznowić instalację](https://raw.githubusercontent.com/Paving-Base/APK-Installer/screenshots/Documents/Tutorials/How%20To%20Connect%20Device/Images/Snipaste_2022-10-02_17-34-04.png)
