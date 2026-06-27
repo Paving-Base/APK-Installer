@@ -122,7 +122,7 @@
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
     <value>Información básica
-Brasil Sars variado </value>
+Brasil SARS</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
     <value>Dependencias - {0} en total
@@ -131,7 +131,7 @@ Brasil Sars variado </value>
   </data>
   <data name="FeaturesHeaderFormat" xml:space="preserve">
     <value>Características - {0} en total
-agile</value>
+águila</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
     <value>Idiomas
