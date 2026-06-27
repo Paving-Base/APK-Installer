@@ -1,4 +1,4 @@
-#### Welcome to the APK Installer!
+####
 
 ##### Explication Ils Fanny
 1. Pelasse Fallon the
