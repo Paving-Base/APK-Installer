@@ -228,13 +228,13 @@ español</value>
 [Saber más]({0})</value>
   </data>
   <data name="IconFlyoutItem.Text" xml:space="preserve">
-    <value>Icon</value>
+    <value>Con</value>
   </data>
   <data name="IKnow" xml:space="preserve">
     <value>Entendido</value>
   </data>
   <data name="IncompatibleApp" xml:space="preserve">
-    <value>kb,Entendido</value>
+    <value>kB,Entendido</value>
   </data>
   <data name="IncompatibleAppInfo" xml:space="preserve">
     <value>Esta aplicación requiere como mínimo {0}, y su dispositivo es compatible con {1}. Actualice su dispositivo o seleccione un paquete de instalación de una versión anterior.</value>
@@ -338,7 +338,7 @@ español</value>
     <value>Reinstalar</value>
   </data>
   <data name="ReinstallFormat" xml:space="preserve">
-    <value>{0} ya está instalado</value>
+    <value>{0} Ya</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="ReinstallOutput" xml:space="preserve">
@@ -388,7 +388,7 @@ español</value>
     <value>Código de versión</value>
   </data>
   <data name="VersionFormat" xml:space="preserve">
-    <value>Version: {0}</value>
+    <value>Versión: {0}</value>
     <comment>{0} - AppVersion.</comment>
   </data>
   <data name="WaitDownload" xml:space="preserve">
