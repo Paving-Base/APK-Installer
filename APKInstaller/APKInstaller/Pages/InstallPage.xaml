@@ -14,117 +14,7 @@
     Drop="Page_Drop"
     NavigationCacheMode="Enabled"
     mc:Ignorable="d">
-    <Page.Resources>
-        <MenuFlyout x:Key="IconMenuFlyout">
-            <MenuFlyoutSubItem x:Uid="/InstallPage/CopyFlyoutItem">
-                <MenuFlyoutSubItem.Icon>
-                    <FontIcon Glyph="&#xE8C8;" />
-                </MenuFlyoutSubItem.Icon>
-                <MenuFlyoutItem
-                    x:Uid="/InstallPage/IconFlyoutItem"
-                    Click="CopyBitmapItem_Click"
-                    Tag="{Binding ApkInfo.Icon.RealPath}">
-                    <MenuFlyoutItem.Icon>
-                        <FontIcon Glyph="&#xECAA;" />
-                    </MenuFlyoutItem.Icon>
-                </MenuFlyoutItem>
-                <MenuFlyoutSubItem
-                    x:Name="InfosFlyoutItem"
-                    x:Uid="/InstallPage/InfosFlyoutItem"
-                    x:Load="{x:Bind Provider.ApkInfo.IsEmpty, FallbackValue=true, Converter={StaticResource BoolNegationConverter}, Mode=OneWay}"
-                    Visibility="{Binding ApkInfo.IsEmpty, FallbackValue=true, Converter={StaticResource BoolNegationConverter}, ConverterParameter='true'}">
-                    <MenuFlyoutSubItem.Icon>
-                        <FontIcon Glyph="&#xE946;" />
-                    </MenuFlyoutSubItem.Icon>
-                    <MenuFlyoutItem
-                        x:Uid="/InstallPage/AppNameFlyoutItem"
-                        Click="CopyStringItem_Click"
-                        Tag="{Binding ApkInfo.AppName}">
-                        <MenuFlyoutItem.Icon>
-                            <FontIcon Glyph="&#xED35;" />
-                        </MenuFlyoutItem.Icon>
-                    </MenuFlyoutItem>
-                    <MenuFlyoutItem
-                        x:Uid="/InstallPage/VersionCodeFlyoutItem"
-                        Click="CopyStringItem_Click"
-                        Tag="{Binding ApkInfo.VersionCode}">
-                        <MenuFlyoutItem.Icon>
-                            <FontIcon Glyph="&#xEC7A;" />
-                        </MenuFlyoutItem.Icon>
-                    </MenuFlyoutItem>
-                    <MenuFlyoutItem
-                        x:Uid="/InstallPage/PackageNameFlyoutItem"
-                        Click="CopyStringItem_Click"
-                        Tag="{Binding ApkInfo.PackageName}">
-                        <MenuFlyoutItem.Icon>
-                            <FontIcon Glyph="&#xE7B8;" />
-                        </MenuFlyoutItem.Icon>
-                    </MenuFlyoutItem>
-                </MenuFlyoutSubItem>
-                <MenuFlyoutItem
-                    x:Name="APKFileFlyoutItem"
-                    x:Uid="/InstallPage/APKFileFlyoutItem"
-                    x:Load="{x:Bind Provider.ApkInfo.IsEmpty, FallbackValue=true, Converter={StaticResource BoolNegationConverter}, Mode=OneWay}"
-                    Click="CopyFileItem_Click"
-                    Tag="{Binding ApkInfo.FullPath}"
-                    Visibility="{Binding ApkInfo.IsEmpty, FallbackValue=true, Converter={StaticResource BoolNegationConverter}, ConverterParameter='true'}">
-                    <MenuFlyoutItem.Icon>
-                        <FontIcon Glyph="&#xE7B8;" />
-                    </MenuFlyoutItem.Icon>
-                </MenuFlyoutItem>
-            </MenuFlyoutSubItem>
-            <MenuFlyoutSubItem
-                x:Name="ShareFlyoutItem"
-                x:Uid="/InstallPage/ShareFlyoutItem"
-                x:Load="{x:Bind Provider.ApkInfo.IsEmpty, FallbackValue=true, Converter={StaticResource BoolNegationConverter}, Mode=OneWay}"
-                Visibility="{Binding ApkInfo.IsEmpty, FallbackValue=true, Converter={StaticResource BoolNegationConverter}, ConverterParameter='true'}">
-                <MenuFlyoutSubItem.Icon>
-                    <FontIcon Glyph="&#xE72D;" />
-                </MenuFlyoutSubItem.Icon>
-                <MenuFlyoutItem
-                    x:Uid="/InstallPage/APKFileFlyoutItem"
-                    Click="ShareFileItem_Click"
-                    Tag="{Binding ApkInfo.FullPath}">
-                    <MenuFlyoutItem.Icon>
-                        <FontIcon Glyph="&#xE7B8;" />
-                    </MenuFlyoutItem.Icon>
-                </MenuFlyoutItem>
-                <MenuFlyoutSubItem x:Uid="/InstallPage/StoreLinkFlyoutItem">
-                    <MenuFlyoutSubItem.Icon>
-                        <FontIcon Glyph="&#xE71B;" />
-                    </MenuFlyoutSubItem.Icon>
-                    <MenuFlyoutItem
-                        Click="ShareUrlItem_Click"
-                        Tag="{x:Bind sys:String.Format('https://play.google.com/store/apps/details?id={0}', Provider.ApkInfo.PackageName), Mode=OneWay}"
-                        Text="Google Play" />
-                    <MenuFlyoutItem
-                        Click="ShareUrlItem_Click"
-                        Tag="{x:Bind sys:String.Format('https://f-droid.org/packages/{0}', Provider.ApkInfo.PackageName), Mode=OneWay}"
-                        Text="F-Droid" />
-                    <MenuFlyoutItem
-                        Click="ShareUrlItem_Click"
-                        Tag="{x:Bind sys:String.Format('https://www.coolapk.com/apps/{0}', Provider.ApkInfo.PackageName), Mode=OneWay}"
-                        Text="Coolapk" />
-                    <MenuFlyoutItem
-                        Click="ShareUrlItem_Click"
-                        Tag="{x:Bind sys:String.Format('https://www.amazon.com/gp/mas/dl/android?p={0}', Provider.ApkInfo.PackageName), Mode=OneWay}"
-                        Text="Amazon" />
-                </MenuFlyoutSubItem>
-            </MenuFlyoutSubItem>
-            <MenuFlyoutItem
-                x:Name="MoreInfoFlyoutItem"
-                x:Uid="/InstallPage/MoreInfoFlyoutItem"
-                x:Load="{x:Bind Provider.ApkInfo.IsEmpty, FallbackValue=true, Converter={StaticResource BoolNegationConverter}, Mode=OneWay}"
-                Click="Button_Click"
-                Visibility="{Binding ApkInfo.IsEmpty, FallbackValue=true, Converter={StaticResource BoolNegationConverter}, ConverterParameter='true'}">
-                <MenuFlyoutItem.Icon>
-                    <FontIcon Glyph="&#xE946;" />
-                </MenuFlyoutItem.Icon>
-            </MenuFlyoutItem>
-        </MenuFlyout>
-    </Page.Resources>
-
-    <Grid>
+    <Grid Background="{ThemeResource SystemControlTransparentBrush}">
         <Grid.ChildrenTransitions>
             <TransitionCollection>
                 <EntranceThemeTransition />
@@ -135,6 +25,115 @@
             Grid.Row="1"
             Margin="0,16,0,0"
             Visibility="{Binding IsInitialized, Mode=OneWay}">
+            <Grid.Resources>
+                <MenuFlyout x:Key="IconMenuFlyout">
+                    <MenuFlyoutSubItem x:Uid="/InstallPage/CopyFlyoutItem">
+                        <MenuFlyoutSubItem.Icon>
+                            <FontIcon Glyph="&#xE8C8;" />
+                        </MenuFlyoutSubItem.Icon>
+                        <MenuFlyoutItem
+                            x:Uid="/InstallPage/IconFlyoutItem"
+                            Click="CopyBitmapItem_Click"
+                            Tag="{Binding ApkInfo.Icon.RealPath}">
+                            <MenuFlyoutItem.Icon>
+                                <FontIcon Glyph="&#xECAA;" />
+                            </MenuFlyoutItem.Icon>
+                        </MenuFlyoutItem>
+                        <MenuFlyoutSubItem
+                            x:Name="InfosFlyoutItem"
+                            x:Uid="/InstallPage/InfosFlyoutItem"
+                            x:Load="{x:Bind Provider.ApkInfo.IsEmpty, FallbackValue=true, Converter={StaticResource BoolNegationConverter}, Mode=OneWay}"
+                            Visibility="{Binding ApkInfo.IsEmpty, FallbackValue=true, Converter={StaticResource BoolNegationConverter}, ConverterParameter='true'}">
+                            <MenuFlyoutSubItem.Icon>
+                                <FontIcon Glyph="&#xE946;" />
+                            </MenuFlyoutSubItem.Icon>
+                            <MenuFlyoutItem
+                                x:Uid="/InstallPage/AppNameFlyoutItem"
+                                Click="CopyStringItem_Click"
+                                Tag="{Binding ApkInfo.AppName}">
+                                <MenuFlyoutItem.Icon>
+                                    <FontIcon Glyph="&#xED35;" />
+                                </MenuFlyoutItem.Icon>
+                            </MenuFlyoutItem>
+                            <MenuFlyoutItem
+                                x:Uid="/InstallPage/VersionCodeFlyoutItem"
+                                Click="CopyStringItem_Click"
+                                Tag="{Binding ApkInfo.VersionCode}">
+                                <MenuFlyoutItem.Icon>
+                                    <FontIcon Glyph="&#xEC7A;" />
+                                </MenuFlyoutItem.Icon>
+                            </MenuFlyoutItem>
+                            <MenuFlyoutItem
+                                x:Uid="/InstallPage/PackageNameFlyoutItem"
+                                Click="CopyStringItem_Click"
+                                Tag="{Binding ApkInfo.PackageName}">
+                                <MenuFlyoutItem.Icon>
+                                    <FontIcon Glyph="&#xE7B8;" />
+                                </MenuFlyoutItem.Icon>
+                            </MenuFlyoutItem>
+                        </MenuFlyoutSubItem>
+                        <MenuFlyoutItem
+                            x:Name="APKFileFlyoutItem"
+                            x:Uid="/InstallPage/APKFileFlyoutItem"
+                            x:Load="{x:Bind Provider.ApkInfo.IsEmpty, FallbackValue=true, Converter={StaticResource BoolNegationConverter}, Mode=OneWay}"
+                            Click="CopyFileItem_Click"
+                            Tag="{Binding ApkInfo.FullPath}"
+                            Visibility="{Binding ApkInfo.IsEmpty, FallbackValue=true, Converter={StaticResource BoolNegationConverter}, ConverterParameter='true'}">
+                            <MenuFlyoutItem.Icon>
+                                <FontIcon Glyph="&#xE7B8;" />
+                            </MenuFlyoutItem.Icon>
+                        </MenuFlyoutItem>
+                    </MenuFlyoutSubItem>
+                    <MenuFlyoutSubItem
+                        x:Name="ShareFlyoutItem"
+                        x:Uid="/InstallPage/ShareFlyoutItem"
+                        x:Load="{x:Bind Provider.ApkInfo.IsEmpty, FallbackValue=true, Converter={StaticResource BoolNegationConverter}, Mode=OneWay}"
+                        Visibility="{Binding ApkInfo.IsEmpty, FallbackValue=true, Converter={StaticResource BoolNegationConverter}, ConverterParameter='true'}">
+                        <MenuFlyoutSubItem.Icon>
+                            <FontIcon Glyph="&#xE72D;" />
+                        </MenuFlyoutSubItem.Icon>
+                        <MenuFlyoutItem
+                            x:Uid="/InstallPage/APKFileFlyoutItem"
+                            Click="ShareFileItem_Click"
+                            Tag="{Binding ApkInfo.FullPath}">
+                            <MenuFlyoutItem.Icon>
+                                <FontIcon Glyph="&#xE7B8;" />
+                            </MenuFlyoutItem.Icon>
+                        </MenuFlyoutItem>
+                        <MenuFlyoutSubItem x:Uid="/InstallPage/StoreLinkFlyoutItem">
+                            <MenuFlyoutSubItem.Icon>
+                                <FontIcon Glyph="&#xE71B;" />
+                            </MenuFlyoutSubItem.Icon>
+                            <MenuFlyoutItem
+                                Click="ShareUrlItem_Click"
+                                Tag="{x:Bind sys:String.Format('https://play.google.com/store/apps/details?id={0}', Provider.ApkInfo.PackageName), Mode=OneWay}"
+                                Text="Google Play" />
+                            <MenuFlyoutItem
+                                Click="ShareUrlItem_Click"
+                                Tag="{x:Bind sys:String.Format('https://f-droid.org/packages/{0}', Provider.ApkInfo.PackageName), Mode=OneWay}"
+                                Text="F-Droid" />
+                            <MenuFlyoutItem
+                                Click="ShareUrlItem_Click"
+                                Tag="{x:Bind sys:String.Format('https://www.coolapk.com/apps/{0}', Provider.ApkInfo.PackageName), Mode=OneWay}"
+                                Text="Coolapk" />
+                            <MenuFlyoutItem
+                                Click="ShareUrlItem_Click"
+                                Tag="{x:Bind sys:String.Format('https://www.amazon.com/gp/mas/dl/android?p={0}', Provider.ApkInfo.PackageName), Mode=OneWay}"
+                                Text="Amazon" />
+                        </MenuFlyoutSubItem>
+                    </MenuFlyoutSubItem>
+                    <MenuFlyoutItem
+                        x:Name="MoreInfoFlyoutItem"
+                        x:Uid="/InstallPage/MoreInfoFlyoutItem"
+                        x:Load="{x:Bind Provider.ApkInfo.IsEmpty, FallbackValue=true, Converter={StaticResource BoolNegationConverter}, Mode=OneWay}"
+                        Click="Button_Click"
+                        Visibility="{Binding ApkInfo.IsEmpty, FallbackValue=true, Converter={StaticResource BoolNegationConverter}, ConverterParameter='true'}">
+                        <MenuFlyoutItem.Icon>
+                            <FontIcon Glyph="&#xE946;" />
+                        </MenuFlyoutItem.Icon>
+                    </MenuFlyoutItem>
+                </MenuFlyout>
+            </Grid.Resources>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
                 <RowDefinition Height="Auto" />

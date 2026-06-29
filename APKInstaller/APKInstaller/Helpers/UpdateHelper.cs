@@ -1,7 +1,6 @@
 ﻿using APKInstaller.Models;
 using System;
 using System.Linq;
-using System.Net;
 using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -32,14 +31,13 @@ namespace APKInstaller.Helpers
                 throw new ArgumentNullException(nameof(repository));
             }
 
-            ServicePointManager.SecurityProtocol = (SecurityProtocolType)3072;
             HttpClient client = new();
             client.DefaultRequestHeaders.Add("User-Agent", username);
             string url = string.Format(GITHUB_API, username, repository);
             HttpResponseMessage response = await client.GetAsync(url);
             response.EnsureSuccessStatusCode();
             string responseBody = await response.Content.ReadAsStringAsync();
-            UpdateInfo result = JsonSerializer.Deserialize<UpdateInfo>(responseBody, SourceGenerationContext.Default.UpdateInfo);
+            UpdateInfo result = JsonSerializer.Deserialize(responseBody, SourceGenerationContext.Default.UpdateInfo);
 
             if (result != null)
             {
@@ -61,19 +59,20 @@ namespace APKInstaller.Helpers
 
         private static SystemVersionInfo GetAsVersionInfo(string version)
         {
-            int[] numbs = [.. GetVersionNumbers(version).Split('.').Select(int.Parse)];
-            return numbs.Length <= 1
-                ? new SystemVersionInfo(numbs[0], 0, 0, 0)
-                : numbs.Length <= 2
-                    ? new SystemVersionInfo(numbs[0], numbs[1], 0, 0)
-                    : numbs.Length <= 3
-                        ? new SystemVersionInfo(numbs[0], numbs[1], numbs[2], 0)
-                        : new SystemVersionInfo(numbs[0], numbs[1], numbs[2], numbs[3]);
+            ReadOnlySpan<int> numbs = [.. GetVersionNumbers(version).Split('.', StringSplitOptions.RemoveEmptyEntries).Select(int.Parse)];
+            return numbs switch
+            {
+                { Length: 0 } => new SystemVersionInfo(0, 0, 0, 0),
+                { Length: 1 } => new SystemVersionInfo(numbs[0], 0, 0, 0),
+                { Length: 2 } => new SystemVersionInfo(numbs[0], numbs[1], 0, 0),
+                { Length: 3 } => new SystemVersionInfo(numbs[0], numbs[1], numbs[2], 0),
+                { Length: >= 4 } => new SystemVersionInfo(numbs[0], numbs[1], numbs[2], numbs[3]),
+            };
         }
 
         private static string GetVersionNumbers(string version)
         {
-            string allowedChars = "01234567890.";
+            const string allowedChars = "01234567890.";
             return new string([.. version.Where(allowedChars.Contains)]);
         }
     }
