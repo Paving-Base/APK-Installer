@@ -121,7 +121,7 @@
     <value>Waiting for Device...</value>
   </data>
   <data name="Start.Text" xml:space="preserve">
-    <value>Astarte</value>
+    <value>"Start"</value>
   </data>
   <data name="Stop.Text" xml:space="preserve">
     <value>“Top”</value>
