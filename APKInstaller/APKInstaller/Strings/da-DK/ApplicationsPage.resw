@@ -130,6 +130,6 @@
     <value>Applikationer</value>
   </data>
   <data name="Uninstall.Text" xml:space="preserve">
-    <value>Afinstallér</value>
+    <value>Afinstaller</value>
   </data>
 </root>
