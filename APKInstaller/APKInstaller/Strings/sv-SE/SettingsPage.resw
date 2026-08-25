@@ -289,7 +289,7 @@
     <value>Återställ applikation</value>
   </data>
   <data name="ResetSettingsButton.Content" xml:space="preserve">
-    <value>Reset</value>
+    <value>Återställ</value>
   </data>
   <data name="ResetSettingsConfirm.Content" xml:space="preserve">
     <value>Ja</value>
@@ -325,7 +325,7 @@
     <value>Whether to Show Installation Progress?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
-    <value>App Theme</value>
+    <value>Apptema</value>
   </data>
   <data name="ThemesSettingsHeader.Header" xml:space="preserve">
     <value>Teman</value>
