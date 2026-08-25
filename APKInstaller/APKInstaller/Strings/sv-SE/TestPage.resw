@@ -184,6 +184,6 @@
     <value>Title Bar</value>
   </data>
   <data name="UITestSettingsHeader.Header" xml:space="preserve">
-    <value>UI Test</value>
+    <value>UI-test</value>
   </data>
 </root>
