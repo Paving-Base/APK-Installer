@@ -121,7 +121,7 @@
     <value>منتظر دستگاه...</value>
   </data>
   <data name="Start.Text" xml:space="preserve">
-    <value>شروع</value>
+    <value>Start</value>
   </data>
   <data name="Stop.Text" xml:space="preserve">
     <value>توقف</value>
