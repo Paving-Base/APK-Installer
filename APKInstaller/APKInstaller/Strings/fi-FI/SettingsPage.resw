@@ -130,7 +130,7 @@
     <value>Lataa automaattisesti kun paketti on URL-osoitteesta.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Auto Download Online Packages?</value>
+    <value>Lataa online-paketit automaattisesti?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>Select Backdrop Type for Windows 11</value>
@@ -229,7 +229,7 @@
     <value>Last Checked: </value>
   </data>
   <data name="LearnMoreLink.Content" xml:space="preserve">
-    <value>Learn More</value>
+    <value>Lisätietoja</value>
   </data>
   <data name="LogFolderLink.Content" xml:space="preserve">
     <value>Lokitiedot</value>
@@ -334,7 +334,7 @@
     <value>Settings</value>
   </data>
   <data name="TranslateLink.Content" xml:space="preserve">
-    <value>Translate</value>
+    <value/>
   </data>
   <data name="UpdateSettingsHeader.Header" xml:space="preserve">
     <value>Version</value>

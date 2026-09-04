@@ -127,7 +127,7 @@
     <value>Інсталятор додатків для Android. Автори @wherewhere та @Tangent-90.</value>
   </data>
   <data name="AppName" xml:space="preserve">
-    <value>Інсталятор APK</value>
+    <value>Установка додатків (мобільний)</value>
   </data>
   <data name="ExceptionThrown" xml:space="preserve">
     <value>У програмі сталася помилка…</value>

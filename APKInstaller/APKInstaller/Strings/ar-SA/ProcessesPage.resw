@@ -121,13 +121,14 @@
     <value>تفاصيل</value>
   </data>
   <data name="DeviceComboBox.PlaceholderText" xml:space="preserve">
-    <value>في انتظار الشبكة...</value>
+    <value>Waiting for Device...</value>
   </data>
   <data name="Name.Header" xml:space="preserve">
     <value>الاسم</value>
   </data>
   <data name="ProcessId.Header" xml:space="preserve">
-    <value>يجري المعالجة</value>
+    <value>عملية ID
+(عملية ID.الرأس) </value>
   </data>
   <data name="ResidentSetSize.Header" xml:space="preserve">
     <value>حجم مجموعة المقيمين</value>

@@ -130,7 +130,7 @@
     <value>הורדה אוטומטית כאשר החבילה מגיעה מכתובת URL.</value>
   </data>
   <data name="AutoGetNetAPKSettings.Header" xml:space="preserve">
-    <value>Auto Download Online Packages?</value>
+    <value>להוריד אוטומטית חבילות מקוונות?</value>
   </data>
   <data name="BackdropSettings.Description" xml:space="preserve">
     <value>בחר סוג רקע עבור Windows 11</value>
@@ -154,22 +154,22 @@
     <value>נקה מטמון</value>
   </data>
   <data name="CloseADBSettings.Description" xml:space="preserve">
-    <value>ADB Server needs to be restarted on next installation if you terminate it.</value>
+    <value>יש להפעיל מחדש את שרת ADB בהתקנה הבאה אם ​​תבטל אותה.</value>
   </data>
   <data name="CloseADBSettings.Header" xml:space="preserve">
-    <value>Terminate ADB when Exit Installer?</value>
+    <value>לבטל את ADB כאשר יוצאים מהמתקין?</value>
   </data>
   <data name="CloseAPPSettings.Description" xml:space="preserve">
-    <value>Exit Installer after installation is complete.</value>
+    <value>צא מתוכנית ההתקנה לאחר סיום ההתקנה.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Exit Installer when APP is Ready?</value>
+    <value>לצאת מהמתקין כשהאפליקציה מוכנה?</value>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>הגדר</value>
   </data>
   <data name="ConnectDevice.Description" xml:space="preserve">
-    <value>Connect device through network.</value>
+    <value>חבר את המכשיר לרשת.</value>
   </data>
   <data name="ConnectDevice.Header" xml:space="preserve">
     <value>חבר התקן</value>
@@ -178,7 +178,7 @@
     <value>צור קשר</value>
   </data>
   <data name="ContactMeTextBlock.Text" xml:space="preserve">
-    <value>Follow me on social apps for the latest developments. If you find any bugs, please report them to me by PM. I will try my best to solve it. If you have Telegram account, feel free to chat in Paving Base Group 😊!</value>
+    <value>עקבו אחרי באפליקציות חברתיות לקבלת העידכונים האחרונים. אם אתה מוצא באגים, אנא דווח לי עליהם ב-PM. אנסה כמיטב יכולתי לפתור את זה. אם יש לך חשבון טלגרם, אל תהסס לשוחח בצ'אט בקבוצת Paving Base 😊!</value>
   </data>
   <data name="ContentSettingsHeader.Header" xml:space="preserve">
     <value>תוכן</value>
@@ -193,7 +193,7 @@
     <value>תמיכה</value>
   </data>
   <data name="DonateTextBlock.Text" xml:space="preserve">
-    <value>APK Installer is an open-source application which does not add any ads for profit. If you like this app, don't forget to rate it in the store. Of course, it would be great if you could donate a little. Thank you for your support.💕</value>
+    <value>מתקין APK הוא יישום קוד פתוח, ולא יתווספו מודעות למטרות רווח. אם אתה אוהב את האפליקציה הזו, אל תשכח לדרג אותה בחנות. כמובן, זה יהיה טוב יותר אם תוכל לתרום קצת. תודה על תמיכתך. 💕</value>
   </data>
   <data name="EULA.Content" xml:space="preserve">
     <value>תנאי שימוש</value>
@@ -235,7 +235,7 @@
     <value>יומן רישום</value>
   </data>
   <data name="ModifiedInfoBar.Message" xml:space="preserve">
-    <value>A modified version may some unpleasant things. Such as ads, broken features or even viruses.  Please go to the Microsoft Store to download the original version. Please see our GitHub Repository for more information.</value>
+    <value>גרסה שונה עשויה לגרום לבעיות. כגון מודעות, תכונות שבירות או אפילו וירוסים. אנא עברו ל-Microsoft Store כדי להוריד את הגרסה המקורית. אנא עיין במאגר GitHub שלנו למידע נוסף.</value>
   </data>
   <data name="ModifiedInfoBar.Title" xml:space="preserve">
     <value>אתה משתמש בגרסה ששונתה!
@@ -245,7 +245,7 @@
     <value>השבת אותו כדי להתחבר להתקנים אחרים.</value>
   </data>
   <data name="OnlyWSASettings.Header" xml:space="preserve">
-    <value>For WSA only?</value>
+    <value>עבור WSA בלבד?</value>
   </data>
   <data name="OSArchitectureTextBlock.Text" xml:space="preserve">
     <value>ארכיטקטורת מערכת הפעלה</value>
@@ -257,16 +257,16 @@
     <value>אחר</value>
   </data>
   <data name="PairDevice.Description" xml:space="preserve">
-    <value>Pair device through network.</value>
+    <value>צמד מכשיר דרך הרשת.</value>
   </data>
   <data name="PairDevice.Header" xml:space="preserve">
-    <value>Pair Device</value>
+    <value>צמד מכשיר</value>
   </data>
   <data name="PairDeviceSettings.Description" xml:space="preserve">
-    <value>Pair and connect devices.</value>
+    <value>צמד וחבר מכשירים.</value>
   </data>
   <data name="PairDeviceSettings.Header" xml:space="preserve">
-    <value>Pair &amp; Connect</value>
+    <value>התאמה וחיבור</value>
   </data>
   <data name="RadioThemeDark.Content" xml:space="preserve">
     <value>חשוך</value>
@@ -299,10 +299,10 @@
     <value>האם אתה בטוח שברצונך לטעון מחדש את האפליקציה?</value>
   </data>
   <data name="ScanPairedDeviceSettings.Description" xml:space="preserve">
-    <value>Scan and auto connect paired devices.</value>
+    <value>סרוק וחבר אוטומטית מכשירים מותאמים.</value>
   </data>
   <data name="ScanPairedDeviceSettings.Header" xml:space="preserve">
-    <value>Scan Paired Devices?</value>
+    <value>לסרוק מכשירים מוצמדים?</value>
   </data>
   <data name="SelectDeviceBox.Header" xml:space="preserve">
     <value>בחירת מכשיר</value>
@@ -311,19 +311,19 @@
     <value>הצג עוזרים כאשר אין מכשיר מחובר.</value>
   </data>
   <data name="ShowDialogsSettings.Header" xml:space="preserve">
-    <value>Whether to Show Helps?</value>
+    <value>האם להראות עוזרים?</value>
   </data>
   <data name="ShowMessagesSettings.Description" xml:space="preserve">
-    <value>Display announcements at the top of Settings.</value>
+    <value>הצג הודעות בחלק העליון של ההגדרות.</value>
   </data>
   <data name="ShowMessagesSettings.Header" xml:space="preserve">
-    <value>Whether to Show Announcements?</value>
+    <value>האם להציג הודעות?</value>
   </data>
   <data name="ShowProgressSettings.Description" xml:space="preserve">
     <value>היישום עלול להשאיר קבצים זמניים כאשר מתרחשת הפרעה בלתי צפויה.</value>
   </data>
   <data name="ShowProgressSettings.Header" xml:space="preserve">
-    <value>Whether to Show Installation Progress?</value>
+    <value>האם להראות התקדמות ההתקנה?</value>
   </data>
   <data name="ThemeSettings.Header" xml:space="preserve">
     <value>ערכת נושא של אפליקציה</value>

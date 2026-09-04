@@ -163,7 +163,7 @@
     <value>Exit Installer after installation is complete.</value>
   </data>
   <data name="CloseAPPSettings.Header" xml:space="preserve">
-    <value>Exit Installer when APP is Ready?</value>
+    <value/>
   </data>
   <data name="ConfigsSettingsHeader.Header" xml:space="preserve">
     <value>Configs</value>

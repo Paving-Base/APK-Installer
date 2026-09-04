@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, גשר אנדרואיד באגים, דרוש כדי שמתקין APK יעבוד. לחץ על "הורד" כדי להוריד אותו. בהורדה אתה מקבל את התנאים וההגבלות של גוגל עבור ADB. אם כבר הורדת את ADB, לחץ על "בחר" כדי לבחור בו.</value>
+    <value>כדי ש-APK Installer יפעל, נדרש ADB, הגשר לניפוי באגים באנדרואיד. לחץ "הורד" כדי להוריד אותו. על ידי ההורדה, אתה מסכים לתנאי השימוש של Google עבור ADB. אם כבר הורדת את ADB, לחץ "בחר" כדי לבחור את מיקומו.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>ADB קיים</value>
@@ -152,45 +152,43 @@
     <value>אין אפשרות להתחבר אל WSA</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>או ש-WSA לא התחיל כמו שצריך, או שיש בעיה עם ADB. בעיה זו יכולה להיות קשה מאוד לפתרון. הפעל מחדש את תוכנית ההתקנה. אם זה עדיין לא עובד, נסה להפעיל מחדש את המחשב.
-</value>
+    <value>או ש-WSA לא הופעל כראוי, או שיש בעיה עם ADB. בעיה זו עלולה להיות קשה מאוד לפתרון. נא להפעיל מחדש את המתקין. אם זה עדיין לא עובד, נסה להפעיל מחדש את המחשב.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
-    <value>לא ניתן לפתוח את חבילת האפליקציה
-</value>
+    <value>לא ניתן לפתוח את חבילת האפליקציה</value>
   </data>
   <data name="Checking" xml:space="preserve">
     <value>בודק...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
-    <value>בודק...</value>
+    <value>בודק ADB...</value>
   </data>
   <data name="CheckingPath" xml:space="preserve">
     <value>בודק נתיב...</value>
   </data>
   <data name="ClickToRead" xml:space="preserve">
-    <value>לחץ כאן כדי לשחזר אותם</value>
+    <value>לחץ כאן כדי לקרוא אותם</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>סגור</value>
   </data>
   <data name="ConfirmationText.Text" xml:space="preserve">
-    <value>האם אתה בטוח לבטל את ההתקנה?</value>
+    <value>האם אתה בטוח שברצונך לבטל את ההתקנה?</value>
   </data>
   <data name="ConnectPairedDevices" xml:space="preserve">
     <value>חיבור התקנים משויכים...</value>
   </data>
   <data name="CopyFlyoutItem.Text" xml:space="preserve">
-    <value>עותק</value>
+    <value>העתק</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Creating install session...</value>
+    <value>יוצר הפעלת התקנה...</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>התקנים</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>הורד</value>
+    <value>הורדה</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
     <value>ההורדה נכשלה</value>
@@ -199,7 +197,7 @@
     <value>אנא בדוק את חיבור הרשת שלך או את כתובת האתר ונסה שוב.</value>
   </data>
   <data name="FindingWSA" xml:space="preserve">
-    <value>מוצא WSA...</value>
+    <value>מחפש WSA...</value>
   </data>
   <data name="Finished" xml:space="preserve">
     <value>הושלם</value>
@@ -209,13 +207,13 @@
 </value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
-    <value>עבור אל הגדרה</value>
+    <value>עבור אל הגדרות</value>
   </data>
   <data name="HasNewerVersion" xml:space="preserve">
     <value>גרסה חדשה יותר כבר מותקנת</value>
   </data>
   <data name="HasNewerVersionInfo" xml:space="preserve">
-    <value>כבר התקנת גירסה חדשה {0} של יישום זה. האם אתה בטוח שתתקין מחדש את גירסה {1}?</value>
+    <value>כבר התקנת גירסה חדשה {0} של יישום זה. האם אתה בטוח שברצונך להתקין מחדש את גירסה {1}?</value>
     <comment>{0} - Installed Version. {1} - Install Version.</comment>
   </data>
   <data name="HowToConnect" xml:space="preserve">
@@ -223,7 +221,7 @@
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
     <value>1. ודא שמתקין APK עודכן לגרסה האחרונה
-2. ודא שיש לך את מערכת המשנה אנדרואיד מותקן ופועל
+2. ודא שיש לך את תת מערכת האנדרואיד מותקנת ופועלת
 3. הפעל את מצב המפתח וודא שכתובת ה- IP מוצגת בהצלחה
 4. פתח מחדש את מתקין ה- APK והמשך בהתקנה
 
@@ -258,7 +256,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Installing" xml:space="preserve">
-    <value>התקן...</value>
+    <value>מתקין...</value>
   </data>
   <data name="InstallOutputTextBlock.Text" xml:space="preserve">
     <value>
@@ -289,7 +287,7 @@
     <value>מידע נוסף</value>
   </data>
   <data name="NoDevice" xml:space="preserve">
-    <value>לא ניתן למצוא מכשיר אנדרואיד</value>
+    <value>לא נמצא מכשיר אנדרואיד</value>
   </data>
   <data name="NoDevice10" xml:space="preserve">
     <value>כיצד לחבר התקן</value>
@@ -336,7 +334,7 @@
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="PostInstallFormat" xml:space="preserve">
-    <value>Cleaning cache ({0}/{1})...</value>
+    <value>מנקה מטמון ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
@@ -372,7 +370,7 @@
     <value>פתח את ADB...</value>
   </data>
   <data name="UnzipComplete" xml:space="preserve">
-    <value>פריצת הרוכסן הושלמה</value>
+    <value>פתיחת הקובץ הדחוס הושלמה</value>
   </data>
   <data name="UnzippingFormat" xml:space="preserve">
     <value>פתיחת {0}/{1} ...</value>
@@ -386,7 +384,7 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="UploadingFormat" xml:space="preserve">
-    <value>Uploading {0} ({1}/{2})...</value>
+    <value>מעלה את {0} ({1}/{2})...</value>
     <comment>{0} - Progress. {1} - Finnished count. {2} - Total count.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
@@ -413,7 +411,7 @@
     <value>ברוך הבא!</value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
-    <value>Writing install session ({0}/{1})...</value>
+    <value>כותב הפעלת התקנה ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">

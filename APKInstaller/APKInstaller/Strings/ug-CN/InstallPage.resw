@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, the Android Debug Bridge, is needed for APK Installer to work. Click "Download" to download it. By downloading, you accept the Google Terms and Conditions for ADB. If you have already downloaded ADB, click "Select" to select it.</value>
+    <value>Az APK Telepítő működéséhez az ADB, azaz az Android Debug Bridge szükséges. Kattints a "Letöltés" gombra a letöltéshez. A letöltéssel elfogadod a Google ADB-re vonatkozó általános szerződési feltételeit. Ha már letöltötted az ADB-t, kattints a "Kiválasztás" gombra a kiválasztáshoz.</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
     <value>ADB Exists</value>
@@ -344,10 +344,10 @@
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>Retry</value>
+    <value>قايتا سىناش</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>Select</value>
+    <value>تاللا</value>
   </data>
   <data name="ShareFlyoutItem.Text" xml:space="preserve">
     <value>Share</value>

@@ -151,7 +151,7 @@
     <value>WLAN Kopplungscode</value>
   </data>
   <data name="PairCodeTextBlock.Text" xml:space="preserve">
-    <value>WLAN Kopplungscode</value>
+    <value>WLAN Pairing Code</value>
   </data>
   <data name="PairingLogText" xml:space="preserve">
     <value>Kopple, bitte Fenster nicht schließen.</value>

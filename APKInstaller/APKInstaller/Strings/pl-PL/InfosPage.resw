@@ -118,60 +118,72 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppName.Text" xml:space="preserve">
-    <value>Nazwa aplikacji</value>
+    <value>Nazwa aplikacji mm</value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
-    <value>Podstawowe informacje</value>
+    <value>Podstawowe informacje ok</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
-    <value>Zależności - łącznie {0}</value>
+    <value>Zależności — łącznie {0} 0</value>
     <comment>{0} - Dependencies Count.</comment>
   </data>
   <data name="FeaturesHeaderFormat" xml:space="preserve">
-    <value>Funkcje - łącznie {0}</value>
+    <value>Funkcje-łącznie ok.</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
-    <value>Języki</value>
+    <value>Języki polski</value>
   </data>
   <data name="MinSDK.Text" xml:space="preserve">
-    <value>Min SDK</value>
+    <value>Min SDK ok</value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
-    <value>Open Package Folder</value>
+    <value>Otwórz folder pakietów tak
+</value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
-    <value>Nazwa pakietu</value>
+    <value>Nazwa pakietu Norman
+Michał</value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
-    <value>Package Size</value>
+    <value>Rozmiar pakietu
+
+średni
+
+https://crowdin.com/editor/APKInstaller/321?view=multilingual#3905</value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
-    <value>Liczba uprawnień</value>
+    <value>Liczba uprawnień 
+1</value>
   </data>
   <data name="PermissionsHeaderFormat" xml:space="preserve">
-    <value>Uprawnienia - łącznie {0}</value>
+    <value>Total</value>
     <comment>{0} - Permissions Count.</comment>
   </data>
   <data name="SharePackage.Content" xml:space="preserve">
-    <value>Udostępnij paczkę</value>
+    <value>Udostępnij paczkę
+ASZYK6@GMAIL.COM
+</value>
   </data>
   <data name="SupportedArchitectures.Text" xml:space="preserve">
-    <value>Obsługa architektur</value>
+    <value>Obsługa architektur </value>
   </data>
   <data name="SupportResolutions.Text" xml:space="preserve">
-    <value>Wsparcie rezolucji</value>
+    <value>Wsparcie rezolucji </value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
-    <value>Obsługa rozmiarów ekranu</value>
+    <value>Obsługa rozmiarów ekranu tak</value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
-    <value>Docelowe SDK</value>
+    <value>Docelowe SDK
+NIE MAM</value>
   </data>
   <data name="TitleFormat" xml:space="preserve">
-    <value>Informacje o {0}</value>
+    <value>Informacje o {0}
+0</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="Version.Text" xml:space="preserve">
-    <value>Wersja</value>
+    <value>Wersja
+11</value>
   </data>
 </root>

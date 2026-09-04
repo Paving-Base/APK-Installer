@@ -121,10 +121,10 @@
     <value>Info</value>
   </data>
   <data name="ADBPathSettings.Header" xml:space="preserve">
-    <value>ADB-Pfad</value>
+    <value>ARM-Pfad</value>
   </data>
   <data name="ADBVersionTextBlock.Text" xml:space="preserve">
-    <value>ADB-Version</value>
+    <value>ARM-Version</value>
   </data>
   <data name="AutoGetNetAPKSettings.Description" xml:space="preserve">
     <value>Automatischer Download, wenn das Paket von einer URL stammt.</value>
@@ -142,7 +142,7 @@
     <value>Ändern</value>
   </data>
   <data name="CheckFailed" xml:space="preserve">
-    <value>Überprüfung fehlgeschlagen</value>
+    <value>Check Failed</value>
   </data>
   <data name="CheckingUpdates.Text" xml:space="preserve">
     <value>Nach Updates suchen...</value>
@@ -340,7 +340,7 @@
     <value>Version</value>
   </data>
   <data name="UpToDate" xml:space="preserve">
-    <value>Aktuell</value>
+    <value>Bis zum Tag</value>
   </data>
   <data name="WindowsColorButton.Content" xml:space="preserve">
     <value>Windows Farbeinstellungen</value>

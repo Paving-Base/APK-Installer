@@ -118,47 +118,47 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutADB" xml:space="preserve">
-    <value>ADB, O Android Debugar Brídege, é necessário para Instalador de APK FUNCIONAR. Clique "Baixar" para baixá-lo. Por baixar você aceita os Termos e Condições do Google para ADB. Se Você já baixou ADB, clique "Selecionar" para selecionar.</value>
+    <value>ADB, O Android Debugar Brídege, é necessário para Instalador de APK FUNCIONAR. Clique "Baixar" para baixá-lo. Por baixar você aceita os Termos e Condições do Google para ADB. Se Você já baixou ADB, clique "Selecionar" para selecionar.1</value>
   </data>
   <data name="ADBExist" xml:space="preserve">
-    <value>ADB Existe</value>
+    <value>ADB Existe1</value>
   </data>
   <data name="ADBMissing" xml:space="preserve">
-    <value>ADB está faltando</value>
+    <value>ADB está faltando1</value>
   </data>
   <data name="Analysis" xml:space="preserve">
-    <value>Em Análise...</value>
+    <value>Em Análise.1</value>
   </data>
   <data name="APKFileFlyoutItem.Text" xml:space="preserve">
     <value>Arquivo APK</value>
   </data>
   <data name="AppCapabilities.HeadText" xml:space="preserve">
     <value>
-Capacidades:</value>
+Capacidades:1.</value>
   </data>
   <data name="AppNameFlyoutItem.Text" xml:space="preserve">
-    <value>Nome Do App</value>
+    <value>Nome do aplicativo</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancelar</value>
+    <value>Cancelar1</value>
   </data>
   <data name="CancelConfirmButton.Content" xml:space="preserve">
-    <value>Sim</value>
+    <value>Sim1</value>
   </data>
   <data name="CancelContinueButton.Content" xml:space="preserve">
-    <value>Não</value>
+    <value>Não1</value>
   </data>
   <data name="CannotConnectWSA" xml:space="preserve">
-    <value>Não foi possível conectar ao WSA</value>
+    <value>Não foi possível conectar ao WSA1</value>
   </data>
   <data name="CannotConnectWSAInfo" xml:space="preserve">
-    <value>O WSA não foi iniciado corretamente ou há um problema com o ADB. Este problema pode ser muito difícil de resolver. Por favor, reinicie o instalador. Se ainda não funcionar, tente reiniciar o computador.</value>
+    <value>O WSA não foi iniciado corretamente ou há um problema com o ADB. Este problema pode ser muito difícil de resolver. Por favor, reinicie o instalador. Se ainda não funcionar, tente reiniciar o computador.1.</value>
   </data>
   <data name="CannotOpenPackage" xml:space="preserve">
     <value>Não Foi Possível abrir o pacote do aplicativo</value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>Checando Adb...</value>
+    <value>Checando Adã...</value>
   </data>
   <data name="CheckingADB" xml:space="preserve">
     <value>Checando ADB...</value>
@@ -182,7 +182,7 @@ Capacidades:</value>
     <value>Copiar</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Creating install session...</value>
+    <value>Criando sessão de instalação...</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Dispositivos</value>
@@ -191,7 +191,7 @@ Capacidades:</value>
     <value>Baixar</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
-    <value>A Transferência Falhou</value>
+    <value>O baixar Falhou</value>
   </data>
   <data name="DownloadFailedInfo" xml:space="preserve">
     <value>Por Favor, cheque sua conexão com a ‘internet’ ou com o URL e tente novamente.</value>
@@ -203,7 +203,7 @@ Capacidades:</value>
     <value>Finalizado</value>
   </data>
   <data name="FoundWSA" xml:space="preserve">
-    <value>WSA Encontrado</value>
+    <value>WSA encontrado</value>
   </data>
   <data name="GoToSetting" xml:space="preserve">
     <value>Vá para configurações</value>
@@ -219,9 +219,9 @@ Capacidades:</value>
     <value>Como conectar o WSA</value>
   </data>
   <data name="HowToConnectInfo" xml:space="preserve">
-    <value>1. Certifique-se de que o instalador APK foi atualizado para a última versão
-2. Certifique-se de que você tem o Subsistema Android instalado e executando
-3. Ative o modo de desenvolvedor e certifique-se de que o endereço IP seja exibido com sucesso
+    <value>1. Certifique-se de que o instalador do APK foi atualizado para a última versão
+2. Certifique-se de que você tem o Subsistema Android instalado e funcionando
+3. Ative o modo de desenvolvedor e certifique-se de que o endereço IP é exibido com sucesso
 4. Reabra o instalador de APK e continue sua instalação
 
 [Saiba Mais]({0})</value>
@@ -260,7 +260,7 @@ Capacidades:</value>
     <value>Reação:</value>
   </data>
   <data name="InstallWSA" xml:space="preserve">
-    <value>Instale WSA</value>
+    <value>Instalar a WSA</value>
   </data>
   <data name="InvalidPackage" xml:space="preserve">
     <value>O pacote está corrompido ou é inválido.</value>
@@ -330,7 +330,7 @@ Capacidades:</value>
     <comment>{0} - Package Name.</comment>
   </data>
   <data name="PostInstallFormat" xml:space="preserve">
-    <value>Cleaning cache ({0}/{1})...</value>
+    <value>Limpando cache ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="Reinstall" xml:space="preserve">
@@ -380,7 +380,7 @@ Capacidades:</value>
     <comment>{0} - AppName.</comment>
   </data>
   <data name="UploadingFormat" xml:space="preserve">
-    <value>Uploading {0} ({1}/{2})...</value>
+    <value>Carregando {0} ({1}/{2})...</value>
     <comment>{0} - Progress. {1} - Finnished count. {2} - Total count.</comment>
   </data>
   <data name="VersionCodeFlyoutItem.Text" xml:space="preserve">
@@ -409,7 +409,7 @@ Isto pode levar muito tempo. Sente-se e relaxe.</value>
     <value>Bem vindo(a)!</value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
-    <value>Writing install session ({0}/{1})...</value>
+    <value>Gravando sessão de instalação ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">

@@ -187,7 +187,7 @@
     <value>Dispositivi</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Download</value>
+    <value>Scarica</value>
   </data>
   <data name="DownloadFailed" xml:space="preserve">
     <value>Download Fallito</value>

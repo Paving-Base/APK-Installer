@@ -118,51 +118,51 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppName.Text" xml:space="preserve">
-    <value>Tên ứng dụng</value>
+    <value>Trình cài đặt gói </value>
   </data>
   <data name="BasicInfoSettings.Header" xml:space="preserve">
-    <value>Thông tin cơ bản</value>
+    <value>Thông tin cơ bản thì tự biết</value>
   </data>
   <data name="DependenciesHeaderFormat" xml:space="preserve">
-    <value>Phần phụ thuộc - tổng cộng {0}</value>
+    <value>Phần phụ thuộc - tổng cộng có {0}</value>
     <comment>{0} - Dependencies Count.</comment>
   </data>
   <data name="FeaturesHeaderFormat" xml:space="preserve">
-    <value>Tính năng - tổng cộng {0}</value>
+    <value>Tính năng - tổng cộng có {0}</value>
   </data>
   <data name="Languages.Text" xml:space="preserve">
-    <value>Ngôn ngữ</value>
+    <value>Các ngôn ngữ</value>
   </data>
   <data name="MinSDK.Text" xml:space="preserve">
     <value>SDK tối thiểu</value>
   </data>
   <data name="OpenPackageFolder.Content" xml:space="preserve">
-    <value>Mở thư mục gói</value>
+    <value>Mở thư mục của gói</value>
   </data>
   <data name="PackageName.Text" xml:space="preserve">
     <value>Tên Gói</value>
   </data>
   <data name="PackageSize.Text" xml:space="preserve">
-    <value>Dung lượng gói</value>
+    <value>Kích cỡ gói</value>
   </data>
   <data name="PermissionsCount.Text" xml:space="preserve">
     <value>Số lượng quyền</value>
   </data>
   <data name="PermissionsHeaderFormat" xml:space="preserve">
-    <value>Quyền - tổng cộng {0}</value>
+    <value>Quyền - tổng cộng có {0}</value>
     <comment>{0} - Permissions Count.</comment>
   </data>
   <data name="SharePackage.Content" xml:space="preserve">
     <value>Chia sẻ gói</value>
   </data>
   <data name="SupportedArchitectures.Text" xml:space="preserve">
-    <value>Kiến trúc hỗ trợ</value>
+    <value>Hỗ trợ các kiến trúc</value>
   </data>
   <data name="SupportResolutions.Text" xml:space="preserve">
-    <value>Hỗ trợ độ phân giải</value>
+    <value>Hỗ trợ các độ phân giải</value>
   </data>
   <data name="SupportScreenSizes.Text" xml:space="preserve">
-    <value>Hỗ trợ kích thước màn hình</value>
+    <value>Hỗ trợ các kích thước màn hình</value>
   </data>
   <data name="TargetSDK.Text" xml:space="preserve">
     <value>SDK đích</value>

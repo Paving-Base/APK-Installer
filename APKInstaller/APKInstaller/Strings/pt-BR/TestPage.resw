@@ -133,7 +133,7 @@
     <value>Sobreposição Compactada</value>
   </data>
   <data name="DevelopmentInfoBar.Message" xml:space="preserve">
-    <value>Uma versão de desenvolvimento pode não estável. Baixe a versão de lançamento na Microsoft Store.</value>
+    <value>Um aplicativo em versão de desenvolvimento pode não ser estável. Baixe a versão de lançamento na Loja Microsoft.</value>
   </data>
   <data name="DevelopmentInfoBar.Title" xml:space="preserve">
     <value>Você está usando uma aplicação de versão de desenvolvimento.</value>

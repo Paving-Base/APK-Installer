@@ -118,57 +118,57 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AddressRun.Text" xml:space="preserve">
-    <value>Address</value>
+    <value>주소</value>
   </data>
   <data name="ConnectButton.Content" xml:space="preserve">
-    <value>Connect</value>
+    <value>연결</value>
   </data>
   <data name="ConnectedListFormat" xml:space="preserve">
-    <value>Connected {0} devices</value>
+    <value>{0} 개의 장치 연결됨</value>
   </data>
   <data name="ConnectedLogText" xml:space="preserve">
-    <value>Connecting successfully.</value>
+    <value>연결에 성공했습니다.</value>
   </data>
   <data name="ConnectingLogText" xml:space="preserve">
-    <value>Pairing successfully. Connecting, please don't close the window.</value>
+    <value>페어링에 성공했습니다. 연결 중, 창을 닫지 마세요.</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
-    <value>Connect</value>
+    <value>연결</value>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
-    <value>Found {0} devices</value>
+    <value>{0} 개의 장치를 찾음</value>
   </data>
   <data name="IPAddressBox.Header" xml:space="preserve">
-    <value>IP Address</value>
+    <value>IP 주소</value>
   </data>
   <data name="ManualPairButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Connecting devices manually</value>
+    <value>수동으로 장치 연결</value>
   </data>
   <data name="ManualPairTextBlock.Text" xml:space="preserve">
-    <value>Manual Connection</value>
+    <value>수동 연결</value>
   </data>
   <data name="PairCodeBox.Header" xml:space="preserve">
-    <value>WLAN Pairing Code</value>
+    <value>WLAN 페어링 코드</value>
   </data>
   <data name="PairCodeTextBlock.Text" xml:space="preserve">
-    <value>WLAN Pairing Code</value>
+    <value>WLAN 페어링 코드</value>
   </data>
   <data name="PairingLogText" xml:space="preserve">
-    <value>Pairing, please don't close the window.</value>
+    <value>페어링 중, 창을 닫지 마세요.</value>
   </data>
   <data name="PairToggleButton.Content" xml:space="preserve">
-    <value>Pair</value>
+    <value>페어링</value>
   </data>
   <data name="PortRun.Text" xml:space="preserve">
-    <value>Port</value>
+    <value>포트</value>
   </data>
   <data name="QRScanButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Pair with QR code</value>
+    <value>QR 코드로 페어링</value>
   </data>
   <data name="QRScanTextBlock.Text" xml:space="preserve">
-    <value>Scan QR code to pair devices.</value>
+    <value>QR 코드를 스캔하여 장치를 페어링합니다.</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>Pair &amp; Connect</value>
+    <value>페어링 및 연결</value>
   </data>
 </root>

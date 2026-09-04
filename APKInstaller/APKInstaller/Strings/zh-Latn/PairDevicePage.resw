@@ -118,28 +118,28 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AddressRun.Text" xml:space="preserve">
-    <value>地址</value>
+    <value>地址:</value>
   </data>
   <data name="ConnectButton.Content" xml:space="preserve">
-    <value>连接</value>
+    <value>连接到</value>
   </data>
   <data name="ConnectedListFormat" xml:space="preserve">
-    <value>已连接 {0} 个设备</value>
+    <value>已连接 {0} 设备。</value>
   </data>
   <data name="ConnectedLogText" xml:space="preserve">
-    <value>连接成功。</value>
+    <value>成功连接。</value>
   </data>
   <data name="ConnectingLogText" xml:space="preserve">
-    <value>配对成功，正在连接，请不要关闭窗口。</value>
+    <value>配对成功。连接，请勿关闭窗口。</value>
   </data>
   <data name="ConnectToggleButton.Content" xml:space="preserve">
     <value>连接</value>
   </data>
   <data name="DeviceListFormat" xml:space="preserve">
-    <value>已发现 {0} 个设备</value>
+    <value>已连接 {0} 设备。</value>
   </data>
   <data name="IPAddressBox.Header" xml:space="preserve">
-    <value>IP 地址</value>
+    <value>地址:</value>
   </data>
   <data name="ManualPairButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
     <value>手动连接设备</value>
@@ -148,27 +148,27 @@
     <value>手动连接</value>
   </data>
   <data name="PairCodeBox.Header" xml:space="preserve">
-    <value>WLAN 配对码</value>
+    <value>WLAN Pairing Code</value>
   </data>
   <data name="PairCodeTextBlock.Text" xml:space="preserve">
-    <value>WLAN 配对码</value>
+    <value>Код сопряжения WLAN</value>
   </data>
   <data name="PairingLogText" xml:space="preserve">
-    <value>正在配对，请不要关闭窗口。</value>
+    <value>Сопряжение, пожалуйста, не закрывайте окно.</value>
   </data>
   <data name="PairToggleButton.Content" xml:space="preserve">
     <value>配对</value>
   </data>
   <data name="PortRun.Text" xml:space="preserve">
-    <value>端口</value>
+    <value>Port</value>
   </data>
   <data name="QRScanButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>用二维码配对</value>
+    <value>Сопряжение с QR-кодом</value>
   </data>
   <data name="QRScanTextBlock.Text" xml:space="preserve">
     <value>扫描二维码以配对设备。</value>
   </data>
   <data name="TitleBar.Title" xml:space="preserve">
-    <value>配对与连接</value>
+    <value>Сопряжение и подключение</value>
   </data>
 </root>

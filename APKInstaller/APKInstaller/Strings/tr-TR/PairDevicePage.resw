@@ -148,16 +148,17 @@
     <value>Manuel Bağlantı</value>
   </data>
   <data name="PairCodeBox.Header" xml:space="preserve">
-    <value>WLAN Eşleştirme Kodu</value>
+    <value>WLAN Pairing Code</value>
   </data>
   <data name="PairCodeTextBlock.Text" xml:space="preserve">
-    <value>WLAN Eşleştirme Kodu</value>
+    <value>WLAN Eşleştirme Kodu
+</value>
   </data>
   <data name="PairingLogText" xml:space="preserve">
     <value>Eşleştiriliyor, lütfen pencereyi kapatmayın.</value>
   </data>
   <data name="PairToggleButton.Content" xml:space="preserve">
-    <value>Eşleştir</value>
+    <value/>
   </data>
   <data name="PortRun.Text" xml:space="preserve">
     <value>Bağlantı noktası</value>

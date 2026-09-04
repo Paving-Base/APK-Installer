@@ -181,7 +181,7 @@
     <value>Kóshirip alıw</value>
   </data>
   <data name="CreateSession" xml:space="preserve">
-    <value>Creating install session...</value>
+    <value>Ornatıw sessiyasın jaratıw...</value>
   </data>
   <data name="Devices" xml:space="preserve">
     <value>Qurılmalar</value>
@@ -407,7 +407,7 @@ Bul kóp waqıt alıwı múmkin. Otırıp dem alıń.</value>
     <value>Xosh keldińiz!</value>
   </data>
   <data name="WriteSessionFormat" xml:space="preserve">
-    <value>Writing install session ({0}/{1})...</value>
+    <value>Ornatıw seansın jazıw ({0}/{1})...</value>
     <comment>{0} - Finnished count. {1} - Total count.</comment>
   </data>
   <data name="WSARunning" xml:space="preserve">

@@ -154,7 +154,7 @@
     <value>管理已連線裝置的處理程序</value>
   </data>
   <data name="ProcessesSettings.Header" xml:space="preserve">
-    <value>處理程序</value>
+    <value>處理：</value>
   </data>
   <data name="ProgressSettings.Description" xml:space="preserve">
     <value>測試標題列上的進度環</value>
