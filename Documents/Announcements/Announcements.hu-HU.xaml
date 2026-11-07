@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <controls:SettingsGroup xmlns:controls="using:APKInstaller.Controls" xmlns:muxc="using:Microsoft.UI.Xaml.Controls" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Header="Bejelentések" Margin="0,-28,0,0">
-    <muxc:InfoBar Title="Itt van a bejelentés (Ne kérdezzétek, miért nincs bezárógomb az üzenetben)" IsClosable="False" IsOpen="True" Message="A jövőben mindenféle értesítést láthat itt. Ha nem szeretné látni őket, az alábbi beállítások között kikapcsolhatja őket." Severity="Informational"/>
-    <muxc:InfoBar Title="További fordítások" IsClosable="True" IsOpen="True" Message="Mivel a szerző csak kínaiul és angolul tud, a fordításokat a közösségre bízza. Ha nem szeretnél ismeretlen nyelvet látni, itt a Crowdin, hogy lefordítsd!" Severity="Informational">
+    <muxc:InfoBar Title="Itt van a bejelentés (Ne kérdezzétek, miért nincs bezárógomb az üzenetben)" IsClosable="False" IsOpen="True" Message="A jövőben mindenféle értesítést láthatsz itt. Ha nem szeretnéd látni őket, a lenti beállítások között kikapcsolhatod." Severity="Informational"/>
+    <muxc:InfoBar Title="További fordítások" IsClosable="True" IsOpen="True" Message="Mivel a szerző csak kínaiul és angolul tud, a fordításokat a közösségre bízza. Ha nem szeretnél ismeretlen nyelvet látni, a Crowdin vár, hogy lefordítsd!" Severity="Informational">
         <muxc:InfoBar.ActionButton>
             <HyperlinkButton HorizontalAlignment="Right" Content="Kattints ide" NavigateUri="https://crowdin.com/project/APKInstaller"/>
         </muxc:InfoBar.ActionButton>
