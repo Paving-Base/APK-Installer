@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <controls:SettingsGroup xmlns:controls="using:APKInstaller.Controls" xmlns:muxc="using:Microsoft.UI.Xaml.Controls" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Header="הכרזות" Margin="0,-28,0,0">
-    <muxc:InfoBar Title="הנה ההודעה (אל תשאלו אותי למה להודעה הזו אין כפתור סגירה)" IsClosable="False" IsOpen="True" Message="תוכל לראות כאן כל מיני התראות בעתיד. אם אתה לא רוצה לראות אותם, אתה יכול לכבות אותם בהגדרות למטה." Severity="Informational"/>
-    <muxc:InfoBar Title="תרגומים" IsClosable="True" IsOpen="True" Message="מכיוון שהכותב יודע רק סינית ואנגלית, כל התרגומים נותרים בידי הקהילה. אם אתה לא רוצה לראות שפה לא מוכרת, ברוך הבא ל-Crowdin כדי לתרגם!" Severity="Informational">
+    <muxc:InfoBar Title="הנה ההודעה (אל תשאלו אותי למה להודעה הזו אין כפתור סגירה)" IsClosable="False" IsOpen="True" Message="תוכל לראות כאן כל מיני התראות בעתיד. אם אתה לא רוצה לראות אותם, תוכל לכבות אותם בהגדרות למטה." Severity="Informational"/>
+    <muxc:InfoBar Title="עוד תרגומים" IsClosable="True" IsOpen="True" Message="מכיוון שהכותב יודע רק סינית ואנגלית, כל התרגומים נעשו ע&quot;י הקהילה. אם נתקלת בשפה לא מוכרת, הכנס ל-Crowdin כדי לתרגם!" Severity="Informational">
         <muxc:InfoBar.ActionButton>
-            <HyperlinkButton HorizontalAlignment="Right" Content="לחץ על אני" NavigateUri="https://crowdin.com/project/APKInstaller"/>
+            <HyperlinkButton HorizontalAlignment="Right" Content="לחץ עלי" NavigateUri="https://crowdin.com/project/APKInstaller"/>
         </muxc:InfoBar.ActionButton>
     </muxc:InfoBar>
 </controls:SettingsGroup>

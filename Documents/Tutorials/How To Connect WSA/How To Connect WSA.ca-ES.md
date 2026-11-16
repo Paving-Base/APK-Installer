@@ -1,4 +1,4 @@
-# Com connectar WSA
+# Ho To Connect WSA
 1. <0><0><0><0></li> 
    
    2 
